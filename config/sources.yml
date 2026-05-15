@@ -1,0 +1,36 @@
+# ── Seuil de pertinence ─────────────────────────────────────────────────────
+# Un document est téléchargé si son score Claude >= threshold (0 à 10)
+threshold: 6
+
+# ── Mots-clés de veille ──────────────────────────────────────────────────────
+keywords:
+  - identité
+  - genre
+  - mémoire collective
+  - contre-culture
+  - fanzine
+  - DIY
+  - résistance
+  - corps
+  - underground
+  - culture populaire
+  - anthropologie
+  - sociologie
+  - histoire sociale
+  - oralité
+  - archive
+
+# ── Sources à surveiller ─────────────────────────────────────────────────────
+sources:
+  - label: "Archive.org — textes libres SHS"
+    url: "https://archive.org/search?query=fanzine+sociologie&mediatype=texts"
+
+  - label: "Persée — revues SHS francophones"
+    url: "https://www.persee.fr/search#v=list&q=contre-culture&lang=fr&doc=article"
+
+  - label: "HAL — dépôts en accès ouvert"
+    url: "https://hal.science/search/index/?q=fanzine+genre&docType_s=ART"
+
+  # Ajoute tes propres sources :
+  # - label: "Mon blog de référence"
+  #   url: "https://example.com/ressources"
