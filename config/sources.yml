@@ -21,16 +21,23 @@ keywords:
   - archive
 
 # ── Sources à surveiller ─────────────────────────────────────────────────────
+# NOTE: les pages de recherche académiques (Persée, HAL, OpenEdition, Cairn…)
+# rendent leurs résultats en JavaScript côté client → invisibles pour
+# requests+BeautifulSoup. On vise donc des pages dont les liens .pdf
+# sont présents en HTML statique.
 sources:
-  - label: "Archive.org — textes libres SHS"
-    url: "https://archive.org/search?query=fanzine+sociologie&mediatype=texts"
+  - label: "Infokiosques.net — nouveautés"
+    url: "https://infokiosques.net/"
 
-  - label: "Persée — revues SHS francophones"
-    url: "https://www.persee.fr/search#v=list&q=contre-culture&lang=fr&doc=article"
+  - label: "Infokiosques.net — brochures (lettre A)"
+    url: "https://infokiosques.net/spip.php?rubrique5"
 
-  - label: "HAL — dépôts en accès ouvert"
-    url: "https://hal.science/search/index/?q=fanzine+genre&docType_s=ART"
+  - label: "Infokiosques.net — brochures (lettre C)"
+    url: "https://infokiosques.net/spip.php?rubrique7"
 
+  # Pour scraper Persée/HAL/OpenEdition il faudrait un moteur JS
+  # (playwright/selenium) — pas activé par défaut.
+  #
   # Ajoute tes propres sources :
   # - label: "Mon blog de référence"
   #   url: "https://example.com/ressources"
