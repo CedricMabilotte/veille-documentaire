@@ -67,19 +67,61 @@ def score_batch(docs: list[dict], keywords: list[str]) -> list[dict]:
 
     keywords_block = "\n".join(f"  - {kw}" for kw in keywords)
 
-    prompt = f"""Tu es un assistant de veille documentaire spécialisé en sciences humaines et sociales.
+    prompt = f"""Tu es un assistant de veille documentaire STRICT et RIGOUREUX.
 
-Mots-clés de recherche (en plusieurs langues) :
+THÉMATIQUE ciblée — concepts qui doivent être au CŒUR du document, pas en marge :
 {keywords_block}
 
-Évalue la pertinence de chaque document par rapport à ces mots-clés.
-Pour chaque document retourne :
-  - "doc"   : le numéro du document (entier)
-  - "score" : pertinence de 0 à 10 (0 = hors sujet, 10 = très pertinent)
-  - "raison": une phrase courte justifiant le score
+RÈGLES DE NOTATION (à appliquer scrupuleusement) :
+
+1. **Note basée UNIQUEMENT sur le titre et le contexte fournis.**
+   N'INFÈRE PAS le contenu d'un document à partir de son auteur supposé,
+   d'une école de pensée ou d'un mot isolé. Si le titre/contexte ne mentionne
+   pas explicitement un des thèmes ci-dessus, score ≤ 4.
+
+2. **Pas de "probablement", "vraisemblablement", "fondamental sur".**
+   Si la raison contient ces mots, baisse ton score d'au moins 3 points.
+
+3. **L'appartenance à l'anarchisme, au libertarianisme, à l'écologie,
+   au féminisme, à l'antifascisme ou au syndicalisme N'EST PAS suffisante
+   pour mériter un score élevé.** Beaucoup de textes libertaires/anarchistes
+   ne parlent PAS de la thématique terres/communs. Score ≤ 5 dans ce cas.
+
+4. **Échelle :**
+   - 9-10 : le titre OU le contexte cite explicitement un mot-clé central
+            (communs fonciers, paysannerie, sans-terre, propriété d'usage,
+            réforme agraire, zapatistes, Tierra y Libertad…)
+   - 7-8  : le titre OU le contexte évoque clairement la thématique
+            par un terme proche, sans hallucination
+   - 5-6  : tangentiel — le sujet pourrait recouper la thématique mais
+            ce n'est pas explicite dans ce qui m'est fourni
+   - 0-4  : hors-sujet ou indéterminable (titre obscur, contexte vide)
+
+5. **Cite littéralement** dans ta raison le mot/phrase du titre ou du contexte
+   qui justifie ton score. Si tu ne peux pas citer → score ≤ 3.
+
+6. **Attribue chaque score au bon "doc" numéro**. Ne mélange pas.
+
+Pour chaque document, retourne :
+  - "doc"   : numéro du document (entier)
+  - "score" : 0 à 10
+  - "raison": phrase brève citant LITTÉRALEMENT le titre/contexte
+
+EXEMPLES DE BONNES NOTATIONS :
+
+  Document : "la_commune_p._kropotkine.pdf" — contexte "La Commune par Kropotkine, 1881"
+  → {{"score": 6, "raison": "Texte sur la Commune de Paris ; recoupe la thématique communs/collectif sans la cibler"}}
+
+  Document : "louis_rimbault_terre_liberee.pdf" — contexte "Louis Rimbault, Terre Libérée, 1905"
+  → {{"score": 9, "raison": "Titre 'Terre Libérée' cite explicitement la libération des terres"}}
+
+  Document : "affaire_8_decembre_2020-cahier.pdf" — contexte "perquisition antiterroriste 8 décembre 2020"
+  → {{"score": 1, "raison": "Affaire de répression antiterroriste, hors thématique terres/communs"}}
+
+  Document : "ni_dieu_ni_maitre.pdf" — contexte "Ni dieu ni maître ni ordre moral, slogan anarchiste"
+  → {{"score": 2, "raison": "Slogan anarchiste général, aucun lien explicite avec terres/communs"}}
 
 Réponds UNIQUEMENT avec un tableau JSON valide, sans balise markdown.
-Exemple : [{{"doc":1,"score":7,"raison":"Traite directement de la propriété d'usage."}}]
 
 Documents :
 {docs_block}"""

@@ -1,55 +1,58 @@
 # ── Seuil de pertinence ─────────────────────────────────────────────────────
-# Un document est téléchargé si son score Claude >= threshold (0 à 10)
-threshold: 6
+# Avec le prompt durci, threshold=7 garde un corpus très qualitatif.
+# Si tu veux élargir : 6 ; si tu veux ultra-strict : 8.
+threshold: 7
 
 # ── Mots-clés de veille (multilingues FR + EN + ES) ──────────────────────────
-# Thématique : communs, propriété d'usage, libération des terres,
-# paysannerie, communautés rurales, alternatives à la propriété privée.
-# Le scoring multilingue augmente le rappel sur les sources DE/EN/ES.
+# Thématique CIBLÉE : propriété d'usage, communs fonciers, libération des
+# terres, paysannerie, formes de propriété alternatives.
+#
+# Mots-clés trop génériques retirés (communauté, community, comunidad,
+# propriété privée) — ils matchaient trop de hors-sujet libertaire général.
 keywords:
-  # Français
-  - communs
+  # Français — concepts pointus
   - propriété d'usage
   - fonds de dotation
   - libération des terres
-  - accès à la propriété
+  - communs fonciers
+  - communaux
+  - accès à la terre
   - sans-terre
   - paysans libres
-  - cosaques
   - collectif d'habitants
-  - communauté
   - paysannerie
+  - agriculture vivrière
   - vivrier
-  - vivrière
-  - propriété privée
-  - souveraineté alimentaire
   - réforme agraire
-  # English
-  - commons
+  - souveraineté alimentaire
+  - terres collectives
+  - propriété collective
+  # English — concepts pointus
+  - land commons
   - usufruct
-  - use rights
+  - land rights
   - land liberation
-  - landless
-  - free peasants
-  - community
+  - landless movement
   - peasantry
   - subsistence farming
   - food sovereignty
   - agrarian reform
   - commoning
   - enclosure
-  # Español
-  - comunes
+  - collective ownership
+  - land back
+  # Español — concepts pointus
   - bienes comunes
   - usufructo
   - liberación de la tierra
   - sin tierra
-  - campesinos libres
   - campesinado
   - soberanía alimentaria
   - reforma agraria
   - tierra y libertad
   - usos colectivos
+  - ejidos
+  - tierra comunal
 
 # ── Sources à surveiller ─────────────────────────────────────────────────────
 # Champ `type` : html (défaut) | deep_html | opds | archive_org | hal
@@ -132,33 +135,15 @@ sources:
     url: "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
 
-  # ═══ Playwright — sites JS-rendered (lent, ne pas surcharger) ══════════════
-  # Chaque source ~5-10s pour le rendu + 5-10s par page interne si crawl
-  # max_pages: 0 = juste l'index, sans crawl 2-niveaux
-  - label: "Via Campesina FR — actualités"
-    url: "https://viacampesina.org/fr/category/actualites/"
-    type: playwright
-    max_pages: 0
-    wait_selector: "article, main, .content"
-    timeout_ms: 25000
-
-  - label: "Lundi.am — articles"
-    url: "https://lundi.am/Articles"
-    type: playwright
-    max_pages: 0
-    timeout_ms: 25000
-
-  - label: "Reporterre — alternatives agricoles"
-    url: "https://reporterre.net/spip.php?rubrique59"
-    type: playwright
-    max_pages: 0
-    timeout_ms: 25000
-
-  - label: "Commons Strategies Group — publications"
-    url: "https://commonsstrategies.org/category/publications/"
-    type: playwright
-    max_pages: 0
-    timeout_ms: 25000
+  # ═══ Playwright — désactivé pour le moment ═════════════════════════════════
+  # Les 4 sources Playwright testées (Via Campesina, Lundi.am, Reporterre,
+  # Commons Strategies) sont des sites d'ARTICLES HTML lisibles en ligne,
+  # pas des bibliothèques de PDFs. Le rendu JS n'expose aucun lien .pdf
+  # → 0 doc/run. À réactiver si on identifie des sites JS qui exposent
+  # vraiment des PDFs dans leur DOM rendu.
+  #
+  # L'infrastructure (scripts/parsers/playwright_parser.py + workflow Chromium)
+  # reste en place et prête à l'emploi.
 
   # ═══ Ajoute tes propres sources ici ════════════════════════════════════════
   # - label: "Mon blog de référence"
