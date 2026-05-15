@@ -1,0 +1,117 @@
+# Template config/sources.yml — réutilisable pour tout agent de veille thématique
+#
+# Comment l'utiliser :
+#   1. Copier dans config/sources.yml de ton repo
+#   2. Adapter keywords à ta thématique (FR + EN + ES recommandé pour le rappel)
+#   3. Choisir/commenter les sources adaptées
+#   4. Ajuster threshold (6 = strict, 4 = large, 8 = très strict)
+#
+# Probe rapide d'une URL candidate avant de l'ajouter :
+#   curl -sL -A "Mozilla/5.0" "URL" | grep -oiE 'href="[^"]+\.(pdf|epub|txt|docx?)"' | wc -l
+
+# ── Seuil de pertinence ─────────────────────────────────────────────────────
+threshold: 6
+
+# ── Mots-clés trilingues (à éditer selon ta thématique) ──────────────────────
+# Exemple : communs / propriété d'usage / paysannerie
+keywords:
+  # Français
+  - communs
+  - propriété d'usage
+  - fonds de dotation
+  - libération des terres
+  - accès à la propriété
+  - sans-terre
+  - paysans libres
+  - collectif d'habitants
+  - communauté
+  - paysannerie
+  - vivrier
+  - vivrière
+  - propriété privée
+  - souveraineté alimentaire
+  - réforme agraire
+  # English
+  - commons
+  - use rights
+  - usufruct
+  - land liberation
+  - landless
+  - free peasants
+  - community
+  - peasantry
+  - subsistence farming
+  - food sovereignty
+  - agrarian reform
+  - commoning
+  - enclosure
+  # Español
+  - comunes
+  - bienes comunes
+  - usufructo
+  - liberación de la tierra
+  - sin tierra
+  - campesinos libres
+  - comunidad
+  - campesinado
+  - soberanía alimentaria
+  - reforma agraria
+  - tierra y libertad
+  - usos colectivos
+
+# ── Sources validées (HTML statique, scraper requests+BS4) ──────────────────
+sources:
+  # ─── infokiosques.net (FR — anarchiste/libertaire, multi-milliers de PDFs) ───
+  - label: "Infokiosques.net — nouveautés"
+    url: "https://infokiosques.net/"
+
+  - label: "Infokiosques.net — index A (290 docs)"
+    url: "https://infokiosques.net/spip.php?rubrique5"
+
+  - label: "Infokiosques.net — index C (273 docs)"
+    url: "https://infokiosques.net/spip.php?rubrique7"
+
+  - label: "Infokiosques.net — index T (115 docs)"
+    url: "https://infokiosques.net/spip.php?rubrique11"
+
+  - label: "Infokiosques.net — index L (74 docs)"
+    url: "https://infokiosques.net/spip.php?rubrique18"
+
+  # Variantes thématiques (rubriques non-alphabétiques)
+  # - label: "Infokiosques.net — rubrique thématique 22 (236 docs)"
+  #   url: "https://infokiosques.net/spip.php?rubrique22"
+  # - label: "Infokiosques.net — rubrique thématique 24 (124 docs)"
+  #   url: "https://infokiosques.net/spip.php?rubrique24"
+
+  # ─── boell.de (DE/EN — Heinrich-Böll-Stiftung, recherche écolo & communs) ───
+  - label: "Heinrich-Böll-Stiftung — publications EN"
+    url: "https://www.boell.de/en/publications"
+
+  - label: "Heinrich-Böll-Stiftung — publications EN (p.5)"
+    url: "https://www.boell.de/en/publications?page=5"
+
+  # Pour étendre, dupliquer avec ?page=10, ?page=20, ?page=30
+  # - label: "Heinrich-Böll-Stiftung — publications DE"
+  #   url: "https://www.boell.de/de/publikationen"
+
+  # ─── Sources désactivées (nécessitent extension du scraper) ─────────────────
+  # Décommenter quand find_documents() supportera le crawl 2-niveaux ou OPDS/API
+  #
+  # - label: "The Anarchist Library (OPDS — nécessite parser XML)"
+  #   url: "https://theanarchistlibrary.org/opds"
+  #
+  # - label: "libcom.org library (crawl 2-niveaux)"
+  #   url: "https://libcom.org/library"
+  #
+  # - label: "crimethinc.com library (crawl 2-niveaux)"
+  #   url: "https://crimethinc.com/library"
+  #
+  # - label: "Archive.org folksonomy_anarchism (API JSON)"
+  #   url: "https://archive.org/advancedsearch.php?q=collection%3Afolksonomy_anarchism&output=json&rows=200"
+  #
+  # - label: "HAL Science API (JSON)"
+  #   url: "https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s&wt=json&rows=100"
+
+  # ─── À ajouter selon ta thématique : tes propres références ─────────────────
+  # - label: "Mon blog de référence"
+  #   url: "https://example.com/articles-en-pdf/"

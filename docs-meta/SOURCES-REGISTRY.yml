@@ -1,0 +1,259 @@
+# SOURCES REGISTRY — base centralisée de toutes les sources testées
+#
+# Chaque entrée trace : statut, type de parser nécessaire, historique de probes.
+# Ce fichier est mis à jour automatiquement par scripts/probe_source.py et
+# scripts/source_health.py, et lu par les humains et agents pour décider
+# quelles sources ajouter à config/sources.yml.
+#
+# Statuts possibles :
+#   - active      : utilisée dans config/sources.yml, en production
+#   - validated   : testée, exploitable, pas encore en production
+#   - needs_parser: testée, exploitable mais nécessite un parser spécialisé
+#   - js_only     : nécessite Playwright/Selenium
+#   - dead        : URL morte ou contenu inexistant
+#   - rejected    : volontairement écartée (paywall, hors thématique, etc.)
+#
+# Types de parser :
+#   - html        : scraper requests+BS4 standard (find_documents)
+#   - deep_html   : crawl 2-niveaux (suit les liens d'articles)
+#   - opds        : feed XML OPDS
+#   - archive_org : API JSON de archive.org/advancedsearch.php
+#   - hal         : API JSON de api.archives-ouvertes.fr
+#   - playwright  : JS rendering nécessaire (non implémenté)
+
+sources:
+  # ─── INFOKIOSQUES.NET (FR, html) ────────────────────────────────────────
+  - id: infokiosques_accueil
+    label: "Infokiosques — nouveautés"
+    url: "https://infokiosques.net/"
+    type: html
+    status: active
+    language: fr
+    themes: [anarchisme, contre-culture, divers]
+    last_probe: "2026-05-15"
+    last_doc_count: 47
+    notes: "Page d'accueil — nouvelles brochures ajoutées"
+
+  - id: infokiosques_rub5
+    label: "Infokiosques — index A"
+    url: "https://infokiosques.net/spip.php?rubrique5"
+    type: html
+    status: active
+    language: fr
+    themes: [anarchisme, index_alphabetique]
+    last_probe: "2026-05-15"
+    last_doc_count: 290
+
+  - id: infokiosques_rub7
+    label: "Infokiosques — index C"
+    url: "https://infokiosques.net/spip.php?rubrique7"
+    type: html
+    status: active
+    language: fr
+    themes: [anarchisme, index_alphabetique]
+    last_probe: "2026-05-15"
+    last_doc_count: 273
+
+  - id: infokiosques_rub11
+    label: "Infokiosques — index T"
+    url: "https://infokiosques.net/spip.php?rubrique11"
+    type: html
+    status: validated
+    language: fr
+    themes: [anarchisme, index_alphabetique, terres]
+    last_probe: "2026-05-15"
+    last_doc_count: 115
+
+  - id: infokiosques_rub18
+    label: "Infokiosques — index L"
+    url: "https://infokiosques.net/spip.php?rubrique18"
+    type: html
+    status: validated
+    language: fr
+    themes: [anarchisme, index_alphabetique, libération]
+    last_probe: "2026-05-15"
+    last_doc_count: 74
+
+  - id: infokiosques_rub22
+    label: "Infokiosques — rubrique thématique 22"
+    url: "https://infokiosques.net/spip.php?rubrique22"
+    type: html
+    status: validated
+    language: fr
+    themes: [anarchisme]
+    last_probe: "2026-05-15"
+    last_doc_count: 236
+
+  - id: infokiosques_rub24
+    label: "Infokiosques — rubrique thématique 24"
+    url: "https://infokiosques.net/spip.php?rubrique24"
+    type: html
+    status: validated
+    language: fr
+    themes: [anarchisme]
+    last_probe: "2026-05-15"
+    last_doc_count: 124
+
+  # ─── BÖLL.DE (DE/EN, html) ──────────────────────────────────────────────
+  - id: boell_en
+    label: "Heinrich-Böll-Stiftung — publications EN"
+    url: "https://www.boell.de/en/publications"
+    type: html
+    status: validated
+    language: en
+    themes: [communs, écologie, démocratie, foncier]
+    last_probe: "2026-05-15"
+    last_doc_count: 49
+    notes: "Pagination ?page=N jusqu'à 30+"
+
+  - id: boell_de
+    label: "Heinrich-Böll-Stiftung — publications DE"
+    url: "https://www.boell.de/de/publikationen"
+    type: html
+    status: validated
+    language: de
+    themes: [communs, écologie, démocratie, foncier]
+    last_probe: "2026-05-15"
+    last_doc_count: 94
+    notes: "Pagination ?page=N jusqu'à 60+"
+
+  # ─── BIBLIOTHÈQUES ANARCHISTES (multi-langues, opds/deep_html) ─────────
+  - id: anarchistlibrary_opds
+    label: "The Anarchist Library — OPDS feed"
+    url: "https://theanarchistlibrary.org/opds"
+    type: opds
+    status: needs_parser
+    language: multi
+    themes: [anarchisme]
+    notes: "~10000 textes EN/FR/ES/DE/IT — corpus principal anglophone"
+
+  - id: libcom_library
+    label: "libcom.org — library"
+    url: "https://libcom.org/library"
+    type: deep_html
+    status: needs_parser
+    language: en
+    themes: [anarchisme, syndicalisme, communisme_libertaire]
+    notes: "PDFs sur les pages-article, pattern libcom.org/files/*.pdf"
+
+  - id: crimethinc_library
+    label: "CrimethInc — library"
+    url: "https://crimethinc.com/library"
+    type: deep_html
+    status: needs_parser
+    language: en
+    themes: [anarchisme, contre-culture, zines]
+    notes: "Section /zines avec beaucoup de PDFs"
+
+  - id: sproutdistro
+    label: "Sprout Distro — catalog"
+    url: "https://sproutdistro.com/catalog/"
+    type: deep_html
+    status: needs_parser
+    language: en
+    themes: [anarchisme, zines, distro]
+    notes: "files.sproutdistro.com/*.pdf"
+
+  - id: cras31
+    label: "CRAS — Centre de Recherches sur les Alternatives Sociales"
+    url: "https://cras31.info/"
+    type: deep_html
+    status: needs_parser
+    language: fr
+    themes: [anarchisme, histoire_sociale]
+    notes: "Pattern SPIP /IMG/pdf/ sur articles"
+
+  - id: federation_anarchiste
+    label: "Fédération Anarchiste — publications"
+    url: "https://www.federation-anarchiste.org/spip.php?rubrique3"
+    type: deep_html
+    status: needs_parser
+    language: fr
+    themes: [anarchisme]
+    notes: "Pattern SPIP"
+
+  - id: portaloaca
+    label: "Portal OACA — anarcosindicalismo ES"
+    url: "https://www.portaloaca.com/"
+    type: deep_html
+    status: needs_parser
+    language: es
+    themes: [anarchisme, syndicalisme]
+    notes: "WordPress, PDFs dans wp-content/uploads/YYYY/MM/"
+
+  # ─── APIs PUBLIQUES (multi-langues) ─────────────────────────────────────
+  - id: archive_org_anarchism
+    label: "Archive.org — folksonomy_anarchism"
+    url: "https://archive.org/advancedsearch.php?q=collection%3Afolksonomy_anarchism&output=json&rows=200"
+    type: archive_org
+    status: needs_parser
+    language: multi
+    themes: [anarchisme]
+    notes: "Collection dédiée — quelques milliers d'items"
+
+  - id: archive_org_peasants
+    label: "Archive.org — peasant movements"
+    url: "https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&output=json&rows=200"
+    type: archive_org
+    status: needs_parser
+    language: multi
+    themes: [paysannerie]
+
+  - id: archive_org_commons
+    label: "Archive.org — commons / propriété d'usage"
+    url: "https://archive.org/advancedsearch.php?q=subject%3A%22commons%22+OR+subject%3A%22enclosure%22+AND+mediatype%3Atexts&output=json&rows=200"
+    type: archive_org
+    status: needs_parser
+    language: multi
+    themes: [communs, propriété_usage]
+
+  - id: hal_communs
+    label: "HAL Science — communs fonciers"
+    url: "https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s&wt=json&rows=100"
+    type: hal
+    status: needs_parser
+    language: fr
+    themes: [communs, foncier, recherche]
+
+  - id: hal_paysannerie
+    label: "HAL Science — paysannerie / agriculture vivrière"
+    url: "https://api.archives-ouvertes.fr/search/?q=paysannerie+OR+vivri%C3%A8re&fl=title_s,uri_s,fileMain_s,language_s&wt=json&rows=100"
+    type: hal
+    status: needs_parser
+    language: fr
+    themes: [paysannerie, recherche]
+
+  # ─── REJETÉS (documentation des dead-ends) ──────────────────────────────
+  - id: persee_search
+    label: "Persée — recherche contre-culture"
+    url: "https://www.persee.fr/search#v=list&q=contre-culture"
+    type: html
+    status: js_only
+    language: fr
+    notes: "Page de recherche JS-rendered → 0 docs. API OAI-PMH disponible mais non implémentée."
+
+  - id: hal_search_html
+    label: "HAL — recherche fanzine+genre"
+    url: "https://hal.science/search/index/?q=fanzine+genre&docType_s=ART"
+    type: html
+    status: js_only
+    language: fr
+    notes: "Remplacé par hal_communs et hal_paysannerie via API"
+
+  - id: archive_org_search_old
+    label: "Archive.org — recherche fanzine+sociologie"
+    url: "https://archive.org/search?query=fanzine+sociologie&mediatype=texts"
+    type: html
+    status: js_only
+    language: en
+    notes: "Page de recherche JS-rendered → 0 docs. Remplacé par archive_org_* via API."
+
+# Index — last update
+meta:
+  last_updated: "2026-05-15"
+  total_sources: 22
+  active: 3
+  validated: 6
+  needs_parser: 10
+  js_only: 3
+  rejected: 0

@@ -2,10 +2,12 @@
 # Un document est téléchargé si son score Claude >= threshold (0 à 10)
 threshold: 6
 
-# ── Mots-clés de veille ──────────────────────────────────────────────────────
+# ── Mots-clés de veille (multilingues FR + EN + ES) ──────────────────────────
 # Thématique : communs, propriété d'usage, libération des terres,
 # paysannerie, communautés rurales, alternatives à la propriété privée.
+# Le scoring multilingue augmente le rappel sur les sources DE/EN/ES.
 keywords:
+  # Français
   - communs
   - propriété d'usage
   - fonds de dotation
@@ -20,25 +22,117 @@ keywords:
   - vivrier
   - vivrière
   - propriété privée
+  - souveraineté alimentaire
+  - réforme agraire
+  # English
+  - commons
+  - usufruct
+  - use rights
+  - land liberation
+  - landless
+  - free peasants
+  - community
+  - peasantry
+  - subsistence farming
+  - food sovereignty
+  - agrarian reform
+  - commoning
+  - enclosure
+  # Español
+  - comunes
+  - bienes comunes
+  - usufructo
+  - liberación de la tierra
+  - sin tierra
+  - campesinos libres
+  - campesinado
+  - soberanía alimentaria
+  - reforma agraria
+  - tierra y libertad
+  - usos colectivos
 
 # ── Sources à surveiller ─────────────────────────────────────────────────────
-# NOTE: les pages de recherche académiques (Persée, HAL, OpenEdition, Cairn…)
-# rendent leurs résultats en JavaScript côté client → invisibles pour
-# requests+BeautifulSoup. On vise donc des pages dont les liens .pdf
-# sont présents en HTML statique.
+# Champ `type` : html (défaut) | deep_html | opds | archive_org | hal
+# Type non spécifié → html (rétrocompat)
 sources:
+  # ═══ Infokiosques.net — corpus francophone (html direct) ═══════════════════
   - label: "Infokiosques.net — nouveautés"
     url: "https://infokiosques.net/"
+    type: html
 
-  - label: "Infokiosques.net — brochures (lettre A)"
+  - label: "Infokiosques.net — index A"
     url: "https://infokiosques.net/spip.php?rubrique5"
+    type: html
 
-  - label: "Infokiosques.net — brochures (lettre C)"
+  - label: "Infokiosques.net — index C"
     url: "https://infokiosques.net/spip.php?rubrique7"
+    type: html
 
-  # Pour scraper Persée/HAL/OpenEdition il faudrait un moteur JS
-  # (playwright/selenium) — pas activé par défaut.
-  #
-  # Ajoute tes propres sources :
+  - label: "Infokiosques.net — index T (Terres, Travail)"
+    url: "https://infokiosques.net/spip.php?rubrique11"
+    type: html
+
+  - label: "Infokiosques.net — index L (Libération, Luttes)"
+    url: "https://infokiosques.net/spip.php?rubrique18"
+    type: html
+
+  # ═══ Heinrich-Böll-Stiftung (DE/EN, html direct, communs/écologie) ═════════
+  - label: "Böll Stiftung — publications EN"
+    url: "https://www.boell.de/en/publications"
+    type: html
+
+  - label: "Böll Stiftung — publications DE"
+    url: "https://www.boell.de/de/publikationen"
+    type: html
+
+  # ═══ Crawl 2-niveaux — sites libertaires anglo + FR (deep_html) ════════════
+  - label: "libcom.org — library"
+    url: "https://libcom.org/library"
+    type: deep_html
+    max_pages: 20
+
+  - label: "CrimethInc — library"
+    url: "https://crimethinc.com/library"
+    type: deep_html
+    max_pages: 20
+
+  - label: "CRAS (Centre de Recherches sur les Alternatives Sociales)"
+    url: "https://cras31.info/"
+    type: deep_html
+    max_pages: 15
+
+  # ═══ OPDS — The Anarchist Library (multi-langues, gros corpus) ══════════════
+  - label: "The Anarchist Library — OPDS feed"
+    url: "https://theanarchistlibrary.org/opds"
+    type: opds
+
+  # ═══ API Archive.org — corpus anarchiste / paysanneries (multi-langues) ════
+  - label: "Archive.org — subject:anarchism (texts)"
+    url: "https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
+    type: archive_org
+
+  - label: "Archive.org — peasant movements"
+    url: "https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
+    type: archive_org
+
+  - label: "Archive.org — commons / enclosure"
+    url: "https://archive.org/advancedsearch.php?q=%28subject%3Acommons+OR+subject%3Aenclosure%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
+    type: archive_org
+
+  # ═══ API HAL Science — académique francophone ═══════════════════════════════
+  - label: "HAL — communs fonciers"
+    url: "https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
+    type: hal
+
+  - label: "HAL — paysannerie / agriculture vivrière"
+    url: "https://api.archives-ouvertes.fr/search/?q=paysannerie+OR+%22agriculture+vivri%C3%A8re%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
+    type: hal
+
+  - label: "HAL — propriété d'usage / fonds de dotation"
+    url: "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
+    type: hal
+
+  # ═══ Ajoute tes propres sources ici ════════════════════════════════════════
   # - label: "Mon blog de référence"
-  #   url: "https://example.com/ressources"
+  #   url: "https://example.com/articles-en-pdf/"
+  #   type: html
