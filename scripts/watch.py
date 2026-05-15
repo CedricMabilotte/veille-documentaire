@@ -117,20 +117,29 @@ Documents :
                 "-p", prompt,
                 "--model", "claude-haiku-4-5",
                 "--output-format", "text",
+                "--no-session-persistence",
+                "--disable-slash-commands",
+                "--tools", "",
+                "--dangerously-skip-permissions",
             ],
             capture_output=True,
             text=True,
             timeout=180,
+            cwd="/tmp",          # éviter les CLAUDE.md / hooks du repo courant
+            stdin=subprocess.DEVNULL,
         )
         if result.returncode != 0:
             raise RuntimeError(
-                f"claude exit {result.returncode} — stderr={result.stderr[:300]}"
+                f"claude exit {result.returncode} — "
+                f"stdout={result.stdout[:200]} stderr={result.stderr[:200]}"
             )
         raw = result.stdout.strip()
+        # nettoyer un éventuel fence markdown autour du JSON
         if raw.startswith("```"):
             raw = raw.split("```")[1]
             if raw.startswith("json"):
                 raw = raw[4:]
+            raw = raw.rsplit("```", 1)[0]
         return json.loads(raw.strip())
     except Exception as e:
         print(f"  ⚠  Erreur scoring Claude : {e}")
