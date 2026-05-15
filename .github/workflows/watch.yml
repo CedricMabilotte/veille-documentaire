@@ -82,11 +82,19 @@ jobs:
           echo "→ Contenu Drive après sync :"
           rclone size gdrive:Veille_documentaire/
 
-      - name: Commit des nouveaux rapports (docs/ exclus, déjà sur Drive)
+      - name: Sync interface/ vers Google Drive
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          rclone copy interface/ gdrive:Veille_documentaire/interface/ \
+            --stats-one-line --stats 30s
+          echo "→ Interface dispo sur Drive :"
+          rclone lsf gdrive:Veille_documentaire/interface/
+
+      - name: Commit synopsis + interface + rapports
         if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |
           git config --global user.name  "Library Bot"
           git config --global user.email "bot@library.local"
-          git add reports/
-          git diff --staged --quiet || git commit -m "veille: $(date '+%Y-%m-%d %H:%M') — nouveaux rapports"
+          git add reports/ synopsis/ interface/
+          git diff --staged --quiet || git commit -m "veille: $(date '+%Y-%m-%d %H:%M') — rapports + catalog + interface"
           git push

@@ -30,12 +30,16 @@ sys.path.insert(0, str(Path(__file__).parent))
 from parsers import dispatch as parser_dispatch
 
 # ── Chemins ────────────────────────────────────────────────────────────────────
-CONFIG_PATH  = Path("config/sources.yml")
-DOCS_PATH    = Path("docs")
-REPORTS_PATH = Path("reports")
+CONFIG_PATH   = Path("config/sources.yml")
+DOCS_PATH     = Path("docs")
+REPORTS_PATH  = Path("reports")
+SYNOPSIS_PATH = Path("synopsis")     # catalog.json (multi-runs, dédupliqué)
+INTERFACE_PATH = Path("interface")   # index.html — fiches synopsis
 
 DOCS_PATH.mkdir(parents=True, exist_ok=True)
 REPORTS_PATH.mkdir(parents=True, exist_ok=True)
+SYNOPSIS_PATH.mkdir(parents=True, exist_ok=True)
+INTERFACE_PATH.mkdir(parents=True, exist_ok=True)
 
 # ── Constantes ─────────────────────────────────────────────────────────────────
 BATCH_SIZE = 8
@@ -175,6 +179,97 @@ def download_file(url: str, dest: Path) -> bool:
         return False
 
 
+def update_synopsis_catalog(report: dict) -> None:
+    """Met à jour synopsis/catalog.json (catalogue dédupliqué, multi-runs).
+
+    Pour chaque doc scoré dans ce run :
+    - Si déjà présent (clé = hash de l'URL) : ajoute une entrée dans `runs[]`
+    - Sinon : crée la fiche
+
+    Le catalog est consommé par interface/index.html.
+    """
+    catalog_path = SYNOPSIS_PATH / "catalog.json"
+    if catalog_path.exists():
+        catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    else:
+        catalog = {"docs": {}, "meta": {}}
+
+    run_date = report["date"]
+
+    for r in report["results"]:
+        doc_id = file_uid(r["url"])
+        run_entry = {
+            "date":         run_date,
+            "score":        r["score"],
+            "raison":       r["raison"],
+            "context_seen": r.get("context_seen", ""),
+            "link_text":    r.get("link_text", ""),
+            "downloaded":   r["downloaded"],
+        }
+
+        if doc_id in catalog["docs"]:
+            fiche = catalog["docs"][doc_id]
+            # Évite doublon de run pour la même date
+            fiche["runs"] = [run for run in fiche["runs"] if run["date"] != run_date]
+            fiche["runs"].append(run_entry)
+            fiche["latest_score"] = r["score"]
+            fiche["latest_run"]   = run_date
+            if r["downloaded"] and not fiche.get("downloaded"):
+                fiche["downloaded"] = True
+                fiche["saved_as"]   = r["saved_as"]
+        else:
+            catalog["docs"][doc_id] = {
+                "id":           doc_id,
+                "url":          r["url"],
+                "filename":     r["filename"],
+                "format":       r["format"],
+                "source":       r["source"],
+                "first_seen":   run_date,
+                "latest_run":   run_date,
+                "latest_score": r["score"],
+                "downloaded":   r["downloaded"],
+                "saved_as":     r.get("saved_as"),
+                "runs":         [run_entry],
+            }
+
+    # Méta
+    catalog["meta"] = {
+        "last_updated":      run_date,
+        "total_docs":        len(catalog["docs"]),
+        "total_downloaded":  sum(1 for f in catalog["docs"].values() if f["downloaded"]),
+        "score_distribution": {
+            i: sum(1 for f in catalog["docs"].values() if f["latest_score"] == i)
+            for i in range(11)
+        },
+    }
+
+    catalog_path.write_text(
+        json.dumps(catalog, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    print(f"  📒 Catalog mis à jour : {catalog['meta']['total_docs']} docs dont "
+          f"{catalog['meta']['total_downloaded']} téléchargés")
+
+
+def generate_interface(catalog_path: Path = SYNOPSIS_PATH / "catalog.json") -> None:
+    """Génère interface/index.html avec catalog embarqué."""
+    interface_template = Path(__file__).parent / "interface_template.html"
+    if not interface_template.exists():
+        print(f"  ⚠  Template introuvable : {interface_template}")
+        return
+
+    catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+    template = interface_template.read_text(encoding="utf-8")
+
+    # Inject le catalog comme variable JS embarquée — pas de fetch (marche en file://)
+    embedded = json.dumps(catalog, ensure_ascii=False)
+    final = template.replace("/*__CATALOG_INJECTED_HERE__*/null", embedded)
+
+    out = INTERFACE_PATH / "index.html"
+    out.write_text(final, encoding="utf-8")
+    print(f"  🖥  Interface générée : {out} ({len(catalog['docs'])} fiches)")
+
+
 def save_markdown_report(report: dict, path: Path) -> None:
     """Écrit un rapport Markdown lisible, avec stats par source."""
     lines = [
@@ -300,14 +395,17 @@ def main() -> None:
             raison = item.get("raison", "")
 
             result = {
-                "url":        doc["url"],
-                "filename":   doc["filename"],
-                "format":     doc["extension"],
-                "source":     label,
-                "score":      score,
-                "raison":     raison,
-                "downloaded": False,
-                "saved_as":   None,
+                "url":          doc["url"],
+                "filename":     doc["filename"],
+                "format":       doc["extension"],
+                "source":       label,
+                "score":        score,
+                "raison":       raison,
+                "downloaded":   False,
+                "saved_as":     None,
+                # Citations littérales — ce que Claude a effectivement vu :
+                "link_text":    doc.get("link_text", ""),
+                "context_seen": doc.get("context", "")[:400],
             }
 
             if score >= threshold and not dry_run:
@@ -334,6 +432,8 @@ def main() -> None:
     json_path.write_text(json.dumps(report, ensure_ascii=False, indent=2),
                          encoding="utf-8")
     save_markdown_report(report, json_path)
+    update_synopsis_catalog(report)
+    generate_interface()
 
     print(f"""
 ╔══════════════════════════════════════════╗
