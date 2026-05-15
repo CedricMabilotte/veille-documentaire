@@ -8,12 +8,12 @@ import os
 import json
 import yaml
 import hashlib
+import subprocess
 import requests
 from pathlib import Path
 from datetime import datetime
 from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
-import anthropic
 
 # ── Chemins ────────────────────────────────────────────────────────────────────
 CONFIG_PATH  = Path("config/sources.yml")
@@ -77,7 +77,8 @@ def find_documents(html: str, base_url: str) -> list[dict]:
     return docs
 
 
-def score_batch(docs: list[dict], keywords: list[str], client: anthropic.Anthropic) -> list[dict]:
+def score_batch(docs: list[dict], keywords: list[str]) -> list[dict]:
+    """Score un lot de documents via Claude Code CLI (OAuth — consomme la subscription)."""
     if not docs:
         return []
 
@@ -110,12 +111,22 @@ Documents :
 {docs_block}"""
 
     try:
-        response = client.messages.create(
-            model="claude-haiku-4-5",
-            max_tokens=1000,
-            messages=[{"role": "user", "content": prompt}],
+        result = subprocess.run(
+            [
+                "claude",
+                "-p", prompt,
+                "--model", "claude-haiku-4-5",
+                "--output-format", "text",
+            ],
+            capture_output=True,
+            text=True,
+            timeout=180,
         )
-        raw = response.content[0].text.strip()
+        if result.returncode != 0:
+            raise RuntimeError(
+                f"claude exit {result.returncode} — stderr={result.stderr[:300]}"
+            )
+        raw = result.stdout.strip()
         if raw.startswith("```"):
             raw = raw.split("```")[1]
             if raw.startswith("json"):
@@ -184,7 +195,8 @@ def main() -> None:
     if dry_run:
         print("🔎  Mode simulation — aucun fichier ne sera téléchargé.\n")
 
-    client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+    # Le scoring passe par la CLI Claude Code (OAuth via CLAUDE_CODE_OAUTH_TOKEN)
+    # → consomme la subscription Pro/Max, pas de crédits API requis.
 
     run_date = datetime.utcnow().strftime("%Y-%m-%d_%H-%M")
     report   = {
@@ -217,7 +229,7 @@ def main() -> None:
         for i in range(0, len(docs), BATCH_SIZE):
             batch = docs[i : i + BATCH_SIZE]
             print(f"    → Scoring batch {i // BATCH_SIZE + 1} ({len(batch)} docs)…")
-            all_scores.extend(score_batch(batch, keywords, client))
+            all_scores.extend(score_batch(batch, keywords))
 
         report["documents_scored"] += len(all_scores)
 
