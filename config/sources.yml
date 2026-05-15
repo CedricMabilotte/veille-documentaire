@@ -132,6 +132,34 @@ sources:
     url: "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
 
+  # ═══ Playwright — sites JS-rendered (lent, ne pas surcharger) ══════════════
+  # Chaque source ~5-10s pour le rendu + 5-10s par page interne si crawl
+  # max_pages: 0 = juste l'index, sans crawl 2-niveaux
+  - label: "Via Campesina FR — actualités"
+    url: "https://viacampesina.org/fr/category/actualites/"
+    type: playwright
+    max_pages: 0
+    wait_selector: "article, main, .content"
+    timeout_ms: 25000
+
+  - label: "Lundi.am — articles"
+    url: "https://lundi.am/Articles"
+    type: playwright
+    max_pages: 0
+    timeout_ms: 25000
+
+  - label: "Reporterre — alternatives agricoles"
+    url: "https://reporterre.net/spip.php?rubrique59"
+    type: playwright
+    max_pages: 0
+    timeout_ms: 25000
+
+  - label: "Commons Strategies Group — publications"
+    url: "https://commonsstrategies.org/category/publications/"
+    type: playwright
+    max_pages: 0
+    timeout_ms: 25000
+
   # ═══ Ajoute tes propres sources ici ════════════════════════════════════════
   # - label: "Mon blog de référence"
   #   url: "https://example.com/articles-en-pdf/"

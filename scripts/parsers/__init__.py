@@ -13,7 +13,7 @@ L'API contract pour tout parser :
                               page_title, source_url}
 """
 
-from . import html_static, deep_html, opds, archive_org, hal
+from . import html_static, deep_html, opds, archive_org, hal, playwright_parser
 
 PARSERS = {
     "html":        html_static.find_documents,
@@ -21,6 +21,7 @@ PARSERS = {
     "opds":        opds.find_documents,
     "archive_org": archive_org.find_documents,
     "hal":         hal.find_documents,
+    "playwright":  playwright_parser.find_documents,
 }
 
 

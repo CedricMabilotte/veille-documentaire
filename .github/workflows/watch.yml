@@ -36,7 +36,10 @@ jobs:
           node-version: "22"
 
       - name: Installation des dépendances Python
-        run: pip install requests beautifulsoup4 pyyaml
+        run: pip install requests beautifulsoup4 pyyaml playwright
+
+      - name: Installation de Chromium pour Playwright
+        run: python -m playwright install --with-deps chromium
 
       - name: Installation de Claude Code CLI
         run: npm install -g @anthropic-ai/claude-code
