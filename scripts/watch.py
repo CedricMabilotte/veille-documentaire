@@ -25,21 +25,23 @@ from pathlib import Path
 from datetime import datetime
 from collections import defaultdict
 
-# Ajouter scripts/ au PYTHONPATH pour pouvoir importer parsers/
+# Ajouter scripts/ au PYTHONPATH pour pouvoir importer parsers/ et utilitaires
 sys.path.insert(0, str(Path(__file__).parent))
 from parsers import dispatch as parser_dispatch
+import pdf_processor
+import synopsis_enricher
 
 # ── Chemins ────────────────────────────────────────────────────────────────────
-CONFIG_PATH   = Path("config/sources.yml")
-DOCS_PATH     = Path("docs")
-REPORTS_PATH  = Path("reports")
-SYNOPSIS_PATH = Path("synopsis")     # catalog.json (multi-runs, dédupliqué)
-INTERFACE_PATH = Path("interface")   # index.html — fiches synopsis
+CONFIG_PATH    = Path("config/sources.yml")
+DOCS_PATH      = Path("docs")
+REPORTS_PATH   = Path("reports")
+SYNOPSIS_PATH  = Path("synopsis")        # catalog.json (multi-runs, dédupliqué)
+INTERFACE_PATH = Path("interface")       # index.html — fiches synopsis
+COVERS_PATH    = INTERFACE_PATH / "covers"  # PNG des couvertures (page 1)
+BULLES_PATH    = Path("bulles")          # JSON par doc ≥ 9 (publi troisiemesvoix)
 
-DOCS_PATH.mkdir(parents=True, exist_ok=True)
-REPORTS_PATH.mkdir(parents=True, exist_ok=True)
-SYNOPSIS_PATH.mkdir(parents=True, exist_ok=True)
-INTERFACE_PATH.mkdir(parents=True, exist_ok=True)
+for p in (DOCS_PATH, REPORTS_PATH, SYNOPSIS_PATH, INTERFACE_PATH, COVERS_PATH, BULLES_PATH):
+    p.mkdir(parents=True, exist_ok=True)
 
 # ── Constantes ─────────────────────────────────────────────────────────────────
 BATCH_SIZE = 8
@@ -167,6 +169,7 @@ Documents :
 
 
 def download_file(url: str, dest: Path) -> bool:
+    """Download standard. Le caller doit ensuite valider via pdf_processor."""
     try:
         r = requests.get(url, headers=HEADERS, timeout=60, stream=True)
         r.raise_for_status()
@@ -177,6 +180,96 @@ def download_file(url: str, dest: Path) -> bool:
     except Exception as e:
         print(f"  ⚠  Téléchargement échoué pour {url} : {e}")
         return False
+
+
+def download_and_validate(url: str, dest: Path) -> tuple[bool, str]:
+    """Pipeline complet : download → validate → bypass si nécessaire.
+
+    Retourne (success, status) où status ∈
+      {'ok', 'ok_via_browser', 'ok_via_playwright',
+       'failed_invalid_format', 'failed_network', 'failed_captcha'}.
+    """
+    if not download_file(url, dest):
+        return False, "failed_network"
+
+    if pdf_processor.validate_pdf(dest):
+        return True, "ok"
+
+    # Faux PDF détecté → essai bypass UA navigateur
+    print(f"     ↻  Faux PDF détecté, retry avec UA navigateur…")
+    ok, err = pdf_processor.redownload_with_bypass(url, dest)
+    if ok:
+        return True, "ok_via_browser"
+
+    # Dernier recours : Playwright pour les sites avec JS challenge (HAL etc.)
+    print(f"     ↻  Bypass UA insuffisant ({err}), retry avec Playwright…")
+    ok, err = pdf_processor.download_with_playwright(url, dest)
+    if ok:
+        return True, "ok_via_playwright"
+
+    # Échec total — supprimer le faux fichier
+    if dest.exists():
+        dest.unlink()
+    return False, f"failed_captcha ({err})"
+
+
+def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
+                            keywords: list[str]) -> dict:
+    """Pour un PDF validé : extrait couverture, texte, et appelle Claude pour
+    le synopsis enrichi. Si score ≥ 9, génère aussi la bulle de publication.
+
+    Retourne un dict avec : cover_path, summary, citations,
+    matched_keywords, relevance_score, bulle (si applicable).
+    """
+    out = {}
+    uid = file_uid(doc["url"])
+
+    # Métadonnées + premières pages
+    meta = pdf_processor.extract_metadata(dest)
+    out["meta"] = {
+        "page_count":  meta.get("page_count", 0),
+        "pdf_title":   meta.get("title", ""),
+        "pdf_author":  meta.get("author", ""),
+        "pdf_creator": meta.get("creator", ""),
+    }
+
+    # Couverture page 1 → PNG
+    cover_path = COVERS_PATH / f"{uid}.png"
+    if pdf_processor.extract_cover(dest, cover_path, max_width=400):
+        out["cover"] = f"covers/{uid}.png"   # chemin relatif depuis interface/
+        print(f"     🖼  Couverture extraite : {out['cover']}")
+
+    # Synopsis enrichi via Claude (sur le texte du PDF)
+    text = pdf_processor.extract_text(dest, max_chars=10000)
+    if text:
+        print(f"     📖  Texte extrait ({len(text)} chars), enrichissement…")
+        title_hint = doc.get("link_text") or doc["filename"]
+        enrichment = synopsis_enricher.enrich(text, keywords, title_hint)
+        out["enrichment"] = enrichment
+
+        if "error" in enrichment:
+            print(f"     ⚠  Enrichissement raté : {enrichment['error']}")
+        else:
+            print(f"     ✨  Synopsis : {len(enrichment.get('summary', ''))} chars, "
+                  f"{len(enrichment.get('citations', []))} citations, "
+                  f"score post-lecture = {enrichment.get('relevance_score', '?')}/10")
+
+            # Bulle de publication pour les meilleurs scores
+            if score >= 9 or enrichment.get("relevance_score", 0) >= 9:
+                print(f"     📝  Génération de la bulle de publication…")
+                bulle = synopsis_enricher.generate_bulle(enrichment, doc)
+                if "error" not in bulle:
+                    bulle_path = BULLES_PATH / f"{uid}.json"
+                    bulle_path.write_text(
+                        json.dumps(bulle, ensure_ascii=False, indent=2),
+                        encoding="utf-8",
+                    )
+                    out["bulle"] = f"bulles/{uid}.json"
+                    print(f"     ✅  Bulle enregistrée : {out['bulle']}")
+                else:
+                    print(f"     ⚠  Bulle ratée : {bulle['error']}")
+
+    return out
 
 
 def update_synopsis_catalog(report: dict) -> None:
@@ -206,10 +299,15 @@ def update_synopsis_catalog(report: dict) -> None:
             "link_text":    r.get("link_text", ""),
             "downloaded":   r["downloaded"],
         }
+        # Champs d'enrichissement éventuels (cover, synopsis, bulle)
+        extras = {}
+        for k in ("cover", "bulle", "meta", "enrichment", "download_status",
+                  "drive_url"):
+            if k in r:
+                extras[k] = r[k]
 
         if doc_id in catalog["docs"]:
             fiche = catalog["docs"][doc_id]
-            # Évite doublon de run pour la même date
             fiche["runs"] = [run for run in fiche["runs"] if run["date"] != run_date]
             fiche["runs"].append(run_entry)
             fiche["latest_score"] = r["score"]
@@ -217,6 +315,8 @@ def update_synopsis_catalog(report: dict) -> None:
             if r["downloaded"] and not fiche.get("downloaded"):
                 fiche["downloaded"] = True
                 fiche["saved_as"]   = r["saved_as"]
+            # Mise à jour des champs enrichis
+            fiche.update({k: v for k, v in extras.items() if v})
         else:
             catalog["docs"][doc_id] = {
                 "id":           doc_id,
@@ -230,6 +330,7 @@ def update_synopsis_catalog(report: dict) -> None:
                 "downloaded":   r["downloaded"],
                 "saved_as":     r.get("saved_as"),
                 "runs":         [run_entry],
+                **extras,
             }
 
     # Méta
@@ -411,16 +512,28 @@ def main() -> None:
             if score >= threshold and not dry_run:
                 uid  = file_uid(doc["url"])
                 dest = DOCS_PATH / f"{uid}_{doc['filename']}"
-                if dest.exists():
+                if dest.exists() and pdf_processor.validate_pdf(dest):
                     print(f"    ✓  Déjà présent   : {doc['filename']} ({score}/10)")
-                    result["downloaded"] = True
-                    result["saved_as"]   = str(dest)
+                    result["downloaded"]      = True
+                    result["saved_as"]        = str(dest)
+                    result["download_status"] = "already_present"
                 else:
                     print(f"    ↓  Téléchargement : {doc['filename']} ({score}/10)")
-                    if download_file(doc["url"], dest):
+                    success, status = download_and_validate(doc["url"], dest)
+                    result["download_status"] = status
+                    if success:
                         result["downloaded"] = True
                         result["saved_as"]   = str(dest)
                         report["documents_downloaded"] += 1
+                        if status != "ok":
+                            print(f"    ✓  Récupéré via {status}")
+                    else:
+                        print(f"    ❌  {doc['filename']} — {status}")
+
+                # Enrichissement post-download : couverture + synopsis + bulle
+                if result["downloaded"]:
+                    enrichment = analyse_pdf_and_enrich(dest, doc, score, keywords)
+                    result.update(enrichment)
             elif score >= threshold and dry_run:
                 print(f"    [sim] Aurait téléchargé : {doc['filename']} ({score}/10)")
             else:

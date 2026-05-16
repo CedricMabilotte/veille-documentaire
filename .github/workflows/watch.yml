@@ -36,7 +36,7 @@ jobs:
           node-version: "22"
 
       - name: Installation des dépendances Python
-        run: pip install requests beautifulsoup4 pyyaml playwright
+        run: pip install requests beautifulsoup4 pyyaml playwright pymupdf
 
       - name: Installation de Chromium pour Playwright
         run: python -m playwright install --with-deps chromium
@@ -75,26 +75,24 @@ jobs:
         if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |
           rclone copy docs/ gdrive:Veille_documentaire/ \
-            --create-empty-src-dirs \
-            --progress \
-            --stats 30s \
-            --stats-one-line
+            --create-empty-src-dirs --stats 30s --stats-one-line
           echo "→ Contenu Drive après sync :"
           rclone size gdrive:Veille_documentaire/
 
-      - name: Sync interface/ vers Google Drive
+      - name: Sync interface/ + bulles/ vers Google Drive
         if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |
           rclone copy interface/ gdrive:Veille_documentaire/interface/ \
             --stats-one-line --stats 30s
-          echo "→ Interface dispo sur Drive :"
-          rclone lsf gdrive:Veille_documentaire/interface/
+          rclone copy bulles/ gdrive:Veille_documentaire/bulles/ \
+            --stats-one-line --stats 30s
+          echo "→ Interface + bulles dispos sur Drive"
 
-      - name: Commit synopsis + interface + rapports
+      - name: Commit reports + catalog + interface + bulles
         if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |
           git config --global user.name  "Library Bot"
           git config --global user.email "bot@library.local"
-          git add reports/ synopsis/ interface/
-          git diff --staged --quiet || git commit -m "veille: $(date '+%Y-%m-%d %H:%M') — rapports + catalog + interface"
+          git add reports/ synopsis/ interface/ bulles/
+          git diff --staged --quiet || git commit -m "veille: $(date '+%Y-%m-%d %H:%M') — rapports + catalog + interface + bulles"
           git push
