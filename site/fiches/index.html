@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="max-age=3600">
+<title>Catalogue — BIBLIO</title>
+<meta name="description" content="Parcourir le catalogue de la veille documentaire BIBLIO : communs, terres, paysanneries. Filtrer par score, source, thème. Recherche full-text.">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="BIBLIO — Nouvelles fiches" href="../feed.xml">
+<link rel="canonical" href="https://biblio.actitude.org/fiches/">
+<meta property="og:title" content="Catalogue — BIBLIO">
+<meta property="og:description" content="Le catalogue complet de la veille documentaire BIBLIO.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="manifest" href="../manifest.json">
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="../index.html" class="brand" aria-label="BIBLIO — accueil">
+      <img src="../assets/img/logo.svg" alt="" class="brand-mark">
+      <span class="brand-name">BIBLIO</span>
+      <span class="brand-sub">Bibliothèque documentaire ouverte</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <a href="../index.html">Accueil</a>
+      <a href="index.html">Catalogue</a>
+      <a href="../apropos.html">Méthodologie</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <input type="search" id="header-search" placeholder="Rechercher…" aria-label="Rechercher dans la bibliothèque">
+        <span class="kbd" aria-hidden="true">/</span>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Basculer le thème"></button>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav aria-label="fil d'Ariane">
+      <ol class="breadcrumbs">
+        <li><a href="../index.html">Accueil</a></li>
+        <li>Catalogue</li>
+      </ol>
+    </nav>
+
+    <header class="mt-3">
+      <h1 style="font-family:var(--font-serif);font-size:36px;margin:14px 0 6px;font-weight:600;">Catalogue</h1>
+      <p style="font-family:var(--font-serif);font-style:italic;color:var(--text-dim);font-size:18px;margin:0 0 8px;">
+        Toutes les fiches de la veille, filtrables et triables.
+      </p>
+    </header>
+
+    <div class="catalog-layout">
+
+      <aside class="catalog-sidebar" aria-label="Filtres">
+        <form id="filters-form" onsubmit="return false;">
+
+          <div class="filter-group">
+            <h4>Recherche</h4>
+            <input type="search" id="filter-q" placeholder="mot-clé, titre, citation…" aria-label="Recherche full-text">
+          </div>
+
+          <div class="filter-group">
+            <h4>Score minimum</h4>
+            <div class="range-row">
+              <input type="range" id="filter-score-min" min="0" max="10" step="1" value="0" aria-label="Score minimum">
+              <span class="range-val" id="filter-score-min-val">0</span>
+            </div>
+            <h4 style="margin-top:14px;">Score maximum</h4>
+            <div class="range-row">
+              <input type="range" id="filter-score-max" min="0" max="10" step="1" value="10" aria-label="Score maximum">
+              <span class="range-val" id="filter-score-max-val">10</span>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h4>Sources</h4>
+            <div id="filter-sources"></div>
+          </div>
+
+          <div class="filter-group">
+            <h4>Format</h4>
+            <div id="filter-formats"></div>
+          </div>
+
+          <div class="filter-group">
+            <h4>Filtres rapides</h4>
+            <label><input type="checkbox" id="filter-bulle"> Avec sélection éditoriale</label>
+            <label><input type="checkbox" id="filter-downloaded"> Téléchargé / archivé</label>
+            <label><input type="checkbox" id="filter-enriched"> Synopsis disponible</label>
+          </div>
+
+          <div class="filter-actions">
+            <button type="button" class="btn btn-sm" id="filter-reset">Réinitialiser</button>
+          </div>
+
+        </form>
+      </aside>
+
+      <section class="catalog-main" aria-label="Résultats">
+        <div class="catalog-toolbar">
+          <div class="count" id="result-count" aria-live="polite">…</div>
+          <label class="sr-only" for="sort-select">Trier par</label>
+          <select id="sort-select">
+            <option value="recent">Plus récent</option>
+            <option value="score-desc">Score décroissant</option>
+            <option value="score-asc">Score croissant</option>
+            <option value="title">Titre A→Z</option>
+            <option value="source">Source</option>
+          </select>
+          <div role="group" aria-label="Exports">
+            <button type="button" class="btn btn-sm" id="export-csv">Exporter CSV</button>
+            <button type="button" class="btn btn-sm" id="export-bibtex">Exporter BibTeX</button>
+          </div>
+        </div>
+
+        <div class="catalog-grid" id="catalog-grid" aria-live="polite"></div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div>
+      <h4>BIBLIO</h4>
+      <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
+      <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+    </div>
+    <div>
+      <h4>Naviguer</h4>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="index.html">Catalogue</a></li>
+        <li><a href="../apropos.html">Méthodologie</a></li>
+        <li><a href="../feed.xml">Flux RSS</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Code &amp; licence</h4>
+      <ul>
+        <li><a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">Code source</a></li>
+        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+      </ul>
+    </div>
+    <div class="colophon">
+      <span>© 2026 BIBLIO · <code>biblio.actitude.org</code></span>
+      <span>HTML, CSS, JavaScript. Sans tracker.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/router.js"></script>
+<script src="../assets/js/search.js"></script>
+<script src="../assets/js/app.js"></script>
+<script>
+/* ===== Catalogue — état et rendu ===== */
+let STATE = {
+  docs: [],
+  meta: {},
+  filters: {
+    q: '',
+    scoreMin: 0,
+    scoreMax: 10,
+    sources: new Set(),
+    formats: new Set(),
+    bulle: false,
+    downloaded: false,
+    enriched: false,
+  },
+  sort: 'recent',
+};
+
+window.pageInit = function (basePath) {
+  loadCatalog(basePath).then(({ meta, docs }) => {
+    STATE.docs = docs;
+    STATE.meta = meta;
+    initFiltersUI();
+    readURLParams();
+    bindEvents(basePath);
+    render(basePath);
+  });
+};
+
+function initFiltersUI() {
+  // Sources
+  const srcWrap = document.getElementById('filter-sources');
+  const sources = Array.from(new Set(STATE.docs.map(d => d.source).filter(Boolean))).sort();
+  srcWrap.innerHTML = sources.map(s => `
+    <label><input type="checkbox" name="src" value="${escape(s)}"> ${escape(s)}</label>
+  `).join('') || '<p style="color:var(--text-faint);font-size:13px;">Aucune source</p>';
+
+  // Formats
+  const fmtWrap = document.getElementById('filter-formats');
+  const fmts = Array.from(new Set(STATE.docs.map(d => d.format).filter(Boolean))).sort();
+  fmtWrap.innerHTML = fmts.map(f => `
+    <label><input type="checkbox" name="fmt" value="${escape(f)}"> ${escape(f.toUpperCase())}</label>
+  `).join('') || '<p style="color:var(--text-faint);font-size:13px;">—</p>';
+}
+
+function readURLParams() {
+  const params = BiblioRouter.getAllParams();
+  if (params.q) {
+    STATE.filters.q = params.q;
+    document.getElementById('filter-q').value = params.q;
+    const hs = document.getElementById('header-search');
+    if (hs) hs.value = params.q;
+  }
+  if (params.score_min) {
+    STATE.filters.scoreMin = +params.score_min;
+    document.getElementById('filter-score-min').value = params.score_min;
+  }
+  if (params.score_max) {
+    STATE.filters.scoreMax = +params.score_max;
+    document.getElementById('filter-score-max').value = params.score_max;
+  }
+  if (params.bulle === '1') {
+    STATE.filters.bulle = true;
+    document.getElementById('filter-bulle').checked = true;
+  }
+  if (params.sort) {
+    STATE.sort = params.sort;
+    document.getElementById('sort-select').value = params.sort;
+  }
+  document.getElementById('filter-score-min-val').textContent = STATE.filters.scoreMin;
+  document.getElementById('filter-score-max-val').textContent = STATE.filters.scoreMax;
+}
+
+function bindEvents(basePath) {
+  const form = document.getElementById('filters-form');
+  // Recherche
+  document.getElementById('filter-q').addEventListener('input', debounce(e => {
+    STATE.filters.q = e.target.value;
+    BiblioRouter.setParam('q', e.target.value || null);
+    render(basePath);
+  }, 220));
+  // Ranges
+  const sMin = document.getElementById('filter-score-min');
+  const sMax = document.getElementById('filter-score-max');
+  sMin.addEventListener('input', () => {
+    let v = +sMin.value;
+    if (v > +sMax.value) { sMax.value = v; STATE.filters.scoreMax = v; document.getElementById('filter-score-max-val').textContent = v; }
+    STATE.filters.scoreMin = v;
+    document.getElementById('filter-score-min-val').textContent = v;
+    BiblioRouter.setParam('score_min', v === 0 ? null : v);
+    render(basePath);
+  });
+  sMax.addEventListener('input', () => {
+    let v = +sMax.value;
+    if (v < +sMin.value) { sMin.value = v; STATE.filters.scoreMin = v; document.getElementById('filter-score-min-val').textContent = v; }
+    STATE.filters.scoreMax = v;
+    document.getElementById('filter-score-max-val').textContent = v;
+    BiblioRouter.setParam('score_max', v === 10 ? null : v);
+    render(basePath);
+  });
+  // Checkboxes sources/formats
+  form.addEventListener('change', (e) => {
+    const t = e.target;
+    if (t.name === 'src') {
+      if (t.checked) STATE.filters.sources.add(t.value); else STATE.filters.sources.delete(t.value);
+    } else if (t.name === 'fmt') {
+      if (t.checked) STATE.filters.formats.add(t.value); else STATE.filters.formats.delete(t.value);
+    } else if (t.id === 'filter-bulle') {
+      STATE.filters.bulle = t.checked;
+      BiblioRouter.setParam('bulle', t.checked ? '1' : null);
+    } else if (t.id === 'filter-downloaded') {
+      STATE.filters.downloaded = t.checked;
+    } else if (t.id === 'filter-enriched') {
+      STATE.filters.enriched = t.checked;
+    }
+    render(basePath);
+  });
+  // Sort
+  document.getElementById('sort-select').addEventListener('change', e => {
+    STATE.sort = e.target.value;
+    BiblioRouter.setParam('sort', e.target.value === 'recent' ? null : e.target.value);
+    render(basePath);
+  });
+  // Reset
+  document.getElementById('filter-reset').addEventListener('click', () => {
+    STATE.filters = { q: '', scoreMin: 0, scoreMax: 10, sources: new Set(), formats: new Set(), bulle: false, downloaded: false, enriched: false };
+    document.getElementById('filter-q').value = '';
+    document.getElementById('filter-score-min').value = 0;
+    document.getElementById('filter-score-max').value = 10;
+    document.getElementById('filter-score-min-val').textContent = '0';
+    document.getElementById('filter-score-max-val').textContent = '10';
+    document.querySelectorAll('#filter-sources input, #filter-formats input').forEach(i => i.checked = false);
+    document.getElementById('filter-bulle').checked = false;
+    document.getElementById('filter-downloaded').checked = false;
+    document.getElementById('filter-enriched').checked = false;
+    window.history.replaceState({}, '', window.location.pathname);
+    render(basePath);
+  });
+  // Exports
+  document.getElementById('export-csv').addEventListener('click', () => exportCSV(filteredDocs()));
+  document.getElementById('export-bibtex').addEventListener('click', () => exportBibTeX(filteredDocs()));
+}
+
+function debounce(fn, wait) {
+  let t;
+  return function (...args) { clearTimeout(t); t = setTimeout(() => fn.apply(this, args), wait); };
+}
+
+function filteredDocs() {
+  let out = STATE.docs.slice();
+  // Score range
+  out = out.filter(d => {
+    const s = d.latest_score || 0;
+    return s >= STATE.filters.scoreMin && s <= STATE.filters.scoreMax;
+  });
+  // Sources
+  if (STATE.filters.sources.size > 0) {
+    out = out.filter(d => STATE.filters.sources.has(d.source));
+  }
+  if (STATE.filters.formats.size > 0) {
+    out = out.filter(d => STATE.filters.formats.has(d.format));
+  }
+  if (STATE.filters.bulle) out = out.filter(d => d.bulle);
+  if (STATE.filters.downloaded) out = out.filter(d => d.downloaded);
+  if (STATE.filters.enriched) out = out.filter(d => d.enrichment && d.enrichment.summary);
+  // Recherche full-text
+  if (STATE.filters.q.trim()) {
+    out = BiblioSearch.searchDocs(out, STATE.filters.q);
+  }
+  // Sort
+  switch (STATE.sort) {
+    case 'score-desc': out.sort((a,b) => (b.latest_score||0) - (a.latest_score||0)); break;
+    case 'score-asc':  out.sort((a,b) => (a.latest_score||0) - (b.latest_score||0)); break;
+    case 'title':      out.sort((a,b) => docTitle(a).localeCompare(docTitle(b), 'fr')); break;
+    case 'source':     out.sort((a,b) => (a.source||'').localeCompare(b.source||'', 'fr')); break;
+    case 'recent':
+    default:           out.sort((a,b) => (b._latestRunDate||'').localeCompare(a._latestRunDate||''));
+  }
+  return out;
+}
+
+function render(basePath) {
+  const docs = filteredDocs();
+  document.getElementById('result-count').textContent =
+    `${docs.length} fiche${docs.length > 1 ? 's' : ''} sur ${STATE.docs.length}`;
+  const grid = document.getElementById('catalog-grid');
+  if (docs.length === 0) {
+    grid.className = 'catalog-grid empty';
+    grid.innerHTML = 'Aucune fiche ne correspond. Essayez d\'élargir vos filtres.';
+    return;
+  }
+  grid.className = 'catalog-grid';
+  grid.innerHTML = docs.map(d => bookCardHTML(d, basePath)).join('');
+}
+
+function bookCardHTML(doc, basePath) {
+  const url = BiblioRouter.ficheUrl(doc.id, basePath);
+  const cover = coverPath(doc, basePath);
+  const title = docTitle(doc);
+  const score = doc.latest_score || 0;
+  const author = docAuthor(doc) || doc.source || '';
+  const featuredClass = doc.bulle ? ' featured-mini' : '';
+  return `
+    <a href="${escape(url)}" class="book-card${featuredClass} fade-in" aria-label="Lire la fiche : ${escape(title)}">
+      <div class="book-cover" data-initial="${escape(title.slice(0,1).toUpperCase())}">
+        <img src="${escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.textContent=this.parentNode.dataset.initial||'';">
+      </div>
+      <div class="book-info">
+        <h4 class="book-title">${escape(title)}</h4>
+        <div class="book-meta">${escape(author)}</div>
+        <span class="score-pill ${scoreClass(score)}">${score}/10</span>
+      </div>
+    </a>
+  `;
+}
+
+/* ===== Exports ===== */
+function exportCSV(docs) {
+  const header = ['id', 'title', 'author', 'source', 'format', 'score', 'date', 'url'];
+  const rows = docs.map(d => [
+    d.id,
+    docTitle(d),
+    docAuthor(d) || '',
+    d.source || '',
+    d.format || '',
+    d.latest_score || 0,
+    d._latestRunDate || '',
+    d.url || '',
+  ]);
+  const csv = [header, ...rows]
+    .map(r => r.map(cell => '"' + String(cell).replace(/"/g, '""') + '"').join(','))
+    .join('\n');
+  downloadFile(csv, 'biblio-export.csv', 'text/csv');
+  toast(`${docs.length} fiche${docs.length > 1 ? 's' : ''} exportée${docs.length > 1 ? 's' : ''} en CSV`);
+}
+
+function exportBibTeX(docs) {
+  const eligible = docs.filter(d => (d.latest_score || 0) >= 7);
+  if (eligible.length === 0) {
+    toast('Aucune fiche avec score ≥ 7 dans la sélection.');
+    return;
+  }
+  const out = eligible.map(d => {
+    const id = d.id;
+    const title = (docTitle(d) || '').replace(/[{}]/g, '');
+    const author = (docAuthor(d) || '').replace(/[{}]/g, '');
+    const year = (d._latestRunDate || '').slice(0, 4);
+    const note = ((d.enrichment && d.enrichment.summary) || '')
+                   .slice(0, 200).replace(/\s+/g, ' ').replace(/[{}]/g, '');
+    return `@misc{${id},\n` +
+      `  title  = {${title}},\n` +
+      (author ? `  author = {${author}},\n` : '') +
+      (year ? `  year   = {${year}},\n` : '') +
+      `  url    = {${d.url || ''}},\n` +
+      (note ? `  note   = {${note}}\n` : '') +
+      `}`;
+  }).join('\n\n');
+  downloadFile(out, 'biblio-export.bib', 'application/x-bibtex');
+  toast(`${eligible.length} fiche${eligible.length > 1 ? 's' : ''} exportée${eligible.length > 1 ? 's' : ''} en BibTeX`);
+}
+
+function downloadFile(content, filename, mime) {
+  const blob = new Blob([content], { type: mime + ';charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = filename;
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  setTimeout(() => URL.revokeObjectURL(url), 500);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="max-age=3600">
+<title>BIBLIO — Bibliothèque documentaire ouverte</title>
+<meta name="description" content="Une veille documentaire ouverte sur les communs, la propriété d'usage, la libération des terres et les paysanneries. Fiches, citations, méthodologie transparente.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="BIBLIO — Nouvelles fiches" href="feed.xml">
+<link rel="canonical" href="https://biblio.actitude.org/">
+<!-- Open Graph -->
+<meta property="og:title" content="BIBLIO — Bibliothèque documentaire ouverte">
+<meta property="og:description" content="Communs, terres, paysanneries — une veille documentaire ouverte. Un projet de actitude.org.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://biblio.actitude.org/">
+<meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="index.html" class="brand" aria-label="BIBLIO — accueil">
+      <img src="assets/img/logo.svg" alt="" class="brand-mark">
+      <span class="brand-name">BIBLIO</span>
+      <span class="brand-sub">Bibliothèque documentaire ouverte</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="fiches/index.html">Catalogue</a>
+      <a href="apropos.html">Méthodologie</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <input type="search" id="header-search" placeholder="Rechercher…" aria-label="Rechercher dans la bibliothèque">
+        <span class="kbd" aria-hidden="true">/</span>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Basculer le thème"></button>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container">
+      <h1 id="hero-title">BIBLIO</h1>
+      <p class="tagline">Bibliothèque documentaire ouverte.<br>Communs, terres, paysanneries.</p>
+      <p class="by-line">Un projet de veille de <a href="https://actitude.org" rel="noopener">actitude.org</a></p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="featured-title">
+    <div class="container">
+      <span class="section-kicker">Sélection de la rédaction</span>
+      <h2 id="featured-title" class="section-title">À la une</h2>
+      <p class="section-lede">
+        Quelques textes que nous avons lus avec attention. Chaque entrée propose un angle :
+        un fragment d'archive, une enquête militante, une recherche universitaire qui éclaire
+        autrement le rapport à la terre, à l'usage, au commun.
+      </p>
+      <div class="featured" id="featured-grid" aria-live="polite">
+        <p class="text-center" style="grid-column:1/-1;color:var(--text-faint);">Chargement…</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="recent-title">
+    <div class="container">
+      <span class="section-kicker">Catalogue</span>
+      <h2 id="recent-title" class="section-title">Récemment ajoutés</h2>
+      <p class="section-lede">
+        Les dernières fiches versées au catalogue. Notre veille parcourt en continu archives
+        anarchistes, dépôts universitaires, revues paysannes et infokiosques.
+      </p>
+      <div class="recent-grid" id="recent-grid" aria-live="polite"></div>
+      <p class="text-center mt-3">
+        <a href="fiches/index.html" class="btn btn-primary">Parcourir tout le catalogue</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="stats-title">
+    <div class="container">
+      <span class="section-kicker">En un coup d'œil</span>
+      <h2 id="stats-title" class="section-title">L'état de la veille</h2>
+      <div class="stats" id="stats-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="method-title">
+    <div class="container">
+      <span class="section-kicker">Comment nous travaillons</span>
+      <h2 id="method-title" class="section-title">Méthodologie en bref</h2>
+      <div class="three-col mt-3">
+        <article>
+          <div class="col-num">I.</div>
+          <h3>Une veille ouverte et automatisée</h3>
+          <p>
+            Plusieurs fois par semaine, des scripts parcourent des sources éditoriales
+            choisies — infokiosques, dépôts universitaires, archives anarchistes —
+            et signalent les nouveaux documents susceptibles de toucher à nos thèmes.
+          </p>
+        </article>
+        <article>
+          <div class="col-num">II.</div>
+          <h3>Lecture, scoring, synopsis</h3>
+          <p>
+            Chaque document est analysé : un score de pertinence (0-10) est attribué,
+            un résumé est rédigé, des citations remarquables sont extraites.
+            Tout est public et critiquable.
+          </p>
+        </article>
+        <article>
+          <div class="col-num">III.</div>
+          <h3>Une éthique éditoriale</h3>
+          <p>
+            Les fiches sont des points de départ, jamais des verdicts. Le scoring est
+            automatique, faillible, et chaque texte cité reste accessible à sa source d'origine.
+            <a href="apropos.html">Lire la méthodologie complète →</a>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div>
+      <h4>BIBLIO</h4>
+      <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
+      <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+    </div>
+    <div>
+      <h4>Naviguer</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fiches/index.html">Catalogue</a></li>
+        <li><a href="apropos.html">Méthodologie</a></li>
+        <li><a href="feed.xml">Flux RSS</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Code &amp; licence</h4>
+      <ul>
+        <li><a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">Code source</a></li>
+        <li>Fiches sous licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+      </ul>
+    </div>
+    <div class="colophon">
+      <span>© 2026 BIBLIO · <code>biblio.actitude.org</code></span>
+      <span>Construit en HTML, CSS et JavaScript. Sans tracker.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/router.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+/* ===== Page d'accueil — chargement et rendu ===== */
+window.pageInit = function (basePath) {
+  loadCatalog(basePath).then(({ meta, docs, _error }) => {
+    if (_error) {
+      ['featured-grid','recent-grid','stats-grid'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-faint);font-style:italic;">Le catalogue n\'a pas encore été déployé sur ce site. <br>Lancez la veille (<code>scripts/watch.py</code>) pour générer <code>site/data/catalog.json</code>.</p>';
+      });
+      return;
+    }
+    renderFeatured(docs, basePath);
+    renderRecent(docs, basePath);
+    renderStats(meta, docs);
+  });
+};
+
+function renderFeatured(docs, basePath) {
+  const wrap = document.getElementById('featured-grid');
+  if (!wrap) return;
+  // Priorité : docs avec bulle + score le plus élevé, sinon score >= 7
+  const withBulle = docs.filter(d => d.bulle);
+  const sortByScore = (a, b) => (b.latest_score || 0) - (a.latest_score || 0);
+  let picks = withBulle.sort(sortByScore).slice(0, 3);
+  if (picks.length < 3) {
+    const fallback = docs.filter(d => !d.bulle && (d.latest_score || 0) >= 7)
+                         .sort(sortByScore).slice(0, 3 - picks.length);
+    picks = picks.concat(fallback);
+  }
+  if (picks.length === 0) {
+    wrap.innerHTML = '<p class="text-center" style="grid-column:1/-1;color:var(--text-faint);font-style:italic;">Aucune sélection à la une pour l\'instant. Le catalogue se construit.</p>';
+    return;
+  }
+  // Charge les bulles en parallèle
+  Promise.all(picks.map(d => d.bulle ? loadBulle(d.id, basePath).then(b => { d.bulle_data = b; }) : Promise.resolve()))
+    .then(() => {
+      wrap.innerHTML = picks.map(d => featuredCardHTML(d, basePath)).join('');
+    });
+}
+
+function featuredCardHTML(doc, basePath) {
+  const url = BiblioRouter.ficheUrl(doc.id, basePath);
+  const cover = coverPath(doc, basePath);
+  const title = docTitle(doc);
+  const teaser = docTeaser(doc);
+  const src = doc.source || '';
+  const date = formatDate(doc._latestRunDate || doc.latest_run);
+  return `
+    <article class="featured-card fade-in">
+      <span class="ribbon">À la une</span>
+      <a href="${escape(url)}" class="featured-cover" aria-label="Lire la fiche : ${escape(title)}" data-initial="${escape(title.slice(0,1).toUpperCase())}">
+        <img src="${escape(cover)}" alt="" loading="lazy" onerror="this.style.display='none';this.parentNode.style.display='flex';this.parentNode.style.alignItems='center';this.parentNode.style.justifyContent='center';this.parentNode.style.fontFamily='var(--font-serif)';this.parentNode.style.fontSize='80px';this.parentNode.style.color='var(--text-faint)';this.parentNode.textContent=this.parentNode.dataset.initial||'';">
+      </a>
+      <div class="featured-body">
+        <h3 class="featured-title">
+          <a href="${escape(url)}" class="featured-title-link">${escape(title)}</a>
+        </h3>
+        <p class="featured-teaser">${escape(teaser)}</p>
+        <div class="featured-meta">${escape(src)}${date ? ' · ' + escape(date) : ''}</div>
+      </div>
+    </article>
+  `;
+}
+
+function renderRecent(docs, basePath) {
+  const wrap = document.getElementById('recent-grid');
+  if (!wrap) return;
+  const recent = docs
+    .slice()
+    .sort((a, b) => (b._latestRunDate || '').localeCompare(a._latestRunDate || ''))
+    .slice(0, 6);
+  if (recent.length === 0) {
+    wrap.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-faint);">Aucune fiche pour l\'instant.</p>';
+    return;
+  }
+  wrap.innerHTML = recent.map(d => bookCardHTML(d, basePath)).join('');
+}
+
+function bookCardHTML(doc, basePath) {
+  const url = BiblioRouter.ficheUrl(doc.id, basePath);
+  const cover = coverPath(doc, basePath);
+  const title = docTitle(doc);
+  const score = doc.latest_score || 0;
+  const author = docAuthor(doc) || doc.source || '';
+  const featuredClass = doc.bulle ? ' featured-mini' : '';
+  return `
+    <a href="${escape(url)}" class="book-card${featuredClass} fade-in" aria-label="Lire la fiche : ${escape(title)}">
+      <div class="book-cover" data-initial="${escape(title.slice(0,1).toUpperCase())}">
+        <img src="${escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.textContent=this.parentNode.dataset.initial||'';">
+      </div>
+      <div class="book-info">
+        <h4 class="book-title">${escape(title)}</h4>
+        <div class="book-meta">${escape(author)}</div>
+        <span class="score-pill ${scoreClass(score)}">${score}/10</span>
+      </div>
+    </a>
+  `;
+}
+
+function renderStats(meta, docs) {
+  const wrap = document.getElementById('stats-grid');
+  if (!wrap) return;
+  const total = docs.length;
+  const withBulle = docs.filter(d => d.bulle).length;
+  const sources = new Set(docs.map(d => d.source).filter(Boolean));
+  const latest = docs.map(d => d._latestRunDate).filter(Boolean).sort().slice(-1)[0];
+
+  wrap.innerHTML = `
+    <div class="stat"><div class="stat-num">${total}</div><div class="stat-label">Fiches au catalogue</div></div>
+    <div class="stat"><div class="stat-num">${sources.size}</div><div class="stat-label">Sources surveillées</div></div>
+    <div class="stat"><div class="stat-num">${withBulle}</div><div class="stat-label">Publications à la une</div></div>
+    <div class="stat"><div class="stat-num" style="font-size:22px;line-height:1.4;">${escape(formatDate(latest) || '—')}</div><div class="stat-label">Dernière veille</div></div>
+  `;
+}
+</script>
+
+</body>
+</html>

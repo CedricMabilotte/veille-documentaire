@@ -371,6 +371,127 @@ def generate_interface(catalog_path: Path = SYNOPSIS_PATH / "catalog.json") -> N
     print(f"  🖥  Interface générée : {out} ({len(catalog['docs'])} fiches)")
 
 
+SITE_PATH = Path("site")
+SITE_BASE_URL = "https://biblio.actitude.org"
+
+
+def publish_site(run_date: str) -> None:
+    """Prépare le dossier site/ pour publication :
+    - copie le catalog vers site/data/catalog.json
+    - copie les bulles vers site/data/bulles/
+    - copie les couvertures vers site/assets/covers/
+    - régénère feed.xml et sitemap.xml dynamiquement
+    """
+    import shutil
+
+    if not SITE_PATH.exists():
+        print("  ⚠  site/ inexistant — skip publish")
+        return
+
+    # 1. Catalog
+    catalog_src = SYNOPSIS_PATH / "catalog.json"
+    if catalog_src.exists():
+        (SITE_PATH / "data").mkdir(parents=True, exist_ok=True)
+        shutil.copy2(catalog_src, SITE_PATH / "data" / "catalog.json")
+
+    # 2. Bulles
+    site_bulles = SITE_PATH / "data" / "bulles"
+    site_bulles.mkdir(parents=True, exist_ok=True)
+    bulle_count = 0
+    for b in BULLES_PATH.glob("*.json"):
+        shutil.copy2(b, site_bulles / b.name)
+        bulle_count += 1
+
+    # 3. Couvertures
+    site_covers = SITE_PATH / "assets" / "covers"
+    site_covers.mkdir(parents=True, exist_ok=True)
+    cover_count = 0
+    for c in COVERS_PATH.glob("*.png"):
+        shutil.copy2(c, site_covers / c.name)
+        cover_count += 1
+
+    # 4. Génération RSS + sitemap
+    catalog = json.loads(catalog_src.read_text(encoding="utf-8"))
+    _write_rss(catalog, run_date)
+    _write_sitemap(catalog)
+
+    print(f"  🌐 Site publié : {cover_count} couvertures, {bulle_count} bulles, "
+          f"{len(catalog.get('docs', {}))} fiches au catalog")
+
+
+def _write_rss(catalog: dict, run_date: str) -> None:
+    """RSS 2.0 des 30 dernières fiches scorées ≥ 7."""
+    docs = sorted(
+        catalog.get("docs", {}).values(),
+        key=lambda d: (d.get("latest_run", ""), d.get("latest_score", 0)),
+        reverse=True,
+    )
+    items = []
+    for d in docs[:30]:
+        if d.get("latest_score", 0) < 7:
+            continue
+        title = d.get("filename", d.get("id", ""))
+        if d.get("runs"):
+            link_text = d["runs"][-1].get("link_text", "")
+            if link_text:
+                title = link_text
+        url_fiche = f"{SITE_BASE_URL}/fiches/fiche.html?id={d['id']}"
+        description = (d.get("enrichment", {}).get("summary", "") or
+                       (d.get("runs", [{}])[-1] if d.get("runs") else {}).get("raison", ""))
+        # Échapper les XML chars
+        title = _xml_escape(title)
+        description = _xml_escape(description[:600])
+        items.append(f"""    <item>
+      <title>{title}</title>
+      <link>{url_fiche}</link>
+      <guid isPermaLink="true">{url_fiche}</guid>
+      <description>{description}</description>
+      <category>{_xml_escape(d.get('source', ''))}</category>
+    </item>""")
+
+    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>BIBLIO — bibliothèque documentaire ouverte</title>
+    <link>{SITE_BASE_URL}/</link>
+    <description>Veille documentaire : communs, terres, paysanneries</description>
+    <language>fr</language>
+    <lastBuildDate>{run_date}</lastBuildDate>
+    <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="{SITE_BASE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
+{chr(10).join(items)}
+  </channel>
+</rss>
+"""
+    (SITE_PATH / "feed.xml").write_text(rss, encoding="utf-8")
+
+
+def _write_sitemap(catalog: dict) -> None:
+    """Sitemap XML avec les pages principales + une fiche par doc."""
+    urls = [
+        f"{SITE_BASE_URL}/",
+        f"{SITE_BASE_URL}/fiches/",
+        f"{SITE_BASE_URL}/apropos.html",
+    ]
+    for d in catalog.get("docs", {}).values():
+        urls.append(f"{SITE_BASE_URL}/fiches/fiche.html?id={d['id']}")
+    body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
+    sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{body}
+</urlset>
+"""
+    (SITE_PATH / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+
+
+def _xml_escape(s: str) -> str:
+    return (str(s or "")
+            .replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace('"', "&quot;")
+            .replace("'", "&apos;"))
+
+
 def save_markdown_report(report: dict, path: Path) -> None:
     """Écrit un rapport Markdown lisible, avec stats par source."""
     lines = [
@@ -547,6 +668,7 @@ def main() -> None:
     save_markdown_report(report, json_path)
     update_synopsis_catalog(report)
     generate_interface()
+    publish_site(run_date)
 
     print(f"""
 ╔══════════════════════════════════════════╗

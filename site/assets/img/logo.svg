@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <!-- Livre ouvert stylisé + initiale B -->
+  <path d="M8 14c0-1.1.9-2 2-2h18c2.2 0 4 1.8 4 4v36c0-2.2-1.8-4-4-4H10c-1.1 0-2-.9-2-2V14z"
+        fill="#a44a2c" opacity="0.92"/>
+  <path d="M56 14c0-1.1-.9-2-2-2H36c-2.2 0-4 1.8-4 4v36c0-2.2 1.8-4 4-4h18c1.1 0 2-.9 2-2V14z"
+        fill="#5a7048" opacity="0.92"/>
+  <path d="M32 16v36" stroke="#231f1c" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- Petite étoile / repère -->
+  <circle cx="32" cy="10" r="2.6" fill="#a88930"/>
+</svg>

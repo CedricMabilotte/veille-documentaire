@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="max-age=3600">
+<title>Méthodologie — BIBLIO</title>
+<meta name="description" content="Comment fonctionne BIBLIO : sources surveillées, scoring automatique, éthique éditoriale, glossaire des mots-clés thématiques.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="BIBLIO — Nouvelles fiches" href="feed.xml">
+<link rel="canonical" href="https://biblio.actitude.org/apropos.html">
+<meta property="og:title" content="Méthodologie — BIBLIO">
+<meta property="og:description" content="Comment fonctionne notre veille documentaire : sources, scoring, éthique éditoriale.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="index.html" class="brand" aria-label="BIBLIO — accueil">
+      <img src="assets/img/logo.svg" alt="" class="brand-mark">
+      <span class="brand-name">BIBLIO</span>
+      <span class="brand-sub">Bibliothèque documentaire ouverte</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="fiches/index.html">Catalogue</a>
+      <a href="apropos.html">Méthodologie</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <input type="search" id="header-search" placeholder="Rechercher…" aria-label="Rechercher dans la bibliothèque">
+        <span class="kbd" aria-hidden="true">/</span>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Basculer le thème"></button>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav aria-label="fil d'Ariane">
+      <ol class="breadcrumbs">
+        <li><a href="index.html">Accueil</a></li>
+        <li>Méthodologie</li>
+      </ol>
+    </nav>
+
+    <article class="page fade-in">
+      <h1>Méthodologie</h1>
+      <p class="lede">
+        BIBLIO est une bibliothèque ouverte. Tout y est public : les sources que nous surveillons,
+        la façon dont nous lisons et résumons les textes, le code qui anime la veille. Voici comment
+        cela fonctionne — et pourquoi nous tenons à le dire.
+      </p>
+
+      <h2>L'intention</h2>
+      <p>
+        BIBLIO documente, en continu, ce qui s'écrit sur les <strong>communs</strong>, la
+        <strong>propriété d'usage</strong>, la <strong>libération des terres</strong>, les
+        <strong>paysanneries</strong> et toutes les pratiques qui questionnent la propriété privée
+        comme rapport au monde. Le catalogue n'est ni exhaustif ni neutre : il reflète des choix
+        éditoriaux assumés.
+      </p>
+      <p>
+        Le public visé : militants des communs, chercheurs en sciences sociales, journalistes qui
+        veulent étoffer une enquête, étudiants en quête de sources primaires. La bibliothèque sert
+        de point d'entrée — jamais de mot final.
+      </p>
+
+      <h2>Le processus de veille</h2>
+      <ol>
+        <li>
+          <strong>Collecte.</strong> Plusieurs fois par semaine, un script
+          (<a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">code source ouvert</a>)
+          parcourt une liste de sources éditoriales identifiées et repère les nouveaux documents.
+        </li>
+        <li>
+          <strong>Première lecture.</strong> Pour chaque candidat, un modèle de langage
+          (Claude, d'Anthropic) attribue un <em>score de pertinence</em> entre 0 et 10
+          et rédige une justification courte.
+        </li>
+        <li>
+          <strong>Téléchargement &amp; analyse.</strong> Les documents jugés pertinents
+          (typiquement score ≥ 3) sont récupérés, leur première page est extraite en couverture,
+          le texte est traité pour générer un synopsis détaillé et extraire des citations remarquables.
+        </li>
+        <li>
+          <strong>Bulles de publication.</strong> Les documents les plus pertinents (score ≥ 9)
+          reçoivent un traitement éditorial supplémentaire : titre accrocheur, teaser,
+          abstract long écrit pour mettre en évidence l'intérêt du texte.
+        </li>
+        <li>
+          <strong>Mise en ligne.</strong> Le catalogue est versionné et publié automatiquement
+          ici. Chaque mise à jour est tracée.
+        </li>
+      </ol>
+
+      <div class="callout">
+        <p>
+          Le score est attribué par une intelligence artificielle. Il est <strong>indicatif</strong>,
+          parfois injuste, souvent imparfait. Un score bas ne signifie pas qu'un texte est mauvais —
+          juste qu'il sort du périmètre thématique de cette veille. Lisez par vous-mêmes.
+        </p>
+      </div>
+
+      <h2>Sources surveillées</h2>
+      <p>
+        Notre veille parcourt une trentaine de sources : infokiosques, dépôts universitaires
+        (HAL, OpenEdition), archives anarchistes (The Anarchist Library, infokiosques.net),
+        revues spécialisées, sites de mouvements paysans. La liste évolue : nous ajoutons et
+        retirons des sources au fil de l'usage.
+      </p>
+      <p>
+        La liste complète à jour est publiée dans
+        <a href="https://github.com/CedricMabilotte/veille-documentaire/blob/main/config/sources.yml" rel="noopener"><code>config/sources.yml</code></a>
+        du dépôt public.
+      </p>
+
+      <h2>Glossaire — mots-clés thématiques</h2>
+      <p>Voici les notions qui orientent notre veille. Chaque entrée renvoie à ce que nous cherchons concrètement dans les textes.</p>
+
+      <h3>Communs</h3>
+      <p>
+        Ressources gérées collectivement, indépendamment des cadres État/marché. Les communs ne
+        sont pas seulement des choses (forêts, savoirs, eau) : ce sont des pratiques sociales
+        d'usage et de gouvernance partagée.
+      </p>
+
+      <h3>Propriété d'usage</h3>
+      <p>
+        Conception du droit de propriété fondée sur l'usage réel et continu, par opposition à la
+        propriété privée absolue. Concept central pour penser une sortie du capitalisme foncier.
+      </p>
+
+      <h3>Libération des terres</h3>
+      <p>
+        Pratiques d'occupation, de réappropriation ou de sortie de la spéculation foncière :
+        ZAD, fonds de portage, baux ruraux environnementaux, conservatoires terrestres.
+      </p>
+
+      <h3>Paysannerie</h3>
+      <p>
+        Modes d'existence agricoles qui ne se réduisent pas à l'agriculture marchande : autonomie
+        productive, savoirs vernaculaires, transmission, lutte pour la terre. La paysannerie est
+        un acteur historique, politique et culturel.
+      </p>
+
+      <h3>Alternatives à la propriété privée</h3>
+      <p>
+        Coopératives, fiducies foncières, foncières agricoles solidaires, communautés
+        intentionnelles, biens communs informationnels : toute pratique qui inscrit l'usage
+        dans un cadre collectif.
+      </p>
+
+      <h2>Éthique éditoriale</h2>
+      <ul>
+        <li>
+          <strong>Transparence.</strong> Le code, les sources, les prompts, les scores : tout est
+          publié et critiquable.
+        </li>
+        <li>
+          <strong>Respect des auteurs.</strong> Les fiches renvoient toujours vers le texte
+          original. Nous ne re-hébergeons pas les contenus sans nécessité, ne masquons aucune
+          paternité.
+        </li>
+        <li>
+          <strong>Pluralisme.</strong> Notre veille inclut des textes universitaires comme des
+          tracts militants, des récits paysans comme des manifestes anarchistes. Le score reflète
+          la pertinence thématique, pas la respectabilité académique.
+        </li>
+        <li>
+          <strong>Faillibilité.</strong> Les analyses automatiques contiennent des erreurs.
+          Signalez-les : <a href="mailto:contact@actitude.org">contact@actitude.org</a>.
+        </li>
+      </ul>
+
+      <h2>Licence &amp; réutilisation</h2>
+      <p>
+        Les fiches éditorialisées (synopsis, abstracts, bulles) sont publiées sous licence
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a>.
+        Vous pouvez les reprendre, citer, traduire, à condition de créditer
+        <em>BIBLIO — actitude.org</em> et de partager dans les mêmes conditions.
+      </p>
+      <p>
+        Les textes originaux référencés appartiennent à leurs auteurs et éditeurs respectifs.
+        Le code source du projet est sous licence
+        <a href="https://opensource.org/license/mit/" rel="noopener">MIT</a>.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Une suggestion de source ? Une erreur signalée ? Une fiche à enrichir ?
+        Écrivez-nous : <a href="mailto:contact@actitude.org">contact@actitude.org</a>,
+        ou ouvrez une <em>issue</em> sur
+        <a href="https://github.com/CedricMabilotte/veille-documentaire/issues" rel="noopener">GitHub</a>.
+      </p>
+
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div>
+      <h4>BIBLIO</h4>
+      <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
+      <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+    </div>
+    <div>
+      <h4>Naviguer</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fiches/index.html">Catalogue</a></li>
+        <li><a href="apropos.html">Méthodologie</a></li>
+        <li><a href="feed.xml">Flux RSS</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Code &amp; licence</h4>
+      <ul>
+        <li><a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">Code source</a></li>
+        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+      </ul>
+    </div>
+    <div class="colophon">
+      <span>© 2026 BIBLIO · <code>biblio.actitude.org</code></span>
+      <span>HTML, CSS, JavaScript. Sans tracker.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/router.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

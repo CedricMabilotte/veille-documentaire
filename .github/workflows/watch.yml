@@ -93,6 +93,23 @@ jobs:
         run: |
           git config --global user.name  "Library Bot"
           git config --global user.email "bot@library.local"
-          git add reports/ synopsis/ interface/ bulles/
-          git diff --staged --quiet || git commit -m "veille: $(date '+%Y-%m-%d %H:%M') — rapports + catalog + interface + bulles"
+          git add reports/ synopsis/ interface/ bulles/ site/
+          git diff --staged --quiet || git commit -m "veille: $(date '+%Y-%m-%d %H:%M') — rapports + catalog + interface + bulles + site"
           git push
+
+      - name: Publier vers biblio.actitude.org (repo public)
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        env:
+          PUBLISH_TOKEN: ${{ secrets.BIBLIO_PUBLISH_TOKEN }}
+        run: |
+          # Cloner le repo public dédié
+          git clone "https://x-access-token:${PUBLISH_TOKEN}@github.com/CedricMabilotte/biblio-actitude-org.git" /tmp/biblio
+          # Synchroniser le contenu de site/ (en préservant le .git du repo public)
+          rsync -a --delete --exclude='.git' site/ /tmp/biblio/
+          cd /tmp/biblio
+          git config user.name  "Library Bot"
+          git config user.email "bot@library.local"
+          git add -A
+          git diff --staged --quiet || git commit -m "publish: veille $(date '+%Y-%m-%d %H:%M')"
+          git push origin main
+          echo "→ Publié sur https://biblio.actitude.org (sous réserve du DNS) ou https://cedricmabilotte.github.io/biblio-actitude-org/"

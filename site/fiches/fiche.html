@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="max-age=3600">
+<title>Fiche — BIBLIO</title>
+<meta name="description" content="Fiche documentaire BIBLIO — analyse, citations, contexte.">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="BIBLIO — Nouvelles fiches" href="../feed.xml">
+<meta property="og:title" content="Fiche — BIBLIO">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="manifest" href="../manifest.json">
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="../index.html" class="brand" aria-label="BIBLIO — accueil">
+      <img src="../assets/img/logo.svg" alt="" class="brand-mark">
+      <span class="brand-name">BIBLIO</span>
+      <span class="brand-sub">Bibliothèque documentaire ouverte</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <a href="../index.html">Accueil</a>
+      <a href="index.html">Catalogue</a>
+      <a href="../apropos.html">Méthodologie</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <input type="search" id="header-search" placeholder="Rechercher…" aria-label="Rechercher dans la bibliothèque">
+        <span class="kbd" aria-hidden="true">/</span>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Basculer le thème"></button>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav aria-label="fil d'Ariane">
+      <ol class="breadcrumbs">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="index.html">Catalogue</a></li>
+        <li id="bc-current">Fiche</li>
+      </ol>
+    </nav>
+
+    <article class="fiche" id="fiche-root">
+      <p style="grid-column:1/-1;color:var(--text-faint);text-align:center;padding:60px 0;font-style:italic;">
+        Chargement de la fiche…
+      </p>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div>
+      <h4>BIBLIO</h4>
+      <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
+      <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+    </div>
+    <div>
+      <h4>Naviguer</h4>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="index.html">Catalogue</a></li>
+        <li><a href="../apropos.html">Méthodologie</a></li>
+        <li><a href="../feed.xml">Flux RSS</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Code &amp; licence</h4>
+      <ul>
+        <li><a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">Code source</a></li>
+        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+      </ul>
+    </div>
+    <div class="colophon">
+      <span>© 2026 BIBLIO · <code>biblio.actitude.org</code></span>
+      <span>HTML, CSS, JavaScript. Sans tracker.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/router.js"></script>
+<script src="../assets/js/search.js"></script>
+<script src="../assets/js/app.js"></script>
+<script>
+window.pageInit = function (basePath) {
+  const id = BiblioRouter.getParam('id');
+  if (!id) { showError("Identifiant manquant dans l'URL."); return; }
+
+  loadCatalog(basePath).then(({ docs }) => {
+    const doc = docs.find(d => d.id === id);
+    if (!doc) { showError(`Aucune fiche pour l'identifiant ${id}.`); return; }
+
+    // Si bulle disponible : la charger d'abord
+    const bullePromise = doc.bulle ? loadBulle(doc.id, basePath) : Promise.resolve(null);
+    bullePromise.then(bulle => {
+      doc.bulle_data = bulle;
+      renderFiche(doc, basePath);
+      updateMetaTags(doc, basePath);
+    });
+  });
+};
+
+function showError(msg) {
+  document.getElementById('fiche-root').innerHTML =
+    `<div style="grid-column:1/-1;text-align:center;padding:60px 0;">
+       <p style="color:var(--text-faint);font-style:italic;">${escape(msg)}</p>
+       <p><a href="index.html" class="btn">Retour au catalogue</a></p>
+     </div>`;
+}
+
+function updateMetaTags(doc, basePath) {
+  const title = docTitle(doc);
+  document.title = `${title} — BIBLIO`;
+  document.getElementById('bc-current').textContent = title.length > 60 ? title.slice(0, 60) + '…' : title;
+  const meta = document.querySelector('meta[name="description"]');
+  if (meta) meta.setAttribute('content', (docTeaser(doc) || docSummary(doc) || '').slice(0, 180));
+  // OG image : couverture si présente
+  document.querySelectorAll('meta[property="og:title"]').forEach(m => m.setAttribute('content', title + ' — BIBLIO'));
+}
+
+function renderFiche(doc, basePath) {
+  const root = document.getElementById('fiche-root');
+  const title = docTitle(doc);
+  const cover = coverPath(doc, basePath);
+  const author = docAuthor(doc);
+  const score = doc.latest_score || 0;
+  const run = docLatestRun(doc);
+  const summary = docSummary(doc);
+  const citations = (doc.bulle_data && doc.bulle_data.citations_phares)
+                 || (doc.enrichment && doc.enrichment.citations)
+                 || [];
+  const keywords = (doc.bulle_data && doc.bulle_data.categorisation)
+                || (doc.enrichment && doc.enrichment.matched_keywords)
+                || [];
+  const subtitle = doc.bulle_data && doc.bulle_data.teaser ? doc.bulle_data.teaser : '';
+  const hasBulle = !!doc.bulle_data;
+  const shareUrl = window.location.href;
+
+  root.innerHTML = `
+    <aside class="fiche-cover-wrap">
+      <div class="fiche-cover" data-initial="${escape(title.slice(0,1).toUpperCase())}">
+        <img src="${escape(cover)}" alt="Couverture de ${escape(title)}" onerror="this.parentNode.classList.add('placeholder');this.parentNode.style.display='flex';this.parentNode.style.alignItems='center';this.parentNode.style.justifyContent='center';this.parentNode.style.fontFamily='var(--font-serif)';this.parentNode.style.fontSize='80px';this.parentNode.style.color='var(--text-faint)';this.parentNode.textContent=this.parentNode.dataset.initial||'';">
+      </div>
+      <div class="fiche-actions">
+        ${doc.url ? `<a href="${escape(doc.url)}" class="btn btn-primary" target="_blank" rel="noopener">Lire la source</a>` : ''}
+        <button type="button" class="btn" id="btn-share">Copier le lien</button>
+        <a href="index.html" class="btn">Retour au catalogue</a>
+      </div>
+    </aside>
+
+    <section class="fiche-body fade-in">
+      ${hasBulle ? `<span class="fiche-bulle-ribbon">★ Sélection de la rédaction</span>` : ''}
+      <h1 class="fiche-title">${escape(title)}</h1>
+      ${subtitle ? `<p class="fiche-subtitle">${escape(subtitle)}</p>` : ''}
+
+      <dl class="fiche-meta-grid">
+        ${author ? `<div><dt>Auteur</dt><dd>${escape(author)}</dd></div>` : ''}
+        <div><dt>Source</dt><dd>${escape(doc.source || '—')}</dd></div>
+        <div><dt>Format</dt><dd>${escape((doc.format || '').toUpperCase())}${doc.meta && doc.meta.page_count ? ' · ' + doc.meta.page_count + ' p.' : ''}</dd></div>
+        <div><dt>Score</dt><dd><span class="score-pill ${scoreClass(score)}">${score}/10</span></dd></div>
+        <div><dt>Dernière veille</dt><dd>${escape(formatDate(doc._latestRunDate))}</dd></div>
+        <div><dt>Identifiant</dt><dd><code>${escape(doc.id)}</code></dd></div>
+      </dl>
+
+      ${run && run.raison ? `
+        <section class="fiche-section">
+          <h2>Pourquoi cette fiche</h2>
+          <p class="prose" style="font-style:italic;color:var(--text-dim);">${escape(run.raison)}</p>
+        </section>
+      ` : ''}
+
+      ${summary ? `
+        <section class="fiche-section">
+          <h2>${hasBulle ? 'Abstract éditorial' : 'Synopsis'}</h2>
+          <div class="prose">${summary.split(/\n\n+/).map(p => `<p>${escape(p)}</p>`).join('')}</div>
+        </section>
+      ` : ''}
+
+      ${citations.length ? `
+        <section class="fiche-section">
+          <h2>Citations</h2>
+          ${citations.map(c => `
+            <blockquote class="citation-block">
+              ${escape(c.quote || '')}
+              <span class="quote-meta">${c.page ? `p. ${escape(c.page)}` : ''}${c.why_relevant ? ' — ' + escape(c.why_relevant) : ''}</span>
+            </blockquote>
+          `).join('')}
+        </section>
+      ` : ''}
+
+      ${keywords.length ? `
+        <section class="fiche-section">
+          <h2>Mots-clés</h2>
+          <div class="keywords">${keywords.map(k => `<span class="kw">${escape(k)}</span>`).join('')}</div>
+        </section>
+      ` : ''}
+
+      ${doc.runs && doc.runs.length > 1 ? `
+        <section class="fiche-section">
+          <h2>Historique de la veille</h2>
+          <ul style="list-style:none;padding:0;margin:0;">
+            ${doc.runs.slice().reverse().map(r => `
+              <li style="border-left:2px solid var(--border);padding:6px 0 6px 14px;margin-bottom:10px;">
+                <strong style="font-family:var(--font-serif);">${escape(formatDate(r.date))}</strong>
+                <span class="score-pill ${scoreClass(r.score)}" style="margin-left:8px;">${r.score}/10</span>
+                ${r.raison ? `<div style="color:var(--text-dim);font-size:14px;margin-top:4px;">${escape(r.raison)}</div>` : ''}
+              </li>
+            `).join('')}
+          </ul>
+        </section>
+      ` : ''}
+
+      <section class="fiche-section" style="border-top:1px solid var(--border);padding-top:24px;">
+        <p style="font-size:13px;color:var(--text-faint);">
+          Cette fiche est un point de départ. Le scoring est automatique : il peut errer.
+          Le texte original reste la référence. <a href="../apropos.html">Méthodologie complète →</a>
+        </p>
+      </section>
+    </section>
+  `;
+
+  // Bouton de partage
+  const btn = document.getElementById('btn-share');
+  if (btn) {
+    btn.addEventListener('click', () => {
+      copyToClipboard(shareUrl).then(() => toast('Lien copié dans le presse-papier'));
+    });
+  }
+}
+</script>
+
+</body>
+</html>

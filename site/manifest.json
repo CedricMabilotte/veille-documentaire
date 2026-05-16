@@ -1,0 +1,25 @@
+{
+  "name": "BIBLIO — Bibliothèque documentaire ouverte",
+  "short_name": "BIBLIO",
+  "description": "Veille documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f7f2e7",
+  "theme_color": "#a44a2c",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
