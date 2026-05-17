@@ -40,6 +40,60 @@ def compute_hash(pdf_path: Path) -> str:
     return h.hexdigest()
 
 
+def compute_text_fingerprint(pdf_path: Path,
+                              max_pages: int = 30,
+                              min_word_len: int = 5,
+                              max_tokens: int = 2000) -> list[str] | None:
+    """Extrait un 'bag of words' du PDF — set ordonné de mots représentatifs.
+
+    Détecte les vrais doublons (même contenu, mise en page différente) au-delà
+    des différences d'ordre d'extraction : 'foo-cahier.pdf' (livret imposé) vs
+    'foo-pageparpage.pdf' (une page par feuille) ont les mêmes mots mais dans
+    un ordre différent à l'extraction.
+
+    Retourne une liste triée de tokens uniques (mots ≥ min_word_len chars).
+    Comparaison ultérieure par Jaccard.
+    Retourne None si PyMuPDF indisponible ou extraction ratée.
+    """
+    try:
+        import fitz  # PyMuPDF
+    except ImportError:
+        return None
+    try:
+        doc = fitz.open(pdf_path)
+        chunks = []
+        for i, page in enumerate(doc):
+            if i >= max_pages:
+                break
+            chunks.append(page.get_text("text") or "")
+        doc.close()
+        text = "\n".join(chunks)
+    except Exception:
+        return None
+
+    import re
+    text = text.lower()
+    # Tokens : suites de caractères alphanumériques unicode
+    tokens = re.findall(r"\w+", text, flags=re.UNICODE)
+    # Filtrer : longueur min + uniques + triés
+    unique = sorted(set(t for t in tokens if len(t) >= min_word_len))
+    if not unique:
+        return None
+    return unique[:max_tokens]
+
+
+def jaccard(a: list[str] | set[str], b: list[str] | set[str]) -> float:
+    """Similarité de Jaccard entre deux ensembles de tokens."""
+    sa, sb = set(a or []), set(b or [])
+    if not sa and not sb:
+        return 0.0
+    return len(sa & sb) / len(sa | sb)
+
+
+# Seuil par défaut pour considérer 2 PDFs comme doublons textuels
+DUP_JACCARD_THRESHOLD = 0.85
+
+
 def _load_registry(registry_path: Path) -> dict:
     """Charge le registre ou retourne une structure vierge."""
     if registry_path.exists():
@@ -69,10 +123,11 @@ def _save_registry(registry: dict, registry_path: Path) -> None:
 
 def register_pdf(pdf_path: Path, doc_id: str,
                  catalog_path: Path | None = None) -> dict:
-    """Calcule le hash, l'ajoute au registre et signale les doublons.
+    """Calcule le hash binaire ET le fingerprint texte, signale les doublons.
 
-    `catalog_path` est conservé pour compat API mais sert juste à dériver le
-    chemin du registre (synopsis/duplicates.json dans le même dossier).
+    Un doublon est détecté si l'un des deux empreintes correspond à un autre
+    doc déjà enregistré : binaire identique (mêmes octets) OU texte identique
+    (même contenu textuel, mise en page différente).
     """
     if catalog_path is not None:
         registry_path = catalog_path.parent / "duplicates.json"
@@ -80,17 +135,53 @@ def register_pdf(pdf_path: Path, doc_id: str,
         registry_path = _DEFAULT_REGISTRY
 
     registry = _load_registry(registry_path)
-    sha = compute_hash(pdf_path)
+    # Migration douce : ajouter le bag-of-words registry si absent
+    registry.setdefault("by_tokens", {})  # doc_id → list[str]
 
-    bucket = registry["by_hash"].setdefault(sha, [])
-    is_new = doc_id not in bucket
-    duplicate_of = bucket[0] if bucket and bucket[0] != doc_id else None
-    if is_new:
-        bucket.append(doc_id)
-    registry["by_doc"][doc_id] = sha
+    sha = compute_hash(pdf_path)
+    tokens = compute_text_fingerprint(pdf_path)
+
+    # 1. Doublon binaire exact (toujours prioritaire)
+    bucket_bin = registry["by_hash"].setdefault(sha, [])
+    is_new_bin = doc_id not in bucket_bin
+    duplicate_of = None
+    duplicate_kind = None
+    duplicate_similarity = None
+    if bucket_bin and bucket_bin[0] != doc_id:
+        duplicate_of = bucket_bin[0]
+        duplicate_kind = "binary"
+        duplicate_similarity = 1.0
+
+    # 2. Doublon textuel (Jaccard contre les docs déjà connus)
+    if tokens and not duplicate_of:
+        best_id, best_sim = None, 0.0
+        for other_id, other_tokens in registry["by_tokens"].items():
+            if other_id == doc_id:
+                continue
+            sim = jaccard(tokens, other_tokens)
+            if sim > best_sim:
+                best_sim = sim
+                best_id = other_id
+        if best_sim >= DUP_JACCARD_THRESHOLD:
+            duplicate_of = best_id
+            duplicate_kind = "text"
+            duplicate_similarity = round(best_sim, 3)
+
+    if is_new_bin:
+        bucket_bin.append(doc_id)
+    if tokens:
+        registry["by_tokens"][doc_id] = tokens
+    registry["by_doc"][doc_id] = {"hash": sha, "n_tokens": len(tokens) if tokens else 0}
     _save_registry(registry, registry_path)
 
-    return {"is_new": is_new, "duplicate_of": duplicate_of, "hash": sha}
+    return {
+        "is_new":               is_new_bin and duplicate_of is None,
+        "duplicate_of":         duplicate_of,
+        "duplicate_kind":       duplicate_kind,  # "binary" | "text" | None
+        "duplicate_similarity": duplicate_similarity,
+        "hash":                 sha,
+        "n_tokens":             len(tokens) if tokens else 0,
+    }
 
 
 def find_clusters(synopsis_path: Path) -> list[list[str]]:

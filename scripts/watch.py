@@ -662,23 +662,21 @@ def main() -> None:
         report["documents_found"] += len(docs)
 
         # ── Capture des liens externes : alimente discovery/candidates.yml ─
-        try:
-            # On reconstruit un HTML minimal depuis les docs récupérés —
-            # le parser HTML expose déjà l'URL source via doc["source_url"],
-            # et le parser stocke le contexte. On agrège pour capture_links.
-            html_blob = "\n".join(
-                f'<a href="{d.get("url", "")}">{d.get("link_text", "")}</a> '
-                f'{d.get("context", "")}'
-                for d in docs
-            )
-            new_links = discovery_external_links.capture_links(
-                html_blob, url, label,
-                Path("discovery") / "candidates.yml"
-            )
-            if new_links:
-                print(f"    🌐  {new_links} nouveaux candidats (liens externes)")
-        except Exception as e:
-            print(f"  ⚠  capture_links raté : {e}")
+        # On re-fetche la vraie page d'index pour parser TOUS ses <a href>
+        # (pas seulement les docs déjà extraits). Coût : 1 GET de plus par
+        # source HTML, négligeable. Skip pour les types non-HTML (api, opds…).
+        if src_type in ("html", "deep_html", "rss"):
+            try:
+                resp = requests.get(url, headers=HEADERS, timeout=15)
+                if resp.status_code == 200:
+                    new_links = discovery_external_links.capture_links(
+                        resp.text, url, label,
+                        Path("discovery") / "candidates.yml",
+                    )
+                    if new_links:
+                        print(f"    🌐  {new_links} nouveaux candidats (liens externes)")
+            except Exception as e:
+                print(f"  ⚠  capture_links raté : {e}")
 
         # ── Scoring par batches ─────────────────────────────────────────────
         all_scores: list[dict] = []

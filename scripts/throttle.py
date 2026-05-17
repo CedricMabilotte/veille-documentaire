@@ -241,6 +241,59 @@ def fingerprint_changed(
     return old_fp != new_fp
 
 
+def _parse_robots_minimal(robots_txt: str, user_agent: str) -> list[str]:
+    """Parseur tolérant : retourne la liste des Disallow qui s'appliquent
+    à notre user-agent. Ignore les wildcards (* et $) — extensions non-standard
+    que stdlib RobotFileParser interprète comme bloquantes par défaut, ce qui
+    cause des faux positifs sur des sites parfaitement permissifs comme
+    Reporterre ou libcom.
+
+    Stratégie :
+    - Plusieurs `User-agent:` consécutifs forment un même bloc
+    - Dès qu'on voit un `Disallow:` (ou `Allow:`), le groupe d'UA est figé
+    - Le bloc suivant `User-agent:` (après une directive) ouvre un nouveau groupe
+    - Notre block est "actif" si user_agent OU '*' est dans la liste des UA du bloc
+    """
+    matching_ua = user_agent.lower()
+    disallows: list[str] = []
+
+    current_uas: list[str] = []
+    block_active = False
+    # True après avoir vu un Disallow/Allow dans le bloc courant — un nouveau
+    # User-agent à ce moment ouvre un NOUVEAU bloc.
+    block_has_rules = False
+
+    for line in robots_txt.splitlines():
+        line = line.split("#", 1)[0].strip()
+        if not line or ":" not in line:
+            continue
+        key, _, value = line.partition(":")
+        key = key.strip().lower()
+        value = value.strip()
+
+        if key == "user-agent":
+            if block_has_rules:
+                # On entame un NOUVEAU bloc — réinitialiser
+                current_uas = []
+                block_active = False
+                block_has_rules = False
+            ua = value.lower()
+            current_uas.append(ua)
+            if ua == "*" or ua == matching_ua:
+                block_active = True
+        elif key == "disallow":
+            block_has_rules = True
+            if block_active and value:
+                if "*" in value or "$" in value:
+                    continue  # wildcards ignorés
+                disallows.append(value)
+        elif key == "allow":
+            block_has_rules = True
+        # Autres directives (Crawl-delay, Sitemap, etc.) : ignorées
+
+    return disallows
+
+
 def check_robots(url: str, state_path: Path = DEFAULT_STATE) -> bool:
     """Vérifie robots.txt avec cache 7j. True si autorisé (ou indisponible)."""
     if not url:
@@ -258,37 +311,36 @@ def check_robots(url: str, state_path: Path = DEFAULT_STATE) -> bool:
     if cache_stale:
         scheme = urlparse(url).scheme or "https"
         robots_url = f"{scheme}://{domain}/robots.txt"
-        rp = urllib.robotparser.RobotFileParser()
-        rp.set_url(robots_url)
+        disallows: list[str] = []
         try:
-            rp.read()
-            # On stocke la décision globale via test direct, ainsi qu'un crawl-delay.
-            cd = rp.crawl_delay(USER_AGENT)
-            dom["robots_crawl_delay"] = int(cd) if cd else None
-            dom["robots_disallow"] = []  # Représentation simplifiée
+            import urllib.request
+            req = urllib.request.Request(
+                robots_url,
+                headers={"User-Agent": "Mozilla/5.0 (compatible; LibraryBot/1.0)"},
+            )
+            with urllib.request.urlopen(req, timeout=8) as resp:
+                ctype = resp.headers.get("Content-Type", "").lower()
+                body = resp.read(64_000).decode("utf-8", errors="replace")
+            # Si le serveur renvoie du HTML (CAPTCHA, page d'erreur déguisée) :
+            # on considère qu'il n'y a pas de robots.txt valide → autorisé.
+            if "html" in ctype or body.lstrip().lower().startswith("<!doctype"):
+                disallows = []  # vide = pas de règle → autorisé
+            else:
+                disallows = _parse_robots_minimal(body, USER_AGENT)
         except Exception:
-            # Pas de robots.txt accessible → on autorise par défaut.
-            dom["robots_crawl_delay"] = None
-            dom["robots_disallow"] = []
+            # Pas de robots.txt accessible → autorisé par défaut.
+            disallows = []
+        dom["robots_disallow"] = disallows
+        dom["robots_crawl_delay"] = None  # crawl-delay rarement utile, on simplifie
         dom["robots_txt_cached_at"] = _iso(now)
         _save(state, state_path)
-        # Décision sur cette URL précise
-        try:
-            allowed = rp.can_fetch(USER_AGENT, url)
-        except Exception:
-            allowed = True
-        return allowed
 
-    # Cache encore valide : refait juste un can_fetch (RobotFileParser n'est pas
-    # sérialisable, donc on relit le robots.txt mais sans toucher au cache_at).
-    scheme = urlparse(url).scheme or "https"
-    rp = urllib.robotparser.RobotFileParser()
-    rp.set_url(f"{scheme}://{domain}/robots.txt")
-    try:
-        rp.read()
-        return rp.can_fetch(USER_AGENT, url)
-    except Exception:
-        return True
+    # Décision : on bloque uniquement si le path matche exactement un Disallow.
+    path = urlparse(url).path or "/"
+    for d in dom.get("robots_disallow", []):
+        if d and path.startswith(d):
+            return False
+    return True
 
 
 def politeness_wait(domain: str, state_path: Path = DEFAULT_STATE) -> None:
