@@ -1,0 +1,177 @@
+project_name: communs-terres-paysannerie
+project_keywords:
+- propriété d'usage
+- fonds de dotation
+- libération des terres
+- communs fonciers
+- communaux
+- accès à la terre
+- sans-terre
+- paysans libres
+- collectif d'habitants
+- paysannerie
+- agriculture vivrière
+- vivrier
+- réforme agraire
+- souveraineté alimentaire
+- terres collectives
+- propriété collective
+- land commons
+- usufruct
+- land rights
+- land liberation
+- landless movement
+- peasantry
+- subsistence farming
+- food sovereignty
+- agrarian reform
+- commoning
+- enclosure
+- collective ownership
+- land back
+- bienes comunes
+- usufructo
+- liberación de la tierra
+- sin tierra
+- campesinado
+- soberanía alimentaria
+- reforma agraria
+- tierra y libertad
+- usos colectivos
+- ejidos
+- tierra comunal
+exported_at: '2026-05-17T21:03:56.254424+00:00'
+sources:
+- url: https://infokiosques.net/
+  label: Infokiosques.net — nouveautés
+  type: html
+  fertility: 9.0
+  runs: 4
+  docs_dl: 36
+  docs_seen: 190
+- url: https://infokiosques.net/spip.php?rubrique5
+  label: Infokiosques.net — index A
+  type: html
+  fertility: 6.0
+  runs: 3
+  docs_dl: 18
+  docs_seen: 870
+- url: https://infokiosques.net/spip.php?rubrique7
+  label: Infokiosques.net — index C
+  type: html
+  fertility: 5.0
+  runs: 3
+  docs_dl: 15
+  docs_seen: 823
+- url: https://infokiosques.net/spip.php?rubrique11
+  label: Infokiosques.net — index T (Terres, Travail)
+  type: html
+  fertility: 0.0
+  runs: 3
+  docs_dl: 0
+  docs_seen: 345
+- url: https://infokiosques.net/spip.php?rubrique18
+  label: Infokiosques.net — index L (Libération, Luttes)
+  type: html
+  fertility: 2.67
+  runs: 3
+  docs_dl: 8
+  docs_seen: 222
+- url: https://www.boell.de/en/publications
+  label: Böll Stiftung — publications EN
+  type: html
+  fertility: 1.0
+  runs: 3
+  docs_dl: 3
+  docs_seen: 117
+- url: https://www.boell.de/de/publikationen
+  label: Böll Stiftung — publications DE
+  type: html
+  fertility: 2.67
+  runs: 3
+  docs_dl: 8
+  docs_seen: 243
+- url: https://libcom.org/library
+  label: libcom.org — library
+  type: deep_html
+  fertility: 0.0
+  runs: 2
+  docs_dl: 0
+  docs_seen: 2
+- url: https://crimethinc.com/library
+  label: CrimethInc — library
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://cras31.info/
+  label: CRAS (Centre de Recherches sur les Alternatives Sociales)
+  type: deep_html
+  fertility: 8.67
+  runs: 3
+  docs_dl: 26
+  docs_seen: 285
+- url: https://theanarchistlibrary.org/opds
+  label: The Anarchist Library — OPDS feed
+  type: opds
+  fertility: 30.0
+  runs: 3
+  docs_dl: 90
+  docs_seen: 300
+- url: https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
+  label: Archive.org — subject:anarchism (texts)
+  type: archive_org
+  fertility: 3.33
+  runs: 3
+  docs_dl: 10
+  docs_seen: 150
+- url: https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
+  label: Archive.org — peasant movements
+  type: archive_org
+  fertility: 1.0
+  runs: 3
+  docs_dl: 3
+  docs_seen: 30
+- url: https://archive.org/advancedsearch.php?q=%28subject%3Acommons+OR+subject%3Aenclosure%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
+  label: Archive.org — commons / enclosure
+  type: archive_org
+  fertility: 0.33
+  runs: 3
+  docs_dl: 1
+  docs_seen: 150
+- url: https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
+  label: HAL — communs fonciers
+  type: hal
+  fertility: 17.5
+  runs: 2
+  docs_dl: 35
+  docs_seen: 44
+- url: https://api.archives-ouvertes.fr/search/?q=paysannerie+OR+%22agriculture+vivri%C3%A8re%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
+  label: HAL — paysannerie / agriculture vivrière
+  type: hal
+  fertility: 10.5
+  runs: 2
+  docs_dl: 21
+  docs_seen: 56
+- url: https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
+  label: HAL — propriété d'usage / fonds de dotation
+  type: hal
+  fertility: 1.0
+  runs: 2
+  docs_dl: 2
+  docs_seen: 12
+- url: https://reporterre.net/spip.php?page=backend
+  label: Reporterre — RSS principal
+  type: rss
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://lundi.am/spip.php?page=backend
+  label: Lundi.am — RSS principal
+  type: rss
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 10

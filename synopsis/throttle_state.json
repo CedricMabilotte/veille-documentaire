@@ -1,5 +1,216 @@
 {
-  "sources": {},
+  "sources": {
+    "Infokiosques.net — nouveautés": {
+      "url": "https://infokiosques.net/",
+      "domain": "infokiosques.net",
+      "last_fetch": "2026-05-17T19:48:41Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 48,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 3,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "Infokiosques.net — index A": {
+      "url": "https://infokiosques.net/spip.php?rubrique5",
+      "domain": "infokiosques.net",
+      "last_fetch": "2026-05-17T19:50:19Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 290,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 14,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "Infokiosques.net — index C": {
+      "url": "https://infokiosques.net/spip.php?rubrique7",
+      "domain": "infokiosques.net",
+      "last_fetch": "2026-05-17T20:02:07Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 275,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 14,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "Infokiosques.net — index T (Terres, Travail)": {
+      "url": "https://infokiosques.net/spip.php?rubrique11",
+      "domain": "infokiosques.net",
+      "last_fetch": "2026-05-17T20:14:40Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 115,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 14,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "Infokiosques.net — index L (Libération, Luttes)": {
+      "url": "https://infokiosques.net/spip.php?rubrique18",
+      "domain": "infokiosques.net",
+      "last_fetch": "2026-05-17T20:18:49Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 74,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 14,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "Böll Stiftung — publications EN": {
+      "url": "https://www.boell.de/en/publications",
+      "domain": "www.boell.de",
+      "last_fetch": "2026-05-17T20:22:38Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 39,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 14,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "Böll Stiftung — publications DE": {
+      "url": "https://www.boell.de/de/publikationen",
+      "domain": "www.boell.de",
+      "last_fetch": "2026-05-17T20:24:00Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 81,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 14,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "CrimethInc — library": {
+      "url": "https://crimethinc.com/library",
+      "domain": "crimethinc.com",
+      "last_fetch": null,
+      "last_fetch_attempts": 1,
+      "last_doc_count": 0,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 14,
+      "last_status_code": 204,
+      "last_http_error": "HTTP 204",
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "CRAS (Centre de Recherches sur les Alternatives Sociales)": {
+      "url": "https://cras31.info/",
+      "domain": "cras31.info",
+      "last_fetch": "2026-05-17T20:28:15Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 95,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 14,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "The Anarchist Library — OPDS feed": {
+      "url": "https://theanarchistlibrary.org/opds",
+      "domain": "theanarchistlibrary.org",
+      "last_fetch": "2026-05-17T20:34:25Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 100,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 30,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "Archive.org — subject:anarchism (texts)": {
+      "url": "https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
+      "domain": "archive.org",
+      "last_fetch": "2026-05-17T20:55:35Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 50,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 14,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "Archive.org — peasant movements": {
+      "url": "https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
+      "domain": "archive.org",
+      "last_fetch": "2026-05-17T20:59:37Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 10,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 14,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "Archive.org — commons / enclosure": {
+      "url": "https://archive.org/advancedsearch.php?q=%28subject%3Acommons+OR+subject%3Aenclosure%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
+      "domain": "archive.org",
+      "last_fetch": "2026-05-17T21:00:49Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 50,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 14,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    },
+    "Lundi.am — RSS principal": {
+      "url": "https://lundi.am/spip.php?page=backend",
+      "domain": "lundi.am",
+      "last_fetch": "2026-05-17T21:03:07Z",
+      "last_fetch_attempts": 1,
+      "last_doc_count": 10,
+      "consecutive_low_yield": 0,
+      "current_interval_days": 1,
+      "last_status_code": 200,
+      "last_http_error": null,
+      "last_html_fingerprint": null,
+      "last_etag": null,
+      "last_modified": null,
+      "cooldown_until": null
+    }
+  },
   "domains": {
     "infokiosques.net": {
       "last_request_at": null,
@@ -7,6 +218,69 @@
       "robots_txt_cached_at": "2026-05-17T17:02:14Z",
       "robots_disallow": [],
       "robots_crawl_delay": 1
+    },
+    "www.boell.de": {
+      "last_request_at": null,
+      "rate_limit_until": null,
+      "robots_txt_cached_at": "2026-05-17T20:22:37Z",
+      "robots_disallow": [],
+      "robots_crawl_delay": null
+    },
+    "libcom.org": {
+      "last_request_at": null,
+      "rate_limit_until": null,
+      "robots_txt_cached_at": "2026-05-17T20:27:38Z",
+      "robots_disallow": [],
+      "robots_crawl_delay": null
+    },
+    "crimethinc.com": {
+      "last_request_at": null,
+      "rate_limit_until": null,
+      "robots_txt_cached_at": "2026-05-17T20:27:38Z",
+      "robots_disallow": [],
+      "robots_crawl_delay": null
+    },
+    "cras31.info": {
+      "last_request_at": null,
+      "rate_limit_until": null,
+      "robots_txt_cached_at": "2026-05-17T20:27:42Z",
+      "robots_disallow": [],
+      "robots_crawl_delay": 1
+    },
+    "theanarchistlibrary.org": {
+      "last_request_at": null,
+      "rate_limit_until": null,
+      "robots_txt_cached_at": "2026-05-17T20:34:11Z",
+      "robots_disallow": [],
+      "robots_crawl_delay": null
+    },
+    "archive.org": {
+      "last_request_at": null,
+      "rate_limit_until": null,
+      "robots_txt_cached_at": "2026-05-17T20:55:34Z",
+      "robots_disallow": [],
+      "robots_crawl_delay": null
+    },
+    "api.archives-ouvertes.fr": {
+      "last_request_at": null,
+      "rate_limit_until": null,
+      "robots_txt_cached_at": "2026-05-17T21:03:03Z",
+      "robots_disallow": [],
+      "robots_crawl_delay": null
+    },
+    "reporterre.net": {
+      "last_request_at": null,
+      "rate_limit_until": null,
+      "robots_txt_cached_at": "2026-05-17T21:03:05Z",
+      "robots_disallow": [],
+      "robots_crawl_delay": null
+    },
+    "lundi.am": {
+      "last_request_at": null,
+      "rate_limit_until": null,
+      "robots_txt_cached_at": "2026-05-17T21:03:05Z",
+      "robots_disallow": [],
+      "robots_crawl_delay": null
     }
   }
 }
