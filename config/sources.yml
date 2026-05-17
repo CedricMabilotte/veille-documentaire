@@ -123,6 +123,11 @@ sources:
     min_interval_days: 30
 
   # ═══ API Archive.org — corpus anarchiste / paysanneries (multi-langues) ════
+  - label: "Archive.org — Cuba (ES, réforme agraire & coopératives)"
+    url: "https://archive.org/advancedsearch.php?q=cuba+AND+language%3A%22spa%22+AND+%28cooperativ*+OR+campesin*+OR+agrari*+OR+%22reforma+agraria%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30"
+    type: archive_org
+    min_interval_days: 30
+
   - label: "Archive.org — subject:anarchism (texts)"
     url: "https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
     type: archive_org
