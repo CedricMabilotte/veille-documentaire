@@ -1,0 +1,158 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# concepts.yml — Ontologie formalisée de BIBLIO
+# ─────────────────────────────────────────────────────────────────────────────
+# Thématique : communs fonciers, propriété d'usage, libération des terres,
+# paysanneries. Voix éditoriale militante-académique.
+# Ce fichier est lu par le scoreur Claude (intégration : synopsis_enricher.py).
+# ─────────────────────────────────────────────────────────────────────────────
+
+project:
+  name: "communs-terres-paysannerie"
+  display_name: "BIBLIO — Communs, terres, paysanneries"
+  tagline: "Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries."
+  description: >
+    BIBLIO veille sur les écritures qui pensent la terre autrement : sortie de
+    la propriété privée par la propriété d'usage et les fonds de dotation,
+    réinvention des communs fonciers, luttes paysannes et de sans-terre,
+    agriculture vivrière, réformes agraires et souverainetés alimentaires.
+    Le corpus croise archives anarchistes, recherches universitaires
+    (HAL, Archive.org), infokiosques francophones et bibliothèques militantes
+    multilingues. L'intention éditoriale est d'outiller militant·es, chercheur·ses
+    et journalistes avec une bibliothèque vivante, située et critique.
+  languages: [fr, en, es]
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Ontologie : ce qui définit la thématique
+# ─────────────────────────────────────────────────────────────────────────────
+ontology:
+  core_concepts:
+    - name: "Propriété d'usage"
+      definition: >
+        Forme de propriété alternative qui dissocie le droit d'usage du droit
+        de disposition marchande. Inclut les fonds de dotation, les baux
+        emphytéotiques militants, les fiducies foncières, les structures
+        anti-spéculatives.
+      equivalents:
+        fr: ["propriété d'usage", "fonds de dotation", "fiducie foncière", "bail emphytéotique militant", "propriété collective", "usufruit collectif"]
+        en: ["usufruct", "community land trust", "collective ownership", "use rights", "stewardship ownership"]
+        es: ["usufructo", "propiedad de uso", "fideicomiso de tierras", "tenencia colectiva"]
+
+    - name: "Communs fonciers"
+      definition: >
+        Régimes de propriété ou d'usage où la terre est gérée par et pour une
+        communauté, hors du marché et de la propriété étatique exclusive.
+        Inclut communaux, ejidos, terres coutumières, biens communaux.
+      equivalents:
+        fr: ["communs fonciers", "communaux", "biens communs", "terres collectives", "terres communales", "commun(s)"]
+        en: ["land commons", "commoning", "commons", "common lands", "common-pool resources"]
+        es: ["bienes comunes", "tierra comunal", "ejidos", "comunales", "usos colectivos"]
+
+    - name: "Libération des terres"
+      definition: >
+        Mouvements et théories qui visent la décolonisation, redistribution
+        ou occupation des terres : sans-terre, Land Back, réformes agraires,
+        luttes contre l'enclosure et l'accaparement.
+      equivalents:
+        fr: ["libération des terres", "accès à la terre", "luttes pour la terre", "réforme agraire", "accaparement", "ZAD"]
+        en: ["land liberation", "land back", "landless movement", "land rights", "agrarian reform", "land grabbing", "enclosure"]
+        es: ["liberación de la tierra", "sin tierra", "reforma agraria", "tierra y libertad", "acaparamiento de tierras"]
+
+    - name: "Paysannerie"
+      definition: >
+        Mondes paysans comme acteurs politiques, économiques et culturels :
+        agricultures vivrières, savoirs paysans, agroécologie, organisations
+        comme la Via Campesina. NB : à distinguer de l'agriculture industrielle.
+      equivalents:
+        fr: ["paysannerie", "paysans libres", "agriculture vivrière", "agroécologie paysanne", "souveraineté alimentaire"]
+        en: ["peasantry", "peasant movement", "subsistence farming", "food sovereignty", "peasant agroecology"]
+        es: ["campesinado", "agricultura campesina", "soberanía alimentaria", "agroecología campesina"]
+
+    - name: "Habitat et collectifs"
+      definition: >
+        Formes collectives d'habiter la terre : habitat groupé, communautés
+        intentionnelles, occupations, squats ruraux, coopératives d'habitants.
+        À condition d'avoir un rapport SITUÉ à la terre (pas juste à l'immobilier).
+      equivalents:
+        fr: ["collectif d'habitants", "habitat groupé", "communautés rurales", "squat rural", "coopérative d'habitants"]
+        en: ["housing cooperative", "intentional community", "land cooperative", "rural commune"]
+        es: ["cooperativa de vivienda", "comunidad intencional", "comuna rural"]
+
+  related_concepts:
+    - "écologie politique"
+    - "décolonial / décolonisation"
+    - "anarchisme (en tant qu'il pense la terre)"
+    - "altermondialisme"
+    - "luttes autochtones"
+    - "permaculture (lorsqu'elle est politique, pas technique)"
+    - "histoire rurale"
+    - "géographie radicale"
+
+  anti_concepts:
+    - "immobilier spéculatif / placement foncier individuel"
+    - "agriculture industrielle / agro-industrie (sauf en critique)"
+    - "anarchisme purement urbain et insurrectionnel (sans rapport à la terre)"
+    - "économie collaborative / sharing economy de plateformes"
+    - "gestion patrimoniale type 'commun' au sens propriété privée individuelle"
+    - "ruralité folklorique / passéisme rural"
+    - "écologie technocratique (green tech, marché du carbone)"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Choix éditoriaux : voix, audience, ton
+# ─────────────────────────────────────────────────────────────────────────────
+editorial:
+  voice: "militant+académique"
+
+  audience: >
+    Militant·es des luttes foncières et paysannes, chercheur·ses en sciences
+    sociales (sociologie rurale, géographie, histoire), journalistes
+    indépendant·es, juristes des communs, étudiant·es en agroécologie politique.
+
+  tone_examples:
+    - "Un texte qui prend la terre au sérieux comme objet politique, pas comme décor."
+    - "L'auteur·e propose une généalogie des enclosures qui éclaire les accaparements contemporains."
+    - "Court, dense, situé — une critique pratique de la propriété privée par celles et ceux qui l'expérimentent."
+    - "Une enquête de terrain qui ne romantise pas la paysannerie mais en restitue les conflits internes."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Paramètres de scoring
+# ─────────────────────────────────────────────────────────────────────────────
+scoring:
+  threshold: 7
+  strict_mode: true
+
+  custom_examples:
+    - title_example: "Communs fonciers : propriété d'usage et fonds de dotation comme outils anti-spéculatifs"
+      score: 9
+      reason: >
+        Touche frontalement à deux core_concepts (communs fonciers + propriété d'usage),
+        avec un cadrage politique anti-spéculatif explicite.
+
+    - title_example: "La libération des terres au Brésil : MST, Via Campesina, agroécologie"
+      score: 9
+      reason: >
+        Croise libération des terres + paysannerie + acteurs collectifs situés.
+        Type même de l'entrée centrale du corpus.
+
+    - title_example: "Habiter autrement : éco-hameaux et communautés intentionnelles en France"
+      score: 7
+      reason: >
+        Habitat et collectifs (core), mais à valider qu'il y a bien un rapport à la terre
+        et pas seulement un modèle immobilier alternatif.
+
+    - title_example: "Investir dans la nature : guide du placement foncier vert"
+      score: 1
+      reason: >
+        Anti-concept frontal — placement foncier individuel maquillé en écologie.
+        Vocabulaire 'foncier' / 'nature' trompeur.
+
+    - title_example: "L'anarchie : une critique de l'État et du salariat"
+      score: 4
+      reason: >
+        Concept related ('anarchisme') mais sans ancrage dans la terre, l'usage,
+        le foncier. Hors-champ malgré le vocabulaire proche du corpus.
+
+    - title_example: "Optimisation fiscale des fonds de dotation pour l'épargnant"
+      score: 2
+      reason: >
+        Faux ami sur 'fonds de dotation' — ici purement fiscal, sans dimension
+        militante ni anti-spéculative.

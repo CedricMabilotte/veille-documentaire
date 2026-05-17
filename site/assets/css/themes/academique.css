@@ -1,0 +1,56 @@
+/* ===================================================================
+   BIBLIO — Thème Académique
+   Palette sobre blanc / gris / bleu marine
+   Surcharge les variables de style.css
+   =================================================================== */
+
+[data-palette="academique"] {
+  --bg: #ffffff;
+  --bg-alt: #f5f7fa;
+  --bg-card: #ffffff;
+  --bg-elev: #eef1f6;
+  --text: #1a2233;
+  --text-dim: #3f4a60;
+  --text-faint: #6a7488;
+  --accent: #1f3a5f;             /* bleu marine */
+  --accent-soft: rgba(31, 58, 95, 0.08);
+  --accent-strong: #15294a;
+  --good: #2d6a4f;
+  --good-soft: rgba(45, 106, 79, 0.10);
+  --gold: #7a6321;
+  --gold-soft: rgba(122, 99, 33, 0.12);
+  --bad: #9a3a2c;
+  --border: #d8dde6;
+  --border-strong: #aab3c4;
+  --shadow-sm: 0 1px 2px rgba(20, 30, 50, 0.05), 0 2px 6px rgba(20, 30, 50, 0.04);
+  --shadow-md: 0 2px 6px rgba(20, 30, 50, 0.07), 0 8px 24px rgba(20, 30, 50, 0.09);
+  --shadow-lg: 0 4px 12px rgba(20, 30, 50, 0.09), 0 20px 50px rgba(20, 30, 50, 0.12);
+}
+
+/* Mode sombre académique : on inverse vers gris anthracite */
+[data-palette="academique"][data-theme="dark"] {
+  --bg: #0f1620;
+  --bg-alt: #16202d;
+  --bg-card: #1a2532;
+  --bg-elev: #243042;
+  --text: #e6ecf5;
+  --text-dim: #aab4c6;
+  --text-faint: #7782a0;
+  --accent: #6f9fd8;
+  --accent-soft: rgba(111, 159, 216, 0.15);
+  --accent-strong: #88b4e3;
+  --good: #6fb593;
+  --good-soft: rgba(111, 181, 147, 0.15);
+  --gold: #c9b46f;
+  --gold-soft: rgba(201, 180, 111, 0.15);
+  --border: #2c3a4f;
+  --border-strong: #43566f;
+}
+
+/* Ajustements typographiques pour le thème académique */
+[data-palette="academique"] .brand-name { letter-spacing: 0.02em; }
+[data-palette="academique"] .hero h1 { letter-spacing: 0.02em; }
+[data-palette="academique"] body { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+[data-palette="academique"] .section-kicker { color: var(--accent); letter-spacing: 0.12em; }
+[data-palette="academique"] .citation-block { border-left-color: var(--accent); }
+[data-palette="academique"] .fiche-bulle-ribbon { letter-spacing: 0.12em; }

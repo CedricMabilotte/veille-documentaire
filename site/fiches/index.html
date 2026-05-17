@@ -31,6 +31,10 @@
     <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
       <a href="../index.html">Accueil</a>
       <a href="index.html">Catalogue</a>
+      <a href="../auteurs.html">Auteurs</a>
+      <a href="../chronologie.html">Chronologie</a>
+      <a href="../graph.html">Graphe</a>
+      <a href="../dossiers.html">Dossiers</a>
       <a href="../apropos.html">Méthodologie</a>
     </nav>
     <div class="header-tools">
@@ -38,6 +42,9 @@
         <input type="search" id="header-search" placeholder="Rechercher…" aria-label="Rechercher dans la bibliothèque">
         <span class="kbd" aria-hidden="true">/</span>
       </div>
+      <button class="palette-toggle" type="button" aria-label="Changer de palette" aria-haspopup="menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-4.97-4.5-9-10-9z"/></svg>
+      </button>
       <button class="theme-toggle" type="button" aria-label="Basculer le thème"></button>
       <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -112,6 +119,10 @@
       <section class="catalog-main" aria-label="Résultats">
         <div class="catalog-toolbar">
           <div class="count" id="result-count" aria-live="polite">…</div>
+          <div class="view-toggle" role="group" aria-label="Type d'affichage">
+            <button type="button" id="view-grid" class="active" aria-pressed="true" title="Vue grille (g)">Grille</button>
+            <button type="button" id="view-shelf" aria-pressed="false" title="Vue étagère (e)">Étagère</button>
+          </div>
           <label class="sr-only" for="sort-select">Trier par</label>
           <select id="sort-select">
             <option value="recent">Plus récent</option>
@@ -127,6 +138,7 @@
         </div>
 
         <div class="catalog-grid" id="catalog-grid" aria-live="polite"></div>
+        <div class="catalog-shelf" id="catalog-shelf" aria-live="polite" hidden></div>
       </section>
 
     </div>
@@ -145,6 +157,10 @@
       <ul>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="index.html">Catalogue</a></li>
+        <li><a href="../auteurs.html">Auteurs</a></li>
+        <li><a href="../chronologie.html">Chronologie</a></li>
+        <li><a href="../graph.html">Graphe</a></li>
+        <li><a href="../dossiers.html">Dossiers</a></li>
         <li><a href="../apropos.html">Méthodologie</a></li>
         <li><a href="../feed.xml">Flux RSS</a></li>
       </ul>
@@ -183,18 +199,42 @@ let STATE = {
     enriched: false,
   },
   sort: 'recent',
+  viewMode: 'grid', // 'grid' ou 'shelf'
 };
 
 window.pageInit = function (basePath) {
   loadCatalog(basePath).then(({ meta, docs }) => {
     STATE.docs = docs;
     STATE.meta = meta;
+    // Mémorisation du mode d'affichage
+    const storedView = localStorage.getItem('biblio-view');
+    if (storedView === 'shelf' || storedView === 'grid') STATE.viewMode = storedView;
     initFiltersUI();
     readURLParams();
     bindEvents(basePath);
+    applyViewMode();
     render(basePath);
   });
 };
+
+/* Bascule grille/étagère, met à jour aria + visibilité. */
+function applyViewMode() {
+  const grid = document.getElementById('catalog-grid');
+  const shelf = document.getElementById('catalog-shelf');
+  const bg = document.getElementById('view-grid');
+  const bs = document.getElementById('view-shelf');
+  if (STATE.viewMode === 'shelf') {
+    grid.hidden = true;
+    shelf.hidden = false;
+    bg.classList.remove('active'); bg.setAttribute('aria-pressed', 'false');
+    bs.classList.add('active'); bs.setAttribute('aria-pressed', 'true');
+  } else {
+    grid.hidden = false;
+    shelf.hidden = true;
+    bg.classList.add('active'); bg.setAttribute('aria-pressed', 'true');
+    bs.classList.remove('active'); bs.setAttribute('aria-pressed', 'false');
+  }
+}
 
 function initFiltersUI() {
   // Sources
@@ -308,6 +348,23 @@ function bindEvents(basePath) {
   // Exports
   document.getElementById('export-csv').addEventListener('click', () => exportCSV(filteredDocs()));
   document.getElementById('export-bibtex').addEventListener('click', () => exportBibTeX(filteredDocs()));
+  // Toggle vue grille/étagère
+  document.getElementById('view-grid').addEventListener('click', () => setView('grid', basePath));
+  document.getElementById('view-shelf').addEventListener('click', () => setView('shelf', basePath));
+  // Raccourcis clavier g / e
+  document.addEventListener('keydown', (e) => {
+    const inField = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
+    if (inField) return;
+    if (e.key === 'g') { setView('grid', basePath); }
+    else if (e.key === 'e') { setView('shelf', basePath); }
+  });
+}
+
+function setView(mode, basePath) {
+  STATE.viewMode = mode;
+  localStorage.setItem('biblio-view', mode);
+  applyViewMode();
+  render(basePath);
 }
 
 function debounce(fn, wait) {
@@ -353,13 +410,53 @@ function render(basePath) {
   document.getElementById('result-count').textContent =
     `${docs.length} fiche${docs.length > 1 ? 's' : ''} sur ${STATE.docs.length}`;
   const grid = document.getElementById('catalog-grid');
-  if (docs.length === 0) {
-    grid.className = 'catalog-grid empty';
-    grid.innerHTML = 'Aucune fiche ne correspond. Essayez d\'élargir vos filtres.';
-    return;
+  const shelf = document.getElementById('catalog-shelf');
+  if (STATE.viewMode === 'shelf') {
+    if (docs.length === 0) {
+      shelf.innerHTML = '<p style="color:var(--text-faint);font-style:italic;padding:40px 0;text-align:center;width:100%;">Aucune fiche ne correspond. Essayez d\'élargir vos filtres.</p>';
+      return;
+    }
+    renderShelf(docs, basePath);
+  } else {
+    if (docs.length === 0) {
+      grid.className = 'catalog-grid empty';
+      grid.innerHTML = 'Aucune fiche ne correspond. Essayez d\'élargir vos filtres.';
+      return;
+    }
+    grid.className = 'catalog-grid';
+    grid.innerHTML = docs.map(d => bookCardHTML(d, basePath)).join('');
   }
-  grid.className = 'catalog-grid';
-  grid.innerHTML = docs.map(d => bookCardHTML(d, basePath)).join('');
+}
+
+/* Rendu étagère : des "livres" alignés horizontalement, largeur variable. */
+function renderShelf(docs, basePath) {
+  const shelf = document.getElementById('catalog-shelf');
+  // Découpe en "rangées" de ~12 livres pour permettre des étagères séparées
+  const ROW_SIZE = 14;
+  const buf = [];
+  for (let i = 0; i < docs.length; i += ROW_SIZE) {
+    const row = docs.slice(i, i + ROW_SIZE);
+    buf.push('<div class="shelf-row">');
+    for (const d of row) {
+      buf.push(shelfBookHTML(d, basePath));
+    }
+    buf.push('</div>');
+  }
+  shelf.innerHTML = buf.join('');
+}
+
+function shelfBookHTML(doc, basePath) {
+  const url = BiblioRouter.ficheUrl(doc.id, basePath);
+  const cover = coverPath(doc, basePath);
+  const title = docTitle(doc);
+  // Largeur fictive variée selon la longueur du titre (petits livres / gros volumes)
+  const w = Math.max(28, Math.min(90, 30 + (title.length % 13) * 4));
+  return `
+    <a href="${escape(url)}" class="shelf-book" style="width:${w}px;" aria-label="Lire la fiche : ${escape(title)}" title="${escape(title)}">
+      <img src="${escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.innerHTML='<span>'+this.parentNode.getAttribute('title').slice(0,40)+'</span>';">
+      <div class="shelf-overlay">${escape(title.slice(0, 60))}${title.length > 60 ? '…' : ''}</div>
+    </a>
+  `;
 }
 
 function bookCardHTML(doc, basePath) {

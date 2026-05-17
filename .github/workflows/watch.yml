@@ -88,6 +88,22 @@ jobs:
             --stats-one-line --stats 30s
           echo "→ Interface + bulles dispos sur Drive"
 
+      - name: Exports BibTeX / RIS / CSL JSON
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          mkdir -p exports
+          python scripts/export_bibtex.py || echo "  export_bibtex skipped: $?"
+          ls -la exports/ 2>/dev/null || true
+
+      - name: Notifications webhooks (Discord/Slack/Mastodon, docs ≥ 9)
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        env:
+          WEBHOOK_DISCORD:   ${{ secrets.WEBHOOK_DISCORD }}
+          WEBHOOK_SLACK:     ${{ secrets.WEBHOOK_SLACK }}
+          MASTODON_INSTANCE: ${{ secrets.MASTODON_INSTANCE }}
+          MASTODON_TOKEN:    ${{ secrets.MASTODON_TOKEN }}
+        run: python scripts/webhooks.py || echo "  webhooks skipped: $?"
+
       - name: Commit reports + catalog + interface + bulles
         if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |

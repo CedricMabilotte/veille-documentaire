@@ -1,0 +1,89 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# concepts.yml — Ontologie formalisée d'un agent de veille thématique
+# ─────────────────────────────────────────────────────────────────────────────
+# Ce fichier décrit FORMELLEMENT la thématique éditoriale d'un agent. Il est
+# utilisé par le scoreur Claude (synopsis_enricher.py) pour :
+#   1. Désambiguïser les concepts proches (faux amis)
+#   2. Réduire les hallucinations de scoring
+#   3. Garder une voix éditoriale cohérente d'un run à l'autre
+#
+# Les placeholders {{...}} sont substitués par scripts/new_project.py.
+# Les sections `core_concepts`, `related_concepts`, `anti_concepts` doivent
+# être complétées MANUELLEMENT après le scaffolding.
+# ─────────────────────────────────────────────────────────────────────────────
+
+project:
+  name: "{{PROJECT_NAME}}"                 # slug url-safe (ex: communs-terres)
+  display_name: "{{PROJECT_DISPLAY_NAME}}" # nom affiché en français
+  tagline: "{{PROJECT_TAGLINE}}"           # phrase courte qui résume la thématique
+  description: >
+    {{PROJECT_DESCRIPTION}}
+  languages: [fr, en, es]
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Ontologie : ce qui définit la thématique
+# ─────────────────────────────────────────────────────────────────────────────
+ontology:
+  # Concepts CENTRAUX — un document qui traite frontalement d'un de ces
+  # concepts doit obtenir un score élevé (>= 8). Définition opérationnelle :
+  # une phrase qui décrit ce que recouvre le concept dans le cadre du projet.
+  core_concepts:
+    - name: "À COMPLÉTER — concept central 1"
+      definition: "Définition courte et opérationnelle du concept."
+      equivalents:
+        fr: ["synonyme fr 1", "synonyme fr 2"]
+        en: ["english equivalent 1"]
+        es: ["equivalente español 1"]
+
+    - name: "À COMPLÉTER — concept central 2"
+      definition: "Définition courte et opérationnelle."
+      equivalents:
+        fr: []
+        en: []
+        es: []
+
+  # Concepts ADJACENTS — Claude doit les reconnaître mais ils ne suffisent
+  # PAS à eux seuls pour un score élevé. Ils peuvent corroborer un score
+  # quand ils sont combinés avec un core_concept.
+  related_concepts:
+    - "À COMPLÉTER — concept adjacent (ex: 'écologie politique')"
+
+  # Anti-concepts / FAUX AMIS — thématiques à pénaliser activement.
+  # Un document qui ne parle QUE de ces sujets doit obtenir un score bas
+  # (<= 3) même s'il partage du vocabulaire avec les core_concepts.
+  anti_concepts:
+    - "À COMPLÉTER — faux ami typique pour la thématique"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Choix éditoriaux : voix, audience, ton
+# ─────────────────────────────────────────────────────────────────────────────
+editorial:
+  # Une seule valeur parmi : militant | académique | journalistique | poétique
+  # Combinaison possible (séparer par '+', ex: 'militant+académique')
+  voice: "{{EDITORIAL_VOICE}}"
+
+  audience: "{{EDITORIAL_AUDIENCE}}"
+
+  # Exemples concrets du ton à reproduire dans les bulles éditoriales.
+  # Claude s'en inspirera pour rédiger les synopsis et les citations.
+  tone_examples:
+    - "Exemple de phrase du ton à adopter."
+    - "Autre exemple — court, dense, situé."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Paramètres de scoring : seuil, mode, exemples étalons
+# ─────────────────────────────────────────────────────────────────────────────
+scoring:
+  threshold: 7              # score minimum pour télécharger un document
+  strict_mode: true         # true = pénalise vocabulaire générique non-ancré
+
+  # Exemples étalons : Claude s'en sert comme few-shot pour calibrer.
+  # Au moins UN exemple positif (score >= 8) et UN négatif (score <= 3).
+  custom_examples:
+    - title_example: "À COMPLÉTER — titre qu'on doit scorer 9/10"
+      score: 9
+      reason: "Pourquoi ce titre touche au cœur de la thématique."
+
+    - title_example: "À COMPLÉTER — faux positif typique"
+      score: 2
+      reason: "Pourquoi ce titre est hors-champ malgré un vocabulaire proche."

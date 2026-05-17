@@ -30,6 +30,9 @@ sys.path.insert(0, str(Path(__file__).parent))
 from parsers import dispatch as parser_dispatch
 import pdf_processor
 import synopsis_enricher
+import bibliography_extractor
+import dedup
+import fulltext_index
 
 # ── Chemins ────────────────────────────────────────────────────────────────────
 CONFIG_PATH    = Path("config/sources.yml")
@@ -219,10 +222,25 @@ def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
     le synopsis enrichi. Si score ≥ 9, génère aussi la bulle de publication.
 
     Retourne un dict avec : cover_path, summary, citations,
-    matched_keywords, relevance_score, bulle (si applicable).
+    matched_keywords, relevance_score, bulle, references (si applicable).
     """
     out = {}
     uid = file_uid(doc["url"])
+
+    # 0. Déduplication par hash de contenu : skip Claude si déjà vu ailleurs
+    try:
+        dedup_result = dedup.register_pdf(
+            dest, uid, catalog_path=SYNOPSIS_PATH / "catalog.json"
+        )
+        if dedup_result["duplicate_of"]:
+            print(f"     ♻  Doublon de {dedup_result['duplicate_of']} "
+                  f"(hash={dedup_result['hash'][:10]}…) — skip enrichissement")
+            out["duplicate_of"] = dedup_result["duplicate_of"]
+            out["content_hash"] = dedup_result["hash"]
+            return out
+        out["content_hash"] = dedup_result["hash"]
+    except Exception as e:
+        print(f"     ⚠  dedup raté : {e}")
 
     # Métadonnées + premières pages
     meta = pdf_processor.extract_metadata(dest)
@@ -238,6 +256,15 @@ def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
     if pdf_processor.extract_cover(dest, cover_path, max_width=400):
         out["cover"] = f"covers/{uid}.png"   # chemin relatif depuis interface/
         print(f"     🖼  Couverture extraite : {out['cover']}")
+
+    # Extraction des références bibliographiques (boucle de découverte)
+    try:
+        refs = bibliography_extractor.extract_references(dest, max_refs=30)
+        if refs:
+            out["references"] = refs
+            print(f"     📚  {len(refs)} référence(s) bibliographique(s) extraite(s)")
+    except Exception as e:
+        print(f"     ⚠  extraction refs ratée : {e}")
 
     # Synopsis enrichi via Claude (sur le texte du PDF)
     text = pdf_processor.extract_text(dest, max_chars=10000)
@@ -394,6 +421,11 @@ def publish_site(run_date: str) -> None:
         (SITE_PATH / "data").mkdir(parents=True, exist_ok=True)
         shutil.copy2(catalog_src, SITE_PATH / "data" / "catalog.json")
 
+    # 1bis. Index full-text (utilisé par la recherche côté client)
+    idx_src = SYNOPSIS_PATH / "fulltext_index.json"
+    if idx_src.exists():
+        shutil.copy2(idx_src, SITE_PATH / "data" / "fulltext_index.json")
+
     # 2. Bulles
     site_bulles = SITE_PATH / "data" / "bulles"
     site_bulles.mkdir(parents=True, exist_ok=True)
@@ -471,6 +503,10 @@ def _write_sitemap(catalog: dict) -> None:
         f"{SITE_BASE_URL}/",
         f"{SITE_BASE_URL}/fiches/",
         f"{SITE_BASE_URL}/apropos.html",
+        f"{SITE_BASE_URL}/auteurs.html",
+        f"{SITE_BASE_URL}/chronologie.html",
+        f"{SITE_BASE_URL}/graph.html",
+        f"{SITE_BASE_URL}/dossiers.html",
     ]
     for d in catalog.get("docs", {}).values():
         urls.append(f"{SITE_BASE_URL}/fiches/fiche.html?id={d['id']}")
@@ -668,6 +704,28 @@ def main() -> None:
     save_markdown_report(report, json_path)
     update_synopsis_catalog(report)
     generate_interface()
+
+    # Index full-text reconstruit à chaque run pour la recherche côté client
+    try:
+        idx_path = SYNOPSIS_PATH / "fulltext_index.json"
+        idx = fulltext_index.build_index(
+            SYNOPSIS_PATH / "catalog.json", idx_path
+        )
+        print(f"  🔍  Index full-text : {idx.get('total_terms', '?')} termes "
+              f"sur {idx.get('total_docs', '?')} docs")
+    except Exception as e:
+        print(f"  ⚠  build_index raté : {e}")
+
+    # Rapport de déduplication global
+    try:
+        dedup_stats = dedup.report(
+            registry_path=SYNOPSIS_PATH / "duplicates.json"
+        )
+        if dedup_stats.get("duplicate_clusters", 0) > 0:
+            print(f"  ♻  Dedup : {dedup_stats}")
+    except Exception:
+        pass
+
     publish_site(run_date)
 
     print(f"""

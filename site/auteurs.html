@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="max-age=3600">
+<title>Auteurs — BIBLIO</title>
+<meta name="description" content="Index des auteurs et autrices référencés dans la veille documentaire BIBLIO.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="BIBLIO — Nouvelles fiches" href="feed.xml">
+<link rel="canonical" href="https://biblio.actitude.org/auteurs.html">
+<meta property="og:title" content="Auteurs — BIBLIO">
+<meta property="og:description" content="Index des auteurs et autrices référencés dans la veille.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="index.html" class="brand" aria-label="BIBLIO — accueil">
+      <img src="assets/img/logo.svg" alt="" class="brand-mark">
+      <span class="brand-name">BIBLIO</span>
+      <span class="brand-sub">Bibliothèque documentaire ouverte</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="fiches/index.html">Catalogue</a>
+      <a href="auteurs.html">Auteurs</a>
+      <a href="chronologie.html">Chronologie</a>
+      <a href="graph.html">Graphe</a>
+      <a href="dossiers.html">Dossiers</a>
+      <a href="apropos.html">Méthodologie</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <input type="search" id="header-search" placeholder="Rechercher…" aria-label="Rechercher dans la bibliothèque">
+        <span class="kbd" aria-hidden="true">/</span>
+      </div>
+      <button class="palette-toggle" type="button" aria-label="Changer de palette" aria-haspopup="menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-4.97-4.5-9-10-9z"/></svg>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Basculer le thème"></button>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav aria-label="fil d'Ariane">
+      <ol class="breadcrumbs">
+        <li><a href="index.html">Accueil</a></li>
+        <li>Auteurs</li>
+      </ol>
+    </nav>
+
+    <header class="mt-3">
+      <h1 style="font-family:var(--font-serif);font-size:36px;margin:14px 0 6px;font-weight:600;">Auteurs &amp; autrices</h1>
+      <p style="font-family:var(--font-serif);font-style:italic;color:var(--text-dim);font-size:18px;margin:0 0 8px;">
+        Toutes les plumes croisées par la veille, classées par ordre alphabétique.
+      </p>
+    </header>
+
+    <nav class="authors-index" id="authors-index" aria-label="Index alphabétique">
+      <!-- généré par JS -->
+    </nav>
+
+    <section id="authors-content" aria-live="polite">
+      <p style="text-align:center;color:var(--text-faint);font-style:italic;padding:60px 0;">Chargement…</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div>
+      <h4>BIBLIO</h4>
+      <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
+      <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+    </div>
+    <div>
+      <h4>Naviguer</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fiches/index.html">Catalogue</a></li>
+        <li><a href="auteurs.html">Auteurs</a></li>
+        <li><a href="chronologie.html">Chronologie</a></li>
+        <li><a href="graph.html">Graphe</a></li>
+        <li><a href="dossiers.html">Dossiers</a></li>
+        <li><a href="apropos.html">Méthodologie</a></li>
+        <li><a href="feed.xml">Flux RSS</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Code &amp; licence</h4>
+      <ul>
+        <li><a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">Code source</a></li>
+        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+      </ul>
+    </div>
+    <div class="colophon">
+      <span>© 2026 BIBLIO · <code>biblio.actitude.org</code></span>
+      <span>HTML, CSS, JavaScript. Sans tracker.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/router.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+/* ===== Page Auteurs — agrégation et rendu ===== */
+window.pageInit = function (basePath) {
+  loadCatalog(basePath).then(({ docs, _error }) => {
+    const content = document.getElementById('authors-content');
+    if (_error || !docs.length) {
+      content.innerHTML = '<p style="text-align:center;color:var(--text-faint);font-style:italic;padding:60px 0;">Aucune donnée encore — relance une veille.</p>';
+      return;
+    }
+    const groups = groupByAuthor(docs);
+    renderIndex(groups);
+    renderAuthors(groups, basePath);
+  });
+};
+
+/* Regroupe les docs par auteur (inférence si meta absente). */
+function groupByAuthor(docs) {
+  const map = new Map();
+  const UNK = 'Auteur·rice indéterminé·e';
+  for (const d of docs) {
+    const a = (inferAuthor(d) || '').trim();
+    const key = a && a.length > 1 ? a : UNK;
+    if (!map.has(key)) map.set(key, []);
+    map.get(key).push(d);
+  }
+  // Trie alphabétique, en plaçant les indéterminés à la fin
+  const entries = Array.from(map.entries());
+  entries.sort((x, y) => {
+    if (x[0] === UNK) return 1;
+    if (y[0] === UNK) return -1;
+    return x[0].localeCompare(y[0], 'fr', { sensitivity: 'base' });
+  });
+  // Trie chaque liste : score décroissant
+  for (const [, list] of entries) {
+    list.sort((a, b) => (b.latest_score || 0) - (a.latest_score || 0));
+  }
+  return entries;
+}
+
+/* Index alphabétique cliquable */
+function renderIndex(groups) {
+  const nav = document.getElementById('authors-index');
+  const letters = new Set();
+  for (const [name] of groups) {
+    if (name === 'Auteur·rice indéterminé·e') continue;
+    const first = name.replace(/^[^A-Za-zÀ-ÿ]+/, '').slice(0, 1).toUpperCase();
+    if (first) letters.add(first);
+  }
+  const sorted = Array.from(letters).sort((a, b) => a.localeCompare(b, 'fr'));
+  nav.innerHTML = sorted.map(l => `<a href="#letter-${escape(l)}">${escape(l)}</a>`).join('')
+    + '<a href="#letter-indetermine">?</a>';
+}
+
+/* Rendu des cartes auteurs */
+function renderAuthors(groups, basePath) {
+  const wrap = document.getElementById('authors-content');
+  let currentLetter = '';
+  const buf = ['<div class="authors-grid">'];
+  for (const [name, list] of groups) {
+    const isUnk = name === 'Auteur·rice indéterminé·e';
+    const letter = isUnk ? 'indetermine'
+                         : name.replace(/^[^A-Za-zÀ-ÿ]+/, '').slice(0, 1).toUpperCase();
+    if (letter !== currentLetter) {
+      if (currentLetter !== '') buf.push('</div><div class="authors-grid">');
+      buf.push(`</div><h2 id="letter-${escape(letter)}" style="font-family:var(--font-serif);font-size:28px;margin:32px 0 12px;color:var(--accent);">${escape(letter === 'indetermine' ? '?' : letter)}</h2><div class="authors-grid">`);
+      currentLetter = letter;
+    }
+    const top3 = list.slice(0, 3);
+    buf.push(`
+      <article class="author-card">
+        <h3>${escape(name)}</h3>
+        <div class="author-count">${list.length} fiche${list.length > 1 ? 's' : ''}</div>
+        <ul>
+          ${top3.map(d => `
+            <li>
+              <a href="${escape(BiblioRouter.ficheUrl(d.id, basePath))}">${escape(docTitle(d))}</a>
+              <span class="score-pill ${scoreClass(d.latest_score || 0)}">${d.latest_score || 0}/10</span>
+            </li>
+          `).join('')}
+        </ul>
+        <a class="author-link" href="fiches/index.html?q=${encodeURIComponent(name)}">
+          Toutes ses fiches dans le catalogue →
+        </a>
+      </article>
+    `);
+  }
+  buf.push('</div>');
+  // Nettoyage : enlever le premier "</div>" parasite
+  wrap.innerHTML = buf.join('').replace(/^<div class="authors-grid"><\/div>/, '');
+}
+</script>
+
+</body>
+</html>

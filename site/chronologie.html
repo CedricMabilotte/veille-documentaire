@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="max-age=3600">
+<title>Chronologie — BIBLIO</title>
+<meta name="description" content="Timeline chronologique des documents indexés par BIBLIO, du plus ancien au plus récent.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="BIBLIO — Nouvelles fiches" href="feed.xml">
+<link rel="canonical" href="https://biblio.actitude.org/chronologie.html">
+<meta property="og:title" content="Chronologie — BIBLIO">
+<meta property="og:description" content="Frise chronologique des fiches documentaires.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="index.html" class="brand" aria-label="BIBLIO — accueil">
+      <img src="assets/img/logo.svg" alt="" class="brand-mark">
+      <span class="brand-name">BIBLIO</span>
+      <span class="brand-sub">Bibliothèque documentaire ouverte</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="fiches/index.html">Catalogue</a>
+      <a href="auteurs.html">Auteurs</a>
+      <a href="chronologie.html">Chronologie</a>
+      <a href="graph.html">Graphe</a>
+      <a href="dossiers.html">Dossiers</a>
+      <a href="apropos.html">Méthodologie</a>
+    </nav>
+    <div class="header-tools">
+      <div class="search-box">
+        <input type="search" id="header-search" placeholder="Rechercher…" aria-label="Rechercher dans la bibliothèque">
+        <span class="kbd" aria-hidden="true">/</span>
+      </div>
+      <button class="palette-toggle" type="button" aria-label="Changer de palette" aria-haspopup="menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c3.31 0 6-2.69 6-6 0-4.97-4.5-9-10-9z"/></svg>
+      </button>
+      <button class="theme-toggle" type="button" aria-label="Basculer le thème"></button>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav aria-label="fil d'Ariane">
+      <ol class="breadcrumbs">
+        <li><a href="index.html">Accueil</a></li>
+        <li>Chronologie</li>
+      </ol>
+    </nav>
+
+    <header class="mt-3">
+      <h1 style="font-family:var(--font-serif);font-size:36px;margin:14px 0 6px;font-weight:600;">Chronologie</h1>
+      <p style="font-family:var(--font-serif);font-style:italic;color:var(--text-dim);font-size:18px;margin:0 0 8px;">
+        Les fiches alignées le long du temps. Une lecture latérale du fonds.
+      </p>
+    </header>
+
+    <section id="timeline-root" aria-live="polite">
+      <p style="text-align:center;color:var(--text-faint);font-style:italic;padding:60px 0;">Chargement…</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div>
+      <h4>BIBLIO</h4>
+      <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
+      <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+    </div>
+    <div>
+      <h4>Naviguer</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="fiches/index.html">Catalogue</a></li>
+        <li><a href="auteurs.html">Auteurs</a></li>
+        <li><a href="chronologie.html">Chronologie</a></li>
+        <li><a href="graph.html">Graphe</a></li>
+        <li><a href="dossiers.html">Dossiers</a></li>
+        <li><a href="apropos.html">Méthodologie</a></li>
+        <li><a href="feed.xml">Flux RSS</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Code &amp; licence</h4>
+      <ul>
+        <li><a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">Code source</a></li>
+        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+      </ul>
+    </div>
+    <div class="colophon">
+      <span>© 2026 BIBLIO · <code>biblio.actitude.org</code></span>
+      <span>HTML, CSS, JavaScript. Sans tracker.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/router.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+/* ===== Chronologie — rendu timeline ===== */
+window.pageInit = function (basePath) {
+  loadCatalog(basePath).then(({ docs, _error }) => {
+    const root = document.getElementById('timeline-root');
+    if (_error || !docs.length) {
+      root.innerHTML = '<p style="text-align:center;color:var(--text-faint);font-style:italic;padding:60px 0;">Aucune donnée encore — relance une veille.</p>';
+      return;
+    }
+    renderTimeline(docs, basePath);
+  });
+};
+
+function renderTimeline(docs, basePath) {
+  // Attribue une année à chaque doc (ou null)
+  const enriched = docs.map(d => ({ doc: d, year: inferYear(d) }));
+  const dated = enriched.filter(x => x.year);
+  const undated = enriched.filter(x => !x.year);
+
+  // Trie : plus ancien → plus récent
+  dated.sort((a, b) => a.year - b.year);
+
+  // Regroupe par décennie puis par année
+  const decades = new Map(); // décennie -> Map(année -> [docs])
+  for (const { doc, year } of dated) {
+    const dec = Math.floor(year / 10) * 10;
+    if (!decades.has(dec)) decades.set(dec, new Map());
+    const yearMap = decades.get(dec);
+    if (!yearMap.has(year)) yearMap.set(year, []);
+    yearMap.get(year).push(doc);
+  }
+
+  const root = document.getElementById('timeline-root');
+  const buf = ['<div class="timeline">'];
+  for (const [dec, yearMap] of decades) {
+    buf.push(`<h2 class="timeline-decade">Années ${dec}</h2>`);
+    // Trie les années
+    const years = Array.from(yearMap.keys()).sort((a, b) => a - b);
+    for (const y of years) {
+      buf.push(`<h3 class="timeline-year">${y}</h3>`);
+      for (const d of yearMap.get(y)) {
+        buf.push(timelineEntryHTML(d, basePath));
+      }
+    }
+  }
+  buf.push('</div>');
+
+  if (undated.length > 0) {
+    buf.push('<div class="timeline-undated"><h3>Date indéterminée</h3><div class="timeline" style="padding-left:0;">');
+    buf[buf.length - 1] = buf[buf.length - 1].replace('class="timeline"', 'style="margin-left:0;padding-left:0;"');
+    buf.push('<ul style="list-style:none;padding:0;margin:0;">');
+    for (const { doc } of undated) {
+      const url = BiblioRouter.ficheUrl(doc.id, basePath);
+      const score = doc.latest_score || 0;
+      buf.push(`<li style="padding:6px 0;border-bottom:1px dotted var(--border);"><a href="${escape(url)}" style="font-family:var(--font-serif);font-size:16px;">${escape(docTitle(doc))}</a> <span class="score-pill ${scoreClass(score)}" style="margin-left:6px;">${score}/10</span></li>`);
+    }
+    buf.push('</ul></div></div>');
+  }
+
+  root.innerHTML = buf.join('');
+}
+
+function timelineEntryHTML(doc, basePath) {
+  const url = BiblioRouter.ficheUrl(doc.id, basePath);
+  const title = docTitle(doc);
+  const score = doc.latest_score || 0;
+  const author = inferAuthor(doc);
+  return `
+    <div class="timeline-entry">
+      <a href="${escape(url)}">${escape(title)}${author ? ` <span style="color:var(--text-faint);font-style:italic;">— ${escape(author)}</span>` : ''}</a>
+      <span class="score-pill ${scoreClass(score)}">${score}/10</span>
+    </div>
+  `;
+}
+</script>
+
+</body>
+</html>

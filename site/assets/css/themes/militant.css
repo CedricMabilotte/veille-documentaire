@@ -1,0 +1,130 @@
+/* ===================================================================
+   BIBLIO — Thème Militant
+   Brutalisme typographique : noir / blanc / rouge
+   Surcharge les variables de style.css
+   =================================================================== */
+
+[data-palette="militant"] {
+  --bg: #ffffff;
+  --bg-alt: #f0f0f0;
+  --bg-card: #ffffff;
+  --bg-elev: #ededed;
+  --text: #000000;
+  --text-dim: #1a1a1a;
+  --text-faint: #555555;
+  --accent: #cc0000;              /* rouge vif */
+  --accent-soft: rgba(204, 0, 0, 0.10);
+  --accent-strong: #990000;
+  --good: #000000;
+  --good-soft: rgba(0, 0, 0, 0.08);
+  --gold: #cc0000;
+  --gold-soft: rgba(204, 0, 0, 0.12);
+  --bad: #cc0000;
+  --border: #000000;
+  --border-strong: #000000;
+  --shadow-sm: 4px 4px 0 #000000;
+  --shadow-md: 6px 6px 0 #000000;
+  --shadow-lg: 10px 10px 0 #000000;
+  --radius: 0;
+  --radius-lg: 0;
+}
+
+/* Mode sombre militant : inversion noir/blanc */
+[data-palette="militant"][data-theme="dark"] {
+  --bg: #000000;
+  --bg-alt: #0d0d0d;
+  --bg-card: #0d0d0d;
+  --bg-elev: #1a1a1a;
+  --text: #ffffff;
+  --text-dim: #e0e0e0;
+  --text-faint: #999999;
+  --accent: #ff3030;
+  --accent-soft: rgba(255, 48, 48, 0.15);
+  --accent-strong: #ff5050;
+  --good: #ffffff;
+  --good-soft: rgba(255, 255, 255, 0.10);
+  --gold: #ff3030;
+  --gold-soft: rgba(255, 48, 48, 0.15);
+  --border: #ffffff;
+  --border-strong: #ffffff;
+  --shadow-sm: 4px 4px 0 #ffffff;
+  --shadow-md: 6px 6px 0 #ffffff;
+  --shadow-lg: 10px 10px 0 #ffffff;
+}
+
+/* Brutalisme typographique */
+[data-palette="militant"] body {
+  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+[data-palette="militant"] .brand-name,
+[data-palette="militant"] .hero h1,
+[data-palette="militant"] .section-title,
+[data-palette="militant"] .fiche-title,
+[data-palette="militant"] .page h1,
+[data-palette="militant"] .timeline-decade,
+[data-palette="militant"] .featured-title,
+[data-palette="militant"] .book-title,
+[data-palette="militant"] .author-card h3,
+[data-palette="militant"] .dossier-card h3 {
+  font-family: "Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+[data-palette="militant"] .hero h1 {
+  letter-spacing: -0.04em;
+  line-height: 0.85;
+}
+[data-palette="militant"] .tagline,
+[data-palette="militant"] .section-lede,
+[data-palette="militant"] .page .lede,
+[data-palette="militant"] .fiche-subtitle {
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+[data-palette="militant"] .prose,
+[data-palette="militant"] .page p,
+[data-palette="militant"] .page li {
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+}
+[data-palette="militant"] .citation-block {
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  border-left-width: 6px;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  background: var(--accent);
+  color: #fff;
+  padding: 14px 20px;
+}
+[data-palette="militant"] .citation-block::before,
+[data-palette="militant"] .citation-block::after { color: #fff; }
+[data-palette="militant"] .citation-block .quote-meta { color: rgba(255,255,255,0.8); }
+
+/* Cartes nettes, sans arrondi, ombre dure */
+[data-palette="militant"] .featured-card,
+[data-palette="militant"] .author-card,
+[data-palette="militant"] .dossier-card,
+[data-palette="militant"] .stat,
+[data-palette="militant"] .graph-wrap {
+  border-width: 2px;
+  box-shadow: var(--shadow-sm);
+}
+[data-palette="militant"] .featured-card:hover { transform: translate(-2px, -2px); box-shadow: var(--shadow-md); }
+[data-palette="militant"] .btn { border-width: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+[data-palette="militant"] .btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+[data-palette="militant"] .score-pill { border-width: 2px; font-weight: 700; }
+[data-palette="militant"] .section-kicker { color: var(--accent); letter-spacing: 0.16em; }
+[data-palette="militant"] .ribbon { background: var(--accent) !important; border-radius: 0 !important; }
+[data-palette="militant"] .fiche-bulle-ribbon {
+  background: var(--accent);
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 0;
+  font-weight: 900;
+}
+[data-palette="militant"] .site-nav a.active { border-bottom-width: 3px; }
+[data-palette="militant"] .keywords .kw { border-width: 2px; font-weight: 600; }

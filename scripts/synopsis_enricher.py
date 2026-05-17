@@ -26,6 +26,85 @@ CLAUDE_FLAGS        = [
     "--dangerously-skip-permissions",
 ]
 
+# Charge l'ontologie du projet (concepts.yml) — fallback gracieux si absent
+_CONCEPTS_PATH = Path(__file__).parent.parent / "config" / "concepts.yml"
+
+
+def _load_concepts() -> dict:
+    """Lit config/concepts.yml. Retourne {} si absent ou erreur."""
+    if not _CONCEPTS_PATH.exists():
+        return {}
+    try:
+        import yaml
+        return yaml.safe_load(_CONCEPTS_PATH.read_text(encoding="utf-8")) or {}
+    except Exception as e:
+        print(f"  ⚠  concepts.yml inaccessible : {e}")
+        return {}
+
+
+def _build_ontology_block(concepts: dict) -> str:
+    """Construit la section 'ontologie' du prompt à partir de concepts.yml."""
+    ontology = concepts.get("ontology", {})
+    cores = ontology.get("core_concepts", []) or []
+    related = ontology.get("related_concepts", []) or []
+    anti = ontology.get("anti_concepts", []) or []
+
+    lines = []
+    if cores:
+        lines.append("Concepts centraux (présence explicite = score ≥ 8) :")
+        for c in cores:
+            lines.append(f"  • {c.get('name')} — {c.get('definition', '').strip()}")
+            eq = c.get("equivalents", {})
+            for lang, terms in eq.items():
+                if terms:
+                    lines.append(f"      [{lang}] {', '.join(terms)}")
+    if related:
+        lines.append("\nConcepts apparentés (mention seule = score 5-7) :")
+        lines.append("  " + " · ".join(str(r) for r in related))
+    if anti:
+        lines.append("\nAnti-concepts (à pénaliser, score ≤ 3 si dominant) :")
+        lines.append("  " + " · ".join(str(a) for a in anti))
+    return "\n".join(lines)
+
+
+def _build_examples_block(concepts: dict) -> str:
+    examples = concepts.get("scoring", {}).get("custom_examples", []) or []
+    if not examples:
+        return ""
+    out = ["Exemples étalons (à utiliser comme calibration) :"]
+    for ex in examples:
+        out.append(
+            f"  • « {ex.get('title_example', '')} » → "
+            f"score {ex.get('score', '?')}/10 — {ex.get('reason', '')}"
+        )
+    return "\n".join(out)
+
+
+def _build_voice_block(concepts: dict) -> str:
+    edit = concepts.get("editorial", {})
+    voice = edit.get("voice", "")
+    audience = edit.get("audience", "")
+    tones = edit.get("tone_examples", []) or []
+    if not (voice or audience or tones):
+        return ""
+    lines = []
+    if voice:
+        lines.append(f"Voix éditoriale : {voice}")
+    if audience:
+        lines.append(f"Lectorat cible : {audience}")
+    if tones:
+        lines.append("Exemples de ton :")
+        for t in tones[:3]:
+            lines.append(f"  • {t}")
+    return "\n".join(lines)
+
+
+# Charge une seule fois au module load
+_CONCEPTS = _load_concepts()
+_ONTOLOGY_BLOCK = _build_ontology_block(_CONCEPTS)
+_EXAMPLES_BLOCK = _build_examples_block(_CONCEPTS)
+_VOICE_BLOCK    = _build_voice_block(_CONCEPTS)
+
 
 def _call_claude(prompt: str, timeout: int = CLAUDE_TIMEOUT_SEC) -> str:
     """Appelle claude -p et retourne le texte brut. Lève RuntimeError si exit ≠ 0."""
@@ -73,14 +152,25 @@ def enrich(text: str, keywords: list[str], doc_title: str = "") -> dict:
 
     keywords_block = "\n".join(f"  - {kw}" for kw in keywords)
 
+    ontology_section = (
+        f"\nONTOLOGIE FORMELLE DE LA THÉMATIQUE :\n{_ONTOLOGY_BLOCK}\n"
+        if _ONTOLOGY_BLOCK else ""
+    )
+    examples_section = (
+        f"\n{_EXAMPLES_BLOCK}\n" if _EXAMPLES_BLOCK else ""
+    )
+    voice_section = (
+        f"\n{_VOICE_BLOCK}\n" if _VOICE_BLOCK else ""
+    )
+
     prompt = f"""Tu es un assistant de veille documentaire spécialisé en sciences humaines et sociales.
 
 J'ai extrait le texte brut d'un PDF (les marqueurs [p.N] indiquent le numéro de page).
 Le titre apparent du document est : "{doc_title}"
 
-THÉMATIQUE de notre veille :
+THÉMATIQUE de notre veille (mots-clés) :
 {keywords_block}
-
+{ontology_section}{examples_section}{voice_section}
 RÈGLES :
 - Lis attentivement le texte et identifie les passages qui touchent réellement à la thématique.
 - Ne fabrique RIEN. Si un mot-clé n'apparaît pas, ne le mentionne pas dans matched_keywords.
