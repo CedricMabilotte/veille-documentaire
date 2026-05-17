@@ -167,6 +167,90 @@ sources:
     max_items: 30
     min_interval_days: 1
 
+  # ═══ Troisièmes Voix — éditions Collectif (Société en Communs) ══════════════
+  # Site éditorial Grav, 1 PDF par édition. Crawl 2-niveaux sur /fr/ découvre
+  # automatiquement les 5+ éditions et leurs Mini-Manuels.
+  - label: "Troisièmes Voix — éditions"
+    url: "https://www.troisiemesvoix.org/fr"
+    type: deep_html
+    max_pages: 15
+    min_interval_days: 14
+
+  # ═══ HISPANOPHONES (12 sources, 3 axes) ════════════════════════════════════
+  # A. Bibliothèques activistes / anarchosyndicalistes ES
+  - label: "CNT-AIT España"
+    url: "https://www.cnt.es/feed/"
+    type: rss
+    max_items: 30
+    min_interval_days: 14
+
+  - label: "Portal OACA (anarcosindicalisme ES)"
+    url: "https://portaloaca.com/feed/"
+    type: rss
+    max_items: 30
+    min_interval_days: 14
+
+  - label: "CGT España"
+    url: "https://cgt.org.es/feed/"
+    type: rss
+    max_items: 30
+    min_interval_days: 14
+
+  - label: "Sin Permiso (revue radicale ES)"
+    url: "https://www.sinpermiso.info/rss.xml"
+    type: rss
+    max_items: 30
+    min_interval_days: 14
+
+  # B. Mouvements citoyens / paysans / zapatistes
+  - label: "Enlace Zapatista (EZLN)"
+    url: "https://enlacezapatista.ezln.org.mx/feed/"
+    type: rss
+    max_items: 30
+    min_interval_days: 14
+
+  - label: "La Vía Campesina (ES)"
+    url: "https://viacampesina.org/es/feed/"
+    type: rss
+    max_items: 30
+    min_interval_days: 14
+
+  - label: "CLOC — Vía Campesina LatAm"
+    url: "https://www.cloc-viacampesina.net/feed/"
+    type: rss
+    max_items: 30
+    min_interval_days: 14
+
+  - label: "FIAN International (droit à l'alimentation, ES)"
+    url: "https://www.fian.org/es/feed/"
+    type: rss
+    max_items: 30
+    min_interval_days: 14
+
+  # C. Bibliothèques publiques / patrimoine libre
+  - label: "CLACSO Libros (acceso abierto)"
+    url: "https://www.clacso.org/libros/"
+    type: html
+    min_interval_days: 21
+
+  - label: "Tierra.org (Amigos de la Tierra ES)"
+    url: "https://www.tierra.org/"
+    type: deep_html
+    max_pages: 20
+    min_interval_days: 21
+
+  - label: "CEIPAZ (Cultura de Paz)"
+    url: "https://www.ceipaz.org/feed/"
+    type: rss
+    max_items: 30
+    min_interval_days: 21
+
+  - label: "CELAG (Geopolítica LatAm)"
+    url: "https://www.celag.org/feed/"
+    type: rss
+    max_items: 30
+    min_interval_days: 21
+
   # ═══ Playwright — désactivé pour le moment ═════════════════════════════════
   # Les 4 sources Playwright testées (Via Campesina, Lundi.am, Reporterre,
   # Commons Strategies) sont des sites d'ARTICLES HTML lisibles en ligne,
