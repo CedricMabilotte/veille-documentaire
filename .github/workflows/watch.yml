@@ -110,17 +110,17 @@ jobs:
           WEBHOOK_SLACK:     ${{ secrets.WEBHOOK_SLACK }}
           MASTODON_INSTANCE: ${{ secrets.MASTODON_INSTANCE }}
           MASTODON_TOKEN:    ${{ secrets.MASTODON_TOKEN }}
-        run: python scripts/webhooks.py || echo "  webhooks skipped: $?"
+        run: 'python scripts/webhooks.py || echo "  webhooks skipped"'
 
       - name: Review des Issues GitHub (suggestions communautaires)
         if: ${{ github.event.inputs.dry_run != 'true' }}
         env:
           GH_TOKEN: ${{ secrets.BIBLIO_PUBLISH_TOKEN }}
-        run: python scripts/review_issues.py || echo "  review_issues skipped: $?"
+        run: 'python scripts/review_issues.py || echo "  review_issues skipped"'
 
       - name: Export sources de cet agent (pour cross-pollination future)
         if: ${{ github.event.inputs.dry_run != 'true' }}
-        run: python scripts/share_sources.py || echo "  share_sources skipped: $?"
+        run: 'python scripts/share_sources.py || echo "  share_sources skipped"'
 
       - name: "Discovery hebdo (OpenAlex + Semantic Scholar + Mastodon)"
         if: ${{ github.event.inputs.do_discovery_weekly == 'true' }}
