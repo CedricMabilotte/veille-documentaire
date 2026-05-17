@@ -59,81 +59,113 @@ keywords:
 # Type non spécifié → html (rétrocompat)
 sources:
   # ═══ Infokiosques.net — corpus francophone (html direct) ═══════════════════
+  # Fonds qui bouge souvent → 7 jours
   - label: "Infokiosques.net — nouveautés"
     url: "https://infokiosques.net/"
     type: html
+    min_interval_days: 3
 
   - label: "Infokiosques.net — index A"
     url: "https://infokiosques.net/spip.php?rubrique5"
     type: html
+    min_interval_days: 14
 
   - label: "Infokiosques.net — index C"
     url: "https://infokiosques.net/spip.php?rubrique7"
     type: html
+    min_interval_days: 14
 
   - label: "Infokiosques.net — index T (Terres, Travail)"
     url: "https://infokiosques.net/spip.php?rubrique11"
     type: html
+    min_interval_days: 14
 
   - label: "Infokiosques.net — index L (Libération, Luttes)"
     url: "https://infokiosques.net/spip.php?rubrique18"
     type: html
+    min_interval_days: 14
 
   # ═══ Heinrich-Böll-Stiftung (DE/EN, html direct, communs/écologie) ═════════
   - label: "Böll Stiftung — publications EN"
     url: "https://www.boell.de/en/publications"
     type: html
+    min_interval_days: 14
 
   - label: "Böll Stiftung — publications DE"
     url: "https://www.boell.de/de/publikationen"
     type: html
+    min_interval_days: 14
 
   # ═══ Crawl 2-niveaux — sites libertaires anglo + FR (deep_html) ════════════
   - label: "libcom.org — library"
     url: "https://libcom.org/library"
     type: deep_html
     max_pages: 20
+    min_interval_days: 14
 
   - label: "CrimethInc — library"
     url: "https://crimethinc.com/library"
     type: deep_html
     max_pages: 20
+    min_interval_days: 14
 
   - label: "CRAS (Centre de Recherches sur les Alternatives Sociales)"
     url: "https://cras31.info/"
     type: deep_html
     max_pages: 15
+    min_interval_days: 14
 
   # ═══ OPDS — The Anarchist Library (multi-langues, gros corpus) ══════════════
+  # Archive stable → 30 jours suffit
   - label: "The Anarchist Library — OPDS feed"
     url: "https://theanarchistlibrary.org/opds"
     type: opds
+    min_interval_days: 30
 
   # ═══ API Archive.org — corpus anarchiste / paysanneries (multi-langues) ════
   - label: "Archive.org — subject:anarchism (texts)"
     url: "https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
     type: archive_org
+    min_interval_days: 14
 
   - label: "Archive.org — peasant movements"
     url: "https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
     type: archive_org
+    min_interval_days: 14
 
   - label: "Archive.org — commons / enclosure"
     url: "https://archive.org/advancedsearch.php?q=%28subject%3Acommons+OR+subject%3Aenclosure%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
     type: archive_org
+    min_interval_days: 14
 
   # ═══ API HAL Science — académique francophone ═══════════════════════════════
   - label: "HAL — communs fonciers"
     url: "https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
+    min_interval_days: 14
 
   - label: "HAL — paysannerie / agriculture vivrière"
     url: "https://api.archives-ouvertes.fr/search/?q=paysannerie+OR+%22agriculture+vivri%C3%A8re%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
+    min_interval_days: 14
 
   - label: "HAL — propriété d'usage / fonds de dotation"
     url: "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
+    min_interval_days: 14
+
+  # ═══ Flux RSS — sites amis, refresh quotidien possible ═════════════════════
+  - label: "Reporterre — RSS principal"
+    url: "https://reporterre.net/spip.php?page=backend"
+    type: rss
+    max_items: 30
+    min_interval_days: 1
+
+  - label: "Lundi.am — RSS principal"
+    url: "https://lundi.am/spip.php?page=backend"
+    type: rss
+    max_items: 30
+    min_interval_days: 1
 
   # ═══ Playwright — désactivé pour le moment ═════════════════════════════════
   # Les 4 sources Playwright testées (Via Campesina, Lundi.am, Reporterre,

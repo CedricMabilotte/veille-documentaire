@@ -11,6 +11,14 @@ on:
         description: "Simulation sans téléchargement (true/false)"
         default: "false"
         required: false
+      do_discovery_weekly:
+        description: "Lance les discoveries hebdo (OpenAlex, Semantic Scholar, Mastodon, RSS)"
+        default: "false"
+        required: false
+      do_discovery_monthly:
+        description: "Lance le diagnostic Claude mensuel (suggestions + angles morts)"
+        default: "false"
+        required: false
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -104,13 +112,45 @@ jobs:
           MASTODON_TOKEN:    ${{ secrets.MASTODON_TOKEN }}
         run: python scripts/webhooks.py || echo "  webhooks skipped: $?"
 
-      - name: Commit reports + catalog + interface + bulles
+      - name: Review des Issues GitHub (suggestions communautaires)
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        env:
+          GH_TOKEN: ${{ secrets.BIBLIO_PUBLISH_TOKEN }}
+        run: python scripts/review_issues.py || echo "  review_issues skipped: $?"
+
+      - name: Export sources de cet agent (pour cross-pollination future)
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: python scripts/share_sources.py || echo "  share_sources skipped: $?"
+
+      - name: "Discovery hebdo (OpenAlex + Semantic Scholar + Mastodon)"
+        if: ${{ github.event.inputs.do_discovery_weekly == 'true' }}
+        run: |
+          python scripts/discovery_openalex.py        || echo "  openalex skipped"
+          python scripts/discovery_semantic_scholar.py || echo "  s2 skipped"
+          python scripts/discovery_mastodon.py        || echo "  mastodon skipped"
+
+      - name: "Discovery mensuelle (LLM suggest + angles morts)"
+        if: ${{ github.event.inputs.do_discovery_monthly == 'true' }}
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          python scripts/discovery_llm_suggest.py || echo "  llm_suggest skipped"
+          python scripts/discovery_blind_spots.py || echo "  blind_spots skipped"
+
+      - name: Sync discoveries vers Drive
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          if [ -d discovery/ ]; then
+            rclone copy discovery/ gdrive:Veille_documentaire/discovery/ --stats-one-line --stats 30s || true
+          fi
+
+      - name: Commit reports + catalog + interface + bulles + discoveries
         if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |
           git config --global user.name  "Library Bot"
           git config --global user.email "bot@library.local"
-          git add reports/ synopsis/ interface/ bulles/ site/
-          git diff --staged --quiet || git commit -m "veille: $(date '+%Y-%m-%d %H:%M') — rapports + catalog + interface + bulles + site"
+          git add reports/ synopsis/ interface/ bulles/ site/ discovery/ feedback.json exports/ 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "veille: $(date '+%Y-%m-%d %H:%M') — rapports + catalog + interface + bulles + discoveries"
           git push
 
       - name: Publier vers biblio.actitude.org (repo public)

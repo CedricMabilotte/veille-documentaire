@@ -33,6 +33,10 @@ import synopsis_enricher
 import bibliography_extractor
 import dedup
 import fulltext_index
+import throttle
+import discovery_external_links
+import discovery_bibliography
+import discovery_footnotes
 
 # ── Chemins ────────────────────────────────────────────────────────────────────
 CONFIG_PATH    = Path("config/sources.yml")
@@ -624,16 +628,57 @@ def main() -> None:
         url       = source.get("url", "")
         label     = source.get("label", url)
         src_type  = source.get("type", "html")
+
+        # ── Throttle : décider si on fetch cette source maintenant ───────────
+        try:
+            ok_fetch, skip_reason = throttle.should_fetch(source)
+            if not ok_fetch:
+                print(f"\n⏭   {label}  [skip: {skip_reason}]")
+                continue
+        except Exception as e:
+            print(f"  ⚠  throttle.should_fetch raté pour {label} : {e}")
+
         print(f"\n🔍  {label}  [type={src_type}]\n    {url}")
 
         # ── Dispatch vers le bon parser ────────────────────────────────────
         docs = parser_dispatch(source)
+        # Enregistrer le résultat dans le throttle (status_code=200 si on a des docs,
+        # 0 sinon — signale le non-rendement, pas une erreur HTTP)
+        try:
+            throttle.record_fetch(
+                source,
+                success=bool(docs),
+                doc_count=len(docs),
+                status_code=200 if docs else 204,
+            )
+        except Exception as e:
+            print(f"  ⚠  throttle.record_fetch raté : {e}")
+
         if not docs:
             continue
 
         report["sources_scanned"] += 1
         print(f"    → {len(docs)} document(s) trouvé(s)")
         report["documents_found"] += len(docs)
+
+        # ── Capture des liens externes : alimente discovery/candidates.yml ─
+        try:
+            # On reconstruit un HTML minimal depuis les docs récupérés —
+            # le parser HTML expose déjà l'URL source via doc["source_url"],
+            # et le parser stocke le contexte. On agrège pour capture_links.
+            html_blob = "\n".join(
+                f'<a href="{d.get("url", "")}">{d.get("link_text", "")}</a> '
+                f'{d.get("context", "")}'
+                for d in docs
+            )
+            new_links = discovery_external_links.capture_links(
+                html_blob, url, label,
+                Path("discovery") / "candidates.yml"
+            )
+            if new_links:
+                print(f"    🌐  {new_links} nouveaux candidats (liens externes)")
+        except Exception as e:
+            print(f"  ⚠  capture_links raté : {e}")
 
         # ── Scoring par batches ─────────────────────────────────────────────
         all_scores: list[dict] = []
@@ -723,6 +768,40 @@ def main() -> None:
         )
         if dedup_stats.get("duplicate_clusters", 0) > 0:
             print(f"  ♻  Dedup : {dedup_stats}")
+    except Exception:
+        pass
+
+    # ── Discoveries "cheap" (sans appel LLM) lancées à chaque run ────────────
+    print("\n🔭  Découvertes post-veille (cheap, sans LLM)")
+
+    discovery_path = Path("discovery") / "candidates.yml"
+    discovery_path.parent.mkdir(parents=True, exist_ok=True)
+
+    try:
+        # Footnotes : extrait les notes de bas de page des PDFs téléchargés
+        # → nouveaux candidats (URLs/DOIs cités dans les notes)
+        r = discovery_footnotes.discover_from_footnotes(
+            DOCS_PATH, SYNOPSIS_PATH / "catalog.json", discovery_path
+        )
+        print(f"  • footnotes : {r.get('added', 0)} ajoutés")
+    except Exception as e:
+        print(f"  ⚠  discovery_footnotes : {e}")
+
+    try:
+        # Biblio récursive : exploite les references[] des docs scorés ≥ 7
+        # → trouve les DOI/URLs cités, interroge Crossref
+        r = discovery_bibliography.discover_from_bibliography(
+            SYNOPSIS_PATH / "catalog.json", discovery_path,
+            limit_per_doc=5, limit_total=50,
+        )
+        print(f"  • bibliographies : {r.get('added', 0)} ajoutés")
+    except Exception as e:
+        print(f"  ⚠  discovery_bibliography : {e}")
+
+    # Rapport throttle final
+    try:
+        t = throttle.report()
+        print(f"  🚦  Throttle : {t}")
     except Exception:
         pass
 
