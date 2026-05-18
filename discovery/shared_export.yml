@@ -40,7 +40,7 @@ project_keywords:
 - usos colectivos
 - ejidos
 - tierra comunal
-exported_at: '2026-05-17T21:03:56.254424+00:00'
+exported_at: '2026-05-18T00:21:58.217381+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
@@ -95,9 +95,9 @@ sources:
   label: libcom.org — library
   type: deep_html
   fertility: 0.0
-  runs: 2
+  runs: 3
   docs_dl: 0
-  docs_seen: 2
+  docs_seen: 3
 - url: https://crimethinc.com/library
   label: CrimethInc — library
   type: deep_html
@@ -119,6 +119,13 @@ sources:
   runs: 3
   docs_dl: 90
   docs_seen: 300
+- url: https://archive.org/advancedsearch.php?q=cuba+AND+language%3A%22spa%22+AND+%28cooperativ*+OR+campesin*+OR+agrari*+OR+%22reforma+agraria%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
+  label: Archive.org — Cuba (ES, réforme agraire & coopératives)
+  type: archive_org
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 5
 - url: https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
   label: Archive.org — subject:anarchism (texts)
   type: archive_org
@@ -143,31 +150,31 @@ sources:
 - url: https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
   label: HAL — communs fonciers
   type: hal
-  fertility: 17.5
-  runs: 2
-  docs_dl: 35
-  docs_seen: 44
+  fertility: 17.33
+  runs: 3
+  docs_dl: 52
+  docs_seen: 66
 - url: https://api.archives-ouvertes.fr/search/?q=paysannerie+OR+%22agriculture+vivri%C3%A8re%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
   label: HAL — paysannerie / agriculture vivrière
   type: hal
-  fertility: 10.5
-  runs: 2
-  docs_dl: 21
-  docs_seen: 56
+  fertility: 9.67
+  runs: 3
+  docs_dl: 29
+  docs_seen: 84
 - url: https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
   label: HAL — propriété d'usage / fonds de dotation
   type: hal
   fertility: 1.0
-  runs: 2
-  docs_dl: 2
-  docs_seen: 12
+  runs: 3
+  docs_dl: 3
+  docs_seen: 18
 - url: https://reporterre.net/spip.php?page=backend
   label: Reporterre — RSS principal
   type: rss
   fertility: 0.0
-  runs: 0
+  runs: 1
   docs_dl: 0
-  docs_seen: 0
+  docs_seen: 30
 - url: https://lundi.am/spip.php?page=backend
   label: Lundi.am — RSS principal
   type: rss
@@ -175,3 +182,94 @@ sources:
   runs: 1
   docs_dl: 0
   docs_seen: 10
+- url: https://www.troisiemesvoix.org/fr
+  label: Troisièmes Voix — éditions
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://www.cnt.es/feed/
+  label: CNT-AIT España
+  type: rss
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 10
+- url: https://portaloaca.com/feed/
+  label: Portal OACA (anarcosindicalisme ES)
+  type: rss
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 10
+- url: https://cgt.org.es/feed/
+  label: CGT España
+  type: rss
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 10
+- url: https://www.sinpermiso.info/rss.xml
+  label: Sin Permiso (revue radicale ES)
+  type: rss
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 10
+- url: https://enlacezapatista.ezln.org.mx/feed/
+  label: Enlace Zapatista (EZLN)
+  type: rss
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 20
+- url: https://viacampesina.org/es/feed/
+  label: La Vía Campesina (ES)
+  type: rss
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 12
+- url: https://www.cloc-viacampesina.net/feed/
+  label: CLOC — Vía Campesina LatAm
+  type: rss
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 10
+- url: https://www.fian.org/es/feed/
+  label: FIAN International (droit à l'alimentation, ES)
+  type: rss
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://www.clacso.org/libros/
+  label: CLACSO Libros (acceso abierto)
+  type: html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 3
+- url: https://www.tierra.org/
+  label: Tierra.org (Amigos de la Tierra ES)
+  type: deep_html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 3
+- url: https://www.ceipaz.org/feed/
+  label: CEIPAZ (Cultura de Paz)
+  type: rss
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 10
+- url: https://www.celag.org/feed/
+  label: CELAG (Geopolítica LatAm)
+  type: rss
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
