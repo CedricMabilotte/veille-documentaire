@@ -16,6 +16,22 @@ project_keywords:
 - souveraineté alimentaire
 - terres collectives
 - propriété collective
+- agroécologie
+- accaparement
+- accaparement des terres
+- fiducie foncière
+- foncier coutumier
+- droit coutumier
+- coopérative agricole
+- mutualisme foncier
+- féminisme paysan
+- paysannerie familiale
+- habitat coopératif
+- logement collectif
+- AMAP
+- communs urbains
+- autonomie territoriale
+- biens communs africains
 - land commons
 - usufruct
 - land rights
@@ -29,6 +45,23 @@ project_keywords:
 - enclosure
 - collective ownership
 - land back
+- land grabbing
+- land grabs
+- agroecology
+- community land trust
+- housing commons
+- housing cooperative
+- agricultural cooperatives
+- smallholder
+- peasant agriculture
+- family farming
+- indigenous land rights
+- land repatriation
+- agrarian feminism
+- women land rights
+- African commons
+- customary tenure
+- rural commons
 - bienes comunes
 - usufructo
 - liberación de la tierra
@@ -40,57 +73,108 @@ project_keywords:
 - usos colectivos
 - ejidos
 - tierra comunal
-exported_at: '2026-05-18T00:21:58.217381+00:00'
+- agroecología
+- acaparamiento de tierras
+- acaparamiento
+- vivienda colectiva
+- cooperativas agrarias
+- comunidades originarias
+- autonomía territorial
+- sumak kawsay
+- buen vivir
+- feminismo agrario
+- agricultura familiar
+- agricultura campesina
+- tenencia colectiva
+- movimiento sin tierra
+- Movimento Sem Terra
+- MST
+- reforma agrária
+- agroecologia
+- terra indígena
+- soberania alimentar
+- agricultura familiar
+- Landrechte
+- Bodenreform
+- Allmende
+- Gemeingüter
+- Landgrabbing
+- Kleinbauern
+- Ernährungssouveränität
+- Agrarökologie
+- bäuerliche Landwirtschaft
+exported_at: '2026-05-18T07:27:41.453591+00:00'
 sources:
 - url: https://infokiosques.net/
-  label: Infokiosques.net — nouveautés
+  label: Infokiosques.net — nouveautés (deep crawl)
+  type: deep_html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 72
+- url: https://infokiosques.net/paysannerie_ruralite
+  label: Infokiosques.net — Paysannerie & ruralité
   type: html
-  fertility: 9.0
-  runs: 4
-  docs_dl: 36
-  docs_seen: 190
-- url: https://infokiosques.net/spip.php?rubrique5
-  label: Infokiosques.net — index A
+  fertility: 23.0
+  runs: 1
+  docs_dl: 23
+  docs_seen: 123
+- url: https://infokiosques.net/ecologie_radicale
+  label: Infokiosques.net — Écologie radicale
   type: html
-  fertility: 6.0
-  runs: 3
-  docs_dl: 18
-  docs_seen: 870
-- url: https://infokiosques.net/spip.php?rubrique7
-  label: Infokiosques.net — index C
-  type: html
-  fertility: 5.0
-  runs: 3
-  docs_dl: 15
-  docs_seen: 823
-- url: https://infokiosques.net/spip.php?rubrique11
-  label: Infokiosques.net — index T (Terres, Travail)
+  fertility: 4.0
+  runs: 1
+  docs_dl: 4
+  docs_seen: 155
+- url: https://infokiosques.net/anticapitalisme
+  label: Infokiosques.net — Anticapitalisme
   type: html
   fertility: 0.0
-  runs: 3
+  runs: 1
   docs_dl: 0
-  docs_seen: 345
-- url: https://infokiosques.net/spip.php?rubrique18
-  label: Infokiosques.net — index L (Libération, Luttes)
+  docs_seen: 94
+- url: https://infokiosques.net/squat
+  label: Infokiosques.net — Squat (rapport à l'habiter)
   type: html
-  fertility: 2.67
-  runs: 3
-  docs_dl: 8
-  docs_seen: 222
+  fertility: 19.0
+  runs: 1
+  docs_dl: 19
+  docs_seen: 123
+- url: https://infokiosques.net/anticolonialismes
+  label: Infokiosques.net — Anticolonialismes
+  type: html
+  fertility: 2.0
+  runs: 1
+  docs_dl: 2
+  docs_seen: 83
 - url: https://www.boell.de/en/publications
-  label: Böll Stiftung — publications EN
-  type: html
-  fertility: 1.0
-  runs: 3
-  docs_dl: 3
-  docs_seen: 117
+  label: Böll Stiftung — publications EN (deep crawl)
+  type: deep_html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 227
+- url: https://www.boell.de/en/agriculture-atlas-2019
+  label: Böll Stiftung — Agriculture Atlas (EN)
+  type: deep_html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 39
+- url: https://www.boell.de/en/meat-atlas
+  label: Böll Stiftung — Meat Atlas (EN)
+  type: deep_html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 39
 - url: https://www.boell.de/de/publikationen
-  label: Böll Stiftung — publications DE
-  type: html
-  fertility: 2.67
-  runs: 3
-  docs_dl: 8
-  docs_seen: 243
+  label: Böll Stiftung — publications DE (deep crawl)
+  type: deep_html
+  fertility: 1.0
+  runs: 1
+  docs_dl: 1
+  docs_seen: 195
 - url: https://libcom.org/library
   label: libcom.org — library
   type: deep_html
@@ -112,13 +196,13 @@ sources:
   runs: 3
   docs_dl: 26
   docs_seen: 285
-- url: https://theanarchistlibrary.org/opds
-  label: The Anarchist Library — OPDS feed
+- url: https://theanarchistlibrary.org/opds/new
+  label: The Anarchist Library — OPDS (new releases)
   type: opds
-  fertility: 30.0
-  runs: 3
-  docs_dl: 90
-  docs_seen: 300
+  fertility: 24.0
+  runs: 1
+  docs_dl: 24
+  docs_seen: 100
 - url: https://archive.org/advancedsearch.php?q=cuba+AND+language%3A%22spa%22+AND+%28cooperativ*+OR+campesin*+OR+agrari*+OR+%22reforma+agraria%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — Cuba (ES, réforme agraire & coopératives)
   type: archive_org
@@ -126,13 +210,13 @@ sources:
   runs: 1
   docs_dl: 0
   docs_seen: 5
-- url: https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
-  label: Archive.org — subject:anarchism (texts)
+- url: https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
+  label: Archive.org — anarchism + land/peasant (strict)
   type: archive_org
-  fertility: 3.33
-  runs: 3
-  docs_dl: 10
-  docs_seen: 150
+  fertility: 1.0
+  runs: 1
+  docs_dl: 1
+  docs_seen: 17
 - url: https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
   label: Archive.org — peasant movements
   type: archive_org
@@ -140,13 +224,20 @@ sources:
   runs: 3
   docs_dl: 3
   docs_seen: 30
-- url: https://archive.org/advancedsearch.php?q=%28subject%3Acommons+OR+subject%3Aenclosure%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
-  label: Archive.org — commons / enclosure
+- url: https://archive.org/advancedsearch.php?q=%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land+reform%22+OR+subject%3A%22enclosure%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
+  label: Archive.org — commons / enclosure / agrarian (strict)
   type: archive_org
-  fertility: 0.33
-  runs: 3
-  docs_dl: 1
-  docs_seen: 150
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 50
+- url: https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
+  label: Archive.org — community land trusts & housing commons
+  type: archive_org
+  fertility: 2.0
+  runs: 1
+  docs_dl: 2
+  docs_seen: 30
 - url: https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
   label: HAL — communs fonciers
   type: hal
@@ -182,6 +273,62 @@ sources:
   runs: 1
   docs_dl: 0
   docs_seen: 10
+- url: https://mst.org.br/feed/
+  label: MST Brésil — RSS principal
+  type: rss
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 10
+- url: https://mst.org.br/biblioteca-da-questao-agraria/
+  label: MST Brésil — biblioteca questão agraria
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://www.landcoalition.org/en/latest/
+  label: International Land Coalition — latest
+  type: deep_html
+  fertility: 2.0
+  runs: 1
+  docs_dl: 2
+  docs_seen: 10
+- url: https://www.tni.org/en/topic/land-food
+  label: TNI — Land & Food topic
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://www.culturalsurvival.org/rss.xml
+  label: Cultural Survival — RSS
+  type: rss
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 10
+- url: https://grain.org/home/entries.rss
+  label: GRAIN — entries RSS
+  type: rss
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://daily.jstor.org/topic/land/
+  label: JSTOR Daily — topic land
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://endatiersmonde.org/feed/
+  label: ENDA Tiers Monde — RSS
+  type: rss
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 10
 - url: https://www.troisiemesvoix.org/fr
   label: Troisièmes Voix — éditions
   type: deep_html
@@ -197,14 +344,21 @@ sources:
   docs_dl: 0
   docs_seen: 10
 - url: https://portaloaca.com/feed/
-  label: Portal OACA (anarcosindicalisme ES)
+  label: Portal OACA — RSS (anarcosindicalisme ES)
   type: rss
   fertility: 0.0
   runs: 1
   docs_dl: 0
   docs_seen: 10
+- url: https://www.portaloaca.com/categoria/pensamientolibertario/libros-anarquistas/
+  label: Portal OACA — Libros anarquistas (catégorie)
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
 - url: https://cgt.org.es/feed/
-  label: CGT España
+  label: CGT España — RSS
   type: rss
   fertility: 0.0
   runs: 1
@@ -247,20 +401,41 @@ sources:
   docs_seen: 0
 - url: https://www.clacso.org/libros/
   label: CLACSO Libros (acceso abierto)
-  type: html
-  fertility: 0.0
-  runs: 1
-  docs_dl: 0
-  docs_seen: 3
-- url: https://www.tierra.org/
-  label: Tierra.org (Amigos de la Tierra ES)
   type: deep_html
   fertility: 0.0
   runs: 1
   docs_dl: 0
   docs_seen: 3
+- url: https://www.clacso.org/libros-de-clacso-en-coedicion/
+  label: CLACSO — Libros en coedición
+  type: deep_html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 107
+- url: https://www.clacso.org/publicaciones/
+  label: CLACSO — Publicaciones générales
+  type: deep_html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 104
+- url: https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+  label: Tierra.org — Agricultura y alimentación
+  type: deep_html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 2
+- url: https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+  label: Tierra.org — Biodiversidad
+  type: deep_html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 2
 - url: https://www.ceipaz.org/feed/
-  label: CEIPAZ (Cultura de Paz)
+  label: CEIPAZ (Cultura de Paz) — RSS
   type: rss
   fertility: 0.0
   runs: 1
@@ -270,6 +445,6 @@ sources:
   label: CELAG (Geopolítica LatAm)
   type: rss
   fertility: 0.0
-  runs: 0
+  runs: 1
   docs_dl: 0
-  docs_seen: 0
+  docs_seen: 10
