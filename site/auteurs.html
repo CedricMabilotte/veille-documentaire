@@ -33,8 +33,8 @@
       <a href="fiches/index.html">Catalogue</a>
       <a href="auteurs.html">Auteurs</a>
       <a href="chronologie.html">Chronologie</a>
-      <a href="graph.html">Graphe</a>
       <a href="dossiers.html">Dossiers</a>
+      <a href="concepts/index.html">Concepts</a>
       <a href="apropos.html">Méthodologie</a>
     </nav>
     <div class="header-tools">
@@ -93,8 +93,8 @@
         <li><a href="fiches/index.html">Catalogue</a></li>
         <li><a href="auteurs.html">Auteurs</a></li>
         <li><a href="chronologie.html">Chronologie</a></li>
-        <li><a href="graph.html">Graphe</a></li>
         <li><a href="dossiers.html">Dossiers</a></li>
+        <li><a href="concepts/index.html">Concepts</a></li>
         <li><a href="apropos.html">Méthodologie</a></li>
         <li><a href="feed.xml">Flux RSS</a></li>
       </ul>
@@ -119,6 +119,15 @@
 <script src="assets/js/app.js"></script>
 <script>
 /* ===== Page Auteurs — agrégation et rendu ===== */
+/* Slugifie un nom (utilisé pour les ancres #<slug> ciblées depuis fiche.html). */
+function slugifyAuthor(name) {
+  return String(name || '')
+    .toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 window.pageInit = function (basePath) {
   loadCatalog(basePath).then(({ docs, _error }) => {
     const content = document.getElementById('authors-content');
@@ -129,6 +138,15 @@ window.pageInit = function (basePath) {
     const groups = groupByAuthor(docs);
     renderIndex(groups);
     renderAuthors(groups, basePath);
+    // Scroll vers l'ancre si présente dans l'URL (cible #<slug-auteur>)
+    if (window.location.hash && window.location.hash.length > 1) {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        // léger délai pour laisser le layout se stabiliser
+        setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+        target.classList.add('author-target');
+      }
+    }
   });
 };
 
@@ -185,8 +203,9 @@ function renderAuthors(groups, basePath) {
       currentLetter = letter;
     }
     const top3 = list.slice(0, 3);
+    const slug = isUnk ? 'auteur-indetermine' : slugifyAuthor(name);
     buf.push(`
-      <article class="author-card">
+      <article class="author-card" id="${escape(slug)}">
         <h3>${escape(name)}</h3>
         <div class="author-count">${list.length} fiche${list.length > 1 ? 's' : ''}</div>
         <ul>

@@ -1,0 +1,70 @@
+{
+  "project": {
+    "name": "communs-terres-paysannerie",
+    "display_name": "BIBLIO — Communs, terres, paysanneries",
+    "tagline": "Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.",
+    "languages": ["fr", "en", "es"]
+  },
+  "core_concepts": [
+    {
+      "name": "Propriété d'usage",
+      "slug": "propriete-d-usage",
+      "definition": "Forme de propriété alternative qui dissocie le droit d'usage du droit de disposition marchande. Inclut les fonds de dotation, les baux emphytéotiques militants, les fiducies foncières, les structures anti-spéculatives.",
+      "equivalents": {
+        "fr": ["propriété d'usage", "fonds de dotation", "fiducie foncière", "bail emphytéotique militant", "propriété collective", "usufruit collectif"],
+        "en": ["usufruct", "community land trust", "collective ownership", "use rights", "stewardship ownership"],
+        "es": ["usufructo", "propiedad de uso", "fideicomiso de tierras", "tenencia colectiva"]
+      }
+    },
+    {
+      "name": "Communs fonciers",
+      "slug": "communs-fonciers",
+      "definition": "Régimes de propriété ou d'usage où la terre est gérée par et pour une communauté, hors du marché et de la propriété étatique exclusive. Inclut communaux, ejidos, terres coutumières, biens communaux.",
+      "equivalents": {
+        "fr": ["communs fonciers", "communaux", "biens communs", "terres collectives", "terres communales", "commun", "communs"],
+        "en": ["land commons", "commoning", "commons", "common lands", "common-pool resources"],
+        "es": ["bienes comunes", "tierra comunal", "ejidos", "comunales", "usos colectivos"]
+      }
+    },
+    {
+      "name": "Libération des terres",
+      "slug": "liberation-des-terres",
+      "definition": "Mouvements et théories qui visent la décolonisation, la redistribution ou l'occupation des terres : sans-terre, Land Back, réformes agraires, luttes contre l'enclosure et l'accaparement.",
+      "equivalents": {
+        "fr": ["libération des terres", "accès à la terre", "luttes pour la terre", "réforme agraire", "accaparement", "ZAD"],
+        "en": ["land liberation", "land back", "landless movement", "land rights", "agrarian reform", "land grabbing", "enclosure"],
+        "es": ["liberación de la tierra", "sin tierra", "reforma agraria", "tierra y libertad", "acaparamiento de tierras"]
+      }
+    },
+    {
+      "name": "Paysannerie",
+      "slug": "paysannerie",
+      "definition": "Mondes paysans comme acteurs politiques, économiques et culturels : agricultures vivrières, savoirs paysans, agroécologie, organisations comme la Via Campesina. À distinguer de l'agriculture industrielle.",
+      "equivalents": {
+        "fr": ["paysannerie", "paysans libres", "paysans", "agriculture vivrière", "agroécologie paysanne", "souveraineté alimentaire"],
+        "en": ["peasantry", "peasant movement", "subsistence farming", "food sovereignty", "peasant agroecology"],
+        "es": ["campesinado", "agricultura campesina", "soberanía alimentaria", "agroecología campesina"]
+      }
+    },
+    {
+      "name": "Habitat et collectifs",
+      "slug": "habitat-et-collectifs",
+      "definition": "Formes collectives d'habiter la terre : habitat groupé, communautés intentionnelles, occupations, squats ruraux, coopératives d'habitants. À condition d'avoir un rapport situé à la terre (pas juste à l'immobilier).",
+      "equivalents": {
+        "fr": ["collectif d'habitants", "habitat groupé", "communautés rurales", "squat rural", "coopérative d'habitants"],
+        "en": ["housing cooperative", "intentional community", "land cooperative", "rural commune"],
+        "es": ["cooperativa de vivienda", "comunidad intencional", "comuna rural"]
+      }
+    }
+  ],
+  "related_concepts": [
+    "écologie politique",
+    "décolonial / décolonisation",
+    "anarchisme (en tant qu'il pense la terre)",
+    "altermondialisme",
+    "luttes autochtones",
+    "permaculture (lorsqu'elle est politique, pas technique)",
+    "histoire rurale",
+    "géographie radicale"
+  ]
+}

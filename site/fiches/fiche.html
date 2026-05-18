@@ -9,8 +9,11 @@
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="BIBLIO — Nouvelles fiches" href="../feed.xml">
 <meta property="og:title" content="Fiche — BIBLIO">
+<meta property="og:description" content="Fiche documentaire BIBLIO — analyse, citations, contexte.">
 <meta property="og:type" content="article">
+<meta property="og:url" content="https://biblio.actitude.org/fiches/fiche.html">
 <meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.svg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -31,8 +34,8 @@
       <a href="index.html">Catalogue</a>
       <a href="../auteurs.html">Auteurs</a>
       <a href="../chronologie.html">Chronologie</a>
-      <a href="../graph.html">Graphe</a>
       <a href="../dossiers.html">Dossiers</a>
+      <a href="../concepts/index.html">Concepts</a>
       <a href="../apropos.html">Méthodologie</a>
     </nav>
     <div class="header-tools">
@@ -83,8 +86,8 @@
         <li><a href="index.html">Catalogue</a></li>
         <li><a href="../auteurs.html">Auteurs</a></li>
         <li><a href="../chronologie.html">Chronologie</a></li>
-        <li><a href="../graph.html">Graphe</a></li>
         <li><a href="../dossiers.html">Dossiers</a></li>
+        <li><a href="../concepts/index.html">Concepts</a></li>
         <li><a href="../apropos.html">Méthodologie</a></li>
         <li><a href="../feed.xml">Flux RSS</a></li>
       </ul>
@@ -136,19 +139,106 @@ function showError(msg) {
 
 function updateMetaTags(doc, basePath) {
   const title = docTitle(doc);
+  const teaser = (docTeaser(doc) || docSummary(doc) || '').slice(0, 200);
+  const author = inferAuthor(doc);
+  const year = inferYear(doc);
+  const keywords = ((doc.bulle_data && doc.bulle_data.categorisation)
+                    || (doc.enrichment && doc.enrichment.matched_keywords) || []);
+  // Titre + breadcrumb
   document.title = `${title} — BIBLIO`;
   document.getElementById('bc-current').textContent = title.length > 60 ? title.slice(0, 60) + '…' : title;
-  const meta = document.querySelector('meta[name="description"]');
-  if (meta) meta.setAttribute('content', (docTeaser(doc) || docSummary(doc) || '').slice(0, 180));
-  // OG image : couverture si présente
-  document.querySelectorAll('meta[property="og:title"]').forEach(m => m.setAttribute('content', title + ' — BIBLIO'));
+  // Description
+  const desc = document.querySelector('meta[name="description"]');
+  if (desc) desc.setAttribute('content', teaser);
+  // Open Graph dynamiques (titre, description, url, image)
+  const canonicalUrl = `https://biblio.actitude.org/fiches/fiche.html?id=${encodeURIComponent(doc.id)}`;
+  setMeta('og:title', title + ' — BIBLIO');
+  setMeta('og:description', teaser);
+  setMeta('og:type', 'article');
+  setMeta('og:url', canonicalUrl);
+  // og:image : couverture en URL absolue si disponible (sinon défaut)
+  const ogImg = `https://biblio.actitude.org/assets/covers/${doc.id}.png`;
+  setMeta('og:image', ogImg);
+  // Schema.org JSON-LD (ScholarlyArticle ou Book selon format/page_count)
+  injectJsonLd(doc, { title, teaser, author, year, keywords, canonicalUrl, ogImg });
 }
+
+/* Pose ou met à jour un meta[property=...] dans le <head>. */
+function setMeta(prop, content) {
+  let m = document.querySelector(`meta[property="${prop}"]`);
+  if (!m) {
+    m = document.createElement('meta');
+    m.setAttribute('property', prop);
+    document.head.appendChild(m);
+  }
+  m.setAttribute('content', content);
+}
+
+/* Injecte un bloc <script type="application/ld+json"> avec ScholarlyArticle ou Book. */
+function injectJsonLd(doc, ctx) {
+  // On supprime un précédent bloc (s'il existait via re-render)
+  const old = document.getElementById('ld-json-fiche');
+  if (old) old.remove();
+  // Choix du type : un livre (Book) si page_count > 60, sinon ScholarlyArticle
+  const pageCount = doc.meta && doc.meta.page_count;
+  const isBook = pageCount && pageCount >= 60;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": isBook ? "Book" : "ScholarlyArticle",
+    "headline": ctx.title,
+    "name": ctx.title,
+    "url": ctx.canonicalUrl,
+    "inLanguage": (doc.meta && doc.meta.lang) || 'fr',
+    "abstract": ctx.teaser,
+    "keywords": (ctx.keywords || []).slice(0, 15),
+    "image": ctx.ogImg,
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "BIBLIO — Bibliothèque documentaire ouverte",
+      "url": "https://biblio.actitude.org/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "actitude.org",
+      "url": "https://actitude.org"
+    }
+  };
+  if (ctx.author) {
+    schema.author = { "@type": "Person", "name": ctx.author };
+  }
+  if (ctx.year) {
+    schema.datePublished = String(ctx.year);
+  }
+  if (doc.source) {
+    schema.sourceOrganization = { "@type": "Organization", "name": doc.source };
+  }
+  if (doc.url) {
+    schema.mainEntityOfPage = doc.url;
+  }
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.id = 'ld-json-fiche';
+  script.textContent = JSON.stringify(schema, null, 2);
+  document.head.appendChild(script);
+}
+
+/* Slugifie un nom d'auteur pour cibler #slug sur auteurs.html. */
+function slugifyAuthor(name) {
+  return String(name || '')
+    .toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+window.slugifyAuthor = slugifyAuthor;
 
 function renderFiche(doc, basePath) {
   const root = document.getElementById('fiche-root');
   const title = docTitle(doc);
   const cover = coverPath(doc, basePath);
-  const author = docAuthor(doc);
+  // Auteur : explicit puis inféré
+  const author = docAuthor(doc) || inferAuthor(doc);
+  const authorSlug = author ? slugifyAuthor(author) : '';
   const score = doc.latest_score || 0;
   const run = docLatestRun(doc);
   const summary = docSummary(doc);
@@ -161,6 +251,10 @@ function renderFiche(doc, basePath) {
   const subtitle = doc.bulle_data && doc.bulle_data.teaser ? doc.bulle_data.teaser : '';
   const hasBulle = !!doc.bulle_data;
   const shareUrl = window.location.href;
+  // Lien auteur : pointe vers auteurs.html#<slug> (l'ancre cible le bloc auteur)
+  const authorHTML = author
+    ? `<a href="../auteurs.html#${escape(authorSlug)}">${escape(author)}</a>`
+    : '';
 
   root.innerHTML = `
     <aside class="fiche-cover-wrap">
@@ -180,7 +274,7 @@ function renderFiche(doc, basePath) {
       ${subtitle ? `<p class="fiche-subtitle">${escape(subtitle)}</p>` : ''}
 
       <dl class="fiche-meta-grid">
-        ${author ? `<div><dt>Auteur</dt><dd>${escape(author)}</dd></div>` : ''}
+        ${author ? `<div><dt>Auteur</dt><dd>${authorHTML}</dd></div>` : ''}
         <div><dt>Source</dt><dd>${escape(doc.source || '—')}</dd></div>
         <div><dt>Format</dt><dd>${escape((doc.format || '').toUpperCase())}${doc.meta && doc.meta.page_count ? ' · ' + doc.meta.page_count + ' p.' : ''}</dd></div>
         <div><dt>Score</dt><dd><span class="score-pill ${scoreClass(score)}">${score}/10</span></dd></div>
@@ -217,7 +311,9 @@ function renderFiche(doc, basePath) {
       ${keywords.length ? `
         <section class="fiche-section">
           <h2>Mots-clés</h2>
-          <div class="keywords">${keywords.map(k => `<span class="kw">${escape(k)}</span>`).join('')}</div>
+          <div class="keywords">${keywords.map(k =>
+            `<a class="kw kw-link" href="../fiches/index.html?q=${encodeURIComponent(k)}" title="Chercher « ${escape(k)} » dans le catalogue">${escape(k)}</a>`
+          ).join('')}</div>
         </section>
       ` : ''}
 

@@ -37,6 +37,7 @@ import throttle
 import discovery_external_links
 import discovery_bibliography
 import discovery_footnotes
+import discovery_promote
 
 # ── Chemins ────────────────────────────────────────────────────────────────────
 CONFIG_PATH    = Path("config/sources.yml")
@@ -795,6 +796,16 @@ def main() -> None:
         print(f"  • bibliographies : {r.get('added', 0)} ajoutés")
     except Exception as e:
         print(f"  ⚠  discovery_bibliography : {e}")
+
+    try:
+        # Pipeline DOI → Unpaywall : promeut les candidats OpenAlex qui ont
+        # un DOI en URL PDF directement téléchargeable (open access)
+        r = discovery_promote.promote_candidates(
+            discovery_path, limit=100, update_in_place=True
+        )
+        print(f"  • doi promotions : {r.get('promoted', 0)} sur {r.get('processed', 0)} traités")
+    except Exception as e:
+        print(f"  ⚠  discovery_promote : {e}")
 
     # Rapport throttle final
     try:

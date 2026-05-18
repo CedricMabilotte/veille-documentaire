@@ -3,14 +3,14 @@
 # Si tu veux élargir : 6 ; si tu veux ultra-strict : 8.
 threshold: 7
 
-# ── Mots-clés de veille (multilingues FR + EN + ES) ──────────────────────────
+# ── Mots-clés de veille (multilingues FR + EN + ES + DE + PT) ────────────────
 # Thématique CIBLÉE : propriété d'usage, communs fonciers, libération des
 # terres, paysannerie, formes de propriété alternatives.
 #
 # Mots-clés trop génériques retirés (communauté, community, comunidad,
 # propriété privée) — ils matchaient trop de hors-sujet libertaire général.
 keywords:
-  # Français — concepts pointus
+  # ── Français — concepts pointus ─────────────────────────────────────────
   - propriété d'usage
   - fonds de dotation
   - libération des terres
@@ -27,7 +27,23 @@ keywords:
   - souveraineté alimentaire
   - terres collectives
   - propriété collective
-  # English — concepts pointus
+  - agroécologie
+  - accaparement
+  - accaparement des terres
+  - fiducie foncière
+  - foncier coutumier
+  - droit coutumier
+  - coopérative agricole
+  - mutualisme foncier
+  - féminisme paysan
+  - paysannerie familiale
+  - habitat coopératif
+  - logement collectif
+  - AMAP
+  - communs urbains
+  - autonomie territoriale
+  - biens communs africains
+  # ── English — concepts pointus ──────────────────────────────────────────
   - land commons
   - usufruct
   - land rights
@@ -41,7 +57,24 @@ keywords:
   - enclosure
   - collective ownership
   - land back
-  # Español — concepts pointus
+  - land grabbing
+  - land grabs
+  - agroecology
+  - community land trust
+  - housing commons
+  - housing cooperative
+  - agricultural cooperatives
+  - smallholder
+  - peasant agriculture
+  - family farming
+  - indigenous land rights
+  - land repatriation
+  - agrarian feminism
+  - women land rights
+  - African commons
+  - customary tenure
+  - rural commons
+  # ── Español — concepts pointus ──────────────────────────────────────────
   - bienes comunes
   - usufructo
   - liberación de la tierra
@@ -53,47 +86,110 @@ keywords:
   - usos colectivos
   - ejidos
   - tierra comunal
+  - agroecología
+  - acaparamiento de tierras
+  - acaparamiento
+  - vivienda colectiva
+  - cooperativas agrarias
+  - comunidades originarias
+  - autonomía territorial
+  - sumak kawsay
+  - buen vivir
+  - feminismo agrario
+  - agricultura familiar
+  - agricultura campesina
+  - tenencia colectiva
+  - movimiento sin tierra
+  # ── Português (BR / MST / lusophone) ────────────────────────────────────
+  - Movimento Sem Terra
+  - MST
+  - reforma agrária
+  - agroecologia
+  - terra indígena
+  - soberania alimentar
+  - agricultura familiar
+  # ── Deutsch — pour Böll Stiftung ────────────────────────────────────────
+  - Landrechte
+  - Bodenreform
+  - Allmende
+  - Gemeingüter
+  - Landgrabbing
+  - Kleinbauern
+  - Ernährungssouveränität
+  - Agrarökologie
+  - bäuerliche Landwirtschaft
 
 # ── Sources à surveiller ─────────────────────────────────────────────────────
 # Champ `type` : html (défaut) | deep_html | opds | archive_org | hal
 # Type non spécifié → html (rétrocompat)
 sources:
   # ═══ Infokiosques.net — corpus francophone (html direct) ═══════════════════
-  # Fonds qui bouge souvent → 7 jours
-  - label: "Infokiosques.net — nouveautés"
+  # RECALIBRAGE 2026-05-18 : les indexes alphabétiques (A, C, T, L) étaient
+  # stériles (≥3 scans, 0 doc) car trop génériques et non alignés sur la
+  # thématique. Remplacés par les vrais index THÉMATIQUES de SPIP, alignés
+  # sur les core_concepts (paysannerie, écologie, anticap, squat, anticolo).
+  # Vérifiés : 80-150 PDFs par index. Page "nouveautés" passe en deep_html
+  # pour suivre les liens vers les nouvelles brochures.
+
+  - label: "Infokiosques.net — nouveautés (deep crawl)"
     url: "https://infokiosques.net/"
-    type: html
+    type: deep_html
+    max_pages: 15
     min_interval_days: 3
 
-  - label: "Infokiosques.net — index A"
-    url: "https://infokiosques.net/spip.php?rubrique5"
+  - label: "Infokiosques.net — Paysannerie & ruralité"
+    url: "https://infokiosques.net/paysannerie_ruralite"
     type: html
     min_interval_days: 14
 
-  - label: "Infokiosques.net — index C"
-    url: "https://infokiosques.net/spip.php?rubrique7"
+  - label: "Infokiosques.net — Écologie radicale"
+    url: "https://infokiosques.net/ecologie_radicale"
     type: html
     min_interval_days: 14
 
-  - label: "Infokiosques.net — index T (Terres, Travail)"
-    url: "https://infokiosques.net/spip.php?rubrique11"
+  - label: "Infokiosques.net — Anticapitalisme"
+    url: "https://infokiosques.net/anticapitalisme"
     type: html
     min_interval_days: 14
 
-  - label: "Infokiosques.net — index L (Libération, Luttes)"
-    url: "https://infokiosques.net/spip.php?rubrique18"
+  - label: "Infokiosques.net — Squat (rapport à l'habiter)"
+    url: "https://infokiosques.net/squat"
+    type: html
+    min_interval_days: 14
+
+  - label: "Infokiosques.net — Anticolonialismes"
+    url: "https://infokiosques.net/anticolonialismes"
     type: html
     min_interval_days: 14
 
   # ═══ Heinrich-Böll-Stiftung (DE/EN, html direct, communs/écologie) ═════════
-  - label: "Böll Stiftung — publications EN"
+  # RECALIBRAGE : pages /topics/agriculture-food (404). On garde l'index
+  # publications (qui liste les filtres topic) en deep_html pour suivre les
+  # liens vers les rapports, et on ajoute la rubrique Atlas (Agriculture
+  # Atlas, Meat Atlas) qui contient des PDFs téléchargeables.
+
+  - label: "Böll Stiftung — publications EN (deep crawl)"
     url: "https://www.boell.de/en/publications"
-    type: html
+    type: deep_html
+    max_pages: 20
     min_interval_days: 14
 
-  - label: "Böll Stiftung — publications DE"
+  - label: "Böll Stiftung — Agriculture Atlas (EN)"
+    url: "https://www.boell.de/en/agriculture-atlas-2019"
+    type: deep_html
+    max_pages: 10
+    min_interval_days: 30
+
+  - label: "Böll Stiftung — Meat Atlas (EN)"
+    url: "https://www.boell.de/en/meat-atlas"
+    type: deep_html
+    max_pages: 10
+    min_interval_days: 30
+
+  - label: "Böll Stiftung — publications DE (deep crawl)"
     url: "https://www.boell.de/de/publikationen"
-    type: html
+    type: deep_html
+    max_pages: 20
     min_interval_days: 14
 
   # ═══ Crawl 2-niveaux — sites libertaires anglo + FR (deep_html) ════════════
@@ -109,18 +205,23 @@ sources:
     max_pages: 20
     min_interval_days: 14
 
+  # CRAS31 : 95 docs détectés mais 0 ≥7 = problème de scoring sur titres
+  # peu thématiques. On garde le crawl mais on augmente max_pages pour
+  # capter plus de matériel. Ce site mérite l'effort vu son orientation.
   - label: "CRAS (Centre de Recherches sur les Alternatives Sociales)"
     url: "https://cras31.info/"
     type: deep_html
-    max_pages: 15
+    max_pages: 25
     min_interval_days: 14
 
   # ═══ OPDS — The Anarchist Library (multi-langues, gros corpus) ══════════════
-  # Archive stable → 30 jours suffit
-  - label: "The Anarchist Library — OPDS feed"
-    url: "https://theanarchistlibrary.org/opds"
+  # RECALIBRAGE : l'URL racine /opds renvoyait juste la nav (New/Titles/
+  # Authors/Topics) sans entries de livres. On pointe directement sur /new
+  # (acquisition feed = vraies entrées avec download links).
+  - label: "The Anarchist Library — OPDS (new releases)"
+    url: "https://theanarchistlibrary.org/opds/new"
     type: opds
-    min_interval_days: 30
+    min_interval_days: 14
 
   # ═══ API Archive.org — corpus anarchiste / paysanneries (multi-langues) ════
   - label: "Archive.org — Cuba (ES, réforme agraire & coopératives)"
@@ -128,8 +229,10 @@ sources:
     type: archive_org
     min_interval_days: 30
 
-  - label: "Archive.org — subject:anarchism (texts)"
-    url: "https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
+  # RECALIBRAGE : subject:anarchism trop large → bruit (CIA Reading Room etc).
+  # On force subject ET un terre/paysannerie ET langue/année.
+  - label: "Archive.org — anarchism + land/peasant (strict)"
+    url: "https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
     type: archive_org
     min_interval_days: 14
 
@@ -138,10 +241,18 @@ sources:
     type: archive_org
     min_interval_days: 14
 
-  - label: "Archive.org — commons / enclosure"
-    url: "https://archive.org/advancedsearch.php?q=%28subject%3Acommons+OR+subject%3Aenclosure%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
+  # RECALIBRAGE : commons/enclosure trop large. On exige subjects pertinents,
+  # langue contrôlée, et on combine en AND avec terre/paysannerie/agraire.
+  - label: "Archive.org — commons / enclosure / agrarian (strict)"
+    url: "https://archive.org/advancedsearch.php?q=%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land+reform%22+OR+subject%3A%22enclosure%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
     type: archive_org
     min_interval_days: 14
+
+  # NOUVEAU : communs urbains / land trusts / housing commons
+  - label: "Archive.org — community land trusts & housing commons"
+    url: "https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30"
+    type: archive_org
+    min_interval_days: 21
 
   # ═══ API HAL Science — académique francophone ═══════════════════════════════
   - label: "HAL — communs fonciers"
@@ -172,6 +283,63 @@ sources:
     max_items: 30
     min_interval_days: 1
 
+  # ═══ TIER S+A — Sources Claude-suggérées 2026-05-18 (8 validées) ═══════════
+
+  # MST Brésil (PT/ES) — Movimento dos Trabalhadores Rurais Sem Terra
+  - label: "MST Brésil — RSS principal"
+    url: "https://mst.org.br/feed/"
+    type: rss
+    max_items: 30
+    min_interval_days: 7
+
+  - label: "MST Brésil — biblioteca questão agraria"
+    url: "https://mst.org.br/biblioteca-da-questao-agraria/"
+    type: deep_html
+    max_pages: 15
+    min_interval_days: 14
+
+  # International Land Coalition — réseau global, rapports peer-reviewed
+  - label: "International Land Coalition — latest"
+    url: "https://www.landcoalition.org/en/latest/"
+    type: deep_html
+    max_pages: 20
+    min_interval_days: 7
+
+  # TNI Land & Food — think-tank progressiste, géopolitique foncière
+  - label: "TNI — Land & Food topic"
+    url: "https://www.tni.org/en/topic/land-food"
+    type: deep_html
+    max_pages: 10
+    min_interval_days: 14
+
+  # Cultural Survival — peuples autochtones, Land Back
+  - label: "Cultural Survival — RSS"
+    url: "https://www.culturalsurvival.org/rss.xml"
+    type: rss
+    max_items: 30
+    min_interval_days: 7
+
+  # GRAIN — agrobiodiversité, accaparement, food sovereignty
+  - label: "GRAIN — entries RSS"
+    url: "https://grain.org/home/entries.rss"
+    type: rss
+    max_items: 50
+    min_interval_days: 7
+
+  # JSTOR Daily — anglo-saxon, histoire des communs
+  - label: "JSTOR Daily — topic land"
+    url: "https://daily.jstor.org/topic/land/"
+    type: deep_html
+    max_pages: 10
+    min_interval_days: 21
+
+  # ENDA Tiers Monde — foncier ouest-africain (angle mort résolu)
+  - label: "ENDA Tiers Monde — RSS"
+    url: "https://endatiersmonde.org/feed/"
+    type: rss
+    max_items: 30
+    min_interval_days: 14
+
   # ═══ Troisièmes Voix — éditions Collectif (Société en Communs) ══════════════
   # Site éditorial Grav, 1 PDF par édition. Crawl 2-niveaux sur /fr/ découvre
   # automatiquement les 5+ éditions et leurs Mini-Manuels.
@@ -183,19 +351,36 @@ sources:
 
   # ═══ HISPANOPHONES (12 sources, 3 axes) ════════════════════════════════════
   # A. Bibliothèques activistes / anarchosyndicalistes ES
+  #
+  # NB sur les RSS hispanophones (Via Campesina ES, CLOC, FIAN, Sin Permiso,
+  # CGT, Portal OACA, CEIPAZ) : les feeds renvoient bien 10 items mais 0 PDF
+  # téléchargé car ce sont des ARTICLES HTML, pas des liens .pdf directs.
+  # Le scoreur rejette les titres car pas explicitement thématiques. Pas une
+  # faille à corriger ici — on conserve les RSS pour la couverture et on
+  # ajoute des URLs html/deep_html pointant vers des catégories thématiques
+  # plus riches en PDFs (Portal OACA libros, CLACSO publicaciones).
   - label: "CNT-AIT España"
     url: "https://www.cnt.es/feed/"
     type: rss
     max_items: 30
     min_interval_days: 14
 
-  - label: "Portal OACA (anarcosindicalisme ES)"
+  - label: "Portal OACA — RSS (anarcosindicalisme ES)"
     url: "https://portaloaca.com/feed/"
     type: rss
     max_items: 30
     min_interval_days: 14
 
-  - label: "CGT España"
+  # NOUVEAU compagnon de Portal OACA : la catégorie "libros anarquistas"
+  # contient explicitement des PDFs (68+ mentions de libros), bien plus
+  # exploitable que le feed.
+  - label: "Portal OACA — Libros anarquistas (catégorie)"
+    url: "https://www.portaloaca.com/categoria/pensamientolibertario/libros-anarquistas/"
+    type: deep_html
+    max_pages: 15
+    min_interval_days: 21
+
+  - label: "CGT España — RSS"
     url: "https://cgt.org.es/feed/"
     type: rss
     max_items: 30
@@ -233,18 +418,42 @@ sources:
     min_interval_days: 14
 
   # C. Bibliothèques publiques / patrimoine libre
+  # RECALIBRAGE CLACSO : /libros/ ne contient que peu de PDFs directs. On
+  # double avec /libros-de-clacso-en-coedicion/ et /publicaciones/ qui sont
+  # confirmées (200 OK) et listent plus de matériel.
   - label: "CLACSO Libros (acceso abierto)"
     url: "https://www.clacso.org/libros/"
-    type: html
-    min_interval_days: 21
-
-  - label: "Tierra.org (Amigos de la Tierra ES)"
-    url: "https://www.tierra.org/"
     type: deep_html
-    max_pages: 20
+    max_pages: 15
     min_interval_days: 21
 
-  - label: "CEIPAZ (Cultura de Paz)"
+  - label: "CLACSO — Libros en coedición"
+    url: "https://www.clacso.org/libros-de-clacso-en-coedicion/"
+    type: deep_html
+    max_pages: 15
+    min_interval_days: 21
+
+  - label: "CLACSO — Publicaciones générales"
+    url: "https://www.clacso.org/publicaciones/"
+    type: deep_html
+    max_pages: 15
+    min_interval_days: 21
+
+  # RECALIBRAGE Tierra.org : la racine n'a pas d'index PDF. On cible
+  # directement les rubriques thématiques (agricultura, biodiversidad).
+  - label: "Tierra.org — Agricultura y alimentación"
+    url: "https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/"
+    type: deep_html
+    max_pages: 15
+    min_interval_days: 21
+
+  - label: "Tierra.org — Biodiversidad"
+    url: "https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/"
+    type: deep_html
+    max_pages: 15
+    min_interval_days: 21
+
+  - label: "CEIPAZ (Cultura de Paz) — RSS"
     url: "https://www.ceipaz.org/feed/"
     type: rss
     max_items: 30

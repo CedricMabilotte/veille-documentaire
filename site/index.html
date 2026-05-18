@@ -16,6 +16,35 @@
 <meta property="og:url" content="https://biblio.actitude.org/">
 <meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.svg">
 <meta name="twitter:card" content="summary_large_image">
+<!-- JSON-LD : Site + Organisation (SEO + AI visibility) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://biblio.actitude.org/#website",
+      "url": "https://biblio.actitude.org/",
+      "name": "BIBLIO — Bibliothèque documentaire ouverte",
+      "description": "Veille documentaire ouverte sur les communs, la propriété d'usage, la libération des terres et les paysanneries.",
+      "inLanguage": "fr",
+      "publisher": { "@id": "https://actitude.org/#org" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://biblio.actitude.org/fiches/index.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://actitude.org/#org",
+      "name": "actitude.org",
+      "url": "https://actitude.org",
+      "description": "Collectif d'éducation populaire numérique. Porte la veille BIBLIO."
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -36,8 +65,8 @@
       <a href="fiches/index.html">Catalogue</a>
       <a href="auteurs.html">Auteurs</a>
       <a href="chronologie.html">Chronologie</a>
-      <a href="graph.html">Graphe</a>
       <a href="dossiers.html">Dossiers</a>
+      <a href="concepts/index.html">Concepts</a>
       <a href="apropos.html">Méthodologie</a>
     </nav>
     <div class="header-tools">
@@ -66,18 +95,44 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="featured-title">
+  <section class="section" aria-labelledby="dossiers-semaine-title">
     <div class="container">
       <span class="section-kicker">Sélection de la rédaction</span>
-      <h2 id="featured-title" class="section-title">À la une</h2>
+      <h2 id="dossiers-semaine-title" class="section-title">Dossiers de la semaine</h2>
       <p class="section-lede">
-        Quelques textes que nous avons lus avec attention. Chaque entrée propose un angle :
-        un fragment d'archive, une enquête militante, une recherche universitaire qui éclaire
-        autrement le rapport à la terre, à l'usage, au commun.
+        Les cinq textes que nous avons lus avec attention cette semaine — un fragment d'archive,
+        une enquête militante, une recherche universitaire qui éclaire autrement le rapport à la terre.
       </p>
       <div class="featured" id="featured-grid" aria-live="polite">
         <p class="text-center" style="grid-column:1/-1;color:var(--text-faint);">Chargement…</p>
       </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="voix-sud-title">
+    <div class="container">
+      <span class="section-kicker">Cartographie sonore</span>
+      <h2 id="voix-sud-title" class="section-title">Voix du Sud</h2>
+      <p class="section-lede">
+        Les textes qui nous parviennent d'Amérique latine, d'Afrique, d'Asie : Vía Campesina, EZLN,
+        CLOC, FIAN, CLACSO… Une géographie de la lutte pour la terre depuis ses foyers vivants.
+      </p>
+      <div class="recent-grid" id="voix-sud-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="histoire-communs-title">
+    <div class="container">
+      <span class="section-kicker">Le fil du temps</span>
+      <h2 id="histoire-communs-title" class="section-title">Histoire des communs</h2>
+      <p class="section-lede">
+        Une généalogie : des enclosures du XIXᵉ aux ZAD contemporaines. Chaque décennie a vu
+        s'écrire — souvent en silence — les pages d'une lutte pour la propriété d'usage.
+      </p>
+      <div id="histoire-communs" aria-live="polite"></div>
+      <p class="text-center mt-3">
+        <a href="chronologie.html" class="btn">Voir toute la chronologie</a>
+      </p>
     </div>
   </section>
 
@@ -156,8 +211,8 @@
         <li><a href="fiches/index.html">Catalogue</a></li>
         <li><a href="auteurs.html">Auteurs</a></li>
         <li><a href="chronologie.html">Chronologie</a></li>
-        <li><a href="graph.html">Graphe</a></li>
         <li><a href="dossiers.html">Dossiers</a></li>
+        <li><a href="concepts/index.html">Concepts</a></li>
         <li><a href="apropos.html">Méthodologie</a></li>
         <li><a href="feed.xml">Flux RSS</a></li>
       </ul>
@@ -185,39 +240,133 @@
 window.pageInit = function (basePath) {
   loadCatalog(basePath).then(({ meta, docs, _error }) => {
     if (_error) {
-      ['featured-grid','recent-grid','stats-grid'].forEach(id => {
+      ['featured-grid','recent-grid','stats-grid','voix-sud-grid','histoire-communs'].forEach(id => {
         const el = document.getElementById(id);
         if (el) el.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-faint);font-style:italic;">Le catalogue n\'a pas encore été déployé sur ce site. <br>Lancez la veille (<code>scripts/watch.py</code>) pour générer <code>site/data/catalog.json</code>.</p>';
       });
       return;
     }
     renderFeatured(docs, basePath);
+    renderVoixSud(docs, basePath);
+    renderHistoireCommuns(docs, basePath);
     renderRecent(docs, basePath);
     renderStats(meta, docs);
   });
 };
 
+/* (a) Dossiers de la semaine : 5 bulles éditoriales (score ≥ 9) */
 function renderFeatured(docs, basePath) {
   const wrap = document.getElementById('featured-grid');
   if (!wrap) return;
-  // Priorité : docs avec bulle + score le plus élevé, sinon score >= 7
-  const withBulle = docs.filter(d => d.bulle);
+  // Priorité : docs avec bulle + score le plus élevé (≥ 9 idéalement), sinon ≥ 7
   const sortByScore = (a, b) => (b.latest_score || 0) - (a.latest_score || 0);
-  let picks = withBulle.sort(sortByScore).slice(0, 3);
-  if (picks.length < 3) {
-    const fallback = docs.filter(d => !d.bulle && (d.latest_score || 0) >= 7)
-                         .sort(sortByScore).slice(0, 3 - picks.length);
+  const withBulleHigh = docs.filter(d => d.bulle && (d.latest_score || 0) >= 9).sort(sortByScore);
+  const withBulle = docs.filter(d => d.bulle).sort(sortByScore);
+  let picks = withBulleHigh.slice(0, 5);
+  if (picks.length < 5) {
+    const have = new Set(picks.map(d => d.id));
+    const more = withBulle.filter(d => !have.has(d.id)).slice(0, 5 - picks.length);
+    picks = picks.concat(more);
+  }
+  if (picks.length < 5) {
+    const have = new Set(picks.map(d => d.id));
+    const fallback = docs.filter(d => !have.has(d.id) && (d.latest_score || 0) >= 7)
+                         .sort(sortByScore).slice(0, 5 - picks.length);
     picks = picks.concat(fallback);
   }
   if (picks.length === 0) {
-    wrap.innerHTML = '<p class="text-center" style="grid-column:1/-1;color:var(--text-faint);font-style:italic;">Aucune sélection à la une pour l\'instant. Le catalogue se construit.</p>';
+    wrap.innerHTML = '<p class="text-center" style="grid-column:1/-1;color:var(--text-faint);font-style:italic;">Aucun dossier cette semaine. Le catalogue se construit.</p>';
     return;
   }
-  // Charge les bulles en parallèle
+  // Charge les bulles en parallèle (pour afficher titre_accroche + teaser)
   Promise.all(picks.map(d => d.bulle ? loadBulle(d.id, basePath).then(b => { d.bulle_data = b; }) : Promise.resolve()))
     .then(() => {
       wrap.innerHTML = picks.map(d => featuredCardHTML(d, basePath)).join('');
     });
+}
+
+/* (b) Voix du Sud : sources Vía Campesina, EZLN, CLOC, FIAN, CLACSO, Tierra.org, CEIPAZ, CELAG ;
+       ou lang détectée ES/PT. Max 6 cartes. */
+const VOIX_SUD_SOURCES = [
+  'vía campesina', 'via campesina',
+  'ezln',
+  'cloc',
+  'fian',
+  'clacso',
+  'tierra.org',
+  'ceipaz',
+  'celag',
+];
+function isVoixSud(doc) {
+  const src = (doc.source || '').toLowerCase();
+  if (VOIX_SUD_SOURCES.some(s => src.indexOf(s) !== -1)) return true;
+  // Heuristique langue : meta.lang ou enrichment.lang renvoyant es/pt
+  const lang = String((doc.meta && doc.meta.lang) || (doc.enrichment && doc.enrichment.lang) || '').toLowerCase();
+  if (lang === 'es' || lang === 'pt') return true;
+  // Fallback : filename / titre contient mots ES/PT typiques
+  const blob = ((doc.filename || '') + ' ' + (doc.meta && doc.meta.pdf_title || '')).toLowerCase();
+  const esTokens = ['tierra', 'campesin', 'campesinado', 'reforma agraria', 'soberania', 'soberanía', 'comunidad'];
+  return esTokens.some(t => blob.indexOf(t) !== -1);
+}
+function renderVoixSud(docs, basePath) {
+  const wrap = document.getElementById('voix-sud-grid');
+  if (!wrap) return;
+  const list = docs.filter(isVoixSud)
+    .sort((a, b) => (b.latest_score || 0) - (a.latest_score || 0))
+    .slice(0, 6);
+  if (list.length === 0) {
+    wrap.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-faint);font-style:italic;">Pas encore de voix du Sud dans le corpus. La veille s\'étend.</p>';
+    return;
+  }
+  wrap.innerHTML = list.map(d => bookCardHTML(d, basePath)).join('');
+}
+
+/* (c) Histoire des communs : timeline horizontale par décennie 1850 → 2020 */
+function renderHistoireCommuns(docs, basePath) {
+  const wrap = document.getElementById('histoire-communs');
+  if (!wrap) return;
+  // Année estimée pour chaque doc
+  const dated = docs.map(d => ({ doc: d, year: inferYear(d) })).filter(x => x.year && x.year >= 1850 && x.year <= 2029);
+  if (dated.length === 0) {
+    wrap.innerHTML = '<p style="text-align:center;color:var(--text-faint);font-style:italic;padding:20px 0;">Pas encore de jalons datés dans le corpus.</p>';
+    return;
+  }
+  // Regroupe par décennie
+  const decadesMap = new Map();
+  for (const { doc, year } of dated) {
+    const dec = Math.floor(year / 10) * 10;
+    if (!decadesMap.has(dec)) decadesMap.set(dec, []);
+    decadesMap.get(dec).push({ doc, year });
+  }
+  // Décennies fixes attendues 1850 → 2020 (par pas de 10)
+  const allDecades = [];
+  for (let d = 1850; d <= 2020; d += 10) allDecades.push(d);
+  // Mais on n'affiche que celles qui ont des entrées (sinon trop vide)
+  const used = allDecades.filter(d => decadesMap.has(d));
+  if (used.length === 0) {
+    wrap.innerHTML = '<p style="text-align:center;color:var(--text-faint);font-style:italic;padding:20px 0;">Pas encore de jalons datés.</p>';
+    return;
+  }
+  const buf = ['<div class="histoire-timeline" role="list">'];
+  for (const dec of used) {
+    const entries = decadesMap.get(dec).sort((a, b) => a.year - b.year);
+    // Top 3 entrées par décennie pour ne pas surcharger
+    const top = entries.slice(0, 3);
+    buf.push(`
+      <div class="histoire-decade" role="listitem">
+        <div class="histoire-decade-label">${dec}s</div>
+        <ul class="histoire-decade-list">
+          ${top.map(({ doc, year }) => {
+            const url = BiblioRouter.ficheUrl(doc.id, basePath);
+            return `<li><span class="histoire-year">${year}</span> <a href="${escape(url)}">${escape(docTitle(doc).slice(0, 70))}${docTitle(doc).length > 70 ? '…' : ''}</a></li>`;
+          }).join('')}
+          ${entries.length > 3 ? `<li class="histoire-more">+ ${entries.length - 3} autre${entries.length - 3 > 1 ? 's' : ''}</li>` : ''}
+        </ul>
+      </div>
+    `);
+  }
+  buf.push('</div>');
+  wrap.innerHTML = buf.join('');
 }
 
 function featuredCardHTML(doc, basePath) {
@@ -229,7 +378,7 @@ function featuredCardHTML(doc, basePath) {
   const date = formatDate(doc._latestRunDate || doc.latest_run);
   return `
     <article class="featured-card fade-in">
-      <span class="ribbon">À la une</span>
+      <span class="ribbon">Dossier</span>
       <a href="${escape(url)}" class="featured-cover" aria-label="Lire la fiche : ${escape(title)}" data-initial="${escape(title.slice(0,1).toUpperCase())}">
         <img src="${escape(cover)}" alt="" loading="lazy" onerror="this.style.display='none';this.parentNode.style.display='flex';this.parentNode.style.alignItems='center';this.parentNode.style.justifyContent='center';this.parentNode.style.fontFamily='var(--font-serif)';this.parentNode.style.fontSize='80px';this.parentNode.style.color='var(--text-faint)';this.parentNode.textContent=this.parentNode.dataset.initial||'';">
       </a>

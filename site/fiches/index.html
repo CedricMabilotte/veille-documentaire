@@ -33,8 +33,8 @@
       <a href="index.html">Catalogue</a>
       <a href="../auteurs.html">Auteurs</a>
       <a href="../chronologie.html">Chronologie</a>
-      <a href="../graph.html">Graphe</a>
       <a href="../dossiers.html">Dossiers</a>
+      <a href="../concepts/index.html">Concepts</a>
       <a href="../apropos.html">Méthodologie</a>
     </nav>
     <div class="header-tools">
@@ -76,7 +76,12 @@
 
           <div class="filter-group">
             <h4>Recherche</h4>
-            <input type="search" id="filter-q" placeholder="mot-clé, titre, citation…" aria-label="Recherche full-text">
+            <div class="autosuggest-wrap">
+              <input type="search" id="filter-q" placeholder="mot-clé, titre, citation…"
+                     aria-label="Recherche full-text" autocomplete="off"
+                     aria-autocomplete="list" aria-controls="suggest-list">
+              <ul id="suggest-list" class="suggest-list" role="listbox" hidden></ul>
+            </div>
           </div>
 
           <div class="filter-group">
@@ -93,8 +98,29 @@
           </div>
 
           <div class="filter-group">
+            <h4>Langue</h4>
+            <div id="filter-langs"></div>
+          </div>
+
+          <div class="filter-group">
+            <h4>Décennie</h4>
+            <div class="range-row">
+              <input type="range" id="filter-dec-min" min="1850" max="2030" step="10" value="1850" aria-label="Décennie min">
+              <span class="range-val" id="filter-dec-min-val">1850</span>
+            </div>
+            <div class="range-row">
+              <input type="range" id="filter-dec-max" min="1850" max="2030" step="10" value="2030" aria-label="Décennie max">
+              <span class="range-val" id="filter-dec-max-val">2030</span>
+            </div>
+            <label style="font-size:12px;color:var(--text-faint);"><input type="checkbox" id="filter-dec-include-undated" checked> inclure les dates inconnues</label>
+          </div>
+
+          <div class="filter-group">
             <h4>Sources</h4>
-            <div id="filter-sources"></div>
+            <input type="search" id="filter-sources-search" placeholder="filtrer la liste…"
+                   aria-label="Filtrer les sources" autocomplete="off"
+                   style="width:100%;margin-bottom:6px;padding:6px 8px;font-size:13px;background:var(--bg-elev);border:1px solid var(--border);border-radius:4px;color:var(--text);">
+            <div id="filter-sources" class="filter-sources-list"></div>
           </div>
 
           <div class="filter-group">
@@ -104,7 +130,7 @@
 
           <div class="filter-group">
             <h4>Filtres rapides</h4>
-            <label><input type="checkbox" id="filter-bulle"> Avec sélection éditoriale</label>
+            <label><input type="checkbox" id="filter-bulle"> A une bulle (sélection éditoriale)</label>
             <label><input type="checkbox" id="filter-downloaded"> Téléchargé / archivé</label>
             <label><input type="checkbox" id="filter-enriched"> Synopsis disponible</label>
           </div>
@@ -159,8 +185,8 @@
         <li><a href="index.html">Catalogue</a></li>
         <li><a href="../auteurs.html">Auteurs</a></li>
         <li><a href="../chronologie.html">Chronologie</a></li>
-        <li><a href="../graph.html">Graphe</a></li>
         <li><a href="../dossiers.html">Dossiers</a></li>
+        <li><a href="../concepts/index.html">Concepts</a></li>
         <li><a href="../apropos.html">Méthodologie</a></li>
         <li><a href="../feed.xml">Flux RSS</a></li>
       </ul>
@@ -194,6 +220,10 @@ let STATE = {
     scoreMax: 10,
     sources: new Set(),
     formats: new Set(),
+    langs: new Set(),
+    decMin: 1850,
+    decMax: 2030,
+    decIncludeUndated: true,
     bulle: false,
     downloaded: false,
     enriched: false,
@@ -201,6 +231,20 @@ let STATE = {
   sort: 'recent',
   viewMode: 'grid', // 'grid' ou 'shelf'
 };
+
+/* Détecte la langue d'un doc : meta.lang, enrichment.lang ou heuristique simple. */
+function detectLang(doc) {
+  const explicit = (doc.meta && doc.meta.lang) || (doc.enrichment && doc.enrichment.lang);
+  if (explicit) return String(explicit).toLowerCase().slice(0, 2);
+  // Heuristique grossière sur titre + filename
+  const blob = ((doc.meta && doc.meta.pdf_title) || '') + ' ' + (doc.filename || '');
+  const b = blob.toLowerCase();
+  if (/\b(the|and|for|with|land|peasant)\b/.test(b)) return 'en';
+  if (/\b(tierra|campesin|reforma|comun(idad|al))/.test(b)) return 'es';
+  if (/\b(terra|reforma agrária|camponês|comum)/.test(b)) return 'pt';
+  if (/\b(des|une|terre|paysan|propriété|commun)/.test(b)) return 'fr';
+  return 'unknown';
+}
 
 window.pageInit = function (basePath) {
   loadCatalog(basePath).then(({ meta, docs }) => {
@@ -237,12 +281,24 @@ function applyViewMode() {
 }
 
 function initFiltersUI() {
-  // Sources
+  // Sources (avec recherche live ci-dessous)
   const srcWrap = document.getElementById('filter-sources');
   const sources = Array.from(new Set(STATE.docs.map(d => d.source).filter(Boolean))).sort();
   srcWrap.innerHTML = sources.map(s => `
-    <label><input type="checkbox" name="src" value="${escape(s)}"> ${escape(s)}</label>
+    <label data-src-label="${escape(s.toLowerCase())}"><input type="checkbox" name="src" value="${escape(s)}"> ${escape(s)}</label>
   `).join('') || '<p style="color:var(--text-faint);font-size:13px;">Aucune source</p>';
+
+  // Filtre live de la liste de sources
+  const srcSearch = document.getElementById('filter-sources-search');
+  if (srcSearch) {
+    srcSearch.addEventListener('input', () => {
+      const q = srcSearch.value.toLowerCase().trim();
+      srcWrap.querySelectorAll('label').forEach(l => {
+        const v = l.getAttribute('data-src-label') || '';
+        l.style.display = (!q || v.indexOf(q) !== -1) ? '' : 'none';
+      });
+    });
+  }
 
   // Formats
   const fmtWrap = document.getElementById('filter-formats');
@@ -250,6 +306,24 @@ function initFiltersUI() {
   fmtWrap.innerHTML = fmts.map(f => `
     <label><input type="checkbox" name="fmt" value="${escape(f)}"> ${escape(f.toUpperCase())}</label>
   `).join('') || '<p style="color:var(--text-faint);font-size:13px;">—</p>';
+
+  // Langues (FR/EN/ES/PT/multi/unknown) — déduites
+  const langWrap = document.getElementById('filter-langs');
+  const langCounts = {};
+  STATE.docs.forEach(d => {
+    const l = detectLang(d);
+    langCounts[l] = (langCounts[l] || 0) + 1;
+  });
+  const LANG_LABELS = { fr: 'Français', en: 'Anglais', es: 'Espagnol', pt: 'Portugais', multi: 'Multilingue', unknown: 'Indéterminée' };
+  const orderedLangs = ['fr', 'en', 'es', 'pt', 'multi', 'unknown'].filter(l => langCounts[l]);
+  langWrap.innerHTML = orderedLangs.map(l => `
+    <label><input type="checkbox" name="lang" value="${escape(l)}">
+      ${escape(LANG_LABELS[l] || l)} <span style="color:var(--text-faint);font-size:12px;">(${langCounts[l]})</span>
+    </label>
+  `).join('') || '<p style="color:var(--text-faint);font-size:13px;">—</p>';
+
+  // Mémorise la décennie sur le doc (pour filtrage rapide)
+  STATE.docs.forEach(d => { d._year = inferYear(d); d._lang = detectLang(d); });
 }
 
 function readURLParams() {
@@ -282,12 +356,17 @@ function readURLParams() {
 
 function bindEvents(basePath) {
   const form = document.getElementById('filters-form');
-  // Recherche
-  document.getElementById('filter-q').addEventListener('input', debounce(e => {
+  // Recherche + auto-suggest
+  const qInput = document.getElementById('filter-q');
+  qInput.addEventListener('input', debounce(e => {
     STATE.filters.q = e.target.value;
     BiblioRouter.setParam('q', e.target.value || null);
     render(basePath);
-  }, 220));
+    showSuggestions(e.target.value, basePath);
+  }, 200));
+  qInput.addEventListener('focus', () => showSuggestions(qInput.value, basePath));
+  qInput.addEventListener('blur', () => setTimeout(hideSuggestions, 180));
+  qInput.addEventListener('keydown', (e) => navSuggestions(e, basePath));
   // Ranges
   const sMin = document.getElementById('filter-score-min');
   const sMax = document.getElementById('filter-score-max');
@@ -307,13 +386,15 @@ function bindEvents(basePath) {
     BiblioRouter.setParam('score_max', v === 10 ? null : v);
     render(basePath);
   });
-  // Checkboxes sources/formats
+  // Checkboxes sources/formats/langues + autres
   form.addEventListener('change', (e) => {
     const t = e.target;
     if (t.name === 'src') {
       if (t.checked) STATE.filters.sources.add(t.value); else STATE.filters.sources.delete(t.value);
     } else if (t.name === 'fmt') {
       if (t.checked) STATE.filters.formats.add(t.value); else STATE.filters.formats.delete(t.value);
+    } else if (t.name === 'lang') {
+      if (t.checked) STATE.filters.langs.add(t.value); else STATE.filters.langs.delete(t.value);
     } else if (t.id === 'filter-bulle') {
       STATE.filters.bulle = t.checked;
       BiblioRouter.setParam('bulle', t.checked ? '1' : null);
@@ -321,7 +402,27 @@ function bindEvents(basePath) {
       STATE.filters.downloaded = t.checked;
     } else if (t.id === 'filter-enriched') {
       STATE.filters.enriched = t.checked;
+    } else if (t.id === 'filter-dec-include-undated') {
+      STATE.filters.decIncludeUndated = t.checked;
     }
+    render(basePath);
+  });
+
+  // Sliders décennies
+  const dMin = document.getElementById('filter-dec-min');
+  const dMax = document.getElementById('filter-dec-max');
+  dMin.addEventListener('input', () => {
+    let v = +dMin.value;
+    if (v > +dMax.value) { dMax.value = v; STATE.filters.decMax = v; document.getElementById('filter-dec-max-val').textContent = v; }
+    STATE.filters.decMin = v;
+    document.getElementById('filter-dec-min-val').textContent = v;
+    render(basePath);
+  });
+  dMax.addEventListener('input', () => {
+    let v = +dMax.value;
+    if (v < +dMin.value) { dMin.value = v; STATE.filters.decMin = v; document.getElementById('filter-dec-min-val').textContent = v; }
+    STATE.filters.decMax = v;
+    document.getElementById('filter-dec-max-val').textContent = v;
     render(basePath);
   });
   // Sort
@@ -332,16 +433,28 @@ function bindEvents(basePath) {
   });
   // Reset
   document.getElementById('filter-reset').addEventListener('click', () => {
-    STATE.filters = { q: '', scoreMin: 0, scoreMax: 10, sources: new Set(), formats: new Set(), bulle: false, downloaded: false, enriched: false };
+    STATE.filters = {
+      q: '', scoreMin: 0, scoreMax: 10,
+      sources: new Set(), formats: new Set(), langs: new Set(),
+      decMin: 1850, decMax: 2030, decIncludeUndated: true,
+      bulle: false, downloaded: false, enriched: false,
+    };
     document.getElementById('filter-q').value = '';
     document.getElementById('filter-score-min').value = 0;
     document.getElementById('filter-score-max').value = 10;
     document.getElementById('filter-score-min-val').textContent = '0';
     document.getElementById('filter-score-max-val').textContent = '10';
-    document.querySelectorAll('#filter-sources input, #filter-formats input').forEach(i => i.checked = false);
+    document.getElementById('filter-dec-min').value = 1850;
+    document.getElementById('filter-dec-max').value = 2030;
+    document.getElementById('filter-dec-min-val').textContent = '1850';
+    document.getElementById('filter-dec-max-val').textContent = '2030';
+    document.getElementById('filter-dec-include-undated').checked = true;
+    document.querySelectorAll('#filter-sources input, #filter-formats input, #filter-langs input').forEach(i => i.checked = false);
     document.getElementById('filter-bulle').checked = false;
     document.getElementById('filter-downloaded').checked = false;
     document.getElementById('filter-enriched').checked = false;
+    const ss = document.getElementById('filter-sources-search'); if (ss) ss.value = '';
+    document.querySelectorAll('#filter-sources label').forEach(l => l.style.display = '');
     window.history.replaceState({}, '', window.location.pathname);
     render(basePath);
   });
@@ -385,6 +498,20 @@ function filteredDocs() {
   }
   if (STATE.filters.formats.size > 0) {
     out = out.filter(d => STATE.filters.formats.has(d.format));
+  }
+  // Langues
+  if (STATE.filters.langs.size > 0) {
+    out = out.filter(d => STATE.filters.langs.has(d._lang || detectLang(d)));
+  }
+  // Décennies — d._year a été calculé dans initFiltersUI
+  const decMin = STATE.filters.decMin, decMax = STATE.filters.decMax;
+  const fullRange = (decMin === 1850 && decMax === 2030);
+  if (!fullRange || !STATE.filters.decIncludeUndated) {
+    out = out.filter(d => {
+      const y = d._year;
+      if (!y) return STATE.filters.decIncludeUndated;
+      return y >= decMin && y <= decMax + 9; // borne supérieure incluse jusqu'à fin de décennie
+    });
   }
   if (STATE.filters.bulle) out = out.filter(d => d.bulle);
   if (STATE.filters.downloaded) out = out.filter(d => d.downloaded);
@@ -532,6 +659,72 @@ function downloadFile(content, filename, mime) {
   a.href = url; a.download = filename;
   document.body.appendChild(a); a.click(); document.body.removeChild(a);
   setTimeout(() => URL.revokeObjectURL(url), 500);
+}
+
+/* ===== Auto-suggest (suggestions au-dessus du champ de recherche) ===== */
+let _suggestIndex = -1;
+
+function showSuggestions(prefix, basePath) {
+  const list = document.getElementById('suggest-list');
+  if (!list) return;
+  const items = BiblioSearch.suggest(STATE.docs, prefix, 10);
+  if (!items.length) { hideSuggestions(); return; }
+  list.innerHTML = items.map((s, i) => `
+    <li role="option" data-idx="${i}" data-term="${escape(s.term)}" class="suggest-item">
+      <span class="suggest-term">${escape(s.term)}</span>
+      <span class="suggest-src">${escape(s.source)}</span>
+    </li>
+  `).join('');
+  list.hidden = false;
+  _suggestIndex = -1;
+  // Click sur une suggestion → applique la recherche
+  list.querySelectorAll('.suggest-item').forEach(li => {
+    li.addEventListener('mousedown', (e) => {
+      e.preventDefault(); // évite blur avant click
+      applySuggestion(li.getAttribute('data-term'), basePath);
+    });
+  });
+}
+
+function hideSuggestions() {
+  const list = document.getElementById('suggest-list');
+  if (list) { list.hidden = true; list.innerHTML = ''; }
+  _suggestIndex = -1;
+}
+
+function navSuggestions(e, basePath) {
+  const list = document.getElementById('suggest-list');
+  if (!list || list.hidden) return;
+  const items = list.querySelectorAll('.suggest-item');
+  if (!items.length) return;
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    _suggestIndex = (_suggestIndex + 1) % items.length;
+    updateActiveSuggestion(items);
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    _suggestIndex = (_suggestIndex - 1 + items.length) % items.length;
+    updateActiveSuggestion(items);
+  } else if (e.key === 'Enter' && _suggestIndex >= 0) {
+    e.preventDefault();
+    const t = items[_suggestIndex].getAttribute('data-term');
+    applySuggestion(t, basePath);
+  } else if (e.key === 'Escape') {
+    hideSuggestions();
+  }
+}
+
+function updateActiveSuggestion(items) {
+  items.forEach((it, i) => it.classList.toggle('active', i === _suggestIndex));
+}
+
+function applySuggestion(term, basePath) {
+  const q = document.getElementById('filter-q');
+  q.value = term;
+  STATE.filters.q = term;
+  BiblioRouter.setParam('q', term);
+  hideSuggestions();
+  render(basePath);
 }
 </script>
 

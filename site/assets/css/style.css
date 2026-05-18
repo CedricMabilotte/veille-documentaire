@@ -1466,3 +1466,269 @@ main { flex: 1; }
   .graph-wrap { height: 60vh; }
   .palette-menu { right: -40px; }
 }
+
+/* ============================================================
+   C5 — Refonte navigation sémantique
+   Nouveaux composants : timeline d'accueil, pages-concepts,
+   mots-clés cliquables, auto-suggest, facettes.
+   ============================================================ */
+
+/* --- Mot-clé cliquable (lien vers ?q=...) --- */
+.kw-link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+.kw-link:hover {
+  background: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+}
+
+/* --- Auteur cible (ancre #slug-auteur sur auteurs.html) --- */
+.author-card.author-target {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 6px var(--accent-soft);
+  transition: outline 0.4s, box-shadow 0.4s;
+}
+
+/* --- Timeline horizontale d'accueil "Histoire des communs" --- */
+.histoire-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+.histoire-decade {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 14px 12px;
+  position: relative;
+}
+.histoire-decade-label {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--accent);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+  margin-bottom: 8px;
+  letter-spacing: 0.04em;
+}
+.histoire-decade-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+.histoire-decade-list li {
+  padding: 4px 0;
+  border-bottom: 1px dotted var(--border);
+  line-height: 1.4;
+}
+.histoire-decade-list li:last-child { border-bottom: none; }
+.histoire-year {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--text-faint);
+  margin-right: 4px;
+}
+.histoire-more {
+  color: var(--text-faint);
+  font-style: italic;
+  font-size: 13px;
+}
+
+/* --- Pages-concepts --- */
+.concepts-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 20px 0 14px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 10px;
+}
+.concept-tab {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--bg-elev);
+  color: var(--text-dim);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+}
+.concept-tab:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+.concept-tab.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+.concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+.concept-card {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 18px;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+.concept-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  text-decoration: none;
+}
+.concept-card h3 {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  margin: 0 0 8px;
+  color: var(--accent);
+}
+.concept-card .concept-def {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-dim);
+  margin: 0 0 10px;
+}
+.concept-card-meta {
+  font-size: 13px;
+  color: var(--text-faint);
+  border-top: 1px solid var(--border);
+  padding-top: 8px;
+}
+
+.concept-page { display: block; margin-top: 14px; }
+.concept-hero {
+  padding: 28px 0 22px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.concept-title {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  font-weight: 600;
+  margin: 8px 0 12px;
+  color: var(--accent);
+}
+.concept-definition {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-dim);
+  margin: 0 0 18px;
+  max-width: 760px;
+}
+.concept-equivalents { margin-top: 14px; }
+.eq-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 8px 0;
+  border-top: 1px dotted var(--border);
+}
+.eq-row:last-child { border-bottom: 1px dotted var(--border); }
+.eq-lang {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--accent);
+  min-width: 32px;
+  padding-top: 3px;
+  letter-spacing: 0.04em;
+}
+.eq-terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.concept-section { margin-top: 32px; }
+.concept-section h3 {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+.concept-top3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.concept-doclist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.concept-doclist li {
+  padding: 8px 0;
+  border-bottom: 1px dotted var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.concept-doclist .doc-source {
+  font-size: 13px;
+  color: var(--text-faint);
+  font-style: italic;
+}
+
+/* --- Auto-suggest dans la recherche du catalogue --- */
+.autosuggest-wrap { position: relative; }
+.suggest-list {
+  list-style: none;
+  margin: 0;
+  padding: 4px;
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  right: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  z-index: 50;
+  max-height: 320px;
+  overflow-y: auto;
+}
+.suggest-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text);
+}
+.suggest-item:hover, .suggest-item.active { background: var(--accent-soft); color: var(--accent); }
+.suggest-src {
+  font-size: 11px;
+  color: var(--text-faint);
+  font-style: italic;
+  white-space: nowrap;
+}
+
+/* --- Liste des sources avec recherche live --- */
+.filter-sources-list {
+  max-height: 240px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px 8px;
+  background: var(--bg);
+}
+.filter-sources-list label {
+  display: block;
+  font-size: 13px;
+  padding: 3px 0;
+}
+

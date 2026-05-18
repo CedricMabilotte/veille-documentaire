@@ -19,7 +19,8 @@ project:
     (HAL, Archive.org), infokiosques francophones et bibliothèques militantes
     multilingues. L'intention éditoriale est d'outiller militant·es, chercheur·ses
     et journalistes avec une bibliothèque vivante, située et critique.
-  languages: [fr, en, es]
+  # PT ajouté pour la couverture MST/Brésil et lusophonie en général.
+  languages: [fr, en, es, pt]
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Ontologie : ce qui définit la thématique
@@ -36,6 +37,7 @@ ontology:
         fr: ["propriété d'usage", "fonds de dotation", "fiducie foncière", "bail emphytéotique militant", "propriété collective", "usufruit collectif"]
         en: ["usufruct", "community land trust", "collective ownership", "use rights", "stewardship ownership"]
         es: ["usufructo", "propiedad de uso", "fideicomiso de tierras", "tenencia colectiva"]
+        pt: ["usufruto", "propriedade de uso", "fideicomisso de terras"]
 
     - name: "Communs fonciers"
       definition: >
@@ -46,6 +48,19 @@ ontology:
         fr: ["communs fonciers", "communaux", "biens communs", "terres collectives", "terres communales", "commun(s)"]
         en: ["land commons", "commoning", "commons", "common lands", "common-pool resources"]
         es: ["bienes comunes", "tierra comunal", "ejidos", "comunales", "usos colectivos"]
+        pt: ["bens comuns", "terras comuns", "terras coletivas"]
+
+    - name: "Communs urbains & habitat coopératif"
+      definition: >
+        Formes urbaines de communs : community land trusts, fiducies foncières
+        solidaires, coopératives d'habitants, AMAP urbaines, logement collectif
+        sorti de la spéculation, habitat groupé. À condition d'un ancrage foncier
+        clair (le bâti repose sur une terre dont le statut est en jeu).
+      equivalents:
+        fr: ["communs urbains", "fiducies foncières solidaires", "AMAP", "habitat coopératif", "habitat groupé", "logement collectif", "coopératives d'habitants"]
+        en: ["urban commons", "community land trust", "housing commons", "housing cooperative", "limited equity cooperative", "co-housing"]
+        es: ["comunes urbanos", "vivienda colectiva", "vivienda cooperativa", "cooperativas de vivienda", "fideicomiso urbano"]
+        pt: ["bens comuns urbanos", "moradia coletiva", "cooperativas de moradia"]
 
     - name: "Libération des terres"
       definition: >
@@ -53,19 +68,70 @@ ontology:
         ou occupation des terres : sans-terre, Land Back, réformes agraires,
         luttes contre l'enclosure et l'accaparement.
       equivalents:
-        fr: ["libération des terres", "accès à la terre", "luttes pour la terre", "réforme agraire", "accaparement", "ZAD"]
-        en: ["land liberation", "land back", "landless movement", "land rights", "agrarian reform", "land grabbing", "enclosure"]
-        es: ["liberación de la tierra", "sin tierra", "reforma agraria", "tierra y libertad", "acaparamiento de tierras"]
+        fr: ["libération des terres", "accès à la terre", "luttes pour la terre", "réforme agraire", "accaparement", "accaparement des terres", "ZAD"]
+        en: ["land liberation", "land back", "landless movement", "land rights", "agrarian reform", "land grabbing", "land grabs", "enclosure"]
+        es: ["liberación de la tierra", "sin tierra", "reforma agraria", "tierra y libertad", "acaparamiento de tierras", "acaparamiento"]
+        pt: ["libertação da terra", "sem terra", "reforma agrária", "MST", "Movimento Sem Terra"]
 
-    - name: "Paysannerie"
+    - name: "Mouvements autochtones & Land Back"
+      definition: >
+        Luttes de peuples autochtones pour la restitution, la souveraineté et
+        l'autonomie territoriale. Inclut Land Back en Amérique du Nord, terras
+        indígenas au Brésil, sumak kawsay andin, autonomies zapatistes,
+        revendications coutumières en Afrique et Océanie.
+      equivalents:
+        fr: ["land back", "luttes autochtones", "souveraineté autochtone", "autonomie territoriale", "peuples premiers", "droit coutumier"]
+        en: ["land back", "indigenous land rights", "land repatriation", "indigenous sovereignty", "first nations", "customary tenure"]
+        es: ["comunidades originarias", "pueblos originarios", "autonomía territorial", "sumak kawsay", "buen vivir", "soberanía indígena"]
+        pt: ["terra indígena", "povos originários", "demarcação", "autonomia territorial"]
+
+    - name: "Paysannerie & agroécologie"
       definition: >
         Mondes paysans comme acteurs politiques, économiques et culturels :
-        agricultures vivrières, savoirs paysans, agroécologie, organisations
-        comme la Via Campesina. NB : à distinguer de l'agriculture industrielle.
+        agricultures vivrières, savoirs paysans, agroécologie politique,
+        souveraineté alimentaire, organisations comme la Via Campesina ou le MST.
+        À distinguer de l'agriculture industrielle.
       equivalents:
-        fr: ["paysannerie", "paysans libres", "agriculture vivrière", "agroécologie paysanne", "souveraineté alimentaire"]
-        en: ["peasantry", "peasant movement", "subsistence farming", "food sovereignty", "peasant agroecology"]
-        es: ["campesinado", "agricultura campesina", "soberanía alimentaria", "agroecología campesina"]
+        fr: ["paysannerie", "paysans libres", "agriculture vivrière", "agroécologie", "agroécologie paysanne", "souveraineté alimentaire", "paysannerie familiale", "agriculture familiale"]
+        en: ["peasantry", "peasant movement", "subsistence farming", "agroecology", "food sovereignty", "peasant agroecology", "smallholder", "family farming", "peasant agriculture"]
+        es: ["campesinado", "agricultura campesina", "agroecología", "soberanía alimentaria", "agroecología campesina", "agricultura familiar"]
+        pt: ["camponeses", "agricultura camponesa", "agroecologia", "soberania alimentar", "agricultura familiar"]
+
+    - name: "Féminisme agraire & paysan"
+      definition: >
+        Approches féministes du foncier et de la paysannerie : place des
+        femmes dans les luttes pour la terre, droits fonciers des femmes,
+        organisations comme la Marche mondiale des femmes (axe rural),
+        critique de la division genrée du travail agricole.
+      equivalents:
+        fr: ["féminisme paysan", "féminisme agraire", "droits fonciers des femmes", "femmes et terre"]
+        en: ["agrarian feminism", "peasant feminism", "women land rights", "feminist political ecology"]
+        es: ["feminismo agrario", "feminismo campesino", "derechos de las mujeres a la tierra"]
+        pt: ["feminismo agrário", "feminismo camponês"]
+
+    - name: "Communs africains & foncier coutumier"
+      definition: >
+        Régimes fonciers coutumiers africains : titres collectifs, gestion
+        communautaire des terres, conflits avec les codes fonciers étatiques
+        importés, résistances aux concessions et land grabs en Afrique de
+        l'Ouest, Centrale, et Est.
+      equivalents:
+        fr: ["foncier coutumier", "biens communs africains", "droit coutumier", "tenure communautaire africaine"]
+        en: ["African commons", "customary tenure", "customary land rights", "African land rights"]
+        es: ["tenencia consuetudinaria", "bienes comunes africanos"]
+        pt: ["posse costumeira", "bens comuns africanos"]
+
+    - name: "Coopératives & mutualisme foncier"
+      definition: >
+        Coopératives agricoles, mutuelles foncières, structures collectives
+        d'exploitation et d'achat de la terre. Inclut SCI militantes, GFA
+        mutuels, foncières solidaires, agricultural cooperatives, cooperativas
+        agrarias historiques (mouvement coopératif espagnol, italien, etc.).
+      equivalents:
+        fr: ["coopérative agricole", "mutualisme foncier", "foncière solidaire", "GFA mutuel", "Terre de Liens"]
+        en: ["agricultural cooperatives", "land cooperative", "cooperative farming", "land trust mutual"]
+        es: ["cooperativas agrarias", "cooperativas agrícolas", "mutualismo agrario"]
+        pt: ["cooperativas agrícolas", "cooperativismo rural"]
 
     - name: "Habitat et collectifs"
       definition: >
@@ -76,6 +142,7 @@ ontology:
         fr: ["collectif d'habitants", "habitat groupé", "communautés rurales", "squat rural", "coopérative d'habitants"]
         en: ["housing cooperative", "intentional community", "land cooperative", "rural commune"]
         es: ["cooperativa de vivienda", "comunidad intencional", "comuna rural"]
+        pt: ["cooperativa de moradia", "comunidade intencional", "comuna rural"]
 
   related_concepts:
     - "écologie politique"
@@ -86,6 +153,12 @@ ontology:
     - "permaculture (lorsqu'elle est politique, pas technique)"
     - "histoire rurale"
     - "géographie radicale"
+    - "agroécologie politique"
+    - "peasant agriculture / agricultura familiar / family farming"
+    - "smallholder / petite agriculture paysanne"
+    - "paysannerie familiale"
+    - "écoféminisme rural"
+    - "économie sociale et solidaire agricole"
 
   anti_concepts:
     - "immobilier spéculatif / placement foncier individuel"
@@ -95,12 +168,21 @@ ontology:
     - "gestion patrimoniale type 'commun' au sens propriété privée individuelle"
     - "ruralité folklorique / passéisme rural"
     - "écologie technocratique (green tech, marché du carbone)"
+    - "libertarianism US (anti-tax, anti-state, capitalisme libertarien) — à NE PAS confondre avec libertaire FR"
+    - "cryptocurrencies / NFT / Web3 (y compris quand maquillés en 'commons')"
+    - "libertaire abstrait / philosophie libertaire sans ancrage foncier ou paysan"
+    - "antifascisme général sans dimension foncière, agraire ou territoriale"
+    - "tokenisation foncière / 'real estate on blockchain'"
+    - "land banking spéculatif"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Choix éditoriaux : voix, audience, ton
 # ─────────────────────────────────────────────────────────────────────────────
 editorial:
   voice: "militant+académique"
+
+  # PT ajouté : Brésil/MST/lusophonie est un axe majeur des luttes pour la terre.
+  languages: [fr, en, es, pt]
 
   audience: >
     Militant·es des luttes foncières et paysannes, chercheur·ses en sciences
@@ -139,6 +221,25 @@ scoring:
         Habitat et collectifs (core), mais à valider qu'il y a bien un rapport à la terre
         et pas seulement un modèle immobilier alternatif.
 
+    - title_example: "Community Land Trusts as Urban Commons: Housing Beyond Speculation"
+      score: 9
+      reason: >
+        Core concept 'Communs urbains & habitat coopératif' frontal, cadrage
+        anti-spéculatif et institutionnel-pratique. Pile au cœur de la
+        nouvelle ouverture EN du corpus.
+
+    - title_example: "Land Back: Indigenous Sovereignty and the Critique of Settler Property"
+      score: 9
+      reason: >
+        Core 'Mouvements autochtones & Land Back' + critique de la propriété
+        coloniale. Combine deux axes structurants du projet.
+
+    - title_example: "Mujeres campesinas y soberanía alimentaria : feminismo agrario en América Latina"
+      score: 9
+      reason: >
+        Triple intersection : féminisme agraire + souveraineté alimentaire +
+        ancrage latino-américain. Comble explicitement un angle mort identifié.
+
     - title_example: "Investir dans la nature : guide du placement foncier vert"
       score: 1
       reason: >
@@ -156,3 +257,16 @@ scoring:
       reason: >
         Faux ami sur 'fonds de dotation' — ici purement fiscal, sans dimension
         militante ni anti-spéculative.
+
+    - title_example: "Libertarianism and the Free Market: A Defense of Property Rights"
+      score: 1
+      reason: >
+        Anti-concept ajouté — libertarianism US au sens anti-État pro-marché.
+        Le mot 'property rights' ne suffit pas : ici il s'agit de défendre la
+        propriété privée individuelle, pas de la critiquer.
+
+    - title_example: "Tokenizing Farmland: Real Estate on the Blockchain"
+      score: 1
+      reason: >
+        Anti-concept tokenisation foncière. Maquillage 'innovation' d'une
+        marchandisation accrue de la terre.
