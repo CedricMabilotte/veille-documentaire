@@ -103,15 +103,15 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-05-18T07:27:41.453591+00:00'
+exported_at: '2026-05-19T17:07:59.388249+00:00'
 sources:
 - url: https://infokiosques.net/
-  label: Infokiosques.net — nouveautés (deep crawl)
-  type: deep_html
-  fertility: 0.0
-  runs: 1
-  docs_dl: 0
-  docs_seen: 72
+  label: Infokiosques.net — nouveautés
+  type: html
+  fertility: 9.0
+  runs: 4
+  docs_dl: 36
+  docs_seen: 190
 - url: https://infokiosques.net/paysannerie_ruralite
   label: Infokiosques.net — Paysannerie & ruralité
   type: html
@@ -147,13 +147,13 @@ sources:
   runs: 1
   docs_dl: 2
   docs_seen: 83
-- url: https://www.boell.de/en/publications
-  label: Böll Stiftung — publications EN (deep crawl)
+- url: https://www.boell.de/en/topics/agriculture-food
+  label: Böll Stiftung — Agriculture & Food (EN topic)
   type: deep_html
   fertility: 0.0
-  runs: 1
+  runs: 0
   docs_dl: 0
-  docs_seen: 227
+  docs_seen: 0
 - url: https://www.boell.de/en/agriculture-atlas-2019
   label: Böll Stiftung — Agriculture Atlas (EN)
   type: deep_html
@@ -263,16 +263,16 @@ sources:
   label: Reporterre — RSS principal
   type: rss
   fertility: 0.0
-  runs: 1
+  runs: 2
   docs_dl: 0
-  docs_seen: 30
+  docs_seen: 60
 - url: https://lundi.am/spip.php?page=backend
   label: Lundi.am — RSS principal
   type: rss
   fertility: 0.0
-  runs: 1
+  runs: 2
   docs_dl: 0
-  docs_seen: 10
+  docs_seen: 22
 - url: https://mst.org.br/feed/
   label: MST Brésil — RSS principal
   type: rss
