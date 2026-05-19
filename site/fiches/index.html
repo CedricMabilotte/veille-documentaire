@@ -87,9 +87,10 @@
           <div class="filter-group">
             <h4>Score minimum</h4>
             <div class="range-row">
-              <input type="range" id="filter-score-min" min="0" max="10" step="1" value="0" aria-label="Score minimum">
-              <span class="range-val" id="filter-score-min-val">0</span>
+              <input type="range" id="filter-score-min" min="0" max="10" step="1" value="5" aria-label="Score minimum">
+              <span class="range-val" id="filter-score-min-val">5</span>
             </div>
+            <p class="filter-hint" style="margin:4px 0 0;font-size:12px;color:#6b6157;">(par défaut : &ge; 5/10. Glisser à 0 pour tout voir.)</p>
             <h4 style="margin-top:14px;">Score maximum</h4>
             <div class="range-row">
               <input type="range" id="filter-score-max" min="0" max="10" step="1" value="10" aria-label="Score maximum">
@@ -216,7 +217,7 @@ let STATE = {
   meta: {},
   filters: {
     q: '',
-    scoreMin: 0,
+    scoreMin: 5,  // par défaut on masque les docs faiblement pertinents
     scoreMax: 10,
     sources: new Set(),
     formats: new Set(),
@@ -434,15 +435,15 @@ function bindEvents(basePath) {
   // Reset
   document.getElementById('filter-reset').addEventListener('click', () => {
     STATE.filters = {
-      q: '', scoreMin: 0, scoreMax: 10,
+      q: '', scoreMin: 5, scoreMax: 10,
       sources: new Set(), formats: new Set(), langs: new Set(),
       decMin: 1850, decMax: 2030, decIncludeUndated: true,
       bulle: false, downloaded: false, enriched: false,
     };
     document.getElementById('filter-q').value = '';
-    document.getElementById('filter-score-min').value = 0;
+    document.getElementById('filter-score-min').value = 5;
     document.getElementById('filter-score-max').value = 10;
-    document.getElementById('filter-score-min-val').textContent = '0';
+    document.getElementById('filter-score-min-val').textContent = '5';
     document.getElementById('filter-score-max-val').textContent = '10';
     document.getElementById('filter-dec-min').value = 1850;
     document.getElementById('filter-dec-max').value = 2030;
@@ -728,5 +729,13 @@ function applySuggestion(term, basePath) {
 }
 </script>
 
+<!-- ── PWA : enregistrement du service worker (no-op en file://) ── -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    });
+  }
+</script>
 </body>
 </html>

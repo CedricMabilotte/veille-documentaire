@@ -23,6 +23,46 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; LibraryBot/1.0)"}
 DOC_EXTENSIONS = {".pdf", ".epub", ".txt", ".doc", ".docx"}
 DEFAULT_MAX_PAGES = 30
 
+# Réduction des faux positifs : on cherche un parent "éditorial" (article/main)
+# pour éviter de capturer du contexte de sidebar/footer/related-posts qui
+# pollue le contexte vu par Claude.
+ARTICLE_TAGS = ["article", "main"]
+EXCLUDE_TAGS = ["aside", "nav", "footer", "header"]
+
+
+def _editorial_scope(soup):
+    """Retourne le scope éditorial principal de la page (article/main/role=article).
+
+    Si aucun n'est trouvé, retourne le soup global (fallback).
+    En présence d'un scope, on supprime au passage les blocs de bruit
+    (aside/nav/footer/header) qui peuvent rester nichés dedans.
+    """
+    article = soup.find(ARTICLE_TAGS)
+    if not article:
+        article = soup.find(attrs={"role": "article"})
+    if not article:
+        return soup, False  # fallback : pas de scope éditorial identifié
+    # On nettoie le scope éditorial des blocs de bruit éventuels imbriqués
+    for tag in article.find_all(EXCLUDE_TAGS):
+        tag.decompose()
+    return article, True
+
+
+def _dedup_by_filename(docs: list[dict]) -> list[dict]:
+    """Dédup par (filename, link_text[:80]) en gardant le contexte le plus long.
+
+    Beaucoup de pages affichent 2 fois le même PDF (en-tête + lien
+    "télécharger"). On garde la variante au contexte le plus riche.
+    """
+    by_key: dict[tuple, dict] = {}
+    for d in docs:
+        key = (d["filename"], (d.get("link_text") or "")[:80])
+        if key not in by_key or len(d.get("context", "")) > len(
+            by_key[key].get("context", "")
+        ):
+            by_key[key] = d
+    return list(by_key.values())
+
 
 def _fetch(url: str, timeout: int = 15) -> str | None:
     try:
@@ -40,10 +80,16 @@ def _same_domain(a: str, b: str) -> bool:
 
 def _extract_docs(html: str, base_url: str, page_title: str,
                   source_url: str) -> list[dict]:
-    """Trouve tous les liens vers .pdf/.epub/.txt/.doc dans la page courante."""
+    """Trouve tous les liens vers .pdf/.epub/.txt/.doc dans la page courante.
+
+    On limite la recherche au scope éditorial (article/main/role=article)
+    quand il existe, pour éviter de capturer les liens et contextes des
+    sidebars/footers/related-posts/headers — sources de faux positifs.
+    """
     soup = BeautifulSoup(html, "html.parser")
+    scope, has_scope = _editorial_scope(soup)
     docs, seen = [], set()
-    for a in soup.find_all("a", href=True):
+    for a in scope.find_all("a", href=True):
         full_url = urljoin(base_url, a["href"])
         ext = Path(urlparse(full_url).path).suffix.lower()
         if ext not in DOC_EXTENSIONS or full_url in seen:
@@ -144,6 +190,15 @@ def find_documents(source: dict) -> list[dict]:
                 all_docs.append(d)
 
     print(f"  ↳ deep_html : {len(all_docs)} docs total après crawl 2-niveaux")
+
+    # Filtrage final : article-scope est déjà appliqué dans _extract_docs ;
+    # ici on dédup par (filename, link_text) en gardant le contexte le plus
+    # long — utile car les pages affichent souvent 2 fois le même PDF
+    # (en-tête + lien « télécharger »).
+    before = len(all_docs)
+    all_docs = _dedup_by_filename(all_docs)
+    print(f"  ↳ deep_html : {len(all_docs)} docs après filtrage "
+          f"article-scope + dédup titre (était {before})")
     return all_docs
 
 

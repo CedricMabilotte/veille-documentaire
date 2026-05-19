@@ -357,5 +357,13 @@ function collectCitations(docs, max = 6) {
 }
 </script>
 
+<!-- ── PWA : enregistrement du service worker (no-op en file://) ── -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    });
+  }
+</script>
 </body>
 </html>

@@ -131,10 +131,12 @@ sources:
   # Vérifiés : 80-150 PDFs par index. Page "nouveautés" passe en deep_html
   # pour suivre les liens vers les nouvelles brochures.
 
-  - label: "Infokiosques.net — nouveautés (deep crawl)"
+  # Page d'accueil en html simple (pas deep crawl : trop de bruit dans le run
+  # 2026-05-18 — 72 docs scannés / 0 ≥7). On garde un balayage léger des
+  # nouveautés directement listées sur la home, sans suivre les liens.
+  - label: "Infokiosques.net — nouveautés"
     url: "https://infokiosques.net/"
-    type: deep_html
-    max_pages: 15
+    type: html
     min_interval_days: 3
 
   - label: "Infokiosques.net — Paysannerie & ruralité"
@@ -168,10 +170,13 @@ sources:
   # liens vers les rapports, et on ajoute la rubrique Atlas (Agriculture
   # Atlas, Meat Atlas) qui contient des PDFs téléchargeables.
 
-  - label: "Böll Stiftung — publications EN (deep crawl)"
-    url: "https://www.boell.de/en/publications"
+  # Böll EN /publications (deep crawl) renvoyait 227 docs / 0 ≥7 — index
+  # généraliste très bruité (démocratie, géopolitique allemande). On cible
+  # un topic plus aligné sur la thématique terre/agriculture.
+  - label: "Böll Stiftung — Agriculture & Food (EN topic)"
+    url: "https://www.boell.de/en/topics/agriculture-food"
     type: deep_html
-    max_pages: 20
+    max_pages: 15
     min_interval_days: 14
 
   - label: "Böll Stiftung — Agriculture Atlas (EN)"

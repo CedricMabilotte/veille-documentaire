@@ -190,14 +190,112 @@ def download_file(url: str, dest: Path) -> bool:
         return False
 
 
+def _archive_org_variants(url: str) -> list[str]:
+    """Génère des URL alternatives pour les liens archive.org/download/<id>/<file>.
+
+    Stratégie : Archive.org expose souvent un même item sous plusieurs formats
+    (PDF natif, OCR _djvu.txt, version _text.pdf). Quand l'URL fournie renvoie
+    404, on tente :
+      1. swap des suffixes (_text.pdf / _djvu.txt → .pdf)
+      2. <base>/<identifier>.pdf (fichier "canonique" à la racine du record)
+      3. parcours du JSON /metadata/<identifier> pour récupérer le premier .pdf
+    """
+    variants: list[str] = []
+    if "archive.org/download/" not in url:
+        return variants
+
+    # On isole <base>=https://archive.org/download/<identifier> et <filename>
+    try:
+        prefix, rest = url.split("archive.org/download/", 1)
+        parts = rest.split("/", 1)
+        identifier = parts[0]
+        filename = parts[1] if len(parts) > 1 else ""
+        base = f"{prefix}archive.org/download/{identifier}"
+    except Exception:
+        return variants
+
+    # 1. Variantes locales sur le filename
+    if filename:
+        if filename.endswith("_text.pdf"):
+            variants.append(f"{base}/{filename[:-len('_text.pdf')]}.pdf")
+        if filename.endswith("_djvu.txt"):
+            variants.append(f"{base}/{filename[:-len('_djvu.txt')]}.pdf")
+
+    # 2. <base>/<identifier>.pdf — fichier "canonique" du record
+    canonical = f"{base}/{identifier}.pdf"
+    if canonical != url and canonical not in variants:
+        variants.append(canonical)
+
+    # 3. Listing du record via l'API metadata (JSON)
+    try:
+        meta_url = f"https://archive.org/metadata/{identifier}"
+        r = requests.get(meta_url, headers=HEADERS, timeout=8)
+        if r.ok:
+            data = r.json()
+            for f in (data.get("files") or []):
+                name = f.get("name", "")
+                if name.lower().endswith(".pdf"):
+                    candidate = f"{base}/{name}"
+                    if candidate != url and candidate not in variants:
+                        variants.append(candidate)
+                    break  # on prend le premier .pdf trouvé
+    except Exception as e:
+        print(f"     ⚠  metadata archive.org indisponible : {e}")
+
+    return variants
+
+
 def download_and_validate(url: str, dest: Path) -> tuple[bool, str]:
-    """Pipeline complet : download → validate → bypass si nécessaire.
+    """Pipeline complet : HEAD probe → download → validate → bypass si besoin.
+
+    1. HEAD rapide (timeout 8s) : si 200 + content-type pdf/octet-stream, on continue.
+    2. Si 404 et URL archive.org : on tente des variantes (_text.pdf → .pdf,
+       <id>.pdf, et listing /metadata/<id>).
+    3. Sinon pipeline standard (download → validate → bypass UA → Playwright).
 
     Retourne (success, status) où status ∈
-      {'ok', 'ok_via_browser', 'ok_via_playwright',
-       'failed_invalid_format', 'failed_network', 'failed_captcha'}.
+      {'ok', 'ok_via_variant', 'ok_via_browser', 'ok_via_playwright',
+       'failed_invalid_format', 'failed_network',
+       'failed_404_after_variants', 'failed_captcha'}.
     """
+    # 1. HEAD rapide pour détecter les 404 avant de tout télécharger
+    head_status = None
+    try:
+        head = requests.head(url, headers=HEADERS, timeout=8, allow_redirects=True)
+        head_status = head.status_code
+        ctype = (head.headers.get("content-type") or "").lower()
+        if head.ok and ("pdf" in ctype or "octet-stream" in ctype):
+            # Cas nominal : on enchaîne sur le download standard
+            pass
+        elif head.status_code == 404 and "archive.org/download/" in url:
+            # 2. 404 sur archive.org → on tente les variantes
+            variants = _archive_org_variants(url)
+            for variant in variants:
+                print(f"     ↻  Variante archive.org testée : {variant}")
+                try:
+                    vh = requests.head(variant, headers=HEADERS, timeout=8,
+                                       allow_redirects=True)
+                except Exception:
+                    continue
+                if vh.ok:
+                    if download_file(variant, dest) and pdf_processor.validate_pdf(dest):
+                        return True, "ok_via_variant"
+            return False, "failed_404_after_variants"
+        # Pour les autres codes (403, 5xx…) on laisse le pipeline standard tenter
+    except Exception as e:
+        # Si le HEAD échoue (timeout, DNS…), on laisse le download tenter sa chance
+        print(f"     ⚠  HEAD échec ({e}), on tente le download direct")
+
     if not download_file(url, dest):
+        # Le download peut avoir échoué sur 404 ; tenter les variantes archive.org
+        if "archive.org/download/" in url:
+            variants = _archive_org_variants(url)
+            for variant in variants:
+                print(f"     ↻  Variante archive.org (post-fail) : {variant}")
+                if download_file(variant, dest) and pdf_processor.validate_pdf(dest):
+                    return True, "ok_via_variant"
+            if variants:
+                return False, "failed_404_after_variants"
         return False, "failed_network"
 
     if pdf_processor.validate_pdf(dest):
@@ -407,6 +505,148 @@ SITE_PATH = Path("site")
 SITE_BASE_URL = "https://biblio.actitude.org"
 
 
+def _prerender_fiches(catalog: dict) -> int:
+    """Génère un HTML statique minimaliste par fiche dans site/fiches/<id>.html.
+
+    Objectif : fournir aux crawlers (Twitter/Mastodon/Facebook/LinkedIn) et aux
+    moteurs de recherche un HTML pré-rendu avec les bons og:* et un canonical
+    statique, AVANT toute exécution JS. Le fichier redirige automatiquement
+    vers fiche.html?id=<id> via meta refresh pour les utilisateurs.
+
+    Retourne le nombre de fichiers générés.
+    """
+    fiches_dir = SITE_PATH / "fiches"
+    fiches_dir.mkdir(parents=True, exist_ok=True)
+
+    fallback_desc = (
+        "Fiche du corpus BIBLIO — communs, terres, paysanneries."
+    )
+
+    docs = catalog.get("docs", {})
+    count = 0
+
+    for doc_id, doc in docs.items():
+        # ── Titre : link_text du dernier run, sinon filename sans extension ──
+        title = ""
+        if doc.get("runs"):
+            title = doc["runs"][-1].get("link_text", "") or ""
+        if not title:
+            title = doc.get("filename", "")
+            # Retire l'extension pour avoir un titre lisible
+            if "." in title:
+                title = title.rsplit(".", 1)[0]
+        title = title.strip() or f"Fiche {doc_id}"
+
+        # ── Description : 1re phrase du summary, sinon raison, tronqué 300 ───
+        description = ""
+        enrich = doc.get("enrichment") or {}
+        summary = enrich.get("summary", "") if isinstance(enrich, dict) else ""
+        if summary:
+            # Première phrase : on coupe au premier . ! ?
+            first = summary
+            for sep in (". ", "! ", "? "):
+                if sep in first:
+                    first = first.split(sep, 1)[0] + sep.strip()
+                    break
+            description = first.strip()
+        if not description and doc.get("runs"):
+            description = doc["runs"][-1].get("raison", "") or ""
+        if not description:
+            description = fallback_desc
+        description = description.strip()[:300]
+
+        # ── Source + score pour le fallback HTML ─────────────────────────────
+        source = doc.get("source", "") or ""
+        score = doc.get("latest_score", 0)
+
+        # ── JSON-LD ScholarlyArticle (mêmes champs que côté JS) ──────────────
+        canonical_url = f"{SITE_BASE_URL}/fiches/{doc_id}.html"
+        og_image = f"{SITE_BASE_URL}/assets/covers/{doc_id}.png"
+        page_count = 0
+        if isinstance(doc.get("meta"), dict):
+            page_count = doc["meta"].get("page_count", 0) or 0
+        is_book = page_count >= 60
+        lang = "fr"
+        if isinstance(doc.get("meta"), dict):
+            lang = doc["meta"].get("lang", "") or "fr"
+
+        ld = {
+            "@context": "https://schema.org",
+            "@type": "Book" if is_book else "ScholarlyArticle",
+            "headline": title,
+            "name": title,
+            "url": canonical_url,
+            "inLanguage": lang,
+            "abstract": description,
+            "image": og_image,
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "BIBLIO — Bibliothèque documentaire ouverte",
+                "url": "https://biblio.actitude.org/",
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "actitude.org",
+                "url": "https://actitude.org",
+            },
+        }
+        if source:
+            ld["sourceOrganization"] = {
+                "@type": "Organization",
+                "name": source,
+            }
+        if doc.get("url"):
+            ld["mainEntityOfPage"] = doc["url"]
+        ld_json = json.dumps(ld, ensure_ascii=False)
+
+        # ── Échappement HTML minimal pour insérer dans des attributs/texte ──
+        def esc(s: str) -> str:
+            return (str(s or "")
+                    .replace("&", "&amp;")
+                    .replace("<", "&lt;")
+                    .replace(">", "&gt;")
+                    .replace('"', "&quot;"))
+
+        title_h    = esc(title)
+        desc_h     = esc(description)
+        source_h   = esc(source)
+        doc_id_h   = esc(doc_id)
+
+        # ── HTML statique — minimal, ciblé crawlers + SEO ────────────────────
+        html = f"""<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>{title_h} — BIBLIO</title>
+<link rel="canonical" href="{canonical_url}">
+<meta name="description" content="{desc_h}">
+<meta property="og:title" content="{title_h}">
+<meta property="og:description" content="{desc_h}">
+<meta property="og:image" content="{og_image}">
+<meta property="og:url" content="{canonical_url}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="BIBLIO — biblio.actitude.org">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{ld_json}</script>
+<meta http-equiv="refresh" content="0; url=fiche.html?id={doc_id_h}">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<main style="max-width: 60ch; margin: 4rem auto; padding: 0 1.5rem; font-family: 'EB Garamond', serif;">
+  <h1>{title_h}</h1>
+  <p><em>{source_h}</em> · Score : {score}/10</p>
+  <p>{desc_h}</p>
+  <p><a href="fiche.html?id={doc_id_h}">Voir la fiche détaillée →</a></p>
+</main>
+</body>
+</html>
+"""
+        (fiches_dir / f"{doc_id}.html").write_text(html, encoding="utf-8")
+        count += 1
+
+    return count
+
+
 def publish_site(run_date: str) -> None:
     """Prépare le dossier site/ pour publication :
     - copie le catalog vers site/data/catalog.json
@@ -452,7 +692,33 @@ def publish_site(run_date: str) -> None:
     _write_rss(catalog, run_date)
     _write_sitemap(catalog)
 
+    # 4bis. Pré-rendu HTML statique par fiche (og:* + canonical + JSON-LD)
+    # → pour les crawlers sociaux (Twitter/Mastodon/FB/LI) et le SEO
+    try:
+        n_prerender = _prerender_fiches(catalog)
+        print(f"  🔗 Pré-rendu : {n_prerender} fiches statiques")
+    except Exception as e:
+        print(f"  ⚠  pré-rendu fiches raté : {e}")
+
+    # 5. Copie récursive des exports (BibTeX, RIS, CSL JSON…) vers site/exports/
+    exports_src = Path("exports")
+    export_count = 0
+    if exports_src.exists() and exports_src.is_dir():
+        site_exports = SITE_PATH / "exports"
+        site_exports.mkdir(parents=True, exist_ok=True)
+        for entry in exports_src.rglob("*"):
+            if entry.is_file():
+                rel = entry.relative_to(exports_src)
+                target = site_exports / rel
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(entry, target)
+                export_count += 1
+        print(f"  📦 Exports copiés : {export_count} fichier(s) → site/exports/")
+    else:
+        print("  ℹ  Aucun dossier exports/ à copier")
+
     print(f"  🌐 Site publié : {cover_count} couvertures, {bulle_count} bulles, "
+          f"{export_count} exports, "
           f"{len(catalog.get('docs', {}))} fiches au catalog")
 
 

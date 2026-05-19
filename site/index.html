@@ -445,5 +445,13 @@ function renderStats(meta, docs) {
 }
 </script>
 
+<!-- ── PWA : enregistrement du service worker (no-op en file://) ── -->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    });
+  }
+</script>
 </body>
 </html>
