@@ -617,6 +617,21 @@ def update_synopsis_catalog(report: dict) -> None:
     except Exception as e:
         print(f"  ⚠  _link_versions raté : {e}")
 
+    # S1 — réconciliation globale des scores sur TOUT le catalogue (et pas
+    # seulement les docs du run courant) : rétro-remplit score_initial depuis
+    # latest_score, et score_final depuis enrichment.relevance_score. Migration
+    # idempotente — corrige les fiches enrichies lors de runs antérieurs.
+    for fiche in catalog["docs"].values():
+        if fiche.get("score_initial") is None:
+            fiche["score_initial"] = fiche.get("latest_score", 0)
+        if fiche.get("score_final") is None:
+            enr = fiche.get("enrichment")
+            if isinstance(enr, dict) and "error" not in enr:
+                rs = enr.get("relevance_score")
+                if isinstance(rs, (int, float)):
+                    fiche["score_final"] = int(rs)
+        fiche.setdefault("score_final", None)
+
     # Méta — migration douce : .get() partout
     def _eff(f: dict) -> int:
         sf = f.get("score_final")
