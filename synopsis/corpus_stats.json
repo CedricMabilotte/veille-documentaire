@@ -1,18 +1,20 @@
 {
-  "generated_at": "2026-05-22T23:08:53Z",
-  "total": 345,
-  "total_docs": 345,
+  "generated_at": "2026-05-22T23:26:12Z",
+  "total": 369,
+  "total_docs": 369,
   "total_downloaded": 97,
-  "total_published": 50,
+  "total_published": 51,
   "by_lang": {
-    "inconnu": 345
+    "inconnu": 369
   },
   "by_language": {
-    "inconnu": 345
+    "inconnu": 369
   },
   "by_source": {
+    "Reporterre — RSS principal": 24,
     "Archive.org — subject:anarchism (texts)": 20,
     "Archive.org — commons / enclosure": 16,
+    "Lundi.am — RSS principal": 16,
     "Infokiosques.net — nouveautés": 11,
     "Archive.org — peasant movements": 9,
     "Infokiosques.net — index A": 8,
@@ -25,8 +27,6 @@
     "The Anarchist Library — OPDS feed": 8,
     "HAL — communs fonciers": 8,
     "HAL — paysannerie / agriculture vivrière": 8,
-    "Lundi.am — RSS principal": 8,
-    "Reporterre — RSS principal": 8,
     "CNT-AIT España": 8,
     "Portal OACA (anarcosindicalisme ES)": 8,
     "CGT España": 8,
@@ -57,29 +57,30 @@
     "libcom.org — library": 1
   },
   "by_decade": {
-    "inconnu": 345
+    "inconnu": 369
   },
   "by_score": {
-    "0": 77,
-    "1": 120,
-    "2": 57,
-    "3": 10,
-    "4": 13,
-    "5": 18,
+    "0": 80,
+    "1": 127,
+    "2": 66,
+    "3": 11,
+    "4": 15,
+    "5": 19,
     "6": 5,
     "7": 8,
     "8": 14,
-    "9": 20,
+    "9": 21,
     "10": 3
   },
   "by_doc_type": {
-    "non_classe": 345
+    "non_classe": 345,
+    "autre": 24
   },
   "by_orientation": {
     "non_renseigne": 119,
     "militant": 108,
     "academique": 70,
-    "journalistique": 32,
+    "journalistique": 56,
     "institutionnel": 16
   },
   "blind_spots": [

@@ -1,5 +1,5 @@
-last_updated: '2026-05-19T17:06:53'
-total_candidates: 1125
+last_updated: '2026-05-22T23:20:45'
+total_candidates: 1153
 candidates:
 - url: https://viacampesina.org/fr/la-charte-des-communes-paysannes-du-map-belgique-un-exemple-dutilisation-de-lundrop-au-niveau-local
   type: mastodon
@@ -136,8 +136,8 @@ candidates:
   type: footnote
   domain: infokiosques.net
   first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 20
+  last_seen: '2026-05-22'
+  seen_count: 24
   suggested_action: follow_one_time
   notes: ''
   found_from:
@@ -301,6 +301,21 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: http://joseph.dejacque.free.fr/
+  type: footnote
+  domain: joseph.dejacque.free.fr
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 1b61c156
+    context: 'la plupart sont disponible ici:                http://joseph.dejacque.free.fr/'
+    page: 2
+  - doc_id: fbbd37a0
+    context: 'la plupart sont disponible ici:                http://joseph.dejacque.free.fr/'
+    page: 11
 - url: https://bsky.app/search?q=%23Agro%C3%A9cologie
   type: mastodon
   found_from:
@@ -369,21 +384,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: http://joseph.dejacque.free.fr/
-  type: footnote
-  domain: joseph.dejacque.free.fr
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 10
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 1b61c156
-    context: 'la plupart sont disponible ici:                http://joseph.dejacque.free.fr/'
-    page: 2
-  - doc_id: fbbd37a0
-    context: 'la plupart sont disponible ici:                http://joseph.dejacque.free.fr/'
-    page: 11
 - url: https://bsky.app/search?q=%23Souverainet%C3%A9Alimentaire
   type: mastodon
   found_from:
@@ -844,6 +844,18 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: http://infokiosques.net/spip.php?article101
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 1fadbb5d
+    context: 2000 - http://infokiosques.net/spip.php?article101
+    page: 2
 - url: https://LaPetiteFoire.LeMAP.be
   type: mastodon
   found_from:
@@ -891,6 +903,54 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
+  type: footnote
+  domain: agriculture.gouv.fr
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
+    page: 18
+- url: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
+  type: footnote
+  domain: attaque.noblogs.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
+    page: 4
+- url: https://attaque.noblogs.org/post/2025/01/11/etupes-doubs-ras-le-bol-des-
+  type: footnote
+  domain: attaque.noblogs.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://attaque.noblogs.org/post/2025/01/11/etupes-doubs-ras-le-bol-des-
+    page: 18
+- url: https://attaque.noblogs.org/post/2025/10/26/barraux-isere-lueur-sous-le-
+  type: footnote
+  domain: attaque.noblogs.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://attaque.noblogs.org/post/2025/10/26/barraux-isere-lueur-sous-le-
+    page: 2
 - url: https://bird.makeup/users/plantophage
   type: mastodon
   found_from:
@@ -1014,6 +1074,114 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
+  type: footnote
+  domain: fichiers-publics.agriculture.gouv.fr
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
+    page: 6
+- url: https://infokiosques.net/spip.php?article1037
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article1037
+    page: 6
+- url: https://infokiosques.net/spip.php?article1767
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article1767
+    page: 11
+- url: https://infokiosques.net/spip.php?article1814
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article1814
+    page: 18
+- url: https://infokiosques.net/spip.php?article1975
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article1975
+    page: 7
+- url: https://infokiosques.net/spip.php?article2019
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article2019
+    page: 9
+- url: https://infokiosques.net/spip.php?article2118
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article2118
+    page: 6
+- url: https://lille.indymedia.org/spip.php?article31839&lang=fr
+  type: footnote
+  domain: lille.indymedia.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://lille.indymedia.org/spip.php?article31839&lang=fr
+    page: 16
+- url: https://opensanctuary.org/guide-des-soins-aux-cochons/
+  type: footnote
+  domain: opensanctuary.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: 'sanctuary : https://opensanctuary.org/guide-des-soins-aux-cochons/'
+    page: 10
 - url: https://pixelfed.social/DefendingUNDROP
   type: mastodon
   found_from:
@@ -1049,6 +1217,42 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://rajcollective.noblogs.org/
+  type: footnote
+  domain: rajcollective.noblogs.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://rajcollective.noblogs.org/)
+    page: 12
+- url: https://renverse.co/infos-locales/Un-an-apres-le-sabotage-de-l-abattoir-de-
+  type: footnote
+  domain: renverse.co
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://renverse.co/infos-locales/Un-an-apres-le-sabotage-de-l-abattoir-de-
+    page: 16
+- url: https://services.autistici.org/
+  type: footnote
+  domain: services.autistici.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: 'ici : https://services.autistici.org/ (en anglais)'
+    page: 2
 - url: https://social.tmprs.net/tag/paysannerie
   type: mastodon
   found_from:
@@ -1090,6 +1294,42 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://sunders.uber.space/
+  type: footnote
+  domain: sunders.uber.space
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: 'dans la zone (attention : toutes ne le sont pas!) : https://sunders.uber.space/'
+    page: 13
+- url: https://unoffensiveanimal.is/
+  type: footnote
+  domain: unoffensiveanimal.is
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: 'Un tuto (trouvé sur le site : https://unoffensiveanimal.is/)'
+    page: 16
+- url: https://unoffensiveanimal.is/prisoner-support/
+  type: footnote
+  domain: unoffensiveanimal.is
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://unoffensiveanimal.is/prisoner-support/
+    page: 12
 - url: https://viacampesina.org/fr/souverainete-alimentaire-face-a-la-guerre-a-limperialisme-et-a-la-faim-des-peuples-dans-le-monde
   type: mastodon
   found_from:
@@ -1149,6 +1389,18 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
+  type: footnote
+  domain: www.20minutes.fr
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
+    page: 6
 - url: https://www.alterecosoc.org/fr/ecosoc7fr
   type: mastodon
   found_from:
@@ -1515,258 +1767,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: http://infokiosques.net/spip.php?article101
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 1fadbb5d
-    context: 2000 - http://infokiosques.net/spip.php?article101
-    page: 2
-- url: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
-  type: footnote
-  domain: agriculture.gouv.fr
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
-    page: 18
-- url: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
-  type: footnote
-  domain: attaque.noblogs.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
-    page: 4
-- url: https://attaque.noblogs.org/post/2025/01/11/etupes-doubs-ras-le-bol-des-
-  type: footnote
-  domain: attaque.noblogs.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://attaque.noblogs.org/post/2025/01/11/etupes-doubs-ras-le-bol-des-
-    page: 18
-- url: https://attaque.noblogs.org/post/2025/10/26/barraux-isere-lueur-sous-le-
-  type: footnote
-  domain: attaque.noblogs.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://attaque.noblogs.org/post/2025/10/26/barraux-isere-lueur-sous-le-
-    page: 2
-- url: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
-  type: footnote
-  domain: fichiers-publics.agriculture.gouv.fr
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
-    page: 6
-- url: https://infokiosques.net/spip.php?article1037
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article1037
-    page: 6
-- url: https://infokiosques.net/spip.php?article1767
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article1767
-    page: 11
-- url: https://infokiosques.net/spip.php?article1814
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article1814
-    page: 18
-- url: https://infokiosques.net/spip.php?article1975
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article1975
-    page: 7
-- url: https://infokiosques.net/spip.php?article2019
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article2019
-    page: 9
-- url: https://infokiosques.net/spip.php?article2118
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article2118
-    page: 6
-- url: https://lille.indymedia.org/spip.php?article31839&lang=fr
-  type: footnote
-  domain: lille.indymedia.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://lille.indymedia.org/spip.php?article31839&lang=fr
-    page: 16
-- url: https://opensanctuary.org/guide-des-soins-aux-cochons/
-  type: footnote
-  domain: opensanctuary.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: 'sanctuary : https://opensanctuary.org/guide-des-soins-aux-cochons/'
-    page: 10
-- url: https://rajcollective.noblogs.org/
-  type: footnote
-  domain: rajcollective.noblogs.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://rajcollective.noblogs.org/)
-    page: 12
-- url: https://renverse.co/infos-locales/Un-an-apres-le-sabotage-de-l-abattoir-de-
-  type: footnote
-  domain: renverse.co
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://renverse.co/infos-locales/Un-an-apres-le-sabotage-de-l-abattoir-de-
-    page: 16
-- url: https://services.autistici.org/
-  type: footnote
-  domain: services.autistici.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: 'ici : https://services.autistici.org/ (en anglais)'
-    page: 2
-- url: https://sunders.uber.space/
-  type: footnote
-  domain: sunders.uber.space
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: 'dans la zone (attention : toutes ne le sont pas!) : https://sunders.uber.space/'
-    page: 13
-- url: https://unoffensiveanimal.is/
-  type: footnote
-  domain: unoffensiveanimal.is
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: 'Un tuto (trouvé sur le site : https://unoffensiveanimal.is/)'
-    page: 16
-- url: https://unoffensiveanimal.is/prisoner-support/
-  type: footnote
-  domain: unoffensiveanimal.is
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://unoffensiveanimal.is/prisoner-support/
-    page: 12
-- url: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
-  type: footnote
-  domain: www.20minutes.fr
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
-    page: 6
 - url: http://KnusKrigsmaskinen.noblogs.org
   type: mastodon
   found_from:
@@ -14697,6 +14697,24 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://renverse.co/analyses/article/ni-ici-ni-ailleurs-de-la-lutte-locale-contre-la-geothermie-profonde-a-la-4555
+  type: external_link
+  domain: renverse.co
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-22'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés (deep crawl)
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — Écologie radicale
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
 - url: https://reporterre.net/Accidents-de-la-circulation-cessons-de-donner-la-priorite-a-la-mobilite-rapide
   type: rss
   found_from:
@@ -15403,6 +15421,24 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://survie.org/publications/brochures/article/racisme-et-neocolonialisme-francais-une-nouvelle-brochure-de-survie
+  type: external_link
+  domain: survie.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-22'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés (deep crawl)
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — Anticolonialismes
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
 - url: https://theconversation.com/comment-generaliser-lagroecologie-280841
   type: mastodon
   found_from:
@@ -17374,6 +17410,21 @@ candidates:
     genre: journal-article
     html_url: http://journals.openedition.org/plc/pdf/761
     source: unpaywall
+- url: https://encatiminirotezora.wordpress.com/
+  type: external_link
+  domain: encatiminirotezora.wordpress.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-22'
+  seen_count: 2
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés (deep crawl)
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
 - url: https://gimenologues.org/spip.php?article774
   type: footnote
   domain: gimenologues.org
@@ -17467,6 +17518,21 @@ candidates:
   - doc_id: Infokiosques.net — Anticolonialismes
     context: · sur le site web
     page: null
+- url: https://limacemenace.noblogs.org/
+  type: external_link
+  domain: limacemenace.noblogs.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-22'
+  seen_count: 2
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés (deep crawl)
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
 - url: https://lundi.am/Amplifier
   type: rss
   found_from:
@@ -17481,6 +17547,20 @@ candidates:
   metadata:
     title: Amplifier
   suggested_action: follow_one_time
+- url: https://lundi.am/Ben-Morea-In-Memoriam
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Ben Morea, In Memoriam — « On est les freaks d'un espace-temps inconnu On est le système nerveux de la révolution
+      » - 18 mai / Avec une grosse photo en haut , Histoire , 4
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Ben Morea, In Memoriam
+  suggested_action: follow_one_time
 - url: https://lundi.am/C-est-l-histoire-d-un-type
   type: rss
   found_from:
@@ -17494,6 +17574,48 @@ candidates:
   last_seen: '2026-05-17'
   metadata:
     title: C'est l'histoire d'un type...
+  suggested_action: follow_one_time
+- url: https://lundi.am/Cloaca-Maxima
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Cloaca Maxima — « Il faut faire ressurgir le souterrain périlleux de l'expérience révolutionnaire » [Ruines]
+      - 18 mai / Avec une grosse photo en haut , Positions , 2
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Cloaca Maxima
+  suggested_action: follow_one_time
+- url: https://lundi.am/Des-milliers-de-deplace-es-et-plusieurs-morts-dans-le-Guerrero
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Des milliers de déplacé.es et plusieurs morts dans le Guerrero — La guerre contre les peuples originaires se
+      poursuit au Mexique - 18 mai / International , 2 , Avec une grosse photo en haut
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Des milliers de déplacé.es et plusieurs morts dans le Guerrero
+  suggested_action: follow_one_time
+- url: https://lundi.am/Du-progres-a-l-illusion-groupale
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Du progrès à l'illusion groupale — De Moulinex à Facebook Jean-Luc Debry - 18 mai / Avec une grosse photo en
+      haut , Positions , 2
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Du progrès à l'illusion groupale
   suggested_action: follow_one_time
 - url: https://lundi.am/Gloire-a-Kateb
   type: rss
@@ -17523,6 +17645,19 @@ candidates:
   metadata:
     title: L'avenir ne dure pas longtemps
   suggested_action: follow_one_time
+- url: https://lundi.am/L-innommable
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: L'innommable — « Bousiller le matos de l'ennemi » - 18 mai / Avec une grosse photo en haut , 4 , Littérature
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-22'
+  metadata:
+    title: L'innommable
+  suggested_action: follow_one_time
 - url: https://lundi.am/La-chasse-a-l-enfant-La-frontiere-au-pied-de-l-immeuble
   type: rss
   found_from:
@@ -17551,6 +17686,20 @@ candidates:
   metadata:
     title: La fabrique de la haine au pouvoir
   suggested_action: follow_one_time
+- url: https://lundi.am/Le-cinema-est-cerne-7536
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Le cinéma est cerné — « Bolloré est désormais présent à toutes les strates qui rendent possible l'existence du
+      cinéma français » - 18 mai / Avec une grosse photo en haut , Positions , 2
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Le cinéma est cerné
+  suggested_action: follow_one_time
 - url: https://lundi.am/Quelques-reflexions-sur-la-desertion-du-monde-technique
   type: rss
   found_from:
@@ -17564,6 +17713,34 @@ candidates:
   last_seen: '2026-05-17'
   metadata:
     title: Quelques réflexions sur la désertion du monde technique
+  suggested_action: follow_one_time
+- url: https://lundi.am/Red-flag
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Red flag — « Pourquoi toute cette glu de silence et de mensonge ? » Leïla Chaix - 18 mai / Avec une grosse photo
+      en haut , Littérature , Leïla Chaix , 2
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Red flag
+  suggested_action: follow_one_time
+- url: https://lundi.am/Reflexions-sur-l-anarchie-et-la-revolution
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Réflexions sur l'anarchie et la révolution — Un lundisoir avec Maria Kakogianni autour de son livre Sous le ciel
+      étoilé, une nuit d'été - 18 mai / Avec une grosse photo en haut , Positions , 2 , lundisoir
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Réflexions sur l'anarchie et la révolution
   suggested_action: follow_one_time
 - url: https://lundi.am/Seditium-un-nouvel-element-qui-agite-la-recherche
   type: rss
@@ -17593,6 +17770,20 @@ candidates:
   metadata:
     title: Smashphone !
   suggested_action: follow_one_time
+- url: https://lundi.am/Socialisme-ou-Barbarie-au-tournant-des-annees-1960
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Socialisme ou Barbarie au tournant des années 1960 — L'aventure d'un groupe révolutionnaire - 18 mai / Avec une
+      grosse photo en haut , Histoire , 2
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Socialisme ou Barbarie au tournant des années 1960
+  suggested_action: follow_one_time
 - url: https://lundi.am/Sur-quelques-problemes-que-presente-le-pacifisme
   type: rss
   found_from:
@@ -17606,6 +17797,20 @@ candidates:
   last_seen: '2026-05-17'
   metadata:
     title: Sur quelques problèmes que présente le pacifisme
+  suggested_action: follow_one_time
+- url: https://lundi.am/Zakariyya-Seddaoui-a-bout-de-souffle
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Zakariyya Seddaoui, à bout de souffle — Police, seuils et vies irrespirables dans le Pas-de-Calais Sylvain George
+      - 18 mai / Avec une grosse photo en haut , Terreur , 2
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Zakariyya Seddaoui, à bout de souffle
   suggested_action: follow_one_time
 - url: https://meridian.allenpress.com/aicrj/article-pdf/24/4/127/1360666/aicr_24_4_8201p07v20m4138m.pdf
   type: openalex
@@ -17655,6 +17860,21 @@ candidates:
   - doc_id: 5517ea32
     context: https://non-fides.fr/IMG/pdf/6/1/7/Pour_en_finir_avec_l_energie.pdf
     page: 28
+- url: https://notrace.how/resources/read/culture-de-la-securite-et-planques.html
+  type: external_link
+  domain: notrace.how
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-22'
+  seen_count: 2
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés (deep crawl)
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
 - url: https://paris-luttes.info/apres-un-mois-de-greve-14juin-16148
   type: footnote
   domain: paris-luttes.info
@@ -17670,21 +17890,6 @@ candidates:
   - doc_id: ae302e09
     context: 23. https://paris-luttes.info/apres-un-mois-de-greve-14juin-16148
     page: 2
-- url: https://renverse.co/analyses/article/ni-ici-ni-ailleurs-de-la-lutte-locale-contre-la-geothermie-profonde-a-la-4555
-  type: external_link
-  domain: renverse.co
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-18'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés (deep crawl)
-    context: · sur le site web
-    page: null
-  - doc_id: Infokiosques.net — Écologie radicale
-    context: · sur le site web
-    page: null
 - url: https://reporterre.net/14-000-ours-abattus-au-Japon-en-un-an
   type: rss
   found_from:
@@ -17699,6 +17904,21 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: Plus de 14 000 ours abattus au Japon en un an
+  suggested_action: follow_one_time
+- url: https://reporterre.net/A69-l-Autorite-environnementale-somme-le-concessionnaire-de-revoir-sa-copie
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'A69 : l''Autorité environnementale somme le concessionnaire de revoir sa copie — Dans un avis du 7 mai, l''Autorité
+      environnementale tacle sévèrement les opérations d''aménagement foncier liées à l''autoroute A69. L''instance alerte
+      sur un dossier incomplet, qui devra probablement être actualisé et réexa'
+    timestamp: '2026-05-19T16:59:57'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'A69 : l''Autorité environnementale somme le concessionnaire de revoir sa copie'
   suggested_action: follow_one_time
 - url: https://reporterre.net/A69-les-locaux-du-concessionnaire-de-l-autoroute-ont-ete-perquisitionnes
   type: rss
@@ -17759,6 +17979,21 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: Déforestation, tourisme... Ces facteurs environnementaux qui boostent l'hantavirus
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Des-navires-de-la-flottille-pour-Gaza-de-nouveau-illegalement-arretes-par-Israel
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Des navires de la flottille pour Gaza de nouveau illégalement arrêtés par Israël — Israël a de nouveau violé
+      le droit international, lundi 18 mai, en interceptant dans les eaux internationales une partie des navires de la flottille
+      Global Sumud, en route vers Gaza. La cinquantaine de bateaux était p
+    timestamp: '2026-05-19T16:59:57'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Des navires de la flottille pour Gaza de nouveau illégalement arrêtés par Israël
   suggested_action: follow_one_time
 - url: https://reporterre.net/Dieselgate-Volkswagen-devra-verser-100-000-euros-a-une-association-de-consommateurs
   type: rss
@@ -17956,21 +18191,6 @@ candidates:
   - doc_id: Infokiosques.net — Anticolonialismes
     context: · sur le site web
     page: null
-- url: https://survie.org/publications/brochures/article/racisme-et-neocolonialisme-francais-une-nouvelle-brochure-de-survie
-  type: external_link
-  domain: survie.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-18'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés (deep crawl)
-    context: · sur le site web
-    page: null
-  - doc_id: Infokiosques.net — Anticolonialismes
-    context: · sur le site web
-    page: null
 - url: https://t.co/SoKCzolnWL
   type: external_link
   domain: t.co
@@ -18079,6 +18299,21 @@ candidates:
     genre: journal-article
     html_url: https://www.annualreviews.org/doi/pdf/10.1146/annurev.energy.28.050302.105459
     source: unpaywall
+- url: https://www.autonomiedeclasse.org/brochures/brochure-comprendre-le-fascisme-pour-mieux-le-combattre-version-actualisee/
+  type: external_link
+  domain: www.autonomiedeclasse.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-22'
+  seen_count: 2
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés (deep crawl)
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
 - url: https://www.bfe.admin.ch/bfe/fr/home/versorgung/stromversorgung/
   type: footnote
   domain: www.bfe.admin.ch
@@ -20342,6 +20577,16 @@ candidates:
     year: 2021
     doi: 10.18697/ajfand.102.19345
   suggested_action: follow_one_time
+  promoted_pdf_url: https://doi.org/10.18697/ajfand.102.19345
+  promoted_at: '2026-05-22T23:19:54'
+  promoted_metadata:
+    doi: 10.18697/ajfand.102.19345
+    title: Women development in agriculture as agency for fostering innovative agricultural financing in Nigeria
+    journal: African Journal of Food Agriculture Nutrition and Development
+    published_date: '2021-09-02'
+    genre: journal-article
+    html_url: https://doi.org/10.18697/ajfand.102.19345
+    source: unpaywall
 - url: https://doi.org/10.22004/ag.econ.12816
   type: openalex
   found_from:
@@ -20395,6 +20640,16 @@ candidates:
     year: 2013
     doi: 10.2305/iucn.ch.2013.parks-19-1.hg.en
   suggested_action: follow_one_time
+  promoted_pdf_url: https://doi.org/10.2305/iucn.ch.2013.parks-19-1.hg.en
+  promoted_at: '2026-05-22T23:19:58'
+  promoted_metadata:
+    doi: 10.2305/iucn.ch.2013.parks-19-1.hg.en
+    title: Can the IUCN 2008 Protected Areas Management Categories support Pacific island approaches to conservation?
+    journal: PARKS
+    published_date: '2013-04-21'
+    genre: journal-article
+    html_url: https://doi.org/10.2305/iucn.ch.2013.parks-19-1.hg.en
+    source: unpaywall
 - url: https://doi.org/10.35588/estudav.v0i36.5632
   type: openalex
   found_from:
@@ -20619,6 +20874,17 @@ candidates:
     year: 2024
     doi: 10.3917/drs1.114.0393
   suggested_action: follow_one_time
+  promoted_pdf_url: https://droit.cairn.info/article/DRS1_114_0393/pdf?lang=fr
+  promoted_at: '2026-05-22T23:20:11'
+  promoted_metadata:
+    doi: 10.3917/drs1.114.0393
+    title: Bricolages juridiques dans la formalisation des droits fonciers coutumiers. Constatation et reformulation des droits
+      fonciers des filles au Burundi
+    journal: Droit et société
+    published_date: '2024-02-27'
+    genre: journal-article
+    html_url: https://droit.cairn.info/article/DRS1_114_0393/pdf?lang=fr
+    source: unpaywall
 - url: https://edepot.wur.nl/19595
   type: openalex
   found_from:
@@ -20660,18 +20926,6 @@ candidates:
   found_from:
   - doc_id: International Land Coalition — latest
     context: lien depuis https://www.landcoalition.org/en/latest/
-    page: null
-- url: https://encatiminirotezora.wordpress.com/
-  type: external_link
-  domain: encatiminirotezora.wordpress.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-18'
-  seen_count: 1
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés (deep crawl)
-    context: · sur le site web
     page: null
 - url: https://endatiersmonde.org/2025/07/04/%f0%9f%8e%89-felicitations-a-emmanuel-seck-%f0%9f%8e%89/
   type: rss
@@ -21149,6 +21403,16 @@ candidates:
     year: 2006
     doi: 10.1068/d01k
   suggested_action: follow_one_time
+  promoted_pdf_url: https://era.ed.ac.uk/bitstream/1842/1451/3/anightingale006.pdf
+  promoted_at: '2026-05-22T23:20:12'
+  promoted_metadata:
+    doi: 10.1068/d01k
+    title: 'The Nature of Gender: Work, Gender, and Environment'
+    journal: Environment and Planning D Society and Space
+    published_date: '2006-03-27'
+    genre: journal-article
+    html_url: https://era.ed.ac.uk/bitstream/1842/1451/3/anightingale006.pdf
+    source: unpaywall
 - url: https://escholarship.org/content/qt21k6t3fq/qt21k6t3fq.pdf?t=ll4zsw
   type: openalex
   found_from:
@@ -21168,6 +21432,17 @@ candidates:
     year: 2011
     doi: 10.5070/t411000004
   suggested_action: follow_one_time
+  promoted_pdf_url: https://escholarship.org/content/qt21k6t3fq/qt21k6t3fq.pdf?t=ll4zsw
+  promoted_at: '2026-05-22T23:20:13'
+  promoted_metadata:
+    doi: 10.5070/t411000004
+    title: 'Decolonizing Post-Colonial Studies and Paradigms of Political-Economy: Transmodernity, Decolonial Thinking, and
+      Global Coloniality'
+    journal: TRANSMODERNITY Journal of Peripheral Cultural Production of the Luso-Hispanic World
+    published_date: '2011-05-13'
+    genre: journal-article
+    html_url: https://escholarship.org/content/qt21k6t3fq/qt21k6t3fq.pdf?t=ll4zsw
+    source: unpaywall
 - url: https://eu.boell.org/en/MeatAtlas
   type: external_link
   domain: eu.boell.org
@@ -21223,6 +21498,17 @@ candidates:
     year: 2019
     doi: 10.1080/21683565.2019.1600099
   suggested_action: follow_one_time
+  promoted_pdf_url: https://figshare.com/articles/Agroecology_and_La_Via_Campesina_I_The_symbolic_and_material_construction_of_agroecology_through_the_dispositive_of_peasant-to-peasant_processes/8055746
+  promoted_at: '2026-05-22T23:20:15'
+  promoted_metadata:
+    doi: 10.1080/21683565.2019.1600099
+    title: Agroecology and La Via Campesina I. The symbolic and material construction of agroecology through the dispositive
+      of “peasant-to-peasant” processes
+    journal: Agroecology and Sustainable Food Systems
+    published_date: '2019-04-14'
+    genre: journal-article
+    html_url: https://figshare.com/articles/Agroecology_and_La_Via_Campesina_I_The_symbolic_and_material_construction_of_agroecology_through_the_dispositive_of_peasant-to-peasant_processes/8055746
+    source: unpaywall
 - url: https://findme.landcoalition.org/mailing/subscribe
   type: external_link
   domain: findme.landcoalition.org
@@ -21253,6 +21539,16 @@ candidates:
     year: 2012
     doi: 10.1002/agr.21285
   suggested_action: follow_one_time
+  promoted_pdf_url: https://findresearcher.sdu.dk/ws/files/141829754/Social_capital_in_coops_last_text_version_PURE.pdf
+  promoted_at: '2026-05-22T23:20:16'
+  promoted_metadata:
+    doi: 10.1002/agr.21285
+    title: Are Large and Complex Agricultural Cooperatives Losing Their Social Capital?
+    journal: Agribusiness
+    published_date: '2012-03-01'
+    genre: journal-article
+    html_url: https://findresearcher.sdu.dk/ws/files/141829754/Social_capital_in_coops_last_text_version_PURE.pdf
+    source: unpaywall
 - url: https://fr.boell.org/
   type: external_link
   domain: fr.boell.org
@@ -21501,6 +21797,16 @@ candidates:
     year: 2025
     doi: 10.26740/jsm.v9n2.p661-693
   suggested_action: follow_one_time
+  promoted_pdf_url: https://journal.unesa.ac.id/index.php/jsm/article/download/44310/14424
+  promoted_at: '2026-05-22T23:20:21'
+  promoted_metadata:
+    doi: 10.26740/jsm.v9n2.p661-693
+    title: 'Critical Discourse of Nenengism: Peasant Women’s Resistance to Ideology through Social Media'
+    journal: The Journal of Society & Media
+    published_date: '2025-10-07'
+    genre: journal-article
+    html_url: https://journal.unesa.ac.id/index.php/jsm/article/download/44310/14424
+    source: unpaywall
 - url: https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1001223&type=printable
   type: openalex
   found_from:
@@ -21519,6 +21825,16 @@ candidates:
     year: 2012
     doi: 10.1371/journal.pmed.1001223
   suggested_action: follow_one_time
+  promoted_pdf_url: https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1001223&type=printable
+  promoted_at: '2026-05-22T23:20:22'
+  promoted_metadata:
+    doi: 10.1371/journal.pmed.1001223
+    title: 'Food Sovereignty: Power, Gender, and the Right to Food'
+    journal: PLoS Medicine
+    published_date: '2012-06-26'
+    genre: journal-article
+    html_url: https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1001223&type=printable
+    source: unpaywall
 - url: https://journals.sagepub.com/doi/pdf/10.1177/01708406221089609
   type: openalex
   found_from:
@@ -21537,6 +21853,16 @@ candidates:
     year: 2022
     doi: 10.1177/01708406221089609
   suggested_action: follow_one_time
+  promoted_pdf_url: https://journals.sagepub.com/doi/pdf/10.1177/01708406221089609
+  promoted_at: '2026-05-22T23:20:23'
+  promoted_metadata:
+    doi: 10.1177/01708406221089609
+    title: 'Organizing for the Smart African City: Leveraging the urban commons for exerting the right to the city'
+    journal: Organization Studies
+    published_date: '2022-03-17'
+    genre: journal-article
+    html_url: https://journals.sagepub.com/doi/pdf/10.1177/01708406221089609
+    source: unpaywall
 - url: https://jurnalbhumi.stpn.ac.id/JB/article/download/320/275
   type: openalex
   found_from:
@@ -21555,6 +21881,16 @@ candidates:
     year: 2019
     doi: 10.31292/jb.v5i1.320
   suggested_action: follow_one_time
+  promoted_pdf_url: https://jurnalbhumi.stpn.ac.id/JB/article/download/320/275
+  promoted_at: '2026-05-22T23:20:24'
+  promoted_metadata:
+    doi: 10.31292/jb.v5i1.320
+    title: Diskursus Teori Tentang Peran Perempuan dalam Konflik Agraria
+    journal: BHUMI Jurnal Agraria dan Pertanahan
+    published_date: '2019-05-23'
+    genre: journal-article
+    html_url: https://jurnalbhumi.stpn.ac.id/JB/article/download/320/275
+    source: unpaywall
 - url: https://kommunalwiki.boell.de/index.php/Hauptseite
   type: external_link
   domain: kommunalwiki.boell.de
@@ -21645,18 +21981,16 @@ candidates:
     year: 1996
     doi: 10.25071/1913-9632.7000
   suggested_action: follow_one_time
-- url: https://limacemenace.noblogs.org/
-  type: external_link
-  domain: limacemenace.noblogs.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-18'
-  seen_count: 1
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés (deep crawl)
-    context: · sur le site web
-    page: null
+  promoted_pdf_url: https://lh.journals.yorku.ca/index.php/lh/article/download/7000/6184
+  promoted_at: '2026-05-22T23:20:26'
+  promoted_metadata:
+    doi: 10.25071/1913-9632.7000
+    title: 'Louise I. Carbert - Agrarian Feminism: The Politics of Ontario Farm Women'
+    journal: Left History An Interdisciplinary Journal of Historical Inquiry and Debate
+    published_date: '1996-09-01'
+    genre: journal-article
+    html_url: https://lh.journals.yorku.ca/index.php/lh/article/download/7000/6184
+    source: unpaywall
 - url: https://link.springer.com/content/pdf/10.1007%2Fs13593-011-0065-6.pdf
   type: openalex
   found_from:
@@ -21675,20 +22009,16 @@ candidates:
     year: 2011
     doi: 10.1007/s13593-011-0065-6
   suggested_action: follow_one_time
-- url: https://lundi.am/Ben-Morea-In-Memoriam
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Ben Morea, In Memoriam — « On est les freaks d'un espace-temps inconnu On est le système nerveux de la révolution
-      » - 18 mai / Avec une grosse photo en haut , Histoire , 4
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-19'
-  metadata:
-    title: Ben Morea, In Memoriam
-  suggested_action: follow_one_time
+  promoted_pdf_url: https://link.springer.com/content/pdf/10.1007%2Fs13593-011-0065-6.pdf
+  promoted_at: '2026-05-22T23:20:27'
+  promoted_metadata:
+    doi: 10.1007/s13593-011-0065-6
+    title: 'Agroecologically efficient agricultural systems for smallholder farmers: contributions to food sovereignty'
+    journal: Agronomy for Sustainable Development
+    published_date: '2011-12-13'
+    genre: journal-article
+    html_url: https://link.springer.com/content/pdf/10.1007%2Fs13593-011-0065-6.pdf
+    source: unpaywall
 - url: https://lundi.am/C-est-une-requisition-populaire
   type: rss
   found_from:
@@ -21703,117 +22033,6 @@ candidates:
   metadata:
     title: « C'est une réquisition populaire »
   suggested_action: follow_one_time
-- url: https://lundi.am/Cloaca-Maxima
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Cloaca Maxima — « Il faut faire ressurgir le souterrain périlleux de l'expérience révolutionnaire » [Ruines]
-      - 18 mai / Avec une grosse photo en haut , Positions , 2
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-19'
-  metadata:
-    title: Cloaca Maxima
-  suggested_action: follow_one_time
-- url: https://lundi.am/Des-milliers-de-deplace-es-et-plusieurs-morts-dans-le-Guerrero
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Des milliers de déplacé.es et plusieurs morts dans le Guerrero — La guerre contre les peuples originaires se
-      poursuit au Mexique - 18 mai / International , 2 , Avec une grosse photo en haut
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-19'
-  metadata:
-    title: Des milliers de déplacé.es et plusieurs morts dans le Guerrero
-  suggested_action: follow_one_time
-- url: https://lundi.am/Du-progres-a-l-illusion-groupale
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Du progrès à l'illusion groupale — De Moulinex à Facebook Jean-Luc Debry - 18 mai / Avec une grosse photo en
-      haut , Positions , 2
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-19'
-  metadata:
-    title: Du progrès à l'illusion groupale
-  suggested_action: follow_one_time
-- url: https://lundi.am/L-innommable
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: L'innommable — « Bousiller le matos de l'ennemi » - 18 mai / Avec une grosse photo en haut , 4 , Littérature
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-19'
-  metadata:
-    title: L'innommable
-  suggested_action: follow_one_time
-- url: https://lundi.am/Le-cinema-est-cerne-7536
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Le cinéma est cerné — « Bolloré est désormais présent à toutes les strates qui rendent possible l'existence du
-      cinéma français » - 18 mai / Avec une grosse photo en haut , Positions , 2
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-19'
-  metadata:
-    title: Le cinéma est cerné
-  suggested_action: follow_one_time
-- url: https://lundi.am/Red-flag
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Red flag — « Pourquoi toute cette glu de silence et de mensonge ? » Leïla Chaix - 18 mai / Avec une grosse photo
-      en haut , Littérature , Leïla Chaix , 2
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-19'
-  metadata:
-    title: Red flag
-  suggested_action: follow_one_time
-- url: https://lundi.am/Reflexions-sur-l-anarchie-et-la-revolution
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Réflexions sur l'anarchie et la révolution — Un lundisoir avec Maria Kakogianni autour de son livre Sous le ciel
-      étoilé, une nuit d'été - 18 mai / Avec une grosse photo en haut , Positions , 2 , lundisoir
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-19'
-  metadata:
-    title: Réflexions sur l'anarchie et la révolution
-  suggested_action: follow_one_time
-- url: https://lundi.am/Socialisme-ou-Barbarie-au-tournant-des-annees-1960
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Socialisme ou Barbarie au tournant des années 1960 — L'aventure d'un groupe révolutionnaire - 18 mai / Avec une
-      grosse photo en haut , Histoire , 2
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-19'
-  metadata:
-    title: Socialisme ou Barbarie au tournant des années 1960
-  suggested_action: follow_one_time
 - url: https://lundi.am/Suffit-il-d-un-cerveau-pour-rebondir
   type: rss
   found_from:
@@ -21827,20 +22046,6 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: Suffit-il d'un cerveau pour rebondir ?
-  suggested_action: follow_one_time
-- url: https://lundi.am/Zakariyya-Seddaoui-a-bout-de-souffle
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Zakariyya Seddaoui, à bout de souffle — Police, seuils et vies irrespirables dans le Pas-de-Calais Sylvain George
-      - 18 mai / Avec une grosse photo en haut , Terreur , 2
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-19'
-  metadata:
-    title: Zakariyya Seddaoui, à bout de souffle
   suggested_action: follow_one_time
 - url: https://mastodon.social/@libcom
   type: external_link
@@ -22045,6 +22250,16 @@ candidates:
     year: 2001
     doi: 10.1353/at.2001.0023
   suggested_action: follow_one_time
+  promoted_pdf_url: https://muse.jhu.edu/pub/3/article/3084
+  promoted_at: '2026-05-22T23:20:28'
+  promoted_metadata:
+    doi: 10.1353/at.2001.0023
+    title: Reconstructing the African Commons
+    journal: Africa Today
+    published_date: '2001-03-01'
+    genre: journal-article
+    html_url: https://muse.jhu.edu/pub/3/article/3084
+    source: unpaywall
 - url: https://nantes.indymedia.org/posts/40672/
   type: footnote
   domain: nantes.indymedia.org
@@ -22081,18 +22296,6 @@ candidates:
   - doc_id: Tierra.org — Agricultura y alimentación
     context: Nos Plantamos
     page: null
-- url: https://notrace.how/resources/read/culture-de-la-securite-et-planques.html
-  type: external_link
-  domain: notrace.how
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-18'
-  seen_count: 1
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés (deep crawl)
-    context: · sur le site web
-    page: null
 - url: https://nuevaepoca.revistalatinacs.org/index.php/revista/article/download/942/1532
   type: openalex
   found_from:
@@ -22111,6 +22314,16 @@ candidates:
     year: 2014
     doi: 10.4185/rlcs-2014-1020
   suggested_action: follow_one_time
+  promoted_pdf_url: https://nuevaepoca.revistalatinacs.org/index.php/revista/article/download/942/1532
+  promoted_at: '2026-05-22T23:20:29'
+  promoted_metadata:
+    doi: 10.4185/rlcs-2014-1020
+    title: 'Los riesgos de los adolescentes en Internet: los menores como actores y víctimas de los peligros de Internet'
+    journal: Revista Latina de Comunicación Social
+    published_date: '2014-07-15'
+    genre: journal-article
+    html_url: https://nuevaepoca.revistalatinacs.org/index.php/revista/article/download/942/1532
+    source: unpaywall
 - url: https://ojs.uv.es/index.php/ciriecespana/article/download/14161/15250
   type: openalex
   found_from:
@@ -22130,6 +22343,17 @@ candidates:
     year: 2020
     doi: 10.7203/ciriec-e.98.14161
   suggested_action: follow_one_time
+  promoted_pdf_url: https://ojs.uv.es/index.php/ciriecespana/article/download/14161/15250
+  promoted_at: '2026-05-22T23:20:30'
+  promoted_metadata:
+    doi: 10.7203/ciriec-e.98.14161
+    title: Economía social y solidaria y agroecología en cooperativas de agricultura familiar en Brasil como forma de desarrollo
+      de una agricultura sostenible
+    journal: CIRIEC-España revista de economía pública social y cooperativa
+    published_date: '2020-04-01'
+    genre: journal-article
+    html_url: https://ojs.uv.es/index.php/ciriecespana/article/download/14161/15250
+    source: unpaywall
 - url: https://ojs.uv.es/index.php/ciriecespana/article/download/18067/16592
   type: openalex
   found_from:
@@ -22148,6 +22372,16 @@ candidates:
     year: 2020
     doi: 10.7203/ciriec-e.100.18067
   suggested_action: follow_one_time
+  promoted_pdf_url: https://ojs.uv.es/index.php/ciriecespana/article/download/18067/16592
+  promoted_at: '2026-05-22T23:20:32'
+  promoted_metadata:
+    doi: 10.7203/ciriec-e.100.18067
+    title: Cuantificación del Valor Emocional. El caso de Unión de Cooperativas Agrarias de Navarra (UCAN)
+    journal: CIRIEC-España revista de economía pública social y cooperativa
+    published_date: '2020-12-01'
+    genre: journal-article
+    html_url: https://ojs.uv.es/index.php/ciriecespana/article/download/18067/16592
+    source: unpaywall
 - url: https://ojs.uv.es/index.php/ciriecespana/article/download/26853/24223
   type: openalex
   found_from:
@@ -22166,6 +22400,16 @@ candidates:
     year: 2024
     doi: 10.7203/ciriec-e.110.26853
   suggested_action: follow_one_time
+  promoted_pdf_url: https://ojs.uv.es/index.php/ciriecespana/article/download/26853/24223
+  promoted_at: '2026-05-22T23:20:33'
+  promoted_metadata:
+    doi: 10.7203/ciriec-e.110.26853
+    title: 'Las Cooperativas Agrarias Centenarias en Catalunya: Características y contribución a los ODS'
+    journal: CIRIEC-España revista de economía pública social y cooperativa
+    published_date: '2024-03-27'
+    genre: journal-article
+    html_url: https://ojs.uv.es/index.php/ciriecespana/article/download/26853/24223
+    source: unpaywall
 - url: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1745-5871.12262
   type: openalex
   found_from:
@@ -22184,6 +22428,16 @@ candidates:
     year: 2017
     doi: 10.1111/1745-5871.12262
   suggested_action: follow_one_time
+  promoted_pdf_url: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1745-5871.12262
+  promoted_at: '2026-05-22T23:20:34'
+  promoted_metadata:
+    doi: 10.1111/1745-5871.12262
+    title: Urban commons are more‐than‐property
+    journal: Geographical Research
+    published_date: '2017-10-11'
+    genre: journal-article
+    html_url: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1745-5871.12262
+    source: unpaywall
 - url: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joes.12417
   type: openalex
   found_from:
@@ -22202,6 +22456,16 @@ candidates:
     year: 2021
     doi: 10.1111/joes.12417
   suggested_action: follow_one_time
+  promoted_pdf_url: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joes.12417
+  promoted_at: '2026-05-22T23:20:35'
+  promoted_metadata:
+    doi: 10.1111/joes.12417
+    title: AGRICULTURAL COOPERATIVES AND FARM SUSTAINABILITY – A LITERATURE REVIEW
+    journal: Journal of Economic Surveys
+    published_date: '2021-01-23'
+    genre: journal-article
+    html_url: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joes.12417
+    source: unpaywall
 - url: https://periodicos.ufba.br/index.php/crh/article/download/42344/24869
   type: openalex
   found_from:
@@ -22220,6 +22484,16 @@ candidates:
     year: 2021
     doi: 10.9771/ccrh.v34i0.42344
   suggested_action: follow_one_time
+  promoted_pdf_url: https://periodicos.ufba.br/index.php/crh/article/download/42344/24869
+  promoted_at: '2026-05-22T23:20:37'
+  promoted_metadata:
+    doi: 10.9771/ccrh.v34i0.42344
+    title: 'MOVIMENTOS SOCIAIS RURAIS E FEMINISMOS: percursos e diálogos na construção do feminismo camponês e popular'
+    journal: Caderno CRH
+    published_date: '2021-06-25'
+    genre: journal-article
+    html_url: https://periodicos.ufba.br/index.php/crh/article/download/42344/24869
+    source: unpaywall
 - url: https://politiquesdescommuns.cc/outils/propriete-d-usage
   type: footnote
   domain: politiquesdescommuns.cc
@@ -22268,6 +22542,16 @@ candidates:
     year: 2019
     doi: 10.22459/ggap.2019
   suggested_action: follow_one_time
+  promoted_pdf_url: https://press-files.anu.edu.au/downloads/press/n5764/pdf/book.pdf
+  promoted_at: '2026-05-22T23:20:38'
+  promoted_metadata:
+    doi: 10.22459/ggap.2019
+    title: Gobernanza y gestión de áreas protegidas
+    journal: ANU Press eBooks
+    published_date: '2019-07-29'
+    genre: edited-book
+    html_url: https://press-files.anu.edu.au/downloads/press/n5764/pdf/book.pdf
+    source: unpaywall
 - url: https://prole.info/
   type: external_link
   domain: prole.info
@@ -22310,6 +22594,16 @@ candidates:
     year: 1998
     doi: 10.18172/brocar.1730
   suggested_action: follow_one_time
+  promoted_pdf_url: https://publicaciones.unirioja.es/ojs/index.php/brocar/article/download/1730/1625
+  promoted_at: '2026-05-22T23:20:39'
+  promoted_metadata:
+    doi: 10.18172/brocar.1730
+    title: Los orígenes del capitalismo en la Inglaterra medieval
+    journal: Brocar Cuadernos de Investigación Histórica
+    published_date: '1998-06-28'
+    genre: journal-article
+    html_url: https://publicaciones.unirioja.es/ojs/index.php/brocar/article/download/1730/1625
+    source: unpaywall
 - url: https://purehost.bath.ac.uk/ws/files/120803760/Accepted_version.pdf
   type: openalex
   found_from:
@@ -22329,6 +22623,17 @@ candidates:
     year: 2015
     doi: 10.1080/01436597.2015.1013341
   suggested_action: follow_one_time
+  promoted_pdf_url: https://purehost.bath.ac.uk/ws/files/120803760/Accepted_version.pdf
+  promoted_at: '2026-05-22T23:20:40'
+  promoted_metadata:
+    doi: 10.1080/01436597.2015.1013341
+    title: 'From ‘gender equality and ‘women’s empowerment’ to global justice: reclaiming a transformative agenda for gender
+      and development'
+    journal: Third World Quarterly
+    published_date: '2015-02-01'
+    genre: journal-article
+    html_url: https://purehost.bath.ac.uk/ws/files/120803760/Accepted_version.pdf
+    source: unpaywall
 - url: https://quatre.zone/2021/05/15/leffondrement-parlons-en/
   type: external_link
   domain: quatre.zone
@@ -22359,6 +22664,31 @@ candidates:
     year: 2012
     doi: 10.1215/22011919-3610012
   suggested_action: follow_one_time
+  promoted_pdf_url: https://read.dukeupress.edu/environmental-humanities/article-pdf/1/1/141/251573/141Tsing.pdf
+  promoted_at: '2026-05-22T23:20:41'
+  promoted_metadata:
+    doi: 10.1215/22011919-3610012
+    title: 'Unruly Edges: Mushrooms as Companion Species'
+    journal: Environmental Humanities
+    published_date: '2012-05-01'
+    genre: journal-article
+    html_url: https://read.dukeupress.edu/environmental-humanities/article-pdf/1/1/141/251573/141Tsing.pdf
+    source: unpaywall
+- url: https://reporterre.net/30-000-euros-d-amende-et-prison-avec-sursis-pour-la-femme-qui-a-tue-un-lynx
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 30 000 euros d'amende et prison avec sursis pour la femme qui a tué un lynx — La femme qui a tué un lynx en Alsace
+      a été condamnée à trois mois de prison avec sursis et 30 300 euros d'amende par le tribunal correctionnel de Strasbourg.
+      Cette habitante de Niederbronn-les-Bains (Bas-Rhin) âgée de 62 a
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 30 000 euros d'amende et prison avec sursis pour la femme qui a tué un lynx
+  suggested_action: follow_one_time
 - url: https://reporterre.net/78-des-rivieres-mondiales-perdent-de-l-oxygene
   type: rss
   found_from:
@@ -22374,21 +22704,6 @@ candidates:
   metadata:
     title: 78 % des rivières perdent de l'oxygène, notamment à cause du réchauffement climatique
   suggested_action: follow_one_time
-- url: https://reporterre.net/A69-l-Autorite-environnementale-somme-le-concessionnaire-de-revoir-sa-copie
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'A69 : l''Autorité environnementale somme le concessionnaire de revoir sa copie — Dans un avis du 7 mai, l''Autorité
-      environnementale tacle sévèrement les opérations d''aménagement foncier liées à l''autoroute A69. L''instance alerte
-      sur un dossier incomplet, qui devra probablement être actualisé et réexa'
-    timestamp: '2026-05-19T16:59:57'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-19'
-  metadata:
-    title: 'A69 : l''Autorité environnementale somme le concessionnaire de revoir sa copie'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Amine-Kessaci-La-lutte-antimafia-est-une-question-de-sante-publique
   type: rss
   found_from:
@@ -22403,6 +22718,21 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Amine Kessaci : « La lutte antimafia est une question de santé publique »'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Arctique-le-changement-climatique-menace-l-heritage-archeologique
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Arctique : le changement climatique menace l''héritage archéologique — Le changement climatique ne menace pas
+      seulement notre avenir : il détruit aussi les traces du passé. Dans la région arctique, qui se réchauffe quatre fois
+      plus rapidement que la moyenne mondiale, la fonte du pergélisol, la montée'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'Arctique : le changement climatique menace l''héritage archéologique'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Bulles-de-savoir-nos-meilleurs-BD-pour-s-informer-sur-l-ecologie
   type: rss
@@ -22434,6 +22764,36 @@ candidates:
   metadata:
     title: 'Cadmium : les données clés d''une contamination'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Cela-me-fend-le-coeur-pour-proteger-une-fleur-rare-un-chatelain-se-dresse-contre-l-A69
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Cela me fend le cœur » : pour protéger une fleur rare, un châtelain se dresse contre l''A69 — Plusieurs associations
+      annoncent déposer plainte contre le concessionnaire de l''A69. Des travaux menés à proximité du château de Scopont sont
+      suspectés d''assécher les sources d''eau et de menacer une plante'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: '« Cela me fend le cœur » : pour protéger une fleur rare, un châtelain se dresse contre l''A69'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Chloe-interdite-de-Festival-de-Cannes-en-raison-de-son-engagement-ecolo
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Festival de Cannes : une salariée écartée à cause de son engagement écolo — En 2025, la préfecture a interdit
+      à Chloé, salariée du Festival de Cannes, d''exercer. Les syndicats dénoncent un fichage et de la discrimination politique
+      en raison de ses engagements écolo. Un an après, les remords ont lais'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'Festival de Cannes : une salariée écartée à cause de son engagement écolo'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Cinq-activistes-opposes-a-une-deviation-ont-passe-le-weekend-en-prison
   type: rss
   found_from:
@@ -22449,20 +22809,65 @@ candidates:
   metadata:
     title: Cinq activistes opposés à une déviation ont passé le weekend en prison
   suggested_action: follow_one_time
-- url: https://reporterre.net/Des-navires-de-la-flottille-pour-Gaza-de-nouveau-illegalement-arretes-par-Israel
+- url: https://reporterre.net/Courchevel-une-retenue-d-eau-pour-le-ski-menace-de-s-effondrer-sur-un-hameau
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: Des navires de la flottille pour Gaza de nouveau illégalement arrêtés par Israël — Israël a de nouveau violé
-      le droit international, lundi 18 mai, en interceptant dans les eaux internationales une partie des navires de la flottille
-      Global Sumud, en route vers Gaza. La cinquantaine de bateaux était p
-    timestamp: '2026-05-19T16:59:57'
+    context: 'Courchevel : une retenue d''eau pour le ski menace de s''effondrer sur un hameau — La retenue collinaire de
+      la Loze, à 2 270 mètres d''altitude au-dessus de Courchevel (Savoie), s''affaisse à une vitesse alarmante, a révélé
+      Le Monde samedi 16 mai. Construite en 2020 pour assurer l''enneigement artificiel'
+    timestamp: '2026-05-22T23:13:28'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-19'
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
   metadata:
-    title: Des navires de la flottille pour Gaza de nouveau illégalement arrêtés par Israël
+    title: 'Courchevel : une retenue d''eau pour le ski menace de s''effondrer sur un hameau'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Des-collectifs-poursuivent-l-Etat-dans-le-scandale-des-PFAS
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'PFAS : trois collectifs poursuivent l''État en justice — « Cesser le préjudice écologique » lié aux PFAS , et
+      réparer l''anxiété de riverains : c''est ce que demandent à l''État les collectifs Générations futures, Notre affaire
+      à tous et Bloom. Ils ont saisi le tribunal administratif de Paris « afin que'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'PFAS : trois collectifs poursuivent l''État en justice'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Des-dindes-maltraitees-vendues-sous-marque-Carrefour-montre-L214
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Des dindes maltraitées vendues sous marque Carrefour, montre une vidéo de L214 — Les images sont une fois de
+      plus insoutenables : des dindes et dindons sales, déplumés, blessés, morts. Après les lapins, les cailles, les cochons,
+      L214 publie une nouvelle enquête sur la maltraitance animale, cette foi'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Des dindes maltraitées vendues sous marque Carrefour, montre une vidéo de L214
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Des-nouveaux-liens-entre-colorants-alimentaires-et-cancer
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Nourriture ultratransformée : les additifs augmentent le risque de cancers et autres maladies — La consommation
+      de certains colorants et conservateurs alimentaires entraînent une augmentation du risque de cancer, de diabète de type
+      2, de l''hypertension et des maladies cardiovasculaires. Voici ce que'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'Nourriture ultratransformée : les additifs augmentent le risque de cancers et autres maladies'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Des-pesticides-interdits-retrouves-dans-des-epices-Ducros-du-riz-Taureau-Aile-et-du-the
   type: rss
@@ -22478,6 +22883,51 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: Épices Ducros, riz Taureau ailé, thé Lipton... Des pesticides interdits trouvés dans des produits du quotidien
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Desinformation-climatique-les-Etats-Unis-et-la-Russie-visent-l-Europe
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Désinformation climatique : les États-Unis et la Russie visent l''Europe — La désinformation climatique n''est
+      pas une pratique nouvelle, mais elle se diversifie : aux acteurs historiques des énergies fossiles s''ajoutent maintenant
+      des acteurs de la Big Tech et, surtout, des acteurs étatiques, notamme'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'Désinformation climatique : les États-Unis et la Russie visent l''Europe'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Grande-distribution-Vendre-des-produits-sains-a-prix-coutant-c-est-possible
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Grande distribution : « Vendre des produits sains à prix coûtant, c''est possible » — Alors qu''un rapport sénatorial
+      montre comment la grande distribution profite des produits alimentaires, une coalition d''associations veut imposer
+      la vente d''un panier de 100 produits sains à prix coûtant. Les enseig'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'Grande distribution : « Vendre des produits sains à prix coûtant, c''est possible »'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/L-ONU-adopte-une-resolution-pour-renforcer-la-responsabilite-climatique-des-Etats
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Climat : l''ONU adopte une résolution qui renforce les obligations des États — Dans un contexte international
+      chaotique où le climat n''est clairement pas la priorité, c''est une réelle avancée. L''Assemblée générale des Nations-Unis
+      a voté mercredi 20 mai une résolution sur la responsabilité climatique'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'Climat : l''ONU adopte une résolution qui renforce les obligations des États'
   suggested_action: follow_one_time
 - url: https://reporterre.net/La-cooperative-citoyenne-d-electricite-un-modele-qui-fait-ses-preuves-jusque-dans-les
   type: rss
@@ -22509,6 +22959,66 @@ candidates:
   metadata:
     title: La loi d'urgence agricole veut donner carte blanche aux élevages intensifs
   suggested_action: follow_one_time
+- url: https://reporterre.net/Laits-contamines-les-entreprises-ont-beaucoup-tarde-a-avertir-les-autorites
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Laits contaminés : les entreprises ont beaucoup tardé à avertir les autorités — « Elles voulaient planquer l''information.
+      C''est une honte alors que de nombreux parents étaient désemparés face aux symptômes inquiétants de leurs nourrissons
+      contaminés. » L''association Foodwatch se dit particulièrement'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'Laits contaminés : les entreprises ont beaucoup tardé à avertir les autorités'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-Conseil-constitutionnel-retablit-les-ZFE-et-le-zero-artificialisation-nette
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Le Conseil constitutionnel rétablit les ZFE et le zéro artificialisation nette — La loi dite de « simplification
+      de la vie économique » n'est pas sortie indemne de l'examen du Conseil constitutionnel. 25 articles, soit un tiers du
+      texte, ont été jugés hors sujet par les Sages, jeudi 21 mai. C'est en
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Le Conseil constitutionnel rétablit les ZFE et le zéro artificialisation nette
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-beton-est-le-materiau-le-plus-utilise-dans-le-monde-mais-personne-ne-sait-d-ou-vient-son-parpaing
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: « Le béton est le matériau le plus utilisé dans le monde mais personne ne sait d'où vient son parpaing » — Autrice
+      de « Désarmer le béton », l'architecte Léa Hobson aimerait voir advenir une « voix collective » pour s'opposer à ce
+      matériau néfaste, symbole du capitalisme extractif contemporain. D'au
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: « Le béton est le matériau le plus utilisé dans le monde mais personne ne sait d'où vient son parpaing »
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-probleme-c-est-la-masse-le-surtourisme-abime-le-piton-de-la-Fournaise
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Le problème, c''est la masse » : le surtourisme abîme le piton de la Fournaise — À La Réunion, les deux éruptions
+      du piton de la Fournaise survenues en 2026 ont attiré de nombreux spectateurs. Mais la surfréquentation du site et les
+      comportements à risque mettent à mal une biodiversité déjà fragile'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: '« Le problème, c''est la masse » : le surtourisme abîme le piton de la Fournaise'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Le-retour-du-debat-autour-de-la-consigne-pour-les-bouteilles-plastiques
   type: rss
   found_from:
@@ -22538,6 +23048,81 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Les écogestes : reprise en main de son quotidien ou dépolitisation de l''écologie ?'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Master-poulet-Tasty-Crousty-derriere-le-succes-des-poulets-en-elevage-ultra-intensif
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Master Poulet, Tasty Crousty, derrière le succès, des poulets en élevage ultra-intensif — Poulet grillé ou croustillant,
+      les nouvelles chaînes de fast-food misent sur la volaille. Derrière leurs menus à moins de 10 euros se cache une dépendance
+      au poulet importé et à l'élevage ultra-intensif. À pein
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Master Poulet, Tasty Crousty, derrière le succès, des poulets en élevage ultra-intensif
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Ocean-les-emballages-alimentaires-sont-les-principaux-responsables-de-la-pollution
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Océan : les emballages alimentaires sont les principaux responsables de la pollution plastique — Les déchets
+      alimentaires sont les principaux responsables de la pollution plastique de l''océan, selon une étude inédite, publiée
+      le 20 mai dans la revue One Earth. C''est la première fois qu''une étude cla'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'Océan : les emballages alimentaires sont les principaux responsables de la pollution plastique'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/On-ne-devrait-pas-s-en-rejouir-une-vague-de-chaleur-anormale-va-toucher-la-France
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Une vague de chaleur anormale va toucher la France : « On ne devrait pas s''en réjouir » — Après quelques jours
+      relativement frais, des températures anormalement élevées vont toucher la France du 22 au 26 mai. Une conséquence du
+      changement climatique, qui pourrait entraîner de nouveaux records printa'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'Une vague de chaleur anormale va toucher la France : « On ne devrait pas s''en réjouir »'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Pour-sauver-les-glaciers-tropicaux-la-lutte-s-organise-en-Colombie
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Pour sauver les glaciers tropicaux, la lutte s'organise en Colombie — En mars 2026, un glacier tropical a disparu
+      en Colombie. Sous la glace, les écosystèmes andins sont à leur tour menacés. Sur le terrain, scientifiques et communautés
+      locales tentent d'en préserver l'équilibre fragile. Paramo de Su
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Pour sauver les glaciers tropicaux, la lutte s'organise en Colombie
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Pourquoi-la-France-n-arrive-pas-a-fabriquer-plus-de-panneaux-solaires
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Pourquoi la France n'arrive pas à fabriquer davantage de panneaux solaires — Un énorme projet d'usine de fabrication
+      de panneaux solaires en France jette l'éponge après son placement en liquidation judiciaire. Son responsable blâme l'absence
+      de marché européen et des politiques publiques contreprodu
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Pourquoi la France n'arrive pas à fabriquer davantage de panneaux solaires
   suggested_action: follow_one_time
 - url: https://reporterre.net/Redressement-judiciaire-de-FNE-Rhone-le-tribunal-valide-le-plan-de-l-association
   type: rss
@@ -22569,6 +23154,36 @@ candidates:
   metadata:
     title: 'Rubans plastiques : « Ce balisage utile aux sportifs empoisonne la forêt »'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Sans-l-Ademe-ces-six-projets-ecolos-n-auraient-pas-existe
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'À quoi sert l''Ademe, l''agence de la transition écologique ? — Nouvelle attaque contre l''Ademe : un projet
+      de loi propose de la fondre dans des services régionaux. Tour d''horizons de 6 initiatives écologiques, dans toute la
+      France, qui n''auraient pas vu le jour sans le soutien de l''agence. Un pas de '
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: À quoi sert l'Ademe, l'agence de la transition écologique ?
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Soirees-techno-et-huile-d-olive-une-ferme-engagee-menacee-de-fermeture
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Soirées techno et huile d''olive : une ferme engagée menacée de fermeture — Dans l''Hérault, un tiers-lieu agricole
+      propose des événements culturels et solidaires pour « créer du lien, de la mixité ». Las, cet « espace de liberté »
+      en lisière des institutions est menacé par une fermeture administrativ'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'Soirées techno et huile d''olive : une ferme engagée menacée de fermeture'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Sous-testosterone-les-poissons-d-elevage-egyptiens-bientot-importes-en-Europe
   type: rss
   found_from:
@@ -22599,6 +23214,51 @@ candidates:
   metadata:
     title: « Total City », la ville du gaz de schiste qui va accueillir la Coupe du monde
   suggested_action: follow_one_time
+- url: https://reporterre.net/Tout-le-monde-aurait-a-y-gagner-investir-dans-le-velo-est-aussi-bon-pour-la-Secu
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: En abandonnant le plan vélo, l'État a aussi sacrifié la santé — Améliorer la santé et faire des économies pour
+      la société, ce sont là les bénéfices de la marche et du vélo, selon la Fédération française des usagères et usagers
+      de la bicyclette. Mais les politiques publiques sont à la traîne. Marcher
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: En abandonnant le plan vélo, l'État a aussi sacrifié la santé
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Trump-supprime-les-restrictions-sur-de-puissants-gaz-a-effet-de-serre-utilises-dans-les
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Trump supprime les restrictions sur de puissants gaz à effet de serre utilisés dans les frigos — Le président
+      étasunien Donald Trump a annoncé hier être prêt à lever les restrictions sur une catégorie de gaz à effet de serre,
+      mises en place par son prédécesseur démocrate Joe Biden, en les qualifiant
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Trump supprime les restrictions sur de puissants gaz à effet de serre utilisés dans les frigos
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Un-nouveau-type-de-pesticide-genetique-debarque-en-Europe
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Un pesticide « génétique » interdit en Europe débarque... en Belgique — Avec 800 000 tonnes d'excédents de patates,
+      la Belgique avait-elle besoin d'une dérogation d'urgence pour un insecticide génétique ? Non, disent des associations,
+      qui s'inquiètent de ce produit pouvant rendre des gènes silencieu
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: Un pesticide « génétique » interdit en Europe débarque... en Belgique
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Un-passage-en-force-inadmissible-l-enquete-publique-sur-Cigeo-commence
   type: rss
   found_from:
@@ -22613,6 +23273,51 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Un « passage en force inadmissible » : l''enquête publique sur Cigéo commence'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Vagues-soleil-et-bacteries-les-surfeurs-senegalais-s-engagent-contre-la-pollution-des
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Vagues, soleil… et bactéries : les surfeurs sénégalais s''engagent contre la pollution des eaux — « C''était
+      un paradis », dit Djibril, un surfeur de la 1ᵉʳ génération. Sur l''île de Ngor au Sénégal, certaines plages sont désormais
+      désertées. Trop polluées, la faute à une urbanisation mal gérée. Des lo'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'Vagues, soleil… et bactéries : les surfeurs sénégalais s''engagent contre la pollution des eaux'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Velo-un-usage-en-hausse-debut-2026-surtout-en-ruralite
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Vélo : un usage en hausse début 2026, surtout en ruralité — Selon le Réseau vélo et marche, l''usage du vélo
+      a progressé de 5 % sur les quatre premiers mois de 2026 par rapport à 2025. « Les chiffres révèlent un contraste saisissant
+      : +9 % dans les communes rurales et de densité intermédiaire, contre'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: 'Vélo : un usage en hausse début 2026, surtout en ruralité'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Zoos-humains-la-Guyane-va-recuperer-les-ossements-d-autochtones-detenus-par-des-musees
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: La Guyane va récupérer les ossements d'autochtones détenus par des musées parisiens — Les restes des autochtones
+      exhibés dans les zoos humains de la fin du XIX e siècle vont pouvoir retrouver leur terre natale, la Guyane, 134 ans
+      après leur mort. L'aboutissement d'une lutte qui révèle la difficile r
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  metadata:
+    title: La Guyane va récupérer les ossements d'autochtones détenus par des musées parisiens
   suggested_action: follow_one_time
 - url: https://repositorio.unal.edu.co/handle/unal/78468
   type: openalex
@@ -22710,6 +23415,16 @@ candidates:
     year: 2020
     doi: 10.36260/rbr.v9i7.1015
   suggested_action: follow_one_time
+  promoted_pdf_url: https://revista.redipe.org/index.php/1/article/download/1015/925
+  promoted_at: '2026-05-22T23:20:45'
+  promoted_metadata:
+    doi: 10.36260/rbr.v9i7.1015
+    title: 'Cuidar y criar en comunidades originarias: una apuesta de investigación intercultural entre Colombia-Brasil'
+    journal: Revista Boletín Redipe
+    published_date: '2020-07-01'
+    genre: journal-article
+    html_url: https://revista.redipe.org/index.php/1/article/download/1015/925
+    source: unpaywall
 - url: https://revistacontroversia.com/index.php/controversia/article/download/1269/1022
   type: openalex
   found_from:
@@ -23379,18 +24094,6 @@ candidates:
   found_from:
   - doc_id: Tierra.org (Amigos de la Tierra ES)
     context: Alianza Residuo Cero
-    page: null
-- url: https://www.autonomiedeclasse.org/brochures/brochure-comprendre-le-fascisme-pour-mieux-le-combattre-version-actualisee/
-  type: external_link
-  domain: www.autonomiedeclasse.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-18'
-  seen_count: 1
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés (deep crawl)
-    context: · sur le site web
     page: null
 - url: https://www.awid.org/publications/toward-feminist-funding-ecosystem-framework-and-prac-
   type: footnote

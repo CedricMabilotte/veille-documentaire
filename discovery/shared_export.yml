@@ -103,15 +103,15 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-05-19T17:07:59.388249+00:00'
+exported_at: '2026-05-22T23:26:50.226020+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
   type: html
-  fertility: 9.0
-  runs: 4
+  fertility: 7.2
+  runs: 5
   docs_dl: 36
-  docs_seen: 190
+  docs_seen: 238
 - url: https://infokiosques.net/paysannerie_ruralite
   label: Infokiosques.net — Paysannerie & ruralité
   type: html
@@ -263,16 +263,16 @@ sources:
   label: Reporterre — RSS principal
   type: rss
   fertility: 0.0
-  runs: 2
+  runs: 3
   docs_dl: 0
-  docs_seen: 60
+  docs_seen: 90
 - url: https://lundi.am/spip.php?page=backend
   label: Lundi.am — RSS principal
   type: rss
   fertility: 0.0
-  runs: 2
+  runs: 3
   docs_dl: 0
-  docs_seen: 22
+  docs_seen: 32
 - url: https://mst.org.br/feed/
   label: MST Brésil — RSS principal
   type: rss
