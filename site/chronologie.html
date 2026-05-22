@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
 <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -31,10 +32,13 @@
     <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
       <a href="index.html">Accueil</a>
       <a href="fiches/index.html">Catalogue</a>
+      <a href="dossiers.html">Dossiers</a>
+      <a href="outils.html">Outils</a>
+      <a href="actu.html">Actu</a>
       <a href="auteurs.html">Auteurs</a>
       <a href="chronologie.html">Chronologie</a>
-      <a href="dossiers.html">Dossiers</a>
       <a href="concepts/index.html">Concepts</a>
+      <a href="etat-corpus.html">État du corpus</a>
       <a href="apropos.html">Méthodologie</a>
     </nav>
     <div class="header-tools">
@@ -81,31 +85,44 @@
       <h4>BIBLIO</h4>
       <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
       <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+      <div class="newsletter-foot">
+        <p><strong>La lettre de la veille</strong> — un digest régulier, sans tracker.</p>
+        <form class="newsletter-form" aria-label="Inscription à la newsletter">
+          <input type="email" name="email" placeholder="votre@email.fr" aria-label="Votre adresse e-mail" required>
+          <button type="submit" class="btn btn-sm">S'inscrire</button>
+        </form>
+      </div>
     </div>
     <div>
       <h4>Naviguer</h4>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="fiches/index.html">Catalogue</a></li>
+        <li><a href="dossiers.html">Dossiers</a></li>
+        <li><a href="outils.html">Boîte à outils</a></li>
+        <li><a href="actu.html">Actu — cette semaine</a></li>
+        <li><a href="une.html">Document de la semaine</a></li>
         <li><a href="auteurs.html">Auteurs</a></li>
         <li><a href="chronologie.html">Chronologie</a></li>
-        <li><a href="dossiers.html">Dossiers</a></li>
         <li><a href="concepts/index.html">Concepts</a></li>
+        <li><a href="etat-corpus.html">État du corpus</a></li>
         <li><a href="apropos.html">Méthodologie</a></li>
-        <li><a href="feed.xml">Flux RSS</a></li>
       </ul>
     </div>
     <div>
-      <h4>Code &amp; licence</h4>
+      <h4>Suivre &amp; réutiliser</h4>
       <ul>
+        <li><a href="feed.xml">Flux RSS — nouvelles fiches</a></li>
+        <li><a href="rss.xml">Flux RSS — toutes nouveautés</a></li>
+        <li><a href="scoops.xml">Flux RSS — scoops (score ≥ 9)</a></li>
         <li><a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">Code source</a></li>
-        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a></li>
-        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a> · <a href="https://wiki.p2pfoundation.net/Peer_Production_License" rel="noopener">PPL</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact &amp; déréférencement</a></li>
       </ul>
     </div>
     <div class="colophon">
       <span>© 2026 BIBLIO · <code>biblio.actitude.org</code></span>
-      <span>HTML, CSS, JavaScript. Sans tracker.</span>
+      <span>Construit en HTML, CSS et JavaScript. Sans tracker.</span>
     </div>
   </div>
 </footer>
@@ -113,13 +130,22 @@
 <script src="assets/js/router.js"></script>
 <script src="assets/js/search.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/home.js"></script>
 <script>
 /* ===== Chronologie — rendu timeline ===== */
 window.pageInit = function (basePath) {
   loadCatalog(basePath).then(({ docs, _error }) => {
     const root = document.getElementById('timeline-root');
-    if (_error || !docs.length) {
-      root.innerHTML = '<p style="text-align:center;color:var(--text-faint);font-style:italic;padding:60px 0;">Aucune donnée encore — relance une veille.</p>';
+    if (_error) {
+      visitorError(root, {
+        title: 'La chronologie n’a pas pu se charger',
+        message: 'La bibliothèque est momentanément indisponible. Vérifiez votre connexion, puis réessayez.',
+        onRetry: () => { resetCatalogCache(); window.pageInit(basePath); },
+      });
+      return;
+    }
+    if (!docs.length) {
+      root.innerHTML = '<p class="biblio-empty-note">Aucune fiche publiée pour le moment — revenez bientôt.</p>';
       return;
     }
     renderTimeline(docs, basePath);
@@ -127,8 +153,8 @@ window.pageInit = function (basePath) {
 };
 
 function renderTimeline(docs, basePath) {
-  // Attribue une année à chaque doc (ou null)
-  const enriched = docs.map(d => ({ doc: d, year: inferYear(d) }));
+  // Attribue une année à chaque doc (doc_date prioritaire, sinon inférence)
+  const enriched = docs.map(d => ({ doc: d, year: docYear(d) }));
   const dated = enriched.filter(x => x.year);
   const undated = enriched.filter(x => !x.year);
 
@@ -166,8 +192,8 @@ function renderTimeline(docs, basePath) {
     buf.push('<ul style="list-style:none;padding:0;margin:0;">');
     for (const { doc } of undated) {
       const url = BiblioRouter.ficheUrl(doc.id, basePath);
-      const score = doc.latest_score || 0;
-      buf.push(`<li style="padding:6px 0;border-bottom:1px dotted var(--border);"><a href="${escape(url)}" style="font-family:var(--font-serif);font-size:16px;">${escape(docTitle(doc))}</a> <span class="score-pill ${scoreClass(score)}" style="margin-left:6px;">${score}/10</span></li>`);
+      const score = docScore(doc);
+      buf.push(`<li style="padding:6px 0;border-bottom:1px dotted var(--border);"><a href="${escape(url)}" style="font-family:var(--font-serif);font-size:16px;">${escape(docTitle(doc))}</a> <span class="score-pill ${scoreClass(score)}" style="margin-left:6px;" title="${escape(scoreLabel(score))}">${score}/10</span></li>`);
     }
     buf.push('</ul></div></div>');
   }
@@ -178,12 +204,12 @@ function renderTimeline(docs, basePath) {
 function timelineEntryHTML(doc, basePath) {
   const url = BiblioRouter.ficheUrl(doc.id, basePath);
   const title = docTitle(doc);
-  const score = doc.latest_score || 0;
+  const score = docScore(doc);
   const author = inferAuthor(doc);
   return `
     <div class="timeline-entry">
       <a href="${escape(url)}">${escape(title)}${author ? ` <span style="color:var(--text-faint);font-style:italic;">— ${escape(author)}</span>` : ''}</a>
-      <span class="score-pill ${scoreClass(score)}">${score}/10</span>
+      <span class="score-pill ${scoreClass(score)}" title="${escape(scoreLabel(score))}">${score}/10</span>
     </div>
   `;
 }

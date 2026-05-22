@@ -1,0 +1,464 @@
+/* ===================================================================
+   BIBLIO — components.css
+   CSS additionnel des items de la revue d'amélioration (pages données).
+   Toutes les classes sont préfixées « biblio- » ou nommées de façon
+   spécifique pour éviter les collisions avec style.css.
+   =================================================================== */
+
+/* ----- A5 : cartes squelettes (chargement) ------------------------- */
+.skeleton-card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bg-elev, #fff);
+}
+.skeleton-cover {
+  aspect-ratio: 3 / 4;
+  background: var(--accent-soft, #eee);
+}
+.skeleton-lines { padding: 12px; }
+.skeleton-line {
+  display: block;
+  height: 11px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  background: var(--accent-soft, #eee);
+}
+.skeleton-line.w90 { width: 90%; }
+.skeleton-line.w60 { width: 60%; }
+.skeleton-line.w30 { width: 30%; }
+.skeleton-card .skeleton-cover,
+.skeleton-card .skeleton-line {
+  position: relative;
+  overflow: hidden;
+}
+.skeleton-card .skeleton-cover::after,
+.skeleton-card .skeleton-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.45), transparent);
+  animation: biblio-shimmer 1.3s infinite;
+}
+@keyframes biblio-shimmer { 100% { transform: translateX(100%); } }
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-card .skeleton-cover::after,
+  .skeleton-card .skeleton-line::after { animation: none; }
+}
+
+/* ----- A5 : message d'erreur orienté visiteur ---------------------- */
+.biblio-error {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px 24px;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  background: var(--bg-elev, #fff);
+}
+.biblio-error-title {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  margin: 0 0 8px;
+  color: var(--text);
+}
+.biblio-error-msg {
+  color: var(--text-dim);
+  margin: 0 0 16px;
+  max-width: 38ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+.biblio-empty-note {
+  color: var(--text-faint);
+  font-style: italic;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* ----- B7 : surlignage des occurrences de recherche ---------------- */
+mark.biblio-hl {
+  background: var(--gold-soft, #fdf0c8);
+  color: inherit;
+  padding: 0 1px;
+  border-radius: 2px;
+}
+
+/* ----- B7 : état vide actionnable de la recherche ------------------ */
+.biblio-empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px 24px;
+}
+.biblio-empty-state p {
+  color: var(--text-dim);
+  margin: 0 0 14px;
+}
+.biblio-empty-state .biblio-empty-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ----- A6 : chips de filtres actifs -------------------------------- */
+.biblio-active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 0 0 14px;
+}
+.biblio-active-filters:empty { display: none; }
+.biblio-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 6px 3px 10px;
+  font-size: 12.5px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--accent-soft, #f1ede6);
+  color: var(--text-dim);
+}
+.biblio-chip b { font-weight: 600; color: var(--text); }
+.biblio-chip button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1;
+  color: var(--text-faint);
+  padding: 0 2px;
+  border-radius: 50%;
+}
+.biblio-chip button:hover { color: var(--accent); }
+.biblio-chip-clear {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 12.5px;
+  text-decoration: underline;
+  color: var(--text-faint);
+}
+.biblio-chip-clear:hover { color: var(--accent); }
+
+/* ----- A6 : bandeau « N fiches masquées par le score » ------------- */
+.biblio-score-banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+  margin: 0 0 14px;
+  padding: 8px 14px;
+  font-size: 13px;
+  border: 1px solid var(--gold, #c79a3a);
+  border-left-width: 4px;
+  border-radius: 4px;
+  background: var(--gold-soft, #fdf0c8);
+  color: var(--text-dim);
+}
+.biblio-score-banner button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 13px;
+  color: var(--text);
+}
+
+/* ----- C5 : aide pliable de première lecture ----------------------- */
+.biblio-help {
+  margin: 0 0 18px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-elev, #fff);
+}
+.biblio-help > summary {
+  cursor: pointer;
+  padding: 10px 14px;
+  font-family: var(--font-serif);
+  font-size: 15px;
+  list-style: none;
+}
+.biblio-help > summary::-webkit-details-marker { display: none; }
+.biblio-help > summary::before { content: "ⓘ "; color: var(--accent); }
+.biblio-help[open] > summary { border-bottom: 1px solid var(--border); }
+.biblio-help-body {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: var(--text-dim);
+}
+.biblio-help-body dl { margin: 0; }
+.biblio-help-body dt {
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 10px;
+}
+.biblio-help-body dt:first-child { margin-top: 0; }
+.biblio-help-body dd { margin: 2px 0 0; }
+
+/* ----- A1 : facette type de document (réutilise .filter-group) ----- */
+/* (pas de style propre nécessaire — hérite de .filter-group de style.css) */
+
+/* ----- C5 / catalogue : score en toutes lettres -------------------- */
+.biblio-score-text {
+  display: block;
+  font-size: 11px;
+  color: var(--text-faint);
+  margin-top: 2px;
+}
+
+/* ----- A1 : badge type de document sur les cartes ------------------ */
+.biblio-type-badge {
+  display: inline-block;
+  font-size: 10.5px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: 1px 7px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  background: var(--accent-soft, #f1ede6);
+  color: var(--text-faint);
+  margin-right: 4px;
+}
+
+/* ----- B4 : encart « en clair » en tête de fiche ------------------- */
+.biblio-enclair {
+  margin: 0 0 24px;
+  padding: 14px 18px;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft, #f1ede6);
+  border-radius: 0 6px 6px 0;
+}
+.biblio-enclair .biblio-enclair-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+.biblio-enclair p {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+/* ----- B1 : badge d'orientation de la source ----------------------- */
+.biblio-orientation-badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev, #fff);
+  color: var(--text-dim);
+}
+.biblio-orientation-badge.o-militant {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.biblio-orientation-badge.o-academique {
+  border-color: var(--good, #4a7c4a);
+  color: var(--good, #4a7c4a);
+}
+.biblio-orientation-badge.o-institutionnel {
+  border-color: var(--gold, #c79a3a);
+  color: var(--gold, #c79a3a);
+}
+
+/* ----- C1 : badge « résumé généré automatiquement » ---------------- */
+.biblio-auto-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--text-faint);
+  border: 1px dotted var(--border);
+  border-radius: 3px;
+  padding: 2px 8px;
+}
+.biblio-auto-badge::before { content: "⚙"; }
+
+/* ----- C1 : identifiant technique relégué en pied de fiche --------- */
+.biblio-techfoot {
+  margin-top: 28px;
+  padding-top: 14px;
+  border-top: 1px dotted var(--border);
+  font-size: 12px;
+  color: var(--text-faint);
+}
+.biblio-techfoot code { font-size: 11px; }
+
+/* ----- C1 : mise en avant Score/Auteur/Date dans la grille méta ---- */
+.fiche-meta-grid .biblio-meta-primary dt { color: var(--accent); }
+.fiche-meta-grid .biblio-meta-primary dd { font-weight: 600; }
+
+/* ----- B1 : encart « Citer ce document » --------------------------- */
+.biblio-cite {
+  margin: 24px 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-elev, #fff);
+}
+.biblio-cite-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+}
+.biblio-cite-head h3 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 16px;
+}
+.biblio-cite-body {
+  padding: 12px 14px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text-dim);
+  font-family: var(--font-serif);
+}
+
+/* ----- B3 : boutons de partage ------------------------------------- */
+.biblio-share {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+}
+.biblio-share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12.5px;
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-elev, #fff);
+  color: var(--text-dim);
+  cursor: pointer;
+  text-decoration: none;
+}
+.biblio-share-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ----- B9 : encart « Pour aller plus loin » ------------------------ */
+.biblio-deeper {
+  margin: 0 0 36px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-elev, #fff);
+}
+.biblio-deeper h2 {
+  margin-top: 0;
+}
+.biblio-deeper-item {
+  margin: 0 0 14px;
+}
+.biblio-deeper-item:last-child { margin-bottom: 0; }
+.biblio-deeper-item .biblio-deeper-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 3px;
+}
+.biblio-deeper-item p { margin: 0; }
+.biblio-actor-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.biblio-actor-list li {
+  font-size: 12.5px;
+  padding: 2px 9px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--accent-soft, #f1ede6);
+}
+
+/* ----- B12 : bloc « Autres versions / traductions » ---------------- */
+.biblio-versions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.biblio-versions li {
+  padding: 8px 0;
+  border-bottom: 1px dotted var(--border);
+}
+.biblio-versions li:last-child { border-bottom: none; }
+
+/* ----- citations vérifiées / non retrouvées ------------------------ */
+.biblio-cite-unverified {
+  display: block;
+  font-size: 11.5px;
+  color: var(--gold, #b5860f);
+  margin-top: 6px;
+  font-style: normal;
+}
+.biblio-cite-verified {
+  display: block;
+  font-size: 11.5px;
+  color: var(--good, #4a7c4a);
+  margin-top: 6px;
+  font-style: normal;
+}
+
+/* ----- A8 : rendu corpus_stats ------------------------------------- */
+.corpus-total { font-size: 16px; color: var(--text-dim); }
+.corpus-stat-block { margin: 0 0 28px; }
+.corpus-stat-block h3 {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  margin: 0 0 10px;
+}
+.corpus-bar-list { list-style: none; padding: 0; margin: 0; }
+.corpus-bar-row {
+  display: grid;
+  grid-template-columns: minmax(120px, 1fr) 2fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 3px 0;
+  font-size: 13px;
+}
+.corpus-bar-label { color: var(--text-dim); }
+.corpus-bar-track {
+  height: 10px;
+  background: var(--accent-soft, #f1ede6);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.corpus-bar-fill {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+.corpus-bar-val { font-size: 12px; color: var(--text-faint); white-space: nowrap; }
+
+/* ----- B11 : grille de recherche avancée (si une page l'utilise) --- */
+.biblio-advsearch {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin: 0 0 18px;
+}
+
+@media (max-width: 600px) {
+  .corpus-bar-row { grid-template-columns: 1fr; gap: 2px; }
+  .corpus-bar-val { text-align: right; }
+}

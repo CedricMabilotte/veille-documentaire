@@ -12,7 +12,9 @@
   --bg-elev: #ede4cc;
   --text: #231f1c;
   --text-dim: #5a4f43;
-  --text-faint: #7a6f60;
+  /* C4 — contraste WCAG : ancien #7a6f60 ≈ 4.0:1 sur le parchemin (sous AA).
+     Assombri à #6b6051 → ≈ 4.6:1, conforme AA texte normal. */
+  --text-faint: #6b6051;
   --accent: #a44a2c;            /* terre cuite */
   --accent-soft: rgba(164, 74, 44, 0.10);
   --accent-strong: #8a3a20;
@@ -1718,17 +1720,397 @@ main { flex: 1; }
 }
 
 /* --- Liste des sources avec recherche live --- */
+/* C2 : suppression du scroll imbriqué (ancien max-height/overflow-y). La liste
+   s'étale désormais entièrement ; si elle est enveloppée dans un <details
+   class="sources-fold">, c'est le pli qui gère la place — voir plus bas. */
 .filter-sources-list {
-  max-height: 240px;
-  overflow-y: auto;
   border: 1px solid var(--border);
   border-radius: 4px;
   padding: 4px 8px;
   background: var(--bg);
 }
 .filter-sources-list label {
-  display: block;
-  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
   padding: 3px 0;
+  min-height: 44px;          /* C2 : cible tactile */
+}
+
+/* ============================================================
+   Frontend-B — Vague 2
+   Chrome global, cibles tactiles, accueil, nouvelles pages.
+   ============================================================ */
+
+/* --- C2 : cibles tactiles 44px (labels de filtres, boutons) --- */
+.filter-group label {
+  min-height: 44px;          /* était 28px — confort tactile mobile */
+  padding: 4px 0;
+}
+.filter-group input[type="checkbox"],
+.filter-group input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.btn,
+.view-toggle button,
+.catalog-toolbar select,
+.filter-group select,
+.theme-toggle, .menu-toggle, .palette-toggle {
+  min-height: 44px;          /* harmonisation : tout cliquable ≥ 44px */
+}
+.theme-toggle, .menu-toggle, .palette-toggle {
+  width: 44px;
+  height: 44px;
+}
+.btn-sm { min-height: 44px; }
+
+/* --- C2 : liste de sources pliable <details> (remplace le scroll imbriqué) --- */
+.sources-fold {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  margin-top: 6px;
+}
+.sources-fold > summary {
+  cursor: pointer;
+  padding: 11px 12px;
+  font-size: 13.5px;
+  color: var(--text-dim);
+  font-weight: 600;
+  list-style: none;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sources-fold > summary::-webkit-details-marker { display: none; }
+.sources-fold > summary::after {
+  content: "▾";
+  color: var(--text-faint);
+  transition: transform var(--transition);
+}
+.sources-fold[open] > summary::after { transform: rotate(180deg); }
+.sources-fold > summary:hover { color: var(--accent); }
+.sources-fold .sources-fold-body {
+  padding: 4px 12px 12px;
+  border-top: 1px solid var(--border);
+}
+.sources-fold .sources-fold-body label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--text-dim);
+  min-height: 44px;
+  cursor: pointer;
+}
+
+/* --- C4 : menu palette navigable au clavier (focus visible net) --- */
+.palette-menu button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+  background: var(--bg-elev);
+}
+
+/* --- Hero refondu : CTA primaire (B6) --- */
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.hero-actions .btn { min-width: 200px; font-size: 15px; }
+.hero-search {
+  margin: 22px auto 0;
+  max-width: 460px;
+  display: flex;
+  gap: 8px;
+}
+.hero-search input {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  padding: 11px 16px;
+  font: inherit;
+  font-size: 15px;
+  color: var(--text);
+  min-height: 44px;
+}
+.hero-search input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+/* --- C7 : bandeau preuve sociale / fil d'activité --- */
+.activite-bandeau {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 14px;
+  margin-bottom: 22px;
+}
+.activite-compte {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent);
+}
+.activite-fil {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--border);
+}
+.activite-item {
+  display: flex;
+  gap: 14px;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1px dotted var(--border);
+  font-size: 15px;
+}
+.activite-when {
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+  color: var(--text-faint);
+  white-space: nowrap;
+  min-width: 96px;
+}
+.activite-item a {
+  font-family: var(--font-serif);
+  color: var(--text);
+}
+.activite-item a:hover { color: var(--accent); }
+
+/* --- Newsletter (A3) : bloc d'inscription --- */
+.newsletter-block {
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-alt) 100%);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-lg);
+  padding: 28px 28px 26px;
+  text-align: center;
+}
+.newsletter-block h2 { margin-top: 0; }
+.newsletter-form {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+.newsletter-form input[type="email"] {
+  background: var(--bg);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  padding: 11px 16px;
+  font: inherit;
+  font-size: 15px;
+  color: var(--text);
+  min-height: 44px;
+  width: 280px;
+  max-width: 100%;
+}
+.newsletter-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.newsletter-note {
+  font-size: 13px;
+  color: var(--text-faint);
+  margin-top: 12px;
+}
+/* Variante compacte intégrée au footer */
+.site-footer .newsletter-foot { margin-bottom: 4px; }
+.site-footer .newsletter-foot p { margin: 0 0 8px; font-size: 13px; }
+.site-footer .newsletter-form { justify-content: flex-start; margin-top: 8px; }
+.site-footer .newsletter-form input[type="email"] { width: 200px; }
+
+/* --- Bandeau "document de la semaine" sur l'accueil --- */
+.une-teaser {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px 28px;
+  background: var(--gold-soft);
+  border: 1px solid var(--gold);
+  border-radius: var(--radius-lg);
+  padding: 22px 26px;
+}
+.une-teaser-corps { flex: 1; min-width: 240px; }
+.une-teaser-kicker {
+  display: block;
+  font-size: 11.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.une-teaser-titre {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: var(--text);
+}
+.une-teaser-texte {
+  font-family: var(--font-serif);
+  color: var(--text-dim);
+  margin: 0;
+  font-size: 16px;
+}
+
+/* --- Page "Une" (une.html) --- */
+.une-article, .une-vide {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 20px 0 60px;
+}
+.une-kicker {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.une-titre {
+  font-family: var(--font-serif);
+  font-size: clamp(30px, 5vw, 46px);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+.une-teaser-lede {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 21px;
+  color: var(--text-dim);
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+.une-abstract { margin-bottom: 8px; }
+
+/* --- Page "Actu" (actu.html) --- */
+.actu-compte, .outils-compte {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--text-dim);
+  margin: 0 0 24px;
+}
+.actu-jour {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 36px 0 16px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.actu-vide, .outils-vide, .une-vide p {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  color: var(--text-dim);
+  line-height: 1.7;
+  padding: 24px 0;
+}
+.actu-feeds {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+/* --- Page "Outils" (outils.html) --- */
+.outils-groupe { margin-bottom: 44px; }
+.outils-groupe-titre {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 18px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+/* --- Page "État du corpus" (etat-corpus.html) --- */
+.corpus-intro {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  color: var(--text-dim);
+  line-height: 1.7;
+  max-width: 720px;
+}
+.corpus-generated {
+  font-size: 13px;
+  color: var(--text-faint);
+  font-style: italic;
+  margin-top: 6px;
+}
+#corpus-stats-root { margin-top: 24px; }
+.corpus-limites {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  margin-top: 40px;
+}
+.corpus-limites h2 { margin-top: 0; font-size: 22px; }
+.corpus-limites ul { padding-left: 1.3em; }
+.corpus-limites li {
+  font-family: var(--font-serif);
+  color: var(--text-dim);
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* --- Charte de gouvernance / retrait (apropos.html) --- */
+.charte-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+.charte-list li {
+  padding: 12px 0 12px 28px;
+  border-bottom: 1px dotted var(--border);
+  position: relative;
+}
+.charte-list li::before {
+  content: "§";
+  position: absolute;
+  left: 0;
+  top: 12px;
+  color: var(--accent);
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+.charte-list li:last-child { border-bottom: none; }
+
+/* --- Note d'état vide générique --- */
+.biblio-empty-note {
+  text-align: center;
+  color: var(--text-faint);
+  font-style: italic;
+  padding: 48px 0;
+  font-family: var(--font-serif);
+  font-size: 17px;
+}
+
+/* --- Responsive nouvelles sections --- */
+@media (max-width: 700px) {
+  .hero-actions .btn { min-width: 0; width: 100%; }
+  .hero-search { flex-direction: column; }
+  .newsletter-form input[type="email"] { width: 100%; }
+  .activite-when { min-width: 0; }
 }
 

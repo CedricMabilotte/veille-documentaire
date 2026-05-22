@@ -13,8 +13,18 @@ Pour les docs scorés ≥ 9, génère aussi une "bulle de publication" prête
 """
 
 import json
+import re
 import subprocess
+import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from prompt_version import prompt_hash
+except Exception:  # pragma: no cover — dégradation propre
+    def prompt_hash(p: str, length: int = 10) -> str:
+        import hashlib
+        return hashlib.sha256((p or "").encode()).hexdigest()[:length] if p else "noprompt"
 
 CLAUDE_TIMEOUT_SEC  = 240
 CLAUDE_MODEL        = "claude-haiku-4-5"
@@ -130,6 +140,99 @@ def _call_claude(prompt: str, timeout: int = CLAUDE_TIMEOUT_SEC) -> str:
     return raw.strip()
 
 
+def _normalize_for_match(s: str) -> str:
+    """Normalise un texte pour la comparaison de citations : minuscules,
+    espaces compressés, ponctuation et diacritiques retirés.
+
+    Sert à re-rechercher une citation littérale dans le texte du PDF malgré
+    les différences d'extraction (césures, espaces, accents, guillemets
+    typographiques) — l'OCR et les extractions PDF perdent souvent les
+    accents.
+    """
+    if not s:
+        return ""
+    import unicodedata
+    s = s.lower()
+    # Guillemets typographiques → simples
+    s = s.replace("«", "").replace("»", "").replace("“", "").replace("”", "")
+    s = s.replace("’", "'").replace("‘", "'")
+    # Tirets de césure en fin de ligne
+    s = re.sub(r"-\s*\n\s*", "", s)
+    # Repli des diacritiques (à→a, é→e…) : tolérant aux pertes d'accents OCR
+    s = "".join(c for c in unicodedata.normalize("NFD", s)
+                if unicodedata.category(c) != "Mn")
+    # Tout ce qui n'est pas alphanumérique → espace
+    s = re.sub(r"[^\w\s]", " ", s, flags=re.UNICODE)
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+
+def verify_citations(citations: list[dict], pdf_text: str) -> list[dict]:
+    """Re-recherche chaque citation littérale dans le texte extrait du PDF
+    (item A4 — anti-hallucination).
+
+    Pour chaque citation, ajoute :
+      - `verified` (bool) : True si le quote est retrouvé dans le texte ;
+      - `page_physical` (int|None) : page physique du PDF où le quote apparaît
+        (déduite des marqueurs [p.N]), distincte de `page` (page imprimée
+        annoncée par le modèle, souvent la pagination du document).
+
+    Tolérant : une correspondance partielle (≥ 85% des mots-clés de la
+    citation présents consécutivement) compte comme vérifiée.
+    """
+    if not citations:
+        return []
+    norm_text = _normalize_for_match(pdf_text)
+
+    # Index des marqueurs [p.N] → offset dans le texte normalisé
+    # On normalise page par page pour pouvoir retrouver la page physique.
+    page_spans: list[tuple[int, int]] = []  # (page_no, offset_norm)
+    if pdf_text:
+        offset = 0
+        for chunk in re.split(r"(\[p\.\d+\])", pdf_text):
+            m = re.match(r"\[p\.(\d+)\]", chunk)
+            if m:
+                page_spans.append((int(m.group(1)), offset))
+            else:
+                offset += len(_normalize_for_match(chunk)) + 1
+
+    def _page_at(pos: int) -> int | None:
+        found = None
+        for page_no, off in page_spans:
+            if off <= pos:
+                found = page_no
+            else:
+                break
+        return found
+
+    out = []
+    for c in citations:
+        c = dict(c) if isinstance(c, dict) else {"quote": str(c)}
+        quote = c.get("quote", "") or ""
+        norm_q = _normalize_for_match(quote)
+        verified = False
+        page_physical = None
+        if norm_q and norm_text:
+            idx = norm_text.find(norm_q)
+            if idx != -1:
+                verified = True
+                page_physical = _page_at(idx)
+            else:
+                # Correspondance partielle : fenêtre glissante sur les mots
+                words = norm_q.split()
+                if len(words) >= 4:
+                    head = " ".join(words[: max(4, len(words) * 7 // 10)])
+                    idx = norm_text.find(head)
+                    if idx != -1:
+                        verified = True
+                        page_physical = _page_at(idx)
+        c["verified"] = verified
+        c["page_physical"] = page_physical
+        # `page` reste la page imprimée annoncée par le modèle
+        out.append(c)
+    return out
+
+
 def enrich(text: str, keywords: list[str], doc_title: str = "") -> dict:
     """Produit le synopsis enrichi d'un document.
 
@@ -137,12 +240,18 @@ def enrich(text: str, keywords: list[str], doc_title: str = "") -> dict:
     {
       "summary": str,              # résumé long (400-600 mots)
       "citations": [               # 10 max, dans l'ordre d'apparition
-        {"page": int, "quote": str, "why_relevant": str},
+        {"page": int, "quote": str, "why_relevant": str,
+         "verified": bool, "page_physical": int|None},
         ...
       ],
       "matched_keywords": [str, ...],   # mots-clés réellement présents
       "relevance_score": int,           # confirmation 0-10 après lecture
       "relevance_notes": str,
+      "en_clair": str,                  # B4 — 2 phrases en langue simple
+      "acteurs": [str, ...],            # B9 — acteurs/organisations cités
+      "controverse": str,               # B9 — point de débat/tension
+      "angle_journalistique": str,      # B9 — angle d'enquête possible
+      "model": str, "prompt_version": str,  # C6 — reproductibilité
     }
 
     En cas d'échec, retourne un dict avec champ "error".
@@ -190,8 +299,18 @@ Génère ce JSON (un seul objet, pas de balise markdown) :
   ],
   "matched_keywords": ["liste des mots-clés de la thématique vraiment présents dans le texte"],
   "relevance_score": 7,
-  "relevance_notes": "ton estimation finale 0-10 après lecture du contenu réel (ATTENTION : indépendante du score précédent qui s'appuyait sur le titre seulement) + 1 phrase qui explique"
+  "relevance_notes": "ton estimation finale 0-10 après lecture du contenu réel (ATTENTION : indépendante du score précédent qui s'appuyait sur le titre seulement) + 1 phrase qui explique",
+  "en_clair": "2 phrases courtes en langue très simple : concrètement, à quoi ce texte peut servir dans une lutte ? Pas de jargon.",
+  "acteurs": ["liste des organisations, collectifs, mouvements ou personnes RÉELLEMENT nommés dans le texte — n'invente AUCUN nom"],
+  "controverse": "le principal point de débat, tension ou désaccord soulevé par le texte (1-2 phrases). Vide si le texte n'en contient pas.",
+  "angle_journalistique": "un angle d'enquête ou de reportage qu'un·e journaliste pourrait tirer de ce texte (1 phrase). Vide si non pertinent."
 }}
+
+RÈGLES SUPPLÉMENTAIRES :
+- `acteurs` : uniquement des noms réellement présents dans le texte. Si le
+  document est anonyme ou ne nomme personne, laisse la liste vide.
+- `en_clair` : adresse-toi à quelqu'un qui n'a pas fait d'études, sans
+  condescendance. Concret et utile.
 
 Texte du document (peut être tronqué) :
 {text}"""
@@ -199,11 +318,24 @@ Texte du document (peut être tronqué) :
     try:
         raw = _call_claude(prompt)
         data = json.loads(raw)
-        # Validation minimale du shape
-        for field in ("summary", "citations", "matched_keywords",
-                      "relevance_score", "relevance_notes"):
+        # Validation minimale du shape — défauts pour migration douce
+        defaults = {
+            "summary": "", "citations": [], "matched_keywords": [],
+            "relevance_score": 0, "relevance_notes": "",
+            "en_clair": "", "acteurs": [], "controverse": "",
+            "angle_journalistique": "",
+        }
+        for field, default in defaults.items():
             if field not in data:
-                data[field] = "" if field != "citations" else []
+                data[field] = default
+        # A4 — vérification des citations littérales dans le texte du PDF
+        try:
+            data["citations"] = verify_citations(data.get("citations", []), text)
+        except Exception as e:
+            print(f"  ⚠  verify_citations raté : {e}")
+        # C6 — reproductibilité : modèle + version du prompt
+        data["model"] = CLAUDE_MODEL
+        data["prompt_version"] = prompt_hash(prompt)
         return data
     except json.JSONDecodeError as e:
         return {"error": f"json_parse: {e}", "raw_response": raw[:500]}
@@ -266,7 +398,26 @@ Ne fabrique rien. Reste fidèle au document. 3 citations phares maximum."""
 
     try:
         raw = _call_claude(prompt, timeout=180)
-        return json.loads(raw)
+        bulle = json.loads(raw)
+        # B9/B4 — on propage les champs exploitables de l'enrichissement
+        # vers la bulle (l'agent frontend les affiche dans un encart).
+        bulle["en_clair"] = enriched.get("en_clair", "")
+        bulle["acteurs"] = enriched.get("acteurs", []) or []
+        bulle["controverse"] = enriched.get("controverse", "")
+        bulle["angle_journalistique"] = enriched.get("angle_journalistique", "")
+        # A4 — citations vérifiées : on conserve l'info de vérification
+        verified_cites = enriched.get("citations", []) or []
+        bulle["citations_verifiees"] = [
+            {"quote": c.get("quote", ""),
+             "page": c.get("page"),
+             "page_physical": c.get("page_physical"),
+             "verified": c.get("verified", False)}
+            for c in verified_cites if isinstance(c, dict)
+        ]
+        # C6 — reproductibilité
+        bulle["model"] = CLAUDE_MODEL
+        bulle["prompt_version"] = prompt_hash(prompt)
+        return bulle
     except json.JSONDecodeError as e:
         return {"error": f"json_parse: {e}", "raw_response": raw[:500] if 'raw' in dir() else ''}
     except Exception as e:

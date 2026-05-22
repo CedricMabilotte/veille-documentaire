@@ -270,3 +270,176 @@ scoring:
       reason: >
         Anti-concept tokenisation foncière. Maquillage 'innovation' d'une
         marchandisation accrue de la terre.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Dossiers éditoriaux (item A7) — nommés par lutte, avec chapô écrit.
+# scripts/editorial.py rattache les documents du catalog à ces dossiers via
+# les `keywords` (matching insensible à la casse sur titre/résumé/raisons).
+# ─────────────────────────────────────────────────────────────────────────────
+dossiers:
+  - slug: sortir-une-terre-du-marche
+    titre: "Sortir une terre du marché"
+    chapo: >
+      Comment des collectifs arrachent durablement des terres à la
+      spéculation : fonds de dotation, fiducies foncières, baux
+      emphytéotiques militants, propriété d'usage. Les outils juridiques et
+      financiers de l'inaliénabilité, racontés par celles et ceux qui les
+      forgent.
+    keywords:
+      - propriété d'usage
+      - fonds de dotation
+      - fiducie foncière
+      - terre de liens
+      - bail emphytéotique
+      - anti-spéculat
+      - inaliénab
+      - foncière solidaire
+      - community land trust
+      - stewardship
+
+  - slug: zad-defense-de-territoires
+    titre: "ZAD & défense de territoires"
+    chapo: >
+      Occuper pour défendre : ZAD, luttes contre les grands projets inutiles,
+      résistances à l'artificialisation. Des récits de territoires habités
+      contre l'aménagement, et ce qu'ils inventent en commun.
+    keywords:
+      - zad
+      - zone à défendre
+      - grand projet inutile
+      - notre-dame-des-landes
+      - occupation
+      - artificialisation
+      - aéroport
+      - autoroute
+      - bassines
+      - défense de territoire
+
+  - slug: sans-terre-reforme-agraire
+    titre: "Sans-terre & réforme agraire"
+    chapo: >
+      La terre à celles et ceux qui la travaillent. Mouvements de sans-terre,
+      réformes agraires, occupations de latifundios, MST brésilien et Via
+      Campesina : la redistribution foncière comme combat vivant.
+    keywords:
+      - sans-terre
+      - sans terre
+      - réforme agraire
+      - reforma agraria
+      - mst
+      - via campesina
+      - latifundi
+      - occupation de terre
+      - landless
+      - agrarian reform
+
+  - slug: communs-fonciers-histoire
+    titre: "Communs fonciers : une histoire"
+    chapo: >
+      Communaux, biens communaux, terres collectives : une longue histoire
+      des régimes fonciers partagés, de leur enclosure et de leurs
+      résurgences. Pour penser les communs autrement qu'en nostalgie.
+    keywords:
+      - communaux
+      - biens communaux
+      - communs fonciers
+      - terres collectives
+      - terres communales
+      - enclosure
+      - commons
+      - common lands
+
+  - slug: habitat-collectif-cooperatif
+    titre: "Habitat collectif & coopératif"
+    chapo: >
+      Habiter la terre autrement : coopératives d'habitants, habitat groupé,
+      communautés intentionnelles, squats ruraux. Des formes de logement
+      sorties de la spéculation et ancrées dans un sol partagé.
+    keywords:
+      - habitat coopératif
+      - habitat groupé
+      - coopérative d'habitants
+      - logement collectif
+      - communauté intentionnelle
+      - squat rural
+      - co-housing
+      - housing cooperative
+
+  - slug: paysanneries-agroecologie
+    titre: "Paysanneries & agroécologie politique"
+    chapo: >
+      Les mondes paysans comme acteurs politiques : agricultures vivrières,
+      savoirs paysans, agroécologie comme projet de société, souveraineté
+      alimentaire. Loin de l'agro-industrie et du folklore rural.
+    keywords:
+      - paysannerie
+      - paysan
+      - agroécologie
+      - agriculture vivrière
+      - souveraineté alimentaire
+      - agriculture paysanne
+      - peasant
+      - agroecology
+      - food sovereignty
+
+  - slug: land-back-autochtones
+    titre: "Land Back & souverainetés autochtones"
+    chapo: >
+      Restituer la terre aux peuples premiers : Land Back en Amérique du
+      Nord, terras indígenas, autonomies territoriales. La critique de la
+      propriété coloniale et les luttes pour la souveraineté.
+    keywords:
+      - land back
+      - autochtone
+      - peuples premiers
+      - indigène
+      - terra indígena
+      - first nations
+      - indigenous
+      - souveraineté autochtone
+      - droit coutumier
+
+  - slug: feminismes-de-la-terre
+    titre: "Féminismes de la terre"
+    chapo: >
+      Le foncier a un genre. Place des femmes dans les luttes agraires,
+      droits fonciers des femmes, écoféminisme rural, critique de la division
+      genrée du travail de la terre.
+    keywords:
+      - féminisme paysan
+      - féminisme agraire
+      - écoféminisme
+      - droits fonciers des femmes
+      - femmes et terre
+      - mujeres campesinas
+      - agrarian feminism
+
+  - slug: accaparements-resistances
+    titre: "Accaparements & résistances"
+    chapo: >
+      L'autre face du foncier : land grabbing, concessions, accaparements au
+      Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et
+      contre-cartographies.
+    keywords:
+      - accaparement
+      - land grab
+      - acaparamiento
+      - concession foncière
+      - enclosure
+      - extractivis
+      - mégaprojet
+
+  - slug: cooperatives-mutualisme
+    titre: "Coopératives & mutualisme foncier"
+    chapo: >
+      S'associer pour la terre : coopératives agricoles, GFA mutuels,
+      foncières solidaires, mutuelles. Une économie de la terre fondée sur
+      l'entraide plutôt que sur la rente.
+    keywords:
+      - coopérative agricole
+      - mutualisme foncier
+      - gfa
+      - foncière solidaire
+      - cooperativa
+      - mutuelle
+      - cooperative farming

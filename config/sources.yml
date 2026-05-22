@@ -137,31 +137,37 @@ sources:
   - label: "Infokiosques.net — nouveautés"
     url: "https://infokiosques.net/"
     type: html
+    orientation: militant
     min_interval_days: 3
 
   - label: "Infokiosques.net — Paysannerie & ruralité"
     url: "https://infokiosques.net/paysannerie_ruralite"
     type: html
+    orientation: militant
     min_interval_days: 14
 
   - label: "Infokiosques.net — Écologie radicale"
     url: "https://infokiosques.net/ecologie_radicale"
     type: html
+    orientation: militant
     min_interval_days: 14
 
   - label: "Infokiosques.net — Anticapitalisme"
     url: "https://infokiosques.net/anticapitalisme"
     type: html
+    orientation: militant
     min_interval_days: 14
 
   - label: "Infokiosques.net — Squat (rapport à l'habiter)"
     url: "https://infokiosques.net/squat"
     type: html
+    orientation: militant
     min_interval_days: 14
 
   - label: "Infokiosques.net — Anticolonialismes"
     url: "https://infokiosques.net/anticolonialismes"
     type: html
+    orientation: militant
     min_interval_days: 14
 
   # ═══ Heinrich-Böll-Stiftung (DE/EN, html direct, communs/écologie) ═════════
@@ -176,24 +182,28 @@ sources:
   - label: "Böll Stiftung — Agriculture & Food (EN topic)"
     url: "https://www.boell.de/en/topics/agriculture-food"
     type: deep_html
+    orientation: institutionnel
     max_pages: 15
     min_interval_days: 14
 
   - label: "Böll Stiftung — Agriculture Atlas (EN)"
     url: "https://www.boell.de/en/agriculture-atlas-2019"
     type: deep_html
+    orientation: institutionnel
     max_pages: 10
     min_interval_days: 30
 
   - label: "Böll Stiftung — Meat Atlas (EN)"
     url: "https://www.boell.de/en/meat-atlas"
     type: deep_html
+    orientation: institutionnel
     max_pages: 10
     min_interval_days: 30
 
   - label: "Böll Stiftung — publications DE (deep crawl)"
     url: "https://www.boell.de/de/publikationen"
     type: deep_html
+    orientation: institutionnel
     max_pages: 20
     min_interval_days: 14
 
@@ -201,12 +211,14 @@ sources:
   - label: "libcom.org — library"
     url: "https://libcom.org/library"
     type: deep_html
+    orientation: militant
     max_pages: 20
     min_interval_days: 14
 
   - label: "CrimethInc — library"
     url: "https://crimethinc.com/library"
     type: deep_html
+    orientation: militant
     max_pages: 20
     min_interval_days: 14
 
@@ -216,6 +228,7 @@ sources:
   - label: "CRAS (Centre de Recherches sur les Alternatives Sociales)"
     url: "https://cras31.info/"
     type: deep_html
+    orientation: militant
     max_pages: 25
     min_interval_days: 14
 
@@ -226,12 +239,14 @@ sources:
   - label: "The Anarchist Library — OPDS (new releases)"
     url: "https://theanarchistlibrary.org/opds/new"
     type: opds
+    orientation: militant
     min_interval_days: 14
 
   # ═══ API Archive.org — corpus anarchiste / paysanneries (multi-langues) ════
   - label: "Archive.org — Cuba (ES, réforme agraire & coopératives)"
     url: "https://archive.org/advancedsearch.php?q=cuba+AND+language%3A%22spa%22+AND+%28cooperativ*+OR+campesin*+OR+agrari*+OR+%22reforma+agraria%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30"
     type: archive_org
+    orientation: academique
     min_interval_days: 30
 
   # RECALIBRAGE : subject:anarchism trop large → bruit (CIA Reading Room etc).
@@ -239,11 +254,13 @@ sources:
   - label: "Archive.org — anarchism + land/peasant (strict)"
     url: "https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
     type: archive_org
+    orientation: academique
     min_interval_days: 14
 
   - label: "Archive.org — peasant movements"
     url: "https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
     type: archive_org
+    orientation: academique
     min_interval_days: 14
 
   # RECALIBRAGE : commons/enclosure trop large. On exige subjects pertinents,
@@ -251,40 +268,47 @@ sources:
   - label: "Archive.org — commons / enclosure / agrarian (strict)"
     url: "https://archive.org/advancedsearch.php?q=%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land+reform%22+OR+subject%3A%22enclosure%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
     type: archive_org
+    orientation: academique
     min_interval_days: 14
 
   # NOUVEAU : communs urbains / land trusts / housing commons
   - label: "Archive.org — community land trusts & housing commons"
     url: "https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30"
     type: archive_org
+    orientation: academique
     min_interval_days: 21
 
   # ═══ API HAL Science — académique francophone ═══════════════════════════════
   - label: "HAL — communs fonciers"
     url: "https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
+    orientation: academique
     min_interval_days: 14
 
   - label: "HAL — paysannerie / agriculture vivrière"
     url: "https://api.archives-ouvertes.fr/search/?q=paysannerie+OR+%22agriculture+vivri%C3%A8re%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
+    orientation: academique
     min_interval_days: 14
 
   - label: "HAL — propriété d'usage / fonds de dotation"
     url: "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
+    orientation: academique
     min_interval_days: 14
 
   # ═══ Flux RSS — sites amis, refresh quotidien possible ═════════════════════
   - label: "Reporterre — RSS principal"
     url: "https://reporterre.net/spip.php?page=backend"
     type: rss
+    orientation: journalistique
     max_items: 30
     min_interval_days: 1
 
   - label: "Lundi.am — RSS principal"
     url: "https://lundi.am/spip.php?page=backend"
     type: rss
+    orientation: journalistique
     max_items: 30
     min_interval_days: 1
 
@@ -294,12 +318,14 @@ sources:
   - label: "MST Brésil — RSS principal"
     url: "https://mst.org.br/feed/"
     type: rss
+    orientation: militant
     max_items: 30
     min_interval_days: 7
 
   - label: "MST Brésil — biblioteca questão agraria"
     url: "https://mst.org.br/biblioteca-da-questao-agraria/"
     type: deep_html
+    orientation: militant
     max_pages: 15
     min_interval_days: 14
 
@@ -307,6 +333,7 @@ sources:
   - label: "International Land Coalition — latest"
     url: "https://www.landcoalition.org/en/latest/"
     type: deep_html
+    orientation: institutionnel
     max_pages: 20
     min_interval_days: 7
 
@@ -314,6 +341,7 @@ sources:
   - label: "TNI — Land & Food topic"
     url: "https://www.tni.org/en/topic/land-food"
     type: deep_html
+    orientation: institutionnel
     max_pages: 10
     min_interval_days: 14
 
@@ -321,6 +349,7 @@ sources:
   - label: "Cultural Survival — RSS"
     url: "https://www.culturalsurvival.org/rss.xml"
     type: rss
+    orientation: militant
     max_items: 30
     min_interval_days: 7
 
@@ -328,6 +357,7 @@ sources:
   - label: "GRAIN — entries RSS"
     url: "https://grain.org/home/entries.rss"
     type: rss
+    orientation: militant
     max_items: 50
     min_interval_days: 7
 
@@ -335,6 +365,7 @@ sources:
   - label: "JSTOR Daily — topic land"
     url: "https://daily.jstor.org/topic/land/"
     type: deep_html
+    orientation: journalistique
     max_pages: 10
     min_interval_days: 21
 
@@ -342,6 +373,7 @@ sources:
   - label: "ENDA Tiers Monde — RSS"
     url: "https://endatiersmonde.org/feed/"
     type: rss
+    orientation: institutionnel
     max_items: 30
     min_interval_days: 14
 
@@ -351,6 +383,7 @@ sources:
   - label: "Troisièmes Voix — éditions"
     url: "https://www.troisiemesvoix.org/fr"
     type: deep_html
+    orientation: militant
     max_pages: 15
     min_interval_days: 14
 
@@ -367,12 +400,14 @@ sources:
   - label: "CNT-AIT España"
     url: "https://www.cnt.es/feed/"
     type: rss
+    orientation: militant
     max_items: 30
     min_interval_days: 14
 
   - label: "Portal OACA — RSS (anarcosindicalisme ES)"
     url: "https://portaloaca.com/feed/"
     type: rss
+    orientation: militant
     max_items: 30
     min_interval_days: 14
 
@@ -382,18 +417,21 @@ sources:
   - label: "Portal OACA — Libros anarquistas (catégorie)"
     url: "https://www.portaloaca.com/categoria/pensamientolibertario/libros-anarquistas/"
     type: deep_html
+    orientation: militant
     max_pages: 15
     min_interval_days: 21
 
   - label: "CGT España — RSS"
     url: "https://cgt.org.es/feed/"
     type: rss
+    orientation: militant
     max_items: 30
     min_interval_days: 14
 
   - label: "Sin Permiso (revue radicale ES)"
     url: "https://www.sinpermiso.info/rss.xml"
     type: rss
+    orientation: journalistique
     max_items: 30
     min_interval_days: 14
 
@@ -401,24 +439,28 @@ sources:
   - label: "Enlace Zapatista (EZLN)"
     url: "https://enlacezapatista.ezln.org.mx/feed/"
     type: rss
+    orientation: militant
     max_items: 30
     min_interval_days: 14
 
   - label: "La Vía Campesina (ES)"
     url: "https://viacampesina.org/es/feed/"
     type: rss
+    orientation: militant
     max_items: 30
     min_interval_days: 14
 
   - label: "CLOC — Vía Campesina LatAm"
     url: "https://www.cloc-viacampesina.net/feed/"
     type: rss
+    orientation: militant
     max_items: 30
     min_interval_days: 14
 
   - label: "FIAN International (droit à l'alimentation, ES)"
     url: "https://www.fian.org/es/feed/"
     type: rss
+    orientation: institutionnel
     max_items: 30
     min_interval_days: 14
 
@@ -429,18 +471,21 @@ sources:
   - label: "CLACSO Libros (acceso abierto)"
     url: "https://www.clacso.org/libros/"
     type: deep_html
+    orientation: academique
     max_pages: 15
     min_interval_days: 21
 
   - label: "CLACSO — Libros en coedición"
     url: "https://www.clacso.org/libros-de-clacso-en-coedicion/"
     type: deep_html
+    orientation: academique
     max_pages: 15
     min_interval_days: 21
 
   - label: "CLACSO — Publicaciones générales"
     url: "https://www.clacso.org/publicaciones/"
     type: deep_html
+    orientation: academique
     max_pages: 15
     min_interval_days: 21
 
@@ -449,24 +494,28 @@ sources:
   - label: "Tierra.org — Agricultura y alimentación"
     url: "https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/"
     type: deep_html
+    orientation: militant
     max_pages: 15
     min_interval_days: 21
 
   - label: "Tierra.org — Biodiversidad"
     url: "https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/"
     type: deep_html
+    orientation: militant
     max_pages: 15
     min_interval_days: 21
 
   - label: "CEIPAZ (Cultura de Paz) — RSS"
     url: "https://www.ceipaz.org/feed/"
     type: rss
+    orientation: institutionnel
     max_items: 30
     min_interval_days: 21
 
   - label: "CELAG (Geopolítica LatAm)"
     url: "https://www.celag.org/feed/"
     type: rss
+    orientation: journalistique
     max_items: 30
     min_interval_days: 21
 

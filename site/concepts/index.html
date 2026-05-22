@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/components.css">
 <link rel="manifest" href="../manifest.json">
 </head>
 <body>
@@ -31,10 +32,13 @@
     <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
       <a href="../index.html">Accueil</a>
       <a href="../fiches/index.html">Catalogue</a>
+      <a href="../dossiers.html">Dossiers</a>
+      <a href="../outils.html">Outils</a>
+      <a href="../actu.html">Actu</a>
       <a href="../auteurs.html">Auteurs</a>
       <a href="../chronologie.html">Chronologie</a>
-      <a href="../dossiers.html">Dossiers</a>
       <a href="index.html">Concepts</a>
+      <a href="../etat-corpus.html">État du corpus</a>
       <a href="../apropos.html">Méthodologie</a>
     </nav>
     <div class="header-tools">
@@ -84,31 +88,44 @@
       <h4>BIBLIO</h4>
       <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
       <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+      <div class="newsletter-foot">
+        <p><strong>La lettre de la veille</strong> — un digest régulier, sans tracker.</p>
+        <form class="newsletter-form" aria-label="Inscription à la newsletter">
+          <input type="email" name="email" placeholder="votre@email.fr" aria-label="Votre adresse e-mail" required>
+          <button type="submit" class="btn btn-sm">S'inscrire</button>
+        </form>
+      </div>
     </div>
     <div>
       <h4>Naviguer</h4>
       <ul>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="../fiches/index.html">Catalogue</a></li>
+        <li><a href="../dossiers.html">Dossiers</a></li>
+        <li><a href="../outils.html">Boîte à outils</a></li>
+        <li><a href="../actu.html">Actu — cette semaine</a></li>
+        <li><a href="../une.html">Document de la semaine</a></li>
         <li><a href="../auteurs.html">Auteurs</a></li>
         <li><a href="../chronologie.html">Chronologie</a></li>
-        <li><a href="../dossiers.html">Dossiers</a></li>
         <li><a href="index.html">Concepts</a></li>
+        <li><a href="../etat-corpus.html">État du corpus</a></li>
         <li><a href="../apropos.html">Méthodologie</a></li>
-        <li><a href="../feed.xml">Flux RSS</a></li>
       </ul>
     </div>
     <div>
-      <h4>Code &amp; licence</h4>
+      <h4>Suivre &amp; réutiliser</h4>
       <ul>
+        <li><a href="../feed.xml">Flux RSS — nouvelles fiches</a></li>
+        <li><a href="../rss.xml">Flux RSS — toutes nouveautés</a></li>
+        <li><a href="../scoops.xml">Flux RSS — scoops (score ≥ 9)</a></li>
         <li><a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">Code source</a></li>
-        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a></li>
-        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a> · <a href="https://wiki.p2pfoundation.net/Peer_Production_License" rel="noopener">PPL</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact &amp; déréférencement</a></li>
       </ul>
     </div>
     <div class="colophon">
       <span>© 2026 BIBLIO · <code>biblio.actitude.org</code></span>
-      <span>HTML, CSS, JavaScript. Sans tracker.</span>
+      <span>Construit en HTML, CSS et JavaScript. Sans tracker.</span>
     </div>
   </div>
 </footer>
@@ -116,6 +133,7 @@
 <script src="../assets/js/router.js"></script>
 <script src="../assets/js/search.js"></script>
 <script src="../assets/js/app.js"></script>
+<script src="../assets/js/home.js"></script>
 <script>
 /* ===== Pages-concepts — routing par #hash + rendu dynamique =====
    Une seule page « concepts/index.html » qui rend chaque concept selon
@@ -135,8 +153,11 @@ window.pageInit = function (basePath) {
     routeFromHash(basePath);
   }).catch(err => {
     console.error('Erreur chargement concepts:', err);
-    document.getElementById('concept-root').innerHTML =
-      '<p style="text-align:center;color:var(--text-faint);font-style:italic;padding:60px 0;">Impossible de charger les concepts.</p>';
+    visitorError('#concept-root', {
+      title: 'Les concepts n’ont pas pu se charger',
+      message: 'La bibliothèque est momentanément indisponible. Vérifiez votre connexion, puis réessayez.',
+      onRetry: () => { resetCatalogCache(); window.pageInit(basePath); },
+    });
   });
   // Re-route à chaque changement de hash (navigation interne)
   window.addEventListener('hashchange', () => routeFromHash(basePath));
@@ -212,7 +233,7 @@ function matchDocsForConcept(concept) {
       if (corpus.indexOf(t) !== -1) hits++;
     }
     if (hits > 0) {
-      out.push({ doc: d, hits, score: d.latest_score || 0 });
+      out.push({ doc: d, hits, score: docScore(d) });
     }
   }
   // Tri : nb de hits puis score décroissant
@@ -277,9 +298,9 @@ function renderConcept(concept, basePath) {
           <ul class="concept-doclist">
             ${allDocs.slice(top3.length).map(d => {
               const url = BiblioRouter.ficheUrl(d.id, basePath);
-              const s = d.latest_score || 0;
+              const s = docScore(d);
               return `<li><a href="${escape(url)}">${escape(docTitle(d))}</a>
-                <span class="score-pill ${scoreClass(s)}">${s}/10</span>
+                <span class="score-pill ${scoreClass(s)}" title="${escape(scoreLabel(s))}">${s}/10</span>
                 ${d.source ? ` <span class="doc-source">${escape(d.source)}</span>` : ''}</li>`;
             }).join('')}
           </ul>
@@ -296,6 +317,9 @@ function renderConcept(concept, basePath) {
                 ${c.page ? `p. ${escape(c.page)}` : ''}
                 ${c.source_title ? ` — <a href="${escape(BiblioRouter.ficheUrl(c.doc_id, basePath))}">${escape(c.source_title)}</a>` : ''}
               </span>
+              ${c.verified === false
+                ? '<span class="biblio-cite-unverified">⚠ Citation non retrouvée dans le PDF — à vérifier sur la source.</span>'
+                : (c.verified === true ? '<span class="biblio-cite-verified">✓ Citation vérifiée dans le document.</span>' : '')}
             </blockquote>
           `).join('')}
         </section>
@@ -320,7 +344,7 @@ function conceptCardHTML(doc, basePath, big = false) {
   const cover = coverPath(doc, basePath);
   const title = docTitle(doc);
   const teaser = docTeaser(doc) || docSummary(doc).slice(0, 160);
-  const score = doc.latest_score || 0;
+  const score = docScore(doc);
   return `
     <a href="${escape(url)}" class="book-card${big ? ' featured-mini' : ''} fade-in" aria-label="Lire la fiche : ${escape(title)}">
       <div class="book-cover" data-initial="${escape(title.slice(0,1).toUpperCase())}">
@@ -330,6 +354,7 @@ function conceptCardHTML(doc, basePath, big = false) {
         <h4 class="book-title">${escape(title)}</h4>
         ${teaser ? `<div class="book-meta" style="font-style:italic;">${escape(teaser.slice(0, 110))}${teaser.length > 110 ? '…' : ''}</div>` : ''}
         <span class="score-pill ${scoreClass(score)}">${score}/10</span>
+        <span class="biblio-score-text">${escape(scoreLabel(score))}</span>
       </div>
     </a>
   `;
@@ -349,6 +374,7 @@ function collectCitations(docs, max = 6) {
         page: c.page || '',
         doc_id: d.id,
         source_title: docTitle(d),
+        verified: c.verified,
       });
       if (out.length >= max) return out;
     }

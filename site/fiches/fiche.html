@@ -18,6 +18,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/components.css">
 <link rel="manifest" href="../manifest.json">
 </head>
 <body>
@@ -32,10 +33,13 @@
     <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
       <a href="../index.html">Accueil</a>
       <a href="index.html">Catalogue</a>
+      <a href="../dossiers.html">Dossiers</a>
+      <a href="../outils.html">Outils</a>
+      <a href="../actu.html">Actu</a>
       <a href="../auteurs.html">Auteurs</a>
       <a href="../chronologie.html">Chronologie</a>
-      <a href="../dossiers.html">Dossiers</a>
       <a href="../concepts/index.html">Concepts</a>
+      <a href="../etat-corpus.html">État du corpus</a>
       <a href="../apropos.html">Méthodologie</a>
     </nav>
     <div class="header-tools">
@@ -65,7 +69,19 @@
     </nav>
 
     <article class="fiche" id="fiche-root">
-      <p style="grid-column:1/-1;color:var(--text-faint);text-align:center;padding:60px 0;font-style:italic;">
+      <!-- A5 : fallback lisible si JS échoue — pas de meta-refresh.
+           Remplacé par le rendu dynamique dès que le catalogue est chargé. -->
+      <noscript>
+        <div style="grid-column:1/-1;padding:40px 0;">
+          <p style="font-family:var(--font-serif);font-size:18px;">
+            Cette fiche s’affiche avec l’aide de JavaScript, désactivé sur votre navigateur.
+          </p>
+          <p>Vous pouvez parcourir l’ensemble des fiches depuis
+            <a href="index.html">le catalogue</a>, ou retourner à
+            <a href="../index.html">l’accueil de la bibliothèque</a>.</p>
+        </div>
+      </noscript>
+      <p id="fiche-loading" style="grid-column:1/-1;color:var(--text-faint);text-align:center;padding:60px 0;font-style:italic;">
         Chargement de la fiche…
       </p>
     </article>
@@ -78,31 +94,44 @@
       <h4>BIBLIO</h4>
       <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
       <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+      <div class="newsletter-foot">
+        <p><strong>La lettre de la veille</strong> — un digest régulier, sans tracker.</p>
+        <form class="newsletter-form" aria-label="Inscription à la newsletter">
+          <input type="email" name="email" placeholder="votre@email.fr" aria-label="Votre adresse e-mail" required>
+          <button type="submit" class="btn btn-sm">S'inscrire</button>
+        </form>
+      </div>
     </div>
     <div>
       <h4>Naviguer</h4>
       <ul>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="index.html">Catalogue</a></li>
+        <li><a href="../dossiers.html">Dossiers</a></li>
+        <li><a href="../outils.html">Boîte à outils</a></li>
+        <li><a href="../actu.html">Actu — cette semaine</a></li>
+        <li><a href="../une.html">Document de la semaine</a></li>
         <li><a href="../auteurs.html">Auteurs</a></li>
         <li><a href="../chronologie.html">Chronologie</a></li>
-        <li><a href="../dossiers.html">Dossiers</a></li>
         <li><a href="../concepts/index.html">Concepts</a></li>
+        <li><a href="../etat-corpus.html">État du corpus</a></li>
         <li><a href="../apropos.html">Méthodologie</a></li>
-        <li><a href="../feed.xml">Flux RSS</a></li>
       </ul>
     </div>
     <div>
-      <h4>Code &amp; licence</h4>
+      <h4>Suivre &amp; réutiliser</h4>
       <ul>
+        <li><a href="../feed.xml">Flux RSS — nouvelles fiches</a></li>
+        <li><a href="../rss.xml">Flux RSS — toutes nouveautés</a></li>
+        <li><a href="../scoops.xml">Flux RSS — scoops (score ≥ 9)</a></li>
         <li><a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">Code source</a></li>
-        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a></li>
-        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a> · <a href="https://wiki.p2pfoundation.net/Peer_Production_License" rel="noopener">PPL</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact &amp; déréférencement</a></li>
       </ul>
     </div>
     <div class="colophon">
       <span>© 2026 BIBLIO · <code>biblio.actitude.org</code></span>
-      <span>HTML, CSS, JavaScript. Sans tracker.</span>
+      <span>Construit en HTML, CSS et JavaScript. Sans tracker.</span>
     </div>
   </div>
 </footer>
@@ -110,15 +139,38 @@
 <script src="../assets/js/router.js"></script>
 <script src="../assets/js/search.js"></script>
 <script src="../assets/js/app.js"></script>
+<script src="../assets/js/home.js"></script>
 <script>
 window.pageInit = function (basePath) {
   const id = BiblioRouter.getParam('id');
-  if (!id) { showError("Identifiant manquant dans l'URL."); return; }
+  if (!id) {
+    showError({
+      title: 'Cette fiche est introuvable',
+      message: 'Le lien semble incomplet. Parcourez le catalogue pour retrouver le document.',
+    });
+    return;
+  }
 
-  loadCatalog(basePath).then(({ docs }) => {
+  loadCatalog(basePath).then(({ docs, _error }) => {
+    if (_error) {
+      // A5 : message orienté visiteur + possibilité de réessayer
+      showError({
+        title: 'La fiche n’a pas pu se charger',
+        message: 'La bibliothèque est momentanément indisponible. Vérifiez votre connexion, puis réessayez.',
+        onRetry: () => { resetCatalogCache(); window.pageInit(basePath); },
+      });
+      return;
+    }
     const doc = docs.find(d => d.id === id);
-    if (!doc) { showError(`Aucune fiche pour l'identifiant ${id}.`); return; }
-
+    if (!doc) {
+      showError({
+        title: 'Cette fiche est introuvable',
+        message: 'Aucun document ne correspond à cette adresse. Il a peut-être été retiré du corpus.',
+      });
+      return;
+    }
+    // window-level pour permettre le rendu des « autres versions » (B12)
+    window._allDocs = docs;
     // Si bulle disponible : la charger d'abord
     const bullePromise = doc.bulle ? loadBulle(doc.id, basePath) : Promise.resolve(null);
     bullePromise.then(bulle => {
@@ -129,12 +181,20 @@ window.pageInit = function (basePath) {
   });
 };
 
-function showError(msg) {
-  document.getElementById('fiche-root').innerHTML =
-    `<div style="grid-column:1/-1;text-align:center;padding:60px 0;">
-       <p style="color:var(--text-faint);font-style:italic;">${escape(msg)}</p>
-       <p><a href="index.html" class="btn">Retour au catalogue</a></p>
-     </div>`;
+function showError(opts) {
+  visitorError('#fiche-root', {
+    title: opts.title,
+    message: opts.message,
+    onRetry: opts.onRetry,
+  });
+  // Ajoute un retour catalogue sous le message d'erreur
+  const root = document.getElementById('fiche-root');
+  const box = root.querySelector('.biblio-error');
+  if (box) {
+    const p = document.createElement('p');
+    p.innerHTML = '<a href="index.html" class="btn btn-sm">Retour au catalogue</a>';
+    box.appendChild(p);
+  }
 }
 
 function updateMetaTags(doc, basePath) {
@@ -239,19 +299,28 @@ function renderFiche(doc, basePath) {
   // Auteur : explicit puis inféré
   const author = docAuthor(doc) || inferAuthor(doc);
   const authorSlug = author ? slugifyAuthor(author) : '';
-  const score = doc.latest_score || 0;
+  const score = docScore(doc);
   const run = docLatestRun(doc);
   const summary = docSummary(doc);
-  const citations = (doc.bulle_data && doc.bulle_data.citations_phares)
+  const bulle = doc.bulle_data || {};
+  const citations = (bulle.citations_phares)
                  || (doc.enrichment && doc.enrichment.citations)
                  || [];
-  const keywords = (doc.bulle_data && doc.bulle_data.categorisation)
+  const keywords = (bulle.categorisation)
                 || (doc.enrichment && doc.enrichment.matched_keywords)
                 || [];
-  const subtitle = doc.bulle_data && doc.bulle_data.teaser ? doc.bulle_data.teaser : '';
+  const subtitle = bulle.teaser || '';
   const hasBulle = !!doc.bulle_data;
   const shareUrl = window.location.href;
-  // Lien auteur : pointe vers auteurs.html#<slug> (l'ancre cible le bloc auteur)
+  // B4 : champ « en clair » — texte en langue simple
+  const enClair = bulle.en_clair || '';
+  // C1 : type de document, B1 : orientation de la source
+  const dt = docType(doc);
+  const orient = docOrientation(doc);
+  // B11 : date de publication distincte de la date de veille
+  const pubYear = docYear(doc);
+  const pubDate = docDate(doc);
+  // Lien auteur : pointe vers auteurs.html#<slug>
   const authorHTML = author
     ? `<a href="../auteurs.html#${escape(authorSlug)}">${escape(author)}</a>`
     : '';
@@ -263,9 +332,10 @@ function renderFiche(doc, basePath) {
       </div>
       <div class="fiche-actions">
         ${doc.url ? `<a href="${escape(doc.url)}" class="btn btn-primary" target="_blank" rel="noopener">Lire la source</a>` : ''}
-        <button type="button" class="btn" id="btn-share">Copier le lien</button>
+        ${doc.archive_url ? `<a href="${escape(doc.archive_url)}" class="btn btn-sm" target="_blank" rel="noopener" title="Copie pérenne sur Internet Archive">Copie d’archive</a>` : ''}
         <a href="index.html" class="btn">Retour au catalogue</a>
       </div>
+      ${shareButtonsHTML(doc, title)}
     </aside>
 
     <section class="fiche-body fade-in">
@@ -273,13 +343,30 @@ function renderFiche(doc, basePath) {
       <h1 class="fiche-title">${escape(title)}</h1>
       ${subtitle ? `<p class="fiche-subtitle">${escape(subtitle)}</p>` : ''}
 
+      ${enClair ? `
+        <div class="biblio-enclair">
+          <span class="biblio-enclair-label">En clair</span>
+          <p>${escape(enClair)}</p>
+        </div>
+      ` : ''}
+
       <dl class="fiche-meta-grid">
-        ${author ? `<div><dt>Auteur</dt><dd>${authorHTML}</dd></div>` : ''}
-        <div><dt>Source</dt><dd>${escape(doc.source || '—')}</dd></div>
+        <div class="biblio-meta-primary"><dt>Score</dt><dd>
+          <span class="score-pill ${scoreClass(score)}">${score}/10</span>
+          <span class="biblio-score-text">${escape(scoreLabel(score))}</span>
+        </dd></div>
+        ${author ? `<div class="biblio-meta-primary"><dt>Auteur</dt><dd>${authorHTML}</dd></div>` : ''}
+        <div class="biblio-meta-primary"><dt>${pubDate || pubYear ? 'Date de publication' : 'Date'}</dt><dd>${
+          pubDate ? escape(formatDate(pubDate) || pubDate)
+                  : (pubYear ? escape(String(pubYear)) : '—')
+        }</dd></div>
+        <div><dt>Source</dt><dd>${escape(doc.source || '—')}${
+          orient ? ` <span class="biblio-orientation-badge o-${escape(orient)}">${escape(orientationLabel(orient))}</span>` : ''
+        }</dd></div>
+        ${dt ? `<div><dt>Type</dt><dd>${escape(docTypeLabel(dt))}</dd></div>` : ''}
         <div><dt>Format</dt><dd>${escape((doc.format || '').toUpperCase())}${doc.meta && doc.meta.page_count ? ' · ' + doc.meta.page_count + ' p.' : ''}</dd></div>
-        <div><dt>Score</dt><dd><span class="score-pill ${scoreClass(score)}">${score}/10</span></dd></div>
-        <div><dt>Dernière veille</dt><dd>${escape(formatDate(doc._latestRunDate))}</dd></div>
-        <div><dt>Identifiant</dt><dd><code>${escape(doc.id)}</code></dd></div>
+        ${doc.lang ? `<div><dt>Langue</dt><dd>${escape(String(doc.lang).toUpperCase())}</dd></div>` : ''}
+        <div><dt>Repérée le</dt><dd>${escape(formatDate(doc.collected_date || doc._latestRunDate))}</dd></div>
       </dl>
 
       ${run && run.raison ? `
@@ -291,22 +378,16 @@ function renderFiche(doc, basePath) {
 
       ${summary ? `
         <section class="fiche-section">
-          <h2>${hasBulle ? 'Abstract éditorial' : 'Synopsis'}</h2>
+          <h2>${hasBulle ? 'Abstract éditorial' : 'Synopsis'}
+            <span class="biblio-auto-badge" title="Texte produit automatiquement à partir du document">résumé généré automatiquement</span>
+          </h2>
           <div class="prose">${summary.split(/\n\n+/).map(p => `<p>${escape(p)}</p>`).join('')}</div>
         </section>
       ` : ''}
 
-      ${citations.length ? `
-        <section class="fiche-section">
-          <h2>Citations</h2>
-          ${citations.map(c => `
-            <blockquote class="citation-block">
-              ${escape(c.quote || '')}
-              <span class="quote-meta">${c.page ? `p. ${escape(c.page)}` : ''}${c.why_relevant ? ' — ' + escape(c.why_relevant) : ''}</span>
-            </blockquote>
-          `).join('')}
-        </section>
-      ` : ''}
+      ${citationsSectionHTML(citations)}
+
+      ${deeperSectionHTML(bulle)}
 
       ${keywords.length ? `
         <section class="fiche-section">
@@ -316,6 +397,10 @@ function renderFiche(doc, basePath) {
           ).join('')}</div>
         </section>
       ` : ''}
+
+      ${versionsSectionHTML(doc, basePath)}
+
+      ${citeSectionHTML(doc, { title, author, pubYear })}
 
       ${doc.runs && doc.runs.length > 1 ? `
         <section class="fiche-section">
@@ -337,17 +422,177 @@ function renderFiche(doc, basePath) {
           Cette fiche est un point de départ. Le scoring est automatique : il peut errer.
           Le texte original reste la référence. <a href="../apropos.html">Méthodologie complète →</a>
         </p>
+        <!-- C1 : identifiant technique relégué en pied de fiche -->
+        <p class="biblio-techfoot">
+          Identifiant technique : <code>${escape(doc.id)}</code>
+          ${doc.link_status ? ` · Lien source : ${escape(linkStatusLabel(doc.link_status))}` : ''}
+          ${doc.link_checked ? ` (vérifié le ${escape(formatDate(doc.link_checked))})` : ''}
+          ${doc.doi ? ` · DOI : <code>${escape(doc.doi)}</code>` : ''}
+          ${doc.isbn ? ` · ISBN : <code>${escape(doc.isbn)}</code>` : ''}
+          ${doc.hal_id ? ` · HAL : <code>${escape(doc.hal_id)}</code>` : ''}
+        </p>
       </section>
     </section>
   `;
 
-  // Bouton de partage
-  const btn = document.getElementById('btn-share');
-  if (btn) {
-    btn.addEventListener('click', () => {
-      copyToClipboard(shareUrl).then(() => toast('Lien copié dans le presse-papier'));
+  // B3 : partage natif (Web Share API) si disponible
+  const nativeBtn = document.getElementById('btn-share-native');
+  if (nativeBtn) {
+    if (navigator.share) {
+      nativeBtn.addEventListener('click', () => {
+        navigator.share({ title: title, url: shareUrl }).catch(() => {});
+      });
+    } else {
+      // Repli : copie du lien
+      nativeBtn.textContent = 'Copier le lien';
+      nativeBtn.addEventListener('click', () => {
+        copyToClipboard(shareUrl).then(() => toast('Lien copié dans le presse-papier'));
+      });
+    }
+  }
+  // B1 : bouton copier la citation
+  const citeBtn = document.getElementById('btn-copy-cite');
+  if (citeBtn) {
+    citeBtn.addEventListener('click', () => {
+      const txt = citeBtn.getAttribute('data-cite') || '';
+      copyToClipboard(txt).then(() => toast('Référence copiée dans le presse-papier'));
     });
   }
+}
+
+/* Libellé lisible d'un statut de lien (C1 / S3). */
+function linkStatusLabel(s) {
+  const map = { ok: 'actif', alive: 'actif', broken: 'cassé', dead: 'cassé',
+                redirect: 'redirigé', timeout: 'injoignable', unknown: 'non vérifié' };
+  return map[String(s).toLowerCase()] || String(s);
+}
+
+/* B3 : boutons de partage — Web Share + Mastodon / Bluesky / LinkedIn. */
+function shareButtonsHTML(doc, title) {
+  const url = window.location.href;
+  const text = (title || 'BIBLIO') + ' — via BIBLIO';
+  const u = encodeURIComponent(url);
+  const t = encodeURIComponent(text);
+  // Mastodon : on passe par le sélecteur d'instance de toot.io
+  const masto = `https://tootpick.org/#text=${t}%20${u}`;
+  const bsky = `https://bsky.app/intent/compose?text=${t}%20${u}`;
+  const linkedin = `https://www.linkedin.com/sharing/share-offsite/?url=${u}`;
+  return `
+    <div class="biblio-share" aria-label="Partager cette fiche">
+      <button type="button" class="biblio-share-btn" id="btn-share-native">Partager</button>
+      <a class="biblio-share-btn" href="${escape(masto)}" target="_blank" rel="noopener">Mastodon</a>
+      <a class="biblio-share-btn" href="${escape(bsky)}" target="_blank" rel="noopener">Bluesky</a>
+      <a class="biblio-share-btn" href="${escape(linkedin)}" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  `;
+}
+
+/* Section citations — distingue les citations vérifiées / non retrouvées. */
+function citationsSectionHTML(citations) {
+  if (!citations || !citations.length) return '';
+  return `
+    <section class="fiche-section">
+      <h2>Citations</h2>
+      ${citations.map(c => {
+        const verifiedKnown = (c.verified === true || c.verified === false);
+        let mention = '';
+        if (c.verified === false) {
+          mention = '<span class="biblio-cite-unverified">⚠ Citation non retrouvée dans le PDF — à vérifier sur la source.</span>';
+        } else if (c.verified === true) {
+          mention = '<span class="biblio-cite-verified">✓ Citation vérifiée dans le document.</span>';
+        }
+        return `
+          <blockquote class="citation-block">
+            ${escape(c.quote || '')}
+            <span class="quote-meta">${c.page ? `p. ${escape(c.page)}` : ''}${c.why_relevant ? ' — ' + escape(c.why_relevant) : ''}</span>
+            ${mention}
+          </blockquote>
+        `;
+      }).join('')}
+    </section>
+  `;
+}
+
+/* B9 : encart « Pour aller plus loin » — acteurs / controverse / angle. */
+function deeperSectionHTML(bulle) {
+  if (!bulle) return '';
+  const acteurs = Array.isArray(bulle.acteurs) ? bulle.acteurs.filter(Boolean) : [];
+  const controverse = bulle.controverse || '';
+  const angle = bulle.angle_journalistique || '';
+  if (!acteurs.length && !controverse && !angle) return '';
+  return `
+    <section class="biblio-deeper">
+      <h2>Pour aller plus loin</h2>
+      ${acteurs.length ? `
+        <div class="biblio-deeper-item">
+          <span class="biblio-deeper-label">Acteurs en présence</span>
+          <ul class="biblio-actor-list">${acteurs.map(a => `<li>${escape(a)}</li>`).join('')}</ul>
+        </div>
+      ` : ''}
+      ${controverse ? `
+        <div class="biblio-deeper-item">
+          <span class="biblio-deeper-label">Controverse</span>
+          <p class="prose">${escape(controverse)}</p>
+        </div>
+      ` : ''}
+      ${angle ? `
+        <div class="biblio-deeper-item">
+          <span class="biblio-deeper-label">Angle journalistique</span>
+          <p class="prose">${escape(angle)}</p>
+        </div>
+      ` : ''}
+    </section>
+  `;
+}
+
+/* B12 : bloc « Autres versions / traductions » à partir de doc.versions. */
+function versionsSectionHTML(doc, basePath) {
+  const ids = Array.isArray(doc.versions) ? doc.versions.filter(v => v && v !== doc.id) : [];
+  if (!ids.length || !window._allDocs) return '';
+  const others = ids
+    .map(id => window._allDocs.find(d => d.id === id))
+    .filter(Boolean);
+  if (!others.length) return '';
+  return `
+    <section class="fiche-section">
+      <h2>Autres versions / traductions</h2>
+      <ul class="biblio-versions">
+        ${others.map(d => {
+          const url = BiblioRouter.ficheUrl(d.id, basePath);
+          const s = docScore(d);
+          return `<li>
+            <a href="${escape(url)}">${escape(docTitle(d))}</a>
+            ${d.lang ? ` <span style="color:var(--text-faint);font-size:12px;">[${escape(String(d.lang).toUpperCase())}]</span>` : ''}
+            <span class="score-pill ${scoreClass(s)}" style="margin-left:6px;">${s}/10</span>
+          </li>`;
+        }).join('')}
+      </ul>
+    </section>
+  `;
+}
+
+/* B1 : encart « Citer ce document » prêt-à-copier. */
+function citeSectionHTML(doc, ctx) {
+  const editeur = doc.editeur || doc.source || '';
+  const year = ctx.pubYear ? String(ctx.pubYear) : '';
+  const url = doc.url || window.location.href;
+  // Référence textuelle simple (style « auteur, titre, éditeur, année, URL »)
+  const parts = [];
+  if (ctx.author) parts.push(ctx.author + '.');
+  parts.push('« ' + ctx.title + ' ».');
+  if (editeur) parts.push(editeur + ',');
+  if (year) parts.push(year + '.');
+  parts.push(url);
+  const citation = parts.join(' ');
+  return `
+    <div class="biblio-cite">
+      <div class="biblio-cite-head">
+        <h3>Citer ce document</h3>
+        <button type="button" class="btn btn-sm" id="btn-copy-cite" data-cite="${escape(citation)}">Copier</button>
+      </div>
+      <div class="biblio-cite-body">${escape(citation)}</div>
+    </div>
+  `;
 }
 </script>
 

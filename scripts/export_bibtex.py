@@ -71,6 +71,29 @@ def _extract_note(doc: dict, max_chars: int = 400) -> str:
     return str(enr.get("summary", ""))[:max_chars]
 
 
+def _identifiers(doc: dict) -> dict:
+    """Identifiants pérennes du doc (item B8) : doi, isbn, hal_id.
+
+    Lus directement depuis le catalog (champs peuplés à la collecte par
+    doc_metadata). Migration douce : champs absents → chaînes vides.
+    """
+    return {
+        "doi": str(doc.get("doi", "") or "").strip(),
+        "isbn": str(doc.get("isbn", "") or "").strip(),
+        "hal_id": str(doc.get("hal_id", "") or "").strip(),
+    }
+
+
+def _doc_date(doc: dict) -> str:
+    """Date de publication (doc_date) prioritaire sur l'année devinée."""
+    dd = str(doc.get("doc_date", "") or "")
+    if dd:
+        m = _YEAR_RE.search(dd)
+        if m:
+            return m.group(0)
+    return ""
+
+
 def _keywords(doc: dict) -> list[str]:
     """Mots-clés depuis enrichment.matched_keywords ou bulle.categorisation."""
     enr = doc.get("enrichment", {}) or {}
@@ -109,10 +132,12 @@ def export_bibtex(catalog_path: Path, out_path: Path, min_score: int = 7) -> int
     for doc_id, doc in _iter_eligible(catalog_path, min_score):
         title = _bib_escape(_extract_title(doc))
         author = _bib_escape(_extract_author(doc))
-        year = _extract_year(doc)
+        # B8 — date de publication fiable prioritaire
+        year = _doc_date(doc) or _extract_year(doc)
         url = doc.get("url", "")
         note = _bib_escape(_extract_note(doc))
         kws = ", ".join(_keywords(doc))
+        ids = _identifiers(doc)
         fields = [f"  title = {{{title}}}"]
         if author:
             fields.append(f"  author = {{{author}}}")
@@ -120,8 +145,15 @@ def export_bibtex(catalog_path: Path, out_path: Path, min_score: int = 7) -> int
             fields.append(f"  year = {{{year}}}")
         if url:
             fields.append(f"  url = {{{url}}}")
+        # B8 — identifiants pérennes
+        if ids["doi"]:
+            fields.append(f"  doi = {{{ids['doi']}}}")
+        if ids["isbn"]:
+            fields.append(f"  isbn = {{{ids['isbn']}}}")
+        if ids["hal_id"]:
+            fields.append(f"  note = {{HAL: {ids['hal_id']}}}")
         if note:
-            fields.append(f"  note = {{{note}}}")
+            fields.append(f"  abstract = {{{note}}}")
         if kws:
             fields.append(f"  keywords = {{{kws}}}")
         entries.append("@misc{" + doc_id + ",\n" + ",\n".join(fields) + "\n}")
@@ -139,12 +171,19 @@ def export_ris(catalog_path: Path, out_path: Path, min_score: int = 7) -> int:
         lines = ["TY  - GEN", f"TI  - {_extract_title(doc)}"]
         if a := _extract_author(doc):
             lines.append(f"AU  - {a}")
-        if y := _extract_year(doc):
+        if y := (_doc_date(doc) or _extract_year(doc)):
             lines.append(f"PY  - {y}")
         if u := doc.get("url"):
             lines.append(f"UR  - {u}")
+        ids = _identifiers(doc)
+        if ids["doi"]:
+            lines.append(f"DO  - {ids['doi']}")
+        if ids["isbn"]:
+            lines.append(f"SN  - {ids['isbn']}")
+        if ids["hal_id"]:
+            lines.append(f"N1  - HAL: {ids['hal_id']}")
         if note := _extract_note(doc):
-            lines.append(f"N1  - {note}")
+            lines.append(f"AB  - {note}")
         for kw in _keywords(doc):
             lines.append(f"KW  - {kw}")
         lines.append("ER  - ")
@@ -172,10 +211,17 @@ def export_csl_json(catalog_path: Path, out_path: Path, min_score: int = 7) -> i
                 item["author"] = [{"given": parts[0], "family": parts[1]}]
             else:
                 item["author"] = [{"literal": a}]
-        if y := _extract_year(doc):
+        if y := (_doc_date(doc) or _extract_year(doc)):
             item["issued"] = {"date-parts": [[int(y)]]}
+        ids = _identifiers(doc)
+        if ids["doi"]:
+            item["DOI"] = ids["doi"]
+        if ids["isbn"]:
+            item["ISBN"] = ids["isbn"]
+        if ids["hal_id"]:
+            item["archive_location"] = ids["hal_id"]
         if note := _extract_note(doc):
-            item["note"] = note
+            item["abstract"] = note
         if kws := _keywords(doc):
             item["keyword"] = ", ".join(kws)
         items.append(item)

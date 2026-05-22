@@ -46,7 +46,8 @@
     return normalize(parts.join(' || '));
   }
 
-  // Filtre les docs selon une requête (chaîne avec mots multiples)
+  // Filtre les docs selon une requête (chaîne avec mots multiples).
+  // ET strict : tous les termes doivent matcher.
   function searchDocs(docs, query) {
     if (!query || !query.trim()) return docs;
     const terms = normalize(query).split(/\s+/).filter(Boolean);
@@ -54,6 +55,28 @@
       if (!d._blob) d._blob = buildSearchBlob(d);
       return terms.every(t => d._blob.indexOf(t) !== -1);
     });
+  }
+
+  // Variante « souple » (B7) : OU — au moins un terme matche.
+  // Renvoie les docs triés par nombre de termes trouvés (décroissant).
+  function searchDocsLoose(docs, query) {
+    if (!query || !query.trim()) return docs;
+    const terms = normalize(query).split(/\s+/).filter(Boolean);
+    if (!terms.length) return docs;
+    const scored = [];
+    for (const d of docs) {
+      if (!d._blob) d._blob = buildSearchBlob(d);
+      let hits = 0;
+      for (const t of terms) { if (d._blob.indexOf(t) !== -1) hits++; }
+      if (hits > 0) scored.push({ doc: d, hits });
+    }
+    scored.sort((a, b) => b.hits - a.hits);
+    return scored.map(x => x.doc);
+  }
+
+  // Renvoie la liste des termes normalisés d'une requête (pour le surlignage).
+  function queryTerms(query) {
+    return normalize(query || '').split(/\s+/).filter(t => t.length >= 2);
   }
 
   // ----- Auto-suggest -------------------------------------------------------
@@ -117,6 +140,8 @@
     normalize,
     buildSearchBlob,
     searchDocs,
+    searchDocsLoose,
+    queryTerms,
     buildSuggestions,
     suggest,
     resetSuggestionsCache,

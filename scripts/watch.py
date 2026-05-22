@@ -38,6 +38,16 @@ import discovery_external_links
 import discovery_bibliography
 import discovery_footnotes
 import discovery_promote
+import doc_metadata
+import link_check
+import corpus_stats
+import editorial
+import export_bibtex
+from prompt_version import prompt_hash
+try:
+    import social_cards
+except Exception:  # Pillow absent : dégradation propre
+    social_cards = None
 
 # ── Chemins ────────────────────────────────────────────────────────────────────
 CONFIG_PATH    = Path("config/sources.yml")
@@ -65,8 +75,18 @@ def file_uid(url: str) -> str:
     return hashlib.md5(url.encode()).hexdigest()[:8]
 
 
+# Modèle utilisé pour le scoring sur titre (cf. invocation claude plus bas)
+SCORING_MODEL = "claude-haiku-4-5"
+
+
 def score_batch(docs: list[dict], keywords: list[str]) -> list[dict]:
-    """Score un lot via Claude Code CLI (OAuth, consomme la subscription)."""
+    """Score un lot via Claude Code CLI (OAuth, consomme la subscription).
+
+    Chaque entrée retournée contient, en plus de doc/score/raison :
+      - `doc_type` (A1) : typologie documentaire
+      - `recit_de_lutte` (C3) : booléen, texte racontant une lutte/victoire
+      - `prompt_version` (C6) : hash du prompt de scoring utilisé
+    """
     if not docs:
         return []
 
@@ -116,10 +136,29 @@ RÈGLES DE NOTATION (à appliquer scrupuleusement) :
 
 6. **Attribue chaque score au bon "doc" numéro**. Ne mélange pas.
 
+7. **Typologie documentaire** — classe chaque document dans `doc_type` :
+   - "essai"           : texte de réflexion, argumentaire théorique
+   - "enquete"         : enquête de terrain, reportage documenté
+   - "guide_pratique"  : manuel, mode d'emploi, ressource actionnable
+   - "modele_juridique": bail type, statuts GFA/SCI, modèle de contrat
+   - "retour_collectif": retour d'expérience d'un collectif, témoignage
+   - "tract"           : tract, brochure courte de mobilisation
+   - "rapport"         : rapport institutionnel, étude commanditée
+   - "source_primaire" : archive, document d'époque, texte historique brut
+   - "autre"           : si rien ne correspond clairement
+   Base-toi sur le titre/contexte ; en cas de doute, mets "autre".
+
+8. **Récit de lutte** — `recit_de_lutte` vaut true UNIQUEMENT si le
+   titre/contexte indique que le texte RACONTE une lutte, une victoire ou
+   une action concrète (terre reprise, foncière créée, expulsion stoppée,
+   occupation racontée). false sinon (texte purement théorique/analytique).
+
 Pour chaque document, retourne :
-  - "doc"   : numéro du document (entier)
-  - "score" : 0 à 10
-  - "raison": phrase brève citant LITTÉRALEMENT le titre/contexte
+  - "doc"            : numéro du document (entier)
+  - "score"          : 0 à 10
+  - "raison"         : phrase brève citant LITTÉRALEMENT le titre/contexte
+  - "doc_type"       : une des valeurs de la règle 7
+  - "recit_de_lutte" : true ou false (règle 8)
 
 EXEMPLES DE BONNES NOTATIONS :
 
@@ -169,10 +208,22 @@ Documents :
             if raw.startswith("json"):
                 raw = raw[4:]
             raw = raw.rsplit("```", 1)[0]
-        return json.loads(raw.strip())
+        parsed = json.loads(raw.strip())
+        # Migration douce + C6 : on garantit les champs et le prompt_version
+        pv = prompt_hash(prompt)
+        for item in parsed:
+            if isinstance(item, dict):
+                item.setdefault("doc_type", "autre")
+                item.setdefault("recit_de_lutte", False)
+                item["prompt_version"] = pv
+                item["model"] = SCORING_MODEL
+        return parsed
     except Exception as e:
         print(f"  ⚠  Erreur scoring Claude : {e}")
-        return [{"doc": i, "score": 0, "raison": "erreur scoring"}
+        pv = prompt_hash(prompt)
+        return [{"doc": i, "score": 0, "raison": "erreur scoring",
+                 "doc_type": "autre", "recit_de_lutte": False,
+                 "prompt_version": pv, "model": SCORING_MODEL}
                 for i in range(1, len(docs) + 1)]
 
 
@@ -371,6 +422,17 @@ def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
 
     # Synopsis enrichi via Claude (sur le texte du PDF)
     text = pdf_processor.extract_text(dest, max_chars=10000)
+
+    # ── S2 — Métadonnées bibliographiques fiables ────────────────────────────
+    # doc_date / lang / editeur / doi / isbn / hal_id, sans jamais inférer
+    # un auteur absent de la source (anonymat respecté).
+    try:
+        bib = doc_metadata.build_metadata(doc, pdf_meta=meta, pdf_text=text)
+        out["bib"] = bib
+    except Exception as e:
+        print(f"     ⚠  build_metadata raté : {e}")
+        out["bib"] = {}
+
     if text:
         print(f"     📖  Texte extrait ({len(text)} chars), enrichissement…")
         title_hint = doc.get("link_text") or doc["filename"]
@@ -402,6 +464,39 @@ def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
     return out
 
 
+def _link_versions(catalog: dict) -> None:
+    """B12 — Expose un champ `versions` par doc : liste des doc_id qui sont des
+    doublons textuels/binaires du même texte (autres éditions, traductions).
+
+    S'appuie sur synopsis/duplicates.json (registre maintenu par dedup.py).
+    Migration douce : si le registre est absent, `versions` reste [].
+    """
+    registry_path = SYNOPSIS_PATH / "duplicates.json"
+    docs = catalog.get("docs", {})
+    # Init à vide partout
+    for d in docs.values():
+        d.setdefault("versions", [])
+
+    if not registry_path.exists():
+        return
+    try:
+        registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    except Exception:
+        return
+
+    clusters: list[list[str]] = []
+    # Grappes binaires : by_hash → [doc_id, ...]
+    for ids in (registry.get("by_hash") or {}).values():
+        if len(ids) > 1:
+            clusters.append(list(ids))
+
+    for cluster in clusters:
+        present = [cid for cid in cluster if cid in docs]
+        for cid in present:
+            others = sorted(set(present) - {cid})
+            docs[cid]["versions"] = others
+
+
 def update_synopsis_catalog(report: dict) -> None:
     """Met à jour synopsis/catalog.json (catalogue dédupliqué, multi-runs).
 
@@ -409,7 +504,14 @@ def update_synopsis_catalog(report: dict) -> None:
     - Si déjà présent (clé = hash de l'URL) : ajoute une entrée dans `runs[]`
     - Sinon : crée la fiche
 
-    Le catalog est consommé par interface/index.html.
+    Champs notables (cf. revue) :
+      - score_initial : score sur titre seul (ex-latest_score)
+      - score_final   : score post-lecture (synopsis_enricher), null si absent
+      - collected_date: date de collecte (ex-date du dernier run)
+      - doc_date/lang/editeur/doi/isbn/hal_id : métadonnées bibliographiques
+      - doc_type/recit_de_lutte : typologie & tag de récit de lutte
+      - versions      : doc_id des doublons/traductions
+    Le catalog reste COMPLET ; le filtrage de publication est fait ailleurs.
     """
     catalog_path = SYNOPSIS_PATH / "catalog.json"
     if catalog_path.exists():
@@ -422,13 +524,28 @@ def update_synopsis_catalog(report: dict) -> None:
     for r in report["results"]:
         doc_id = file_uid(r["url"])
         run_entry = {
-            "date":         run_date,
-            "score":        r["score"],
-            "raison":       r["raison"],
-            "context_seen": r.get("context_seen", ""),
-            "link_text":    r.get("link_text", ""),
-            "downloaded":   r["downloaded"],
+            "date":           run_date,
+            "score":          r["score"],
+            "raison":         r["raison"],
+            "context_seen":   r.get("context_seen", ""),
+            "link_text":      r.get("link_text", ""),
+            "downloaded":     r["downloaded"],
+            # C6 — reproductibilité : modèle + version du prompt de scoring
+            "model":          r.get("model", ""),
+            "prompt_version": r.get("prompt_version", ""),
         }
+
+        # Score post-lecture (S1) : produit par synopsis_enricher si enrichi
+        enrichment = r.get("enrichment") or {}
+        score_final = None
+        if isinstance(enrichment, dict) and "error" not in enrichment:
+            rs = enrichment.get("relevance_score")
+            if isinstance(rs, (int, float)):
+                score_final = int(rs)
+
+        # S2 — métadonnées bibliographiques (calculées dans analyse_pdf...)
+        bib = r.get("bib") or {}
+
         # Champs d'enrichissement éventuels (cover, synopsis, bulle)
         extras = {}
         for k in ("cover", "bulle", "meta", "enrichment", "download_status",
@@ -438,38 +555,89 @@ def update_synopsis_catalog(report: dict) -> None:
 
         if doc_id in catalog["docs"]:
             fiche = catalog["docs"][doc_id]
-            fiche["runs"] = [run for run in fiche["runs"] if run["date"] != run_date]
+            fiche["runs"] = [run for run in fiche["runs"]
+                             if run["date"] != run_date]
             fiche["runs"].append(run_entry)
-            fiche["latest_score"] = r["score"]
-            fiche["latest_run"]   = run_date
+            # S1 — score sur titre = score_initial ; on conserve latest_score
+            # pour rétrocompatibilité de l'interface.
+            fiche["score_initial"] = r["score"]
+            fiche["latest_score"]  = r["score"]
+            if score_final is not None:
+                fiche["score_final"] = score_final
+            elif "score_final" not in fiche:
+                fiche["score_final"] = None
+            fiche["latest_run"]     = run_date
+            fiche["collected_date"] = run_date  # S2 — date de collecte
+            # A1/C3 — typologie & récit de lutte
+            fiche["doc_type"]       = r.get("doc_type", fiche.get("doc_type", "autre"))
+            fiche["recit_de_lutte"] = bool(r.get("recit_de_lutte",
+                                                 fiche.get("recit_de_lutte", False)))
+            # S2 — métadonnées : on ne remplace que si on a une valeur nouvelle
+            for k in ("doc_date", "lang", "editeur", "doi", "isbn", "hal_id"):
+                v = bib.get(k)
+                if v:
+                    fiche[k] = v
+                else:
+                    fiche.setdefault(k, "")
             if r["downloaded"] and not fiche.get("downloaded"):
                 fiche["downloaded"] = True
                 fiche["saved_as"]   = r["saved_as"]
-            # Mise à jour des champs enrichis
             fiche.update({k: v for k, v in extras.items() if v})
         else:
             catalog["docs"][doc_id] = {
-                "id":           doc_id,
-                "url":          r["url"],
-                "filename":     r["filename"],
-                "format":       r["format"],
-                "source":       r["source"],
-                "first_seen":   run_date,
-                "latest_run":   run_date,
-                "latest_score": r["score"],
-                "downloaded":   r["downloaded"],
-                "saved_as":     r.get("saved_as"),
-                "runs":         [run_entry],
+                "id":             doc_id,
+                "url":            r["url"],
+                "filename":       r["filename"],
+                "format":         r["format"],
+                "source":         r["source"],
+                "first_seen":     run_date,
+                "latest_run":     run_date,
+                "collected_date": run_date,
+                "score_initial":  r["score"],
+                "score_final":    score_final,
+                "latest_score":   r["score"],
+                "doc_type":       r.get("doc_type", "autre"),
+                "recit_de_lutte": bool(r.get("recit_de_lutte", False)),
+                "doc_date":       bib.get("doc_date", ""),
+                "lang":           bib.get("lang", ""),
+                "editeur":        bib.get("editeur", ""),
+                "doi":            bib.get("doi", ""),
+                "isbn":           bib.get("isbn", ""),
+                "hal_id":         bib.get("hal_id", ""),
+                "versions":       [],
+                "downloaded":     r["downloaded"],
+                "saved_as":       r.get("saved_as"),
+                "runs":           [run_entry],
                 **extras,
             }
 
-    # Méta
+    # B12 — recoupement versions/traductions
+    try:
+        _link_versions(catalog)
+    except Exception as e:
+        print(f"  ⚠  _link_versions raté : {e}")
+
+    # Méta — migration douce : .get() partout
+    def _eff(f: dict) -> int:
+        sf = f.get("score_final")
+        return int(sf) if sf is not None else int(f.get("score_initial",
+                                                        f.get("latest_score", 0)) or 0)
+
     catalog["meta"] = {
-        "last_updated":      run_date,
-        "total_docs":        len(catalog["docs"]),
-        "total_downloaded":  sum(1 for f in catalog["docs"].values() if f["downloaded"]),
+        "last_updated":     run_date,
+        "total_docs":       len(catalog["docs"]),
+        "total_downloaded": sum(1 for f in catalog["docs"].values()
+                                if f.get("downloaded")),
+        "total_published":  sum(1 for f in catalog["docs"].values()
+                                if _eff(f) >= 6),
         "score_distribution": {
-            i: sum(1 for f in catalog["docs"].values() if f["latest_score"] == i)
+            i: sum(1 for f in catalog["docs"].values()
+                   if f.get("latest_score", 0) == i)
+            for i in range(11)
+        },
+        "score_final_distribution": {
+            i: sum(1 for f in catalog["docs"].values()
+                   if f.get("score_final") == i)
             for i in range(11)
         },
     }
@@ -479,7 +647,8 @@ def update_synopsis_catalog(report: dict) -> None:
         encoding="utf-8",
     )
     print(f"  📒 Catalog mis à jour : {catalog['meta']['total_docs']} docs dont "
-          f"{catalog['meta']['total_downloaded']} téléchargés")
+          f"{catalog['meta']['total_downloaded']} téléchargés, "
+          f"{catalog['meta']['total_published']} publiables")
 
 
 def generate_interface(catalog_path: Path = SYNOPSIS_PATH / "catalog.json") -> None:
@@ -504,6 +673,28 @@ def generate_interface(catalog_path: Path = SYNOPSIS_PATH / "catalog.json") -> N
 SITE_PATH = Path("site")
 SITE_BASE_URL = "https://biblio.actitude.org"
 
+# Seuil de publication (S1) : un doc n'est publié (RSS, sitemap, fiche
+# pré-rendue) que si son score post-lecture l'autorise. catalog.json reste
+# complet pour la transparence.
+PUBLISH_THRESHOLD = 6
+
+
+def _effective_score(doc: dict) -> int:
+    """Score effectif d'un doc : score_final si présent, sinon score_initial.
+
+    Migration douce : les vieux catalogs sans ces champs retombent sur
+    latest_score.
+    """
+    sf = doc.get("score_final")
+    if sf is not None:
+        return int(sf)
+    return int(doc.get("score_initial", doc.get("latest_score", 0)) or 0)
+
+
+def _is_publishable(doc: dict) -> bool:
+    """True si le doc doit apparaître dans RSS / sitemap / fiches pré-rendues."""
+    return _effective_score(doc) >= PUBLISH_THRESHOLD
+
 
 def _prerender_fiches(catalog: dict) -> int:
     """Génère un HTML statique minimaliste par fiche dans site/fiches/<id>.html.
@@ -524,8 +715,13 @@ def _prerender_fiches(catalog: dict) -> int:
 
     docs = catalog.get("docs", {})
     count = 0
+    skipped = 0
 
     for doc_id, doc in docs.items():
+        # ── S1 — ne pré-rendre que les docs publiables ───────────────────────
+        if not _is_publishable(doc):
+            skipped += 1
+            continue
         # ── Titre : link_text du dernier run, sinon filename sans extension ──
         title = ""
         if doc.get("runs"):
@@ -561,7 +757,16 @@ def _prerender_fiches(catalog: dict) -> int:
 
         # ── JSON-LD ScholarlyArticle (mêmes champs que côté JS) ──────────────
         canonical_url = f"{SITE_BASE_URL}/fiches/{doc_id}.html"
-        og_image = f"{SITE_BASE_URL}/assets/covers/{doc_id}.png"
+        # A2 — og:image pointe vers la carte sociale générée (1200x630).
+        # Fallback : couverture PDF brute, puis image OG par défaut.
+        card_file = SITE_PATH / "assets" / "cards" / f"{doc_id}.png"
+        cover_file = SITE_PATH / "assets" / "covers" / f"{doc_id}.png"
+        if card_file.exists():
+            og_image = f"{SITE_BASE_URL}/assets/cards/{doc_id}.png"
+        elif cover_file.exists():
+            og_image = f"{SITE_BASE_URL}/assets/covers/{doc_id}.png"
+        else:
+            og_image = f"{SITE_BASE_URL}/assets/og-default.png"
         page_count = 0
         if isinstance(doc.get("meta"), dict):
             page_count = doc["meta"].get("page_count", 0) or 0
@@ -644,6 +849,9 @@ def _prerender_fiches(catalog: dict) -> int:
         (fiches_dir / f"{doc_id}.html").write_text(html, encoding="utf-8")
         count += 1
 
+    if skipped:
+        print(f"  ℹ  Pré-rendu : {skipped} fiche(s) non publiée(s) "
+              f"(score effectif < {PUBLISH_THRESHOLD})")
     return count
 
 
@@ -666,10 +874,12 @@ def publish_site(run_date: str) -> None:
         (SITE_PATH / "data").mkdir(parents=True, exist_ok=True)
         shutil.copy2(catalog_src, SITE_PATH / "data" / "catalog.json")
 
-    # 1bis. Index full-text (utilisé par la recherche côté client)
-    idx_src = SYNOPSIS_PATH / "fulltext_index.json"
-    if idx_src.exists():
-        shutil.copy2(idx_src, SITE_PATH / "data" / "fulltext_index.json")
+    # 1bis. Index full-text + JSON éditoriaux (recherche, dossiers, stats…)
+    for name in ("fulltext_index.json", "dossiers.json", "featured.json",
+                 "corpus_stats.json"):
+        src = SYNOPSIS_PATH / name
+        if src.exists():
+            shutil.copy2(src, SITE_PATH / "data" / name)
 
     # 2. Bulles
     site_bulles = SITE_PATH / "data" / "bulles"
@@ -686,6 +896,20 @@ def publish_site(run_date: str) -> None:
     for c in COVERS_PATH.glob("*.png"):
         shutil.copy2(c, site_covers / c.name)
         cover_count += 1
+
+    # 3bis. A2 — Cartes sociales Open Graph + citation-cards + og-default.png
+    # (généré AVANT le pré-rendu pour que og:image pointe vers la carte)
+    if social_cards is not None:
+        try:
+            cs = social_cards.generate_all(catalog_src,
+                                           min_score=PUBLISH_THRESHOLD)
+            if "error" not in cs:
+                print(f"  🖼  Cartes sociales : {cs.get('cards', 0)} cartes, "
+                      f"{cs.get('citation_cards', 0)} citation-cards")
+        except Exception as e:
+            print(f"  ⚠  social_cards raté : {e}")
+    else:
+        print("  ℹ  Pillow indisponible — cartes sociales non générées")
 
     # 4. Génération RSS + sitemap
     catalog = json.loads(catalog_src.read_text(encoding="utf-8"))
@@ -722,50 +946,134 @@ def publish_site(run_date: str) -> None:
           f"{len(catalog.get('docs', {}))} fiches au catalog")
 
 
-def _write_rss(catalog: dict, run_date: str) -> None:
-    """RSS 2.0 des 30 dernières fiches scorées ≥ 7."""
-    docs = sorted(
-        catalog.get("docs", {}).values(),
-        key=lambda d: (d.get("latest_run", ""), d.get("latest_score", 0)),
-        reverse=True,
-    )
-    items = []
-    for d in docs[:30]:
-        if d.get("latest_score", 0) < 7:
-            continue
-        title = d.get("filename", d.get("id", ""))
-        if d.get("runs"):
-            link_text = d["runs"][-1].get("link_text", "")
-            if link_text:
-                title = link_text
-        url_fiche = f"{SITE_BASE_URL}/fiches/fiche.html?id={d['id']}"
-        description = (d.get("enrichment", {}).get("summary", "") or
-                       (d.get("runs", [{}])[-1] if d.get("runs") else {}).get("raison", ""))
-        # Échapper les XML chars
-        title = _xml_escape(title)
-        description = _xml_escape(description[:600])
-        items.append(f"""    <item>
-      <title>{title}</title>
+def _rfc822(run_date: str) -> str:
+    """Convertit une date de run 'YYYY-MM-DD_HH-MM' en date RFC822 (RSS).
+
+    Ex: 'Thu, 22 May 2026 14:30:00 +0000'. Fallback : maintenant UTC.
+    """
+    from email.utils import format_datetime
+    try:
+        dt = datetime.strptime(run_date, "%Y-%m-%d_%H-%M")
+        dt = dt.replace(tzinfo=__import__("datetime").timezone.utc)
+        return format_datetime(dt)
+    except Exception:
+        from datetime import timezone
+        return format_datetime(datetime.now(timezone.utc))
+
+
+def _rss_item(d: dict) -> str:
+    """Construit un <item> RSS 2.0 pour un doc du catalog."""
+    title = d.get("filename", d.get("id", ""))
+    if d.get("runs"):
+        link_text = d["runs"][-1].get("link_text", "")
+        if link_text:
+            title = link_text
+    url_fiche = f"{SITE_BASE_URL}/fiches/{d['id']}.html"
+    enrich = d.get("enrichment") or {}
+    description = ""
+    if isinstance(enrich, dict):
+        description = enrich.get("summary", "") or ""
+    if not description and d.get("runs"):
+        description = d["runs"][-1].get("raison", "") or ""
+    pub = _rfc822(d.get("latest_run", "") or d.get("collected_date", ""))
+    return f"""    <item>
+      <title>{_xml_escape(title)}</title>
       <link>{url_fiche}</link>
       <guid isPermaLink="true">{url_fiche}</guid>
-      <description>{description}</description>
+      <pubDate>{pub}</pubDate>
+      <description>{_xml_escape(description[:600])}</description>
       <category>{_xml_escape(d.get('source', ''))}</category>
-    </item>""")
+    </item>"""
 
-    rss = f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+
+def _rss_document(items: list[str], run_date: str, title: str,
+                  description: str, feed_path: str) -> str:
+    """Assemble un flux RSS 2.0 valide (namespace Atom déclaré sur <rss>)."""
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BIBLIO — bibliothèque documentaire ouverte</title>
+    <title>{_xml_escape(title)}</title>
     <link>{SITE_BASE_URL}/</link>
-    <description>Veille documentaire : communs, terres, paysanneries</description>
+    <description>{_xml_escape(description)}</description>
     <language>fr</language>
-    <lastBuildDate>{run_date}</lastBuildDate>
-    <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="{SITE_BASE_URL}/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>{_rfc822(run_date)}</lastBuildDate>
+    <atom:link href="{SITE_BASE_URL}/{feed_path}" rel="self" type="application/rss+xml"/>
 {chr(10).join(items)}
   </channel>
 </rss>
 """
-    (SITE_PATH / "feed.xml").write_text(rss, encoding="utf-8")
+
+
+def _write_rss(catalog: dict, run_date: str) -> None:
+    """B5 — RSS 2.0 conforme : date RFC822, namespace Atom déclaré sur <rss>.
+
+    Génère :
+      - feed.xml          : 30 dernières fiches publiables (score eff. >= 6)
+      - feeds/scoops.xml  : feed « scoops » (score_final >= 9)
+      - feeds/<concept>.xml : un feed par concept (matched_keywords / dossier)
+    """
+    docs = sorted(
+        catalog.get("docs", {}).values(),
+        key=lambda d: (d.get("latest_run", ""), _effective_score(d)),
+        reverse=True,
+    )
+    publishable = [d for d in docs if _is_publishable(d)]
+
+    # ── Feed principal ───────────────────────────────────────────────────────
+    main_items = [_rss_item(d) for d in publishable[:30]]
+    (SITE_PATH / "feed.xml").write_text(
+        _rss_document(main_items, run_date,
+                      "BIBLIO — bibliothèque documentaire ouverte",
+                      "Veille documentaire : communs, terres, paysanneries",
+                      "feed.xml"),
+        encoding="utf-8")
+
+    feeds_dir = SITE_PATH / "feeds"
+    feeds_dir.mkdir(parents=True, exist_ok=True)
+
+    # ── Feed « scoops » : score_final >= 9 ───────────────────────────────────
+    scoops = [d for d in docs if (d.get("score_final") or 0) >= 9][:30]
+    (feeds_dir / "scoops.xml").write_text(
+        _rss_document([_rss_item(d) for d in scoops], run_date,
+                      "BIBLIO — Scoops (score 9+)",
+                      "Les documents les mieux notés après lecture",
+                      "feeds/scoops.xml"),
+        encoding="utf-8")
+
+    # ── Feeds dérivés par concept (mots-clés des core_concepts) ──────────────
+    concept_slugs = {
+        "communs": ["communs", "communaux", "commons"],
+        "propriete-usage": ["propriété d'usage", "fonds de dotation",
+                            "fiducie", "usufruct"],
+        "paysannerie": ["paysan", "agroécologie", "campesin", "peasant"],
+        "sans-terre": ["sans-terre", "réforme agraire", "land", "mst"],
+        "habitat": ["habitat", "logement", "coopérative d'habitants",
+                    "housing"],
+    }
+    feed_index = []
+    for slug, kws in concept_slugs.items():
+        kws_l = [k.lower() for k in kws]
+        matched = []
+        for d in publishable:
+            hay = " ".join([
+                d.get("filename", ""),
+                (d.get("runs", [{}])[-1].get("link_text", "")
+                 if d.get("runs") else ""),
+                " ".join((d.get("enrichment") or {}).get("matched_keywords", [])
+                         if isinstance(d.get("enrichment"), dict) else []),
+            ]).lower()
+            if any(k in hay for k in kws_l):
+                matched.append(d)
+        if matched:
+            (feeds_dir / f"{slug}.xml").write_text(
+                _rss_document([_rss_item(d) for d in matched[:30]], run_date,
+                              f"BIBLIO — {slug}",
+                              f"Veille BIBLIO : concept « {slug} »",
+                              f"feeds/{slug}.xml"),
+                encoding="utf-8")
+            feed_index.append(slug)
+    print(f"  📡 RSS : feed principal ({len(main_items)}), scoops "
+          f"({len(scoops)}), {len(feed_index)} feed(s) par concept")
 
 
 def _write_sitemap(catalog: dict) -> None:
@@ -779,8 +1087,10 @@ def _write_sitemap(catalog: dict) -> None:
         f"{SITE_BASE_URL}/graph.html",
         f"{SITE_BASE_URL}/dossiers.html",
     ]
+    # S1 — seules les fiches publiables (score effectif >= seuil) sont indexées
     for d in catalog.get("docs", {}).values():
-        urls.append(f"{SITE_BASE_URL}/fiches/fiche.html?id={d['id']}")
+        if _is_publishable(d):
+            urls.append(f"{SITE_BASE_URL}/fiches/{d['id']}.html")
     body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
     sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -1079,6 +1389,42 @@ def main() -> None:
         print(f"  🚦  Throttle : {t}")
     except Exception:
         pass
+
+    # ── S3 — Vérification de pérennité des liens + archivage Wayback ─────────
+    # Limité par run pour ne pas marteler archive.org ; les liens vérifiés
+    # récemment sont automatiquement sautés (cf. link_check.RECHECK_AFTER_DAYS).
+    if not dry_run:
+        try:
+            ls = link_check.check_catalog(
+                SYNOPSIS_PATH / "catalog.json", limit=40, do_archive=True
+            )
+            print(f"  🔗  Liens : {ls}")
+        except Exception as e:
+            print(f"  ⚠  link_check raté : {e}")
+
+    # ── A8 — État du corpus (répartitions, biais) ────────────────────────────
+    try:
+        corpus_stats.build_stats(SYNOPSIS_PATH / "catalog.json")
+    except Exception as e:
+        print(f"  ⚠  corpus_stats raté : {e}")
+
+    # ── A7 / A3 — Dossiers éditoriaux + document de la semaine ───────────────
+    try:
+        editorial.build_dossiers(SYNOPSIS_PATH / "catalog.json")
+        editorial.build_featured(SYNOPSIS_PATH / "catalog.json")
+    except Exception as e:
+        print(f"  ⚠  editorial raté : {e}")
+
+    # ── B8 — Exports bibliographiques (BibTeX/RIS/CSL avec DOI/ISBN/HAL) ─────
+    try:
+        exp_dir = Path("exports")
+        cat = SYNOPSIS_PATH / "catalog.json"
+        export_bibtex.export_bibtex(cat, exp_dir / "catalog.bib")
+        export_bibtex.export_ris(cat, exp_dir / "catalog.ris")
+        export_bibtex.export_csl_json(cat, exp_dir / "catalog.csl.json")
+        print("  📑  Exports BibTeX/RIS/CSL régénérés")
+    except Exception as e:
+        print(f"  ⚠  export_bibtex raté : {e}")
 
     publish_site(run_date)
 

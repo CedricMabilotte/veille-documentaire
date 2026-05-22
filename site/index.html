@@ -63,10 +63,13 @@
     <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
       <a href="index.html">Accueil</a>
       <a href="fiches/index.html">Catalogue</a>
+      <a href="dossiers.html">Dossiers</a>
+      <a href="outils.html">Outils</a>
+      <a href="actu.html">Actu</a>
       <a href="auteurs.html">Auteurs</a>
       <a href="chronologie.html">Chronologie</a>
-      <a href="dossiers.html">Dossiers</a>
       <a href="concepts/index.html">Concepts</a>
+      <a href="etat-corpus.html">État du corpus</a>
       <a href="apropos.html">Méthodologie</a>
     </nav>
     <div class="header-tools">
@@ -91,6 +94,14 @@
     <div class="container">
       <h1 id="hero-title">BIBLIO</h1>
       <p class="tagline">Bibliothèque documentaire ouverte.<br>Communs, terres, paysanneries.</p>
+      <div class="hero-actions">
+        <a href="fiches/index.html" class="btn btn-primary">Explorer les fiches</a>
+        <a href="dossiers.html" class="btn">Parcourir les dossiers</a>
+      </div>
+      <form class="hero-search" role="search" action="fiches/index.html" method="get">
+        <input type="search" name="q" placeholder="Rechercher dans la bibliothèque…" aria-label="Rechercher dans la bibliothèque">
+        <button type="submit" class="btn">Rechercher</button>
+      </form>
       <p class="by-line">Un projet de veille de <a href="https://actitude.org" rel="noopener">actitude.org</a></p>
     </div>
   </section>
@@ -109,30 +120,28 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="voix-sud-title">
+  <section class="section" id="une-teaser-section" aria-label="Document de la semaine">
     <div class="container">
-      <span class="section-kicker">Cartographie sonore</span>
-      <h2 id="voix-sud-title" class="section-title">Voix du Sud</h2>
-      <p class="section-lede">
-        Les textes qui nous parviennent d'Amérique latine, d'Afrique, d'Asie : Vía Campesina, EZLN,
-        CLOC, FIAN, CLACSO… Une géographie de la lutte pour la terre depuis ses foyers vivants.
-      </p>
-      <div class="recent-grid" id="voix-sud-grid" aria-live="polite"></div>
+      <div class="une-teaser" id="une-teaser">
+        <div class="une-teaser-corps">
+          <span class="une-teaser-kicker">Le document de la semaine</span>
+          <p class="une-teaser-titre">À la une</p>
+          <p class="une-teaser-texte">La rédaction met un texte en avant chaque semaine.</p>
+        </div>
+        <a href="une.html" class="btn btn-primary une-teaser-link">Lire « la une »</a>
+      </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="histoire-communs-title">
+  <section class="section" id="recits-lutte-section" aria-labelledby="recits-lutte-title">
     <div class="container">
-      <span class="section-kicker">Le fil du temps</span>
-      <h2 id="histoire-communs-title" class="section-title">Histoire des communs</h2>
+      <span class="section-kicker">Récits de lutte</span>
+      <h2 id="recits-lutte-title" class="section-title">Elles et ils l'ont fait</h2>
       <p class="section-lede">
-        Une généalogie : des enclosures du XIXᵉ aux ZAD contemporaines. Chaque décennie a vu
-        s'écrire — souvent en silence — les pages d'une lutte pour la propriété d'usage.
+        Terres reprises, foncières créées, expulsions stoppées : les textes qui racontent
+        des victoires concrètes et des collectifs qui tiennent.
       </p>
-      <div id="histoire-communs" aria-live="polite"></div>
-      <p class="text-center mt-3">
-        <a href="chronologie.html" class="btn">Voir toute la chronologie</a>
-      </p>
+      <div class="recent-grid" id="recits-lutte-grid" aria-live="polite"></div>
     </div>
   </section>
 
@@ -142,11 +151,16 @@
       <h2 id="recent-title" class="section-title">Récemment ajoutés</h2>
       <p class="section-lede">
         Les dernières fiches versées au catalogue. Notre veille parcourt en continu archives
-        anarchistes, dépôts universitaires, revues paysannes et infokiosques.
+        anarchistes, dépôts universitaires, revues paysannes, infokiosques et voix du Sud.
       </p>
-      <div class="recent-grid" id="recent-grid" aria-live="polite"></div>
+      <div class="activite-bandeau">
+        <span class="activite-compte" id="activite-compte">Veille en cours…</span>
+      </div>
+      <ul class="activite-fil" id="activite-fil" aria-live="polite"></ul>
+      <div class="recent-grid mt-3" id="derniers-ajouts-grid" aria-live="polite"></div>
       <p class="text-center mt-3">
         <a href="fiches/index.html" class="btn btn-primary">Parcourir tout le catalogue</a>
+        <a href="actu.html" class="btn">Les nouveautés de la semaine</a>
       </p>
     </div>
   </section>
@@ -156,6 +170,29 @@
       <span class="section-kicker">En un coup d'œil</span>
       <h2 id="stats-title" class="section-title">L'état de la veille</h2>
       <div class="stats" id="stats-grid"></div>
+      <p class="text-center mt-3">
+        <a href="etat-corpus.html" class="btn">Voir l'état complet du corpus &amp; ses biais</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="newsletter-title">
+    <div class="container">
+      <div class="newsletter-block">
+        <span class="section-kicker">Rester au courant</span>
+        <h2 id="newsletter-title" class="section-title">La lettre de la veille</h2>
+        <p class="section-lede" style="margin:0 auto 0;">
+          Un digest régulier des textes marquants, sans tracker ni revente d'adresse.
+        </p>
+        <form class="newsletter-form" aria-label="Inscription à la newsletter">
+          <input type="email" name="email" placeholder="votre@email.fr" aria-label="Votre adresse e-mail" required>
+          <button type="submit" class="btn btn-primary">S'inscrire</button>
+        </form>
+        <p class="newsletter-note">
+          L'inscription ouvre votre messagerie vers
+          <a href="mailto:contact@actitude.org?subject=Inscription%20newsletter%20biblio">contact@actitude.org</a>.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -203,26 +240,39 @@
       <h4>BIBLIO</h4>
       <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
       <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+      <div class="newsletter-foot">
+        <p><strong>La lettre de la veille</strong> — un digest régulier, sans tracker.</p>
+        <form class="newsletter-form" aria-label="Inscription à la newsletter">
+          <input type="email" name="email" placeholder="votre@email.fr" aria-label="Votre adresse e-mail" required>
+          <button type="submit" class="btn btn-sm">S'inscrire</button>
+        </form>
+      </div>
     </div>
     <div>
       <h4>Naviguer</h4>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="fiches/index.html">Catalogue</a></li>
+        <li><a href="dossiers.html">Dossiers</a></li>
+        <li><a href="outils.html">Boîte à outils</a></li>
+        <li><a href="actu.html">Actu — cette semaine</a></li>
+        <li><a href="une.html">Document de la semaine</a></li>
         <li><a href="auteurs.html">Auteurs</a></li>
         <li><a href="chronologie.html">Chronologie</a></li>
-        <li><a href="dossiers.html">Dossiers</a></li>
         <li><a href="concepts/index.html">Concepts</a></li>
+        <li><a href="etat-corpus.html">État du corpus</a></li>
         <li><a href="apropos.html">Méthodologie</a></li>
-        <li><a href="feed.xml">Flux RSS</a></li>
       </ul>
     </div>
     <div>
-      <h4>Code &amp; licence</h4>
+      <h4>Suivre &amp; réutiliser</h4>
       <ul>
+        <li><a href="feed.xml">Flux RSS — nouvelles fiches</a></li>
+        <li><a href="rss.xml">Flux RSS — toutes nouveautés</a></li>
+        <li><a href="scoops.xml">Flux RSS — scoops (score ≥ 9)</a></li>
         <li><a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">Code source</a></li>
-        <li>Fiches sous licence <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a></li>
-        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a> · <a href="https://wiki.p2pfoundation.net/Peer_Production_License" rel="noopener">PPL</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact &amp; déréférencement</a></li>
       </ul>
     </div>
     <div class="colophon">
@@ -235,21 +285,25 @@
 <script src="assets/js/router.js"></script>
 <script src="assets/js/search.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/home.js"></script>
 <script>
 /* ===== Page d'accueil — chargement et rendu ===== */
+/* Sections « Dossiers de la semaine » et « État de la veille » : rendues ici.
+   Sections « Récemment ajoutés », « Elles et ils l'ont fait », bandeau
+   d'activité et bandeau « la une » : déléguées à home.js (initAccueil). */
 window.pageInit = function (basePath) {
+  // home.js : fil d'activité (C7), récits de lutte (C3), derniers ajouts, teaser « une ».
+  if (typeof window.initAccueil === 'function') window.initAccueil(basePath);
+
   loadCatalog(basePath).then(({ meta, docs, _error }) => {
     if (_error) {
-      ['featured-grid','recent-grid','stats-grid','voix-sud-grid','histoire-communs'].forEach(id => {
+      ['featured-grid','stats-grid'].forEach(id => {
         const el = document.getElementById(id);
         if (el) el.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-faint);font-style:italic;">Le catalogue n\'a pas encore été déployé sur ce site. <br>Lancez la veille (<code>scripts/watch.py</code>) pour générer <code>site/data/catalog.json</code>.</p>';
       });
       return;
     }
     renderFeatured(docs, basePath);
-    renderVoixSud(docs, basePath);
-    renderHistoireCommuns(docs, basePath);
-    renderRecent(docs, basePath);
     renderStats(meta, docs);
   });
 };
@@ -285,90 +339,6 @@ function renderFeatured(docs, basePath) {
     });
 }
 
-/* (b) Voix du Sud : sources Vía Campesina, EZLN, CLOC, FIAN, CLACSO, Tierra.org, CEIPAZ, CELAG ;
-       ou lang détectée ES/PT. Max 6 cartes. */
-const VOIX_SUD_SOURCES = [
-  'vía campesina', 'via campesina',
-  'ezln',
-  'cloc',
-  'fian',
-  'clacso',
-  'tierra.org',
-  'ceipaz',
-  'celag',
-];
-function isVoixSud(doc) {
-  const src = (doc.source || '').toLowerCase();
-  if (VOIX_SUD_SOURCES.some(s => src.indexOf(s) !== -1)) return true;
-  // Heuristique langue : meta.lang ou enrichment.lang renvoyant es/pt
-  const lang = String((doc.meta && doc.meta.lang) || (doc.enrichment && doc.enrichment.lang) || '').toLowerCase();
-  if (lang === 'es' || lang === 'pt') return true;
-  // Fallback : filename / titre contient mots ES/PT typiques
-  const blob = ((doc.filename || '') + ' ' + (doc.meta && doc.meta.pdf_title || '')).toLowerCase();
-  const esTokens = ['tierra', 'campesin', 'campesinado', 'reforma agraria', 'soberania', 'soberanía', 'comunidad'];
-  return esTokens.some(t => blob.indexOf(t) !== -1);
-}
-function renderVoixSud(docs, basePath) {
-  const wrap = document.getElementById('voix-sud-grid');
-  if (!wrap) return;
-  const list = docs.filter(isVoixSud)
-    .sort((a, b) => (b.latest_score || 0) - (a.latest_score || 0))
-    .slice(0, 6);
-  if (list.length === 0) {
-    wrap.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-faint);font-style:italic;">Pas encore de voix du Sud dans le corpus. La veille s\'étend.</p>';
-    return;
-  }
-  wrap.innerHTML = list.map(d => bookCardHTML(d, basePath)).join('');
-}
-
-/* (c) Histoire des communs : timeline horizontale par décennie 1850 → 2020 */
-function renderHistoireCommuns(docs, basePath) {
-  const wrap = document.getElementById('histoire-communs');
-  if (!wrap) return;
-  // Année estimée pour chaque doc
-  const dated = docs.map(d => ({ doc: d, year: inferYear(d) })).filter(x => x.year && x.year >= 1850 && x.year <= 2029);
-  if (dated.length === 0) {
-    wrap.innerHTML = '<p style="text-align:center;color:var(--text-faint);font-style:italic;padding:20px 0;">Pas encore de jalons datés dans le corpus.</p>';
-    return;
-  }
-  // Regroupe par décennie
-  const decadesMap = new Map();
-  for (const { doc, year } of dated) {
-    const dec = Math.floor(year / 10) * 10;
-    if (!decadesMap.has(dec)) decadesMap.set(dec, []);
-    decadesMap.get(dec).push({ doc, year });
-  }
-  // Décennies fixes attendues 1850 → 2020 (par pas de 10)
-  const allDecades = [];
-  for (let d = 1850; d <= 2020; d += 10) allDecades.push(d);
-  // Mais on n'affiche que celles qui ont des entrées (sinon trop vide)
-  const used = allDecades.filter(d => decadesMap.has(d));
-  if (used.length === 0) {
-    wrap.innerHTML = '<p style="text-align:center;color:var(--text-faint);font-style:italic;padding:20px 0;">Pas encore de jalons datés.</p>';
-    return;
-  }
-  const buf = ['<div class="histoire-timeline" role="list">'];
-  for (const dec of used) {
-    const entries = decadesMap.get(dec).sort((a, b) => a.year - b.year);
-    // Top 3 entrées par décennie pour ne pas surcharger
-    const top = entries.slice(0, 3);
-    buf.push(`
-      <div class="histoire-decade" role="listitem">
-        <div class="histoire-decade-label">${dec}s</div>
-        <ul class="histoire-decade-list">
-          ${top.map(({ doc, year }) => {
-            const url = BiblioRouter.ficheUrl(doc.id, basePath);
-            return `<li><span class="histoire-year">${year}</span> <a href="${escape(url)}">${escape(docTitle(doc).slice(0, 70))}${docTitle(doc).length > 70 ? '…' : ''}</a></li>`;
-          }).join('')}
-          ${entries.length > 3 ? `<li class="histoire-more">+ ${entries.length - 3} autre${entries.length - 3 > 1 ? 's' : ''}</li>` : ''}
-        </ul>
-      </div>
-    `);
-  }
-  buf.push('</div>');
-  wrap.innerHTML = buf.join('');
-}
-
 function featuredCardHTML(doc, basePath) {
   const url = BiblioRouter.ficheUrl(doc.id, basePath);
   const cover = coverPath(doc, basePath);
@@ -390,41 +360,6 @@ function featuredCardHTML(doc, basePath) {
         <div class="featured-meta">${escape(src)}${date ? ' · ' + escape(date) : ''}</div>
       </div>
     </article>
-  `;
-}
-
-function renderRecent(docs, basePath) {
-  const wrap = document.getElementById('recent-grid');
-  if (!wrap) return;
-  const recent = docs
-    .slice()
-    .sort((a, b) => (b._latestRunDate || '').localeCompare(a._latestRunDate || ''))
-    .slice(0, 6);
-  if (recent.length === 0) {
-    wrap.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-faint);">Aucune fiche pour l\'instant.</p>';
-    return;
-  }
-  wrap.innerHTML = recent.map(d => bookCardHTML(d, basePath)).join('');
-}
-
-function bookCardHTML(doc, basePath) {
-  const url = BiblioRouter.ficheUrl(doc.id, basePath);
-  const cover = coverPath(doc, basePath);
-  const title = docTitle(doc);
-  const score = doc.latest_score || 0;
-  const author = docAuthor(doc) || doc.source || '';
-  const featuredClass = doc.bulle ? ' featured-mini' : '';
-  return `
-    <a href="${escape(url)}" class="book-card${featuredClass} fade-in" aria-label="Lire la fiche : ${escape(title)}">
-      <div class="book-cover" data-initial="${escape(title.slice(0,1).toUpperCase())}">
-        <img src="${escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.textContent=this.parentNode.dataset.initial||'';">
-      </div>
-      <div class="book-info">
-        <h4 class="book-title">${escape(title)}</h4>
-        <div class="book-meta">${escape(author)}</div>
-        <span class="score-pill ${scoreClass(score)}">${score}/10</span>
-      </div>
-    </a>
   `;
 }
 

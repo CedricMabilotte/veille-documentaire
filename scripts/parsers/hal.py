@@ -110,6 +110,19 @@ def find_documents(source: dict) -> list[dict]:
         uri = _first(doc.get("uri_s"))
         title = _first(doc.get("title_s"))
 
+        # src_meta : métadonnées fiables fournies directement par l'API HAL
+        # (exploitées par doc_metadata pour doc_date/lang/editeur/identifiants).
+        src_meta = {
+            "lang": _first(doc.get("language_s")),
+            "date": (_first(doc.get("producedDate_s"))
+                     or _first(doc.get("publicationDate_s"))
+                     or _first(doc.get("submittedDate_s"))),
+            "publisher": (_first(doc.get("journalPublisher_s"))
+                          or _first(doc.get("publisher_s"))),
+            "doi": _first(doc.get("doiId_s")),
+            "hal_id": _extract_hal_id(uri),
+        }
+
         results.append({
             "url": file_main,
             "filename": _build_filename(file_main, uri),
@@ -118,6 +131,7 @@ def find_documents(source: dict) -> list[dict]:
             "context": _build_context(doc.get("authFullName_s"), doc.get("abstract_s")),
             "page_title": source_label,
             "source_url": source_url,
+            "src_meta": {k: v for k, v in src_meta.items() if v},
         })
 
     return results

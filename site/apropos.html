@@ -31,10 +31,13 @@
     <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
       <a href="index.html">Accueil</a>
       <a href="fiches/index.html">Catalogue</a>
+      <a href="dossiers.html">Dossiers</a>
+      <a href="outils.html">Outils</a>
+      <a href="actu.html">Actu</a>
       <a href="auteurs.html">Auteurs</a>
       <a href="chronologie.html">Chronologie</a>
-      <a href="dossiers.html">Dossiers</a>
       <a href="concepts/index.html">Concepts</a>
+      <a href="etat-corpus.html">État du corpus</a>
       <a href="apropos.html">Méthodologie</a>
     </nav>
     <div class="header-tools">
@@ -193,15 +196,75 @@
 
       <h2>Licence &amp; réutilisation</h2>
       <p>
-        Les fiches éditorialisées (synopsis, abstracts, bulles) sont publiées sous licence
-        <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a>.
-        Vous pouvez les reprendre, citer, traduire, à condition de créditer
-        <em>BIBLIO — actitude.org</em> et de partager dans les mêmes conditions.
+        Les fiches éditorialisées (synopsis, abstracts, bulles) sont publiées sous double licence :
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a>
+        et <a href="https://wiki.p2pfoundation.net/Peer_Production_License" rel="noopener">Peer Production License (PPL)</a>,
+        une licence à réciprocité dont le titulaire est <em>actitude.org</em>. La PPL autorise la
+        réutilisation libre par les communs, les coopératives et les collectifs à but non lucratif,
+        mais conditionne l'usage commercial par des entités à but lucratif. Dans tous les cas, créditez
+        <em>BIBLIO — actitude.org</em> et partagez dans les mêmes conditions.
       </p>
       <p>
         Les textes originaux référencés appartiennent à leurs auteurs et éditeurs respectifs.
         Le code source du projet est sous licence
         <a href="https://opensource.org/license/mit/" rel="noopener">MIT</a>.
+      </p>
+
+      <h2>Charte de gouvernance</h2>
+      <p>
+        BIBLIO n'est pas une plateforme neutre : elle fait des choix. Pour les rendre lisibles et
+        partageables, voici les règles qui encadrent le pilotage de la veille.
+      </p>
+      <ul class="charte-list">
+        <li>
+          <strong>Qui décide des sources ?</strong> La liste des sources surveillées est publique
+          (<a href="https://github.com/CedricMabilotte/veille-documentaire/blob/main/config/sources.yml" rel="noopener"><code>config/sources.yml</code></a>).
+          Toute proposition d'ajout ou de retrait est discutée ouvertement et tranchée par le collectif
+          actitude.org, en privilégiant le pluralisme thématique.
+        </li>
+        <li>
+          <strong>Comment un collectif rejoint le pilotage ?</strong> Un collectif, une revue ou un
+          infokiosque qui partage les thèmes de la veille peut demander à co-décider des sources et des
+          dossiers éditoriaux. Écrivez à <a href="mailto:contact@actitude.org?subject=Rejoindre%20le%20pilotage%20biblio">contact@actitude.org</a>.
+        </li>
+        <li>
+          <strong>Soumettre ses propres documents.</strong> Les collectifs sont invités à proposer
+          leurs brochures, tracts et retours d'expérience — sans passer par GitHub. Un simple courriel
+          suffit.
+        </li>
+        <li>
+          <strong>Anonymat respecté par défaut.</strong> Lorsque la source ne nomme pas d'auteur·rice,
+          la veille n'en infère jamais : aucune identité n'est devinée ni reconstituée.
+        </li>
+        <li>
+          <strong>Transparence du désaccord.</strong> Le scoring automatique est faillible. Toute
+          contestation d'une fiche est publiée et traitée à découvert.
+        </li>
+      </ul>
+
+      <h2>Déréférencement &amp; retrait</h2>
+      <p>
+        BIBLIO référence des documents publiés ailleurs et renvoie vers leur source d'origine. Si vous
+        êtes auteur·rice, éditeur·rice ou ayant droit d'un texte référencé et que vous souhaitez son
+        retrait, voici la procédure :
+      </p>
+      <ol>
+        <li>
+          Écrivez à <a href="mailto:contact@actitude.org?subject=Demande%20de%20d%C3%A9r%C3%A9f%C3%A9rencement%20biblio">contact@actitude.org</a>
+          en indiquant l'URL de la fiche concernée et le motif de la demande.
+        </li>
+        <li>
+          La demande est traitée sous quinze jours. En cas de doute sérieux sur les droits, la fiche
+          est dépubliée à titre conservatoire pendant l'examen.
+        </li>
+        <li>
+          Une fiche retirée l'est de l'interface, du plan de site et des flux RSS. Aucune copie n'est
+          conservée publiquement.
+        </li>
+      </ol>
+      <p>
+        Cette procédure vaut aussi pour toute personne souhaitant faire corriger une attribution
+        d'auteur ou signaler une donnée personnelle indésirable.
       </p>
 
       <h2>Contact</h2>
@@ -222,31 +285,44 @@
       <h4>BIBLIO</h4>
       <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
       <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+      <div class="newsletter-foot">
+        <p><strong>La lettre de la veille</strong> — un digest régulier, sans tracker.</p>
+        <form class="newsletter-form" aria-label="Inscription à la newsletter">
+          <input type="email" name="email" placeholder="votre@email.fr" aria-label="Votre adresse e-mail" required>
+          <button type="submit" class="btn btn-sm">S'inscrire</button>
+        </form>
+      </div>
     </div>
     <div>
       <h4>Naviguer</h4>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="fiches/index.html">Catalogue</a></li>
+        <li><a href="dossiers.html">Dossiers</a></li>
+        <li><a href="outils.html">Boîte à outils</a></li>
+        <li><a href="actu.html">Actu — cette semaine</a></li>
+        <li><a href="une.html">Document de la semaine</a></li>
         <li><a href="auteurs.html">Auteurs</a></li>
         <li><a href="chronologie.html">Chronologie</a></li>
-        <li><a href="dossiers.html">Dossiers</a></li>
         <li><a href="concepts/index.html">Concepts</a></li>
+        <li><a href="etat-corpus.html">État du corpus</a></li>
         <li><a href="apropos.html">Méthodologie</a></li>
-        <li><a href="feed.xml">Flux RSS</a></li>
       </ul>
     </div>
     <div>
-      <h4>Code &amp; licence</h4>
+      <h4>Suivre &amp; réutiliser</h4>
       <ul>
+        <li><a href="feed.xml">Flux RSS — nouvelles fiches</a></li>
+        <li><a href="rss.xml">Flux RSS — toutes nouveautés</a></li>
+        <li><a href="scoops.xml">Flux RSS — scoops (score ≥ 9)</a></li>
         <li><a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">Code source</a></li>
-        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a></li>
-        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a> · <a href="https://wiki.p2pfoundation.net/Peer_Production_License" rel="noopener">PPL</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact &amp; déréférencement</a></li>
       </ul>
     </div>
     <div class="colophon">
       <span>© 2026 BIBLIO · <code>biblio.actitude.org</code></span>
-      <span>HTML, CSS, JavaScript. Sans tracker.</span>
+      <span>Construit en HTML, CSS et JavaScript. Sans tracker.</span>
     </div>
   </div>
 </footer>
@@ -254,6 +330,7 @@
 <script src="assets/js/router.js"></script>
 <script src="assets/js/search.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/home.js"></script>
 
 </body>
 </html>

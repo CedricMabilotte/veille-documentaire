@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/components.css">
 <link rel="manifest" href="../manifest.json">
 </head>
 <body>
@@ -31,10 +32,13 @@
     <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
       <a href="../index.html">Accueil</a>
       <a href="index.html">Catalogue</a>
+      <a href="../dossiers.html">Dossiers</a>
+      <a href="../outils.html">Outils</a>
+      <a href="../actu.html">Actu</a>
       <a href="../auteurs.html">Auteurs</a>
       <a href="../chronologie.html">Chronologie</a>
-      <a href="../dossiers.html">Dossiers</a>
       <a href="../concepts/index.html">Concepts</a>
+      <a href="../etat-corpus.html">État du corpus</a>
       <a href="../apropos.html">Méthodologie</a>
     </nav>
     <div class="header-tools">
@@ -68,6 +72,30 @@
         Toutes les fiches de la veille, filtrables et triables.
       </p>
     </header>
+
+    <!-- C5 : aide pliable de première lecture -->
+    <details class="biblio-help">
+      <summary>Première visite ? Comment lire ce catalogue</summary>
+      <div class="biblio-help-body">
+        <dl>
+          <dt>Le score</dt>
+          <dd>Chaque fiche porte une note de pertinence sur 10, attribuée
+            automatiquement par lecture du document. <strong>7 à 10</strong> :
+            document pertinent à incontournable. <strong>5–6</strong> : à explorer.
+            <strong>Sous 5</strong> : lien faible avec le sujet — masqué par défaut.
+            La note est indicative et peut se tromper.</dd>
+          <dt>La « bulle »</dt>
+          <dd>Les fiches marquées ★ ont reçu un traitement éditorial approfondi
+            (résumé long, citations vérifiées, mise en contexte). Le filtre
+            « A une bulle » ne montre que celles-là.</dd>
+        </dl>
+      </div>
+    </details>
+
+    <!-- A6 : bandeau « N fiches masquées par le score » -->
+    <div id="score-banner" class="biblio-score-banner" hidden></div>
+    <!-- A6 : chips de filtres actifs -->
+    <div id="active-filters" class="biblio-active-filters" aria-label="Filtres actifs"></div>
 
     <div class="catalog-layout">
 
@@ -129,6 +157,11 @@
             <div id="filter-formats"></div>
           </div>
 
+          <div class="filter-group" id="filter-doctype-group" hidden>
+            <h4>Type de document</h4>
+            <div id="filter-doctypes"></div>
+          </div>
+
           <div class="filter-group">
             <h4>Filtres rapides</h4>
             <label><input type="checkbox" id="filter-bulle"> A une bulle (sélection éditoriale)</label>
@@ -178,31 +211,44 @@
       <h4>BIBLIO</h4>
       <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
       <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+      <div class="newsletter-foot">
+        <p><strong>La lettre de la veille</strong> — un digest régulier, sans tracker.</p>
+        <form class="newsletter-form" aria-label="Inscription à la newsletter">
+          <input type="email" name="email" placeholder="votre@email.fr" aria-label="Votre adresse e-mail" required>
+          <button type="submit" class="btn btn-sm">S'inscrire</button>
+        </form>
+      </div>
     </div>
     <div>
       <h4>Naviguer</h4>
       <ul>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="index.html">Catalogue</a></li>
+        <li><a href="../dossiers.html">Dossiers</a></li>
+        <li><a href="../outils.html">Boîte à outils</a></li>
+        <li><a href="../actu.html">Actu — cette semaine</a></li>
+        <li><a href="../une.html">Document de la semaine</a></li>
         <li><a href="../auteurs.html">Auteurs</a></li>
         <li><a href="../chronologie.html">Chronologie</a></li>
-        <li><a href="../dossiers.html">Dossiers</a></li>
         <li><a href="../concepts/index.html">Concepts</a></li>
+        <li><a href="../etat-corpus.html">État du corpus</a></li>
         <li><a href="../apropos.html">Méthodologie</a></li>
-        <li><a href="../feed.xml">Flux RSS</a></li>
       </ul>
     </div>
     <div>
-      <h4>Code &amp; licence</h4>
+      <h4>Suivre &amp; réutiliser</h4>
       <ul>
+        <li><a href="../feed.xml">Flux RSS — nouvelles fiches</a></li>
+        <li><a href="../rss.xml">Flux RSS — toutes nouveautés</a></li>
+        <li><a href="../scoops.xml">Flux RSS — scoops (score ≥ 9)</a></li>
         <li><a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">Code source</a></li>
-        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a></li>
-        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" rel="noopener">CC-BY-SA 4.0</a> · <a href="https://wiki.p2pfoundation.net/Peer_Production_License" rel="noopener">PPL</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact &amp; déréférencement</a></li>
       </ul>
     </div>
     <div class="colophon">
       <span>© 2026 BIBLIO · <code>biblio.actitude.org</code></span>
-      <span>HTML, CSS, JavaScript. Sans tracker.</span>
+      <span>Construit en HTML, CSS et JavaScript. Sans tracker.</span>
     </div>
   </div>
 </footer>
@@ -210,6 +256,7 @@
 <script src="../assets/js/router.js"></script>
 <script src="../assets/js/search.js"></script>
 <script src="../assets/js/app.js"></script>
+<script src="../assets/js/home.js"></script>
 <script>
 /* ===== Catalogue — état et rendu ===== */
 let STATE = {
@@ -222,6 +269,7 @@ let STATE = {
     sources: new Set(),
     formats: new Set(),
     langs: new Set(),
+    docTypes: new Set(),
     decMin: 1850,
     decMax: 2030,
     decIncludeUndated: true,
@@ -231,7 +279,15 @@ let STATE = {
   },
   sort: 'recent',
   viewMode: 'grid', // 'grid' ou 'shelf'
+  looseSearch: false, // B7 : repli « au moins un terme »
 };
+
+const DEFAULT_FILTERS = () => ({
+  q: '', scoreMin: 5, scoreMax: 10,
+  sources: new Set(), formats: new Set(), langs: new Set(), docTypes: new Set(),
+  decMin: 1850, decMax: 2030, decIncludeUndated: true,
+  bulle: false, downloaded: false, enriched: false,
+});
 
 /* Détecte la langue d'un doc : meta.lang, enrichment.lang ou heuristique simple. */
 function detectLang(doc) {
@@ -248,10 +304,30 @@ function detectLang(doc) {
 }
 
 window.pageInit = function (basePath) {
-  loadCatalog(basePath).then(({ meta, docs }) => {
+  loadCatalogPage(basePath);
+};
+
+/* A5 : affiche des cartes squelettes pendant le fetch, puis gère l'erreur. */
+function loadCatalogPage(basePath) {
+  const grid = document.getElementById('catalog-grid');
+  if (grid) {
+    grid.className = 'catalog-grid';
+    grid.innerHTML = skeletonCards(10);
+  }
+  loadCatalog(basePath).then(({ meta, docs, _error }) => {
+    if (_error || !docs.length) {
+      visitorError('#catalog-grid', {
+        title: _error ? 'Le catalogue n’a pas pu se charger'
+                       : 'Le catalogue est vide pour le moment',
+        message: _error
+          ? 'La bibliothèque est momentanément indisponible. Vérifiez votre connexion, puis réessayez.'
+          : 'Aucune fiche n’est encore publiée. Revenez bientôt — la veille tourne en continu.',
+        onRetry: _error ? () => { resetCatalogCache(); loadCatalogPage(basePath); } : null,
+      });
+      return;
+    }
     STATE.docs = docs;
     STATE.meta = meta;
-    // Mémorisation du mode d'affichage
     const storedView = localStorage.getItem('biblio-view');
     if (storedView === 'shelf' || storedView === 'grid') STATE.viewMode = storedView;
     initFiltersUI();
@@ -260,7 +336,7 @@ window.pageInit = function (basePath) {
     applyViewMode();
     render(basePath);
   });
-};
+}
 
 /* Bascule grille/étagère, met à jour aria + visibilité. */
 function applyViewMode() {
@@ -323,10 +399,32 @@ function initFiltersUI() {
     </label>
   `).join('') || '<p style="color:var(--text-faint);font-size:13px;">—</p>';
 
+  // A1 : facette type de document (doc_type) — n'apparaît que si renseigné
+  const dtWrap = document.getElementById('filter-doctypes');
+  const dtGroup = document.getElementById('filter-doctype-group');
+  const dtCounts = {};
+  STATE.docs.forEach(d => {
+    const t = docType(d);
+    if (t) dtCounts[t] = (dtCounts[t] || 0) + 1;
+  });
+  const dtKeys = Object.keys(dtCounts).sort((a, b) => dtCounts[b] - dtCounts[a]);
+  if (dtKeys.length) {
+    dtGroup.hidden = false;
+    dtWrap.innerHTML = dtKeys.map(t => `
+      <label><input type="checkbox" name="doctype" value="${escape(t)}">
+        ${escape(docTypeLabel(t))} <span style="color:var(--text-faint);font-size:12px;">(${dtCounts[t]})</span>
+      </label>
+    `).join('');
+  } else {
+    dtGroup.hidden = true; // dégradation propre : champ absent → pas de facette
+  }
+
   // Mémorise la décennie sur le doc (pour filtrage rapide)
-  STATE.docs.forEach(d => { d._year = inferYear(d); d._lang = detectLang(d); });
+  STATE.docs.forEach(d => { d._year = docYear(d); d._lang = detectLang(d); });
 }
 
+/* A6 : désérialise TOUS les filtres depuis la querystring pour que l'état
+   survive au retour depuis une fiche. Valeurs multiples séparées par virgule. */
 function readURLParams() {
   const params = BiblioRouter.getAllParams();
   if (params.q) {
@@ -347,12 +445,45 @@ function readURLParams() {
     STATE.filters.bulle = true;
     document.getElementById('filter-bulle').checked = true;
   }
+  if (params.downloaded === '1') {
+    STATE.filters.downloaded = true;
+    document.getElementById('filter-downloaded').checked = true;
+  }
+  if (params.enriched === '1') {
+    STATE.filters.enriched = true;
+    document.getElementById('filter-enriched').checked = true;
+  }
+  // Multi-valeurs : sources, formats, langues, types
+  applyMultiParam(params.source, STATE.filters.sources, 'src');
+  applyMultiParam(params.format, STATE.filters.formats, 'fmt');
+  applyMultiParam(params.lang, STATE.filters.langs, 'lang');
+  applyMultiParam(params.doctype, STATE.filters.docTypes, 'doctype');
   if (params.sort) {
     STATE.sort = params.sort;
     document.getElementById('sort-select').value = params.sort;
   }
   document.getElementById('filter-score-min-val').textContent = STATE.filters.scoreMin;
   document.getElementById('filter-score-max-val').textContent = STATE.filters.scoreMax;
+}
+
+/* Coche les cases d'un groupe et alimente un Set à partir d'un param CSV. */
+function applyMultiParam(raw, set, inputName) {
+  if (!raw) return;
+  raw.split(',').map(v => v.trim()).filter(Boolean).forEach(v => {
+    set.add(v);
+    const cb = document.querySelector(`input[name="${inputName}"][value="${cssEscapeValue(v)}"]`);
+    if (cb) cb.checked = true;
+  });
+}
+/* Échappe une valeur pour un sélecteur d'attribut CSS. */
+function cssEscapeValue(v) {
+  return String(v).replace(/["\\]/g, '\\$&');
+}
+
+/* A6 : sérialise un Set dans l'URL sous forme de liste CSV (ou supprime). */
+function setMultiParam(key, set) {
+  const v = Array.from(set);
+  BiblioRouter.setParam(key, v.length ? v.join(',') : null);
 }
 
 function bindEvents(basePath) {
@@ -387,22 +518,30 @@ function bindEvents(basePath) {
     BiblioRouter.setParam('score_max', v === 10 ? null : v);
     render(basePath);
   });
-  // Checkboxes sources/formats/langues + autres
+  // Checkboxes sources/formats/langues/types + autres — tous sérialisés en URL
   form.addEventListener('change', (e) => {
     const t = e.target;
     if (t.name === 'src') {
       if (t.checked) STATE.filters.sources.add(t.value); else STATE.filters.sources.delete(t.value);
+      setMultiParam('source', STATE.filters.sources);
     } else if (t.name === 'fmt') {
       if (t.checked) STATE.filters.formats.add(t.value); else STATE.filters.formats.delete(t.value);
+      setMultiParam('format', STATE.filters.formats);
     } else if (t.name === 'lang') {
       if (t.checked) STATE.filters.langs.add(t.value); else STATE.filters.langs.delete(t.value);
+      setMultiParam('lang', STATE.filters.langs);
+    } else if (t.name === 'doctype') {
+      if (t.checked) STATE.filters.docTypes.add(t.value); else STATE.filters.docTypes.delete(t.value);
+      setMultiParam('doctype', STATE.filters.docTypes);
     } else if (t.id === 'filter-bulle') {
       STATE.filters.bulle = t.checked;
       BiblioRouter.setParam('bulle', t.checked ? '1' : null);
     } else if (t.id === 'filter-downloaded') {
       STATE.filters.downloaded = t.checked;
+      BiblioRouter.setParam('downloaded', t.checked ? '1' : null);
     } else if (t.id === 'filter-enriched') {
       STATE.filters.enriched = t.checked;
+      BiblioRouter.setParam('enriched', t.checked ? '1' : null);
     } else if (t.id === 'filter-dec-include-undated') {
       STATE.filters.decIncludeUndated = t.checked;
     }
@@ -433,32 +572,7 @@ function bindEvents(basePath) {
     render(basePath);
   });
   // Reset
-  document.getElementById('filter-reset').addEventListener('click', () => {
-    STATE.filters = {
-      q: '', scoreMin: 5, scoreMax: 10,
-      sources: new Set(), formats: new Set(), langs: new Set(),
-      decMin: 1850, decMax: 2030, decIncludeUndated: true,
-      bulle: false, downloaded: false, enriched: false,
-    };
-    document.getElementById('filter-q').value = '';
-    document.getElementById('filter-score-min').value = 5;
-    document.getElementById('filter-score-max').value = 10;
-    document.getElementById('filter-score-min-val').textContent = '5';
-    document.getElementById('filter-score-max-val').textContent = '10';
-    document.getElementById('filter-dec-min').value = 1850;
-    document.getElementById('filter-dec-max').value = 2030;
-    document.getElementById('filter-dec-min-val').textContent = '1850';
-    document.getElementById('filter-dec-max-val').textContent = '2030';
-    document.getElementById('filter-dec-include-undated').checked = true;
-    document.querySelectorAll('#filter-sources input, #filter-formats input, #filter-langs input').forEach(i => i.checked = false);
-    document.getElementById('filter-bulle').checked = false;
-    document.getElementById('filter-downloaded').checked = false;
-    document.getElementById('filter-enriched').checked = false;
-    const ss = document.getElementById('filter-sources-search'); if (ss) ss.value = '';
-    document.querySelectorAll('#filter-sources label').forEach(l => l.style.display = '');
-    window.history.replaceState({}, '', window.location.pathname);
-    render(basePath);
-  });
+  document.getElementById('filter-reset').addEventListener('click', () => resetFilters(basePath));
   // Exports
   document.getElementById('export-csv').addEventListener('click', () => exportCSV(filteredDocs()));
   document.getElementById('export-bibtex').addEventListener('click', () => exportBibTeX(filteredDocs()));
@@ -486,11 +600,47 @@ function debounce(fn, wait) {
   return function (...args) { clearTimeout(t); t = setTimeout(() => fn.apply(this, args), wait); };
 }
 
+/* Réinitialise tous les filtres (utilisé par le bouton et l'état vide B7). */
+function resetFilters(basePath) {
+  STATE.filters = DEFAULT_FILTERS();
+  STATE.looseSearch = false;
+  document.getElementById('filter-q').value = '';
+  document.getElementById('filter-score-min').value = 5;
+  document.getElementById('filter-score-max').value = 10;
+  document.getElementById('filter-score-min-val').textContent = '5';
+  document.getElementById('filter-score-max-val').textContent = '10';
+  document.getElementById('filter-dec-min').value = 1850;
+  document.getElementById('filter-dec-max').value = 2030;
+  document.getElementById('filter-dec-min-val').textContent = '1850';
+  document.getElementById('filter-dec-max-val').textContent = '2030';
+  document.getElementById('filter-dec-include-undated').checked = true;
+  document.querySelectorAll('#filter-sources input, #filter-formats input, #filter-langs input, #filter-doctypes input').forEach(i => i.checked = false);
+  document.getElementById('filter-bulle').checked = false;
+  document.getElementById('filter-downloaded').checked = false;
+  document.getElementById('filter-enriched').checked = false;
+  const ss = document.getElementById('filter-sources-search'); if (ss) ss.value = '';
+  document.querySelectorAll('#filter-sources label').forEach(l => l.style.display = '');
+  window.history.replaceState({}, '', window.location.pathname);
+  render(basePath);
+}
+
+/* Comme filteredDocs() mais sans la contrainte de score minimum — sert à
+   compter les fiches masquées par le seul filtre score (bandeau A6).
+   On rejoue filteredDocs() avec scoreMin abaissé à 0 puis on restaure. */
+function docsIgnoringScoreMin() {
+  const saved = STATE.filters.scoreMin;
+  STATE.filters.scoreMin = 0;
+  let out;
+  try { out = filteredDocs(); }
+  finally { STATE.filters.scoreMin = saved; }
+  return out;
+}
+
 function filteredDocs() {
   let out = STATE.docs.slice();
-  // Score range
+  // Score range — règle d'or : score_final ?? score_initial ?? latest_score
   out = out.filter(d => {
-    const s = d.latest_score || 0;
+    const s = docScore(d);
     return s >= STATE.filters.scoreMin && s <= STATE.filters.scoreMax;
   });
   // Sources
@@ -499,6 +649,10 @@ function filteredDocs() {
   }
   if (STATE.filters.formats.size > 0) {
     out = out.filter(d => STATE.filters.formats.has(d.format));
+  }
+  // A1 : type de document
+  if (STATE.filters.docTypes.size > 0) {
+    out = out.filter(d => STATE.filters.docTypes.has(docType(d)));
   }
   // Langues
   if (STATE.filters.langs.size > 0) {
@@ -517,14 +671,16 @@ function filteredDocs() {
   if (STATE.filters.bulle) out = out.filter(d => d.bulle);
   if (STATE.filters.downloaded) out = out.filter(d => d.downloaded);
   if (STATE.filters.enriched) out = out.filter(d => d.enrichment && d.enrichment.summary);
-  // Recherche full-text
+  // Recherche full-text — ET strict, ou repli souple (B7) si activé
   if (STATE.filters.q.trim()) {
-    out = BiblioSearch.searchDocs(out, STATE.filters.q);
+    out = STATE.looseSearch
+      ? BiblioSearch.searchDocsLoose(out, STATE.filters.q)
+      : BiblioSearch.searchDocs(out, STATE.filters.q);
   }
-  // Sort
+  // Sort — score effectif (score_final prioritaire)
   switch (STATE.sort) {
-    case 'score-desc': out.sort((a,b) => (b.latest_score||0) - (a.latest_score||0)); break;
-    case 'score-asc':  out.sort((a,b) => (a.latest_score||0) - (b.latest_score||0)); break;
+    case 'score-desc': out.sort((a,b) => docScore(b) - docScore(a)); break;
+    case 'score-asc':  out.sort((a,b) => docScore(a) - docScore(b)); break;
     case 'title':      out.sort((a,b) => docTitle(a).localeCompare(docTitle(b), 'fr')); break;
     case 'source':     out.sort((a,b) => (a.source||'').localeCompare(b.source||'', 'fr')); break;
     case 'recent':
@@ -535,25 +691,158 @@ function filteredDocs() {
 
 function render(basePath) {
   const docs = filteredDocs();
+  // B7 : annonce du nombre de résultats (aria-live déjà sur #result-count)
   document.getElementById('result-count').textContent =
     `${docs.length} fiche${docs.length > 1 ? 's' : ''} sur ${STATE.docs.length}`;
+  renderActiveChips(basePath);
+  renderScoreBanner(basePath);
   const grid = document.getElementById('catalog-grid');
   const shelf = document.getElementById('catalog-shelf');
   if (STATE.viewMode === 'shelf') {
     if (docs.length === 0) {
-      shelf.innerHTML = '<p style="color:var(--text-faint);font-style:italic;padding:40px 0;text-align:center;width:100%;">Aucune fiche ne correspond. Essayez d\'élargir vos filtres.</p>';
+      shelf.innerHTML = emptyStateHTML();
+      bindEmptyState(basePath);
       return;
     }
     renderShelf(docs, basePath);
   } else {
     if (docs.length === 0) {
-      grid.className = 'catalog-grid empty';
-      grid.innerHTML = 'Aucune fiche ne correspond. Essayez d\'élargir vos filtres.';
+      grid.className = 'catalog-grid';
+      grid.innerHTML = emptyStateHTML();
+      bindEmptyState(basePath);
       return;
     }
     grid.className = 'catalog-grid';
     grid.innerHTML = docs.map(d => bookCardHTML(d, basePath)).join('');
   }
+}
+
+/* B7 : état vide actionnable. Propose le repli souple si une recherche est
+   active, et toujours un bouton de réinitialisation. */
+function emptyStateHTML() {
+  const hasQuery = STATE.filters.q.trim().length > 0;
+  let looseHint = '';
+  if (hasQuery && !STATE.looseSearch) {
+    // Y aurait-il des résultats en mode « au moins un terme » ?
+    const loose = BiblioSearch.searchDocsLoose(STATE.docs.filter(d => {
+      const s = docScore(d);
+      return s >= STATE.filters.scoreMin && s <= STATE.filters.scoreMax;
+    }), STATE.filters.q);
+    if (loose.length > 0) {
+      looseHint = `<button type="button" class="btn btn-sm" data-empty-loose>
+        Élargir : au moins un terme (${loose.length})</button>`;
+    }
+  }
+  return `<div class="biblio-empty-state">
+    <p>Aucune fiche ne correspond${hasQuery ? ' à cette recherche' : ' à ces filtres'}.</p>
+    <div class="biblio-empty-actions">
+      ${looseHint}
+      <button type="button" class="btn btn-sm" data-empty-reset>Réinitialiser les filtres</button>
+    </div>
+  </div>`;
+}
+
+function bindEmptyState(basePath) {
+  const reset = document.querySelector('[data-empty-reset]');
+  if (reset) reset.addEventListener('click', () => resetFilters(basePath));
+  const loose = document.querySelector('[data-empty-loose]');
+  if (loose) loose.addEventListener('click', () => {
+    STATE.looseSearch = true;
+    render(basePath);
+  });
+}
+
+/* A6 : barre de chips de filtres actifs supprimables. */
+function renderActiveChips(basePath) {
+  const wrap = document.getElementById('active-filters');
+  if (!wrap) return;
+  const chips = [];
+  const f = STATE.filters;
+  function chip(label, value, onRemove) {
+    const id = chips.length;
+    chips.push({ id, label, value, onRemove });
+  }
+  if (f.q.trim()) chip('Recherche', f.q, () => {
+    f.q = ''; document.getElementById('filter-q').value = '';
+    BiblioRouter.setParam('q', null); STATE.looseSearch = false;
+  });
+  if (STATE.looseSearch) chip('Mode', 'au moins un terme', () => { STATE.looseSearch = false; });
+  if (f.scoreMin !== 5 || f.scoreMax !== 10) chip('Score', `${f.scoreMin}–${f.scoreMax}`, () => {
+    f.scoreMin = 5; f.scoreMax = 10;
+    document.getElementById('filter-score-min').value = 5;
+    document.getElementById('filter-score-max').value = 10;
+    document.getElementById('filter-score-min-val').textContent = '5';
+    document.getElementById('filter-score-max-val').textContent = '10';
+    BiblioRouter.setParam('score_min', null); BiblioRouter.setParam('score_max', null);
+  });
+  f.sources.forEach(s => chip('Source', s, () => {
+    f.sources.delete(s); uncheck('src', s); setMultiParam('source', f.sources);
+  }));
+  f.formats.forEach(s => chip('Format', s.toUpperCase(), () => {
+    f.formats.delete(s); uncheck('fmt', s); setMultiParam('format', f.formats);
+  }));
+  f.langs.forEach(s => chip('Langue', s.toUpperCase(), () => {
+    f.langs.delete(s); uncheck('lang', s); setMultiParam('lang', f.langs);
+  }));
+  f.docTypes.forEach(s => chip('Type', docTypeLabel(s), () => {
+    f.docTypes.delete(s); uncheck('doctype', s); setMultiParam('doctype', f.docTypes);
+  }));
+  if (f.bulle) chip('Filtre', 'avec bulle', () => {
+    f.bulle = false; document.getElementById('filter-bulle').checked = false;
+    BiblioRouter.setParam('bulle', null);
+  });
+  if (f.downloaded) chip('Filtre', 'téléchargé', () => {
+    f.downloaded = false; document.getElementById('filter-downloaded').checked = false;
+    BiblioRouter.setParam('downloaded', null);
+  });
+  if (f.enriched) chip('Filtre', 'synopsis', () => {
+    f.enriched = false; document.getElementById('filter-enriched').checked = false;
+    BiblioRouter.setParam('enriched', null);
+  });
+
+  if (!chips.length) { wrap.innerHTML = ''; return; }
+  wrap.innerHTML = chips.map(c => `
+    <span class="biblio-chip"><b>${escape(c.label)}</b> ${escape(c.value)}
+      <button type="button" data-chip="${c.id}" aria-label="Retirer le filtre ${escape(c.label)} ${escape(c.value)}">×</button>
+    </span>`).join('')
+    + '<button type="button" class="biblio-chip-clear" data-chip-clear>Tout effacer</button>';
+  wrap.querySelectorAll('[data-chip]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const c = chips[+btn.getAttribute('data-chip')];
+      if (c && c.onRemove) c.onRemove();
+      render(basePath);
+    });
+  });
+  const clr = wrap.querySelector('[data-chip-clear]');
+  if (clr) clr.addEventListener('click', () => resetFilters(basePath));
+}
+
+function uncheck(name, value) {
+  const cb = document.querySelector(`input[name="${name}"][value="${cssEscapeValue(value)}"]`);
+  if (cb) cb.checked = false;
+}
+
+/* A6 : bandeau « N fiches masquées par le filtre score ». */
+function renderScoreBanner(basePath) {
+  const banner = document.getElementById('score-banner');
+  if (!banner) return;
+  if (STATE.filters.scoreMin <= 0) { banner.hidden = true; banner.innerHTML = ''; return; }
+  const withoutScore = docsIgnoringScoreMin().length;
+  const withScore = filteredDocs().length;
+  const hidden = withoutScore - withScore;
+  if (hidden <= 0) { banner.hidden = true; banner.innerHTML = ''; return; }
+  banner.hidden = false;
+  banner.innerHTML = `<span>${hidden} fiche${hidden > 1 ? 's' : ''} masquée${hidden > 1 ? 's' : ''}
+    par le filtre de score minimum (≥ ${STATE.filters.scoreMin}/10).</span>
+    <button type="button" data-show-all-scores>Tout afficher</button>`;
+  const b = banner.querySelector('[data-show-all-scores]');
+  if (b) b.addEventListener('click', () => {
+    STATE.filters.scoreMin = 0;
+    document.getElementById('filter-score-min').value = 0;
+    document.getElementById('filter-score-min-val').textContent = '0';
+    BiblioRouter.setParam('score_min', '0');
+    render(basePath);
+  });
 }
 
 /* Rendu étagère : des "livres" alignés horizontalement, largeur variable. */
@@ -591,18 +880,23 @@ function bookCardHTML(doc, basePath) {
   const url = BiblioRouter.ficheUrl(doc.id, basePath);
   const cover = coverPath(doc, basePath);
   const title = docTitle(doc);
-  const score = doc.latest_score || 0;
+  const score = docScore(doc);
   const author = docAuthor(doc) || doc.source || '';
   const featuredClass = doc.bulle ? ' featured-mini' : '';
+  const dt = docType(doc);
+  // B7 : surlignage des occurrences de la recherche dans le titre
+  const terms = STATE.filters.q.trim() ? BiblioSearch.queryTerms(STATE.filters.q) : [];
+  const titleHTML = terms.length ? highlightTerms(title, terms) : escape(title);
   return `
     <a href="${escape(url)}" class="book-card${featuredClass} fade-in" aria-label="Lire la fiche : ${escape(title)}">
       <div class="book-cover" data-initial="${escape(title.slice(0,1).toUpperCase())}">
         <img src="${escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.textContent=this.parentNode.dataset.initial||'';">
       </div>
       <div class="book-info">
-        <h4 class="book-title">${escape(title)}</h4>
-        <div class="book-meta">${escape(author)}</div>
+        <h4 class="book-title">${titleHTML}</h4>
+        <div class="book-meta">${dt ? `<span class="biblio-type-badge">${escape(docTypeLabel(dt))}</span>` : ''}${escape(author)}</div>
         <span class="score-pill ${scoreClass(score)}">${score}/10</span>
+        <span class="biblio-score-text">${escape(scoreLabel(score))}</span>
       </div>
     </a>
   `;
@@ -617,7 +911,7 @@ function exportCSV(docs) {
     docAuthor(d) || '',
     d.source || '',
     d.format || '',
-    d.latest_score || 0,
+    docScore(d),
     d._latestRunDate || '',
     d.url || '',
   ]);
@@ -629,7 +923,7 @@ function exportCSV(docs) {
 }
 
 function exportBibTeX(docs) {
-  const eligible = docs.filter(d => (d.latest_score || 0) >= 7);
+  const eligible = docs.filter(d => docScore(d) >= 7);
   if (eligible.length === 0) {
     toast('Aucune fiche avec score ≥ 7 dans la sélection.');
     return;

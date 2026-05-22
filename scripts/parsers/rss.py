@@ -49,6 +49,27 @@ def _text(elem: Optional[ET.Element]) -> str:
     return (elem.text or "").strip() if elem is not None else ""
 
 
+def _norm_pubdate(raw: str) -> str:
+    """Normalise une date RSS (RFC822) ou Atom (ISO) en année/ISO exploitable."""
+    if not raw:
+        return ""
+    raw = raw.strip()
+    # ISO 8601 (Atom) : 2026-05-22T...
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", raw)
+    if m:
+        return m.group(0)
+    # RFC822 : 'Thu, 22 May 2026 14:30:00 +0000'
+    try:
+        from email.utils import parsedate_to_datetime
+        dt = parsedate_to_datetime(raw)
+        if dt:
+            return dt.strftime("%Y-%m-%d")
+    except Exception:
+        pass
+    m = re.search(r"(19|20)\d{2}", raw)
+    return m.group(0) if m else ""
+
+
 def _parse_rss(root: ET.Element) -> list[dict]:
     """Parse RSS 2.0 : <channel><item>...</item></channel>."""
     items: list[dict] = []
@@ -57,6 +78,7 @@ def _parse_rss(root: ET.Element) -> list[dict]:
             "link": _text(item.find("link")),
             "title": _text(item.find("title")),
             "description": _strip_html(_text(item.find("description"))),
+            "pubdate": _norm_pubdate(_text(item.find("pubDate"))),
         })
     return items
 
@@ -75,7 +97,10 @@ def _parse_atom(root: ET.Element) -> list[dict]:
         title = _text(entry.find("atom:title", NS))
         summary = _strip_html(_text(entry.find("atom:summary", NS))
                               or _text(entry.find("atom:content", NS)))
-        items.append({"link": link, "title": title, "description": summary})
+        pubdate = _norm_pubdate(_text(entry.find("atom:published", NS))
+                                or _text(entry.find("atom:updated", NS)))
+        items.append({"link": link, "title": title, "description": summary,
+                      "pubdate": pubdate})
     return items
 
 
@@ -181,7 +206,7 @@ def find_documents(source: dict) -> list[dict]:
         link = it["link"]
         if not link:
             continue
-        docs.append({
+        doc = {
             "url": link,
             "filename": (urlparse(link).path.rstrip("/").split("/")[-1]
                          or "article") + ".html",
@@ -190,7 +215,11 @@ def find_documents(source: dict) -> list[dict]:
             "context": it["description"],
             "page_title": label,
             "source_url": url,
-        })
+        }
+        # src_meta : la date de publication du flux RSS est fiable
+        if it.get("pubdate"):
+            doc["src_meta"] = {"date": it["pubdate"]}
+        docs.append(doc)
     return docs
 
 
