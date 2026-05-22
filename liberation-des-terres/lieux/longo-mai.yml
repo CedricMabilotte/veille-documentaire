@@ -1,0 +1,99 @@
+uid: longo-mai
+categorie: lieu
+nom: "Coopératives Longo Maï"
+sous_titre: "Réseau de coopératives autogérées sur foncier sanctuarisé"
+statut_fiche: publie
+forme_juridique: null
+localisation:
+  commune: "Limans"
+  departement: "Alpes-de-Haute-Provence (04)"
+  region: "Provence-Alpes-Côte d'Azur"
+annee: 1973
+url: "https://www.prolongomaif.ch/"
+resume: >
+  Réseau de coopératives fondé en 1973, avec son siège historique à Limans et
+  cinq implantations en France (Limans, Chantemerle, Mas de Granier, Treynas, La
+  Cabrery). Les terres sont regroupées dans une fondation de droit suisse, le
+  Fonds de Terre Européenne, qui les détient de façon inaliénable, à l'abri de la
+  spéculation. Les coopératives autogérées en assurent l'usage : agriculture,
+  élevage, vigne, forêt, artisanat et accueil.
+montage:
+  type: propriete_sanctuarisee
+  nu_proprietaire: "Fonds de Terre Européenne (fondation de droit suisse)"
+  usufruitier: "Coopératives Longo Maï (collectifs autogérés)"
+  description: >
+    Le foncier des coopératives est transféré à une fondation de droit suisse, le
+    Fonds de Terre Européenne, qui en assure la propriété inaliénable. Les
+    coopératives autogérées, de statut associatif, utilisent les terres. Le
+    démembrement nue-propriété/usufruit au sens du droit français n'est pas
+    confirmé : il s'agit d'une propriété sanctuarisée par une fondation et d'un
+    usage collectif.
+purete_juridique:
+  niveau: encadre
+  commentaire: >
+    Foncier sanctuarisé de manière inaliénable dans une fondation, mais relevant
+    du droit suisse, et usage collectif dont la formalisation contractuelle
+    n'est pas documentée.
+grille:
+  - critere: foncier_hors_marche
+    valeur: oui
+    note: "Les terres sont détenues de façon inaliénable par le Fonds de Terre Européenne, à l'abri de la spéculation."
+  - critere: montage_documente
+    valeur: partiel
+    note: "Le principe propriété en fondation / usage par coopératives est public, mais les actes d'usage ne sont pas détaillés."
+  - critere: irreversibilite
+    valeur: oui
+    note: "La fondation détient le foncier de façon explicitement inaliénable."
+  - critere: origine_non_speculative
+    valeur: oui
+    note: "Le foncier est regroupé dans une fondation pour le soustraire à la spéculation, hors logique de plus-value."
+  - critere: usage_interet_general
+    valeur: partiel
+    note: "Les activités agricoles, artisanales et d'accueil ont une portée collective, mais l'ouverture au-delà des coopérants n'est pas explicitée."
+  - critere: non_lucratif_global
+    valeur: oui
+    note: "Fondation et coopératives autogérées de statut associatif ne captent pas de plus-value foncière privée."
+  - critere: ancrage_territorial
+    valeur: partiel
+    note: "Réseau implanté localement sur cinq sites en France, mais le degré d'ouverture au territoire n'est pas documenté."
+  - critere: gouvernance_collective
+    valeur: oui
+    note: "Les coopératives fonctionnent en autogestion : les usagers décident collectivement."
+  - critere: tripartisme
+    valeur: non
+    note: "La gouvernance repose sur les coopérants ; l'association du voisinage ou des pouvoirs publics n'est pas documentée."
+  - critere: perennite_gouvernance
+    valeur: partiel
+    note: "Le réseau fonctionne depuis 1973, mais les dispositifs de transmission et de renouvellement ne sont pas décrits."
+analyse:
+  forces:
+    - "Foncier sanctuarisé de façon inaliénable depuis des décennies."
+    - "Autogestion effective : les usagers décident collectivement."
+    - "Réseau ancien et stable, réparti sur plusieurs implantations."
+  fragilites:
+    - "Propriété portée par une fondation de droit suisse, hors cadre juridique français."
+    - "Gouvernance centrée sur les coopérants, peu ouverte au voisinage."
+    - "Formalisation contractuelle de l'usage non documentée."
+  leviers:
+    - "Documenter publiquement les actes liant fondation et coopératives."
+    - "Organiser explicitement l'accueil de nouveaux entrants et la transmission."
+    - "Articuler la gouvernance avec le territoire et les collectivités."
+  synthese: >
+    Longo Maï démontre la solidité d'un foncier sanctuarisé en fondation couplé à
+    une autogestion réelle. Sa singularité tient au recours au droit suisse et à
+    une gouvernance centrée sur les coopérants, qui gagnerait en ancrage à
+    s'ouvrir davantage au territoire.
+fiabilite: >
+  Faits vérifiés : fondation du réseau en 1973, cinq implantations en France,
+  détention inaliénable du foncier par le Fonds de Terre Européenne, autogestion
+  des coopératives. Non confirmé : nature exacte des actes d'usage, existence d'un
+  démembrement de droit français, dispositifs de transmission.
+liens:
+  porteurs: [fonds-terre-europeenne]
+  usufruitiers: [cooperatives-longo-mai]
+  lieux: []
+sources:
+  - titre: "Pro Longo Maï"
+    url: "https://www.prolongomaif.ch/"
+  - titre: "Longo Maï — La Cabrery"
+    url: "https://www.lacabrery.org/longo-mai/"

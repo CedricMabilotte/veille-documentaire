@@ -24,6 +24,7 @@ import requests
 from pathlib import Path
 from datetime import datetime
 from collections import defaultdict
+from urllib.parse import urlparse
 
 # Ajouter scripts/ au PYTHONPATH pour pouvoir importer parsers/ et utilitaires
 sys.path.insert(0, str(Path(__file__).parent))
@@ -706,9 +707,28 @@ def _effective_score(doc: dict) -> int:
     return int(doc.get("score_initial", doc.get("latest_score", 0)) or 0)
 
 
+def _is_pdf_doc(doc: dict) -> bool:
+    """Garde-fou « bibliothèque » : une fiche correspond toujours à un ouvrage
+    PDF, jamais à un article HTML (flux RSS, lien de presse).
+
+    Accepte le candidat si son extension déclarée est « pdf » OU si l'URL pointe
+    explicitement vers un .pdf. Les articles HTML restent exploités comme
+    pistes de découverte (candidates.yml) mais ne deviennent jamais des fiches.
+    """
+    ext = (doc.get("extension") or doc.get("format") or "").lower().lstrip(".")
+    if ext == "pdf":
+        return True
+    path = urlparse(doc.get("url", "")).path.lower()
+    return path.endswith(".pdf")
+
+
 def _is_publishable(doc: dict) -> bool:
-    """True si le doc doit apparaître dans RSS / sitemap / fiches pré-rendues."""
-    return _effective_score(doc) >= PUBLISH_THRESHOLD
+    """True si le doc doit apparaître dans RSS / sitemap / fiches pré-rendues.
+
+    Deux conditions : score effectif suffisant ET ouvrage PDF (jamais un
+    article HTML — ceci reste une bibliothèque, pas une revue de presse).
+    """
+    return _is_pdf_doc(doc) and _effective_score(doc) >= PUBLISH_THRESHOLD
 
 
 def _prerender_fiches(catalog: dict) -> int:
@@ -1233,30 +1253,38 @@ def main() -> None:
         print(f"\n🔍  {label}  [type={src_type}]\n    {url}")
 
         # ── Dispatch vers le bon parser ────────────────────────────────────
-        docs = parser_dispatch(source)
-        # Enregistrer le résultat dans le throttle (status_code=200 si on a des docs,
-        # 0 sinon — signale le non-rendement, pas une erreur HTTP)
+        docs_raw = parser_dispatch(source)
+
+        # ── Garde-fou « bibliothèque » ─────────────────────────────────────
+        # Une fiche pointe TOUJOURS vers un ouvrage PDF, jamais vers un article
+        # HTML. Les liens non-PDF (flux RSS, presse) sont écartés ici : ils ne
+        # deviennent pas des fiches, mais restent collectés comme pistes de
+        # découverte (candidates.yml, alimenté par les parsers eux-mêmes).
+        docs = [d for d in docs_raw if _is_pdf_doc(d)]
+        n_dropped = len(docs_raw) - len(docs)
+        if n_dropped:
+            print(f"    ⊘  {n_dropped} lien(s) non-PDF écarté(s) "
+                  f"(bibliothèque = ouvrages PDF uniquement)")
+
+        # Enregistrer le résultat dans le throttle. On compte le rendement brut
+        # (docs_raw) pour ne pas étrangler les flux RSS qui servent la
+        # découverte même s'ils ne produisent aucune fiche.
         try:
             throttle.record_fetch(
                 source,
-                success=bool(docs),
-                doc_count=len(docs),
-                status_code=200 if docs else 204,
+                success=bool(docs_raw),
+                doc_count=len(docs_raw),
+                status_code=200 if docs_raw else 204,
             )
         except Exception as e:
             print(f"  ⚠  throttle.record_fetch raté : {e}")
-
-        if not docs:
-            continue
-
-        report["sources_scanned"] += 1
-        print(f"    → {len(docs)} document(s) trouvé(s)")
-        report["documents_found"] += len(docs)
 
         # ── Capture des liens externes : alimente discovery/candidates.yml ─
         # On re-fetche la vraie page d'index pour parser TOUS ses <a href>
         # (pas seulement les docs déjà extraits). Coût : 1 GET de plus par
         # source HTML, négligeable. Skip pour les types non-HTML (api, opds…).
+        # Exécuté AVANT le filtre de fiches : la découverte continue même
+        # quand une source ne produit aucun ouvrage PDF.
         if src_type in ("html", "deep_html", "rss"):
             try:
                 resp = requests.get(url, headers=HEADERS, timeout=15)
@@ -1269,6 +1297,13 @@ def main() -> None:
                         print(f"    🌐  {new_links} nouveaux candidats (liens externes)")
             except Exception as e:
                 print(f"  ⚠  capture_links raté : {e}")
+
+        if not docs:
+            continue
+
+        report["sources_scanned"] += 1
+        print(f"    → {len(docs)} ouvrage(s) PDF trouvé(s)")
+        report["documents_found"] += len(docs)
 
         # ── Scoring par batches ─────────────────────────────────────────────
         all_scores: list[dict] = []

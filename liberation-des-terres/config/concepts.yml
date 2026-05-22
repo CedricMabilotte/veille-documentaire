@@ -1,0 +1,173 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# concepts.yml — Ontologie du fork « Terres Libérées »
+# ─────────────────────────────────────────────────────────────────────────────
+# Fork de « Résidence » (lui-même fork de BIBLIO). Domaine : recensement des
+# lieux en France établis selon les principes de la « libération des terres »,
+# c.-à-d. où la NUE-PROPRIÉTÉ du foncier est placée dans un organisme d'intérêt
+# général ou d'utilité publique, et l'USUFRUIT / l'usage confié à une personne
+# morale de droit civil (association loi 1901, société civile, coopérative).
+# Interface publique : français.
+# ─────────────────────────────────────────────────────────────────────────────
+project:
+  name: "terres-liberees"
+  display_name: "Terres Libérées"
+  logo_mark: "TL"
+  tagline: "Annuaire critique des montages de libération des terres en France."
+  description: >
+    Recensement et analyse stratégique des lieux français où la terre a été
+    soustraite au marché spéculatif par dissociation de la propriété : la
+    nue-propriété (ou la propriété sanctuarisée) est portée par un organisme
+    d'intérêt général ou d'utilité publique — fondation, fonds de dotation,
+    collectivité publique — et l'usufruit ou l'usage est confié à une personne
+    morale de droit civil à but non lucratif. Trois catégories sont référencées
+    et analysées : les organismes porteurs de nue-propriété, les organismes
+    usufruitiers, et les lieux eux-mêmes. Chaque entrée est lue à travers une
+    grille d'analyse stratégique et notée par un Indice de libération.
+  baseline: "nue-propriété d'intérêt général · usufruit citoyen · sortie du marché"
+  language: fr
+  url: "https://terres-liberees.actitude.org"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Le concept central
+# ─────────────────────────────────────────────────────────────────────────────
+concept_central:
+  terme: "libération des terres"
+  definition: >
+    Ensemble de pratiques visant à soustraire durablement un foncier — agricole
+    le plus souvent, mais aussi bâti, naturel ou d'habitat — à la logique
+    spéculative et marchande, pour le placer au service d'un usage défini
+    collectivement et d'intérêt général. Le terme n'est pas un concept juridique
+    codifié : il appartient au vocabulaire des mouvements de l'agriculture
+    paysanne, des communs et de l'éducation populaire.
+  ressort_juridique: >
+    La distinction entre la PROPRIÉTÉ (qui reste au collectif non lucratif) et
+    l'USAGE (confié à des usagers). Le démembrement du droit de propriété
+    (article 544 du Code civil) en nue-propriété et usufruit (articles 578 et s.)
+    est l'une des modalités possibles ; d'autres montages — propriété
+    sanctuarisée + bail de long terme, propriété publique inaliénable —
+    poursuivent le même but.
+  verrou_cle: >
+    L'usufruit constitué au profit d'une personne morale ne peut excéder 30 ans
+    (article 619 du Code civil, règle d'ordre public). L'usufruit d'une
+    association n'est donc jamais perpétuel : son renouvellement dépend d'une
+    volonté future. C'est la fragilité structurelle de tout montage.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Les 3 catégories référencées
+# ─────────────────────────────────────────────────────────────────────────────
+categories:
+  - id: "porteur"
+    label: "Porteur de nue-propriété"
+    label_pluriel: "Porteurs de nue-propriété"
+    slug_dir: "p"
+    definition: >
+      Organisme qui détient la nue-propriété — ou la pleine propriété
+      sanctuarisée — du foncier, et dont la mission est de la soustraire
+      durablement au marché. Typiquement : fondation reconnue d'utilité
+      publique, fondation abritée, fonds de dotation, ou collectivité /
+      établissement public.
+    formes_attendues:
+      - fondation reconnue d'utilité publique (FRUP)
+      - fondation abritée
+      - fonds de dotation (loi du 4 août 2008)
+      - collectivité publique / établissement public
+      - société à capital citoyen non spéculatif (foncière solidaire)
+  - id: "usufruitier"
+    label: "Organisme usufruitier"
+    label_pluriel: "Organismes usufruitiers"
+    slug_dir: "u"
+    definition: >
+      Personne morale de droit civil à but non lucratif qui reçoit l'usufruit
+      ou l'usage du foncier et organise sa gestion au quotidien : occupation,
+      exploitation, animation, gouvernance des usagers. Typiquement : association
+      loi 1901, société civile, coopérative (SCIC), groupement foncier agricole.
+    formes_attendues:
+      - association loi 1901
+      - société civile (SCI, SCTL, société civile d'exploitation)
+      - société coopérative d'intérêt collectif (SCIC)
+      - groupement foncier agricole (GFA mutuel / solidaire)
+      - collectif d'habitant·es / d'usager·es
+  - id: "lieu"
+    label: "Lieu"
+    label_pluriel: "Lieux"
+    slug_dir: "l"
+    definition: >
+      Lieu physique en France — ferme, domaine, hameau, écolieu, espace
+      naturel, tiers-lieu nourricier — dont le foncier a été libéré du marché
+      par un montage associant un porteur de nue-propriété et un usufruitier.
+      C'est l'unité concrète que l'annuaire recense et analyse.
+    activites_attendues:
+      - agriculture paysanne / agroécologie
+      - élevage
+      - habitat partagé / écohameau
+      - tiers-lieu nourricier / ferme collective
+      - espace naturel protégé
+      - pédagogie / accueil / éducation populaire
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Modalités de montage observées (typologie)
+# ─────────────────────────────────────────────────────────────────────────────
+montages:
+  - id: "demembrement"
+    label: "Démembrement nue-propriété / usufruit"
+    description: >
+      Séparation stricte au sens du Code civil : un organisme reçoit la
+      nue-propriété, un autre l'usufruit. Modèle de référence de l'annuaire.
+  - id: "propriete_sanctuarisee"
+    label: "Propriété sanctuarisée + bail de long terme"
+    description: >
+      L'organisme non lucratif reste pleinement propriétaire ; l'usage est
+      confié par bail rural (souvent environnemental), bail emphytéotique ou
+      convention. Modalité dominante (Terre de Liens, Lurzaindia).
+  - id: "propriete_publique"
+    label: "Propriété publique inaliénable"
+    description: >
+      Le foncier appartient à une personne publique et entre dans un domaine
+      inaliénable ; la gestion est déléguée (Conservatoire du littoral, Larzac).
+  - id: "propriete_collective"
+    label: "Propriété collective verrouillée"
+    description: >
+      Le foncier est porté par une structure collective (société civile,
+      coopérative, GFA) dont les statuts verrouillent la revente et la
+      lucrativité.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Modèles voisins de référence (comparaison — hors des 3 catégories)
+# ─────────────────────────────────────────────────────────────────────────────
+modeles_voisins:
+  description: >
+    Modèles « puristes » proches, recensés à titre de comparaison pour situer
+    le montage de référence. Restent dans le droit civil et l'intérêt général
+    à des degrés divers.
+  exemples:
+    - "Organisme de Foncier Solidaire (OFS) + Bail Réel Solidaire (BRS)"
+    - "Community Land Trust (CLT) — modèle de Bruxelles"
+    - "Stiftung trias (Allemagne) — fondation + droit de superficie"
+    - "Mietshäuser Syndikat (Allemagne) — neutralisation de la propriété"
+    - "Conservatoires d'espaces naturels (CEN)"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Anti-concepts — ce que l'annuaire ne référence PAS
+# ─────────────────────────────────────────────────────────────────────────────
+anti_concepts:
+  - "propriété privée individuelle classique, même 'vertueuse'"
+  - "société (SCI, GFA familial) à but lucratif et parts librement cessibles"
+  - "montage dont l'objet premier est l'optimisation fiscale ou patrimoniale"
+  - "lieu réservé à un cercle restreint de personnes (perte de l'intérêt général)"
+  - "dispositif spéculatif déguisé en 'foncier solidaire'"
+  - "projet purement privé sans personne morale non lucrative dans le montage"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Ligne éditoriale
+# ─────────────────────────────────────────────────────────────────────────────
+editorial:
+  voice: "factuel, rigoureux, sobre — registre documentaire et juridique"
+  audience: >
+    Porteur·ses de projet foncier, juristes, collectivités, donateur·rices,
+    chercheur·ses et militant·es de l'accès à la terre qui cherchent un
+    référentiel clair des montages de libération des terres et de leur solidité.
+  principes:
+    - "Distinguer toujours les faits vérifiés des points non confirmés."
+    - "Ne jamais inventer un montage, un chiffre ou un article de loi."
+    - "Le ranking est une grille d'analyse explicite, pas un jugement de valeur."
+    - "Citer les sources ; respecter le droit d'auteur (reformuler)."

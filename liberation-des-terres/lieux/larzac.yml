@@ -1,0 +1,96 @@
+uid: larzac
+categorie: lieu
+nom: "Terres du Larzac"
+sous_titre: "Plateau agricole géré par une société civile de droit privé"
+statut_fiche: publie
+forme_juridique: null
+localisation:
+  commune: "La Cavalerie / Millau"
+  departement: "Aveyron (12)"
+  region: "Occitanie"
+annee: 1982
+url: "https://larzac.org/accueil/un-territoire-organise/gestion-fonciere/sctl/"
+resume: >
+  Environ 6 300 hectares du plateau du Larzac, rachetés par l'État pour
+  l'extension d'un camp militaire (projet abandonné en 1981), restent propriété
+  publique. Depuis 1982, la Société Civile des Terres du Larzac (SCTL) en assure
+  la gestion et attribue l'usage aux paysans par des baux de long terme. Le
+  dispositif fonctionne comme un office foncier local et a favorisé une hausse du
+  nombre de paysans.
+montage:
+  type: propriete_publique
+  nu_proprietaire: "État (propriété publique issue du rachat foncier)"
+  usufruitier: "Société Civile des Terres du Larzac (SCTL)"
+  description: >
+    L'État demeure propriétaire de l'ensemble du foncier. La gestion de
+    l'ensemble bâti et non bâti est confiée à la SCTL, société civile de droit
+    privé, qui met les terres à disposition des paysans via des baux de long
+    terme. La SCTL n'est pas propriétaire : elle est gestionnaire et preneuse.
+purete_juridique:
+  niveau: public
+  commentaire: >
+    Propriété publique de l'État, fortement protectrice, assortie d'une gestion
+    déléguée à une société civile attribuant l'usage de manière collective.
+grille:
+  - critere: foncier_hors_marche
+    valeur: oui
+    note: "Le foncier est propriété de l'État et géré par la SCTL : il n'est pas destiné au marché libre."
+  - critere: montage_documente
+    valeur: oui
+    note: "Le montage propriété publique / gestion par la SCTL / baux aux paysans est public et documenté."
+  - critere: irreversibilite
+    valeur: oui
+    note: "La propriété publique de l'État soustrait durablement le plateau à l'appropriation spéculative."
+  - critere: origine_non_speculative
+    valeur: oui
+    note: "Le foncier a été acquis par l'État dans le cadre d'un rachat foncier public, hors logique de plus-value."
+  - critere: usage_interet_general
+    valeur: oui
+    note: "L'agriculture, notamment l'élevage ovin, et la revitalisation du plateau servent un intérêt général territorial."
+  - critere: non_lucratif_global
+    valeur: oui
+    note: "Le montage repose sur la propriété publique et une société civile attribuant l'usage, sans captation de plus-value foncière."
+  - critere: ancrage_territorial
+    valeur: oui
+    note: "La SCTL a permis une hausse du nombre de paysans d'environ 25 %, signe d'un fort ancrage territorial."
+  - critere: gouvernance_collective
+    valeur: oui
+    note: "Les associés de la SCTL sont les personnes physiques et morales utilisant les terres et bâtiments confiés."
+  - critere: tripartisme
+    valeur: partiel
+    note: "La propriété de l'État implique la puissance publique, mais l'association du voisinage et des citoyens n'est pas documentée."
+  - critere: perennite_gouvernance
+    valeur: oui
+    note: "La SCTL fonctionne en continu depuis 1982 et attribue l'usage par des baux de long terme."
+analyse:
+  forces:
+    - "Propriété publique de l'État, garantie d'irréversibilité parmi les plus fortes."
+    - "Office foncier local éprouvé depuis 1982, gestion attribuée aux usagers eux-mêmes."
+    - "Effet de revitalisation mesurable du nombre de paysans installés."
+  fragilites:
+    - "La SCTL dépend de la volonté de l'État de maintenir la délégation de gestion."
+    - "Ouverture du modèle au-delà du cercle des usagers du plateau peu documentée."
+    - "Modèle singulier, difficilement reproductible hors d'un rachat foncier public."
+  leviers:
+    - "Sécuriser dans la durée la convention de gestion entre l'État et la SCTL."
+    - "Documenter l'articulation avec les collectivités et le territoire."
+    - "Capitaliser l'expérience comme référence d'office foncier territorial."
+  synthese: >
+    Le Larzac combine la sécurité maximale de la propriété publique avec une
+    gestion attribuée collectivement aux usagers. Sa principale dépendance reste
+    la stabilité de la délégation consentie par l'État, mais le modèle fait
+    figure de référence historique.
+fiabilite: >
+  Faits vérifiés : propriété de l'État sur environ 6 300 hectares, création de la
+  SCTL à partir de décembre 1982, gestion et attribution de l'usage par baux de
+  long terme, hausse du nombre de paysans. Non confirmé : modalités précises
+  d'association des collectivités et du voisinage à la gouvernance.
+liens:
+  porteurs: []
+  usufruitiers: [sctl]
+  lieux: []
+sources:
+  - titre: "SCTL — Larzac.org"
+    url: "https://larzac.org/accueil/un-territoire-organise/gestion-fonciere/sctl/"
+  - titre: "AGTER — La SCTL du Larzac"
+    url: "https://www.agter.org/bdf/fr/corpus_chemin/fiche-chemin-9.html"

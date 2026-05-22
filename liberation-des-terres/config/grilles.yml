@@ -1,0 +1,367 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# grilles.yml — Grilles de lecture et d'analyse stratégique
+# ─────────────────────────────────────────────────────────────────────────────
+# Une grille complète par catégorie (porteur · usufruitier · lieu). Chaque grille
+# comporte (1) des FAMILLES de critères de lecture, chaque critère rattaché à un
+# AXE du ranking (A/B/C) et pondéré ; (2) une LECTURE STRATÉGIQUE qui cadre les
+# enjeux, forces typiques, fragilités typiques et leviers de la catégorie.
+#
+# Ce fichier est ÉDITABLE : ajouter / retirer / repondérer des critères ici
+# suffit — le générateur recalcule scores et fiches. Chaque fiche YAML évalue
+# ces critères via une liste `grille:` (valeur : oui | partiel | non | inconnu).
+#
+# Axes du ranking (définis dans ranking.yml) :
+#   A — Intérêt général
+#   B — Libération des terres (sortie du marché, irréversibilité)
+#   C — Gouvernance participative d'intérêt général
+# ─────────────────────────────────────────────────────────────────────────────
+version: 1
+date: 2026-05-23
+
+grilles:
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # GRILLE 1 — PORTEUR DE NUE-PROPRIÉTÉ
+  # ═══════════════════════════════════════════════════════════════════════════
+  porteur:
+    titre: "Grille de lecture — Porteur de nue-propriété"
+    objet: >
+      Apprécier la solidité d'un organisme appelé à détenir durablement la
+      nue-propriété d'un foncier : sa nature non lucrative, sa capacité à
+      verrouiller la terre hors marché, la robustesse de sa gouvernance.
+    familles:
+      - id: statut_ig
+        label: "Statut et intérêt général"
+        criteres:
+          - id: forme_non_lucrative
+            label: "Forme juridique non lucrative"
+            axe: A
+            poids: 3
+            definition: >
+              L'organisme relève d'une forme structurellement non lucrative
+              (fondation, fonds de dotation, établissement public, association).
+          - id: agrement_ig
+            label: "Reconnaissance publique ou éligibilité à l'intérêt général"
+            axe: A
+            poids: 3
+            definition: >
+              Reconnaissance d'utilité publique, agrément public, ou
+              éligibilité avérée au régime fiscal de l'intérêt général.
+          - id: objet_foncier_protecteur
+            label: "Objet statutaire de protection foncière"
+            axe: A
+            poids: 2
+            definition: >
+              Les statuts mentionnent explicitement la préservation du foncier,
+              sa soustraction au marché ou son affectation d'intérêt général.
+          - id: gestion_desinteressee
+            label: "Gestion désintéressée, hors cercle restreint"
+            axe: A
+            poids: 2
+            definition: >
+              Dirigeants bénévoles ou rémunération encadrée ; l'organisme ne
+              fonctionne pas au profit d'un cercle restreint de personnes.
+      - id: verrou_foncier
+        label: "Verrouillage du foncier hors marché"
+        criteres:
+          - id: inalienabilite
+            label: "Inaliénabilité / dotation non consomptible"
+            axe: B
+            poids: 3
+            definition: >
+              Le foncier est rendu inaliénable au sein de l'organisme (dotation
+              non consomptible d'un fonds de dotation, domanialité, clause
+              statutaire d'inaliénabilité temporaire et justifiée).
+          - id: nature_protectrice
+            label: "Nature juridique protectrice"
+            axe: B
+            poids: 2
+            definition: >
+              Échelle de protection décroissante : personne publique >
+              fondation RUP > fonds de dotation > société civile.
+          - id: clause_devolution
+            label: "Clause de dévolution désintéressée"
+            axe: B
+            poids: 2
+            definition: >
+              En cas de dissolution, l'actif est dévolu à un autre organisme
+              désintéressé : aucun retour possible dans un patrimoine privé.
+          - id: independance_rendement
+            label: "Indépendance vis-à-vis d'une logique de rendement"
+            axe: B
+            poids: 2
+            definition: >
+              Le capital n'est pas soumis à des investisseurs attendant une
+              plus-value ou un dividende sur le foncier.
+      - id: gouvernance
+        label: "Gouvernance et redevabilité"
+        criteres:
+          - id: ca_collegial
+            label: "Conseil d'administration collégial et indépendant"
+            axe: C
+            poids: 2
+            definition: >
+              Organe de direction pluraliste, indépendant du fondateur unique
+              et des intérêts privés.
+          - id: parties_prenantes
+            label: "Parties prenantes associées à la gouvernance"
+            axe: C
+            poids: 2
+            definition: >
+              Usagers, citoyens, collectivités ou donateurs sont représentés
+              dans les instances ou consultés.
+          - id: transparence
+            label: "Transparence des comptes et de l'activité"
+            axe: C
+            poids: 2
+            definition: >
+              Publication régulière des comptes, rapports d'activité, liste
+              des biens portés.
+    lecture_strategique:
+      enjeu: >
+        Le porteur est le coffre-fort du montage. Sa valeur tient moins à sa
+        taille qu'à l'irréversibilité qu'il garantit : un foncier mal verrouillé
+        chez un porteur fragile peut revenir au marché en une génération.
+      forces_typiques:
+        - "Permanence : une personne morale ne meurt pas, contrairement à un propriétaire."
+        - "Le régime fiscal du mécénat draine dons et legs vers la protection foncière."
+        - "La dotation non consomptible rend la sortie du foncier juridiquement très difficile."
+      fragilites_typiques:
+        - "Un fonds de dotation se crée sans agrément : la solidité dépend entièrement des statuts."
+        - "La qualité d'intérêt général n'est jamais acquise et peut être requalifiée."
+        - "Un porteur dépendant d'investisseurs en rendement n'a libéré la terre qu'en apparence."
+      leviers:
+        - "Rédiger une dotation non consomptible et un objet statutaire foncier précis."
+        - "Soigner la clause de dévolution : c'est elle qui interdit le retour au privé."
+        - "Ouvrir la gouvernance aux usagers et aux collectivités pour ancrer l'intérêt général."
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # GRILLE 2 — ORGANISME USUFRUITIER
+  # ═══════════════════════════════════════════════════════════════════════════
+  usufruitier:
+    titre: "Grille de lecture — Organisme usufruitier"
+    objet: >
+      Apprécier la personne morale de droit civil qui reçoit l'usufruit ou
+      l'usage : son caractère non lucratif et d'intérêt général, la sécurité
+      de l'usage qu'elle détient, et le caractère participatif de sa gouvernance.
+    familles:
+      - id: statut_ig
+        label: "Statut et intérêt général"
+        criteres:
+          - id: personne_morale_civile
+            label: "Personne morale de droit civil non lucrative"
+            axe: A
+            poids: 3
+            definition: >
+              Association loi 1901, société civile non lucrative, coopérative
+              ou GFA — et non une société commerciale de droit privé classique.
+          - id: objet_ig
+            label: "Objet d'intérêt général"
+            axe: A
+            poids: 3
+            definition: >
+              L'objet porte un intérêt général identifié : agriculture
+              paysanne, accès à la terre, écologie, habitat digne, éducation.
+          - id: non_lucrativite_effective
+            label: "Non-lucrativité effective"
+            axe: A
+            poids: 2
+            definition: >
+              Absence de partage de bénéfices ; les excédents sont réinvestis
+              dans l'objet et non distribués aux membres.
+          - id: public_non_restreint
+            label: "Ne sert pas un cercle restreint"
+            axe: A
+            poids: 2
+            definition: >
+              Le lieu et ses bénéfices ne profitent pas exclusivement aux seuls
+              membres fondateurs ou à leurs familles.
+      - id: securite_usage
+        label: "Sécurité et loyauté de l'usage"
+        criteres:
+          - id: duree_usage
+            label: "Durée d'usage longue et renouvellement organisé"
+            axe: B
+            poids: 3
+            definition: >
+              L'usufruit ou le bail est de longue durée et son renouvellement
+              est anticipé (l'usufruit d'une personne morale est plafonné à
+              30 ans : article 619 du Code civil).
+          - id: clauses_usage
+            label: "Clauses d'usage / environnementales inscrites"
+            axe: B
+            poids: 2
+            definition: >
+              Le contrat inscrit des engagements d'usage : pratiques
+              écologiques (bail rural environnemental), affectation maintenue.
+          - id: articulation_porteur
+            label: "Articulation loyale avec le porteur"
+            axe: B
+            poids: 2
+            definition: >
+              Relation claire, contractualisée et loyale avec le porteur de
+              nue-propriété ; pas de conflit d'intérêts entre les deux.
+          - id: non_appropriation
+            label: "Pas d'appropriation possible du foncier"
+            axe: B
+            poids: 2
+            definition: >
+              Les usagers ne peuvent ni revendre, ni capter à titre privé la
+              valeur du foncier.
+      - id: gouvernance
+        label: "Gouvernance participative"
+        criteres:
+          - id: une_voix
+            label: "Principe « une personne = une voix »"
+            axe: C
+            poids: 2
+            definition: >
+              Le pouvoir de décision n'est pas proportionnel au capital
+              apporté.
+          - id: usagers_decident
+            label: "Les usager·es participent aux décisions"
+            axe: C
+            poids: 3
+            definition: >
+              Les habitant·es, exploitant·es ou usager·es du lieu participent
+              effectivement aux choix qui les concernent.
+          - id: ouverture_entrants
+            label: "Ouverture aux nouveaux entrants"
+            axe: C
+            poids: 2
+            definition: >
+              La structure organise l'arrivée de nouveaux membres et le
+              renouvellement générationnel.
+          - id: transparence_interne
+            label: "Transparence interne et redevabilité"
+            axe: C
+            poids: 1
+            definition: >
+              Comptes et décisions accessibles aux membres et, autant que
+              possible, au public.
+    lecture_strategique:
+      enjeu: >
+        L'usufruitier est le maillon vivant du montage : c'est lui qui fait
+        exister le lieu. Mais c'est aussi le maillon temporellement le plus
+        faible — l'usufruit d'une personne morale ne dure pas plus de 30 ans.
+      forces_typiques:
+        - "L'association porte l'usage sans avoir à mobiliser le capital d'achat."
+        - "La gouvernance peut être réellement participative et ancrée localement."
+        - "Le bail environnemental permet d'inscrire l'écologie dans le droit du lieu."
+      fragilites_typiques:
+        - "L'usufruit d'une personne morale est plafonné à 30 ans : rien n'est perpétuel."
+        - "Une association peut dériver vers un cercle restreint et perdre l'intérêt général."
+        - "Un usufruitier en conflit avec son porteur fragilise tout le montage."
+      leviers:
+        - "Anticiper le renouvellement de l'usufruit bien avant son terme."
+        - "Inscrire l'ouverture aux nouveaux entrants dans les statuts."
+        - "Contractualiser clairement la relation avec le porteur (charte, convention)."
+
+  # ═══════════════════════════════════════════════════════════════════════════
+  # GRILLE 3 — LIEU
+  # ═══════════════════════════════════════════════════════════════════════════
+  lieu:
+    titre: "Grille de lecture — Lieu"
+    objet: >
+      Apprécier un lieu concret : son foncier est-il réellement sorti du
+      marché, l'usage sert-il l'intérêt général, et la gouvernance est-elle
+      participative et pérenne ?
+    familles:
+      - id: sortie_marche
+        label: "Sortie du marché"
+        criteres:
+          - id: foncier_hors_marche
+            label: "Foncier effectivement soustrait au marché"
+            axe: B
+            poids: 3
+            definition: >
+              Le foncier est porté par une structure non spéculative et n'est
+              pas destiné à être revendu sur le marché libre.
+          - id: montage_documente
+            label: "Montage juridique documenté et lisible"
+            axe: B
+            poids: 2
+            definition: >
+              Le montage (qui détient quoi, par quel acte) est public,
+              traçable et compréhensible.
+          - id: irreversibilite
+            label: "Dispositif d'irréversibilité"
+            axe: B
+            poids: 3
+            definition: >
+              Inaliénabilité, droit de veto sur revente, clause anti-spéculative
+              ou dévolution désintéressée rendent le retour au marché très
+              difficile.
+          - id: origine_non_speculative
+            label: "Acquisition non spéculative"
+            axe: B
+            poids: 2
+            definition: >
+              Le foncier a été acquis par dons, legs, épargne solidaire ou
+              fonds publics — non par un endettement attendant une plus-value.
+      - id: usage_ig
+        label: "Intérêt général de l'usage"
+        criteres:
+          - id: usage_interet_general
+            label: "Usage au service d'un intérêt général"
+            axe: A
+            poids: 3
+            definition: >
+              L'activité du lieu (agriculture nourricière, écologie, habitat
+              digne, accueil, pédagogie) sert un intérêt qui dépasse ses
+              occupants.
+          - id: non_lucratif_global
+            label: "Montage globalement non lucratif"
+            axe: A
+            poids: 2
+            definition: >
+              Aucun maillon du montage ne capte de plus-value foncière à titre
+              privé.
+          - id: ancrage_territorial
+            label: "Ancrage territorial et ouverture"
+            axe: A
+            poids: 2
+            definition: >
+              Le lieu est utile à son territoire et ouvert, à un degré ou un
+              autre, au-delà de ses seuls résidents.
+      - id: gouvernance
+        label: "Gouvernance participative et pérennité"
+        criteres:
+          - id: gouvernance_collective
+            label: "Décisions prises collectivement"
+            axe: C
+            poids: 3
+            definition: >
+              Les usager·es du lieu décident ensemble de son devenir.
+          - id: tripartisme
+            label: "Voisinage / citoyens / pouvoirs publics associés"
+            axe: C
+            poids: 2
+            definition: >
+              La gouvernance dépasse le cercle des occupants : voisinage,
+              citoyens, collectivités sont associés (idéal du modèle tripartite).
+          - id: perennite_gouvernance
+            label: "Transmission et renouvellement organisés"
+            axe: C
+            poids: 2
+            definition: >
+              Des dispositifs assurent la transmission du lieu et le
+              renouvellement des personnes qui le gouvernent.
+    lecture_strategique:
+      enjeu: >
+        Le lieu est le point où le montage juridique devient une réalité
+        vécue. Un montage parfait sur le papier peut produire un lieu fermé ;
+        un montage imparfait peut faire vivre un commun exemplaire. La grille
+        lit les deux dimensions.
+      forces_typiques:
+        - "La terre libérée permet d'installer des activités impossibles sur le marché."
+        - "La sécurité foncière autorise des investissements de long terme (sols, arbres)."
+        - "Le lieu devient un bien commun transmissible entre générations."
+      fragilites_typiques:
+        - "Un lieu peut se refermer sur ses occupants et perdre son intérêt général."
+        - "La gouvernance collective s'épuise si le renouvellement n'est pas organisé."
+        - "Un montage opaque fragilise la confiance des donateurs et du territoire."
+      leviers:
+        - "Documenter et publier le montage : la transparence est un verrou en soi."
+        - "Associer le voisinage et la collectivité pour ancrer l'intérêt général."
+        - "Organiser dès le départ la transmission et l'accueil de nouveaux usagers."

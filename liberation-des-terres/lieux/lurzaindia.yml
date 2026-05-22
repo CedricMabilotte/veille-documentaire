@@ -1,0 +1,97 @@
+uid: lurzaindia
+categorie: lieu
+nom: "Lurzaindia — terres du Pays Basque"
+sous_titre: "Foncière citoyenne d'installation paysanne"
+statut_fiche: publie
+forme_juridique: null
+localisation:
+  commune: "Pays Basque"
+  departement: "Pyrénées-Atlantiques (64)"
+  region: "Nouvelle-Aquitaine"
+annee: 2013
+url: "https://lurzaindia.eu/"
+resume: >
+  Foncière citoyenne du Pays Basque détenant environ 480 hectares répartis sur de
+  nombreuses fermes. Créée en 2013, elle prend la suite du GFAM Lurra né dans les
+  années 1970. Constituée en société en commandite par actions, elle mobilise
+  l'épargne populaire (3 674 actionnaires, environ 1,57 million d'euros investis)
+  pour acheter des terres et les confier à des agriculteurs par baux de long
+  terme — 35 agriculteurs installés selon les sources.
+montage:
+  type: propriete_sanctuarisee
+  nu_proprietaire: "Lurzaindia (société en commandite par actions)"
+  usufruitier: "Agriculteurs installés via baux de long terme"
+  description: >
+    Lurzaindia, foncière citoyenne, achète les terres grâce à l'épargne populaire
+    et en conserve la propriété sur le long terme. L'usage est confié aux
+    agriculteurs par des baux de long terme. Le modèle est analogue à celui de la
+    Foncière Terre de Liens, à l'échelle régionale du Pays Basque.
+purete_juridique:
+  niveau: societaire
+  commentaire: >
+    Foncière de forme sociétaire (société en commandite par actions) reposant sur
+    un actionnariat citoyen ; la non-lucrativité dépend des clauses statutaires
+    encadrant la rémunération du capital.
+grille:
+  - critere: foncier_hors_marche
+    valeur: oui
+    note: "La foncière achète et conserve les terres sur le long terme, les retirant du marché libre."
+  - critere: montage_documente
+    valeur: oui
+    note: "Le montage foncière citoyenne / baux de long terme aux agriculteurs est public et documenté."
+  - critere: irreversibilite
+    valeur: partiel
+    note: "Le portage de long terme protège le foncier, mais aucune clause d'inaliénabilité stricte n'est documentée et les actions restent cessibles."
+  - critere: origine_non_speculative
+    valeur: oui
+    note: "Le foncier est acquis grâce à l'épargne populaire de 3 674 actionnaires, hors logique d'endettement spéculatif."
+  - critere: usage_interet_general
+    valeur: oui
+    note: "L'installation et la confortation de petites fermes paysannes servent un intérêt général agricole."
+  - critere: non_lucratif_global
+    valeur: partiel
+    note: "La forme de société en commandite par actions n'exclut pas par construction la rémunération du capital ; les clauses ne sont pas détaillées."
+  - critere: ancrage_territorial
+    valeur: oui
+    note: "Foncière régionale ancrée au Pays Basque, prenant la suite du GFAM Lurra des années 1970."
+  - critere: gouvernance_collective
+    valeur: partiel
+    note: "L'actionnariat citoyen est large, mais les modalités de décision et le poids des usagers ne sont pas documentés."
+  - critere: tripartisme
+    valeur: inconnu
+    note: "L'association du voisinage et des pouvoirs publics à la gouvernance n'est pas documentée."
+  - critere: perennite_gouvernance
+    valeur: partiel
+    note: "Lurzaindia s'inscrit dans une continuité depuis le GFAM Lurra, mais les dispositifs de transmission ne sont pas décrits."
+analyse:
+  forces:
+    - "Foncière citoyenne ancrée régionalement, forte mobilisation d'épargne populaire."
+    - "Continuité depuis le GFAM Lurra des années 1970."
+    - "Installation effective de 35 agriculteurs sur environ 480 hectares."
+  fragilites:
+    - "Forme de société en commandite par actions : actions cessibles, non-lucrativité non garantie par construction."
+    - "Absence de clause d'inaliénabilité stricte documentée."
+    - "Place des usagers et des collectivités dans la gouvernance non documentée."
+  leviers:
+    - "Inscrire des clauses anti-spéculatives explicites encadrant la cession des actions."
+    - "Documenter publiquement la gouvernance et la place des agriculteurs."
+    - "Recourir au bail rural environnemental pour sécuriser les usages."
+  synthese: >
+    Lurzaindia est une foncière citoyenne efficace pour l'installation paysanne
+    au Pays Basque. Sa pureté juridique reste celle d'une structure sociétaire :
+    la solidité dépendra des clauses encadrant le capital et l'inaliénabilité du
+    foncier.
+fiabilite: >
+  Faits vérifiés : création en 2013, suite du GFAM Lurra des années 1970, forme
+  de société en commandite par actions, environ 480 hectares, 35 agriculteurs,
+  3 674 actionnaires, environ 1,57 million d'euros. Non confirmé : clauses
+  statutaires d'inaliénabilité, modalités de gouvernance et de transmission.
+liens:
+  porteurs: []
+  usufruitiers: []
+  lieux: []
+sources:
+  - titre: "Lurzaindia — site officiel"
+    url: "https://lurzaindia.eu/"
+  - titre: "Arrapitz — Lurzaindia"
+    url: "https://www.arrapitz.eus/les-associations-reseau-arrapitz/lurzaindia/"

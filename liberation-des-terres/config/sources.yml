@@ -1,0 +1,99 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# sources.yml — Sources de veille du fork « Terres Libérées »
+# ─────────────────────────────────────────────────────────────────────────────
+# Sources web surveillées pour découvrir de nouveaux lieux, porteurs et
+# usufruitiers de la libération des terres. Le pipeline de veille (scripts/)
+# scrute ces sources, extrait des fiches candidates, puis Claude les qualifie
+# contre les grilles. Démarrage volontairement resserré.
+# ─────────────────────────────────────────────────────────────────────────────
+version: 1
+date: 2026-05-23
+
+defaults:
+  parser: html_static
+  intervalle_heures: 168          # une passe hebdomadaire
+  langue: fr
+
+sources:
+  - id: terre-de-liens
+    nom: "Terre de Liens — actualités et fermes"
+    url: "https://terredeliens.org/"
+    parser: deep_html
+    categorie_probable: [lieu, porteur]
+    mots_cles: [ferme, foncier, bail, donation, acquisition, fondation, foncière]
+
+  - id: terre-de-liens-ressources
+    nom: "Terre de Liens — centre de ressources"
+    url: "https://ressources.terredeliens.org/"
+    parser: html_static
+    categorie_probable: [usufruitier]
+    mots_cles: [GFA, SCI citoyenne, montage, propriété collective]
+
+  - id: encommun
+    nom: "La Terre en commun (NDDL)"
+    url: "https://encommun.eco/"
+    parser: html_static
+    categorie_probable: [lieu, porteur]
+    mots_cles: [fonds de dotation, terres, acquisition, commun]
+
+  - id: cooperative-oasis
+    nom: "Coopérative Oasis — écolieux"
+    url: "https://cooperative-oasis.org/"
+    parser: deep_html
+    categorie_probable: [lieu, usufruitier]
+    mots_cles: [écolieu, oasis, propriété collective, foncier]
+
+  - id: lurzaindia
+    nom: "Lurzaindia — foncière du Pays Basque"
+    url: "https://lurzaindia.eu/"
+    parser: html_static
+    categorie_probable: [porteur, lieu]
+    mots_cles: [foncière, terres, installation paysanne, bail]
+
+  - id: larzac
+    nom: "Larzac.org — SCTL et gestion foncière"
+    url: "https://larzac.org/"
+    parser: html_static
+    categorie_probable: [lieu, usufruitier]
+    mots_cles: [SCTL, terres, bail emphytéotique, gestion foncière]
+
+  - id: reseau-cen
+    nom: "Fédération des Conservatoires d'espaces naturels"
+    url: "https://reseau-cen.org/"
+    parser: html_static
+    categorie_probable: [porteur, usufruitier]
+    mots_cles: [conservatoire, foncier, espace naturel, bail emphytéotique]
+
+  - id: foncier-solidaire
+    nom: "Foncier Solidaire France — réseau des OFS"
+    url: "https://www.foncier-solidaire.fr/"
+    parser: html_static
+    categorie_probable: [porteur]
+    mots_cles: [OFS, bail réel solidaire, BRS, foncier solidaire]
+
+  - id: rtes
+    nom: "RTES — collectivités et ESS"
+    url: "https://www.rtes.fr/"
+    parser: html_static
+    categorie_probable: [porteur, lieu]
+    mots_cles: [foncier, communs, collectivité, CLT, fonds de dotation]
+
+  - id: habitat-participatif
+    nom: "Habitat Participatif France"
+    url: "https://www.habitatparticipatif-france.fr/"
+    parser: html_static
+    categorie_probable: [lieu, usufruitier]
+    mots_cles: [habitat participatif, propriété, coopérative d'habitants]
+
+# Mots-clés transverses utilisés au scoring de découverte
+mots_cles_transverses:
+  - "libération des terres"
+  - "sortir la terre du marché"
+  - "nue-propriété"
+  - "usufruit"
+  - "démembrement"
+  - "fonds de dotation"
+  - "fondation foncière"
+  - "propriété d'usage"
+  - "communs fonciers"
+  - "bail rural environnemental"

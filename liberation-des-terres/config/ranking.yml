@@ -1,0 +1,150 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# ranking.yml — L'Indice de libération
+# ─────────────────────────────────────────────────────────────────────────────
+# Le classement mesure à quel point un montage (porteur, usufruitier ou lieu)
+# se rapproche de trois finalités, chacune un AXE noté de 0 à 100 :
+#
+#   A — Intérêt général
+#   B — Libération des terres (sortie du marché, irréversibilité)
+#   C — Gouvernance participative d'intérêt général
+#
+# Chaque critère des grilles (grilles.yml) est rattaché à un axe et pondéré.
+# Pour une fiche : score_axe = Σ(poids × facteur) / Σ(poids) × 100, où le
+# facteur dépend de la valeur cochée dans la fiche (voir `valeurs` ci-dessous).
+# Les critères « inconnu » sont EXCLUS du dénominateur (non pénalisants mais
+# signalés comme angle mort).
+#
+# L'Indice de libération global = moyenne pondérée des trois axes.
+# La « pureté juridique » est un indicateur COMPLÉMENTAIRE, affiché à part :
+# il ne pèse pas dans l'Indice mais éclaire la nature du montage.
+# ─────────────────────────────────────────────────────────────────────────────
+version: 1
+date: 2026-05-23
+
+# ── Mapping des valeurs cochées dans les fiches → facteur de score ───────────
+valeurs:
+  oui:     1.0      # critère pleinement rempli
+  partiel: 0.5      # critère partiellement rempli
+  non:     0.0      # critère non rempli
+  inconnu: null     # exclu du calcul (angle mort signalé)
+
+# ── Les trois axes ───────────────────────────────────────────────────────────
+axes:
+  - id: A
+    label: "Intérêt général"
+    couleur: "#4a7a3a"
+    question: >
+      Le montage est-il non lucratif, à gestion désintéressée, et son usage
+      sert-il un intérêt qui dépasse le cercle de ses occupants ?
+    description: >
+      Mesure l'ancrage dans l'intérêt général : forme non lucrative,
+      reconnaissance ou éligibilité publique, objet statutaire, absence de
+      cercle restreint, utilité pour le territoire.
+  - id: B
+    label: "Libération des terres"
+    couleur: "#bc4c3a"
+    question: >
+      Le foncier est-il réellement sorti du marché spéculatif, et la sortie
+      est-elle irréversible ?
+    description: >
+      Mesure la soustraction effective au marché : inaliénabilité, nature
+      protectrice du porteur, clause de dévolution, durée de l'usage, origine
+      non spéculative de l'acquisition.
+  - id: C
+    label: "Gouvernance participative"
+    couleur: "#3b5b6b"
+    question: >
+      Les usager·es et les parties prenantes décident-ils collectivement, et
+      la gouvernance se renouvelle-t-elle ?
+    description: >
+      Mesure le caractère participatif et pérenne de la gouvernance :
+      collégialité, principe « une personne = une voix », association du
+      voisinage et des citoyens, transparence, transmission.
+
+# ── Composition de l'Indice de libération ───────────────────────────────────
+indice:
+  label: "Indice de libération"
+  abrev: "IdL"
+  max: 100
+  # Pondération des axes. Volontairement ÉGALE : les trois finalités sont
+  # tenues pour aussi importantes l'une que l'autre. La transparence du calcul
+  # prime sur tout réglage fin.
+  ponderation:
+    A: 1
+    B: 1
+    C: 1
+  formule: >
+    IdL = (score_A × 1 + score_B × 1 + score_C × 1) / 3
+  note_fiabilite: >
+    L'Indice n'a de sens que si la fiche est suffisamment renseignée. Une part
+    élevée de critères « inconnu » abaisse la fiabilité : elle est affichée
+    séparément (taux de complétude de la grille).
+
+# ── Paliers (tiers) de lecture de l'Indice ───────────────────────────────────
+paliers:
+  - id: abouti
+    min: 85
+    label: "Libération aboutie"
+    couleur: "#2f6b34"
+    sens: >
+      Montage non lucratif, foncier durablement verrouillé, gouvernance
+      participative et organisée pour durer. Modèle de référence.
+  - id: solide
+    min: 70
+    label: "Montage solide"
+    couleur: "#4a7a3a"
+    sens: >
+      Le montage atteint les trois finalités avec quelques marges de
+      consolidation, souvent sur la gouvernance ou l'irréversibilité.
+  - id: engage
+    min: 55
+    label: "Engagement réel"
+    couleur: "#b08431"
+    sens: >
+      La démarche est sincère et avancée mais un axe reste nettement en
+      retrait — verrou foncier incomplet ou gouvernance peu participative.
+  - id: partiel
+    min: 40
+    label: "Libération partielle"
+    couleur: "#bc4c3a"
+    sens: >
+      Le montage emprunte au modèle sans en réunir les garanties : sortie du
+      marché fragile, intérêt général discutable ou gouvernance fermée.
+  - id: eloigne
+    min: 0
+    label: "Éloigné du modèle"
+    couleur: "#8f3829"
+    sens: >
+      Le foncier reste largement dans une logique de marché ou de cercle
+      restreint ; la parenté avec la libération des terres est surtout
+      revendiquée.
+
+# ── Indicateur complémentaire : pureté juridique ─────────────────────────────
+# N'entre PAS dans l'Indice. Renseigné éditorialement dans chaque fiche
+# (champ `purete_juridique`). Situe le montage sur l'axe « reste-t-on
+# strictement en droit civil privé et non lucratif ? ».
+purete_juridique:
+  label: "Pureté juridique"
+  question: >
+    Le montage reste-t-il strictement dans le droit civil privé et la
+    non-lucrativité, sans bascule vers le droit public, une forme sociétaire
+    lucrative ou un encadrement étatique fort ?
+  niveaux:
+    - id: pur
+      label: "Droit civil pur"
+      sens: "Droit civil privé + non lucratif, sans encadrement étatique."
+    - id: encadre
+      label: "Civil encadré"
+      sens: "Droit civil mais encadrement public fort (agrément, plafonds)."
+    - id: public
+      label: "Bascule droit public"
+      sens: "Le foncier relève du droit public (domanialité, établissement public)."
+    - id: societaire
+      label: "Forme sociétaire"
+      sens: "Forme de société pouvant comporter une part de lucrativité."
+
+# ── Drapeaux de fiabilité affichés sur chaque fiche ──────────────────────────
+fiabilite:
+  seuil_completude_bon: 0.80      # ≥ 80 % de critères renseignés → fiche fiable
+  seuil_completude_moyen: 0.55    # 55-80 % → fiable avec réserves
+  # en dessous → fiche signalée « à compléter »
