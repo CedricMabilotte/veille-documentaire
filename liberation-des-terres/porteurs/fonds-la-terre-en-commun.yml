@@ -1,0 +1,96 @@
+uid: fonds-la-terre-en-commun
+categorie: porteur
+nom: "Fonds de dotation « La Terre en commun »"
+sous_titre: "Fonds de dotation acquéreur des terres de Notre-Dame-des-Landes"
+statut_fiche: publie
+forme_juridique: "Fonds de dotation (loi du 4 août 2008)"
+localisation: null
+annee: 2018
+url: "https://encommun.eco/"
+resume: >
+  Fonds de dotation créé fin 2018, sur le statut institué par la loi du 4 août
+  2008, pour acquérir bâtis et terres de la ZAD de Notre-Dame-des-Landes et en
+  faire une propriété collective au service du bien commun. Il reçoit des dons
+  irrévocables, déductibles à 66 % pour les particuliers selon les sources, qui ne
+  donnent pas de parts de capital. Environ 700 000 euros avaient été collectés en
+  moins d'un an.
+montage:
+  type: propriete_sanctuarisee
+  description: >
+    Le fonds de dotation capitalise des dons irrévocables et acquiert
+    progressivement le foncier pour le soustraire à l'appropriation privée et à
+    l'agriculture intensive. Les dons ne confèrent aucune part de capital. Le
+    caractère consomptible ou non de la dotation n'est pas confirmé par les
+    sources.
+purete_juridique:
+  niveau: encadre
+  commentaire: >
+    Fonds de dotation non lucratif ; la solidité du verrou foncier dépend du
+    caractère non consomptible de la dotation, non confirmé par les sources.
+grille:
+  - critere: forme_non_lucrative
+    valeur: oui
+    note: "Le fonds de dotation est une personne morale de droit privé à but non lucratif instituée par la loi du 4 août 2008."
+  - critere: agrement_ig
+    valeur: partiel
+    note: "Un fonds de dotation peut être d'intérêt général et ouvrir droit au mécénat, sans agrément préalable ni reconnaissance d'utilité publique."
+  - critere: objet_foncier_protecteur
+    valeur: oui
+    note: "L'objet est explicitement l'acquisition de terres et bâtis pour les soustraire à l'appropriation privée."
+  - critere: gestion_desinteressee
+    valeur: partiel
+    note: "La déductibilité des dons suppose une gestion désintéressée, mais le détail de la gouvernance n'est pas documenté."
+  - critere: inalienabilite
+    valeur: partiel
+    note: "Les dons sont irrévocables, mais le caractère non consomptible de la dotation, qui rendrait le foncier inaliénable, n'est pas confirmé."
+  - critere: nature_protectrice
+    valeur: partiel
+    note: "Le fonds de dotation se situe entre la fondation reconnue d'utilité publique et la société civile sur l'échelle de protection."
+  - critere: clause_devolution
+    valeur: partiel
+    note: "Un fonds de dotation ne peut restituer son actif au fondateur, mais la clause de dévolution précise n'est pas documentée."
+  - critere: independance_rendement
+    valeur: oui
+    note: "Les dons ne donnent pas de parts de capital : aucun investisseur n'attend de plus-value sur le foncier."
+  - critere: ca_collegial
+    valeur: inconnu
+    note: "La composition du conseil d'administration du fonds n'est pas documentée par les sources consultées."
+  - critere: parties_prenantes
+    valeur: partiel
+    note: "Le fonds s'appuie sur les collectifs de la ZAD, mais l'articulation formelle avec la gouvernance n'est pas documentée."
+  - critere: transparence
+    valeur: partiel
+    note: "Le fonds communique sur sa collecte, mais la publication régulière de comptes détaillés n'est pas confirmée."
+analyse:
+  forces:
+    - "Statut de fonds de dotation, simple à créer et non lucratif."
+    - "Dons irrévocables sans contrepartie de capital."
+    - "Objet statutaire foncier explicite et collecte rapide."
+  fragilites:
+    - "Caractère non consomptible de la dotation non confirmé : verrou incertain."
+    - "Composition de la gouvernance non documentée."
+    - "Transparence des comptes non confirmée."
+  leviers:
+    - "Sécuriser une dotation non consomptible rendant le foncier inaliénable."
+    - "Publier les statuts, la gouvernance et les comptes du fonds."
+    - "Formaliser l'articulation avec les collectifs usagers de la ZAD."
+  synthese: >
+    Le fonds « La Terre en commun » illustre l'usage du fonds de dotation pour
+    racheter un foncier convoité. Sa robustesse dépendra du caractère non
+    consomptible de la dotation et de la transparence de sa gouvernance.
+fiabilite: >
+  Faits vérifiés : statut de fonds de dotation institué par la loi du 4 août 2008,
+  création fin 2018, mission d'acquisition du foncier de la ZAD, dons irrévocables
+  sans parts de capital, déductibilité de 66 % pour les particuliers, environ
+  700 000 euros collectés en moins d'un an. Non confirmé : caractère non
+  consomptible de la dotation, composition du conseil d'administration,
+  publication des comptes.
+liens:
+  porteurs: []
+  usufruitiers: []
+  lieux: [nddl]
+sources:
+  - titre: "La Terre en commun — encommun.eco"
+    url: "https://encommun.eco/"
+  - titre: "ZAD Nadir — Fonds de dotation La Terre en commun"
+    url: "https://zad.nadir.org/spip.php?article6260="

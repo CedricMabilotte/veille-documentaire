@@ -1,0 +1,98 @@
+uid: ecosite-villarceaux
+categorie: usufruitier
+nom: "Association Écosite de Villarceaux"
+sous_titre: "Structure d'animation et d'usage du domaine de Villarceaux"
+statut_fiche: publie
+forme_juridique: "Association loi 1901"
+localisation: null
+annee: null
+url: "https://www.bergerie-villarceaux.org/"
+resume: >
+  Association loi 1901 présente sur le domaine de la Bergerie de Villarceaux, dont
+  le foncier appartient à la Fondation Charles Léopold Mayer. Plusieurs structures
+  juridiques distinctes cohabitent sur le site : l'exploitation agricole sous
+  forme d'EARL, l'association Écosite et la coopérative Coop'Saveur, créée en
+  2001. L'association porte des activités d'animation et de formation liées à la
+  transition agroécologique du domaine.
+montage:
+  type: propriete_sanctuarisee
+  nu_proprietaire: "Fondation Charles Léopold Mayer pour le Progrès de l'Homme (FPH)"
+  usufruitier: "Association Écosite (animation, formation) ; EARL Olivier Ranke (exploitation)"
+  description: >
+    L'association Écosite est l'une des structures d'usage du domaine de
+    Villarceaux, propriété de la FPH. Elle porte l'animation et la formation,
+    tandis que l'exploitation agricole relève d'une EARL. La nature exacte des
+    actes liant l'association à la fondation n'est pas documentée par les sources.
+purete_juridique:
+  niveau: encadre
+  commentaire: >
+    Association loi 1901 d'animation, non lucrative ; le montage d'usage du
+    domaine reste partiellement documenté et cohabite avec une EARL.
+grille:
+  - critere: personne_morale_civile
+    valeur: oui
+    note: "L'association Écosite est une association loi 1901, personne morale de droit civil non lucrative."
+  - critere: objet_ig
+    valeur: oui
+    note: "L'objet d'animation et de formation autour de la transition agroécologique sert un intérêt général."
+  - critere: non_lucrativite_effective
+    valeur: oui
+    note: "L'association loi 1901 ne partage pas de bénéfices."
+  - critere: public_non_restreint
+    valeur: oui
+    note: "Les activités d'animation et de formation du domaine s'adressent à un public dépassant les seuls occupants."
+  - critere: duree_usage
+    valeur: inconnu
+    note: "La durée et la nature de l'usage détenu par l'association sur le domaine ne sont pas documentées."
+  - critere: clauses_usage
+    valeur: inconnu
+    note: "L'existence de clauses d'usage formalisées entre association et fondation n'est pas documentée."
+  - critere: articulation_porteur
+    valeur: partiel
+    note: "L'association intervient sur un domaine appartenant à la FPH, mais les actes liant les deux ne sont pas documentés."
+  - critere: non_appropriation
+    valeur: oui
+    note: "Le foncier appartient à la fondation ; l'association ne peut ni le revendre ni en capter la valeur."
+  - critere: une_voix
+    valeur: oui
+    note: "L'association loi 1901 fonctionne sur le principe associatif, sans pouvoir proportionnel au capital."
+  - critere: usagers_decident
+    valeur: partiel
+    note: "L'association porte l'animation, mais l'articulation décisionnelle avec l'EARL et la fondation n'est pas documentée."
+  - critere: ouverture_entrants
+    valeur: inconnu
+    note: "Les modalités d'accueil de nouveaux membres ou usagers ne sont pas documentées par les sources."
+  - critere: transparence_interne
+    valeur: inconnu
+    note: "Les modalités de transparence interne de l'association ne sont pas documentées par les sources."
+analyse:
+  forces:
+    - "Association loi 1901 non lucrative portant l'animation et la formation."
+    - "Objet d'intérêt général lié à la transition agroécologique du domaine."
+    - "Foncier sécurisé en amont par la fondation, sans appropriation possible."
+  fragilites:
+    - "Actes liant l'association à la fondation non documentés."
+    - "Articulation décisionnelle avec l'EARL et la fondation peu lisible."
+    - "Ouverture aux entrants et transparence interne non documentées."
+  leviers:
+    - "Formaliser une convention d'usage entre association et fondation."
+    - "Clarifier la répartition des rôles entre association, EARL et fondation."
+    - "Documenter la gouvernance et l'accueil de nouveaux usagers."
+  synthese: >
+    L'association Écosite porte la dimension d'animation et de formation de
+    Villarceaux. Son insertion dans un montage d'usage partiellement opaque
+    appelle une clarification des actes et des rôles.
+fiabilite: >
+  Faits vérifiés : présence d'une association Écosite sur le domaine de
+  Villarceaux, propriété du domaine par la FPH, cohabitation avec une EARL et la
+  coopérative Coop'Saveur créée en 2001. Non confirmé : nature exacte des actes
+  d'usage, durée de l'usage, gouvernance et transparence interne.
+liens:
+  porteurs: [fondation-fph]
+  usufruitiers: []
+  lieux: [villarceaux]
+sources:
+  - titre: "Bergerie de Villarceaux — site officiel"
+    url: "https://www.bergerie-villarceaux.org/"
+  - titre: "FPH — La Bergerie de Villarceaux"
+    url: "https://www.fph.ch/article16_fr.html"

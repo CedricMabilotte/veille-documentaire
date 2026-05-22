@@ -707,28 +707,38 @@ def _effective_score(doc: dict) -> int:
     return int(doc.get("score_initial", doc.get("latest_score", 0)) or 0)
 
 
-def _is_pdf_doc(doc: dict) -> bool:
-    """Garde-fou « bibliothèque » : une fiche correspond toujours à un ouvrage
-    PDF, jamais à un article HTML (flux RSS, lien de presse).
+# Formats d'ouvrage acceptés : gratuits ET ouverts uniquement.
+#   pdf  — ISO 32000          epub — standard W3C
+#   txt  — texte brut         odt  — OpenDocument (ISO/IEC 26300)
+# Exclus : .doc/.docx (formats propriétaires Microsoft) et les pages HTML
+# (articles de presse — pas des ouvrages : ceci est une bibliothèque).
+OUVRAGE_EXTENSIONS = {"pdf", "epub", "txt", "odt"}
 
-    Accepte le candidat si son extension déclarée est « pdf » OU si l'URL pointe
-    explicitement vers un .pdf. Les articles HTML restent exploités comme
-    pistes de découverte (candidates.yml) mais ne deviennent jamais des fiches.
+
+def _is_ouvrage_doc(doc: dict) -> bool:
+    """Garde-fou « bibliothèque » : une fiche correspond toujours à un ouvrage
+    dans un format gratuit et ouvert (PDF, EPUB, TXT, ODT), jamais à un
+    article HTML (flux RSS, lien de presse).
+
+    Accepte le candidat si son extension déclarée appartient aux formats
+    ouverts OU si l'URL pointe explicitement vers un tel fichier. Les articles
+    HTML restent exploités comme pistes de découverte (candidates.yml) mais ne
+    deviennent jamais des fiches.
     """
     ext = (doc.get("extension") or doc.get("format") or "").lower().lstrip(".")
-    if ext == "pdf":
+    if ext in OUVRAGE_EXTENSIONS:
         return True
     path = urlparse(doc.get("url", "")).path.lower()
-    return path.endswith(".pdf")
+    return any(path.endswith("." + e) for e in OUVRAGE_EXTENSIONS)
 
 
 def _is_publishable(doc: dict) -> bool:
     """True si le doc doit apparaître dans RSS / sitemap / fiches pré-rendues.
 
-    Deux conditions : score effectif suffisant ET ouvrage PDF (jamais un
-    article HTML — ceci reste une bibliothèque, pas une revue de presse).
+    Deux conditions : score effectif suffisant ET ouvrage dans un format
+    ouvert (jamais un article HTML — bibliothèque, pas revue de presse).
     """
-    return _is_pdf_doc(doc) and _effective_score(doc) >= PUBLISH_THRESHOLD
+    return _is_ouvrage_doc(doc) and _effective_score(doc) >= PUBLISH_THRESHOLD
 
 
 def _prerender_fiches(catalog: dict) -> int:
@@ -1256,15 +1266,16 @@ def main() -> None:
         docs_raw = parser_dispatch(source)
 
         # ── Garde-fou « bibliothèque » ─────────────────────────────────────
-        # Une fiche pointe TOUJOURS vers un ouvrage PDF, jamais vers un article
-        # HTML. Les liens non-PDF (flux RSS, presse) sont écartés ici : ils ne
-        # deviennent pas des fiches, mais restent collectés comme pistes de
+        # Une fiche pointe TOUJOURS vers un ouvrage dans un format gratuit et
+        # ouvert (PDF, EPUB, TXT, ODT), jamais vers un article HTML ni un
+        # format propriétaire. Les liens écartés (flux RSS, presse, .doc…) ne
+        # deviennent pas des fiches mais restent collectés comme pistes de
         # découverte (candidates.yml, alimenté par les parsers eux-mêmes).
-        docs = [d for d in docs_raw if _is_pdf_doc(d)]
+        docs = [d for d in docs_raw if _is_ouvrage_doc(d)]
         n_dropped = len(docs_raw) - len(docs)
         if n_dropped:
-            print(f"    ⊘  {n_dropped} lien(s) non-PDF écarté(s) "
-                  f"(bibliothèque = ouvrages PDF uniquement)")
+            print(f"    ⊘  {n_dropped} lien(s) écarté(s) — non-ouvrage ou "
+                  f"format non ouvert (bibliothèque = PDF/EPUB/TXT/ODT)")
 
         # Enregistrer le résultat dans le throttle. On compte le rendement brut
         # (docs_raw) pour ne pas étrangler les flux RSS qui servent la
@@ -1306,17 +1317,26 @@ def main() -> None:
         report["documents_found"] += len(docs)
 
         # ── Scoring par batches ─────────────────────────────────────────────
+        # score_batch numérote les documents 1..N À L'INTÉRIEUR de son batch.
+        # On rebase donc chaque indice « doc » sur la position GLOBALE dans la
+        # liste `docs` (offset = début du batch) — sans quoi les batches ≥ 2
+        # écraseraient les scores des tout premiers documents.
         all_scores: list[dict] = []
         for i in range(0, len(docs), BATCH_SIZE):
             batch = docs[i : i + BATCH_SIZE]
             print(f"    → Scoring batch {i // BATCH_SIZE + 1} ({len(batch)} docs)…")
-            all_scores.extend(score_batch(batch, keywords))
+            batch_scores = score_batch(batch, keywords)
+            for it in batch_scores:
+                d = it.get("doc")
+                if isinstance(d, int):
+                    it["doc"] = d + i          # indice local au batch → global
+            all_scores.extend(batch_scores)
 
         report["documents_scored"] += len(all_scores)
 
         for item in all_scores:
-            idx = item["doc"] - 1
-            if idx >= len(docs):
+            idx = item.get("doc", 0) - 1
+            if idx < 0 or idx >= len(docs):
                 continue
             doc    = docs[idx]
             score  = item.get("score", 0)

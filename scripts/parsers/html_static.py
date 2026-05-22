@@ -3,7 +3,8 @@
 html_static.py — Parser HTML statique standard.
 
 Scrape une page et liste tous les liens <a href> qui pointent vers un fichier
-.pdf/.epub/.txt/.doc/.docx en HTML direct (sans suivre de lien interne).
+d'ouvrage dans un format gratuit et ouvert (.pdf/.epub/.txt/.odt) en HTML
+direct (sans suivre de lien interne).
 
 C'est le parser par défaut, équivalent à l'ancienne fonction find_documents()
 de watch.py.
@@ -15,7 +16,8 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; LibraryBot/1.0)"}
-DOC_EXTENSIONS = {".pdf", ".epub", ".txt", ".doc", ".docx"}
+# Formats d'ouvrage gratuits et ouverts uniquement (exclut .doc/.docx).
+DOC_EXTENSIONS = {".pdf", ".epub", ".txt", ".odt"}
 
 
 def find_documents(source: dict) -> list[dict]:

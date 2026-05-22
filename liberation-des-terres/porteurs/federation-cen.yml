@@ -1,0 +1,94 @@
+uid: federation-cen
+categorie: porteur
+nom: "Conservatoires d'espaces naturels"
+sous_titre: "Associations d'intérêt général agréées protégeant le foncier naturel"
+statut_fiche: publie
+forme_juridique: "Associations loi 1901 d'intérêt général, agréées"
+localisation: null
+annee: 2010
+url: "https://reseau-cen.org/aires-espaces-proteges/foncier/"
+resume: >
+  Les Conservatoires d'espaces naturels (CEN) sont des associations loi 1901
+  d'intérêt général, agréées conjointement par le préfet de région et le président
+  du conseil régional, dans le cadre issu de la loi Grenelle II de 2010. Ils
+  peuvent acquérir le foncier et le gérer, en combinant propriété, bail
+  emphytéotique et conventions, au service de la préservation des espaces
+  naturels.
+montage:
+  type: propriete_sanctuarisee
+  description: >
+    Les CEN acquièrent du foncier naturel et le protègent durablement, en
+    mobilisant selon les sites la pleine propriété, le bail emphytéotique de
+    longue durée ou des conventions de gestion. Associations d'intérêt général
+    agréées, ils relèvent du droit civil privé non lucratif.
+purete_juridique:
+  niveau: pur
+  commentaire: >
+    Associations loi 1901 d'intérêt général agréées : montage strictement de
+    droit civil privé et non lucratif.
+grille:
+  - critere: forme_non_lucrative
+    valeur: oui
+    note: "Les CEN sont des associations loi 1901, forme structurellement non lucrative."
+  - critere: agrement_ig
+    valeur: oui
+    note: "Les CEN sont agréés conjointement par le préfet de région et le président du conseil régional."
+  - critere: objet_foncier_protecteur
+    valeur: oui
+    note: "L'objet des CEN est explicitement la préservation des espaces naturels par maîtrise foncière."
+  - critere: gestion_desinteressee
+    valeur: oui
+    note: "Le statut d'association loi 1901 d'intérêt général suppose une gestion désintéressée."
+  - critere: inalienabilite
+    valeur: partiel
+    note: "Les CEN combinent propriété, bail emphytéotique et conventions, mais aucune inaliénabilité statutaire systématique n'est documentée."
+  - critere: nature_protectrice
+    valeur: partiel
+    note: "L'association se situe sous la fondation reconnue d'utilité publique et la personne publique sur l'échelle de protection."
+  - critere: clause_devolution
+    valeur: partiel
+    note: "Une association ne peut restituer son actif à ses membres, mais la clause de dévolution précise des CEN n'est pas documentée."
+  - critere: independance_rendement
+    valeur: oui
+    note: "Les CEN ne dépendent d'aucun investisseur attendant une plus-value sur le foncier."
+  - critere: ca_collegial
+    valeur: oui
+    note: "Les CEN, associations loi 1901, fonctionnent avec une vie associative et un conseil d'administration."
+  - critere: parties_prenantes
+    valeur: oui
+    note: "L'agrément conjoint du préfet et de la région associe la puissance publique au cadre d'action des CEN."
+  - critere: transparence
+    valeur: partiel
+    note: "Les CEN s'inscrivent dans un réseau fédéré publiant des informations, mais le détail de la transparence comptable n'est pas documenté."
+analyse:
+  forces:
+    - "Associations loi 1901 d'intérêt général agréées : pureté juridique élevée."
+    - "Agrément conjoint État et région ancrant l'intérêt général."
+    - "Combinaison souple de propriété, bail emphytéotique et conventions."
+  fragilites:
+    - "Pas d'inaliénabilité statutaire systématique documentée."
+    - "Forme associative moins protectrice qu'une fondation d'utilité publique."
+    - "Clause de dévolution précise non documentée."
+  leviers:
+    - "Privilégier la pleine propriété assortie de clauses d'inaliénabilité."
+    - "Documenter la clause de dévolution des actifs fonciers."
+    - "Capitaliser l'agrément public comme garantie d'intérêt général."
+  synthese: >
+    Les Conservatoires d'espaces naturels offrent un montage de droit civil pur :
+    associations d'intérêt général agréées. Leur protection foncière, bonne, reste
+    en deçà de la domanialité inaliénable du Conservatoire du littoral.
+fiabilite: >
+  Faits vérifiés : statut d'associations loi 1901 d'intérêt général, agrément
+  conjoint préfet de région et président du conseil régional, cadre issu de la
+  loi Grenelle II de 2010, combinaison de propriété, bail emphytéotique et
+  conventions. Non confirmé : clause de dévolution, inaliénabilité statutaire,
+  détail de la transparence comptable.
+liens:
+  porteurs: [conservatoire-littoral]
+  usufruitiers: []
+  lieux: []
+sources:
+  - titre: "Fédération des conservatoires d'espaces naturels — Foncier"
+    url: "https://reseau-cen.org/aires-espaces-proteges/foncier/"
+  - titre: "DREAL Auvergne-Rhône-Alpes — L'agrément des conservatoires d'espaces naturels"
+    url: "https://www.auvergne-rhone-alpes.developpement-durable.gouv.fr/l-agrement-des-conservatoires-d-espaces-naturels-a15200.html"

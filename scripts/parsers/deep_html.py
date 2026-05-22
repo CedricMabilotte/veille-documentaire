@@ -20,7 +20,8 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; LibraryBot/1.0)"}
-DOC_EXTENSIONS = {".pdf", ".epub", ".txt", ".doc", ".docx"}
+# Formats d'ouvrage gratuits et ouverts uniquement (exclut .doc/.docx).
+DOC_EXTENSIONS = {".pdf", ".epub", ".txt", ".odt"}
 DEFAULT_MAX_PAGES = 30
 
 # Réduction des faux positifs : on cherche un parent "éditorial" (article/main)

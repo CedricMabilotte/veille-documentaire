@@ -1,0 +1,100 @@
+uid: cooperative-oasis
+categorie: usufruitier
+nom: "Coopérative Oasis"
+sous_titre: "Coopérative finançant le foncier collectif des écolieux"
+statut_fiche: publie
+forme_juridique: "Société coopérative d'intérêt collectif (SCIC), agrément ESUS"
+localisation: null
+annee: 2018
+url: "https://cooperative-oasis.org/"
+resume: >
+  Société coopérative d'intérêt collectif cofondée par Colibris début 2018,
+  titulaire de l'agrément ESUS. Elle finance et accompagne environ 80 écolieux,
+  en finançant habitations, bâtiments et terrains pour des projets en propriété
+  collective. Plus de 4 millions d'euros ont été collectés entre 2019 et juin
+  2022 pour 36 projets ; l'investissement ouvre droit à une réduction d'impôt de
+  25 %.
+montage:
+  type: propriete_collective
+  nu_proprietaire: "Coopérative Oasis (financement) et structures collectives des écolieux"
+  usufruitier: "Collectifs des écolieux accompagnés"
+  description: >
+    La Coopérative Oasis collecte de l'épargne solidaire et finance le foncier et
+    le bâti d'écolieux pour les inscrire en propriété collective. Elle joue un
+    rôle de financement et d'accompagnement plus que d'usufruitier direct ;
+    l'usage relève des collectifs des écolieux eux-mêmes.
+purete_juridique:
+  niveau: societaire
+  commentaire: >
+    Société coopérative d'intérêt collectif avec agrément ESUS : forme
+    coopérative encadrée, fonctionnant sur le principe « une personne, une voix ».
+grille:
+  - critere: personne_morale_civile
+    valeur: oui
+    note: "La Coopérative Oasis est une société coopérative d'intérêt collectif, personne morale relevant de l'économie sociale et solidaire."
+  - critere: objet_ig
+    valeur: oui
+    note: "L'objet est le financement et l'accompagnement d'écolieux en propriété collective, un intérêt général écologique et social."
+  - critere: non_lucrativite_effective
+    valeur: partiel
+    note: "L'agrément ESUS encadre la lucrativité, mais une SCIC peut rémunérer modérément le capital investi."
+  - critere: public_non_restreint
+    valeur: oui
+    note: "La coopérative accompagne environ 80 écolieux, bien au-delà d'un cercle restreint de personnes."
+  - critere: duree_usage
+    valeur: inconnu
+    note: "Les durées d'usage du foncier financé ne sont pas documentées par les sources."
+  - critere: clauses_usage
+    valeur: inconnu
+    note: "L'existence de clauses d'usage formalisées dans les financements n'est pas documentée par les sources."
+  - critere: articulation_porteur
+    valeur: partiel
+    note: "La coopérative finance et accompagne, mais son articulation contractuelle avec les structures porteuses du foncier n'est pas détaillée."
+  - critere: non_appropriation
+    valeur: partiel
+    note: "La coopérative finance la propriété collective des écolieux, mais les modalités empêchant l'appropriation privée ne sont pas détaillées."
+  - critere: une_voix
+    valeur: oui
+    note: "La société coopérative d'intérêt collectif fonctionne sur le principe « une personne, une voix »."
+  - critere: usagers_decident
+    valeur: partiel
+    note: "La SCIC associe des collèges de parties prenantes, mais la place décisionnelle des collectifs des écolieux n'est pas détaillée."
+  - critere: ouverture_entrants
+    valeur: oui
+    note: "La coopérative accompagne un nombre croissant d'écolieux, organisant l'arrivée de nouveaux projets."
+  - critere: transparence_interne
+    valeur: partiel
+    note: "La coopérative communique sur ses collectes, mais le détail de sa transparence comptable n'est pas documenté."
+analyse:
+  forces:
+    - "Forme de SCIC fonctionnant sur le principe « une personne, une voix »."
+    - "Agrément ESUS encadrant la lucrativité."
+    - "Financement de la propriété collective d'environ 80 écolieux."
+  fragilites:
+    - "Rôle de financeur plus que d'usufruitier direct du foncier."
+    - "Durées et clauses d'usage du foncier financé non documentées."
+    - "Place décisionnelle des collectifs des écolieux non détaillée."
+  leviers:
+    - "Formaliser des clauses d'usage et anti-spéculatives dans les financements."
+    - "Documenter l'articulation contractuelle avec les structures porteuses."
+    - "Renforcer la place des écolieux dans la gouvernance de la coopérative."
+  synthese: >
+    La Coopérative Oasis est un financeur coopératif de la propriété collective
+    des écolieux, plus qu'un usufruitier au sens strict. Sa forme de SCIC et son
+    agrément ESUS encadrent la lucrativité ; les montages d'usage restent à
+    documenter.
+fiabilite: >
+  Faits vérifiés : forme de SCIC cofondée par Colibris début 2018, agrément ESUS,
+  accompagnement d'environ 80 écolieux, plus de 4 millions d'euros collectés
+  entre 2019 et juin 2022 pour 36 projets, réduction d'impôt de 25 % pour
+  l'investisseur. Non confirmé : durées et clauses d'usage du foncier financé,
+  articulation contractuelle avec les structures porteuses.
+liens:
+  porteurs: []
+  usufruitiers: []
+  lieux: []
+sources:
+  - titre: "Coopérative Oasis — site officiel"
+    url: "https://cooperative-oasis.org/"
+  - titre: "Colibris — La Coopérative Oasis"
+    url: "https://www.colibris-lemouvement.org/projets/projet-oasis/cooperative-oasis"

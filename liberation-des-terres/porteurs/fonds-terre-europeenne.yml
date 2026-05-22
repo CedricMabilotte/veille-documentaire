@@ -1,0 +1,92 @@
+uid: fonds-terre-europeenne
+categorie: porteur
+nom: "Fonds de Terre Européenne"
+sous_titre: "Fondation de droit suisse détenant les terres de Longo Maï"
+statut_fiche: publie
+forme_juridique: "Fondation de droit suisse"
+localisation: null
+annee: null
+url: "https://www.prolongomaif.ch/"
+resume: >
+  Fondation de droit suisse qui regroupe et détient collectivement et de façon
+  inaliénable les terres des coopératives Longo Maï, afin de les soustraire à la
+  spéculation. Elle constitue le porteur de propriété du réseau des coopératives
+  autogérées, dont l'usage des terres est assuré par les collectifs eux-mêmes.
+montage:
+  type: propriete_sanctuarisee
+  description: >
+    Les terres des coopératives Longo Maï sont transférées à la fondation, qui en
+    assure une propriété explicitement inaliénable. L'usage est confié aux
+    coopératives autogérées. Le démembrement nue-propriété/usufruit au sens du
+    droit français n'est pas en cause : il s'agit d'une propriété sanctuarisée en
+    fondation.
+purete_juridique:
+  niveau: encadre
+  commentaire: >
+    Fondation non lucrative assurant une détention inaliénable du foncier, mais
+    relevant du droit suisse et non du droit français.
+grille:
+  - critere: forme_non_lucrative
+    valeur: oui
+    note: "Le Fonds de Terre Européenne est une fondation, forme structurellement non lucrative."
+  - critere: agrement_ig
+    valeur: partiel
+    note: "La fondation poursuit une finalité d'intérêt général, mais aucune reconnaissance au regard du droit français n'est documentée."
+  - critere: objet_foncier_protecteur
+    valeur: oui
+    note: "L'objet est explicitement de regrouper et détenir les terres de façon inaliénable, à l'abri de la spéculation."
+  - critere: gestion_desinteressee
+    valeur: oui
+    note: "Une fondation suppose une gestion désintéressée au service de sa mission."
+  - critere: inalienabilite
+    valeur: oui
+    note: "La fondation détient les terres de façon explicitement inaliénable."
+  - critere: nature_protectrice
+    valeur: oui
+    note: "Une fondation se situe en haut de l'échelle de protection foncière."
+  - critere: clause_devolution
+    valeur: inconnu
+    note: "Le sort de l'actif en cas de dissolution n'est pas documenté par les sources consultées."
+  - critere: independance_rendement
+    valeur: oui
+    note: "Une fondation ne dépend d'aucun investisseur attendant une plus-value sur le foncier."
+  - critere: ca_collegial
+    valeur: inconnu
+    note: "La composition des instances de la fondation n'est pas documentée par les sources consultées."
+  - critere: parties_prenantes
+    valeur: partiel
+    note: "La fondation porte le foncier de coopératives autogérées, mais l'articulation formelle avec leur gouvernance n'est pas documentée."
+  - critere: transparence
+    valeur: partiel
+    note: "L'existence et la mission de la fondation sont publiques, mais la publication régulière de comptes n'est pas confirmée."
+analyse:
+  forces:
+    - "Détention explicitement inaliénable des terres : verrou foncier fort."
+    - "Objet statutaire de protection foncière clair."
+    - "Forme de fondation, protectrice par nature."
+  fragilites:
+    - "Relève du droit suisse et non du droit français."
+    - "Gouvernance et clause de dévolution non documentées."
+    - "Transparence des comptes non confirmée."
+  leviers:
+    - "Documenter publiquement la gouvernance et le sort de l'actif en cas de dissolution."
+    - "Formaliser l'articulation avec les coopératives usagères."
+    - "Publier régulièrement les comptes de la fondation."
+  synthese: >
+    Le Fonds de Terre Européenne assure une sanctuarisation foncière solide pour
+    Longo Maï grâce à une détention inaliénable. Sa singularité tient au recours
+    au droit suisse et à une gouvernance peu documentée.
+fiabilite: >
+  Faits vérifiés : statut de fondation de droit suisse, mission de regroupement et
+  détention inaliénable des terres de Longo Maï, finalité de soustraction à la
+  spéculation. Non confirmé : composition de la gouvernance, clause de dévolution,
+  publication des comptes.
+liens:
+  porteurs: []
+  usufruitiers: [cooperatives-longo-mai]
+  lieux: [longo-mai]
+sources:
+  - titre: "Pro Longo Maï"
+    url: "https://www.prolongomaif.ch/"
+  - titre: "Longo Maï — La Cabrery"
+    url: "https://www.lacabrery.org/longo-mai/"

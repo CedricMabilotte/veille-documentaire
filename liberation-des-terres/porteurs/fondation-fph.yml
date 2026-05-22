@@ -1,0 +1,94 @@
+uid: fondation-fph
+categorie: porteur
+nom: "Fondation Charles Léopold Mayer pour le Progrès de l'Homme"
+sous_titre: "Fondation propriétaire du domaine de Villarceaux"
+statut_fiche: publie
+forme_juridique: "Fondation (de droit suisse selon les sources ; forme exacte au regard du droit français non confirmée)"
+localisation: null
+annee: null
+url: "https://www.fph.ch/article16_fr.html"
+resume: >
+  Fondation soutenant des recherches et expérimentations d'intérêt général. Elle
+  est propriétaire du domaine de la Bergerie de Villarceaux, d'environ 600
+  hectares, qu'elle met à disposition pour une transition agroécologique. Elle en
+  conserve la pleine propriété et en confie l'exploitation à des structures
+  tierces. La forme exacte de la fondation au regard du droit français n'est pas
+  confirmée par les sources, qui mentionnent un cadre de droit suisse.
+montage:
+  type: propriete_sanctuarisee
+  description: >
+    La Fondation détient en pleine propriété le domaine de Villarceaux et confie
+    l'usage agricole à des structures d'exploitation tierces. Il s'agit d'une
+    propriété de fondation assortie d'une exploitation tierce, et non d'un
+    démembrement strict.
+purete_juridique:
+  niveau: encadre
+  commentaire: >
+    Fondation non lucrative offrant une bonne protection du foncier, mais dont la
+    forme exacte au regard du droit français reste à confirmer.
+grille:
+  - critere: forme_non_lucrative
+    valeur: oui
+    note: "La FPH est une fondation, forme structurellement non lucrative."
+  - critere: agrement_ig
+    valeur: partiel
+    note: "La FPH soutient des missions d'intérêt général, mais sa reconnaissance officielle au regard du droit français n'est pas confirmée."
+  - critere: objet_foncier_protecteur
+    valeur: partiel
+    note: "La FPH met le domaine à disposition d'une transition agroécologique, mais un objet statutaire de protection foncière explicite n'est pas documenté."
+  - critere: gestion_desinteressee
+    valeur: oui
+    note: "Une fondation suppose une gestion désintéressée au service de sa mission d'intérêt général."
+  - critere: inalienabilite
+    valeur: partiel
+    note: "La détention par une fondation protège le foncier, mais aucune clause d'inaliénabilité spécifique n'est documentée."
+  - critere: nature_protectrice
+    valeur: oui
+    note: "Une fondation se situe en haut de l'échelle de protection, sous la seule personne publique."
+  - critere: clause_devolution
+    valeur: inconnu
+    note: "Le sort de l'actif en cas de dissolution n'est pas documenté par les sources consultées."
+  - critere: independance_rendement
+    valeur: oui
+    note: "Une fondation ne dépend pas d'investisseurs attendant une plus-value sur le foncier."
+  - critere: ca_collegial
+    valeur: inconnu
+    note: "La composition des instances de la FPH n'est pas documentée par les sources consultées."
+  - critere: parties_prenantes
+    valeur: inconnu
+    note: "L'association des usagers, citoyens ou collectivités à la gouvernance n'est pas documentée."
+  - critere: transparence
+    valeur: partiel
+    note: "La FPH dispose d'un site présentant son action, mais la publication régulière de comptes détaillés n'est pas confirmée."
+analyse:
+  forces:
+    - "Fondation non lucrative, propriétaire stable d'un domaine de grande ampleur."
+    - "Mise à disposition du foncier pour une transition agroécologique de long terme."
+    - "Forme de fondation, protectrice par nature."
+  fragilites:
+    - "Forme exacte au regard du droit français non confirmée (cadre de droit suisse)."
+    - "Objet statutaire de protection foncière non documenté."
+    - "Gouvernance et clause de dévolution non documentées."
+  leviers:
+    - "Clarifier publiquement le statut juridique et l'objet foncier de la fondation."
+    - "Documenter la gouvernance et le sort de l'actif en cas de dissolution."
+    - "Formaliser des conventions d'usage avec les structures d'exploitation."
+  synthese: >
+    La FPH offre un cadre de fondation protecteur pour le domaine de Villarceaux,
+    mais sa solidité juridique reste à expliciter : statut au regard du droit
+    français, objet foncier, gouvernance et dévolution.
+fiabilite: >
+  Faits vérifiés : statut de fondation, propriété du domaine de Villarceaux
+  d'environ 600 hectares, mise à disposition pour une transition agroécologique,
+  exploitation confiée à des structures tierces. Non confirmé : forme juridique
+  exacte au regard du droit français, objet statutaire foncier, gouvernance,
+  clause de dévolution.
+liens:
+  porteurs: []
+  usufruitiers: [ecosite-villarceaux]
+  lieux: [villarceaux]
+sources:
+  - titre: "FPH — La Bergerie de Villarceaux"
+    url: "https://www.fph.ch/article16_fr.html"
+  - titre: "Bergerie de Villarceaux — site officiel"
+    url: "https://www.bergerie-villarceaux.org/"

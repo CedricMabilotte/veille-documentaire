@@ -1,0 +1,98 @@
+uid: cooperatives-longo-mai
+categorie: usufruitier
+nom: "Coopératives Longo Maï"
+sous_titre: "Collectifs autogérés utilisant les terres sanctuarisées"
+statut_fiche: publie
+forme_juridique: "Coopératives autogérées (statut associatif privilégié selon les sources)"
+localisation: null
+annee: 1973
+url: "https://www.prolongomaif.ch/"
+resume: >
+  Réseau de coopératives autogérées fondé en 1973, comptant cinq implantations en
+  France (Limans, Chantemerle, Mas de Granier, Treynas, La Cabrery). Les
+  coopératives, de statut associatif privilégié, utilisent les terres détenues de
+  façon inaliénable par le Fonds de Terre Européenne. Elles fonctionnent en
+  autogestion et conduisent agriculture, élevage, vigne, forêt, artisanat et
+  accueil.
+montage:
+  type: propriete_sanctuarisee
+  nu_proprietaire: "Fonds de Terre Européenne (fondation de droit suisse)"
+  usufruitier: "Coopératives Longo Maï (collectifs autogérés)"
+  description: >
+    Les coopératives autogérées utilisent les terres du Fonds de Terre Européenne.
+    Elles fonctionnent en autogestion : les usagers décident collectivement. La
+    formalisation contractuelle de l'usage entre fondation et coopératives n'est
+    pas documentée par les sources.
+purete_juridique:
+  niveau: encadre
+  commentaire: >
+    Collectifs autogérés de statut associatif privilégié ; l'usage repose sur
+    l'autogestion plutôt que sur un contrat documenté.
+grille:
+  - critere: personne_morale_civile
+    valeur: oui
+    note: "Les coopératives Longo Maï relèvent d'un statut associatif privilégié, personne morale de droit civil non lucrative."
+  - critere: objet_ig
+    valeur: partiel
+    note: "Les activités agricoles, artisanales et d'accueil ont une portée collective, mais l'objet d'intérêt général au-delà des coopérants n'est pas explicité."
+  - critere: non_lucrativite_effective
+    valeur: oui
+    note: "Les coopératives autogérées fonctionnent sans partage de bénéfices, sur un mode associatif."
+  - critere: public_non_restreint
+    valeur: partiel
+    note: "Le réseau accueille du public et des activités, mais les bénéfices profitent d'abord aux coopérants."
+  - critere: duree_usage
+    valeur: partiel
+    note: "L'usage est durable depuis 1973, mais aucune durée d'usufruit formalisée n'est documentée."
+  - critere: clauses_usage
+    valeur: inconnu
+    note: "L'existence de clauses d'usage formalisées entre fondation et coopératives n'est pas documentée."
+  - critere: articulation_porteur
+    valeur: partiel
+    note: "Les coopératives utilisent les terres du Fonds de Terre Européenne, mais l'articulation contractuelle n'est pas documentée."
+  - critere: non_appropriation
+    valeur: oui
+    note: "Les terres sont détenues de façon inaliénable par la fondation ; les coopératives ne peuvent ni les revendre ni en capter la valeur."
+  - critere: une_voix
+    valeur: oui
+    note: "L'autogestion implique des décisions collectives, sans pouvoir proportionnel au capital."
+  - critere: usagers_decident
+    valeur: oui
+    note: "Les coopératives fonctionnent en autogestion : les usagers décident collectivement."
+  - critere: ouverture_entrants
+    valeur: partiel
+    note: "Le réseau s'est étendu à plusieurs implantations, mais les modalités d'accueil de nouveaux entrants ne sont pas détaillées."
+  - critere: transparence_interne
+    valeur: inconnu
+    note: "Les modalités de transparence interne des coopératives ne sont pas documentées par les sources."
+analyse:
+  forces:
+    - "Autogestion effective : les usagers décident collectivement."
+    - "Foncier détenu de façon inaliénable en amont, sans appropriation possible."
+    - "Réseau ancien et stable réparti sur plusieurs implantations."
+  fragilites:
+    - "Formalisation contractuelle de l'usage non documentée."
+    - "Objet d'intérêt général au-delà des coopérants peu explicité."
+    - "Modalités d'accueil de nouveaux entrants non détaillées."
+  leviers:
+    - "Formaliser l'usage par une convention écrite avec la fondation."
+    - "Expliciter l'ouverture au territoire et au public."
+    - "Documenter l'accueil de nouveaux entrants et la transparence interne."
+  synthese: >
+    Les coopératives Longo Maï incarnent une autogestion réelle sur un foncier
+    sanctuarisé. Leur solidité tient à l'inaliénabilité en amont ; leur marge de
+    progression est la formalisation de l'usage et l'ouverture au territoire.
+fiabilite: >
+  Faits vérifiés : réseau fondé en 1973, cinq implantations en France, statut
+  associatif privilégié, autogestion, usage des terres du Fonds de Terre
+  Européenne détenues de façon inaliénable. Non confirmé : actes formalisant
+  l'usage, modalités d'accueil de nouveaux entrants, transparence interne.
+liens:
+  porteurs: [fonds-terre-europeenne]
+  usufruitiers: []
+  lieux: [longo-mai]
+sources:
+  - titre: "Pro Longo Maï"
+    url: "https://www.prolongomaif.ch/"
+  - titre: "Longo Maï — La Cabrery"
+    url: "https://www.lacabrery.org/longo-mai/"
