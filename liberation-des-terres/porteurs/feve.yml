@@ -1,0 +1,115 @@
+uid: feve
+categorie: porteur
+nom: "FEVE — Fermes en Vie"
+sous_titre: "Foncière solidaire citoyenne portant le foncier agricole"
+statut_fiche: publie
+forme_juridique: "Foncière solidaire de l'économie sociale et solidaire"
+localisation: null
+annee: 2020
+url: "https://www.feve.co/"
+resume: >
+  Foncière solidaire de l'économie sociale et solidaire qui mobilise l'épargne
+  citoyenne pour acheter des fermes — terres, bâtiments d'exploitation et
+  habitation — et les confier à des paysan·nes en installation. Le foncier est
+  mis à disposition par un bail rural assorti de clauses environnementales et
+  d'une option d'achat ouvrant la possibilité, pour le preneur, d'acquérir la
+  ferme après plusieurs années. FEVE accompagne les porteur·ses de projet via la
+  plateforme « La Grange » et conditionne l'éligibilité à une charte
+  agroécologique et à la vente en circuits courts.
+montage:
+  type: propriete_sanctuarisee
+  description: >
+    FEVE acquiert la pleine propriété des fermes grâce à l'épargne citoyenne et
+    en conserve la propriété pendant la durée du bail. L'usage est confié au
+    preneur par un bail rural à clauses environnementales, doublé d'une option
+    d'achat qui lui permet d'acquérir la ferme après plusieurs années
+    d'exploitation. Ce montage facilite l'installation, mais l'option d'achat
+    réintroduit la perspective d'une appropriation individuelle du foncier :
+    la sortie du marché n'est, en ce cas, que temporaire.
+purete_juridique:
+  niveau: societaire
+  commentaire: >
+    Foncière de forme sociétaire reposant sur un actionnariat citoyen ; l'option
+    d'achat consentie au preneur peut conduire le foncier à quitter le portage
+    collectif pour rejoindre un patrimoine privé.
+grille:
+  - critere: forme_non_lucrative
+    valeur: partiel
+    note: "FEVE relève de l'économie sociale et solidaire, mais sa forme de foncière repose sur un actionnariat ; la non-lucrativité dépend des clauses encadrant le capital."
+  - critere: agrement_ig
+    valeur: partiel
+    note: "FEVE relève de la finance solidaire et de l'installation paysanne, mais ne dispose pas d'une reconnaissance d'utilité publique."
+  - critere: objet_foncier_protecteur
+    valeur: partiel
+    note: "L'objet est l'achat de fermes pour l'installation paysanne, mais l'option d'achat consentie au preneur n'inscrit pas une protection foncière durable."
+  - critere: gestion_desinteressee
+    valeur: partiel
+    note: "L'objet est solidaire et l'actionnariat citoyen, mais la non-lucrativité au sens fiscal n'est pas documentée."
+  - critere: inalienabilite
+    valeur: non
+    note: "L'option d'achat consentie au preneur organise au contraire la cessibilité du foncier vers un patrimoine privé après quelques années."
+  - critere: nature_protectrice
+    valeur: partiel
+    note: "Une foncière de forme sociétaire se situe en bas de l'échelle de protection, sous la fondation et la personne publique."
+  - critere: clause_devolution
+    valeur: inconnu
+    note: "Le sort de l'actif de la foncière en cas de dissolution n'est pas documenté par les sources consultées."
+  - critere: independance_rendement
+    valeur: partiel
+    note: "FEVE mobilise l'épargne citoyenne sans promesse de plus-value spéculative, mais la rémunération du capital investi n'est pas exclue par construction."
+  - critere: ca_collegial
+    valeur: inconnu
+    note: "La composition des instances de direction de FEVE n'est pas documentée par les sources consultées."
+  - critere: parties_prenantes
+    valeur: partiel
+    note: "L'actionnariat citoyen est large, mais la place décisionnelle des paysan·nes accompagné·es n'est pas documentée."
+  - critere: transparence
+    valeur: partiel
+    note: "FEVE communique sur sa collecte et le nombre de fermes financées, mais le détail de sa transparence comptable n'est pas documenté."
+  - critere: risque_requalification
+    valeur: partiel
+    note: "FEVE relève de la finance solidaire mais n'est pas reconnue d'intérêt général ; sa solidité repose sur ses clauses statutaires plutôt que sur une qualification fiscale."
+  - critere: redevabilite_publique
+    valeur: partiel
+    note: "FEVE communique sur son activité auprès de ses épargnant·es, mais ne relève pas d'un contrôle public comparable à celui d'une fondation reconnue d'utilité publique."
+analyse:
+  forces:
+    - "Foncière récente mobilisant largement l'épargne citoyenne pour l'installation paysanne."
+    - "Bail rural à clauses environnementales inscrivant l'agroécologie dans le droit du lieu."
+    - "Accompagnement structuré des candidat·es à l'installation via la plateforme « La Grange »."
+  fragilites:
+    - "L'option d'achat consentie au preneur peut faire ressortir le foncier sur le marché."
+    - "Forme de foncière sociétaire : non-lucrativité non garantie par construction."
+    - "Gouvernance et clause de dévolution non documentées."
+  leviers:
+    - "Encadrer l'option d'achat par des clauses anti-spéculatives ou un droit de préemption."
+    - "Documenter publiquement la gouvernance et le sort de l'actif en cas de dissolution."
+    - "Associer les paysan·nes accompagné·es à la gouvernance de la foncière."
+  synthese: >
+    FEVE est une foncière citoyenne efficace pour déclencher l'installation
+    paysanne, mais son option d'achat la distingue nettement des montages de
+    libération durable : la terre peut redevenir une propriété privée. C'est un
+    outil de transition foncière plus qu'un dispositif de sortie irréversible du
+    marché.
+fiabilite: >
+  Faits vérifiés (sources FEVE et France PAT, consultées en mai 2026) : foncière
+  solidaire de l'économie sociale et solidaire mobilisant l'épargne citoyenne,
+  achat de fermes (terres, bâti, habitation), mise à disposition par bail rural à
+  clauses environnementales assorti d'une option d'achat exerçable après
+  plusieurs années, plateforme d'accompagnement « La Grange », charte
+  agroécologique et circuits courts comme conditions d'éligibilité, environ
+  37 fermes financées et une trentaine de paysan·nes installé·es, près de
+  2 400 hectares en agriculture biologique. Non confirmé : composition de la
+  gouvernance, clause de dévolution, encadrement anti-spéculatif de l'option
+  d'achat. Les chiffres d'activité évoluent rapidement.
+liens:
+  porteurs: [lurzaindia-sca, fonciere-terre-de-liens]
+  usufruitiers: []
+  lieux: []
+sources:
+  - titre: "FEVE — Fermes en Vie, site officiel"
+    url: "https://www.feve.co/"
+  - titre: "Banque des Territoires — Financement du foncier agricole avec FEVE"
+    url: "https://www.banquedesterritoires.fr/realisation/financement-du-foncier-agricole-avec-feve-et-transition-vers-lagroecologie"
+  - titre: "France PAT — Fermes en Vie (FEVE)"
+    url: "https://france-pat.fr/financements/fermes-en-vie-feve/"

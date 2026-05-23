@@ -17,7 +17,7 @@ resume: >
 montage:
   type: propriete_sanctuarisee
   nu_proprietaire: "Fondation Charles Léopold Mayer pour le Progrès de l'Homme (FPH)"
-  usufruitier: "Association Écosite (animation, formation) ; EARL Olivier Ranke (exploitation)"
+  usufruitier: "Titulaire de l'usage : association Écosite (animation, formation) et EARL Olivier Ranke (exploitation agricole) ; nature exacte des titres d'usage non documentée"
   description: >
     L'association Écosite est l'une des structures d'usage du domaine de
     Villarceaux, propriété de la FPH. Elle porte l'animation et la formation,
@@ -40,7 +40,7 @@ grille:
     note: "L'association loi 1901 ne partage pas de bénéfices."
   - critere: public_non_restreint
     valeur: oui
-    note: "Les activités d'animation et de formation du domaine s'adressent à un public dépassant les seuls occupants."
+    note: "Les activités d'animation et de formation du domaine s'adressent à un public dépassant les seuls occupant·es."
   - critere: duree_usage
     valeur: inconnu
     note: "La durée et la nature de l'usage détenu par l'association sur le domaine ne sont pas documentées."
@@ -61,10 +61,13 @@ grille:
     note: "L'association porte l'animation, mais l'articulation décisionnelle avec l'EARL et la fondation n'est pas documentée."
   - critere: ouverture_entrants
     valeur: inconnu
-    note: "Les modalités d'accueil de nouveaux membres ou usagers ne sont pas documentées par les sources."
+    note: "Les modalités d'accueil de nouveaux membres ou usager·es ne sont pas documentées par les sources."
   - critere: transparence_interne
     valeur: inconnu
     note: "Les modalités de transparence interne de l'association ne sont pas documentées par les sources."
+  - critere: devolution_usufruitier
+    valeur: inconnu
+    note: "Le sort de l'actif de l'association en cas de dissolution n'est pas documenté par les sources consultées."
 analyse:
   forces:
     - "Association loi 1901 non lucrative portant l'animation et la formation."
@@ -77,7 +80,7 @@ analyse:
   leviers:
     - "Formaliser une convention d'usage entre association et fondation."
     - "Clarifier la répartition des rôles entre association, EARL et fondation."
-    - "Documenter la gouvernance et l'accueil de nouveaux usagers."
+    - "Documenter la gouvernance et l'accueil de nouveaux usager·es."
   synthese: >
     L'association Écosite porte la dimension d'animation et de formation de
     Villarceaux. Son insertion dans un montage d'usage partiellement opaque

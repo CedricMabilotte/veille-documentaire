@@ -5,23 +5,26 @@ sous_titre: "Office foncier local gérant les terres publiques du Larzac"
 statut_fiche: publie
 forme_juridique: "Société civile"
 localisation: null
-annee: 1982
+annee: 1985
 url: "https://larzac.org/accueil/un-territoire-organise/gestion-fonciere/sctl/"
 resume: >
-  Société civile créée à partir de décembre 1982, la SCTL se voit confier la
-  gestion de l'ensemble bâti et non bâti des terres du Larzac, propriété de
-  l'État. Elle attribue l'usage aux paysans via des baux de long terme. Ses
-  associés sont les personnes physiques et morales utilisant les terres ou
-  bâtiments confiés à la société : elle fonctionne comme un office foncier local.
+  Société civile constituée le 29 avril 1985, après une recherche de structure
+  engagée dès décembre 1982, la SCTL se voit confier la gestion de l'ensemble
+  bâti et non bâti des terres du Larzac, propriété de l'État. Elle détient ce
+  foncier par un bail emphytéotique de 99 ans conclu avec l'État (échéance 2083)
+  et attribue l'usage aux paysan·nes via des baux de long terme. Ses associés sont
+  les personnes physiques et morales utilisant les terres ou bâtiments confiés à
+  la société : elle fonctionne comme un office foncier local.
 montage:
   type: propriete_publique
   nu_proprietaire: "État (propriété publique des terres du Larzac)"
-  usufruitier: "Société Civile des Terres du Larzac (SCTL)"
+  usufruitier: "Titulaire de l'usage : Société Civile des Terres du Larzac (SCTL), preneuse d'un bail emphytéotique de 99 ans consenti par l'État"
   description: >
-    La SCTL n'est pas propriétaire : elle est gestionnaire et preneuse du foncier
-    de l'État. Elle redistribue l'usage aux paysans par des baux de long terme.
-    Ses associés sont les utilisateurs eux-mêmes, ce qui en fait une structure
-    d'usage collective.
+    La SCTL n'est pas propriétaire : elle détient le foncier de l'État par un
+    bail emphytéotique, d'abord de 60 ans puis porté à 99 ans (maximum légal),
+    sécurisant les 6 300 hectares jusqu'en 2083. Elle redistribue l'usage aux
+    paysan·nes par des baux de long terme. Ses associés sont les utilisateurs
+    eux-mêmes, ce qui en fait une structure d'usage collective.
 purete_juridique:
   niveau: encadre
   commentaire: >
@@ -33,16 +36,16 @@ grille:
     note: "La SCTL est une société civile, personne morale de droit civil."
   - critere: objet_ig
     valeur: oui
-    note: "La SCTL organise l'installation et le maintien de paysans, un intérêt général agricole et territorial."
+    note: "La SCTL organise l'installation et le maintien de paysan·nes, un intérêt général agricole et territorial."
   - critere: non_lucrativite_effective
     valeur: partiel
-    note: "La SCTL fonctionne comme un office foncier au service des paysans, mais la non-lucrativité statutaire n'est pas détaillée."
+    note: "La SCTL fonctionne comme un office foncier au service des paysan·nes, mais la non-lucrativité statutaire n'est pas détaillée."
   - critere: public_non_restreint
     valeur: oui
-    note: "La SCTL favorise l'installation de nouveaux paysans, avec une hausse de leur nombre d'environ 25 %."
+    note: "La SCTL favorise l'installation de nouveaux paysan·nes, avec une hausse de leur nombre d'environ 20 %."
   - critere: duree_usage
     valeur: oui
-    note: "La SCTL attribue l'usage aux paysans par des baux de long terme."
+    note: "La SCTL détient le foncier par un bail emphytéotique de 99 ans (échéance 2083) et attribue l'usage aux paysan·nes par des baux ruraux, dont le renouvellement est d'ordre public."
   - critere: clauses_usage
     valeur: inconnu
     note: "L'existence de clauses environnementales dans les baux attribués n'est pas documentée par les sources."
@@ -51,7 +54,7 @@ grille:
     note: "La SCTL gère le foncier de l'État dans un cadre clair de délégation de gestion."
   - critere: non_appropriation
     valeur: oui
-    note: "Le foncier reste propriété de l'État ; les paysans en ont l'usage par bail et ne peuvent le revendre."
+    note: "Le foncier reste propriété de l'État ; les paysan·nes en ont l'usage par bail et ne peuvent le revendre."
   - critere: une_voix
     valeur: partiel
     note: "La SCTL associe les utilisateurs des terres, mais les modalités de vote dans la société civile ne sont pas détaillées."
@@ -60,15 +63,18 @@ grille:
     note: "Les associés de la SCTL sont les personnes physiques et morales utilisant les terres et bâtiments."
   - critere: ouverture_entrants
     valeur: oui
-    note: "La SCTL a permis une hausse du nombre de paysans, signe d'une organisation de l'accueil de nouveaux entrants."
+    note: "La SCTL a permis une hausse du nombre de paysan·nes d'environ 20 %, signe d'une organisation de l'accueil de nouveaux entrants."
   - critere: transparence_interne
     valeur: inconnu
     note: "Les modalités de transparence interne de la SCTL ne sont pas documentées par les sources."
+  - critere: devolution_usufruitier
+    valeur: inconnu
+    note: "Le sort de l'actif de la SCTL en cas de dissolution n'est pas documenté par les sources consultées."
 analyse:
   forces:
     - "Structure d'usage dont les associés sont les utilisateurs eux-mêmes."
-    - "Attribution de l'usage par baux de long terme, sur un foncier public."
-    - "Office foncier éprouvé depuis 1982, favorisant l'installation paysanne."
+    - "Foncier détenu par un bail emphytéotique de 99 ans sécurisant l'usage jusqu'en 2083."
+    - "Office foncier éprouvé depuis 1985, favorisant l'installation paysanne."
   fragilites:
     - "Existence de clauses environnementales dans les baux non documentée."
     - "Modalités de vote et de transparence interne non détaillées."
@@ -78,16 +84,17 @@ analyse:
     - "Documenter les règles de gouvernance et de transparence interne."
     - "Sécuriser dans la durée la convention de gestion avec l'État."
   synthese: >
-    La SCTL est un usufruitier collectif exemplaire : ses associés sont les
-    utilisateurs du foncier et elle attribue l'usage par baux longs. Sa solidité
-    tient à la propriété publique en amont et gagnerait à documenter sa
-    gouvernance interne.
+    La SCTL est un titulaire de l'usage collectif exemplaire : ses associés sont
+    les utilisateurs du foncier et elle attribue l'usage par baux longs. Sa
+    solidité tient à la propriété publique en amont et au bail emphytéotique de
+    99 ans, et gagnerait à documenter sa gouvernance interne.
 fiabilite: >
-  Faits vérifiés : forme de société civile, création à partir de décembre 1982,
-  gestion du foncier de l'État, attribution de l'usage par baux de long terme,
-  associés étant les utilisateurs des terres, hausse du nombre de paysans
-  d'environ 25 %. Non confirmé : clauses environnementales des baux, modalités de
-  vote et de transparence interne.
+  Faits vérifiés : forme de société civile constituée le 29 avril 1985, après une
+  recherche de structure engagée dès décembre 1982, détention du foncier de
+  l'État par un bail emphytéotique de 99 ans (échéance 2083), attribution de
+  l'usage aux paysan·nes par des baux de long terme, associés étant les utilisateurs
+  des terres, hausse du nombre de paysan·nes d'environ 20 %. Non confirmé : clauses
+  environnementales des baux, modalités de vote et de transparence interne.
 liens:
   porteurs: []
   usufruitiers: []

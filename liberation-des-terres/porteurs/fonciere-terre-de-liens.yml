@@ -17,7 +17,7 @@ resume: >
 montage:
   type: propriete_sanctuarisee
   description: >
-    La Foncière collecte l'épargne solidaire de citoyens-actionnaires, dont la
+    La Foncière collecte l'épargne solidaire de citoyen·nes-actionnaires, dont la
     responsabilité est limitée à leur apport, et achète le foncier qu'elle
     conserve durablement. L'usage est confié aux paysan·nes par bail rural. Il
     s'agit d'un portage collectif et non d'un démembrement de propriété.
@@ -57,10 +57,16 @@ grille:
     note: "La Foncière s'inscrit dans le mouvement Terre de Liens, mais la composition de sa gérance et de ses instances n'est pas détaillée."
   - critere: parties_prenantes
     valeur: partiel
-    note: "Les actionnaires citoyens sont nombreux, mais la place décisionnelle des paysan·nes preneurs n'est pas documentée."
+    note: "L'actionnariat citoyen est large, mais la place décisionnelle des paysan·nes preneur·euses n'est pas documentée."
   - critere: transparence
     valeur: oui
     note: "La Foncière s'inscrit dans un mouvement publiant des rapports annuels et des informations sur l'épargne solidaire."
+  - critere: risque_requalification
+    valeur: partiel
+    note: "La Foncière relève de la finance solidaire mais n'est pas reconnue d'intérêt général ; le risque de requalification fiscale ne se pose pas dans les mêmes termes que pour une fondation, sa solidité reposant sur ses clauses statutaires."
+  - critere: redevabilite_publique
+    valeur: partiel
+    note: "La Foncière communique dans le cadre du mouvement Terre de Liens et de la finance solidaire, mais ne relève pas d'un contrôle public comparable à celui d'une FRUP."
 analyse:
   forces:
     - "Mobilisation large de capital citoyen sans rémunération spéculative."
@@ -73,7 +79,7 @@ analyse:
   leviers:
     - "Inscrire des clauses anti-spéculatives et d'inaliénabilité explicites."
     - "Documenter le sort de l'actif en cas de dissolution."
-    - "Associer les paysan·nes preneurs à la gouvernance."
+    - "Associer les paysan·nes preneur·euses à la gouvernance."
   synthese: >
     La Foncière est un outil puissant de mobilisation d'épargne solidaire, mais sa
     forme sociétaire la rend moins protectrice que la Fondation. Sa solidité tient

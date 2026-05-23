@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Système
+.DS_Store
+Thumbs.db
+
+# Fichiers de travail (les rapports de recherche restent versionnés)
+*.tmp
+*.log

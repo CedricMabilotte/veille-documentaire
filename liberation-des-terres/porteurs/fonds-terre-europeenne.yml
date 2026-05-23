@@ -59,6 +59,12 @@ grille:
   - critere: transparence
     valeur: partiel
     note: "L'existence et la mission de la fondation sont publiques, mais la publication régulière de comptes n'est pas confirmée."
+  - critere: risque_requalification
+    valeur: inconnu
+    note: "La fondation relève du droit suisse ; son exposition à un risque de requalification fiscale au regard du droit français n'est pas documentée."
+  - critere: redevabilite_publique
+    valeur: partiel
+    note: "L'existence et la mission de la fondation sont publiques, mais la reddition de comptes régulière n'est pas confirmée."
 analyse:
   forces:
     - "Détention explicitement inaliénable des terres : verrou foncier fort."

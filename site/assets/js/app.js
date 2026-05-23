@@ -460,21 +460,10 @@
     }
   }
   function initPalette(basePath) {
-    // Charge dynamiquement les feuilles de surcharge (academique, militant) une seule fois
-    if (!document.getElementById('palette-css-academique')) {
-      const a = document.createElement('link');
-      a.id = 'palette-css-academique';
-      a.rel = 'stylesheet';
-      a.href = `${basePath}assets/css/themes/academique.css`;
-      document.head.appendChild(a);
-    }
-    if (!document.getElementById('palette-css-militant')) {
-      const m = document.createElement('link');
-      m.id = 'palette-css-militant';
-      m.rel = 'stylesheet';
-      m.href = `${basePath}assets/css/themes/militant.css`;
-      document.head.appendChild(m);
-    }
+    // Les palettes (académique, militant) sont définies directement dans
+    // style.css via les sélecteurs [data-palette="…"] : aucun chargement
+    // dynamique de feuille de style, donc aucune dépendance au chemin ni au
+    // cache du service worker.
     const stored = localStorage.getItem('biblio-palette') || 'biblio';
     applyPalette(stored);
 
@@ -598,7 +587,9 @@
   function init() {
     // Calcule le basePath pour les pages internes (e.g. /fiches/index.html)
     const path = window.location.pathname;
-    const basePath = /\/fiches\//.test(path) ? '../' : '';
+    // Les pages situées dans un sous-dossier (fiches/, concepts/) doivent
+    // remonter d'un cran pour atteindre data/ et assets/.
+    const basePath = /\/(fiches|concepts)\//.test(path) ? '../' : '';
     window.BIBLIO_BASE = basePath;
 
     initTheme();

@@ -33,7 +33,7 @@ grille:
     note: "Le fonds de dotation est une personne morale de droit privé à but non lucratif instituée par la loi du 4 août 2008."
   - critere: agrement_ig
     valeur: partiel
-    note: "Un fonds de dotation peut être d'intérêt général et ouvrir droit au mécénat, sans agrément préalable ni reconnaissance d'utilité publique."
+    note: "Un fonds de dotation peut être d'intérêt général et ouvrir droit au mécénat, sans agrément préalable ni reconnaissance d'utilité publique ; cette qualité n'est jamais définitivement acquise et un fonds redistributeur n'y ouvre droit que sous conditions, d'où un risque de requalification fiscale."
   - critere: objet_foncier_protecteur
     valeur: oui
     note: "L'objet est explicitement l'acquisition de terres et bâtis pour les soustraire à l'appropriation privée."
@@ -61,6 +61,12 @@ grille:
   - critere: transparence
     valeur: partiel
     note: "Le fonds communique sur sa collecte, mais la publication régulière de comptes détaillés n'est pas confirmée."
+  - critere: risque_requalification
+    valeur: non
+    note: "La qualité d'intérêt général d'un fonds de dotation n'est jamais définitivement acquise ; un fonds redistributeur n'ouvre droit au mécénat que sous conditions : le risque de requalification fiscale, avec perte de l'intérêt général, est sérieux et non écarté."
+  - critere: redevabilite_publique
+    valeur: partiel
+    note: "Le fonds communique sur sa collecte, mais la publication régulière de comptes et de rapports d'activité n'est pas confirmée."
 analyse:
   forces:
     - "Statut de fonds de dotation, simple à créer et non lucratif."
@@ -68,12 +74,13 @@ analyse:
     - "Objet statutaire foncier explicite et collecte rapide."
   fragilites:
     - "Caractère non consomptible de la dotation non confirmé : verrou incertain."
+    - "Risque de requalification fiscale : la qualité d'intérêt général d'un fonds de dotation redistributeur n'est jamais acquise et peut être perdue."
     - "Composition de la gouvernance non documentée."
     - "Transparence des comptes non confirmée."
   leviers:
     - "Sécuriser une dotation non consomptible rendant le foncier inaliénable."
     - "Publier les statuts, la gouvernance et les comptes du fonds."
-    - "Formaliser l'articulation avec les collectifs usagers de la ZAD."
+    - "Formaliser l'articulation avec les collectifs usager·es de la ZAD."
   synthese: >
     Le fonds « La Terre en commun » illustre l'usage du fonds de dotation pour
     racheter un foncier convoité. Sa robustesse dépendra du caractère non

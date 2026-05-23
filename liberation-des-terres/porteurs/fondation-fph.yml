@@ -50,16 +50,22 @@ grille:
     note: "Le sort de l'actif en cas de dissolution n'est pas documenté par les sources consultées."
   - critere: independance_rendement
     valeur: oui
-    note: "Une fondation ne dépend pas d'investisseurs attendant une plus-value sur le foncier."
+    note: "Une fondation ne dépend pas d'investisseur·euses attendant une plus-value sur le foncier."
   - critere: ca_collegial
     valeur: inconnu
     note: "La composition des instances de la FPH n'est pas documentée par les sources consultées."
   - critere: parties_prenantes
     valeur: inconnu
-    note: "L'association des usagers, citoyens ou collectivités à la gouvernance n'est pas documentée."
+    note: "L'association des usager·es, citoyen·nes ou collectivités à la gouvernance n'est pas documentée."
   - critere: transparence
     valeur: partiel
     note: "La FPH dispose d'un site présentant son action, mais la publication régulière de comptes détaillés n'est pas confirmée."
+  - critere: risque_requalification
+    valeur: inconnu
+    note: "La forme exacte de la FPH au regard du droit français n'étant pas confirmée, son exposition à un risque de requalification fiscale ne peut être appréciée."
+  - critere: redevabilite_publique
+    valeur: partiel
+    note: "La FPH présente son action sur son site, mais la reddition de comptes régulière et détaillée n'est pas confirmée."
 analyse:
   forces:
     - "Fondation non lucrative, propriétaire stable d'un domaine de grande ampleur."

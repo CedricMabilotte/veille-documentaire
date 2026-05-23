@@ -1,0 +1,422 @@
+[
+  {
+    "uid": "hameau-des-buis",
+    "nom": "Le Hameau des Buis",
+    "categorie": "lieu",
+    "idl": 62,
+    "idl_brut": 65,
+    "score_type": "calcule",
+    "completude": 0.9,
+    "axes": {
+      "A": 86,
+      "B": 60,
+      "C": 50
+    },
+    "palier": "partiel"
+  },
+  {
+    "uid": "larzac",
+    "nom": "Terres du Larzac",
+    "categorie": "lieu",
+    "idl": 95,
+    "idl_brut": 95,
+    "score_type": "calcule",
+    "completude": 1.0,
+    "axes": {
+      "A": 100,
+      "B": 100,
+      "C": 86
+    },
+    "palier": "abouti"
+  },
+  {
+    "uid": "longo-mai",
+    "nom": "Longo Maï",
+    "categorie": "lieu",
+    "idl": 70,
+    "idl_brut": 70,
+    "score_type": "calcule",
+    "completude": 1.0,
+    "axes": {
+      "A": 64,
+      "B": 90,
+      "C": 57
+    },
+    "palier": "engage"
+  },
+  {
+    "uid": "lurzaindia",
+    "nom": "Lurzaindia — terres du Pays Basque",
+    "categorie": "lieu",
+    "idl": 70,
+    "idl_brut": 74,
+    "score_type": "calcule",
+    "completude": 0.9,
+    "axes": {
+      "A": 86,
+      "B": 85,
+      "C": 50
+    },
+    "palier": "engage"
+  },
+  {
+    "uid": "nddl",
+    "nom": "ZAD de Notre-Dame-des-Landes",
+    "categorie": "lieu",
+    "idl": 68,
+    "idl_brut": 75,
+    "score_type": "calcule",
+    "completude": 0.8,
+    "axes": {
+      "A": 100,
+      "B": 75,
+      "C": 50
+    },
+    "palier": "engage"
+  },
+  {
+    "uid": "reseau-terre-de-liens",
+    "nom": "Fermes Terre de Liens",
+    "categorie": "lieu",
+    "idl": 88,
+    "idl_brut": 88,
+    "score_type": "calcule",
+    "completude": 1.0,
+    "axes": {
+      "A": 100,
+      "B": 100,
+      "C": 64
+    },
+    "palier": "abouti"
+  },
+  {
+    "uid": "villarceaux",
+    "nom": "Bergerie de Villarceaux",
+    "categorie": "lieu",
+    "idl": 68,
+    "idl_brut": 80,
+    "score_type": "calcule",
+    "completude": 0.7,
+    "axes": {
+      "A": 86,
+      "B": 75,
+      "C": null
+    },
+    "palier": "engage"
+  },
+  {
+    "uid": "conservatoire-littoral",
+    "nom": "Conservatoire du littoral",
+    "categorie": "porteur",
+    "idl": 95,
+    "idl_brut": 95,
+    "score_type": "calcule",
+    "completude": 1.0,
+    "axes": {
+      "A": 100,
+      "B": 100,
+      "C": 86
+    },
+    "palier": "abouti"
+  },
+  {
+    "uid": "federation-cen",
+    "nom": "Conservatoires d'espaces naturels",
+    "categorie": "porteur",
+    "idl": 80,
+    "idl_brut": 80,
+    "score_type": "calcule",
+    "completude": 1.0,
+    "axes": {
+      "A": 100,
+      "B": 61,
+      "C": 79
+    },
+    "palier": "solide"
+  },
+  {
+    "uid": "feve",
+    "nom": "FEVE — Fermes en Vie",
+    "categorie": "porteur",
+    "idl": 40,
+    "idl_brut": 43,
+    "score_type": "calcule",
+    "completude": 0.846,
+    "axes": {
+      "A": 50,
+      "B": 29,
+      "C": 50
+    },
+    "palier": "eloigne"
+  },
+  {
+    "uid": "fonciere-antidote",
+    "nom": "La Foncière Antidote",
+    "categorie": "porteur",
+    "idl": 67,
+    "idl_brut": 70,
+    "score_type": "calcule",
+    "completude": 0.923,
+    "axes": {
+      "A": 85,
+      "B": 61,
+      "C": 64
+    },
+    "palier": "engage"
+  },
+  {
+    "uid": "fonciere-terre-de-liens",
+    "nom": "Foncière Terre de Liens",
+    "categorie": "porteur",
+    "idl": 60,
+    "idl_brut": 62,
+    "score_type": "calcule",
+    "completude": 0.923,
+    "axes": {
+      "A": 59,
+      "B": 64,
+      "C": 64
+    },
+    "palier": "partiel"
+  },
+  {
+    "uid": "fondation-fph",
+    "nom": "Fondation Charles Léopold Mayer pour le Progrès de l'Homme",
+    "categorie": "porteur",
+    "idl": 58,
+    "idl_brut": 68,
+    "score_type": "calcule",
+    "completude": 0.692,
+    "axes": {
+      "A": 75,
+      "B": 79,
+      "C": 50
+    },
+    "palier": "partiel"
+  },
+  {
+    "uid": "fondation-terre-de-liens",
+    "nom": "Fondation Terre de Liens",
+    "categorie": "porteur",
+    "idl": 90,
+    "idl_brut": 90,
+    "score_type": "calcule",
+    "completude": 1.0,
+    "axes": {
+      "A": 100,
+      "B": 83,
+      "C": 86
+    },
+    "palier": "abouti"
+  },
+  {
+    "uid": "fonds-la-terre-en-commun",
+    "nom": "Fonds de dotation « La Terre en commun »",
+    "categorie": "porteur",
+    "idl": 58,
+    "idl_brut": 60,
+    "score_type": "calcule",
+    "completude": 0.923,
+    "axes": {
+      "A": 68,
+      "B": 61,
+      "C": 50
+    },
+    "palier": "partiel"
+  },
+  {
+    "uid": "fonds-terre-europeenne",
+    "nom": "Fonds de Terre Européenne",
+    "categorie": "porteur",
+    "idl": 69,
+    "idl_brut": 78,
+    "score_type": "calcule",
+    "completude": 0.769,
+    "axes": {
+      "A": 85,
+      "B": 100,
+      "C": 50
+    },
+    "palier": "engage"
+  },
+  {
+    "uid": "lurzaindia-sca",
+    "nom": "Lurzaindia (SCA)",
+    "categorie": "porteur",
+    "idl": 51,
+    "idl_brut": 53,
+    "score_type": "calcule",
+    "completude": 0.923,
+    "axes": {
+      "A": 59,
+      "B": 50,
+      "C": 50
+    },
+    "palier": "partiel"
+  },
+  {
+    "uid": "cooperative-oasis",
+    "nom": "Coopérative Oasis",
+    "categorie": "usufruitier",
+    "idl": 64,
+    "idl_brut": 72,
+    "score_type": "calcule",
+    "completude": 0.769,
+    "axes": {
+      "A": 90,
+      "B": 50,
+      "C": 75
+    },
+    "palier": "engage"
+  },
+  {
+    "uid": "cooperatives-longo-mai",
+    "nom": "Coopératives Longo Maï",
+    "categorie": "usufruitier",
+    "idl": 66,
+    "idl_brut": 75,
+    "score_type": "calcule",
+    "completude": 0.769,
+    "axes": {
+      "A": 75,
+      "B": 64,
+      "C": 86
+    },
+    "palier": "engage"
+  },
+  {
+    "uid": "ecosite-villarceaux",
+    "nom": "Association Écosite de Villarceaux",
+    "categorie": "usufruitier",
+    "idl": 66,
+    "idl_brut": 82,
+    "score_type": "calcule",
+    "completude": 0.615,
+    "axes": {
+      "A": 100,
+      "B": 75,
+      "C": 70
+    },
+    "palier": "engage"
+  },
+  {
+    "uid": "ferme-des-enfants",
+    "nom": "Association La Ferme des Enfants",
+    "categorie": "usufruitier",
+    "idl": 63,
+    "idl_brut": 71,
+    "score_type": "calcule",
+    "completude": 0.769,
+    "axes": {
+      "A": 100,
+      "B": 64,
+      "C": 50
+    },
+    "palier": "partiel"
+  },
+  {
+    "uid": "gfa-mutuels",
+    "nom": "Groupements fonciers agricoles mutuels et solidaires",
+    "categorie": "usufruitier",
+    "idl": 52,
+    "idl_brut": 62,
+    "score_type": "calcule",
+    "completude": 0.692,
+    "axes": {
+      "A": 65,
+      "B": 71,
+      "C": 50
+    },
+    "palier": "partiel"
+  },
+  {
+    "uid": "reneta",
+    "nom": "RENETA — Réseau national des espaces-test agricoles",
+    "categorie": "usufruitier",
+    "idl": 71,
+    "idl_brut": 74,
+    "score_type": "calcule",
+    "completude": 0.923,
+    "axes": {
+      "A": 100,
+      "B": 61,
+      "C": 62
+    },
+    "palier": "engage"
+  },
+  {
+    "uid": "sctl",
+    "nom": "Société Civile des Terres du Larzac",
+    "categorie": "usufruitier",
+    "idl": 81,
+    "idl_brut": 92,
+    "score_type": "calcule",
+    "completude": 0.769,
+    "axes": {
+      "A": 90,
+      "B": 100,
+      "C": 86
+    },
+    "palier": "solide"
+  },
+  {
+    "uid": "clt-bruxelles",
+    "nom": "Community Land Trust de Bruxelles",
+    "categorie": "modele",
+    "idl": 90,
+    "idl_brut": 90,
+    "score_type": "estime",
+    "completude": null,
+    "axes": {
+      "A": 90.0,
+      "B": 90.0,
+      "C": 90.0
+    },
+    "palier": "abouti"
+  },
+  {
+    "uid": "mietshauser-syndikat",
+    "nom": "Mietshäuser Syndikat",
+    "categorie": "modele",
+    "idl": 83,
+    "idl_brut": 83,
+    "score_type": "estime",
+    "completude": null,
+    "axes": {
+      "A": 70.0,
+      "B": 90.0,
+      "C": 90.0
+    },
+    "palier": "solide"
+  },
+  {
+    "uid": "ofs-brs",
+    "nom": "Organisme de Foncier Solidaire + Bail Réel Solidaire",
+    "categorie": "modele",
+    "idl": 77,
+    "idl_brut": 77,
+    "score_type": "estime",
+    "completude": null,
+    "axes": {
+      "A": 90.0,
+      "B": 90.0,
+      "C": 50.0
+    },
+    "palier": "solide"
+  },
+  {
+    "uid": "stiftung-trias",
+    "nom": "Stiftung trias",
+    "categorie": "modele",
+    "idl": 83,
+    "idl_brut": 83,
+    "score_type": "estime",
+    "completude": null,
+    "axes": {
+      "A": 90.0,
+      "B": 90.0,
+      "C": 70.0
+    },
+    "palier": "solide"
+  }
+]

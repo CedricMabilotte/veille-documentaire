@@ -8,8 +8,9 @@ localisation: null
 annee: 2018
 url: "https://cooperative-oasis.org/"
 resume: >
-  Société coopérative d'intérêt collectif cofondée par Colibris début 2018,
-  titulaire de l'agrément ESUS. Elle finance et accompagne environ 80 écolieux,
+  Société coopérative d'intérêt collectif cofondée par Colibris, immatriculée en
+  mai 2018 (premier conseil d'administration en janvier 2018) et titulaire de
+  l'agrément ESUS. Elle finance et accompagne environ 80 écolieux,
   en finançant habitations, bâtiments et terrains pour des projets en propriété
   collective. Plus de 4 millions d'euros ont été collectés entre 2019 et juin
   2022 pour 36 projets ; l'investissement ouvre droit à une réduction d'impôt de
@@ -65,6 +66,9 @@ grille:
   - critere: transparence_interne
     valeur: partiel
     note: "La coopérative communique sur ses collectes, mais le détail de sa transparence comptable n'est pas documenté."
+  - critere: devolution_usufruitier
+    valeur: inconnu
+    note: "Le sort de l'actif de la coopérative en cas de dissolution n'est pas documenté par les sources consultées."
 analyse:
   forces:
     - "Forme de SCIC fonctionnant sur le principe « une personne, une voix »."
@@ -84,15 +88,16 @@ analyse:
     agrément ESUS encadrent la lucrativité ; les montages d'usage restent à
     documenter.
 fiabilite: >
-  Faits vérifiés : forme de SCIC cofondée par Colibris début 2018, agrément ESUS,
+  Faits vérifiés : forme de SCIC cofondée par Colibris, créée en mai 2018
+  (premier conseil d'administration en janvier 2018), agrément ESUS,
   accompagnement d'environ 80 écolieux, plus de 4 millions d'euros collectés
   entre 2019 et juin 2022 pour 36 projets, réduction d'impôt de 25 % pour
   l'investisseur. Non confirmé : durées et clauses d'usage du foncier financé,
   articulation contractuelle avec les structures porteuses.
 liens:
-  porteurs: []
+  porteurs: [feve, fonciere-antidote]
   usufruitiers: []
-  lieux: []
+  lieux: [hameau-des-buis]
 sources:
   - titre: "Coopérative Oasis — site officiel"
     url: "https://cooperative-oasis.org/"

@@ -61,6 +61,17 @@ grilles:
             definition: >
               Dirigeants bénévoles ou rémunération encadrée ; l'organisme ne
               fonctionne pas au profit d'un cercle restreint de personnes.
+          - id: risque_requalification
+            label: "Absence de risque de requalification fiscale"
+            axe: A
+            poids: 1
+            definition: >
+              L'organisme n'est pas exposé à un risque sérieux de requalification
+              fiscale faisant perdre l'intérêt général. Une reconnaissance
+              d'utilité publique ou un statut d'établissement public sécurise
+              durablement la qualification ; un fonds de dotation redistributeur,
+              dont la qualité d'intérêt général n'est jamais définitivement
+              acquise, y est davantage exposé.
       - id: verrou_foncier
         label: "Verrouillage du foncier hors marché"
         criteres:
@@ -117,6 +128,14 @@ grilles:
             definition: >
               Publication régulière des comptes, rapports d'activité, liste
               des biens portés.
+          - id: redevabilite_publique
+            label: "Redevabilité publique de l'organisme"
+            axe: C
+            poids: 1
+            definition: >
+              L'organisme rend compte de son action au-delà de ses seuls
+              membres : contrôle de l'État, reddition de comptes au public,
+              publication de rapports d'activité accessibles à tous.
     lecture_strategique:
       enjeu: >
         Le porteur est le coffre-fort du montage. Sa valeur tient moins à sa
@@ -184,9 +203,15 @@ grilles:
             axe: B
             poids: 3
             definition: >
-              L'usufruit ou le bail est de longue durée et son renouvellement
-              est anticipé (l'usufruit d'une personne morale est plafonné à
-              30 ans : article 619 du Code civil).
+              Le titre d'usage assure une jouissance durable et sécurisée. Les
+              régimes diffèrent nettement : l'usufruit d'une personne morale est
+              plafonné à 30 ans (article 619 du Code civil) et n'est pas
+              renouvelable de droit ; le bail rural a une durée minimale de 9 ans
+              mais bénéficie d'un droit au renouvellement d'ordre public,
+              protecteur du preneur ; le bail emphytéotique peut courir jusqu'à
+              99 ans. Le critère est rempli « oui » si la durée est longue ET le
+              renouvellement sécurisé ; il est « partiel » si la durée est longue
+              mais le renouvellement incertain.
           - id: clauses_usage
             label: "Clauses d'usage / environnementales inscrites"
             axe: B
@@ -208,6 +233,15 @@ grilles:
             definition: >
               Les usagers ne peuvent ni revendre, ni capter à titre privé la
               valeur du foncier.
+          - id: devolution_usufruitier
+            label: "Clause de dévolution désintéressée de l'usufruitier"
+            axe: B
+            poids: 1
+            definition: >
+              En cas de dissolution, l'actif de l'usufruitier (association, SCI,
+              GFA, coopérative) est dévolu à un organisme désintéressé : aucun
+              retour de valeur vers les membres, qui ferait fuir la valeur du
+              montage.
       - id: gouvernance
         label: "Gouvernance participative"
         criteres:

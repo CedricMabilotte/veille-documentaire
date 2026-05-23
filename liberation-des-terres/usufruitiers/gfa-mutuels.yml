@@ -6,7 +6,7 @@ statut_fiche: publie
 forme_juridique: "Société civile (groupement foncier agricole)"
 localisation: null
 annee: null
-url: "https://www.ressources.terredeliens.org/les-ressources/decouvrir-les-gfa-sci-citoyens"
+url: "https://www.ressources.terredeliens.org/les-ressources/decouvrir-les-gfa-sci-citoyen·nes"
 resume: >
   Les groupements fonciers agricoles (GFA) sont des sociétés civiles spécifiques à
   l'agriculture, créées dans les années 1970. On distingue le GFA d'exploitation
@@ -17,7 +17,7 @@ resume: >
 montage:
   type: propriete_collective
   nu_proprietaire: "Groupement foncier agricole (société civile)"
-  usufruitier: "Fermier preneur via bail rural (pour le GFA bailleur)"
+  usufruitier: "Titulaire de l'usage : fermier preneur d'un bail rural (pour le GFA bailleur), bail dont le renouvellement est d'ordre public"
   description: >
     Le GFA mutuel ou solidaire détient collectivement un foncier agricole et,
     lorsqu'il est bailleur, le loue à un fermier par bail rural. Terre de Liens
@@ -43,7 +43,7 @@ grille:
     note: "Le GFA mutuel mobilise l'épargne citoyenne au-delà du fermier, mais peut associer un cercle limité de personnes physiques."
   - critere: duree_usage
     valeur: oui
-    note: "Le GFA bailleur loue ses terres par bail rural, contrat de longue durée."
+    note: "Le GFA bailleur loue ses terres par bail rural : durée minimale de 9 ans, mais assortie d'un droit au renouvellement d'ordre public qui sécurise le preneur dans la durée."
   - critere: clauses_usage
     valeur: inconnu
     note: "L'inscription systématique de clauses environnementales dans les baux des GFA n'est pas documentée par les sources."
@@ -65,6 +65,9 @@ grille:
   - critere: transparence_interne
     valeur: inconnu
     note: "Les modalités de transparence interne des GFA ne sont pas documentées par les sources."
+  - critere: devolution_usufruitier
+    valeur: inconnu
+    note: "Le sort de l'actif du GFA en cas de dissolution dépend des statuts ; il n'est pas documenté par les sources consultées."
 analyse:
   forces:
     - "Société civile agricole permettant une propriété foncière collective."
@@ -93,7 +96,7 @@ liens:
   usufruitiers: []
   lieux: [reseau-terre-de-liens]
 sources:
-  - titre: "Terre de Liens — Découvrir les GFA/SCI citoyens"
-    url: "https://www.ressources.terredeliens.org/les-ressources/decouvrir-les-gfa-sci-citoyens"
+  - titre: "Terre de Liens — Découvrir les GFA/SCI citoyen·nes"
+    url: "https://www.ressources.terredeliens.org/les-ressources/decouvrir-les-gfa-sci-citoyen·nes"
   - titre: "Terre de Liens — Le GFA d'épargnants, un outil contre-productif"
     url: "https://terredeliens.org/national/actu/le-groupement-foncier-agricole-d%C3%A9pargnants-un-outil-financier-contre-productif-pour-le-renouvellement-des-g%C3%A9n%C3%A9rations-24-10-2023/"

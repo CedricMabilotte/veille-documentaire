@@ -1,0 +1,77 @@
+name: Veille & publication — Communs
+
+# Veille hebdomadaire des montages de libération des terres, régénération du
+# site, puis publication sur GitHub Pages (communs.actitude.org).
+on:
+  schedule:
+    - cron: "0 6 * * 1"          # tous les lundis à 06h00 UTC
+  workflow_dispatch:              # déclenchement manuel possible
+  push:
+    branches: [main]
+    paths:                       # republier dès qu'une donnée change
+      - "lieux/**"
+      - "porteurs/**"
+      - "usufruitiers/**"
+      - "modeles/**"
+      - "config/**"
+      - "scripts/generate_site.py"
+
+permissions:
+  contents: write                 # pour committer les candidats de veille
+  pages: write                    # pour publier sur GitHub Pages
+  id-token: write
+
+concurrency:
+  group: communs-veille
+  cancel-in-progress: false
+
+jobs:
+  veille-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: pip install pyyaml
+
+      - name: Veille des sources
+        # la veille ne doit jamais bloquer la publication si une source tombe
+        continue-on-error: true
+        run: python3 scripts/watch.py
+
+      - name: Régénérer le site
+        run: python3 scripts/generate_site.py
+
+      - name: Committer les candidats de veille
+        run: |
+          git config user.name "veille-bot"
+          git config user.email "veille-bot@users.noreply.github.com"
+          git add discovery/ site/ || true
+          if git diff --cached --quiet; then
+            echo "Aucun changement à committer."
+          else
+            git commit -m "Veille automatisée : candidats + site régénéré ($(date -u +%Y-%m-%d))"
+            git push
+          fi
+
+      - name: Préparer l'artefact Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: veille-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Publier sur GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

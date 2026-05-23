@@ -5,11 +5,11 @@ sous_titre: "Fondation reconnue d'utilité publique portant le foncier agricole"
 statut_fiche: publie
 forme_juridique: "Fondation reconnue d'utilité publique (FRUP)"
 localisation: null
-annee: null
+annee: 2013
 url: "https://terredeliens.org/national/foire-aux-questions/tout-savoir-sur-les-donations/"
 resume: >
-  Fondation reconnue d'utilité publique du mouvement Terre de Liens, issue d'un
-  fonds de dotation puis reconnue fondation. Elle collecte dons, terres et fermes,
+  Fondation reconnue d'utilité publique du mouvement Terre de Liens, créée en mai
+  2013 en succession d'un fonds de dotation. Elle collecte dons, terres et fermes,
   porte du foncier agricole et accompagne l'acquisition et la transmission de
   fermes. Elle reçoit notamment des donations en démembrement : donation de
   nue-propriété avec réserve d'usufruit, ou donation temporaire d'usufruit d'une
@@ -50,16 +50,22 @@ grille:
     note: "Le statut de FRUP impose une dévolution désintéressée de l'actif en cas de dissolution, sans retour au privé."
   - critere: independance_rendement
     valeur: oui
-    note: "Une fondation ne dépend pas d'investisseurs attendant une plus-value ou un dividende sur le foncier."
+    note: "Une fondation ne dépend pas d'investisseur·euses attendant une plus-value ou un dividende sur le foncier."
   - critere: ca_collegial
     valeur: oui
     note: "Le statut de FRUP impose un conseil d'administration pluraliste contrôlé par l'État."
   - critere: parties_prenantes
     valeur: partiel
-    note: "Le mouvement associe donateurs et bénévoles ; la fondation ouverte aux collectivités élargit les parties prenantes, mais le détail n'est pas documenté."
+    note: "Le mouvement associe donateur·rices et bénévoles ; la fondation ouverte aux collectivités élargit les parties prenantes, mais le détail n'est pas documenté."
   - critere: transparence
     valeur: oui
     note: "La Fondation publie un rapport annuel détaillant son activité et ses acquisitions."
+  - critere: risque_requalification
+    valeur: oui
+    note: "La reconnaissance d'utilité publique, accordée par décret après instruction de l'État, sécurise durablement la qualité d'intérêt général et expose à un risque de requalification fiscale très faible."
+  - critere: redevabilite_publique
+    valeur: oui
+    note: "Le statut de FRUP impose un contrôle de l'État et la publication d'un rapport annuel ; la Fondation rend compte publiquement de son activité."
 analyse:
   forces:
     - "Statut de fondation reconnue d'utilité publique, le plus protecteur en droit français."
@@ -67,20 +73,21 @@ analyse:
     - "Transparence assurée par un rapport annuel public."
   fragilites:
     - "Clause d'inaliénabilité spécifique du foncier porté non détaillée."
-    - "Place décisionnelle des paysan·nes preneurs peu documentée."
+    - "Place décisionnelle des paysan·nes preneur·euses peu documentée."
     - "Le renouvellement des usufruits temporaires reçus dépend de volontés futures."
   leviers:
     - "Inscrire des clauses d'inaliénabilité explicites sur le foncier porté."
     - "Développer la fondation ouverte aux collectivités pour ancrer le tripartisme."
-    - "Renforcer la représentation des usagers dans la gouvernance."
+    - "Renforcer la représentation des usager·es dans la gouvernance."
   synthese: >
     La Fondation Terre de Liens offre le cadre le plus solide du dispositif :
     statut d'utilité publique, dévolution désintéressée, transparence. Sa marge de
     progression tient à l'explicitation des verrous d'inaliénabilité et à
     l'ouverture de la gouvernance.
 fiabilite: >
-  Faits vérifiés : statut de fondation reconnue d'utilité publique issue d'un
-  fonds de dotation, mission de portage du foncier agricole, réception de
+  Faits vérifiés : statut de fondation reconnue d'utilité publique créée en mai
+  2013 en succession d'un fonds de dotation, mission de portage du foncier
+  agricole, réception de
   donations en démembrement (nue-propriété avec réserve d'usufruit, usufruit
   temporaire d'au moins trois ans), création annoncée d'une fondation ouverte aux
   collectivités. Non confirmé : clauses d'inaliénabilité parcelle par parcelle,

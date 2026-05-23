@@ -11,23 +11,26 @@ resume: >
   Association loi 1901 portant le projet pédagogique et de ferme-école du Hameau
   des Buis, en sud Ardèche. Elle est associée, avec une SARL de soutien aux
   projets éthiques, à la société civile qui détient le foncier, et y détient le
-  pouvoir de décision final — gage de cohérence avec l'intérêt général. Les
+  pouvoir de décision final — gage de cohérence avec l'intérêt général. Le Hameau
+  est aujourd'hui organisé en SAS coopérative à gouvernance partagée. Les
   habitant·es du lieu ne sont pas associés mais créanciers de la société civile.
 montage:
   type: propriete_collective
-  nu_proprietaire: "Société civile « Le Hameau des Buis »"
-  usufruitier: "Association La Ferme des Enfants (pouvoir de décision final)"
+  nu_proprietaire: "Société civile « Le Hameau des Buis » (constituée en 2003)"
+  usufruitier: "Titulaire de l'usage : association La Ferme des Enfants, exerçant le pouvoir de décision final en qualité d'associée de la société civile"
   description: >
     L'association La Ferme des Enfants est associée à la société civile détenant
     le foncier et y exerce le pouvoir de décision final. Elle porte l'usage,
-    l'animation et la vocation pédagogique du lieu. Les sources évoquent une
-    évolution vers une organisation coopérative, non entièrement confirmée.
+    l'animation et la vocation pédagogique du lieu. Le Hameau a évolué vers une
+    SAS coopérative à gouvernance partagée, qui constitue son organisation
+    actuelle.
 purete_juridique:
-  niveau: pur
+  niveau: societaire
   commentaire: >
-    Association loi 1901 d'intérêt général exerçant la décision finale ; montage
-    de droit civil non lucratif, malgré la présence d'une SARL dans la société
-    civile.
+    Association loi 1901 d'intérêt général exerçant la décision finale, mais
+    montage comportant une SARL associée à la société civile porteuse et une
+    organisation en SAS coopérative : la dimension sociétaire est constitutive du
+    montage.
 grille:
   - critere: personne_morale_civile
     valeur: oui
@@ -43,7 +46,7 @@ grille:
     note: "La vocation pédagogique et de ferme-école dépasse les seuls habitant·es du lieu."
   - critere: duree_usage
     valeur: partiel
-    note: "Le pouvoir de décision finale dans la société civile assure une maîtrise durable, mais aucune durée d'usufruit formalisée n'est documentée."
+    note: "Le pouvoir de décision finale dans la société civile assure une maîtrise durable, mais aucun titre d'usage formalisé (bail, convention) ni sa durée ne sont documentés."
   - critere: clauses_usage
     valeur: inconnu
     note: "L'existence de clauses d'usage formalisées entre association et société civile n'est pas documentée par les sources."
@@ -61,10 +64,13 @@ grille:
     note: "L'association porte la décision finale, mais les habitant·es, créanciers et non associés, ont une place décisionnelle limitée."
   - critere: ouverture_entrants
     valeur: partiel
-    note: "Le viager organise une forme de renouvellement des logements, et une évolution coopérative est évoquée mais non confirmée."
+    note: "Le viager organise une forme de renouvellement des logements et le Hameau a évolué vers une SAS coopérative à gouvernance partagée, mais les modalités d'accueil de nouveaux entrants ne sont pas toutes documentées."
   - critere: transparence_interne
     valeur: inconnu
     note: "Les modalités de transparence interne de l'association ne sont pas documentées par les sources."
+  - critere: devolution_usufruitier
+    valeur: inconnu
+    note: "Le sort de l'actif de l'association en cas de dissolution n'est pas documenté par les sources consultées."
 analyse:
   forces:
     - "Pouvoir de décision final confié à une association d'intérêt général."
@@ -76,17 +82,20 @@ analyse:
     - "Clauses d'usage et transparence interne non documentées."
   leviers:
     - "Formaliser des clauses d'usage entre association et société civile."
-    - "Élargir la place décisionnelle des habitant·es, dans le sens de l'évolution coopérative annoncée."
+    - "Consolider la place décisionnelle des habitant·es dans la SAS coopérative."
     - "Documenter la gouvernance interne et la transparence."
   synthese: >
     L'association La Ferme des Enfants ancre l'intérêt général du Hameau des Buis
-    en y exerçant la décision finale. La consolidation passe par l'élargissement
-    de la place des habitant·es et la clarification de l'évolution coopérative.
+    en y exerçant la décision finale, dans une organisation devenue une SAS
+    coopérative à gouvernance partagée. La consolidation passe par la
+    formalisation des titres d'usage et l'élargissement de la place des
+    habitant·es.
 fiabilite: >
   Faits vérifiés : statut d'association loi 1901, rôle dans la société civile « Le
-  Hameau des Buis », pouvoir de décision final, habitant·es créanciers et non
-  associés, vocation pédagogique et ferme-école. Non confirmé : clauses d'usage
-  formalisées, évolution vers une organisation coopérative, transparence interne.
+  Hameau des Buis » constituée en 2003, pouvoir de décision final, habitant·es
+  créanciers et non associés, vocation pédagogique et ferme-école, organisation
+  actuelle du Hameau en SAS coopérative à gouvernance partagée. Non confirmé :
+  clauses d'usage formalisées, transparence interne.
 liens:
   porteurs: []
   usufruitiers: []

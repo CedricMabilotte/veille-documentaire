@@ -25,7 +25,7 @@ project:
     grille d'analyse stratégique et notée par un Indice de libération.
   baseline: "nue-propriété d'intérêt général · usufruit citoyen · sortie du marché"
   language: fr
-  url: "https://terres-liberees.actitude.org"
+  url: "https://communs.actitude.org"
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Le concept central
@@ -50,7 +50,11 @@ concept_central:
     L'usufruit constitué au profit d'une personne morale ne peut excéder 30 ans
     (article 619 du Code civil, règle d'ordre public). L'usufruit d'une
     association n'est donc jamais perpétuel : son renouvellement dépend d'une
-    volonté future. C'est la fragilité structurelle de tout montage.
+    volonté future. Ce plafond de 30 ans ne vise toutefois QUE les démembrements
+    véritables : il ne s'applique ni aux baux ruraux (durée minimale de 9 ans,
+    mais droit au renouvellement d'ordre public), ni aux baux emphytéotiques
+    (jusqu'à 99 ans), ni à la propriété publique. La fragilité des 30 ans est
+    donc propre aux montages réellement démembrés, et non commune à tout montage.
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Les 3 catégories référencées
@@ -77,10 +81,14 @@ categories:
     label_pluriel: "Organismes usufruitiers"
     slug_dir: "u"
     definition: >
-      Personne morale de droit civil à but non lucratif qui reçoit l'usufruit
-      ou l'usage du foncier et organise sa gestion au quotidien : occupation,
-      exploitation, animation, gouvernance des usagers. Typiquement : association
-      loi 1901, société civile, coopérative (SCIC), groupement foncier agricole.
+      Personne morale de droit civil à but non lucratif, titulaire de l'usage du
+      foncier, qui organise sa gestion au quotidien : occupation, exploitation,
+      animation, gouvernance des usagers. La catégorie regroupe les organismes
+      titulaires de l'usage : l'usufruit stricto sensu (articles 578 et suivants
+      du Code civil) n'en est qu'une modalité, aux côtés du bail rural, du bail
+      emphytéotique et de la convention de mise à disposition. Typiquement :
+      association loi 1901, société civile, coopérative (SCIC), groupement
+      foncier agricole.
     formes_attendues:
       - association loi 1901
       - société civile (SCI, SCTL, société civile d'exploitation)

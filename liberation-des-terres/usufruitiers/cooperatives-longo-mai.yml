@@ -17,10 +17,10 @@ resume: >
 montage:
   type: propriete_sanctuarisee
   nu_proprietaire: "Fonds de Terre Européenne (fondation de droit suisse)"
-  usufruitier: "Coopératives Longo Maï (collectifs autogérés)"
+  usufruitier: "Titulaire de l'usage : coopératives Longo Maï (collectifs autogérés), usage reposant sur l'autogestion et la qualité de coopérant"
   description: >
     Les coopératives autogérées utilisent les terres du Fonds de Terre Européenne.
-    Elles fonctionnent en autogestion : les usagers décident collectivement. La
+    Elles fonctionnent en autogestion : les usager·es décident collectivement. La
     formalisation contractuelle de l'usage entre fondation et coopératives n'est
     pas documentée par les sources.
 purete_juridique:
@@ -58,16 +58,19 @@ grille:
     note: "L'autogestion implique des décisions collectives, sans pouvoir proportionnel au capital."
   - critere: usagers_decident
     valeur: oui
-    note: "Les coopératives fonctionnent en autogestion : les usagers décident collectivement."
+    note: "Les coopératives fonctionnent en autogestion : les usager·es décident collectivement."
   - critere: ouverture_entrants
     valeur: partiel
     note: "Le réseau s'est étendu à plusieurs implantations, mais les modalités d'accueil de nouveaux entrants ne sont pas détaillées."
   - critere: transparence_interne
     valeur: inconnu
     note: "Les modalités de transparence interne des coopératives ne sont pas documentées par les sources."
+  - critere: devolution_usufruitier
+    valeur: inconnu
+    note: "Le sort de l'actif des coopératives en cas de dissolution n'est pas documenté par les sources consultées."
 analyse:
   forces:
-    - "Autogestion effective : les usagers décident collectivement."
+    - "Autogestion effective : les usager·es décident collectivement."
     - "Foncier détenu de façon inaliénable en amont, sans appropriation possible."
     - "Réseau ancien et stable réparti sur plusieurs implantations."
   fragilites:

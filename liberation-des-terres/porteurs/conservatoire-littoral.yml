@@ -56,10 +56,16 @@ grille:
     note: "Le Conservatoire dispose d'un conseil d'administration qui propose les rares aliénations à la majorité des trois quarts."
   - critere: parties_prenantes
     valeur: partiel
-    note: "La gestion est confiée à des collectivités et associations, mais la place des citoyens dans la gouvernance n'est pas détaillée."
+    note: "La gestion est confiée à des collectivités et associations, mais la place des citoyen·nes dans la gouvernance n'est pas détaillée."
   - critere: transparence
     valeur: oui
     note: "Le Conservatoire publie des informations sur son patrimoine foncier et son activité."
+  - critere: risque_requalification
+    valeur: oui
+    note: "Établissement public investi par la loi d'une mission d'intérêt général : la qualification ne peut être remise en cause par une requalification fiscale."
+  - critere: redevabilite_publique
+    valeur: oui
+    note: "Établissement public, le Conservatoire est soumis au contrôle de l'État et rend compte publiquement de son patrimoine et de son activité."
 analyse:
   forces:
     - "Domaine propre inaliénable : protection foncière parmi les plus fortes."
@@ -68,10 +74,10 @@ analyse:
   fragilites:
     - "Vocation de protection de la nature, peu adaptée au foncier agricole ou d'habitat."
     - "Relève du droit public, hors du champ du droit civil pur."
-    - "Place des citoyens dans la gouvernance peu détaillée."
+    - "Place des citoyen·nes dans la gouvernance peu détaillée."
   leviers:
     - "Mobiliser le modèle de domanialité inaliénable comme référence d'irréversibilité."
-    - "Renforcer l'association des citoyens à la gestion des sites."
+    - "Renforcer l'association des citoyen·nes à la gestion des sites."
     - "Privilégier la gestion déléguée à des associations d'intérêt général."
   synthese: >
     Le Conservatoire du littoral incarne le verrou foncier le plus solide :
@@ -82,7 +88,7 @@ fiabilite: >
   80 % d'acquisitions amiables, domaine propre inaliénable, aliénation par décret
   en Conseil d'État à la majorité des trois quarts, environ 18 % du littoral
   protégé, environ 13 % des sites gérés par des associations en 2015. Non
-  confirmé : place détaillée des citoyens dans la gouvernance.
+  confirmé : place détaillée des citoyen·nes dans la gouvernance.
 liens:
   porteurs: []
   usufruitiers: [federation-cen]

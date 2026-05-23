@@ -1,0 +1,117 @@
+uid: reneta
+categorie: usufruitier
+nom: "RENETA — Réseau national des espaces-test agricoles"
+sous_titre: "Réseau des structures d'usage transitoire pour le test d'activité agricole"
+statut_fiche: publie
+forme_juridique: "Association loi 1901 (réseau national)"
+localisation: null
+annee: 2012
+url: "https://reneta.fr/"
+resume: >
+  Réseau national créé le 12 mars 2012, fédérant les espaces-test agricoles
+  français. Un espace-test héberge des porteur·ses de projet en test d'activité
+  sur un site donné et pour une durée définie, dans un cadre juridique et
+  matériel limitant la prise de risque, avant une installation pérenne. Les
+  espaces-test sont des dispositifs multi-partenariaux associant associations de
+  développement agricole et d'éducation populaire, couveuses et coopératives
+  d'activité, chambres d'agriculture, collectivités, parcs naturels régionaux et
+  lycées agricoles. RENETA n'est pas lui-même un montage de libération du
+  foncier : il fédère des structures d'usage transitoire qui s'articulent
+  souvent à un foncier déjà libéré.
+montage:
+  type: propriete_collective
+  nu_proprietaire: "Variable : foncier souvent communal, mis à disposition, ou détenu par une ferme déjà libérée du marché"
+  usufruitier: "Titulaire de l'usage : espace-test agricole, qui héberge à son tour les porteur·ses de projet en test d'activité"
+  description: >
+    RENETA est un réseau, non un montage foncier. Chaque espace-test membre
+    organise un usage transitoire du foncier : il met une parcelle, des
+    bâtiments et un cadre d'accompagnement à disposition de porteur·ses de
+    projet pour quelques années, le temps de tester une activité agricole. Le
+    foncier mobilisé est souvent un terrain communal, une ferme Terre de Liens
+    ou un site déjà sorti du marché ; l'espace-test en organise l'usage amont,
+    avant l'installation. La libération du foncier proprement dite relève des
+    porteurs auxquels les espaces-test s'articulent.
+purete_juridique:
+  niveau: encadre
+  commentaire: >
+    Réseau associatif de droit privé fédérant des structures d'usage
+    transitoire ; l'espace-test ne porte pas le foncier mais en organise un
+    usage temporaire encadré, en amont de l'installation.
+grille:
+  - critere: personne_morale_civile
+    valeur: oui
+    note: "RENETA est une association loi 1901 ; ses membres espaces-test sont eux aussi des personnes morales de droit civil non lucratives."
+  - critere: objet_ig
+    valeur: oui
+    note: "L'objet — faciliter l'installation agricole par le test d'activité — relève d'un intérêt général agricole et de renouvellement des générations."
+  - critere: non_lucrativite_effective
+    valeur: oui
+    note: "Le réseau et les espaces-test fonctionnent sur un mode associatif non lucratif, sans partage de bénéfices."
+  - critere: public_non_restreint
+    valeur: oui
+    note: "Le test d'activité est ouvert à des porteur·ses de projet variés, souvent non issu·es du milieu agricole, bien au-delà d'un cercle restreint."
+  - critere: duree_usage
+    valeur: partiel
+    note: "L'espace-test organise par construction un usage de courte durée — quelques années de test — non un usage foncier durable ; la durée longue relève du foncier libéré en amont."
+  - critere: clauses_usage
+    valeur: partiel
+    note: "Le cadre du test inscrit un accompagnement et des engagements de pratiques, mais les clauses environnementales formelles dépendent du foncier mobilisé."
+  - critere: articulation_porteur
+    valeur: partiel
+    note: "L'espace-test s'articule à des porteurs de foncier variés (commune, ferme Terre de Liens) ; cette articulation est multi-partenariale et non uniforme."
+  - critere: non_appropriation
+    valeur: oui
+    note: "Le porteur de projet en test ne peut ni revendre ni capter la valeur du foncier : le test est transitoire et n'ouvre aucun droit de propriété."
+  - critere: une_voix
+    valeur: partiel
+    note: "RENETA fonctionne sur un mode associatif et fédératif ; les modalités de vote internes ne sont pas détaillées par les sources."
+  - critere: usagers_decident
+    valeur: partiel
+    note: "Les espaces-test membres animent le réseau, mais la place décisionnelle des porteur·ses de projet en test n'est pas documentée."
+  - critere: ouverture_entrants
+    valeur: oui
+    note: "L'espace-test est par vocation un dispositif d'accueil de nouveaux entrant·es dans le métier : organiser l'arrivée de porteur·ses de projet est son objet même."
+  - critere: transparence_interne
+    valeur: partiel
+    note: "RENETA documente publiquement son action et son réseau, mais le détail de sa transparence comptable n'est pas documenté."
+  - critere: devolution_usufruitier
+    valeur: inconnu
+    note: "Le sort de l'actif du réseau en cas de dissolution n'est pas documenté par les sources consultées."
+analyse:
+  forces:
+    - "Comble l'amont de l'installation : tester une activité avant de s'installer durablement."
+    - "Dispositif d'accueil ouvert, souvent à des porteur·ses de projet non issu·es du milieu agricole."
+    - "Réseau multi-partenarial fédérant une soixantaine d'espaces-test opérationnels."
+  fragilites:
+    - "L'espace-test organise un usage transitoire, non une sécurisation foncière durable."
+    - "La libération du foncier dépend des porteurs auxquels les espaces-test s'articulent."
+    - "Modalités de gouvernance interne et clause de dévolution non documentées."
+  leviers:
+    - "Articuler systématiquement le test d'activité à un foncier déjà libéré du marché."
+    - "Documenter la place des porteur·ses de projet dans la gouvernance des espaces-test."
+    - "Inscrire des clauses de pratiques agroécologiques dans les conventions de test."
+  synthese: >
+    RENETA n'est pas un montage de sortie du marché : c'est un réseau de
+    structures d'usage transitoire qui prépare l'installation. Sa note basse sur
+    l'axe de la libération des terres est attendue et pédagogique — l'espace-test
+    se situe en amont du foncier libéré, auquel il a tout intérêt à s'articuler.
+fiabilite: >
+  Faits vérifiés (sources RENETA et centre de ressources Terre de Liens,
+  consultées en mai 2026) : réseau créé le 12 mars 2012, fédérant environ
+  76 membres dont une soixantaine d'espaces-test opérationnels et une douzaine
+  en projet, espaces-test conçus comme des dispositifs multi-partenariaux de
+  test d'activité agricole limitant la prise de risque, le test pouvant déboucher
+  sur une installation pérenne. Non confirmé : modalités de gouvernance interne
+  du réseau, clause de dévolution, place décisionnelle des porteur·ses de projet.
+  Les effectifs du réseau évoluent d'une année sur l'autre.
+liens:
+  porteurs: [fondation-terre-de-liens]
+  usufruitiers: []
+  lieux: [reseau-terre-de-liens]
+sources:
+  - titre: "RENETA — site officiel"
+    url: "https://reneta.fr/"
+  - titre: "RENETA — Qui sommes-nous ?"
+    url: "https://reneta.fr/Qui-sommes-nous"
+  - titre: "Centre de ressources Terre de Liens — RENETA"
+    url: "https://ressources.terredeliens.org/les-ressources/reneta"

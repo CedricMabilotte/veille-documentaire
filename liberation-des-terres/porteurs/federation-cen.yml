@@ -60,6 +60,12 @@ grille:
   - critere: transparence
     valeur: partiel
     note: "Les CEN s'inscrivent dans un réseau fédéré publiant des informations, mais le détail de la transparence comptable n'est pas documenté."
+  - critere: risque_requalification
+    valeur: oui
+    note: "L'agrément conjoint préfet de région / conseil régional, fondé sur la loi Grenelle II, ancre durablement la mission d'intérêt général et expose à un risque de requalification fiscale faible."
+  - critere: redevabilite_publique
+    valeur: partiel
+    note: "L'agrément public soumet les CEN à un cadre de contrôle, mais le détail de la reddition de comptes au public n'est pas documenté."
 analyse:
   forces:
     - "Associations loi 1901 d'intérêt général agréées : pureté juridique élevée."

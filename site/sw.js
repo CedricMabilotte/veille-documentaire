@@ -9,13 +9,12 @@
  * Cache versionné : changer `CACHE_VERSION` invalide tous les caches précédents.
  * ============================================================ */
 
-const CACHE_VERSION = 'biblio-v2';
+const CACHE_VERSION = 'biblio-v3';
 
 // Pré-cache minimal : la home et les pages clés (en cas d'offline)
 const PRECACHE_URLS = [
   '/',
   '/index.html',
-  '/actu.html',
   '/une.html',
   '/etat-corpus.html',
   '/apropos.html',

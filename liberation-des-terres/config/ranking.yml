@@ -42,7 +42,7 @@ axes:
       cercle restreint, utilité pour le territoire.
   - id: B
     label: "Libération des terres"
-    couleur: "#bc4c3a"
+    couleur: "#bc5d3a"
     question: >
       Le foncier est-il réellement sorti du marché spéculatif, et la sortie
       est-elle irréversible ?
@@ -52,7 +52,7 @@ axes:
       non spéculative de l'acquisition.
   - id: C
     label: "Gouvernance participative"
-    couleur: "#3b5b6b"
+    couleur: "#36748a"
     question: >
       Les usager·es et les parties prenantes décident-ils collectivement, et
       la gouvernance se renouvelle-t-elle ?
@@ -79,34 +79,45 @@ indice:
     L'Indice n'a de sens que si la fiche est suffisamment renseignée. Une part
     élevée de critères « inconnu » abaisse la fiabilité : elle est affichée
     séparément (taux de complétude de la grille).
+  penalite_completude: >
+    Pour ne pas surnoter les fiches lacunaires, l'indice affiché est pénalisé
+    par la complétude : idl_affiche = round(idl_brut × (0,5 + 0,5 × complétude)).
+    Une fiche entièrement renseignée n'est pas pénalisée ; une fiche dont la
+    moitié des critères sont « inconnu » voit son indice ramené aux trois quarts
+    de l'indice brut. L'indice brut (idl_brut) reste conservé et affiché pour
+    information. C'est l'indice affiché, pénalisé, qui sert au badge, au
+    classement et à l'export data.json.
 
 # ── Paliers (tiers) de lecture de l'Indice ───────────────────────────────────
+# Seuils calibrés sur la dispersion réelle du corpus au 2026-05-23, après
+# application de la pénalité de complétude. À réviser à chaque élargissement
+# notable du corpus.
 paliers:
   - id: abouti
-    min: 85
+    min: 88
     label: "Libération aboutie"
     couleur: "#2f6b34"
     sens: >
       Montage non lucratif, foncier durablement verrouillé, gouvernance
       participative et organisée pour durer. Modèle de référence.
   - id: solide
-    min: 70
+    min: 76
     label: "Montage solide"
     couleur: "#4a7a3a"
     sens: >
       Le montage atteint les trois finalités avec quelques marges de
       consolidation, souvent sur la gouvernance ou l'irréversibilité.
   - id: engage
-    min: 55
+    min: 64
     label: "Engagement réel"
     couleur: "#b08431"
     sens: >
       La démarche est sincère et avancée mais un axe reste nettement en
       retrait — verrou foncier incomplet ou gouvernance peu participative.
   - id: partiel
-    min: 40
+    min: 50
     label: "Libération partielle"
-    couleur: "#bc4c3a"
+    couleur: "#bc5d3a"
     sens: >
       Le montage emprunte au modèle sans en réunir les garanties : sortie du
       marché fragile, intérêt général discutable ou gouvernance fermée.
