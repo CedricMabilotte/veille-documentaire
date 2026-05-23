@@ -1,0 +1,119 @@
+uid: habicoop
+categorie: porteur
+nom: "Habicoop"
+sous_titre: "Fédération française des coopératives d'habitants"
+statut_fiche: publie
+forme_juridique: "Association loi 1901 (structure fédérale)"
+localisation: null
+annee: 2006
+url: "https://www.habicoop.fr/"
+resume: >
+  Habicoop — Fédération française des coopératives d'habitants et d'habitation
+  est une association loi 1901 qui promeut et accompagne les coopératives
+  d'habitants : des sociétés coopératives à capital variable propriétaires de
+  leur immeuble, dont les habitant·es sont à la fois associé·es détenteur·rices
+  de parts sociales et locataires de leur logement. Constituée en 2006 et
+  officialisée comme fédération nationale en avril 2015, Habicoop a porté Le
+  Village Vertical de Villeurbanne comme projet pilote. Elle promeut trois
+  principes — propriété collective, déconnexion du marché, démocratie « une
+  personne, une voix » — et milite pour l'ouverture du Bail Réel Solidaire aux
+  coopératives d'habitants en zones tendues.
+montage:
+  type: propriete_collective
+  description: >
+    Habicoop ne porte pas elle-même le foncier : c'est une tête de réseau qui
+    outille les coopératives d'habitants. Le modèle qu'elle promeut place la
+    propriété de l'immeuble dans une société coopérative à capital variable ;
+    chaque ménage est locataire de son logement et détenteur de parts sociales,
+    dont la valeur est déconnectée de celle du bien. Habicoop accompagne la
+    création de ces coopératives et défend leur cadre juridique.
+purete_juridique:
+  niveau: civil_non_lucratif
+  commentaire: >
+    Association loi 1901 sans capital appropriable ; le modèle de coopérative
+    d'habitants qu'elle promeut relève du droit coopératif non spéculatif.
+grille:
+  - critere: forme_non_lucrative
+    valeur: oui
+    note: "Habicoop est une association loi 1901, forme structurellement non lucrative."
+  - critere: non_lucrativite_effective
+    valeur: oui
+    note: "Association loi 1901 sans capital social : aucune rémunération du capital, ni dividende, ni plus-value distribuée à des apporteurs."
+  - critere: agrement_ig
+    valeur: partiel
+    note: "Habicoop œuvre pour l'accès à un logement non spéculatif, mais ne dispose pas d'une reconnaissance d'utilité publique."
+  - critere: objet_foncier_protecteur
+    valeur: oui
+    note: "L'objet statutaire est explicitement de promouvoir un habitat coopératif hors marché spéculatif et de l'accompagner."
+  - critere: gestion_desinteressee
+    valeur: oui
+    note: "Le statut d'association loi 1901 fédérale suppose une gestion désintéressée au service de ses membres et de l'objet."
+  - critere: inalienabilite
+    valeur: partiel
+    note: "Habicoop ne détient pas de foncier ; l'inaliénabilité dépend des statuts des coopératives qu'elle accompagne, qui encadrent fortement la revente."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Association loi 1901 sans capital social : il n'existe aucune part appropriable, donc aucune captation possible de la valeur foncière au niveau de la fédération."
+  - critere: nature_protectrice
+    valeur: partiel
+    note: "Une association se situe sous la fondation reconnue d'utilité publique et la personne publique sur l'échelle de protection ; Habicoop n'est de toute façon pas porteuse directe du foncier."
+  - critere: clause_devolution
+    valeur: partiel
+    note: "Une association ne peut restituer son actif à ses membres, mais la clause de dévolution précise d'Habicoop n'est pas documentée."
+  - critere: independance_rendement
+    valeur: oui
+    note: "Habicoop ne dépend d'aucun investisseur attendant une plus-value ; le modèle qu'elle promeut déconnecte explicitement la valeur des parts de celle du bien."
+  - critere: ca_collegial
+    valeur: oui
+    note: "Habicoop est une fédération associative dotée d'instances collégiales réunissant ses membres."
+  - critere: parties_prenantes
+    valeur: partiel
+    note: "La fédération réunit des coopératives et porteur·ses de projet ; l'association des collectivités à sa gouvernance n'est pas documentée."
+  - critere: transparence
+    valeur: partiel
+    note: "Habicoop documente publiquement ses missions et son réseau, mais le détail de la publication de ses comptes n'est pas confirmé."
+  - critere: risque_requalification
+    valeur: partiel
+    note: "Habicoop n'est pas reconnue d'utilité publique ; sa qualité d'intérêt général repose sur son objet et son fonctionnement effectif."
+  - critere: redevabilite_publique
+    valeur: partiel
+    note: "Habicoop rend compte de son action auprès de son réseau et du public, mais ne relève pas d'un contrôle public comparable à celui d'une fondation reconnue d'utilité publique."
+analyse:
+  forces:
+    - "Tête de réseau structurant l'habitat coopératif non spéculatif en France."
+    - "A porté Le Village Vertical de Villeurbanne comme projet pilote."
+    - "Promeut explicitement la déconnexion de la valeur des parts et du bien."
+  fragilites:
+    - "Ne porte pas elle-même le foncier : la solidité dépend des coopératives accompagnées."
+    - "Absence de reconnaissance d'utilité publique."
+    - "Clause de dévolution et transparence comptable non documentées."
+  leviers:
+    - "Obtenir l'ouverture du Bail Réel Solidaire aux coopératives d'habitants en zones tendues."
+    - "Documenter publiquement la gouvernance et les comptes de la fédération."
+    - "Diffuser des statuts types verrouillant l'anti-spéculation des coopératives."
+  synthese: >
+    Habicoop est la tête de réseau de l'habitat coopératif français : elle ne
+    porte pas de foncier mais outille les coopératives d'habitants, modèle de
+    propriété collective déconnecté du marché. Sa valeur tient à la diffusion
+    d'un cadre anti-spéculatif éprouvé.
+fiabilite: >
+  Faits vérifiés (sources Habicoop et Le Labo de l'ESS, consultées en mai
+  2026) : association loi 1901 constituée en 2006 et officialisée comme
+  fédération nationale en avril 2015, accompagnement des coopératives
+  d'habitants (sociétés coopératives à capital variable propriétaires de
+  l'immeuble), portage du Village Vertical de Villeurbanne comme projet pilote,
+  trois principes promus (propriété collective, déconnexion du marché,
+  démocratie), plaidoyer pour l'ouverture du Bail Réel Solidaire aux
+  coopératives d'habitants. Non confirmé : clause de dévolution, détail des
+  comptes, composition précise de la gouvernance.
+liens:
+  porteurs: []
+  usufruitiers: []
+  lieux: [village-vertical]
+sources:
+  - titre: "Habicoop — site officiel"
+    url: "https://www.habicoop.fr/"
+  - titre: "Habicoop — Nos missions"
+    url: "https://www.habicoop.fr/nos-missions/"
+  - titre: "Le Labo de l'ESS — Habicoop, des coopératives d'habitants hors du marché de la spéculation"
+    url: "https://www.lelabo-ess.org/habicoop-des-cooperatives-d-habitants-hors-du-marche-de-la-speculation"

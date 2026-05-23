@@ -5,10 +5,11 @@ sous_titre: "Fondation propriétaire du domaine de Villarceaux"
 statut_fiche: publie
 forme_juridique: "Fondation (de droit suisse selon les sources ; forme exacte au regard du droit français non confirmée)"
 localisation: null
-annee: null
+annee: 1982
 url: "https://www.fph.ch/article16_fr.html"
 resume: >
-  Fondation soutenant des recherches et expérimentations d'intérêt général. Elle
+  Fondation soutenant des recherches et expérimentations d'intérêt général,
+  existant depuis 1982 et dont le siège est à Lausanne. Elle
   est propriétaire du domaine de la Bergerie de Villarceaux, d'environ 600
   hectares, qu'elle met à disposition pour une transition agroécologique. Elle en
   conserve la pleine propriété et en confie l'exploitation à des structures
@@ -22,7 +23,7 @@ montage:
     propriété de fondation assortie d'une exploitation tierce, et non d'un
     démembrement strict.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
     Fondation non lucrative offrant une bonne protection du foncier, mais dont la
     forme exacte au regard du droit français reste à confirmer.
@@ -30,6 +31,9 @@ grille:
   - critere: forme_non_lucrative
     valeur: oui
     note: "La FPH est une fondation, forme structurellement non lucrative."
+  - critere: non_lucrativite_effective
+    valeur: oui
+    note: "Une fondation n'a pas de capital social appropriable : aucune rémunération du capital, ni dividende, ni plus-value distribuée."
   - critere: agrement_ig
     valeur: partiel
     note: "La FPH soutient des missions d'intérêt général, mais sa reconnaissance officielle au regard du droit français n'est pas confirmée."
@@ -42,6 +46,9 @@ grille:
   - critere: inalienabilite
     valeur: partiel
     note: "La détention par une fondation protège le foncier, mais aucune clause d'inaliénabilité spécifique n'est documentée."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Une fondation n'a ni capital social ni parts : il n'existe aucun titre appropriable, donc aucune captation possible de la valeur foncière."
   - critere: nature_protectrice
     valeur: oui
     note: "Une fondation se situe en haut de l'échelle de protection, sous la seule personne publique."
@@ -84,7 +91,8 @@ analyse:
     mais sa solidité juridique reste à expliciter : statut au regard du droit
     français, objet foncier, gouvernance et dévolution.
 fiabilite: >
-  Faits vérifiés : statut de fondation, propriété du domaine de Villarceaux
+  Faits vérifiés : statut de fondation existant depuis 1982, siège à Lausanne,
+  propriété du domaine de Villarceaux
   d'environ 600 hectares, mise à disposition pour une transition agroécologique,
   exploitation confiée à des structures tierces. Non confirmé : forme juridique
   exacte au regard du droit français, objet statutaire foncier, gouvernance,

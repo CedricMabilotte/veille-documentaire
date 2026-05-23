@@ -1,0 +1,75 @@
+uid: cooperative-habitants-alur
+categorie: modele
+nom: "Coopérative d'habitants (loi ALUR)"
+sous_titre: "Statut français de l'habitat coopératif non spéculatif"
+statut_fiche: publie
+forme_juridique: "Société coopérative à capital variable (articles L.201-1 et s. du Code de la construction et de l'habitation)"
+pays: "France"
+annee: 2014
+url: "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074096/LEGISCTA000028778420/"
+resume: >
+  La coopérative d'habitants est un statut créé par la loi ALUR du 24 mars 2014
+  (article 47), précisé par le décret du 21 décembre 2015 : une société
+  coopérative à capital variable, régie par le Code de commerce et la loi de
+  1947 sur la coopération. La société est propriétaire de l'immeuble ; un
+  contrat coopératif confère à chaque associé un droit de jouissance sur un
+  logement, qui cesse de plein droit avec la perte du statut de coopérateur. Le
+  mécanisme anti-spéculatif plafonne le prix de cession des parts à leur valeur
+  nominale majorée de l'indice de référence des loyers (IRL). Le statut vise
+  une position « entre logement social et accession privée », hors marché
+  spéculatif.
+montage:
+  type: propriete_collective
+  description: >
+    La société coopérative reste propriétaire de l'immeuble sur le long terme.
+    Chaque associé reçoit, par un contrat coopératif, un droit de jouissance
+    sur un logement, en contrepartie de parts sociales et d'une redevance. Les
+    parts ne peuvent être cédées ni remboursées avant l'attribution de la
+    jouissance d'un logement, et leur prix de cession est plafonné à la valeur
+    nominale majorée de l'IRL : la spéculation sur le logement est neutralisée
+    par construction.
+purete_juridique:
+  niveau: societaire_solidaire
+  commentaire: >
+    Société coopérative encadrée par la loi ALUR ; forme sociétaire mais
+    plafonnement légal du prix de cession des parts qui verrouille
+    l'anti-spéculation.
+axes_estimes:
+  A: 80
+  B: 90
+  C: 90
+analyse:
+  forces:
+    - "Prix de cession des parts plafonné par la loi à la valeur nominale majorée de l'IRL."
+    - "Cadre juridique français explicite, créé par la loi ALUR de 2014."
+    - "Gouvernance coopérative « une personne, une voix » par construction."
+  fragilites:
+    - "Forme sociétaire : statut récent dont la diffusion reste limitée."
+    - "L'intérêt général dépend du projet ; le statut n'impose pas de mission sociale."
+    - "Pas de portage foncier distinct : la coopérative cumule propriété et gestion."
+  leviers:
+    - "Articuler la coopérative d'habitants au Bail Réel Solidaire en zones tendues."
+    - "Mobiliser le statut comme brique reproductible d'habitat collectif non spéculatif."
+    - "Associer un porteur foncier d'intérêt général pour renforcer l'irréversibilité."
+  synthese: >
+    La coopérative d'habitants loi ALUR est le cadre juridique français de
+    l'habitat coopératif : une société coopérative propriétaire dont la loi
+    plafonne le prix de cession des parts. Elle complète l'OFS/BRS côté
+    logement et neutralise la spéculation par construction.
+fiabilite: >
+  Faits vérifiés : statut créé par la loi ALUR du 24 mars 2014 (article 47),
+  précisé par le décret n° 2015-1725 du 21 décembre 2015, société coopérative à
+  capital variable régie par le Code de commerce et la loi de 1947 sur la
+  coopération, société propriétaire de l'immeuble, contrat coopératif conférant
+  un droit de jouissance cessant avec la perte du statut de coopérateur, prix
+  de cession des parts plafonné à la valeur nominale majorée de l'IRL, parts
+  non cessibles ni remboursables avant attribution de la jouissance d'un
+  logement. Les axes estimés sont une conversion indicative du cadre juridique,
+  hors notation par les grilles.
+sources:
+  - titre: "Légifrance — Coopératives d'habitants (articles L.201-1 à L.201-13 du CCH)"
+    url: "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074096/LEGISCTA000028778420/"
+  - titre: "Légifrance — Loi ALUR, article 47"
+    url: "https://www.legifrance.gouv.fr/loda/article_lc/JORFARTI000028772674"
+  - titre: "Ministère de la Transition écologique — Habitat participatif, cadre juridique"
+    url: "https://www.ecologie.gouv.fr/politiques-publiques/habitat-participatif-cadre-juridique-habiter-autrement"

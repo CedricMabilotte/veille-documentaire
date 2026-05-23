@@ -32,7 +32,7 @@ montage:
     avant l'installation. La libération du foncier proprement dite relève des
     porteurs auxquels les espaces-test s'articulent.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
     Réseau associatif de droit privé fédérant des structures d'usage
     transitoire ; l'espace-test ne porte pas le foncier mais en organise un
@@ -62,6 +62,9 @@ grille:
   - critere: non_appropriation
     valeur: oui
     note: "Le porteur de projet en test ne peut ni revendre ni capter la valeur du foncier : le test est transitoire et n'ouvre aucun droit de propriété."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "RENETA et ses espaces-test membres sont des associations loi 1901 sans capital social : aucune part appropriable, donc aucune captation possible de la valeur foncière."
   - critere: une_voix
     valeur: partiel
     note: "RENETA fonctionne sur un mode associatif et fédératif ; les modalités de vote internes ne sont pas détaillées par les sources."
@@ -106,7 +109,7 @@ fiabilite: >
   Les effectifs du réseau évoluent d'une année sur l'autre.
 liens:
   porteurs: [fondation-terre-de-liens]
-  usufruitiers: []
+  usufruitiers: [champs-des-possibles]
   lieux: [reseau-terre-de-liens]
 sources:
   - titre: "RENETA — site officiel"

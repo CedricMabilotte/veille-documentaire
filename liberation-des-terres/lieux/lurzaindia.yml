@@ -11,13 +11,13 @@ localisation:
 annee: 2013
 url: "https://lurzaindia.eu/"
 resume: >
-  Foncière citoyenne du Pays Basque détenant environ 480 hectares répartis sur de
+  Foncière citoyenne du Pays Basque détenant environ 486 hectares répartis sur de
   nombreuses fermes. Créée en 2013, elle prend la suite du GFAM Lurra né dans les
   années 1970. Constituée en société en commandite par actions, elle mobilise
-  l'épargne populaire — environ 3 674 actionnaires solidaires et près de
-  1,57 million d'euros investis selon le bilan publié — pour acheter des terres et
-  les confier à des agriculteur·rices par baux de long terme : une trentaine
-  d'exploitant·es y sont installé·es.
+  l'épargne populaire — environ 3 775 actionnaires solidaires et près de
+  1,67 million d'euros investis selon le bilan publié — pour acheter des terres et
+  les confier à des agriculteur·rices par baux de long terme : environ
+  41 exploitant·es y sont installé·es.
 montage:
   type: propriete_sanctuarisee
   nu_proprietaire: "Lurzaindia (société en commandite par actions)"
@@ -28,7 +28,7 @@ montage:
     agriculteur·rices par des baux de long terme. Le modèle est analogue à celui de la
     Foncière Terre de Liens, à l'échelle régionale du Pays Basque.
 purete_juridique:
-  niveau: societaire
+  niveau: societaire_solidaire
   commentaire: >
     Foncière de forme sociétaire (société en commandite par actions) reposant sur
     un actionnariat citoyen ; la non-lucrativité dépend des clauses statutaires
@@ -45,7 +45,10 @@ grille:
     note: "Le portage de long terme protège le foncier, mais aucune clause d'inaliénabilité stricte n'est documentée et les actions restent cessibles."
   - critere: origine_non_speculative
     valeur: oui
-    note: "Le foncier est acquis grâce à l'épargne populaire d'environ 3 674 actionnaires solidaires, hors logique d'endettement spéculatif."
+    note: "Le foncier est acquis grâce à l'épargne populaire d'environ 3 775 actionnaires solidaires, hors logique d'endettement spéculatif."
+  - critere: parts_non_cessibles
+    valeur: non
+    note: "Le foncier est porté par une société en commandite par actions dont les actions restent cessibles, sans encadrement documenté de leur prix : la valeur foncière demeure captable."
   - critere: usage_interet_general
     valeur: oui
     note: "L'installation et la confortation de petites fermes paysannes servent un intérêt général agricole."
@@ -68,7 +71,7 @@ analyse:
   forces:
     - "Foncière citoyenne ancrée régionalement, forte mobilisation d'épargne populaire."
     - "Continuité depuis le GFAM Lurra des années 1970."
-    - "Installation effective d'une trentaine d'agriculteur·rices sur environ 480 hectares."
+    - "Installation effective d'environ 41 agriculteur·rices sur environ 486 hectares."
   fragilites:
     - "Forme de société en commandite par actions : actions cessibles, non-lucrativité non garantie par construction."
     - "Absence de clause d'inaliénabilité stricte documentée."
@@ -85,8 +88,8 @@ analyse:
 fiabilite: >
   Faits vérifiés (bilan public Lurzaindia consulté en mai 2026) : création en
   2013, suite du GFAM Lurra des années 1970, forme de société en commandite par
-  actions, environ 480 hectares, une trentaine d'agriculteur·rices installé·es,
-  environ 3 674 actionnaires solidaires, près de 1,57 million d'euros investis.
+  actions, environ 486 hectares, environ 41 agriculteur·rices installé·es,
+  environ 3 775 actionnaires solidaires, près de 1,67 million d'euros investis.
   Ces chiffres datent du bilan publié par la foncière et évoluent au fil de ses
   campagnes de financement. Non confirmé : clauses statutaires d'inaliénabilité,
   modalités de gouvernance et de transmission.

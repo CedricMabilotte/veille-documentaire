@@ -1,0 +1,110 @@
+uid: village-vertical
+categorie: lieu
+nom: "Le Village Vertical"
+sous_titre: "Première coopérative d'habitants de France au XXIe siècle"
+statut_fiche: publie
+forme_juridique: null
+localisation:
+  commune: "Villeurbanne"
+  departement: "Rhône (69)"
+  region: "Auvergne-Rhône-Alpes"
+annee: 2010
+url: "https://www.village-vertical.org/"
+resume: >
+  Le Village Vertical est une coopérative d'habitants — société coopérative à
+  capital variable — créée en 2010 à Villeurbanne ; son immeuble unique a été
+  livré en juin 2013. La coopérative est l'unique propriétaire du bâti et du
+  foncier ; chaque ménage est locataire de son logement et détenteur de parts
+  sociales, dont la valeur est déconnectée de celle du bien. À la sortie, les
+  parts sont remboursées à leur valeur nominale, sans plus-value. Projet initié
+  en 2005 et accompagné par Habicoop, il est la première coopérative
+  d'habitants créée en France au XXIe siècle.
+montage:
+  type: propriete_collective
+  nu_proprietaire: "Le Village Vertical (société coopérative d'habitants à capital variable)"
+  usufruitier: "Titulaire de l'usage : ménages coopérateur·rices, locataires de leur logement et détenteur·rices de parts sociales"
+  description: >
+    La coopérative d'habitants est l'unique propriétaire de l'immeuble et du
+    foncier. Chaque ménage signe un contrat coopératif lui conférant un droit
+    de jouissance sur un logement, en contrepartie de parts sociales et d'une
+    redevance. La valeur des parts est déconnectée de celle du bien : à la
+    sortie, elles sont remboursées au nominal, sans plus-value. En cas de
+    revente du bâtiment, le surplus ne peut être distribué aux membres : la
+    sortie du système spéculatif est garantie statutairement.
+purete_juridique:
+  niveau: societaire_solidaire
+  commentaire: >
+    Société coopérative d'habitants à capital variable ; forme sociétaire mais
+    statuts anti-spéculatifs verrouillant la valeur des parts au nominal.
+grille:
+  - critere: foncier_hors_marche
+    valeur: oui
+    note: "Le bâti et le foncier sont la propriété unique de la coopérative ; ils ne sont pas destinés à la revente sur le marché libre."
+  - critere: montage_documente
+    valeur: oui
+    note: "Le montage — coopérative d'habitants propriétaire, ménages locataires et détenteurs de parts — est public et largement documenté."
+  - critere: irreversibilite
+    valeur: oui
+    note: "Les statuts interdisent la distribution du surplus aux membres en cas de revente et plafonnent les parts au nominal : le retour au marché spéculatif est verrouillé."
+  - critere: origine_non_speculative
+    valeur: oui
+    note: "Le projet associe épargne des coopérateur·rices et logement social, hors logique d'endettement attendant une plus-value."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Les parts sociales sont remboursées à leur valeur nominale sans plus-value : la valeur du foncier n'est captable par aucun titre."
+  - critere: usage_interet_general
+    valeur: oui
+    note: "L'immeuble compte 14 logements dont 9 sociaux et 4 très sociaux : l'usage sert un intérêt général de logement abordable."
+  - critere: non_lucratif_global
+    valeur: oui
+    note: "Aucun maillon du montage ne capte de plus-value foncière : la déconnexion de la valeur des parts est statutaire."
+  - critere: ancrage_territorial
+    valeur: oui
+    note: "Projet urbain ancré à Villeurbanne, articulé au logement social et accompagné comme pilote par Habicoop."
+  - critere: gouvernance_collective
+    valeur: oui
+    note: "La coopérative d'habitants fonctionne sur le principe « une personne, une voix » : les coopérateur·rices décident collectivement."
+  - critere: tripartisme
+    valeur: partiel
+    note: "Le projet associe bailleur social et collectivité au montage, mais une gouvernance tripartite formalisée n'est pas documentée."
+  - critere: perennite_gouvernance
+    valeur: partiel
+    note: "La forme coopérative organise la durée, mais les dispositifs de renouvellement des coopérateur·rices ne sont pas tous documentés."
+analyse:
+  forces:
+    - "Parts plafonnées au nominal : sortie du marché spéculatif garantie statutairement."
+    - "Première coopérative d'habitants française du XXIe siècle, projet pilote éprouvé."
+    - "Gouvernance « une personne, une voix » réellement participative."
+  fragilites:
+    - "Forme sociétaire : l'anti-spéculation dépend du maintien des clauses statutaires."
+    - "Gouvernance tripartite avec voisinage et collectivité non formalisée."
+    - "Dispositifs de renouvellement des coopérateur·rices peu documentés."
+  leviers:
+    - "Capitaliser l'expérience comme modèle reproductible d'habitat coopératif."
+    - "Formaliser l'association du voisinage et de la collectivité à la gouvernance."
+    - "Documenter l'accueil et le renouvellement des coopérateur·rices."
+  synthese: >
+    Le Village Vertical est le lieu emblématique de l'habitat coopératif
+    français : une coopérative d'habitants propriétaire de son immeuble, aux
+    parts plafonnées au nominal. Sa solidité tient au verrouillage statutaire
+    de l'anti-spéculation.
+fiabilite: >
+  Faits vérifiés (sources Le Village Vertical, Habicoop et Le Labo de l'ESS,
+  consultées en mai 2026) : coopérative d'habitants créée en 2010, immeuble
+  unique livré en juin 2013, projet initié en 2005, première coopérative
+  d'habitants française du XXIe siècle, immeuble BBC en ossature bois-béton de
+  14 logements dont 9 sociaux et 4 très sociaux, propriété unique du bâti et du
+  foncier par la coopérative, parts remboursées au nominal sans plus-value,
+  accompagnement par Habicoop comme projet pilote. Non confirmé : modalités
+  détaillées de renouvellement des coopérateur·rices.
+liens:
+  porteurs: [habicoop]
+  usufruitiers: []
+  lieux: []
+sources:
+  - titre: "Le Village Vertical — Présentation"
+    url: "https://www.village-vertical.org/index.php?page=presentation"
+  - titre: "Habicoop — T5 disponible au Village Vertical de Villeurbanne"
+    url: "https://www.habicoop.fr/t5-disponible-au-village-vertical-de-villeurbanne-69/"
+  - titre: "Le Labo de l'ESS — Le Village Vertical de Villeurbanne, un habitat solidaire et non spéculatif"
+    url: "https://www.lelabo-ess.org/le-village-vertical-de-villeurbanne-un-habitat-solidaire-et-non-speculatif"

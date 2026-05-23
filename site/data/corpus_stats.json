@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T04:20:01Z",
+  "generated_at": "2026-05-23T10:50:24Z",
   "total": 1211,
   "total_docs": 1211,
   "total_downloaded": 183,
@@ -94,5 +94,350 @@
     "Forte dominante militante (59.0%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
+  ],
+  "sources_list": [
+    {
+      "label": "Infokiosques.net — Paysannerie & ruralité",
+      "url": "https://infokiosques.net/paysannerie_ruralite",
+      "type": "html",
+      "orientation": "militant",
+      "count": 121
+    },
+    {
+      "label": "Böll Stiftung — publications DE (deep crawl)",
+      "url": "https://www.boell.de/de/publikationen",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 116
+    },
+    {
+      "label": "CRAS (Centre de Recherches sur les Alternatives Sociales)",
+      "url": "https://cras31.info/",
+      "type": "deep_html",
+      "orientation": "militant",
+      "count": 107
+    },
+    {
+      "label": "Infokiosques.net — Écologie radicale",
+      "url": "https://infokiosques.net/ecologie_radicale",
+      "type": "html",
+      "orientation": "militant",
+      "count": 106
+    },
+    {
+      "label": "Infokiosques.net — Squat (rapport à l'habiter)",
+      "url": "https://infokiosques.net/squat",
+      "type": "html",
+      "orientation": "militant",
+      "count": 101
+    },
+    {
+      "label": "CLACSO Libros (acceso abierto)",
+      "url": "https://www.clacso.org/libros/",
+      "type": "deep_html",
+      "orientation": "academique",
+      "count": 99
+    },
+    {
+      "label": "The Anarchist Library — OPDS (new releases)",
+      "url": "https://theanarchistlibrary.org/opds/new",
+      "type": "opds",
+      "orientation": "militant",
+      "count": 92
+    },
+    {
+      "label": "Infokiosques.net — Anticapitalisme",
+      "url": "https://infokiosques.net/anticapitalisme",
+      "type": "html",
+      "orientation": "militant",
+      "count": 82
+    },
+    {
+      "label": "Infokiosques.net — Anticolonialismes",
+      "url": "https://infokiosques.net/anticolonialismes",
+      "type": "html",
+      "orientation": "militant",
+      "count": 65
+    },
+    {
+      "label": "Archive.org — commons / enclosure / agrarian (strict)",
+      "url": "https://archive.org/advancedsearch.php?q=%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land+reform%22+OR+subject%3A%22enclosure%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
+      "type": "archive_org",
+      "orientation": "academique",
+      "count": 55
+    },
+    {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
+      "count": 40
+    },
+    {
+      "label": "Archive.org — community land trusts & housing commons",
+      "url": "https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
+      "type": "archive_org",
+      "orientation": "academique",
+      "count": 36
+    },
+    {
+      "label": "Böll Stiftung — Agriculture Atlas (EN)",
+      "url": "https://www.boell.de/en/agriculture-atlas-2019",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 23
+    },
+    {
+      "label": "Archive.org — anarchism + land/peasant (strict)",
+      "url": "https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
+      "type": "archive_org",
+      "orientation": "academique",
+      "count": 17
+    },
+    {
+      "label": "Archive.org — peasant movements",
+      "url": "https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
+      "type": "archive_org",
+      "orientation": "academique",
+      "count": 10
+    },
+    {
+      "label": "International Land Coalition — latest",
+      "url": "https://www.landcoalition.org/en/latest/",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 10
+    },
+    {
+      "label": "HAL — communs fonciers",
+      "url": "https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50",
+      "type": "hal",
+      "orientation": "academique",
+      "count": 8
+    },
+    {
+      "label": "HAL — paysannerie / agriculture vivrière",
+      "url": "https://api.archives-ouvertes.fr/search/?q=paysannerie+OR+%22agriculture+vivri%C3%A8re%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50",
+      "type": "hal",
+      "orientation": "academique",
+      "count": 8
+    },
+    {
+      "label": "HAL — propriété d'usage / fonds de dotation",
+      "url": "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50",
+      "type": "hal",
+      "orientation": "academique",
+      "count": 6
+    },
+    {
+      "label": "Archive.org — Cuba (ES, réforme agraire & coopératives)",
+      "url": "https://archive.org/advancedsearch.php?q=cuba+AND+language%3A%22spa%22+AND+%28cooperativ*+OR+campesin*+OR+agrari*+OR+%22reforma+agraria%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
+      "type": "archive_org",
+      "orientation": "academique",
+      "count": 5
+    },
+    {
+      "label": "CLACSO — Libros en coedición",
+      "url": "https://www.clacso.org/libros-de-clacso-en-coedicion/",
+      "type": "deep_html",
+      "orientation": "academique",
+      "count": 5
+    },
+    {
+      "label": "CLACSO — Publicaciones générales",
+      "url": "https://www.clacso.org/publicaciones/",
+      "type": "deep_html",
+      "orientation": "academique",
+      "count": 3
+    },
+    {
+      "label": "libcom.org — library",
+      "url": "https://libcom.org/library",
+      "type": "deep_html",
+      "orientation": "militant",
+      "count": 1
+    },
+    {
+      "label": "Böll Stiftung — Agriculture & Food (EN topic)",
+      "url": "https://www.boell.de/en/topics/agriculture-food",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 0
+    },
+    {
+      "label": "Böll Stiftung — Meat Atlas (EN)",
+      "url": "https://www.boell.de/en/meat-atlas",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 0
+    },
+    {
+      "label": "CEIPAZ (Cultura de Paz) — RSS",
+      "url": "https://www.ceipaz.org/feed/",
+      "type": "rss",
+      "orientation": "institutionnel",
+      "count": 0
+    },
+    {
+      "label": "CELAG (Geopolítica LatAm)",
+      "url": "https://www.celag.org/feed/",
+      "type": "rss",
+      "orientation": "journalistique",
+      "count": 0
+    },
+    {
+      "label": "CGT España — RSS",
+      "url": "https://cgt.org.es/feed/",
+      "type": "rss",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "CLOC — Vía Campesina LatAm",
+      "url": "https://www.cloc-viacampesina.net/feed/",
+      "type": "rss",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "CNT-AIT España",
+      "url": "https://www.cnt.es/feed/",
+      "type": "rss",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "CrimethInc — library",
+      "url": "https://crimethinc.com/library",
+      "type": "deep_html",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "Cultural Survival — RSS",
+      "url": "https://www.culturalsurvival.org/rss.xml",
+      "type": "rss",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "ENDA Tiers Monde — RSS",
+      "url": "https://endatiersmonde.org/feed/",
+      "type": "rss",
+      "orientation": "institutionnel",
+      "count": 0
+    },
+    {
+      "label": "Enlace Zapatista (EZLN)",
+      "url": "https://enlacezapatista.ezln.org.mx/feed/",
+      "type": "rss",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "FIAN International (droit à l'alimentation, ES)",
+      "url": "https://www.fian.org/es/feed/",
+      "type": "rss",
+      "orientation": "institutionnel",
+      "count": 0
+    },
+    {
+      "label": "GRAIN — entries RSS",
+      "url": "https://grain.org/home/entries.rss",
+      "type": "rss",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "JSTOR Daily — topic land",
+      "url": "https://daily.jstor.org/topic/land/",
+      "type": "deep_html",
+      "orientation": "journalistique",
+      "count": 0
+    },
+    {
+      "label": "La Vía Campesina (ES)",
+      "url": "https://viacampesina.org/es/feed/",
+      "type": "rss",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "Lundi.am — RSS principal",
+      "url": "https://lundi.am/spip.php?page=backend",
+      "type": "rss",
+      "orientation": "journalistique",
+      "count": 0
+    },
+    {
+      "label": "MST Brésil — biblioteca questão agraria",
+      "url": "https://mst.org.br/biblioteca-da-questao-agraria/",
+      "type": "deep_html",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "MST Brésil — RSS principal",
+      "url": "https://mst.org.br/feed/",
+      "type": "rss",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "Portal OACA — Libros anarquistas (catégorie)",
+      "url": "https://www.portaloaca.com/categoria/pensamientolibertario/libros-anarquistas/",
+      "type": "deep_html",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "Portal OACA — RSS (anarcosindicalisme ES)",
+      "url": "https://portaloaca.com/feed/",
+      "type": "rss",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "Reporterre — RSS principal",
+      "url": "https://reporterre.net/spip.php?page=backend",
+      "type": "rss",
+      "orientation": "journalistique",
+      "count": 0
+    },
+    {
+      "label": "Sin Permiso (revue radicale ES)",
+      "url": "https://www.sinpermiso.info/rss.xml",
+      "type": "rss",
+      "orientation": "journalistique",
+      "count": 0
+    },
+    {
+      "label": "Tierra.org — Agricultura y alimentación",
+      "url": "https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/",
+      "type": "deep_html",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "Tierra.org — Biodiversidad",
+      "url": "https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/",
+      "type": "deep_html",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "TNI — Land & Food topic",
+      "url": "https://www.tni.org/en/topic/land-food",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 0
+    },
+    {
+      "label": "Troisièmes Voix — éditions",
+      "url": "https://www.troisiemesvoix.org/fr",
+      "type": "deep_html",
+      "orientation": "militant",
+      "count": 0
+    }
   ]
 }

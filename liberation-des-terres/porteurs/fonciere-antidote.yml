@@ -1,6 +1,6 @@
 uid: fonciere-antidote
 categorie: porteur
-nom: "La Foncière Antidote"
+nom: "Antidote"
 sous_titre: "Fonds de dotation cédant l'usage de lieux par bail emphytéotique de 99 ans"
 statut_fiche: publie
 forme_juridique: "Fonds de dotation (loi du 4 août 2008)"
@@ -8,7 +8,8 @@ localisation: null
 annee: 2021
 url: "https://aventure-antidote.org/comment-ca-marche/notre-fonctionnement/"
 resume: >
-  Fonds de dotation qui détient la propriété de lieux acquis ou reçus par dons,
+  Fonds de dotation, désigné aujourd'hui sous le nom « Antidote » (anciennement
+  « La Foncière Antidote »), qui détient la propriété de lieux acquis ou reçus par dons,
   legs et donations, et en cède l'usage aux collectifs par un bail emphytéotique
   de 99 ans. Il est fondé et orienté par l'association « Les Passagères de
   l'usage », que chaque lieu rejoignant le projet doit intégrer. Le
@@ -27,7 +28,7 @@ montage:
     montage dissocie nettement la propriété protégée de l'usage confié, sans
     recourir à l'usufruit civil plafonné à 30 ans.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
     Fonds de dotation de droit privé non lucratif, sans capital lucratif ; la
     cession d'usage par bail emphytéotique de 99 ans sécurise l'usage bien
@@ -36,6 +37,9 @@ grille:
   - critere: forme_non_lucrative
     valeur: oui
     note: "Le fonds de dotation est une personne morale de droit privé structurellement non lucrative, sans parts sociales ni capital rémunéré."
+  - critere: non_lucrativite_effective
+    valeur: oui
+    note: "Fonctionnement explicitement non capitaliste, sans parts sociales ni rémunération du capital : ni dividende, ni intérêt, ni plus-value distribuée."
   - critere: agrement_ig
     valeur: partiel
     note: "Le fonds de dotation est créé sans agrément ; l'éligibilité au régime de l'intérêt général dépend de son objet et de son fonctionnement effectif."
@@ -48,6 +52,9 @@ grille:
   - critere: inalienabilite
     valeur: partiel
     note: "Le fonds conserve la propriété des lieux et la cède en usage pour 99 ans ; le caractère consomptible ou non de la dotation n'est pas confirmé par les sources consultées."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Le fonds de dotation fonctionne sans parts sociales ni capital appropriable : aucun titre cessible, donc aucune captation possible de la valeur foncière."
   - critere: nature_protectrice
     valeur: partiel
     note: "Le fonds de dotation se situe à un niveau de protection intermédiaire, sous la fondation reconnue d'utilité publique et la personne publique."
@@ -83,7 +90,7 @@ analyse:
     - "Documenter publiquement les statuts et la composition du conseil d'administration."
     - "Confirmer l'éligibilité au régime fiscal de l'intérêt général."
   synthese: >
-    La Foncière Antidote est un montage rigoureux de propriété d'usage :
+    Antidote est un montage rigoureux de propriété d'usage :
     propriété protégée par un fonds de dotation non capitaliste, usage confié
     pour 99 ans, gouvernance portée par les lieux eux-mêmes. Sa marge de
     progression tient à l'explicitation du caractère non consomptible de la

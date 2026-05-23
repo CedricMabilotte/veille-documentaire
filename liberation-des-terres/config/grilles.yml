@@ -36,10 +36,19 @@ grilles:
           - id: forme_non_lucrative
             label: "Forme juridique non lucrative"
             axe: A
-            poids: 3
+            poids: 2
             definition: >
               L'organisme relève d'une forme structurellement non lucrative
               (fondation, fonds de dotation, établissement public, association).
+          - id: non_lucrativite_effective
+            label: "Non-lucrativité effective (capital non rémunéré)"
+            axe: A
+            poids: 3
+            definition: >
+              Le capital apporté n'est pas rémunéré : ni dividende, ni intérêt,
+              ni plus-value distribuée aux apporteurs. « partiel » si une
+              revalorisation des parts existe, même plafonnée à l'inflation ;
+              « non » si dividende ou plus-value sont possibles.
           - id: agrement_ig
             label: "Reconnaissance publique ou éligibilité à l'intérêt général"
             axe: A
@@ -83,6 +92,19 @@ grilles:
               Le foncier est rendu inaliénable au sein de l'organisme (dotation
               non consomptible d'un fonds de dotation, domanialité, clause
               statutaire d'inaliénabilité temporaire et justifiée).
+          - id: parts_non_cessibles
+            label: "Parts / titres non cessibles ou cession encadrée"
+            axe: B
+            poids: 3
+            definition: >
+              Les parts, actions ou titres de la structure ne sont pas
+              librement cessibles sur un marché : soit la structure n'a pas de
+              capital social appropriable (fondation, association), soit ses
+              statuts encadrent strictement la cession (agrément, prix plafonné
+              à la valeur nominale, inaliénabilité). « oui » : aucune part
+              appropriable, ou cession verrouillée au nominal ; « partiel » :
+              cession soumise à agrément mais à un prix non plafonné ; « non » :
+              parts librement cessibles, valeur foncière captable.
           - id: nature_protectrice
             label: "Nature juridique protectrice"
             axe: B
@@ -100,7 +122,7 @@ grilles:
           - id: independance_rendement
             label: "Indépendance vis-à-vis d'une logique de rendement"
             axe: B
-            poids: 2
+            poids: 3
             definition: >
               Le capital n'est pas soumis à des investisseurs attendant une
               plus-value ou un dividende sur le foncier.
@@ -184,7 +206,7 @@ grilles:
           - id: non_lucrativite_effective
             label: "Non-lucrativité effective"
             axe: A
-            poids: 2
+            poids: 3
             definition: >
               Absence de partage de bénéfices ; les excédents sont réinvestis
               dans l'objet et non distribués aux membres.
@@ -233,6 +255,19 @@ grilles:
             definition: >
               Les usagers ne peuvent ni revendre, ni capter à titre privé la
               valeur du foncier.
+          - id: parts_non_cessibles
+            label: "Parts / titres non cessibles ou cession encadrée"
+            axe: B
+            poids: 3
+            definition: >
+              Les parts, actions ou titres de la structure ne sont pas
+              librement cessibles sur un marché : soit la structure n'a pas de
+              capital social appropriable (association), soit ses statuts
+              encadrent strictement la cession (agrément, prix plafonné à la
+              valeur nominale, inaliénabilité). « oui » : aucune part
+              appropriable, ou cession verrouillée au nominal ; « partiel » :
+              cession soumise à agrément mais à un prix non plafonné ; « non » :
+              parts librement cessibles, valeur foncière captable.
           - id: devolution_usufruitier
             label: "Clause de dévolution désintéressée de l'usufruitier"
             axe: B
@@ -333,6 +368,20 @@ grilles:
             definition: >
               Le foncier a été acquis par dons, legs, épargne solidaire ou
               fonds publics — non par un endettement attendant une plus-value.
+          - id: parts_non_cessibles
+            label: "Parts / titres non cessibles ou cession encadrée"
+            axe: B
+            poids: 3
+            definition: >
+              Les parts, actions ou titres des structures du montage ne sont
+              pas librement cessibles sur un marché : soit elles n'ont pas de
+              capital social appropriable (fondation, association, propriété
+              publique), soit leurs statuts encadrent strictement la cession
+              (agrément, prix plafonné à la valeur nominale, inaliénabilité).
+              « oui » : aucune part appropriable, ou cession verrouillée au
+              nominal ; « partiel » : cession soumise à agrément mais à un prix
+              non plafonné ; « non » : parts librement cessibles, valeur
+              foncière captable.
       - id: usage_ig
         label: "Intérêt général de l'usage"
         criteres:

@@ -277,7 +277,37 @@
         const dt = stats.generated_at.slice(0, 10);
         meta.textContent = 'Données arrêtées au ' + (window.formatDate(dt) || dt) + '.';
       }
+      // Liste complète des sources surveillées (section #sources).
+      renderSourcesList(stats.sources_list);
     });
+  }
+  function renderSourcesList(list) {
+    const root = document.getElementById('corpus-sources-root');
+    if (!root) return;
+    const esc = window.escape || (s => String(s == null ? '' : s));
+    if (!Array.isArray(list) || !list.length) {
+      root.innerHTML = '<p class="biblio-empty-note">La liste des sources sera disponible au prochain passage de la veille.</p>';
+      return;
+    }
+    const ORIENT = {
+      militant: 'militante', academique: 'académique',
+      institutionnel: 'institutionnelle', journalistique: 'journalistique',
+    };
+    const rows = list.map(s => {
+      const name = esc(s.label || '');
+      const titre = s.url
+        ? `<a href="${esc(s.url)}" rel="noopener" target="_blank">${name}</a>`
+        : name;
+      const orient = ORIENT[s.orientation] || '';
+      const n = s.count || 0;
+      return `<li class="source-row">
+        <span class="source-name">${titre}</span>
+        ${orient ? `<span class="source-orient">${orient}</span>` : ''}
+        <span class="source-count">${n} doc${n > 1 ? 's' : ''}</span>
+      </li>`;
+    }).join('');
+    root.innerHTML = `<ul class="sources-liste">${rows}</ul>
+      <p style="color:var(--text-faint);font-size:13px;margin-top:10px;">${list.length} sources au total.</p>`;
   }
   window.initEtatCorpus = initEtatCorpus;
 

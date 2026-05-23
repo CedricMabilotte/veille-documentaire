@@ -25,13 +25,14 @@ montage:
   description: >
     L'État demeure propriétaire de l'ensemble du foncier. La SCTL, société civile
     de droit privé, en détient l'usage par un bail emphytéotique conclu avec
-    l'État — d'abord de 60 ans puis porté à 99 ans (maximum légal), avec une
-    échéance en 2083 — et met les terres à disposition des paysan·nes via des baux
+    l'État — signé en 1985 pour 60 ans, puis renégocié en 2013 pour le porter à
+    99 ans (maximum légal), avec une échéance en 2083 — et met les terres à
+    disposition des paysan·nes via des baux
     de long terme. La SCTL n'est pas propriétaire : elle est preneuse à bail
     emphytéotique. C'est ce bail de 99 ans, et non la seule domanialité, qui
     fonde l'irréversibilité du dispositif.
 purete_juridique:
-  niveau: public
+  niveau: droit_public
   commentaire: >
     Propriété publique de l'État, fortement protectrice, assortie d'un bail
     emphytéotique de 99 ans consenti à une société civile attribuant l'usage de
@@ -49,6 +50,9 @@ grille:
   - critere: origine_non_speculative
     valeur: oui
     note: "Le foncier a été acquis par l'État dans le cadre d'un rachat foncier public, hors logique de plus-value."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Le foncier appartient à l'État et la SCTL n'en est que preneuse à bail emphytéotique : il n'existe aucune part appropriable portant la valeur du foncier."
   - critere: usage_interet_general
     valeur: oui
     note: "L'agriculture, notamment l'élevage ovin, et la revitalisation du plateau servent un intérêt général territorial."
@@ -88,8 +92,8 @@ analyse:
 fiabilite: >
   Faits vérifiés : propriété de l'État sur environ 6 300 hectares, SCTL
   constituée le 29 avril 1985 après une recherche de structure engagée dès
-  décembre 1982, détention du foncier par un bail emphytéotique de 99 ans
-  (échéance 2083), attribution de l'usage par baux de long terme, hausse du
+  décembre 1982, bail emphytéotique signé en 1985 pour 60 ans puis prolongé en
+  2013 à 99 ans (échéance 2083), attribution de l'usage par baux de long terme, hausse du
   nombre de paysan·nes d'environ 20 %. Non confirmé : modalités précises
   d'association des collectivités et du voisinage à la gouvernance.
 liens:

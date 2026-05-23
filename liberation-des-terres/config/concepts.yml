@@ -83,12 +83,8 @@ categories:
     definition: >
       Personne morale de droit civil à but non lucratif, titulaire de l'usage du
       foncier, qui organise sa gestion au quotidien : occupation, exploitation,
-      animation, gouvernance des usagers. La catégorie regroupe les organismes
-      titulaires de l'usage : l'usufruit stricto sensu (articles 578 et suivants
-      du Code civil) n'en est qu'une modalité, aux côtés du bail rural, du bail
-      emphytéotique et de la convention de mise à disposition. Typiquement :
-      association loi 1901, société civile, coopérative (SCIC), groupement
-      foncier agricole.
+      animation, gouvernance des usagers. Typiquement : association loi 1901,
+      société civile, coopérative (SCIC), groupement foncier agricole.
     formes_attendues:
       - association loi 1901
       - société civile (SCI, SCTL, société civile d'exploitation)
@@ -153,6 +149,45 @@ modeles_voisins:
     - "Stiftung trias (Allemagne) — fondation + droit de superficie"
     - "Mietshäuser Syndikat (Allemagne) — neutralisation de la propriété"
     - "Conservatoires d'espaces naturels (CEN)"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Les trois régimes du sol — cadre conceptuel
+# ─────────────────────────────────────────────────────────────────────────────
+regimes:
+  chapeau: >
+    En droit français, une même parcelle peut relever de logiques opposées.
+    La libération des terres ne crée pas un droit nouveau : elle réemploie des
+    outils de droit civil — démembrement, baux longs, statuts non lucratifs —
+    pour soustraire le foncier à la logique marchande. Cette page nomme les
+    trois régimes que l'annuaire oppose.
+  liste:
+    - id: civil_commun
+      label: "Droit civil au service de l'intérêt général et des communs"
+      outils: >
+        Démembrement (articles 544 et 578 du Code civil), fondation, fonds de
+        dotation, bail rural ou emphytéotique, association, SCIC.
+      but: >
+        Placer le foncier au service d'un usage collectif d'intérêt général et
+        l'y maintenir durablement.
+      role: "Régime de référence de l'annuaire."
+    - id: commercial
+      label: "Droit commercial : sociétés, lucrativité, spéculation"
+      outils: >
+        Société commerciale, parts ou actions librement cessibles, recherche
+        de plus-value et de dividende.
+      but: "Valoriser un capital ; le foncier y est un actif."
+      role: "Régime repoussoir — parfois neutralisé par les statuts."
+    - id: propriete_privee
+      label: "Propriété privée classique"
+      outils: "Pleine propriété individuelle (article 544 du Code civil)."
+      but: "Maîtrise et transmission patrimoniale privées."
+      role: "Point de départ ordinaire ; non référencé par l'annuaire."
+  paradoxe: >
+    Certains montages réels partent du droit commercial — Lurzaindia en société
+    en commandite par actions, le Mietshäuser Syndikat en réseau de sociétés —
+    mais en neutralisent la lucrativité par leurs statuts. La frontière entre
+    les régimes ne tient pas à la seule forme juridique, mais à l'usage qu'on
+    en fait.
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Anti-concepts — ce que l'annuaire ne référence PAS

@@ -32,11 +32,11 @@
       <span class="brand-txt"><span class="brand-name">Terres Libérées</span>
       <span class="baseline">Annuaire critique des montages de libération des terres en France.</span></span>
     </a>
-    <nav class="topnav"><a href="index.html">Accueil</a><a href="lieux.html" class='active'>Lieux</a><a href="porteurs.html">Porteurs</a><a href="usufruitiers.html">Usufruitiers</a><a href="classement.html">Classement</a><a href="grilles.html">Grilles</a><a href="modeles.html">Modèles voisins</a><a href="glossaire.html">Glossaire</a><a href="methode.html">Méthode</a></nav>
+    <nav class="topnav"><a href="index.html">Accueil</a><a href="lieux.html" class='active'>Lieux</a><a href="porteurs.html">Porteurs</a><a href="usufruitiers.html">Usufruitiers</a><a href="classement.html">Classement</a><a href="methode.html">Méthode</a></nav>
   </div>
 </header>
 <main class="wrap" id="contenu">
-<h1>Lieux</h1>
+<svg width="0" height="0" aria-hidden="true" style="position:absolute" focusable="false"><defs><g id="tri-base"><polygon class="tri-frame" points="60.0,4.8 103.6,80.4 16.4,80.4"/><polygon class="tri-grid" points="60.0,30.0 81.8,67.8 38.2,67.8"/><circle class="tri-vtx" cx="60.0" cy="4.8" r="3.5" fill="#4a7a3a"/><text class="tri-lab" x="60.0" y="4.8">A</text><circle class="tri-vtx" cx="103.6" cy="80.4" r="3.5" fill="#bc5d3a"/><text class="tri-lab" x="103.6" y="80.4">B</text><circle class="tri-vtx" cx="16.4" cy="80.4" r="3.5" fill="#36748a"/><text class="tri-lab" x="16.4" y="80.4">C</text></g></defs></svg><h1>Lieux</h1>
 <p class="lead">Lieu physique en France — ferme, domaine, hameau, écolieu, espace naturel, tiers-lieu nourricier — dont le foncier a été libéré du marché par un montage associant un porteur de nue-propriété et un usufruitier. C&#x27;est l&#x27;unité concrète que l&#x27;annuaire recense et analyse.
 <a href="methode.html">Comprendre l'Indice et les axes →</a></p>
 
@@ -50,15 +50,18 @@
     <option value="axb">Par axe B — libération des terres</option>
     <option value="axc">Par axe C — gouvernance</option>
   </select>
-  <span class="count" aria-live="polite"><b id="cnt">7</b> entrées</span>
+  <span class="count" id="cnt" aria-live="polite"><b>8</b> entrées affichées</span>
 </div>
-<div class="filter-bar">
-  <div class="filter-row"><span class="filter-lab">Palier</span>
-    <button class="fbtn active" data-fk="palier" data-fv="all">Tous</button>
-    <button class="fbtn" data-fk="palier" data-fv="abouti">Libération aboutie</button><button class="fbtn" data-fk="palier" data-fv="solide">Montage solide</button><button class="fbtn" data-fk="palier" data-fv="engage">Engagement réel</button><button class="fbtn" data-fk="palier" data-fv="partiel">Libération partielle</button><button class="fbtn" data-fk="palier" data-fv="eloigne">Éloigné du modèle</button></div>
-  <div class="filter-row"><span class="filter-lab">Montage</span><button class="fbtn active" data-fk="montage" data-fv="all">Tous</button><button class="fbtn" data-fk="montage" data-fv="propriete_publique">Propriété publique inaliénable</button><button class="fbtn" data-fk="montage" data-fv="propriete_sanctuarisee">Propriété sanctuarisée + bail de long terme</button><button class="fbtn" data-fk="montage" data-fv="propriete_collective">Propriété collective verrouillée</button></div>
-  <div class="filter-row"><span class="filter-lab">Région</span><button class="fbtn active" data-fk="region" data-fv="all">Toutes</button><button class="fbtn" data-fk="region" data-fv="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</button><button class="fbtn" data-fk="region" data-fv="Nouvelle-Aquitaine">Nouvelle-Aquitaine</button><button class="fbtn" data-fk="region" data-fv="Occitanie">Occitanie</button><button class="fbtn" data-fk="region" data-fv="Pays de la Loire">Pays de la Loire</button><button class="fbtn" data-fk="region" data-fv="Provence-Alpes-Côte d&#x27;Azur">Provence-Alpes-Côte d&#x27;Azur</button><button class="fbtn" data-fk="region" data-fv="Île-de-France">Île-de-France</button></div>
-</div>
+<details class="filter-details">
+  <summary>Filtres avancés</summary>
+  <div class="filter-bar">
+    <div class="filter-row"><span class="filter-lab">Palier</span>
+      <button class="fbtn active" data-fk="palier" data-fv="all">Tous</button>
+      <button class="fbtn" data-fk="palier" data-fv="abouti">Libération aboutie</button><button class="fbtn" data-fk="palier" data-fv="solide">Montage solide</button><button class="fbtn" data-fk="palier" data-fv="engage">Engagement réel</button><button class="fbtn" data-fk="palier" data-fv="partiel">Libération partielle</button><button class="fbtn" data-fk="palier" data-fv="eloigne">Éloigné du modèle</button></div>
+    <div class="filter-row"><span class="filter-lab">Montage</span><button class="fbtn active" data-fk="montage" data-fv="all">Tous</button><button class="fbtn" data-fk="montage" data-fv="propriete_publique">Propriété publique inaliénable</button><button class="fbtn" data-fk="montage" data-fv="propriete_collective">Propriété collective verrouillée</button><button class="fbtn" data-fk="montage" data-fv="propriete_sanctuarisee">Propriété sanctuarisée + bail de long terme</button></div>
+    <div class="filter-row"><span class="filter-lab">Région</span><button class="fbtn active" data-fk="region" data-fv="all">Toutes</button><button class="fbtn" data-fk="region" data-fv="Auvergne-Rhône-Alpes">Auvergne-Rhône-Alpes</button><button class="fbtn" data-fk="region" data-fv="Nouvelle-Aquitaine">Nouvelle-Aquitaine</button><button class="fbtn" data-fk="region" data-fv="Occitanie">Occitanie</button><button class="fbtn" data-fk="region" data-fv="Pays de la Loire">Pays de la Loire</button><button class="fbtn" data-fk="region" data-fv="Provence-Alpes-Côte d&#x27;Azur">Provence-Alpes-Côte d&#x27;Azur</button><button class="fbtn" data-fk="region" data-fv="Île-de-France">Île-de-France</button></div>
+  </div>
+</details>
 <p class="axe-legend cat-legend">Profil tri-axes :
 <span class="axe-dot axe-A"></span> A — Intérêt général
 <span class="axe-dot axe-B"></span> B — Libération des terres
@@ -66,223 +69,109 @@
 <ul class="cards" id="resultats"><li class="card" data-idl="95" data-nom="Terres du Larzac" data-palier="abouti" data-region="Occitanie" data-montage="propriete_publique" data-axa="100" data-axb="100" data-axc="86">
   <div class="card-head">
     <span class="tag tag-lieu">Lieu</span>
-    <span class="idl-badge" style="--pal:#2f6b34"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="5.0" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">95</text></svg><span class="visually-hidden">Indice de libération 95 sur 100, Libération aboutie.</span><span class="idl-pal">Libération aboutie</span></span>
+    <span class="idl-badge" style="--pal:#356026"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="5.0" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">95</text></svg><span class="visually-hidden">Indice de libération 95 sur 100, Libération aboutie.</span><span class="idl-pal">Libération aboutie</span></span>
   </div>
-  <h3><a href="l/larzac.html">Terres du Larzac</a></h3>
+  <h3><a class="card-link" href="l/larzac.html">Terres du Larzac</a></h3>
   <p class="card-sub">Plateau agricole géré par une société civile de droit privé</p>
   <p class="card-meta">La Cavalerie / Millau · Aveyron (12) · Propriété publique inaliénable</p>
   <div class="card-viz">
-    <svg class="tri compact" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><polygon class="tri-frame" points="60.0,4.8 103.6,80.4 16.4,80.4"/><polygon class="tri-grid" points="60.0,30.0 81.8,67.8 38.2,67.8"/><polygon class="tri-fill" points="60.0,4.8 103.6,80.4 22.5,76.9"/><circle class="tri-vtx" cx="60.0" cy="4.8" r="5" fill="#4a7a3a"/><text class="tri-lab" x="60.0" y="4.8">A</text><circle class="tri-vtx" cx="103.6" cy="80.4" r="5" fill="#bc5d3a"/><text class="tri-lab" x="103.6" y="80.4">B</text><circle class="tri-vtx" cx="16.4" cy="80.4" r="5" fill="#36748a"/><text class="tri-lab" x="16.4" y="80.4">C</text></svg>
-    <div class="axis-block compact"><div class="axis-row">
-  <span class="axis-label" title="Le montage est-il non lucratif, à gestion désintéressée, et son usage sert-il un intérêt qui dépasse le cercle de ses occupants ?">A · Intérêt général</span>
-  <span class="axis-track"><span class="axis-fill " style="width:100%;background:#4a7a3a"></span></span>
-  <span class="axis-val">100</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Le foncier est-il réellement sorti du marché spéculatif, et la sortie est-elle irréversible ?">B · Libération des terres</span>
-  <span class="axis-track"><span class="axis-fill " style="width:100%;background:#bc5d3a"></span></span>
-  <span class="axis-val">100</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Les usager·es et les parties prenantes décident-ils collectivement, et la gouvernance se renouvelle-t-elle ?">C · Gouvernance participative</span>
-  <span class="axis-track"><span class="axis-fill " style="width:86%;background:#36748a"></span></span>
-  <span class="axis-val">86</span>
-</div></div>
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 100, libération des terres 100, gouvernance participative 86"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,4.8 103.6,80.4 22.5,76.9"/></svg>
   </div>
-</li><li class="card" data-idl="88" data-nom="Fermes Terre de Liens" data-palier="abouti" data-region="" data-montage="propriete_sanctuarisee" data-axa="100" data-axb="100" data-axc="64">
+</li><li class="card" data-idl="90" data-nom="Le Village Vertical" data-palier="abouti" data-region="Auvergne-Rhône-Alpes" data-montage="propriete_collective" data-axa="100" data-axb="100" data-axc="71">
   <div class="card-head">
     <span class="tag tag-lieu">Lieu</span>
-    <span class="idl-badge" style="--pal:#2f6b34"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="12.1" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">88</text></svg><span class="visually-hidden">Indice de libération 88 sur 100, Libération aboutie.</span><span class="idl-pal">Libération aboutie</span></span>
+    <span class="idl-badge" style="--pal:#356026"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="10.1" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">90</text></svg><span class="visually-hidden">Indice de libération 90 sur 100, Libération aboutie.</span><span class="idl-pal">Libération aboutie</span></span>
   </div>
-  <h3><a href="l/reseau-terre-de-liens.html">Fermes Terre de Liens</a></h3>
+  <h3><a class="card-link" href="l/village-vertical.html">Le Village Vertical</a></h3>
+  <p class="card-sub">Première coopérative d&#x27;habitants de France au XXIe siècle</p>
+  <p class="card-meta">Villeurbanne · Rhône (69) · Propriété collective verrouillée</p>
+  <div class="card-viz">
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 100, libération des terres 100, gouvernance participative 71"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,4.8 103.6,80.4 29.0,73.1"/></svg>
+  </div>
+</li><li class="card" data-idl="84" data-nom="Fermes Terre de Liens" data-palier="solide" data-region="" data-montage="propriete_sanctuarisee" data-axa="100" data-axb="88" data-axc="64">
+  <div class="card-head">
+    <span class="tag tag-lieu">Lieu</span>
+    <span class="idl-badge" style="--pal:#4a7a3a"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="16.1" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">84</text></svg><span class="visually-hidden">Indice de libération 84 sur 100, Montage solide.</span><span class="idl-pal">Montage solide</span></span>
+  </div>
+  <h3><a class="card-link" href="l/reseau-terre-de-liens.html">Fermes Terre de Liens</a></h3>
   <p class="card-sub">Réseau national de fermes sur foncier sanctuarisé</p>
   <p class="card-meta">Réseau national · Propriété sanctuarisée + bail de long terme</p>
   <div class="card-viz">
-    <svg class="tri compact" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><polygon class="tri-frame" points="60.0,4.8 103.6,80.4 16.4,80.4"/><polygon class="tri-grid" points="60.0,30.0 81.8,67.8 38.2,67.8"/><polygon class="tri-fill" points="60.0,4.8 103.6,80.4 32.1,71.3"/><circle class="tri-vtx" cx="60.0" cy="4.8" r="5" fill="#4a7a3a"/><text class="tri-lab" x="60.0" y="4.8">A</text><circle class="tri-vtx" cx="103.6" cy="80.4" r="5" fill="#bc5d3a"/><text class="tri-lab" x="103.6" y="80.4">B</text><circle class="tri-vtx" cx="16.4" cy="80.4" r="5" fill="#36748a"/><text class="tri-lab" x="16.4" y="80.4">C</text></svg>
-    <div class="axis-block compact"><div class="axis-row">
-  <span class="axis-label" title="Le montage est-il non lucratif, à gestion désintéressée, et son usage sert-il un intérêt qui dépasse le cercle de ses occupants ?">A · Intérêt général</span>
-  <span class="axis-track"><span class="axis-fill " style="width:100%;background:#4a7a3a"></span></span>
-  <span class="axis-val">100</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Le foncier est-il réellement sorti du marché spéculatif, et la sortie est-elle irréversible ?">B · Libération des terres</span>
-  <span class="axis-track"><span class="axis-fill " style="width:100%;background:#bc5d3a"></span></span>
-  <span class="axis-val">100</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Les usager·es et les parties prenantes décident-ils collectivement, et la gouvernance se renouvelle-t-elle ?">C · Gouvernance participative</span>
-  <span class="axis-track"><span class="axis-fill " style="width:64%;background:#36748a"></span></span>
-  <span class="axis-val">64</span>
-</div></div>
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 100, libération des terres 88, gouvernance participative 64"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,4.8 98.4,77.4 32.1,71.3"/></svg>
   </div>
-</li><li class="card" data-idl="70" data-nom="Longo Maï" data-palier="engage" data-region="Provence-Alpes-Côte d&#x27;Azur" data-montage="propriete_sanctuarisee" data-axa="64" data-axb="90" data-axc="57">
+</li><li class="card" data-idl="73" data-nom="Bergerie de Villarceaux" data-palier="solide" data-region="Île-de-France" data-montage="propriete_sanctuarisee" data-axa="86" data-axb="81" data-axc="0">
   <div class="card-head">
     <span class="tag tag-lieu">Lieu</span>
-    <span class="idl-badge" style="--pal:#b08431"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="30.2" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">70</text></svg><span class="visually-hidden">Indice de libération 70 sur 100, Engagement réel.</span><span class="idl-pal">Engagement réel</span></span>
+    <span class="idl-badge" style="--pal:#4a7a3a"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="27.1" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">73</text></svg><span class="visually-hidden">Indice de libération 73 sur 100, Montage solide.</span><span class="idl-pal">Montage solide</span></span>
   </div>
-  <h3><a href="l/longo-mai.html">Longo Maï</a></h3>
-  <p class="card-sub">Réseau de coopératives autogérées sur foncier sanctuarisé</p>
-  <p class="card-meta">Limans · Alpes-de-Haute-Provence (04) · Propriété sanctuarisée + bail de long terme</p>
-  <div class="card-viz">
-    <svg class="tri compact" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><polygon class="tri-frame" points="60.0,4.8 103.6,80.4 16.4,80.4"/><polygon class="tri-grid" points="60.0,30.0 81.8,67.8 38.2,67.8"/><polygon class="tri-fill" points="60.0,22.9 99.3,77.9 35.1,69.6"/><circle class="tri-vtx" cx="60.0" cy="4.8" r="5" fill="#4a7a3a"/><text class="tri-lab" x="60.0" y="4.8">A</text><circle class="tri-vtx" cx="103.6" cy="80.4" r="5" fill="#bc5d3a"/><text class="tri-lab" x="103.6" y="80.4">B</text><circle class="tri-vtx" cx="16.4" cy="80.4" r="5" fill="#36748a"/><text class="tri-lab" x="16.4" y="80.4">C</text></svg>
-    <div class="axis-block compact"><div class="axis-row">
-  <span class="axis-label" title="Le montage est-il non lucratif, à gestion désintéressée, et son usage sert-il un intérêt qui dépasse le cercle de ses occupants ?">A · Intérêt général</span>
-  <span class="axis-track"><span class="axis-fill " style="width:64%;background:#4a7a3a"></span></span>
-  <span class="axis-val">64</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Le foncier est-il réellement sorti du marché spéculatif, et la sortie est-elle irréversible ?">B · Libération des terres</span>
-  <span class="axis-track"><span class="axis-fill " style="width:90%;background:#bc5d3a"></span></span>
-  <span class="axis-val">90</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Les usager·es et les parties prenantes décident-ils collectivement, et la gouvernance se renouvelle-t-elle ?">C · Gouvernance participative</span>
-  <span class="axis-track"><span class="axis-fill " style="width:57%;background:#36748a"></span></span>
-  <span class="axis-val">57</span>
-</div></div>
-  </div>
-</li><li class="card" data-idl="70" data-nom="Lurzaindia — terres du Pays Basque" data-palier="engage" data-region="Nouvelle-Aquitaine" data-montage="propriete_sanctuarisee" data-axa="86" data-axb="85" data-axc="50">
-  <div class="card-head">
-    <span class="tag tag-lieu">Lieu</span>
-    <span class="idl-badge" style="--pal:#b08431"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="30.2" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">70</text></svg><span class="visually-hidden">Indice de libération 70 sur 100, Engagement réel.</span><span class="idl-pal">Engagement réel</span></span>
-  </div>
-  <h3><a href="l/lurzaindia.html">Lurzaindia — terres du Pays Basque</a></h3>
-  <p class="card-sub">Foncière citoyenne d&#x27;installation paysanne</p>
-  <p class="card-meta">Pays Basque · Pyrénées-Atlantiques (64) · Propriété sanctuarisée + bail de long terme</p>
-  <div class="card-viz">
-    <svg class="tri compact" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><polygon class="tri-frame" points="60.0,4.8 103.6,80.4 16.4,80.4"/><polygon class="tri-grid" points="60.0,30.0 81.8,67.8 38.2,67.8"/><polygon class="tri-fill" points="60.0,11.9 97.1,76.6 38.2,67.8"/><circle class="tri-vtx" cx="60.0" cy="4.8" r="5" fill="#4a7a3a"/><text class="tri-lab" x="60.0" y="4.8">A</text><circle class="tri-vtx" cx="103.6" cy="80.4" r="5" fill="#bc5d3a"/><text class="tri-lab" x="103.6" y="80.4">B</text><circle class="tri-vtx" cx="16.4" cy="80.4" r="5" fill="#36748a"/><text class="tri-lab" x="16.4" y="80.4">C</text></svg>
-    <div class="axis-block compact"><div class="axis-row">
-  <span class="axis-label" title="Le montage est-il non lucratif, à gestion désintéressée, et son usage sert-il un intérêt qui dépasse le cercle de ses occupants ?">A · Intérêt général</span>
-  <span class="axis-track"><span class="axis-fill " style="width:86%;background:#4a7a3a"></span></span>
-  <span class="axis-val">86</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Le foncier est-il réellement sorti du marché spéculatif, et la sortie est-elle irréversible ?">B · Libération des terres</span>
-  <span class="axis-track"><span class="axis-fill " style="width:85%;background:#bc5d3a"></span></span>
-  <span class="axis-val">85</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Les usager·es et les parties prenantes décident-ils collectivement, et la gouvernance se renouvelle-t-elle ?">C · Gouvernance participative</span>
-  <span class="axis-track"><span class="axis-fill " style="width:50%;background:#36748a"></span></span>
-  <span class="axis-val">50</span>
-</div></div>
-  </div>
-</li><li class="card" data-idl="68" data-nom="ZAD de Notre-Dame-des-Landes" data-palier="engage" data-region="Pays de la Loire" data-montage="propriete_sanctuarisee" data-axa="100" data-axb="75" data-axc="50">
-  <div class="card-head">
-    <span class="tag tag-lieu">Lieu</span>
-    <span class="idl-badge" style="--pal:#b08431"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="32.2" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">68</text></svg><span class="visually-hidden">Indice de libération 68 sur 100, Engagement réel.</span><span class="idl-pal">Engagement réel</span></span>
-  </div>
-  <h3><a href="l/nddl.html">ZAD de Notre-Dame-des-Landes</a></h3>
-  <p class="card-sub">Bocage acquis par un fonds de dotation après l&#x27;abandon de l&#x27;aéroport</p>
-  <p class="card-meta">Notre-Dame-des-Landes · Loire-Atlantique (44) · Propriété sanctuarisée + bail de long terme</p>
-  <div class="card-viz">
-    <svg class="tri compact" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><polygon class="tri-frame" points="60.0,4.8 103.6,80.4 16.4,80.4"/><polygon class="tri-grid" points="60.0,30.0 81.8,67.8 38.2,67.8"/><polygon class="tri-fill" points="60.0,4.8 92.7,74.1 38.2,67.8"/><circle class="tri-vtx" cx="60.0" cy="4.8" r="5" fill="#4a7a3a"/><text class="tri-lab" x="60.0" y="4.8">A</text><circle class="tri-vtx" cx="103.6" cy="80.4" r="5" fill="#bc5d3a"/><text class="tri-lab" x="103.6" y="80.4">B</text><circle class="tri-vtx" cx="16.4" cy="80.4" r="5" fill="#36748a"/><text class="tri-lab" x="16.4" y="80.4">C</text></svg>
-    <div class="axis-block compact"><div class="axis-row">
-  <span class="axis-label" title="Le montage est-il non lucratif, à gestion désintéressée, et son usage sert-il un intérêt qui dépasse le cercle de ses occupants ?">A · Intérêt général</span>
-  <span class="axis-track"><span class="axis-fill " style="width:100%;background:#4a7a3a"></span></span>
-  <span class="axis-val">100</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Le foncier est-il réellement sorti du marché spéculatif, et la sortie est-elle irréversible ?">B · Libération des terres</span>
-  <span class="axis-track"><span class="axis-fill " style="width:75%;background:#bc5d3a"></span></span>
-  <span class="axis-val">75</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Les usager·es et les parties prenantes décident-ils collectivement, et la gouvernance se renouvelle-t-elle ?">C · Gouvernance participative</span>
-  <span class="axis-track"><span class="axis-fill " style="width:50%;background:#36748a"></span></span>
-  <span class="axis-val">50</span>
-</div></div>
-  </div>
-</li><li class="card" data-idl="68" data-nom="Bergerie de Villarceaux" data-palier="engage" data-region="Île-de-France" data-montage="propriete_sanctuarisee" data-axa="86" data-axb="75" data-axc="0">
-  <div class="card-head">
-    <span class="tag tag-lieu">Lieu</span>
-    <span class="idl-badge" style="--pal:#b08431"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="32.2" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">68</text></svg><span class="visually-hidden">Indice de libération 68 sur 100, Engagement réel.</span><span class="idl-pal">Engagement réel</span></span>
-  </div>
-  <h3><a href="l/villarceaux.html">Bergerie de Villarceaux</a></h3>
+  <h3><a class="card-link" href="l/villarceaux.html">Bergerie de Villarceaux</a></h3>
   <p class="card-sub">Domaine agroécologique du Vexin français</p>
   <p class="card-meta">Chaussy · Val-d&#x27;Oise (95) · Propriété sanctuarisée + bail de long terme</p>
   <div class="card-viz">
-    <svg class="tri compact" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><polygon class="tri-frame" points="60.0,4.8 103.6,80.4 16.4,80.4"/><polygon class="tri-grid" points="60.0,30.0 81.8,67.8 38.2,67.8"/><polygon class="tri-fill" points="60.0,11.9 92.7,74.1 60.0,55.2"/><circle class="tri-vtx" cx="60.0" cy="4.8" r="5" fill="#4a7a3a"/><text class="tri-lab" x="60.0" y="4.8">A</text><circle class="tri-vtx" cx="103.6" cy="80.4" r="5" fill="#bc5d3a"/><text class="tri-lab" x="103.6" y="80.4">B</text><circle class="tri-vtx tri-na" cx="16.4" cy="80.4" r="5" fill="#36748a"/><text class="tri-lab" x="16.4" y="80.4">C</text></svg>
-    <div class="axis-block compact"><div class="axis-row">
-  <span class="axis-label" title="Le montage est-il non lucratif, à gestion désintéressée, et son usage sert-il un intérêt qui dépasse le cercle de ses occupants ?">A · Intérêt général</span>
-  <span class="axis-track"><span class="axis-fill " style="width:86%;background:#4a7a3a"></span></span>
-  <span class="axis-val">86</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Le foncier est-il réellement sorti du marché spéculatif, et la sortie est-elle irréversible ?">B · Libération des terres</span>
-  <span class="axis-track"><span class="axis-fill " style="width:75%;background:#bc5d3a"></span></span>
-  <span class="axis-val">75</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Les usager·es et les parties prenantes décident-ils collectivement, et la gouvernance se renouvelle-t-elle ?">C · Gouvernance participative</span>
-  <span class="axis-track"><span class="axis-fill axis-na" style="width:0%;background:#36748a"></span></span>
-  <span class="axis-val">n.r.</span>
-</div></div>
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 86, libération des terres 81, gouvernance participative non renseigné"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,11.9 95.4,75.6 60.0,55.2"/><line class="tri-edge-na" x1="95.4" y1="75.6" x2="60.0" y2="55.2"/><line class="tri-edge-na" x1="60.0" y1="55.2" x2="60.0" y2="11.9"/></svg>
   </div>
-</li><li class="card" data-idl="62" data-nom="Le Hameau des Buis" data-palier="partiel" data-region="Auvergne-Rhône-Alpes" data-montage="propriete_collective" data-axa="86" data-axb="60" data-axc="50">
+</li><li class="card" data-idl="72" data-nom="Le Hameau des Buis" data-palier="solide" data-region="Auvergne-Rhône-Alpes" data-montage="propriete_collective" data-axa="86" data-axb="58" data-axc="80">
   <div class="card-head">
     <span class="tag tag-lieu">Lieu</span>
-    <span class="idl-badge" style="--pal:#bc5d3a"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="38.2" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">62</text></svg><span class="visually-hidden">Indice de libération 62 sur 100, Libération partielle.</span><span class="idl-pal">Libération partielle</span></span>
+    <span class="idl-badge" style="--pal:#4a7a3a"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="28.1" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">72</text></svg><span class="visually-hidden">Indice de libération 72 sur 100, Montage solide.</span><span class="idl-pal">Montage solide</span></span>
   </div>
-  <h3><a href="l/hameau-des-buis.html">Le Hameau des Buis</a></h3>
+  <h3><a class="card-link" href="l/hameau-des-buis.html">Le Hameau des Buis</a></h3>
   <p class="card-sub">Habitat intergénérationnel et ferme-école en Ardèche</p>
   <p class="card-meta">Lablachère · Ardèche (07) · Propriété collective verrouillée</p>
   <div class="card-viz">
-    <svg class="tri compact" viewBox="0 0 120 110" aria-hidden="true" focusable="false"><polygon class="tri-frame" points="60.0,4.8 103.6,80.4 16.4,80.4"/><polygon class="tri-grid" points="60.0,30.0 81.8,67.8 38.2,67.8"/><polygon class="tri-fill" points="60.0,11.9 86.2,70.3 38.2,67.8"/><circle class="tri-vtx" cx="60.0" cy="4.8" r="5" fill="#4a7a3a"/><text class="tri-lab" x="60.0" y="4.8">A</text><circle class="tri-vtx" cx="103.6" cy="80.4" r="5" fill="#bc5d3a"/><text class="tri-lab" x="103.6" y="80.4">B</text><circle class="tri-vtx" cx="16.4" cy="80.4" r="5" fill="#36748a"/><text class="tri-lab" x="16.4" y="80.4">C</text></svg>
-    <div class="axis-block compact"><div class="axis-row">
-  <span class="axis-label" title="Le montage est-il non lucratif, à gestion désintéressée, et son usage sert-il un intérêt qui dépasse le cercle de ses occupants ?">A · Intérêt général</span>
-  <span class="axis-track"><span class="axis-fill " style="width:86%;background:#4a7a3a"></span></span>
-  <span class="axis-val">86</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Le foncier est-il réellement sorti du marché spéculatif, et la sortie est-elle irréversible ?">B · Libération des terres</span>
-  <span class="axis-track"><span class="axis-fill " style="width:60%;background:#bc5d3a"></span></span>
-  <span class="axis-val">60</span>
-</div><div class="axis-row">
-  <span class="axis-label" title="Les usager·es et les parties prenantes décident-ils collectivement, et la gouvernance se renouvelle-t-elle ?">C · Gouvernance participative</span>
-  <span class="axis-track"><span class="axis-fill " style="width:50%;background:#36748a"></span></span>
-  <span class="axis-val">50</span>
-</div></div>
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 86, libération des terres 58, gouvernance participative 80"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,11.9 85.3,69.8 25.1,75.4"/></svg>
+  </div>
+</li><li class="card" data-idl="71" data-nom="Longo Maï" data-palier="engage" data-region="Provence-Alpes-Côte d&#x27;Azur" data-montage="propriete_sanctuarisee" data-axa="64" data-axb="92" data-axc="57">
+  <div class="card-head">
+    <span class="tag tag-lieu">Lieu</span>
+    <span class="idl-badge" style="--pal:#b08431"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="29.2" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">71</text></svg><span class="visually-hidden">Indice de libération 71 sur 100, Engagement réel.</span><span class="idl-pal">Engagement réel</span></span>
+  </div>
+  <h3><a class="card-link" href="l/longo-mai.html">Longo Maï</a></h3>
+  <p class="card-sub">Réseau de coopératives autogérées sur foncier sanctuarisé</p>
+  <p class="card-meta">Limans · Alpes-de-Haute-Provence (04) · Propriété sanctuarisée + bail de long terme</p>
+  <div class="card-viz">
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 64, libération des terres 92, gouvernance participative 57"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,22.9 100.2,78.4 35.1,69.6"/></svg>
+  </div>
+</li><li class="card" data-idl="70" data-nom="ZAD de Notre-Dame-des-Landes" data-palier="engage" data-region="Pays de la Loire" data-montage="propriete_sanctuarisee" data-axa="100" data-axb="81" data-axc="50">
+  <div class="card-head">
+    <span class="tag tag-lieu">Lieu</span>
+    <span class="idl-badge" style="--pal:#b08431"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="30.2" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">70</text></svg><span class="visually-hidden">Indice de libération 70 sur 100, Engagement réel.</span><span class="idl-pal">Engagement réel</span></span>
+  </div>
+  <h3><a class="card-link" href="l/nddl.html">ZAD de Notre-Dame-des-Landes</a></h3>
+  <p class="card-sub">Bocage acquis par un fonds de dotation après l&#x27;abandon de l&#x27;aéroport</p>
+  <p class="card-meta">Notre-Dame-des-Landes · Loire-Atlantique (44) · Propriété sanctuarisée + bail de long terme</p>
+  <div class="card-viz">
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 100, libération des terres 81, gouvernance participative 50"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,4.8 95.4,75.6 38.2,67.8"/></svg>
+  </div>
+</li><li class="card" data-idl="64" data-nom="Lurzaindia — terres du Pays Basque" data-palier="engage" data-region="Nouvelle-Aquitaine" data-montage="propriete_sanctuarisee" data-axa="86" data-axb="65" data-axc="50">
+  <div class="card-head">
+    <span class="tag tag-lieu">Lieu</span>
+    <span class="idl-badge" style="--pal:#b08431"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="36.2" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">64</text></svg><span class="visually-hidden">Indice de libération 64 sur 100, Engagement réel.</span><span class="idl-pal">Engagement réel</span></span>
+  </div>
+  <h3><a class="card-link" href="l/lurzaindia.html">Lurzaindia — terres du Pays Basque</a></h3>
+  <p class="card-sub">Foncière citoyenne d&#x27;installation paysanne</p>
+  <p class="card-meta">Pays Basque · Pyrénées-Atlantiques (64) · Propriété sanctuarisée + bail de long terme</p>
+  <div class="card-viz">
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 86, libération des terres 65, gouvernance participative 50"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,11.9 88.4,71.6 38.2,67.8"/></svg>
   </div>
 </li></ul>
 <p class="no-result" id="noresult" role="status" hidden>Aucune entrée ne correspond aux filtres choisis.</p>
-<script>
-(function(){
- const q=document.getElementById('q'),sort=document.getElementById('sort'),
-   cnt=document.getElementById('cnt'),nores=document.getElementById('noresult'),
-   grid=document.querySelector('.cards'),
-   cards=[...document.querySelectorAll('.card')],
-   fbtns=[...document.querySelectorAll('.fbtn')];
- const active={};
- fbtns.forEach(b=>{const k=b.dataset.fk;if(b.classList.contains('active'))active[k]=b.dataset.fv;});
- function apply(){
-  const v=q.value.toLowerCase().trim();let n=0;
-  cards.forEach(c=>{
-   let ok=c.dataset.nom.toLowerCase().includes(v);
-   for(const k in active){
-    if(active[k]&&active[k]!=='all'&&c.dataset[k]!==active[k]) ok=false;
-   }
-   c.style.display=ok?'':'none';if(ok)n++;
-  });
-  cnt.textContent=n;nores.hidden=n!==0;
- }
- function doSort(){
-  const key=sort.value;
-  const vis=cards.slice().sort((a,b)=>{
-   if(key==='nom') return a.dataset.nom.localeCompare(b.dataset.nom,'fr');
-   return (parseFloat(b.dataset[key])||0)-(parseFloat(a.dataset[key])||0);
-  });
-  vis.forEach(c=>grid.appendChild(c));
- }
- q.addEventListener('input',apply);
- sort.addEventListener('change',doSort);
- fbtns.forEach(b=>b.addEventListener('click',()=>{
-  const k=b.dataset.fk;
-  document.querySelectorAll('.fbtn[data-fk="'+k+'"]').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active');active[k]=b.dataset.fv;apply();
- }));
-})();
-</script>
+<p class="cat-foot"><a href="suggerer.html">Un lieu manque ou une fiche est incomplète ? Signalez-le →</a></p>
+<script defer src="assets/list.js"></script>
 </main>
 <footer class="footer">
   <div class="wrap">
     <p>Terres Libérées — annuaire critique des montages de libération des terres en
     France. Données factuelles sourcées ; l'Indice de libération est une grille
     d'analyse explicite, non un jugement de valeur.</p>
-    <p class="foot-links"><a href="methode.html">Méthode &amp; sources</a> ·
+    <p class="foot-links"><a href="methode.html">Méthode</a> ·
+    <a href="regimes.html">Trois régimes</a> ·
     <a href="grilles.html">Grilles d'analyse</a> ·
+    <a href="modeles.html">Modèles voisins</a> ·
     <a href="glossaire.html">Glossaire</a> ·
     <a href="suggerer.html">Proposer un lieu</a> ·
     <a href="data.json">Données ouvertes (JSON)</a></p>
-    <p>Fork de « Résidence » · site statique généré automatiquement le
-    2026-05-23.</p>
+    <p>Site statique, généré automatiquement le 23 mai 2026.</p>
   </div>
 </footer>
 </body>

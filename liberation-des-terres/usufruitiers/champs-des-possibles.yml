@@ -1,0 +1,116 @@
+uid: champs-des-possibles
+categorie: usufruitier
+nom: "Les Champs des Possibles"
+sous_titre: "Couveuse et coopérative d'activités agricoles en Île-de-France"
+statut_fiche: publie
+forme_juridique: "Société anonyme coopérative (depuis juin 2024 ; SCIC depuis 2016, association depuis 2009)"
+localisation: null
+annee: 2009
+url: "https://www.leschampsdespossibles.fr/"
+resume: >
+  Couveuse et coopérative d'activités agricoles d'Île-de-France, créée en
+  association en 2009, transformée en société coopérative d'intérêt collectif
+  (SCIC) en 2016, puis en société anonyme coopérative en juin 2024. Membre
+  fondateur du réseau RENETA et du collectif francilien Abiosol, elle exploite
+  trois fermes d'accueil de 2 à 5 hectares en périurbain francilien et organise
+  un usage transitoire du foncier — espace-test — pour des porteur·ses de
+  projet, sous forme d'un test d'activité « immersion » d'un à trois ans avec
+  mise à disposition de foncier, de matériel et d'un cadre juridique.
+montage:
+  type: propriete_collective
+  nu_proprietaire: "Variable : foncier des fermes d'accueil mis à disposition, souvent déjà sorti du marché en amont"
+  usufruitier: "Titulaire de l'usage : Les Champs des Possibles, qui héberge à son tour les porteur·ses de projet en test d'activité"
+  description: >
+    Les Champs des Possibles n'est pas un porteur foncier : la coopérative
+    organise un usage transitoire du foncier de ses fermes d'accueil. Elle met
+    à disposition de porteur·ses de projet une parcelle, du matériel et un
+    cadre juridique pour tester une activité agricole pendant un à trois ans,
+    avant une installation pérenne. Le foncier mobilisé est souvent un terrain
+    déjà sorti du marché en amont ; la coopérative en organise l'usage
+    transitoire.
+purete_juridique:
+  niveau: societaire_solidaire
+  commentaire: >
+    Société anonyme coopérative à finalité d'intérêt collectif ; forme
+    coopérative encadrant la lucrativité, l'usage organisé étant transitoire.
+grille:
+  - critere: personne_morale_civile
+    valeur: oui
+    note: "Les Champs des Possibles est une société coopérative relevant de l'économie sociale et solidaire, personne morale non lucrative."
+  - critere: objet_ig
+    valeur: oui
+    note: "L'objet — faciliter l'installation agricole par le test d'activité — relève d'un intérêt général agricole et de renouvellement des générations."
+  - critere: non_lucrativite_effective
+    valeur: partiel
+    note: "La forme coopérative encadre la lucrativité, mais une rémunération modérée du capital n'est pas exclue par construction."
+  - critere: public_non_restreint
+    valeur: oui
+    note: "Le test d'activité est ouvert à des porteur·ses de projet variés, souvent non issu·es du milieu agricole, bien au-delà d'un cercle restreint."
+  - critere: duree_usage
+    valeur: partiel
+    note: "La coopérative organise par construction un usage de courte durée — un à trois ans de test — non un usage foncier durable ; la durée longue relève du foncier libéré en amont."
+  - critere: clauses_usage
+    valeur: partiel
+    note: "Le cadre du test inscrit un accompagnement et des engagements de pratiques, mais les clauses environnementales formelles dépendent du foncier mobilisé."
+  - critere: articulation_porteur
+    valeur: partiel
+    note: "La coopérative s'articule à des porteurs de foncier variés ; cette articulation est multi-partenariale et non uniforme."
+  - critere: non_appropriation
+    valeur: oui
+    note: "Le porteur de projet en test ne peut ni revendre ni capter la valeur du foncier : le test est transitoire et n'ouvre aucun droit de propriété."
+  - critere: parts_non_cessibles
+    valeur: partiel
+    note: "La société coopérative encadre la cession des parts par sa forme, mais le plafonnement de leur prix de cession n'est pas documenté ; surtout, la coopérative n'est pas propriétaire du foncier."
+  - critere: une_voix
+    valeur: oui
+    note: "La forme coopérative repose sur le principe « une personne, une voix », sans pouvoir proportionnel au capital."
+  - critere: usagers_decident
+    valeur: partiel
+    note: "Les sociétaires animent la coopérative, mais la place décisionnelle des porteur·ses de projet en test n'est pas détaillée."
+  - critere: ouverture_entrants
+    valeur: oui
+    note: "L'espace-test est par vocation un dispositif d'accueil de nouveaux entrant·es dans le métier agricole."
+  - critere: transparence_interne
+    valeur: partiel
+    note: "La coopérative documente publiquement son activité, mais le détail de sa transparence comptable n'est pas documenté."
+  - critere: devolution_usufruitier
+    valeur: inconnu
+    note: "Le sort de l'actif de la coopérative en cas de dissolution n'est pas documenté par les sources consultées."
+analyse:
+  forces:
+    - "Espace-test concret comblant l'amont de l'installation agricole en périurbain francilien."
+    - "Membre fondateur de RENETA et du collectif Abiosol, fortement ancré localement."
+    - "Forme coopérative « une personne, une voix » consolidée par étapes statutaires."
+  fragilites:
+    - "Organise un usage transitoire, non une sécurisation foncière durable."
+    - "Forme coopérative : non-lucrativité dépendante des clauses statutaires."
+    - "Place des porteur·ses de projet dans la gouvernance non documentée."
+  leviers:
+    - "Articuler systématiquement le test d'activité à un foncier déjà libéré du marché."
+    - "Inscrire des clauses de pratiques agroécologiques dans les conventions de test."
+    - "Associer les porteur·ses de projet à la gouvernance de la coopérative."
+  synthese: >
+    Les Champs des Possibles organise un usage transitoire du foncier
+    périurbain francilien pour faire émerger de nouvelles installations. Comme
+    tout espace-test, sa note sur l'axe de la libération des terres est
+    attendue : il prépare l'installation plus qu'il ne sort le foncier du marché.
+fiabilite: >
+  Faits vérifiés (sources Les Champs des Possibles, RENETA et Le Labo de l'ESS,
+  consultées en mai 2026) : structure créée en association en 2009, transformée
+  en SCIC en 2016 puis en société anonyme coopérative en juin 2024, membre
+  fondateur du réseau RENETA et du collectif francilien Abiosol, exploitation
+  de trois fermes d'accueil de 2 à 5 hectares en périurbain francilien, test
+  d'activité « immersion » d'un à trois ans avec mise à disposition de foncier,
+  de matériel et d'un cadre juridique. Non confirmé : place décisionnelle des
+  porteur·ses de projet, clause de dévolution, détail des comptes.
+liens:
+  porteurs: []
+  usufruitiers: []
+  lieux: []
+sources:
+  - titre: "Les Champs des Possibles — La coopérative"
+    url: "https://www.leschampsdespossibles.fr/la-cooperative/"
+  - titre: "RENETA — Les Champs des Possibles"
+    url: "https://reneta.fr/Les-Champs-des-Possibles"
+  - titre: "Le Labo de l'ESS — Les Champs des Possibles, donner la possibilité de tester l'agriculture"
+    url: "https://www.lelabo-ess.org/les-champs-des-possibles-donner-la-possibilite-de-tester-l-agriculture"

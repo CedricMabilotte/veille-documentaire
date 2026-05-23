@@ -21,7 +21,7 @@ montage:
     droit français n'est pas en cause : il s'agit d'une propriété sanctuarisée en
     fondation.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
     Fondation non lucrative assurant une détention inaliénable du foncier, mais
     relevant du droit suisse et non du droit français.
@@ -29,6 +29,9 @@ grille:
   - critere: forme_non_lucrative
     valeur: oui
     note: "Le Fonds de Terre Européenne est une fondation, forme structurellement non lucrative."
+  - critere: non_lucrativite_effective
+    valeur: oui
+    note: "Une fondation n'a pas de capital social appropriable : aucune rémunération du capital, ni dividende, ni plus-value distribuée."
   - critere: agrement_ig
     valeur: partiel
     note: "La fondation poursuit une finalité d'intérêt général, mais aucune reconnaissance au regard du droit français n'est documentée."
@@ -41,6 +44,9 @@ grille:
   - critere: inalienabilite
     valeur: oui
     note: "La fondation détient les terres de façon explicitement inaliénable."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Une fondation n'a ni capital social ni parts : il n'existe aucun titre appropriable, donc aucune captation possible de la valeur foncière."
   - critere: nature_protectrice
     valeur: oui
     note: "Une fondation se situe en haut de l'échelle de protection foncière."

@@ -3,16 +3,16 @@
     "uid": "hameau-des-buis",
     "nom": "Le Hameau des Buis",
     "categorie": "lieu",
-    "idl": 62,
-    "idl_brut": 65,
+    "idl": 72,
+    "idl_brut": 75,
     "score_type": "calcule",
-    "completude": 0.9,
+    "completude": 0.909,
     "axes": {
       "A": 86,
-      "B": 60,
-      "C": 50
+      "B": 58,
+      "C": 80
     },
-    "palier": "partiel"
+    "palier": "solide"
   },
   {
     "uid": "larzac",
@@ -33,13 +33,13 @@
     "uid": "longo-mai",
     "nom": "Longo Maï",
     "categorie": "lieu",
-    "idl": 70,
-    "idl_brut": 70,
+    "idl": 71,
+    "idl_brut": 71,
     "score_type": "calcule",
     "completude": 1.0,
     "axes": {
       "A": 64,
-      "B": 90,
+      "B": 92,
       "C": 57
     },
     "palier": "engage"
@@ -48,13 +48,13 @@
     "uid": "lurzaindia",
     "nom": "Lurzaindia — terres du Pays Basque",
     "categorie": "lieu",
-    "idl": 70,
-    "idl_brut": 74,
+    "idl": 64,
+    "idl_brut": 67,
     "score_type": "calcule",
-    "completude": 0.9,
+    "completude": 0.909,
     "axes": {
       "A": 86,
-      "B": 85,
+      "B": 65,
       "C": 50
     },
     "palier": "engage"
@@ -63,13 +63,13 @@
     "uid": "nddl",
     "nom": "ZAD de Notre-Dame-des-Landes",
     "categorie": "lieu",
-    "idl": 68,
-    "idl_brut": 75,
+    "idl": 70,
+    "idl_brut": 77,
     "score_type": "calcule",
-    "completude": 0.8,
+    "completude": 0.818,
     "axes": {
       "A": 100,
-      "B": 75,
+      "B": 81,
       "C": 50
     },
     "palier": "engage"
@@ -78,14 +78,29 @@
     "uid": "reseau-terre-de-liens",
     "nom": "Fermes Terre de Liens",
     "categorie": "lieu",
-    "idl": 88,
-    "idl_brut": 88,
+    "idl": 84,
+    "idl_brut": 84,
+    "score_type": "calcule",
+    "completude": 1.0,
+    "axes": {
+      "A": 100,
+      "B": 88,
+      "C": 64
+    },
+    "palier": "solide"
+  },
+  {
+    "uid": "village-vertical",
+    "nom": "Le Village Vertical",
+    "categorie": "lieu",
+    "idl": 90,
+    "idl_brut": 90,
     "score_type": "calcule",
     "completude": 1.0,
     "axes": {
       "A": 100,
       "B": 100,
-      "C": 64
+      "C": 71
     },
     "palier": "abouti"
   },
@@ -93,16 +108,16 @@
     "uid": "villarceaux",
     "nom": "Bergerie de Villarceaux",
     "categorie": "lieu",
-    "idl": 68,
-    "idl_brut": 80,
+    "idl": 73,
+    "idl_brut": 84,
     "score_type": "calcule",
-    "completude": 0.7,
+    "completude": 0.727,
     "axes": {
       "A": 86,
-      "B": 75,
+      "B": 81,
       "C": null
     },
-    "palier": "engage"
+    "palier": "solide"
   },
   {
     "uid": "conservatoire-littoral",
@@ -123,13 +138,13 @@
     "uid": "federation-cen",
     "nom": "Conservatoires d'espaces naturels",
     "categorie": "porteur",
-    "idl": 80,
-    "idl_brut": 80,
+    "idl": 84,
+    "idl_brut": 84,
     "score_type": "calcule",
     "completude": 1.0,
     "axes": {
       "A": 100,
-      "B": 61,
+      "B": 73,
       "C": 79
     },
     "palier": "solide"
@@ -138,43 +153,58 @@
     "uid": "feve",
     "nom": "FEVE — Fermes en Vie",
     "categorie": "porteur",
-    "idl": 40,
-    "idl_brut": 43,
+    "idl": 38,
+    "idl_brut": 41,
     "score_type": "calcule",
-    "completude": 0.846,
+    "completude": 0.867,
     "axes": {
       "A": 50,
-      "B": 29,
+      "B": 23,
       "C": 50
     },
     "palier": "eloigne"
   },
   {
     "uid": "fonciere-antidote",
-    "nom": "La Foncière Antidote",
+    "nom": "Antidote",
     "categorie": "porteur",
-    "idl": 67,
-    "idl_brut": 70,
+    "idl": 72,
+    "idl_brut": 75,
     "score_type": "calcule",
-    "completude": 0.923,
+    "completude": 0.933,
     "axes": {
-      "A": 85,
-      "B": 61,
+      "A": 88,
+      "B": 73,
       "C": 64
     },
-    "palier": "engage"
+    "palier": "solide"
+  },
+  {
+    "uid": "fonciere-chenelet",
+    "nom": "Foncière Chênelet",
+    "categorie": "porteur",
+    "idl": 55,
+    "idl_brut": 59,
+    "score_type": "calcule",
+    "completude": 0.867,
+    "axes": {
+      "A": 77,
+      "B": 50,
+      "C": 50
+    },
+    "palier": "partiel"
   },
   {
     "uid": "fonciere-terre-de-liens",
     "nom": "Foncière Terre de Liens",
     "categorie": "porteur",
-    "idl": 60,
-    "idl_brut": 62,
+    "idl": 55,
+    "idl_brut": 57,
     "score_type": "calcule",
-    "completude": 0.923,
+    "completude": 0.933,
     "axes": {
-      "A": 59,
-      "B": 64,
+      "A": 58,
+      "B": 50,
       "C": 64
     },
     "palier": "partiel"
@@ -183,28 +213,28 @@
     "uid": "fondation-fph",
     "nom": "Fondation Charles Léopold Mayer pour le Progrès de l'Homme",
     "categorie": "porteur",
-    "idl": 58,
-    "idl_brut": 68,
+    "idl": 62,
+    "idl_brut": 72,
     "score_type": "calcule",
-    "completude": 0.692,
+    "completude": 0.733,
     "axes": {
-      "A": 75,
-      "B": 79,
+      "A": 79,
+      "B": 86,
       "C": 50
     },
-    "palier": "partiel"
+    "palier": "engage"
   },
   {
     "uid": "fondation-terre-de-liens",
     "nom": "Fondation Terre de Liens",
     "categorie": "porteur",
-    "idl": 90,
-    "idl_brut": 90,
+    "idl": 91,
+    "idl_brut": 91,
     "score_type": "calcule",
     "completude": 1.0,
     "axes": {
       "A": 100,
-      "B": 83,
+      "B": 88,
       "C": 86
     },
     "palier": "abouti"
@@ -213,57 +243,102 @@
     "uid": "fonds-la-terre-en-commun",
     "nom": "Fonds de dotation « La Terre en commun »",
     "categorie": "porteur",
-    "idl": 58,
-    "idl_brut": 60,
+    "idl": 63,
+    "idl_brut": 65,
     "score_type": "calcule",
-    "completude": 0.923,
+    "completude": 0.933,
     "axes": {
-      "A": 68,
-      "B": 61,
+      "A": 73,
+      "B": 73,
       "C": 50
     },
-    "palier": "partiel"
+    "palier": "engage"
   },
   {
     "uid": "fonds-terre-europeenne",
     "nom": "Fonds de Terre Européenne",
     "categorie": "porteur",
-    "idl": 69,
-    "idl_brut": 78,
+    "idl": 71,
+    "idl_brut": 79,
     "score_type": "calcule",
-    "completude": 0.769,
+    "completude": 0.8,
     "axes": {
-      "A": 85,
+      "A": 88,
       "B": 100,
       "C": 50
     },
     "palier": "engage"
   },
   {
+    "uid": "habicoop",
+    "nom": "Habicoop",
+    "categorie": "porteur",
+    "idl": 74,
+    "idl_brut": 74,
+    "score_type": "calcule",
+    "completude": 1.0,
+    "axes": {
+      "A": 85,
+      "B": 73,
+      "C": 64
+    },
+    "palier": "solide"
+  },
+  {
     "uid": "lurzaindia-sca",
     "nom": "Lurzaindia (SCA)",
     "categorie": "porteur",
-    "idl": 51,
-    "idl_brut": 53,
+    "idl": 46,
+    "idl_brut": 48,
     "score_type": "calcule",
-    "completude": 0.923,
+    "completude": 0.933,
     "axes": {
-      "A": 59,
-      "B": 50,
+      "A": 58,
+      "B": 36,
       "C": 50
     },
     "palier": "partiel"
   },
   {
+    "uid": "scic-terres-de-sources",
+    "nom": "SCIC Terres de Sources",
+    "categorie": "porteur",
+    "idl": 91,
+    "idl_brut": 91,
+    "score_type": "calcule",
+    "completude": 1.0,
+    "axes": {
+      "A": 88,
+      "B": 100,
+      "C": 86
+    },
+    "palier": "abouti"
+  },
+  {
+    "uid": "champs-des-possibles",
+    "nom": "Les Champs des Possibles",
+    "categorie": "usufruitier",
+    "idl": 70,
+    "idl_brut": 73,
+    "score_type": "calcule",
+    "completude": 0.929,
+    "axes": {
+      "A": 86,
+      "B": 58,
+      "C": 75
+    },
+    "palier": "engage"
+  },
+  {
     "uid": "cooperative-oasis",
     "nom": "Coopérative Oasis",
     "categorie": "usufruitier",
-    "idl": 64,
-    "idl_brut": 72,
+    "idl": 62,
+    "idl_brut": 70,
     "score_type": "calcule",
-    "completude": 0.769,
+    "completude": 0.786,
     "axes": {
-      "A": 90,
+      "A": 86,
       "B": 50,
       "C": 75
     },
@@ -273,13 +348,13 @@
     "uid": "cooperatives-longo-mai",
     "nom": "Coopératives Longo Maï",
     "categorie": "usufruitier",
-    "idl": 66,
+    "idl": 67,
     "idl_brut": 75,
     "score_type": "calcule",
-    "completude": 0.769,
+    "completude": 0.786,
     "axes": {
-      "A": 75,
-      "B": 64,
+      "A": 64,
+      "B": 75,
       "C": 86
     },
     "palier": "engage"
@@ -288,43 +363,28 @@
     "uid": "ecosite-villarceaux",
     "nom": "Association Écosite de Villarceaux",
     "categorie": "usufruitier",
-    "idl": 66,
-    "idl_brut": 82,
+    "idl": 70,
+    "idl_brut": 85,
     "score_type": "calcule",
-    "completude": 0.615,
+    "completude": 0.643,
     "axes": {
       "A": 100,
-      "B": 75,
+      "B": 86,
       "C": 70
     },
     "palier": "engage"
   },
   {
-    "uid": "ferme-des-enfants",
-    "nom": "Association La Ferme des Enfants",
-    "categorie": "usufruitier",
-    "idl": 63,
-    "idl_brut": 71,
-    "score_type": "calcule",
-    "completude": 0.769,
-    "axes": {
-      "A": 100,
-      "B": 64,
-      "C": 50
-    },
-    "palier": "partiel"
-  },
-  {
     "uid": "gfa-mutuels",
     "nom": "Groupements fonciers agricoles mutuels et solidaires",
     "categorie": "usufruitier",
-    "idl": 52,
-    "idl_brut": 62,
+    "idl": 47,
+    "idl_brut": 55,
     "score_type": "calcule",
-    "completude": 0.692,
+    "completude": 0.714,
     "axes": {
-      "A": 65,
-      "B": 71,
+      "A": 64,
+      "B": 50,
       "C": 50
     },
     "palier": "partiel"
@@ -333,28 +393,28 @@
     "uid": "reneta",
     "nom": "RENETA — Réseau national des espaces-test agricoles",
     "categorie": "usufruitier",
-    "idl": 71,
-    "idl_brut": 74,
+    "idl": 75,
+    "idl_brut": 78,
     "score_type": "calcule",
-    "completude": 0.923,
+    "completude": 0.929,
     "axes": {
       "A": 100,
-      "B": 61,
+      "B": 71,
       "C": 62
     },
-    "palier": "engage"
+    "palier": "solide"
   },
   {
     "uid": "sctl",
     "nom": "Société Civile des Terres du Larzac",
     "categorie": "usufruitier",
-    "idl": 81,
-    "idl_brut": 92,
+    "idl": 77,
+    "idl_brut": 86,
     "score_type": "calcule",
-    "completude": 0.769,
+    "completude": 0.786,
     "axes": {
-      "A": 90,
-      "B": 100,
+      "A": 86,
+      "B": 85,
       "C": 86
     },
     "palier": "solide"
@@ -368,9 +428,24 @@
     "score_type": "estime",
     "completude": null,
     "axes": {
-      "A": 90.0,
-      "B": 90.0,
-      "C": 90.0
+      "A": 90,
+      "B": 90,
+      "C": 90
+    },
+    "palier": "abouti"
+  },
+  {
+    "uid": "cooperative-habitants-alur",
+    "nom": "Coopérative d'habitants (loi ALUR)",
+    "categorie": "modele",
+    "idl": 87,
+    "idl_brut": 87,
+    "score_type": "estime",
+    "completude": null,
+    "axes": {
+      "A": 80,
+      "B": 90,
+      "C": 90
     },
     "palier": "abouti"
   },
@@ -383,9 +458,9 @@
     "score_type": "estime",
     "completude": null,
     "axes": {
-      "A": 70.0,
-      "B": 90.0,
-      "C": 90.0
+      "A": 70,
+      "B": 90,
+      "C": 90
     },
     "palier": "solide"
   },
@@ -398,9 +473,9 @@
     "score_type": "estime",
     "completude": null,
     "axes": {
-      "A": 90.0,
-      "B": 90.0,
-      "C": 50.0
+      "A": 90,
+      "B": 90,
+      "C": 50
     },
     "palier": "solide"
   },
@@ -413,9 +488,9 @@
     "score_type": "estime",
     "completude": null,
     "axes": {
-      "A": 90.0,
-      "B": 90.0,
-      "C": 70.0
+      "A": 90,
+      "B": 90,
+      "C": 70
     },
     "palier": "solide"
   }

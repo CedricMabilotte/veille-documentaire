@@ -8,11 +8,13 @@ localisation: null
 annee: 2003
 url: "https://terredeliens.org/"
 resume: >
-  Fiche réseau agrégée. Terre de Liens, mouvement fondé en 2003, a permis à plus
-  de 338 agriculteur·rices de s'installer ou se maintenir sur environ 240 fermes
-  couvrant près de 7 000 hectares, dont 78 fermes acquises en 2024. Le foncier est
-  porté par la Foncière Terre de Liens ou la Fondation Terre de Liens et confié
-  aux paysan·nes par bail rural, souvent environnemental. Le mouvement collecte
+  Fiche réseau agrégée. Terre de Liens, mouvement fondé en 2003, porte du
+  foncier agricole via la Foncière Terre de Liens ou la Fondation Terre de
+  Liens et le confie aux paysan·nes par bail rural, souvent environnemental.
+  Au titre de sa collaboration de vingt ans avec les Safer, le mouvement a
+  permis à plus de 338 agriculteur·rices de s'installer ou se maintenir sur
+  environ 240 fermes couvrant près de 7 000 hectares — un périmètre qui n'est
+  qu'un sous-ensemble de l'activité du mouvement. Terre de Liens collecte
   environ 20 millions d'euros par an d'épargne et de dons citoyen·nes.
 montage:
   type: propriete_sanctuarisee
@@ -25,7 +27,7 @@ montage:
     paysan·nes par bail rural, fréquemment assorti de clauses environnementales.
     Le démembrement strict s'observe surtout pour les donations à la Fondation.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
     Foncier sanctuarisé par des structures non spéculatives (FRUP et société en
     commandite par actions à actionnariat solidaire) ; pureté variable selon le
@@ -43,6 +45,9 @@ grille:
   - critere: origine_non_speculative
     valeur: oui
     note: "Le foncier est acquis par épargne solidaire et dons, environ 20 millions d'euros collectés par an."
+  - critere: parts_non_cessibles
+    valeur: partiel
+    note: "Variable selon le porteur : le foncier porté par la Fondation, sans capital appropriable, est verrouillé ; celui porté par la Foncière repose sur des actions cessibles dont la revalorisation rend la valeur partiellement captable."
   - critere: usage_interet_general
     valeur: oui
     note: "L'installation et le maintien de paysan·nes en agriculture servent un intérêt général agricole et alimentaire."
@@ -79,11 +84,13 @@ analyse:
     en France. La fiche agrège un réseau dont la solidité tient à la fondation
     reconnue d'utilité publique et à un usage encadré par bail environnemental.
 fiabilite: >
-  Faits vérifiés : fondation du mouvement en 2003, plus de 338 agriculteur·rices,
-  environ 240 fermes, près de 7 000 hectares, 78 fermes acquises en 2024,
-  environ 20 millions d'euros collectés par an, recours au bail rural
-  environnemental. Non confirmé : situation parcelle par parcelle, fiches
-  individuelles de fermes emblématiques.
+  Faits vérifiés : fondation du mouvement en 2003, chiffres « plus de 338
+  agriculteur·rices, environ 240 fermes, près de 7 000 hectares » relevant
+  spécifiquement de la collaboration de vingt ans entre Terre de Liens et les
+  Safer (et non du total du mouvement), environ 20 millions d'euros collectés
+  par an, recours au bail rural environnemental. Non confirmé : total du
+  mouvement à jour, situation parcelle par parcelle, fiches individuelles de
+  fermes emblématiques.
 liens:
   porteurs: [fondation-terre-de-liens, fonciere-terre-de-liens]
   usufruitiers: [gfa-mutuels]
@@ -91,5 +98,5 @@ liens:
 sources:
   - titre: "Terre de Liens — site officiel"
     url: "https://terredeliens.org/"
-  - titre: "Terre de Liens — Rapport annuel de la Fondation 2023-2024"
-    url: "https://terredeliens.org/national/actu/rapport-annuel-de-la-fondation-terre-de-liens-2023-2024-02-12-2024/"
+  - titre: "Terre de Liens — Rapport annuel de la Fondation 2024-2025"
+    url: "https://terredeliens.org/national/actu/rapport-annuel-de-la-fondation-2024-2025-14-01-2026/"

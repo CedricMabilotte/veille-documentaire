@@ -3,15 +3,16 @@ categorie: usufruitier
 nom: "Coopératives Longo Maï"
 sous_titre: "Collectifs autogérés utilisant les terres sanctuarisées"
 statut_fiche: publie
-forme_juridique: "Coopératives autogérées (statut associatif privilégié selon les sources)"
+forme_juridique: "Coopératives autogérées (statut juridique précis non confirmé par les sources)"
 localisation: null
 annee: 1973
 url: "https://www.prolongomaif.ch/"
 resume: >
   Réseau de coopératives autogérées fondé en 1973, comptant cinq implantations en
   France (Limans, Chantemerle, Mas de Granier, Treynas, La Cabrery). Les
-  coopératives, de statut associatif privilégié, utilisent les terres détenues de
-  façon inaliénable par le Fonds de Terre Européenne. Elles fonctionnent en
+  coopératives, dont le statut juridique précis n'est pas confirmé par les
+  sources, fonctionnent sur un mode coopératif autogéré et utilisent les terres
+  détenues de façon inaliénable par le Fonds de Terre Européenne. Elles fonctionnent en
   autogestion et conduisent agriculture, élevage, vigne, forêt, artisanat et
   accueil.
 montage:
@@ -24,14 +25,14 @@ montage:
     formalisation contractuelle de l'usage entre fondation et coopératives n'est
     pas documentée par les sources.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
-    Collectifs autogérés de statut associatif privilégié ; l'usage repose sur
-    l'autogestion plutôt que sur un contrat documenté.
+    Collectifs autogérés dont le statut juridique précis n'est pas confirmé ;
+    l'usage repose sur l'autogestion plutôt que sur un contrat documenté.
 grille:
   - critere: personne_morale_civile
-    valeur: oui
-    note: "Les coopératives Longo Maï relèvent d'un statut associatif privilégié, personne morale de droit civil non lucrative."
+    valeur: partiel
+    note: "Les coopératives Longo Maï fonctionnent sur un mode coopératif autogéré non lucratif, mais leur statut juridique précis n'est pas confirmé par les sources."
   - critere: objet_ig
     valeur: partiel
     note: "Les activités agricoles, artisanales et d'accueil ont une portée collective, mais l'objet d'intérêt général au-delà des coopérants n'est pas explicité."
@@ -53,6 +54,9 @@ grille:
   - critere: non_appropriation
     valeur: oui
     note: "Les terres sont détenues de façon inaliénable par la fondation ; les coopératives ne peuvent ni les revendre ni en capter la valeur."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Les terres appartiennent de façon inaliénable au Fonds de Terre Européenne et les coopératives autogérées fonctionnent sans capital appropriable : aucune captation individuelle de la valeur foncière n'est possible."
   - critere: une_voix
     valeur: oui
     note: "L'autogestion implique des décisions collectives, sans pouvoir proportionnel au capital."
@@ -86,10 +90,11 @@ analyse:
     sanctuarisé. Leur solidité tient à l'inaliénabilité en amont ; leur marge de
     progression est la formalisation de l'usage et l'ouverture au territoire.
 fiabilite: >
-  Faits vérifiés : réseau fondé en 1973, cinq implantations en France, statut
-  associatif privilégié, autogestion, usage des terres du Fonds de Terre
-  Européenne détenues de façon inaliénable. Non confirmé : actes formalisant
-  l'usage, modalités d'accueil de nouveaux entrants, transparence interne.
+  Faits vérifiés : réseau fondé en 1973, cinq implantations en France,
+  fonctionnement coopératif autogéré, usage des terres du Fonds de Terre
+  Européenne détenues de façon inaliénable. Non confirmé : statut juridique
+  précis des coopératives, actes formalisant l'usage, modalités d'accueil de
+  nouveaux entrants, transparence interne.
 liens:
   porteurs: [fonds-terre-europeenne]
   usufruitiers: []

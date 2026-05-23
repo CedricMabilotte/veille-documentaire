@@ -12,8 +12,9 @@ resume: >
   acquiert des terrains menacés du littoral — plus de 80 % par voie amiable —
   pour les classer dans un domaine propre inaliénable. Une aliénation ne peut être
   autorisée que par décret en Conseil d'État, sur proposition du conseil
-  d'administration à la majorité des trois quarts. Le Conservatoire protège
-  environ 18 % du littoral français et confie la gestion à des tiers.
+  d'administration à la majorité des trois quarts. Cinquantenaire en 2025, le
+  Conservatoire protège environ 18 % du littoral français — de l'ordre de
+  220 000 hectares sur plus de 840 sites — et confie la gestion à des tiers.
 montage:
   type: propriete_publique
   description: >
@@ -22,7 +23,7 @@ montage:
     mixtes, fondations, associations agréées ou établissements publics. En 2015,
     environ 13 % des sites étaient gérés par des associations.
 purete_juridique:
-  niveau: public
+  niveau: droit_public
   commentaire: >
     Établissement public relevant du droit public ; la domanialité et
     l'inaliénabilité confèrent une protection foncière maximale.
@@ -30,6 +31,9 @@ grille:
   - critere: forme_non_lucrative
     valeur: oui
     note: "Le Conservatoire est un établissement public, structurellement non lucratif."
+  - critere: non_lucrativite_effective
+    valeur: oui
+    note: "Établissement public sans capital social ni apporteurs : aucune rémunération du capital, ni dividende, ni plus-value distribuée."
   - critere: agrement_ig
     valeur: oui
     note: "Le Conservatoire est un établissement public créé par la loi du 10 juillet 1975, investi d'une mission d'intérêt général."
@@ -42,6 +46,9 @@ grille:
   - critere: inalienabilite
     valeur: oui
     note: "Les terrains entrent dans un domaine propre inaliénable ; l'aliénation requiert un décret en Conseil d'État."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Établissement public sans capital social : il n'existe aucune part ou action appropriable, donc aucune captation possible de la valeur foncière."
   - critere: nature_protectrice
     valeur: oui
     note: "L'établissement public se situe au sommet de l'échelle de protection foncière."
@@ -87,11 +94,13 @@ fiabilite: >
   Faits vérifiés : statut d'établissement public créé le 10 juillet 1975, plus de
   80 % d'acquisitions amiables, domaine propre inaliénable, aliénation par décret
   en Conseil d'État à la majorité des trois quarts, environ 18 % du littoral
-  protégé, environ 13 % des sites gérés par des associations en 2015. Non
-  confirmé : place détaillée des citoyen·nes dans la gouvernance.
+  protégé (de l'ordre de 220 000 hectares sur plus de 840 sites),
+  cinquantenaire de l'établissement en 2025, environ 13 % des sites gérés par
+  des associations en 2015. Non confirmé : place détaillée des citoyen·nes dans
+  la gouvernance, part actuelle des sites gérés par des associations.
 liens:
-  porteurs: []
-  usufruitiers: [federation-cen]
+  porteurs: [federation-cen]
+  usufruitiers: []
   lieux: []
 sources:
   - titre: "Conservatoire du littoral — site officiel"

@@ -21,12 +21,13 @@ montage:
   usufruitier: "Titulaire de l'usage : Société Civile des Terres du Larzac (SCTL), preneuse d'un bail emphytéotique de 99 ans consenti par l'État"
   description: >
     La SCTL n'est pas propriétaire : elle détient le foncier de l'État par un
-    bail emphytéotique, d'abord de 60 ans puis porté à 99 ans (maximum légal),
-    sécurisant les 6 300 hectares jusqu'en 2083. Elle redistribue l'usage aux
+    bail emphytéotique signé en 1985 pour 60 ans, puis renégocié en 2013 pour
+    le porter à 99 ans (maximum légal), sécurisant les 6 300 hectares jusqu'en
+    2083. Elle redistribue l'usage aux
     paysan·nes par des baux de long terme. Ses associés sont les utilisateurs
     eux-mêmes, ce qui en fait une structure d'usage collective.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
     Société civile de droit privé articulée à une propriété publique ; structure
     d'usage collective dont les associés sont les utilisateurs du foncier.
@@ -55,6 +56,9 @@ grille:
   - critere: non_appropriation
     valeur: oui
     note: "Le foncier reste propriété de l'État ; les paysan·nes en ont l'usage par bail et ne peuvent le revendre."
+  - critere: parts_non_cessibles
+    valeur: partiel
+    note: "La SCTL est une société civile dont les associés sont les utilisateurs des terres ; les parts sont liées à cette qualité d'usager, mais l'encadrement statutaire de leur cession n'est pas documenté. Surtout, le foncier appartenant à l'État, sa valeur n'est de toute façon pas captable."
   - critere: une_voix
     valeur: partiel
     note: "La SCTL associe les utilisateurs des terres, mais les modalités de vote dans la société civile ne sont pas détaillées."
@@ -90,8 +94,8 @@ analyse:
     99 ans, et gagnerait à documenter sa gouvernance interne.
 fiabilite: >
   Faits vérifiés : forme de société civile constituée le 29 avril 1985, après une
-  recherche de structure engagée dès décembre 1982, détention du foncier de
-  l'État par un bail emphytéotique de 99 ans (échéance 2083), attribution de
+  recherche de structure engagée dès décembre 1982, bail emphytéotique signé en
+  1985 pour 60 ans puis prolongé en 2013 à 99 ans (échéance 2083), attribution de
   l'usage aux paysan·nes par des baux de long terme, associés étant les utilisateurs
   des terres, hausse du nombre de paysan·nes d'environ 20 %. Non confirmé : clauses
   environnementales des baux, modalités de vote et de transparence interne.

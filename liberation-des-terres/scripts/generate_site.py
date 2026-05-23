@@ -25,6 +25,12 @@ import yaml
 # Date de génération du site — affichée en pied de page et dans le sitemap.
 BUILD_DATE = datetime.date.today().isoformat()
 
+# Variante française lisible de la date de génération (pied de page public).
+_MOIS_FR = ("janvier", "février", "mars", "avril", "mai", "juin", "juillet",
+            "août", "septembre", "octobre", "novembre", "décembre")
+_today = datetime.date.today()
+BUILD_DATE_FR = f"{_today.day} {_MOIS_FR[_today.month - 1]} {_today.year}"
+
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG = ROOT / "config"
 SITE = ROOT / "site"
@@ -94,7 +100,9 @@ def score_fiche(fiche, gidx, ranking):
 
     if cat == "modele":
         ax = fiche.get("axes_estimes", {}) or {}
-        axes = {k: (float(ax[k]) if ax.get(k) is not None else None)
+        # axes estimés arrondis à l'entier : une seule source, pas de décimale
+        # parasite dans le triangle, les barres ou l'aria-label (audit dataviz B, M1).
+        axes = {k: (round(float(ax[k])) if ax.get(k) is not None else None)
                 for k in ("A", "B", "C")}
         known = [v for v in axes.values() if v is not None]
         idl = round(sum(known) / len(known)) if known else None
@@ -197,15 +205,16 @@ def meta_desc(text, limit=155):
 # Gabarit de page
 # ─────────────────────────────────────────────────────────────────────────────
 
+# NAV principal — 6 entrées de parcours (faire / comprendre). Les pages de
+# référence documentaire (Trois régimes, Grilles, Modèles voisins, Glossaire)
+# restent en accès secondaire : footer + renvois depuis Méthode et les pages
+# concernées (cf. cycle B — audit UX, I1/I2).
 NAV = [
     ("index.html", "Accueil"),
     ("lieux.html", "Lieux"),
     ("porteurs.html", "Porteurs"),
     ("usufruitiers.html", "Usufruitiers"),
     ("classement.html", "Classement"),
-    ("grilles.html", "Grilles"),
-    ("modeles.html", "Modèles voisins"),
-    ("glossaire.html", "Glossaire"),
     ("methode.html", "Méthode"),
 ]
 
@@ -223,10 +232,14 @@ def canonical_url(path):
 def page(title, body, active, depth=0, project=None, description="",
          path="", jsonld=None, og_type="website", robots=None):
     up = "../" * depth
-    nav = "".join(
-        f'<a href="{up}{href}"{" class=\'active\'" if href == active else ""}>{e(label)}</a>'
-        for href, label in NAV
-    )
+    nav_items = []
+    for href, label in NAV:
+        if href == active:
+            cls = ' class="active" aria-current="page"'
+        else:
+            cls = ''
+        nav_items.append(f'<a href="{up}{href}"{cls}>{e(label)}</a>')
+    nav = "".join(nav_items)
     pname = project["display_name"] if project else "Terres Libérées"
     mark = project["logo_mark"] if project else "TL"
     base = project["tagline"] if project else ""
@@ -288,13 +301,14 @@ def page(title, body, active, depth=0, project=None, description="",
     <p>{e(pname)} — annuaire critique des montages de libération des terres en
     France. Données factuelles sourcées ; l'Indice de libération est une grille
     d'analyse explicite, non un jugement de valeur.</p>
-    <p class="foot-links"><a href="{up}methode.html">Méthode &amp; sources</a> ·
+    <p class="foot-links"><a href="{up}methode.html">Méthode</a> ·
+    <a href="{up}regimes.html">Trois régimes</a> ·
     <a href="{up}grilles.html">Grilles d'analyse</a> ·
+    <a href="{up}modeles.html">Modèles voisins</a> ·
     <a href="{up}glossaire.html">Glossaire</a> ·
     <a href="{up}suggerer.html">Proposer un lieu</a> ·
     <a href="{up}data.json">Données ouvertes (JSON)</a></p>
-    <p>Fork de « Résidence » · site statique généré automatiquement le
-    {e(BUILD_DATE)}.</p>
+    <p>Site statique, généré automatiquement le {e(BUILD_DATE_FR)}.</p>
   </div>
 </footer>
 </body>
@@ -336,7 +350,7 @@ def axis_bar(axes_cfg, axes_scores, compact=False):
         else:
             w, txt, cls = _fmtnum(val), _fmtnum(val), ""
         rows.append(f"""<div class="axis-row">
-  <span class="axis-label" title="{e(clean(ax['question']))}">{e(ax['id'])} · {e(ax['label'])}</span>
+  <span class="axis-label">{e(ax['id'])} · {e(ax['label'])}</span>
   <span class="axis-track"><span class="axis-fill {cls}" style="width:{w}%;background:{col}"></span></span>
   <span class="axis-val">{e(txt)}</span>
 </div>""")
@@ -356,10 +370,12 @@ def _tri_geom(size=120):
     return (cx, cy), verts
 
 
-def axis_triangle(axes_cfg, axes_scores, size=120, compact=False):
-    """Petit SVG : cadre équilatéral 100 %, polygone des trois scores A/B/C."""
+_TRI_SIZE = 120  # taille de référence du SVG triangle (viewBox)
+
+
+def _tri_profile_points(axes_scores, size=_TRI_SIZE):
+    """Renvoie (points du polygone de profil, liste des axes manquants)."""
     (gx, gy), verts = _tri_geom(size)
-    col = {ax["id"]: ax["couleur"] for ax in axes_cfg}
     pts, missing = [], []
     for ax in ("A", "B", "C"):
         v = axes_scores.get(ax)
@@ -370,37 +386,96 @@ def axis_triangle(axes_cfg, axes_scores, size=120, compact=False):
         else:
             f = max(0.0, min(1.0, v / 100))
         pts.append(f"{gx + (vx - gx) * f:.1f},{gy + (vy - gy) * f:.1f}")
+    return pts, missing
+
+
+def tri_defs(axes_cfg, size=_TRI_SIZE):
+    """Bloc <defs> commun à tous les triangles compacts d'une page : cadre,
+    grille, sommets et lettres — la seule part qui varie ensuite est le
+    polygone de profil (cf. cycle B — audit performance, B-1)."""
+    (gx, gy), verts = _tri_geom(size)
+    col = {ax["id"]: ax["couleur"] for ax in axes_cfg}
     frame = " ".join(f"{x:.1f},{y:.1f}" for x, y in verts.values())
     mid = " ".join(f"{gx + (x - gx) * 0.5:.1f},{gy + (y - gy) * 0.5:.1f}"
                    for x, y in verts.values())
+    dots = ""
+    for ax in ("A", "B", "C"):
+        vx, vy = verts[ax]
+        dots += (f'<circle class="tri-vtx" cx="{vx:.1f}" cy="{vy:.1f}" '
+                 f'r="3.5" fill="{col[ax]}"/>'
+                 f'<text class="tri-lab" x="{vx:.1f}" y="{vy:.1f}">{ax}</text>')
+    return (f'<svg width="0" height="0" aria-hidden="true" '
+            f'style="position:absolute" focusable="false"><defs>'
+            f'<g id="tri-base">'
+            f'<polygon class="tri-frame" points="{frame}"/>'
+            f'<polygon class="tri-grid" points="{mid}"/>'
+            f'{dots}</g></defs></svg>')
+
+
+def axis_triangle(axes_cfg, axes_scores, size=_TRI_SIZE, compact=False):
+    """SVG triangle de profil tri-axes.
+
+    En mode `compact` (cartes / chips) : ne rend que le polygone variable et
+    référence le cadre commun via <use href="#tri-base"> — la part fixe est
+    factorisée par `tri_defs()` une fois par page.
+    En pleine taille (fiche) : SVG autonome avec cadre, repère d'échelle et
+    aria-label — seule source accessible du profil chiffré.
+    """
+    (gx, gy), verts = _tri_geom(size)
+    col = {ax["id"]: ax["couleur"] for ax in axes_cfg}
+    pts, missing = _tri_profile_points(axes_scores, size)
     axname = {"A": "intérêt général", "B": "libération des terres",
               "C": "gouvernance participative"}
     label = "Profil tri-axes — " + ", ".join(
         f"{axname[a]} "
         f"{_fmtnum(axes_scores.get(a)) if axes_scores.get(a) is not None else 'non renseigné'}"
         for a in ("A", "B", "C"))
+    vb = f"0 0 {size} {size * 0.92:.0f}"
+
+    # arêtes du polygone : hachurer celles qui touchent un sommet absent (None)
+    # pour signaler une donnée indéterminée plutôt qu'un score nul (audit
+    # dataviz B, I1).
+    edge_lines = ""
+    if missing:
+        idx = {"A": 0, "B": 1, "C": 2}
+        for a in ("A", "B", "C"):
+            b = {"A": "B", "B": "C", "C": "A"}[a]
+            if a in missing or b in missing:
+                pa, pb = pts[idx[a]], pts[idx[b]]
+                edge_lines += (f'<line class="tri-edge-na" x1="{pa.split(",")[0]}" '
+                               f'y1="{pa.split(",")[1]}" x2="{pb.split(",")[0]}" '
+                               f'y2="{pb.split(",")[1]}"/>')
+
+    if compact:
+        # décoratif : la carte porte nom + palier + anneau ; le détail chiffré
+        # est sur la fiche liée. <use> du cadre commun, polygone variable seul.
+        return (f'<svg class="tri compact" viewBox="{vb}" '
+                f'role="img" focusable="false" aria-label="{e(label)}">'
+                f'<use href="#tri-base"/>'
+                f'<polygon class="tri-fill" points="{" ".join(pts)}"/>'
+                f'{edge_lines}</svg>')
+
+    # pleine taille (fiche) — SVG autonome avec cadre + repère d'échelle.
+    frame = " ".join(f"{x:.1f},{y:.1f}" for x, y in verts.values())
+    mid = " ".join(f"{gx + (x - gx) * 0.5:.1f},{gy + (y - gy) * 0.5:.1f}"
+                   for x, y in verts.values())
     dots = ""
     for ax in ("A", "B", "C"):
         vx, vy = verts[ax]
-        # léger décalage du sommet vers l'extérieur pour la lettre
-        lx = gx + (vx - gx) * 1.0
-        ly = gy + (vy - gy) * 1.0
         na = " tri-na" if ax in missing else ""
         dots += (f'<circle class="tri-vtx{na}" cx="{vx:.1f}" cy="{vy:.1f}" '
                  f'r="5" fill="{col[ax]}"/>'
-                 f'<text class="tri-lab" x="{lx:.1f}" y="{ly:.1f}">{ax}</text>')
-    cls = "tri compact" if compact else "tri"
-    # Compact (cartes / chips) : SVG décoratif — axis_bar fournit déjà les
-    # chiffres A/B/C en texte. Pleine taille (fiche) : seule source accessible.
-    if compact:
-        a11y = 'aria-hidden="true" focusable="false"'
-    else:
-        a11y = f'role="img" aria-label="{e(label)}"'
-    return (f'<svg class="{cls}" viewBox="0 0 {size} {size * 0.92:.0f}" {a11y}>'
+                 f'<text class="tri-lab" x="{vx:.1f}" y="{vy:.1f}">{ax}</text>')
+    # repère d'échelle : « 100 » à un sommet, « 0 » au centre.
+    ax0, ay0 = verts["A"]
+    scale = (f'<text class="tri-scale" x="{ax0:.1f}" y="{ay0 - 7:.1f}">100</text>'
+             f'<text class="tri-scale" x="{gx:.1f}" y="{gy + 9:.1f}">0</text>')
+    return (f'<svg class="tri" viewBox="{vb}" '
+            f'role="img" aria-label="{e(label)}">'
             f'<polygon class="tri-frame" points="{frame}"/>'
             f'<polygon class="tri-grid" points="{mid}"/>'
             f'<polygon class="tri-fill" points="{" ".join(pts)}"/>'
-            f'{dots}</svg>')
+            f'{edge_lines}{dots}{scale}</svg>')
 
 
 # ── Badge d'Indice : anneau de progression SVG ───────────────────────────────
@@ -563,12 +638,11 @@ def card(fiche, sc, axes_cfg, depth=0, concepts=None):
     <span class="tag tag-{cat}">{catlabel}</span>
     {idl_badge(sc)}
   </div>
-  <h3><a href="{href}">{e(fiche['nom'])}</a></h3>
+  <h3><a class="card-link" href="{href}">{e(fiche['nom'])}</a></h3>
   <p class="card-sub">{e(clean(fiche.get('sous_titre','')))}</p>
   <p class="card-meta">{e(loc)}{(' · ' + e(montage_lab)) if montage_lab else ''}</p>
   <div class="card-viz">
     {axis_triangle(axes_cfg, sc['axes'], compact=True)}
-    {axis_bar(axes_cfg, sc['axes'], compact=True)}
   </div>
 </li>"""
 
@@ -599,7 +673,7 @@ def render_fiche(fiche, sc, cfg, by_uid, sc_by_uid):
     cat = fiche["categorie"]
     catlabel = {"lieu": "Lieu", "porteur": "Porteur de nue-propriété",
                 "usufruitier": "Organisme usufruitier",
-                "modele": "Modèle voisin de référence"}[cat]
+                "modele": "Modèle voisin"}[cat]
 
     # fil d'Ariane complet : Accueil › Catégorie › Fiche
     head = f"""<nav class="crumb" aria-label="Fil d'Ariane">
@@ -659,8 +733,9 @@ def render_fiche(fiche, sc, cfg, by_uid, sc_by_uid):
     pj = fiche.get("purete_juridique", {}) or {}
     if pj.get("niveau"):
         plab, psens = purete_label(pj["niveau"], ranking)
-        rows.append(("Pureté juridique",
-                     f'<span title="{e(psens)}">{e(plab)}</span>'))
+        rows.append(("Nature juridique",
+                     f'<span title="{e(psens)}">'
+                     f'<a href="../regimes.html">{e(plab)}</a></span>'))
     if fiche.get("url"):
         rows.append(("Site", f'<a href="{e(fiche["url"])}" rel="noopener" '
                              f'target="_blank">{e(fiche["url"])}</a>'))
@@ -798,9 +873,9 @@ def render_fiche(fiche, sc, cfg, by_uid, sc_by_uid):
     backlink = (f'<p class="backlink">'
                 f'<a href="../{CAT_PAGE[cat]}">← Retour {retlabel}</a>'
                 f' · <a href="../classement.html">Voir le classement</a></p>')
-    body = (head + score_block + enbref + resume + montage_html
-            + grille_html + analyse_html + liens_html + fiab + sources_html
-            + backlink)
+    body = (tri_defs(axes_cfg) + head + score_block + enbref + resume
+            + montage_html + grille_html + analyse_html + liens_html + fiab
+            + sources_html + backlink)
 
     # données structurées : fil d'Ariane + entité principale
     fpath = f"{CAT_SLUG[cat]}/{fiche['uid']}.html"
@@ -869,10 +944,17 @@ def render_catalogue(cat, fiches_sc, cfg):
     fiches_sc = sorted(fiches_sc, key=lambda x: x[1]["idl"] or 0, reverse=True)
     n = len(fiches_sc)
 
-    # filtres par palier
+    # filtres par palier — n'émettre que les paliers présents dans le
+    # sous-ensemble, pour éviter des boutons morts (audit fonctionnel C, M1).
+    present_pal = []
+    for f, s in fiches_sc:
+        pid = s["palier"]["id"] if s["palier"] else None
+        if pid and pid not in present_pal:
+            present_pal.append(pid)
+    pal_order = [p for p in ranking["paliers"] if p["id"] in present_pal]
     pal_btns = "".join(
-        f'<button class="fbtn" data-fk="palier" data-fv="{p["id"]}">'
-        f'{e(p["label"])}</button>' for p in ranking["paliers"])
+        f'<button class="fbtn" data-fk="palier" data-fv="{p["id"]}" '
+        f'aria-pressed="false">{e(p["label"])}</button>' for p in pal_order)
     # filtres par montage (montages présents dans le sous-ensemble)
     present_mont = []
     for f, _ in fiches_sc:
@@ -880,8 +962,9 @@ def render_catalogue(cat, fiches_sc, cfg):
         if m and m not in present_mont:
             present_mont.append(m)
     mont_btns = "".join(
-        f'<button class="fbtn" data-fk="montage" data-fv="{m}">'
-        f'{e(montage_label(m, concepts))}</button>' for m in present_mont)
+        f'<button class="fbtn" data-fk="montage" data-fv="{m}" '
+        f'aria-pressed="false">{e(montage_label(m, concepts))}</button>'
+        for m in present_mont)
     # filtres par région (lieux uniquement)
     region_block = ""
     if cat == "lieu":
@@ -892,14 +975,16 @@ def render_catalogue(cat, fiches_sc, cfg):
                 regions.append(r)
         if regions:
             reg_btns = "".join(
-                f'<button class="fbtn" data-fk="region" data-fv="{e(r)}">'
-                f'{e(r)}</button>' for r in sorted(regions))
+                f'<button class="fbtn" data-fk="region" data-fv="{e(r)}" '
+                f'aria-pressed="false">{e(r)}</button>' for r in sorted(regions))
             region_block = (
-                f'<div class="filter-row"><span class="filter-lab">Région</span>'
-                f'<button class="fbtn active" data-fk="region" data-fv="all">'
-                f'Toutes</button>{reg_btns}</div>')
+                f'<div class="filter-row" role="group" '
+                f'aria-label="Filtrer par région">'
+                f'<span class="filter-lab">Région</span>'
+                f'<button class="fbtn active" data-fk="region" data-fv="all" '
+                f'aria-pressed="true">Toutes</button>{reg_btns}</div>')
 
-    body = f"""<h1>{e(title)}</h1>
+    body = f"""{tri_defs(axes_cfg)}<h1>{e(title)}</h1>
 <p class="lead">{e(intro)}
 <a href="methode.html">Comprendre l'Indice et les axes →</a></p>
 {modeles_note}
@@ -913,58 +998,27 @@ def render_catalogue(cat, fiches_sc, cfg):
     <option value="axb">Par axe B — libération des terres</option>
     <option value="axc">Par axe C — gouvernance</option>
   </select>
-  <span class="count" aria-live="polite"><b id="cnt">{n}</b> entrée{'s' if n > 1 else ''}</span>
+  <span class="count" id="cnt" aria-live="polite"><b id="cntn">{n}</b><span id="cntl"> entrée{'s' if n > 1 else ''} affichée{'s' if n > 1 else ''}</span></span>
 </div>
-<div class="filter-bar">
-  <div class="filter-row"><span class="filter-lab">Palier</span>
-    <button class="fbtn active" data-fk="palier" data-fv="all">Tous</button>
-    {pal_btns}</div>
-  {f'<div class="filter-row"><span class="filter-lab">Montage</span><button class="fbtn active" data-fk="montage" data-fv="all">Tous</button>{mont_btns}</div>' if mont_btns else ''}
-  {region_block}
-</div>
+<p id="sort-status" role="status" class="visually-hidden"></p>
+<details class="filter-details">
+  <summary>Filtres avancés</summary>
+  <div class="filter-bar">
+    <div class="filter-row" role="group" aria-label="Filtrer par palier"><span class="filter-lab">Palier</span>
+      <button class="fbtn active" data-fk="palier" data-fv="all" aria-pressed="true">Tous</button>
+      {pal_btns}</div>
+    {f'<div class="filter-row" role="group" aria-label="Filtrer par montage"><span class="filter-lab">Montage</span><button class="fbtn active" data-fk="montage" data-fv="all" aria-pressed="true">Tous</button>{mont_btns}</div>' if mont_btns else ''}
+    {region_block}
+  </div>
+</details>
 <p class="axe-legend cat-legend">Profil tri-axes :
 <span class="axe-dot axe-A"></span> A — Intérêt général
 <span class="axe-dot axe-B"></span> B — Libération des terres
 <span class="axe-dot axe-C"></span> C — Gouvernance participative</p>
 {cards_grid(fiches_sc, axes_cfg, concepts=concepts, grid_id="resultats")}
 <p class="no-result" id="noresult" role="status" hidden>Aucune entrée ne correspond aux filtres choisis.</p>
-<script>
-(function(){{
- const q=document.getElementById('q'),sort=document.getElementById('sort'),
-   cnt=document.getElementById('cnt'),nores=document.getElementById('noresult'),
-   grid=document.querySelector('.cards'),
-   cards=[...document.querySelectorAll('.card')],
-   fbtns=[...document.querySelectorAll('.fbtn')];
- const active={{}};
- fbtns.forEach(b=>{{const k=b.dataset.fk;if(b.classList.contains('active'))active[k]=b.dataset.fv;}});
- function apply(){{
-  const v=q.value.toLowerCase().trim();let n=0;
-  cards.forEach(c=>{{
-   let ok=c.dataset.nom.toLowerCase().includes(v);
-   for(const k in active){{
-    if(active[k]&&active[k]!=='all'&&c.dataset[k]!==active[k]) ok=false;
-   }}
-   c.style.display=ok?'':'none';if(ok)n++;
-  }});
-  cnt.textContent=n;nores.hidden=n!==0;
- }}
- function doSort(){{
-  const key=sort.value;
-  const vis=cards.slice().sort((a,b)=>{{
-   if(key==='nom') return a.dataset.nom.localeCompare(b.dataset.nom,'fr');
-   return (parseFloat(b.dataset[key])||0)-(parseFloat(a.dataset[key])||0);
-  }});
-  vis.forEach(c=>grid.appendChild(c));
- }}
- q.addEventListener('input',apply);
- sort.addEventListener('change',doSort);
- fbtns.forEach(b=>b.addEventListener('click',()=>{{
-  const k=b.dataset.fk;
-  document.querySelectorAll('.fbtn[data-fk="'+k+'"]').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active');active[k]=b.dataset.fv;apply();
- }}));
-}})();
-</script>"""
+<p class="cat-foot"><a href="suggerer.html">Un lieu manque ou une fiche est incomplète ? Signalez-le →</a></p>
+<script defer src="assets/list.js"></script>"""
     active = CAT_PAGE[cat]
     return page(title, body, active, depth=0, project=project, description=intro,
                 path=CAT_PAGE[cat])
@@ -1011,11 +1065,9 @@ def render_classement(all_sc, cfg):
         for p in ranking["paliers"])
 
     body = f"""<h1>Classement par l'Indice de libération</h1>
-<p class="lead">L'Indice de libération (IdL) mesure, de 0 à 100, à quel point un
-montage atteint trois finalités, chacune notée comme un axe : l'intérêt général
-(A), la libération des terres (B) et la gouvernance participative (C).
-L'indice global est leur moyenne — les trois finalités pèsent à parts égales.
-<a href="methode.html">Méthode détaillée →</a></p>
+<p class="lead">L'Indice de libération (IdL) note chaque montage de 0 à 100 sur
+trois axes — intérêt général (A), libération des terres (B), gouvernance
+participative (C). <a href="methode.html">Méthode détaillée →</a></p>
 <div class="callout callout-warn">
   <p><strong>Un classement croisé, indicatif.</strong> Lieux, porteurs de
   nue-propriété et usufruitiers sont notés par <strong>trois grilles
@@ -1025,12 +1077,12 @@ L'indice global est leur moyenne — les trois finalités pèsent à parts égal
   comparer des entrées de même nature.</p>
 </div>
 <div class="paliers-legend">{paliers_legend}</div>
-<div class="toolbar">
-  <label>Filtrer par catégorie : </label>
-  <button class="fbtn active" data-f="all">Tout</button>
-  <button class="fbtn" data-f="lieu">Lieux</button>
-  <button class="fbtn" data-f="porteur">Porteurs</button>
-  <button class="fbtn" data-f="usufruitier">Usufruitiers</button>
+<div class="toolbar" role="group" aria-label="Filtrer par catégorie">
+  <span class="sort-lab">Filtrer par catégorie : </span>
+  <button class="fbtn active" data-f="all" aria-pressed="true">Tout</button>
+  <button class="fbtn" data-f="lieu" aria-pressed="false">Lieux</button>
+  <button class="fbtn" data-f="porteur" aria-pressed="false">Porteurs</button>
+  <button class="fbtn" data-f="usufruitier" aria-pressed="false">Usufruitiers</button>
 </div>
 <p class="note sort-hint">Triez le tableau en activant un en-tête de colonne
 (Entrée, A, B, C ou IdL).</p>
@@ -1053,54 +1105,7 @@ l'Indice de libération, du plus élevé au plus faible.</caption>
 <p class="note">A — Intérêt général · B — Libération des terres · C — Gouvernance
 participative. « — » : axe non renseigné. Les mini-barres de couleur doublent
 la lecture chiffrée.</p>
-<script>
-(function(){{
- const tbl=document.querySelector('.rank-tbl'),tb=tbl.tBodies[0],
-   ths=[...tbl.tHead.rows[0].cells],
-   btns=[...document.querySelectorAll('.fbtn')],
-   status=document.getElementById('sort-status');
- let curFilter='all';
- function reindex(){{
-  let i=0;[...tb.rows].forEach(t=>{{
-   if(t.style.display!=='none'){{i++;t.querySelector('.rank').textContent=i;}}
-  }});
- }}
- btns.forEach(b=>b.addEventListener('click',()=>{{
-  btns.forEach(x=>x.classList.remove('active'));b.classList.add('active');
-  curFilter=b.dataset.f;
-  [...tb.rows].forEach(t=>{{
-   t.style.display=(curFilter==='all'||t.dataset.cat===curFilter)?'':'none';
-  }});
-  reindex();
- }}));
- function cellVal(tr,i,type){{
-  const t=tr.cells[i].innerText.trim();
-  if(type==='num') return t==='—'?-1:(parseFloat(t)||0);
-  return t.toLowerCase();
- }}
- function sortBy(th){{
-  const i=ths.indexOf(th),type=th.dataset.sort;
-  const dir=th.getAttribute('aria-sort')==='ascending'?-1:1;
-  ths.forEach(x=>{{if(x.classList.contains('sortable'))x.setAttribute('aria-sort','none');}});
-  th.setAttribute('aria-sort',dir===1?'descending':'ascending');
-  [...tb.rows].sort((a,b)=>{{
-   const va=cellVal(a,i,type),vb=cellVal(b,i,type);
-   if(va<vb)return dir;if(va>vb)return -dir;return 0;
-  }}).forEach(r=>tb.appendChild(r));
-  reindex();
-  if(status){{
-   const lab=(th.querySelector('.th-sort')||th).innerText.trim();
-   status.textContent='Tableau trié par '+lab+', ordre '
-    +(dir===1?'décroissant':'croissant')+'.';
-  }}
- }}
- ths.forEach(th=>{{
-  if(!th.classList.contains('sortable'))return;
-  const btn=th.querySelector('.th-sort');
-  (btn||th).addEventListener('click',()=>sortBy(th));
- }});
-}})();
-</script>"""
+<script defer src="assets/list.js"></script>"""
     itemlist = {
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -1174,7 +1179,8 @@ dédiée. Une grille combine des <strong>critères de lecture</strong> — chacu
 rattaché à un axe du classement et pondéré — et une <strong>lecture
 stratégique</strong> qui cadre les enjeux, forces, fragilités et leviers
 propres à la catégorie. Toute fiche évalue ces critères (oui · partiel · non ·
-inconnu) ; le score en découle directement.</p>
+inconnu) ; le score en découle directement.
+<a href="regimes.html">Le cadre des trois régimes du sol →</a></p>
 <p class="axe-legend">
 <span class="axe-dot axe-A"></span> Axe A — Intérêt général
 <span class="axe-dot axe-B"></span> Axe B — Libération des terres
@@ -1183,6 +1189,108 @@ inconnu) ; le score en découle directement.</p>
     return page("Grilles", body, "grilles.html", project=project,
                 description="Les trois grilles de lecture et d'analyse stratégique de l'annuaire.",
                 path="grilles.html")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Page — trois régimes du sol
+# ─────────────────────────────────────────────────────────────────────────────
+
+def render_regimes(cfg):
+    project = cfg["concepts"]["project"]
+    reg = cfg["concepts"].get("regimes", {}) or {}
+    anti = cfg["concepts"].get("anti_concepts", []) or []
+    liste = reg.get("liste", []) or []
+
+    # trois blocs courts, un par régime
+    cards = ""
+    for r in liste:
+        cards += f"""<div class="regime-card">
+  <h3>{e(clean(r.get('label','')))}</h3>
+  <p class="regime-outils"><strong>Outils.</strong> {e(clean(r.get('outils','')))}</p>
+  <p class="regime-but"><strong>Finalité.</strong> {e(clean(r.get('but','')))}</p>
+  <p class="regime-role">{e(clean(r.get('role','')))}</p>
+</div>"""
+
+    # tableau comparatif — structure stable, en dur
+    tbl_rows = [
+        ("Outil juridique type",
+         "Démembrement, fondation, fonds de dotation, bail long, association, SCIC",
+         "Société commerciale, parts ou actions cessibles",
+         "Pleine propriété individuelle (art. 544 C. civ.)"),
+        ("But poursuivi",
+         "Usage collectif d'intérêt général",
+         "Profit, valorisation du capital",
+         "Jouissance et transmission privées"),
+        ("Lucrativité",
+         "Non lucratif, gestion désintéressée",
+         "Lucratif par construction",
+         "Indifférente (usage privé)"),
+        ("Cessibilité du foncier",
+         "Verrouillée (inaliénabilité, dévolution)",
+         "Libre — parts cessibles, revente",
+         "Libre"),
+        ("Rapport au marché",
+         "Soustrait durablement",
+         "Soumis, voire spéculatif",
+         "Soumis, sans visée spéculative"),
+        ("Gouvernance",
+         "Collective, ouverte, « une voix par personne »",
+         "Proportionnelle au capital",
+         "Individuelle"),
+        ("Place dans l'annuaire",
+         "Régime de référence (noté)",
+         "Repoussoir — sauf si neutralisé",
+         "Point de départ, non référencé"),
+    ]
+    trs = "".join(
+        f"<tr><th scope=\"row\">{e(c)}</th><td>{e(a)}</td><td>{e(b)}</td>"
+        f"<td>{e(d)}</td></tr>"
+        for c, a, b, d in tbl_rows)
+    table = f"""<div class="table-scroll"><table class="rank-tbl regimes-tbl">
+<caption class="visually-hidden">Comparaison des trois régimes du sol selon
+sept critères.</caption>
+<thead><tr><th scope="col">Critère</th>
+<th scope="col">Droit civil / intérêt général</th>
+<th scope="col">Droit commercial</th>
+<th scope="col">Propriété privée classique</th></tr></thead>
+<tbody>{trs}</tbody></table></div>"""
+
+    anti_html = ""
+    if anti:
+        items = "".join(f"<li>{e(clean(x))}</li>" for x in anti)
+        anti_html = f"""<section><h2 class="sec">Aux frontières du modèle</h2>
+<p class="prose">L'annuaire se définit aussi par contraste. Ne sont
+<strong>pas</strong> référencés :</p>
+<ul class="prose">{items}</ul></section>"""
+
+    paradoxe = ""
+    if reg.get("paradoxe"):
+        paradoxe = (f'<div class="callout callout-note"><p>'
+                    f'<strong>Un régime n\'est pas une fatalité.</strong> '
+                    f'{e(clean(reg["paradoxe"]))}</p></div>')
+
+    body = f"""<h1>Trois régimes du sol</h1>
+<p class="lead">{e(clean(reg.get('chapeau','')))}</p>
+
+<section><h2 class="sec">Les trois régimes</h2>
+<div class="regime-grid">{cards}</div>
+{paradoxe}
+</section>
+
+<section><h2 class="sec">Tableau comparatif</h2>
+{table}
+</section>
+
+{anti_html}
+
+<p class="prose">La grille de notation traduit ce cadre en critères :
+voir les <a href="grilles.html">grilles d'analyse</a>. Le calcul de l'Indice
+est détaillé dans la <a href="methode.html">méthode</a>.</p>"""
+    return page("Trois régimes du sol", body, "regimes.html", project=project,
+                description="Les trois régimes juridiques du foncier : droit "
+                            "civil d'intérêt général, droit commercial, "
+                            "propriété privée classique.",
+                path="regimes.html")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1204,8 +1312,17 @@ def render_methode(cfg, n_by_cat, all_sc):
 {e(p['label'])}</span></td><td class="num">≥ {p['min']}</td>
 <td>{e(clean(p['sens']))}</td></tr>""" for p in ranking["paliers"])
     body = f"""<h1>Méthode</h1>
+<p class="lead">Comment l'annuaire recense, lit et note les montages de
+libération des terres.</p>
+<nav class="page-toc" aria-label="Sommaire de la page">
+  <a href="#corpus">Ce que recense l'annuaire</a>
+  <a href="#indice">L'Indice de libération</a>
+  <a href="#nature">Nature juridique du montage</a>
+  <a href="#limites">Limites</a>
+  <a href="#etat">État du corpus</a>
+</nav>
 
-<section><h2 class="sec">Ce que recense l'annuaire</h2>
+<section id="corpus"><h2 class="sec">Ce que recense l'annuaire</h2>
 <p class="prose">« Terres Libérées » recense des lieux français où le foncier a
 été soustrait au marché spéculatif par dissociation de la propriété et de
 l'usage. {e(clean(cc['definition']))}</p>
@@ -1213,7 +1330,7 @@ l'usage. {e(clean(cc['definition']))}</p>
 <p class="prose"><strong>Verrou central.</strong> {e(clean(cc['verrou_cle']))}</p>
 </section>
 
-<section><h2 class="sec">L'Indice de libération</h2>
+<section id="indice"><h2 class="sec">L'Indice de libération</h2>
 <p class="prose">Chaque entrée est notée de 0 à 100 sur trois axes. Pour une
 fiche, le score d'un axe est la somme pondérée des critères remplis, ramenée à
 100 : <code>score = Σ(poids × facteur) / Σ(poids) × 100</code>. Le facteur vaut
@@ -1230,24 +1347,28 @@ les fiches lacunaires, l'indice affiché est pénalisé par la complétude :
 entièrement renseignée n'est pas pénalisée ; une fiche dont la moitié des
 critères restent « inconnu » voit son indice ramené aux trois quarts de l'indice
 brut. L'indice brut est conservé pour information ; c'est l'indice affiché,
-pénalisé, qui sert au badge, au classement et à l'export <code>data.json</code>.
-Les modèles voisins ne sont pas notés par la grille : leur indice est
-<strong>estimé</strong> (axes posés éditorialement) et marqué comme tel ; ils
-restent hors du classement principal.</p>
+pénalisé, qui sert au badge, au classement et à l'export <code>data.json</code>.</p>
+<p class="prose">Les modèles voisins, eux, ne sont pas notés par la grille :
+leur indice est <strong>estimé</strong> (axes posés éditorialement) et marqué
+comme tel ; ils restent hors du classement principal.</p>
 <table class="rank-tbl small">
 <caption class="visually-hidden">Paliers de l'Indice de libération : seuil et sens.</caption>
 <thead><tr><th scope="col">Palier</th><th scope="col" class="num">Seuil</th><th scope="col">Sens</th></tr></thead>
 <tbody>{paliers_html}</tbody></table>
 </section>
 
-<section><h2 class="sec">Pureté juridique</h2>
-<p class="prose">{e(clean(ranking['purete_juridique']['question']))} Cet
-indicateur complémentaire n'entre pas dans l'Indice : il situe le montage sans
-le noter, car rester en droit public ou en forme sociétaire n'est pas en soi un
-défaut.</p>
+<section id="nature"><h2 class="sec">Nature juridique du montage</h2>
+<p class="prose">{e(clean(ranking['purete_juridique']['question']))}</p>
+<p class="prose">Cet indicateur complémentaire n'entre pas dans l'Indice et
+n'est <strong>pas une échelle de qualité</strong> : il situe le montage parmi
+les régimes juridiques sans les hiérarchiser. La protection effective du
+foncier est mesurée séparément, par l'axe B. Une propriété publique inaliénable
+n'est pas une « bascule » défavorable : c'est, dans le corpus, l'un des
+ancrages hors marché les plus solides. Le cadre de ces régimes est exposé sur
+la page <a href="regimes.html">Trois régimes du sol</a>.</p>
 </section>
 
-<section><h2 class="sec">Limites</h2>
+<section id="limites"><h2 class="sec">Limites</h2>
 <ul class="prose">
 <li>Les fiches reposent sur des sources publiques ; les montages réels peuvent
 être plus précis ou avoir évolué. Chaque fiche distingue les faits vérifiés des
@@ -1261,11 +1382,21 @@ associatif) est un idéal-type ; peu de lieux réels le réalisent à la lettre.
 </ul>
 </section>
 
-<section><h2 class="sec">État du corpus</h2>
+<section id="etat"><h2 class="sec">État du corpus</h2>
 <p class="prose">{n_by_cat['lieu']} lieux · {n_by_cat['porteur']} porteurs de
 nue-propriété · {n_by_cat['usufruitier']} organismes usufruitiers ·
 {n_by_cat['modele']} modèles voisins de comparaison.</p>
 {corpus_histogram(all_sc, ranking)}
+</section>
+
+<section><h2 class="sec">Aller plus loin</h2>
+<p class="prose">Pour le détail du cadre et des grilles : les
+<a href="regimes.html">trois régimes du sol</a> exposent l'opposition droit
+civil d'intérêt général / droit commercial / propriété privée ; les
+<a href="grilles.html">grilles d'analyse</a> détaillent les critères de chaque
+catégorie ; le <a href="glossaire.html">glossaire</a> définit les termes
+pivots ; les <a href="modeles.html">modèles voisins</a> servent de points de
+comparaison hors classement.</p>
 </section>"""
     return page("Méthode", body, "methode.html", project=project,
                 description="Méthode de l'annuaire et calcul de l'Indice de libération.",
@@ -1330,16 +1461,38 @@ GLOSSAIRE = [
      "Reconnaissance officielle, par l'État, qu'un organisme ou un projet "
      "sert l'intérêt de la collectivité. Elle conditionne notamment le statut "
      "de fondation reconnue d'utilité publique."),
+    ("Droit civil",
+     "Branche du droit qui régit les rapports entre les personnes privées et "
+     "leurs biens : propriété, démembrement, baux, associations, sociétés "
+     "civiles. La libération des terres réemploie ces outils de droit civil, "
+     "dans leur version non lucrative, pour soustraire le foncier au marché."),
+    ("Droit commercial",
+     "Branche du droit qui régit les commerçants et les sociétés "
+     "commerciales. Une société commerciale poursuit en principe un but "
+     "lucratif et ses parts ou actions sont, sauf clause contraire, librement "
+     "cessibles. C'est le régime que l'annuaire prend pour repoussoir — sauf "
+     "lorsque ses statuts en neutralisent la lucrativité."),
+    ("Propriété privée",
+     "Droit d'user, de jouir et de disposer d'un bien de la manière la plus "
+     "absolue (article 544 du Code civil). La pleine propriété individuelle "
+     "est le régime ordinaire du foncier : ni libération, ni spéculation, mais "
+     "le point de départ que la libération des terres entend dépasser."),
+    ("Spéculation foncière",
+     "Acquisition d'un foncier dans l'attente d'une plus-value à la revente, "
+     "plutôt que pour son usage. Les montages de l'annuaire visent à "
+     "neutraliser cette logique, en verrouillant la cessibilité du foncier ou "
+     "des parts qui en portent la valeur."),
     ("Indice de libération",
      "Note de synthèse de 0 à 100 attribuée à chaque entrée de l'annuaire. "
      "Elle est la moyenne de trois axes — intérêt général (A), libération des "
      "terres (B), gouvernance participative (C) — et résume la solidité du "
      "montage. Voir la page Méthode."),
-    ("Pureté juridique",
-     "Indicateur complémentaire, non noté : il situe le montage selon qu'il "
-     "reste ou non strictement dans le droit civil privé et la "
-     "non-lucrativité, sans bascule vers le droit public ou une forme "
-     "sociétaire lucrative."),
+    ("Nature juridique du montage",
+     "Indicateur complémentaire, non noté et non hiérarchique : il situe le "
+     "montage parmi quatre régimes — droit civil non lucratif, droit civil "
+     "sous encadrement public, forme sociétaire solidaire, droit public — sans "
+     "les classer. La protection effective du foncier est mesurée à part, par "
+     "l'axe B de l'Indice."),
 ]
 
 
@@ -1395,12 +1548,13 @@ def render_index(all_sc, cfg, n_by_cat):
 
     hist = corpus_histogram(all_sc, ranking)
 
-    body = f"""<section class="hero">
+    body = f"""{tri_defs(axes_cfg)}<section class="hero">
   <p class="hero-kicker">Annuaire critique · France</p>
   <h1>La terre, soustraite au marché.</h1>
   <p class="hero-lead">Partout en France, des terres sont sorties du marché
-  spéculatif. Cet annuaire les recense, explique leurs montages juridiques et
-  les note selon une grille d'analyse explicite.</p>
+  spéculatif — par le réemploi d'outils de droit civil non lucratif. Cet
+  annuaire les recense, explique leurs montages juridiques et les note selon
+  une grille d'analyse explicite.</p>
   <p class="hero-cta">
     <a class="cta" href="classement.html">Voir le classement</a>
     <a class="cta cta-ghost" href="methode.html">Comprendre la méthode</a>
@@ -1431,29 +1585,9 @@ def render_index(all_sc, cfg, n_by_cat):
       méthode →</a></p>
     </li>
   </ol>
-</section>
-
-<section class="explain">
-  <h2 class="sec">Le principe</h2>
-  <div class="explain-grid">
-    <div>
-      <h3>Libérer la terre</h3>
-      <p>Soustraire durablement un foncier à la logique spéculative pour le
-      placer au service d'un usage collectif d'intérêt général.</p>
-    </div>
-    <div>
-      <h3>Dissocier propriété et usage</h3>
-      <p>La propriété reste à un collectif non lucratif ; l'usage est confié à
-      des usager·es — par démembrement, bail long ou propriété publique.</p>
-    </div>
-    <div>
-      <h3>Le verrou des 30 ans</h3>
-      <p>L'usufruit d'une personne morale ne peut excéder 30 ans ; baux ruraux,
-      baux emphytéotiques et propriété publique y échappent.</p>
-    </div>
-  </div>
-  <p class="lead">Définitions complètes dans le <a href="glossaire.html">glossaire</a>
-  et le détail juridique dans la <a href="methode.html">méthode</a>.</p>
+  <p class="linkrow"><a href="regimes.html">Les trois régimes du sol →</a> ·
+  <a href="grilles.html">Grilles d'analyse →</a> ·
+  <a href="glossaire.html">Glossaire des termes →</a></p>
 </section>
 
 <section>
@@ -1465,7 +1599,8 @@ def render_index(all_sc, cfg, n_by_cat):
   <h2 class="sec">État du corpus</h2>
   <p class="lead">L'annuaire compte {n_by_cat['lieu']} lieux,
   {n_by_cat['porteur']} porteurs et {n_by_cat['usufruitier']} usufruitiers
-  notés. Leur répartition par palier d'Indice :</p>
+  notés — hors modèles voisins, présentés plus bas. Leur répartition par palier
+  d'Indice :</p>
   {hist}
 </section>
 
@@ -1473,6 +1608,10 @@ def render_index(all_sc, cfg, n_by_cat):
   <h2 class="sec">En tête du classement</h2>
   <p class="lead">Les montages dont l'Indice de libération est le plus élevé —
   tous axes confondus. <a href="classement.html">Classement complet →</a></p>
+  <p class="axe-legend cat-legend">Profil tri-axes :
+  <span class="axe-dot axe-A"></span> A — Intérêt général
+  <span class="axe-dot axe-B"></span> B — Libération des terres
+  <span class="axe-dot axe-C"></span> C — Gouvernance participative</p>
   {cards_grid(top, axes_cfg, concepts=concepts)}
 </section>
 
@@ -1578,7 +1717,8 @@ CSS = """
  --line:#ddd4bf;--green:#4a7a3a;--green-dk:#356026;--terra:#bc5d3a;
  --terra-dk:#8f3f25;--blue:#36748a;--blue-dk:#2a5566;--gold:#b0843a;
  --gold-dk:#8a6420;--beige:#efe9d8;--beige-dk:#e6ddc6;
- --axe-a:#4a7a3a;--axe-b:#bc5d3a;--axe-c:#36748a;--radius:8px;
+ --axe-a:#4a7a3a;--axe-b:#bc5d3a;--axe-c:#36748a;
+ --radius:8px;--radius-sm:4px;--radius-pill:999px;
 }
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;}
@@ -1586,8 +1726,8 @@ body{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
  color:var(--ink);background:var(--paper);line-height:1.58;-webkit-font-smoothing:antialiased;}
 .wrap{max-width:1080px;margin:0 auto;padding:0 1.3rem;}
 a{color:var(--green-dk);}
-a:hover{color:var(--terra-dk);}
-:focus-visible{outline:2px solid var(--ink);outline-offset:2px;border-radius:3px;}
+a:hover{color:var(--green);}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px;border-radius:var(--radius-sm);}
 
 /* utilitaire : visuellement masqué mais lisible par lecteur d'écran */
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;
@@ -1601,7 +1741,7 @@ a:hover{color:var(--terra-dk);}
 h1{font-size:2.6rem;line-height:1.15;letter-spacing:-.018em;margin:1.4rem 0 .6rem;}
 h2.sec{font-size:1.7rem;font-family:inherit;text-transform:none;
  letter-spacing:-.01em;color:var(--ink);font-weight:600;
- border-bottom:1px solid var(--line);padding-bottom:.4rem;margin:2.8rem 0 1.2rem;}
+ border-bottom:1px solid var(--line);padding-bottom:.4rem;margin:2.4rem 0 1.2rem;}
 h2.sec::before{content:"";display:inline-block;width:1.5rem;height:3px;
  background:var(--terra);vertical-align:.35em;margin-right:.55rem;border-radius:2px;}
 h3{font-size:1.28rem;font-weight:600;letter-spacing:-.005em;margin:1.2rem 0 .4rem;}
@@ -1613,7 +1753,7 @@ p{font-size:1.05rem;}
  font-family:-apple-system,system-ui,"Segoe UI",sans-serif;}
 
 /* masthead */
-.masthead{border-bottom:3px solid var(--ink);background:var(--paper);}
+.masthead{border-bottom:2px solid var(--ink);background:var(--paper);}
 .masthead .wrap{display:flex;flex-wrap:wrap;align-items:center;
  justify-content:space-between;gap:.6rem 1.4rem;padding-top:1.1rem;padding-bottom:.6rem;}
 .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--ink);}
@@ -1626,14 +1766,13 @@ p{font-size:1.05rem;}
 .topnav a{text-decoration:none;color:var(--muted);padding:.45rem .2rem;
  display:inline-block;min-height:24px;
  border-bottom:2px solid transparent;transition:color .15s,border-color .15s;}
-.topnav a:hover{color:var(--terra-dk);border-bottom-color:var(--line);}
+.topnav a:hover{color:var(--green-dk);border-bottom-color:var(--line);}
 .topnav a.active{color:var(--ink);font-weight:600;border-bottom-color:var(--terra);}
 
 main.wrap{padding-bottom:4rem;}
 
 /* hero */
-.hero{padding:3.4rem 0 2.6rem;border-bottom:1px solid var(--line);
- background:linear-gradient(180deg,rgba(221,212,191,.22),transparent);}
+.hero{padding:3.4rem 0 2.6rem;border-bottom:1px solid var(--line);}
 .hero-kicker{font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;
  color:var(--terra-dk);font-weight:700;margin:0 0 .4rem;}
 .hero h1{font-size:2.9rem;max-width:18ch;margin:.1rem 0 .7rem;}
@@ -1648,14 +1787,24 @@ main.wrap{padding-bottom:4rem;}
 .cta-ghost{background:transparent;color:var(--green-dk)!important;border:1.5px solid var(--green);}
 .cta-ghost:hover{background:var(--card);}
 .lead{font-size:1.05rem;color:var(--muted);max-width:70ch;}
-.lead a,.prose a,.grille-intro a{text-decoration:underline;text-underline-offset:2px;
- text-decoration-thickness:1px;}
+.lead a,.prose a,.grille-intro a,.linkrow a{text-decoration:underline;
+ text-underline-offset:2px;text-decoration-thickness:1px;}
+
+/* fil de liens secondaires — dégradé par rapport au chapô .lead */
+.linkrow{font-family:-apple-system,system-ui,sans-serif;font-size:.9rem;
+ color:var(--faint);margin:.9rem 0 .2rem;}
+
+/* sommaire ancré de page de référence */
+.page-toc{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;margin:1rem 0 .4rem;
+ font-family:-apple-system,system-ui,sans-serif;font-size:.88rem;}
+.page-toc a{color:var(--green-dk);text-decoration:none;}
+.page-toc a:hover{text-decoration:underline;}
 
 /* comment lire — étapes */
 .steps{list-style:none;padding:0;margin:1.2rem 0;display:grid;gap:1rem;
  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
-.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
- padding:1.1rem 1.2rem 1.2rem;position:relative;}
+.step{background:var(--card);border:1px solid transparent;
+ border-radius:var(--radius);padding:1.1rem 1.2rem 1.2rem;position:relative;}
 .step-n{display:inline-flex;align-items:center;justify-content:center;
  width:1.9rem;height:1.9rem;border-radius:50%;background:var(--terra-dk);
  color:var(--paper);font-weight:700;font-size:.95rem;}
@@ -1668,7 +1817,7 @@ main.wrap{padding-bottom:4rem;}
 .explain-grid h3{margin-top:0;}
 .explain-grid p{font-size:.95rem;color:var(--muted);}
 .cat-cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
-.cat-card{display:block;background:var(--card);border:1px solid var(--line);
+.cat-card{display:block;background:var(--card);border:1px solid transparent;
  border-radius:var(--radius);padding:1.1rem 1.2rem;text-decoration:none;
  color:var(--ink);transition:border-color .15s,box-shadow .15s;}
 .cat-card:hover{border-color:var(--green);box-shadow:0 4px 16px rgba(33,29,24,.08);}
@@ -1680,21 +1829,24 @@ main.wrap{padding-bottom:4rem;}
 /* cards */
 .cards{list-style:none;padding:0;margin:1.2rem 0;display:grid;gap:.9rem;
  grid-template-columns:repeat(auto-fill,minmax(300px,1fr));}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
- padding:1rem 1.15rem;transition:border-color .15s,box-shadow .15s;}
+.card{position:relative;background:var(--card);border:1px solid var(--line);
+ border-radius:var(--radius);padding:1rem 1.15rem;
+ transition:border-color .15s,box-shadow .15s;}
 .card:hover{border-color:var(--green);box-shadow:0 4px 16px rgba(33,29,24,.07);}
+.card:focus-within{border-color:var(--green);}
 .card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;}
 .card h3{margin:.5rem 0 .2rem;font-size:1.16rem;line-height:1.3;}
 .card h3 a{text-decoration:none;color:var(--ink);}
-.card h3 a:hover{color:var(--terra);}
+.card h3 a:hover{color:var(--green-dk);}
+/* stretched link : toute la carte est cliquable, zéro JS */
+.card-link::after{content:"";position:absolute;inset:0;border-radius:var(--radius);}
 .card-sub{font-size:.9rem;color:var(--muted);margin:.1rem 0;}
 .card-meta{font-size:.8rem;color:var(--faint);margin:.2rem 0 .5rem;}
-.card-viz{display:flex;gap:.7rem;align-items:center;}
-.card-viz .axis-block{flex:1;margin:.2rem 0;}
+.card-viz{display:flex;justify-content:center;}
 
 /* tags */
 .tag{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;font-weight:700;
- padding:.2rem .5rem;border-radius:4px;color:var(--paper);white-space:nowrap;}
+ padding:.2rem .5rem;border-radius:var(--radius-sm);color:var(--paper);white-space:nowrap;}
 .tag-lieu{background:var(--green-dk);}
 .tag-porteur{background:var(--terra-dk);}
 .tag-usufruitier{background:var(--blue-dk);}
@@ -1702,16 +1854,21 @@ main.wrap{padding-bottom:4rem;}
 
 /* triangle de profil tri-axes */
 .tri{width:108px;height:auto;display:block;flex:0 0 auto;}
-.tri.compact{width:78px;}
+.tri.compact{width:92px;}
 .score-main .tri{width:140px;margin:.6rem auto 0;}
 .tri-frame{fill:none;stroke:var(--line);stroke-width:1;}
 .tri-grid{fill:none;stroke:var(--line);stroke-width:1;stroke-dasharray:2 2;}
-.tri-fill{fill:rgba(74,122,58,.16);stroke:var(--ink);stroke-width:1.6;
+/* remplissage neutre, découplé des couleurs d'axe (audit dataviz B, M5) */
+.tri-fill{fill:rgba(34,31,26,.10);stroke:var(--ink);stroke-width:1.6;
  stroke-linejoin:round;}
+/* arête vers un axe non renseigné : hachurée, signale une donnée indéterminée */
+.tri-edge-na{stroke:var(--faint);stroke-width:1.6;stroke-dasharray:3 2;}
 .tri-vtx.tri-na{fill:var(--paper);stroke:var(--faint);stroke-width:1;
  stroke-dasharray:2 1.5;}
 .tri-lab{font:700 7px -apple-system,system-ui,sans-serif;fill:var(--paper);
  text-anchor:middle;dominant-baseline:central;}
+.tri-scale{font:6px -apple-system,system-ui,sans-serif;fill:var(--faint);
+ text-anchor:middle;}
 
 /* idl badge — anneau */
 .idl-badge{display:inline-flex;flex-direction:column;align-items:center;
@@ -1724,6 +1881,9 @@ main.wrap{padding-bottom:4rem;}
  dominant-baseline:central;font-family:-apple-system,system-ui,sans-serif;}
 .idl-pal{font-size:.62rem;text-transform:uppercase;letter-spacing:.04em;
  color:var(--muted);text-align:center;max-width:9rem;}
+/* sur la carte, le palier est déjà porté par la couleur de l'anneau et le
+   classement ; on masque le libellé répété pour alléger la grille (design B, M8) */
+.card .idl-pal{display:none;}
 .idl-badge.big .idl-pal{font-size:.78rem;letter-spacing:.06em;}
 .idl-estime .idl-arc{stroke-dasharray:4 3;}
 .idl-estime .idl-num{font-style:italic;}
@@ -1749,8 +1909,9 @@ main.wrap{padding-bottom:4rem;}
 .axis-row{display:flex;align-items:center;gap:.5rem;margin:.3rem 0;font-size:.82rem;}
 .axis-label{flex:0 0 8.4rem;color:var(--muted);overflow:hidden;text-overflow:ellipsis;
  white-space:nowrap;}
-.axis-track{flex:1;height:.5rem;background:var(--beige-dk);border-radius:4px;overflow:hidden;}
-.axis-fill{display:block;height:100%;border-radius:4px;}
+.axis-track{flex:1;height:.5rem;background:var(--beige-dk);
+ border-radius:var(--radius-sm);overflow:hidden;}
+.axis-fill{display:block;height:100%;border-radius:var(--radius-sm);}
 .axis-fill.axis-na{background:repeating-linear-gradient(45deg,#ddd,#ddd 3px,#eee 3px,#eee 6px)!important;}
 .axis-val{flex:0 0 2.1rem;text-align:right;font-weight:700;font-variant-numeric:tabular-nums;}
 .axis-block.compact .axis-label{flex-basis:5.6rem;font-size:.72rem;}
@@ -1770,19 +1931,29 @@ select{font:inherit;font-family:-apple-system,system-ui,sans-serif;font-size:.85
  background:var(--card);color:var(--ink);cursor:pointer;}
 .count{margin-left:auto;color:var(--faint);font-size:.85rem;}
 .count b{color:var(--green-dk);}
-.filter-bar{display:flex;flex-direction:column;gap:.5rem;margin:.6rem 0 1.2rem;}
+/* filtres avancés repliés — n'occupent pas de hauteur avant les cartes */
+.filter-details{margin:.4rem 0 .8rem;}
+.filter-details summary{font-family:-apple-system,system-ui,sans-serif;
+ font-size:.84rem;color:var(--muted);cursor:pointer;padding:.3rem 0;
+ width:fit-content;}
+.filter-details summary:hover{color:var(--green-dk);}
+.filter-details[open] summary{margin-bottom:.3rem;}
+.filter-bar{display:flex;flex-direction:column;gap:.5rem;margin:.2rem 0 1.2rem;}
 .filter-row{display:flex;gap:.4rem;flex-wrap:wrap;align-items:center;}
 .filter-lab{font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;
  color:var(--faint);font-weight:700;flex:0 0 4.4rem;}
 .fbtn{font:inherit;font-family:-apple-system,system-ui,sans-serif;font-size:.83rem;
- min-height:32px;padding:.4rem .8rem;border:1px solid var(--line);border-radius:20px;
+ min-height:32px;padding:.4rem .8rem;border:1px solid var(--line);
+ border-radius:var(--radius-pill);
  background:var(--card);color:var(--muted);cursor:pointer;
  transition:background .15s,color .15s,border-color .15s;}
 .fbtn:hover{border-color:var(--green);color:var(--ink);}
 .fbtn.active{background:var(--green-dk);color:var(--paper);border-color:var(--green-dk);}
 .fbtn:focus-visible{outline-color:var(--ink);}
-.no-result{background:var(--beige);border-left:3px solid var(--terra);
+.no-result{background:var(--beige);
  padding:.7rem 1rem;border-radius:var(--radius);font-size:.92rem;color:var(--muted);}
+.cat-foot{font-family:-apple-system,system-ui,sans-serif;font-size:.86rem;
+ margin:1.6rem 0 .4rem;}
 
 /* fiche */
 .crumb{font-size:.85rem;font-family:-apple-system,system-ui,sans-serif;
@@ -1797,13 +1968,13 @@ select{font:inherit;font-family:-apple-system,system-ui,sans-serif;font-size:.85
 /* score panel — composant primaire */
 .score-panel{display:flex;gap:1.6rem;flex-wrap:wrap;align-items:flex-start;
  background:var(--card);border:1px solid var(--line);
- border-left:5px solid var(--pal,var(--green));border-radius:var(--radius);
+ border-left:3px solid var(--pal,var(--green));border-radius:var(--radius);
  padding:1.6rem 1.8rem;margin:1.4rem 0;box-shadow:0 3px 14px rgba(33,29,24,.06);}
 .score-main{text-align:center;}
 .score-cap{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;
  color:var(--muted);margin:0 0 .35rem;}
-.score-axes{flex:1;min-width:260px;border-left:1px solid var(--line);
- padding-left:1.6rem;}
+/* un seul séparateur : le gap suffit, le filet gauche est retiré (design B, M5) */
+.score-axes{flex:1;min-width:260px;}
 .fiab{font-size:.82rem;margin:.6rem 0 0;font-weight:600;}
 .fiab-ok{color:var(--green-dk);}
 .fiab-gold{color:var(--gold-dk);}
@@ -1811,8 +1982,8 @@ select{font:inherit;font-family:-apple-system,system-ui,sans-serif;font-size:.85
 .completude{font-size:.8rem;color:var(--faint);margin:.2rem 0 0;}
 
 /* en bref — composant tertiaire (info) */
-.enbref{background:var(--beige);border-left:3px solid var(--line);
- border-radius:var(--radius);padding:1rem 1.3rem;margin:1.2rem 0;font-size:.92rem;}
+.enbref{background:var(--beige);border-radius:var(--radius);
+ padding:1rem 1.3rem;margin:1.2rem 0;font-size:.92rem;}
 .enbref dl{display:grid;grid-template-columns:max-content 1fr;gap:.55rem 1.6rem;margin:0;}
 .enbref dt{color:var(--muted);font-weight:600;}
 .enbref dd{margin:0;word-break:break-word;}
@@ -1833,7 +2004,7 @@ select{font:inherit;font-family:-apple-system,system-ui,sans-serif;font-size:.85
 .rk-row{display:flex;align-items:center;gap:.6rem;font-size:.82rem;
  font-family:-apple-system,system-ui,sans-serif;}
 .rk-ax{flex:0 0 11rem;color:var(--muted);}
-.rk-bar{flex:0 0 130px;display:flex;height:.7rem;border-radius:4px;
+.rk-bar{flex:0 0 130px;display:flex;height:.7rem;border-radius:var(--radius-sm);
  overflow:hidden;background:var(--beige-dk);}
 .rk-seg{display:block;height:100%;}
 .rk-txt{color:var(--faint);font-size:.78rem;}
@@ -1852,7 +2023,7 @@ table{width:100%;border-collapse:collapse;font-size:.9rem;margin:.6rem 0;}
 table th,table td{border-bottom:1px solid var(--line);padding:.5rem .55rem;
  text-align:left;vertical-align:top;}
 table th{color:var(--muted);font-weight:700;font-size:.72rem;text-transform:uppercase;
- letter-spacing:.04em;border-bottom:2px solid var(--ink);}
+ letter-spacing:.04em;border-bottom:1px solid var(--ink);}
 .fam-row td,.fam-row th{background:var(--beige);font-weight:700;font-size:.8rem;
  text-transform:uppercase;letter-spacing:.04em;color:var(--muted);
  border-top:2px solid var(--line);text-align:left;}
@@ -1918,20 +2089,21 @@ th.sortable[aria-sort=descending]::after{content:" \\25BC";opacity:1;}
 /* chips — montages reliés avec profil */
 .chips{display:flex;flex-wrap:wrap;gap:.6rem;margin:.6rem 0;}
 .chip{display:inline-block;background:var(--card);border:1px solid var(--line);
- border-radius:20px;padding:.3rem .8rem;font-size:.85rem;text-decoration:none;
- color:var(--ink);font-family:-apple-system,system-ui,sans-serif;
+ border-radius:var(--radius-pill);padding:.3rem .8rem;font-size:.85rem;
+ text-decoration:none;color:var(--ink);
+ font-family:-apple-system,system-ui,sans-serif;
  transition:background .15s,border-color .15s,color .15s;}
-.chip:hover{border-color:var(--green);color:var(--terra);}
+.chip:hover{border-color:var(--green);color:var(--ink);}
 .chip-rel{display:flex;align-items:center;gap:.55rem;border-radius:var(--radius);
  padding:.5rem .8rem;}
-.chip-rel .tri{flex:0 0 auto;}
+.chip-rel .tri.compact{flex:0 0 auto;width:54px;}
 .chip-txt{display:flex;flex-direction:column;line-height:1.25;}
 .chip-cat{font-size:.68rem;text-transform:uppercase;letter-spacing:.05em;
  color:var(--faint);}
 
 /* fiab box / sources — tertiaire */
-.fiab-box{background:var(--beige);border-left:3px solid var(--line);
- border-radius:var(--radius);padding:.7rem 1.2rem;margin:1.4rem 0;}
+.fiab-box{background:var(--beige);border-radius:var(--radius);
+ padding:.7rem 1.2rem;margin:1.4rem 0;}
 .fiab-box h3{margin:.3rem 0;font-size:.85rem;text-transform:uppercase;letter-spacing:.05em;
  font-family:-apple-system,system-ui,sans-serif;color:var(--muted);}
 .fiab-box p{font-size:.9rem;margin:.3rem 0;}
@@ -1940,20 +2112,34 @@ th.sortable[aria-sort=descending]::after{content:" \\25BC";opacity:1;}
 
 /* classement legend */
 .paliers-legend{display:flex;gap:.5rem;flex-wrap:wrap;margin:1rem 0;}
-.pal-chip{font-size:.78rem;font-weight:600;border-left:4px solid var(--pal,#999);
- background:var(--card);padding:.25rem .6rem;border-radius:4px;}
+.pal-chip{font-size:.78rem;font-weight:600;border-left:3px solid var(--pal,#999);
+ background:var(--card);padding:.25rem .6rem;border-radius:var(--radius-sm);}
 .pal-chip em{color:var(--faint);font-style:normal;}
 
 /* axe cards (methode) */
 .axe-cards{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
  margin:1.1rem 0;}
-.axe-card{border:1px solid var(--line);border-top:4px solid var(--c,#999);
+.axe-card{border:1px solid var(--line);border-top:3px solid var(--c,#999);
  border-radius:var(--radius);padding:.4rem 1.1rem 1rem;background:var(--card);}
 .axe-card h3{font-size:1.05rem;}
 .axe-q{font-style:italic;color:var(--muted);font-size:.92rem;}
 .axe-card p{font-size:.9rem;}
-code{background:var(--beige);padding:.1rem .35rem;border-radius:3px;font-size:.86rem;}
+code{background:var(--beige);padding:.1rem .35rem;border-radius:var(--radius-sm);font-size:.86rem;}
 .note{font-size:.83rem;color:var(--faint);}
+
+/* trois régimes du sol */
+.regime-grid{display:grid;gap:1rem;margin:1.1rem 0;
+ grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+.regime-card{border:1px solid var(--line);border-top:3px solid var(--green);
+ border-radius:var(--radius);padding:.5rem 1.1rem 1rem;background:var(--card);}
+.regime-card:nth-child(2){border-top-color:var(--terra);}
+.regime-card:nth-child(3){border-top-color:var(--gold);}
+.regime-card h3{font-size:1.05rem;}
+.regime-card p{font-size:.9rem;margin:.45rem 0;}
+.regime-outils,.regime-but{color:var(--muted);}
+.regime-role{color:var(--faint);font-style:italic;font-size:.85rem!important;}
+.regimes-tbl th[scope=row]{font-weight:600;color:var(--ink);text-transform:none;
+ letter-spacing:0;font-size:.86rem;border-bottom:1px solid var(--line);}
 
 /* glossaire */
 .glossaire{margin:1.4rem 0;display:flex;flex-direction:column;gap:0;}
@@ -1963,7 +2149,7 @@ code{background:var(--beige);padding:.1rem .35rem;border-radius:3px;font-size:.8
 .gloss-item dd{margin:0;font-size:1.02rem;color:var(--muted);max-width:70ch;}
 
 /* footer */
-.footer{border-top:3px solid var(--ink);margin-top:3rem;background:var(--paper);}
+.footer{border-top:2px solid var(--ink);margin-top:3rem;background:var(--paper);}
 .footer .wrap{padding:1.6rem 1.3rem 2.2rem;}
 .footer p{font-size:.86rem;color:var(--muted);margin:.4rem 0;
  font-family:-apple-system,system-ui,sans-serif;}
@@ -1987,10 +2173,58 @@ code{background:var(--beige);padding:.1rem .35rem;border-radius:3px;font-size:.8
  .hero h1{font-size:1.95rem;}
  .hero-lead{font-size:1.08rem;}
  .enbref dl{grid-template-columns:1fr;}
- .topnav{gap:.7rem;font-size:.82rem;}
  .count{margin-left:0;}
  .rk-row{flex-wrap:wrap;}
  .rk-ax{flex-basis:100%;}
+ .rk-bar{flex:1 1 auto;}
+
+ /* nav — pleine largeur sous la marque, cibles tactiles 44px */
+ .masthead .wrap{padding-bottom:.3rem;}
+ .topnav{gap:.15rem .55rem;width:100%;margin-top:.4rem;
+  padding-top:.5rem;border-top:1px solid var(--line);font-size:.82rem;}
+ .topnav a{padding:.5rem .55rem;min-height:44px;
+  display:flex;align-items:center;}
+
+ /* classement — libellés contraints, sous-titre sur plusieurs lignes */
+ .rank-tbl{font-size:.82rem;}
+ .rank-tbl td,.rank-tbl th{padding:.4rem .4rem;}
+ .rank-tbl .name{min-width:11rem;max-width:13rem;}
+ .rank-tbl .row-sub{white-space:normal;line-height:1.25;}
+ .th-sort{padding:.45rem .4rem;}
+
+ /* régimes — le tableau déborde proprement, colonne critère figée */
+ .regimes-tbl{min-width:34rem;font-size:.82rem;}
+ .regimes-tbl th,.regimes-tbl td{padding:.45rem .5rem;}
+ .regimes-tbl th[scope=row]{position:sticky;left:0;
+  background:var(--card);z-index:1;}
+
+ /* toolbar / filtres — label pleine ligne, boutons et recherche élargis */
+ .toolbar{gap:.45rem;}
+ .toolbar > label{flex:0 0 100%;font-size:.8rem;
+  color:var(--muted);margin-bottom:.1rem;
+  font-family:-apple-system,system-ui,sans-serif;}
+ .fbtn{min-height:40px;padding:.5rem 1rem;}
+ .toolbar input[type=search]{flex:1 1 100%;min-width:0;}
+
+ /* fiche — score panel et axes empilés */
+ .score-panel{padding:1.1rem 1rem;}
+ .axis-row{flex-wrap:wrap;}
+ .axis-label{flex:1 1 100%;white-space:normal;
+  overflow:visible;margin-bottom:.1rem;}
+ .axis-track{flex:1 1 auto;}
+
+ /* cartes — colonne unique, triangle réduit */
+ .cards{grid-template-columns:1fr;}
+ .tri.compact{width:78px;}
+}
+
+/* très petit écran — hero resserré, CTA pleine largeur */
+@media(max-width:400px){
+ .hero{padding:1.9rem 0 1.4rem;}
+ .hero h1{font-size:1.7rem;}
+ .hero-lead{font-size:1rem;}
+ .hero-cta{gap:.5rem;}
+ .hero-cta .cta{flex:1 1 100%;text-align:center;}
 }
 """
 
@@ -2011,6 +2245,115 @@ FAVICON_SVG = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
 <text x="32" y="44" font-family="-apple-system,system-ui,Segoe UI,sans-serif"
  font-size="34" font-weight="800" fill="#f5f2e9" text-anchor="middle">TL</text>
 </svg>
+"""
+
+LIST_JS = """/* list.js — filtre, tri et recherche des catalogues.
+   Fichier unique mis en cache, partagé par lieux/porteurs/usufruitiers/modeles
+   (cf. cycle B — audit performance, B-2). Vanilla JS, aucune dépendance. */
+(function(){
+ var q=document.getElementById('q'),sort=document.getElementById('sort'),
+   cnt=document.getElementById('cnt'),nores=document.getElementById('noresult'),
+   grid=document.querySelector('.cards');
+ if(!grid) return;
+ var cards=[].slice.call(document.querySelectorAll('.card')),
+   fbtns=[].slice.call(document.querySelectorAll('.fbtn'));
+ var active={};
+ fbtns.forEach(function(b){
+  var k=b.dataset.fk;
+  if(b.classList.contains('active')) active[k]=b.dataset.fv;
+ });
+ function apply(){
+  var v=q?q.value.toLowerCase().trim():'',n=0;
+  cards.forEach(function(c){
+   var ok=c.dataset.nom.toLowerCase().indexOf(v)!==-1;
+   for(var k in active){
+    if(active[k]&&active[k]!=='all'&&c.dataset[k]!==active[k]) ok=false;
+   }
+   c.style.display=ok?'':'none';
+   if(ok) n++;
+  });
+  if(cnt){
+   cnt.innerHTML='<b>'+n+'</b> entrée'+(n>1?'s':'')+' affichée'+(n>1?'s':'');
+  }
+  if(nores) nores.hidden=n!==0;
+ }
+ function doSort(){
+  var key=sort.value;
+  var vis=cards.slice().sort(function(a,b){
+   if(key==='nom') return a.dataset.nom.localeCompare(b.dataset.nom,'fr');
+   return (parseFloat(b.dataset[key])||0)-(parseFloat(a.dataset[key])||0);
+  });
+  vis.forEach(function(c){grid.appendChild(c);});
+ }
+ if(q) q.addEventListener('input',apply);
+ if(sort) sort.addEventListener('change',doSort);
+ fbtns.forEach(function(b){
+  b.addEventListener('click',function(){
+   var k=b.dataset.fk;
+   document.querySelectorAll('.fbtn[data-fk="'+k+'"]').forEach(function(x){
+    x.classList.remove('active');
+   });
+   b.classList.add('active');active[k]=b.dataset.fv;apply();
+  });
+ });
+})();
+
+/* Classement — tri de colonnes + filtre par catégorie (page classement.html). */
+(function(){
+ var tbl=document.querySelector('.rank-tbl');
+ if(!tbl||!tbl.tBodies.length||!tbl.tHead) return;
+ var tb=tbl.tBodies[0],
+   ths=[].slice.call(tbl.tHead.rows[0].cells),
+   btns=[].slice.call(document.querySelectorAll('.fbtn[data-f]')),
+   status=document.getElementById('sort-status');
+ function reindex(){
+  var i=0;
+  [].slice.call(tb.rows).forEach(function(t){
+   if(t.style.display!=='none'){i++;t.querySelector('.rank').textContent=i;}
+  });
+ }
+ btns.forEach(function(b){
+  b.addEventListener('click',function(){
+   btns.forEach(function(x){x.classList.remove('active');});
+   b.classList.add('active');
+   var f=b.dataset.f;
+   [].slice.call(tb.rows).forEach(function(t){
+    t.style.display=(f==='all'||t.dataset.cat===f)?'':'none';
+   });
+   reindex();
+  });
+ });
+ function cellVal(tr,i,type){
+  var t=tr.cells[i].innerText.trim();
+  if(type==='num') return t==='—'?-1:(parseFloat(t)||0);
+  return t.toLowerCase();
+ }
+ function sortBy(th){
+  var i=ths.indexOf(th),type=th.dataset.sort;
+  var dir=th.getAttribute('aria-sort')==='ascending'?-1:1;
+  ths.forEach(function(x){
+   if(x.classList.contains('sortable')) x.setAttribute('aria-sort','none');
+  });
+  th.setAttribute('aria-sort',dir===1?'descending':'ascending');
+  [].slice.call(tb.rows).sort(function(a,b){
+   var va=cellVal(a,i,type),vb=cellVal(b,i,type);
+   if(va<vb) return dir;
+   if(va>vb) return -dir;
+   return 0;
+  }).forEach(function(r){tb.appendChild(r);});
+  reindex();
+  if(status){
+   var lab=(th.querySelector('.th-sort')||th).innerText.trim();
+   status.textContent='Tableau trié par '+lab+', ordre '
+    +(dir===1?'décroissant':'croissant')+'.';
+  }
+ }
+ ths.forEach(function(th){
+  if(!th.classList.contains('sortable')) return;
+  var btn=th.querySelector('.th-sort');
+  (btn||th).addEventListener('click',function(){sortBy(th);});
+ });
+})();
 """
 
 OG_SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
@@ -2080,6 +2423,7 @@ def main():
     SITE.mkdir(exist_ok=True)
     ASSETS.mkdir(exist_ok=True)
     write(ASSETS / "style.css", CSS)
+    write(ASSETS / "list.js", LIST_JS)
     write(ASSETS / "favicon.svg", FAVICON_SVG)
     write(ASSETS / "og-default.svg", OG_SVG)
     write(SITE / "favicon.svg", FAVICON_SVG)
@@ -2101,6 +2445,7 @@ def main():
     # pages transverses
     write(SITE / "index.html", render_index(all_sc, cfg, n_by_cat))
     write(SITE / "classement.html", render_classement(all_sc, cfg))
+    write(SITE / "regimes.html", render_regimes(cfg))
     write(SITE / "grilles.html", render_grilles(cfg))
     write(SITE / "glossaire.html", render_glossaire(cfg))
     write(SITE / "methode.html", render_methode(cfg, n_by_cat, all_sc))
@@ -2114,8 +2459,8 @@ def main():
     sitemap_paths = [("index.html", "1.0")]
     for cat in ("lieu", "porteur", "usufruitier", "modele"):
         sitemap_paths.append((CAT_PAGE[cat], "0.8"))
-    for p in ("classement.html", "grilles.html", "methode.html",
-              "glossaire.html", "suggerer.html"):
+    for p in ("classement.html", "regimes.html", "grilles.html",
+              "methode.html", "glossaire.html", "suggerer.html"):
         sitemap_paths.append((p, "0.6"))
     for f, sc in all_sc:
         sitemap_paths.append((f'{CAT_SLUG[f["categorie"]]}/{f["uid"]}.html', "0.7"))

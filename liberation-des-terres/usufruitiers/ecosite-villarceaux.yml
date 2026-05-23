@@ -9,22 +9,22 @@ annee: null
 url: "https://www.bergerie-villarceaux.org/"
 resume: >
   Association loi 1901 présente sur le domaine de la Bergerie de Villarceaux, dont
-  le foncier appartient à la Fondation Charles Léopold Mayer. Plusieurs structures
+  le foncier appartient à la Fondation Charles Léopold Mayer. Six structures
   juridiques distinctes cohabitent sur le site : l'exploitation agricole sous
-  forme d'EARL, l'association Écosite et la coopérative Coop'Saveur, créée en
-  2001. L'association porte des activités d'animation et de formation liées à la
+  forme d'EARL (l'EARL du Chemin Neuf), l'association Écosite et la coopérative
+  Saveurs du Vexin, créée en 2001. L'association porte des activités d'animation et de formation liées à la
   transition agroécologique du domaine.
 montage:
   type: propriete_sanctuarisee
   nu_proprietaire: "Fondation Charles Léopold Mayer pour le Progrès de l'Homme (FPH)"
-  usufruitier: "Titulaire de l'usage : association Écosite (animation, formation) et EARL Olivier Ranke (exploitation agricole) ; nature exacte des titres d'usage non documentée"
+  usufruitier: "Titulaire de l'usage : association Écosite (animation, formation) et EARL du Chemin Neuf (exploitation agricole, exploitant Olivier Ranke) ; nature exacte des titres d'usage non documentée"
   description: >
     L'association Écosite est l'une des structures d'usage du domaine de
     Villarceaux, propriété de la FPH. Elle porte l'animation et la formation,
     tandis que l'exploitation agricole relève d'une EARL. La nature exacte des
     actes liant l'association à la fondation n'est pas documentée par les sources.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
     Association loi 1901 d'animation, non lucrative ; le montage d'usage du
     domaine reste partiellement documenté et cohabite avec une EARL.
@@ -53,6 +53,9 @@ grille:
   - critere: non_appropriation
     valeur: oui
     note: "Le foncier appartient à la fondation ; l'association ne peut ni le revendre ni en capter la valeur."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "L'association Écosite est une association loi 1901 sans capital social ; le foncier appartient par ailleurs à la fondation : aucune part appropriable, aucune captation possible de la valeur foncière."
   - critere: une_voix
     valeur: oui
     note: "L'association loi 1901 fonctionne sur le principe associatif, sans pouvoir proportionnel au capital."
@@ -87,8 +90,9 @@ analyse:
     appelle une clarification des actes et des rôles.
 fiabilite: >
   Faits vérifiés : présence d'une association Écosite sur le domaine de
-  Villarceaux, propriété du domaine par la FPH, cohabitation avec une EARL et la
-  coopérative Coop'Saveur créée en 2001. Non confirmé : nature exacte des actes
+  Villarceaux, propriété du domaine par la FPH, cohabitation de six structures
+  juridiques distinctes dont l'EARL du Chemin Neuf et la coopérative Saveurs du
+  Vexin créée en 2001. Non confirmé : nature exacte des actes
   d'usage, durée de l'usage, gouvernance et transparence interne.
 liens:
   porteurs: [fondation-fph]

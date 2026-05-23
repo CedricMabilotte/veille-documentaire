@@ -88,36 +88,34 @@
       <h2>Le processus de veille</h2>
       <ol>
         <li>
-          <strong>Collecte.</strong> Plusieurs fois par semaine, un script
-          (<a href="https://github.com/CedricMabilotte/veille-documentaire" rel="noopener">code source ouvert</a>)
-          parcourt une liste de sources éditoriales identifiées et repère les nouveaux documents.
+          <strong>Collecte.</strong> Plusieurs fois par semaine, une veille
+          parcourt la liste de sources éditoriales identifiées et repère les
+          nouveaux documents.
         </li>
         <li>
-          <strong>Première lecture.</strong> Pour chaque candidat, un modèle de langage
-          (Claude, d'Anthropic) attribue un <em>score de pertinence</em> entre 0 et 10
-          et rédige une justification courte.
+          <strong>Première lecture.</strong> Pour chaque candidat, une grille
+          d'évaluation attribue un <em>score de pertinence</em> entre 0 et 10,
+          assorti d'une justification courte.
         </li>
         <li>
           <strong>Téléchargement &amp; analyse.</strong> Les documents jugés pertinents
           (typiquement score ≥ 3) sont récupérés, leur première page est extraite en couverture,
-          le texte est traité pour générer un synopsis détaillé et extraire des citations remarquables.
+          le texte est résumé dans un synopsis détaillé et des citations remarquables sont
+          mises en avant.
         </li>
         <li>
           <strong>Bulles de publication.</strong> Les documents les plus pertinents (score ≥ 9)
-          reçoivent un traitement éditorial supplémentaire : titre accrocheur, teaser,
-          abstract long écrit pour mettre en évidence l'intérêt du texte.
-        </li>
-        <li>
-          <strong>Mise en ligne.</strong> Le catalogue est versionné et publié automatiquement
-          ici. Chaque mise à jour est tracée.
+          reçoivent un traitement éditorial supplémentaire pour mettre en évidence
+          l'intérêt du texte.
         </li>
       </ol>
 
       <div class="callout">
         <p>
-          Le score est attribué par une intelligence artificielle. Il est <strong>indicatif</strong>,
-          parfois injuste, souvent imparfait. Un score bas ne signifie pas qu'un texte est mauvais —
-          juste qu'il sort du périmètre thématique de cette veille. Lisez par vous-mêmes.
+          Les informations de ce site sont dues à un choix éditorial particulier. Les scores
+          attribués sont <strong>indicatifs</strong>, parfois injustes, souvent imparfaits.
+          Un score bas ne signifie pas qu'un texte est mauvais — juste qu'il sort du périmètre
+          thématique de cette veille. Lisez par vous-mêmes.
         </p>
       </div>
 
@@ -129,9 +127,8 @@
         retirons des sources au fil de l'usage.
       </p>
       <p>
-        La liste complète à jour est publiée dans
-        <a href="https://github.com/CedricMabilotte/veille-documentaire/blob/main/config/sources.yml" rel="noopener"><code>config/sources.yml</code></a>
-        du dépôt public.
+        La liste complète à jour est publiée à la
+        <a href="etat-corpus.html#sources">fin de la page Corpus</a>.
       </p>
 
       <h2>Glossaire — mots-clés thématiques</h2>

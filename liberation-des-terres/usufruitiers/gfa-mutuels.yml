@@ -6,7 +6,7 @@ statut_fiche: publie
 forme_juridique: "Société civile (groupement foncier agricole)"
 localisation: null
 annee: null
-url: "https://www.ressources.terredeliens.org/les-ressources/decouvrir-les-gfa-sci-citoyen·nes"
+url: "https://ressources.terredeliens.org/les-ressources/decouvrir-les-gfa-sci-citoyens"
 resume: >
   Les groupements fonciers agricoles (GFA) sont des sociétés civiles spécifiques à
   l'agriculture, créées dans les années 1970. On distingue le GFA d'exploitation
@@ -24,7 +24,7 @@ montage:
     distingue ce GFA mutuel ou solidaire du GFA d'épargnants, qu'elle qualifie
     d'outil financier contre-productif pour le renouvellement des générations.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
     Société civile agricole ; la pureté dépend des clauses statutaires, le GFA
     mutuel ou solidaire se distinguant nettement du GFA d'épargnants spéculatif.
@@ -53,6 +53,9 @@ grille:
   - critere: non_appropriation
     valeur: partiel
     note: "Le foncier est détenu collectivement, mais les parts du GFA restent cessibles, ce qui ouvre une appropriation possible de la valeur."
+  - critere: parts_non_cessibles
+    valeur: non
+    note: "Les parts du GFA, société civile, restent par défaut cessibles ; le GFA mutuel ou solidaire peut les encadrer statutairement, mais aucun verrouillage systématique n'est documenté : la valeur foncière reste captable."
   - critere: une_voix
     valeur: inconnu
     note: "Les modalités de vote dans les GFA mutuels ne sont pas détaillées par les sources."
@@ -97,6 +100,6 @@ liens:
   lieux: [reseau-terre-de-liens]
 sources:
   - titre: "Terre de Liens — Découvrir les GFA/SCI citoyen·nes"
-    url: "https://www.ressources.terredeliens.org/les-ressources/decouvrir-les-gfa-sci-citoyen·nes"
+    url: "https://ressources.terredeliens.org/les-ressources/decouvrir-les-gfa-sci-citoyens"
   - titre: "Terre de Liens — Le GFA d'épargnants, un outil contre-productif"
     url: "https://terredeliens.org/national/actu/le-groupement-foncier-agricole-d%C3%A9pargnants-un-outil-financier-contre-productif-pour-le-renouvellement-des-g%C3%A9n%C3%A9rations-24-10-2023/"

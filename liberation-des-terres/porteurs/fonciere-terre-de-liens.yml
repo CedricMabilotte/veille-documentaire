@@ -22,7 +22,7 @@ montage:
     conserve durablement. L'usage est confié aux paysan·nes par bail rural. Il
     s'agit d'un portage collectif et non d'un démembrement de propriété.
 purete_juridique:
-  niveau: societaire
+  niveau: societaire_solidaire
   commentaire: >
     Forme sociétaire (société en commandite par actions) à actionnariat solidaire,
     sans dividende ; la non-lucrativité repose sur les clauses statutaires plus
@@ -31,6 +31,9 @@ grille:
   - critere: forme_non_lucrative
     valeur: partiel
     note: "La société en commandite par actions est une forme commerciale ; sa vocation non lucrative repose sur l'absence de dividende statutaire."
+  - critere: non_lucrativite_effective
+    valeur: partiel
+    note: "Aucun dividende n'est versé, mais une revalorisation des parts est prévue : la valeur des titres peut progresser, fût-ce dans la limite de l'inflation."
   - critere: agrement_ig
     valeur: partiel
     note: "La Foncière relève de la finance solidaire, mais ne dispose pas d'une reconnaissance d'utilité publique comme la Fondation."
@@ -43,6 +46,9 @@ grille:
   - critere: inalienabilite
     valeur: partiel
     note: "Le portage est de long terme, mais les actions restent cessibles et aucune inaliénabilité statutaire stricte n'est documentée."
+  - critere: parts_non_cessibles
+    valeur: non
+    note: "Les actions de la Foncière restent cessibles ; leur revalorisation prévue rend la valeur foncière partiellement captable par les actionnaires."
   - critere: nature_protectrice
     valeur: partiel
     note: "Une société civile ou commerciale se situe en bas de l'échelle de protection, sous la fondation et la personne publique."

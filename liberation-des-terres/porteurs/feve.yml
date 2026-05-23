@@ -15,7 +15,10 @@ resume: >
   d'une option d'achat ouvrant la possibilité, pour le preneur, d'acquérir la
   ferme après plusieurs années. FEVE accompagne les porteur·ses de projet via la
   plateforme « La Grange » et conditionne l'éligibilité à une charte
-  agroécologique et à la vente en circuits courts.
+  agroécologique et à la vente en circuits courts. Fin 2025, FEVE a financé
+  environ 53 fermes et permis l'installation de près de 78 agriculteur·rices,
+  sur environ 3 300 hectares accompagnés en transition agroécologique, pour
+  plus de 60 millions d'euros collectés depuis sa création.
 montage:
   type: propriete_sanctuarisee
   description: >
@@ -27,7 +30,7 @@ montage:
     réintroduit la perspective d'une appropriation individuelle du foncier :
     la sortie du marché n'est, en ce cas, que temporaire.
 purete_juridique:
-  niveau: societaire
+  niveau: societaire_solidaire
   commentaire: >
     Foncière de forme sociétaire reposant sur un actionnariat citoyen ; l'option
     d'achat consentie au preneur peut conduire le foncier à quitter le portage
@@ -36,6 +39,9 @@ grille:
   - critere: forme_non_lucrative
     valeur: partiel
     note: "FEVE relève de l'économie sociale et solidaire, mais sa forme de foncière repose sur un actionnariat ; la non-lucrativité dépend des clauses encadrant le capital."
+  - critere: non_lucrativite_effective
+    valeur: partiel
+    note: "FEVE mobilise l'épargne citoyenne sans promesse de plus-value spéculative, mais la rémunération du capital investi n'est pas exclue par construction et n'est pas documentée."
   - critere: agrement_ig
     valeur: partiel
     note: "FEVE relève de la finance solidaire et de l'installation paysanne, mais ne dispose pas d'une reconnaissance d'utilité publique."
@@ -48,6 +54,9 @@ grille:
   - critere: inalienabilite
     valeur: non
     note: "L'option d'achat consentie au preneur organise au contraire la cessibilité du foncier vers un patrimoine privé après quelques années."
+  - critere: parts_non_cessibles
+    valeur: non
+    note: "La foncière repose sur un actionnariat ; aucun encadrement de la cession des titres n'est documenté, et l'option d'achat consentie au preneur permet en outre au foncier lui-même de rejoindre un patrimoine privé."
   - critere: nature_protectrice
     valeur: partiel
     note: "Une foncière de forme sociétaire se situe en bas de l'échelle de protection, sous la fondation et la personne publique."
@@ -98,8 +107,9 @@ fiabilite: >
   clauses environnementales assorti d'une option d'achat exerçable après
   plusieurs années, plateforme d'accompagnement « La Grange », charte
   agroécologique et circuits courts comme conditions d'éligibilité, environ
-  37 fermes financées et une trentaine de paysan·nes installé·es, près de
-  2 400 hectares en agriculture biologique. Non confirmé : composition de la
+  53 fermes financées et près de 78 agriculteur·rices installé·es, environ
+  3 300 hectares accompagnés en transition agroécologique, plus de 60 millions
+  d'euros collectés depuis 2021. Non confirmé : composition de la
   gouvernance, clause de dévolution, encadrement anti-spéculatif de l'option
   d'achat. Les chiffres d'activité évoluent rapidement.
 liens:

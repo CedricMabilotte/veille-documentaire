@@ -28,22 +28,33 @@ SOURCES_PATH = ROOT / "config" / "sources.yml"
 OUT_PATH = ROOT / "synopsis" / "corpus_stats.json"
 
 
-def _load_source_orientations() -> dict:
-    """Map {label_source: orientation} depuis config/sources.yml."""
-    mapping: dict[str, str] = {}
+def _load_sources() -> list[dict]:
+    """Liste des sources depuis config/sources.yml :
+    [{label, url, type, orientation}, ...]."""
+    sources: list[dict] = []
     if not SOURCES_PATH.exists():
-        return mapping
+        return sources
     try:
         import yaml
         cfg = yaml.safe_load(SOURCES_PATH.read_text(encoding="utf-8")) or {}
         for src in cfg.get("sources", []) or []:
             label = src.get("label", "")
-            orient = src.get("orientation", "non_renseigne")
-            if label:
-                mapping[label] = orient
+            if not label:
+                continue
+            sources.append({
+                "label":       label,
+                "url":         src.get("url", ""),
+                "type":        src.get("type", "html"),
+                "orientation": src.get("orientation", "non_renseigne"),
+            })
     except Exception as e:
         print(f"  ⚠  sources.yml illisible : {e}")
-    return mapping
+    return sources
+
+
+def _load_source_orientations() -> dict:
+    """Map {label_source: orientation} depuis config/sources.yml."""
+    return {s["label"]: s["orientation"] for s in _load_sources()}
 
 
 def _decade(doc_date: str) -> str:
@@ -129,6 +140,15 @@ def build_stats(catalog_path: Path = CATALOG_PATH,
         "La veille s'appuie sur des sources web accessibles : les corpus "
         "papier, oraux et hors-ligne sont structurellement absents.")
 
+    # Liste complète des sources surveillées (pour la page Corpus), enrichie
+    # du nombre de documents collectés chez chacune.
+    sources_list = []
+    for s in _load_sources():
+        entry = dict(s)
+        entry["count"] = by_source.get(s["label"], 0)
+        sources_list.append(entry)
+    sources_list.sort(key=lambda s: (-s["count"], s["label"].lower()))
+
     stats = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "total": total,
@@ -144,6 +164,7 @@ def build_stats(catalog_path: Path = CATALOG_PATH,
         "by_orientation": dict(by_orientation.most_common()),
         "blind_spots": biais,
         "biais_connus": biais,
+        "sources_list": sources_list,
     }
 
     out_path.parent.mkdir(parents=True, exist_ok=True)

@@ -22,7 +22,7 @@ montage:
     longue durée ou des conventions de gestion. Associations d'intérêt général
     agréées, ils relèvent du droit civil privé non lucratif.
 purete_juridique:
-  niveau: pur
+  niveau: civil_non_lucratif
   commentaire: >
     Associations loi 1901 d'intérêt général agréées : montage strictement de
     droit civil privé et non lucratif.
@@ -30,6 +30,9 @@ grille:
   - critere: forme_non_lucrative
     valeur: oui
     note: "Les CEN sont des associations loi 1901, forme structurellement non lucrative."
+  - critere: non_lucrativite_effective
+    valeur: oui
+    note: "Association loi 1901 sans capital social : aucune rémunération du capital, ni dividende, ni plus-value distribuée à des apporteurs."
   - critere: agrement_ig
     valeur: oui
     note: "Les CEN sont agréés conjointement par le préfet de région et le président du conseil régional."
@@ -42,6 +45,9 @@ grille:
   - critere: inalienabilite
     valeur: partiel
     note: "Les CEN combinent propriété, bail emphytéotique et conventions, mais aucune inaliénabilité statutaire systématique n'est documentée."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Association loi 1901 sans capital social : il n'existe aucune part appropriable, donc aucune captation possible de la valeur foncière."
   - critere: nature_protectrice
     valeur: partiel
     note: "L'association se situe sous la fondation reconnue d'utilité publique et la personne publique sur l'échelle de protection."

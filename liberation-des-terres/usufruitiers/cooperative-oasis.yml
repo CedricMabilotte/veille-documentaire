@@ -10,8 +10,9 @@ url: "https://cooperative-oasis.org/"
 resume: >
   Société coopérative d'intérêt collectif cofondée par Colibris, immatriculée en
   mai 2018 (premier conseil d'administration en janvier 2018) et titulaire de
-  l'agrément ESUS. Elle finance et accompagne environ 80 écolieux,
-  en finançant habitations, bâtiments et terrains pour des projets en propriété
+  l'agrément ESUS. Elle finance et accompagne des écolieux — environ 57 oasis
+  financées, la coopérative s'étant fixé un objectif de 80 fin 2025 — en
+  finançant habitations, bâtiments et terrains pour des projets en propriété
   collective. Plus de 4 millions d'euros ont été collectés entre 2019 et juin
   2022 pour 36 projets ; l'investissement ouvre droit à une réduction d'impôt de
   25 %.
@@ -25,7 +26,7 @@ montage:
     rôle de financement et d'accompagnement plus que d'usufruitier direct ;
     l'usage relève des collectifs des écolieux eux-mêmes.
 purete_juridique:
-  niveau: societaire
+  niveau: societaire_solidaire
   commentaire: >
     Société coopérative d'intérêt collectif avec agrément ESUS : forme
     coopérative encadrée, fonctionnant sur le principe « une personne, une voix ».
@@ -41,7 +42,7 @@ grille:
     note: "L'agrément ESUS encadre la lucrativité, mais une SCIC peut rémunérer modérément le capital investi."
   - critere: public_non_restreint
     valeur: oui
-    note: "La coopérative accompagne environ 80 écolieux, bien au-delà d'un cercle restreint de personnes."
+    note: "La coopérative accompagne plusieurs dizaines d'écolieux — environ 57 oasis financées, pour un objectif de 80 fin 2025 — bien au-delà d'un cercle restreint de personnes."
   - critere: duree_usage
     valeur: inconnu
     note: "Les durées d'usage du foncier financé ne sont pas documentées par les sources."
@@ -54,6 +55,9 @@ grille:
   - critere: non_appropriation
     valeur: partiel
     note: "La coopérative finance la propriété collective des écolieux, mais les modalités empêchant l'appropriation privée ne sont pas détaillées."
+  - critere: parts_non_cessibles
+    valeur: partiel
+    note: "La SCIC est une coopérative : la cession des parts est encadrée par l'agrément et la loi sur la coopération, mais une rémunération modérée du capital reste possible et le prix de cession n'est pas plafonné au seul nominal."
   - critere: une_voix
     valeur: oui
     note: "La société coopérative d'intérêt collectif fonctionne sur le principe « une personne, une voix »."
@@ -73,7 +77,7 @@ analyse:
   forces:
     - "Forme de SCIC fonctionnant sur le principe « une personne, une voix »."
     - "Agrément ESUS encadrant la lucrativité."
-    - "Financement de la propriété collective d'environ 80 écolieux."
+    - "Financement de la propriété collective de plusieurs dizaines d'écolieux."
   fragilites:
     - "Rôle de financeur plus que d'usufruitier direct du foncier."
     - "Durées et clauses d'usage du foncier financé non documentées."
@@ -90,14 +94,15 @@ analyse:
 fiabilite: >
   Faits vérifiés : forme de SCIC cofondée par Colibris, créée en mai 2018
   (premier conseil d'administration en janvier 2018), agrément ESUS,
-  accompagnement d'environ 80 écolieux, plus de 4 millions d'euros collectés
+  accompagnement de plusieurs dizaines d'écolieux — environ 57 oasis financées,
+  la coopérative visant 80 fin 2025 — plus de 4 millions d'euros collectés
   entre 2019 et juin 2022 pour 36 projets, réduction d'impôt de 25 % pour
   l'investisseur. Non confirmé : durées et clauses d'usage du foncier financé,
   articulation contractuelle avec les structures porteuses.
 liens:
   porteurs: [feve, fonciere-antidote]
   usufruitiers: []
-  lieux: [hameau-des-buis]
+  lieux: []
 sources:
   - titre: "Coopérative Oasis — site officiel"
     url: "https://cooperative-oasis.org/"

@@ -10,11 +10,11 @@ url: "https://lurzaindia.eu/"
 resume: >
   Foncière citoyenne du Pays Basque, constituée en 2013 sous la forme d'une
   société en commandite par actions. Elle prend la suite du GFAM Lurra, né dans
-  les années 1970. Elle mobilise l'épargne populaire — environ 3 674
+  les années 1970. Elle mobilise l'épargne populaire — environ 3 775
   actionnaires solidaires — pour acheter des terres, en conserver durablement la
   propriété et les confier à des agriculteur·rices par baux de long terme. Elle
-  détient environ 480 hectares répartis sur de nombreuses fermes, où une
-  trentaine d'exploitant·es sont installé·es selon son bilan public.
+  détient environ 486 hectares répartis sur de nombreuses fermes, où environ
+  41 exploitant·es sont installé·es selon son bilan public.
 montage:
   type: propriete_sanctuarisee
   description: >
@@ -24,7 +24,7 @@ montage:
     de la Foncière Terre de Liens, à l'échelle régionale du Pays Basque ; il
     s'agit d'un portage collectif et non d'un démembrement de propriété.
 purete_juridique:
-  niveau: societaire
+  niveau: societaire_solidaire
   commentaire: >
     Foncière de forme sociétaire (société en commandite par actions) reposant
     sur un actionnariat citoyen ; la non-lucrativité dépend des clauses
@@ -33,6 +33,9 @@ grille:
   - critere: forme_non_lucrative
     valeur: partiel
     note: "La société en commandite par actions est une forme commerciale ; sa vocation non lucrative repose sur les clauses statutaires encadrant le capital."
+  - critere: non_lucrativite_effective
+    valeur: partiel
+    note: "L'actionnariat est solidaire et l'objet non spéculatif, mais les clauses encadrant la rémunération ou la revalorisation du capital ne sont pas documentées."
   - critere: agrement_ig
     valeur: partiel
     note: "Lurzaindia relève de la finance solidaire et de l'installation paysanne, mais ne dispose pas d'une reconnaissance d'utilité publique."
@@ -45,6 +48,9 @@ grille:
   - critere: inalienabilite
     valeur: partiel
     note: "Le portage est de long terme, mais aucune clause d'inaliénabilité stricte n'est documentée et les actions restent cessibles."
+  - critere: parts_non_cessibles
+    valeur: non
+    note: "Les actions de la société en commandite par actions restent cessibles ; aucun encadrement de leur prix de cession n'est documenté, la valeur foncière reste donc captable."
   - critere: nature_protectrice
     valeur: partiel
     note: "Une société commerciale se situe en bas de l'échelle de protection, sous la fondation et la personne publique."
@@ -90,8 +96,8 @@ analyse:
 fiabilite: >
   Faits vérifiés (bilan public Lurzaindia consulté en mai 2026) : forme de
   société en commandite par actions, création en 2013, suite du GFAM Lurra des
-  années 1970, environ 480 hectares, une trentaine d'agriculteur·rices
-  installé·es, environ 3 674 actionnaires solidaires, près de 1,57 million
+  années 1970, environ 486 hectares, environ 41 agriculteur·rices
+  installé·es, environ 3 775 actionnaires solidaires, près de 1,67 million
   d'euros investis. Ces chiffres datent du bilan publié par la foncière et
   évoluent au fil de ses campagnes de financement. Non confirmé : clauses
   statutaires d'inaliénabilité, composition de la gouvernance, clause de

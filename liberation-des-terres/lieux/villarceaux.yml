@@ -15,13 +15,13 @@ resume: >
   dans le Parc naturel régional du Vexin français, propriété de la Fondation
   Charles Léopold Mayer pour le Progrès de l'Homme. La ferme, d'environ 370
   hectares, est conduite en agroécologie depuis le milieu des années 1990 et
-  confiée depuis 2005 à une structure d'exploitation tierce. Plusieurs personnes
-  morales cohabitent sur le site (exploitation agricole, association Écosite,
-  coopérative Coop'Saveur).
+  confiée depuis 2005 à une structure d'exploitation tierce. Six structures
+  juridiques distinctes cohabitent sur le site, dont l'exploitation agricole,
+  l'association Écosite et la coopérative Saveurs du Vexin.
 montage:
   type: propriete_sanctuarisee
   nu_proprietaire: "Fondation Charles Léopold Mayer pour le Progrès de l'Homme (FPH)"
-  usufruitier: "EARL Olivier Ranke (exploitation) et association Écosite (animation)"
+  usufruitier: "EARL du Chemin Neuf (exploitation, exploitant Olivier Ranke) et association Écosite (animation)"
   description: >
     La fondation conserve la pleine propriété du domaine et en confie l'usage à
     des structures tierces. L'exploitation agricole a pris en 2005 la forme d'une
@@ -30,7 +30,7 @@ montage:
     n'est pas confirmé par les sources : il s'agit d'une propriété de fondation
     assortie d'une exploitation tierce.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
     Foncier sanctuarisé chez une fondation non lucrative, mais le montage d'usage
     n'est pas un démembrement strict et reste partiellement documenté.
@@ -47,6 +47,9 @@ grille:
   - critere: origine_non_speculative
     valeur: oui
     note: "Le domaine est propriété d'une fondation d'intérêt général, hors logique d'endettement spéculatif."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Le domaine est porté par une fondation, sans capital social ni parts ; sa valeur foncière n'est captable par aucun titre cessible."
   - critere: usage_interet_general
     valeur: oui
     note: "Agriculture agroécologique, élevage, formation et accueil servent un intérêt dépassant les seuls occupant·es."
@@ -85,8 +88,9 @@ analyse:
     transparence sur la gouvernance.
 fiabilite: >
   Faits vérifiés : propriété du domaine par la FPH, surface d'environ 600 hectares,
-  passage en EARL en 2005, transition agroécologique, présence d'une association
-  Écosite et d'une coopérative. Non confirmé : nature exacte des actes d'usage,
+  passage en EARL (EARL du Chemin Neuf) en 2005, transition agroécologique,
+  cohabitation de six structures juridiques distinctes dont l'association
+  Écosite et la coopérative Saveurs du Vexin. Non confirmé : nature exacte des actes d'usage,
   existence d'un démembrement strict, modalités de gouvernance et de transmission.
 liens:
   porteurs: [fondation-fph]

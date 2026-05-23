@@ -11,93 +11,101 @@ localisation:
 annee: 2003
 url: "https://hameaudesbuis.org/"
 resume: >
-  Lieu d'habitat intergénérationnel et de ferme-école situé en sud Ardèche, porté
-  autour de l'association La Ferme des Enfants. La société civile « Le Hameau des
-  Buis » qui détient le foncier a été constituée en 2003 ; ses associés sont
-  l'association et une SARL de soutien aux projets éthiques. Le Hameau est
-  aujourd'hui organisé en SAS coopérative à gouvernance partagée. Les habitant·es
-  ne sont pas associés mais créanciers de la société : ils consentent un prêt en
-  viager en échange d'un droit de jouissance d'un logement.
+  Lieu d'habitat intergénérationnel et de ferme-école situé en sud Ardèche, sur
+  un domaine d'environ 6 hectares. Le foncier, d'abord porté par une société
+  civile constituée en 2003, est aujourd'hui détenu par la SAS coopérative
+  Hameau des Buis, créée le 28 janvier 2023 à la suite de la transformation de
+  cette société civile. Les habitant·es sont membres de la coopérative et le
+  lieu fonctionne en gouvernance partagée. L'association cofondatrice La Ferme
+  des Enfants, qui portait le projet pédagogique, a quitté le Hameau des Buis
+  en 2021 à l'issue d'un conflit ; une école demeure néanmoins sur place.
 montage:
   type: propriete_collective
-  nu_proprietaire: "Société civile « Le Hameau des Buis » (associés : association La Ferme des Enfants et SARL MV Finances)"
-  usufruitier: "Association La Ferme des Enfants (décision finale) et habitant·es titulaires d'un droit de jouissance"
+  nu_proprietaire: "SAS coopérative Hameau des Buis (créée le 28 janvier 2023, en succession de la société civile de 2003)"
+  usufruitier: "Membres de la SAS coopérative Hameau des Buis, habitant·es du lieu en gouvernance partagée"
   description: >
-    Le foncier est porté par une société civile constituée en 2003, dont les
-    associés sont l'association La Ferme des Enfants et une SARL de soutien aux
-    projets éthiques. Le pouvoir de décision final revient à l'association
-    d'intérêt général. Les habitant·es, non associés, sont créanciers : ils
-    prêtent en viager à la société et reçoivent un droit de jouissance d'un
-    logement. Le Hameau a évolué vers une SAS coopérative à gouvernance partagée,
-    qui constitue son organisation actuelle.
+    Le foncier a d'abord été porté par une société civile constituée en 2003.
+    À la suite d'un conflit ayant conduit au départ de l'association
+    cofondatrice La Ferme des Enfants en 2021, le collectif a transformé cette
+    société civile en SAS coopérative, constituée le 28 janvier 2023, jugée
+    mieux adaptée à une gouvernance partagée. Les habitant·es sont membres de
+    la coopérative et décident collectivement du devenir du lieu. La nature
+    exacte des titres d'occupation des logements et les clauses statutaires de
+    la coopérative ne sont pas détaillées par les sources publiques.
 purete_juridique:
-  niveau: societaire
+  niveau: societaire_solidaire
   commentaire: >
-    Foncier porté par une société civile dont une SARL est associée ; la cohérence
-    d'intérêt général repose sur le pouvoir de décision final laissé à
-    l'association.
+    Foncier porté par une SAS coopérative à gouvernance partagée : forme
+    sociétaire à vocation solidaire, dont l'anti-spéculation dépend des clauses
+    statutaires, non détaillées par les sources.
 grille:
   - critere: foncier_hors_marche
     valeur: partiel
-    note: "Le foncier est porté collectivement par une société civile, mais une SARL en est associée et les parts sociales restent cessibles."
+    note: "Le foncier est porté collectivement par une SAS coopérative à gouvernance partagée, mais aucun verrouillage anti-spéculatif statutaire n'est documenté par les sources."
   - critere: montage_documente
     valeur: oui
-    note: "Le montage est documenté : société civile de 2003 portant le foncier, puis évolution vers une SAS coopérative à gouvernance partagée."
+    note: "Le montage actuel est documenté : société civile de 2003 transformée en SAS coopérative Hameau des Buis, constituée le 28 janvier 2023."
   - critere: irreversibilite
     valeur: partiel
-    note: "Le pouvoir de décision final de l'association protège le lieu, mais aucune clause d'inaliénabilité n'est documentée."
+    note: "La forme coopérative oriente le lieu vers une gestion collective, mais aucune clause d'inaliénabilité ni de verrou anti-revente n'est documentée."
   - critere: origine_non_speculative
     valeur: partiel
-    note: "Le foncier est financé par des prêts en viager des habitant·es, sans plus-value attendue, mais une SARL participe au capital."
+    note: "Le foncier a été financé notamment par des prêts en viager des habitant·es, sans plus-value attendue ; le détail du tour de table n'est pas documenté."
+  - critere: parts_non_cessibles
+    valeur: partiel
+    note: "La SAS coopérative encadre la cession des parts par sa forme coopérative, mais ni le plafonnement du prix de cession ni l'absence de revalorisation ne sont documentés par les sources."
   - critere: usage_interet_general
     valeur: oui
     note: "Habitat intergénérationnel, ferme-école et pédagogie servent un intérêt dépassant les seuls résidents."
   - critere: non_lucratif_global
     valeur: partiel
-    note: "L'association est non lucrative et porte la décision finale, mais une SARL est associée à la société civile."
+    note: "La forme coopérative encadre la lucrativité, mais l'absence de captation de plus-value foncière n'est pas garantie par des clauses documentées."
   - critere: ancrage_territorial
     valeur: oui
-    note: "Le lieu est implanté en sud Ardèche, proche de l'écosite des Amanins, avec une vocation pédagogique ouverte."
+    note: "Le lieu est implanté en sud Ardèche, avec une vocation pédagogique et un accueil ouverts au-delà des résidents."
   - critere: gouvernance_collective
-    valeur: partiel
-    note: "La décision finale revient à l'association ; les habitant·es sont créanciers et non associés, ce qui limite leur place décisionnelle."
+    valeur: oui
+    note: "Le Hameau fonctionne en SAS coopérative à gouvernance partagée : les habitant·es membres décident collectivement."
   - critere: tripartisme
     valeur: inconnu
     note: "L'association du voisinage et des pouvoirs publics à la gouvernance n'est pas documentée."
   - critere: perennite_gouvernance
     valeur: partiel
-    note: "Le viager organise une forme de transmission et le Hameau a évolué vers une SAS coopérative à gouvernance partagée, mais les dispositifs de renouvellement ne sont pas tous documentés."
+    note: "La transformation en SAS coopérative vise une gouvernance durable, mais les dispositifs de transmission et de renouvellement ne sont pas tous documentés."
 analyse:
   forces:
-    - "Pouvoir de décision final confié à une association d'intérêt général."
-    - "Montage de viager permettant de financer le foncier sans plus-value spéculative."
+    - "Gouvernance partagée organisée par une SAS coopérative depuis 2023."
     - "Vocation pédagogique et intergénérationnelle clairement affirmée."
+    - "Domaine d'environ 6 hectares porté collectivement, sans propriétaire individuel."
   fragilites:
-    - "Présence d'une SARL associée à la société civile portant le foncier."
-    - "Habitant·es créanciers et non associés : place décisionnelle limitée."
-    - "Parts de la société civile cessibles, sans verrouillage anti-spéculatif documenté."
+    - "Clauses anti-spéculatives et d'inaliénabilité non documentées par les sources."
+    - "Conflit ayant conduit au départ de l'association cofondatrice en 2021."
+    - "Nature des titres d'occupation des logements non détaillée."
   leviers:
-    - "Consolider et documenter la gouvernance partagée de la SAS coopérative."
-    - "Inscrire des clauses anti-spéculatives sur les parts de la société civile."
-    - "Élargir la place décisionnelle des habitant·es."
+    - "Documenter et publier les clauses statutaires de la SAS coopérative."
+    - "Inscrire des clauses anti-spéculatives sur les parts de la coopérative."
+    - "Formaliser les titres d'occupation des habitant·es."
   synthese: >
-    Le Hameau des Buis articule un foncier collectif et une décision finale
-    associative d'intérêt général, et a évolué vers une SAS coopérative à
-    gouvernance partagée. La présence d'une SARL et le statut de créancier des
-    habitant·es invitent à consolider les verrous anti-spéculatifs.
+    Le Hameau des Buis porte un foncier collectif d'habitat intergénérationnel,
+    réorganisé en SAS coopérative à gouvernance partagée après le départ de
+    l'association cofondatrice en 2021. Sa solidité gagnerait à la publication
+    des clauses anti-spéculatives de la coopérative.
 fiabilite: >
-  Faits vérifiés : société civile « Le Hameau des Buis » constituée en 2003 et
-  portant le foncier, associés étant l'association La Ferme des Enfants et la
-  SARL MV Finances, habitant·es créanciers via prêt en viager contre droit de
-  jouissance, pouvoir de décision final de l'association, organisation actuelle
-  en SAS coopérative à gouvernance partagée. Non confirmé : détail des clauses
-  statutaires de la SAS coopérative.
+  Faits vérifiés (sources Hameau des Buis et presse, consultées en mai 2026) :
+  société civile constituée en 2003 portant le foncier, conflit ayant conduit
+  au départ de l'association cofondatrice La Ferme des Enfants en 2021
+  (protocole d'accord sur son départ signé en octobre 2021), constitution de la
+  SAS coopérative Hameau des Buis le 28 janvier 2023 en succession de la société
+  civile, domaine d'environ 6 hectares, habitat intergénérationnel et
+  ferme-école. Non confirmé : clauses statutaires de la SAS coopérative,
+  caractère anti-spéculatif du verrouillage des parts, nature exacte des titres
+  d'occupation des logements.
 liens:
   porteurs: []
-  usufruitiers: [ferme-des-enfants]
+  usufruitiers: []
   lieux: []
 sources:
+  - titre: "Le Hameau des Buis — L'histoire"
+    url: "https://hameaudesbuis.org/lhistoire/"
   - titre: "Le Hameau des Buis — site officiel"
     url: "https://hameaudesbuis.org/"
-  - titre: "Colibris — Le Hameau des Buis"
-    url: "https://www.colibris-lemouvement.org/projets/projet-oasis/oasis-a-decouvrir/hameau-buis"

@@ -23,7 +23,7 @@ montage:
     caractère consomptible ou non de la dotation n'est pas confirmé par les
     sources.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
     Fonds de dotation non lucratif ; la solidité du verrou foncier dépend du
     caractère non consomptible de la dotation, non confirmé par les sources.
@@ -31,6 +31,9 @@ grille:
   - critere: forme_non_lucrative
     valeur: oui
     note: "Le fonds de dotation est une personne morale de droit privé à but non lucratif instituée par la loi du 4 août 2008."
+  - critere: non_lucrativite_effective
+    valeur: oui
+    note: "Le fonds de dotation n'a pas de capital social ; les dons sont irrévocables et ne donnent aucune part : ni dividende, ni plus-value distribuée."
   - critere: agrement_ig
     valeur: partiel
     note: "Un fonds de dotation peut être d'intérêt général et ouvrir droit au mécénat, sans agrément préalable ni reconnaissance d'utilité publique ; cette qualité n'est jamais définitivement acquise et un fonds redistributeur n'y ouvre droit que sous conditions, d'où un risque de requalification fiscale."
@@ -43,6 +46,9 @@ grille:
   - critere: inalienabilite
     valeur: partiel
     note: "Les dons sont irrévocables, mais le caractère non consomptible de la dotation, qui rendrait le foncier inaliénable, n'est pas confirmé."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Le fonds de dotation n'a pas de capital social ni de parts : aucun titre appropriable, donc aucune captation possible de la valeur foncière."
   - critere: nature_protectrice
     valeur: partiel
     note: "Le fonds de dotation se situe entre la fondation reconnue d'utilité publique et la société civile sur l'échelle de protection."

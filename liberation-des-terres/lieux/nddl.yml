@@ -28,7 +28,7 @@ montage:
     d'habitant·es ; les détails des montages d'usage parcelle par parcelle ne sont
     pas confirmés par les sources consultées.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
     Foncier porté par un fonds de dotation non lucratif ; la solidité dépend de
     statuts (dotation consomptible ou non) qui ne sont pas détaillés par les
@@ -45,7 +45,10 @@ grille:
     note: "Le fonds de dotation reçoit des dons irrévocables, mais le caractère non consomptible de la dotation n'est pas confirmé."
   - critere: origine_non_speculative
     valeur: oui
-    note: "Le foncier est acquis grâce à des dons (environ 700 000 euros collectés en moins d'un an), hors logique de plus-value."
+    note: "Le foncier est acquis grâce à des dons (environ 700 000 euros collectés dès 2019), hors logique de plus-value."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Le foncier est porté par un fonds de dotation, sans capital social ni parts ; les dons sont irrévocables et ne confèrent aucun titre : aucune captation possible de la valeur foncière."
   - critere: usage_interet_general
     valeur: oui
     note: "Agriculture, préservation du bocage et activités collectives servent un intérêt général écologique et social."

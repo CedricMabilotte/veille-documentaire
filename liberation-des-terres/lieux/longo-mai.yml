@@ -13,7 +13,8 @@ url: "https://www.prolongomaif.ch/"
 resume: >
   Réseau de coopératives fondé en 1973, avec son siège historique à Limans et
   cinq implantations en France (Limans, Chantemerle, Mas de Granier, Treynas, La
-  Cabrery). Les terres sont regroupées dans une fondation de droit suisse, le
+  Cabrery), au sein d'un réseau transnational comptant aussi des implantations
+  en Suisse, en Autriche, en Allemagne et en Ukraine. Les terres sont regroupées dans une fondation de droit suisse, le
   Fonds de Terre Européenne, qui les détient de façon inaliénable, à l'abri de la
   spéculation. Les coopératives autogérées en assurent l'usage : agriculture,
   élevage, vigne, forêt, artisanat et accueil.
@@ -29,7 +30,7 @@ montage:
     confirmé : il s'agit d'une propriété sanctuarisée par une fondation et d'un
     usage collectif.
 purete_juridique:
-  niveau: encadre
+  niveau: civil_encadre
   commentaire: >
     Foncier sanctuarisé de manière inaliénable dans une fondation, mais relevant
     du droit suisse, et usage collectif dont la formalisation contractuelle
@@ -47,6 +48,9 @@ grille:
   - critere: origine_non_speculative
     valeur: oui
     note: "Le foncier est regroupé dans une fondation pour le soustraire à la spéculation, hors logique de plus-value."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Le foncier est détenu de façon inaliénable par le Fonds de Terre Européenne, fondation sans capital appropriable : aucune part ne porte la valeur foncière."
   - critere: usage_interet_general
     valeur: partiel
     note: "Les activités agricoles, artisanales et d'accueil ont une portée collective, mais l'ouverture au-delà des coopérants n'est pas explicitée."

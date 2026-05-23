@@ -94,28 +94,28 @@ indice:
 # notable du corpus.
 paliers:
   - id: abouti
-    min: 88
+    min: 85
     label: "Libération aboutie"
-    couleur: "#2f6b34"
+    couleur: "#356026"
     sens: >
       Montage non lucratif, foncier durablement verrouillé, gouvernance
       participative et organisée pour durer. Modèle de référence.
   - id: solide
-    min: 76
+    min: 72
     label: "Montage solide"
     couleur: "#4a7a3a"
     sens: >
       Le montage atteint les trois finalités avec quelques marges de
       consolidation, souvent sur la gouvernance ou l'irréversibilité.
   - id: engage
-    min: 64
+    min: 58
     label: "Engagement réel"
     couleur: "#b08431"
     sens: >
       La démarche est sincère et avancée mais un axe reste nettement en
       retrait — verrou foncier incomplet ou gouvernance peu participative.
   - id: partiel
-    min: 50
+    min: 42
     label: "Libération partielle"
     couleur: "#bc5d3a"
     sens: >
@@ -135,24 +135,27 @@ paliers:
 # (champ `purete_juridique`). Situe le montage sur l'axe « reste-t-on
 # strictement en droit civil privé et non lucratif ? ».
 purete_juridique:
-  label: "Pureté juridique"
+  label: "Nature juridique du montage"
   question: >
-    Le montage reste-t-il strictement dans le droit civil privé et la
-    non-lucrativité, sans bascule vers le droit public, une forme sociétaire
-    lucrative ou un encadrement étatique fort ?
+    De quel régime relève le montage ? L'indicateur situe — il ne classe pas :
+    chaque régime a ses forces.
+  note_lecture: >
+    Cet indicateur n'est PAS une échelle de qualité. La protection effective du
+    foncier est mesurée par l'axe B de l'Indice. Ici, on situe seulement le
+    régime juridique du montage : voir la page « Trois régimes du sol ».
   niveaux:
-    - id: pur
-      label: "Droit civil pur"
-      sens: "Droit civil privé + non lucratif, sans encadrement étatique."
-    - id: encadre
-      label: "Civil encadré"
-      sens: "Droit civil mais encadrement public fort (agrément, plafonds)."
-    - id: public
-      label: "Bascule droit public"
-      sens: "Le foncier relève du droit public (domanialité, établissement public)."
-    - id: societaire
-      label: "Forme sociétaire"
-      sens: "Forme de société pouvant comporter une part de lucrativité."
+    - id: civil_non_lucratif
+      label: "Droit civil non lucratif"
+      sens: "Fondation, association, société civile sans lucrativité ni parts cessibles."
+    - id: civil_encadre
+      label: "Droit civil sous encadrement public"
+      sens: "Droit civil mais agrément, plafonds ou contrôle étatique fort."
+    - id: societaire_solidaire
+      label: "Forme sociétaire solidaire"
+      sens: "Société (SCA, coopérative) à vocation solidaire ; parts cessibles, lucrativité possible."
+    - id: droit_public
+      label: "Droit public"
+      sens: "Le foncier relève de la domanialité ou d'un établissement public."
 
 # ── Drapeaux de fiabilité affichés sur chaque fiche ──────────────────────────
 fiabilite:

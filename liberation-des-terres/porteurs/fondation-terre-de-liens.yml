@@ -22,7 +22,7 @@ montage:
     peut également recevoir un usufruit temporaire. Une fondation ouverte aux
     collectivités pour le portage du foncier agricole a par ailleurs été annoncée.
 purete_juridique:
-  niveau: pur
+  niveau: civil_non_lucratif
   commentaire: >
     La reconnaissance d'utilité publique constitue le statut le plus protecteur
     pour porter durablement un foncier hors marché.
@@ -30,6 +30,9 @@ grille:
   - critere: forme_non_lucrative
     valeur: oui
     note: "La Fondation est une fondation reconnue d'utilité publique, forme structurellement non lucrative."
+  - critere: non_lucrativite_effective
+    valeur: oui
+    note: "Une fondation reconnue d'utilité publique n'a pas de capital social appropriable : aucune rémunération du capital, ni dividende, ni plus-value distribuée."
   - critere: agrement_ig
     valeur: oui
     note: "La reconnaissance d'utilité publique est une qualité officielle reconnue par l'État après instruction."
@@ -42,6 +45,9 @@ grille:
   - critere: inalienabilite
     valeur: partiel
     note: "Le statut de FRUP protège fortement le foncier, mais une clause d'inaliénabilité spécifique parcelle par parcelle n'est pas détaillée."
+  - critere: parts_non_cessibles
+    valeur: oui
+    note: "Une fondation reconnue d'utilité publique n'a ni capital social ni parts : aucun titre appropriable, donc aucune captation possible de la valeur foncière."
   - critere: nature_protectrice
     valeur: oui
     note: "La fondation reconnue d'utilité publique se situe au sommet de l'échelle de protection après la personne publique."
