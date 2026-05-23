@@ -1,0 +1,71 @@
+{
+  "titre_accroche": "Réforme agraire : quand un slogan perd ses racines",
+  "teaser": "Et si la réforme agraire était devenue un concept creux, détaché de toute base sociale réelle ? Bernardo Sorj analyse l'impasse d'une promesse révolutionnaire vidée de son sens au Brésil.",
+  "abstract_editorial": "Bernardo Sorj livre une analyse désenchantée mais lucide de la réforme agraire au Brésil : loin d'être une solution mobilisatrice, ce concept serait devenu un slogan politique vide, manipulé par les élites pour consolider leurs intérêts dans un contexte de globalisation.\n\nSa démonstration repose sur un constat radical : les conditions sociales qui fondaient historiquement la lutte pour la terre ont disparu. Entre les années 1960 et 1980, le Brésil a connu une transformation agricole massive. Les formes de dépendance non-salariée – métayage, location – ont été éliminées et remplacées par une agro-industrie capitaliste, d'un côté la grande propriété, de l'autre la petite production familiale reposant sur du travail salarié temporaire. La paysannerie traditionnelle, base historique des luttes agraires, s'est dissoute.\n\nPour comprendre cette rupture, Sorj prend exemple du Mouvement des travailleurs ruraux sans terre (MST), souvent présenté comme l'héritier des luttes paysannes. Or, le MST n'est pas composé de paysans ou d'ouvriers agricoles : ce sont des chômeurs urbains et ruraux, des nomades occupant des fazendas improductives. Un mouvement des exclus du système, certes, mais radicalement différent du sujet paysan qui cimentait autrefois les revendications.\n\nCette analyse invite à repenser la question de la terre au-delà de la réforme agraire classique. Comment construire une lutte pour la libération des terres quand la base sociale paysanne a disparu et que les idéologies mobilisatrices du passé se sont épuisées ? La question que pose Sorj reste ouverte.",
+  "citations_phares": [
+    {
+      "page": 1,
+      "quote": "agrarian reform is a historically dated concept, associated with developmentalist and/or revolutionary ideologies which are no longer relevant"
+    },
+    {
+      "page": 4,
+      "quote": "the social base for the traditional agrarian reform, based on the peasantry and rural unions which struggled for the desappropriation of the lands in which they worked, was destroyed"
+    },
+    {
+      "page": 4,
+      "quote": "The Movement of Landless Rural Workers (MST) is not made up of rural unions or peasants situated within the fazendas"
+    }
+  ],
+  "categorisation": [
+    "réforme agraire",
+    "paysannerie",
+    "Brésil",
+    "mouvements sociaux",
+    "propriété foncière",
+    "agro-industrie",
+    "globalisation"
+  ],
+  "slug": "reforme-agraire-slogan-sans-racines",
+  "en_clair": "Ce texte explique pourquoi la réforme agraire brésilienne n'a pas fonctionné : les paysans à qui elle était destinée ont disparu, remplacés par des chômeurs urbains, et les élites ne la veulent jamais vraiment mettre en pratique. Il documente l'échec politique d'une idée, pas les alternatives pour y répondre.",
+  "acteurs": [
+    "MST (Movimento dos Trabalhadores Rurais Sem Terra)",
+    "CONTAG (confédération syndicale rurale)",
+    "Bernardo Sorj (auteur)"
+  ],
+  "controverse": "Décalage entre le consensus politique/académique affirmant l'importance de la réforme agraire et la réalité : celle-ci a perdu sa base sociale réelle et ne fonctionne plus que comme un slogan creux manipulé par les élites pour consolider leurs intérêts corporatifs. Tension avec le MST qui continue à lutter malgré la « mort » historique du projet.",
+  "angle_journalistique": "Pourquoi les élites brésiliennes soutiennent-elles rhétoriquement une réforme agraire qu'elles refusent d'appliquer réellement, et comment le MST parvient-il à survivre politiquement sans la base paysanne qui le justifiait historiquement ?",
+  "citations_verifiees": [
+    {
+      "quote": "agrarian reform is a historically dated concept, associated with developmentalist and/ or revolutionary ideologies which are no longer relevant",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "The Movement of Landless Rural Workers (MST- Movimento dos Trabalhadores Rurais Sem Terra) is not made up of rural unions or peasants situated within the fazendas. It is a movement basically composed of unemployed people from the most diverse regions",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "the social base for the traditional agrarian reform, based on the peasantry and rural unions which struggled for the desappropriation of the lands in which they worked, was destroyed",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "This new context, in which non-workers (the unemployed) struggle for land, exhausts the bargaining power of the social movement and points up the limits of possible alliances for political pressure",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "the new context of Brazilian agriculture as that of agroindustrial production, where the conditions of production depend on an adequate marketing infrastructure, together with the inputs and machinery to ensure the necessary productivity",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "2375742bc8"
+}

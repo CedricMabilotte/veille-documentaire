@@ -1,0 +1,62 @@
+{
+  "titre_accroche": "Quand le profit règne sur les terres",
+  "teaser": "Une traversée critique du paysage anglais des années 1990 : où tout se vend, où l'accès s'achète, et où quelques exceptions — chemins publics, jardins ouvriers — résistent encore à la marchandisation totale.",
+  "abstract_editorial": "Jonathan Simcock, au début des années 1990, emprunte quotidiennement le trajet Belper-Nottingham. De cet ordinaire anglais, il tire une critique radicale : le paysage qu'il traverse illustre une domination totale du régime de propriété capitaliste. Tout y est à vendre — terres et maisons, services, eau, ressources naturelles, agriculture, jusqu'aux routes. Cette marchandisation n'est pas anodine : elle détermine l'accès et l'usage, réservant à ceux qui ont l'argent le droit de jouir du territoire.\n\nCe diagnostic implacable pose une question centrale pour les lecteurs de *Troisièmes voix* : comment l'ordre foncier capitaliste exclut-il les besoins ? La réponse de Simcock est politique : « Profits, not needs, rule land use ». Le profit, non les besoins, gouverne l'usage urbain et rural. Dans ce paysage aliéné, quelques îlots échappent à la domination — chemins publics, droits de passage, jardins ouvriers (allotments), anciens droits de communaux. Ces « exceptions résiduelles » témoignent de possibilités autres, de régimes d'accès et d'usage fondés sur le droit plutôt que la propriété marchande.\n\nLe texte de Simcock, publié dans la revue anarchiste *The Raven Quarterly* (n°17), demeure une dénonciation philosophique plutôt qu'une analyse systématique. Il ne développe pas d'alternatives concrètes ni ne s'engage avec les mouvements réels de libération foncière ou de réappropriation paysanne. Mais ce minimalisme apparent peut aussi être une force : face à la totalité de l'ordre foncier capitaliste, Simcock affirme la nécessité d'une rupture radicale. Pour quiconque s'intéresse aux communs, à la propriété d'usage, à la libération des terres, ce fragment britannique de critique urbaine et rurale pose les bonnes questions — même s'il nous appartient de construire les réponses qui manquent.",
+  "citations_phares": [
+    {
+      "page": 2,
+      "quote": "Everything here in the landscape and townscape, all the way from Belper, is for sale; homes, land, services, water, gravel, grazing and agriculture, sports clubs, roads and rail."
+    },
+    {
+      "page": 2,
+      "quote": "Profits, not needs, rule land use, urban and rural."
+    },
+    {
+      "page": 2,
+      "quote": "Access to it and use of it for production and leisure is determined by rights of ownership, property and money."
+    }
+  ],
+  "categorisation": [
+    "communs",
+    "propriété d'usage",
+    "critique urbaine et rurale",
+    "marchandisation foncière",
+    "allotments",
+    "droits de passage",
+    "libération des terres",
+    "anarchisme"
+  ],
+  "slug": "quand-le-profit-regne-sur-les-terres",
+  "en_clair": "L'auteur montre comment, dans les territoires capitalistes, presque tout — terres, maisons, services — est devenu quelque chose qu'on achète et vend, sauf quelques petits espaces publics comme les jardins ouvriers. C'est un cri d'alarme contre le système, mais il ne propose rien pour le changer.",
+  "acteurs": [],
+  "controverse": "Aucune controverse n'est réellement développée. Le texte est un plaidoyer unilatéral anarchiste contre la propriété capitaliste ; il n'engage avec aucun débat ou position alternative.",
+  "angle_journalistique": "Enquête : comment les allotments et droits de communaux historiques subsistent-ils dans des régions entièrement marchandisées ? Quel est leur rôle aujourd'hui ?",
+  "citations_verifiees": [
+    {
+      "quote": "Everything here in the landscape and townscape, all the way from Belper, is for sale; homes, land, services, water, gravel, grazing and agriculture, sports clubs, roads and rail.",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Access to it and use of it for production and leisure (with a few exceptions; public footpaths, rights of way, allotments, commoners rights) is determined by rights of ownership, property and money.",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Profits, not needs, rule land use, urban and rural.",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "a large acreage of allotments — immaculately laid out, maintained and productive, figures busy hoeing and digging morning and evening",
+      "page": 2,
+      "page_physical": null,
+      "verified": false
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "1e7ec8b1bf"
+}

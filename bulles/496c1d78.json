@@ -1,0 +1,101 @@
+{
+  "titre_accroche": "La terre oubliée des radicaux anglais du 19e siècle",
+  "teaser": "Au cœur de la radicalité ouvrière anglaise du 19e siècle : la terre. Une histoire qu'on a oubliée, où paysans et prolétaires urbains rêvaient ensemble d'autosuffisance et de contrôle collectif des moyens de vivre.",
+  "abstract_editorial": "L'historiographie dominante a occulté une histoire décisive : celle de la terre comme enjeu central de l'émancipation populaire anglaise du 19e siècle. Keith Flett la restitue et montre comment ouvriers et paysans ont envisagé ensemble des voies de sortie à l'exploitation capitaliste.\n\nSon analyse révèle un mouvement complexe et progressif. Il ne s'agit pas simplement de la nostalgie paysanne pour un passé perdu, mais de la transformation de la question foncière en revendication politique majeure — presque aussi centrale que le suffrage universel. Deux mondes convergent : les laboureurs agricoles cherchant à contrôler les moyens de leur subsistance, et le prolétariat urbain composé de migrants ruraux pour qui la terre représentait une alternative concrète à l'exploitation industrielle. Ces demandes n'émergent pas en marge du mouvement ouvrier ; elles en sont constitutives.\n\nLe Chartist Land Plan incarne cette convergence. Loin d'être un simple rêve archaïque, il constitue une stratégie d'autosuffisance terrienne, massivement soutenue par les ouvriers d'usine eux-mêmes. La terre n'était donc pas un vestige du passé mais une possibilité tangible d'autonomie matérielle face au capital industriel. Cette question se posait avec la même urgence que le machine-breaking ou la lutte syndicale.\n\nPourquoi cela importe aujourd'hui ? Flett nous aide à repenser les rapports entre propriété, travail et subsistance collective. À l'heure où la question des communs, de la démocratie alimentaire et de l'autonomie territoriale refait surface, cette histoire nous rappelle que la libération des terres n'a jamais été un enjeu marginal. Elle a été le cœur battant des luttes pour une autre économie. Une histoire qui remet en cause le récit linéaire du progrès et nous invite à réinterroger les chemins non pris de l'émancipation populaire.",
+  "citations_phares": [
+    {
+      "page": 1,
+      "quote": "the land was a question of central political importance in the century"
+    },
+    {
+      "page": 1,
+      "quote": "agricultural labourers... tried to control the means of their existence"
+    },
+    {
+      "page": 3,
+      "quote": "The Chartist Land Plan... was heavily supported by factory workers who saw self sufficiency on the land as one way of escaping from their exploited position"
+    }
+  ],
+  "categorisation": [
+    "communs",
+    "paysannerie",
+    "propriété d'usage",
+    "histoire",
+    "mouvement ouvrier",
+    "autonomie territoriale"
+  ],
+  "slug": "la-terre-oubliee-des-radicaux-anglais",
+  "en_clair": "Ce texte montre que les luttes pour la terre ne sont pas nouvelles : depuis les années 1830, les ouvriers et paysans anglais réclamaient le contrôle de la terre comme clé de leur libération face à l'exploitation. Cela aide à comprendre que les demandes actuelles (communs, réforme agraire, accès à la terre) ont des racines profondes et des précédents politiques concrets.",
+  "acteurs": [
+    "Agricultural Workers Union",
+    "Joseph Arch",
+    "Land Tenure Reform Association",
+    "Labour League",
+    "Thomas Spence",
+    "Chartist movement",
+    "Feargus O'Connor",
+    "George Julian Harney",
+    "Ernest Jones",
+    "Bronterre O'Brien",
+    "Charles Murray",
+    "Social Democratic Federation",
+    "Royden Harrison",
+    "Malcolm Chase",
+    "Alun Howkins",
+    "Gareth Stedman Jones"
+  ],
+  "controverse": "Débat historiographique sur la continuité/rupture : Gareth Stedman Jones argue pour une continuité linéaire des demandes de terre de Spence (années 1790) aux socialistes des années 1880, tandis que Malcolm Chase soutient que le contexte a profondément changé et que les demandes, bien que formellement similaires, avaient un contenu radicalement différent selon les périodes (pré-industriel vs. prolétariat urbain industrialisé).",
+  "angle_journalistique": "Une enquête sur comment les mouvements contemporains de réappropriation foncière (land back, communs, collectifs paysans) s'inscrivent dans une généalogie politique longue : remonter aux révoltes paysannes et ouvrières du 19e siècle pour montrer que la lutte pour la terre est une constante des mouvements émancipateurs.",
+  "citations_verifiees": [
+    {
+      "quote": "the land was a question of central political importance in the century",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "First, that of the agricultural labourers themselves... tried to control the means of their existence",
+      "page": 1,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "how the land question moved from one of being a backward looking Utopia to one of the most progressive and radical demands on the political agenda",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "the land was 'as logical and integral a part of popular politics as machine breaking, trade unionism or the demand for universal suffrage'",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "The Chartist Land Plan... was heavily supported by factory workers who saw self sufficiency on the land as one way of escaping from their exploited position",
+      "page": 3,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "the Land Tenure Reform Association and Labour League. The first sought to reform the legal situation on land ownership; the second called for nationalisation of land",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "In 1851 8,936,800 people were defined as living in rural areas as against 8,990,809 in urban areas. In the same year 21.5% of the employed population were shown as working in agriculture",
+      "page": 2,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "The continuing existence of an English Monarchy and Aristocracy suggests a continuing set of relations on the land which date back to pre-industrial times",
+      "page": 1,
+      "page_physical": null,
+      "verified": false
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "7fcadf44b2"
+}

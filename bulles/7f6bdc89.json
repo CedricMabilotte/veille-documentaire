@@ -1,0 +1,98 @@
+{
+  "titre_accroche": "Quand le prolétariat rural se lève",
+  "teaser": "Et si les paysans du XXIe siècle n'étaient pas une alternative au capitalisme, mais sa faille majeure ? Un texte qui relie terres occupées et révoltes urbaines.",
+  "abstract_editorial": "Écrit en 2007, ce texte polémique décortique les mouvements paysans mondiaux en refusant les deux illusions qui les ont longtemps paralysés : la romantisation naïve d'une paysannerie « authentique » et la promesse capitaliste d'un développement qui libérerait enfin les campagnes. L'auteur·e pose une thèse radicale : plus de deux milliards d'êtres humains vivent en semi-prolétarianisation, oscillant entre salariat urbain précaire et petite agriculture de subsistance. Cette condition dissout la distinction historique entre classe ouvrière et paysannerie — ce clivage qui avait structuré les révolutions antérieures.\n\nLoin d'être un résidu du passé, la paysannerie s'est métamorphosée. Les occupations de terres en Amérique latine, les révoltes contre l'OMC et les agro-corporations ne représentent pas une fuite hors du système, mais l'émergence d'une nouvelle figure révolutionnaire : le prolétariat global. Leurs luttes condensent 500 ans de résistance à l'accaparement capitaliste du vivant et du territoire.\n\nCe diagnostic bouleverse le débat sur les communs et l'émancipation. Il explique aussi pourquoi États-nations et capitalisme se donnent tant de mal pour fragmenter ces masses rurales : conscients qu'une fusion du prolétariat urbain et rural constituerait une menace existentielle. Pour qui cherche à penser l'autonomie territoriale et la libération des terres, ce texte refuse les faux-semblants et pose les vraies questions.",
+  "citations_phares": [
+    {
+      "page": 3,
+      "quote": "More than two billion people on this planet live under this condition, depending both on wage work and small-scale agricultural activities"
+    },
+    {
+      "page": 3,
+      "quote": "The main division of any previous revolution has been dissolved, the division between the urban working class and the peasantry"
+    },
+    {
+      "page": 4,
+      "quote": "By appropriating means of production and livelihood, e.g. by occupying land, the possibility of 'another world' seems to manifest itself"
+    }
+  ],
+  "categorisation": [
+    "paysannerie",
+    "prolétariat",
+    "communs",
+    "appropriation des terres",
+    "mouvements sociaux",
+    "internationalisme",
+    "agro-capitalisme",
+    "autonomie territoriale"
+  ],
+  "slug": "au-dela-internationale-paysanne",
+  "en_clair": "Le texte explique que deux milliards de personnes vivent entre les champs et les usines, précarisées et salariées. Il dit : les mouvements paysans qui occupent les terres et refusent les agro-corporations ne sauvent pas le capitalisme de lui-même. Ils sont le signe qu'une vraie rupture arrive quand les ouvriers des villes et des campagnes reconnaîtront qu'ils combattent le même ennemi.",
+  "acteurs": [
+    "Via Campesina",
+    "Indigenas (Amérique centrale et du Sud)",
+    "WTO (World Trade Organization)",
+    "World Bank (Banque mondiale)",
+    "Agro-corporations",
+    "État chinois",
+    "État indien",
+    "Gouvernement français",
+    "ONU",
+    "Magazine Wildcat (Allemagne)",
+    "Eric Hobsbawm (historien critiqué)"
+  ],
+  "controverse": "Le texte cristallise un désaccord fondamental : les mouvements paysans qui occupent les terres et refusent l'agro-industrie représentent-ils une alternative viable au capitalisme (perspective « subsistence » ou « commons ») ou sont-ils une manifestation du prolétariat rural qui ne peut se libérer que par fusion avec la classe ouvrière urbaine mondialisée ? L'auteur·e rejette la première option comme romantisme naïf, position elle-même contestée dans les milieux militants.",
+  "angle_journalistique": "Enquête sur la condition de semi-prolétarianisation de deux milliards de personnes oscillant entre ville et campagne, et comment cette réalité remodèle les alignements de classe mondiaux — en particulier en Inde et Chine où les États lancent d'immenses programmes agraires moins pour émanciper que pour contrôler une masse rurale potentiellement explosive.",
+  "citations_verifiees": [
+    {
+      "quote": "more than two billion people on this planet live under this condition, depending both on wage work and small-scale agricultural activities",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "By appropriating means of production and livelihood, e.g. by occupying land, the possibility of 'another world' seems to manifest itself",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "The main division of any previous revolution has been dissolved, the division between the urban working class and the peasantry.",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "the global movements fighting against agro-corporations, the WTO and World Bank are the new 'International'",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "Within the experience of 'centuries' of struggles led by 'small factions' of this movement, e.g. by the Indigenas in Central and South America, the history of 500 years of capitalism is condensed.",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "The global process of proletarianisation, meaning the separation of producers and means of production and the transformation of the producers into wage labourers, is a violent act.",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "their struggles raise the really fundamental questions — the conditions of the majority of the (poor) global population, environmental problems, the question of how we produce our food — and they give answers",
+      "page": 3,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "We finally have to get the Leninist ('workers' vanguards form alliances with the peasants') and Maoist perspectives out of our heads",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "5486fe708a"
+}
