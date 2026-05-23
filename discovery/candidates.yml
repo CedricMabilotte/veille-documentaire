@@ -1,5 +1,5 @@
-last_updated: '2026-05-22T23:20:45'
-total_candidates: 1153
+last_updated: '2026-05-22T23:55:47'
+total_candidates: 1200
 candidates:
 - url: https://viacampesina.org/fr/la-charte-des-communes-paysannes-du-map-belgique-un-exemple-dutilisation-de-lundrop-au-niveau-local
   type: mastodon
@@ -137,7 +137,7 @@ candidates:
   domain: infokiosques.net
   first_seen: '2026-05-17'
   last_seen: '2026-05-22'
-  seen_count: 24
+  seen_count: 28
   suggested_action: follow_one_time
   notes: ''
   found_from:
@@ -306,7 +306,7 @@ candidates:
   domain: joseph.dejacque.free.fr
   first_seen: '2026-05-17'
   last_seen: '2026-05-22'
-  seen_count: 12
+  seen_count: 14
   suggested_action: follow_one_time
   notes: ''
   found_from:
@@ -849,13 +849,253 @@ candidates:
   domain: infokiosques.net
   first_seen: '2026-05-17'
   last_seen: '2026-05-22'
-  seen_count: 6
+  seen_count: 7
   suggested_action: follow_one_time
   notes: ''
   found_from:
   - doc_id: 1fadbb5d
     context: 2000 - http://infokiosques.net/spip.php?article101
     page: 2
+- url: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
+  type: footnote
+  domain: agriculture.gouv.fr
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
+    page: 18
+- url: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
+  type: footnote
+  domain: attaque.noblogs.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
+    page: 4
+- url: https://attaque.noblogs.org/post/2025/01/11/etupes-doubs-ras-le-bol-des-
+  type: footnote
+  domain: attaque.noblogs.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://attaque.noblogs.org/post/2025/01/11/etupes-doubs-ras-le-bol-des-
+    page: 18
+- url: https://attaque.noblogs.org/post/2025/10/26/barraux-isere-lueur-sous-le-
+  type: footnote
+  domain: attaque.noblogs.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://attaque.noblogs.org/post/2025/10/26/barraux-isere-lueur-sous-le-
+    page: 2
+- url: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
+  type: footnote
+  domain: fichiers-publics.agriculture.gouv.fr
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
+    page: 6
+- url: https://infokiosques.net/spip.php?article1037
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article1037
+    page: 6
+- url: https://infokiosques.net/spip.php?article1767
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article1767
+    page: 11
+- url: https://infokiosques.net/spip.php?article1814
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article1814
+    page: 18
+- url: https://infokiosques.net/spip.php?article1975
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article1975
+    page: 7
+- url: https://infokiosques.net/spip.php?article2019
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article2019
+    page: 9
+- url: https://infokiosques.net/spip.php?article2118
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article2118
+    page: 6
+- url: https://lille.indymedia.org/spip.php?article31839&lang=fr
+  type: footnote
+  domain: lille.indymedia.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://lille.indymedia.org/spip.php?article31839&lang=fr
+    page: 16
+- url: https://opensanctuary.org/guide-des-soins-aux-cochons/
+  type: footnote
+  domain: opensanctuary.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: 'sanctuary : https://opensanctuary.org/guide-des-soins-aux-cochons/'
+    page: 10
+- url: https://rajcollective.noblogs.org/
+  type: footnote
+  domain: rajcollective.noblogs.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://rajcollective.noblogs.org/)
+    page: 12
+- url: https://renverse.co/infos-locales/Un-an-apres-le-sabotage-de-l-abattoir-de-
+  type: footnote
+  domain: renverse.co
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://renverse.co/infos-locales/Un-an-apres-le-sabotage-de-l-abattoir-de-
+    page: 16
+- url: https://services.autistici.org/
+  type: footnote
+  domain: services.autistici.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: 'ici : https://services.autistici.org/ (en anglais)'
+    page: 2
+- url: https://sunders.uber.space/
+  type: footnote
+  domain: sunders.uber.space
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: 'dans la zone (attention : toutes ne le sont pas!) : https://sunders.uber.space/'
+    page: 13
+- url: https://unoffensiveanimal.is/
+  type: footnote
+  domain: unoffensiveanimal.is
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: 'Un tuto (trouvé sur le site : https://unoffensiveanimal.is/)'
+    page: 16
+- url: https://unoffensiveanimal.is/prisoner-support/
+  type: footnote
+  domain: unoffensiveanimal.is
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://unoffensiveanimal.is/prisoner-support/
+    page: 12
+- url: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
+  type: footnote
+  domain: www.20minutes.fr
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-22'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
+    page: 6
 - url: https://LaPetiteFoire.LeMAP.be
   type: mastodon
   found_from:
@@ -903,54 +1143,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
-  type: footnote
-  domain: agriculture.gouv.fr
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
-    page: 18
-- url: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
-  type: footnote
-  domain: attaque.noblogs.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
-    page: 4
-- url: https://attaque.noblogs.org/post/2025/01/11/etupes-doubs-ras-le-bol-des-
-  type: footnote
-  domain: attaque.noblogs.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://attaque.noblogs.org/post/2025/01/11/etupes-doubs-ras-le-bol-des-
-    page: 18
-- url: https://attaque.noblogs.org/post/2025/10/26/barraux-isere-lueur-sous-le-
-  type: footnote
-  domain: attaque.noblogs.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://attaque.noblogs.org/post/2025/10/26/barraux-isere-lueur-sous-le-
-    page: 2
 - url: https://bird.makeup/users/plantophage
   type: mastodon
   found_from:
@@ -1074,114 +1266,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
-  type: footnote
-  domain: fichiers-publics.agriculture.gouv.fr
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
-    page: 6
-- url: https://infokiosques.net/spip.php?article1037
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article1037
-    page: 6
-- url: https://infokiosques.net/spip.php?article1767
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article1767
-    page: 11
-- url: https://infokiosques.net/spip.php?article1814
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article1814
-    page: 18
-- url: https://infokiosques.net/spip.php?article1975
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article1975
-    page: 7
-- url: https://infokiosques.net/spip.php?article2019
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article2019
-    page: 9
-- url: https://infokiosques.net/spip.php?article2118
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article2118
-    page: 6
-- url: https://lille.indymedia.org/spip.php?article31839&lang=fr
-  type: footnote
-  domain: lille.indymedia.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://lille.indymedia.org/spip.php?article31839&lang=fr
-    page: 16
-- url: https://opensanctuary.org/guide-des-soins-aux-cochons/
-  type: footnote
-  domain: opensanctuary.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: 'sanctuary : https://opensanctuary.org/guide-des-soins-aux-cochons/'
-    page: 10
 - url: https://pixelfed.social/DefendingUNDROP
   type: mastodon
   found_from:
@@ -1217,42 +1301,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://rajcollective.noblogs.org/
-  type: footnote
-  domain: rajcollective.noblogs.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://rajcollective.noblogs.org/)
-    page: 12
-- url: https://renverse.co/infos-locales/Un-an-apres-le-sabotage-de-l-abattoir-de-
-  type: footnote
-  domain: renverse.co
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://renverse.co/infos-locales/Un-an-apres-le-sabotage-de-l-abattoir-de-
-    page: 16
-- url: https://services.autistici.org/
-  type: footnote
-  domain: services.autistici.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: 'ici : https://services.autistici.org/ (en anglais)'
-    page: 2
 - url: https://social.tmprs.net/tag/paysannerie
   type: mastodon
   found_from:
@@ -1294,42 +1342,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://sunders.uber.space/
-  type: footnote
-  domain: sunders.uber.space
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: 'dans la zone (attention : toutes ne le sont pas!) : https://sunders.uber.space/'
-    page: 13
-- url: https://unoffensiveanimal.is/
-  type: footnote
-  domain: unoffensiveanimal.is
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: 'Un tuto (trouvé sur le site : https://unoffensiveanimal.is/)'
-    page: 16
-- url: https://unoffensiveanimal.is/prisoner-support/
-  type: footnote
-  domain: unoffensiveanimal.is
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://unoffensiveanimal.is/prisoner-support/
-    page: 12
 - url: https://viacampesina.org/fr/souverainete-alimentaire-face-a-la-guerre-a-limperialisme-et-a-la-faim-des-peuples-dans-le-monde
   type: mastodon
   found_from:
@@ -1389,18 +1401,6 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
-  type: footnote
-  domain: www.20minutes.fr
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-22'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
-    page: 6
 - url: https://www.alterecosoc.org/fr/ecosoc7fr
   type: mastodon
   found_from:
@@ -3898,6 +3898,27 @@ candidates:
     genre: journal-article
     html_url: https://content.sciendo.com/downloadpdf/journals/foli/18/1/article-p7.pdf
     source: unpaywall
+- url: https://cookiedatabase.org/tcf/purposes/
+  type: external_link
+  domain: cookiedatabase.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-22'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Leer más sobre estos propósitos
+    page: null
 - url: https://cu86s.r.a.d.sendibm1.com/mk/mr/sh/SMJz09SDriOHUOKbz7NFUJjdggkh/MWxNyH6Kgbnf
   type: mastodon
   found_from:
@@ -13597,24 +13618,6 @@ candidates:
   - doc_id: CLACSO — Publicaciones générales
     context: 'Talleres de la Conferencia #CLACSO2025'
     page: null
-- url: https://cookiedatabase.org/tcf/purposes/
-  type: external_link
-  domain: cookiedatabase.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-18'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: Leer más sobre estos propósitos
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: Leer más sobre estos propósitos
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: Leer más sobre estos propósitos
-    page: null
 - url: https://da.van.ac/240-millions-brules-lia-agricole-secrase-sur-la-realite/
   type: mastodon
   found_from:
@@ -19117,6 +19120,18 @@ candidates:
     genre: journal-article
     html_url: http://hdl.handle.net/2043/23194
     source: unpaywall
+- url: http://info.nodo50.org/
+  type: external_link
+  domain: info.nodo50.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Nodo50
+    page: null
 - url: http://journals.openedition.org/etudesrurales/pdf/9388
   type: openalex
   found_from:
@@ -19514,6 +19529,18 @@ candidates:
   - doc_id: d647480f
     context: http://www.ifpma.org/documents/NR83/DataExclusivity.pdf
     page: 27
+- url: http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F&title=Land+of+the+Free%2C+Home+of+the+Bootleggers
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: LinkedIn
+    page: null
 - url: http://www.metropolitiques.eu/Actualite-des-modeles.html
   type: footnote
   domain: www.metropolitiques.eu
@@ -19550,6 +19577,18 @@ candidates:
   - doc_id: 5f5dadd2
     context: 15 mars 2018. Repéré à  http://www.metropolitiques.eu/Plus-de-securite-fonciere-grace-aux-
     page: 87
+- url: http://www.nemetoncoalition.org
+  type: external_link
+  domain: www.nemetoncoalition.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Troisièmes Voix — éditions
+    context: Le projet Nemeton
+    page: null
 - url: http://www.non-fides.fr/spip.php?article51
   type: external_link
   domain: www.non-fides.fr
@@ -19726,6 +19765,30 @@ candidates:
   - doc_id: Infokiosques.net — Paysannerie & ruralité
     context: · sur le site web
     page: null
+- url: https://about.jstor.org/accessibility/
+  type: external_link
+  domain: about.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Accessibility
+    page: null
+- url: https://acervomst.org.br/
+  type: external_link
+  domain: acervomst.org.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: Acervo MST
+    page: null
 - url: https://africa.landcoalition.org/en
   type: external_link
   domain: africa.landcoalition.org
@@ -19854,6 +19917,18 @@ candidates:
   - doc_id: c6e0e14d
     context: https://allianceforfeministmovements.org/resources/
     page: 60
+- url: https://amigosenff.org.br/
+  type: external_link
+  domain: amigosenff.org.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://andamios.uacm.edu.mx/index.php/andamios/article/download/443/pdf
   type: openalex
   found_from:
@@ -19893,6 +19968,30 @@ candidates:
   found_from:
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Antifeminismus begegnen
+    page: null
+- url: https://api.whatsapp.com/send?text=Land+of+the+Free%2C+Home+of+the+Bootleggers https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
+  type: external_link
+  domain: api.whatsapp.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: WhatsApp
+    page: null
+- url: https://armazemdocampo.com.br/
+  type: external_link
+  domain: armazemdocampo.com.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: PRODUTOS DO MST
     page: null
 - url: https://asia.landcoalition.org/en
   type: external_link
@@ -20005,6 +20104,42 @@ candidates:
   found_from:
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Büro Rio de Janeiro - Brasilien
+    page: null
+- url: https://brasildefato.com.br/
+  type: external_link
+  domain: brasildefato.com.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://bsky.app/intent/compose?text=Land+of+the+Free%2C+Home+of+the+Bootleggers%0Ahttps%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
+  type: external_link
+  domain: bsky.app
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: BlueSky
+    page: null
+- url: https://bsky.app/profile/crimethinc.com
+  type: external_link
+  domain: bsky.app
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Crimethinc. on Bluesky
     page: null
 - url: https://bureburebure.info/sur-la-poursuite-du-nucleaire-macron-dans-la-capitale-verte/
   type: external_link
@@ -20274,6 +20409,18 @@ candidates:
   - doc_id: c6e0e14d
     context: https://creativecommons.org/licenses/by-nc-nd/4.0/
     page: 2
+- url: https://creativecommons.org/licenses/by-nc/4.0/deed.es
+  type: external_link
+  domain: creativecommons.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Creative Commons
+    page: null
 - url: https://creativecommons.org/licenses/by/4.0/
   type: external_link
   domain: creativecommons.org
@@ -20285,6 +20432,30 @@ candidates:
   found_from:
   - doc_id: Böll Stiftung — Agriculture Atlas (EN)
     context: these conditions
+    page: null
+- url: https://crimethinc.bandcamp.com
+  type: external_link
+  domain: crimethinc.bandcamp.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Bandcamp
+    page: null
+- url: https://crimethinc.tumblr.com
+  type: external_link
+  domain: crimethinc.tumblr.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Tumblr
     page: null
 - url: https://daaf.martinique.agriculture.gouv.fr/bilan-des-importations-de-denrees-
   type: footnote
@@ -21479,6 +21650,42 @@ candidates:
   - doc_id: c6e0e14d
     context: https://f4ff.global/resources/background-paper-caf/
     page: 61
+- url: https://facebook.com/MovimentoSemTerra/
+  type: external_link
+  domain: facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://facebook.com/To-Change-Everything-103734818122357
+  type: external_link
+  domain: facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Crimethinc. on Facebook
+    page: null
+- url: https://feeds.feedburner.com/portaloaca
+  type: external_link
+  domain: feeds.feedburner.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Feed RSS
+    page: null
 - url: https://figshare.com/articles/Agroecology_and_La_Via_Campesina_I_The_symbolic_and_material_construction_of_agroecology_through_the_dispositive_of_peasant-to-peasant_processes/8055746
   type: openalex
   found_from:
@@ -21572,6 +21779,18 @@ candidates:
   found_from:
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Gender Mediathek
+    page: null
+- url: https://github.com/crimethinc
+  type: external_link
+  domain: github.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Github
     page: null
 - url: https://gruporuptura.wordpress.com
   type: external_link
@@ -21743,6 +21962,18 @@ candidates:
   - doc_id: 6c2884fc
     context: «Contre le mythe autogestionnaire», brochure, 2011, https://infokiosques.
     page: 22
+- url: https://instagram.com/crimethincredux
+  type: external_link
+  domain: instagram.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Crimethinc. on Instagram
+    page: null
 - url: https://investigacion.unirioja.es/documentos/5c13b26bc8914b6ed377d843
   type: openalex
   found_from:
@@ -21891,6 +22122,18 @@ candidates:
     genre: journal-article
     html_url: https://jurnalbhumi.stpn.ac.id/JB/article/download/320/275
     source: unpaywall
+- url: https://kolektiva.media/a/crimethinc
+  type: external_link
+  domain: kolektiva.media
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Peertube
+    page: null
 - url: https://kommunalwiki.boell.de/index.php/Hauptseite
   type: external_link
   domain: kommunalwiki.boell.de
@@ -22019,6 +22262,18 @@ candidates:
     genre: journal-article
     html_url: https://link.springer.com/content/pdf/10.1007%2Fs13593-011-0065-6.pdf
     source: unpaywall
+- url: https://lite.crimethinc.com/library
+  type: external_link
+  domain: lite.crimethinc.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Switch to the lite version of the site →
+    page: null
 - url: https://lundi.am/C-est-une-requisition-populaire
   type: rss
   found_from:
@@ -22674,6 +22929,30 @@ candidates:
     genre: journal-article
     html_url: https://read.dukeupress.edu/environmental-humanities/article-pdf/1/1/141/251573/141Tsing.pdf
     source: unpaywall
+- url: https://reddit.com/r/CrimethInc
+  type: external_link
+  domain: reddit.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Reddit
+    page: null
+- url: https://reddit.com/submit?url=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F&title=Land+of+the+Free%2C+Home+of+the+Bootleggers
+  type: external_link
+  domain: reddit.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Reddit
+    page: null
 - url: https://reporterre.net/30-000-euros-d-amende-et-prison-avec-sursis-pour-la-femme-qui-a-tue-un-lynx
   type: rss
   found_from:
@@ -23444,6 +23723,17 @@ candidates:
     year: 2022
     doi: 10.54118/controver.vi219.1269
   suggested_action: follow_one_time
+  promoted_pdf_url: https://revistacontroversia.com/index.php/controversia/article/download/1269/1022
+  promoted_at: '2026-05-22T23:55:17'
+  promoted_metadata:
+    doi: 10.54118/controver.vi219.1269
+    title: 'Más allá de la categoría ‘mujer’ rural: provocaciones desde el transfeminismo y la teoría queer/cuir a la teoría
+      rural y agraria'
+    journal: REVISTA CONTROVERSIA
+    published_date: '2022-10-13'
+    genre: journal-article
+    html_url: https://revistacontroversia.com/index.php/controversia/article/download/1269/1022
+    source: unpaywall
 - url: https://revistas.uam.es/riejs/article/download/14714/14782
   type: openalex
   found_from:
@@ -23462,6 +23752,16 @@ candidates:
     year: 2022
     doi: 10.15366/riejs2022.11.1.006
   suggested_action: follow_one_time
+  promoted_pdf_url: https://revistas.uam.es/riejs/article/download/14714/14782
+  promoted_at: '2026-05-22T23:55:18'
+  promoted_metadata:
+    doi: 10.15366/riejs2022.11.1.006
+    title: 'Descolonizar la Escuela: Educación por la Justicia en Comunidades Originarias del sureste de México'
+    journal: Revista Internacional de Educación para la Justicia Social
+    published_date: '2022-06-01'
+    genre: journal-article
+    html_url: https://revistas.uam.es/riejs/article/download/14714/14782
+    source: unpaywall
 - url: https://revistas.ucc.edu.co/index.php/co/article/download/1032/1507
   type: openalex
   found_from:
@@ -23480,6 +23780,16 @@ candidates:
     year: 2014
     doi: 10.16925/co.v22i105.1032
   suggested_action: follow_one_time
+  promoted_pdf_url: https://revistas.ucc.edu.co/index.php/co/article/download/1032/1507
+  promoted_at: '2026-05-22T23:55:19'
+  promoted_metadata:
+    doi: 10.16925/co.v22i105.1032
+    title: La crisis de identidad de las cooperativas agrarias en Francia
+    journal: Cooperativismo & Desarrollo
+    published_date: '2014-12-05'
+    genre: journal-article
+    html_url: https://revistas.ucc.edu.co/index.php/co/article/download/1032/1507
+    source: unpaywall
 - url: https://revistas.ucm.es/index.php/REVE/article/download/65488/4564456552332
   type: openalex
   found_from:
@@ -23499,6 +23809,17 @@ candidates:
     year: 2019
     doi: 10.5209/reve.65488
   suggested_action: follow_one_time
+  promoted_pdf_url: https://revistas.ucm.es/index.php/REVE/article/download/65488/4564456552332
+  promoted_at: '2026-05-22T23:55:20'
+  promoted_metadata:
+    doi: 10.5209/reve.65488
+    title: 'Las cooperativas agrarias como modelo generador de negocios con inclusión social: el caso de las cooperativas
+      bananeras del Magdalena (Colombia)'
+    journal: REVESCO Revista de Estudios Cooperativos
+    published_date: '2019-09-06'
+    genre: journal-article
+    html_url: https://revistas.ucm.es/index.php/REVE/article/download/65488/4564456552332
+    source: unpaywall
 - url: https://revistas.ucm.es/index.php/REVE/article/download/73864/4564456555792
   type: openalex
   found_from:
@@ -23517,6 +23838,16 @@ candidates:
     year: 2021
     doi: 10.5209/reve.73864
   suggested_action: follow_one_time
+  promoted_pdf_url: https://revistas.ucm.es/index.php/REVE/article/download/73864/4564456555792
+  promoted_at: '2026-05-22T23:55:21'
+  promoted_metadata:
+    doi: 10.5209/reve.73864
+    title: 'Participación juvenil para el desarrollo rural: análisis de un caso cubano en cooperativas agrarias'
+    journal: REVESCO Revista de Estudios Cooperativos
+    published_date: '2021-02-24'
+    genre: journal-article
+    html_url: https://revistas.ucm.es/index.php/REVE/article/download/73864/4564456555792
+    source: unpaywall
 - url: https://revistas.ucn.cl/index.php/estudios-atacamenos/article/download/5189/4116
   type: openalex
   found_from:
@@ -23536,6 +23867,17 @@ candidates:
     year: 2022
     doi: 10.22199/issn.0718-1043-2022-0019
   suggested_action: follow_one_time
+  promoted_pdf_url: https://revistas.ucn.cl/index.php/estudios-atacamenos/article/download/5189/4116
+  promoted_at: '2026-05-22T23:55:23'
+  promoted_metadata:
+    doi: 10.22199/issn.0718-1043-2022-0019
+    title: Entre Mallkus y Apachetas. Prácticas demarcatorias en las primeras inscripciones de la propiedad en la comunidad
+      de Cariquima
+    journal: Estudios Atacameños Arqueología y antropología surandinas
+    published_date: '2022-08-22'
+    genre: journal-article
+    html_url: https://revistas.ucn.cl/index.php/estudios-atacamenos/article/download/5189/4116
+    source: unpaywall
 - url: https://revistas.um.es/agroecologia/article/download/182861/152301
   type: openalex
   found_from:
@@ -23554,6 +23896,16 @@ candidates:
     year: 2009
     doi: 10.14452/mr-061-03-2009-07_8
   suggested_action: follow_one_time
+  promoted_pdf_url: https://revistas.um.es/agroecologia/article/download/182861/152301
+  promoted_at: '2026-05-22T23:55:24'
+  promoted_metadata:
+    doi: 10.14452/mr-061-03-2009-07_8
+    title: Agroecology, Small Farms, and Food Sovereignty
+    journal: Monthly Review
+    published_date: '2009-07-08'
+    genre: journal-article
+    html_url: https://revistas.um.es/agroecologia/article/download/182861/152301
+    source: unpaywall
 - url: https://revistas.unc.edu.ar/index.php/antropologia/article/download/13682/16033
   type: openalex
   found_from:
@@ -23572,6 +23924,16 @@ candidates:
     year: 2016
     doi: 10.31048/1852.4826.v9.n2.13682
   suggested_action: follow_one_time
+  promoted_pdf_url: https://revistas.unc.edu.ar/index.php/antropologia/article/download/13682/16033
+  promoted_at: '2026-05-22T23:55:25'
+  promoted_metadata:
+    doi: 10.31048/1852.4826.v9.n2.13682
+    title: Construyendo preguntas en el camino. Comunidades originarias y científicas
+    journal: Revista del Museo de Antropología
+    published_date: '2016-12-26'
+    genre: journal-article
+    html_url: https://revistas.unc.edu.ar/index.php/antropologia/article/download/13682/16033
+    source: unpaywall
 - url: https://revistas.uncu.edu.ar/ojs3/index.php/analarqueyetno/article/download/8477/7506
   type: openalex
   found_from:
@@ -23591,6 +23953,17 @@ candidates:
     year: 2025
     doi: 10.48162/rev.46.049
   suggested_action: follow_one_time
+  promoted_pdf_url: https://revistas.uncu.edu.ar/ojs3/index.php/analarqueyetno/article/download/8477/7506
+  promoted_at: '2026-05-22T23:55:26'
+  promoted_metadata:
+    doi: 10.48162/rev.46.049
+    title: Comunidades originarias y cuerpos ancestrales en procesos de restitución con garantías de conservación en contextos
+      de investigación
+    journal: Anales de Arqueología y Etnología
+    published_date: '2025-06-28'
+    genre: journal-article
+    html_url: https://revistas.uncu.edu.ar/ojs3/index.php/analarqueyetno/article/download/8477/7506
+    source: unpaywall
 - url: https://revistasonline.inap.es/index.php/GAPP/article/download/10491/11346
   type: openalex
   found_from:
@@ -23609,6 +23982,16 @@ candidates:
     year: 2018
     doi: 10.24965/gapp.v0i20.10491
   suggested_action: follow_one_time
+  promoted_pdf_url: https://revistasonline.inap.es/index.php/GAPP/article/download/10491/11346
+  promoted_at: '2026-05-22T23:55:28'
+  promoted_metadata:
+    doi: 10.24965/gapp.v0i20.10491
+    title: 'El nuevo municipalismo: derecho a la ciudad y comunes urbanos'
+    journal: Gestión y Análisis de Políticas Públicas
+    published_date: '2018-11-02'
+    genre: journal-article
+    html_url: https://revistasonline.inap.es/index.php/GAPP/article/download/10491/11346
+    source: unpaywall
 - url: https://rootingcare.org/wp-content/uploads/2022/07/FAU_RootingCare_en.pdf
   type: footnote
   domain: rootingcare.org
@@ -23723,6 +24106,16 @@ candidates:
     year: 2003
     doi: 10.4067/s0717-73562003000200018
   suggested_action: follow_one_time
+  promoted_pdf_url: https://scielo.conicyt.cl/pdf/chungara/v35n2/art18.pdf
+  promoted_at: '2026-05-22T23:55:29'
+  promoted_metadata:
+    doi: 10.4067/s0717-73562003000200018
+    title: 'ARQUEOLOGÍA, TURISMO Y COMUNIDADES ORIGINARIAS: UNA EXPERIENCIA EN NOR LÍPEZ (POTOSÍ, BOLIVIA)'
+    journal: Chungara
+    published_date: '2003-07-01'
+    genre: journal-article
+    html_url: https://scielo.conicyt.cl/pdf/chungara/v35n2/art18.pdf
+    source: unpaywall
 - url: https://scielosp.org/article/ssm/content/raw/?resource_ssm_path=/media/assets/rpsp/v20n5/05.pdf
   type: openalex
   found_from:
@@ -23741,6 +24134,16 @@ candidates:
     year: 2006
     doi: 10.1590/s1020-49892006001000005
   suggested_action: follow_one_time
+  promoted_pdf_url: https://scielosp.org/article/ssm/content/raw/?resource_ssm_path=/media/assets/rpsp/v20n5/05.pdf
+  promoted_at: '2026-05-22T23:55:30'
+  promoted_metadata:
+    doi: 10.1590/s1020-49892006001000005
+    title: Prevalencia de trastornos mentales comunes en barrios marginales urbanos con población desplazada en Colombia
+    journal: Revista Panamericana de Salud Pública
+    published_date: '2006-11-01'
+    genre: journal-article
+    html_url: https://scielosp.org/article/ssm/content/raw/?resource_ssm_path=/media/assets/rpsp/v20n5/05.pdf
+    source: unpaywall
 - url: https://shs.cairn.info/article/ESP_191_0113/pdf?lang=fr
   type: openalex
   found_from:
@@ -23759,6 +24162,16 @@ candidates:
     year: 2024
     doi: 10.3917/esp.191.0113
   suggested_action: follow_one_time
+  promoted_pdf_url: https://shs.cairn.info/article/ESP_191_0113/pdf?lang=fr
+  promoted_at: '2026-05-22T23:55:31'
+  promoted_metadata:
+    doi: 10.3917/esp.191.0113
+    title: Le Bâtiment 7 à Montréal, un commun urbain contre la gentrification ?
+    journal: Espaces et sociétés
+    published_date: '2024-05-17'
+    genre: journal-article
+    html_url: https://shs.cairn.info/article/ESP_191_0113/pdf?lang=fr
+    source: unpaywall
 - url: https://shs.cairn.info/l-espace-social--9782200268923
   type: footnote
   domain: shs.cairn.info
@@ -23783,6 +24196,18 @@ candidates:
   - doc_id: 46327ff6
     context: pratiques (p. 347). PUF. https://shs.hal.science/halshs-00464322
     page: 130
+- url: https://substack.com/@troisiemesvoix
+  type: external_link
+  domain: substack.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Troisièmes Voix — éditions
+    context: Suivez nos actualités sur Substack !
+    page: null
 - url: https://survie.org/publications/brochures/article/brochure-kanaky-nouvelle-caledonie
   type: external_link
   domain: survie.org
@@ -23794,6 +24219,18 @@ candidates:
   found_from:
   - doc_id: Infokiosques.net — Anticolonialismes
     context: · sur le site web
+    page: null
+- url: https://t.me/ExWorkers
+  type: external_link
+  domain: t.me
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Telegram
     page: null
 - url: https://tacticaltech.org/digital-media-literacy-training/
   type: footnote
@@ -23849,6 +24286,54 @@ candidates:
     year: 2019
     doi: ''
   suggested_action: follow_one_time
+- url: https://tiktok.com/@crimethinc
+  type: external_link
+  domain: tiktok.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Crimethinc. on TikTok
+    page: null
+- url: https://todon.eu/@CrimethInc
+  type: external_link
+  domain: todon.eu
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Mastodon
+    page: null
+- url: https://twitter.com/MST_Oficial/
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://twitter.com/portaloaca
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: X
+    page: null
 - url: https://utoronto.scholaris.ca/bitstreams/d5f4275f-f7fe-4095-a30b-05903a6110bf/download
   type: openalex
   found_from:
@@ -23867,6 +24352,18 @@ candidates:
     year: 2007
     doi: 10.1515/9780822389781
   suggested_action: follow_one_time
+- url: https://viacampesina.org/en/
+  type: external_link
+  domain: viacampesina.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://viacampesina.org/es/17abril-haiti-una-lucha-global-contra-el-imperialismo-y-por-la-soberania-alimentaria/
   type: rss
   found_from:
@@ -24185,6 +24682,16 @@ candidates:
     year: 2019
     doi: 10.3917/esp.175.0035
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=ESP_175_0035&download=1
+  promoted_at: '2026-05-22T23:55:34'
+  promoted_metadata:
+    doi: 10.3917/esp.175.0035
+    title: 'Les communs urbains à Barcelone : vers une réinvention de la gouvernance territoriale ?'
+    journal: Espaces et sociétés
+    published_date: '2019-05-21'
+    genre: journal-article
+    html_url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=ESP_175_0035&download=1
+    source: unpaywall
 - url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=FLUX1_124_0027&download=1
   type: openalex
   found_from:
@@ -24203,6 +24710,16 @@ candidates:
     year: 2021
     doi: 10.3917/flux1.124.0027
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=FLUX1_124_0027&download=1
+  promoted_at: '2026-05-22T23:55:35'
+  promoted_metadata:
+    doi: 10.3917/flux1.124.0027
+    title: 'L’émergence d’un commun en matière d’assainissement urbain : les toilettes sèches séparatives en habitat participatif'
+    journal: Flux
+    published_date: '2021-10-14'
+    genre: journal-article
+    html_url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=FLUX1_124_0027&download=1
+    source: unpaywall
 - url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=FLUX1_124_0092&download=1
   type: openalex
   found_from:
@@ -24222,6 +24739,17 @@ candidates:
     year: 2021
     doi: 10.3917/flux1.124.0092
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=FLUX1_124_0092&download=1
+  promoted_at: '2026-05-22T23:55:36'
+  promoted_metadata:
+    doi: 10.3917/flux1.124.0092
+    title: 'Energie électrique décentralisée et réseau municipal : hautes tensions autour d’un bien commun urbain dans la
+      province du Western Cape (Afrique du Sud)'
+    journal: Flux
+    published_date: '2021-10-14'
+    genre: journal-article
+    html_url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=FLUX1_124_0092&download=1
+    source: unpaywall
 - url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=RAC_039_0171&download=1
   type: openalex
   found_from:
@@ -24240,6 +24768,16 @@ candidates:
     year: 2018
     doi: 10.3917/rac.039.0171
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=RAC_039_0171&download=1
+  promoted_at: '2026-05-22T23:55:37'
+  promoted_metadata:
+    doi: 10.3917/rac.039.0171
+    title: Recadrer le conseil par l’agriculture écologiquement intensive
+    journal: Revue d anthropologie des connaissances
+    published_date: '2018-01-01'
+    genre: journal-article
+    html_url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=RAC_039_0171&download=1
+    source: unpaywall
 - url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=RECMA_339_0019&download=1
   type: openalex
   found_from:
@@ -24258,6 +24796,16 @@ candidates:
     year: 2016
     doi: 10.3917/recma.339.0019
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=RECMA_339_0019&download=1
+  promoted_at: '2026-05-22T23:55:39'
+  promoted_metadata:
+    doi: 10.3917/recma.339.0019
+    title: Les trois dimensions de la gouvernance coopérative agricole
+    journal: RECMA
+    published_date: '2016-01-01'
+    genre: journal-article
+    html_url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=RECMA_339_0019&download=1
+    source: unpaywall
 - url: https://www.celag.org/bolivia-lectura-politica-de-los-resultados-de-elecciones-subnacionales/
   type: rss
   found_from:
@@ -24426,6 +24974,17 @@ candidates:
     year: 2022
     doi: 10.24836/es.v32i60.1253
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.ciad.mx/estudiosociales/index.php/es/article/download/1253/824
+  promoted_at: '2026-05-22T23:55:40'
+  promoted_metadata:
+    doi: 10.24836/es.v32i60.1253
+    title: 'Del huerto al territorio: la agroecología como estrategia para la defensa de la tierra y el derecho a decidir
+      entre mujeres indígenas de Chiapas'
+    journal: Estudios Sociales Revista de Alimentación Contemporánea y Desarrollo Regional
+    published_date: '2022-08-30'
+    genre: journal-article
+    html_url: https://www.ciad.mx/estudiosociales/index.php/es/article/download/1253/824
+    source: unpaywall
 - url: https://www.cifor.org/publications/pdf_files/Books/Gender_Equality_SP.pdf
   type: openalex
   found_from:
@@ -24444,6 +25003,16 @@ candidates:
     year: 2020
     doi: 10.17528/cifor/008379
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.cifor.org/publications/pdf_files/Books/Gender_Equality_SP.pdf
+  promoted_at: '2026-05-22T23:55:41'
+  promoted_metadata:
+    doi: 10.17528/cifor/008379
+    title: 'Vías hacia la igualdad de género en la tenencia forestal: Una guía para profesionales'
+    journal: Center for International Forestry Research (CIFOR) eBooks
+    published_date: '2020-01-01'
+    genre: monograph
+    html_url: https://www.cifor.org/publications/pdf_files/Books/Gender_Equality_SP.pdf
+    source: unpaywall
 - url: https://www.cnt.es/noticias/22-de-mayo-transicion-ecologica-o-colapso-el-fin-del-sistema-tecnoindustrial/?utm_source=rss&utm_medium=rss&utm_campaign=22-de-mayo-transicion-ecologica-o-colapso-el-fin-del-sistema-tecnoindustrial
   type: rss
   found_from:
@@ -24612,6 +25181,16 @@ candidates:
     year: 2019
     doi: 10.17645/up.v4i2.2018
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.cogitatiopress.com/urbanplanning/article/download/2018/2018
+  promoted_at: '2026-05-22T23:55:42'
+  promoted_metadata:
+    doi: 10.17645/up.v4i2.2018
+    title: 'Reconstituting the Urban Commons: Public Space, Social Capital and the Project of Urbanism'
+    journal: Urban Planning
+    published_date: '2019-06-30'
+    genre: journal-article
+    html_url: https://www.cogitatiopress.com/urbanplanning/article/download/2018/2018
+    source: unpaywall
 - url: https://www.creaworld.org/media/pdf/resources/toolkits-and-manuals/Self-Care-and-Self-De-
   type: footnote
   domain: www.creaworld.org
@@ -24817,6 +25396,16 @@ candidates:
     year: 2019
     doi: 10.12957/rdc.2019.38493
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.e-publicacoes.uerj.br/index.php/rdc/article/download/38493/32456
+  promoted_at: '2026-05-22T23:55:43'
+  promoted_metadata:
+    doi: 10.12957/rdc.2019.38493
+    title: 'Acumulación por desposesión, bienes comunes urbanos y derecho a la ciudad: un recorrido posible'
+    journal: Revista de Direito da Cidade
+    published_date: '2019-08-03'
+    genre: journal-article
+    html_url: https://www.e-publicacoes.uerj.br/index.php/rdc/article/download/38493/32456
+    source: unpaywall
 - url: https://www.ecologyandsociety.org/vol18/iss1/art34/ES-2012-5510.pdf
   type: openalex
   found_from:
@@ -24835,6 +25424,16 @@ candidates:
     year: 2013
     doi: 10.5751/es-05510-180134
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.ecologyandsociety.org/vol18/iss1/art34/ES-2012-5510.pdf
+  promoted_at: '2026-05-22T23:55:45'
+  promoted_metadata:
+    doi: 10.5751/es-05510-180134
+    title: 'How fit turns into misfit and back: Institutional Transformations of Pastoral Commons in African Floodplains'
+    journal: Ecology and Society
+    published_date: '2013-01-01'
+    genre: journal-article
+    html_url: https://www.ecologyandsociety.org/vol18/iss1/art34/ES-2012-5510.pdf
+    source: unpaywall
 - url: https://www.editions.ird.fr/produit/667/9782709928762
   type: footnote
   domain: www.editions.ird.fr
@@ -24877,6 +25476,16 @@ candidates:
     year: 2024
     doi: 10.7202/1110077ar
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.erudit.org/fr/revues/lex/2024-v29-n2-lex09180/1110077ar.pdf
+  promoted_at: '2026-05-22T23:55:46'
+  promoted_metadata:
+    doi: 10.7202/1110077ar
+    title: LA PROPRIÉTÉ ET LES DROITS FONCIERS COUTUMIERS. ÉTUDE SUR LA VIVACITÉ DE QUELQUES COUTUMES FRANÇAISES
+    journal: Lex Electronica
+    published_date: '2024-01-01'
+    genre: journal-article
+    html_url: https://www.erudit.org/fr/revues/lex/2024-v29-n2-lex09180/1110077ar.pdf
+    source: unpaywall
 - url: https://www.eure.cl/index.php/eure/article/download/EURE.48.143.11/1417
   type: openalex
   found_from:
@@ -24896,6 +25505,17 @@ candidates:
     year: 2021
     doi: 10.7764/eure.48.143.11
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.eure.cl/index.php/eure/article/download/EURE.48.143.11/1417
+  promoted_at: '2026-05-22T23:55:47'
+  promoted_metadata:
+    doi: 10.7764/eure.48.143.11
+    title: 'Hacia una agenda urbana del común: un estudio de caso de las reivindicaciones políticas de los comunes urbanos
+      en Barcelona'
+    journal: EURE
+    published_date: '2021-01-01'
+    genre: journal-article
+    html_url: https://www.eure.cl/index.php/eure/article/download/EURE.48.143.11/1417
+    source: unpaywall
 - url: https://www.facebook.com/landcoalition
   type: external_link
   domain: www.facebook.com
@@ -24919,6 +25539,42 @@ candidates:
   found_from:
   - doc_id: libcom.org — library
     context: lien depuis https://libcom.org/library
+    page: null
+- url: https://www.facebook.com/portaloaca
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Facebook
+    page: null
+- url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Facebook
+    page: null
+- url: https://www.getgrav.org
+  type: external_link
+  domain: www.getgrav.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Troisièmes Voix — éditions
+    context: Grav
     page: null
 - url: https://www.globallandforum.org/
   type: external_link
@@ -24956,6 +25612,30 @@ candidates:
   - doc_id: c6e0e14d
     context: https://www.hrfn.org/wp-content/uploads/2024/09/Better-Preparedness-Playbook-Taxono-
     page: 60
+- url: https://www.instagram.com/frentebrasilpopular?igsh=MWx2YTBsbXc2MGoxdw==
+  type: external_link
+  domain: www.instagram.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://www.instagram.com/movimentosemterra/
+  type: external_link
+  domain: www.instagram.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://www.instagram.com/stories/landcoalition/
   type: external_link
   domain: www.instagram.com
@@ -24967,6 +25647,30 @@ candidates:
   found_from:
   - doc_id: International Land Coalition — latest
     context: Instagram
+    page: null
+- url: https://www.ithaka.org/cookies
+  type: external_link
+  domain: www.ithaka.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Cookie Policy
+    page: null
+- url: https://www.ithaka.org/privacypolicy
+  type: external_link
+  domain: www.ithaka.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Privacy Policy
     page: null
 - url: https://www.jssj.org/article/inegalites-
   type: footnote
@@ -24980,6 +25684,54 @@ candidates:
   - doc_id: 46327ff6
     context: justice. Justice Spatiale / Spatial Justice. https://www.jssj.org/article/inegalites-
     page: 128
+- url: https://www.jstor.org
+  type: external_link
+  domain: www.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: lien depuis https://daily.jstor.org/topic/land/
+    page: null
+- url: https://www.jstor.org/
+  type: external_link
+  domain: www.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: JSTOR.org
+    page: null
+- url: https://www.jstor.org/action/jpass?lookupKey=SlBBU1MtSS1ZZWFy&discountCode=SlNUT1JEQUlMWTI1&utm_source=jstor_daily&utm_campaign=daily_newsletter_annual_25
+  type: external_link
+  domain: www.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: lien depuis https://daily.jstor.org/topic/land/
+    page: null
+- url: https://www.jstor.org/stable/26216197?mag=land-of-the-free-home-of-the-bootleggers
+  type: external_link
+  domain: www.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: as historian Alex Sayf Cummings explains
+    page: null
 - url: https://www.lamjol.info/index.php/WANI/article/download/9776/11188
   type: openalex
   found_from:
@@ -25223,6 +25975,18 @@ candidates:
   - doc_id: libcom.org — library
     context: lien depuis https://libcom.org/library
     page: null
+- url: https://www.redebrasilatual.com.br/
+  type: external_link
+  domain: www.redebrasilatual.com.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://www.revistas.ufg.br/atelie/article/download/60518/36290
   type: openalex
   found_from:
@@ -25433,6 +26197,30 @@ candidates:
   - doc_id: 85a0da6c
     context: https://www.syndikat.org/en/the-syndikat-in-operation/, consulté le 7 avril 2022.
     page: 129
+- url: https://www.threads.net/intent/post?text=Land+of+the+Free%2C+Home+of+the+Bootleggers%0Ahttps%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
+  type: external_link
+  domain: www.threads.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Threads
+    page: null
+- url: https://www.tvt.org.br/
+  type: external_link
+  domain: www.tvt.org.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://www.unido.org/gender-lens-investing
   type: footnote
   domain: www.unido.org
@@ -25469,6 +26257,18 @@ candidates:
   - doc_id: c6e0e14d
     context: https://www.weshakethetable.org/resources
     page: 61
+- url: https://www.youtube.com/channel/UC3C5WLLfrDnNsMR7Z-46eug
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: Videoteca
+    page: null
 - url: https://www.youtube.com/channel/UCcPuJ8iM4Yi0QQJ4963H3UQ
   type: external_link
   domain: www.youtube.com
@@ -25481,6 +26281,18 @@ candidates:
   - doc_id: International Land Coalition — latest
     context: YouTube
     page: null
+- url: https://www.youtube.com/user/videosmst
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://www.youtube.com/watch?v=iuFSXVMxBnY
   type: external_link
   domain: www.youtube.com
@@ -25492,6 +26304,18 @@ candidates:
   found_from:
   - doc_id: Böll Stiftung — Agriculture Atlas (EN)
     context: Watch on YouTube
+    page: null
+- url: https://youtube.com/@crimethincexworkerscollective
+  type: external_link
+  domain: youtube.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-22'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on YouTube
     page: null
 - url: https://zenodo.org/record/3452870
   type: openalex
