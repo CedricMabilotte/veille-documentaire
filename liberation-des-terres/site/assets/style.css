@@ -120,7 +120,11 @@ main.wrap{padding-bottom:4rem;}
  border-radius:var(--radius);padding:1rem 1.15rem;
  transition:border-color .15s,box-shadow .15s;}
 .card:hover{border-color:var(--green);box-shadow:0 4px 16px rgba(33,29,24,.07);}
-.card:focus-within{border-color:var(--green);}
+/* stretched-link : l'indicateur de focus porte sur la carte entière, pas sur
+   le seul titre, pour refléter la cible cliquable réelle (audit a11y C, I5). */
+.card:focus-within{border-color:var(--green);
+ outline:2px solid var(--ink);outline-offset:2px;}
+.card-link:focus-visible{outline:none;}
 .card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;}
 .card h3{margin:.5rem 0 .2rem;font-size:1.16rem;line-height:1.3;}
 .card h3 a{text-decoration:none;color:var(--ink);}
@@ -164,7 +168,9 @@ main.wrap{padding-bottom:4rem;}
 .idl-badge.big .idl-ring{width:92px;height:92px;}
 .idl-track{fill:none;stroke:var(--beige-dk);}
 .idl-arc{fill:none;stroke:var(--pal,#999);stroke-linecap:round;}
-.idl-num{fill:var(--pal,#999);font-weight:800;text-anchor:middle;
+/* le chiffre de l'Indice est porté par var(--ink) : contraste > 12:1, la
+   couleur du palier restant sur l'anneau (audit a11y C, I1). */
+.idl-num{fill:var(--ink);font-weight:800;text-anchor:middle;
  dominant-baseline:central;font-family:-apple-system,system-ui,sans-serif;}
 .idl-pal{font-size:.62rem;text-transform:uppercase;letter-spacing:.04em;
  color:var(--muted);text-align:center;max-width:9rem;}
@@ -198,7 +204,11 @@ main.wrap{padding-bottom:4rem;}
  white-space:nowrap;}
 .axis-track{flex:1;height:.5rem;background:var(--beige-dk);
  border-radius:var(--radius-sm);overflow:hidden;}
-.axis-fill{display:block;height:100%;border-radius:var(--radius-sm);}
+/* liseré 1px var(--ink) : garantit le 3:1 de délimitation de la jauge
+   quelle que soit la couleur d'axe (audit a11y C, I2). */
+.axis-fill{display:block;height:100%;border-radius:var(--radius-sm);
+ box-shadow:inset 0 0 0 1px rgba(34,31,26,.55);}
+.axis-fill.axis-na{box-shadow:none;}
 .axis-fill.axis-na{background:repeating-linear-gradient(45deg,#ddd,#ddd 3px,#eee 3px,#eee 6px)!important;}
 .axis-val{flex:0 0 2.1rem;text-align:right;font-weight:700;font-variant-numeric:tabular-nums;}
 .axis-block.compact .axis-label{flex-basis:5.6rem;font-size:.72rem;}
@@ -267,6 +277,14 @@ select{font:inherit;font-family:-apple-system,system-ui,sans-serif;font-size:.85
 .fiab-gold{color:var(--gold-dk);}
 .fiab-faint{color:var(--faint);}
 .completude{font-size:.8rem;color:var(--faint);margin:.2rem 0 0;}
+
+/* clé de lecture de la fiche — repliée, sobre (audit pédagogie C, I1/I3) */
+.fiche-key{margin:-.4rem 0 1.2rem;font-family:-apple-system,system-ui,sans-serif;}
+.fiche-key summary{font-size:.84rem;color:var(--muted);cursor:pointer;
+ padding:.3rem 0;width:fit-content;}
+.fiche-key summary:hover{color:var(--green-dk);}
+.fiche-key ul{margin:.4rem 0 .2rem;padding-left:1.1rem;}
+.fiche-key li{font-size:.88rem;color:var(--muted);margin:.3rem 0;max-width:68ch;}
 
 /* en bref — composant tertiaire (info) */
 .enbref{background:var(--beige);border-radius:var(--radius);
@@ -338,7 +356,7 @@ table th{color:var(--muted);font-weight:700;font-size:.72rem;text-transform:uppe
 .rank-tbl .name a:hover{text-decoration:underline;}
 .row-sub{display:block;font-size:.78rem;color:var(--faint);font-weight:400;}
 .rank-tbl td.idl-cell,.rank-tbl th.idl-cell{border-left:1px solid var(--line);}
-.idl-cell b{color:var(--pal,#999);font-size:1.05rem;font-variant-numeric:tabular-nums;}
+.idl-cell b{color:var(--ink);font-size:1.05rem;font-variant-numeric:tabular-nums;}
 .rank-tbl.small{max-width:640px;}
 th.sortable{white-space:nowrap;padding:0;}
 .th-sort{font:inherit;font-family:-apple-system,system-ui,sans-serif;
@@ -428,12 +446,48 @@ code{background:var(--beige);padding:.1rem .35rem;border-radius:var(--radius-sm)
 .regimes-tbl th[scope=row]{font-weight:600;color:var(--ink);text-transform:none;
  letter-spacing:0;font-size:.86rem;border-bottom:1px solid var(--line);}
 
+/* liens vers le glossaire — sobres : soulignement pointillé discret, pas de
+   couleur vive, pour ne pas surcharger la prose (audit pédagogie C, C1) */
+a.gloss-link{color:inherit;text-decoration:underline;
+ text-decoration-style:dotted;text-decoration-thickness:1px;
+ text-underline-offset:2px;text-decoration-color:var(--faint);}
+a.gloss-link:hover{color:var(--green-dk);text-decoration-color:var(--green-dk);}
+
 /* glossaire */
 .glossaire{margin:1.4rem 0;display:flex;flex-direction:column;gap:0;}
 .gloss-item{border-bottom:1px solid var(--line);padding:.9rem 0;}
 .gloss-item dt{font-size:1.05rem;font-weight:700;color:var(--ink);
  margin-bottom:.2rem;}
 .gloss-item dd{margin:0;font-size:1.02rem;color:var(--muted);max-width:70ch;}
+
+/* comparateur — deux colonnes, réutilise les styles de carte et d'axes */
+.cmp-pickers{display:flex;gap:1rem;flex-wrap:wrap;margin:1.3rem 0 .6rem;}
+.cmp-pickers label{display:flex;flex-direction:column;gap:.25rem;flex:1 1 220px;
+ font-family:-apple-system,system-ui,sans-serif;font-size:.82rem;
+ color:var(--muted);font-weight:600;}
+.cmp-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0;}
+.cmp-col{background:var(--card);border:1px solid var(--line);
+ border-radius:var(--radius);padding:1rem 1.15rem;}
+.cmp-col.cmp-empty{display:flex;align-items:center;justify-content:center;
+ min-height:8rem;border-style:dashed;}
+.cmp-col-head{display:flex;justify-content:space-between;align-items:flex-start;
+ gap:.5rem;}
+.cmp-idl{display:inline-flex;flex-direction:column;align-items:flex-end;
+ line-height:1.1;border-right:3px solid var(--pal,#999);padding-right:.5rem;}
+.cmp-idl b{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--ink);
+ font-family:-apple-system,system-ui,sans-serif;}
+.cmp-name{font-size:1.2rem;margin:.6rem 0 .15rem;border:0;padding:0;}
+.cmp-name::before{display:none;}
+.cmp-sub{font-size:.88rem;color:var(--muted);margin:.1rem 0 .6rem;
+ font-family:-apple-system,system-ui,sans-serif;}
+.cmp-dl{display:grid;grid-template-columns:max-content 1fr;gap:.4rem 1rem;
+ margin:.8rem 0 .4rem;font-size:.86rem;
+ font-family:-apple-system,system-ui,sans-serif;}
+.cmp-dl dt{color:var(--muted);font-weight:600;}
+.cmp-dl dd{margin:0;}
+.cmp-link{font-family:-apple-system,system-ui,sans-serif;font-size:.86rem;
+ margin:.6rem 0 0;}
+@media(max-width:560px){.cmp-grid{grid-template-columns:1fr;}}
 
 /* footer */
 .footer{border-top:2px solid var(--ink);margin-top:3rem;background:var(--paper);}

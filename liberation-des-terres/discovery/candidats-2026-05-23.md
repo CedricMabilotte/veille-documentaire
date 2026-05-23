@@ -1,12 +1,32 @@
 # Veille — candidats du 2026-05-23
 
-3 candidat·s repéré·s sur 10 sources. Score = nombre de mots-clés ; à examiner et promouvoir manuellement en fiche.
+26 candidat·s repéré·s sur 15 sources (26 hors fiches existantes, 17 sur un angle mort). Score pondéré ; à examiner et promouvoir manuellement.
 
-## Nouveautés possibles (1)
+## Nouveautés possibles (26)
 
-- **[2]** [Complément d'acquisition Ferme de la Coccinelle WITTERNHEIM • Bas-Rhin Don Épargne Objectif de 1 534 944€ 40% Paysan-cuisinier, tel est la devise des fermiers de la Coccinelle ! Située à Witternheim a](https://fermes.terredeliens.org/alsace/fermes-de-la-r%C3%A9gion-alsace/ferme-de-la-coccinelle/) — source : terre-de-liens — mots-clés : acquisition, ferme
-
-## Domaines déjà référencés (2)
-
-- [3] [What are Foncier Solidaire France and the concept of OFS/BRS ?](https://www.foncier-solidaire.fr/principles-of-solidarity-land/) — foncier-solidaire
-- [2] [SCTL, des terres gérées par les fermiers](https://larzac.org/accueil/un-territoire-organise/gestion-fonciere/sctl/) — larzac
+- **[22 · ANGLE MORT]** [La Fondation Terre de Liens — Terre de Liens](https://terredeliens.org/national/la-fondation-terre-de-liens/) — source : terre-de-liens — statut : revu — mots-clés : association, bail, donation, ferme, foncière, fondation, fonds de dotation, société civile
+- **[14 · ANGLE MORT]** [Ferme de la Coccinelle — Terre de Liens](https://fermes.terredeliens.org/alsace/fermes-de-la-r%C3%A9gion-alsace/ferme-de-la-coccinelle/) — source : terre-de-liens — statut : revu — mots-clés : acquisition, association, ferme, foncière, fondation, société civile
+- **[13 · ANGLE MORT]** [La Foncière Terre de Liens, première structure d'investissement solidaire agricole — Terre de Liens](https://terredeliens.org/national/fonciere-terre-de-liens/la-fonciere-terre-de-liens-premiere-structure-dinvestissement-solidaire-agricole/) — source : terre-de-liens — statut : revu — mots-clés : association, ferme, foncière, fondation, société civile
+- **[13 · ANGLE MORT]** [Les associations territoriales Terre de Liens — Terre de Liens](https://terredeliens.org/national/les-associations-territoriales-terre-de-liens/) — source : terre-de-liens — statut : revu — mots-clés : association, ferme, foncière, fondation, société civile
+- **[13 · ANGLE MORT]** [Les fermes Terre de Liens](https://terredeliens.org/national/hub-ferme/) — source : terre-de-liens — statut : revu — mots-clés : association, ferme, foncière, fondation, société civile
+- **[13 · ANGLE MORT]** [M'installer avec Terre de Liens — Terre de Liens](https://terredeliens.org/national/minstaller-avec-terre-de-liens/) — source : terre-de-liens — statut : revu — mots-clés : association, ferme, foncière, fondation, société civile
+- **[13 · ANGLE MORT]** [A la ferme du Pré-Tords, des vaches, de l’eau… et le retour de la Barge à queue noire! — Terre de Liens](https://terredeliens.org/national/actu/a-la-ferme-du-pr%C3%A9-tords-des-vaches-de-leau-et-le-retour-de-la-barge-%C3%A0-queue-noire-22-05-2026/) — source : terre-de-liens — statut : revu — mots-clés : association, ferme, foncière, fondation, société civile
+- **[13 · ANGLE MORT]** [Les fermes Terre de Liens](https://fermes.terredeliens.org/national/hub-ferme/) — source : terre-de-liens — statut : revu — mots-clés : association, ferme, foncière, fondation, société civile
+- **[13 · ANGLE MORT]** [La Voulperie — Terre de Liens](https://fermes.terredeliens.org/aquitaine/fermes-de-la-r%C3%A9gion-aquitaine/la-voulperie/) — source : terre-de-liens — statut : revu — mots-clés : association, ferme, foncière, fondation, société civile
+- **[13 · ANGLE MORT]** [Sous le Bois — Terre de Liens](https://fermes.terredeliens.org/auvergne/fermes-de-la-r%C3%A9gion-auvergne/sous-le-bois/) — source : terre-de-liens — statut : revu — mots-clés : association, ferme, foncière, fondation, société civile
+- **[13 · ANGLE MORT]** [Domaine de Saint-Laurent — Terre de Liens](https://fermes.terredeliens.org/bourgogne-franche-comt%C3%A9/fermes-de-la-r%C3%A9gion-bourgogne-franche-comt%C3%A9/domaine-de-saint-laurent/) — source : terre-de-liens — statut : revu — mots-clés : association, ferme, foncière, fondation, société civile
+- **[13 · ANGLE MORT]** [Les Prés de Trégrehen — Terre de Liens](https://fermes.terredeliens.org/bretagne/fermes-de-la-r%C3%A9gion-bretagne/les-pr%C3%A9s-de-tr%C3%A9grehen/) — source : terre-de-liens — statut : revu — mots-clés : association, ferme, foncière, fondation, société civile
+- **[13 · ANGLE MORT]** [Le Grand Bray — Terre de Liens](https://fermes.terredeliens.org/centre/fermes-de-la-r%C3%A9gion-centre/le-grand-bray/) — source : terre-de-liens — statut : revu — mots-clés : association, ferme, foncière, fondation, société civile
+- **[4 · ANGLE MORT]** [Voyages Oasis - Coopérative Oasis](https://cooperative-oasis.org/nos-offres/voyages-oasis/) — source : cooperative-oasis — statut : revu — mots-clés : foncière, oasis, écolieu
+- **[3 · ANGLE MORT]** [location Ferme en arboriculture à transmettre 14 Ha Flamanville (76970) • Normandie Voir l'annonce](https://www.objectif-terres.org/annonces/9966) — source : terre-de-liens — statut : revu — mots-clés : ferme
+- **[3 · ANGLE MORT]** [location Foncier communal cherche projets de maraîchage 1,3 Ha Fresnes-sur-Escaut (59970) • Hauts-de-France Voir l'annonce](https://www.objectif-terres.org/annonces/9550) — source : terre-de-liens — statut : revu — mots-clés : foncier
+- **[3 · ANGLE MORT]** [location Ferme Terre de Liens en Haute-Vienne cherche repreneurs 60 Ha Ladignac-le-Long (87500) • Nouvelle-Aquitaine Voir l'annonce](https://www.objectif-terres.org/annonces/9963) — source : terre-de-liens — statut : revu — mots-clés : ferme
+- **[11]** [Gestion foncière – Larzac.org](https://larzac.org/accueil/un-territoire-organise/la-gestion-fonciere/) — source : larzac — statut : revu — mots-clés : SCTL, association, foncière, gestion foncière, gfa, société civile, terres
+- **[11]** [What are Foncier Solidaire France and the concept of OFS/BRS ? – Foncier Solidaire France](https://www.foncier-solidaire.fr/principles-of-solidarity-land/) — source : foncier-solidaire — statut : revu — mots-clés : BRS, OFS, association, bail réel solidaire, foncier solidaire
+- **[11]** [Société Civile Gestion Foncière Agricole du Larzac – Larzac.org](https://larzac.org/accueil/un-territoire-organise/gestion-fonciere/sc-gfa/) — source : larzac — statut : revu — mots-clés : SCTL, association, foncière, gestion foncière, gfa, société civile, terres
+- **[10]** [la terre en commun enfin propriétaire des Q de plomb! | la terre en commun](https://encommun.eco/actualites/terre-en-commun-enfin-proprietaire-q-de-plomb) — source : encommun — statut : revu — mots-clés : commun, fonds de dotation, terres
+- **[9]** [Foncière Oasis - Coopérative Oasis](https://cooperative-oasis.org/nos-offres/fonciere-oasis/) — source : cooperative-oasis — statut : revu — mots-clés : foncière, fonds de dotation, oasis, écolieu
+- **[5]** [Événements | Le Labo de l'économie sociale et solidaire](https://www.lelabo-ess.org/petit-dejeuner-debat-l-entreprise-de-demain-existe-depuis-hier-histoire-des-scop-et-des-scic) — source : labo-ess — statut : revu — mots-clés : ESS, association, scic
+- **[4]** [Le portage foncier agricole - Rapport #3 - Centre de Ressources - Terre de liens](https://ressources.terredeliens.org/les-ressources/le-portage-foncier-agricole-rapport-3) — source : terre-de-liens — statut : revu — mots-clés : foncier, foncière
+- **[4]** [Protéger la biodiversité avec les ORE - Coopérative Oasis](https://cooperative-oasis.org/nos-offres/proteger-la-biodiversite-ore/) — source : cooperative-oasis — statut : revu — mots-clés : association, foncier, foncière, oasis
+- **[3]** [ESS, travail et emploi | Le Labo de l'économie sociale et solidaire](https://www.lelabo-ess.org/ess-travail-et-emploi) — source : labo-ess — statut : revu — mots-clés : ESS, fondation

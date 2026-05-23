@@ -3,6 +3,7 @@
     "uid": "hameau-des-buis",
     "nom": "Le Hameau des Buis",
     "categorie": "lieu",
+    "sous_titre": "Habitat intergénérationnel et ferme-école en Ardèche",
     "idl": 72,
     "idl_brut": 75,
     "score_type": "calcule",
@@ -12,12 +13,19 @@
       "B": 58,
       "C": 80
     },
-    "palier": "solide"
+    "palier": "solide",
+    "palier_label": "Montage solide",
+    "palier_couleur": "#4a7a3a",
+    "forme_juridique": "",
+    "montage_type": "propriete_collective",
+    "montage_label": "Propriété collective verrouillée",
+    "nature_juridique": "Forme sociétaire solidaire"
   },
   {
     "uid": "larzac",
     "nom": "Terres du Larzac",
     "categorie": "lieu",
+    "sous_titre": "Plateau agricole géré par une société civile de droit privé",
     "idl": 95,
     "idl_brut": 95,
     "score_type": "calcule",
@@ -27,12 +35,19 @@
       "B": 100,
       "C": 86
     },
-    "palier": "abouti"
+    "palier": "abouti",
+    "palier_label": "Libération aboutie",
+    "palier_couleur": "#356026",
+    "forme_juridique": "",
+    "montage_type": "propriete_publique",
+    "montage_label": "Propriété publique inaliénable",
+    "nature_juridique": "Droit public"
   },
   {
     "uid": "longo-mai",
     "nom": "Longo Maï",
     "categorie": "lieu",
+    "sous_titre": "Réseau de coopératives autogérées sur foncier sanctuarisé",
     "idl": 71,
     "idl_brut": 71,
     "score_type": "calcule",
@@ -42,12 +57,19 @@
       "B": 92,
       "C": 57
     },
-    "palier": "engage"
+    "palier": "engage",
+    "palier_label": "Engagement réel",
+    "palier_couleur": "#b08431",
+    "forme_juridique": "",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "lurzaindia",
     "nom": "Lurzaindia — terres du Pays Basque",
     "categorie": "lieu",
+    "sous_titre": "Foncière citoyenne d'installation paysanne",
     "idl": 64,
     "idl_brut": 67,
     "score_type": "calcule",
@@ -57,12 +79,19 @@
       "B": 65,
       "C": 50
     },
-    "palier": "engage"
+    "palier": "engage",
+    "palier_label": "Engagement réel",
+    "palier_couleur": "#b08431",
+    "forme_juridique": "",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Forme sociétaire solidaire"
   },
   {
     "uid": "nddl",
     "nom": "ZAD de Notre-Dame-des-Landes",
     "categorie": "lieu",
+    "sous_titre": "Bocage acquis par un fonds de dotation après l'abandon de l'aéroport",
     "idl": 70,
     "idl_brut": 77,
     "score_type": "calcule",
@@ -72,12 +101,19 @@
       "B": 81,
       "C": 50
     },
-    "palier": "engage"
+    "palier": "engage",
+    "palier_label": "Engagement réel",
+    "palier_couleur": "#b08431",
+    "forme_juridique": "",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "reseau-terre-de-liens",
     "nom": "Fermes Terre de Liens",
     "categorie": "lieu",
+    "sous_titre": "Réseau national de fermes sur foncier sanctuarisé",
     "idl": 84,
     "idl_brut": 84,
     "score_type": "calcule",
@@ -87,12 +123,19 @@
       "B": 88,
       "C": 64
     },
-    "palier": "solide"
+    "palier": "solide",
+    "palier_label": "Montage solide",
+    "palier_couleur": "#4a7a3a",
+    "forme_juridique": "",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "village-vertical",
     "nom": "Le Village Vertical",
     "categorie": "lieu",
+    "sous_titre": "Première coopérative d'habitants de France au XXIe siècle",
     "idl": 90,
     "idl_brut": 90,
     "score_type": "calcule",
@@ -102,12 +145,19 @@
       "B": 100,
       "C": 71
     },
-    "palier": "abouti"
+    "palier": "abouti",
+    "palier_label": "Libération aboutie",
+    "palier_couleur": "#356026",
+    "forme_juridique": "",
+    "montage_type": "propriete_collective",
+    "montage_label": "Propriété collective verrouillée",
+    "nature_juridique": "Forme sociétaire solidaire"
   },
   {
     "uid": "villarceaux",
     "nom": "Bergerie de Villarceaux",
     "categorie": "lieu",
+    "sous_titre": "Domaine agroécologique du Vexin français",
     "idl": 73,
     "idl_brut": 84,
     "score_type": "calcule",
@@ -117,12 +167,19 @@
       "B": 81,
       "C": null
     },
-    "palier": "solide"
+    "palier": "solide",
+    "palier_label": "Montage solide",
+    "palier_couleur": "#4a7a3a",
+    "forme_juridique": "",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "conservatoire-littoral",
     "nom": "Conservatoire du littoral",
     "categorie": "porteur",
+    "sous_titre": "Établissement public détenant un domaine foncier inaliénable",
     "idl": 95,
     "idl_brut": 95,
     "score_type": "calcule",
@@ -132,12 +189,19 @@
       "B": 100,
       "C": 86
     },
-    "palier": "abouti"
+    "palier": "abouti",
+    "palier_label": "Libération aboutie",
+    "palier_couleur": "#356026",
+    "forme_juridique": "Établissement public (Conservatoire de l'espace littoral et des rivages lacustres)",
+    "montage_type": "propriete_publique",
+    "montage_label": "Propriété publique inaliénable",
+    "nature_juridique": "Droit public"
   },
   {
     "uid": "federation-cen",
     "nom": "Conservatoires d'espaces naturels",
     "categorie": "porteur",
+    "sous_titre": "Associations d'intérêt général agréées protégeant le foncier naturel",
     "idl": 84,
     "idl_brut": 84,
     "score_type": "calcule",
@@ -147,12 +211,19 @@
       "B": 73,
       "C": 79
     },
-    "palier": "solide"
+    "palier": "solide",
+    "palier_label": "Montage solide",
+    "palier_couleur": "#4a7a3a",
+    "forme_juridique": "Associations loi 1901 d'intérêt général, agréées",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Droit civil non lucratif"
   },
   {
     "uid": "feve",
     "nom": "FEVE — Fermes en Vie",
     "categorie": "porteur",
+    "sous_titre": "Foncière solidaire citoyenne portant le foncier agricole",
     "idl": 38,
     "idl_brut": 41,
     "score_type": "calcule",
@@ -162,12 +233,19 @@
       "B": 23,
       "C": 50
     },
-    "palier": "eloigne"
+    "palier": "eloigne",
+    "palier_label": "Éloigné du modèle",
+    "palier_couleur": "#8f3829",
+    "forme_juridique": "Foncière solidaire de l'économie sociale et solidaire",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Forme sociétaire solidaire"
   },
   {
     "uid": "fonciere-antidote",
     "nom": "Antidote",
     "categorie": "porteur",
+    "sous_titre": "Fonds de dotation cédant l'usage de lieux par bail emphytéotique de 99 ans",
     "idl": 72,
     "idl_brut": 75,
     "score_type": "calcule",
@@ -177,12 +255,19 @@
       "B": 73,
       "C": 64
     },
-    "palier": "solide"
+    "palier": "solide",
+    "palier_label": "Montage solide",
+    "palier_couleur": "#4a7a3a",
+    "forme_juridique": "Fonds de dotation (loi du 4 août 2008)",
+    "montage_type": "demembrement",
+    "montage_label": "Démembrement nue-propriété / usufruit",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "fonciere-chenelet",
     "nom": "Foncière Chênelet",
     "categorie": "porteur",
+    "sous_titre": "Foncière solidaire de logement social écologique",
     "idl": 55,
     "idl_brut": 59,
     "score_type": "calcule",
@@ -192,12 +277,19 @@
       "B": 50,
       "C": 50
     },
-    "palier": "partiel"
+    "palier": "partiel",
+    "palier_label": "Libération partielle",
+    "palier_couleur": "#bc5d3a",
+    "forme_juridique": "Foncière solidaire (entreprise solidaire d'utilité sociale, ESUS)",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Forme sociétaire solidaire"
   },
   {
     "uid": "fonciere-terre-de-liens",
     "nom": "Foncière Terre de Liens",
     "categorie": "porteur",
+    "sous_titre": "Société d'actionnariat solidaire portant les terres agricoles",
     "idl": 55,
     "idl_brut": 57,
     "score_type": "calcule",
@@ -207,12 +299,19 @@
       "B": 50,
       "C": 64
     },
-    "palier": "partiel"
+    "palier": "partiel",
+    "palier_label": "Libération partielle",
+    "palier_couleur": "#bc5d3a",
+    "forme_juridique": "Société en commandite par actions (SCA) à capital variable",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Forme sociétaire solidaire"
   },
   {
     "uid": "fondation-fph",
     "nom": "Fondation Charles Léopold Mayer pour le Progrès de l'Homme",
     "categorie": "porteur",
+    "sous_titre": "Fondation propriétaire du domaine de Villarceaux",
     "idl": 62,
     "idl_brut": 72,
     "score_type": "calcule",
@@ -222,12 +321,19 @@
       "B": 86,
       "C": 50
     },
-    "palier": "engage"
+    "palier": "engage",
+    "palier_label": "Engagement réel",
+    "palier_couleur": "#b08431",
+    "forme_juridique": "Fondation (de droit suisse selon les sources ; forme exacte au regard du droit français non confirmée)",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "fondation-terre-de-liens",
     "nom": "Fondation Terre de Liens",
     "categorie": "porteur",
+    "sous_titre": "Fondation reconnue d'utilité publique portant le foncier agricole",
     "idl": 91,
     "idl_brut": 91,
     "score_type": "calcule",
@@ -237,12 +343,19 @@
       "B": 88,
       "C": 86
     },
-    "palier": "abouti"
+    "palier": "abouti",
+    "palier_label": "Libération aboutie",
+    "palier_couleur": "#356026",
+    "forme_juridique": "Fondation reconnue d'utilité publique (FRUP)",
+    "montage_type": "demembrement",
+    "montage_label": "Démembrement nue-propriété / usufruit",
+    "nature_juridique": "Droit civil non lucratif"
   },
   {
     "uid": "fonds-la-terre-en-commun",
     "nom": "Fonds de dotation « La Terre en commun »",
     "categorie": "porteur",
+    "sous_titre": "Fonds de dotation acquéreur des terres de Notre-Dame-des-Landes",
     "idl": 63,
     "idl_brut": 65,
     "score_type": "calcule",
@@ -252,12 +365,19 @@
       "B": 73,
       "C": 50
     },
-    "palier": "engage"
+    "palier": "engage",
+    "palier_label": "Engagement réel",
+    "palier_couleur": "#b08431",
+    "forme_juridique": "Fonds de dotation (loi du 4 août 2008)",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "fonds-terre-europeenne",
     "nom": "Fonds de Terre Européenne",
     "categorie": "porteur",
+    "sous_titre": "Fondation de droit suisse détenant les terres de Longo Maï",
     "idl": 71,
     "idl_brut": 79,
     "score_type": "calcule",
@@ -267,12 +387,19 @@
       "B": 100,
       "C": 50
     },
-    "palier": "engage"
+    "palier": "engage",
+    "palier_label": "Engagement réel",
+    "palier_couleur": "#b08431",
+    "forme_juridique": "Fondation de droit suisse",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "habicoop",
     "nom": "Habicoop",
     "categorie": "porteur",
+    "sous_titre": "Fédération française des coopératives d'habitants",
     "idl": 74,
     "idl_brut": 74,
     "score_type": "calcule",
@@ -282,12 +409,19 @@
       "B": 73,
       "C": 64
     },
-    "palier": "solide"
+    "palier": "solide",
+    "palier_label": "Montage solide",
+    "palier_couleur": "#4a7a3a",
+    "forme_juridique": "Association loi 1901 (structure fédérale)",
+    "montage_type": "propriete_collective",
+    "montage_label": "Propriété collective verrouillée",
+    "nature_juridique": "Droit civil non lucratif"
   },
   {
     "uid": "lurzaindia-sca",
     "nom": "Lurzaindia (SCA)",
     "categorie": "porteur",
+    "sous_titre": "Foncière citoyenne du Pays Basque portant les terres agricoles",
     "idl": 46,
     "idl_brut": 48,
     "score_type": "calcule",
@@ -297,12 +431,19 @@
       "B": 36,
       "C": 50
     },
-    "palier": "partiel"
+    "palier": "partiel",
+    "palier_label": "Libération partielle",
+    "palier_couleur": "#bc5d3a",
+    "forme_juridique": "Société en commandite par actions (SCA)",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Forme sociétaire solidaire"
   },
   {
     "uid": "scic-terres-de-sources",
     "nom": "SCIC Terres de Sources",
     "categorie": "porteur",
+    "sous_titre": "Coopérative territoriale protégeant le foncier des aires de captage",
     "idl": 91,
     "idl_brut": 91,
     "score_type": "calcule",
@@ -312,12 +453,19 @@
       "B": 100,
       "C": 86
     },
-    "palier": "abouti"
+    "palier": "abouti",
+    "palier_label": "Libération aboutie",
+    "palier_couleur": "#356026",
+    "forme_juridique": "Société coopérative d'intérêt collectif (SCIC) multi-acteurs",
+    "montage_type": "propriete_publique",
+    "montage_label": "Propriété publique inaliénable",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "champs-des-possibles",
     "nom": "Les Champs des Possibles",
     "categorie": "usufruitier",
+    "sous_titre": "Couveuse et coopérative d'activités agricoles en Île-de-France",
     "idl": 70,
     "idl_brut": 73,
     "score_type": "calcule",
@@ -327,12 +475,19 @@
       "B": 58,
       "C": 75
     },
-    "palier": "engage"
+    "palier": "engage",
+    "palier_label": "Engagement réel",
+    "palier_couleur": "#b08431",
+    "forme_juridique": "Société anonyme coopérative (depuis juin 2024 ; SCIC depuis 2016, association depuis 2009)",
+    "montage_type": "propriete_collective",
+    "montage_label": "Propriété collective verrouillée",
+    "nature_juridique": "Forme sociétaire solidaire"
   },
   {
     "uid": "cooperative-oasis",
     "nom": "Coopérative Oasis",
     "categorie": "usufruitier",
+    "sous_titre": "Coopérative finançant le foncier collectif des écolieux",
     "idl": 62,
     "idl_brut": 70,
     "score_type": "calcule",
@@ -342,12 +497,19 @@
       "B": 50,
       "C": 75
     },
-    "palier": "engage"
+    "palier": "engage",
+    "palier_label": "Engagement réel",
+    "palier_couleur": "#b08431",
+    "forme_juridique": "Société coopérative d'intérêt collectif (SCIC), agrément ESUS",
+    "montage_type": "propriete_collective",
+    "montage_label": "Propriété collective verrouillée",
+    "nature_juridique": "Forme sociétaire solidaire"
   },
   {
     "uid": "cooperatives-longo-mai",
     "nom": "Coopératives Longo Maï",
     "categorie": "usufruitier",
+    "sous_titre": "Collectifs autogérés utilisant les terres sanctuarisées",
     "idl": 67,
     "idl_brut": 75,
     "score_type": "calcule",
@@ -357,12 +519,19 @@
       "B": 75,
       "C": 86
     },
-    "palier": "engage"
+    "palier": "engage",
+    "palier_label": "Engagement réel",
+    "palier_couleur": "#b08431",
+    "forme_juridique": "Coopératives autogérées (statut juridique précis non confirmé par les sources)",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "ecosite-villarceaux",
     "nom": "Association Écosite de Villarceaux",
     "categorie": "usufruitier",
+    "sous_titre": "Structure d'animation et d'usage du domaine de Villarceaux",
     "idl": 70,
     "idl_brut": 85,
     "score_type": "calcule",
@@ -372,12 +541,19 @@
       "B": 86,
       "C": 70
     },
-    "palier": "engage"
+    "palier": "engage",
+    "palier_label": "Engagement réel",
+    "palier_couleur": "#b08431",
+    "forme_juridique": "Association loi 1901",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "gfa-mutuels",
     "nom": "Groupements fonciers agricoles mutuels et solidaires",
     "categorie": "usufruitier",
+    "sous_titre": "Sociétés civiles agricoles de propriété foncière collective",
     "idl": 47,
     "idl_brut": 55,
     "score_type": "calcule",
@@ -387,12 +563,19 @@
       "B": 50,
       "C": 50
     },
-    "palier": "partiel"
+    "palier": "partiel",
+    "palier_label": "Libération partielle",
+    "palier_couleur": "#bc5d3a",
+    "forme_juridique": "Société civile (groupement foncier agricole)",
+    "montage_type": "propriete_collective",
+    "montage_label": "Propriété collective verrouillée",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "reneta",
     "nom": "RENETA — Réseau national des espaces-test agricoles",
     "categorie": "usufruitier",
+    "sous_titre": "Réseau des structures d'usage transitoire pour le test d'activité agricole",
     "idl": 75,
     "idl_brut": 78,
     "score_type": "calcule",
@@ -402,12 +585,19 @@
       "B": 71,
       "C": 62
     },
-    "palier": "solide"
+    "palier": "solide",
+    "palier_label": "Montage solide",
+    "palier_couleur": "#4a7a3a",
+    "forme_juridique": "Association loi 1901 (réseau national)",
+    "montage_type": "propriete_collective",
+    "montage_label": "Propriété collective verrouillée",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "sctl",
     "nom": "Société Civile des Terres du Larzac",
     "categorie": "usufruitier",
+    "sous_titre": "Office foncier local gérant les terres publiques du Larzac",
     "idl": 77,
     "idl_brut": 86,
     "score_type": "calcule",
@@ -417,12 +607,19 @@
       "B": 85,
       "C": 86
     },
-    "palier": "solide"
+    "palier": "solide",
+    "palier_label": "Montage solide",
+    "palier_couleur": "#4a7a3a",
+    "forme_juridique": "Société civile",
+    "montage_type": "propriete_publique",
+    "montage_label": "Propriété publique inaliénable",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "clt-bruxelles",
     "nom": "Community Land Trust de Bruxelles",
     "categorie": "modele",
+    "sous_titre": "Premier CLT d'Europe continentale, à gouvernance tripartite",
     "idl": 90,
     "idl_brut": 90,
     "score_type": "estime",
@@ -432,12 +629,19 @@
       "B": 90,
       "C": 90
     },
-    "palier": "abouti"
+    "palier": "abouti",
+    "palier_label": "Libération aboutie",
+    "palier_couleur": "#356026",
+    "forme_juridique": "Fondation d'utilité publique (foncier) et ASBL (gestion)",
+    "montage_type": "propriete_collective",
+    "montage_label": "Propriété collective verrouillée",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "cooperative-habitants-alur",
     "nom": "Coopérative d'habitants (loi ALUR)",
     "categorie": "modele",
+    "sous_titre": "Statut français de l'habitat coopératif non spéculatif",
     "idl": 87,
     "idl_brut": 87,
     "score_type": "estime",
@@ -447,12 +651,19 @@
       "B": 90,
       "C": 90
     },
-    "palier": "abouti"
+    "palier": "abouti",
+    "palier_label": "Libération aboutie",
+    "palier_couleur": "#356026",
+    "forme_juridique": "Société coopérative à capital variable (articles L.201-1 et s. du Code de la construction et de l'habitation)",
+    "montage_type": "propriete_collective",
+    "montage_label": "Propriété collective verrouillée",
+    "nature_juridique": "Forme sociétaire solidaire"
   },
   {
     "uid": "mietshauser-syndikat",
     "nom": "Mietshäuser Syndikat",
     "categorie": "modele",
+    "sous_titre": "Neutralisation de la propriété par droit de veto sur la revente",
     "idl": 83,
     "idl_brut": 83,
     "score_type": "estime",
@@ -462,12 +673,19 @@
       "B": 90,
       "C": 90
     },
-    "palier": "solide"
+    "palier": "solide",
+    "palier_label": "Montage solide",
+    "palier_couleur": "#4a7a3a",
+    "forme_juridique": "Réseau de sociétés (GmbH) à capital partagé",
+    "montage_type": "propriete_collective",
+    "montage_label": "Propriété collective verrouillée",
+    "nature_juridique": "Forme sociétaire solidaire"
   },
   {
     "uid": "ofs-brs",
     "nom": "Organisme de Foncier Solidaire + Bail Réel Solidaire",
     "categorie": "modele",
+    "sous_titre": "Dissociation foncier/bâti pour le logement abordable",
     "idl": 77,
     "idl_brut": 77,
     "score_type": "estime",
@@ -477,12 +695,19 @@
       "B": 90,
       "C": 50
     },
-    "palier": "solide"
+    "palier": "solide",
+    "palier_label": "Montage solide",
+    "palier_couleur": "#4a7a3a",
+    "forme_juridique": "Organisme sans but lucratif agréé par le préfet de région (OFS)",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Droit civil sous encadrement public"
   },
   {
     "uid": "stiftung-trias",
     "nom": "Stiftung trias",
     "categorie": "modele",
+    "sous_titre": "Fondation allemande sanctuarisant le foncier par droit de superficie",
     "idl": 83,
     "idl_brut": 83,
     "score_type": "estime",
@@ -492,6 +717,12 @@
       "B": 90,
       "C": 70
     },
-    "palier": "solide"
+    "palier": "solide",
+    "palier_label": "Montage solide",
+    "palier_couleur": "#4a7a3a",
+    "forme_juridique": "Fondation à but non lucratif (Stiftung)",
+    "montage_type": "propriete_sanctuarisee",
+    "montage_label": "Propriété sanctuarisée + bail de long terme",
+    "nature_juridique": "Droit civil non lucratif"
   }
 ]

@@ -37,56 +37,57 @@
 </header>
 <main class="wrap" id="contenu">
 <svg width="0" height="0" aria-hidden="true" style="position:absolute" focusable="false"><defs><g id="tri-base"><polygon class="tri-frame" points="60.0,4.8 103.6,80.4 16.4,80.4"/><polygon class="tri-grid" points="60.0,30.0 81.8,67.8 38.2,67.8"/><circle class="tri-vtx" cx="60.0" cy="4.8" r="3.5" fill="#4a7a3a"/><text class="tri-lab" x="60.0" y="4.8">A</text><circle class="tri-vtx" cx="103.6" cy="80.4" r="3.5" fill="#bc5d3a"/><text class="tri-lab" x="103.6" y="80.4">B</text><circle class="tri-vtx" cx="16.4" cy="80.4" r="3.5" fill="#36748a"/><text class="tri-lab" x="16.4" y="80.4">C</text></g></defs></svg><h1>Modèles voisins</h1>
-<p class="lead">Modèles « puristes » proches, recensés à titre de comparaison pour situer le montage de référence. Restent dans le droit civil et l&#x27;intérêt général à des degrés divers.
+<p class="lead">Modèles « puristes » proches, recensés à titre de comparaison pour situer le montage de référence. Restent dans le droit civil et l&#x27 ;<a class="gloss-link" href="glossaire.html#g-interet-general">intérêt général</a> à des degrés divers.
 <a href="methode.html">Comprendre l'Indice et les axes →</a></p>
-<div class="callout callout-note"><p><strong>Hors classement principal.</strong> Les modèles voisins ne sont pas notés par les grilles de l'annuaire : leur Indice est <em>estimé</em> (axes posés éditorialement) et signalé par un anneau en pointillé. Ils servent de points de comparaison et n'apparaissent pas dans le classement.</p></div>
+<div class="callout callout-note"><p><strong>Hors classement principal.</strong> Les modèles voisins ne sont pas notés par les grilles de l'annuaire : leur Indice est <em>estimé</em> (axes estimés, hors grille) et signalé par un anneau en pointillé. Ils servent de points de comparaison et n'apparaissent pas dans le classement.</p></div>
 <div class="toolbar">
-  <input type="search" id="q" placeholder="Filtrer par nom…" aria-label="Filtrer par nom" aria-controls="resultats">
-  <label class="sort-lab" for="sort">Trier :</label>
+  <input type="search" id="q" placeholder="Rechercher un nom…" aria-label="Rechercher par nom" aria-controls="resultats">
+  <label class="sort-lab" for="sort">Trier :</label>
   <select id="sort">
     <option value="idl">Par indice (décroissant)</option>
     <option value="nom">Par nom (A→Z)</option>
     <option value="axa">Par axe A — intérêt général</option>
-    <option value="axb">Par axe B — libération des terres</option>
-    <option value="axc">Par axe C — gouvernance</option>
+    <option value="axb">Par axe B — <a class="gloss-link" href="glossaire.html#g-liberation-des-terres">libération des terres</a></option>
+    <option value="axc">Par axe C — gouvernance participative</option>
   </select>
-  <span class="count" id="cnt" aria-live="polite"><b>5</b> entrées affichées</span>
+  <span class="count" id="cnt" aria-live="polite"><b id="cntn">5</b><span id="cntl"> entrées affichées</span></span>
 </div>
+<p id="sort-status" role="status" class="visually-hidden"></p>
 <details class="filter-details">
   <summary>Filtres avancés</summary>
   <div class="filter-bar">
-    <div class="filter-row"><span class="filter-lab">Palier</span>
-      <button class="fbtn active" data-fk="palier" data-fv="all">Tous</button>
-      <button class="fbtn" data-fk="palier" data-fv="abouti">Libération aboutie</button><button class="fbtn" data-fk="palier" data-fv="solide">Montage solide</button><button class="fbtn" data-fk="palier" data-fv="engage">Engagement réel</button><button class="fbtn" data-fk="palier" data-fv="partiel">Libération partielle</button><button class="fbtn" data-fk="palier" data-fv="eloigne">Éloigné du modèle</button></div>
-    <div class="filter-row"><span class="filter-lab">Montage</span><button class="fbtn active" data-fk="montage" data-fv="all">Tous</button><button class="fbtn" data-fk="montage" data-fv="propriete_collective">Propriété collective verrouillée</button><button class="fbtn" data-fk="montage" data-fv="propriete_sanctuarisee">Propriété sanctuarisée + bail de long terme</button></div>
+    <div class="filter-row" role="group" aria-label="Filtrer par palier"><span class="filter-lab">Palier</span>
+      <button class="fbtn active" data-fk="palier" data-fv="all" aria-pressed="true">Tous</button>
+      <button class="fbtn" data-fk="palier" data-fv="abouti" aria-pressed="false">Libération aboutie</button><button class="fbtn" data-fk="palier" data-fv="solide" aria-pressed="false">Montage solide</button></div>
+    <div class="filter-row" role="group" aria-label="Filtrer par montage"><span class="filter-lab">Montage</span><button class="fbtn active" data-fk="montage" data-fv="all" aria-pressed="true">Tous</button><button class="fbtn" data-fk="montage" data-fv="propriete_collective" aria-pressed="false">Propriété collective verrouillée</button><button class="fbtn" data-fk="montage" data-fv="propriete_sanctuarisee" aria-pressed="false">Propriété sanctuarisée + bail de long terme</button></div>
     
   </div>
 </details>
-<p class="axe-legend cat-legend">Profil tri-axes :
+<p class="axe-legend cat-legend">Profil tri-axes :
 <span class="axe-dot axe-A"></span> A — Intérêt général
 <span class="axe-dot axe-B"></span> B — Libération des terres
 <span class="axe-dot axe-C"></span> C — Gouvernance participative</p>
 <ul class="cards" id="resultats"><li class="card" data-idl="90" data-nom="Community Land Trust de Bruxelles" data-palier="abouti" data-region="" data-montage="propriete_collective" data-axa="90" data-axb="90" data-axc="90">
   <div class="card-head">
     <span class="tag tag-modele">Modèle voisin</span>
-    <span class="idl-badge idl-estime" style="--pal:#356026"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="10.1" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">90</text></svg><span class="visually-hidden">Indice de libération 90 sur 100, Libération aboutie (estimé).</span><span class="idl-pal">Libération aboutie · estimé</span></span>
+    <span class="idl-badge idl-estime" style="--pal:#356026"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="10.1" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">90</text></svg><span class="visually-hidden"><a class="gloss-link" href="glossaire.html#g-indice-de-liberation">Indice de libération</a> 90 sur 100, Libération aboutie (estimé).</span><span class="idl-pal">Libération aboutie · estimé</span></span>
   </div>
   <h3><a class="card-link" href="m/clt-bruxelles.html">Community Land Trust de Bruxelles</a></h3>
-  <p class="card-sub">Premier CLT d&#x27;Europe continentale, à gouvernance tripartite</p>
-  <p class="card-meta">Fondation d&#x27;utilité publique (foncier) et ASBL (gestion) · Propriété collective verrouillée</p>
+  <p class="card-sub">Premier CLT d&#x27 ;Europe continentale, à gouvernance tripartite</p>
+  <p class="card-meta">Fondation d&#x27 ;<a class="gloss-link" href="glossaire.html#g-utilite-publique">utilité publique</a> (foncier) et ASBL (gestion) · Propriété collective verrouillée</p>
   <div class="card-viz">
-    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 90, libération des terres 90, gouvernance participative 90"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,9.8 99.3,77.9 20.7,77.9"/></svg>
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" focusable="false" aria-label="Profil tri-axes — intérêt général 90, libération des terres 90, gouvernance participative 90"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,9.8 99.3,77.9 20.7,77.9"/></svg>
   </div>
 </li><li class="card" data-idl="87" data-nom="Coopérative d&#x27;habitants (loi ALUR)" data-palier="abouti" data-region="" data-montage="propriete_collective" data-axa="80" data-axb="90" data-axc="90">
   <div class="card-head">
     <span class="tag tag-modele">Modèle voisin</span>
     <span class="idl-badge idl-estime" style="--pal:#356026"><svg class="idl-ring" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle class="idl-track" cx="20.0" cy="20.0" r="16" stroke-width="4"/><circle class="idl-arc" cx="20.0" cy="20.0" r="16" stroke-width="4" stroke-dasharray="100.5" stroke-dashoffset="13.1" transform="rotate(-90 20.0 20.0)"/><text class="idl-num" x="20.0" y="20.0" style="font-size:.82rem">87</text></svg><span class="visually-hidden">Indice de libération 87 sur 100, Libération aboutie (estimé).</span><span class="idl-pal">Libération aboutie · estimé</span></span>
   </div>
-  <h3><a class="card-link" href="m/cooperative-habitants-alur.html">Coopérative d&#x27;habitants (loi ALUR)</a></h3>
-  <p class="card-sub">Statut français de l&#x27;habitat coopératif non spéculatif</p>
-  <p class="card-meta">Société coopérative à capital variable (articles L.201-1 et s. du Code de la construction et de l&#x27;habitation) · Propriété collective verrouillée</p>
+  <h3><a class="card-link" href="m/cooperative-habitants-alur.html">Coopérative d&#x27 ;habitants (loi ALUR)</a></h3>
+  <p class="card-sub">Statut français de l&#x27 ;habitat coopératif non spéculatif</p>
+  <p class="card-meta">Société coopérative à capital variable (articles L.201-1 et s. du Code de la construction et de l&#x27 ;habitation) · Propriété collective verrouillée</p>
   <div class="card-viz">
-    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 80, libération des terres 90, gouvernance participative 90"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,14.9 99.3,77.9 20.7,77.9"/></svg>
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" focusable="false" aria-label="Profil tri-axes — intérêt général 80, libération des terres 90, gouvernance participative 90"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,14.9 99.3,77.9 20.7,77.9"/></svg>
   </div>
 </li><li class="card" data-idl="83" data-nom="Mietshäuser Syndikat" data-palier="solide" data-region="" data-montage="propriete_collective" data-axa="70" data-axb="90" data-axc="90">
   <div class="card-head">
@@ -97,7 +98,7 @@
   <p class="card-sub">Neutralisation de la propriété par droit de veto sur la revente</p>
   <p class="card-meta">Réseau de sociétés (GmbH) à capital partagé · Propriété collective verrouillée</p>
   <div class="card-viz">
-    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 70, libération des terres 90, gouvernance participative 90"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,19.9 99.3,77.9 20.7,77.9"/></svg>
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" focusable="false" aria-label="Profil tri-axes — intérêt général 70, libération des terres 90, gouvernance participative 90"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,19.9 99.3,77.9 20.7,77.9"/></svg>
   </div>
 </li><li class="card" data-idl="83" data-nom="Stiftung trias" data-palier="solide" data-region="" data-montage="propriete_sanctuarisee" data-axa="90" data-axb="90" data-axc="70">
   <div class="card-head">
@@ -108,7 +109,7 @@
   <p class="card-sub">Fondation allemande sanctuarisant le foncier par droit de superficie</p>
   <p class="card-meta">Fondation à but non lucratif (Stiftung) · Propriété sanctuarisée + bail de long terme</p>
   <div class="card-viz">
-    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 90, libération des terres 90, gouvernance participative 70"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,9.8 99.3,77.9 29.4,72.8"/></svg>
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" focusable="false" aria-label="Profil tri-axes — intérêt général 90, libération des terres 90, gouvernance participative 70"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,9.8 99.3,77.9 29.4,72.8"/></svg>
   </div>
 </li><li class="card" data-idl="77" data-nom="Organisme de Foncier Solidaire + Bail Réel Solidaire" data-palier="solide" data-region="" data-montage="propriete_sanctuarisee" data-axa="90" data-axb="90" data-axc="50">
   <div class="card-head">
@@ -119,19 +120,21 @@
   <p class="card-sub">Dissociation foncier/bâti pour le logement abordable</p>
   <p class="card-meta">Organisme sans but lucratif agréé par le préfet de région (OFS) · Propriété sanctuarisée + bail de long terme</p>
   <div class="card-viz">
-    <svg class="tri compact" viewBox="0 0 120 110" role="img" aria-label="Profil tri-axes — intérêt général 90, libération des terres 90, gouvernance participative 50"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,9.8 99.3,77.9 38.2,67.8"/></svg>
+    <svg class="tri compact" viewBox="0 0 120 110" role="img" focusable="false" aria-label="Profil tri-axes — intérêt général 90, libération des terres 90, gouvernance participative 50"><use href="#tri-base"/><polygon class="tri-fill" points="60.0,9.8 99.3,77.9 38.2,67.8"/></svg>
   </div>
 </li></ul>
-<p class="no-result" id="noresult" role="status" hidden>Aucune entrée ne correspond aux filtres choisis.</p>
-<p class="cat-foot"><a href="suggerer.html">Un lieu manque ou une fiche est incomplète ? Signalez-le →</a></p>
+<p class="no-result" id="noresult" role="status" hidden>Aucune entrée ne correspond à ces filtres. Élargissez la sélection.</p>
+<p class="cat-foot"><a href="suggerer.html">Un lieu manque ou une fiche est incomplète ? Signalez-le →</a></p>
 <script defer src="assets/list.js"></script>
 </main>
 <footer class="footer">
   <div class="wrap">
     <p>Terres Libérées — annuaire critique des montages de libération des terres en
-    France. Données factuelles sourcées ; l'Indice de libération est une grille
+    France. Les données sont sourcées ; l'Indice de libération est une grille
     d'analyse explicite, non un jugement de valeur.</p>
     <p class="foot-links"><a href="methode.html">Méthode</a> ·
+    <a href="themes.html">Thèmes</a> ·
+    <a href="comparer.html">Comparer</a> ·
     <a href="regimes.html">Trois régimes</a> ·
     <a href="grilles.html">Grilles d'analyse</a> ·
     <a href="modeles.html">Modèles voisins</a> ·

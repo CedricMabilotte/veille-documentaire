@@ -186,6 +186,29 @@ def clean(text):
     return re.sub(r"\s+", " ", str(text)).strip()
 
 
+# Espace fine insécable (U+202F) — typographie française.
+_NNBSP = " "
+
+
+def typo(text):
+    """Applique la typographie française au texte VISIBLE uniquement : espace
+    fine insécable devant ; ? ! et :, et à l'intérieur des guillemets « ».
+
+    À n'appliquer qu'à du texte destiné à l'affichage, jamais à du HTML brut,
+    à des URL, du JSON-LD ou des fichiers .js/.xml — l'insécable y serait un
+    caractère parasite. Idempotent : ne double pas une insécable déjà posée."""
+    if not text:
+        return ""
+    t = str(text)
+    # espace fine insécable devant la ponctuation double — on remplace une
+    # éventuelle espace ordinaire, ou on insère si la ponctuation est collée.
+    t = re.sub(r"[   ]*([;?!:])", _NNBSP + r"\1", t)
+    # intérieur des guillemets : après « , avant »
+    t = re.sub(r"«[   ]*", "«" + _NNBSP, t)
+    t = re.sub(r"[   ]*»", _NNBSP + "»", t)
+    return t
+
+
 def slugify(s):
     s = unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode()
     s = re.sub(r"[^a-zA-Z0-9]+", "-", s).strip("-").lower()
@@ -199,6 +222,91 @@ def meta_desc(text, limit=155):
         return t
     cut = t[:limit].rsplit(" ", 1)[0].rstrip(" ,;:.")
     return cut + "…"
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Liage du glossaire — première occurrence par page des termes pivots
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Termes pivots reliés, du plus long au plus court (pour éviter qu'un terme
+# court masque un terme long). Le slug doit correspondre à une ancre du
+# glossaire (id="g-…"), cf. GLOSSAIRE / slugify().
+GLOSS_TERMS = [
+    ("libération des terres", "liberation-des-terres"),
+    ("indice de libération", "indice-de-liberation"),
+    ("bail emphytéotique", "bail-emphyteotique"),
+    ("fonds de dotation", "fonds-de-dotation"),
+    ("utilité publique", "utilite-publique"),
+    ("intérêt général", "interet-general"),
+    ("fondation RUP", "fondation-rup"),
+    ("nue-propriété", "nue-propriete"),
+    ("démembrement", "demembrement"),
+    ("bail rural", "bail-rural"),
+    ("usufruit", "usufruit"),
+]
+
+
+def link_glossary(body, up):
+    """Lie sobrement la première occurrence par page de chaque terme pivot vers
+    son ancre du glossaire. Opère sur le HTML déjà assemblé ; ne touche ni à
+    l'intérieur des balises, ni aux liens existants, ni aux titres, pour ne pas
+    surligner tout le texte (audit pédagogie C, C1)."""
+    # segmente le HTML : on ne modifie que les segments de texte hors balise,
+    # et on saute entièrement les zones <a …>…</a>, <h1>…</h6>, <script>, <svg>.
+    skip_pat = re.compile(
+        r'<a\b[^>]*>.*?</a>|<h[1-6]\b[^>]*>.*?</h[1-6]>'
+        r'|<script\b[^>]*>.*?</script>|<svg\b[^>]*>.*?</svg>'
+        r'|<style\b[^>]*>.*?</style>|<[^>]+>',
+        re.S)
+    done = set()
+    out = []
+    pos = 0
+    for m in skip_pat.finditer(body):
+        # texte brut entre deux éléments à sauter
+        out.append(_link_text_chunk(body[pos:m.start()], up, done))
+        out.append(m.group(0))
+        pos = m.end()
+    out.append(_link_text_chunk(body[pos:], up, done))
+    return "".join(out)
+
+
+def apply_typo(body):
+    """Applique typo() aux seuls nœuds de texte visibles du HTML assemblé.
+
+    Saute l'intérieur des balises, des <script> (donc le JSON-LD, ajouté plus
+    tard de toute façon), <style> et <svg> — où l'espace fine insécable serait
+    un caractère parasite. Les URL et attributs vivent dans les balises : ils
+    ne sont jamais touchés."""
+    skip_pat = re.compile(
+        r'<script\b[^>]*>.*?</script>|<style\b[^>]*>.*?</style>'
+        r'|<svg\b[^>]*>.*?</svg>|<[^>]+>',
+        re.S)
+    out, pos = [], 0
+    for m in skip_pat.finditer(body):
+        out.append(typo(body[pos:m.start()]))
+        out.append(m.group(0))
+        pos = m.end()
+    out.append(typo(body[pos:]))
+    return "".join(out)
+
+
+def _link_text_chunk(text, up, done):
+    if not text:
+        return text
+    for term, slug in GLOSS_TERMS:
+        if slug in done:
+            continue
+        # première occurrence, frontière de mot, insensible à la casse
+        pat = re.compile(r'(?<![\w-])(' + re.escape(term) + r')(?![\w-])',
+                         re.IGNORECASE)
+        m = pat.search(text)
+        if not m:
+            continue
+        done.add(slug)
+        link = (f'<a class="gloss-link" href="{up}glossaire.html#g-{slug}">'
+                f'{m.group(1)}</a>')
+        text = text[:m.start()] + link + text[m.end():]
+    return text
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -230,8 +338,13 @@ def canonical_url(path):
 
 
 def page(title, body, active, depth=0, project=None, description="",
-         path="", jsonld=None, og_type="website", robots=None):
+         path="", jsonld=None, og_type="website", robots=None,
+         link_gloss=True):
     up = "../" * depth
+    # liage du glossaire : première occurrence par page des termes pivots
+    # (audit pédagogie C, C1). Désactivé sur le glossaire lui-même.
+    if link_gloss:
+        body = link_glossary(body, up)
     nav_items = []
     for href, label in NAV:
         if href == active:
@@ -256,7 +369,7 @@ def page(title, body, active, depth=0, project=None, description="",
 
     robots_tag = f'\n<meta name="robots" content="{e(robots)}">' if robots else ""
 
-    return f"""<!DOCTYPE html>
+    doc = f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
@@ -299,9 +412,11 @@ def page(title, body, active, depth=0, project=None, description="",
 <footer class="footer">
   <div class="wrap">
     <p>{e(pname)} — annuaire critique des montages de libération des terres en
-    France. Données factuelles sourcées ; l'Indice de libération est une grille
+    France. Les données sont sourcées ; l'Indice de libération est une grille
     d'analyse explicite, non un jugement de valeur.</p>
     <p class="foot-links"><a href="{up}methode.html">Méthode</a> ·
+    <a href="{up}themes.html">Thèmes</a> ·
+    <a href="{up}comparer.html">Comparer</a> ·
     <a href="{up}regimes.html">Trois régimes</a> ·
     <a href="{up}grilles.html">Grilles d'analyse</a> ·
     <a href="{up}modeles.html">Modèles voisins</a> ·
@@ -314,6 +429,10 @@ def page(title, body, active, depth=0, project=None, description="",
 </body>
 </html>
 """
+    # passe typographique française : espaces fines insécables sur le seul
+    # texte visible (audit copywriting D, D1). N'affecte ni les balises, ni
+    # les URL, ni le JSON-LD (dans <script>), ni les SVG.
+    return apply_typo(doc)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -713,6 +832,23 @@ def render_fiche(fiche, sc, cfg, by_uid, sc_by_uid):
   </div>
 </section>"""
 
+    # clé de lecture compacte de la fiche — repliée par défaut, sobre
+    # (audit pédagogie C, I1/I3).
+    grille_line = ("</li>\n  <li><strong>Grille détaillée</strong> — chaque "
+                   "critère est évalué oui · partiel · non ; le score en "
+                   "découle.") if (cat != "modele" and sc["criteres_evalues"]) else ""
+    lecture = f"""<details class="fiche-key">
+  <summary>Comment lire cette fiche</summary>
+  <ul>
+  <li><strong>Badge Indice</strong> — note de synthèse de 0 à 100 ; sa couleur
+  indique le palier.</li>
+  <li><strong>Triangle tri-axes</strong> — un sommet par axe (A en haut, B en
+  bas à droite, C en bas à gauche). Plus la zone colorée s'étend vers un sommet,
+  plus le montage est noté sur cet axe.</li>
+  <li><strong>Barres d'axe</strong> — le détail chiffré des trois axes.{grille_line}</li>
+  </ul>
+</details>"""
+
     # en bref
     rows = []
     if fiche.get("forme_juridique"):
@@ -792,7 +928,7 @@ def render_fiche(fiche, sc, cfg, by_uid, sc_by_uid):
 <p class="grille-intro">{e(clean(gril.get('objet','')))}
 <a href="../grilles.html#grille-{cat}">Comprendre la grille →</a></p>
 {recap}
-<div class="table-scroll"><table class="grille-tbl">
+<div class="table-scroll" tabindex="0" role="region" aria-label="Grille de lecture détaillée de la fiche"><table class="grille-tbl">
 <caption class="visually-hidden">Grille de lecture de la fiche : critère, poids, évaluation et lecture.</caption>
 <thead><tr><th scope="col">Critère</th><th scope="col" class="num">Poids</th><th scope="col">Évaluation</th><th scope="col">Lecture</th></tr></thead>
 <tbody>{''.join(fam_rows)}</tbody></table></div>
@@ -873,7 +1009,10 @@ def render_fiche(fiche, sc, cfg, by_uid, sc_by_uid):
     backlink = (f'<p class="backlink">'
                 f'<a href="../{CAT_PAGE[cat]}">← Retour {retlabel}</a>'
                 f' · <a href="../classement.html">Voir le classement</a></p>')
-    body = (tri_defs(axes_cfg) + head + score_block + enbref + resume
+    # le <defs> tri-base n'est utile que si la fiche rend au moins un triangle
+    # compact, c'est-à-dire si elle a des chips reliés (audit fonctionnel C, M2).
+    defs = tri_defs(axes_cfg) if chips else ""
+    body = (defs + head + score_block + lecture + enbref + resume
             + montage_html + grille_html + analyse_html + liens_html + fiab
             + sources_html + backlink)
 
@@ -911,7 +1050,11 @@ def render_fiche(fiche, sc, cfg, by_uid, sc_by_uid):
             entity["url"] = fiche["url"]
             entity["sameAs"] = [fiche["url"]]
     ogt = "article" if cat != "modele" else "website"
-    return page(fiche["nom"], body, CAT_PAGE[cat], depth=1, project=project,
+    # titre_court : <title> abrégé optionnel, pour ne pas dépasser ~60 car. une
+    # fois suffixé « — Terres Libérées » (audit SEO C, M1). Le H1 reste le nom
+    # complet.
+    page_title = clean(fiche.get("titre_court", "")) or fiche["nom"]
+    return page(page_title, body, CAT_PAGE[cat], depth=1, project=project,
                 description=clean(fiche.get("resume", "")) or sub,
                 path=fpath, jsonld=[breadcrumb, entity], og_type=ogt)
 
@@ -934,7 +1077,7 @@ def render_catalogue(cat, fiches_sc, cfg):
             '<div class="callout callout-note"><p><strong>Hors classement '
             'principal.</strong> Les modèles voisins ne sont pas notés par les '
             'grilles de l\'annuaire : leur Indice est <em>estimé</em> '
-            '(axes posés éditorialement) et signalé par un anneau en pointillé. '
+            '(axes estimés, hors grille) et signalé par un anneau en pointillé. '
             'Ils servent de points de comparaison et n\'apparaissent pas dans '
             'le classement.</p></div>')
     else:
@@ -989,14 +1132,14 @@ def render_catalogue(cat, fiches_sc, cfg):
 <a href="methode.html">Comprendre l'Indice et les axes →</a></p>
 {modeles_note}
 <div class="toolbar">
-  <input type="search" id="q" placeholder="Filtrer par nom…" aria-label="Filtrer par nom" aria-controls="resultats">
+  <input type="search" id="q" placeholder="Rechercher un nom…" aria-label="Rechercher par nom" aria-controls="resultats">
   <label class="sort-lab" for="sort">Trier :</label>
   <select id="sort">
     <option value="idl">Par indice (décroissant)</option>
     <option value="nom">Par nom (A→Z)</option>
     <option value="axa">Par axe A — intérêt général</option>
     <option value="axb">Par axe B — libération des terres</option>
-    <option value="axc">Par axe C — gouvernance</option>
+    <option value="axc">Par axe C — gouvernance participative</option>
   </select>
   <span class="count" id="cnt" aria-live="polite"><b id="cntn">{n}</b><span id="cntl"> entrée{'s' if n > 1 else ''} affichée{'s' if n > 1 else ''}</span></span>
 </div>
@@ -1016,7 +1159,7 @@ def render_catalogue(cat, fiches_sc, cfg):
 <span class="axe-dot axe-B"></span> B — Libération des terres
 <span class="axe-dot axe-C"></span> C — Gouvernance participative</p>
 {cards_grid(fiches_sc, axes_cfg, concepts=concepts, grid_id="resultats")}
-<p class="no-result" id="noresult" role="status" hidden>Aucune entrée ne correspond aux filtres choisis.</p>
+<p class="no-result" id="noresult" role="status" hidden>Aucune entrée ne correspond à ces filtres. Élargissez la sélection.</p>
 <p class="cat-foot"><a href="suggerer.html">Un lieu manque ou une fiche est incomplète ? Signalez-le →</a></p>
 <script defer src="assets/list.js"></script>"""
     active = CAT_PAGE[cat]
@@ -1067,7 +1210,8 @@ def render_classement(all_sc, cfg):
     body = f"""<h1>Classement par l'Indice de libération</h1>
 <p class="lead">L'Indice de libération (IdL) note chaque montage de 0 à 100 sur
 trois axes — intérêt général (A), libération des terres (B), gouvernance
-participative (C). <a href="methode.html">Méthode détaillée →</a></p>
+participative (C). <a href="methode.html">Méthode détaillée →</a> ·
+<a href="comparer.html">Comparer deux entrées en vis-à-vis →</a></p>
 <div class="callout callout-warn">
   <p><strong>Un classement croisé, indicatif.</strong> Lieux, porteurs de
   nue-propriété et usufruitiers sont notés par <strong>trois grilles
@@ -1103,8 +1247,8 @@ l'Indice de libération, du plus élevé au plus faible.</caption>
 <tbody>{''.join(rows)}</tbody>
 </table></div>
 <p class="note">A — Intérêt général · B — Libération des terres · C — Gouvernance
-participative. « — » : axe non renseigné. Les mini-barres de couleur doublent
-la lecture chiffrée.</p>
+participative. « — » : axe non renseigné. Les mini-barres de couleur
+accompagnent la lecture chiffrée.</p>
 <script defer src="assets/list.js"></script>"""
     itemlist = {
         "@context": "https://schema.org",
@@ -1158,7 +1302,7 @@ def render_grilles(cfg):
         blocks.append(f"""<section class="grille-block" id="grille-{cat}">
 <h2 class="sec">{e(lab)}</h2>
 <p class="prose">{e(clean(g['objet']))}</p>
-<div class="table-scroll"><table class="grille-tbl">
+<div class="table-scroll" tabindex="0" role="region" aria-label="Critères de la grille {e(lab)}"><table class="grille-tbl">
 <caption class="visually-hidden">Critères de lecture de la grille {e(lab)} : axe, poids et définition.</caption>
 <thead><tr><th scope="col">Critère de lecture</th><th scope="col">Axe</th><th scope="col">Poids</th><th scope="col">Définition</th></tr></thead>
 <tbody>{''.join(fam_html)}</tbody></table></div>
@@ -1246,7 +1390,7 @@ def render_regimes(cfg):
         f"<tr><th scope=\"row\">{e(c)}</th><td>{e(a)}</td><td>{e(b)}</td>"
         f"<td>{e(d)}</td></tr>"
         for c, a, b, d in tbl_rows)
-    table = f"""<div class="table-scroll"><table class="rank-tbl regimes-tbl">
+    table = f"""<div class="table-scroll" tabindex="0" role="region" aria-label="Tableau comparatif des trois régimes du sol"><table class="rank-tbl regimes-tbl">
 <caption class="visually-hidden">Comparaison des trois régimes du sol selon
 sept critères.</caption>
 <thead><tr><th scope="col">Critère</th>
@@ -1286,11 +1430,27 @@ sept critères.</caption>
 <p class="prose">La grille de notation traduit ce cadre en critères :
 voir les <a href="grilles.html">grilles d'analyse</a>. Le calcul de l'Indice
 est détaillé dans la <a href="methode.html">méthode</a>.</p>"""
+    # données structurées : les trois régimes en DefinedTermSet, bâti depuis la
+    # même source que le HTML (audit SEO C, I1).
+    termset = {
+        "@context": "https://schema.org",
+        "@type": "DefinedTermSet",
+        "name": "Trois régimes du sol",
+        "description": meta_desc(reg.get("chapeau", "")),
+        "inLanguage": "fr",
+        "url": canonical_url("regimes.html"),
+        "hasDefinedTerm": [
+            {"@type": "DefinedTerm", "name": clean(r.get("label", "")),
+             "description": clean(r.get("but", "")),
+             "inDefinedTermSet": canonical_url("regimes.html")}
+            for r in liste
+        ],
+    }
     return page("Trois régimes du sol", body, "regimes.html", project=project,
                 description="Les trois régimes juridiques du foncier : droit "
                             "civil d'intérêt général, droit commercial, "
                             "propriété privée classique.",
-                path="regimes.html")
+                path="regimes.html", jsonld=[termset])
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1301,6 +1461,17 @@ def render_methode(cfg, n_by_cat, all_sc):
     project = cfg["concepts"]["project"]
     ranking = cfg["ranking"]
     cc = cfg["concepts"]["concept_central"]
+
+    # chiffres de transparence calculés depuis all_sc (audit cycle D —
+    # transparence). Complétude moyenne et part de critères « inconnu » sur les
+    # seules entrées notées (modèles exclus).
+    n_total_fiches = len(all_sc)
+    notees = [(f, sc) for f, sc in all_sc
+              if f["categorie"] != "modele" and sc.get("completude") is not None]
+    n_notees = len(notees)
+    comp_vals = [sc["completude"] for _, sc in notees]
+    pct_complet = round(sum(comp_vals) / len(comp_vals) * 100) if comp_vals else 0
+    pct_inconnu = 100 - pct_complet
     axes_html = "".join(
         f"""<div class="axe-card" style="--c:{a['couleur']}">
   <h3>Axe {a['id']} — {e(a['label'])}</h3>
@@ -1349,7 +1520,7 @@ critères restent « inconnu » voit son indice ramené aux trois quarts de l'in
 brut. L'indice brut est conservé pour information ; c'est l'indice affiché,
 pénalisé, qui sert au badge, au classement et à l'export <code>data.json</code>.</p>
 <p class="prose">Les modèles voisins, eux, ne sont pas notés par la grille :
-leur indice est <strong>estimé</strong> (axes posés éditorialement) et marqué
+leur indice est <strong>estimé</strong> (axes estimés, hors grille) et marqué
 comme tel ; ils restent hors du classement principal.</p>
 <table class="rank-tbl small">
 <caption class="visually-hidden">Paliers de l'Indice de libération : seuil et sens.</caption>
@@ -1379,14 +1550,34 @@ pas un label ni un jugement de valeur.</li>
 complétude est toujours affichée.</li>
 <li>Le « montage de référence » (nue-propriété d'intérêt général + usufruit
 associatif) est un idéal-type ; peu de lieux réels le réalisent à la lettre.</li>
+<li>Le corpus est construit et non exhaustif ; sa composition — forte présence
+de la mouvance Terre de Liens, sous-représentation de l'habitat et de
+l'Outre-mer — est détaillée dans l'<a href="#etat">État du corpus</a>.</li>
 </ul>
 </section>
 
 <section id="etat"><h2 class="sec">État du corpus</h2>
 <p class="prose">{n_by_cat['lieu']} lieux · {n_by_cat['porteur']} porteurs de
 nue-propriété · {n_by_cat['usufruitier']} organismes usufruitiers ·
-{n_by_cat['modele']} modèles voisins de comparaison.</p>
+{n_by_cat['modele']} modèles voisins de comparaison. Les {n_total_fiches}
+fiches sont publiées ; le corpus est construit, non exhaustif.</p>
 {corpus_histogram(all_sc, ranking)}
+<p class="prose"><strong>Complétude.</strong> Les {n_notees} entrées notées
+renseignent en moyenne {pct_complet} % des critères de leur grille ;
+{pct_inconnu} % restent « inconnu », faute de source publique. La complétude de
+chaque fiche est affichée sur la fiche elle-même ; quelques fiches restent
+nettement plus lacunaires et leur Indice est à lire avec prudence.</p>
+<p class="prose"><strong>Ce que le corpus ne couvre pas encore.</strong> Le
+recensement est partiel et assume ses angles morts. Il regarde le sujet en
+grande partie depuis la mouvance Terre de Liens, acteur structurant du foncier
+agricole non spéculatif en France. Il est très majoritairement rural et
+agricole : l'habitat coopératif n'y figure que par quelques entrées récentes,
+le foncier solidaire de logement urbain et le périurbain structuré restent peu
+représentés. Géographiquement, les lieux se concentrent sur la moitié sud et
+est de la métropole — six régions environ — ; plusieurs régions et l'ensemble
+de l'Outre-mer ne sont pas couverts. Ces manques sont documentés dans les notes
+d'audit du projet et signalent des pistes d'enrichissement, non des choix
+d'exclusion.</p>
 </section>
 
 <section><h2 class="sec">Aller plus loin</h2>
@@ -1416,7 +1607,8 @@ GLOSSAIRE = [
     ("Démembrement",
      "Division du droit de propriété (article 544 du Code civil) en deux "
      "droits distincts confiés à des titulaires différents : la nue-propriété "
-     "et l'usufruit."),
+     "et l'usufruit. On parle aussi de dissociation de la propriété et de "
+     "l'usage : dans l'annuaire, les deux termes désignent la même opération."),
     ("Nue-propriété",
      "Droit de propriété privé de l'usage et des revenus du bien : le "
      "nu-propriétaire détient le bien mais n'en a ni l'usage ni la jouissance. "
@@ -1493,6 +1685,17 @@ GLOSSAIRE = [
      "sous encadrement public, forme sociétaire solidaire, droit public — sans "
      "les classer. La protection effective du foncier est mesurée à part, par "
      "l'axe B de l'Indice."),
+    ("Modèle voisin",
+     "Montage de référence — français ou étranger — proche de l'idéal de "
+     "libération des terres, recensé à titre de comparaison. Les modèles "
+     "voisins ne sont pas notés par les grilles de l'annuaire : leur Indice "
+     "est estimé (axes posés éditorialement) et ils restent hors du classement "
+     "principal."),
+    ("Idéal-type",
+     "Construction de référence qui décrit un montage sous sa forme la plus "
+     "pure, pour servir de point de comparaison. L'idéal-type n'a pas "
+     "vocation à exister tel quel : peu de lieux réels le réalisent à la "
+     "lettre, mais il aide à situer chaque cas concret."),
 ]
 
 
@@ -1521,7 +1724,140 @@ Pour le détail du calcul de l'Indice, voir la <a href="methode.html">Méthode</
     return page("Glossaire", body, "glossaire.html", project=project,
                 description="Glossaire des termes de la libération des terres : "
                             "nue-propriété, usufruit, démembrement, intérêt général.",
-                path="glossaire.html", jsonld=[termset])
+                path="glossaire.html", jsonld=[termset], link_gloss=False)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Page — thèmes transversaux
+# ─────────────────────────────────────────────────────────────────────────────
+
+# Cinq thèmes transversaux : porte d'entrée par sujet, absente des catalogues
+# (qui entrent par rôle) et du classement (qui entre par note). Répartition
+# codée en dur — aucun champ ajouté aux YAML. Un uid peut figurer dans deux
+# thèmes (recoupement assumé, cf. audit cycle D — thèmes).
+THEMES = [
+    ("foncier-agricole", "Foncier agricole et installation paysanne",
+     "Terres cultivées sorties du marché pour installer ou maintenir des "
+     "paysan·nes.",
+     ["reseau-terre-de-liens", "lurzaindia", "larzac", "villarceaux", "nddl",
+      "fondation-terre-de-liens", "fonciere-terre-de-liens", "lurzaindia-sca",
+      "feve", "sctl", "gfa-mutuels", "champs-des-possibles", "reneta"]),
+    ("habitat", "Habitat et logement non spéculatif",
+     "Immeubles et écolieux dont la propriété du logement est déconnectée du "
+     "marché.",
+     ["village-vertical", "hameau-des-buis", "longo-mai", "habicoop",
+      "fonciere-chenelet", "cooperative-oasis", "cooperatives-longo-mai",
+      "cooperative-habitants-alur", "ofs-brs", "clt-bruxelles",
+      "stiftung-trias", "mietshauser-syndikat"]),
+    ("espaces-naturels", "Espaces naturels et protection de l'eau",
+     "Foncier naturel ou sensible protégé pour des raisons écologiques.",
+     ["conservatoire-littoral", "federation-cen", "scic-terres-de-sources",
+      "nddl"]),
+    ("portage-public", "Portage public et collectivités",
+     "Montages où une personne publique détient ou sécurise le foncier.",
+     ["larzac", "conservatoire-littoral", "scic-terres-de-sources",
+      "federation-cen", "ofs-brs"]),
+    ("portage-citoyen", "Portage citoyen et fondations",
+     "Foncier sécurisé par l'épargne, les dons ou une fondation, hors "
+     "puissance publique.",
+     ["fondation-terre-de-liens", "fonciere-terre-de-liens",
+      "fonds-la-terre-en-commun", "fonds-terre-europeenne", "fonciere-antidote",
+      "fondation-fph", "lurzaindia-sca", "feve", "stiftung-trias"]),
+]
+
+
+def render_themes(all_sc, cfg):
+    """Page « Thèmes » statique : 5 sections, une par thème transversal.
+    Réutilise le composant de cartes existant ; aucun JS, aucun filtre."""
+    project = cfg["concepts"]["project"]
+    concepts = cfg["concepts"]
+    axes_cfg = cfg["ranking"]["axes"]
+    sc_by_uid = {f["uid"]: (f, sc) for f, sc in all_sc}
+
+    toc = "".join(f'<a href="#theme-{tid}">{e(titre)}</a>'
+                  for tid, titre, _, _ in THEMES)
+
+    sections = []
+    for tid, titre, cadrage, uids in THEMES:
+        fiches_sc = [sc_by_uid[u] for u in uids if u in sc_by_uid]
+        fiches_sc.sort(key=lambda x: x[1]["idl"] or 0, reverse=True)
+        grid = cards_grid(fiches_sc, axes_cfg, concepts=concepts)
+        sections.append(f"""<section id="theme-{tid}">
+<h2 class="sec">{e(titre)}</h2>
+<p class="lead">{e(cadrage)}</p>
+{grid}
+</section>""")
+
+    body = f"""{tri_defs(axes_cfg)}<h1>Thèmes transversaux</h1>
+<p class="lead">Les catalogues classent l'annuaire par rôle dans le montage ;
+le classement, par l'Indice. Cette page propose une troisième lecture, par
+sujet : à quoi sert la terre, et qui la porte. Un même montage peut relever de
+deux thèmes. <a href="methode.html">Comprendre l'Indice et les axes →</a></p>
+<nav class="page-toc" aria-label="Sommaire des thèmes">{toc}</nav>
+<p class="axe-legend cat-legend">Profil tri-axes :
+<span class="axe-dot axe-A"></span> A — Intérêt général
+<span class="axe-dot axe-B"></span> B — Libération des terres
+<span class="axe-dot axe-C"></span> C — Gouvernance participative</p>
+{''.join(sections)}
+<p class="backlink"><a href="index.html">← Retour à l'accueil</a></p>"""
+    return page("Thèmes", body, "themes.html", project=project,
+                description="Cinq thèmes transversaux pour explorer l'annuaire "
+                            "par sujet : foncier agricole, habitat, espaces "
+                            "naturels, portage public et citoyen.",
+                path="themes.html")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Page — comparateur
+# ─────────────────────────────────────────────────────────────────────────────
+
+def render_comparer(all_sc, cfg):
+    """Page « Comparer » : deux sélecteurs, rendu en deux colonnes côté client
+    depuis data.json. Le HTML est quasi vide ; compare.js fait le rendu.
+    Réutilise les styles de carte / axes existants."""
+    project = cfg["concepts"]["project"]
+    groups = {"lieu": [], "porteur": [], "usufruitier": [], "modele": []}
+    for f, _ in all_sc:
+        groups[f["categorie"]].append((f["uid"], f["nom"]))
+    catlab = {"lieu": "Lieux", "porteur": "Porteurs",
+              "usufruitier": "Usufruitiers", "modele": "Modèles voisins"}
+
+    def opts():
+        out = '<option value="">— Choisir —</option>'
+        for cat, lab in catlab.items():
+            items = sorted(groups[cat], key=lambda x: x[1])
+            if not items:
+                continue
+            out += f'<optgroup label="{e(lab)}">'
+            out += "".join(f'<option value="{e(u)}">{e(n)}</option>'
+                            for u, n in items)
+            out += '</optgroup>'
+        return out
+
+    selects = opts()
+    body = f"""<h1>Comparer deux montages</h1>
+<p class="lead">Choisissez deux entrées de l'annuaire pour voir leurs indices,
+profils tri-axes et caractéristiques en vis-à-vis.
+<a href="methode.html">Comprendre l'Indice →</a></p>
+<div class="callout callout-warn"><p><strong>Comparer ce qui est
+comparable.</strong> Lieux, porteurs et usufruitiers sont notés par trois
+grilles distinctes : la comparaison critère à critère n'a de sens qu'entre
+entrées de même catégorie.</p></div>
+<div class="cmp-pickers">
+  <label>Montage A <select id="cmp-a">{selects}</select></label>
+  <label>Montage B <select id="cmp-b">{selects}</select></label>
+</div>
+<p id="cmp-warn" class="note" role="status" hidden></p>
+<div class="cmp-grid" id="cmp-grid"></div>
+<noscript><p class="no-result">La comparaison nécessite JavaScript. Vous pouvez
+consulter chaque fiche depuis le <a href="classement.html">classement</a> ou
+les <a href="lieux.html">catalogues</a>.</p></noscript>
+<p class="backlink"><a href="classement.html">← Voir le classement complet</a></p>
+<script defer src="assets/compare.js"></script>"""
+    return page("Comparer", body, "comparer.html", project=project,
+                description="Comparer deux montages de libération des terres : "
+                            "indices, axes et caractéristiques en vis-à-vis.",
+                path="comparer.html")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1549,7 +1885,7 @@ def render_index(all_sc, cfg, n_by_cat):
     hist = corpus_histogram(all_sc, ranking)
 
     body = f"""{tri_defs(axes_cfg)}<section class="hero">
-  <p class="hero-kicker">Annuaire critique · France</p>
+  <p class="hero-kicker">Annuaire critique · libération des terres</p>
   <h1>La terre, soustraite au marché.</h1>
   <p class="hero-lead">Partout en France, des terres sont sorties du marché
   spéculatif — par le réemploi d'outils de droit civil non lucratif. Cet
@@ -1574,7 +1910,7 @@ def render_index(all_sc, cfg, n_by_cat):
     <li class="step">
       <span class="step-n">2</span>
       <h3>Explorer une catégorie</h3>
-      <p>Chaque montage se lit à travers trois objets : le lieu, son porteur de
+      <p>Chaque montage réunit trois acteurs : le lieu, son porteur de
       nue-propriété et son usufruitier. Chacun a son catalogue filtrable.</p>
     </li>
     <li class="step">
@@ -1585,13 +1921,15 @@ def render_index(all_sc, cfg, n_by_cat):
       méthode →</a></p>
     </li>
   </ol>
-  <p class="linkrow"><a href="regimes.html">Les trois régimes du sol →</a> ·
+  <p class="linkrow"><a href="themes.html">Explorer par thème →</a> ·
+  <a href="comparer.html">Comparer deux montages →</a> ·
+  <a href="regimes.html">Les trois régimes du sol →</a> ·
   <a href="grilles.html">Grilles d'analyse →</a> ·
   <a href="glossaire.html">Glossaire des termes →</a></p>
 </section>
 
 <section>
-  <h2 class="sec">Trois catégories analysées</h2>
+  <h2 class="sec">Explorer par catégorie</h2>
   <div class="cat-cards">{cat_cards}</div>
 </section>
 
@@ -1606,8 +1944,8 @@ def render_index(all_sc, cfg, n_by_cat):
 
 <section>
   <h2 class="sec">En tête du classement</h2>
-  <p class="lead">Les montages dont l'Indice de libération est le plus élevé —
-  tous axes confondus. <a href="classement.html">Classement complet →</a></p>
+  <p class="lead">Les montages dont l'Indice de libération est le plus élevé.
+  <a href="classement.html">Classement complet →</a></p>
   <p class="axe-legend cat-legend">Profil tri-axes :
   <span class="axe-dot axe-A"></span> A — Intérêt général
   <span class="axe-dot axe-B"></span> B — Libération des terres
@@ -1644,7 +1982,7 @@ def render_suggerer(cfg):
     project = cfg["concepts"]["project"]
     body = """<h1>Proposer un lieu</h1>
 <p class="lead">« Terres Libérées » est un annuaire évolutif au corpus volontairement
-mince et exigeant. Si vous connaissez un lieu, un porteur ou un montage réel de
+restreint et exigeant. Si vous connaissez un lieu, un porteur ou un montage réel de
 libération des terres qui n'y figure pas encore, vous pouvez le signaler.</p>
 
 <section><h2 class="sec">Ce que recense l'annuaire</h2>
@@ -1833,7 +2171,11 @@ main.wrap{padding-bottom:4rem;}
  border-radius:var(--radius);padding:1rem 1.15rem;
  transition:border-color .15s,box-shadow .15s;}
 .card:hover{border-color:var(--green);box-shadow:0 4px 16px rgba(33,29,24,.07);}
-.card:focus-within{border-color:var(--green);}
+/* stretched-link : l'indicateur de focus porte sur la carte entière, pas sur
+   le seul titre, pour refléter la cible cliquable réelle (audit a11y C, I5). */
+.card:focus-within{border-color:var(--green);
+ outline:2px solid var(--ink);outline-offset:2px;}
+.card-link:focus-visible{outline:none;}
 .card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;}
 .card h3{margin:.5rem 0 .2rem;font-size:1.16rem;line-height:1.3;}
 .card h3 a{text-decoration:none;color:var(--ink);}
@@ -1877,7 +2219,9 @@ main.wrap{padding-bottom:4rem;}
 .idl-badge.big .idl-ring{width:92px;height:92px;}
 .idl-track{fill:none;stroke:var(--beige-dk);}
 .idl-arc{fill:none;stroke:var(--pal,#999);stroke-linecap:round;}
-.idl-num{fill:var(--pal,#999);font-weight:800;text-anchor:middle;
+/* le chiffre de l'Indice est porté par var(--ink) : contraste > 12:1, la
+   couleur du palier restant sur l'anneau (audit a11y C, I1). */
+.idl-num{fill:var(--ink);font-weight:800;text-anchor:middle;
  dominant-baseline:central;font-family:-apple-system,system-ui,sans-serif;}
 .idl-pal{font-size:.62rem;text-transform:uppercase;letter-spacing:.04em;
  color:var(--muted);text-align:center;max-width:9rem;}
@@ -1911,7 +2255,11 @@ main.wrap{padding-bottom:4rem;}
  white-space:nowrap;}
 .axis-track{flex:1;height:.5rem;background:var(--beige-dk);
  border-radius:var(--radius-sm);overflow:hidden;}
-.axis-fill{display:block;height:100%;border-radius:var(--radius-sm);}
+/* liseré 1px var(--ink) : garantit le 3:1 de délimitation de la jauge
+   quelle que soit la couleur d'axe (audit a11y C, I2). */
+.axis-fill{display:block;height:100%;border-radius:var(--radius-sm);
+ box-shadow:inset 0 0 0 1px rgba(34,31,26,.55);}
+.axis-fill.axis-na{box-shadow:none;}
 .axis-fill.axis-na{background:repeating-linear-gradient(45deg,#ddd,#ddd 3px,#eee 3px,#eee 6px)!important;}
 .axis-val{flex:0 0 2.1rem;text-align:right;font-weight:700;font-variant-numeric:tabular-nums;}
 .axis-block.compact .axis-label{flex-basis:5.6rem;font-size:.72rem;}
@@ -1980,6 +2328,14 @@ select{font:inherit;font-family:-apple-system,system-ui,sans-serif;font-size:.85
 .fiab-gold{color:var(--gold-dk);}
 .fiab-faint{color:var(--faint);}
 .completude{font-size:.8rem;color:var(--faint);margin:.2rem 0 0;}
+
+/* clé de lecture de la fiche — repliée, sobre (audit pédagogie C, I1/I3) */
+.fiche-key{margin:-.4rem 0 1.2rem;font-family:-apple-system,system-ui,sans-serif;}
+.fiche-key summary{font-size:.84rem;color:var(--muted);cursor:pointer;
+ padding:.3rem 0;width:fit-content;}
+.fiche-key summary:hover{color:var(--green-dk);}
+.fiche-key ul{margin:.4rem 0 .2rem;padding-left:1.1rem;}
+.fiche-key li{font-size:.88rem;color:var(--muted);margin:.3rem 0;max-width:68ch;}
 
 /* en bref — composant tertiaire (info) */
 .enbref{background:var(--beige);border-radius:var(--radius);
@@ -2051,7 +2407,7 @@ table th{color:var(--muted);font-weight:700;font-size:.72rem;text-transform:uppe
 .rank-tbl .name a:hover{text-decoration:underline;}
 .row-sub{display:block;font-size:.78rem;color:var(--faint);font-weight:400;}
 .rank-tbl td.idl-cell,.rank-tbl th.idl-cell{border-left:1px solid var(--line);}
-.idl-cell b{color:var(--pal,#999);font-size:1.05rem;font-variant-numeric:tabular-nums;}
+.idl-cell b{color:var(--ink);font-size:1.05rem;font-variant-numeric:tabular-nums;}
 .rank-tbl.small{max-width:640px;}
 th.sortable{white-space:nowrap;padding:0;}
 .th-sort{font:inherit;font-family:-apple-system,system-ui,sans-serif;
@@ -2141,12 +2497,48 @@ code{background:var(--beige);padding:.1rem .35rem;border-radius:var(--radius-sm)
 .regimes-tbl th[scope=row]{font-weight:600;color:var(--ink);text-transform:none;
  letter-spacing:0;font-size:.86rem;border-bottom:1px solid var(--line);}
 
+/* liens vers le glossaire — sobres : soulignement pointillé discret, pas de
+   couleur vive, pour ne pas surcharger la prose (audit pédagogie C, C1) */
+a.gloss-link{color:inherit;text-decoration:underline;
+ text-decoration-style:dotted;text-decoration-thickness:1px;
+ text-underline-offset:2px;text-decoration-color:var(--faint);}
+a.gloss-link:hover{color:var(--green-dk);text-decoration-color:var(--green-dk);}
+
 /* glossaire */
 .glossaire{margin:1.4rem 0;display:flex;flex-direction:column;gap:0;}
 .gloss-item{border-bottom:1px solid var(--line);padding:.9rem 0;}
 .gloss-item dt{font-size:1.05rem;font-weight:700;color:var(--ink);
  margin-bottom:.2rem;}
 .gloss-item dd{margin:0;font-size:1.02rem;color:var(--muted);max-width:70ch;}
+
+/* comparateur — deux colonnes, réutilise les styles de carte et d'axes */
+.cmp-pickers{display:flex;gap:1rem;flex-wrap:wrap;margin:1.3rem 0 .6rem;}
+.cmp-pickers label{display:flex;flex-direction:column;gap:.25rem;flex:1 1 220px;
+ font-family:-apple-system,system-ui,sans-serif;font-size:.82rem;
+ color:var(--muted);font-weight:600;}
+.cmp-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0;}
+.cmp-col{background:var(--card);border:1px solid var(--line);
+ border-radius:var(--radius);padding:1rem 1.15rem;}
+.cmp-col.cmp-empty{display:flex;align-items:center;justify-content:center;
+ min-height:8rem;border-style:dashed;}
+.cmp-col-head{display:flex;justify-content:space-between;align-items:flex-start;
+ gap:.5rem;}
+.cmp-idl{display:inline-flex;flex-direction:column;align-items:flex-end;
+ line-height:1.1;border-right:3px solid var(--pal,#999);padding-right:.5rem;}
+.cmp-idl b{font-size:1.2rem;font-variant-numeric:tabular-nums;color:var(--ink);
+ font-family:-apple-system,system-ui,sans-serif;}
+.cmp-name{font-size:1.2rem;margin:.6rem 0 .15rem;border:0;padding:0;}
+.cmp-name::before{display:none;}
+.cmp-sub{font-size:.88rem;color:var(--muted);margin:.1rem 0 .6rem;
+ font-family:-apple-system,system-ui,sans-serif;}
+.cmp-dl{display:grid;grid-template-columns:max-content 1fr;gap:.4rem 1rem;
+ margin:.8rem 0 .4rem;font-size:.86rem;
+ font-family:-apple-system,system-ui,sans-serif;}
+.cmp-dl dt{color:var(--muted);font-weight:600;}
+.cmp-dl dd{margin:0;}
+.cmp-link{font-family:-apple-system,system-ui,sans-serif;font-size:.86rem;
+ margin:.6rem 0 0;}
+@media(max-width:560px){.cmp-grid{grid-template-columns:1fr;}}
 
 /* footer */
 .footer{border-top:2px solid var(--ink);margin-top:3rem;background:var(--paper);}
@@ -2252,7 +2644,9 @@ LIST_JS = """/* list.js — filtre, tri et recherche des catalogues.
    (cf. cycle B — audit performance, B-2). Vanilla JS, aucune dépendance. */
 (function(){
  var q=document.getElementById('q'),sort=document.getElementById('sort'),
-   cnt=document.getElementById('cnt'),nores=document.getElementById('noresult'),
+   cntn=document.getElementById('cntn'),cntl=document.getElementById('cntl'),
+   nores=document.getElementById('noresult'),
+   sstatus=document.getElementById('sort-status'),
    grid=document.querySelector('.cards');
  if(!grid) return;
  var cards=[].slice.call(document.querySelectorAll('.card')),
@@ -2272,9 +2666,9 @@ LIST_JS = """/* list.js — filtre, tri et recherche des catalogues.
    c.style.display=ok?'':'none';
    if(ok) n++;
   });
-  if(cnt){
-   cnt.innerHTML='<b>'+n+'</b> entrée'+(n>1?'s':'')+' affichée'+(n>1?'s':'');
-  }
+  /* on n'écrit que du texte dans la région live (audit a11y C, I3). */
+  if(cntn) cntn.textContent=n;
+  if(cntl) cntl.textContent=' entrée'+(n>1?'s':'')+' affichée'+(n>1?'s':'');
   if(nores) nores.hidden=n!==0;
  }
  function doSort(){
@@ -2284,6 +2678,9 @@ LIST_JS = """/* list.js — filtre, tri et recherche des catalogues.
    return (parseFloat(b.dataset[key])||0)-(parseFloat(a.dataset[key])||0);
   });
   vis.forEach(function(c){grid.appendChild(c);});
+  /* annonce du tri pour les lecteurs d'écran (audit a11y C, C1). */
+  if(sstatus) sstatus.textContent='Liste triée : '
+   +sort.options[sort.selectedIndex].text+'.';
  }
  if(q) q.addEventListener('input',apply);
  if(sort) sort.addEventListener('change',doSort);
@@ -2291,9 +2688,10 @@ LIST_JS = """/* list.js — filtre, tri et recherche des catalogues.
   b.addEventListener('click',function(){
    var k=b.dataset.fk;
    document.querySelectorAll('.fbtn[data-fk="'+k+'"]').forEach(function(x){
-    x.classList.remove('active');
+    x.classList.remove('active');x.setAttribute('aria-pressed','false');
    });
-   b.classList.add('active');active[k]=b.dataset.fv;apply();
+   b.classList.add('active');b.setAttribute('aria-pressed','true');
+   active[k]=b.dataset.fv;apply();
   });
  });
 })();
@@ -2314,8 +2712,10 @@ LIST_JS = """/* list.js — filtre, tri et recherche des catalogues.
  }
  btns.forEach(function(b){
   b.addEventListener('click',function(){
-   btns.forEach(function(x){x.classList.remove('active');});
-   b.classList.add('active');
+   btns.forEach(function(x){
+    x.classList.remove('active');x.setAttribute('aria-pressed','false');
+   });
+   b.classList.add('active');b.setAttribute('aria-pressed','true');
    var f=b.dataset.f;
    [].slice.call(tb.rows).forEach(function(t){
     t.style.display=(f==='all'||t.dataset.cat===f)?'':'none';
@@ -2353,6 +2753,99 @@ LIST_JS = """/* list.js — filtre, tri et recherche des catalogues.
   var btn=th.querySelector('.th-sort');
   (btn||th).addEventListener('click',function(){sortBy(th);});
  });
+})();
+"""
+
+COMPARE_JS = """/* compare.js — comparateur de deux montages, page comparer.html.
+   Rendu côté client depuis data.json. Vanilla JS, aucune dépendance.
+   N'est chargé que par comparer.html ; list.js n'est pas touché. */
+(function(){
+ var selA=document.getElementById('cmp-a'),selB=document.getElementById('cmp-b'),
+   grid=document.getElementById('cmp-grid'),warn=document.getElementById('cmp-warn');
+ if(!selA||!selB||!grid) return;
+ var byUid={};
+ function esc(s){
+  return String(s==null?'':s).replace(/[&<>"]/g,function(c){
+   return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];
+  });
+ }
+ var AXES=[['A','Intérêt général','#4a7a3a'],
+           ['B','Libération des terres','#bc5d3a'],
+           ['C','Gouvernance participative','#36748a']];
+ var CATLAB={lieu:'Lieu',porteur:'Porteur',usufruitier:'Usufruitier',
+   modele:'Modèle voisin'};
+ var SLUG={lieu:'l',porteur:'p',usufruitier:'u',modele:'m'};
+ function bar(label,col,val){
+  var w=(val==null?0:Math.max(0,Math.min(100,val)));
+  var txt=(val==null?'n.r.':val);
+  return '<div class="axis-row"><span class="axis-label">'+esc(label)
+   +'</span><span class="axis-track"><span class="axis-fill'
+   +(val==null?' axis-na':'')+'" style="width:'+w+'%;background:'+col
+   +'"></span></span><span class="axis-val">'+esc(txt)+'</span></div>';
+ }
+ function col(d){
+  if(!d) return '<div class="cmp-col cmp-empty"><p class="note">'
+   +'Choisissez une entrée.</p></div>';
+  var bars='';
+  for(var i=0;i<AXES.length;i++){
+   bars+=bar(AXES[i][0]+' · '+AXES[i][1],AXES[i][2],
+     d.axes?d.axes[AXES[i][0]]:null);
+  }
+  var estime=d.score_type==='estime';
+  var idl=(d.idl==null?'n.r.':d.idl)+(estime?' · estimé':'');
+  var pal=d.palier_label?esc(d.palier_label):'—';
+  var palCol=d.palier_couleur||'#999';
+  var rows='';
+  function row(k,v){
+   if(!v) return '';
+   return '<dt>'+esc(k)+'</dt><dd>'+esc(v)+'</dd>';
+  }
+  rows+=row('Catégorie',CATLAB[d.categorie]||d.categorie);
+  rows+=row('Forme juridique',d.forme_juridique);
+  rows+=row('Type de montage',d.montage_label);
+  rows+=row('Nature juridique',d.nature_juridique);
+  if(d.completude!=null){
+   rows+=row('Complétude',Math.round(d.completude*100)+' %');
+  }
+  var href=SLUG[d.categorie]+'/'+d.uid+'.html';
+  return '<div class="cmp-col"><div class="cmp-col-head">'
+   +'<span class="tag tag-'+esc(d.categorie)+'">'
+   +esc(CATLAB[d.categorie]||d.categorie)+'</span>'
+   +'<span class="cmp-idl" style="--pal:'+esc(palCol)+'">'
+   +'<b>'+esc(idl)+'</b><span class="idl-pal">'+pal+'</span></span></div>'
+   +'<h2 class="cmp-name">'+esc(d.nom)+'</h2>'
+   +'<p class="cmp-sub">'+esc(d.sous_titre||'')+'</p>'
+   +'<div class="axis-block">'+bars+'</div>'
+   +'<dl class="cmp-dl">'+rows+'</dl>'
+   +'<p class="cmp-link"><a href="'+esc(href)+'">Fiche complète →</a></p>'
+   +'</div>';
+ }
+ function render(){
+  var a=byUid[selA.value],b=byUid[selB.value];
+  grid.innerHTML=col(a)+col(b);
+  if(a&&b&&a.categorie!==b.categorie){
+   warn.textContent='Ces deux entrées relèvent de catégories différentes, '
+    +'notées par des grilles distinctes : la comparaison est indicative.';
+   warn.hidden=false;
+  }else{ warn.hidden=true; }
+  var p=new URLSearchParams();
+  if(selA.value) p.set('a',selA.value);
+  if(selB.value) p.set('b',selB.value);
+  var qs=p.toString();
+  history.replaceState(null,'',qs?('?'+qs):location.pathname);
+ }
+ fetch('data.json').then(function(r){return r.json();}).then(function(list){
+  list.forEach(function(d){byUid[d.uid]=d;});
+  var q=new URLSearchParams(location.search);
+  if(q.get('a')&&byUid[q.get('a')]) selA.value=q.get('a');
+  if(q.get('b')&&byUid[q.get('b')]) selB.value=q.get('b');
+  render();
+ }).catch(function(){
+  grid.innerHTML='<p class="no-result">Données indisponibles. '
+   +'Consultez le <a href="classement.html">classement</a>.</p>';
+ });
+ selA.addEventListener('change',render);
+ selB.addEventListener('change',render);
 })();
 """
 
@@ -2424,6 +2917,7 @@ def main():
     ASSETS.mkdir(exist_ok=True)
     write(ASSETS / "style.css", CSS)
     write(ASSETS / "list.js", LIST_JS)
+    write(ASSETS / "compare.js", COMPARE_JS)
     write(ASSETS / "favicon.svg", FAVICON_SVG)
     write(ASSETS / "og-default.svg", OG_SVG)
     write(SITE / "favicon.svg", FAVICON_SVG)
@@ -2449,6 +2943,8 @@ def main():
     write(SITE / "grilles.html", render_grilles(cfg))
     write(SITE / "glossaire.html", render_glossaire(cfg))
     write(SITE / "methode.html", render_methode(cfg, n_by_cat, all_sc))
+    write(SITE / "themes.html", render_themes(all_sc, cfg))
+    write(SITE / "comparer.html", render_comparer(all_sc, cfg))
     write(SITE / "suggerer.html", render_suggerer(cfg))
     write(SITE / "404.html", render_404(cfg))
 
@@ -2460,23 +2956,41 @@ def main():
     for cat in ("lieu", "porteur", "usufruitier", "modele"):
         sitemap_paths.append((CAT_PAGE[cat], "0.8"))
     for p in ("classement.html", "regimes.html", "grilles.html",
-              "methode.html", "glossaire.html", "suggerer.html"):
+              "methode.html", "themes.html", "comparer.html", "glossaire.html",
+              "suggerer.html"):
         sitemap_paths.append((p, "0.6"))
     for f, sc in all_sc:
         sitemap_paths.append((f'{CAT_SLUG[f["categorie"]]}/{f["uid"]}.html', "0.7"))
     write(SITE / "robots.txt", build_robots())
     write(SITE / "sitemap.xml", build_sitemap(sitemap_paths))
 
-    # data.json (export ouvert)
+    # data.json (export ouvert) — enrichi de champs descriptifs pour le
+    # comparateur (sous-titre, forme juridique, type de montage, nature). Champs
+    # ajoutés, aucun retiré : l'export reste rétro-compatible.
     data = []
     for f, sc in all_sc:
+        mont = f.get("montage", {}) or {}
+        pj = f.get("purete_juridique", {}) or {}
+        montage_id = mont.get("type", "") or ""
+        pj_niv = pj.get("niveau", "") or ""
+        pj_lab = purete_label(pj_niv, ranking)[0] if pj_niv else ""
         data.append({"uid": f["uid"], "nom": f["nom"], "categorie": f["categorie"],
+                      "sous_titre": clean(f.get("sous_titre", "")),
                       "idl": sc["idl"], "idl_brut": sc.get("idl_brut"),
                       "score_type": sc.get("score_type"),
                       "completude": (round(sc["completude"], 3)
                                      if sc.get("completude") is not None else None),
                       "axes": sc["axes"],
-                      "palier": sc["palier"]["id"] if sc["palier"] else None})
+                      "palier": sc["palier"]["id"] if sc["palier"] else None,
+                      "palier_label": (sc["palier"]["label"]
+                                       if sc["palier"] else None),
+                      "palier_couleur": (sc["palier"]["couleur"]
+                                         if sc["palier"] else None),
+                      "forme_juridique": clean(f.get("forme_juridique", "")),
+                      "montage_type": montage_id,
+                      "montage_label": (montage_label(montage_id, cfg["concepts"])
+                                        if montage_id else ""),
+                      "nature_juridique": pj_lab})
     write(SITE / "data.json", json.dumps(data, ensure_ascii=False, indent=2))
 
     total = len(fiches)

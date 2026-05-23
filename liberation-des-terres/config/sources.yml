@@ -14,11 +14,14 @@ defaults:
   intervalle_heures: 168          # une passe hebdomadaire
   langue: fr
 
+# Champ `type` : actualites | annuaire | conceptuel — informatif, sert à
+# pondérer ou prioriser plus tard. La veille (watch.py) ne le lit pas encore.
 sources:
   - id: terre-de-liens
     nom: "Terre de Liens — actualités et fermes"
     url: "https://terredeliens.org/"
     parser: deep_html
+    type: actualites
     categorie_probable: [lieu, porteur]
     mots_cles: [ferme, foncier, bail, donation, acquisition, fondation, foncière]
 
@@ -26,6 +29,7 @@ sources:
     nom: "Terre de Liens — centre de ressources"
     url: "https://ressources.terredeliens.org/"
     parser: html_static
+    type: conceptuel
     categorie_probable: [usufruitier]
     mots_cles: [GFA, SCI citoyenne, montage, propriété collective]
 
@@ -33,6 +37,7 @@ sources:
     nom: "La Terre en commun (NDDL)"
     url: "https://encommun.eco/"
     parser: html_static
+    type: actualites
     categorie_probable: [lieu, porteur]
     mots_cles: [fonds de dotation, terres, acquisition, commun]
 
@@ -40,6 +45,7 @@ sources:
     nom: "Coopérative Oasis — écolieux"
     url: "https://cooperative-oasis.org/"
     parser: deep_html
+    type: annuaire
     categorie_probable: [lieu, usufruitier]
     mots_cles: [écolieu, oasis, propriété collective, foncier]
 
@@ -47,6 +53,7 @@ sources:
     nom: "Lurzaindia — foncière du Pays Basque"
     url: "https://lurzaindia.eu/"
     parser: html_static
+    type: actualites
     categorie_probable: [porteur, lieu]
     mots_cles: [foncière, terres, installation paysanne, bail]
 
@@ -54,6 +61,7 @@ sources:
     nom: "Larzac.org — SCTL et gestion foncière"
     url: "https://larzac.org/"
     parser: html_static
+    type: actualites
     categorie_probable: [lieu, usufruitier]
     mots_cles: [SCTL, terres, bail emphytéotique, gestion foncière]
 
@@ -61,6 +69,7 @@ sources:
     nom: "Fédération des Conservatoires d'espaces naturels"
     url: "https://reseau-cen.org/"
     parser: html_static
+    type: annuaire
     categorie_probable: [porteur, usufruitier]
     mots_cles: [conservatoire, foncier, espace naturel, bail emphytéotique]
 
@@ -68,6 +77,7 @@ sources:
     nom: "Foncier Solidaire France — réseau des OFS"
     url: "https://www.foncier-solidaire.fr/"
     parser: html_static
+    type: annuaire
     categorie_probable: [porteur]
     mots_cles: [OFS, bail réel solidaire, BRS, foncier solidaire]
 
@@ -75,6 +85,7 @@ sources:
     nom: "RTES — collectivités et ESS"
     url: "https://www.rtes.fr/"
     parser: html_static
+    type: actualites
     categorie_probable: [porteur, lieu]
     mots_cles: [foncier, communs, collectivité, CLT, fonds de dotation]
 
@@ -82,10 +93,52 @@ sources:
     nom: "Habitat Participatif France"
     url: "https://www.habitatparticipatif-france.fr/"
     parser: html_static
+    type: annuaire
     categorie_probable: [lieu, usufruitier]
     mots_cles: [habitat participatif, propriété, coopérative d'habitants]
 
-# Mots-clés transverses utilisés au scoring de découverte
+  # ── sources élargies sur les angles morts identifiés en cycle A ───────────
+  - id: habicoop
+    nom: "Habicoop — coopératives d'habitants"
+    url: "https://www.habicoop.fr/"
+    parser: html_static
+    type: annuaire
+    categorie_probable: [porteur, usufruitier]
+    mots_cles: [coopérative d'habitants, propriété collective, habitat, foncier]
+
+  - id: labo-ess
+    nom: "Le Labo de l'ESS — foncier et communs"
+    url: "https://www.lelabo-ess.org/"
+    parser: html_static
+    type: conceptuel
+    categorie_probable: [porteur, lieu]
+    mots_cles: [foncier, communs, ESS, propriété collective, fonds de dotation]
+
+  - id: reseau-ecolieux
+    nom: "RECit — réseau des écolieux"
+    url: "https://recit.eco/"
+    parser: html_static
+    type: annuaire
+    categorie_probable: [lieu, usufruitier]
+    mots_cles: [écolieu, habitat, propriété collective, foncier]
+
+  - id: fonciere-chenelet
+    nom: "Foncière Chênelet — logement très social"
+    url: "https://www.chenelet.org/"
+    parser: html_static
+    type: actualites
+    categorie_probable: [porteur, lieu]
+    mots_cles: [foncière, logement, bail, propriété, association]
+
+  - id: terres-de-sources
+    nom: "Eau du Bassin Rennais — Terres de Sources"
+    url: "https://www.terresdesources.fr/"
+    parser: html_static
+    type: actualites
+    categorie_probable: [porteur, lieu]
+    mots_cles: [SCIC, captage, foncier, eau, périurbain]
+
+# Mots-clés transverses utilisés au scoring de découverte (pondérés ×2)
 mots_cles_transverses:
   - "libération des terres"
   - "sortir la terre du marché"
@@ -97,3 +150,14 @@ mots_cles_transverses:
   - "propriété d'usage"
   - "communs fonciers"
   - "bail rural environnemental"
+
+# Mots-clés « forts » — signaux décisifs (pondérés ×3). Sortis du code de
+# watch.py pour que la connaissance métier vive dans la configuration.
+mots_cles_forts:
+  - "libération des terres"
+  - "nue-propriété"
+  - "usufruit"
+  - "fonds de dotation"
+  - "démembrement"
+  - "bail réel solidaire"
+  - "propriété collective verrouillée"

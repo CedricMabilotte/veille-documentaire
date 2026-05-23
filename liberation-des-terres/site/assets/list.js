@@ -3,7 +3,9 @@
    (cf. cycle B — audit performance, B-2). Vanilla JS, aucune dépendance. */
 (function(){
  var q=document.getElementById('q'),sort=document.getElementById('sort'),
-   cnt=document.getElementById('cnt'),nores=document.getElementById('noresult'),
+   cntn=document.getElementById('cntn'),cntl=document.getElementById('cntl'),
+   nores=document.getElementById('noresult'),
+   sstatus=document.getElementById('sort-status'),
    grid=document.querySelector('.cards');
  if(!grid) return;
  var cards=[].slice.call(document.querySelectorAll('.card')),
@@ -23,9 +25,9 @@
    c.style.display=ok?'':'none';
    if(ok) n++;
   });
-  if(cnt){
-   cnt.innerHTML='<b>'+n+'</b> entrée'+(n>1?'s':'')+' affichée'+(n>1?'s':'');
-  }
+  /* on n'écrit que du texte dans la région live (audit a11y C, I3). */
+  if(cntn) cntn.textContent=n;
+  if(cntl) cntl.textContent=' entrée'+(n>1?'s':'')+' affichée'+(n>1?'s':'');
   if(nores) nores.hidden=n!==0;
  }
  function doSort(){
@@ -35,6 +37,9 @@
    return (parseFloat(b.dataset[key])||0)-(parseFloat(a.dataset[key])||0);
   });
   vis.forEach(function(c){grid.appendChild(c);});
+  /* annonce du tri pour les lecteurs d'écran (audit a11y C, C1). */
+  if(sstatus) sstatus.textContent='Liste triée : '
+   +sort.options[sort.selectedIndex].text+'.';
  }
  if(q) q.addEventListener('input',apply);
  if(sort) sort.addEventListener('change',doSort);
@@ -42,9 +47,10 @@
   b.addEventListener('click',function(){
    var k=b.dataset.fk;
    document.querySelectorAll('.fbtn[data-fk="'+k+'"]').forEach(function(x){
-    x.classList.remove('active');
+    x.classList.remove('active');x.setAttribute('aria-pressed','false');
    });
-   b.classList.add('active');active[k]=b.dataset.fv;apply();
+   b.classList.add('active');b.setAttribute('aria-pressed','true');
+   active[k]=b.dataset.fv;apply();
   });
  });
 })();
@@ -65,8 +71,10 @@
  }
  btns.forEach(function(b){
   b.addEventListener('click',function(){
-   btns.forEach(function(x){x.classList.remove('active');});
-   b.classList.add('active');
+   btns.forEach(function(x){
+    x.classList.remove('active');x.setAttribute('aria-pressed','false');
+   });
+   b.classList.add('active');b.setAttribute('aria-pressed','true');
    var f=b.dataset.f;
    [].slice.call(tb.rows).forEach(function(t){
     t.style.display=(f==='all'||t.dataset.cat===f)?'':'none';
