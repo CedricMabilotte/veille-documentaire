@@ -412,6 +412,20 @@ def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
         out["cover"] = f"covers/{uid}.png"   # chemin relatif depuis interface/
         print(f"     🖼  Couverture extraite : {out['cover']}")
 
+    # ── Archivage Wayback « à la capture » ───────────────────────────────────
+    # Le document vient d'être téléchargé : sa source est encore vivante. C'est
+    # le seul moment fiable pour en obtenir une copie pérenne — une fois la
+    # source morte, la Wayback Machine ne peut plus la photographier. Le
+    # link_check de fin de run reste un filet, mais arrive souvent trop tard.
+    # Best-effort strict : un échec ou un timeout n'interrompt jamais le run.
+    try:
+        archive = link_check.submit_to_wayback(doc["url"])
+        if archive:
+            out["archive_url"] = archive
+            print(f"     🏛  Copie Wayback : {archive}")
+    except Exception as e:
+        print(f"     ⚠  archivage Wayback raté : {e}")
+
     # Extraction des références bibliographiques (boucle de découverte)
     try:
         refs = bibliography_extractor.extract_references(dest, max_refs=30)
@@ -550,7 +564,7 @@ def update_synopsis_catalog(report: dict) -> None:
         # Champs d'enrichissement éventuels (cover, synopsis, bulle)
         extras = {}
         for k in ("cover", "bulle", "meta", "enrichment", "download_status",
-                  "drive_url"):
+                  "drive_url", "archive_url"):
             if k in r:
                 extras[k] = r[k]
 

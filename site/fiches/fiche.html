@@ -320,16 +320,43 @@ function renderFiche(doc, basePath) {
     ? `<a href="../auteurs.html#${escape(authorSlug)}">${escape(author)}</a>`
     : '';
 
+  // Liens du document — la source d'origine peut être rompue (link_status).
+  // Si elle est morte, on ne la présente plus comme action principale : on
+  // met en avant la copie d'archive si elle existe, et on prévient le lecteur.
+  const linkDead = doc.link_status === 'dead';
+  const docLinksHTML = (() => {
+    const parts = [];
+    if (linkDead) {
+      if (doc.archive_url) {
+        parts.push(`<a href="${escape(doc.archive_url)}" class="btn btn-primary" target="_blank" rel="noopener" title="Copie pérenne sur Internet Archive">Lire la copie d’archive</a>`);
+      }
+      if (doc.url) {
+        parts.push(`<a href="${escape(doc.url)}" class="btn btn-sm" target="_blank" rel="noopener" title="Lien d’origine — actuellement indisponible">Source d’origine (lien rompu)</a>`);
+      }
+    } else {
+      if (doc.url) {
+        parts.push(`<a href="${escape(doc.url)}" class="btn btn-primary" target="_blank" rel="noopener">Lire la source</a>`);
+      }
+      if (doc.archive_url) {
+        parts.push(`<a href="${escape(doc.archive_url)}" class="btn btn-sm" target="_blank" rel="noopener" title="Copie pérenne sur Internet Archive">Copie d’archive</a>`);
+      }
+    }
+    parts.push(`<a href="index.html" class="btn">Retour au catalogue</a>`);
+    return parts.join('\n        ');
+  })();
+  const deadNoticeHTML = linkDead
+    ? `<p class="fiche-link-warning" role="note" style="font-size:14px;color:var(--text-faint);margin-top:.5rem;">⚠ Le lien d’origine n’est plus disponible. ${doc.archive_url ? 'Une copie d’archive est proposée ci-dessus.' : 'Aucune copie d’archive n’a pu être conservée.'}</p>`
+    : '';
+
   root.innerHTML = `
     <aside class="fiche-cover-wrap">
       <div class="fiche-cover" data-initial="${escape(title.slice(0,1).toUpperCase())}">
         <img src="${escape(cover)}" alt="Couverture de ${escape(title)}" onerror="this.parentNode.classList.add('placeholder');this.parentNode.style.display='flex';this.parentNode.style.alignItems='center';this.parentNode.style.justifyContent='center';this.parentNode.style.fontFamily='var(--font-serif)';this.parentNode.style.fontSize='80px';this.parentNode.style.color='var(--text-faint)';this.parentNode.textContent=this.parentNode.dataset.initial||'';">
       </div>
       <div class="fiche-actions">
-        ${doc.url ? `<a href="${escape(doc.url)}" class="btn btn-primary" target="_blank" rel="noopener">Lire la source</a>` : ''}
-        ${doc.archive_url ? `<a href="${escape(doc.archive_url)}" class="btn btn-sm" target="_blank" rel="noopener" title="Copie pérenne sur Internet Archive">Copie d’archive</a>` : ''}
-        <a href="index.html" class="btn">Retour au catalogue</a>
+        ${docLinksHTML}
       </div>
+      ${deadNoticeHTML}
       ${shareButtonsHTML(doc, title)}
     </aside>
 
