@@ -1559,6 +1559,15 @@ def main() -> None:
 
     publish_site(run_date)
 
+    # Garde-fou — contrôle de cohérence du site publié (orphelins, sitemap,
+    # langue JSON-LD, licence). Non bloquant : un défaut est signalé, pas fatal.
+    try:
+        import audit_site
+        if audit_site.main() != 0:
+            print("  ⚠  audit_site : incohérence détectée — voir ci-dessus")
+    except Exception as e:
+        print(f"  ⚠  audit_site raté : {e}")
+
     print(f"""
 ╔══════════════════════════════════════════╗
   Veille terminée — {run_date}
