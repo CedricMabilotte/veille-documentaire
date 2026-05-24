@@ -17,6 +17,11 @@ Thumbs.db
 # Sous-projet Communs — dépôt autonome (CedricMabilotte/Communs)
 liberation-des-terres/
 
+# PDF téléchargés — jamais versionnés (binaires volumineux, droits variables).
+# Sauvegarde durable : Google Drive privé via rclone (cf. DEPLOIEMENT.md).
+docs/*
+!docs/.gitkeep
+
 # Pilotage de session Cowork (notes de travail internes, non versionnées)
 CLAUDE.md
 routine-fin.md
