@@ -20,6 +20,7 @@ Usage autonome :
 
 from __future__ import annotations
 
+import concurrent.futures
 import json
 import sys
 import time
@@ -126,8 +127,22 @@ def wayback_lookup(url: str) -> str | None:
 
 
 def check_catalog(catalog_path: Path = CATALOG_PATH, limit: int | None = None,
-                   do_archive: bool = True) -> dict:
+                   do_archive: bool = True, max_workers: int = 12,
+                   prioritize=None, archive_limit: int | None = None) -> dict:
     """Parcourt le catalog, met à jour link_status/link_checked/archive_url.
+
+    Les vérifications HTTP (HEAD) sont menées **en parallèle** (`max_workers`) :
+    ce sont des entrées-sorties indépendantes, sûres à paralléliser. Un seul
+    processus, une seule écriture du catalogue à la fin — pas de conflit.
+
+    L'archivage Wayback, lui, reste **séquentiel et poli** : c'est le point
+    que archive.org rate-limite. Il est borné par `archive_limit` pour ne pas
+    allonger indéfiniment un run.
+
+    `prioritize` : callable(doc) -> bool, optionnel. Si fourni, les documents
+    prioritaires (typiquement les fiches publiées, via `_is_publishable`) sont
+    vérifiés en premier sous `limit`, et sont les seuls soumis à l'archivage.
+    Cela évite d'importer watch.py ici (dépendance injectée par l'appelant).
 
     Retourne un dict de stats.
     """
@@ -141,39 +156,59 @@ def check_catalog(catalog_path: Path = CATALOG_PATH, limit: int | None = None,
     stats = {"checked": 0, "ok": 0, "dead": 0, "unchecked": 0,
              "archived": 0, "skipped_recent": 0}
 
-    processed = 0
-    for doc_id, doc in docs.items():
-        if limit is not None and processed >= limit:
-            break
-        url = doc.get("url", "")
-        if not url:
+    # Liste des docs à vérifier : URL présente, pas vérifié récemment.
+    to_check = []
+    for doc in docs.values():
+        if not doc.get("url"):
             continue
-
-        # Migration douce : on saute les liens vérifiés récemment
         if _days_since(doc.get("link_checked")) < RECHECK_AFTER_DAYS:
             stats["skipped_recent"] += 1
             continue
+        to_check.append(doc)
 
-        status = check_url(url)
-        doc["link_status"] = status
-        doc["link_checked"] = _iso_now()
-        stats["checked"] += 1
-        stats[status] = stats.get(status, 0) + 1
-        processed += 1
+    # Priorité : les fiches publiées d'abord (elles comptent le plus, et le
+    # `limit` doit les couvrir en premier).
+    if prioritize is not None:
+        to_check.sort(key=lambda d: 0 if prioritize(d) else 1)
+    if limit is not None:
+        to_check = to_check[:limit]
 
-        if do_archive:
-            # On privilégie une archive existante (rapide), sinon on en crée une
+    # ── Phase 1 — vérifications HTTP en parallèle ────────────────────────────
+    now = _iso_now()
+    with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as pool:
+        futures = {pool.submit(check_url, d["url"]): d for d in to_check}
+        for fut in concurrent.futures.as_completed(futures):
+            doc = futures[fut]
+            try:
+                status = fut.result()
+            except Exception:
+                status = "unchecked"
+            doc["link_status"] = status
+            doc["link_checked"] = now
+            stats["checked"] += 1
+            stats[status] = stats.get(status, 0) + 1
+
+    # ── Phase 2 — archivage Wayback : séquentiel, poli, borné ────────────────
+    # archive.org rate-limite Save Page Now : on ne parallélise jamais ici.
+    # Si une fonction de priorité est fournie, on n'archive que les docs
+    # prioritaires — les autres seront archivés « à la capture » (watch.py).
+    if do_archive:
+        targets = [d for d in to_check
+                   if prioritize is None or prioritize(d)]
+        if archive_limit is not None:
+            targets = targets[:archive_limit]
+        for doc in targets:
+            url = doc["url"]
             archive = doc.get("archive_url") or wayback_lookup(url)
-            if not archive and status != "dead":
+            if not archive and doc.get("link_status") != "dead":
                 archive = submit_to_wayback(url)
-            if not archive and status == "dead":
-                # Lien mort : une copie ancienne est précieuse
+            if not archive and doc.get("link_status") == "dead":
+                # Lien mort : une copie ancienne reste précieuse
                 archive = wayback_lookup(url)
             if archive:
                 doc["archive_url"] = archive
                 stats["archived"] += 1
-            # Politesse envers archive.org
-            time.sleep(1.0)
+            time.sleep(1.0)  # politesse envers archive.org
 
     catalog_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2),
                             encoding="utf-8")
@@ -182,11 +217,19 @@ def check_catalog(catalog_path: Path = CATALOG_PATH, limit: int | None = None,
 
 
 if __name__ == "__main__":
+    # Usage :
+    #   python scripts/link_check.py                   # tout le catalog, vérif seule
+    #   python scripts/link_check.py --limit 200       # borne le nombre vérifié
+    #   python scripts/link_check.py --archive         # active l'archivage Wayback
     lim = None
     if "--limit" in sys.argv:
         try:
             lim = int(sys.argv[sys.argv.index("--limit") + 1])
         except (ValueError, IndexError):
             lim = None
-    # En autonome on limite par défaut pour ne pas marteler archive.org
-    check_catalog(limit=lim if lim is not None else 5)
+    do_archive = "--archive" in sys.argv
+    # En autonome : vérification de tout le catalog (rapide car parallèle) ;
+    # archivage désactivé par défaut (lent, rate-limité) — l'opt-in --archive
+    # le réactive, borné pour rester poli envers archive.org.
+    check_catalog(limit=lim, do_archive=do_archive,
+                  archive_limit=20 if do_archive else None)

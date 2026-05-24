@@ -1571,12 +1571,15 @@ def main() -> None:
         pass
 
     # ── S3 — Vérification de pérennité des liens + archivage Wayback ─────────
-    # Limité par run pour ne pas marteler archive.org ; les liens vérifiés
-    # récemment sont automatiquement sautés (cf. link_check.RECHECK_AFTER_DAYS).
+    # Vérifications HTTP parallèles : tout le catalogue est couvert en un run
+    # (les liens vérifiés récemment sont sautés, cf. RECHECK_AFTER_DAYS).
+    # L'archivage Wayback reste séquentiel et borné (archive_limit) pour ne pas
+    # marteler archive.org ; il cible en priorité les fiches publiées.
     if not dry_run:
         try:
             ls = link_check.check_catalog(
-                SYNOPSIS_PATH / "catalog.json", limit=40, do_archive=True
+                SYNOPSIS_PATH / "catalog.json", limit=None, do_archive=True,
+                prioritize=_is_publishable, archive_limit=30,
             )
             print(f"  🔗  Liens : {ls}")
         except Exception as e:
