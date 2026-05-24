@@ -816,9 +816,11 @@ def _prerender_fiches(catalog: dict) -> int:
         if isinstance(doc.get("meta"), dict):
             page_count = doc["meta"].get("page_count", 0) or 0
         is_book = page_count >= 60
-        lang = "fr"
-        if isinstance(doc.get("meta"), dict):
-            lang = doc["meta"].get("lang", "") or "fr"
+        # La langue est un champ de premier niveau du doc (renseigné par
+        # doc_metadata.py), jamais une sous-clé de `meta` — lire `meta`
+        # renvoyait toujours "" et figeait inLanguage à "fr" pour tout le
+        # corpus, y compris les ouvrages anglophones et hispanophones.
+        lang = (doc.get("lang") or "fr")
 
         ld = {
             "@context": "https://schema.org",
@@ -900,6 +902,55 @@ def _prerender_fiches(catalog: dict) -> int:
     return count
 
 
+def _prune_site_orphans(catalog: dict) -> dict:
+    """Garde-fou — retire de site/ les fichiers par-document orphelins.
+
+    Un document repassé sous le seuil de publication (re-scoring, réconciliation
+    des scores) laissait derrière lui sa fiche pré-rendue, sa bulle, sa
+    couverture et ses cartes sociales : la génération n'ajoutait que, ne
+    purgeait jamais. Résultat : des fichiers crawlables désynchronisés du
+    catalogue. On reconstruit l'ensemble publiable et on supprime tout fichier
+    `<id>.*` (ou `<id>-cite-N.png`) dont le document n'en fait plus partie.
+
+    Les gabarits statiques (fiche.html, index.html) et les fichiers dont le
+    préfixe n'est pas un identifiant de document connu ne sont jamais touchés.
+
+    Retourne le nombre de fichiers retirés par dossier.
+    """
+    docs = catalog.get("docs", {})
+    keep = {doc_id for doc_id, doc in docs.items() if _is_publishable(doc)}
+
+    def _doc_id_of(stem: str):
+        head = stem[:8]
+        if (len(head) == 8
+                and all(c in "0123456789abcdef" for c in head)
+                and head in docs):
+            return head
+        return None
+
+    targets = [
+        (SITE_PATH / "fiches",            "*.html"),
+        (SITE_PATH / "data" / "bulles",   "*.json"),
+        (SITE_PATH / "assets" / "covers", "*.png"),
+        (SITE_PATH / "assets" / "cards",  "*.png"),
+    ]
+    removed: dict = {}
+    for directory, pattern in targets:
+        if not directory.is_dir():
+            continue
+        n = 0
+        for f in directory.glob(pattern):
+            doc_id = _doc_id_of(f.stem)
+            if doc_id is None:        # gabarit ou fichier hors-corpus → garder
+                continue
+            if doc_id not in keep:    # document non publiable → orphelin
+                f.unlink()
+                n += 1
+        if n:
+            removed[directory.name] = n
+    return removed
+
+
 def publish_site(run_date: str) -> None:
     """Prépare le dossier site/ pour publication :
     - copie le catalog vers site/data/catalog.json
@@ -968,6 +1019,16 @@ def publish_site(run_date: str) -> None:
         print(f"  🔗 Pré-rendu : {n_prerender} fiches statiques")
     except Exception as e:
         print(f"  ⚠  pré-rendu fiches raté : {e}")
+
+    # 4ter. Garde-fou — purge des fichiers par-document devenus orphelins
+    # (fiche / bulle / couverture / carte d'un doc repassé sous le seuil).
+    try:
+        pruned = _prune_site_orphans(catalog)
+        if pruned:
+            detail = ", ".join(f"{v} {k}" for k, v in pruned.items())
+            print(f"  🧹 Orphelins purgés : {detail}")
+    except Exception as e:
+        print(f"  ⚠  purge des orphelins ratée : {e}")
 
     # 5. Copie récursive des exports (BibTeX, RIS, CSL JSON…) vers site/exports/
     exports_src = Path("exports")

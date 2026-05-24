@@ -259,6 +259,16 @@ def enrich(text: str, keywords: list[str], doc_title: str = "") -> dict:
     if not text or len(text) < 200:
         return {"error": "text_too_short_or_empty"}
 
+    # Garde-fou — un PDF scanné (sans couche texte) ressort de l'extraction
+    # comme une suite de marqueurs de pagination « [p.N] » sans contenu
+    # interstitiel. Sa longueur brute dépasse le seuil ci-dessus, mais Claude
+    # répondrait « document vide » en texte libre, cassant le json.loads.
+    # On mesure ici le vrai contenu, pagination retirée, et on abandonne
+    # proprement plutôt que de gaspiller un appel voué à l'échec.
+    _real_content = re.sub(r"\[p\.\d+\]", "", text).strip()
+    if len(_real_content) < 200:
+        return {"error": "text_too_short_or_empty"}
+
     keywords_block = "\n".join(f"  - {kw}" for kw in keywords)
 
     ontology_section = (
