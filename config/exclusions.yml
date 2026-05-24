@@ -1,0 +1,11 @@
+# Documents écartés de la publication par décision éditoriale.
+#
+# Ces documents restent dans le catalogue source (synopsis/catalog.json) — le
+# corpus reste exhaustif et transparent — mais ils ne sont publiés nulle part :
+# ni fiche pré-rendue, ni sitemap, ni flux RSS, ni catalogue public.
+#
+# Format : sous « exclusions: », une entrée « <doc_id>: "motif et date" ».
+# La décision est appliquée par _is_publishable() dans scripts/watch.py.
+
+exclusions:
+  a238e5bd: "Fiche trop maigre — jamais téléchargée, sans PDF ni synopsis, lien source mort, score 6 au seuil de publication. Décision Ced, 2026-05-24."

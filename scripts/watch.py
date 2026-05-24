@@ -746,12 +746,35 @@ def _is_ouvrage_doc(doc: dict) -> bool:
     return any(path.endswith("." + e) for e in OUVRAGE_EXTENSIONS)
 
 
+def _load_exclusions() -> set:
+    """IDs de documents écartés de la publication par décision éditoriale
+    (`config/exclusions.yml`). Le catalogue source reste exhaustif ; ces
+    documents ne sont simplement ni pré-rendus, ni au sitemap, ni aux flux,
+    ni dans le catalogue publié.
+    """
+    path = Path("config") / "exclusions.yml"
+    if not path.exists():
+        return set()
+    try:
+        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        return set((data.get("exclusions") or {}).keys())
+    except Exception as e:
+        print(f"  ⚠  exclusions.yml illisible : {e}")
+        return set()
+
+
+_EXCLUSIONS = _load_exclusions()
+
+
 def _is_publishable(doc: dict) -> bool:
     """True si le doc doit apparaître dans RSS / sitemap / fiches pré-rendues.
 
-    Deux conditions : score effectif suffisant ET ouvrage dans un format
-    ouvert (jamais un article HTML — bibliothèque, pas revue de presse).
+    Trois conditions : non écarté par décision éditoriale (exclusions.yml),
+    score effectif suffisant, ET ouvrage dans un format ouvert (jamais un
+    article HTML — bibliothèque, pas revue de presse).
     """
+    if doc.get("id") in _EXCLUSIONS:
+        return False
     return _is_ouvrage_doc(doc) and _effective_score(doc) >= PUBLISH_THRESHOLD
 
 
@@ -978,11 +1001,23 @@ def publish_site(run_date: str) -> None:
         print("  ⚠  site/ inexistant — skip publish")
         return
 
-    # 1. Catalog
+    # 1. Catalog — le catalogue publié est le catalogue source MOINS les
+    # documents écartés par décision éditoriale (config/exclusions.yml). Ces
+    # documents ne doivent apparaître nulle part côté public — ni listing, ni
+    # recherche, ni fiche. Le catalogue source reste, lui, exhaustif.
     catalog_src = SYNOPSIS_PATH / "catalog.json"
     if catalog_src.exists():
         (SITE_PATH / "data").mkdir(parents=True, exist_ok=True)
-        shutil.copy2(catalog_src, SITE_PATH / "data" / "catalog.json")
+        site_catalog = SITE_PATH / "data" / "catalog.json"
+        if _EXCLUSIONS:
+            _cat = json.loads(catalog_src.read_text(encoding="utf-8"))
+            _cat["docs"] = {i: d for i, d in _cat.get("docs", {}).items()
+                            if i not in _EXCLUSIONS}
+            site_catalog.write_text(
+                json.dumps(_cat, ensure_ascii=False, indent=1),
+                encoding="utf-8")
+        else:
+            shutil.copy2(catalog_src, site_catalog)
 
     # 1bis. Index full-text + JSON éditoriaux (recherche, dossiers, stats…)
     for name in ("fulltext_index.json", "dossiers.json", "featured.json",
