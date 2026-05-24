@@ -184,7 +184,12 @@ def check_catalog(catalog_path: Path = CATALOG_PATH, limit: int | None = None,
             except Exception:
                 status = "unchecked"
             doc["link_status"] = status
-            doc["link_checked"] = now
+            # On n'horodate que les résultats définitifs (ok / dead). Un
+            # statut « unchecked » (timeout, 5xx, 429 — souvent transitoire)
+            # reste sans date `link_checked` : le doc redevient éligible dès
+            # le prochain run au lieu d'attendre RECHECK_AFTER_DAYS.
+            if status != "unchecked":
+                doc["link_checked"] = now
             stats["checked"] += 1
             stats[status] = stats.get(status, 0) + 1
 
