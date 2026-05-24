@@ -1,12 +1,12 @@
-last_updated: '2026-05-23T13:59:58+00:00'
-total_candidates: 1361
+last_updated: '2026-05-24T16:21:09+00:00'
+total_candidates: 1365
 candidates:
 - url: http://infokiosques.net/mauvaises_intentions
   type: footnote
   domain: infokiosques.net
   first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 36
+  last_seen: '2026-05-24'
+  seen_count: 40
   suggested_action: follow_one_time
   notes: ''
   found_from:
@@ -238,8 +238,8 @@ candidates:
   type: footnote
   domain: joseph.dejacque.free.fr
   first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 18
+  last_seen: '2026-05-24'
+  seen_count: 20
   suggested_action: follow_one_time
   notes: ''
   found_from:
@@ -397,6 +397,27 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://cookiedatabase.org/tcf/purposes/
+  type: external_link
+  domain: cookiedatabase.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 13
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Leer más sobre estos propósitos
+    page: null
 - url: https://bsky.app/search?q=%23Agro%C3%A9cologie
   type: mastodon
   found_from:
@@ -465,27 +486,150 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://cookiedatabase.org/tcf/purposes/
-  type: external_link
-  domain: cookiedatabase.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
+- url: http://infokiosques.net/spip.php?article101
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
   seen_count: 10
   suggested_action: follow_one_time
   notes: ''
   found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: Leer más sobre estos propósitos
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: Leer más sobre estos propósitos
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: Leer más sobre estos propósitos
-    page: null
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Leer más sobre estos propósitos
-    page: null
+  - doc_id: 1fadbb5d
+    context: 2000 - http://infokiosques.net/spip.php?article101
+    page: 2
+- url: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
+  type: footnote
+  domain: agriculture.gouv.fr
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
+    page: 18
+- url: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
+  type: footnote
+  domain: attaque.noblogs.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
+    page: 4
+- url: https://attaque.noblogs.org/post/2025/01/11/etupes-doubs-ras-le-bol-des-
+  type: footnote
+  domain: attaque.noblogs.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://attaque.noblogs.org/post/2025/01/11/etupes-doubs-ras-le-bol-des-
+    page: 18
+- url: https://attaque.noblogs.org/post/2025/10/26/barraux-isere-lueur-sous-le-
+  type: footnote
+  domain: attaque.noblogs.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://attaque.noblogs.org/post/2025/10/26/barraux-isere-lueur-sous-le-
+    page: 2
+- url: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
+  type: footnote
+  domain: fichiers-publics.agriculture.gouv.fr
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
+    page: 6
+- url: https://infokiosques.net/spip.php?article1037
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article1037
+    page: 6
+- url: https://infokiosques.net/spip.php?article1767
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article1767
+    page: 11
+- url: https://infokiosques.net/spip.php?article1814
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article1814
+    page: 18
+- url: https://infokiosques.net/spip.php?article1975
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article1975
+    page: 7
+- url: https://infokiosques.net/spip.php?article2019
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article2019
+    page: 9
+- url: https://infokiosques.net/spip.php?article2118
+  type: footnote
+  domain: infokiosques.net
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://infokiosques.net/spip.php?article2118
+    page: 6
 - url: https://infokiosques.net/zanzara
   type: footnote
   domain: infokiosques.net
@@ -525,66 +669,186 @@ candidates:
   - doc_id: f2168aa7
     context: '[https://infokiosques.net/zanzara]'
     page: 2
-- url: http://infokiosques.net/spip.php?article101
+- url: https://lille.indymedia.org/spip.php?article31839&lang=fr
   type: footnote
-  domain: infokiosques.net
+  domain: lille.indymedia.org
   first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
+  last_seen: '2026-05-24'
+  seen_count: 10
   suggested_action: follow_one_time
   notes: ''
   found_from:
-  - doc_id: 1fadbb5d
-    context: 2000 - http://infokiosques.net/spip.php?article101
+  - doc_id: 682f226c
+    context: https://lille.indymedia.org/spip.php?article31839&lang=fr
+    page: 16
+- url: https://opensanctuary.org/guide-des-soins-aux-cochons/
+  type: footnote
+  domain: opensanctuary.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: 'sanctuary : https://opensanctuary.org/guide-des-soins-aux-cochons/'
+    page: 10
+- url: https://rajcollective.noblogs.org/
+  type: footnote
+  domain: rajcollective.noblogs.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://rajcollective.noblogs.org/)
+    page: 12
+- url: https://renverse.co/infos-locales/Un-an-apres-le-sabotage-de-l-abattoir-de-
+  type: footnote
+  domain: renverse.co
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: https://renverse.co/infos-locales/Un-an-apres-le-sabotage-de-l-abattoir-de-
+    page: 16
+- url: https://services.autistici.org/
+  type: footnote
+  domain: services.autistici.org
+  first_seen: '2026-05-17'
+  last_seen: '2026-05-24'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 682f226c
+    context: 'ici : https://services.autistici.org/ (en anglais)'
     page: 2
-- url: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
+- url: https://sunders.uber.space/
   type: footnote
-  domain: agriculture.gouv.fr
+  domain: sunders.uber.space
   first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
+  last_seen: '2026-05-24'
+  seen_count: 10
   suggested_action: follow_one_time
   notes: ''
   found_from:
   - doc_id: 682f226c
-    context: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
-    page: 18
-- url: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
+    context: 'dans la zone (attention : toutes ne le sont pas!) : https://sunders.uber.space/'
+    page: 13
+- url: https://unoffensiveanimal.is/
   type: footnote
-  domain: attaque.noblogs.org
+  domain: unoffensiveanimal.is
   first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
+  last_seen: '2026-05-24'
+  seen_count: 10
   suggested_action: follow_one_time
   notes: ''
   found_from:
   - doc_id: 682f226c
-    context: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
-    page: 4
-- url: https://attaque.noblogs.org/post/2025/01/11/etupes-doubs-ras-le-bol-des-
+    context: 'Un tuto (trouvé sur le site : https://unoffensiveanimal.is/)'
+    page: 16
+- url: https://unoffensiveanimal.is/prisoner-support/
   type: footnote
-  domain: attaque.noblogs.org
+  domain: unoffensiveanimal.is
   first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
+  last_seen: '2026-05-24'
+  seen_count: 10
   suggested_action: follow_one_time
   notes: ''
   found_from:
   - doc_id: 682f226c
-    context: https://attaque.noblogs.org/post/2025/01/11/etupes-doubs-ras-le-bol-des-
-    page: 18
-- url: https://attaque.noblogs.org/post/2025/10/26/barraux-isere-lueur-sous-le-
+    context: https://unoffensiveanimal.is/prisoner-support/
+    page: 12
+- url: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
   type: footnote
-  domain: attaque.noblogs.org
+  domain: www.20minutes.fr
   first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
+  last_seen: '2026-05-24'
+  seen_count: 10
   suggested_action: follow_one_time
   notes: ''
   found_from:
   - doc_id: 682f226c
-    context: https://attaque.noblogs.org/post/2025/10/26/barraux-isere-lueur-sous-le-
-    page: 2
+    context: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
+    page: 6
+- url: http://www.foei.org/es/
+  type: external_link
+  domain: www.foei.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: http://www.youtube.com/user/AmigosdelaTierra
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: https://alargascencia.org/es/
+  type: external_link
+  domain: alargascencia.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: https://bsky.app/profile/amigasdelatierra.bsky.social
+  type: external_link
+  domain: bsky.app
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
 - url: https://bsky.app/search?q=%23Souverainet%C3%A9Alimentaire
   type: mastodon
   found_from:
@@ -638,198 +902,96 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
-  type: footnote
-  domain: fichiers-publics.agriculture.gouv.fr
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
+- url: https://maps.google.com/?q=C/+Bustos,+2,+28038,+Madrid&entry=gmail&source=g
+  type: external_link
+  domain: maps.google.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
   seen_count: 9
   suggested_action: follow_one_time
   notes: ''
   found_from:
-  - doc_id: 682f226c
-    context: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
-    page: 6
-- url: https://infokiosques.net/spip.php?article1037
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: C/ Bustos, 2, 28038, Madrid
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: C/ Bustos, 2, 28038, Madrid
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: C/ Bustos, 2, 28038, Madrid
+    page: null
+- url: https://www.facebook.com/AmigasdelaTierraEsp
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
   seen_count: 9
   suggested_action: follow_one_time
   notes: ''
   found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article1037
-    page: 6
-- url: https://infokiosques.net/spip.php?article1767
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: https://www.flickr.com/photos/60108073@N02/albums
+  type: external_link
+  domain: www.flickr.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
   seen_count: 9
   suggested_action: follow_one_time
   notes: ''
   found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article1767
-    page: 11
-- url: https://infokiosques.net/spip.php?article1814
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: https://www.foeeurope.org/
+  type: external_link
+  domain: www.foeeurope.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
   seen_count: 9
   suggested_action: follow_one_time
   notes: ''
   found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article1814
-    page: 18
-- url: https://infokiosques.net/spip.php?article1975
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: https://www.instagram.com/amigasdelatierra_esp/
+  type: external_link
+  domain: www.instagram.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
   seen_count: 9
   suggested_action: follow_one_time
   notes: ''
   found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article1975
-    page: 7
-- url: https://infokiosques.net/spip.php?article2019
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article2019
-    page: 9
-- url: https://infokiosques.net/spip.php?article2118
-  type: footnote
-  domain: infokiosques.net
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://infokiosques.net/spip.php?article2118
-    page: 6
-- url: https://lille.indymedia.org/spip.php?article31839&lang=fr
-  type: footnote
-  domain: lille.indymedia.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://lille.indymedia.org/spip.php?article31839&lang=fr
-    page: 16
-- url: https://opensanctuary.org/guide-des-soins-aux-cochons/
-  type: footnote
-  domain: opensanctuary.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: 'sanctuary : https://opensanctuary.org/guide-des-soins-aux-cochons/'
-    page: 10
-- url: https://rajcollective.noblogs.org/
-  type: footnote
-  domain: rajcollective.noblogs.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://rajcollective.noblogs.org/)
-    page: 12
-- url: https://renverse.co/infos-locales/Un-an-apres-le-sabotage-de-l-abattoir-de-
-  type: footnote
-  domain: renverse.co
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://renverse.co/infos-locales/Un-an-apres-le-sabotage-de-l-abattoir-de-
-    page: 16
-- url: https://services.autistici.org/
-  type: footnote
-  domain: services.autistici.org
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: 'ici : https://services.autistici.org/ (en anglais)'
-    page: 2
-- url: https://sunders.uber.space/
-  type: footnote
-  domain: sunders.uber.space
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: 'dans la zone (attention : toutes ne le sont pas!) : https://sunders.uber.space/'
-    page: 13
-- url: https://unoffensiveanimal.is/
-  type: footnote
-  domain: unoffensiveanimal.is
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: 'Un tuto (trouvé sur le site : https://unoffensiveanimal.is/)'
-    page: 16
-- url: https://unoffensiveanimal.is/prisoner-support/
-  type: footnote
-  domain: unoffensiveanimal.is
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://unoffensiveanimal.is/prisoner-support/
-    page: 12
-- url: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
-  type: footnote
-  domain: www.20minutes.fr
-  first_seen: '2026-05-17'
-  last_seen: '2026-05-23'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 682f226c
-    context: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
-    page: 6
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
 - url: https://www.twitch.tv/oamgui
   type: mastodon
   found_from:
@@ -1237,24 +1399,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: http://www.foei.org/es/
-  type: external_link
-  domain: www.foei.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
 - url: http://www.greencampus.de
   type: external_link
   domain: www.greencampus.de
@@ -1276,24 +1420,6 @@ candidates:
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: GreenCampus Weiterbildung
     page: null
-- url: http://www.youtube.com/user/AmigosdelaTierra
-  type: external_link
-  domain: www.youtube.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
 - url: https://al.boell.org/
   type: external_link
   domain: al.boell.org
@@ -1314,24 +1440,6 @@ candidates:
     page: null
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Büro Tirana - Albanien
-    page: null
-- url: https://alargascencia.org/es/
-  type: external_link
-  domain: alargascencia.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
     page: null
 - url: https://ar.boell.org
   type: external_link
@@ -1374,24 +1482,6 @@ candidates:
     page: null
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Büro Sarajevo - Bosnien und Herzegowina, Republik Nord-Mazedonien
-    page: null
-- url: https://bsky.app/profile/amigasdelatierra.bsky.social
-  type: external_link
-  domain: bsky.app
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
     page: null
 - url: https://bsky.app/profile/boell.de
   type: external_link
@@ -1791,24 +1881,6 @@ candidates:
     page: null
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Büro Rabat - Marokko
-    page: null
-- url: https://maps.google.com/?q=C/+Bustos,+2,+28038,+Madrid&entry=gmail&source=g
-  type: external_link
-  domain: maps.google.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: C/ Bustos, 2, 28038, Madrid
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: C/ Bustos, 2, 28038, Madrid
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: C/ Bustos, 2, 28038, Madrid
     page: null
 - url: https://mastodon.green/@boell@gruene.social
   type: external_link
@@ -2356,24 +2428,6 @@ candidates:
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Thüringen
     page: null
-- url: https://www.facebook.com/AmigasdelaTierraEsp
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
 - url: https://www.facebook.com/boellstiftung
   type: external_link
   domain: www.facebook.com
@@ -2395,24 +2449,6 @@ candidates:
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Facebook
     page: null
-- url: https://www.flickr.com/photos/60108073@N02/albums
-  type: external_link
-  domain: www.flickr.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
 - url: https://www.flickr.com/photos/boellstiftung/sets/
   type: external_link
   domain: www.flickr.com
@@ -2433,24 +2469,6 @@ candidates:
     page: null
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Flickr
-    page: null
-- url: https://www.foeeurope.org/
-  type: external_link
-  domain: www.foeeurope.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
     page: null
 - url: https://www.gruene-bundestag.de
   type: external_link
@@ -2514,24 +2532,6 @@ candidates:
     page: null
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Bündnis 90 / Die Grünen
-    page: null
-- url: https://www.instagram.com/amigasdelatierra_esp/
-  type: external_link
-  domain: www.instagram.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
     page: null
 - url: https://www.instagram.com/boellstiftung
   type: external_link
@@ -4291,6 +4291,18 @@ candidates:
     year: 2008
     doi: ''
   suggested_action: follow_one_time
+- url: http://info.nodo50.org/
+  type: external_link
+  domain: info.nodo50.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Nodo50
+    page: null
 - url: http://journals.openedition.org/abpo/pdf/508
   type: openalex
   found_from:
@@ -4869,6 +4881,30 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F&title=Land+of+the+Free%2C+Home+of+the+Bootleggers
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: LinkedIn
+    page: null
+- url: http://www.nemetoncoalition.org
+  type: external_link
+  domain: www.nemetoncoalition.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Troisièmes Voix — éditions
+    context: Le projet Nemeton
+    page: null
 - url: http://www.redalyc.org/articulo.oa?id=40326162002
   type: openalex
   found_from:
@@ -5060,6 +5096,30 @@ candidates:
   - doc_id: Infokiosques.net — Squat (rapport à l'habiter)
     context: · sur le site web
     page: null
+- url: https://about.jstor.org/accessibility/
+  type: external_link
+  domain: about.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Accessibility
+    page: null
+- url: https://acervomst.org.br/
+  type: external_link
+  domain: acervomst.org.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: Acervo MST
+    page: null
 - url: https://ageconsearch.umn.edu/record/251805/files/Zerihun%20Gudeta_Usufruct%20Rights%20in%20Land.pdf
   type: openalex
   found_from:
@@ -5124,6 +5184,18 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://amigosenff.org.br/
+  type: external_link
+  domain: amigosenff.org.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://anct.gouv.fr/
   type: mastodon
   found_from:
@@ -5176,6 +5248,30 @@ candidates:
   - doc_id: dfbd677b
     context: 20 https://api.nfp-energie.ch/api/fr/export_service/project_export?id=960&class=Project . 1 TWh c’est
     page: 14
+- url: https://api.whatsapp.com/send?text=Land+of+the+Free%2C+Home+of+the+Bootleggers https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
+  type: external_link
+  domain: api.whatsapp.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: WhatsApp
+    page: null
+- url: https://armazemdocampo.com.br/
+  type: external_link
+  domain: armazemdocampo.com.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: PRODUTOS DO MST
+    page: null
 - url: https://baidc.revistas.deusto.es/article/download/1775/2329
   type: openalex
   found_from:
@@ -5433,6 +5529,18 @@ candidates:
     year: 1999
     doi: 10.4000/books.sdo.1052
   suggested_action: follow_one_time
+- url: https://brasildefato.com.br/
+  type: external_link
+  domain: brasildefato.com.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://brill.com/downloadpdf/journals/bjgs/2/1/article-p1_15.pdf
   type: openalex
   found_from:
@@ -5476,6 +5584,30 @@ candidates:
     genre: journal-article
     html_url: https://brill.com/downloadpdf/journals/bjgs/2/1/article-p1_15.pdf
     source: unpaywall
+- url: https://bsky.app/intent/compose?text=Land+of+the+Free%2C+Home+of+the+Bootleggers%0Ahttps%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
+  type: external_link
+  domain: bsky.app
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: BlueSky
+    page: null
+- url: https://bsky.app/profile/crimethinc.com
+  type: external_link
+  domain: bsky.app
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Crimethinc. on Bluesky
+    page: null
 - url: https://bsky.app/profile/did:plc:ufw5v3n73rlt7e6aaknytv6u/post/3meeq6z4xk72u
   type: mastodon
   found_from:
@@ -5902,6 +6034,42 @@ candidates:
     genre: journal-article
     html_url: https://content.sciendo.com/downloadpdf/journals/foli/18/1/article-p7.pdf
     source: unpaywall
+- url: https://creativecommons.org/licenses/by-nc/4.0/deed.es
+  type: external_link
+  domain: creativecommons.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Creative Commons
+    page: null
+- url: https://crimethinc.bandcamp.com
+  type: external_link
+  domain: crimethinc.bandcamp.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Bandcamp
+    page: null
+- url: https://crimethinc.tumblr.com
+  type: external_link
+  domain: crimethinc.tumblr.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Tumblr
+    page: null
 - url: https://cu86s.r.a.d.sendibm1.com/mk/mr/sh/SMJz09SDriOHUOKbz7NFUJjdggkh/MWxNyH6Kgbnf
   type: mastodon
   found_from:
@@ -7069,6 +7237,30 @@ candidates:
     genre: dissertation
     html_url: https://edepot.wur.nl/16348
     source: unpaywall
+- url: https://facebook.com/MovimentoSemTerra/
+  type: external_link
+  domain: facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://facebook.com/To-Change-Everything-103734818122357
+  type: external_link
+  domain: facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Crimethinc. on Facebook
+    page: null
 - url: https://fe.disroot.org/tag/anarchismus
   type: mastodon
   found_from:
@@ -7653,6 +7845,18 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://feeds.feedburner.com/portaloaca
+  type: external_link
+  domain: feeds.feedburner.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Feed RSS
+    page: null
 - url: https://fr.wikipedia.org/wiki/Conversion_d%27%C3%A9lectricit%C3%A9_en_gaz
   type: footnote
   domain: fr.wikipedia.org
@@ -7811,6 +8015,18 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://github.com/crimethinc
+  type: external_link
+  domain: github.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Github
+    page: null
 - url: https://grenoble.ninja/
   type: mastodon
   found_from:
@@ -8263,6 +8479,18 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://instagram.com/crimethincredux
+  type: external_link
+  domain: instagram.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Crimethinc. on Instagram
+    page: null
 - url: https://iopscience.iop.org/article/10.1088/1748-9326/abfb2f
   type: footnote
   domain: iopscience.iop.org
@@ -8622,6 +8850,18 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://kolektiva.media/a/crimethinc
+  type: external_link
+  domain: kolektiva.media
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Peertube
+    page: null
 - url: https://ladernierelettre.fr/brochure/ah-ca-inra-ca-inra/
   type: external_link
   domain: ladernierelettre.fr
@@ -8877,6 +9117,18 @@ candidates:
     genre: book-chapter
     html_url: https://link.springer.com/content/pdf/10.1007%2F978-3-030-28014-7_6.pdf
     source: unpaywall
+- url: https://lite.crimethinc.com/library
+  type: external_link
+  domain: lite.crimethinc.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Switch to the lite version of the site →
+    page: null
 - url: https://lstu.fr/composermondes
   type: mastodon
   found_from:
@@ -8907,6 +9159,145 @@ candidates:
   metadata:
     hashtag: ZAD
     instance: mamot.fr
+  suggested_action: follow_one_time
+- url: https://lundi.am/Ben-Morea-In-Memoriam
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Ben Morea, In Memoriam — « On est les freaks d'un espace-temps inconnu On est le système nerveux de la révolution
+      » - 18 mai / Avec une grosse photo en haut , Histoire , 4
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Ben Morea, In Memoriam
+  suggested_action: follow_one_time
+- url: https://lundi.am/Cloaca-Maxima
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Cloaca Maxima — « Il faut faire ressurgir le souterrain périlleux de l'expérience révolutionnaire » [Ruines]
+      - 18 mai / Avec une grosse photo en haut , Positions , 2
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Cloaca Maxima
+  suggested_action: follow_one_time
+- url: https://lundi.am/Des-milliers-de-deplace-es-et-plusieurs-morts-dans-le-Guerrero
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Des milliers de déplacé.es et plusieurs morts dans le Guerrero — La guerre contre les peuples originaires se
+      poursuit au Mexique - 18 mai / International , 2 , Avec une grosse photo en haut
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Des milliers de déplacé.es et plusieurs morts dans le Guerrero
+  suggested_action: follow_one_time
+- url: https://lundi.am/Du-progres-a-l-illusion-groupale
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Du progrès à l'illusion groupale — De Moulinex à Facebook Jean-Luc Debry - 18 mai / Avec une grosse photo en
+      haut , Positions , 2
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Du progrès à l'illusion groupale
+  suggested_action: follow_one_time
+- url: https://lundi.am/L-innommable
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: L'innommable — « Bousiller le matos de l'ennemi » - 18 mai / Avec une grosse photo en haut , 4 , Littérature
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-24'
+  metadata:
+    title: L'innommable
+  suggested_action: follow_one_time
+- url: https://lundi.am/Le-cinema-est-cerne-7536
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Le cinéma est cerné — « Bolloré est désormais présent à toutes les strates qui rendent possible l'existence du
+      cinéma français » - 18 mai / Avec une grosse photo en haut , Positions , 2
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Le cinéma est cerné
+  suggested_action: follow_one_time
+- url: https://lundi.am/Red-flag
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Red flag — « Pourquoi toute cette glu de silence et de mensonge ? » Leïla Chaix - 18 mai / Avec une grosse photo
+      en haut , Littérature , Leïla Chaix , 2
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Red flag
+  suggested_action: follow_one_time
+- url: https://lundi.am/Reflexions-sur-l-anarchie-et-la-revolution
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Réflexions sur l'anarchie et la révolution — Un lundisoir avec Maria Kakogianni autour de son livre Sous le ciel
+      étoilé, une nuit d'été - 18 mai / Avec une grosse photo en haut , Positions , 2 , lundisoir
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Réflexions sur l'anarchie et la révolution
+  suggested_action: follow_one_time
+- url: https://lundi.am/Socialisme-ou-Barbarie-au-tournant-des-annees-1960
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Socialisme ou Barbarie au tournant des années 1960 — L'aventure d'un groupe révolutionnaire - 18 mai / Avec une
+      grosse photo en haut , Histoire , 2
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Socialisme ou Barbarie au tournant des années 1960
+  suggested_action: follow_one_time
+- url: https://lundi.am/Zakariyya-Seddaoui-a-bout-de-souffle
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Zakariyya Seddaoui, à bout de souffle — Police, seuils et vies irrespirables dans le Pas-de-Calais Sylvain George
+      - 18 mai / Avec une grosse photo en haut , Terreur , 2
+    timestamp: '2026-05-19T17:02:10'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-05-19'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Zakariyya Seddaoui, à bout de souffle
   suggested_action: follow_one_time
 - url: https://marsactu.fr/bref/artificialisation-de-terres-fertiles-a-pertuis-larrete-du-prefet-annule-en-appel
   type: mastodon
@@ -9032,6 +9423,18 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://nosplantamos.org/encuentros
+  type: external_link
+  domain: nosplantamos.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: Nos Plantamos
+    page: null
 - url: https://ojs.ehu.eus/index.php/gezki/article/download/12737/11537
   type: openalex
   found_from:
@@ -9808,6 +10211,30 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://reddit.com/r/CrimethInc
+  type: external_link
+  domain: reddit.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Reddit
+    page: null
+- url: https://reddit.com/submit?url=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F&title=Land+of+the+Free%2C+Home+of+the+Bootleggers
+  type: external_link
+  domain: reddit.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Reddit
+    page: null
 - url: https://renverse.co/analyses/article/le-naufrage-
   type: footnote
   domain: renverse.co
@@ -11190,6 +11617,18 @@ candidates:
   - doc_id: dfbd677b
     context: 'source: https://stop-pillage.ch'
     page: 15
+- url: https://substack.com/@troisiemesvoix
+  type: external_link
+  domain: substack.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Troisièmes Voix — éditions
+    context: Suivez nos actualités sur Substack !
+    page: null
 - url: https://t.co/SoKCzolnWL
   type: external_link
   domain: t.co
@@ -11219,6 +11658,18 @@ candidates:
     page: null
   - doc_id: CLACSO — Libros en coedición
     context: https://t.co/syZfh9sp8J
+    page: null
+- url: https://t.me/ExWorkers
+  type: external_link
+  domain: t.me
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Telegram
     page: null
 - url: https://theatre.univ-montp3.fr/spectacle/2025-2026/non-lieu
   type: mastodon
@@ -11311,6 +11762,42 @@ candidates:
     year: 1990
     doi: ''
   suggested_action: follow_one_time
+- url: https://tiktok.com/@crimethinc
+  type: external_link
+  domain: tiktok.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Crimethinc. on TikTok
+    page: null
+- url: https://todon.eu/@CrimethInc
+  type: external_link
+  domain: todon.eu
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Mastodon
+    page: null
+- url: https://twitter.com/MST_Oficial/
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://twitter.com/_CLACSO/status/1426227450632155137?ref_src=twsrc%5Etfw
   type: external_link
   domain: twitter.com
@@ -11325,6 +11812,18 @@ candidates:
     page: null
   - doc_id: CLACSO — Libros en coedición
     context: August 13, 2021
+    page: null
+- url: https://twitter.com/portaloaca
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: X
     page: null
 - url: https://u-paris.zoom.us/j/81194416190?pwd=bhFczuugmaxBUZYppa8nwNWWcocYrg.1
   type: mastodon
@@ -11400,6 +11899,18 @@ candidates:
     genre: journal-article
     html_url: https://utoronto.scholaris.ca/bitstreams/294604f5-9492-4098-986f-192c845c30a9/download
     source: unpaywall
+- url: https://viacampesina.org/en/
+  type: external_link
+  domain: viacampesina.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://video.antopie.org/w/qPMxudwXWyTfXRgvCVtSwB
   type: mastodon
   found_from:
@@ -11624,6 +12135,18 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.blacked-out-ingredients.eu/es/start/
+  type: external_link
+  domain: www.blacked-out-ingredients.eu
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: blackout ingredientes
+    page: null
 - url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=ESP_158_0049&download=1
   type: openalex
   found_from:
@@ -11900,6 +12423,18 @@ candidates:
   - doc_id: dfbd677b
     context: 35 https://www.ecosources.org/step-station-transfert-energie-pompage-turbinage ;
     page: 21
+- url: https://www.eldiario.es/sociedad/aemet-avisa-jueves-repunta-ola-calor-lunes_1_12530020.html
+  type: external_link
+  domain: www.eldiario.es
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org — Biodiversidad
+    context: La AEMET confirma que la ola de calor se extenderá unos días más
+    page: null
 - url: https://www.erudit.org/fr/revues/eue/2012-v6-eue0411/1013709ar.pdf
   type: openalex
   found_from:
@@ -11986,6 +12521,42 @@ candidates:
     genre: journal-article
     html_url: https://www.erudit.org/fr/revues/pa/2017-n31-pa04751/1062006ar.pdf
     source: unpaywall
+- url: https://www.facebook.com/portaloaca
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Facebook
+    page: null
+- url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Facebook
+    page: null
+- url: https://www.getgrav.org
+  type: external_link
+  domain: www.getgrav.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Troisièmes Voix — éditions
+    context: Grav
+    page: null
 - url: https://www.helloasso.com/associations/l-epicerie-locale-favorisant-l-entraide/collectes/un-nouveau-car-a-vrac
   type: mastodon
   found_from:
@@ -12044,6 +12615,30 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.instagram.com/frentebrasilpopular?igsh=MWx2YTBsbXc2MGoxdw==
+  type: external_link
+  domain: www.instagram.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://www.instagram.com/movimentosemterra/
+  type: external_link
+  domain: www.instagram.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://www.instagram.com/p/CSha8G0HFoe/?utm_source=ig_embed&utm_campaign=loading
   type: external_link
   domain: www.instagram.com
@@ -12058,6 +12653,30 @@ candidates:
     page: null
   - doc_id: CLACSO — Libros en coedición
     context: Ver esta publicación en Instagram
+    page: null
+- url: https://www.ithaka.org/cookies
+  type: external_link
+  domain: www.ithaka.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Cookie Policy
+    page: null
+- url: https://www.ithaka.org/privacypolicy
+  type: external_link
+  domain: www.ithaka.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Privacy Policy
     page: null
 - url: https://www.jois.eu/files/17_838_Trojanek et al.pdf
   type: openalex
@@ -12145,6 +12764,54 @@ candidates:
     genre: journal-article
     html_url: https://www.jstage.jst.go.jp/article/jjhg1948/42/1/42_1_1/_pdf
     source: unpaywall
+- url: https://www.jstor.org
+  type: external_link
+  domain: www.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: lien depuis https://daily.jstor.org/topic/land/
+    page: null
+- url: https://www.jstor.org/
+  type: external_link
+  domain: www.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: JSTOR.org
+    page: null
+- url: https://www.jstor.org/action/jpass?lookupKey=SlBBU1MtSS1ZZWFy&discountCode=SlNUT1JEQUlMWTI1&utm_source=jstor_daily&utm_campaign=daily_newsletter_annual_25
+  type: external_link
+  domain: www.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: lien depuis https://daily.jstor.org/topic/land/
+    page: null
+- url: https://www.jstor.org/stable/26216197?mag=land-of-the-free-home-of-the-bootleggers
+  type: external_link
+  domain: www.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: as historian Alex Sayf Cummings explains
+    page: null
 - url: https://www.larampe-echirolles.fr/
   type: mastodon
   found_from:
@@ -13226,6 +13893,18 @@ candidates:
     genre: journal-article
     html_url: https://www.persee.fr/docAsPDF/carav_1147-6753_2002_num_79_1_1368.pdf
     source: unpaywall
+- url: https://www.redebrasilatual.com.br/
+  type: external_link
+  domain: www.redebrasilatual.com.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://www.scielo.br/j/ss/a/rPqVfvrWLcc6hS33rYSmbSd/?lang=es&format=pdf
   type: openalex
   found_from:
@@ -13536,6 +14215,30 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.threads.net/intent/post?text=Land+of+the+Free%2C+Home+of+the+Bootleggers%0Ahttps%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
+  type: external_link
+  domain: www.threads.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Threads
+    page: null
+- url: https://www.tvt.org.br/
+  type: external_link
+  domain: www.tvt.org.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://www.twitch.tv/SentierBattant?sr=a
   type: mastodon
   found_from:
@@ -13590,6 +14293,30 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.youtube.com/channel/UC3C5WLLfrDnNsMR7Z-46eug
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: Videoteca
+    page: null
+- url: https://www.youtube.com/user/videosmst
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
 - url: https://www.youtube.com/watch?v=_gVdi6sizeY
   type: mastodon
   found_from:
@@ -13652,6 +14379,18 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://youtube.com/@crimethincexworkerscollective
+  type: external_link
+  domain: youtube.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on YouTube
+    page: null
 - url: https://youtube.com/live/licQxBiw-dk?feature=share
   type: mastodon
   found_from:
@@ -13750,18 +14489,6 @@ candidates:
     year: 2021
     doi: 10.5281/zenodo.5511829
   suggested_action: follow_one_time
-- url: http://info.nodo50.org/
-  type: external_link
-  domain: info.nodo50.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Nodo50
-    page: null
 - url: http://journals.openedition.org/belgeo/pdf/21530
   type: openalex
   found_from:
@@ -13829,30 +14556,6 @@ candidates:
     year: 1995
     doi: ''
   suggested_action: follow_one_time
-- url: http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F&title=Land+of+the+Free%2C+Home+of+the+Bootleggers
-  type: external_link
-  domain: www.linkedin.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: LinkedIn
-    page: null
-- url: http://www.nemetoncoalition.org
-  type: external_link
-  domain: www.nemetoncoalition.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Troisièmes Voix — éditions
-    context: Le projet Nemeton
-    page: null
 - url: https://ConfederationPaysanne.fr
   type: mastodon
   found_from:
@@ -13879,30 +14582,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://about.jstor.org/accessibility/
-  type: external_link
-  domain: about.jstor.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: Accessibility
-    page: null
-- url: https://acervomst.org.br/
-  type: external_link
-  domain: acervomst.org.br
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: Acervo MST
-    page: null
 - url: https://agenda.arree.bzh/event/fest-noz-de-la-confederation-paysanne
   type: mastodon
   found_from:
@@ -13978,42 +14657,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://amigosenff.org.br/
-  type: external_link
-  domain: amigosenff.org.br
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
-- url: https://api.whatsapp.com/send?text=Land+of+the+Free%2C+Home+of+the+Bootleggers https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
-  type: external_link
-  domain: api.whatsapp.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: WhatsApp
-    page: null
-- url: https://armazemdocampo.com.br/
-  type: external_link
-  domain: armazemdocampo.com.br
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: PRODUTOS DO MST
-    page: null
 - url: https://basta.media/exporter-du-ble-pour-importer-des-pates-realite-derriere-balance-commerciale-agricole-France
   type: mastodon
   found_from:
@@ -14037,42 +14680,6 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://brasildefato.com.br/
-  type: external_link
-  domain: brasildefato.com.br
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
-- url: https://bsky.app/intent/compose?text=Land+of+the+Free%2C+Home+of+the+Bootleggers%0Ahttps%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
-  type: external_link
-  domain: bsky.app
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: BlueSky
-    page: null
-- url: https://bsky.app/profile/crimethinc.com
-  type: external_link
-  domain: bsky.app
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: Crimethinc. on Bluesky
-    page: null
 - url: https://bsky.app/profile/deputeeobono.bsky.social/post/3ma7aqv3byc2z
   type: mastodon
   found_from:
@@ -14727,42 +15334,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://creativecommons.org/licenses/by-nc/4.0/deed.es
-  type: external_link
-  domain: creativecommons.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Creative Commons
-    page: null
-- url: https://crimethinc.bandcamp.com
-  type: external_link
-  domain: crimethinc.bandcamp.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Bandcamp
-    page: null
-- url: https://crimethinc.tumblr.com
-  type: external_link
-  domain: crimethinc.tumblr.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Tumblr
-    page: null
 - url: https://da.van.ac/240-millions-brules-lia-agricole-secrase-sur-la-realite/
   type: mastodon
   found_from:
@@ -14938,54 +15509,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://facebook.com/MovimentoSemTerra/
-  type: external_link
-  domain: facebook.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
-- url: https://facebook.com/To-Change-Everything-103734818122357
-  type: external_link
-  domain: facebook.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: Crimethinc. on Facebook
-    page: null
-- url: https://feeds.feedburner.com/portaloaca
-  type: external_link
-  domain: feeds.feedburner.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Feed RSS
-    page: null
-- url: https://github.com/crimethinc
-  type: external_link
-  domain: github.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Github
-    page: null
 - url: https://gofund.me/d0cc0587
   type: mastodon
   found_from:
@@ -15166,18 +15689,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://instagram.com/crimethincredux
-  type: external_link
-  domain: instagram.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: Crimethinc. on Instagram
-    page: null
 - url: https://invidious.fdn.fr/watch?v=4y_b8Nizt4Q&amp;listen=1
   type: mastodon
   found_from:
@@ -15256,18 +15767,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://kolektiva.media/a/crimethinc
-  type: external_link
-  domain: kolektiva.media
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Peertube
-    page: null
 - url: https://lafonciereantidote.org/comment-ca-marche/notre-fonctionnement/
   type: footnote
   domain: lafonciereantidote.org
@@ -15450,157 +15949,6 @@ candidates:
   - doc_id: Infokiosques.net — nouveautés
     context: · sur le site web
     page: null
-- url: https://lite.crimethinc.com/library
-  type: external_link
-  domain: lite.crimethinc.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: Switch to the lite version of the site →
-    page: null
-- url: https://lundi.am/Ben-Morea-In-Memoriam
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Ben Morea, In Memoriam — « On est les freaks d'un espace-temps inconnu On est le système nerveux de la révolution
-      » - 18 mai / Avec une grosse photo en haut , Histoire , 4
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Ben Morea, In Memoriam
-  suggested_action: follow_one_time
-- url: https://lundi.am/Cloaca-Maxima
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Cloaca Maxima — « Il faut faire ressurgir le souterrain périlleux de l'expérience révolutionnaire » [Ruines]
-      - 18 mai / Avec une grosse photo en haut , Positions , 2
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Cloaca Maxima
-  suggested_action: follow_one_time
-- url: https://lundi.am/Des-milliers-de-deplace-es-et-plusieurs-morts-dans-le-Guerrero
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Des milliers de déplacé.es et plusieurs morts dans le Guerrero — La guerre contre les peuples originaires se
-      poursuit au Mexique - 18 mai / International , 2 , Avec une grosse photo en haut
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Des milliers de déplacé.es et plusieurs morts dans le Guerrero
-  suggested_action: follow_one_time
-- url: https://lundi.am/Du-progres-a-l-illusion-groupale
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Du progrès à l'illusion groupale — De Moulinex à Facebook Jean-Luc Debry - 18 mai / Avec une grosse photo en
-      haut , Positions , 2
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Du progrès à l'illusion groupale
-  suggested_action: follow_one_time
-- url: https://lundi.am/L-innommable
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: L'innommable — « Bousiller le matos de l'ennemi » - 18 mai / Avec une grosse photo en haut , 4 , Littérature
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-23'
-  metadata:
-    title: L'innommable
-  suggested_action: follow_one_time
-- url: https://lundi.am/Le-cinema-est-cerne-7536
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Le cinéma est cerné — « Bolloré est désormais présent à toutes les strates qui rendent possible l'existence du
-      cinéma français » - 18 mai / Avec une grosse photo en haut , Positions , 2
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Le cinéma est cerné
-  suggested_action: follow_one_time
-- url: https://lundi.am/Red-flag
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Red flag — « Pourquoi toute cette glu de silence et de mensonge ? » Leïla Chaix - 18 mai / Avec une grosse photo
-      en haut , Littérature , Leïla Chaix , 2
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Red flag
-  suggested_action: follow_one_time
-- url: https://lundi.am/Reflexions-sur-l-anarchie-et-la-revolution
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Réflexions sur l'anarchie et la révolution — Un lundisoir avec Maria Kakogianni autour de son livre Sous le ciel
-      étoilé, une nuit d'été - 18 mai / Avec une grosse photo en haut , Positions , 2 , lundisoir
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Réflexions sur l'anarchie et la révolution
-  suggested_action: follow_one_time
-- url: https://lundi.am/Socialisme-ou-Barbarie-au-tournant-des-annees-1960
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Socialisme ou Barbarie au tournant des années 1960 — L'aventure d'un groupe révolutionnaire - 18 mai / Avec une
-      grosse photo en haut , Histoire , 2
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Socialisme ou Barbarie au tournant des années 1960
-  suggested_action: follow_one_time
-- url: https://lundi.am/Zakariyya-Seddaoui-a-bout-de-souffle
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Zakariyya Seddaoui, à bout de souffle — Police, seuils et vies irrespirables dans le Pas-de-Calais Sylvain George
-      - 18 mai / Avec une grosse photo en haut , Terreur , 2
-    timestamp: '2026-05-19T17:02:10'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-05-19'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Zakariyya Seddaoui, à bout de souffle
-  suggested_action: follow_one_time
 - url: https://mailchi.mp/afsafrica.org/ma-semence-ma-vie-2026-clbrons-notre-hritage-en-cette-journe-internationale-des-semences
   type: mastodon
   found_from:
@@ -15870,18 +16218,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://nosplantamos.org/encuentros
-  type: external_link
-  domain: nosplantamos.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: Nos Plantamos
-    page: null
 - url: https://notrace.how/resources/read/culture-de-la-securite-et-planques.html
   type: external_link
   domain: notrace.how
@@ -16071,30 +16407,21 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://reddit.com/r/CrimethInc
-  type: external_link
-  domain: reddit.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
+- url: https://reporterre.net/30-000-euros-d-amende-et-prison-avec-sursis-pour-la-femme-qui-a-tue-un-lynx
+  type: rss
   found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Reddit
-    page: null
-- url: https://reddit.com/submit?url=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F&title=Land+of+the+Free%2C+Home+of+the+Bootleggers
-  type: external_link
-  domain: reddit.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 30 000 euros d'amende et prison avec sursis pour la femme qui a tué un lynx — La femme qui a tué un lynx en Alsace
+      a été condamnée à trois mois de prison avec sursis et 30 300 euros d'amende par le tribunal correctionnel de Strasbourg.
+      Cette habitante de Niederbronn-les-Bains (Bas-Rhin) âgée de 62 a
+    timestamp: '2026-05-22T23:13:28'
   seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 30 000 euros d'amende et prison avec sursis pour la femme qui a tué un lynx
   suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: Reddit
-    page: null
 - url: https://reporterre.net/A69-l-Autorite-environnementale-somme-le-concessionnaire-de-revoir-sa-copie
   type: rss
   found_from:
@@ -16125,6 +16452,51 @@ candidates:
   metadata:
     title: 'Accidents de la circulation : « Cessons de donner la priorité à la mobilité rapide »'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Arctique-le-changement-climatique-menace-l-heritage-archeologique
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Arctique : le changement climatique menace l''héritage archéologique — Le changement climatique ne menace pas
+      seulement notre avenir : il détruit aussi les traces du passé. Dans la région arctique, qui se réchauffe quatre fois
+      plus rapidement que la moyenne mondiale, la fonte du pergélisol, la montée'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Arctique : le changement climatique menace l''héritage archéologique'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Cela-me-fend-le-coeur-pour-proteger-une-fleur-rare-un-chatelain-se-dresse-contre-l-A69
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Cela me fend le cœur » : pour protéger une fleur rare, un châtelain se dresse contre l''A69 — Plusieurs associations
+      annoncent déposer plainte contre le concessionnaire de l''A69. Des travaux menés à proximité du château de Scopont sont
+      suspectés d''assécher les sources d''eau et de menacer une plante'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: '« Cela me fend le cœur » : pour protéger une fleur rare, un châtelain se dresse contre l''A69'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Chloe-interdite-de-Festival-de-Cannes-en-raison-de-son-engagement-ecolo
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Festival de Cannes : une salariée écartée à cause de son engagement écolo — En 2025, la préfecture a interdit
+      à Chloé, salariée du Festival de Cannes, d''exercer. Les syndicats dénoncent un fichage et de la discrimination politique
+      en raison de ses engagements écolo. Un an après, les remords ont lais'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Festival de Cannes : une salariée écartée à cause de son engagement écolo'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Coupe-du-monde-de-dangereuses-chaleurs-pourraient-menacer-la-sante-des-joueurs-et-des-spectateurs
   type: rss
   found_from:
@@ -16139,6 +16511,51 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Coupe du monde : de dangereuses chaleurs pourraient menacer la santé des joueurs et des spectateurs'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Courchevel-une-retenue-d-eau-pour-le-ski-menace-de-s-effondrer-sur-un-hameau
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Courchevel : une retenue d''eau pour le ski menace de s''effondrer sur un hameau — La retenue collinaire de
+      la Loze, à 2 270 mètres d''altitude au-dessus de Courchevel (Savoie), s''affaisse à une vitesse alarmante, a révélé
+      Le Monde samedi 16 mai. Construite en 2020 pour assurer l''enneigement artificiel'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Courchevel : une retenue d''eau pour le ski menace de s''effondrer sur un hameau'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Des-collectifs-poursuivent-l-Etat-dans-le-scandale-des-PFAS
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'PFAS : trois collectifs poursuivent l''État en justice — « Cesser le préjudice écologique » lié aux PFAS , et
+      réparer l''anxiété de riverains : c''est ce que demandent à l''État les collectifs Générations futures, Notre affaire
+      à tous et Bloom. Ils ont saisi le tribunal administratif de Paris « afin que'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'PFAS : trois collectifs poursuivent l''État en justice'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Des-dindes-maltraitees-vendues-sous-marque-Carrefour-montre-L214
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Des dindes maltraitées vendues sous marque Carrefour, montre une vidéo de L214 — Les images sont une fois de
+      plus insoutenables : des dindes et dindons sales, déplumés, blessés, morts. Après les lapins, les cailles, les cochons,
+      L214 publie une nouvelle enquête sur la maltraitance animale, cette foi'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Des dindes maltraitées vendues sous marque Carrefour, montre une vidéo de L214
   suggested_action: follow_one_time
 - url: https://reporterre.net/Des-navires-de-la-flottille-pour-Gaza-de-nouveau-illegalement-arretes-par-Israel
   type: rss
@@ -16155,6 +16572,36 @@ candidates:
   metadata:
     title: Des navires de la flottille pour Gaza de nouveau illégalement arrêtés par Israël
   suggested_action: follow_one_time
+- url: https://reporterre.net/Des-nouveaux-liens-entre-colorants-alimentaires-et-cancer
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Nourriture ultratransformée : les additifs augmentent le risque de cancers et autres maladies — La consommation
+      de certains colorants et conservateurs alimentaires entraînent une augmentation du risque de cancer, de diabète de type
+      2, de l''hypertension et des maladies cardiovasculaires. Voici ce que'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Nourriture ultratransformée : les additifs augmentent le risque de cancers et autres maladies'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Desinformation-climatique-les-Etats-Unis-et-la-Russie-visent-l-Europe
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Désinformation climatique : les États-Unis et la Russie visent l''Europe — La désinformation climatique n''est
+      pas une pratique nouvelle, mais elle se diversifie : aux acteurs historiques des énergies fossiles s''ajoutent maintenant
+      des acteurs de la Big Tech et, surtout, des acteurs étatiques, notamme'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Désinformation climatique : les États-Unis et la Russie visent l''Europe'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Fuite-de-tonnes-de-PFAS-terres-englouties-encore-un-enorme-data-center-polluant
   type: rss
   found_from:
@@ -16169,6 +16616,21 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Fuite de PFAS, terres englouties : un énorme data center inquiète'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Grande-distribution-Vendre-des-produits-sains-a-prix-coutant-c-est-possible
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Grande distribution : « Vendre des produits sains à prix coûtant, c''est possible » — Alors qu''un rapport sénatorial
+      montre comment la grande distribution profite des produits alimentaires, une coalition d''associations veut imposer
+      la vente d''un panier de 100 produits sains à prix coûtant. Les enseig'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Grande distribution : « Vendre des produits sains à prix coûtant, c''est possible »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Huiles-tisanes-bonbons-Le-CBD-a-usage-alimentaire-interdit-en-France
   type: rss
@@ -16185,6 +16647,66 @@ candidates:
   metadata:
     title: Huiles, tisanes, bonbons... Le CBD à usage alimentaire interdit en France
   suggested_action: follow_one_time
+- url: https://reporterre.net/L-ONU-adopte-une-resolution-pour-renforcer-la-responsabilite-climatique-des-Etats
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Climat : l''ONU adopte une résolution qui renforce les obligations des États — Dans un contexte international
+      chaotique où le climat n''est clairement pas la priorité, c''est une réelle avancée. L''Assemblée générale des Nations-Unis
+      a voté mercredi 20 mai une résolution sur la responsabilité climatique'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Climat : l''ONU adopte une résolution qui renforce les obligations des États'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Laits-contamines-les-entreprises-ont-beaucoup-tarde-a-avertir-les-autorites
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Laits contaminés : les entreprises ont beaucoup tardé à avertir les autorités — « Elles voulaient planquer l''information.
+      C''est une honte alors que de nombreux parents étaient désemparés face aux symptômes inquiétants de leurs nourrissons
+      contaminés. » L''association Foodwatch se dit particulièrement'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Laits contaminés : les entreprises ont beaucoup tardé à avertir les autorités'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-Conseil-constitutionnel-retablit-les-ZFE-et-le-zero-artificialisation-nette
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Le Conseil constitutionnel rétablit les ZFE et le zéro artificialisation nette — La loi dite de « simplification
+      de la vie économique » n'est pas sortie indemne de l'examen du Conseil constitutionnel. 25 articles, soit un tiers du
+      texte, ont été jugés hors sujet par les Sages, jeudi 21 mai. C'est en
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Le Conseil constitutionnel rétablit les ZFE et le zéro artificialisation nette
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-beton-est-le-materiau-le-plus-utilise-dans-le-monde-mais-personne-ne-sait-d-ou-vient-son-parpaing
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: « Le béton est le matériau le plus utilisé dans le monde mais personne ne sait d'où vient son parpaing » — Autrice
+      de « Désarmer le béton », l'architecte Léa Hobson aimerait voir advenir une « voix collective » pour s'opposer à ce
+      matériau néfaste, symbole du capitalisme extractif contemporain. D'au
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: « Le béton est le matériau le plus utilisé dans le monde mais personne ne sait d'où vient son parpaing »
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Le-declin-de-la-lavande-ouvre-la-voie-a-l-intensification-de-l-elevage-Des-poules-a-la
   type: rss
   found_from:
@@ -16199,6 +16721,21 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: En Provence, on arrache les lavandes pour élever des poules pondeuses
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-probleme-c-est-la-masse-le-surtourisme-abime-le-piton-de-la-Fournaise
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Le problème, c''est la masse » : le surtourisme abîme le piton de la Fournaise — À La Réunion, les deux éruptions
+      du piton de la Fournaise survenues en 2026 ont attiré de nombreux spectateurs. Mais la surfréquentation du site et les
+      comportements à risque mettent à mal une biodiversité déjà fragile'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: '« Le problème, c''est la masse » : le surtourisme abîme le piton de la Fournaise'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Les-derniers-cetaces-du-parc-Marineland-sur-le-point-d-etre-transferes-en-Espagne
   type: rss
@@ -16230,6 +16767,21 @@ candidates:
   metadata:
     title: 'Mégaporcherie : l''agro-industrie met « un pied » au cœur d''un parc naturel régional'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Ocean-les-emballages-alimentaires-sont-les-principaux-responsables-de-la-pollution
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Océan : les emballages alimentaires sont les principaux responsables de la pollution plastique — Les déchets
+      alimentaires sont les principaux responsables de la pollution plastique de l''océan, selon une étude inédite, publiée
+      le 20 mai dans la revue One Earth. C''est la première fois qu''une étude cla'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Océan : les emballages alimentaires sont les principaux responsables de la pollution plastique'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Offrir-des-houes-aux-managers-Je-propose-d-offrir-des-houes-aux-managers-L-utilisation-d
   type: rss
   found_from:
@@ -16244,6 +16796,21 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: « Je propose d'offrir des houes aux managers »
+  suggested_action: follow_one_time
+- url: https://reporterre.net/On-ne-devrait-pas-s-en-rejouir-une-vague-de-chaleur-anormale-va-toucher-la-France
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Une vague de chaleur anormale va toucher la France : « On ne devrait pas s''en réjouir » — Après quelques jours
+      relativement frais, des températures anormalement élevées vont toucher la France du 22 au 26 mai. Une conséquence du
+      changement climatique, qui pourrait entraîner de nouveaux records printa'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Une vague de chaleur anormale va toucher la France : « On ne devrait pas s''en réjouir »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Panneaux-solaires-la-pollution-des-centrales-a-charbon-diminue-leur-efficacite
   type: rss
@@ -16275,6 +16842,66 @@ candidates:
   metadata:
     title: Pour s'être suspendus à un pont, ces opposants à une déviation routière finiront au tribunal
   suggested_action: follow_one_time
+- url: https://reporterre.net/Pour-sauver-les-glaciers-tropicaux-la-lutte-s-organise-en-Colombie
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Pour sauver les glaciers tropicaux, la lutte s'organise en Colombie — En mars 2026, un glacier tropical a disparu
+      en Colombie. Sous la glace, les écosystèmes andins sont à leur tour menacés. Sur le terrain, scientifiques et communautés
+      locales tentent d'en préserver l'équilibre fragile. Paramo de Su
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Pour sauver les glaciers tropicaux, la lutte s'organise en Colombie
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Pourquoi-la-France-n-arrive-pas-a-fabriquer-plus-de-panneaux-solaires
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Pourquoi la France n'arrive pas à fabriquer davantage de panneaux solaires — Un énorme projet d'usine de fabrication
+      de panneaux solaires en France jette l'éponge après son placement en liquidation judiciaire. Son responsable blâme l'absence
+      de marché européen et des politiques publiques contreprodu
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Pourquoi la France n'arrive pas à fabriquer davantage de panneaux solaires
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Sans-l-Ademe-ces-six-projets-ecolos-n-auraient-pas-existe
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'À quoi sert l''Ademe, l''agence de la transition écologique ? — Nouvelle attaque contre l''Ademe : un projet
+      de loi propose de la fondre dans des services régionaux. Tour d''horizons de 6 initiatives écologiques, dans toute la
+      France, qui n''auraient pas vu le jour sans le soutien de l''agence. Un pas de '
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: À quoi sert l'Ademe, l'agence de la transition écologique ?
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Soirees-techno-et-huile-d-olive-une-ferme-engagee-menacee-de-fermeture
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Soirées techno et huile d''olive : une ferme engagée menacée de fermeture — Dans l''Hérault, un tiers-lieu agricole
+      propose des événements culturels et solidaires pour « créer du lien, de la mixité ». Las, cet « espace de liberté »
+      en lisière des institutions est menacé par une fermeture administrativ'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Soirées techno et huile d''olive : une ferme engagée menacée de fermeture'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Tapis-rouge-et-prix-vert-a-cote-de-Cannes-une-recompense-pour-les-films-ecoresponsables
   type: rss
   found_from:
@@ -16289,6 +16916,36 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Tapis rouge et prix vert : à côté de Cannes, une récompense pour les films écoresponsables'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Tout-le-monde-aurait-a-y-gagner-investir-dans-le-velo-est-aussi-bon-pour-la-Secu
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: En abandonnant le plan vélo, l'État a aussi sacrifié la santé — Améliorer la santé et faire des économies pour
+      la société, ce sont là les bénéfices de la marche et du vélo, selon la Fédération française des usagères et usagers
+      de la bicyclette. Mais les politiques publiques sont à la traîne. Marcher
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: En abandonnant le plan vélo, l'État a aussi sacrifié la santé
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Trump-supprime-les-restrictions-sur-de-puissants-gaz-a-effet-de-serre-utilises-dans-les
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Trump supprime les restrictions sur de puissants gaz à effet de serre utilisés dans les frigos — Le président
+      étasunien Donald Trump a annoncé hier être prêt à lever les restrictions sur une catégorie de gaz à effet de serre,
+      mises en place par son prédécesseur démocrate Joe Biden, en les qualifiant
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Trump supprime les restrictions sur de puissants gaz à effet de serre utilisés dans les frigos
   suggested_action: follow_one_time
 - url: https://reporterre.net/Un-geant-minier-condamne-a-verser-108-millions-de-dollars-a-un-peuple-aborigene
   type: rss
@@ -16305,6 +16962,21 @@ candidates:
   metadata:
     title: Un géant minier condamné à verser 108 millions de dollars à un peuple aborigène
   suggested_action: follow_one_time
+- url: https://reporterre.net/Un-nouveau-type-de-pesticide-genetique-debarque-en-Europe
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Un pesticide « génétique » interdit en Europe débarque... en Belgique — Avec 800 000 tonnes d'excédents de patates,
+      la Belgique avait-elle besoin d'une dérogation d'urgence pour un insecticide génétique ? Non, disent des associations,
+      qui s'inquiètent de ce produit pouvant rendre des gènes silencieu
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Un pesticide « génétique » interdit en Europe débarque... en Belgique
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Un-pesticide-identifie-comme-un-facteur-de-risque-des-cancers-colorectaux-precoces
   type: rss
   found_from:
@@ -16319,6 +16991,36 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Cancer colorectal chez les jeunes : un pesticide identifié comme facteur de risque'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Velo-un-usage-en-hausse-debut-2026-surtout-en-ruralite
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Vélo : un usage en hausse début 2026, surtout en ruralité — Selon le Réseau vélo et marche, l''usage du vélo
+      a progressé de 5 % sur les quatre premiers mois de 2026 par rapport à 2025. « Les chiffres révèlent un contraste saisissant
+      : +9 % dans les communes rurales et de densité intermédiaire, contre'
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Vélo : un usage en hausse début 2026, surtout en ruralité'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Zoos-humains-la-Guyane-va-recuperer-les-ossements-d-autochtones-detenus-par-des-musees
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: La Guyane va récupérer les ossements d'autochtones détenus par des musées parisiens — Les restes des autochtones
+      exhibés dans les zoos humains de la fin du XIX e siècle vont pouvoir retrouver leur terre natale, la Guyane, 134 ans
+      après leur mort. L'aboutissement d'une lutte qui révèle la difficile r
+    timestamp: '2026-05-22T23:13:28'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  metadata:
+    title: La Guyane va récupérer les ossements d'autochtones détenus par des musées parisiens
   suggested_action: follow_one_time
 - url: https://revistas.unal.edu.co/index.php/innovar/article/download/90616/76828
   type: openalex
@@ -16813,30 +17515,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://substack.com/@troisiemesvoix
-  type: external_link
-  domain: substack.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Troisièmes Voix — éditions
-    context: Suivez nos actualités sur Substack !
-    page: null
-- url: https://t.me/ExWorkers
-  type: external_link
-  domain: t.me
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Telegram
-    page: null
 - url: https://theconversation.com/comment-generaliser-lagroecologie-280841
   type: mastodon
   found_from:
@@ -16860,54 +17538,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://tiktok.com/@crimethinc
-  type: external_link
-  domain: tiktok.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: Crimethinc. on TikTok
-    page: null
-- url: https://todon.eu/@CrimethInc
-  type: external_link
-  domain: todon.eu
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Mastodon
-    page: null
-- url: https://twitter.com/MST_Oficial/
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
-- url: https://twitter.com/portaloaca
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: X
-    page: null
 - url: https://vert.eco/articles/cest-notre-survie-qui-est-en-jeu-une-grande-marche-contre-les-pesticides-et-pour-lagroecologie-ce-samedi-a-paris
   type: mastodon
   found_from:
@@ -16934,18 +17564,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://viacampesina.org/en/
-  type: external_link
-  domain: viacampesina.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
 - url: https://viacampesina.org/en/2026/04/food-sovereignty-in-the-face-of-war-imperialism-and-the-hunger-of-peoples-around-the-world
   type: mastodon
   found_from:
@@ -17176,18 +17794,6 @@ candidates:
   - doc_id: Infokiosques.net — nouveautés
     context: · sur le site web
     page: null
-- url: https://www.blacked-out-ingredients.eu/es/start/
-  type: external_link
-  domain: www.blacked-out-ingredients.eu
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: blackout ingredientes
-    page: null
 - url: https://www.cirad.fr/les-actualites-du-cirad/actualites/2026/transitions-agroecologies-en-asie-pacifique
   type: mastodon
   found_from:
@@ -17286,18 +17892,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.eldiario.es/sociedad/aemet-avisa-jueves-repunta-ola-calor-lunes_1_12530020.html
-  type: external_link
-  domain: www.eldiario.es
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org — Biodiversidad
-    context: La AEMET confirma que la ola de calor se extenderá unos días más
-    page: null
 - url: https://www.europe-solidaire.org/spip.php?article78552&amp;utm_source=dlvr.it&amp;utm_medium=bluesky
   type: mastodon
   found_from:
@@ -17373,30 +17967,6 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.facebook.com/portaloaca
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Facebook
-    page: null
-- url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: Facebook
-    page: null
 - url: https://www.foodsovereignty.org/es/ciradr20-debe-ir-mas-alla-de-soluciones-tecnocraticas-para-implementar-una-reforma-agraria-real-e-integral-movimientos-sociales-globales-en-cartagena
   type: mastodon
   found_from:
@@ -17622,18 +18192,6 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.getgrav.org
-  type: external_link
-  domain: www.getgrav.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Troisièmes Voix — éditions
-    context: Grav
-    page: null
 - url: https://www.informassue.tuxfamily.org/pages/solutions.php?art=serreau_film_solutions
   type: mastodon
   found_from:
@@ -17660,30 +18218,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.instagram.com/frentebrasilpopular?igsh=MWx2YTBsbXc2MGoxdw==
-  type: external_link
-  domain: www.instagram.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
-- url: https://www.instagram.com/movimentosemterra/
-  type: external_link
-  domain: www.instagram.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
 - url: https://www.instagram.com/reel/DS-kqMsiAnf/?igsh=MTN2MW56MzZ4czlsaw==
   type: mastodon
   found_from:
@@ -17704,78 +18238,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.ithaka.org/cookies
-  type: external_link
-  domain: www.ithaka.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: Cookie Policy
-    page: null
-- url: https://www.ithaka.org/privacypolicy
-  type: external_link
-  domain: www.ithaka.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: Privacy Policy
-    page: null
-- url: https://www.jstor.org
-  type: external_link
-  domain: www.jstor.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: lien depuis https://daily.jstor.org/topic/land/
-    page: null
-- url: https://www.jstor.org/
-  type: external_link
-  domain: www.jstor.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: JSTOR.org
-    page: null
-- url: https://www.jstor.org/action/jpass?lookupKey=SlBBU1MtSS1ZZWFy&discountCode=SlNUT1JEQUlMWTI1&utm_source=jstor_daily&utm_campaign=daily_newsletter_annual_25
-  type: external_link
-  domain: www.jstor.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: lien depuis https://daily.jstor.org/topic/land/
-    page: null
-- url: https://www.jstor.org/stable/26216197?mag=land-of-the-free-home-of-the-bootleggers
-  type: external_link
-  domain: www.jstor.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: as historian Alex Sayf Cummings explains
-    page: null
 - url: https://www.latelierpaysan.org/L-Atelier-Paysan-face-a-la-liquidation-elargissons-le-mouvement
   type: mastodon
   found_from:
@@ -17936,18 +18398,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.redebrasilatual.com.br/
-  type: external_link
-  domain: www.redebrasilatual.com.br
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
 - url: https://www.revolutionpermanente.fr/Dermatose-nodulaire-gouvernement-et-FNSEA-sacrifient-les-petits-eleveurs-pour-sauver-l-agro
   type: mastodon
   found_from:
@@ -18144,42 +18594,6 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.threads.net/intent/post?text=Land+of+the+Free%2C+Home+of+the+Bootleggers%0Ahttps%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
-  type: external_link
-  domain: www.threads.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: Threads
-    page: null
-- url: https://www.tvt.org.br/
-  type: external_link
-  domain: www.tvt.org.br
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
-- url: https://www.youtube.com/channel/UC3C5WLLfrDnNsMR7Z-46eug
-  type: external_link
-  domain: www.youtube.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: Videoteca
-    page: null
 - url: https://www.youtube.com/live/Ch98BvBho0g
   type: footnote
   domain: www.youtube.com
@@ -18192,18 +18606,6 @@ candidates:
   - doc_id: 9e831a55
     context: https://www.youtube.com/live/Ch98BvBho0g
     page: 7
-- url: https://www.youtube.com/user/videosmst
-  type: external_link
-  domain: www.youtube.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
 - url: https://www.youtube.com/watch?v=3M0k-8hg-wc
   type: mastodon
   found_from:
@@ -18305,18 +18707,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://youtube.com/@crimethincexworkerscollective
-  type: external_link
-  domain: youtube.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on YouTube
-    page: null
 - url: http://ablogm.com/cats/2014/01/26/les-classes-dans-la-societe-capitaliste-grupo-ruptura/
   type: external_link
   domain: ablogm.com
@@ -20259,21 +20649,6 @@ candidates:
   metadata:
     title: Plus de 14 000 ours abattus au Japon en un an
   suggested_action: follow_one_time
-- url: https://reporterre.net/30-000-euros-d-amende-et-prison-avec-sursis-pour-la-femme-qui-a-tue-un-lynx
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 30 000 euros d'amende et prison avec sursis pour la femme qui a tué un lynx — La femme qui a tué un lynx en Alsace
-      a été condamnée à trois mois de prison avec sursis et 30 300 euros d'amende par le tribunal correctionnel de Strasbourg.
-      Cette habitante de Niederbronn-les-Bains (Bas-Rhin) âgée de 62 a
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 30 000 euros d'amende et prison avec sursis pour la femme qui a tué un lynx
-  suggested_action: follow_one_time
 - url: https://reporterre.net/A69-les-locaux-du-concessionnaire-de-l-autoroute-ont-ete-perquisitionnes
   type: rss
   found_from:
@@ -20288,21 +20663,6 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: 'A69 : Atosca, le concessionnaire de l''autoroute, perquisitionné'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Arctique-le-changement-climatique-menace-l-heritage-archeologique
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Arctique : le changement climatique menace l''héritage archéologique — Le changement climatique ne menace pas
-      seulement notre avenir : il détruit aussi les traces du passé. Dans la région arctique, qui se réchauffe quatre fois
-      plus rapidement que la moyenne mondiale, la fonte du pergélisol, la montée'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'Arctique : le changement climatique menace l''héritage archéologique'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Bulles-de-savoir-nos-meilleures-BD-pour-apprendre-sur-l-ecologie
   type: rss
@@ -20319,36 +20679,6 @@ candidates:
   metadata:
     title: 'Bulles de savoir : nos meilleurs BD pour s''informer sur l''écologie'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Cela-me-fend-le-coeur-pour-proteger-une-fleur-rare-un-chatelain-se-dresse-contre-l-A69
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Cela me fend le cœur » : pour protéger une fleur rare, un châtelain se dresse contre l''A69 — Plusieurs associations
-      annoncent déposer plainte contre le concessionnaire de l''A69. Des travaux menés à proximité du château de Scopont sont
-      suspectés d''assécher les sources d''eau et de menacer une plante'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: '« Cela me fend le cœur » : pour protéger une fleur rare, un châtelain se dresse contre l''A69'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Chloe-interdite-de-Festival-de-Cannes-en-raison-de-son-engagement-ecolo
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Festival de Cannes : une salariée écartée à cause de son engagement écolo — En 2025, la préfecture a interdit
-      à Chloé, salariée du Festival de Cannes, d''exercer. Les syndicats dénoncent un fichage et de la discrimination politique
-      en raison de ses engagements écolo. Un an après, les remords ont lais'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'Festival de Cannes : une salariée écartée à cause de son engagement écolo'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Conge-climatique-l-exemple-espagnol-qui-relance-le-debat-en-France
   type: rss
   found_from:
@@ -20364,21 +20694,6 @@ candidates:
   metadata:
     title: 'Congé climatique : l''exemple espagnol qui inspire la France'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Courchevel-une-retenue-d-eau-pour-le-ski-menace-de-s-effondrer-sur-un-hameau
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Courchevel : une retenue d''eau pour le ski menace de s''effondrer sur un hameau — La retenue collinaire de
-      la Loze, à 2 270 mètres d''altitude au-dessus de Courchevel (Savoie), s''affaisse à une vitesse alarmante, a révélé
-      Le Monde samedi 16 mai. Construite en 2020 pour assurer l''enneigement artificiel'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'Courchevel : une retenue d''eau pour le ski menace de s''effondrer sur un hameau'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Deforestation-tourisme-Ces-facteurs-environnementaux-qui-boostent-l-hantavirus
   type: rss
   found_from:
@@ -20393,66 +20708,6 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: Déforestation, tourisme... Ces facteurs environnementaux qui boostent l'hantavirus
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Des-collectifs-poursuivent-l-Etat-dans-le-scandale-des-PFAS
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'PFAS : trois collectifs poursuivent l''État en justice — « Cesser le préjudice écologique » lié aux PFAS , et
-      réparer l''anxiété de riverains : c''est ce que demandent à l''État les collectifs Générations futures, Notre affaire
-      à tous et Bloom. Ils ont saisi le tribunal administratif de Paris « afin que'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'PFAS : trois collectifs poursuivent l''État en justice'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Des-dindes-maltraitees-vendues-sous-marque-Carrefour-montre-L214
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Des dindes maltraitées vendues sous marque Carrefour, montre une vidéo de L214 — Les images sont une fois de
-      plus insoutenables : des dindes et dindons sales, déplumés, blessés, morts. Après les lapins, les cailles, les cochons,
-      L214 publie une nouvelle enquête sur la maltraitance animale, cette foi'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Des dindes maltraitées vendues sous marque Carrefour, montre une vidéo de L214
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Des-nouveaux-liens-entre-colorants-alimentaires-et-cancer
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Nourriture ultratransformée : les additifs augmentent le risque de cancers et autres maladies — La consommation
-      de certains colorants et conservateurs alimentaires entraînent une augmentation du risque de cancer, de diabète de type
-      2, de l''hypertension et des maladies cardiovasculaires. Voici ce que'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'Nourriture ultratransformée : les additifs augmentent le risque de cancers et autres maladies'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Desinformation-climatique-les-Etats-Unis-et-la-Russie-visent-l-Europe
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Désinformation climatique : les États-Unis et la Russie visent l''Europe — La désinformation climatique n''est
-      pas une pratique nouvelle, mais elle se diversifie : aux acteurs historiques des énergies fossiles s''ajoutent maintenant
-      des acteurs de la Big Tech et, surtout, des acteurs étatiques, notamme'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'Désinformation climatique : les États-Unis et la Russie visent l''Europe'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Dieselgate-Volkswagen-devra-verser-100-000-euros-a-une-association-de-consommateurs
   type: rss
@@ -20484,21 +20739,6 @@ candidates:
   metadata:
     title: 'Gratuit et sans réservation : ces communes réinventent le covoiturage'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Grande-distribution-Vendre-des-produits-sains-a-prix-coutant-c-est-possible
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Grande distribution : « Vendre des produits sains à prix coûtant, c''est possible » — Alors qu''un rapport sénatorial
-      montre comment la grande distribution profite des produits alimentaires, une coalition d''associations veut imposer
-      la vente d''un panier de 100 produits sains à prix coûtant. Les enseig'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'Grande distribution : « Vendre des produits sains à prix coûtant, c''est possible »'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Hantavirus-et-ecoanxiete-S-inquieter-est-plutot-une-reaction-saine
   type: rss
   found_from:
@@ -20529,21 +20769,6 @@ candidates:
   metadata:
     title: '« Aujourd''hui, j''ose prendre la parole » : dans ce village, le pouvoir est entre les mains des habitants'
   suggested_action: follow_one_time
-- url: https://reporterre.net/L-ONU-adopte-une-resolution-pour-renforcer-la-responsabilite-climatique-des-Etats
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Climat : l''ONU adopte une résolution qui renforce les obligations des États — Dans un contexte international
-      chaotique où le climat n''est clairement pas la priorité, c''est une réelle avancée. L''Assemblée générale des Nations-Unis
-      a voté mercredi 20 mai une résolution sur la responsabilité climatique'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'Climat : l''ONU adopte une résolution qui renforce les obligations des États'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/L-imaginaire-un-levier-essentiel-pour-nous-sortir-du-capitalisme-mortifere
   type: rss
   found_from:
@@ -20558,51 +20783,6 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: 'L''imaginaire : un levier essentiel pour nous sortir du capitalisme mortifère'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Laits-contamines-les-entreprises-ont-beaucoup-tarde-a-avertir-les-autorites
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Laits contaminés : les entreprises ont beaucoup tardé à avertir les autorités — « Elles voulaient planquer l''information.
-      C''est une honte alors que de nombreux parents étaient désemparés face aux symptômes inquiétants de leurs nourrissons
-      contaminés. » L''association Foodwatch se dit particulièrement'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'Laits contaminés : les entreprises ont beaucoup tardé à avertir les autorités'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Le-Conseil-constitutionnel-retablit-les-ZFE-et-le-zero-artificialisation-nette
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Le Conseil constitutionnel rétablit les ZFE et le zéro artificialisation nette — La loi dite de « simplification
-      de la vie économique » n'est pas sortie indemne de l'examen du Conseil constitutionnel. 25 articles, soit un tiers du
-      texte, ont été jugés hors sujet par les Sages, jeudi 21 mai. C'est en
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Le Conseil constitutionnel rétablit les ZFE et le zéro artificialisation nette
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Le-beton-est-le-materiau-le-plus-utilise-dans-le-monde-mais-personne-ne-sait-d-ou-vient-son-parpaing
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: « Le béton est le matériau le plus utilisé dans le monde mais personne ne sait d'où vient son parpaing » — Autrice
-      de « Désarmer le béton », l'architecte Léa Hobson aimerait voir advenir une « voix collective » pour s'opposer à ce
-      matériau néfaste, symbole du capitalisme extractif contemporain. D'au
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: « Le béton est le matériau le plus utilisé dans le monde mais personne ne sait d'où vient son parpaing »
   suggested_action: follow_one_time
 - url: https://reporterre.net/Le-conducteur-de-SUV-qui-a-ecrase-le-cycliste-Paul-Varry-sera-juge-pour-meurtre
   type: rss
@@ -20634,21 +20814,6 @@ candidates:
   metadata:
     title: Le loriot, ce mystérieux « merle d'or » au sale caractère
   suggested_action: follow_one_time
-- url: https://reporterre.net/Le-probleme-c-est-la-masse-le-surtourisme-abime-le-piton-de-la-Fournaise
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Le problème, c''est la masse » : le surtourisme abîme le piton de la Fournaise — À La Réunion, les deux éruptions
-      du piton de la Fournaise survenues en 2026 ont attiré de nombreux spectateurs. Mais la surfréquentation du site et les
-      comportements à risque mettent à mal une biodiversité déjà fragile'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: '« Le problème, c''est la masse » : le surtourisme abîme le piton de la Fournaise'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Master-poulet-Tasty-Crousty-derriere-le-succes-des-poulets-en-elevage-ultra-intensif
   type: rss
   found_from:
@@ -20663,36 +20828,6 @@ candidates:
   last_seen: '2026-05-23'
   metadata:
     title: Master Poulet, Tasty Crousty, derrière le succès, des poulets en élevage ultra-intensif
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Ocean-les-emballages-alimentaires-sont-les-principaux-responsables-de-la-pollution
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Océan : les emballages alimentaires sont les principaux responsables de la pollution plastique — Les déchets
-      alimentaires sont les principaux responsables de la pollution plastique de l''océan, selon une étude inédite, publiée
-      le 20 mai dans la revue One Earth. C''est la première fois qu''une étude cla'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'Océan : les emballages alimentaires sont les principaux responsables de la pollution plastique'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/On-ne-devrait-pas-s-en-rejouir-une-vague-de-chaleur-anormale-va-toucher-la-France
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Une vague de chaleur anormale va toucher la France : « On ne devrait pas s''en réjouir » — Après quelques jours
-      relativement frais, des températures anormalement élevées vont toucher la France du 22 au 26 mai. Une conséquence du
-      changement climatique, qui pourrait entraîner de nouveaux records printa'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'Une vague de chaleur anormale va toucher la France : « On ne devrait pas s''en réjouir »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/PFAS-des-rapporteurs-de-l-ONU-epinglent-deux-geants-de-la-vallee-de-la-chimie
   type: rss
@@ -20770,111 +20905,6 @@ candidates:
   metadata:
     title: « La sobriété énergétique n'est plus un bon plan de communication politique »
   suggested_action: follow_one_time
-- url: https://reporterre.net/Pour-sauver-les-glaciers-tropicaux-la-lutte-s-organise-en-Colombie
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Pour sauver les glaciers tropicaux, la lutte s'organise en Colombie — En mars 2026, un glacier tropical a disparu
-      en Colombie. Sous la glace, les écosystèmes andins sont à leur tour menacés. Sur le terrain, scientifiques et communautés
-      locales tentent d'en préserver l'équilibre fragile. Paramo de Su
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Pour sauver les glaciers tropicaux, la lutte s'organise en Colombie
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Pourquoi-la-France-n-arrive-pas-a-fabriquer-plus-de-panneaux-solaires
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Pourquoi la France n'arrive pas à fabriquer davantage de panneaux solaires — Un énorme projet d'usine de fabrication
-      de panneaux solaires en France jette l'éponge après son placement en liquidation judiciaire. Son responsable blâme l'absence
-      de marché européen et des politiques publiques contreprodu
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Pourquoi la France n'arrive pas à fabriquer davantage de panneaux solaires
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Sans-l-Ademe-ces-six-projets-ecolos-n-auraient-pas-existe
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'À quoi sert l''Ademe, l''agence de la transition écologique ? — Nouvelle attaque contre l''Ademe : un projet
-      de loi propose de la fondre dans des services régionaux. Tour d''horizons de 6 initiatives écologiques, dans toute la
-      France, qui n''auraient pas vu le jour sans le soutien de l''agence. Un pas de '
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: À quoi sert l'Ademe, l'agence de la transition écologique ?
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Soirees-techno-et-huile-d-olive-une-ferme-engagee-menacee-de-fermeture
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Soirées techno et huile d''olive : une ferme engagée menacée de fermeture — Dans l''Hérault, un tiers-lieu agricole
-      propose des événements culturels et solidaires pour « créer du lien, de la mixité ». Las, cet « espace de liberté »
-      en lisière des institutions est menacé par une fermeture administrativ'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'Soirées techno et huile d''olive : une ferme engagée menacée de fermeture'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Tout-le-monde-aurait-a-y-gagner-investir-dans-le-velo-est-aussi-bon-pour-la-Secu
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: En abandonnant le plan vélo, l'État a aussi sacrifié la santé — Améliorer la santé et faire des économies pour
-      la société, ce sont là les bénéfices de la marche et du vélo, selon la Fédération française des usagères et usagers
-      de la bicyclette. Mais les politiques publiques sont à la traîne. Marcher
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: En abandonnant le plan vélo, l'État a aussi sacrifié la santé
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Trump-supprime-les-restrictions-sur-de-puissants-gaz-a-effet-de-serre-utilises-dans-les
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Trump supprime les restrictions sur de puissants gaz à effet de serre utilisés dans les frigos — Le président
-      étasunien Donald Trump a annoncé hier être prêt à lever les restrictions sur une catégorie de gaz à effet de serre,
-      mises en place par son prédécesseur démocrate Joe Biden, en les qualifiant
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Trump supprime les restrictions sur de puissants gaz à effet de serre utilisés dans les frigos
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Un-nouveau-type-de-pesticide-genetique-debarque-en-Europe
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Un pesticide « génétique » interdit en Europe débarque... en Belgique — Avec 800 000 tonnes d'excédents de patates,
-      la Belgique avait-elle besoin d'une dérogation d'urgence pour un insecticide génétique ? Non, disent des associations,
-      qui s'inquiètent de ce produit pouvant rendre des gènes silencieu
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: Un pesticide « génétique » interdit en Europe débarque... en Belgique
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Vagues-soleil-et-bacteries-les-surfeurs-senegalais-s-engagent-contre-la-pollution-des
   type: rss
   found_from:
@@ -20889,36 +20919,6 @@ candidates:
   last_seen: '2026-05-23'
   metadata:
     title: 'Vagues, soleil… et bactéries : les surfeurs sénégalais s''engagent contre la pollution des eaux'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Velo-un-usage-en-hausse-debut-2026-surtout-en-ruralite
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Vélo : un usage en hausse début 2026, surtout en ruralité — Selon le Réseau vélo et marche, l''usage du vélo
-      a progressé de 5 % sur les quatre premiers mois de 2026 par rapport à 2025. « Les chiffres révèlent un contraste saisissant
-      : +9 % dans les communes rurales et de densité intermédiaire, contre'
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: 'Vélo : un usage en hausse début 2026, surtout en ruralité'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Zoos-humains-la-Guyane-va-recuperer-les-ossements-d-autochtones-detenus-par-des-musees
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: La Guyane va récupérer les ossements d'autochtones détenus par des musées parisiens — Les restes des autochtones
-      exhibés dans les zoos humains de la fin du XIX e siècle vont pouvoir retrouver leur terre natale, la Guyane, 134 ans
-      après leur mort. L'aboutissement d'une lutte qui révèle la difficile r
-    timestamp: '2026-05-22T23:13:28'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-23'
-  metadata:
-    title: La Guyane va récupérer les ossements d'autochtones détenus par des musées parisiens
   suggested_action: follow_one_time
 - url: https://saccage2024.noblogs.org/archives/2091
   type: external_link
@@ -26080,6 +26080,36 @@ candidates:
   metadata:
     title: 'Cadmium : les données clés d''une contamination'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Ce-centre-qui-a-permis-a-des-milliers-d-enfants-de-decouvrir-la-mer-pourrait-fermer
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Ces enfants n''ont parfois jamais touché de crabe » : un historique centre de classe de mer pourrait fermer
+      — Le centre Virginie Hériot de Cancale, qui héberge des enfants en classe de mer depuis des décennies, est menacé de
+      fermeture. Une association s''est montée pour que ces élèves puissent conti'
+    timestamp: '2026-05-24T16:18:46'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-24'
+  last_seen: '2026-05-24'
+  metadata:
+    title: '« Ces enfants n''ont parfois jamais touché de crabe » : un historique centre de classe de mer pourrait fermer'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Ce-qu-on-veut-c-est-aider-des-habitants-achetent-des-terres-qu-ils-louent-a-des-paysans-bio
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Ce qu''on veut, c''est aider » : des habitants achètent des terres qu''ils louent à des paysans bio — Que
+      faire quand l''agro-industrie accapare toutes les terres ? Se rassembler en coopérative citoyenne et acheter des hectares.
+      Dans le Finistère, des terres sont ainsi louées à des agriculteurs qui ve'
+    timestamp: '2026-05-24T16:18:46'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-24'
+  last_seen: '2026-05-24'
+  metadata:
+    title: '« Ce qu''on veut, c''est aider » : des habitants achètent des terres qu''ils louent à des paysans bio'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Cinq-activistes-opposes-a-une-deviation-ont-passe-le-weekend-en-prison
   type: rss
   found_from:
@@ -26121,6 +26151,21 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: Épices Ducros, riz Taureau ailé, thé Lipton... Des pesticides interdits trouvés dans des produits du quotidien
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Fleurs-bio-et-francaises-une-filiere-qui-se-developpe-a-la-debrouille
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Cultiver des fleurs bio et françaises : « Un boom des installations » — Si la filière française de la fleur
+      coupée connaît un regain de vigueur, semences bio et formations demeurent rares. Inspirées par des principes écologistes,
+      les floricultrices bricolent et s''organisent pour vivre de leur métier'
+    timestamp: '2026-05-24T16:18:46'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-24'
+  last_seen: '2026-05-24'
+  metadata:
+    title: 'Cultiver des fleurs bio et françaises : « Un boom des installations »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/La-cooperative-citoyenne-d-electricite-un-modele-qui-fait-ses-preuves-jusque-dans-les
   type: rss
@@ -26181,6 +26226,21 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Les écogestes : reprise en main de son quotidien ou dépolitisation de l''écologie ?'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Pour-extraire-son-sable-Lafarge-devore-les-meandres-de-la-Seine
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Pour extraire son sable, Lafarge dévore les méandres de la Seine — L'extraction de sable par le géant du béton
+      Lafarge détruit les paysages des boucles de la Seine, dans l'Eure. Malgré la résistance locale, l'industrie puissante
+      avale des centaines d'hectares. Muids (Eure), reportage Agitées par les
+    timestamp: '2026-05-24T16:18:46'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-05-24'
+  last_seen: '2026-05-24'
+  metadata:
+    title: Pour extraire son sable, Lafarge dévore les méandres de la Seine
   suggested_action: follow_one_time
 - url: https://reporterre.net/Redressement-judiciaire-de-FNE-Rhone-le-tribunal-valide-le-plan-de-l-association
   type: rss
