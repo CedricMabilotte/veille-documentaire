@@ -1,4 +1,4 @@
-last_updated: '2026-05-24T16:21:09+00:00'
+last_updated: '2026-05-24T18:30:17+00:00'
 total_candidates: 1365
 candidates:
 - url: http://infokiosques.net/mauvaises_intentions
@@ -249,6 +249,27 @@ candidates:
   - doc_id: fbbd37a0
     context: 'la plupart sont disponible ici:                http://joseph.dejacque.free.fr/'
     page: 11
+- url: https://cookiedatabase.org/tcf/purposes/
+  type: external_link
+  domain: cookiedatabase.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 16
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Leer más sobre estos propósitos
+    page: null
 - url: https://geoconfluences.ens-lyon.fr/informations-scientifiques/dossiers-regionaux/amerique-latine/articles-scientifiques/communs-ejidos
   type: footnote
   domain: geoconfluences.ens-lyon.fr
@@ -397,27 +418,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://cookiedatabase.org/tcf/purposes/
-  type: external_link
-  domain: cookiedatabase.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 13
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: Leer más sobre estos propósitos
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: Leer más sobre estos propósitos
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: Leer más sobre estos propósitos
-    page: null
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Leer más sobre estos propósitos
-    page: null
 - url: https://bsky.app/search?q=%23Agro%C3%A9cologie
   type: mastodon
   found_from:
@@ -486,6 +486,168 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: http://www.foei.org/es/
+  type: external_link
+  domain: www.foei.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: http://www.youtube.com/user/AmigosdelaTierra
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: https://alargascencia.org/es/
+  type: external_link
+  domain: alargascencia.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: https://bsky.app/profile/amigasdelatierra.bsky.social
+  type: external_link
+  domain: bsky.app
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: https://maps.google.com/?q=C/+Bustos,+2,+28038,+Madrid&entry=gmail&source=g
+  type: external_link
+  domain: maps.google.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: C/ Bustos, 2, 28038, Madrid
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: C/ Bustos, 2, 28038, Madrid
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: C/ Bustos, 2, 28038, Madrid
+    page: null
+- url: https://www.facebook.com/AmigasdelaTierraEsp
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: https://www.flickr.com/photos/60108073@N02/albums
+  type: external_link
+  domain: www.flickr.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: https://www.foeeurope.org/
+  type: external_link
+  domain: www.foeeurope.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
+- url: https://www.instagram.com/amigasdelatierra_esp/
+  type: external_link
+  domain: www.instagram.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: lien depuis https://www.tierra.org/
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
+    page: null
 - url: http://infokiosques.net/spip.php?article101
   type: footnote
   domain: infokiosques.net
@@ -777,78 +939,6 @@ candidates:
   - doc_id: 682f226c
     context: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
     page: 6
-- url: http://www.foei.org/es/
-  type: external_link
-  domain: www.foei.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
-- url: http://www.youtube.com/user/AmigosdelaTierra
-  type: external_link
-  domain: www.youtube.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
-- url: https://alargascencia.org/es/
-  type: external_link
-  domain: alargascencia.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
-- url: https://bsky.app/profile/amigasdelatierra.bsky.social
-  type: external_link
-  domain: bsky.app
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
 - url: https://bsky.app/search?q=%23Souverainet%C3%A9Alimentaire
   type: mastodon
   found_from:
@@ -902,96 +992,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://maps.google.com/?q=C/+Bustos,+2,+28038,+Madrid&entry=gmail&source=g
-  type: external_link
-  domain: maps.google.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: C/ Bustos, 2, 28038, Madrid
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: C/ Bustos, 2, 28038, Madrid
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: C/ Bustos, 2, 28038, Madrid
-    page: null
-- url: https://www.facebook.com/AmigasdelaTierraEsp
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
-- url: https://www.flickr.com/photos/60108073@N02/albums
-  type: external_link
-  domain: www.flickr.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
-- url: https://www.foeeurope.org/
-  type: external_link
-  domain: www.foeeurope.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
-- url: https://www.instagram.com/amigasdelatierra_esp/
-  type: external_link
-  domain: www.instagram.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: lien depuis https://www.tierra.org/
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: lien depuis https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
 - url: https://www.twitch.tv/oamgui
   type: mastodon
   found_from:
@@ -3705,6 +3705,18 @@ candidates:
   - doc_id: Böll Stiftung — Meat Atlas (EN)
     context: Heimatkunde
     page: null
+- url: http://info.nodo50.org/
+  type: external_link
+  domain: info.nodo50.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Nodo50
+    page: null
 - url: http://kommunalwiki.boell.de/index.php/Hauptseite
   type: external_link
   domain: kommunalwiki.boell.de
@@ -3741,6 +3753,90 @@ candidates:
   - doc_id: Böll Stiftung — Meat Atlas (EN)
     context: Gunda-Werner-Institute
     page: null
+- url: http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F&title=Land+of+the+Free%2C+Home+of+the+Bootleggers
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: LinkedIn
+    page: null
+- url: http://www.nemetoncoalition.org
+  type: external_link
+  domain: www.nemetoncoalition.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Troisièmes Voix — éditions
+    context: Le projet Nemeton
+    page: null
+- url: https://about.jstor.org/accessibility/
+  type: external_link
+  domain: about.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Accessibility
+    page: null
+- url: https://acervomst.org.br/
+  type: external_link
+  domain: acervomst.org.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: Acervo MST
+    page: null
+- url: https://amigosenff.org.br/
+  type: external_link
+  domain: amigosenff.org.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://api.whatsapp.com/send?text=Land+of+the+Free%2C+Home+of+the+Bootleggers https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
+  type: external_link
+  domain: api.whatsapp.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: WhatsApp
+    page: null
+- url: https://armazemdocampo.com.br/
+  type: external_link
+  domain: armazemdocampo.com.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: PRODUTOS DO MST
+    page: null
 - url: https://br.boell.org/
   type: external_link
   domain: br.boell.org
@@ -3758,6 +3854,42 @@ candidates:
     page: null
   - doc_id: Böll Stiftung — Meat Atlas (EN)
     context: Rio de Janeiro Office - Brazil
+    page: null
+- url: https://brasildefato.com.br/
+  type: external_link
+  domain: brasildefato.com.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://bsky.app/intent/compose?text=Land+of+the+Free%2C+Home+of+the+Bootleggers%0Ahttps%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
+  type: external_link
+  domain: bsky.app
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: BlueSky
+    page: null
+- url: https://bsky.app/profile/crimethinc.com
+  type: external_link
+  domain: bsky.app
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Crimethinc. on Bluesky
     page: null
 - url: https://centroamerica.boell.org/
   type: external_link
@@ -3777,6 +3909,78 @@ candidates:
   - doc_id: Böll Stiftung — Meat Atlas (EN)
     context: Centroamerica Office
     page: null
+- url: https://creativecommons.org/licenses/by-nc/4.0/deed.es
+  type: external_link
+  domain: creativecommons.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Creative Commons
+    page: null
+- url: https://crimethinc.bandcamp.com
+  type: external_link
+  domain: crimethinc.bandcamp.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Bandcamp
+    page: null
+- url: https://crimethinc.tumblr.com
+  type: external_link
+  domain: crimethinc.tumblr.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Tumblr
+    page: null
+- url: https://facebook.com/MovimentoSemTerra/
+  type: external_link
+  domain: facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://facebook.com/To-Change-Everything-103734818122357
+  type: external_link
+  domain: facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Crimethinc. on Facebook
+    page: null
+- url: https://feeds.feedburner.com/portaloaca
+  type: external_link
+  domain: feeds.feedburner.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Feed RSS
+    page: null
 - url: https://fr.boell.org
   type: external_link
   domain: fr.boell.org
@@ -3794,6 +3998,90 @@ candidates:
     page: null
   - doc_id: Böll Stiftung — Meat Atlas (EN)
     context: Paris Office - France, Italy
+    page: null
+- url: https://github.com/crimethinc
+  type: external_link
+  domain: github.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Github
+    page: null
+- url: https://instagram.com/crimethincredux
+  type: external_link
+  domain: instagram.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Crimethinc. on Instagram
+    page: null
+- url: https://kolektiva.media/a/crimethinc
+  type: external_link
+  domain: kolektiva.media
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Peertube
+    page: null
+- url: https://lite.crimethinc.com/library
+  type: external_link
+  domain: lite.crimethinc.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Switch to the lite version of the site →
+    page: null
+- url: https://nosplantamos.org/encuentros
+  type: external_link
+  domain: nosplantamos.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: Nos Plantamos
+    page: null
+- url: https://reddit.com/r/CrimethInc
+  type: external_link
+  domain: reddit.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Reddit
+    page: null
+- url: https://reddit.com/submit?url=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F&title=Land+of+the+Free%2C+Home+of+the+Bootleggers
+  type: external_link
+  domain: reddit.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Reddit
     page: null
 - url: https://renverse.co/analyses/article/ni-ici-ni-ailleurs-de-la-lutte-locale-contre-la-geothermie-profonde-a-la-4555
   type: external_link
@@ -3813,6 +4101,18 @@ candidates:
   - doc_id: Infokiosques.net — nouveautés
     context: · sur le site web
     page: null
+- url: https://substack.com/@troisiemesvoix
+  type: external_link
+  domain: substack.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Troisièmes Voix — éditions
+    context: Suivez nos actualités sur Substack !
+    page: null
 - url: https://survie.org/publications/brochures/article/racisme-et-neocolonialisme-francais-une-nouvelle-brochure-de-survie
   type: external_link
   domain: survie.org
@@ -3830,6 +4130,306 @@ candidates:
     page: null
   - doc_id: Infokiosques.net — nouveautés
     context: · sur le site web
+    page: null
+- url: https://t.me/ExWorkers
+  type: external_link
+  domain: t.me
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Telegram
+    page: null
+- url: https://tiktok.com/@crimethinc
+  type: external_link
+  domain: tiktok.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: Crimethinc. on TikTok
+    page: null
+- url: https://todon.eu/@CrimethInc
+  type: external_link
+  domain: todon.eu
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on Mastodon
+    page: null
+- url: https://twitter.com/MST_Oficial/
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://twitter.com/portaloaca
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: X
+    page: null
+- url: https://viacampesina.org/en/
+  type: external_link
+  domain: viacampesina.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://www.blacked-out-ingredients.eu/es/start/
+  type: external_link
+  domain: www.blacked-out-ingredients.eu
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: blackout ingredientes
+    page: null
+- url: https://www.eldiario.es/sociedad/aemet-avisa-jueves-repunta-ola-calor-lunes_1_12530020.html
+  type: external_link
+  domain: www.eldiario.es
+  first_seen: '2026-05-18'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org — Biodiversidad
+    context: La AEMET confirma que la ola de calor se extenderá unos días más
+    page: null
+- url: https://www.facebook.com/portaloaca
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Facebook
+    page: null
+- url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Facebook
+    page: null
+- url: https://www.getgrav.org
+  type: external_link
+  domain: www.getgrav.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Troisièmes Voix — éditions
+    context: Grav
+    page: null
+- url: https://www.instagram.com/frentebrasilpopular?igsh=MWx2YTBsbXc2MGoxdw==
+  type: external_link
+  domain: www.instagram.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://www.instagram.com/movimentosemterra/
+  type: external_link
+  domain: www.instagram.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://www.ithaka.org/cookies
+  type: external_link
+  domain: www.ithaka.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Cookie Policy
+    page: null
+- url: https://www.ithaka.org/privacypolicy
+  type: external_link
+  domain: www.ithaka.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Privacy Policy
+    page: null
+- url: https://www.jstor.org
+  type: external_link
+  domain: www.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: lien depuis https://daily.jstor.org/topic/land/
+    page: null
+- url: https://www.jstor.org/
+  type: external_link
+  domain: www.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: JSTOR.org
+    page: null
+- url: https://www.jstor.org/action/jpass?lookupKey=SlBBU1MtSS1ZZWFy&discountCode=SlNUT1JEQUlMWTI1&utm_source=jstor_daily&utm_campaign=daily_newsletter_annual_25
+  type: external_link
+  domain: www.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: lien depuis https://daily.jstor.org/topic/land/
+    page: null
+- url: https://www.jstor.org/stable/26216197?mag=land-of-the-free-home-of-the-bootleggers
+  type: external_link
+  domain: www.jstor.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: as historian Alex Sayf Cummings explains
+    page: null
+- url: https://www.redebrasilatual.com.br/
+  type: external_link
+  domain: www.redebrasilatual.com.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://www.threads.net/intent/post?text=Land+of+the+Free%2C+Home+of+the+Bootleggers%0Ahttps%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
+  type: external_link
+  domain: www.threads.net
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: JSTOR Daily — topic land
+    context: Threads
+    page: null
+- url: https://www.tvt.org.br/
+  type: external_link
+  domain: www.tvt.org.br
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://www.youtube.com/channel/UC3C5WLLfrDnNsMR7Z-46eug
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: Videoteca
+    page: null
+- url: https://www.youtube.com/user/videosmst
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MST Brésil — biblioteca questão agraria
+    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://youtube.com/@crimethincexworkerscollective
+  type: external_link
+  domain: youtube.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-05-24'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CrimethInc — library
+    context: CrimethInc. on YouTube
     page: null
 - url: http://KnusKrigsmaskinen.noblogs.org
   type: mastodon
@@ -4291,18 +4891,6 @@ candidates:
     year: 2008
     doi: ''
   suggested_action: follow_one_time
-- url: http://info.nodo50.org/
-  type: external_link
-  domain: info.nodo50.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Nodo50
-    page: null
 - url: http://journals.openedition.org/abpo/pdf/508
   type: openalex
   found_from:
@@ -4881,30 +5469,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F&title=Land+of+the+Free%2C+Home+of+the+Bootleggers
-  type: external_link
-  domain: www.linkedin.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: LinkedIn
-    page: null
-- url: http://www.nemetoncoalition.org
-  type: external_link
-  domain: www.nemetoncoalition.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Troisièmes Voix — éditions
-    context: Le projet Nemeton
-    page: null
 - url: http://www.redalyc.org/articulo.oa?id=40326162002
   type: openalex
   found_from:
@@ -5096,30 +5660,6 @@ candidates:
   - doc_id: Infokiosques.net — Squat (rapport à l'habiter)
     context: · sur le site web
     page: null
-- url: https://about.jstor.org/accessibility/
-  type: external_link
-  domain: about.jstor.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: Accessibility
-    page: null
-- url: https://acervomst.org.br/
-  type: external_link
-  domain: acervomst.org.br
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: Acervo MST
-    page: null
 - url: https://ageconsearch.umn.edu/record/251805/files/Zerihun%20Gudeta_Usufruct%20Rights%20in%20Land.pdf
   type: openalex
   found_from:
@@ -5184,18 +5724,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://amigosenff.org.br/
-  type: external_link
-  domain: amigosenff.org.br
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
 - url: https://anct.gouv.fr/
   type: mastodon
   found_from:
@@ -5248,30 +5776,6 @@ candidates:
   - doc_id: dfbd677b
     context: 20 https://api.nfp-energie.ch/api/fr/export_service/project_export?id=960&class=Project . 1 TWh c’est
     page: 14
-- url: https://api.whatsapp.com/send?text=Land+of+the+Free%2C+Home+of+the+Bootleggers https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
-  type: external_link
-  domain: api.whatsapp.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: WhatsApp
-    page: null
-- url: https://armazemdocampo.com.br/
-  type: external_link
-  domain: armazemdocampo.com.br
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: PRODUTOS DO MST
-    page: null
 - url: https://baidc.revistas.deusto.es/article/download/1775/2329
   type: openalex
   found_from:
@@ -5529,18 +6033,6 @@ candidates:
     year: 1999
     doi: 10.4000/books.sdo.1052
   suggested_action: follow_one_time
-- url: https://brasildefato.com.br/
-  type: external_link
-  domain: brasildefato.com.br
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
 - url: https://brill.com/downloadpdf/journals/bjgs/2/1/article-p1_15.pdf
   type: openalex
   found_from:
@@ -5584,30 +6076,6 @@ candidates:
     genre: journal-article
     html_url: https://brill.com/downloadpdf/journals/bjgs/2/1/article-p1_15.pdf
     source: unpaywall
-- url: https://bsky.app/intent/compose?text=Land+of+the+Free%2C+Home+of+the+Bootleggers%0Ahttps%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
-  type: external_link
-  domain: bsky.app
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: BlueSky
-    page: null
-- url: https://bsky.app/profile/crimethinc.com
-  type: external_link
-  domain: bsky.app
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: Crimethinc. on Bluesky
-    page: null
 - url: https://bsky.app/profile/did:plc:ufw5v3n73rlt7e6aaknytv6u/post/3meeq6z4xk72u
   type: mastodon
   found_from:
@@ -6034,42 +6502,6 @@ candidates:
     genre: journal-article
     html_url: https://content.sciendo.com/downloadpdf/journals/foli/18/1/article-p7.pdf
     source: unpaywall
-- url: https://creativecommons.org/licenses/by-nc/4.0/deed.es
-  type: external_link
-  domain: creativecommons.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Creative Commons
-    page: null
-- url: https://crimethinc.bandcamp.com
-  type: external_link
-  domain: crimethinc.bandcamp.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Bandcamp
-    page: null
-- url: https://crimethinc.tumblr.com
-  type: external_link
-  domain: crimethinc.tumblr.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Tumblr
-    page: null
 - url: https://cu86s.r.a.d.sendibm1.com/mk/mr/sh/SMJz09SDriOHUOKbz7NFUJjdggkh/MWxNyH6Kgbnf
   type: mastodon
   found_from:
@@ -7237,30 +7669,6 @@ candidates:
     genre: dissertation
     html_url: https://edepot.wur.nl/16348
     source: unpaywall
-- url: https://facebook.com/MovimentoSemTerra/
-  type: external_link
-  domain: facebook.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
-- url: https://facebook.com/To-Change-Everything-103734818122357
-  type: external_link
-  domain: facebook.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: Crimethinc. on Facebook
-    page: null
 - url: https://fe.disroot.org/tag/anarchismus
   type: mastodon
   found_from:
@@ -7845,18 +8253,6 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://feeds.feedburner.com/portaloaca
-  type: external_link
-  domain: feeds.feedburner.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Feed RSS
-    page: null
 - url: https://fr.wikipedia.org/wiki/Conversion_d%27%C3%A9lectricit%C3%A9_en_gaz
   type: footnote
   domain: fr.wikipedia.org
@@ -8015,18 +8411,6 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://github.com/crimethinc
-  type: external_link
-  domain: github.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Github
-    page: null
 - url: https://grenoble.ninja/
   type: mastodon
   found_from:
@@ -8479,18 +8863,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://instagram.com/crimethincredux
-  type: external_link
-  domain: instagram.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: Crimethinc. on Instagram
-    page: null
 - url: https://iopscience.iop.org/article/10.1088/1748-9326/abfb2f
   type: footnote
   domain: iopscience.iop.org
@@ -8850,18 +9222,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://kolektiva.media/a/crimethinc
-  type: external_link
-  domain: kolektiva.media
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Peertube
-    page: null
 - url: https://ladernierelettre.fr/brochure/ah-ca-inra-ca-inra/
   type: external_link
   domain: ladernierelettre.fr
@@ -9117,18 +9477,6 @@ candidates:
     genre: book-chapter
     html_url: https://link.springer.com/content/pdf/10.1007%2F978-3-030-28014-7_6.pdf
     source: unpaywall
-- url: https://lite.crimethinc.com/library
-  type: external_link
-  domain: lite.crimethinc.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: Switch to the lite version of the site →
-    page: null
 - url: https://lstu.fr/composermondes
   type: mastodon
   found_from:
@@ -9423,18 +9771,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://nosplantamos.org/encuentros
-  type: external_link
-  domain: nosplantamos.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: Nos Plantamos
-    page: null
 - url: https://ojs.ehu.eus/index.php/gezki/article/download/12737/11537
   type: openalex
   found_from:
@@ -10211,30 +10547,6 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://reddit.com/r/CrimethInc
-  type: external_link
-  domain: reddit.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Reddit
-    page: null
-- url: https://reddit.com/submit?url=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F&title=Land+of+the+Free%2C+Home+of+the+Bootleggers
-  type: external_link
-  domain: reddit.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: Reddit
-    page: null
 - url: https://renverse.co/analyses/article/le-naufrage-
   type: footnote
   domain: renverse.co
@@ -11617,18 +11929,6 @@ candidates:
   - doc_id: dfbd677b
     context: 'source: https://stop-pillage.ch'
     page: 15
-- url: https://substack.com/@troisiemesvoix
-  type: external_link
-  domain: substack.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Troisièmes Voix — éditions
-    context: Suivez nos actualités sur Substack !
-    page: null
 - url: https://t.co/SoKCzolnWL
   type: external_link
   domain: t.co
@@ -11658,18 +11958,6 @@ candidates:
     page: null
   - doc_id: CLACSO — Libros en coedición
     context: https://t.co/syZfh9sp8J
-    page: null
-- url: https://t.me/ExWorkers
-  type: external_link
-  domain: t.me
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Telegram
     page: null
 - url: https://theatre.univ-montp3.fr/spectacle/2025-2026/non-lieu
   type: mastodon
@@ -11762,42 +12050,6 @@ candidates:
     year: 1990
     doi: ''
   suggested_action: follow_one_time
-- url: https://tiktok.com/@crimethinc
-  type: external_link
-  domain: tiktok.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: Crimethinc. on TikTok
-    page: null
-- url: https://todon.eu/@CrimethInc
-  type: external_link
-  domain: todon.eu
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on Mastodon
-    page: null
-- url: https://twitter.com/MST_Oficial/
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
 - url: https://twitter.com/_CLACSO/status/1426227450632155137?ref_src=twsrc%5Etfw
   type: external_link
   domain: twitter.com
@@ -11812,18 +12064,6 @@ candidates:
     page: null
   - doc_id: CLACSO — Libros en coedición
     context: August 13, 2021
-    page: null
-- url: https://twitter.com/portaloaca
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: X
     page: null
 - url: https://u-paris.zoom.us/j/81194416190?pwd=bhFczuugmaxBUZYppa8nwNWWcocYrg.1
   type: mastodon
@@ -11899,18 +12139,6 @@ candidates:
     genre: journal-article
     html_url: https://utoronto.scholaris.ca/bitstreams/294604f5-9492-4098-986f-192c845c30a9/download
     source: unpaywall
-- url: https://viacampesina.org/en/
-  type: external_link
-  domain: viacampesina.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
 - url: https://video.antopie.org/w/qPMxudwXWyTfXRgvCVtSwB
   type: mastodon
   found_from:
@@ -12135,18 +12363,6 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.blacked-out-ingredients.eu/es/start/
-  type: external_link
-  domain: www.blacked-out-ingredients.eu
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: blackout ingredientes
-    page: null
 - url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=ESP_158_0049&download=1
   type: openalex
   found_from:
@@ -12423,18 +12639,6 @@ candidates:
   - doc_id: dfbd677b
     context: 35 https://www.ecosources.org/step-station-transfert-energie-pompage-turbinage ;
     page: 21
-- url: https://www.eldiario.es/sociedad/aemet-avisa-jueves-repunta-ola-calor-lunes_1_12530020.html
-  type: external_link
-  domain: www.eldiario.es
-  first_seen: '2026-05-18'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org — Biodiversidad
-    context: La AEMET confirma que la ola de calor se extenderá unos días más
-    page: null
 - url: https://www.erudit.org/fr/revues/eue/2012-v6-eue0411/1013709ar.pdf
   type: openalex
   found_from:
@@ -12521,42 +12725,6 @@ candidates:
     genre: journal-article
     html_url: https://www.erudit.org/fr/revues/pa/2017-n31-pa04751/1062006ar.pdf
     source: unpaywall
-- url: https://www.facebook.com/portaloaca
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Facebook
-    page: null
-- url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: Facebook
-    page: null
-- url: https://www.getgrav.org
-  type: external_link
-  domain: www.getgrav.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Troisièmes Voix — éditions
-    context: Grav
-    page: null
 - url: https://www.helloasso.com/associations/l-epicerie-locale-favorisant-l-entraide/collectes/un-nouveau-car-a-vrac
   type: mastodon
   found_from:
@@ -12615,30 +12783,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.instagram.com/frentebrasilpopular?igsh=MWx2YTBsbXc2MGoxdw==
-  type: external_link
-  domain: www.instagram.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
-- url: https://www.instagram.com/movimentosemterra/
-  type: external_link
-  domain: www.instagram.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
 - url: https://www.instagram.com/p/CSha8G0HFoe/?utm_source=ig_embed&utm_campaign=loading
   type: external_link
   domain: www.instagram.com
@@ -12653,30 +12797,6 @@ candidates:
     page: null
   - doc_id: CLACSO — Libros en coedición
     context: Ver esta publicación en Instagram
-    page: null
-- url: https://www.ithaka.org/cookies
-  type: external_link
-  domain: www.ithaka.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: Cookie Policy
-    page: null
-- url: https://www.ithaka.org/privacypolicy
-  type: external_link
-  domain: www.ithaka.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: Privacy Policy
     page: null
 - url: https://www.jois.eu/files/17_838_Trojanek et al.pdf
   type: openalex
@@ -12764,54 +12884,6 @@ candidates:
     genre: journal-article
     html_url: https://www.jstage.jst.go.jp/article/jjhg1948/42/1/42_1_1/_pdf
     source: unpaywall
-- url: https://www.jstor.org
-  type: external_link
-  domain: www.jstor.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: lien depuis https://daily.jstor.org/topic/land/
-    page: null
-- url: https://www.jstor.org/
-  type: external_link
-  domain: www.jstor.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: JSTOR.org
-    page: null
-- url: https://www.jstor.org/action/jpass?lookupKey=SlBBU1MtSS1ZZWFy&discountCode=SlNUT1JEQUlMWTI1&utm_source=jstor_daily&utm_campaign=daily_newsletter_annual_25
-  type: external_link
-  domain: www.jstor.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: lien depuis https://daily.jstor.org/topic/land/
-    page: null
-- url: https://www.jstor.org/stable/26216197?mag=land-of-the-free-home-of-the-bootleggers
-  type: external_link
-  domain: www.jstor.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: as historian Alex Sayf Cummings explains
-    page: null
 - url: https://www.larampe-echirolles.fr/
   type: mastodon
   found_from:
@@ -13893,18 +13965,6 @@ candidates:
     genre: journal-article
     html_url: https://www.persee.fr/docAsPDF/carav_1147-6753_2002_num_79_1_1368.pdf
     source: unpaywall
-- url: https://www.redebrasilatual.com.br/
-  type: external_link
-  domain: www.redebrasilatual.com.br
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
 - url: https://www.scielo.br/j/ss/a/rPqVfvrWLcc6hS33rYSmbSd/?lang=es&format=pdf
   type: openalex
   found_from:
@@ -14215,30 +14275,6 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.threads.net/intent/post?text=Land+of+the+Free%2C+Home+of+the+Bootleggers%0Ahttps%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
-  type: external_link
-  domain: www.threads.net
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: JSTOR Daily — topic land
-    context: Threads
-    page: null
-- url: https://www.tvt.org.br/
-  type: external_link
-  domain: www.tvt.org.br
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
 - url: https://www.twitch.tv/SentierBattant?sr=a
   type: mastodon
   found_from:
@@ -14293,30 +14329,6 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.youtube.com/channel/UC3C5WLLfrDnNsMR7Z-46eug
-  type: external_link
-  domain: www.youtube.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: Videoteca
-    page: null
-- url: https://www.youtube.com/user/videosmst
-  type: external_link
-  domain: www.youtube.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MST Brésil — biblioteca questão agraria
-    context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
-    page: null
 - url: https://www.youtube.com/watch?v=_gVdi6sizeY
   type: mastodon
   found_from:
@@ -14379,18 +14391,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://youtube.com/@crimethincexworkerscollective
-  type: external_link
-  domain: youtube.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-05-24'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CrimethInc — library
-    context: CrimethInc. on YouTube
-    page: null
 - url: https://youtube.com/live/licQxBiw-dk?feature=share
   type: mastodon
   found_from:
