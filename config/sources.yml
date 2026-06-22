@@ -138,51 +138,59 @@ sources:
     url: "https://infokiosques.net/"
     type: html
     orientation: militant
+    default_lang: fr
     min_interval_days: 3
 
   - label: "Infokiosques.net — Paysannerie & ruralité"
     url: "https://infokiosques.net/paysannerie_ruralite"
     type: html
     orientation: militant
+    default_lang: fr
     min_interval_days: 14
 
   - label: "Infokiosques.net — Écologie radicale"
     url: "https://infokiosques.net/ecologie_radicale"
     type: html
     orientation: militant
+    default_lang: fr
     min_interval_days: 14
 
   - label: "Infokiosques.net — Anticapitalisme"
     url: "https://infokiosques.net/anticapitalisme"
     type: html
     orientation: militant
+    default_lang: fr
     min_interval_days: 14
 
   - label: "Infokiosques.net — Squat (rapport à l'habiter)"
     url: "https://infokiosques.net/squat"
     type: html
     orientation: militant
+    default_lang: fr
     min_interval_days: 14
 
   - label: "Infokiosques.net — Anticolonialismes"
     url: "https://infokiosques.net/anticolonialismes"
     type: html
     orientation: militant
+    default_lang: fr
     min_interval_days: 14
 
   # ═══ Heinrich-Böll-Stiftung (DE/EN, html direct, communs/écologie) ═════════
-  # RECALIBRAGE : pages /topics/agriculture-food (404). On garde l'index
-  # publications (qui liste les filtres topic) en deep_html pour suivre les
-  # liens vers les rapports, et on ajoute la rubrique Atlas (Agriculture
-  # Atlas, Meat Atlas) qui contient des PDFs téléchargeables.
+  # RECALIBRAGE 2026-06-22 : /topics/agriculture-food → 404.
+  # Remplacé par /topics/agriculture (200 OK, 43 PDFs trouvés au test).
+  # On garde l'index publications (qui liste les filtres topic) en deep_html
+  # pour suivre les liens vers les rapports, et on ajoute la rubrique Atlas
+  # (Agriculture Atlas, Meat Atlas) qui contient des PDFs téléchargeables.
 
   # Böll EN /publications (deep crawl) renvoyait 227 docs / 0 ≥7 — index
   # généraliste très bruité (démocratie, géopolitique allemande). On cible
   # un topic plus aligné sur la thématique terre/agriculture.
   - label: "Böll Stiftung — Agriculture & Food (EN topic)"
-    url: "https://www.boell.de/en/topics/agriculture-food"
+    url: "https://www.boell.de/en/topics/agriculture"
     type: deep_html
     orientation: institutionnel
+    default_lang: en
     max_pages: 15
     min_interval_days: 14
 
@@ -190,6 +198,7 @@ sources:
     url: "https://www.boell.de/en/agriculture-atlas-2019"
     type: deep_html
     orientation: institutionnel
+    default_lang: en
     max_pages: 10
     min_interval_days: 30
 
@@ -197,6 +206,7 @@ sources:
     url: "https://www.boell.de/en/meat-atlas"
     type: deep_html
     orientation: institutionnel
+    default_lang: en
     max_pages: 10
     min_interval_days: 30
 
@@ -204,6 +214,7 @@ sources:
     url: "https://www.boell.de/de/publikationen"
     type: deep_html
     orientation: institutionnel
+    default_lang: de
     max_pages: 20
     min_interval_days: 14
 
@@ -212,13 +223,18 @@ sources:
     url: "https://libcom.org/library"
     type: deep_html
     orientation: militant
+    default_lang: en
     max_pages: 20
     min_interval_days: 14
 
-  - label: "CrimethInc — library"
-    url: "https://crimethinc.com/library"
+  # RECALIBRAGE 2026-06-22 : /library liste des articles sans PDF.
+  # Les PDFs téléchargeables sont sur /zines (sous-pages individuelles),
+  # hébergés sur cdn.crimethinc.com — cross-sous-domaine, capturé par _extract_docs.
+  - label: "CrimethInc — zines"
+    url: "https://crimethinc.com/zines"
     type: deep_html
     orientation: militant
+    default_lang: en
     max_pages: 20
     min_interval_days: 14
 
@@ -229,6 +245,7 @@ sources:
     url: "https://cras31.info/"
     type: deep_html
     orientation: militant
+    default_lang: fr
     max_pages: 25
     min_interval_days: 14
 
@@ -283,18 +300,21 @@ sources:
     url: "https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
     orientation: academique
+    default_lang: fr
     min_interval_days: 14
 
   - label: "HAL — paysannerie / agriculture vivrière"
     url: "https://api.archives-ouvertes.fr/search/?q=paysannerie+OR+%22agriculture+vivri%C3%A8re%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
     orientation: academique
+    default_lang: fr
     min_interval_days: 14
 
   - label: "HAL — propriété d'usage / fonds de dotation"
     url: "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
     orientation: academique
+    default_lang: fr
     min_interval_days: 14
 
   # ═══ Flux RSS — sites amis, refresh quotidien possible ═════════════════════
@@ -302,6 +322,7 @@ sources:
     url: "https://reporterre.net/spip.php?page=backend"
     type: rss
     orientation: journalistique
+    default_lang: fr
     max_items: 30
     min_interval_days: 1
 
@@ -309,6 +330,7 @@ sources:
     url: "https://lundi.am/spip.php?page=backend"
     type: rss
     orientation: journalistique
+    default_lang: fr
     max_items: 30
     min_interval_days: 1
 
@@ -319,37 +341,49 @@ sources:
     url: "https://mst.org.br/feed/"
     type: rss
     orientation: militant
+    default_lang: pt
     max_items: 30
     min_interval_days: 7
 
-  - label: "MST Brésil — biblioteca questão agraria"
-    url: "https://mst.org.br/biblioteca-da-questao-agraria/"
-    type: deep_html
-    orientation: militant
-    max_pages: 15
-    min_interval_days: 14
+  # IRRÉCUPÉRABLE 2026-06-22 : la page biblioteca charge son catalogue via
+  # DataTables JS (ajax WP). Le HTML statique affiche "Sem resultados".
+  # Ni deep_html ni playwright ne peuvent lire ce contenu sans exécution JS.
+  # À réactiver uniquement si un endpoint WP REST API ou un dump CSV est trouvé.
+  # - label: "MST Brésil — biblioteca questão agraria"
+  #   url: "https://mst.org.br/biblioteca-da-questao-agraria/"
+  #   type: deep_html
+  #   orientation: militant
+  #   default_lang: pt
+  #   max_pages: 15
+  #   min_interval_days: 14
 
   # International Land Coalition — réseau global, rapports peer-reviewed
   - label: "International Land Coalition — latest"
     url: "https://www.landcoalition.org/en/latest/"
     type: deep_html
     orientation: institutionnel
+    default_lang: en
     max_pages: 20
     min_interval_days: 7
 
   # TNI Land & Food — think-tank progressiste, géopolitique foncière
+  # NOTE 2026-06-22 : retourne HTTP 429 (rate-limiting) à chaque tentative.
+  # Throttle_state : 5 tentatives, 0 doc, HTTP 204 synthétique côté pipeline.
+  # Conserver avec un min_interval_days élevé pour limiter les appels.
   - label: "TNI — Land & Food topic"
     url: "https://www.tni.org/en/topic/land-food"
     type: deep_html
     orientation: institutionnel
+    default_lang: en
     max_pages: 10
-    min_interval_days: 14
+    min_interval_days: 30
 
   # Cultural Survival — peuples autochtones, Land Back
   - label: "Cultural Survival — RSS"
     url: "https://www.culturalsurvival.org/rss.xml"
     type: rss
     orientation: militant
+    default_lang: en
     max_items: 30
     min_interval_days: 7
 
@@ -358,14 +392,21 @@ sources:
     url: "https://grain.org/home/entries.rss"
     type: rss
     orientation: militant
+    default_lang: en
     max_items: 50
     min_interval_days: 7
 
   # JSTOR Daily — anglo-saxon, histoire des communs
+  # NOTE 2026-06-22 : page de topic ne liste que des articles HTML (pas de PDF).
+  # Aucun lien PDF ni sur l'index ni sur les sous-pages d'articles. JSTOR Daily
+  # est un magazine en ligne, pas une bibliothèque. 0 doc est le comportement
+  # attendu — source à conserver pour alimenter candidates.yml uniquement.
+  # Envisager de passer en type: rss si un feed existe, ou retirer.
   - label: "JSTOR Daily — topic land"
     url: "https://daily.jstor.org/topic/land/"
     type: deep_html
     orientation: journalistique
+    default_lang: en
     max_pages: 10
     min_interval_days: 21
 
@@ -374,6 +415,7 @@ sources:
     url: "https://endatiersmonde.org/feed/"
     type: rss
     orientation: institutionnel
+    default_lang: fr
     max_items: 30
     min_interval_days: 14
 
@@ -384,6 +426,7 @@ sources:
     url: "https://www.troisiemesvoix.org/fr"
     type: deep_html
     orientation: militant
+    default_lang: fr
     max_pages: 15
     min_interval_days: 14
 
@@ -401,6 +444,7 @@ sources:
     url: "https://www.cnt.es/feed/"
     type: rss
     orientation: militant
+    default_lang: es
     max_items: 30
     min_interval_days: 14
 
@@ -408,16 +452,22 @@ sources:
     url: "https://portaloaca.com/feed/"
     type: rss
     orientation: militant
+    default_lang: es
     max_items: 30
     min_interval_days: 14
 
   # NOUVEAU compagnon de Portal OACA : la catégorie "libros anarquistas"
   # contient explicitement des PDFs (68+ mentions de libros), bien plus
   # exploitable que le feed.
+  # NOTE 2026-06-22 : les PDFs des articles sont hébergés sur des domaines
+  # tiers (solidaridadobrera.org, editorialautodidacta.com, etc.). Le parser
+  # deep_html les capture MAIS le scoring sur titre seul est souvent trop bas.
+  # 0 doc attendu — source valide pour candidates.yml en attendant scoring amélioré.
   - label: "Portal OACA — Libros anarquistas (catégorie)"
     url: "https://www.portaloaca.com/categoria/pensamientolibertario/libros-anarquistas/"
     type: deep_html
     orientation: militant
+    default_lang: es
     max_pages: 15
     min_interval_days: 21
 
@@ -425,6 +475,7 @@ sources:
     url: "https://cgt.org.es/feed/"
     type: rss
     orientation: militant
+    default_lang: es
     max_items: 30
     min_interval_days: 14
 
@@ -432,6 +483,7 @@ sources:
     url: "https://www.sinpermiso.info/rss.xml"
     type: rss
     orientation: journalistique
+    default_lang: es
     max_items: 30
     min_interval_days: 14
 
@@ -440,6 +492,7 @@ sources:
     url: "https://enlacezapatista.ezln.org.mx/feed/"
     type: rss
     orientation: militant
+    default_lang: es
     max_items: 30
     min_interval_days: 14
 
@@ -447,6 +500,7 @@ sources:
     url: "https://viacampesina.org/es/feed/"
     type: rss
     orientation: militant
+    default_lang: es
     max_items: 30
     min_interval_days: 14
 
@@ -454,6 +508,7 @@ sources:
     url: "https://www.cloc-viacampesina.net/feed/"
     type: rss
     orientation: militant
+    default_lang: es
     max_items: 30
     min_interval_days: 14
 
@@ -461,6 +516,7 @@ sources:
     url: "https://www.fian.org/es/feed/"
     type: rss
     orientation: institutionnel
+    default_lang: es
     max_items: 30
     min_interval_days: 14
 
@@ -472,6 +528,7 @@ sources:
     url: "https://www.clacso.org/libros/"
     type: deep_html
     orientation: academique
+    default_lang: es
     max_pages: 15
     min_interval_days: 21
 
@@ -479,6 +536,7 @@ sources:
     url: "https://www.clacso.org/libros-de-clacso-en-coedicion/"
     type: deep_html
     orientation: academique
+    default_lang: es
     max_pages: 15
     min_interval_days: 21
 
@@ -486,15 +544,22 @@ sources:
     url: "https://www.clacso.org/publicaciones/"
     type: deep_html
     orientation: academique
+    default_lang: es
     max_pages: 15
     min_interval_days: 21
 
   # RECALIBRAGE Tierra.org : la racine n'a pas d'index PDF. On cible
   # directement les rubriques thématiques (agricultura, biodiversidad).
+  # NOTE 2026-06-22 : les PDFs trouvés (2-3 par rubrique) sont des documents
+  # INSTITUTIONNELS (protocoles RH, rapports internes) — hors-sujet éditorial.
+  # Les pages d'actualités ne contiennent pas de rapports thématiques libres.
+  # Source à faible rendement ; à conserver pour surveillance mais sans attente
+  # de docs publiables à court terme.
   - label: "Tierra.org — Agricultura y alimentación"
     url: "https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/"
     type: deep_html
     orientation: militant
+    default_lang: es
     max_pages: 15
     min_interval_days: 21
 
@@ -502,6 +567,7 @@ sources:
     url: "https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/"
     type: deep_html
     orientation: militant
+    default_lang: es
     max_pages: 15
     min_interval_days: 21
 
@@ -509,6 +575,7 @@ sources:
     url: "https://www.ceipaz.org/feed/"
     type: rss
     orientation: institutionnel
+    default_lang: es
     max_items: 30
     min_interval_days: 21
 
@@ -516,6 +583,7 @@ sources:
     url: "https://www.celag.org/feed/"
     type: rss
     orientation: journalistique
+    default_lang: es
     max_items: 30
     min_interval_days: 21
 
