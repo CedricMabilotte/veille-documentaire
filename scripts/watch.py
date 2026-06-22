@@ -373,9 +373,13 @@ def download_and_validate(url: str, dest: Path) -> tuple[bool, str]:
 
 
 def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
-                            keywords: list[str]) -> dict:
+                            keywords: list[str],
+                            source_default_lang: str = "") -> dict:
     """Pour un PDF validé : extrait couverture, texte, et appelle Claude pour
     le synopsis enrichi. Si score ≥ 9, génère aussi la bulle de publication.
+
+    `source_default_lang` : langue par défaut de la source (sources.yml),
+    transmise à build_metadata comme filet de sécurité.
 
     Retourne un dict avec : cover_path, summary, citations,
     matched_keywords, relevance_score, bulle, references (si applicable).
@@ -443,7 +447,10 @@ def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
     # doc_date / lang / editeur / doi / isbn / hal_id, sans jamais inférer
     # un auteur absent de la source (anonymat respecté).
     try:
-        bib = doc_metadata.build_metadata(doc, pdf_meta=meta, pdf_text=text)
+        bib = doc_metadata.build_metadata(
+            doc, pdf_meta=meta, pdf_text=text,
+            source_default_lang=source_default_lang,
+        )
         out["bib"] = bib
     except Exception as e:
         print(f"     ⚠  build_metadata raté : {e}")
@@ -1467,6 +1474,18 @@ def main() -> None:
                 "context_seen": doc.get("context", "")[:400],
             }
 
+            # S2 — Métadonnées légères pour TOUS les docs (pas seulement téléchargés)
+            # Au minimum : detect_lang_hints sur titre/filename + default_lang source.
+            # Sera enrichi avec le texte PDF si le doc est téléchargé.
+            try:
+                bib_light = doc_metadata.build_metadata(
+                    doc, source_default_lang=source.get("default_lang", ""),
+                )
+                if bib_light:
+                    result["bib"] = bib_light
+            except Exception as e:
+                print(f"     ⚠  build_metadata léger raté : {e}")
+
             if score >= threshold and not dry_run:
                 uid  = file_uid(doc["url"])
                 dest = DOCS_PATH / f"{uid}_{doc['filename']}"
@@ -1490,7 +1509,10 @@ def main() -> None:
 
                 # Enrichissement post-download : couverture + synopsis + bulle
                 if result["downloaded"]:
-                    enrichment = analyse_pdf_and_enrich(dest, doc, score, keywords)
+                    enrichment = analyse_pdf_and_enrich(
+                        dest, doc, score, keywords,
+                        source_default_lang=source.get("default_lang", ""),
+                    )
                     result.update(enrichment)
             elif score >= threshold and dry_run:
                 print(f"    [sim] Aurait téléchargé : {doc['filename']} ({score}/10)")

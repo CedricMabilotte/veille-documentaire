@@ -12,8 +12,10 @@ Stratégie de remplissage, par ordre de fiabilité :
   1. Métadonnées explicites de la source (HAL JSON, Archive.org JSON, OPDS,
      pubDate RSS) — fournies par les parsers via doc["src_meta"].
   2. Métadonnées intrinsèques du PDF (PyMuPDF : creationDate, author…).
-  3. Détection de langue heuristique sur le texte extrait.
-  4. Regex sur l'URL / le nom de fichier (dernier recours pour la date).
+  3. Détection de langue heuristique sur le texte extrait (≥80 chars, ≥30 mots).
+  4. Détection légère sur titre/filename/URL via mots-clés caractéristiques.
+  5. Héritage du `default_lang` configuré sur la source dans sources.yml.
+  6. Regex sur l'URL / le nom de fichier (dernier recours pour la date).
 
 RÈGLE D'OR : ne JAMAIS inventer un auteur. Si la source ne donne pas
 d'auteur, le champ reste vide (anonymat respecté — items B10/C9).
@@ -65,6 +67,78 @@ def detect_lang(text: str) -> str:
     best = max(scores, key=scores.get)
     # Seuil minimal : éviter de classer un texte trop court / bruité
     if scores[best] < 5:
+        return ""
+    return best
+
+
+# Mots-clés caractéristiques par langue pour détecter sur titre/filename/URL
+# (termes fréquents dans les noms de fichiers militants/académiques)
+_LANG_TITLE_HINTS: dict[str, list[str]] = {
+    "fr": [
+        "les", "des", "une", "pour", "dans", "avec", "contre",
+        "mouvement", "luttes", "communs", "terres", "paysannerie", "foncier",
+        "paysan", "territoire", "commun", "propriété", "liberté", "espace",
+        "rencontres", "cahier", "brochure", "texte", "rapport", "recueil",
+        "histoire", "pratique", "manuel",
+        "anticapitalisme", "ecologie", "squat", "anticolonialisme",
+        "quelques", "vers", "après", "entre",
+    ],
+    "en": [
+        "the", "and", "for", "land", "commons", "common", "peasant",
+        "struggle", "movement", "rights", "agrarian", "enclosure", "trust",
+        "cooperative", "community", "liberation", "freedom",
+        "history", "practice", "toward", "against",
+        "anarchism", "sabotage", "power", "state", "capital", "labor",
+        "solidarity", "autonomy", "resistance",
+    ],
+    "es": [
+        "los", "las", "una", "para", "con", "del", "por", "tierra",
+        "campesino", "campesina", "movimiento", "reforma", "agraria",
+        "comunes", "derechos", "lucha", "libertad", "autonomia", "resistencia",
+        "jovenes", "acciones", "publicaciones", "libros", "manual",
+        "zapatista", "sindicato", "trabajadores", "pueblos",
+    ],
+    "pt": [
+        "dos", "das", "para", "com", "uma", "terra", "trabalhadores",
+        "movimento", "agraria", "reforma", "camponeses", "questao",
+        "biblioteca", "desenvolvimento", "desigualdade", "direitos",
+        "sem-terra", "luta", "brasil",
+    ],
+    "de": [
+        "der", "die", "und", "den", "das", "für", "eine", "boden",
+        "gemeinsam", "bewegung", "kapital", "arbeit", "freiheit",
+        "programm", "bericht", "handbuch", "einführung", "fehlende",
+        "barrierefrei", "eigenmittel", "veröffentlichung",
+    ],
+}
+
+
+def detect_lang_hints(text: str) -> str:
+    """Détection légère sur un texte court (titre, filename, URL).
+    Retourne la langue la plus probable parmi fr/en/es/pt/de, ou '' si
+    le signal est insuffisant (score < 2 ou ambiguïté entre deux langues).
+    """
+    if not text:
+        return ""
+    # Normaliser : remplacer tirets/underscores/points par espaces
+    normalized = re.sub(r"[-_./%+]", " ", text.lower())
+    words = re.findall(r"[a-zà-öø-ÿ]{3,}", normalized)
+    if not words:
+        return ""
+    scores: dict[str, int] = {}
+    distinct_matches: dict[str, set] = {}
+    for lang, hints in _LANG_TITLE_HINTS.items():
+        hint_set = set(hints)
+        matched = {w for w in words if w in hint_set}
+        scores[lang] = sum(1 for w in words if w in hint_set)
+        distinct_matches[lang] = matched
+    best = max(scores, key=scores.get)
+    second = sorted(scores.values(), reverse=True)[1] if len(scores) > 1 else 0
+    # Signal trop faible : exiger au moins 2 mots distincts matchés
+    if len(distinct_matches[best]) < 2:
+        return ""
+    # Ambiguïté forte entre deux langues : ne pas trancher
+    if second >= scores[best]:
         return ""
     return best
 
@@ -133,13 +207,16 @@ def _parse_pdf_date(raw: str) -> str:
 
 
 def build_metadata(doc: dict, pdf_meta: dict | None = None,
-                   pdf_text: str = "") -> dict:
+                   pdf_text: str = "",
+                   source_default_lang: str = "") -> dict:
     """Agrège toutes les métadonnées fiables d'un document.
 
-    `doc`      : le dict du parser (url, filename, link_text, context,
-                 éventuellement `src_meta` injecté par le parser).
-    `pdf_meta` : sortie de pdf_processor.extract_metadata (optionnel).
-    `pdf_text` : texte extrait du PDF (optionnel, pour la langue/identifiants).
+    `doc`                : le dict du parser (url, filename, link_text, context,
+                           éventuellement `src_meta` injecté par le parser).
+    `pdf_meta`           : sortie de pdf_processor.extract_metadata (optionnel).
+    `pdf_text`           : texte extrait du PDF (optionnel, pour la langue/ids).
+    `source_default_lang`: langue par défaut de la source (sources.yml), utilisée
+                           en dernier recours si aucune détection n'aboutit.
 
     Retourne un dict avec : doc_date, lang, editeur, doi, isbn, hal_id.
     Champs absents → chaîne vide. Aucun auteur n'est inféré ici.
@@ -168,10 +245,20 @@ def build_metadata(doc: dict, pdf_meta: dict | None = None,
             m_y = _YEAR_RE.search(str(doc_date))
             norm_date = m_y.group(0) if m_y else ""
 
-    # ── lang : source explicite, puis détection sur le texte ─────────────────
+    # ── lang : 4 niveaux de fiabilité décroissante ───────────────────────────
+    # 1. Métadonnées explicites de la source (HAL language_s, OPDS, src_meta)
     lang = str(src_meta.get("lang") or src_meta.get("language") or "").lower()[:2]
     if lang not in ("fr", "en", "es", "pt", "de"):
+        # 2. Détection sur le texte extrait du PDF (≥80 chars, ≥30 mots)
         lang = detect_lang(pdf_text) if pdf_text else ""
+    if not lang:
+        # 3. Détection légère sur titre/filename/URL (mots-clés caractéristiques)
+        hint_sources = " ".join(filter(None, [link_text, filename, url]))
+        lang = detect_lang_hints(hint_sources)
+    if not lang:
+        # 4. Héritage du default_lang configuré sur la source dans sources.yml
+        if source_default_lang in ("fr", "en", "es", "pt", "de"):
+            lang = source_default_lang
 
     # ── editeur : source explicite ou métadonnées PDF ────────────────────────
     editeur = str(
