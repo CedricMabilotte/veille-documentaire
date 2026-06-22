@@ -339,7 +339,8 @@ function openModal(d) {
         ${enr.citations.map(c => `
           <div class="cit-item">
             <span class="page-ref">p. ${c.page || '?'}</span>
-            <div class="quote">« ${escape(c.quote || '')} »</div>
+            <div class="quote">« ${escape(c.quote_fr || c.quote || '')} »</div>
+            ${c.quote_fr && c.quote ? `<div class="quote-orig" style="font-size:0.85em;color:var(--text-dim);margin-top:3px">↳ <em>${escape(c.quote)}</em></div>` : ''}
             ${c.why_relevant ? `<div class="why">→ ${escape(c.why_relevant)}</div>` : ''}
           </div>`).join('')}
       </div>

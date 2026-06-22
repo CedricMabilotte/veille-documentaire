@@ -523,9 +523,12 @@ function citationsSectionHTML(citations) {
         } else if (c.verified === true) {
           mention = '<span class="biblio-cite-verified">✓ Citation vérifiée dans le document.</span>';
         }
+        const displayQuote = c.quote_fr || c.quote || '';
+        const origQuote = c.quote_fr && c.quote ? c.quote : '';
         return `
           <blockquote class="citation-block">
-            ${escape(c.quote || '')}
+            ${escape(displayQuote)}
+            ${origQuote ? `<span class="quote-orig" style="display:block;font-size:0.85em;color:var(--text-muted,#888);margin-top:4px;font-style:italic">↳ ${escape(origQuote)}</span>` : ''}
             <span class="quote-meta">${c.page ? `p. ${escape(c.page)}` : ''}${c.why_relevant ? ' — ' + escape(c.why_relevant) : ''}</span>
             ${mention}
           </blockquote>

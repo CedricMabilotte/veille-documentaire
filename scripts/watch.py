@@ -44,6 +44,7 @@ import link_check
 import corpus_stats
 import editorial
 import export_bibtex
+import translate_citations
 from prompt_version import prompt_hash
 try:
     import social_cards
@@ -1608,6 +1609,18 @@ def main() -> None:
         print("  📑  Exports BibTeX/RIS/CSL régénérés")
     except Exception as e:
         print(f"  ⚠  export_bibtex raté : {e}")
+
+    # ── Traduction des citations en français ──────────────────────────────────
+    print("\n🌐  Traduction des citations (→ fr)")
+    try:
+        tr_stats = translate_citations.run(
+            catalog_path=SYNOPSIS_PATH / "catalog.json",
+            verbose=True,
+        )
+        print(f"  📖  Traduction : {tr_stats['docs_processed']} doc(s), "
+              f"{tr_stats['citations_translated']} citation(s)")
+    except Exception as e:
+        print(f"  ⚠  translate_citations raté : {e}")
 
     publish_site(run_date)
 
