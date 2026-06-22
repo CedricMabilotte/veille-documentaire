@@ -126,7 +126,9 @@ def _find_article_links(html: str, base_url: str) -> list[str]:
     blacklist = re.compile(
         r"(mentions[-_ ]legales|contact|about|qui[- _]sommes|faq|"
         r"rss|atom|login|inscription|signin|signup|cookie|privacy|"
-        r"sitemap|search|recherche)",
+        r"sitemap|search|recherche|"
+        r"tag:|category:|categor[íi]a:|tag%3A|category%3A|"
+        r"/categoria/|/categor[íi]a/|/tags?/|/etiqueta/)",
         re.IGNORECASE,
     )
 
