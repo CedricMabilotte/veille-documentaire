@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-05-24T19:19:15Z",
+  "generated_at": "2026-06-22T14:07:15Z",
   "total": 1211,
   "total_docs": 1211,
   "total_downloaded": 183,
   "total_published": 130,
   "by_lang": {
-    "inconnu": 1145,
-    "en": 35,
-    "fr": 28,
-    "es": 2,
-    "pt": 1
+    "fr": 671,
+    "en": 300,
+    "de": 122,
+    "es": 116,
+    "pt": 2
   },
   "by_language": {
-    "inconnu": 1145,
-    "en": 35,
-    "fr": 28,
-    "es": 2,
-    "pt": 1
+    "fr": 671,
+    "en": 300,
+    "de": 122,
+    "es": 116,
+    "pt": 2
   },
   "by_source": {
     "Infokiosques.net — Paysannerie & ruralité": 121,
@@ -86,11 +86,13 @@
     "non_renseigne": 95
   },
   "blind_spots": [
+    "Corpus majoritairement francophone (55.4%) — sous-représentation des sources anglophones, hispanophones, lusophones et du Sud global.",
     "Forte dominante militante (59.0%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
+    "Corpus majoritairement francophone (55.4%) — sous-représentation des sources anglophones, hispanophones, lusophones et du Sud global.",
     "Forte dominante militante (59.0%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
@@ -259,7 +261,7 @@
     },
     {
       "label": "Böll Stiftung — Agriculture & Food (EN topic)",
-      "url": "https://www.boell.de/en/topics/agriculture-food",
+      "url": "https://www.boell.de/en/topics/agriculture",
       "type": "deep_html",
       "orientation": "institutionnel",
       "count": 0
@@ -307,8 +309,8 @@
       "count": 0
     },
     {
-      "label": "CrimethInc — library",
-      "url": "https://crimethinc.com/library",
+      "label": "CrimethInc — zines",
+      "url": "https://crimethinc.com/zines",
       "type": "deep_html",
       "orientation": "militant",
       "count": 0
@@ -367,13 +369,6 @@
       "url": "https://lundi.am/spip.php?page=backend",
       "type": "rss",
       "orientation": "journalistique",
-      "count": 0
-    },
-    {
-      "label": "MST Brésil — biblioteca questão agraria",
-      "url": "https://mst.org.br/biblioteca-da-questao-agraria/",
-      "type": "deep_html",
-      "orientation": "militant",
       "count": 0
     },
     {
