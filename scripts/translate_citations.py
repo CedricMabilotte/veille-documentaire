@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-translate_citations.py — Traduit les citations en français via Claude Code CLI.
+translate_citations.py — Traduit les citations en français via claude CLI.
 
 Pour chaque doc du catalogue dont la langue n'est pas le français :
 - Prend les citations de doc["enrichment"]["citations"]
@@ -28,7 +28,6 @@ CLAUDE_FLAGS = [
     "--output-format", "text",
     "--no-session-persistence",
     "--disable-slash-commands",
-    "--tools", "",
     "--dangerously-skip-permissions",
 ]
 CLAUDE_TIMEOUT_SEC = 120
