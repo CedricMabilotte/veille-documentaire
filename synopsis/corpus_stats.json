@@ -1,68 +1,67 @@
 {
-  "generated_at": "2026-06-23T12:45:37Z",
-  "total": 1211,
-  "total_docs": 1211,
+  "generated_at": "2026-06-23T18:10:32Z",
+  "total": 709,
+  "total_docs": 709,
   "total_downloaded": 183,
   "total_published": 130,
   "by_lang": {
-    "fr": 671,
-    "en": 300,
-    "de": 122,
+    "fr": 358,
+    "en": 212,
     "es": 116,
+    "de": 21,
     "pt": 2
   },
   "by_language": {
-    "fr": 671,
-    "en": 300,
-    "de": 122,
+    "fr": 358,
+    "en": 212,
     "es": 116,
+    "de": 21,
     "pt": 2
   },
   "by_source": {
     "Infokiosques.net — Paysannerie & ruralité": 121,
-    "Böll Stiftung — publications DE (deep crawl)": 116,
     "CRAS (Centre de Recherches sur les Alternatives Sociales)": 107,
-    "Infokiosques.net — Écologie radicale": 106,
-    "Infokiosques.net — Squat (rapport à l'habiter)": 101,
     "CLACSO Libros (acceso abierto)": 99,
-    "The Anarchist Library — OPDS (new releases)": 92,
-    "Infokiosques.net — Anticapitalisme": 82,
-    "Infokiosques.net — Anticolonialismes": 65,
     "Archive.org — commons / enclosure / agrarian (strict)": 55,
-    "Infokiosques.net — nouveautés": 40,
+    "The Anarchist Library — OPDS (new releases)": 53,
+    "Infokiosques.net — Squat (rapport à l'habiter)": 52,
     "Archive.org — community land trusts & housing commons": 36,
-    "Böll Stiftung — Agriculture Atlas (EN)": 23,
-    "Archive.org — subject:anarchism (texts)": 20,
-    "Archive.org — anarchism + land/peasant (strict)": 17,
+    "Infokiosques.net — Anticolonialismes": 17,
     "Archive.org — commons / enclosure": 16,
+    "Infokiosques.net — Écologie radicale": 15,
+    "Böll Stiftung — publications DE (deep crawl)": 12,
+    "Archive.org — subject:anarchism (texts)": 10,
     "Archive.org — peasant movements": 10,
     "International Land Coalition — latest": 10,
     "Infokiosques.net — index A": 8,
-    "Infokiosques.net — index C": 8,
-    "Infokiosques.net — index T (Terres, Travail)": 8,
-    "Infokiosques.net — index L (Libération, Luttes)": 8,
-    "Böll Stiftung — publications EN": 8,
     "Böll Stiftung — publications DE": 8,
     "The Anarchist Library — OPDS feed": 8,
     "HAL — communs fonciers": 8,
     "HAL — paysannerie / agriculture vivrière": 8,
+    "Archive.org — anarchism + land/peasant (strict)": 7,
+    "Infokiosques.net — Anticapitalisme": 7,
+    "Infokiosques.net — index C": 6,
     "HAL — propriété d'usage / fonds de dotation": 6,
     "Archive.org — Cuba (ES, réforme agraire & coopératives)": 5,
     "CLACSO — Libros en coedición": 5,
+    "Infokiosques.net — index L (Libération, Luttes)": 4,
+    "Böll Stiftung — Agriculture Atlas (EN)": 4,
+    "Infokiosques.net — nouveautés": 3,
     "Tierra.org (Amigos de la Tierra ES)": 3,
     "CLACSO — Publicaciones générales": 3,
+    "Böll Stiftung — publications EN": 2,
     "libcom.org — library": 1
   },
   "by_decade": {
     "2000s": 5,
     "2010s": 20,
     "2020s": 33,
-    "inconnu": 1153
+    "inconnu": 651
   },
   "by_score": {
-    "0": 237,
-    "1": 363,
-    "2": 300,
+    "0": 117,
+    "1": 153,
+    "2": 128,
     "3": 83,
     "4": 53,
     "5": 45,
@@ -73,24 +72,22 @@
     "10": 1
   },
   "by_doc_type": {
-    "autre": 1107,
-    "non_classe": 104
+    "autre": 631,
+    "non_classe": 78
   },
   "by_orientation": {
-    "militant": 715,
-    "academique": 252,
-    "institutionnel": 149,
-    "non_renseigne": 95
+    "militant": 376,
+    "academique": 242,
+    "non_renseigne": 65,
+    "institutionnel": 26
   },
   "blind_spots": [
-    "Corpus majoritairement francophone (55.4%) — sous-représentation des sources anglophones, hispanophones, lusophones et du Sud global.",
-    "Forte dominante militante (59.0%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (53.0%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Corpus majoritairement francophone (55.4%) — sous-représentation des sources anglophones, hispanophones, lusophones et du Sud global.",
-    "Forte dominante militante (59.0%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (53.0%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
@@ -103,32 +100,11 @@
       "count": 121
     },
     {
-      "label": "Böll Stiftung — publications DE (deep crawl)",
-      "url": "https://www.boell.de/de/publikationen",
-      "type": "deep_html",
-      "orientation": "institutionnel",
-      "count": 116
-    },
-    {
       "label": "CRAS (Centre de Recherches sur les Alternatives Sociales)",
       "url": "https://cras31.info/",
       "type": "deep_html",
       "orientation": "militant",
       "count": 107
-    },
-    {
-      "label": "Infokiosques.net — Écologie radicale",
-      "url": "https://infokiosques.net/ecologie_radicale",
-      "type": "html",
-      "orientation": "militant",
-      "count": 106
-    },
-    {
-      "label": "Infokiosques.net — Squat (rapport à l'habiter)",
-      "url": "https://infokiosques.net/squat",
-      "type": "html",
-      "orientation": "militant",
-      "count": 101
     },
     {
       "label": "CLACSO Libros (acceso abierto)",
@@ -138,27 +114,6 @@
       "count": 99
     },
     {
-      "label": "The Anarchist Library — OPDS (new releases)",
-      "url": "https://theanarchistlibrary.org/opds/new",
-      "type": "opds",
-      "orientation": "militant",
-      "count": 92
-    },
-    {
-      "label": "Infokiosques.net — Anticapitalisme",
-      "url": "https://infokiosques.net/anticapitalisme",
-      "type": "html",
-      "orientation": "militant",
-      "count": 82
-    },
-    {
-      "label": "Infokiosques.net — Anticolonialismes",
-      "url": "https://infokiosques.net/anticolonialismes",
-      "type": "html",
-      "orientation": "militant",
-      "count": 65
-    },
-    {
       "label": "Archive.org — commons / enclosure / agrarian (strict)",
       "url": "https://archive.org/advancedsearch.php?q=%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land+reform%22+OR+subject%3A%22enclosure%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
       "type": "archive_org",
@@ -166,11 +121,18 @@
       "count": 55
     },
     {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
+      "label": "The Anarchist Library — OPDS (new releases)",
+      "url": "https://theanarchistlibrary.org/opds/new",
+      "type": "opds",
+      "orientation": "militant",
+      "count": 53
+    },
+    {
+      "label": "Infokiosques.net — Squat (rapport à l'habiter)",
+      "url": "https://infokiosques.net/squat",
       "type": "html",
       "orientation": "militant",
-      "count": 40
+      "count": 52
     },
     {
       "label": "Archive.org — community land trusts & housing commons",
@@ -180,18 +142,25 @@
       "count": 36
     },
     {
-      "label": "Böll Stiftung — Agriculture Atlas (EN)",
-      "url": "https://www.boell.de/en/agriculture-atlas-2019",
-      "type": "deep_html",
-      "orientation": "institutionnel",
-      "count": 23
+      "label": "Infokiosques.net — Anticolonialismes",
+      "url": "https://infokiosques.net/anticolonialismes",
+      "type": "html",
+      "orientation": "militant",
+      "count": 17
     },
     {
-      "label": "Archive.org — anarchism + land/peasant (strict)",
-      "url": "https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
-      "type": "archive_org",
-      "orientation": "academique",
-      "count": 17
+      "label": "Infokiosques.net — Écologie radicale",
+      "url": "https://infokiosques.net/ecologie_radicale",
+      "type": "html",
+      "orientation": "militant",
+      "count": 15
+    },
+    {
+      "label": "Böll Stiftung — publications DE (deep crawl)",
+      "url": "https://www.boell.de/de/publikationen",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 12
     },
     {
       "label": "Archive.org — peasant movements",
@@ -222,6 +191,20 @@
       "count": 8
     },
     {
+      "label": "Archive.org — anarchism + land/peasant (strict)",
+      "url": "https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
+      "type": "archive_org",
+      "orientation": "academique",
+      "count": 7
+    },
+    {
+      "label": "Infokiosques.net — Anticapitalisme",
+      "url": "https://infokiosques.net/anticapitalisme",
+      "type": "html",
+      "orientation": "militant",
+      "count": 7
+    },
+    {
       "label": "HAL — propriété d'usage / fonds de dotation",
       "url": "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50",
       "type": "hal",
@@ -243,10 +226,24 @@
       "count": 5
     },
     {
+      "label": "Böll Stiftung — Agriculture Atlas (EN)",
+      "url": "https://www.boell.de/en/agriculture-atlas-2019",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 4
+    },
+    {
       "label": "CLACSO — Publicaciones générales",
       "url": "https://www.clacso.org/publicaciones/",
       "type": "deep_html",
       "orientation": "academique",
+      "count": 3
+    },
+    {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
       "count": 3
     },
     {
