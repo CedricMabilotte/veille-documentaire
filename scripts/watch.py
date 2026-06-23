@@ -542,6 +542,18 @@ def update_synopsis_catalog(report: dict) -> None:
     else:
         catalog = {"docs": {}, "meta": {}}
 
+    # Charge les UIDs de l'archive pour éviter la réinjection de docs archivés.
+    # Un doc archivé est considéré "déjà connu" et ne doit pas réintégrer le
+    # catalogue principal lors d'un re-scrape de sa source d'origine.
+    archive_path = SYNOPSIS_PATH / "catalog_archive.json"
+    archived_uids: set[str] = set()
+    if archive_path.exists():
+        try:
+            _arc = json.loads(archive_path.read_text(encoding="utf-8"))
+            archived_uids = set(_arc.get("docs", {}).keys())
+        except Exception as _e:
+            print(f"  ⚠  lecture catalog_archive raté (réinjections possibles) : {_e}")
+
     run_date = report["date"]
 
     for r in report["results"]:
@@ -575,6 +587,10 @@ def update_synopsis_catalog(report: dict) -> None:
                   "drive_url", "archive_url"):
             if k in r:
                 extras[k] = r[k]
+
+        # Skip les docs déjà archivés : ils ne doivent pas réintégrer le catalog.
+        if doc_id in archived_uids:
+            continue
 
         if doc_id in catalog["docs"]:
             fiche = catalog["docs"][doc_id]
@@ -1643,6 +1659,20 @@ def main() -> None:
               f"{tr_stats['citations_translated']} citation(s)")
     except Exception as e:
         print(f"  ⚠  translate_citations raté : {e}")
+
+    # ── Archivage des docs hors-sujet ────────────────────────────────────────
+    # Déplace les docs à score faible des sources bruyantes vers
+    # synopsis/catalog_archive.json. Non bloquant.
+    try:
+        import archive_catalog
+        arc = archive_catalog.run(
+            catalog_path=SYNOPSIS_PATH / "catalog.json",
+            archive_path=SYNOPSIS_PATH / "catalog_archive.json",
+            dry_run=False,
+            verbose=True,
+        )
+    except Exception as e:
+        print(f"  ⚠  archive_catalog raté : {e}")
 
     publish_site(run_date)
 
