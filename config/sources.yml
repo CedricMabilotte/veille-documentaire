@@ -346,19 +346,18 @@ sources:
     min_interval_days: 7
 
   # MST Brésil — biblioteca questão agraria (via API WP REST)
-  # TESTÉ 2026-06-22 : l'endpoint WP REST /wp-json/wp/v2/media?mime_type=application/pdf
-  # retourne bien des PDFs avec titre, date, source_url, post parent.
-  # Exemple : "CARTA IV EGBE" (2026-06-09), filesize 274 Ko.
-  # Un parser type: wp_rest n'existe pas encore dans le pipeline ; l'URL REST est
-  # documentée ici pour la prochaine session qui implémentera ce type de parser.
-  # En attendant, le RSS principal (entrée ci-dessus) couvre déjà le site.
-  # URL API : https://mst.org.br/wp-json/wp/v2/media?mime_type=application/pdf&per_page=20
-  # - label: "MST Brésil — biblioteca (WP REST API)"
-  #   url: "https://mst.org.br/wp-json/wp/v2/media?mime_type=application/pdf&per_page=20"
-  #   type: wp_rest
-  #   orientation: militant
-  #   default_lang: pt
-  #   min_interval_days: 14
+  # TESTÉ 2026-06-22 : l'endpoint retourne des PDFs avec titre, date,
+  # source_url, filesize. Parser wp_rest activé 2026-06-23.
+  # 198 PDFs disponibles sur 40 pages au 2026-06-23.
+  - label: "MST Brésil — biblioteca (WP REST API)"
+    url: "https://mst.org.br/wp-json/wp/v2/media?mime_type=application/pdf"
+    type: wp_rest
+    orientation: militant
+    default_lang: pt
+    per_page: 100
+    max_pages: 20
+    throttle_sec: 1.5
+    min_interval_days: 14
 
   # International Land Coalition — réseau global, rapports peer-reviewed
   - label: "International Land Coalition — latest"

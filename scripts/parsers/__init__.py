@@ -13,7 +13,7 @@ L'API contract pour tout parser :
                               page_title, source_url}
 """
 
-from . import html_static, deep_html, opds, archive_org, hal, playwright_parser, rss
+from . import html_static, deep_html, opds, archive_org, hal, playwright_parser, rss, wp_rest
 
 PARSERS = {
     "html":        html_static.find_documents,
@@ -23,6 +23,7 @@ PARSERS = {
     "hal":         hal.find_documents,
     "playwright":  playwright_parser.find_documents,
     "rss":         rss.find_documents,
+    "wp_rest":     wp_rest.find_documents,
 }
 
 
