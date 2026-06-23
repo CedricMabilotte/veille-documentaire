@@ -618,3 +618,48 @@
     init();
   }
 })();
+
+/* ── Lightbox couvertures ─────────────────────────────────────────── */
+(function () {
+  function openLightbox(src, alt) {
+    const overlay = document.createElement('div');
+    overlay.className = 'lb-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-label', 'Couverture agrandie');
+
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = alt || '';
+
+    const btn = document.createElement('button');
+    btn.className = 'lb-close';
+    btn.setAttribute('aria-label', 'Fermer');
+    btn.textContent = '×';
+
+    overlay.appendChild(img);
+    overlay.appendChild(btn);
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+
+    function close() {
+      overlay.remove();
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+    }
+    function onKey(e) { if (e.key === 'Escape') close(); }
+
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) close(); });
+    btn.addEventListener('click', close);
+    document.addEventListener('keydown', onKey);
+  }
+
+  // Délégation sur toute image dans .fiche-cover ou .fiche-cover-wrap
+  document.addEventListener('click', function (e) {
+    const img = e.target.closest('.fiche-cover img, .fiche-cover-wrap img');
+    if (!img || img.closest('.placeholder')) return;
+    if (img.naturalWidth === 0) return; // image non chargée
+    e.preventDefault();
+    openLightbox(img.src, img.alt);
+  });
+})();
