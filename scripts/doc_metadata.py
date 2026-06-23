@@ -48,6 +48,42 @@ _LANG_STOPWORDS = {
 
 _YEAR_RE = re.compile(r"\b(1[5-9]\d{2}|20[0-4]\d)\b")
 _ISODATE_RE = re.compile(r"\b(1[5-9]\d{2}|20[0-4]\d)-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])\b")
+# Plages biographiques ou historiques du type « 1884-1951 » ou « 1929-1936 » :
+# deux années séparées par un tiret. On les masque avant l'extraction heuristique
+# pour ne pas capter des années de naissance, de décès ou de période couverte.
+_YEAR_RANGE_RE = re.compile(r"\b1[5-9]\d{2}-(?:1[5-9]|20)\d{2}\b")
+
+# Bornes de plausibilité pour une date de publication :
+#
+#   _PUB_YEAR_MIN_STRICT (1950) — utilisé pour les sources heuristiques
+#     (filename, URL, context, link_text).  Ces chaînes contiennent souvent des
+#     années qui ne sont pas des dates de publication : années biographiques dans
+#     les métadonnées Archive.org (ex. « Borodin, 1884-1951 »), plages d'événements
+#     historiques dans les noms de fichiers (ex. « australie_1929-1936 »).
+#     Préférer une date vide plutôt qu'une date d'événement ou de naissance.
+#
+#   _PUB_YEAR_MIN_LOOSE (1800) — utilisé pour les métadonnées explicites
+#     (src_meta, PDF creationDate) qui sont des sources autoritatives.
+#
+#   _PUB_YEAR_MAX — commun : date future trop lointaine → suspecte.
+import datetime as _dt
+_PUB_YEAR_MIN_STRICT = 1950   # seuil heuristiques (filename/URL/context)
+_PUB_YEAR_MIN_LOOSE  = 1800   # seuil sources autoritatives (src_meta, PDF)
+_PUB_YEAR_MAX = _dt.date.today().year + 2
+
+
+def _is_plausible_pub_year(year_str: str, strict: bool = False) -> bool:
+    """Retourne True si l'année est dans les bornes de publication plausibles.
+
+    strict=True  → utilise _PUB_YEAR_MIN_STRICT (heuristiques sur filename/URL/context).
+    strict=False → utilise _PUB_YEAR_MIN_LOOSE  (métadonnées explicites).
+    """
+    try:
+        y = int(year_str)
+        floor = _PUB_YEAR_MIN_STRICT if strict else _PUB_YEAR_MIN_LOOSE
+        return floor <= y <= _PUB_YEAR_MAX
+    except (ValueError, TypeError):
+        return False
 _DOI_RE = re.compile(r"10\.\d{4,9}/[-._;()/:A-Za-z0-9]+")
 _ISBN_RE = re.compile(r"\b97[89][-\s]?(?:\d[-\s]?){9}\d\b|\b(?:\d[-\s]?){9}[\dXx]\b")
 _HALID_RE = re.compile(r"\b(?:hal|tel|halshs|hprints)-\d{6,}\b", re.IGNORECASE)
@@ -145,20 +181,38 @@ def detect_lang_hints(text: str) -> str:
 
 def extract_doc_date(*sources: str) -> str:
     """Cherche une date de publication (ISO si possible, sinon année) dans
-    les chaînes fournies, par ordre de priorité."""
+    les chaînes heuristiques fournies (link_text, context, filename, URL),
+    par ordre de priorité.
+
+    Garde-fous appliqués sur les sources heuristiques :
+    1. Les plages biographiques/historiques « NNNN-NNNN » (ex. « 1884-1951 »,
+       « 1929-1936 ») sont masquées avant la recherche : les deux années d'une
+       telle plage ne sont pas des dates de publication.
+    2. Les années antérieures à 1950 sont rejetées (seuil strict) : les filenames
+       et URLs encodant des événements historiques (ex. « barcelone-1931 ») ne
+       doivent pas être pris pour des dates de publication.
+    Préférer une date vide à une date fausse — c'est le fallback de dernier
+    recours ; les sources autoritatives (src_meta, PDF) passent par build_metadata.
+    """
+    def _strip_ranges(s: str) -> str:
+        """Masque les plages NNNN-NNNN pour ne pas capter les années isolées."""
+        return _YEAR_RANGE_RE.sub("XXXX-XXXX", s)
+
     for s in sources:
         if not s:
             continue
-        s = str(s)
+        s = _strip_ranges(str(s))
         m = _ISODATE_RE.search(s)
-        if m:
+        if m and _is_plausible_pub_year(m.group(1), strict=True):
             return m.group(0)
     for s in sources:
         if not s:
             continue
-        m = _YEAR_RE.search(str(s))
-        if m:
-            return m.group(0)
+        # Chercher toutes les années candidates dans la chaîne et retourner
+        # la première qui passe le filtre strict (≥ 1950).
+        for m in _YEAR_RE.finditer(_strip_ranges(str(s))):
+            if _is_plausible_pub_year(m.group(0), strict=True):
+                return m.group(0)
     return ""
 
 
@@ -235,15 +289,21 @@ def build_metadata(doc: dict, pdf_meta: dict | None = None,
         or _parse_pdf_date(pdf_meta.get("creationDate", ""))
         or extract_doc_date(link_text, context, filename, url)
     )
-    # Normaliser : si on a une date complète, la garder ; sinon juste l'année
+    # Normaliser : si on a une date complète, la garder ; sinon juste l'année.
+    # Garde-fou final (seuil loose ≥ 1800) : rejeter les années hors bornes.
+    # Les sources autoritatives (src_meta, PDF) peuvent légitimement donner une
+    # date antérieure à 1950 pour un document historique ; on n'applique donc pas
+    # le seuil strict ici. L'extraction heuristique (extract_doc_date) a déjà
+    # appliqué le filtre strict en amont.
     norm_date = ""
     if doc_date:
         m_iso = _ISODATE_RE.search(str(doc_date))
-        if m_iso:
+        if m_iso and _is_plausible_pub_year(m_iso.group(1), strict=False):
             norm_date = m_iso.group(0)
         else:
             m_y = _YEAR_RE.search(str(doc_date))
-            norm_date = m_y.group(0) if m_y else ""
+            if m_y and _is_plausible_pub_year(m_y.group(0), strict=False):
+                norm_date = m_y.group(0)
 
     # ── lang : 4 niveaux de fiabilité décroissante ───────────────────────────
     # 1. Métadonnées explicites de la source (HAL language_s, OPDS, src_meta)

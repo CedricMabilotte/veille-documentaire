@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T14:07:15Z",
+  "generated_at": "2026-06-23T12:45:37Z",
   "total": 1211,
   "total_docs": 1211,
   "total_downloaded": 183,
@@ -54,13 +54,10 @@
     "libcom.org — library": 1
   },
   "by_decade": {
-    "1880s": 1,
-    "1920s": 1,
-    "1930s": 1,
     "2000s": 5,
     "2010s": 20,
     "2020s": 33,
-    "inconnu": 1150
+    "inconnu": 1153
   },
   "by_score": {
     "0": 237,
@@ -351,13 +348,6 @@
       "count": 0
     },
     {
-      "label": "JSTOR Daily — topic land",
-      "url": "https://daily.jstor.org/topic/land/",
-      "type": "deep_html",
-      "orientation": "journalistique",
-      "count": 0
-    },
-    {
       "label": "La Vía Campesina (ES)",
       "url": "https://viacampesina.org/es/feed/",
       "type": "rss",
@@ -369,6 +359,13 @@
       "url": "https://lundi.am/spip.php?page=backend",
       "type": "rss",
       "orientation": "journalistique",
+      "count": 0
+    },
+    {
+      "label": "MST Brésil — biblioteca (WP REST API)",
+      "url": "https://mst.org.br/wp-json/wp/v2/media?mime_type=application/pdf",
+      "type": "wp_rest",
+      "orientation": "militant",
       "count": 0
     },
     {
@@ -407,24 +404,10 @@
       "count": 0
     },
     {
-      "label": "Tierra.org — Agricultura y alimentación",
-      "url": "https://www.tierra.org/01agricultura-y-alimentacion/02actualidad-agricultura/",
-      "type": "deep_html",
+      "label": "Tierra.org — RSS general",
+      "url": "https://www.tierra.org/feed/",
+      "type": "rss",
       "orientation": "militant",
-      "count": 0
-    },
-    {
-      "label": "Tierra.org — Biodiversidad",
-      "url": "https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/",
-      "type": "deep_html",
-      "orientation": "militant",
-      "count": 0
-    },
-    {
-      "label": "TNI — Land & Food topic",
-      "url": "https://www.tni.org/en/topic/land-food",
-      "type": "deep_html",
-      "orientation": "institutionnel",
       "count": 0
     },
     {
