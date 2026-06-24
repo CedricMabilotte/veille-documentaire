@@ -42,8 +42,43 @@
       "link_checked": "2026-05-22T23:21:29Z",
       "archive_url": "http://web.archive.org/web/20221013212705/https://infokiosques.net/IMG/pdf/actions-directes-mode-d-emploi-cahier.pdf",
       "score_initial": 1,
-      "score_final": null,
-      "lang": "fr"
+      "score_final": 2,
+      "lang": "fr",
+      "enrichment": {
+        "summary": "Guide pratique sur l'organisation d'actions directes non-violentes, publié par Les Pokemons Activistes (2000) et diffusé via la bibliothèque anarchiste. Le texte couvre la préparation (repérage, répartition des rôles, scénarios alternatifs), le déroulement (communication, gestion des médias, documentation photographique), et la dimension humaine (fun, convivialité, prévention des risques). Il s'adresse à tous les acteurs du mouvement social et couvre un spectre large d'actions : occupations, blocages, sabotages, détournements publicitaires, fêtes de rue. Document généraliste sans rapport direct avec la thématique communs fonciers, mais outil technique pour toute lutte d'action directe.",
+        "citations": [
+          {
+            "page": 2,
+            "quote": "une action doit le plus possible rester quelque chose de fun et d'excitant",
+            "why_relevant": "Insistance sur la dimension joyeuse de la lutte comme facteur de mobilisation durable",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 3,
+            "quote": "Des personnes munies d'appareils photos [...] devront avoir participé à la préparation de l'action, savoir exactement ce qu'elles font là et ce qu'elles peuvent filmer",
+            "why_relevant": "Conseil pratique sur la documentation des actions et la protection des participants",
+            "verified": true,
+            "page_physical": 3
+          }
+        ],
+        "matched_keywords": [
+          "action directe",
+          "occupation",
+          "autonomie"
+        ],
+        "relevance_score": 2,
+        "relevance_notes": "Guide technique d'action directe généraliste, sans rapport avec la thématique communs fonciers ou paysannerie. Score faible.",
+        "en_clair": "Un mode d'emploi pratique pour organiser une action directe : comment préparer, qui fait quoi, comment gérer les médias et les flics. Utile pour n'importe quelle lutte.",
+        "acteurs": [
+          "Les Pokemons Activistes"
+        ],
+        "controverse": "La tension entre planification rigoureuse des actions et maintien de la spontanéité et du fun qui rendent les luttes vivantes.",
+        "angle_journalistique": "Comment ce guide de 2000 a-t-il circulé dans les mouvements sociaux français et influencé les pratiques d'action directe ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "1fadbb5d": {
       "id": "1fadbb5d",
@@ -87,8 +122,36 @@
       "link_checked": "2026-05-22T23:21:31Z",
       "archive_url": "https://web.archive.org/web/20260522232138/https://infokiosques.net/IMG/pdf/Actionsdirectesmodedemploi.pdf",
       "score_initial": 0,
-      "score_final": null,
-      "lang": "fr"
+      "score_final": 2,
+      "lang": "fr",
+      "enrichment": {
+        "summary": "Version page par page du même guide pratique sur l'organisation d'actions directes non-violentes, publié par Les Pokemons Activistes (2000). Contenu identique à la version cahier (id c05f770b) : préparation, repérage, répartition des rôles, gestion des médias, documentation. Format différent pour impression alternative.",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "La base, c'est qu'une action se prépare, que cela demande du temps (mais vraiment ce que l'on appelle du temps) et une implication collective avant, après et pendant",
+            "why_relevant": "Principe central de la préparation collective des actions directes",
+            "verified": true,
+            "page_physical": 1
+          }
+        ],
+        "matched_keywords": [
+          "action directe",
+          "occupation",
+          "autonomie"
+        ],
+        "relevance_score": 2,
+        "relevance_notes": "Doublon format du guide d'action directe. Même score faible que c05f770b.",
+        "en_clair": "La même version du mode d'emploi d'action directe, en format différent pour une impression alternative.",
+        "acteurs": [
+          "Les Pokemons Activistes"
+        ],
+        "controverse": "",
+        "angle_journalistique": "",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "a7301e52": {
       "id": "a7301e52",
@@ -132,7 +195,12 @@
       "link_checked": "2026-05-22T23:21:45Z",
       "score_initial": 0,
       "score_final": null,
-      "lang": "fr"
+      "lang": "fr",
+      "enrichment": {
+        "error": "pdf_vide_ou_scanne",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      }
     },
     "81c0417c": {
       "id": "81c0417c",
@@ -177,7 +245,12 @@
       "archive_url": "http://web.archive.org/web/20260227175808/https://infokiosques.net/IMG/pdf/a-barreaux-rompus-cahier.pdf",
       "score_initial": 0,
       "score_final": null,
-      "lang": "fr"
+      "lang": "fr",
+      "enrichment": {
+        "error": "pdf_vide_ou_scanne",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      }
     },
     "fbbd37a0": {
       "id": "fbbd37a0",
@@ -221,8 +294,51 @@
       "link_checked": "2026-05-22T23:21:54Z",
       "archive_url": "http://web.archive.org/web/20250324140223/https://www.infokiosques.net/IMG/pdf/dejacque-a-bas-les-chefs-a5-12p-nb-fil-1859.pdf",
       "score_initial": 0,
-      "score_final": null,
-      "lang": "fr"
+      "score_final": 5,
+      "lang": "fr",
+      "enrichment": {
+        "summary": "Texte de Joseph Déjacque rédigé vers 1859, pionnier de la pensée anarchiste libertaire. Déjacque y attaque les révolutionnaires qui proclament la liberté tout en défendant la dictature et les chefs. Il distingue radicalement la liberté (qui ne peut s'octroyer ni se décréter) de toutes les formes d'autorité, y compris républicaines et démocratiques. Le texte développe une critique acérée de la dictature 'révolutionnaire', du prolétariat guidé et des proconsuls 'de salut public'. Bien que centré sur la critique de l'autorité politique plutôt que sur les communs fonciers, il constitue un texte fondateur de la pensée anarchiste sur l'autonomie et le refus de toute délégation de pouvoir — principes directement applicables aux luttes pour la gestion collective des terres.",
+        "citations": [
+          {
+            "page": 2,
+            "quote": "La liberté n'est pas chose qui puisse s'octroyer. il n'appartient pas au bon plaisir de quelque personnage ou comité de salut public que ce soit de la décréter.",
+            "why_relevant": "Définition de la liberté comme irreductible à tout pouvoir — applicable à l'autonomie foncière",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "ils n'imaginent pas qu'une société puisse fonctionner sans maîtres ni valets, sans chefs ni soldats",
+            "why_relevant": "Vision d'une société auto-organisée sans hiérarchie, applicable aux communs",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 3,
+            "quote": "Ce n'est que par le travail libre, le travail intellectuel et moral que notre génération [...] se métamorphosera en vif et brillant papillon",
+            "why_relevant": "Le travail libre (non contraint par l'autorité) comme condition de l'émancipation",
+            "verified": true,
+            "page_physical": 3
+          }
+        ],
+        "matched_keywords": [
+          "liberté",
+          "autonomie",
+          "travail libre",
+          "sans maîtres"
+        ],
+        "relevance_score": 5,
+        "relevance_notes": "Texte fondateur anarchiste de 1859, pertinent pour le cadre philosophique (autonomie, refus de l'autorité) mais sans rapport direct avec les communs fonciers ou la paysannerie. Score modéré.",
+        "en_clair": "En 1859, Déjacque explique que la liberté ne peut pas venir d'un chef, même révolutionnaire. Une société sans maîtres ni valets est possible — et c'est ça qui est réellement révolutionnaire.",
+        "acteurs": [
+          "Joseph Déjacque"
+        ],
+        "controverse": "La tension entre la critique de toute dictature révolutionnaire et la question des formes d'organisation collective nécessaires pour mener une lutte efficace.",
+        "angle_journalistique": "Comment la pensée de Déjacque sur l'autorité et l'auto-organisation a-t-elle influencé les mouvements contemporains pour les communs et l'autonomie ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "1b61c156": {
       "id": "1b61c156",
@@ -355,8 +471,9 @@
         "pdf_creator": ""
       },
       "enrichment": {
-        "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
-        "raw_response": "# ⚠️ Document vide détecté\n\nLe texte que vous m'avez fourni ne contient **aucun contenu textuel** — seules les balises de pagination [p.1] à [p.68] sont présentes, sans texte interstitiel.\n\nCela peut indiquer :\n\n1. **Extraction PDF échouée** — Le PDF contient peut-être surtout des images ou un encodage problématique\n2. **Fichier corrompu ou mal traité** — Les pages existent mais le texte n'a pas été extrait\n3. **Copier-coller incomplet** — Le contenu n'a pas été prélevé correctement\n\n## Que fair"
+        "error": "pdf_vide_ou_scanne",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
       },
       "download_status": "already_present",
       "versions": [],
@@ -436,7 +553,12 @@
       "editeur": "",
       "doi": "",
       "isbn": "",
-      "hal_id": ""
+      "hal_id": "",
+      "enrichment": {
+        "error": "pdf_vide_ou_scanne",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      }
     },
     "2a7e70b5": {
       "id": "2a7e70b5",
@@ -3517,8 +3639,8 @@
       "first_seen": "2026-05-15_16-10",
       "latest_run": "2026-05-15_16-10",
       "latest_score": 5,
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/2f70c746_alpha_068.pdf",
       "runs": [
         {
           "date": "2026-05-15_16-10",
@@ -3534,7 +3656,12 @@
       "score_final": null,
       "link_status": "ok",
       "link_checked": "2026-05-23T04:12:36Z",
-      "lang": "en"
+      "lang": "en",
+      "download_status": "already_present",
+      "enrichment": {
+        "error": "pdf_vide_ou_scanne",
+        "char_count": 62
+      }
     },
     "a238e5bd": {
       "id": "a238e5bd",
@@ -6487,8 +6614,8 @@
       "first_seen": "2026-05-16_08-58",
       "latest_run": "2026-05-23_00-59",
       "latest_score": 4,
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/dc6e03df_racisme_et_neocolonialisme_francais-cahier-nb-ecoencre-10pa4-2024.pdf",
       "runs": [
         {
           "date": "2026-05-16_08-58",
@@ -6536,7 +6663,7 @@
         }
       ],
       "score_initial": 4,
-      "score_final": null,
+      "score_final": 3,
       "collected_date": "2026-05-23_00-59",
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -6549,7 +6676,59 @@
       "versions": [],
       "link_status": "ok",
       "link_checked": "2026-05-23T04:19:59Z",
-      "archive_url": "http://web.archive.org/web/20251026181354/https://infokiosques.net/IMG/pdf/racisme_et_neocolonialisme_francais-cahier-nb-ecoencre-10pa4-2024.pdf"
+      "archive_url": "http://web.archive.org/web/20251026181354/https://infokiosques.net/IMG/pdf/racisme_et_neocolonialisme_francais-cahier-nb-ecoencre-10pa4-2024.pdf",
+      "download_status": "already_present",
+      "enrichment": {
+        "summary": "Ce document est un essai politique de l'association Survie proposant une généalogie du racisme français enracinée dans l'esclavage et la colonisation. Le texte débute par un glossaire politique définissant des termes clés : islamophobie, néocolonialisme, racisme biologique/culturel, décolonialité, antiracisme politique. Il retra ensuite les origines historiques du racisme moderne comme construction idéologique justifiant l'esclavage atlantique et l'exploitation coloniale entre les XVIe et XIXe siècles. Le cœur de l'analyse critique porte sur le racisme des Lumières : en dépit de leur réputation progressiste, Montesquieu et Voltaire ont développé des hiérarchies raciales scientistes (théorie des climats, comparaison Blancs/Nègres/singes) qui ont structuré les justifications de la domination. Survie affirme que cette idéologie raciste persiste dans les politique françaises contemporaines, en particulier dans les rapports de néocolonialisme que la France entretient avec ses anciennes colonies africaines et ses territoires jamais pleinement décolonisés (Kanaky Nouvelle-Calédonie, Mayotte/Comores). Le document ne traite cependant pas des enjeux fonciers, agraires, ou des régimes alternatifs de propriété; il reste au niveau de l'analyse du système d'oppression structurel.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "Une attitude décoloniale vise donc à déconstruire ces mythes persistants, et lutter contre les pratiques, qui ont des effets néfastes concrets sur les groupes et les individu.es.",
+            "why_relevant": "Notion de décolonialité appliquée à la déconstruction des systèmes imposés — applicable à la critique des régimes de propriété coloniale",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "L'antiracisme politique affirme aussi la primauté de l'autonomie des personnes premières concernées par le racisme à qui il appartient de définir par elles-mêmes leur agenda, priorités, stratégies",
+            "why_relevant": "Principe d'autodétermination et d'autonomie politique pertinent pour les mouvements paysans et autochtones de libération des terres",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "la richesse et la puissance française se fondent sur l'exploitation des peuples (néo)colonisés, dont les vies, du fait du racisme, sont moins considérées",
+            "why_relevant": "Ancrage de l'impérialisme dans l'expropriation matérielle et l'exploitation — contexte structurel des luttes foncières contemporaines",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "Survie est une association qui lutte contre le néocolonialisme français en Afrique sous toutes ses formes. Elle travaille aussi sur le processus d'indépendance de la Kanaky Nouvelle-Calédonie ou sur la situation de Mayotte arrachée aux Comores.",
+            "why_relevant": "Mention d'enjeux de souveraineté territoriale et de décolonisation — dimensions pertinentes pour les luttes d'autodétermination des peuples colonisés",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 4,
+            "quote": "S'impose alors, à partir du XVIIème siècle, une conception racialisée de l'esclavage. Celle-ci se développe dans le monde colonial et contribue à construire des identités raciales.",
+            "why_relevant": "Historicisation du racisme comme justification idéologique de l'exploitation coloniale et de l'expropriation des ressources et des terres",
+            "verified": true,
+            "page_physical": 4
+          }
+        ],
+        "matched_keywords": [],
+        "relevance_score": 3,
+        "relevance_notes": "Pertinence très faible. Aucun mot-clé central de la thématique (communs fonciers, propriété d'usage, libération des terres, paysannerie, agroécologie, coopératives foncières, etc.) n'apparaît dans le texte fourni. Le document traite le contexte structurel (colonialisme, racisme, néocolonialisme) des luttes pour la terre, mais demeure au niveau de l'analyse historique et idéologique; il ne rentre jamais dans les régimes alternatifs de propriété, les enjeux fonciers concrets, ou les mouvements paysans.",
+        "en_clair": "Ce texte explique comment la France s'est enrichie par le vol colonial et le racisme. C'est utile pour comprendre **pourquoi** les peuples colonisés se battent pour leurs terres — mais le texte ne parle pas de comment les reprendre collectivement, ni des formes de propriété commune ou coopérative.",
+        "acteurs": [
+          "Survie"
+        ],
+        "controverse": "Tension centrale entre l'image progressiste des Lumières (Montesquieu, Voltaire, Condorcet) et le racisme biologique qu'ils ont en réalité systématisé — critique adressée à l'enseignement scolaire français qui valorise les Lumières sans examiner leur fondement raciste.",
+        "angle_journalistique": "Enquête sur la façon dont les curricula scolaires français continuent d'occulter le racisme des penseurs des Lumières, perpétuant ainsi une mythologie nationale qui masque les fondations coloniales de la richesse française.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "15e2a3776f"
+      }
     },
     "1beb10a8": {
       "id": "1beb10a8",
@@ -6560,8 +6739,8 @@
       "first_seen": "2026-05-16_08-58",
       "latest_run": "2026-05-23_00-59",
       "latest_score": 4,
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/1beb10a8_racisme_et_neocolonialisme_francais-cahier-10pa4-2024.pdf",
       "runs": [
         {
           "date": "2026-05-16_08-58",
@@ -6609,7 +6788,7 @@
         }
       ],
       "score_initial": 4,
-      "score_final": null,
+      "score_final": 2,
       "collected_date": "2026-05-23_00-59",
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -6621,7 +6800,46 @@
       "hal_id": "",
       "versions": [],
       "link_status": "ok",
-      "link_checked": "2026-05-23T14:01:24Z"
+      "link_checked": "2026-05-23T14:01:24Z",
+      "download_status": "already_present",
+      "enrichment": {
+        "summary": "Ce document est un manuel d'éducation politique produit par l'association Survie. Il examine les liens entre le colonialisme historique, le néocolonialisme français contemporain (notamment en Afrique) et le racisme comme structure d'exploitation persistante. Le texte définit le néocolonialisme comme des « formes recomposées que prennent aujourd'hui les rapports coloniaux, généralement au niveau politique, économique, militaire et culturel », et argue que la « richesse et la puissance française se fondent sur l'exploitation des peuples (néo)colonisés ». Il propose un glossaire conceptuel—blanchité, décolonial, antiracisme politique, discrimination, impérialisme—pour clarifier le langage des mouvements anticoloniaux et antiracistes. Le document situe le racisme moderne comme construction idéologique développée entre le XVIe et le XIXe siècle pour justifier l'esclavage et la colonisation, et affirme que cette idéologie « structure encore la société française » et « continue d'imprégner les politiques menées par l'État français ». Il cherche à établir des connexions entre les luttes anticoloniales, antiracistes et décoloniales contemporaines pour renforcer les mouvements mutuellement. Cependant, le texte fourni—qui couvre pages 1 à 4—reste essentiellement introductif et glossaire ; le développement empirique ou analytique détaillé n'apparaît pas dans cet extrait.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "Le racisme moderne, construction développée pour justifier l'esclavage et la colonisation entre le 16ème et le 19ème siècle, structure encore la société française.",
+            "why_relevant": "Établit le lien historique entre racisme et exploitation coloniale, pertinent pour penser les structures de domination qui peuvent aussi opérer sur le foncier.",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 2,
+            "quote": "Formes recomposées que prennent aujourd'hui les rapports coloniaux, généralement au niveau politique, économique, militaire et culturel. [...] exploitation des ressources naturelles et humaines",
+            "why_relevant": "Mentionne l'exploitation des ressources naturelles comme dimension du néocolonialisme, point potentiel de connexion avec les enjeux fonciers, bien que non développé.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 3,
+            "quote": "La richesse et la puissance française se fondent sur l'exploitation des peuples (néo)colonisés, dont les vies, du fait du racisme, sont moins considérées.",
+            "why_relevant": "Pose le fondement matériel et politique de la domination—exploitation systématique—qui peut englober le foncier et les ressources, mais reste vague.",
+            "verified": true,
+            "page_physical": 3
+          }
+        ],
+        "matched_keywords": [],
+        "relevance_score": 2,
+        "relevance_notes": "Le texte est centré sur le racisme et le néocolonialisme politique, non sur le foncier, la propriété d'usage, les communs ou la paysannerie. Bien que la critique du néocolonialisme englobe théoriquement l'exploitation des ressources naturelles, il n'y a aucune développement spécifique du foncier comme objet politique, aucune mention de libération des terres, de réforme agraire ou de paysannerie. Pertinence faible pour une veille foncière stricto sensu.",
+        "en_clair": "Ce texte explique comment le racisme a justifié l'esclavage et la colonisation, et comment la France continue d'exploiter ses anciennes colonies ; c'est utile pour comprendre l'histoire qui a CRÉÉ la pauvreté et la dépendance, mais il ne parle pas directement de qui possède la terre, comment la reprendre ou comment vivre ensemble sur elle.",
+        "acteurs": [
+          "Association Survie",
+          "Frantz Fanon"
+        ],
+        "controverse": "Le document oppose l'antiracisme politique (critique structurelle des discriminations systémiques et des impacts concrets) à un « antiracisme moral » jugé insuffisant parce qu'il se focalise sur les actes individuels sans s'attaquer aux racines profondes qui structurent la société.",
+        "angle_journalistique": "Enquête sur les mécanismes contemporains d'exploitation française en Afrique (terres, ressources, politiques commerciales) et leurs racines racistes—ou reportage sur comment les mouvements antiracistes français pourront s'allier aux luttes indépendantistes ou de souveraineté dans les anciennes colonies.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "721359a0ef"
+      }
     },
     "d560eee7": {
       "id": "d560eee7",
@@ -6632,8 +6850,8 @@
       "first_seen": "2026-05-16_08-58",
       "latest_run": "2026-05-23_00-59",
       "latest_score": 4,
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/d560eee7_racisme_et_neocolonialisme_francais-pageparpage-20pa5-2024.pdf",
       "runs": [
         {
           "date": "2026-05-16_08-58",
@@ -6694,7 +6912,12 @@
       "versions": [],
       "link_status": "unchecked",
       "link_checked": "2026-05-23T14:01:53Z",
-      "archive_url": "http://web.archive.org/web/20250125195550/https://www.infokiosques.net/IMG/pdf/racisme_et_neocolonialisme_francais-pageparpage-20pa5-2024.pdf"
+      "archive_url": "http://web.archive.org/web/20250125195550/https://www.infokiosques.net/IMG/pdf/racisme_et_neocolonialisme_francais-pageparpage-20pa5-2024.pdf",
+      "download_status": "already_present",
+      "enrichment": {
+        "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
+        "raw_response": "`/session-start`\n\n---\n\n**Analyse documentaire complétée.**\n\nLe texte porte sur l'histoire du racisme français et ses fondations coloniales (XVIe-XIXe siècles). Il trace les liens entre esclavage, construction idéologique du racisme et justification de la colonisation via des théories pseudo-scientifiques. \n\n**Pertinence thématique : faible à modérée.** \n\nCe document fournit une contextualisation historique et politique critique du colonialisme (et donc de l'expropriation foncière qui l'accompagn"
+      }
     },
     "0120856d": {
       "id": "0120856d",
@@ -7524,8 +7747,8 @@
       "first_seen": "2026-05-17_23-39",
       "latest_run": "2026-05-23_00-59",
       "latest_score": 5,
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/1ce39b6d_el-poder-de-la-propiedad-elites-y-desamortizacion-en-la-espana-interior.pdf",
       "runs": [
         {
           "date": "2026-05-17_23-39",
@@ -7559,7 +7782,12 @@
       "isbn": "",
       "hal_id": "",
       "link_status": "dead",
-      "link_checked": "2026-05-23T14:03:37Z"
+      "link_checked": "2026-05-23T14:03:37Z",
+      "download_status": "already_present",
+      "enrichment": {
+        "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
+        "raw_response": "Je vais d'abord lancer une session, puis analyser le document.\n\n`/session-start`\n\n---\n\n**Problème détecté** : Le texte fourni contient **uniquement les pages liminaires du document** (pages de titre, sommaire, crédits, index des chapitres), pas le contenu analytique lui-même. \n\nPour générer une analyse thématique fiable selon vos instructions, j'aurais besoin :\n- **Au minimum** : 5-10 pages de contenu substantiel (développement des chapitres, citations d'archives, analyses)\n- **Idéalement** : au"
+      }
     },
     "60c98b72": {
       "id": "60c98b72",
@@ -8884,7 +9112,7 @@
       "download_status": "already_present",
       "versions": [],
       "score_initial": 6,
-      "score_final": null,
+      "score_final": 6,
       "collected_date": "2026-05-23_00-59",
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -8895,7 +9123,50 @@
       "isbn": "",
       "hal_id": "",
       "link_status": "ok",
-      "link_checked": "2026-05-24T16:25:45Z"
+      "link_checked": "2026-05-24T16:25:45Z",
+      "enrichment": {
+        "summary": "Cette brochure du DAL69 (mars 2025) retrace la grève des loyers dans les foyers Sonacotra (1973-1981), menée par les résidents immigrés, majoritairement algériens, organisés autour d'un Comité de Coordination autonome. La Sonacotra, créée en 1956 avec une logique coloniale de parquage et de surveillance de la main d'œuvre immigrée, impose des loyers très élevés et une gestion paternaliste. En réponse, les résidents organisent une grève des loyers qui mobilise entre 20 000 et 30 000 personnes, résiste aux saisies sur salaire et aux expulsions, avant d'être défaite en 1981. Le texte analyse la question de l'autonomie politique du mouvement vis-à-vis des partis et syndicats, les formes d'auto-organisation dans les foyers, et l'importance de la transmission de cette lutte méconnue. Il situe ce mouvement dans le continuum des luttes pour le logement des immigrés en France.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "Contre le « foyer-prison », les augmentations de loyers, et la gestion paternaliste des « gérants », c'est bien une lutte pour une vie meilleure, menée dans et contre le dispositif du foyer lui-même.",
+            "why_relevant": "Définition du foyer Sonacotra comme espace de contrôle et de la lutte comme résistance au logement-institution",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "En quoi la lutte menée par les résidents immigrés des foyers Sonacotra nous éclaire sur ce que signifie l'autonomie politique des luttes ?",
+            "why_relevant": "Question centrale sur l'autonomie organisationnelle des luttes pour le logement",
+            "verified": true,
+            "page_physical": 3
+          }
+        ],
+        "matched_keywords": [
+          "logement",
+          "loyers",
+          "expulsion",
+          "autonomie",
+          "lutte",
+          "immigration"
+        ],
+        "relevance_score": 6,
+        "relevance_notes": "Document sur une lutte historique pour le logement collectif des immigrés, articulant question du logement, autonomie organisationnelle et résistance aux expulsions. Pertinent pour la veille sur les alternatives à la propriété, même si centré sur le logement locatif plutôt que foncier.",
+        "en_clair": "Dans les années 1970, des travailleurs immigrés dans des foyers collectifs ont organisé une grève : ils ont arrêté de payer le loyer pendant des années pour exiger de meilleures conditions. C'est une leçon d'organisation collective contre un propriétaire-État.",
+        "acteurs": [
+          "DAL69",
+          "SONACOTRAL / SONACOTRA / ADOMA",
+          "Comité de Coordination des foyers",
+          "Eugène Claudius-Petit",
+          "Assane Ba",
+          "Choukri Hmed"
+        ],
+        "controverse": "Tension entre l'autonomie du mouvement des résidents vis-à-vis des organisations politiques (partis, syndicats) et la nécessité de soutiens extérieurs pour tenir face aux expulsions et aux saisies sur salaire.",
+        "angle_journalistique": "Comment la forme « comité de résidents autonome » utilisée par la grève Sonacotra pourrait-elle inspirer les luttes actuelles contre les bailleurs sociaux et les expulsions ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "b651aa85": {
       "id": "b651aa85",
@@ -8931,7 +9202,7 @@
       "download_status": "ok",
       "versions": [],
       "score_initial": 6,
-      "score_final": null,
+      "score_final": 6,
       "collected_date": "2026-05-23_00-59",
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -8943,7 +9214,49 @@
       "hal_id": "",
       "link_status": "ok",
       "link_checked": "2026-05-24T16:26:07Z",
-      "archive_url": "http://web.archive.org/web/20250915092736/https://infokiosques.net/IMG/pdf/greve_des_loyers_sonacotra_1973-1981-mars2025-pageparpage-version_legere-44pa5.pdf"
+      "archive_url": "http://web.archive.org/web/20250915092736/https://infokiosques.net/IMG/pdf/greve_des_loyers_sonacotra_1973-1981-mars2025-pageparpage-version_legere-44pa5.pdf",
+      "enrichment": {
+        "summary": "Version page par page de la brochure du DAL69 (mars 2025) sur la grève des loyers dans les foyers Sonacotra (1973-1981). Contenu identique à la version cahier (id 2478138a) : histoire de la SONACOTRAL fondée en 1956, genèse coloniale des foyers, mouvement de grève des résidents immigrés, autonomie politique du Comité de Coordination, chronologie des événements, témoignages et bibliographie. Document de diffusion du même contenu en format différent.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "L'objectif déclaré des foyers Sonacotra est le « contrôle et l'éducation ». Ils servent d'outils de surveillance et de gestion des populations.",
+            "why_relevant": "Révèle la fonction de contrôle social du logement collectif institutionnel",
+            "verified": true,
+            "page_physical": 7
+          },
+          {
+            "page": 6,
+            "quote": "le relogement en foyer des immigrés algériens est pour l'Etat français, un moyen de porter atteinte au FLN",
+            "why_relevant": "La gestion du logement comme outil politique de l'État colonial",
+            "verified": true,
+            "page_physical": 6
+          }
+        ],
+        "matched_keywords": [
+          "logement",
+          "loyers",
+          "expulsion",
+          "autonomie",
+          "lutte",
+          "immigration",
+          "colonial"
+        ],
+        "relevance_score": 6,
+        "relevance_notes": "Même contenu que 2478138a, format différent. Score identique : lutte historique pour le logement collectif autonome.",
+        "en_clair": "Version alternative (page par page) du même texte sur la grève des loyers Sonacotra — des travailleurs immigrés organisés pour refuser de payer un loyer abusif à un organisme d'État aux origines coloniales.",
+        "acteurs": [
+          "DAL69",
+          "SONACOTRAL / SONACOTRA / ADOMA",
+          "Comité de Coordination",
+          "Eugène Claudius-Petit"
+        ],
+        "controverse": "La grève a finalement été défaite : la question de ce qui aurait pu la faire gagner (alliance plus large ? structure organisationnelle différente ?) reste ouverte.",
+        "angle_journalistique": "Le rôle des foyers de travailleurs migrants comme outil de contrôle colonial et comme espace de résistance — une histoire qui éclaire les politiques d'hébergement actuelles.",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "7c44a8d2": {
       "id": "7c44a8d2",
@@ -10302,7 +10615,8 @@
       "score_final": null,
       "link_status": "unchecked",
       "link_checked": "2026-05-24T18:32:50Z",
-      "lang": "en"
+      "lang": "en",
+      "download_status": "failed_network (401 Client Error: Unauthorized for url: https://dn790002.ca.archive.org/0/items/housingassociati0000alde/housingassociati0000alde.pdf)"
     },
     "ed6b79d9": {
       "id": "ed6b79d9",
@@ -10531,8 +10845,8 @@
       "first_seen": "2026-05-18_05-12",
       "latest_run": "2026-05-23_00-59",
       "latest_score": 5,
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/1fe48a41_2025_3_ilc_po_maps_of_all_constituencies_by_country_indigenous_peoples.pdf",
       "runs": [
         {
           "date": "2026-05-18_05-12",
@@ -10567,7 +10881,8 @@
       "hal_id": "",
       "link_status": "ok",
       "link_checked": "2026-05-24T18:33:22Z",
-      "archive_url": "https://web.archive.org/web/20260524183328/https://d1n0nj0ml605fq.cloudfront.net/media/documents/2025_3_ilc_po_maps_of_all_constituencies_by_country_indigenous_peoples.pdf"
+      "archive_url": "https://web.archive.org/web/20260524183328/https://d1n0nj0ml605fq.cloudfront.net/media/documents/2025_3_ilc_po_maps_of_all_constituencies_by_country_indigenous_peoples.pdf",
+      "download_status": "already_present"
     },
     "6125738a": {
       "id": "6125738a",
@@ -11580,7 +11895,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 8,
-      "score_final": null,
+      "score_final": 9,
       "latest_score": 8,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -11608,7 +11923,56 @@
       "download_status": "ok",
       "link_status": "ok",
       "link_checked": "2026-05-24T19:16:12Z",
-      "archive_url": "http://web.archive.org/web/20240513030507/https://infokiosques.net/IMG/pdf/Agricultures_libertaires_DIY-cahier.pdf"
+      "archive_url": "http://web.archive.org/web/20240513030507/https://infokiosques.net/IMG/pdf/Agricultures_libertaires_DIY-cahier.pdf",
+      "enrichment": {
+        "summary": "Cette brochure rassemble deux textes complémentaires : 'Agricultures libertaires et révolutions' (automne 2020) et 'Vers une agriculture DIY' (printemps 2018), écrits dans le sillage de la victoire anti-aéroport à Notre-Dame-des-Landes. Le premier texte examine la question agricole dans une perspective révolutionnaire : que se passe-t-il quand les supermarchés sont vides ? Il confronte l'approche marxiste orthodoxe (extension du salariat) à une approche libertaire (socialisation du foncier ou de la production), analyse les tensions autour de la propriété d'usage des terres agricoles, et avertit contre les dérives identitaires et impérialistes des revendications territoriales. Le second texte part d'expériences concrètes d'autonomie alimentaire individuelle et collective dans des lieux militants, et examine les formes organisationnelles (associatives, informelles) permettant de produire hors des normes capitalistes. Les deux textes abordent directement la question de la propriété foncière et ses alternatives.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "faut-il socialiser la terre, ou se contenter de socialiser la production agricole ?",
+            "why_relevant": "Question centrale sur la propriété foncière et ses alternatives dans une perspective révolutionnaire",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "Attention aux dérives que peuvent entraîner la propriété (d'usage ou autre) de terres agricoles : on en arrive à voir les campagnes comme des surfaces",
+            "why_relevant": "Critique nuancée de la propriété d'usage comme alternative insuffisante",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 2,
+            "quote": "Maître chez soi, esclave des vaches",
+            "why_relevant": "Formule synthétisant la tension entre autonomie paysanne et dépendance aux contraintes agricoles",
+            "verified": true,
+            "page_physical": 2
+          }
+        ],
+        "matched_keywords": [
+          "agriculture",
+          "terres agricoles",
+          "propriété d'usage",
+          "socialisation du foncier",
+          "autonomie",
+          "paysannerie",
+          "communs",
+          "libertaires"
+        ],
+        "relevance_score": 9,
+        "relevance_notes": "Document qui aborde directement la propriété foncière, ses alternatives (socialisation, propriété d'usage), et les formes d'organisation agricole libertaire. Pertinent et nuancé sur les enjeux fonciers.",
+        "en_clair": "Ce texte pose des questions pratiques : si on fait la révolution demain, qui cultive la terre ? Faut-il que tout le monde en soit propriétaire, ou qu'on la gère ensemble ? Et comment on produit de la nourriture maintenant, sans attendre, dans des lieux militants ?",
+        "acteurs": [
+          "Première Internationale (tendance militante)",
+          "collectifs de la ZAD de Notre-Dame-des-Landes",
+          "Jérome L. (paysan tué par les gendarmes)"
+        ],
+        "controverse": "Débat non résolu entre socialisation complète des terres et propriété d'usage des terres agricoles — les deux approches comportant des risques (dérives identitaires d'un côté, maintien du rapport propriétaire de l'autre).",
+        "angle_journalistique": "Comment les collectifs militants qui pratiquent l'agriculture DIY résolvent-ils concrètement la question foncière — propriété, location, occupation, communs ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "1acb30fa": {
       "id": "1acb30fa",
@@ -12748,7 +13112,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 7,
-      "score_final": null,
+      "score_final": 9,
       "latest_score": 7,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -12776,7 +13140,58 @@
       "download_status": "already_present",
       "link_status": "ok",
       "link_checked": "2026-05-24T19:16:12Z",
-      "archive_url": "http://web.archive.org/web/20220419015421/https://infokiosques.net/IMG/pdf/que-reste-t-il-du-champ-des-possibles-sur-la-ZAD-pageparpage.pdf"
+      "archive_url": "http://web.archive.org/web/20220419015421/https://infokiosques.net/IMG/pdf/que-reste-t-il-du-champ-des-possibles-sur-la-ZAD-pageparpage.pdf",
+      "enrichment": {
+        "summary": "Ce texte anonyme publié en 2019 offre une critique documentée de la normalisation agricole et foncière à la ZAD de Notre-Dame-des-Landes après la victoire anti-aéroport. L'auteur, paysan boulanger bio et ex-militant de soutien à la ZAD, analyse les Conventions d'Occupation Précaires (COP) signées en 2018 : très contraignantes, non reconductibles, conditionnant un éventuel bail de fermage à la normalisation des activités (identification électronique des animaux, cotisations sociales, etc.). Il critique le processus de création d'un fonds de dotation pour racheter terres et bâtis, qui risque d'institutionnaliser la ZAD et de trahir ce qui en faisait la singularité : possibilité de construire selon ses propres règles, poly-activité, agriculture non-normée. Le texte pose la question de la portée politique des batailles en cours pour le foncier à la ZAD.",
+        "citations": [
+          {
+            "page": 4,
+            "quote": "Ce processus de tri exclut donc la majeure partie des 200 habitant.e.s. Ces COP couvrent 170 ha de terres sur les 1 500 ha de l'ancienne zad.",
+            "why_relevant": "Chiffres concrets sur l'exclusion de la majorité des occupants lors de la régularisation foncière",
+            "verified": true,
+            "page_physical": 4
+          },
+          {
+            "page": 3,
+            "quote": "toutes ces choses sont rendues très difficiles si l'on n'est pas privilégié socialement, propriétaire ou héritier.",
+            "why_relevant": "La ZAD comme espace d'accès à la terre pour ceux qui ne sont pas propriétaires ou héritiers",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 4,
+            "quote": "Le bénéficiaire s'engage à informer immédiatement l'État, par tout moyen, de toutes occupations par des tiers des Terrains",
+            "why_relevant": "Clause des COP qui fait des occupants des auxiliaires de la police foncière de l'État",
+            "verified": true,
+            "page_physical": 4
+          }
+        ],
+        "matched_keywords": [
+          "ZAD",
+          "foncier",
+          "terres",
+          "occupation",
+          "propriété",
+          "autonomie",
+          "expulsion",
+          "communs"
+        ],
+        "relevance_score": 9,
+        "relevance_notes": "Analyse critique précise et documentée des enjeux fonciers post-victoire à la ZAD, avec chiffres et analyse des mécanismes de normalisation. Très pertinent pour la thématique des alternatives à la propriété et des communs fonciers.",
+        "en_clair": "Après la victoire contre l'aéroport, l'État a proposé des contrats aux occupants de la ZAD, mais ces contrats obligent à dénoncer les squatteurs et à se normaliser. Ce texte explique pourquoi accepter ces conditions risque de détruire ce qui rendait la ZAD unique.",
+        "acteurs": [
+          "CMDO",
+          "Naturalistes en lutte",
+          "COPAIN 44",
+          "association Poursuivre Ensemble",
+          "État français"
+        ],
+        "controverse": "Débat entre partisans de la régularisation via les COP (pour sécuriser la présence) et critiques qui y voient une trahison de l'autonomie et de l'illégalité constitutive de la ZAD.",
+        "angle_journalistique": "Qu'est-il advenu des 170 ha de COPs à la ZAD cinq ans après : normalisation accomplie ou résistance maintenue ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "c2ab1111": {
       "id": "c2ab1111",
@@ -13471,7 +13886,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 9,
-      "score_final": null,
+      "score_final": 9,
       "latest_score": 9,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -13499,7 +13914,57 @@
       "download_status": "ok",
       "link_status": "ok",
       "link_checked": "2026-05-24T19:16:12Z",
-      "archive_url": "http://web.archive.org/web/20221005213247/https://infokiosques.net/IMG/pdf/la_fin_de_la_zad-cahier.pdf"
+      "archive_url": "http://web.archive.org/web/20221005213247/https://infokiosques.net/IMG/pdf/la_fin_de_la_zad-cahier.pdf",
+      "enrichment": {
+        "summary": "Ce texte, rédigé en juin 2018 par des occupants de la ZAD de Notre-Dame-des-Landes membres du POMPS, fait le bilan de la période post-victoire anti-aéroport et analyse ce qui se transforme sur la ZAD après la signature des COPs (Conventions d'Occupation Précaires) avec l'État. Les auteurs posent la question de ce que devient la ZAD après la légalisation partielle : perte d'illégalité constitutive, pression vers la normalisation, départs de camarades. Ils défendent une agriculture collective non-marchande, un espace ouvert et diversifié, le maintien de liens avec les luttes extérieures (droit au logement, habitats légers), et refusent de présenter le « visage lisse des néoruraux bio ». Le texte articule gestion collective des terres occupées, autonomie alimentaire militante et résistance à la normalisation étatique.",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "La ZAD doit ainsi continuer à combattre ouvertement et activement le capitalisme et les dominations.",
+            "why_relevant": "Affirmation du projet politique anticapitaliste lié à la gestion de la ZAD",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 2,
+            "quote": "on veut continuer à avoir une agriculture collective non-marchande qui alimente les résistances ici et mais aussi ailleurs",
+            "why_relevant": "Modèle d'agriculture collective non-marchande comme alternative à la propriété et au marché",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "en soutenant les luttes pour le droit au logement, la défense des habitats légers, mobiles et auto-construits, en ville comme à la campagne",
+            "why_relevant": "Lien entre occupation de terres et lutte pour l'habitat hors propriété",
+            "verified": true,
+            "page_physical": 2
+          }
+        ],
+        "matched_keywords": [
+          "ZAD",
+          "terres",
+          "agriculture collective",
+          "autonomie",
+          "occupation",
+          "communs",
+          "expulsion"
+        ],
+        "relevance_score": 9,
+        "relevance_notes": "Texte de bilan sur la ZAD après la victoire, centré sur la gestion collective des terres occupées et le refus de la normalisation. Très pertinent pour la thématique communs fonciers et alternatives à la propriété.",
+        "en_clair": "Après la victoire contre l'aéroport, ceux qui restent sur la ZAD expliquent comment ils veulent continuer : gérer la terre ensemble, sans la vendre ni la louer, nourrir les luttes autour, et rester ouverts au monde sans devenir une petite ferme bio tranquille.",
+        "acteurs": [
+          "POMPS",
+          "CMDO (Comité pour le Maintien des Occupations)",
+          "Naturalistes en lutte",
+          "COPAIN 44",
+          "association Poursuivre Ensemble"
+        ],
+        "controverse": "Tension centrale entre la régularisation via les COPs (qui implique des contraintes légales sévères et l'exclusion des 200 habitants non retenus) et le maintien d'une zone illégale ouverte et non normalisée.",
+        "angle_journalistique": "Cinq ans après, qu'est-il advenu du projet d'agriculture collective non-marchande de la ZAD de NDDL face aux pressions de normalisation de l'État ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "7d5576d2": {
       "id": "7d5576d2",
@@ -14294,7 +14759,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 9,
-      "score_final": null,
+      "score_final": 10,
       "latest_score": 9,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -14322,7 +14787,60 @@
       "download_status": "already_present",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "archive_url": "http://web.archive.org/web/20260111155023/https://infokiosques.net/IMG/pdf/recuperation_de_terres-bejuco-cahier.pdf"
+      "archive_url": "http://web.archive.org/web/20260111155023/https://infokiosques.net/IMG/pdf/recuperation_de_terres-bejuco-cahier.pdf",
+      "enrichment": {
+        "summary": "Cette brochure du collectif Bejuco (2016) documente la lutte pour la Libération de la Terre Mère (Uma Kiwe) menée par le peuple Nasa du Nord-Cauca en Colombie. Elle mêle textes analytiques et témoignages oraux d'acteurs de la récupération de terres ancestrales aujourd'hui occupées par l'agro-industrie sucrière et les transnationales. Le document décrit la construction d'une alliance entre communautés indigènes, afro-descendantes et paysannes autour du constat commun : la terre manque aux trois populations. Il analyse la tension entre les avancées légales (droits constitutionnels, resguardos) et l'approfondissement de la colonialité d'État, que la libération de la Terre Mère vient « secouer » en refusant toute négociation et tout financement institutionnel. Les organisations citées (ACIN, CRIC, ANUC) illustrent la richesse du mouvement. Le texte pose la question de l'autonomie comme condition de la libération, contre les pièges du racisme instrumentalisé par l'État pour diviser les communautés.",
+        "citations": [
+          {
+            "page": 2,
+            "quote": "il y a un rapprochement très fort en ce moment avec les communautés paysannes et les communautés afro-descendantes. Et la principale raison de ce rapprochement, c'est que la terre manque aux trois communautés d'égale manière.",
+            "why_relevant": "Formule explicite de l'alliance inter-communautaire autour de la question foncière",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 3,
+            "quote": "la libération de la Terre Mère vient secouer tout ça. Car c'est depuis la base, car c'est l'autonomie des communautés, parce qu'on a dit qu'on n'allait pas négocier avec le gouvernement",
+            "why_relevant": "Affirme l'autonomie radicale comme principe de la lutte foncière",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "C'est avant tout un combat pour la récupération de terres historiquement spoliées aux peuples originaires lors de la colonisation.",
+            "why_relevant": "Définition centrale de la lutte : récupération de terres spoliées",
+            "verified": true,
+            "page_physical": 3
+          }
+        ],
+        "matched_keywords": [
+          "libération des terres",
+          "terre",
+          "paysannerie",
+          "communautés",
+          "autonomie",
+          "récupération de terres",
+          "agro-industrie"
+        ],
+        "relevance_score": 10,
+        "relevance_notes": "Document central : lutte concrète pour la récupération de terres ancestrales, alliance paysans/indigènes, refus de la propriété privée capitaliste sur la terre. Correspond exactement à la thématique communs fonciers et libération des terres.",
+        "en_clair": "Des peuples indigènes et paysans en Colombie luttent ensemble pour reprendre les terres que l'agro-industrie leur a volées, sans négocier avec le gouvernement et sans accepter d'argent en échange. C'est une leçon concrète d'autonomie pour toute lutte foncière.",
+        "acteurs": [
+          "collectif Bejuco",
+          "ACIN (Association des cabildos indigènes du Nord-Cauca)",
+          "CRIC (Conseil régional indigène du Cauca)",
+          "ANUC",
+          "ELN",
+          "FARC-EP",
+          "M-19",
+          "peuple Nasa"
+        ],
+        "controverse": "Tension entre les conquêtes légales (droits constitutionnels, resguardos) qui ont renforcé la colonialité d'État, et la lutte autonome de libération de la Terre Mère qui refuse toute institutionnalisation.",
+        "angle_journalistique": "Comment les alliances inter-communautaires (indigènes, afro-descendants, paysans) au Nord-Cauca ont construit une stratégie commune de récupération de terres face à l'agro-industrie sucrière ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "0861d0b3": {
       "id": "0861d0b3",
@@ -16042,8 +16560,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/7e814cb7_zomia-12p-A5-cahier.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -16057,7 +16575,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "already_present"
     },
     "47c6599a": {
       "id": "47c6599a",
@@ -16080,8 +16599,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/47c6599a_zomia-12p-A5-fil.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -16095,7 +16614,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "already_present"
     },
     "c8e1f2ff": {
       "id": "c8e1f2ff",
@@ -16772,7 +17292,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 9,
-      "score_final": null,
+      "score_final": 8,
       "latest_score": 9,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -16800,7 +17320,48 @@
       "download_status": "ok",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "archive_url": "http://web.archive.org/web/20221209005221/https://infokiosques.net/IMG/pdf/Escartons-cahier.pdf"
+      "archive_url": "http://web.archive.org/web/20221209005221/https://infokiosques.net/IMG/pdf/Escartons-cahier.pdf",
+      "enrichment": {
+        "summary": "Cette brochure publiée par Boîte à Outils Editions (2013) retrace l'histoire de la République des Escartons dans le Briançonnais, forme d'autonomie communale et de gestion collective des terres alpines du XIVe siècle à la Révolution française. La Grande Charte de 1343 avec le Dauphin Humbert II y est reproduite : les communautés du Briançonnais rachètent leur liberté et obtiennent statut d'hommes libres, suppression des gabelles, gestion autonome du territoire. Le texte présente ce système comme un précédent historique de communs alpins : gestion collective des pâturages, forêts et alpages par des communautés organisées en syndics élus. La brochure s'inscrit dans une réflexion sur l'autonomie comme mode de vie et de lutte, et sur les formes historiques de gestion des terres communes hors propriété privée.",
+        "citations": [
+          {
+            "page": 2,
+            "quote": "Lesdits Juges ne pourront recevoir que douze deniers de monnaie courante par livre de condamnation prononcée.",
+            "why_relevant": "Extrait de la charte limitant le pouvoir seigneurial sur les communautés libres",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "tous, sans exception, seront désormais tenus et considérés comme des hommes libres, francs, et bourgeois.",
+            "why_relevant": "Affirmation de la liberté collective des habitants du Briançonnais par la charte de 1343",
+            "verified": true,
+            "page_physical": 2
+          }
+        ],
+        "matched_keywords": [
+          "communs",
+          "autonomie communale",
+          "gestion collective",
+          "terres communes",
+          "liberté"
+        ],
+        "relevance_score": 8,
+        "relevance_notes": "Document historique sur une forme réelle de communs alpins et d'autonomie collective médiévale. Pertinent pour la thématique des alternatives à la propriété privée et des communs fonciers, même si le contexte est historique.",
+        "en_clair": "Au Moyen Age, dans les Alpes, des villages ont obtenu le droit de gérer leurs terres ensemble, sans seigneur, en payant une somme forfaitaire. C'est un exemple concret de communs fonciers qui a duré plusieurs siècles.",
+        "acteurs": [
+          "Dauphin Humbert II",
+          "communautés de Briançon",
+          "Queyras",
+          "Vallouise",
+          "Boîte à Outils Editions"
+        ],
+        "controverse": "La question de savoir si ces formes d'autonomie médiévale constituent de vrais communs fonciers ou simplement une franchise seigneuriale améliorée reste ouverte.",
+        "angle_journalistique": "Que peut-on apprendre des Escartons pour les luttes contemporaines pour la gestion collective des terres de montagne et l'autonomie territoriale ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "779edb5d": {
       "id": "779edb5d",
@@ -17126,7 +17687,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 9,
-      "score_final": null,
+      "score_final": 9,
       "latest_score": 9,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -17154,7 +17715,53 @@
       "download_status": "already_present",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "archive_url": "http://web.archive.org/web/20240620235353/https://www.infokiosques.net/IMG/pdf/Paysans-A6-8p-NB-cahier.pdf"
+      "archive_url": "http://web.archive.org/web/20240620235353/https://www.infokiosques.net/IMG/pdf/Paysans-A6-8p-NB-cahier.pdf",
+      "enrichment": {
+        "summary": "Ce texte publié par Apache Editions (bulletin de contre-info en Cévennes, mars 2010) est un manifeste de la paysannerie rebelle contre les normes capitalistes qui régissent la production agricole. Il dénonce l'intégration forcée des paysans dans le système marchand : propriété privée des terres, emprunts bancaires, normes sanitaires contraignantes, semences OGM, certification Bio marchandisée, rôle de « paysagiste » touristique. Le texte refuse toutes les cases proposées (ouvriers agricoles, propriétaires endettés, producteurs certifiés) et appelle à « cultiver la révolte » contre ce qu'on présente comme indépassable. Il articule critique de la propriété foncière, critique du travail salarié agricole et appel à l'autonomie paysanne hors marché.",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "Toutes les terres sont sous le régime de la Propriété Privée. Il en est qu'elle délaisse et que le temps valorise pour la spéculation, d'autres qu'elle loue, d'autres qu'elle vend.",
+            "why_relevant": "Critique directe de la propriété privée des terres comme obstacle à l'autonomie paysanne",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 1,
+            "quote": "Ne soyons pas leurs paysans pas plus que leurs ouvriers... Cultivons la révolte partout sur cette terre.",
+            "why_relevant": "Appel à la rupture avec le système agricole capitaliste",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 2,
+            "quote": "On nous vend la poudre blanche, la poudre bleue, la poudre jaune..., pour accroître le rendement des terres, empoisonner les plantes et animaux nuisibles.",
+            "why_relevant": "Dénonciation de l'agriculture industrielle et de ses intrants",
+            "verified": true,
+            "page_physical": 2
+          }
+        ],
+        "matched_keywords": [
+          "paysannerie",
+          "propriété privée",
+          "terres",
+          "autonomie",
+          "agriculture",
+          "communs"
+        ],
+        "relevance_score": 9,
+        "relevance_notes": "Texte militant direct sur la condition paysanne sous le capitalisme, critique de la propriété foncière, appel à l'autonomie. Très pertinent pour la thématique de la veille.",
+        "en_clair": "Ce texte dit : les paysans sont coincés, qu'ils soient propriétaires endettés ou locataires, les règles du marché les écrasent tous. La solution, c'est de refuser ce système et de cultiver autrement, en dehors du marché.",
+        "acteurs": [
+          "Apache Editions",
+          "bulletin de contre-info en Cévennes"
+        ],
+        "controverse": "La brochure refuse toute solution réformiste (Bio certifié, labels, statuts) mais ne propose pas de modèle alternatif concret, laissant ouverte la question des formes d'organisation paysanne hors marché.",
+        "angle_journalistique": "Comment les paysans qui refusent à la fois le marché et le statut institutionnel organisent-ils concrètement leur subsistance en Cévennes ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "71a3ece0": {
       "id": "71a3ece0",
@@ -17405,8 +18012,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/3486835f_acnm-ogm-finale-di-partita-2004-italiana_versione_pagina_per_pagina.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -17420,7 +18027,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "already_present"
     },
     "1c7c962e": {
       "id": "1c7c962e",
@@ -17519,8 +18127,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/514c1d0e_Tentative_Communautaire_A-16pA5-fil-2002.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -17534,7 +18142,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "already_present"
     },
     "8f7080e5": {
       "id": "8f7080e5",
@@ -17557,8 +18166,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/8f7080e5_Tentative_Communautaire_A.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -17572,7 +18181,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "0155a6a2": {
       "id": "0155a6a2",
@@ -17671,8 +18281,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/a4a76ee2_le_blanchiment_des_terres_ecoquartiers-fil-12p-2020.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -17686,7 +18296,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "5095e5aa": {
       "id": "5095e5aa",
@@ -17709,8 +18320,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/5095e5aa_le_blanchiment_des_terres_ecoquartiers-cahier-6p-2020.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -17724,7 +18335,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "d022821b": {
       "id": "d022821b",
@@ -17747,8 +18359,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/d022821b_foret_en_lutte_lutte_en_foret_contre_la_megascierie-40p-fil.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -17762,7 +18374,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "a54f94c8": {
       "id": "a54f94c8",
@@ -17785,8 +18398,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/a54f94c8_foret_en_lutte_lutte_en_foret_contre_la_megascierie-40p-cahier.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -17800,7 +18413,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "d616972c": {
       "id": "d616972c",
@@ -17823,8 +18437,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/d616972c_GdS-brochure.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -17838,7 +18452,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "8698e3de": {
       "id": "8698e3de",
@@ -17861,8 +18476,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/8698e3de_GdS_OK.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -17876,7 +18491,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "097db132": {
       "id": "097db132",
@@ -18281,8 +18897,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/fa200745_squat-et-ecriture-page-par-page-mars2025.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -18296,7 +18912,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "940578dc": {
       "id": "940578dc",
@@ -18319,8 +18936,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/940578dc_squat-et-ecriture-cahier-mars2025.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -18334,7 +18951,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "3fff3ea6": {
       "id": "3fff3ea6",
@@ -18585,8 +19203,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/fa6ceecb_Emergency_and_winter_time_social_housing-8p-2021-english-fil.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -18600,7 +19218,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "2c9c4d74": {
       "id": "2c9c4d74",
@@ -18623,8 +19242,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/2c9c4d74_hebergement_d_urgence_treve_hivernale-avril2021-cahier.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -18638,7 +19257,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "de319a22": {
       "id": "de319a22",
@@ -19092,7 +19712,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 8,
-      "score_final": null,
+      "score_final": 7,
       "latest_score": 8,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -19119,7 +19739,48 @@
       ],
       "download_status": "ok",
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "enrichment": {
+        "summary": "Ce texte de juillet 2019, signé 'Un petit groupe d'occupant·e·s', dresse un bilan un an après les expulsions militaires d'avril 2018 à la ZAD de Notre-Dame-des-Landes. Il décrit le quotidien difficile : charge de travail alourdie par la résistance administrative aux COPs, conflits internes, départs de nombreux camarades dégoûtés, perte de sens collectif. Les auteurs exposent les dynamiques en cours autour du foncier agricole (COPs, morcellement progressif), de l'habitat (Commission habitat de l'assemblée des usages, négociation d'un cadre légal pour les auto-constructions), et des tentatives de réoccupation expulsées à nouveau. Ils affirment vouloir continuer à créer des pratiques collectives anticapitalistes, soutenir les luttes extérieures, et empêcher la normalisation totale.",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "On souhaiterait maintenant mettre notre énergie dans le support et la consolidation de toutes ces luttes.",
+            "why_relevant": "Expression de la vocation de la ZAD comme espace ressource pour les luttes extérieures",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 3,
+            "quote": "L'avenir de nos usages dans les bâtis en dur qui n'ont pas une fonction agricole évidente reste incertain.",
+            "why_relevant": "La question de l'usage non-agricole des terres et bâtis comme enjeu de la normalisation",
+            "verified": true,
+            "page_physical": 3
+          }
+        ],
+        "matched_keywords": [
+          "ZAD",
+          "expulsion",
+          "occupation",
+          "foncier",
+          "autonomie",
+          "habitat",
+          "communs"
+        ],
+        "relevance_score": 7,
+        "relevance_notes": "Témoignage direct sur la vie collective après les expulsions à la ZAD, abordant les enjeux fonciers, l'habitat auto-construit et la résistance à la normalisation. Pertinent pour la thématique.",
+        "en_clair": "Un an après que l'armée a expulsé des gens de la ZAD, ceux qui restent racontent ce que c'est : plus de travail, moins de camarades, des contrats compliqués avec l'État. Mais ils tiennent et cherchent comment rester utiles aux autres luttes.",
+        "acteurs": [
+          "occupant·e·s ZAD de NDDL",
+          "assemblée des usages",
+          "Commission habitat"
+        ],
+        "controverse": "Tension entre deux stratégies : réoccuper les parcelles expulsées (pour maintenir le rapport de force) versus négocier un cadre légal pour les auto-constructions (pour sécuriser ce qui reste).",
+        "angle_journalistique": "Comment les communautés d'occupation collective gèrent-elles la coexistence entre stratégie légale et illégale dans un même territoire ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "bc522fd4": {
       "id": "bc522fd4",
@@ -19236,7 +19897,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 7,
-      "score_final": null,
+      "score_final": 4,
       "latest_score": 7,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -19263,7 +19924,47 @@
       ],
       "download_status": "ok",
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "enrichment": {
+        "summary": "Traduction portugaise (Kamedo, mars 2022) des textes de Molotov & Confetti #1 (Paris, 1984), diffusée par Zanzara athée. Même contenu que les versions française, anglaise et italienne : défense du squat collectif contre la propriété privée du logement à Paris (50 000 sans-abri, 300 000 logements vides), organisation collective face aux expulsions, lien avec Radio Mouvance (radio pirate antifasciste). Le texte documente également l'attaque de squatters contre la police à Ménilmontant en mai 1984. Document de diffusion internationale d'un texte historique sur le mouvement squat parisien.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "Dificuldade. Ser jovem e encurralado à dos teus pais, é preciso guita para alugar um quarto.",
+            "why_relevant": "En portugais : les conditions de logement précaire qui poussent à l'occupation collective",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 5,
+            "quote": "300 000 habitações vazias, 300 000 habitações a tomar, a ocupar colectivamente, a squatar",
+            "why_relevant": "L'argument central : logements vides = logements à occuper collectivement",
+            "verified": true,
+            "page_physical": 5
+          }
+        ],
+        "matched_keywords": [
+          "ocupação",
+          "propriedade",
+          "habitação",
+          "luta",
+          "autonomia"
+        ],
+        "relevance_score": 4,
+        "relevance_notes": "Version portugaise du texte Molotov & Confetti 1984. Pertinence limitée pour la veille principale (communs fonciers, paysannerie) — squat urbain historique en langue portugaise.",
+        "en_clair": "La même brochure parisienne de 1984 sur le squat, traduite en portugais. Le message : il y a 300 000 logements vides à Paris, prenons-les ensemble plutôt que de rester à la rue.",
+        "acteurs": [
+          "collectif Molotov & Confetti",
+          "Kamedo (traducteur)",
+          "Zanzara athée",
+          "Radio Mouvance"
+        ],
+        "controverse": "La même qu'en anglais et italien : le squat peut-il survivre sans lutte active ou devient-il un ghetto ?",
+        "angle_journalistique": "Comment le texte parisien de 1984 a-t-il circulé dans les mouvements de lutte pour le logement au Portugal et au Brésil ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "9f0c98bb": {
       "id": "9f0c98bb",
@@ -19380,7 +20081,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 7,
-      "score_final": null,
+      "score_final": 6,
       "latest_score": 7,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -19407,7 +20108,47 @@
       ],
       "download_status": "ok",
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "enrichment": {
+        "summary": "Traduction anglaise (novembre 2020, par Camille, Staz et Zanzara athée) de textes originellement publiés dans la zine Molotov & Confetti #1 (Paris, 1984). Ces textes documentent les tentatives d'ouverture d'un Centre Autonome Occupé à Paris et défendent le squat comme pratique de lutte contre la propriété privée du logement. Le document décrit les conditions de logement précaire à Paris (50 000 sans-abri, 300 000 logements vides) et défend le squat collectif comme réponse directe. Il relate l'attaque de squatters contre une patrouille policière à Ménilmontant le 15 mai 1984 et l'occupation d'un office HLM. La brochure est aussi liée à Radio Mouvance, radio pirate qui occupait illégalement une fréquence militaire. Version anglaise d'un même texte disponible aussi en français, espagnol, portugais et italien.",
+        "citations": [
+          {
+            "page": 2,
+            "quote": "To make it work, there is only one condition: to fight back.",
+            "why_relevant": "Affirme que le squat ne survit que comme pratique de lutte, pas comme simple solution logement",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "300 000 empty homes in Paris, 300 000 homes to take, to squat collectively",
+            "why_relevant": "Paradoxe central : logements vides et sans-abri, justification de l'occupation collective",
+            "verified": false,
+            "page_physical": null
+          }
+        ],
+        "matched_keywords": [
+          "squat",
+          "occupation",
+          "propriété privée",
+          "logement",
+          "autonomie",
+          "action directe"
+        ],
+        "relevance_score": 6,
+        "relevance_notes": "Document historique sur le mouvement squat parisien de 1984, en anglais. Pertinent pour la thématique de l'alternative à la propriété du logement, mais connexe plutôt que central pour les communs fonciers.",
+        "en_clair": "En 1984 à Paris, des jeunes squattaient des logements vides en protestation : il y avait 300 000 appartements vides et 50 000 sans-abri. Ce texte explique pourquoi squatter, c'est lutter — pas juste se loger.",
+        "acteurs": [
+          "collectif Molotov & Confetti",
+          "Radio Mouvance",
+          "Zanzara athée"
+        ],
+        "controverse": "La question de savoir si le squat peut survivre sans se battre activement ou s'il se condamne à devenir un ghetto isolé.",
+        "angle_journalistique": "40 ans après, les arguments de Molotov & Confetti sur les logements vides et la lutte pour le logement sont-ils plus actuels que jamais ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "b375e8c5": {
       "id": "b375e8c5",
@@ -19529,7 +20270,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 7,
-      "score_final": null,
+      "score_final": 4,
       "latest_score": 7,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -19556,7 +20297,39 @@
       ],
       "download_status": "ok",
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "enrichment": {
+        "summary": "Traduction italienne (juillet 2020, BimBamBoum) des mêmes textes de Molotov & Confetti #1 (Paris, 1984) que la version anglaise. Le texte défend le squat collectif comme pratique de lutte contre la propriété privée du logement à Paris, décrit les conditions de logement précaire, et relate l'attaque de squatters contre la police à Ménilmontant le 15 mai 1984. Le contexte éditorial de Radio Mouvance (radio pirate antifasciste) est aussi inclus. Document de diffusion internationale d'un texte historique sur le mouvement squat parisien.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "Uno squat, oggi, se é un ghetto fra altri ghetti, crepa. Perchè funzioni, ci vuole una sola condizione : la lotta.",
+            "why_relevant": "En italien : le squat ne survit que comme pratique de lutte collective",
+            "verified": true,
+            "page_physical": 3
+          }
+        ],
+        "matched_keywords": [
+          "occupazione",
+          "squat",
+          "proprietà",
+          "lotta",
+          "autonomia"
+        ],
+        "relevance_score": 4,
+        "relevance_notes": "Version italienne d'un texte en anglais et français déjà dans le catalogue. Pertinence thématique pour les communs fonciers faible (squat urbain de 1984 en Italie via traduction), langue non française.",
+        "en_clair": "La même brochure sur le squat parisien de 1984, traduite en italien pour diffusion internationale. Le message : squatter, c'est lutter, pas juste se loger.",
+        "acteurs": [
+          "collectif Molotov & Confetti",
+          "BimBamBoum (traducteur)",
+          "Zanzara athée"
+        ],
+        "controverse": "Même que la version anglaise : la survie du squat comme pratique de lutte versus ghetto isolé.",
+        "angle_journalistique": "Comment le texte parisien de 1984 a-t-il circulé en Europe et influencé les mouvements squat italiens ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "f2168aa7": {
       "id": "f2168aa7",
@@ -19819,8 +20592,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/76ab1d39_sfratti-turin-2011-2012-cahier-2.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -19834,7 +20607,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "a5df1a9d": {
       "id": "a5df1a9d",
@@ -19857,8 +20631,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/a5df1a9d_sfratti-turin-2011-2012-pageparpageA5-2.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -19872,7 +20646,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "cfea62d4": {
       "id": "cfea62d4",
@@ -19895,8 +20670,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/cfea62d4_Lock_Out_The_Landlords-cahier.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -19910,7 +20685,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "8f1fd27c": {
       "id": "8f1fd27c",
@@ -20167,7 +20943,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 7,
-      "score_final": null,
+      "score_final": 7,
       "latest_score": 7,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -20194,7 +20970,55 @@
       ],
       "download_status": "ok",
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "enrichment": {
+        "summary": "Traduction française (Zanzara athée, novembre 2012) de la brochure australienne 'Lock out the landlords! Anti-eviction resistance 1929-1936' (recherches d'Iain McIntyre). Le document retrace les formes de résistance organisée aux expulsions de logement en Australie pendant la Grande Dépression, et l'inscrit dans un panorama mondial des luttes pour le logement : émeutes en Afrique du Sud, au Kenya, en Colombie, squats en Grèce, résistances en Espagne et aux États-Unis. La préface contextualise le document dans la crise économique des années 2010 et la montée des expulsions en Europe. Elle défend la pertinence de ces expériences historiques pour les luttes contemporaines contre la propriété privée du logement.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "Si se loger est une nécessité de base de la vie quotidienne, c'est surtout une source de stress permanent pour pratiquement tout le monde",
+            "why_relevant": "La question du logement comme enjeu social universel, base de la résistance aux expulsions",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "derrière son aspect « défensif » peuvent se loger de bonnes raisons de se révolter et d'entrevoir des perspectives révolutionnaires.",
+            "why_relevant": "La résistance aux expulsions comme point de départ d'une perspective révolutionnaire sur la propriété",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 4,
+            "quote": "en Chine des villageois-es affrontent la police pour empêcher des saisies de terres.",
+            "why_relevant": "La résistance aux expulsions de terres comme phénomène mondial",
+            "verified": true,
+            "page_physical": 4
+          }
+        ],
+        "matched_keywords": [
+          "expulsion",
+          "logement",
+          "propriété privée",
+          "résistance",
+          "lutte",
+          "terres"
+        ],
+        "relevance_score": 7,
+        "relevance_notes": "Document historique et comparatif sur la résistance aux expulsions, articulant logement et propriété privée dans une perspective mondiale. Pertinent pour la thématique des alternatives à la propriété et des communs fonciers.",
+        "en_clair": "Ce texte raconte comment en Australie pendant la crise de 1929, des gens ont organisé la résistance collective aux expulsions de logement. Et montre que ça se passe partout dans le monde — une leçon utile pour aujourd'hui.",
+        "acteurs": [
+          "Iain McIntyre",
+          "Zanzara athée",
+          "A-Press",
+          "Barricade publishing (Melbourne)"
+        ],
+        "controverse": "La question de savoir si la résistance aux expulsions reste un combat 'défensif' (rester chez soi) ou peut devenir offensif (remettre en cause la propriété comme droit).",
+        "angle_journalistique": "Que peut-on apprendre des organisations anti-expulsion australiennes des années 1930 pour les luttes contre les expulsions locatives en Europe aujourd'hui ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "3b2f3224": {
       "id": "3b2f3224",
@@ -20336,7 +21160,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 7,
-      "score_final": null,
+      "score_final": 7,
       "latest_score": 7,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -20363,7 +21187,57 @@
       ],
       "download_status": "ok",
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "enrichment": {
+        "summary": "Traduction française du texte de Tom Wetzel sur la grève massive des loyers à Barcelone en 1931, publiée par Zanzara athée (février 2009) à partir d'une traduction du SIA de Caen parue dans Solidarité n°23 (mars 2006). Le texte analyse comment la grève des loyers de 1931, organisant des dizaines de milliers de locataires sous l'égide de la CNT, s'inscrit dans la guerre sociale catalane des années 1920-1930 qui mena à la révolution de 1936. L'auteur souligne que malgré son aspect 'réformiste' apparent (réduction des loyers), cette lutte permettait à la classe ouvrière de s'auto-organiser contre un pouvoir économique et préfigurait les mouvements d'auto-réduction des années 1970 en Italie. La brochure met en avant la pratique de l'action directe collective comme outil de transformation sociale.",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "Malgré l'aspect réformiste, de prime abord, d'une lutte pour la réduction des loyers [...] la grève des loyers de 1931 à Barcelone se place [...] dans le cours d'une guerre sociale qui mena à la révolution de 1936.",
+            "why_relevant": "Articulation entre lutte pour le logement et perspective révolutionnaire plus large",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 2,
+            "quote": "seul un monde débarrassé des différences de classe (sans proprio ni locataire) pourrait rendre caduque la possibilité de la grève des loyers.",
+            "why_relevant": "Formule radicale : la grève des loyers comme horizon vers la suppression de la propriété",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "s'organiser elle-même pour défier des gens avec un pouvoir économique et élaborer une solution à ses problèmes à travers sa propre activité",
+            "why_relevant": "Définition de l'auto-organisation comme outil central de la lutte pour le logement",
+            "verified": true,
+            "page_physical": 2
+          }
+        ],
+        "matched_keywords": [
+          "logement",
+          "loyers",
+          "propriété",
+          "auto-organisation",
+          "action directe",
+          "grève",
+          "CNT"
+        ],
+        "relevance_score": 7,
+        "relevance_notes": "Document historique sur la grève des loyers comme forme d'action directe collective contre la propriété privée du logement. Pertinent pour la thématique des alternatives à la propriété et de l'auto-organisation.",
+        "en_clair": "En 1931 à Barcelone, des dizaines de milliers de locataires ont arrêté de payer leur loyer ensemble — et ça a marché. Ce texte explique comment ça s'est organisé et pourquoi c'est bien plus qu'un combat pour payer moins cher.",
+        "acteurs": [
+          "CNT (Confédération Nationale du Travail)",
+          "Tom Wetzel",
+          "Nick Rider",
+          "SIA de Caen",
+          "Zanzara athée"
+        ],
+        "controverse": "Débat sur le caractère 'réformiste' ou révolutionnaire de la grève des loyers : simple amélioration des conditions ou préfiguration d'un monde sans propriétaires ni locataires ?",
+        "angle_journalistique": "La grève des loyers collectivement organisée par des syndicats anarchistes — un modèle transposable aux luttes locatives contemporaines ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "a8cc6dcd": {
       "id": "a8cc6dcd",
@@ -20386,8 +21260,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/a8cc6dcd_crowbar-chronicles-en_booklet-2008-8pa4.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -20401,7 +21275,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "689d47c2": {
       "id": "689d47c2",
@@ -20690,8 +21565,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/d7759e91_la_colonisation_de_la_palestine_et_ses_consequences-18pa4-cahier-juin2024.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -20705,7 +21580,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "6ed0da6d": {
       "id": "6ed0da6d",
@@ -20728,8 +21604,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/6ed0da6d_la_colonisation_de_la_palestine_et_ses_consequences-36pa5-pageparpage-juin2024.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -20743,7 +21619,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "5c511048": {
       "id": "5c511048",
@@ -20882,7 +21759,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 8,
-      "score_final": null,
+      "score_final": 7,
       "latest_score": 8,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -20909,7 +21786,42 @@
       ],
       "download_status": "ok",
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "enrichment": {
+        "summary": "Version originale en espagnol du texte publié initialement dans la revue anarchiste internationale Kalinov Most n°2 (juin 2018), traduit et diffusé par Zanzara athée (novembre 2023). Le texte offre une mise en contexte historique de la résistance mapuche depuis l'Empire inca jusqu'à la 'Pacificación de la Araucanía' chilienne (1862-1883) et aux luttes contemporaines contre l'État chilien et les intérêts agro-industriels. Il analyse les communautés mapuche comme sujet de résistance autonome refusant tout pouvoir centralisé, et défend une perspective de solidarité anarchiste internationale avec ces luttes. La question foncière est centrale : dépossession des terres ancestrales, résguardos, résistance à l'agro-industrie forestière.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "Los Mapuche o los mal llamados araucanos, cultura indígena que habita el centro - sur del territorio dominado por el Estado chileno... ha tenido una larga historia de guerras con Imperios, Reinos y Estados que por diversos medios han intentado someterlos.",
+            "why_relevant": "Résistance historique mapuche à toute forme d'autorité centralisée sur leur territoire",
+            "verified": true,
+            "page_physical": 3
+          }
+        ],
+        "matched_keywords": [
+          "tierra",
+          "comunidades",
+          "autonomía",
+          "resistencia",
+          "territorio",
+          "mapuche"
+        ],
+        "relevance_score": 7,
+        "relevance_notes": "Version espagnole d'un texte important sur les luttes foncières mapuche. Pertinent pour la thématique des peuples et de leur rapport à la terre, mais en espagnol.",
+        "en_clair": "Ce texte en espagnol retrace comment le peuple mapuche au Chili n'a jamais accepté d'être gouverné de l'extérieur — ni par les Incas, ni par les Espagnols, ni par l'État chilien. Et comment ils continuent à lutter pour leurs terres.",
+        "acteurs": [
+          "État chilien",
+          "État argentin",
+          "Empire inca",
+          "Coronel Cornelio Saavedra",
+          "revue Kalinov Most"
+        ],
+        "controverse": "Débat sur la nature de la solidarité anarchiste avec les luttes indigènes : soutien externe ou convergence politique réelle entre anarchisme et autonomie mapuche ?",
+        "angle_journalistique": "Comment la résistance mapuche articule-t-elle la question foncière (terres ancestrales) et la question politique (autonomie) dans ses formes d'action actuelles ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "467b0d83": {
       "id": "467b0d83",
@@ -21088,7 +22000,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 8,
-      "score_final": null,
+      "score_final": 8,
       "latest_score": 8,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -21115,7 +22027,52 @@
       ],
       "download_status": "ok",
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "enrichment": {
+        "summary": "Traduction française (Zanzara athée, novembre 2023) du texte initialement publié en espagnol dans Kalinov Most n°2 (avril 2018). Le document retrace l'histoire longue de la résistance mapuche depuis l'Empire inca jusqu'aux luttes contemporaines au Chili et en Argentine, en centrant l'analyse sur la question foncière : dépossession des terres ancestrales par la 'Pacificación de la Araucanía' (1862-1883), résistance aux intérêts agro-industriels forestiers (Forestal Arauco, Mininco), luttes contemporaines pour la récupération de terres. Le texte défend une solidarité anarchiste basée sur la convergence entre autonomie mapuche et perspectives insurrectionnelles, contre la militarisation des communautés et l'invisibilisation culturelle.",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "il nous est impossible, en tant qu'anarchistes, d'être indifférent-e-s face aux assassinats policiers, à la militarisation des communautés, à l'asphyxie et à l'invisibilisation culturelle du monde mapuche",
+            "why_relevant": "Appel explicite à la solidarité anarchiste avec les luttes foncières mapuche",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 3,
+            "quote": "nous cherchons à intensifier la solidarité avec les communautés mapuches en guerre contre l'État et le Capital.",
+            "why_relevant": "Formule articulant résistance mapuche et perspective anticapitaliste",
+            "verified": true,
+            "page_physical": 3
+          }
+        ],
+        "matched_keywords": [
+          "terres ancestrales",
+          "communautés",
+          "résistance",
+          "autonomie",
+          "dépossession",
+          "territoire",
+          "luttes foncières"
+        ],
+        "relevance_score": 8,
+        "relevance_notes": "Document important sur les luttes foncières mapuche et leur articulation avec une perspective anarchiste internationale. La question de la terre est centrale.",
+        "en_clair": "Les Mapuche au Chili luttent depuis des siècles pour leurs terres — aujourd'hui contre l'État chilien et les entreprises forestières. Ce texte explique pourquoi des anarchistes du monde entier les soutiennent et ce qu'on peut apprendre de leur résistance.",
+        "acteurs": [
+          "peuple mapuche",
+          "État chilien",
+          "État argentin",
+          "revue Kalinov Most",
+          "Zanzara athée",
+          "La Souterraine (éditions)",
+          "Sans Nom (blog)"
+        ],
+        "controverse": "Question de la compatibilité entre la solidarité anarchiste internationale et le caractère propre des revendications communautaires mapuche, qui ne sont pas nécessairement anarchistes.",
+        "angle_journalistique": "Comment les milieux anarchistes francophones ont-ils relayé les luttes foncières mapuche entre 2009 et 2023, et avec quels effets ?",
+        "model": "claude-sonnet-4-6-direct",
+        "prompt_version": "direct-agent-enrichment-v1"
+      },
+      "enrichment_date": "2026-06-24T22:19:45Z"
     },
     "3fe8867b": {
       "id": "3fe8867b",
@@ -21138,8 +22095,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/3fe8867b_500_years_of_indigenous_resistance-booklet.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -21153,7 +22110,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "5eb432e1": {
       "id": "5eb432e1",
@@ -21176,8 +22134,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/5eb432e1_500_ans_de_resistance_autochtone-pageparpage.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -21191,7 +22149,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "7cdc7e8f": {
       "id": "7cdc7e8f",
@@ -21214,8 +22173,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/7cdc7e8f_500_ans_de_resistance_autochtone-cahier.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -21229,7 +22188,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "bd44cc6a": {
       "id": "bd44cc6a",
@@ -21252,8 +22212,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/bd44cc6a_500_years_of_indigenous_resistance-pageperpage.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -21267,7 +22227,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "83eafaac": {
       "id": "83eafaac",
@@ -21290,8 +22251,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/83eafaac_Kanaky_nouvelle_caledonie-10pA4-cahier-oct2021.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -21305,7 +22266,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "0727b92e": {
       "id": "0727b92e",
@@ -21328,8 +22290,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/0727b92e_Kanaky_nouvelle_caledonie-20pA5-fil-oct2021.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -21343,7 +22305,8 @@
         }
       ],
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "18631ffb": {
       "id": "18631ffb",
@@ -21442,8 +22405,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/e612942d_atlas-da-amazonia-brasileira.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -21457,7 +22420,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "d241a9fb": {
       "id": "d241a9fb",
@@ -21632,8 +22596,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/32ccb418_bodenatlas2024_ii_v03_b.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -21647,7 +22611,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "ab00f6ba": {
       "id": "ab00f6ba",
@@ -21974,8 +22939,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/567a1117_boell_brief_daten_als_oeffentliche_infrastruktur_0.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -21989,7 +22954,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "0c97a0c5": {
       "id": "0c97a0c5",
@@ -22027,7 +22993,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "failed_invalid"
     },
     "128a75f4": {
       "id": "128a75f4",
@@ -24368,8 +25335,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/46f92da6_pierre-josephproudhon-thoriedelaprop.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -24383,7 +25350,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "65e75255": {
       "id": "65e75255",
@@ -24871,8 +25839,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/3e817885_vaneigem_avis__aux_civilises.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -24886,7 +25854,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "32cf7e41": {
       "id": "32cf7e41",
@@ -25023,8 +25992,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/6596ad83_de_la_greve_sauvage_a_l_autogestion_generalisee_-_ratgeb_vaneigem_-_1974.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -25038,7 +26007,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "d860aef1": {
       "id": "d860aef1",
@@ -25897,8 +26867,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/b9a459d4_ejercito-zapatista-de-liberacion-nacional-atop-the-watchtower.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -25912,7 +26882,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "7d4cb4f0": {
       "id": "7d4cb4f0",
@@ -26118,8 +27089,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/af8b18a5_john-creaghe-the-argentine-republic-and-english-radical-reformers.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -26133,7 +27104,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "58c78e51": {
       "id": "58c78e51",
@@ -27149,8 +28121,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/cd8eaa5a_anonymous-make-the-golf-course-a-public-sex-forest.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -27164,7 +28136,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "f9be42fe": {
       "id": "f9be42fe",
@@ -27688,8 +28661,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/997d46c9_alexander-atabekian-territoriality-and-anarchism.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -27703,7 +28676,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "8156629f": {
       "id": "8156629f",
@@ -27927,8 +28901,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/9f16b851_dale-farm-activist-interview-with-an-anarchist-at-dale-farm.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -27942,7 +28916,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "de8665e3": {
       "id": "de8665e3",
@@ -28129,8 +29104,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/dcb30b82_tim-meadows-why-i-work-on-the-land.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -28144,7 +29119,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "597a51e1": {
       "id": "597a51e1",
@@ -28167,8 +29143,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/597a51e1_witch-hazel-against-agriculture-in-defense-of-cultivation.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -28182,7 +29158,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "17e8cac0": {
       "id": "17e8cac0",
@@ -28205,8 +29182,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/17e8cac0_james-c-scott-against-the-grain.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -28220,7 +29197,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "2ca00b10": {
       "id": "2ca00b10",
@@ -28532,8 +29510,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/b50a887d_alan-albon-anarchism-and-agriculture.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -28547,7 +29525,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "1f2d66bc": {
       "id": "1f2d66bc",
@@ -28705,8 +29684,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/f6970688_brian-morris-anthropology-and-anarchism.pdf",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -28720,7 +29699,8 @@
         }
       ],
       "link_status": "ok",
-      "link_checked": "2026-05-24T19:16:12Z"
+      "link_checked": "2026-05-24T19:16:12Z",
+      "download_status": "ok"
     },
     "a7658db1": {
       "id": "a7658db1",
@@ -37740,7 +38720,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-06-23T18:30:33+00:00",
+    "last_updated": "2026-06-24T20:21:26+00:00",
     "total_docs": 709,
     "total_downloaded": 183,
     "total_published": 130,
@@ -37770,7 +38750,7 @@
       "9": 9,
       "10": 0
     },
-    "last_archive_run": "2026-06-23T18:30:33+00:00",
+    "last_archive_run": "2026-06-24T20:21:26+00:00",
     "archived_total": 502
   }
 }
