@@ -300,6 +300,25 @@ function detectLang(doc) {
 
 window.pageInit = function (basePath) {
   loadCatalogPage(basePath);
+
+  /* Interception du header-search sur la page catalogue :
+     au lieu de naviguer vers ?q=…, on injecte la valeur dans #filter-q
+     et on déclenche le filtre immédiatement. */
+  const hs = document.getElementById('header-search');
+  if (hs) {
+    hs.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter') return;
+      e.preventDefault();
+      const val = hs.value.trim();
+      const fq = document.getElementById('filter-q');
+      if (!fq) return;
+      fq.value = val;
+      STATE.filters.q = val;
+      BiblioRouter.setParam('q', val || null);
+      fq.dispatchEvent(new Event('input', { bubbles: true }));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 };
 
 /* A5 : affiche des cartes squelettes pendant le fetch, puis gère l'erreur. */

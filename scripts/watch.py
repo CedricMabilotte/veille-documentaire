@@ -1025,23 +1025,22 @@ def publish_site(run_date: str) -> None:
         print("  ⚠  site/ inexistant — skip publish")
         return
 
-    # 1. Catalog — le catalogue publié est le catalogue source MOINS les
-    # documents écartés par décision éditoriale (config/exclusions.yml). Ces
-    # documents ne doivent apparaître nulle part côté public — ni listing, ni
-    # recherche, ni fiche. Le catalogue source reste, lui, exhaustif.
+    # 1. Catalog — le catalogue publié ne contient QUE les docs publiables :
+    # score effectif >= PUBLISH_THRESHOLD ET non écartés par exclusions.yml.
+    # Les 580 docs non publiés (~1,8 Mo) sont inutiles côté public.
+    # Le catalogue source (synopsis/catalog.json) reste exhaustif.
     catalog_src = SYNOPSIS_PATH / "catalog.json"
     if catalog_src.exists():
         (SITE_PATH / "data").mkdir(parents=True, exist_ok=True)
         site_catalog = SITE_PATH / "data" / "catalog.json"
-        if _EXCLUSIONS:
-            _cat = json.loads(catalog_src.read_text(encoding="utf-8"))
-            _cat["docs"] = {i: d for i, d in _cat.get("docs", {}).items()
-                            if i not in _EXCLUSIONS}
-            site_catalog.write_text(
-                json.dumps(_cat, ensure_ascii=False, indent=1),
-                encoding="utf-8")
-        else:
-            shutil.copy2(catalog_src, site_catalog)
+        _cat = json.loads(catalog_src.read_text(encoding="utf-8"))
+        _cat["docs"] = {i: d for i, d in _cat.get("docs", {}).items()
+                        if _is_publishable(d)}
+        site_catalog.write_text(
+            json.dumps(_cat, ensure_ascii=False, indent=1),
+            encoding="utf-8")
+        print(f"  📦 Catalog public filtré : {len(_cat['docs'])} docs publiés "
+              f"(score eff. >= {PUBLISH_THRESHOLD}, hors exclusions)")
 
     # 1bis. Index full-text + JSON éditoriaux (recherche, dossiers, stats…)
     for name in ("fulltext_index.json", "dossiers.json", "featured.json",
