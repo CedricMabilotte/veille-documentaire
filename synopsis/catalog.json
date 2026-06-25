@@ -10441,7 +10441,9 @@
       "link_status": "unchecked",
       "link_checked": "2026-05-24T18:32:50Z",
       "lang": "en",
-      "download_status": "failed_network"
+      "download_status": "failed_network",
+      "download_error": "access_restricted_lending_library",
+      "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification."
     },
     "ed6b79d9": {
       "id": "ed6b79d9",
@@ -22932,8 +22934,8 @@
       "isbn": "",
       "hal_id": "",
       "versions": [],
-      "downloaded": false,
-      "saved_as": null,
+      "downloaded": true,
+      "saved_as": "docs/0c97a0c5_boell_brief_daten_als_oeffentliche_infrastruktur.epub",
       "runs": [
         {
           "date": "2026-05-23_00-59",
@@ -22948,7 +22950,28 @@
       ],
       "link_status": "ok",
       "link_checked": "2026-05-24T19:16:12Z",
-      "download_status": "failed_invalid (requests_error: 503 Server Error: Service Temporarily Unavailable for url: https://www.boell.de/sites/default/files/2022-09/boell_brief_daten_als_oeffentliche_infrastruktur.epub)"
+      "download_status": "failed_invalid (requests_error: 503 Server Error: Service Temporarily Unavailable for url: https://www.boell.de/sites/default/files/2022-09/boell_brief_daten_als_oeffentliche_infrastruktur.epub)",
+      "download_error": "failed_invalid_format",
+      "enrichment": {
+        "summary": "pt01.html Das böll.brief – Grüne Ordnungpolitik bietet Analysen, Hintergründe und programmatische Impulse für eine sozial-ökologische Transformation. Der Fokus liegt auf den Politikfeldern Energie, Klimaschutz, Digitalisierung, Stadtentwicklung sowie arbeits- und wirtschaftspolitische Maßnahmen zum nachhaltigen Umbau der Industriegesellschaft. Das böll.brief des Bereichs Inland der Heinrich-Böll-Stiftung erscheint als E-Paper im Wechsel zu den Themen «Teilhabegesellschaft», «Grüne Ordnungspolitik», «Demokratie & Gesellschaft» und «Öffentliche Räume».",
+        "score_final": 6,
+        "citations": [
+          "Das böll.brief des Bereichs Inland der Heinrich-Böll-Stiftung erscheint als E-Paper im Wechsel zu den Themen «Teilhabegesellschaft», «Grüne Ordnungspolitik», «Demokratie & Gesellschaft» und «Öffentliche Räume».",
+          "Offene Daten stellen damit kein nützliches Nebenprodukt dar, sondern sind eine demokratische Notwendigkeit.",
+          "Doch das ungeheure Potenzial offener Daten kann nur realisiert werden, wenn Rechtsunsicherheit und mangelnde Bereitstellung in der Praxis beendet werden."
+        ],
+        "matched_keywords": [
+          "öffentlich",
+          "infrastruktur",
+          "gemeinschaft",
+          "data",
+          "daten"
+        ],
+        "acteurs": [],
+        "enriched_at": "2026-06-25T11:47",
+        "enrichment_method": "local_epub_text_analysis",
+        "note": "Document en allemand sur les données comme infrastructure publique (communs numériques)"
+      }
     },
     "128a75f4": {
       "id": "128a75f4",
@@ -31540,7 +31563,9 @@
       ],
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "download_status": "failed_network"
+      "download_status": "failed_network",
+      "download_error": "access_restricted_lending_library",
+      "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification."
     },
     "a0f5ef97": {
       "id": "a0f5ef97",
@@ -32115,7 +32140,9 @@
       ],
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "download_status": "failed_network"
+      "download_status": "failed_network",
+      "download_error": "access_restricted_lending_library",
+      "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification."
     },
     "46e41b42": {
       "id": "46e41b42",
@@ -32231,7 +32258,9 @@
       ],
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "download_status": "failed_network"
+      "download_status": "failed_network",
+      "download_error": "access_restricted_lending_library",
+      "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification."
     },
     "b960b499": {
       "id": "b960b499",
@@ -33623,7 +33652,9 @@
       ],
       "link_status": "dead",
       "link_checked": "2026-05-24T19:16:12Z",
-      "download_status": "failed_404_after_variants"
+      "download_status": "failed_404_after_variants",
+      "download_error": "no_pdf_available",
+      "download_note": "Item archive.org sans fichier PDF (uniquement métadonnées et torrent). Score 5 attribué sur le titre — document judiciaire ILND 365234."
     },
     "d72e1b9e": {
       "id": "d72e1b9e",
@@ -33662,7 +33693,9 @@
       ],
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "download_status": "failed_network"
+      "download_status": "failed_network",
+      "download_error": "access_restricted_lending_library",
+      "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification."
     },
     "8e301801": {
       "id": "8e301801",
@@ -34154,7 +34187,9 @@
       ],
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "download_status": "failed_network"
+      "download_status": "failed_network",
+      "download_error": "access_restricted_lending_library",
+      "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification."
     },
     "941861fb": {
       "id": "941861fb",
