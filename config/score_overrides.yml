@@ -1,0 +1,11 @@
+# Overrides manuels de score_final — survivent aux ré-enrichissements.
+# Format : <id>: {score: N, raison: "..."}
+score_overrides:
+  f6ebd39c: {score: 6, raison: "Propriété d'usage par occupancy-and-use — Carson, texte de référence direct"}
+  41e09539: {score: 6, raison: "Proudhon, Qu'est-ce que la propriété ? — source primaire fondatrice"}
+  d992c836: {score: 6, raison: "ZAD NDDL — communs fonciers en acte, notes critiques"}
+  38f15499: {score: 6, raison: "La fin de la ZAD — réflexion collective sur le tournant post-aéroport"}
+  5ea1719f: {score: 6, raison: "ZADissidences — textes critiques internes ZAD"}
+  3b2f3224: {score: 6, raison: "Barcelone 1931, grève des loyers — résistance à l'expulsion"}
+  bc522fd4: {score: 6, raison: "Ocupar é lutar — occupation urbaine comme commun (PT, 1984)"}
+  c0744b42: {score: 6, raison: "Tolstoï, Some Social Remedies — critique propriété et socialisme"}

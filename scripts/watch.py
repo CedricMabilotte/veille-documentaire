@@ -671,6 +671,12 @@ def update_synopsis_catalog(report: dict) -> None:
                     fiche["score_final"] = int(rs)
         fiche.setdefault("score_final", None)
 
+    # Overrides manuels de score_final — appliqués en dernier, après tout
+    # enrichissement, pour garantir leur persistance aux ré-runs.
+    for doc_id, override in _SCORE_OVERRIDES.items():
+        if doc_id in catalog["docs"]:
+            catalog["docs"][doc_id]["score_final"] = override["score"]
+
     # Méta — migration douce : .get() partout
     def _eff(f: dict) -> int:
         sf = f.get("score_final")
@@ -788,6 +794,27 @@ def _load_exclusions() -> set:
 
 
 _EXCLUSIONS = _load_exclusions()
+
+
+def _load_score_overrides() -> dict:
+    """Overrides manuels de score_final (config/score_overrides.yml).
+
+    Survivent aux ré-enrichissements : appliqués APRÈS chaque écriture de
+    score_final dans update_synopsis_catalog, ils garantissent que les docs
+    whitelistés conservent leur score même si synopsis_enricher les ré-évalue.
+    """
+    path = Path("config") / "score_overrides.yml"
+    if not path.exists():
+        return {}
+    try:
+        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        return data.get("score_overrides") or {}
+    except Exception as e:
+        print(f"  ⚠  score_overrides.yml illisible : {e}")
+        return {}
+
+
+_SCORE_OVERRIDES = _load_score_overrides()
 
 
 def _is_publishable(doc: dict) -> bool:
