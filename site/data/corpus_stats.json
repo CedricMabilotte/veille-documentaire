@@ -1,35 +1,41 @@
 {
-  "generated_at": "2026-06-25T09:39:59Z",
-  "total": 709,
-  "total_docs": 709,
-  "total_downloaded": 246,
-  "total_published": 133,
+  "generated_at": "2026-06-25T15:40:12Z",
+  "total": 1162,
+  "total_docs": 1162,
+  "total_downloaded": 264,
+  "total_published": 102,
   "by_lang": {
-    "fr": 358,
-    "en": 212,
-    "es": 116,
-    "de": 21,
-    "pt": 2
+    "fr": 380,
+    "en": 271,
+    "pt": 201,
+    "de": 139,
+    "es": 123,
+    "inconnu": 48
   },
   "by_language": {
-    "fr": 358,
-    "en": 212,
-    "es": 116,
-    "de": 21,
-    "pt": 2
+    "fr": 380,
+    "en": 271,
+    "pt": 201,
+    "de": 139,
+    "es": 123,
+    "inconnu": 48
   },
   "by_source": {
+    "MST Brésil — biblioteca (WP REST API)": 193,
     "Infokiosques.net — Paysannerie & ruralité": 121,
+    "Böll Stiftung — publications DE (deep crawl)": 114,
     "CRAS (Centre de Recherches sur les Alternatives Sociales)": 107,
     "CLACSO Libros (acceso abierto)": 99,
-    "Archive.org — commons / enclosure / agrarian (strict)": 55,
-    "The Anarchist Library — OPDS (new releases)": 53,
+    "Archive.org — commons / enclosure / agrarian (strict)": 98,
+    "The Anarchist Library — OPDS (new releases)": 79,
+    "Archive.org — community land trusts & housing commons": 53,
     "Infokiosques.net — Squat (rapport à l'habiter)": 52,
-    "Archive.org — community land trusts & housing commons": 36,
+    "CrimethInc — zines": 29,
+    "Infokiosques.net — nouveautés": 22,
     "Infokiosques.net — Anticolonialismes": 17,
     "Archive.org — commons / enclosure": 16,
     "Infokiosques.net — Écologie radicale": 15,
-    "Böll Stiftung — publications DE (deep crawl)": 12,
+    "Böll Stiftung — Agriculture & Food (EN topic)": 11,
     "Archive.org — subject:anarchism (texts)": 10,
     "Archive.org — peasant movements": 10,
     "International Land Coalition — latest": 10,
@@ -38,66 +44,86 @@
     "The Anarchist Library — OPDS feed": 8,
     "HAL — communs fonciers": 8,
     "HAL — paysannerie / agriculture vivrière": 8,
+    "Portal OACA — Libros anarquistas (catégorie)": 8,
     "Archive.org — anarchism + land/peasant (strict)": 7,
     "Infokiosques.net — Anticapitalisme": 7,
     "Infokiosques.net — index C": 6,
     "HAL — propriété d'usage / fonds de dotation": 6,
     "Archive.org — Cuba (ES, réforme agraire & coopératives)": 5,
     "CLACSO — Libros en coedición": 5,
+    "Troisièmes Voix — éditions": 5,
     "Infokiosques.net — index L (Libération, Luttes)": 4,
     "Böll Stiftung — Agriculture Atlas (EN)": 4,
-    "Infokiosques.net — nouveautés": 3,
     "Tierra.org (Amigos de la Tierra ES)": 3,
     "CLACSO — Publicaciones générales": 3,
     "Böll Stiftung — publications EN": 2,
     "libcom.org — library": 1
   },
   "by_decade": {
-    "2000s": 5,
-    "2010s": 20,
-    "2020s": 33,
-    "inconnu": 651
+    "1950s": 5,
+    "1960s": 2,
+    "1970s": 4,
+    "1980s": 12,
+    "1990s": 5,
+    "2000s": 63,
+    "2010s": 118,
+    "2020s": 389,
+    "inconnu": 564
   },
   "by_score": {
-    "0": 117,
-    "1": 153,
-    "2": 130,
-    "3": 84,
-    "4": 45,
-    "5": 47,
-    "6": 35,
-    "7": 30,
-    "8": 42,
-    "9": 25,
+    "0": 881,
+    "1": 58,
+    "2": 49,
+    "3": 32,
+    "4": 20,
+    "5": 20,
+    "6": 28,
+    "7": 25,
+    "8": 33,
+    "9": 15,
     "10": 1
   },
   "by_doc_type": {
-    "autre": 631,
-    "non_classe": 78
+    "autre": 1098,
+    "non_classe": 64
   },
   "by_orientation": {
-    "militant": 376,
-    "academique": 242,
-    "non_renseigne": 65,
-    "institutionnel": 26
+    "militant": 656,
+    "academique": 302,
+    "institutionnel": 139,
+    "non_renseigne": 65
   },
   "blind_spots": [
-    "Forte dominante militante (53.0%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (56.5%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (53.0%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (56.5%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "sources_list": [
+    {
+      "label": "MST Brésil — biblioteca (WP REST API)",
+      "url": "https://mst.org.br/wp-json/wp/v2/media?mime_type=application/pdf",
+      "type": "wp_rest",
+      "orientation": "militant",
+      "count": 193
+    },
     {
       "label": "Infokiosques.net — Paysannerie & ruralité",
       "url": "https://infokiosques.net/paysannerie_ruralite",
       "type": "html",
       "orientation": "militant",
       "count": 121
+    },
+    {
+      "label": "Böll Stiftung — publications DE (deep crawl)",
+      "url": "https://www.boell.de/de/publikationen",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 114
     },
     {
       "label": "CRAS (Centre de Recherches sur les Alternatives Sociales)",
@@ -118,13 +144,20 @@
       "url": "https://archive.org/advancedsearch.php?q=%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land+reform%22+OR+subject%3A%22enclosure%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
       "type": "archive_org",
       "orientation": "academique",
-      "count": 55
+      "count": 98
     },
     {
       "label": "The Anarchist Library — OPDS (new releases)",
       "url": "https://theanarchistlibrary.org/opds/new",
       "type": "opds",
       "orientation": "militant",
+      "count": 79
+    },
+    {
+      "label": "Archive.org — community land trusts & housing commons",
+      "url": "https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
+      "type": "archive_org",
+      "orientation": "academique",
       "count": 53
     },
     {
@@ -135,11 +168,18 @@
       "count": 52
     },
     {
-      "label": "Archive.org — community land trusts & housing commons",
-      "url": "https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
-      "type": "archive_org",
-      "orientation": "academique",
-      "count": 36
+      "label": "CrimethInc — zines",
+      "url": "https://crimethinc.com/zines",
+      "type": "deep_html",
+      "orientation": "militant",
+      "count": 29
+    },
+    {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
+      "count": 22
     },
     {
       "label": "Infokiosques.net — Anticolonialismes",
@@ -156,11 +196,11 @@
       "count": 15
     },
     {
-      "label": "Böll Stiftung — publications DE (deep crawl)",
-      "url": "https://www.boell.de/de/publikationen",
+      "label": "Böll Stiftung — Agriculture & Food (EN topic)",
+      "url": "https://www.boell.de/en/topics/agriculture",
       "type": "deep_html",
       "orientation": "institutionnel",
-      "count": 12
+      "count": 11
     },
     {
       "label": "Archive.org — peasant movements",
@@ -188,6 +228,13 @@
       "url": "https://api.archives-ouvertes.fr/search/?q=paysannerie+OR+%22agriculture+vivri%C3%A8re%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50",
       "type": "hal",
       "orientation": "academique",
+      "count": 8
+    },
+    {
+      "label": "Portal OACA — Libros anarquistas (catégorie)",
+      "url": "https://www.portaloaca.com/categoria/pensamientolibertario/libros-anarquistas/",
+      "type": "deep_html",
+      "orientation": "militant",
       "count": 8
     },
     {
@@ -226,6 +273,13 @@
       "count": 5
     },
     {
+      "label": "Troisièmes Voix — éditions",
+      "url": "https://www.troisiemesvoix.org/fr",
+      "type": "deep_html",
+      "orientation": "militant",
+      "count": 5
+    },
+    {
       "label": "Böll Stiftung — Agriculture Atlas (EN)",
       "url": "https://www.boell.de/en/agriculture-atlas-2019",
       "type": "deep_html",
@@ -240,25 +294,11 @@
       "count": 3
     },
     {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
-      "count": 3
-    },
-    {
       "label": "libcom.org — library",
       "url": "https://libcom.org/library",
       "type": "deep_html",
       "orientation": "militant",
       "count": 1
-    },
-    {
-      "label": "Böll Stiftung — Agriculture & Food (EN topic)",
-      "url": "https://www.boell.de/en/topics/agriculture",
-      "type": "deep_html",
-      "orientation": "institutionnel",
-      "count": 0
     },
     {
       "label": "Böll Stiftung — Meat Atlas (EN)",
@@ -299,13 +339,6 @@
       "label": "CNT-AIT España",
       "url": "https://www.cnt.es/feed/",
       "type": "rss",
-      "orientation": "militant",
-      "count": 0
-    },
-    {
-      "label": "CrimethInc — zines",
-      "url": "https://crimethinc.com/zines",
-      "type": "deep_html",
       "orientation": "militant",
       "count": 0
     },
@@ -359,23 +392,9 @@
       "count": 0
     },
     {
-      "label": "MST Brésil — biblioteca (WP REST API)",
-      "url": "https://mst.org.br/wp-json/wp/v2/media?mime_type=application/pdf",
-      "type": "wp_rest",
-      "orientation": "militant",
-      "count": 0
-    },
-    {
       "label": "MST Brésil — RSS principal",
       "url": "https://mst.org.br/feed/",
       "type": "rss",
-      "orientation": "militant",
-      "count": 0
-    },
-    {
-      "label": "Portal OACA — Libros anarquistas (catégorie)",
-      "url": "https://www.portaloaca.com/categoria/pensamientolibertario/libros-anarquistas/",
-      "type": "deep_html",
       "orientation": "militant",
       "count": 0
     },
@@ -404,13 +423,6 @@
       "label": "Tierra.org — RSS general",
       "url": "https://www.tierra.org/feed/",
       "type": "rss",
-      "orientation": "militant",
-      "count": 0
-    },
-    {
-      "label": "Troisièmes Voix — éditions",
-      "url": "https://www.troisiemesvoix.org/fr",
-      "type": "deep_html",
       "orientation": "militant",
       "count": 0
     }
