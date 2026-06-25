@@ -8167,12 +8167,13 @@
           "collectif"
         ],
         "relevance_score": 5,
-        "relevance_notes": "Document qui touche à la thématique via l'occupation collective de terre et la gestion commune d'un habitat, avec mention explicite de paysans et Confédération paysanne. Cependant reste prioritairement centré sur l'organisation politique anti-autoritaire et les processus démocratiques internes, plutôt que sur les enjeux fonciers, agricoles ou agroécologiques. Absence notable d'agroécologie, souveraineté alimentaire, structures juridiques alternatives (propriété d'usage, fiducies foncières). Les conflits avec les agriculteurs y sont présentés de façon antagoniste, sans vision d'alliance paysanne positive."
+        "relevance_notes": "Document qui touche à la thématique via l'occupation collective de terre et la gestion commune d'un habitat, avec mention explicite de paysans et Confédération paysanne. Cependant reste prioritairement centré sur l'organisation politique anti-autoritaire et les processus démocratiques internes, plutôt que sur les enjeux fonciers, agricoles ou agroécologiques. Absence notable d'agroécologie, souveraineté alimentaire, structures juridiques alternatives (propriété d'usage, fiducies foncières). Les conflits avec les agriculteurs y sont présentés de façon antagoniste, sans vision d'alliance paysanne positive.",
+        "whitelist": true
       },
       "download_status": "ok",
       "versions": [],
       "score_initial": 1,
-      "score_final": 5,
+      "score_final": 6,
       "collected_date": "2026-05-23_00-59",
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -13559,7 +13560,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 9,
-      "score_final": 5,
+      "score_final": 6,
       "latest_score": 9,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -13671,7 +13672,8 @@
         "controverse": "La tension centrale est entre la sécurité légale gagnée par la signature des COPs et la perte de radicalité, d'ouverture, et de liberté tactique que cela implique. Les auteurs reconnaissent que certains se détournent de la ZAD précisément parce que le compromis légal détruit le projet politique original ; d'autres y restent pour construire quelque chose de nouveau, mais personne n'est certain que cela a du sens.",
         "angle_journalistique": "Enquêter sur la négociation des terres de la ZAD post-abandon : comment un squat radical se transforme-t-il en structure semi-légale, et quels modèles d'habitation collective ou de gestion foncière les habitants tentent-ils de mettre en place ?",
         "model": "claude-haiku-4-5",
-        "prompt_version": "a79d7ea7c4"
+        "prompt_version": "a79d7ea7c4",
+        "whitelist": true
       },
       "download_status": "ok",
       "link_status": "unchecked",
@@ -13901,7 +13903,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 7,
-      "score_final": 5,
+      "score_final": 6,
       "latest_score": 7,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -14020,7 +14022,8 @@
         "controverse": "Critique de la stratégie de négociation avec l'État imposée par certains groupes (notamment le CMDO) : passage du refus catégorique à un glissement progressif vers le réformisme et la bureaucratisation, menant à des demandes individuelles de légalisation au lieu de maintenir l'occupation collective. Tension entre celles/ceux qui voyaient la négociation comme une tactique temporaire et celles/ceux qui y ont vu une capitulation progressive. Également, conflit entre les occupants militants et les agriculteurs locaux sur l'usage de la route (chicanes vs. tracteurs).",
         "angle_journalistique": "Enquête : quand une victoire politique (abandon d'un mégaprojet) mène à la fragmentation : comment la ZAD est-elle passée de l'occupation radicale collective à des négociations individuelles avec l'État ?",
         "model": "claude-haiku-4-5",
-        "prompt_version": "a18788e9fe"
+        "prompt_version": "a18788e9fe",
+        "whitelist": true
       },
       "download_status": "ok",
       "link_status": "ok",
@@ -19992,7 +19995,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 7,
-      "score_final": 5,
+      "score_final": 6,
       "latest_score": 7,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -20081,7 +20084,8 @@
         "controverse": "Tension centrale : les ocupas isolées sont vouées à l'écrasement ; elles ne survivent que si elles se lient à des luttes prolétariennes élargies (emploi, migration, répression). La question implicite : comment passer du squat comme refuge alternatif au squat comme point d'appui insurrectionnel?",
         "angle_journalistique": "Enquête sur le mouvement des squats autonomes parisiens en 1984 et leurs stratégies collectives de survie face à la répression urbaine : comment les ocupas tentaient de ne pas s'isoler du prolétariat environnant (migrants, chômeurs) pour ne pas être écrasées individuellement.",
         "model": "claude-haiku-4-5",
-        "prompt_version": "3e10792385"
+        "prompt_version": "3e10792385",
+        "whitelist": true
       },
       "download_status": "ok",
       "link_status": "unchecked",
@@ -21079,7 +21083,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 7,
-      "score_final": 5,
+      "score_final": 6,
       "latest_score": 7,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -21193,7 +21197,8 @@
         "controverse": "Conflit fondamental entre propriétaires fonciers (défense du droit de propriété privée absolu) et locataires/ouvriers (demande de réduction de 40% des loyers + exonération chômeurs). Tension implicite entre réformisme (réduction des loyers) et horizon révolutionnaire (suppression de la classe propriétaire) — le texte panche clairement vers ce dernier.",
         "angle_journalistique": "Retracer comment l'auto-réduction des loyers, pratique d'action directe de 1931, a préfiguré les mouvements contemporains contre la gentrification et pourrait servir de base tactique aux luttes urbaines actuelles pour l'accès au logement.",
         "model": "claude-haiku-4-5",
-        "prompt_version": "591a9c98ed"
+        "prompt_version": "591a9c98ed",
+        "whitelist": true
       },
       "download_status": "ok",
       "link_status": "unchecked",
@@ -25381,7 +25386,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 9,
-      "score_final": 5,
+      "score_final": 6,
       "latest_score": 9,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -25450,7 +25455,8 @@
         "controverse": "Marx critique Proudhon (1847) comme « petit bourgeois constamment ballotté entre le capital et le travail, entre l'économie politique et le communisme » — divergence fondatrice sur la théorie de la propriété et la révolution entre socialisme français et marxisme.",
         "angle_journalistique": "L'héritage de Proudhon chez les mouvements contemporains de communs et d'occupation : reprendre et recontextualiser un classique du XIXe siècle pour penser les luttes foncières d'aujourd'hui.",
         "model": "claude-haiku-4-5",
-        "prompt_version": "a014114e71"
+        "prompt_version": "a014114e71",
+        "whitelist": true
       },
       "download_status": "ok",
       "link_status": "ok",
@@ -27714,7 +27720,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 9,
-      "score_final": 5,
+      "score_final": 6,
       "latest_score": 9,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -27833,7 +27839,8 @@
         "controverse": "Le texte soulève un dilemme théorique fondamental : peut-on déduire logiquement un système de droits fonciers spécifique des axiomes libertariens d'auto-propriété et de non-agression ? Carson argue que non — ces principes sont compatibles avec plusieurs systèmes différents (occupancy-and-use, Lockeanism, Georgism). Par conséquent, le choix doit être évalué sur des bases pragmatiques (minimisation de la rente, maximisation de la récupération du travail investi) plutôt que sur des déductions morales pures.",
         "angle_journalistique": "Enquête sur la façon dont les théories libertariennes de la propriété foncière basée sur l'occupation et l'usage pourraient éclairer ou légitimer les revendications actuelles des mouvements de sans-terre en Amérique latine et ailleurs, au-delà des seules analyses marxistes.",
         "model": "claude-haiku-4-5",
-        "prompt_version": "6e1a4f22f6"
+        "prompt_version": "6e1a4f22f6",
+        "whitelist": true
       },
       "download_status": "ok",
       "link_status": "ok",
@@ -28350,7 +28357,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 8,
-      "score_final": 5,
+      "score_final": 6,
       "latest_score": 8,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -28463,7 +28470,8 @@
         "controverse": "Tolstoy pose un dilemme irrésolu : la centralisation du travail produit plus de richesse mais crée les pires inégalités, tandis que l'égalisation (communes, partition des terres) diminue la productivité. Ni le socialisme marxiste ni l'anarchisme n'offrent de solution viable sans transformation morale préalable des individus—ce qui rend Tolstoy sceptique quant aux remèdes sociaux purement institutionnels.",
         "angle_journalistique": "Comment les critiques philosophiques de Tolstoy sur la question foncière (1900) éclairent-elles aujourd'hui les impasses entre efficacité et égalité dans les luttes contemporaines pour les communs et la libération des terres?",
         "model": "claude-haiku-4-5",
-        "prompt_version": "01c1bb3d99"
+        "prompt_version": "01c1bb3d99",
+        "whitelist": true
       },
       "download_status": "ok",
       "link_status": "ok",
@@ -38810,7 +38818,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-06-25T09:40:44+00:00",
+    "last_updated": "2026-06-25T09:51:41+00:00",
     "total_docs": 709,
     "total_downloaded": 183,
     "total_published": 130,
@@ -38840,7 +38848,7 @@
       "9": 9,
       "10": 0
     },
-    "last_archive_run": "2026-06-25T09:40:44+00:00",
+    "last_archive_run": "2026-06-25T09:51:41+00:00",
     "archived_total": 502
   }
 }

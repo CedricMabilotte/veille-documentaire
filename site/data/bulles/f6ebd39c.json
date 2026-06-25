@@ -1,0 +1,82 @@
+{
+  "titre_accroche": "Propriété d'usage : la fin de l'extraction de rente foncière",
+  "teaser": "Et si l'abolition de l'absentéisme foncier était la réforme capable de libérer des trillions de dollars ? Kevin Carson dévoile comment occupancy-and-use pourrait transformer le monde paysan.",
+  "abstract_editorial": "Que partagent Henry George, John Locke, Pierre-Joseph Proudhon et Benjamin Tucker ? Une intuition radicale : seule l'occupation et l'usage personnel de la terre en justifient la propriété. Kevin Carson reprend cette question oubliée du libertarianisme pour défendre ce qui pourrait sembler une position « de gauche » : l'abolition de l'absentéisme foncier.\n\nSon argument traverse les clivages politiques. Face aux latifundias d'Amérique latine, aux haciendas coloniales, aux grandes propriétés vacantes, les trois approches libertariennes (occupancy-and-use, Lockeanism non-Proviso, et géorgisme) convergent sur un point crucial : ces modèles de propriété absente, où un absent encaisse une rente sans contribuer à l'activité productive, sont une injustice. Carson oppose les droits fonciers « naturels »—fruit direct de l'occupation et du travail—aux droits « artificiels » générés par l'intervention coercitive de l'État maintenant la scarcité artificielle.\n\nCe qui rend ce texte puissant pour le lectorat des communs, c'est son évaluation de l'impact matériel. Carson quantifie : abolir l'absentéisme libérerait des centaines de milliards, voire des trillions de dollars de rente mondiale. En termes concrets pour le Sud global, cela signifierait la dissolution des systèmes de propriété coloniale qui maintiennent les paysans sans terre ou appauvris. C'est aussi redessiner la limite entre ce qui est commun (la terre comme condition du vivre-ensemble) et ce qui est privé (le fruit du travail vivant).\n\nLe texte invite à dépasser les querelles théoriques. Au-delà des divergences entre courants libertariens, existe une convergence programmatique puissante : une abolition partagée de l'absentéisme foncier. Elle pourrait transformer radicalement les régimes fonciers du Sud, et rouvrir aux « homesteaders » les terres vacantes du Nord. Une relecture libertarienne de la question foncière qui réinterroge le fondement même de toute propriété : le travail vivant et l'usage effectif.",
+  "citations_phares": [
+    {
+      "page": 1,
+      "quote": "In a mutualist, occupancy-and-use system, a self-styled landlord attempting to collect rent would be the aggressor, invading the property rights of the occupant-user."
+    },
+    {
+      "page": 2,
+      "quote": "A natural property right is a direct extension of the act of occupancy and use, and follows directly from it... An artificial property right, on the other hand, results from artificial scarcity."
+    },
+    {
+      "page": 3,
+      "quote": "Both non-Proviso Lockeanism and occupancy-and-use would destroy the Latin American hacienda or latifundia system, and return the vast majority of land in the Third World to the peasant cultivators."
+    }
+  ],
+  "categorisation": [
+    "communs",
+    "paysannerie",
+    "propriété d'usage",
+    "libération des terres",
+    "rente foncière",
+    "libertarianisme"
+  ],
+  "slug": "propriete-usage-fin-rente-fonciere",
+  "en_clair": "Ce texte dit : si on appliquait sérieusement l'idée que la terre appartient à ceux qui la travaillent réellement, pas à ceux qui la possèdent sans y vivre ni la cultiver, on pourrait abolir des milliers de milliards de dollars de loyers mondiaux — et redonner les terres aux millions de paysans pauvres qui en ont été expulsés. C'est une théorie libertarienne qui critique la propriété absente et défend l'occupation-utilisation comme fondement des droits fonciers.",
+  "acteurs": [
+    "P.J. Proudhon",
+    "J.K. Ingalls",
+    "Benjamin Tucker",
+    "Bill Orton",
+    "Thorstein Veblen",
+    "Maurice Dobb",
+    "John Bates Clark",
+    "Thomas Hodgskin",
+    "John Locke"
+  ],
+  "controverse": "Le texte soulève un dilemme théorique fondamental : peut-on déduire logiquement un système de droits fonciers spécifique des axiomes libertariens d'auto-propriété et de non-agression ? Carson argue que non — ces principes sont compatibles avec plusieurs systèmes différents (occupancy-and-use, Lockeanism, Georgism). Par conséquent, le choix doit être évalué sur des bases pragmatiques (minimisation de la rente, maximisation de la récupération du travail investi) plutôt que sur des déductions morales pures.",
+  "angle_journalistique": "Enquête sur la façon dont les théories libertariennes de la propriété foncière basée sur l'occupation et l'usage pourraient éclairer ou légitimer les revendications actuelles des mouvements de sans-terre en Amérique latine et ailleurs, au-delà des seules analyses marxistes.",
+  "citations_verifiees": [
+    {
+      "quote": "In a mutualist, occupancy-and-use system, a self-styled landlord attempting to collect rent would be the aggressor, invading the property rights of the occupant-user.",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "A natural property right is a direct extension of the act of occupancy and use, and follows directly from it... An artificial property right, on the other hand, results from artificial scarcity.",
+      "page": 2,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "Thorstein Veblen referred to privileges or artificial property rights as 'capitalized disserviceability': that is, one collect income, not by productive efforts or positive contributions, but by extracting tribute.",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Both non-Proviso Lockeanism and occupancy-and-use would destroy the Latin American hacienda or latifundia system, and return the vast majority of land in the Third World to the peasant cultivators.",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "By a simple stroke of the pen, hundreds of billions – on a global scale, trillions – of dollars worth of rent would be abolished, and kept in the pockets of those currently paying it.",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "Since no particular set of land property rules can be deduced from fundamental moral axioms, they must be evaluated on utilitarian or practical grounds.",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "74b0ad6cb9"
+}
