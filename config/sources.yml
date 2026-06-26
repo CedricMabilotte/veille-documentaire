@@ -598,6 +598,121 @@ sources:
   # L'infrastructure (scripts/parsers/playwright_parser.py + workflow Chromium)
   # reste en place et prête à l'emploi.
 
+  # ═══ Audit éditorial 2026-06-26 — 10 nouvelles sources ════════════════════
+
+  # 1. FAO Open Repository — OAI-PMH, set foodsecurity (200 OK confirmé)
+  - label: "FAO Open Repository — food security (OAI-PMH)"
+    url: "https://openknowledge.fao.org/oai/request?verb=ListRecords&metadataPrefix=oai_dc&set=foodsecurity"
+    type: hal
+    orientation: institutionnel
+    default_lang: en
+    min_interval_days: 30
+
+  # 2. GRAIN — ressources (deep_html)
+  # NOTE : grain.org bloque les requêtes sans User-Agent navigateur (403 sur tous les
+  # chemins /resources, /articles, /en/, API). Déjà couvert par "GRAIN — entries RSS".
+  # On ajoute /resources en deep_html pour capturer les rapports PDF (le RSS ne les liste
+  # pas toujours). À réactiver si le parser supporte un UA navigateur complet.
+  # - label: "GRAIN — ressources (deep_html)"
+  #   url: "https://grain.org/resources"
+  #   type: deep_html
+  #   orientation: militant
+  #   default_lang: en
+  #   auto_download: true
+  #   min_interval_days: 14
+
+  # 3. International Journal of the Commons — articles (deep_html)
+  # NOTE : L'endpoint OAI-PMH (thecommonsjournal.org/oai) ne répond pas en XML
+  # valide — le site est une SPA Next.js (Ubiquity Press) sans serveur OAI actif.
+  # On crawle la page des articles en deep_html à la place.
+  - label: "International Journal of the Commons — articles"
+    url: "https://thecommonsjournal.org/articles"
+    type: deep_html
+    orientation: academique
+    default_lang: en
+    max_pages: 20
+    min_interval_days: 30
+
+  # 4. La Vía Campesina EN — WP REST API (200 OK)
+  # NOTE : /en/publications/ est 404 ; WP REST retourne bien des PDFs.
+  - label: "La Vía Campesina — publications (WP REST)"
+    url: "https://viacampesina.org/en/wp-json/wp/v2/media?mime_type=application/pdf"
+    type: wp_rest
+    orientation: militant
+    default_lang: en
+    auto_download: true
+    per_page: 100
+    max_pages: 10
+    throttle_sec: 1.5
+    min_interval_days: 14
+
+  # 5. FIAN International — WP REST API (200 OK)
+  # NOTE : /en/publications/ est 301→404 ; WP REST (sans langue dans le path) OK.
+  - label: "FIAN International — publications (WP REST)"
+    url: "https://www.fian.org/wp-json/wp/v2/media?mime_type=application/pdf"
+    type: wp_rest
+    orientation: institutionnel
+    default_lang: en
+    auto_download: true
+    per_page: 100
+    max_pages: 10
+    throttle_sec: 1.5
+    min_interval_days: 30
+
+  # 6. OpenEdition Books — communs (deep_html)
+  # NOTE : L'endpoint OAI proposé (books.openedition.org/oai/request) est 404.
+  # Le serveur oai.openedition.org existe mais ne contient que 10 sets blogs/revues,
+  # aucun set "books". On crawle la page principale en deep_html.
+  - label: "OpenEdition Books — catalogue (deep_html)"
+    url: "https://books.openedition.org/"
+    type: deep_html
+    orientation: academique
+    default_lang: fr
+    max_pages: 20
+    min_interval_days: 30
+
+  # 7. Focus on the Global South — publications (200 OK)
+  # NOTE : /publications/ est 404 ; /category/publications/ retourne 200 avec PDFs.
+  - label: "Focus on the Global South — publications"
+    url: "https://focusweb.org/category/publications/"
+    type: deep_html
+    orientation: militant
+    default_lang: en
+    max_pages: 15
+    min_interval_days: 30
+
+  # 8. CLACSO — búsqueda tierra y communs (200 OK)
+  - label: "CLACSO — búsqueda tierra y communs"
+    url: "https://www.clacso.org/?s=tierra+communs&post_type=publication"
+    type: deep_html
+    orientation: academique
+    default_lang: es
+    max_pages: 10
+    min_interval_days: 30
+
+  # 9. Nyéléni — documents finaux (200 OK)
+  # NOTE : /en/resources/ est 404 ; WP REST trop maigre (4 PDFs).
+  # /fr/documents-finaux/ retourne 200 avec un Download Manager WordPress.
+  - label: "Nyéléni — documents finaux"
+    url: "https://nyeleni.org/fr/documents-finaux/"
+    type: deep_html
+    orientation: militant
+    auto_download: true
+    default_lang: en
+    max_pages: 10
+    min_interval_days: 60
+
+  # 10. IIED — land tenure
+  # NOTE : IIED bloque TOUTES les requêtes sans navigateur (403 sur /search,
+  # /publications, /topics, /rss.xml). Source inaccessible en scraping direct.
+  # À réactiver si IIED publie un flux RSS public ou un endpoint API.
+  # - label: "IIED — land tenure"
+  #   url: "https://www.iied.org/search?category=publications&keywords=land+tenure"
+  #   type: deep_html
+  #   orientation: institutionnel
+  #   default_lang: en
+  #   min_interval_days: 30
+
   # ═══ Ajoute tes propres sources ici ════════════════════════════════════════
   # - label: "Mon blog de référence"
   #   url: "https://example.com/articles-en-pdf/"
