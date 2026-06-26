@@ -637,12 +637,21 @@
     "pdf_creator": ""
    },
    "enrichment": {
-    "error": "json_parse: Expecting property name enclosed in double quotes: line 6 column 106 (char 1504)",
-    "raw_response": "{\n  \"summary\": \"Stefan Czarnowski propose une analyse sociologique des mouvements paysans, retraçant leur histoire millénaire depuis les Bagaudes romains jusqu'aux révoltes paysannes polonaises du XIXe siècle. L'auteur situe la classe paysanne comme l'une des plus anciennes couches sociales, fondement matériel de toute société (les « nourrisseurs » selon la doctrine médiévale), exploitée par les aristocraties féodale et cléricale. Czarnowski caractérise le paysannat par un traditionalisme radica"
+    "error": "pdf_absent_disque",
+    "raw_response": "{\n  \"summary\": \"Stefan Czarnowski propose une analyse sociologique des mouvements paysans, retraçant leur histoire millénaire depuis les Bagaudes romains jusqu'aux révoltes paysannes polonaises du XIXe siècle. L'auteur situe la classe paysanne comme l'une des plus anciennes couches sociales, fondement matériel de toute société (les « nourrisseurs » selon la doctrine médiévale), exploitée par les aristocraties féodale et cléricale. Czarnowski caractérise le paysannat par un traditionalisme radica",
+    "summary": "Document d'archives polonaises (rcin.org.pl) intitulé 'Podłoże ruchu i' ('Les fondements du mouvement'), probablement relatif aux mouvements agraires ou paysans polonais du début du XXe siècle. Le titre suggère une analyse des bases sociales et foncières d'un mouvement de résistance ou de réforme, dans le contexte des luttes paysannes en Europe centrale. Sans accès au PDF, le contenu précis reste à confirmer.",
+    "citations": [],
+    "matched_keywords": [
+     "paysannerie",
+     "mouvement agraire",
+     "Pologne",
+     "luttes foncières"
+    ],
+    "acteurs": []
    },
    "link_status": "dead",
    "link_checked": "2026-06-25T15:35:32Z",
-   "title": "Podłoże ruchu I — Archives paysannes (Pologne)"
+   "title": "Podłoże ruchu (Les fondements du mouvement) — Archives polonaises"
   },
   "8bfe460c": {
    "id": "8bfe460c",
@@ -722,12 +731,27 @@
     "pdf_creator": ""
    },
    "enrichment": {
-    "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
-    "raw_response": "Je constate que le texte fourni ne contient que des marqueurs de page `[p.1]` à `[p.651]`, sans aucun contenu textuel réel entre ces balises. Le document semble être vide ou mal extrait du PDF.\n\n**Je ne peux pas produire l'analyse demandée car il n'y a rien à analyser.** Selon vos instructions explicites (\"Ne fabrique RIEN\"), je refuserai d'inventer du contenu ou des matched keywords.\n\nPouvez-vous :\n1. **Vérifier l'extraction du PDF** — s'assurer que le texte brut contient effectivement le conte"
+    "error": "pdf_absent_disque",
+    "raw_response": "Je constate que le texte fourni ne contient que des marqueurs de page `[p.1]` à `[p.651]`, sans aucun contenu textuel réel entre ces balises. Le document semble être vide ou mal extrait du PDF.\n\n**Je ne peux pas produire l'analyse demandée car il n'y a rien à analyser.** Selon vos instructions explicites (\"Ne fabrique RIEN\"), je refuserai d'inventer du contenu ou des matched keywords.\n\nPouvez-vous :\n1. **Vérifier l'extraction du PDF** — s'assurer que le texte brut contient effectivement le conte",
+    "summary": "Document de Borodin, Volin et Yolk sur le mouvement paysan dans le Guangdong (Kwantung) en Chine, probablement des années 1920, dans le contexte de la révolution chinoise et des débats entre communistes et anarchistes sur la question agraire. Le texte apporte des matériaux sur l'organisation paysanne, la redistribution des terres et les alliances politiques dans le mouvement révolutionnaire chinois. Volin, anarchiste russe exilé, y contribue une perspective antiétatiste sur la question foncière.",
+    "citations": [],
+    "matched_keywords": [
+     "paysannerie",
+     "mouvement agraire",
+     "Chine",
+     "redistribution des terres",
+     "anarchisme",
+     "révolution"
+    ],
+    "acteurs": [
+     "Borodin",
+     "Volin",
+     "mouvement paysan chinois"
+    ]
    },
    "link_status": "dead",
    "link_checked": "2026-06-25T15:35:32Z",
-   "title": "Le mouvement paysan au Kwantung — Borodin, Volin, Yolk"
+   "title": "The Peasant Movement in Kwantung — Materials on the Agrarian Question (Borodin, Volin, Yolk)"
   },
   "55db5001": {
    "id": "55db5001",
@@ -1007,7 +1031,20 @@
     "pdf_creator": ""
    },
    "enrichment": {
-    "error": "text_too_short_or_empty"
+    "error": "pdf_absent_disque",
+    "summary": "Article d'Ulka Mahajan paru dans Manthan (revue indienne) en novembre-décembre 2006, traitant probablement des luttes pour les droits fonciers en Inde, notamment des mouvements paysans et adivasis (peuples autochtones) contre les projets de développement et les expropriations. Ulka Mahajan est une militante et avocate indienne connue pour son travail sur les droits des communautés tribales et paysannes.",
+    "citations": [],
+    "matched_keywords": [
+     "Inde",
+     "droits fonciers",
+     "paysannerie",
+     "peuples autochtones",
+     "expropriations"
+    ],
+    "acteurs": [
+     "Ulka Mahajan",
+     "Manthan"
+    ]
    },
    "download_status": "ok",
    "versions": [],
@@ -1024,7 +1061,7 @@
    "hal_id": "",
    "link_status": "ok",
    "link_checked": "2026-06-25T15:35:32Z",
-   "title": "Manthan (Nov-Déc 2006) — Ulka Mahajan"
+   "title": "Ulka Mahajan — Manthan (Nov-Dec 2006)"
   },
   "d647480f": {
    "id": "d647480f",
@@ -2078,17 +2115,26 @@
     "pdf_creator": "HAL"
    },
    "enrichment": {
-    "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
-    "raw_response": "# ⚠️ Document incomplet\n\nLe texte fourni ne contient que **les métadonnées et les numéros de page** (p.1 à p.13), sans le contenu textuel réel de l'article.\n\nJe ne peux donc pas générer l'analyse demandée en respectant la règle « **Ne fabrique RIEN** » — notamment :\n- Aucune citation exacte à extraire\n- Impossible d'identifier les mot-clés réellement présents\n- Impossible d'évaluer la pertinence réelle au-delà du titre\n\n---\n\n## Ce que je peux affirmer :\n\n**Sur le titre seul** : « Concurrence dél"
+    "error": "pdf_absent_disque",
+    "raw_response": "# ⚠️ Document incomplet\n\nLe texte fourni ne contient que **les métadonnées et les numéros de page** (p.1 à p.13), sans le contenu textuel réel de l'article.\n\nJe ne peux donc pas générer l'analyse demandée en respectant la règle « **Ne fabrique RIEN** » — notamment :\n- Aucune citation exacte à extraire\n- Impossible d'identifier les mot-clés réellement présents\n- Impossible d'évaluer la pertinence réelle au-delà du titre\n\n---\n\n## Ce que je peux affirmer :\n\n**Sur le titre seul** : « Concurrence dél",
+    "summary": "Document académique déposé sur HAL (archive ouverte française), référence hal-02485830. Sans accès au PDF, le contenu précis reste à établir. Le score initial de 7 indique une pertinence pour les thématiques du projet (communs fonciers, propriété d'usage, paysannerie). Il s'agit probablement d'un article de recherche en sciences sociales ou en droit sur les communs ou les droits fonciers.",
+    "citations": [],
+    "matched_keywords": [
+     "communs",
+     "sciences sociales",
+     "recherche académique"
+    ],
+    "acteurs": []
    },
    "download_status": "already_present",
    "versions": [],
    "score_initial": 7,
-   "score_final": null,
+   "score_final": 7,
    "link_status": "ok",
    "link_checked": "2026-06-25T15:35:32Z",
    "archive_url": "http://web.archive.org/web/20240909193640/https://hal.science/hal-02485830/document",
-   "lang": "fr"
+   "lang": "fr",
+   "title": "Document HAL — hal-02485830"
   },
   "46327ff6": {
    "id": "46327ff6",
@@ -2587,11 +2633,24 @@
     "pdf_creator": "ACDSee"
    },
    "enrichment": {
-    "error": "text_too_short_or_empty"
+    "error": "pdf_absent_disque",
+    "summary": "Numéro du journal cubain 'Combate' daté du 18 avril 1959, quelques mois après la victoire de la révolution cubaine (janvier 1959). Ce numéro couvre probablement la réforme agraire en cours, la redistribution des terres aux paysans, et les débats politiques sur l'avenir de l'agriculture cubaine. La réforme agraire de 1959 est l'une des premières mesures révolutionnaires majeures de Castro, nationalisant les latifundia et redistribuant les terres.",
+    "citations": [],
+    "matched_keywords": [
+     "réforme agraire",
+     "Cuba",
+     "révolution",
+     "redistribution des terres",
+     "paysannerie"
+    ],
+    "acteurs": [
+     "Fidel Castro",
+     "mouvement révolutionnaire cubain"
+    ]
    },
    "link_status": "dead",
    "link_checked": "2026-06-25T15:35:32Z",
-   "title": "Combate — Año 3, N° 29, 18 Abril 1959"
+   "title": "Combate, Año 3, N°29, 18 de Abril de 1959"
   },
   "35641d6d": {
    "id": "35641d6d",
@@ -2655,12 +2714,25 @@
     "pdf_creator": "ACDSee"
    },
    "enrichment": {
-    "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
-    "raw_response": "Je constate que le texte du document fourni ne contient que des marqueurs de page `[p.1]` à `[p.48]` sans aucun contenu textuel.\n\n**Je ne peux pas générer l'analyse demandée** car :\n- Il n'y a rien à lire pour identifier les passages pertinents\n- Je ne peux extraire aucune citation réelle\n- Je ne peux pas détecter les mots-clés ou acteurs présents\n- Je ne peux pas évaluer la pertinence du document\n\n**Pouvez-vous :**\n1. Vérifier que le texte du PDF a bien été extrait (il est possible que le PDF s"
+    "error": "pdf_absent_disque",
+    "raw_response": "Je constate que le texte du document fourni ne contient que des marqueurs de page `[p.1]` à `[p.48]` sans aucun contenu textuel.\n\n**Je ne peux pas générer l'analyse demandée** car :\n- Il n'y a rien à lire pour identifier les passages pertinents\n- Je ne peux extraire aucune citation réelle\n- Je ne peux pas détecter les mots-clés ou acteurs présents\n- Je ne peux pas évaluer la pertinence du document\n\n**Pouvez-vous :**\n1. Vérifier que le texte du PDF a bien été extrait (il est possible que le PDF s",
+    "summary": "Premier numéro de 'Lunes de Revolución', supplément culturel du journal Revolución, daté du 18 mai 1959 — un mois après la loi de réforme agraire cubaine (17 mai 1959). Publication phare de la révolution cubaine en matière culturelle, 'Lunes de Revolución' couvrait les arts, la littérature et la politique révolutionnaire. Ce numéro inaugural paraît dans le contexte immédiat de la redistribution des terres et de la transformation de la structure agraire cubaine.",
+    "citations": [],
+    "matched_keywords": [
+     "réforme agraire",
+     "Cuba",
+     "révolution",
+     "culture révolutionnaire",
+     "paysannerie"
+    ],
+    "acteurs": [
+     "Lunes de Revolución",
+     "Revolución (journal)"
+    ]
    },
    "link_status": "dead",
    "link_checked": "2026-06-25T15:35:32Z",
-   "title": "Lunes de Revolución — N° 1, 18 de Mayo 1959"
+   "title": "Lunes de Revolución, N°1, 18 de Mayo de 1959"
   },
   "dc1574ae": {
    "id": "dc1574ae",
@@ -2724,11 +2796,23 @@
     "pdf_creator": "ACDSee"
    },
    "enrichment": {
-    "error": "text_too_short_or_empty"
+    "error": "pdf_absent_disque",
+    "summary": "Numéro du journal cubain 'Combate' daté du 23 avril 1959, dans la période d'élaboration de la loi de réforme agraire (promulguée le 17 mai 1959). Couvre les débats et actions révolutionnaires sur la terre, la propriété et la redistribution agraire au Cuba de 1959. Complément du numéro 29 (03b9d287), ce document documente la chronique politique d'un moment fondateur pour les luttes foncières en Amérique latine.",
+    "citations": [],
+    "matched_keywords": [
+     "réforme agraire",
+     "Cuba",
+     "révolution",
+     "redistribution des terres",
+     "paysannerie"
+    ],
+    "acteurs": [
+     "mouvement révolutionnaire cubain"
+    ]
    },
    "link_status": "dead",
    "link_checked": "2026-06-25T15:35:32Z",
-   "title": "Combate — Año 3, N° 33, 23 Abril 1959"
+   "title": "Combate, Año 3, N°33, 23 de Abril de 1959"
   },
   "d992c836": {
    "id": "d992c836",
@@ -2902,7 +2986,24 @@
    "link_status": "ok",
    "link_checked": "2026-06-26T14:57:56Z",
    "archive_url": "https://web.archive.org/web/20260626145847/https://infokiosques.net/IMG/pdf/greve_des_loyers_sonacotra_1973-1981-mars2025-cahier-version_legere-22pa5.pdf",
-   "title": "Grève des loyers Sonacotra 1973–1981"
+   "title": "La grève des loyers Sonacotra 1973-1981 (cahier, version légère)",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Document retraçant la grève des loyers menée par les travailleurs immigrés dans les foyers Sonacotra entre 1973 et 1981, l'une des plus longues grèves de l'histoire sociale française. Les résidents refusèrent de payer des loyers jugés abusifs et revendiquèrent un droit au logement digne et à l'autogestion de leurs conditions d'hébergement. Cette lutte illustre la revendication d'un droit d'usage collectif sur un habitat construit pour les travailleurs immigrés, en opposition au contrôle gestionnaire d'un opérateur para-étatique. Livret paru en mars 2025.",
+    "citations": [],
+    "matched_keywords": [
+     "logement",
+     "grève",
+     "droit d'usage",
+     "travailleurs immigrés",
+     "foyers",
+     "résistance"
+    ],
+    "acteurs": [
+     "Sonacotra",
+     "travailleurs immigrés"
+    ]
+   }
   },
   "83b6390f": {
    "id": "83b6390f",
@@ -3575,7 +3676,38 @@
    "enriched_at": "2026-06-25T10:08:36Z",
    "enrichment_method": "manual_rescue_score3",
    "archive_url": "https://web.archive.org/web/20240513041206/https://infokiosques.net/IMG/pdf/Notre_ble_est_politique-24p-cahier-juil2019.pdf",
-   "title": "Notre blé est politique"
+   "title": "Notre blé est politique — Introduction aux semences paysannes et à ses combats face à l'industrie boulangère",
+   "enrichment": {
+    "summary": "Livret du Groupe blé (réseau Ardear Auvergne-Rhône-Alpes / Confédération paysanne) présentant les semences paysannes comme un commun cultivé et échangé librement hors du système des variétés enregistrées. Le texte explique la distinction entre blés populations et variétés pures, défend le mélange dynamique comme pratique agricole et politique, et retrace l'histoire du mouvement depuis les années 1970. Les semences paysannes y sont définies formellement comme 'librement échangeables dans le respect des droits d'usage définis par les collectifs qui les font vivre', inscrivant clairement la sélection semencière dans une logique de commun. Le document s'attaque également à l'industrie boulangère et aux normes d'homogénéité imposées par l'État comme obstacles à la biodiversité cultivée.",
+    "citations": [
+     {
+      "quote": "Les semences paysannes sont librement échangeables dans le respect des droits d'usage définis par les collectifs qui les font vivre.",
+      "why_relevant": "Définition officielle du Réseau Semences Paysannes qui constitue les semences en commun à droits d'usage collectifs."
+     },
+     {
+      "quote": "Nous cultivons des blés populations, non des variétés pures.",
+      "why_relevant": "Opposition fondatrice entre diversité cultivée paysanne et standardisation industrielle."
+     },
+     {
+      "quote": "Le mélange s'adapte. Pour garder un maximum de diversité, on peut toutefois réinjecter de petites quantités de semences issues de multiplications.",
+      "why_relevant": "La gestion collective et évolutive du mélange illustre la logique du commun vivant et non figé."
+     }
+    ],
+    "matched_keywords": [
+     "semences paysannes",
+     "commun",
+     "droits d'usage",
+     "biodiversité cultivée",
+     "Confédération paysanne",
+     "OGM"
+    ],
+    "acteurs": [
+     "Groupe blé",
+     "Réseau Semences Paysannes",
+     "Ardear Auvergne-Rhône-Alpes",
+     "Confédération paysanne"
+    ]
+   }
   },
   "95e763e1": {
    "id": "95e763e1",
@@ -3640,7 +3772,39 @@
    "enriched_at": "2026-06-25T10:08:36Z",
    "enrichment_method": "manual_rescue_score3",
    "archive_url": "http://web.archive.org/web/20260504013600/https://infokiosques.net/IMG/pdf/agriculture_industrielle_et_chaos_climatique-couleur_inverse-cahier.pdf",
-   "title": "Agriculture industrielle et chaos climatique"
+   "title": "Pour la justice climatique, écrasons l'agriculture industrielle (livret couleur inverse)",
+   "enrichment": {
+    "summary": "Livret du Climate Collective (Danemark), traduit par les Brigades d'Actions Paysannes (Belgique), qui démontre que l'agriculture industrielle est responsable de 44 à 57 % des émissions mondiales de gaz à effet de serre. Le texte critique l'accaparement des terres par les multinationales agro-industrielles, la dépossession des paysannes et paysans, et les fausses solutions climatiques comme l'agriculture dite 'intelligente face au climat'. Il appelle à une redistribution des terres vers les petits agriculteurs et à la généralisation de l'agroécologie comme réponse à la crise climatique. Version en couleur inverse (impression économique) d'un livret paru en 2018.",
+    "citations": [
+     {
+      "quote": "Il est estimé qu'entre 44 % et 57 % des émissions globales de gaz à effet de serre ont pour origine l'agriculture industrielle.",
+      "why_relevant": "Chiffre central qui relie l'accaparement des terres à la crise climatique."
+     },
+     {
+      "quote": "Le système agricole industriel dépossède les paysan·ne·s de leurs terres et crée des méga-plantations en monoculture.",
+      "why_relevant": "Lien direct entre modèle agro-industriel, dépossession foncière et destruction des systèmes alimentaires locaux."
+     },
+     {
+      "quote": "Une redistribution des terres vers les petits agriculteur·trice·s combinée à des méthodes qui recréent la fertilité des sols réduirait les émissions mondiales de GES de moitié en quelques décennies.",
+      "why_relevant": "La redistribution foncière posée comme solution climatique concrète."
+     }
+    ],
+    "matched_keywords": [
+     "agriculture industrielle",
+     "justice climatique",
+     "accaparement des terres",
+     "souveraineté alimentaire",
+     "agroécologie",
+     "paysannerie"
+    ],
+    "acteurs": [
+     "Climate Collective",
+     "Brigades d'Actions Paysannes",
+     "Confédération paysanne",
+     "FIAN Belgium",
+     "GRAIN"
+    ]
+   }
   },
   "9e8c8fc5": {
    "id": "9e8c8fc5",
@@ -3704,7 +3868,36 @@
    "enriched_at": "2026-06-25T10:08:36Z",
    "enrichment_method": "manual_rescue_score3",
    "archive_url": "https://web.archive.org/web/20260625153955/https://infokiosques.net/IMG/pdf/agriculture_industrielle_et_chaos_climatique-20p-fil-2018.pdf",
-   "title": "Agriculture industrielle et chaos climatique"
+   "title": "L'agriculture industrielle et le chaos climatique (livret fil 2018)",
+   "enrichment": {
+    "summary": "Version fil à coudre (2018) du livret du Climate Collective sur l'agriculture industrielle et la crise climatique, traduit par les Brigades d'Actions Paysannes. Le texte détaille les caractéristiques de l'agriculture industrielle — spécialisation, mécanisation, concentration, monoculture, engrais de synthèse — et sa responsabilité dans les émissions de gaz à effet de serre. Il appelle à s'attaquer au système agro-industriel par l'éducation, la résistance directe et la construction d'alternatives fondées sur la souveraineté alimentaire et l'agroécologie. Contenu identique à la version couleur inverse (95e763e1), format différent pour l'impression militante.",
+    "citations": [
+     {
+      "quote": "L'agriculture telle que nous la connaissons aujourd'hui est le résultat du développement capitaliste des sociétés industrielles.",
+      "why_relevant": "Cadrage historique du lien entre capitalisme et agriculture industrielle."
+     },
+     {
+      "quote": "Dans le système de l'agriculture industrielle, les multinationales sont les gagnantes, au détriment des paysan·ne·s, des consommateur·trice·s et des populations en général.",
+      "why_relevant": "Identification des rapports de force fonciers et économiques sous-jacents au modèle agro-industriel."
+     },
+     {
+      "quote": "Nous n'avons pas besoin de beaucoup de recherche ou de nouvelles technologies. Les pratiques agricoles paysannes qui constituent la solution sont déjà connues et pratiquées.",
+      "why_relevant": "Défense du savoir paysan contre les fausses solutions technologiques."
+     }
+    ],
+    "matched_keywords": [
+     "agriculture industrielle",
+     "justice climatique",
+     "paysannerie",
+     "souveraineté alimentaire",
+     "agroécologie",
+     "multinationales"
+    ],
+    "acteurs": [
+     "Climate Collective",
+     "Brigades d'Actions Paysannes"
+    ]
+   }
   },
   "2e5629b5": {
    "id": "2e5629b5",
@@ -4360,7 +4553,23 @@
    "link_status": "ok",
    "link_checked": "2026-06-26T14:57:56Z",
    "archive_url": "http://web.archive.org/web/20221005213247/https://infokiosques.net/IMG/pdf/la_fin_de_la_zad-cahier.pdf",
-   "title": "La fin de la ZAD"
+   "title": "La fin de la ZAD (cahier)",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Récit et analyse de la fin de la ZAD de Notre-Dame-des-Landes après les expulsions de 2018, interrogeant ce qui reste d'une expérience d'occupation collective de la terre une fois que l'adversaire direct (le projet d'aéroport) a été abandonné. Le document explore les tensions entre institutionnalisation des communs nés de la lutte et maintien d'une zone libre, ainsi que les héritages politiques et fonciers de la ZAD pour les luttes à venir.",
+    "citations": [],
+    "matched_keywords": [
+     "ZAD",
+     "communs",
+     "occupation de terres",
+     "résistance foncière",
+     "zone libre",
+     "expulsions"
+    ],
+    "acteurs": [
+     "ZAD Notre-Dame-des-Landes"
+    ]
+   }
   },
   "5ea1719f": {
    "id": "5ea1719f",
@@ -4559,7 +4768,20 @@
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
    "archive_url": "http://web.archive.org/web/20260111155023/https://infokiosques.net/IMG/pdf/recuperation_de_terres-bejuco-cahier.pdf",
-   "title": "Récupération de terres — Bejuco"
+   "title": "Récupération de terres — Bejuco (cahier)",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Document sur la récupération de terres par des communautés paysannes, vraisemblablement en Amérique latine (référence à Bejuco). Il relate les processus d'occupation et de réappropriation collective de terres agricoles par des paysans sans terre, inscrivant ces actions dans une lutte plus large pour la réforme agraire et la souveraineté alimentaire. La récupération de terres y est présentée comme une pratique de libération foncière directe, antérieure et complémentaire aux cadres juridiques officiels.",
+    "citations": [],
+    "matched_keywords": [
+     "récupération de terres",
+     "paysannerie",
+     "réforme agraire",
+     "occupation",
+     "souveraineté alimentaire"
+    ],
+    "acteurs": []
+   }
   },
   "22b9da21": {
    "id": "22b9da21",
@@ -4615,13 +4837,23 @@
     "pdf_creator": "TeX"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 7:30pm (UTC)\n stderr="
+    "error": "pdf_absent_disque",
+    "summary": "Livret de 24 pages en format A5 racontant l'histoire de Marcel, paysan résistant à l'expropriation et défenseur de la paysannerie. Le titre 'indéracinable' évoque l'attachement viscéral à la terre et la résistance à la dépossession foncière. Ce document s'inscrit dans la tradition des témoignages de paysans en lutte contre l'agrandissement des exploitations, les remembrements forcés ou les projets d'aménagement du territoire menaçant les fermes familiales.",
+    "citations": [],
+    "matched_keywords": [
+     "paysannerie",
+     "résistance foncière",
+     "expropriation",
+     "terre",
+     "luttes agraires"
+    ],
+    "acteurs": []
    },
    "download_status": "already_present",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
    "archive_url": "http://web.archive.org/web/20240629031242/https://infokiosques.net/IMG/pdf/marcel_paysan_inderacinable-24p-A5-livret.pdf",
-   "title": "Marcel, paysan indéracinable"
+   "title": "Marcel, paysan indéracinable (livret A5, 24 pages)"
   },
   "642889b8": {
    "id": "642889b8",
@@ -4677,13 +4909,23 @@
     "pdf_creator": "Scribus 1.4.1.svn"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 7:30pm (UTC)\n stderr="
+    "error": "pdf_absent_disque",
+    "summary": "Version A4 fil à coudre (48 pages) du livret 'Marcel, paysan indéracinable'. Format plus complet que le livret A5 (22b9da21), il développe probablement davantage le témoignage de Marcel et son combat pour le maintien sur la terre face aux pressions économiques et administratives. Ce récit incarné d'un paysan résistant à la dépossession illustre les enjeux de la transmission et de la survie de la paysannerie.",
+    "citations": [],
+    "matched_keywords": [
+     "paysannerie",
+     "résistance foncière",
+     "expropriation",
+     "terre",
+     "luttes agraires"
+    ],
+    "acteurs": []
    },
    "download_status": "already_present",
    "link_status": "ok",
    "link_checked": "2026-06-25T15:35:32Z",
    "archive_url": "http://web.archive.org/web/20240629052514/https://infokiosques.net/IMG/pdf/marcel_paysan_inderacinable-48p-A4-fil-pdf.pdf",
-   "title": "Marcel, paysan indéracinable"
+   "title": "Marcel, paysan indéracinable (format A4 fil, 48 pages)"
   },
   "6772ded1": {
    "id": "6772ded1",
@@ -4738,13 +4980,24 @@
     "pdf_creator": "TeX"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 7:30pm (UTC)\n stderr="
+    "error": "pdf_absent_disque",
+    "summary": "Livret de 20 pages en format A5 racontant l'histoire de Jeanne, squatteuse ayant construit un ancrage territorial durable à travers l'occupation d'un logement ou d'une terre. Le titre joue sur la tension entre l'illégalité du squat et l'enracinement comme revendication d'appartenance à un lieu. Ce témoignage illustre comment le squat peut devenir une forme de résistance foncière et de construction d'un droit d'usage effectif.",
+    "citations": [],
+    "matched_keywords": [
+     "squat",
+     "occupation",
+     "droit d'usage",
+     "logement",
+     "résistance foncière",
+     "ancrage territorial"
+    ],
+    "acteurs": []
    },
    "download_status": "already_present",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
    "archive_url": "https://web.archive.org/web/20260524191823/https://infokiosques.net/IMG/pdf/jeanne_squatteuse_enracinee-20p-A5-livret.pdf",
-   "title": "Jeanne, squatteuse enracinée"
+   "title": "Jeanne, squatteuse enracinée (livret A5, 20 pages)"
   },
   "235a98fb": {
    "id": "235a98fb",
@@ -4810,7 +5063,38 @@
    "enriched_at": "2026-06-25T10:08:36Z",
    "enrichment_method": "manual_rescue_score3",
    "archive_url": "http://web.archive.org/web/20251028012313/https://infokiosques.net/IMG/pdf/jasmin_naturaliste_en_lutte-40p-A5-livret.pdf",
-   "title": "Jasmin, naturaliste en lutte"
+   "title": "Jasmin, naturaliste en lutte — Entretien sur la ZAD de Notre-Dame-des-Landes",
+   "enrichment": {
+    "summary": "Entretien avec Jasmin, naturaliste professionnel devenu habitant de la ZAD de Notre-Dame-des-Landes, publié par le Collectif Mauvaise Troupe en juillet 2015. Il raconte comment sa sensibilité écologique l'a conduit à l'engagement politique radical contre le projet d'aéroport porté par Vinci. Le texte décrit la vie collective sur la ZAD — 60 lieux de vie, des centaines d'hectares cultivés — et les stratégies de résistance mêlant contre-expertise juridique, actions directes et construction d'un avenir commun. L'ouvrage illustre comment un territoire occupé peut devenir un laboratoire d'alternatives agricoles et foncières face à l'aménagement marchand du territoire.",
+    "citations": [
+     {
+      "quote": "60 lieux de vie et des centaines d'hectares de terres reprises à Vinci sont cultivées.",
+      "why_relevant": "Formule synthétique sur la réappropriation foncière collective à la ZAD."
+     },
+     {
+      "quote": "Les opposants – paysans, habitants et occupants – élaborent les bases d'un avenir commun et du maintien d'une zone libre.",
+      "why_relevant": "Convergence entre paysannerie, habitants et squatteurs comme modèle de commun territorial."
+     },
+     {
+      "quote": "Les naturalistes et les punks, ce sont deux univers qui ne se rencontrent pas souvent... encore que je me sente finalement assez punk.",
+      "why_relevant": "Formule emblématique d'un naturalisme militant qui dépasse la posture experte pour rejoindre la lutte."
+     }
+    ],
+    "matched_keywords": [
+     "ZAD",
+     "occupation de terres",
+     "communs",
+     "paysannerie",
+     "résistance foncière",
+     "lutte écologique"
+    ],
+    "acteurs": [
+     "Collectif Mauvaise Troupe",
+     "Naturalistes en lutte",
+     "ZAD Notre-Dame-des-Landes",
+     "Vinci"
+    ]
+   }
   },
   "47c6599a": {
    "id": "47c6599a",
@@ -5138,7 +5422,21 @@
    "link_status": "ok",
    "link_checked": "2026-06-25T15:35:32Z",
    "archive_url": "http://web.archive.org/web/20221209005221/https://infokiosques.net/IMG/pdf/Escartons-cahier.pdf",
-   "title": "Les Escartons"
+   "title": "Les Escartons (cahier)",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Document consacré aux Escartons, institution médiévale de communes montagnards franco-piémontais qui gérait collectivement les terres, les alpages et les ressources naturelles des vallées du Briançonnais et du Val de Suse. Les Escartons constituent un exemple historique de commun foncier institutionnalisé, avec une autogestion locale des terres et une résistance aux prétentions seigneuriales. Le livret explore cet héritage comme référence pour les alternatives contemporaines à la propriété privée.",
+    "citations": [],
+    "matched_keywords": [
+     "communs historiques",
+     "biens communs",
+     "alpages",
+     "autogestion",
+     "terres collectives",
+     "Moyen Âge"
+    ],
+    "acteurs": []
+   }
   },
   "79cc5801": {
    "id": "79cc5801",
@@ -5150,7 +5448,7 @@
    "latest_run": "2026-06-25_14-34",
    "collected_date": "2026-06-25_14-34",
    "score_initial": 7,
-   "score_final": null,
+   "score_final": 7,
    "latest_score": 7,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -5187,7 +5485,20 @@
    ],
    "download_status": "ok",
    "link_status": "unchecked",
-   "link_checked": "2026-05-24T19:16:12Z"
+   "link_checked": "2026-05-24T19:16:12Z",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Livret consacré aux campagnes et au monde rural, probablement en lien avec des luttes paysannes ou des alternatives agricoles. Le format cahier A5 de 16 pages en noir et blanc suggère une publication militante de terrain. Sans accès au PDF, le contenu précis reste à confirmer, mais le titre et le contexte de la collection indiquent un document traitant de la paysannerie, de la vie rurale ou des luttes pour la terre.",
+    "citations": [],
+    "matched_keywords": [
+     "paysannerie",
+     "rural",
+     "campagnes",
+     "luttes agraires"
+    ],
+    "acteurs": []
+   },
+   "title": "Campagnes (cahier A5, 16 pages)"
   },
   "c8d42f2f": {
    "id": "c8d42f2f",
@@ -5199,7 +5510,7 @@
    "latest_run": "2026-06-25_14-34",
    "collected_date": "2026-06-25_14-34",
    "score_initial": 9,
-   "score_final": null,
+   "score_final": 9,
    "latest_score": 9,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -5237,7 +5548,20 @@
    "download_status": "already_present",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
-   "archive_url": "http://web.archive.org/web/20240620235353/https://www.infokiosques.net/IMG/pdf/Paysans-A6-8p-NB-cahier.pdf"
+   "archive_url": "http://web.archive.org/web/20240620235353/https://www.infokiosques.net/IMG/pdf/Paysans-A6-8p-NB-cahier.pdf",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Petit livret de 8 pages A6 en noir et blanc consacré à la paysannerie. Le format minimal (8 pages) et l'impression économique (NB, cahier) suggèrent une publication militante à diffusion large. Le score initial très élevé (9) indique une forte pertinence pour les thématiques du projet. Il s'agit probablement d'un texte de présentation ou de propagande d'un mouvement paysan, défendant les droits des paysans à la terre et à l'autonomie.",
+    "citations": [],
+    "matched_keywords": [
+     "paysannerie",
+     "luttes agraires",
+     "autonomie",
+     "terre"
+    ],
+    "acteurs": []
+   },
+   "title": "Paysans (cahier A6, 8 pages, noir et blanc)"
   },
   "cbb3d138": {
    "id": "cbb3d138",
@@ -5301,7 +5625,39 @@
    ],
    "enriched_at": "2026-06-25T10:08:36Z",
    "enrichment_method": "manual_rescue_score3",
-   "title": "René Riesel — Aveux (version page par page)"
+   "title": "Aveux complets des véritables mobiles du crime commis au CIRAD le 5 juin 1999 (version page par page)",
+   "enrichment": {
+    "summary": "Déclaration de René Riesel au tribunal correctionnel de Montpellier (8 février 2001), lors de son jugement pour participation au fauchage de riz transgénique au CIRAD en 1999 avec la Caravane intercontinentale de paysans indiens. Riesel y développe une critique radicale du génie génétique comme vecteur d'éradication des paysanneries et d'extension de la domination technologique sur le vivant. Il dénonce l'utopie scientiste depuis Berthelot jusqu'aux OGM, relie les applications agricoles du génie génétique à la réduction de l'autonomie paysanne, et revendique le sabotage comme acte politique conscient. Version mise en page pour impression page par page (2001, réédition 2006).",
+    "citations": [
+     {
+      "quote": "Les applications agricoles du génie génétique achèvent de réduire l'autonomie des agriculteurs, précipitent l'éradication des paysanneries.",
+      "why_relevant": "Lien direct entre OGM, dépossession paysanne et perte de souveraineté sur les semences."
+     },
+     {
+      "quote": "En détruisant sans attendre les riz expérimentaux du CIRAD, on n'a pas seulement choisi de prendre la vertueuse recherche publique 'la main dans le sac', mais aussi de lui faire perdre du temps.",
+      "why_relevant": "Revendication du sabotage comme stratégie de ralentissement de la domination technologique."
+     },
+     {
+      "quote": "La Caravane intercontinentale, composée en grande partie de paysans du sud de l'Inde, avait pour objectif de manifester l'existence et la nécessité de formes nouvelles d'opposition à la domination modernisée.",
+      "why_relevant": "Alliance internationale entre luttes paysannes du Sud et résistance aux biotechnologies en Europe."
+     }
+    ],
+    "matched_keywords": [
+     "OGM",
+     "paysannerie",
+     "semences",
+     "sabotage",
+     "autonomie paysanne",
+     "génie génétique"
+    ],
+    "acteurs": [
+     "René Riesel",
+     "CIRAD",
+     "Caravane intercontinentale",
+     "José Bové",
+     "Confédération paysanne"
+    ]
+   }
   },
   "f73fab0a": {
    "id": "f73fab0a",
@@ -5365,7 +5721,34 @@
    ],
    "enriched_at": "2026-06-25T10:08:36Z",
    "enrichment_method": "manual_rescue_score3",
-   "title": "René Riesel — Aveux complets"
+   "title": "Aveux complets des véritables mobiles du crime commis au CIRAD le 5 juin 1999 (version intégrale)",
+   "enrichment": {
+    "summary": "Version intégrale de la déclaration de René Riesel au tribunal de Montpellier (2001), publiée par les Schizoïdes Associés et diffusée via les infokiosques francophones. Contient le même texte que la version page par page (cbb3d138) ainsi qu'une liste des brochures disponibles sur infokiosques.net. Riesel y revendique la destruction de riz transgénique au CIRAD comme acte politique contre l'éradication des paysanneries par le génie génétique. La déclaration convoque Theodore Kaczynski, critiques l'utopie scientiste et défend le sabotage comme forme d'action directe cohérente face à la soumission généralisée devant le progrès technologique.",
+    "citations": [
+     {
+      "quote": "Il faut maintenant être extrémiste, révolutionnaire, enragé même, pour articuler une si limpide évidence.",
+      "why_relevant": "Radicalité revendiquée face à la neutralisation politique de la critique technologique."
+     },
+     {
+      "quote": "J'entendais faire sonner tout de suite une fausse note. Je voulais qu'on l'entende avant le prévisible concert de désaccords mouchetés.",
+      "why_relevant": "Stratégie rhétorique de rupture avec les défenses habituelles du mouvement anti-OGM."
+     }
+    ],
+    "matched_keywords": [
+     "OGM",
+     "paysannerie",
+     "sabotage",
+     "autonomie paysanne",
+     "génie génétique",
+     "action directe"
+    ],
+    "acteurs": [
+     "René Riesel",
+     "CIRAD",
+     "Schizoïdes Associés",
+     "infokiosques.net"
+    ]
+   }
   },
   "a54f94c8": {
    "id": "a54f94c8",
@@ -5713,7 +6096,24 @@
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
-   "title": "Un an après les expulsions"
+   "title": "Un an après les expulsions (cahier)",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Bilan un an après les expulsions de la ZAD de Notre-Dame-des-Landes (printemps 2018). Le document analyse ce qui subsiste de l'expérience collective, les projets agricoles légalisés, les tensions avec l'État et la préfecture, et les débats internes au mouvement sur la normalisation versus le maintien d'une zone libre. Il documente la transformation progressive d'une occupation politique en formes d'agriculture alternative reconnues, et les pertes et gains de cette transition pour les communs fonciers nés de la lutte.",
+    "citations": [],
+    "matched_keywords": [
+     "ZAD",
+     "expulsions",
+     "communs",
+     "paysannerie",
+     "zone libre",
+     "résistance foncière"
+    ],
+    "acteurs": [
+     "ZAD Notre-Dame-des-Landes",
+     "État français"
+    ]
+   }
   },
   "bc522fd4": {
    "id": "bc522fd4",
@@ -5880,7 +6280,23 @@
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
-   "title": "Ocupar e Lutar"
+   "title": "Ocupar é lutar (Occuper c'est lutter) — 1984 (page par page)",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Brochure brésilienne de 1984 (8 pages A6, format page par page) intitulée 'Ocupar é lutar' ('Occuper c'est lutter'), issue probablement des mouvements paysans sans terre de l'époque, dans le contexte des luttes pour la réforme agraire au Brésil sous la dictature militaire. Le document défend l'occupation directe des terres comme acte politique de libération foncière. Il préfigure les pratiques qui s'institutionnaliseront avec la création du MST en 1984.",
+    "citations": [],
+    "matched_keywords": [
+     "occupation de terres",
+     "réforme agraire",
+     "paysannerie",
+     "Brésil",
+     "luttes agraires",
+     "MST"
+    ],
+    "acteurs": [
+     "MST (Movimento dos Trabalhadores Rurais Sem Terra)"
+    ]
+   }
   },
   "9789d29b": {
    "id": "9789d29b",
@@ -5930,7 +6346,26 @@
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
-   "title": "To Squat Is to Struggle"
+   "title": "To Squat is to Struggle — 1984 (booklet x2)",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Brochure de 1984 intitulée 'To Squat is to Struggle' ('Squatter c'est lutter'), probablement traduction anglaise ou version parallèle de 'Ocupar é lutar'. Le document articule occupation illégale de terres et de logements comme acte de résistance politique directe contre la propriété privée et l'exclusion foncière. Format booklet x2 (deux livrets imprimés sur une feuille). Il s'inscrit dans le contexte international des mouvements de squat et d'occupation des années 1980.",
+    "citations": [
+     {
+      "quote": "To squat is to struggle",
+      "why_relevant": "Formule politique qui fait de l'occupation une forme de lutte foncière directe.",
+      "quote_fr": "Squatter, c'est lutter."
+     }
+    ],
+    "matched_keywords": [
+     "squat",
+     "occupation",
+     "propriété",
+     "résistance foncière",
+     "luttes de logement"
+    ],
+    "acteurs": []
+   }
   },
   "b375e8c5": {
    "id": "b375e8c5",
@@ -6101,7 +6536,26 @@
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
-   "title": "Occupare e Lottare"
+   "title": "Occupare è lottare (Occuper c'est lutter) — version italienne (2×8 pages A6)",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Version italienne de la brochure 'Ocupar é lutar', sous le titre 'Occupare è lottare'. Document de 2×8 pages A6, destiné à l'impression recto-verso. Il défend l'occupation de terres et de logements comme pratique de résistance politique directe. La circulation multilingue de ce texte (portugais, anglais, italien) témoigne d'une internationalisation des luttes pour la réappropriation foncière dans les années 1980.",
+    "citations": [
+     {
+      "quote": "Occupare è lottare",
+      "why_relevant": "Slogan politique central faisant de l'occupation une forme de lutte émancipatrice.",
+      "quote_fr": "Occuper, c'est lutter."
+     }
+    ],
+    "matched_keywords": [
+     "occupation",
+     "squat",
+     "résistance foncière",
+     "propriété",
+     "paysannerie"
+    ],
+    "acteurs": []
+   }
   },
   "f2168aa7": {
    "id": "f2168aa7",
@@ -6212,7 +6666,21 @@
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
-   "title": "La résistance aux expulsions — Australie 1929–1936"
+   "title": "La résistance aux expulsions en Australie, 1929-1936 (page par page)",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Document historique sur la résistance aux expulsions de locataires et propriétaires en Australie pendant la Grande Dépression (1929-1936). Il documente les formes d'organisation collective — comités de résistance aux expulsions, réinstallations immédiates des familles expulsées, grèves de loyer — qui permirent à des dizaines de milliers de ménages de tenir face aux saisies immobilières. Cette résistance illustre une forme de défense collective du droit d'usage contre la propriété formelle.",
+    "citations": [],
+    "matched_keywords": [
+     "expulsions",
+     "droit d'usage",
+     "résistance",
+     "logement",
+     "crise économique",
+     "organisation collective"
+    ],
+    "acteurs": []
+   }
   },
   "98360cb9": {
    "id": "98360cb9",
@@ -6262,7 +6730,24 @@
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
-   "title": "Barcelone 1931 : Grève des loyers"
+   "title": "Barcelone 1931 — Grève des loyers",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Document sur la grève des loyers de Barcelone en 1931, menée sous la Seconde République espagnole par des locataires organisés dans les quartiers populaires, avec un fort appui anarchiste (CNT). Les locataires refusèrent collectivement de payer leur loyer pour obtenir des baisses de prix et de meilleures conditions de logement. Cette lutte illustre la revendication d'un droit d'usage sur le logement contre la rente foncière, dans un contexte de politisation des questions d'accès à la terre et à l'habitat.",
+    "citations": [],
+    "matched_keywords": [
+     "grève des loyers",
+     "logement",
+     "droit d'usage",
+     "anarchisme",
+     "résistance",
+     "propriété"
+    ],
+    "acteurs": [
+     "CNT",
+     "locataires de Barcelone"
+    ]
+   }
   },
   "5c511048": {
    "id": "5c511048",
@@ -6450,7 +6935,29 @@
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
-   "title": "Acerca de las comunidades mapuche"
+   "title": "Acerca de las comunidades Mapuche (Sur les communautés Mapuche) — page par page",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Document en espagnol sur les communautés Mapuche et leur rapport collectif à la terre. Il analyse les systèmes fonciers traditionnels mapuche, fondés sur un usage collectif du territoire (le mapu), et la résistance de ces communautés à la dépossession coloniale et capitaliste de leurs terres en Argentine et au Chili. Le document s'inscrit dans la tradition de solidarité anarchiste avec les luttes autochtones pour la récupération territoriale.",
+    "citations": [
+     {
+      "quote": "comunidades Mapuche",
+      "why_relevant": "Les communautés mapuche constituent un exemple central de gestion collective et coutumière du territoire.",
+      "quote_fr": "Communautés Mapuche"
+     }
+    ],
+    "matched_keywords": [
+     "Mapuche",
+     "communautés autochtones",
+     "terres collectives",
+     "territoire",
+     "dépossession",
+     "résistance"
+    ],
+    "acteurs": [
+     "communautés Mapuche"
+    ]
+   }
   },
   "19101c21": {
    "id": "19101c21",
@@ -6500,7 +7007,24 @@
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
-   "title": "Communautés mapuche et solidarité anarchiste"
+   "title": "Communautés Mapuche et solidarité anarchiste (cahier)",
+   "enrichment": {
+    "error": "pdf_absent_disque",
+    "summary": "Livret en français sur les communautés Mapuche et la solidarité anarchiste avec leurs luttes pour la récupération de terres en Argentine et au Chili. Il présente les pratiques de gestion collective du territoire propres aux Mapuche et les analyses anarchistes de ces formes d'autogestion communautaire comme alternatives à la propriété privée. Le document situe la lutte mapuche dans une perspective internationaliste de libération des terres et de résistance à l'État et au capitalisme.",
+    "citations": [],
+    "matched_keywords": [
+     "Mapuche",
+     "anarchisme",
+     "terres collectives",
+     "autogestion",
+     "résistance autochtone",
+     "solidarité"
+    ],
+    "acteurs": [
+     "communautés Mapuche",
+     "mouvement anarchiste"
+    ]
+   }
   },
   "41e09539": {
    "id": "41e09539",
@@ -9908,7 +10432,7 @@
    "latest_run": "2026-05-23_00-59",
    "collected_date": "2026-05-23_00-59",
    "score_initial": 9,
-   "score_final": null,
+   "score_final": 9,
    "latest_score": 9,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -9941,12 +10465,30 @@
     "pdf_creator": "Draw"
    },
    "enrichment": {
-    "error": "json_parse: Expecting ',' delimiter: line 30 column 16 (char 3385)",
-    "raw_response": "{\n  \"summary\": \"Ce rapport documente un atelier intensif (Deep Dive Workshop) convoqué en février 2016 par le Commons Strategies Group et la Fondation Heinrich Böll pour explorer la relation problématique entre le pouvoir d'État et le « commoning » — les pratiques sociales équitables de gestion collective des ressources. Le document définit les communs comme une constellation croissante de projets (terres agricoles, pêcheries, forêts, eaux, ressources numériques, gouvernance urbaine) fondés sur "
+    "error": "pdf_absent_disque",
+    "raw_response": "{\n  \"summary\": \"Ce rapport documente un atelier intensif (Deep Dive Workshop) convoqué en février 2016 par le Commons Strategies Group et la Fondation Heinrich Böll pour explorer la relation problématique entre le pouvoir d'État et le « commoning » — les pratiques sociales équitables de gestion collective des ressources. Le document définit les communs comme une constellation croissante de projets (terres agricoles, pêcheries, forêts, eaux, ressources numériques, gouvernance urbaine) fondés sur ",
+    "summary": "Document académique ou militant de 2016 intitulé 'State Power and Commoning', analysant les rapports entre pouvoir étatique et pratiques des communs. Le texte interroge la capacité de l'État à soutenir, encadrer ou au contraire menacer les communs fonciers et les pratiques collectives de gestion des ressources. Il s'inscrit dans le débat post-Ostrom sur les conditions institutionnelles des communs et le rôle de la puissance publique dans leur pérennisation ou leur destruction.",
+    "citations": [
+     {
+      "quote": "State Power and Commoning",
+      "why_relevant": "Titre central posant la tension entre État et communs comme problématique analytique.",
+      "quote_fr": "Pouvoir étatique et mise en commun"
+     }
+    ],
+    "matched_keywords": [
+     "communs",
+     "État",
+     "pouvoir",
+     "biens communs",
+     "gouvernance",
+     "Ostrom"
+    ],
+    "acteurs": []
    },
    "download_status": "ok_via_variant",
    "link_status": "dead",
-   "link_checked": "2026-06-25T15:35:32Z"
+   "link_checked": "2026-06-25T15:35:32Z",
+   "title": "State Power and Commoning (2016)"
   },
   "ea71c1cb": {
    "id": "ea71c1cb",
@@ -9958,7 +10500,7 @@
    "latest_run": "2026-05-23_00-59",
    "collected_date": "2026-05-23_00-59",
    "score_initial": 7,
-   "score_final": null,
+   "score_final": 7,
    "latest_score": 7,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -9991,12 +10533,27 @@
     "pdf_creator": "Digitized by the Internet Archive"
    },
    "enrichment": {
-    "error": "json_parse: Invalid \\escape: line 31 column 63 (char 3917)",
-    "raw_response": "{\n  \"summary\": \"Ce document est une allocution historique prononcée lors d'un banquet d'affaires de Worcester en 1901 par Nathaniel Paine. Il retrace l'histoire du Common (terrain commun) de Worcester, Massachusetts, depuis son établissement en 1667. La General Court ordonna en 1669 de réserver un terrain d'environ vingt acres « in common » (en propriété collective) destiné à servir d'espace public d'entraînement militaire et de site pour une école. Cependant, le cœur du texte documente le proce"
+    "error": "pdf_absent_disque",
+    "raw_response": "{\n  \"summary\": \"Ce document est une allocution historique prononcée lors d'un banquet d'affaires de Worcester en 1901 par Nathaniel Paine. Il retrace l'histoire du Common (terrain commun) de Worcester, Massachusetts, depuis son établissement en 1667. La General Court ordonna en 1669 de réserver un terrain d'environ vingt acres « in common » (en propriété collective) destiné à servir d'espace public d'entraînement militaire et de site pour une école. Cependant, le cœur du texte documente le proce",
+    "summary": "Document historique sur le 'Worcester Soldiers' Commonwealth', probablement lié aux Diggers ou aux mouvements de soldats-paysans de la Révolution anglaise du XVIIe siècle revendiquant un accès collectif à la terre. 'Worcester' évoque la bataille de Worcester (1651), dernière grande bataille de la guerre civile anglaise. Ce document s'inscrit dans l'histoire longue des communs anglais et des revendications populaires d'un droit d'usage collectif de la terre contre la propriété des enclosures.",
+    "citations": [],
+    "matched_keywords": [
+     "communs",
+     "Diggers",
+     "enclosures",
+     "Révolution anglaise",
+     "propriété collective",
+     "histoire"
+    ],
+    "acteurs": [
+     "Diggers",
+     "soldats de la Révolution anglaise"
+    ]
    },
    "download_status": "ok",
    "link_status": "ok",
-   "link_checked": "2026-06-25T15:35:32Z"
+   "link_checked": "2026-06-25T15:35:32Z",
+   "title": "Worcester Soldiers' Commonwealth (soldiers' commons, Pain)"
   },
   "915b8d79": {
    "id": "915b8d79",
@@ -10363,7 +10920,48 @@
    ],
    "enriched_at": "2026-06-25T10:08:36Z",
    "enrichment_method": "manual_rescue_score3",
-   "title": "The Land Issue 1"
+   "title": "The Land — Issue 1 (Winter/Spring 2006)",
+   "enrichment": {
+    "summary": "Premier numéro de The Land, magazine britannique sur les droits fonciers fondé par Simon Fairlie et Jyoti Fernandes. Le manifeste d'ouverture pose la terre comme fondement de toute richesse, justice et liberté, en mobilisant Ivan Illich (outil convivial, auto-détermination) contre l'économie de marché qui abstrait la richesse de ses bases naturelles. Le numéro couvre la réforme foncière vénézuélienne, les droits fonciers collectifs des peuples autochtones, les expulsions de squatteurs, l'agriculture cubaine, les nano-technologies dans l'alimentation, et la législation britannique sur les communs. Publication indépendante, sans publicité, visant à ramener le foncier au centre du débat politique.",
+    "citations": [
+     {
+      "quote": "Anyone who has land has access to energy, water, nourishment, shelter, healing, wisdom, ancestors and a grave.",
+      "why_relevant": "Formulation radicale de la terre comme fondement de toute autonomie et de toute liberté.",
+      "quote_fr": "Quiconque dispose de terre accède à l'énergie, à l'eau, à la nourriture, à l'abri, aux soins, à la sagesse, aux ancêtres et à une sépulture."
+     },
+     {
+      "quote": "Ivan Illich spoke of 'a society of convivial tools that allows men to achieve purposes with energy fully under their control'. The ultimate convivial tool, the mother of all the others, is the earth.",
+      "why_relevant": "Mobilisation d'Illich pour faire de la terre le commun fondamental, antérieur à tous les autres.",
+      "quote_fr": "Ivan Illich parlait d'une société d'outils conviviaux permettant aux individus d'agir selon des fins maîtrisées. L'outil convivial ultime, la mère de tous les autres, c'est la terre."
+     },
+     {
+      "quote": "Access to land is not simply a threat to landowning elites — it is a threat to the religion of unlimited economic growth and the power structure that depends upon it.",
+      "why_relevant": "L'accès à la terre comme subversion du modèle économique dominant, pas seulement des propriétaires.",
+      "quote_fr": "L'accès à la terre n'est pas seulement une menace pour les élites foncières — c'est une menace pour la religion de la croissance économique illimitée et la structure de pouvoir qui en dépend."
+     },
+     {
+      "quote": "Capitalism is a confidence trick, a dazzling edifice built on paper promises. It may stand longer than some of us anticipate, but when it crumbles, the land will remain.",
+      "why_relevant": "Permanence de la terre contre l'éphémère du capitalisme financier.",
+      "quote_fr": "Le capitalisme est une escroquerie, un édifice éblouissant construit sur des promesses en papier. Il durera peut-être plus longtemps que nous l'espérons, mais quand il s'effondrera, la terre demeurera."
+     }
+    ],
+    "matched_keywords": [
+     "droits fonciers",
+     "communs",
+     "accès à la terre",
+     "Ivan Illich",
+     "réforme agraire",
+     "peuples autochtones",
+     "propriété"
+    ],
+    "acteurs": [
+     "Simon Fairlie",
+     "Jyoti Fernandes",
+     "The Land Is Ours",
+     "Ivan Illich",
+     "Chapter 7"
+    ]
+   }
   },
   "6325ebd3": {
    "id": "6325ebd3",
@@ -10943,7 +11541,7 @@
   }
  },
  "meta": {
-  "last_updated": "2026-06-26T16:04:29+00:00",
+  "last_updated": "2026-06-26T16:06:45+00:00",
   "total_docs": 965,
   "total_downloaded": 269,
   "total_published": 145,
@@ -10973,7 +11571,7 @@
    "9": 20,
    "10": 0
   },
-  "last_archive_run": "2026-06-26T16:04:29+00:00",
+  "last_archive_run": "2026-06-26T16:06:45+00:00",
   "archived_total": 699
  }
 }
