@@ -1,19 +1,4 @@
 score_overrides:
-  f51dd9f5:
-    raison: Mini-Manuel fonds de dotation — outil juridique central pour racheter des terres et les gérer en commun
-    score: 8
-  ff069338:
-    raison: Mini-Manuel Communalisme et Nemeton — bail emphytéotique, usufruit/nue-propriété, terre comme commun hors spéculation
-    score: 9
-  b2d08fef:
-    raison: Mini-Manuel droit civil — sortir les terres du marché via FDD/fondations, communs vs propriété privée
-    score: 8
-  d3bd8707:
-    raison: Mini-Manuel petite histoire du droit — critique du droit commercial, appel aux outils civils pour les communs
-    score: 7
-  876db11d:
-    raison: Mini-Manuel forêts nourricières — protection foncière via FDD et usufruit, pratiques paysannes de la forêt
-    score: 8
   03b9d287:
     raison: restauré après ré-enrichissement CI (était 9)
     score: 9
@@ -47,6 +32,10 @@ score_overrides:
   2e2e4bc7:
     raison: restauré après ré-enrichissement CI (était 8)
     score: 8
+  2e5629b5:
+    raison: transfert override de doublon a90d3977 — restauré après ré-enrichissement
+      CI (était 7)
+    score: 7
   336d8c22:
     raison: restauré après ré-enrichissement CI (était 6)
     score: 6
@@ -80,6 +69,10 @@ score_overrides:
   6d4f3628:
     raison: restauré après ré-enrichissement CI (était 8)
     score: 8
+  876db11d:
+    raison: Mini-Manuel forêts nourricières — protection foncière via FDD et usufruit,
+      pratiques paysannes de la forêt
+    score: 8
   8bfe460c:
     raison: restauré après ré-enrichissement CI (était 9)
     score: 9
@@ -107,6 +100,10 @@ score_overrides:
   b0917bdf:
     raison: restauré après ré-enrichissement CI (était 8)
     score: 8
+  b2d08fef:
+    raison: Mini-Manuel droit civil — sortir les terres du marché via FDD/fondations,
+      communs vs propriété privée
+    score: 8
   b651aa85:
     raison: restauré après ré-enrichissement CI (était 6)
     score: 6
@@ -125,6 +122,10 @@ score_overrides:
   ce124b01:
     raison: restauré après ré-enrichissement CI (était 6)
     score: 6
+  d3bd8707:
+    raison: Mini-Manuel petite histoire du droit — critique du droit commercial, appel
+      aux outils civils pour les communs
+    score: 7
   d992c836:
     raison: ZAD NDDL — communs fonciers en acte, notes critiques
     score: 6
@@ -149,6 +150,14 @@ score_overrides:
   f2168aa7:
     raison: restauré après ré-enrichissement CI (était 7)
     score: 7
+  f51dd9f5:
+    raison: Mini-Manuel fonds de dotation — outil juridique central pour racheter
+      des terres et les gérer en commun
+    score: 8
   f6ebd39c:
     raison: Propriété d'usage par occupancy-and-use — Carson, texte de référence direct
     score: 6
+  ff069338:
+    raison: Mini-Manuel Communalisme et Nemeton — bail emphytéotique, usufruit/nue-propriété,
+      terre comme commun hors spéculation
+    score: 9

@@ -1,11 +1,91 @@
-# Documents écartés de la publication par décision éditoriale.
-#
-# Ces documents restent dans le catalogue source (synopsis/catalog.json) — le
-# corpus reste exhaustif et transparent — mais ils ne sont publiés nulle part :
-# ni fiche pré-rendue, ni sitemap, ni flux RSS, ni catalogue public.
-#
-# Format : sous « exclusions: », une entrée « <doc_id>: "motif et date" ».
-# La décision est appliquée par _is_publishable() dans scripts/watch.py.
-
 exclusions:
-  a238e5bd: "Fiche trop maigre — jamais téléchargée, sans PDF ni synopsis, lien source mort, score 6 au seuil de publication. Décision Ced, 2026-05-24."
+  0197e176: doublon — format alternatif
+  03b03ca1: doublon — format alternatif
+  0727b92e: doublon — format alternatif
+  097e9516: doublon — format alternatif
+  0ba1c3af: doublon — format alternatif
+  0f5e3a6e: doublon — format alternatif
+  0fb3e55e: doublon — format alternatif
+  103c01d7: doublon — format alternatif
+  12a4e254: doublon — format alternatif
+  14f45ea3: doublon — format alternatif
+  163ae6f7: doublon — format alternatif
+  1f049d7e: doublon — format alternatif
+  1fbea3f9: doublon — format alternatif
+  22b1d1f9: doublon — format alternatif
+  23ef77e1: doublon — format alternatif
+  24c01a43: doublon — format alternatif
+  258bddb2: doublon — format alternatif
+  2bcf0948: doublon — format alternatif
+  2f5fce84: doublon — format alternatif
+  33f14cc5: doublon — format alternatif
+  3731bf2e: doublon — format alternatif
+  389948db: doublon — format alternatif
+  38f15499: doublon — format alternatif
+  3b2f3224: doublon — format alternatif
+  3e7fdc10: doublon — format alternatif
+  42c901d1: doublon — format alternatif
+  463900a0: doublon — format alternatif
+  467b0d83: doublon — format alternatif
+  49be665f: doublon — format alternatif
+  4bbf2e69: doublon — format alternatif
+  5095e5aa: doublon — format alternatif
+  5536b369: doublon — format alternatif
+  581fab69: doublon — format alternatif
+  5b77e976: doublon — format alternatif
+  5da811ca: doublon — format alternatif
+  6081d442: doublon — format alternatif
+  6161499c: doublon — format alternatif
+  6354361d: doublon — format alternatif
+  646b9c77: doublon — format alternatif
+  666523c7: doublon — format alternatif
+  67a24eca: doublon — format alternatif
+  6c2884fc: doublon — format alternatif
+  6ed0da6d: doublon — format alternatif
+  '70179351': doublon — format alternatif
+  779edb5d: doublon — format alternatif
+  78b90a95: doublon — format alternatif
+  7cdc7e8f: doublon — format alternatif
+  7e814cb7: doublon — format alternatif
+  81c0417c: doublon — format alternatif
+  823c6b14: doublon — format alternatif
+  8e03cbe1: doublon — format alternatif
+  8eaeefa8: doublon — format alternatif
+  8f7080e5: doublon — format alternatif
+  8fed46af: doublon — format alternatif
+  9063702b: doublon — format alternatif
+  917717a4: doublon — format alternatif
+  918423ee: doublon — format alternatif
+  940578dc: doublon — format alternatif
+  '94340458': doublon — format alternatif
+  94d09480: doublon — format alternatif
+  9ba9615f: doublon — format alternatif
+  9e511b52: doublon — format alternatif
+  a238e5bd: trop maigre (jamais téléchargée, sans PDF ni synopsis, lien mort, score
+    6 au seuil)
+  a6be9af5: doublon — format alternatif
+  a90d3977: doublon — format alternatif
+  ae3b1c8d: doublon — format alternatif
+  afcd5ef8: doublon — format alternatif
+  afd9b749: doublon — format alternatif
+  aff51cb1: doublon — format alternatif
+  b483c320: doublon — format alternatif
+  b651aa85: doublon — format alternatif
+  b7d54170: doublon — format alternatif
+  b85c8bc1: doublon — format alternatif
+  bddd57ab: doublon — format alternatif
+  c0938447: doublon — format alternatif
+  cbdd79b5: doublon — format alternatif
+  ce124b01: doublon — format alternatif
+  ce49e81f: doublon — format alternatif
+  d022821b: doublon — format alternatif
+  d560eee7: doublon — format alternatif
+  d70fd069: doublon — format alternatif
+  e3c301ee: doublon — format alternatif
+  ef2e5cdf: doublon — format alternatif
+  f1dba73d: doublon — format alternatif
+  f261e0ef: doublon — format alternatif
+  f281245c: doublon — format alternatif
+  f61a2368: doublon — format alternatif
+  fbbd37a0: doublon — format alternatif
+  fe7f9e64: doublon — format alternatif
