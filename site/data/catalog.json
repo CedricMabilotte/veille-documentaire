@@ -14226,10 +14226,367 @@
    "download_status": "failed_network",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z"
+  },
+  "f51dd9f5": {
+   "id": "f51dd9f5",
+   "url": "https://www.troisiemesvoix.org/fr/editions/005/Mini-Manuel fonds dotation - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "filename": "Mini-Manuel fonds dotation - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "format": "pdf",
+   "source": "Troisièmes Voix — éditions",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 8,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2026",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/f51dd9f5_Mini-Manuel fonds dotation - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Télécharger le mini-manuel pour les imprimer en format carnet.",
+     "link_text": "mini-manuel",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-06-25T15:35:32Z",
+   "enrichment": {
+    "summary": "Ce mini-manuel explique ce qu'est un fonds de dotation (FDD) : outil juridique souple créé en 2008, permettant de recevoir des biens ou des sommes de manière gratuite et irrévocable pour financer des actions d'intérêt général. Il détaille les différents modes d'action (opérateur, redistributeur, mixte), les régimes de dotation (consomptible ou non) et donne des exemples concrets de FDD qui rachètent des terres pour les soustraire à la spéculation (Antidote, D Terre, La Terre en Commun). Le collectif Troisièmes Voix présente son propre projet Nemeton comme exemple d'usage d'un FDD pour protéger une terre commune.",
+    "citations": [
+     {
+      "quote": "Un FDD (fonds de dotation) est une personne morale de droit privé à but non lucratif qui reçoit des biens ou des sommes de manière gratuite et irrévocable afin de financer des actions d'intérêt général.",
+      "why_relevant": "Définition précise de l'outil juridique central pour la protection foncière en commun."
+     },
+     {
+      "quote": "Certains fonds de dotation ont pour objectif de racheter des terres afin de les soustraire à la spéculation et de les protéger durablement.",
+      "why_relevant": "Application directe à la thématique communs fonciers et sortie des terres du marché."
+     }
+    ],
+    "matched_keywords": [
+     "fonds de dotation",
+     "communs",
+     "intérêt général",
+     "terres",
+     "spéculation",
+     "bien commun",
+     "patrimoine"
+    ],
+    "acteurs": [
+     "Troisièmes Voix",
+     "Antidote",
+     "D Terre",
+     "Fraternité pour demain",
+     "La Terre en Commun",
+     "Nemeton"
+    ],
+    "enriched_by": "claude-agent",
+    "enriched_at": "2026-06-26"
+   }
+  },
+  "ff069338": {
+   "id": "ff069338",
+   "url": "https://www.troisiemesvoix.org/fr/editions/004/Mini-Manuel Communalisme et Nemeton - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "filename": "Mini-Manuel Communalisme et Nemeton - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "format": "pdf",
+   "source": "Troisièmes Voix — éditions",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 9,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2026",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/ff069338_Mini-Manuel Communalisme et Nemeton - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Télécharger le mini-manuel pour les imprimer en format carnet.",
+     "link_text": "mini-manuel",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-06-25T15:35:32Z",
+   "enrichment": {
+    "summary": "Ce mini-manuel présente le projet Nemeton : une coalition de collectifs d'intérêt général visant à créer des communs fonciers sur une terre libre, à l'abri de la spéculation financière. Il décrit le montage juridique retenu (bail emphytéotique 99 ans, séparation usufruit/nue-propriété) et comment accueillir ce type de projet dans une commune rurale. La philosophie centrale est de retirer la terre du marché pour en faire un bien commun transmis entre générations, avec des exemples concrets (Ferme de l'Auribelle, Fermière de Gally).",
+    "citations": [
+     {
+      "quote": "Protéger durablement la terre de la spéculation financière et l'exploitation intensive en recréant des Communs hors de la propriété privée.",
+      "why_relevant": "Formulation centrale de la thématique communs fonciers et alternatives à la propriété privée."
+     },
+     {
+      "quote": "La nue-propriété est portée par une structure collective garante du foncier comme bien commun, inscrit dans le temps long. L'usufruit est confié aux habitant·es et collectifs, leur assurant un droit d'usage sécurisé.",
+      "why_relevant": "Description précise du montage propriété d'usage / séparation usufruit-nue-propriété."
+     },
+     {
+      "quote": "Ce montage s'émancipe de la valeur marchande pour retrouver une valeur d'usage. La terre devient ainsi le socle vivant d'un projet écologique, économique et culturel.",
+      "why_relevant": "Articulation valeur d'usage vs valeur marchande, au coeur de la réflexion sur la propriété d'usage."
+     }
+    ],
+    "matched_keywords": [
+     "communs",
+     "bail emphytéotique",
+     "usufruit",
+     "nue-propriété",
+     "propriété privée",
+     "foncier",
+     "spéculation",
+     "valeur d'usage",
+     "terre libre",
+     "communalisme",
+     "paysans"
+    ],
+    "acteurs": [
+     "Troisièmes Voix",
+     "Egregor",
+     "Fondation Terre de Liens",
+     "Nemeton Coalition",
+     "Ferme de l'Auribelle",
+     "Fermière de Gally"
+    ],
+    "enriched_by": "claude-agent",
+    "enriched_at": "2026-06-26"
+   }
+  },
+  "b2d08fef": {
+   "id": "b2d08fef",
+   "url": "https://www.troisiemesvoix.org/fr/editions/002/Mini-Manuel droit civil - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "filename": "Mini-Manuel droit civil - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "format": "pdf",
+   "source": "Troisièmes Voix — éditions",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 8,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2026",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/b2d08fef_Mini-Manuel droit civil - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Télécharger le mini-manuel pour les imprimer en format carnet.",
+     "link_text": "mini-manuel",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-06-25T15:35:32Z",
+   "enrichment": {
+    "summary": "Ce mini-manuel explore comment le droit civil permet de sortir les terres du marché immobilier et de la propriété privée marchande. Il oppose le droit civil (associations, fondations, fonds de dotation, intérêt général) au droit commercial (spéculation, accumulation), et montre comment des terres portées collectivement via un FDD ou une fondation évitent la fragmentation par successions et reventes. Un schéma clé compare les deux trajectoires foncières dans le temps : terre en commun vs parcellisation par propriété privée individuelle.",
+    "citations": [
+     {
+      "quote": "Faire partie du territoire plutôt que le posséder. Par le droit civil, on peut retirer la terre du marché immobilier traditionnel en l'achetant au sein de fondations ou fonds de dotation.",
+      "why_relevant": "Formulation forte de l'alternative à la propriété privée : appartenance territoriale vs possession marchande."
+     },
+     {
+      "quote": "Les terres ne sont ainsi plus des produits ou des ressources soumises au commerce, elles n'appartiennent plus à des personnes physiques et peuvent être protégées par un collectif local en tant que Communs.",
+      "why_relevant": "Définition opérationnelle des communs fonciers par opposition à la marchandisation des terres."
+     }
+    ],
+    "matched_keywords": [
+     "droit civil",
+     "communs",
+     "fonds de dotation",
+     "fondations",
+     "propriété privée",
+     "usufruit",
+     "bail emphytéotique",
+     "intérêt général",
+     "terres",
+     "spéculation"
+    ],
+    "acteurs": [
+     "Troisièmes Voix",
+     "Nemeton"
+    ],
+    "enriched_by": "claude-agent",
+    "enriched_at": "2026-06-26"
+   }
+  },
+  "d3bd8707": {
+   "id": "d3bd8707",
+   "url": "https://www.troisiemesvoix.org/fr/editions/001/Mini-Manuel peitte histoire du droit - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "filename": "Mini-Manuel peitte histoire du droit - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "format": "pdf",
+   "source": "Troisièmes Voix — éditions",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2026",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/d3bd8707_Mini-Manuel peitte histoire du droit - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Télécharger le mini-manuel pour les imprimer en format carnet.",
+     "link_text": "mini-manuel",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-06-25T15:35:32Z",
+   "enrichment": {
+    "summary": "Ce mini-manuel retrace l'histoire du droit occidental depuis les sociétés communautaires primitives jusqu'au droit romain, puis au Code Napoléonien, pour expliquer comment le droit commercial a progressivement effacé les droits communautaires. Il analyse la structure du droit français (civil, commercial, public) et critique la domination du droit commercial (98% des lois) qui favorise l'accumulation et la spéculation au détriment des communs. Un plaidoyer pour retrouver dans le droit civil les outils de représentation des communautés.",
+    "citations": [
+     {
+      "quote": "Le droit commercial représente jusqu'à 98% du corpus des textes de loi, soit environ 400 000 lois ce qui influence toute notre manière de penser la société.",
+      "why_relevant": "Chiffre frappant sur la domination du droit commercial sur les formes juridiques alternatives (communs, civil)."
+     },
+     {
+      "quote": "Il faut aller creuser dans le Droit Civil pour y retrouver comment representer une communauté de personnes.",
+      "why_relevant": "Appel à réinvestir les outils juridiques civils pour construire des communs."
+     }
+    ],
+    "matched_keywords": [
+     "communs",
+     "droit civil",
+     "droit commercial",
+     "spéculation",
+     "communautés",
+     "propriété",
+     "intérêt général"
+    ],
+    "acteurs": [
+     "Troisièmes Voix",
+     "Nemeton"
+    ],
+    "enriched_by": "claude-agent",
+    "enriched_at": "2026-06-26"
+   }
+  },
+  "876db11d": {
+   "id": "876db11d",
+   "url": "https://www.troisiemesvoix.org/fr/editions/003/Mini-Manuel forêts nourricières - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "filename": "Mini-Manuel forêts nourricières - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "format": "pdf",
+   "source": "Troisièmes Voix — éditions",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 8,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2026",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/876db11d_Mini-Manuel forêts nourricières - Collectif Troisièmes Voix - Editions 2026.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Télécharger le mini-manuel pour les imprimer en format carnet.",
+     "link_text": "mini-manuel",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-06-25T15:35:32Z",
+   "enrichment": {
+    "summary": "Ce mini-manuel présente les forêts comme des systèmes nourriciers à protéger via des montages juridiques de communs fonciers (fonds de dotation, fondations, usufruit). Il compare l'agriculture industrielle destructrice à la forêt diversifiée et multi-centenaire, détaille les pratiques paysannes traditionnelles d'usage de la forêt (glandée, trognes, balivage, brûlis de lisière), et s'ancre dans des exemples historiques de peuples vivant de la forêt. La conclusion est un appel à sortir les forêts de la propriété privée pour en faire des biens communs transmis entre générations.",
+    "citations": [
+     {
+      "quote": "Protéger les forêts implique de sortir le foncier du marché et de la propriété privée, et de l'inscrire dans des structures collectives stables.",
+      "why_relevant": "Formulation directe du lien entre protection des forêts et communs fonciers."
+     },
+     {
+      "quote": "Acheter une terre via un fonds de dotation ou une fondation permet de la protéger dans le temps en évitant la revente et la spéculation ; dans ce cas, une association d'intérêt général peut en posséder l'usufruit.",
+      "why_relevant": "Description opérationnelle du montage juridique communs forestiers : FDD + usufruit associatif."
+     },
+     {
+      "quote": "Fragilisation de la diversité génétique : plus de 75 % des variétés paysannes ont disparu en un siècle.",
+      "why_relevant": "Argument fort pour la protection des savoirs paysans liés aux forêts nourricières."
+     }
+    ],
+    "matched_keywords": [
+     "forêts nourricières",
+     "fonds de dotation",
+     "propriété privée",
+     "usufruit",
+     "communs",
+     "spéculation",
+     "paysannerie",
+     "pratiques paysannes",
+     "agriculture paysanne",
+     "biodiversité"
+    ],
+    "acteurs": [
+     "Troisièmes Voix",
+     "Samis",
+     "Sauveterriens"
+    ],
+    "enriched_by": "claude-agent",
+    "enriched_at": "2026-06-26"
+   }
   }
  },
  "meta": {
-  "last_updated": "2026-06-26T12:51:28+00:00",
+  "last_updated": "2026-06-26T12:57:01+00:00",
   "total_docs": 965,
   "total_downloaded": 264,
   "total_published": 102,
@@ -14259,7 +14616,7 @@
    "9": 9,
    "10": 0
   },
-  "last_archive_run": "2026-06-26T12:51:28+00:00",
+  "last_archive_run": "2026-06-26T12:57:01+00:00",
   "archived_total": 699
  }
 }
