@@ -3710,104 +3710,6 @@
    },
    "cover": "covers/08baa6d1.png"
   },
-  "95e763e1": {
-   "id": "95e763e1",
-   "url": "https://infokiosques.net/IMG/pdf/agriculture_industrielle_et_chaos_climatique-couleur_inverse-cahier.pdf",
-   "filename": "agriculture_industrielle_et_chaos_climatique-couleur_inverse-cahier.pdf",
-   "format": "pdf",
-   "source": "Infokiosques.net — Paysannerie & ruralité",
-   "first_seen": "2026-05-23_00-59",
-   "latest_run": "2026-06-25_14-34",
-   "collected_date": "2026-06-25_14-34",
-   "score_initial": 3,
-   "score_final": 6,
-   "latest_score": 3,
-   "doc_type": "autre",
-   "recit_de_lutte": false,
-   "doc_date": "",
-   "lang": "fr",
-   "editeur": "",
-   "doi": "",
-   "isbn": "",
-   "hal_id": "",
-   "versions": [],
-   "downloaded": true,
-   "saved_as": "docs/95e763e1_agriculture_industrielle_et_chaos_climatique-couleur_inverse-cahier.pdf",
-   "runs": [
-    {
-     "date": "2026-05-23_00-59",
-     "score": 3,
-     "raison": "Titre 'L'agriculture industrielle et le chaos climatique' mentionne l'agriculture, mais n'explicite aucun mot-clé central (paysannerie, agroécologie, sans-terre, réforme agraire, communs fonciers)",
-     "context_seen": "formats: · HTML · L’agriculture industrielle et le chaos climatique - version cahier - couleur inversée (PDF) · Industriellt Jordbruk och Klimatkaos (version suédoise - booklet) (PDF) · Die Industrielle Landwirtschaft und das Klimachaos (version allemande - booklet)  (PDF) · Industrial Agriculture and Climate Chaos (version anglaise - booklet) (PDF) · Det industrielle landbrug og klimakaos (versio",
-     "link_text": "· L’agriculture industrielle et le chaos climatique - version cahier - couleur inversée (PDF)",
-     "downloaded": false,
-     "model": "",
-     "prompt_version": ""
-    },
-    {
-     "date": "2026-06-25_14-34",
-     "score": 3,
-     "raison": "Titre 'L'agriculture industrielle et le chaos climatique' critique l'agriculture industrielle sans mentionner explicitement agroécologie, communs fonciers, paysannerie, accès à la terre ou souveraineté alimentaire",
-     "context_seen": "formats: · HTML · L’agriculture industrielle et le chaos climatique - version cahier - couleur inversée (PDF) · Industriellt Jordbruk och Klimatkaos (version suédoise - booklet) (PDF) · Die Industrielle Landwirtschaft und das Klimachaos (version allemande - booklet)  (PDF) · Industrial Agriculture and Climate Chaos (version anglaise - booklet) (PDF) · Det industrielle landbrug og klimakaos (versio",
-     "link_text": "· L’agriculture industrielle et le chaos climatique - version cahier - couleur inversée (PDF)",
-     "downloaded": false,
-     "model": "",
-     "prompt_version": ""
-    }
-   ],
-   "link_status": "ok",
-   "link_checked": "2026-06-25T15:35:32Z",
-   "summary": "Brochure militante du Climate Collective (Danemark), traduite par les Brigades d'Actions Paysannes (Belgique), qui dénonce le rôle de l'agriculture industrielle dans la crise climatique (44-57 % des GES). Le texte critique la dépossession des terres paysannes par les méga-plantations en monoculture, la brevetabilité des semences, et la domination des décisions politiques par quelques multinationales. Il défend la souveraineté alimentaire et l'agroécologie comme alternatives.",
-   "citations": [
-    "« Le système agricole industriel dépossède les paysan·ne·s de leurs terres et crée des méga-plantations en monoculture, produisant pour le marché mondial des bio-carburants. »",
-    "« Les applications agricoles du génie génétique achèvent de réduire l'autonomie des agriculteurs, précipitent l'éradication des paysanneries. »"
-   ],
-   "matched_keywords": [
-    "paysannerie",
-    "dépossession des terres",
-    "souveraineté alimentaire",
-    "agroécologie",
-    "semences brevetées",
-    "agriculture industrielle"
-   ],
-   "enriched_at": "2026-06-25T10:08:36Z",
-   "enrichment_method": "manual_rescue_score3",
-   "archive_url": "http://web.archive.org/web/20260504013600/https://infokiosques.net/IMG/pdf/agriculture_industrielle_et_chaos_climatique-couleur_inverse-cahier.pdf",
-   "title": "Pour la justice climatique, écrasons l'agriculture industrielle (livret couleur inverse)",
-   "enrichment": {
-    "summary": "Livret du Climate Collective (Danemark), traduit par les Brigades d'Actions Paysannes (Belgique), qui démontre que l'agriculture industrielle est responsable de 44 à 57 % des émissions mondiales de gaz à effet de serre. Le texte critique l'accaparement des terres par les multinationales agro-industrielles, la dépossession des paysannes et paysans, et les fausses solutions climatiques comme l'agriculture dite 'intelligente face au climat'. Il appelle à une redistribution des terres vers les petits agriculteurs et à la généralisation de l'agroécologie comme réponse à la crise climatique. Version en couleur inverse (impression économique) d'un livret paru en 2018.",
-    "citations": [
-     {
-      "quote": "Il est estimé qu'entre 44 % et 57 % des émissions globales de gaz à effet de serre ont pour origine l'agriculture industrielle.",
-      "why_relevant": "Chiffre central qui relie l'accaparement des terres à la crise climatique."
-     },
-     {
-      "quote": "Le système agricole industriel dépossède les paysan·ne·s de leurs terres et crée des méga-plantations en monoculture.",
-      "why_relevant": "Lien direct entre modèle agro-industriel, dépossession foncière et destruction des systèmes alimentaires locaux."
-     },
-     {
-      "quote": "Une redistribution des terres vers les petits agriculteur·trice·s combinée à des méthodes qui recréent la fertilité des sols réduirait les émissions mondiales de GES de moitié en quelques décennies.",
-      "why_relevant": "La redistribution foncière posée comme solution climatique concrète."
-     }
-    ],
-    "matched_keywords": [
-     "agriculture industrielle",
-     "justice climatique",
-     "accaparement des terres",
-     "souveraineté alimentaire",
-     "agroécologie",
-     "paysannerie"
-    ],
-    "acteurs": [
-     "Climate Collective",
-     "Brigades d'Actions Paysannes",
-     "Confédération paysanne",
-     "FIAN Belgium",
-     "GRAIN"
-    ]
-   },
-   "cover": "covers/95e763e1.png"
-  },
   "9e8c8fc5": {
    "id": "9e8c8fc5",
    "url": "https://infokiosques.net/IMG/pdf/agriculture_industrielle_et_chaos_climatique-20p-fil-2018.pdf",
@@ -11459,7 +11361,7 @@
   }
  },
  "meta": {
-  "last_updated": "2026-06-26T16:15:49+00:00",
+  "last_updated": "2026-06-26T16:20:51+00:00",
   "total_docs": 965,
   "total_downloaded": 269,
   "total_published": 145,
@@ -11489,7 +11391,7 @@
    "9": 20,
    "10": 0
   },
-  "last_archive_run": "2026-06-26T16:15:49+00:00",
+  "last_archive_run": "2026-06-26T16:20:51+00:00",
   "archived_total": 699
  }
 }
