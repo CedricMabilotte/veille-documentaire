@@ -3707,7 +3707,8 @@
      "Ardear Auvergne-Rhône-Alpes",
      "Confédération paysanne"
     ]
-   }
+   },
+   "cover": "covers/08baa6d1.png"
   },
   "95e763e1": {
    "id": "95e763e1",
@@ -3804,7 +3805,8 @@
      "FIAN Belgium",
      "GRAIN"
     ]
-   }
+   },
+   "cover": "covers/95e763e1.png"
   },
   "9e8c8fc5": {
    "id": "9e8c8fc5",
@@ -3897,7 +3899,8 @@
      "Climate Collective",
      "Brigades d'Actions Paysannes"
     ]
-   }
+   },
+   "cover": "covers/9e8c8fc5.png"
   },
   "2e5629b5": {
    "id": "2e5629b5",
@@ -5094,7 +5097,8 @@
      "ZAD Notre-Dame-des-Landes",
      "Vinci"
     ]
-   }
+   },
+   "cover": "covers/235a98fb.png"
   },
   "47c6599a": {
    "id": "47c6599a",
@@ -5246,7 +5250,8 @@
     "prompt_version": "b42b0d4d7c"
    },
    "archive_url": "https://web.archive.org/web/20260626145935/https://infokiosques.net/IMG/pdf/zomia-12p-A5-fil.pdf",
-   "title": "Zomia"
+   "title": "Zomia",
+   "cover": "covers/47c6599a.png"
   },
   "2ab410d3": {
    "id": "2ab410d3",
@@ -5561,103 +5566,8 @@
     ],
     "acteurs": []
    },
-   "title": "Paysans (cahier A6, 8 pages, noir et blanc)"
-  },
-  "cbb3d138": {
-   "id": "cbb3d138",
-   "url": "https://infokiosques.net/IMG/pdf/rene_riesel-aveux-20pa6-pageparpage-2001.pdf",
-   "filename": "rene_riesel-aveux-20pa6-pageparpage-2001.pdf",
-   "format": "pdf",
-   "source": "Infokiosques.net — Paysannerie & ruralité",
-   "first_seen": "2026-05-23_00-59",
-   "latest_run": "2026-06-25_14-34",
-   "collected_date": "2026-06-25_14-34",
-   "score_initial": 0,
-   "score_final": 6,
-   "latest_score": 0,
-   "doc_type": "autre",
-   "recit_de_lutte": false,
-   "doc_date": "2001",
-   "lang": "fr",
-   "editeur": "",
-   "doi": "",
-   "isbn": "",
-   "hal_id": "",
-   "versions": [],
-   "downloaded": true,
-   "saved_as": "docs/cbb3d138_rene_riesel-aveux-20pa6-pageparpage-2001.pdf",
-   "runs": [
-    {
-     "date": "2026-05-23_00-59",
-     "score": 3,
-     "raison": "Titre 'Aveux complets des véritables mobiles du crime commis au CIRAD' — CIRAD touche l'agronomie mais le contenu exact reste indéterminable, aucune mention explicite de thèmes fonciers ou paysannerie",
-     "context_seen": "formats: · HTML · Aveux complets des véritables mobiles du crime commis au CIRAD - version page par page (PDF) · Aveux complets des véritables mobiles du crime commis au CIRAD - version cahier (PDF)",
-     "link_text": "· Aveux complets des véritables mobiles du crime commis au CIRAD - version page par page (PDF)",
-     "downloaded": false,
-     "model": "",
-     "prompt_version": ""
-    },
-    {
-     "date": "2026-06-25_14-34",
-     "score": 0,
-     "raison": "erreur scoring",
-     "context_seen": "formats: · HTML · Aveux complets des véritables mobiles du crime commis au CIRAD - version page par page (PDF) · Aveux complets des véritables mobiles du crime commis au CIRAD - version cahier (PDF)",
-     "link_text": "· Aveux complets des véritables mobiles du crime commis au CIRAD - version page par page (PDF)",
-     "downloaded": false,
-     "model": "",
-     "prompt_version": ""
-    }
-   ],
-   "link_status": "ok",
-   "link_checked": "2026-06-25T15:35:32Z",
-   "summary": "Brochure de René Riesel reproduisant ses aveux politiques au procès de Montpellier (2001) pour la destruction de riz OGM au CIRAD. Riesel formule une critique radicale du génie génétique comme instrument d'éradication des paysanneries et de réduction de leur autonomie, refusant toute compromission régulatrice. Il cite la Caravane intercontinentale avec des paysans du sud de l'Inde et appelle à remettre en cause les rapports sociaux producteurs du déchaînement technologique.",
-   "citations": [
-    "« Les applications agricoles du génie génétique achèvent de réduire l'autonomie des agriculteurs, précipitent l'éradication des paysanneries. »",
-    "« Le temps perdu par la recherche est, à coup sûr, du temps gagné pour la conscience. »"
-   ],
-   "matched_keywords": [
-    "paysannerie",
-    "autonomie paysanne",
-    "OGM",
-    "sabotage",
-    "éradication des paysanneries",
-    "génie génétique"
-   ],
-   "enriched_at": "2026-06-25T10:08:36Z",
-   "enrichment_method": "manual_rescue_score3",
-   "title": "Aveux complets des véritables mobiles du crime commis au CIRAD le 5 juin 1999 (version page par page)",
-   "enrichment": {
-    "summary": "Déclaration de René Riesel au tribunal correctionnel de Montpellier (8 février 2001), lors de son jugement pour participation au fauchage de riz transgénique au CIRAD en 1999 avec la Caravane intercontinentale de paysans indiens. Riesel y développe une critique radicale du génie génétique comme vecteur d'éradication des paysanneries et d'extension de la domination technologique sur le vivant. Il dénonce l'utopie scientiste depuis Berthelot jusqu'aux OGM, relie les applications agricoles du génie génétique à la réduction de l'autonomie paysanne, et revendique le sabotage comme acte politique conscient. Version mise en page pour impression page par page (2001, réédition 2006).",
-    "citations": [
-     {
-      "quote": "Les applications agricoles du génie génétique achèvent de réduire l'autonomie des agriculteurs, précipitent l'éradication des paysanneries.",
-      "why_relevant": "Lien direct entre OGM, dépossession paysanne et perte de souveraineté sur les semences."
-     },
-     {
-      "quote": "En détruisant sans attendre les riz expérimentaux du CIRAD, on n'a pas seulement choisi de prendre la vertueuse recherche publique 'la main dans le sac', mais aussi de lui faire perdre du temps.",
-      "why_relevant": "Revendication du sabotage comme stratégie de ralentissement de la domination technologique."
-     },
-     {
-      "quote": "La Caravane intercontinentale, composée en grande partie de paysans du sud de l'Inde, avait pour objectif de manifester l'existence et la nécessité de formes nouvelles d'opposition à la domination modernisée.",
-      "why_relevant": "Alliance internationale entre luttes paysannes du Sud et résistance aux biotechnologies en Europe."
-     }
-    ],
-    "matched_keywords": [
-     "OGM",
-     "paysannerie",
-     "semences",
-     "sabotage",
-     "autonomie paysanne",
-     "génie génétique"
-    ],
-    "acteurs": [
-     "René Riesel",
-     "CIRAD",
-     "Caravane intercontinentale",
-     "José Bové",
-     "Confédération paysanne"
-    ]
-   }
+   "title": "Paysans (cahier A6, 8 pages, noir et blanc)",
+   "cover": "covers/c8d42f2f.png"
   },
   "f73fab0a": {
    "id": "f73fab0a",
@@ -5748,7 +5658,8 @@
      "Schizoïdes Associés",
      "infokiosques.net"
     ]
-   }
+   },
+   "cover": "covers/f73fab0a.png"
   },
   "a54f94c8": {
    "id": "a54f94c8",
@@ -5888,7 +5799,8 @@
     "model": "claude-haiku-4-5",
     "prompt_version": "d0b3afb85d"
    },
-   "title": "Forêt en lutte, lutte en forêt — contre la mégascierie"
+   "title": "Forêt en lutte, lutte en forêt — contre la mégascierie",
+   "cover": "covers/a54f94c8.png"
   },
   "de319a22": {
    "id": "de319a22",
@@ -10961,7 +10873,8 @@
      "Ivan Illich",
      "Chapter 7"
     ]
-   }
+   },
+   "cover": "covers/8413ce56.png"
   },
   "6325ebd3": {
    "id": "6325ebd3",
@@ -11246,7 +11159,8 @@
     "enriched_by": "claude-agent",
     "enriched_at": "2026-06-26"
    },
-   "title": "Mini-Manuel fonds dotation"
+   "title": "Mini-Manuel fonds dotation",
+   "cover": "covers/f51dd9f5.png"
   },
   "ff069338": {
    "id": "ff069338",
@@ -11325,7 +11239,8 @@
     "enriched_by": "claude-agent",
     "enriched_at": "2026-06-26"
    },
-   "title": "Mini-Manuel Communalisme et Nemeton"
+   "title": "Mini-Manuel Communalisme et Nemeton",
+   "cover": "covers/ff069338.png"
   },
   "b2d08fef": {
    "id": "b2d08fef",
@@ -11395,7 +11310,8 @@
     "enriched_by": "claude-agent",
     "enriched_at": "2026-06-26"
    },
-   "title": "Mini-Manuel droit civil"
+   "title": "Mini-Manuel droit civil",
+   "cover": "covers/b2d08fef.png"
   },
   "d3bd8707": {
    "id": "d3bd8707",
@@ -11462,7 +11378,8 @@
     "enriched_by": "claude-agent",
     "enriched_at": "2026-06-26"
    },
-   "title": "Mini-Manuel petite histoire du droit"
+   "title": "Mini-Manuel petite histoire du droit",
+   "cover": "covers/d3bd8707.png"
   },
   "876db11d": {
    "id": "876db11d",
@@ -11537,11 +11454,12 @@
     "enriched_by": "claude-agent",
     "enriched_at": "2026-06-26"
    },
-   "title": "Mini-Manuel forêts nourricières"
+   "title": "Mini-Manuel forêts nourricières",
+   "cover": "covers/876db11d.png"
   }
  },
  "meta": {
-  "last_updated": "2026-06-26T16:08:09+00:00",
+  "last_updated": "2026-06-26T16:15:49+00:00",
   "total_docs": 965,
   "total_downloaded": 269,
   "total_published": 145,
@@ -11571,7 +11489,7 @@
    "9": 20,
    "10": 0
   },
-  "last_archive_run": "2026-06-26T16:08:09+00:00",
+  "last_archive_run": "2026-06-26T16:15:49+00:00",
   "archived_total": 699
  }
 }
