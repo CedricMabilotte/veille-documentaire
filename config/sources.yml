@@ -146,6 +146,7 @@ sources:
     type: html
     orientation: militant
     default_lang: fr
+    auto_download: true
     min_interval_days: 14
 
   - label: "Infokiosques.net — Écologie radicale"
@@ -246,6 +247,7 @@ sources:
     type: deep_html
     orientation: militant
     default_lang: fr
+    auto_download: true
     max_pages: 25
     min_interval_days: 14
 
@@ -301,6 +303,7 @@ sources:
     type: hal
     orientation: academique
     default_lang: fr
+    auto_download: true
     min_interval_days: 14
 
   - label: "HAL — paysannerie / agriculture vivrière"
@@ -308,6 +311,7 @@ sources:
     type: hal
     orientation: academique
     default_lang: fr
+    auto_download: true
     min_interval_days: 14
 
   - label: "HAL — propriété d'usage / fonds de dotation"
@@ -315,6 +319,7 @@ sources:
     type: hal
     orientation: academique
     default_lang: fr
+    auto_download: true
     min_interval_days: 14
 
   # ═══ Flux RSS — sites amis, refresh quotidien possible ═════════════════════
@@ -365,6 +370,7 @@ sources:
     type: deep_html
     orientation: institutionnel
     default_lang: en
+    auto_download: true
     max_pages: 20
     min_interval_days: 7
 
@@ -429,6 +435,7 @@ sources:
     type: deep_html
     orientation: militant
     default_lang: fr
+    auto_download: true
     max_pages: 15
     min_interval_days: 14
 

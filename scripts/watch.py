@@ -96,6 +96,7 @@ def score_batch(docs: list[dict], keywords: list[str]) -> list[dict]:
     for i, d in enumerate(docs, 1):
         docs_block += (
             f"\nDocument {i} :\n"
+            f"  Source  : {d.get('source', '')}\n"
             f"  Lien    : {d['link_text']}\n"
             f"  Format  : {d['extension'].upper()}\n"
             f"  Contexte: {d['context']}\n"
@@ -133,7 +134,13 @@ RÈGLES DE NOTATION (à appliquer scrupuleusement) :
             ce n'est pas explicite dans ce qui m'est fourni
    - 0-4  : hors-sujet ou indéterminable (titre obscur, contexte vide)
 
-5. **Cite littéralement** dans ta raison le mot/phrase du titre ou du contexte
+4b. **Confiance par source** — si la Source est reconnue comme thématiquement fiable
+    (exemples : Troisièmes Voix, HAL, International Land Coalition, Infokiosques Paysannerie,
+    CLACSO, CRAS), accorde un bonus de +1 et descends le seuil d'incertitude.
+    Si la Source est généraliste (The Anarchist Library, Archive.org, Böll Stiftung),
+    reste strict sur les règles 1-4.
+
+5. **Cite littéralement** dans ta raison le mot/phrase du titre, de la source ou du contexte
    qui justifie ton score. Si tu ne peux pas citer → score ≤ 3.
 
 6. **Attribue chaque score au bon "doc" numéro**. Ne mélange pas.
@@ -768,6 +775,11 @@ SITE_BASE_URL = "https://biblio.actitude.org"
 # pré-rendue) que si son score post-lecture l'autorise. catalog.json reste
 # complet pour la transparence.
 PUBLISH_THRESHOLD = 6
+
+# Seuil de téléchargement (S0) : score minimum pour déclencher le
+# téléchargement du fichier. Volontairement plus bas que PUBLISH_THRESHOLD
+# pour capter les docs incertains (scoring post-lecture affinera).
+DOWNLOAD_THRESHOLD = int(os.getenv("DOWNLOAD_THRESHOLD", "4"))
 
 
 def _effective_score(doc: dict) -> int:
@@ -1422,6 +1434,7 @@ def main() -> None:
     keywords  = config.get("keywords", [])
     sources   = config.get("sources", [])
     threshold = int(os.getenv("SCORE_THRESHOLD", str(config.get("threshold", 6))))
+    download_threshold = int(os.getenv("DOWNLOAD_THRESHOLD", str(config.get("download_threshold", 4))))
     dry_run   = os.getenv("DRY_RUN", "false").lower() == "true"
 
     if dry_run:
@@ -1507,21 +1520,43 @@ def main() -> None:
         print(f"    → {len(docs)} ouvrage(s) PDF trouvé(s)")
         report["documents_found"] += len(docs)
 
-        # ── Scoring par batches ─────────────────────────────────────────────
-        # score_batch numérote les documents 1..N À L'INTÉRIEUR de son batch.
-        # On rebase donc chaque indice « doc » sur la position GLOBALE dans la
-        # liste `docs` (offset = début du batch) — sans quoi les batches ≥ 2
-        # écraseraient les scores des tout premiers documents.
-        all_scores: list[dict] = []
-        for i in range(0, len(docs), BATCH_SIZE):
-            batch = docs[i : i + BATCH_SIZE]
-            print(f"    → Scoring batch {i // BATCH_SIZE + 1} ({len(batch)} docs)…")
-            batch_scores = score_batch(batch, keywords)
-            for it in batch_scores:
-                d = it.get("doc")
-                if isinstance(d, int):
-                    it["doc"] = d + i          # indice local au batch → global
-            all_scores.extend(batch_scores)
+        # Injecter le label de la source dans chaque doc pour le scoring
+        for d in docs:
+            d.setdefault("source", label)
+
+        # ── Auto-download : sources 100 % thématiques ───────────────────────
+        # Certaines sources (marquées auto_download: true dans sources.yml)
+        # sont considérées fiables par construction : on leur attribue un
+        # score de 8 sans appel LLM, ce qui économise des tokens et accélère
+        # le pipeline. Le scoring post-lecture reste actif.
+        if source.get("auto_download"):
+            print(f"    ⚡  auto_download activé — score 8 attribué sans LLM")
+            all_scores = [
+                {
+                    "doc": idx + 1,
+                    "score": 8,
+                    "raison": "auto_download (source fiable)",
+                    "doc_type": "autre",
+                    "recit_de_lutte": False,
+                }
+                for idx in range(len(docs))
+            ]
+        else:
+            # ── Scoring par batches ─────────────────────────────────────────
+            # score_batch numérote les documents 1..N À L'INTÉRIEUR de son batch.
+            # On rebase donc chaque indice « doc » sur la position GLOBALE dans la
+            # liste `docs` (offset = début du batch) — sans quoi les batches ≥ 2
+            # écraseraient les scores des tout premiers documents.
+            all_scores: list[dict] = []
+            for i in range(0, len(docs), BATCH_SIZE):
+                batch = docs[i : i + BATCH_SIZE]
+                print(f"    → Scoring batch {i // BATCH_SIZE + 1} ({len(batch)} docs)…")
+                batch_scores = score_batch(batch, keywords)
+                for it in batch_scores:
+                    d = it.get("doc")
+                    if isinstance(d, int):
+                        it["doc"] = d + i      # indice local au batch → global
+                all_scores.extend(batch_scores)
 
         report["documents_scored"] += len(all_scores)
 
@@ -1559,7 +1594,7 @@ def main() -> None:
             except Exception as e:
                 print(f"     ⚠  build_metadata léger raté : {e}")
 
-            if score >= threshold and not dry_run:
+            if score >= download_threshold and not dry_run:
                 uid  = file_uid(doc["url"])
                 dest = DOCS_PATH / f"{uid}_{doc['filename']}"
                 if dest.exists() and pdf_processor.validate_pdf(dest):
@@ -1587,7 +1622,7 @@ def main() -> None:
                         source_default_lang=source.get("default_lang", ""),
                     )
                     result.update(enrichment)
-            elif score >= threshold and dry_run:
+            elif score >= download_threshold and dry_run:
                 print(f"    [sim] Aurait téléchargé : {doc['filename']} ({score}/10)")
             else:
                 print(f"    ✗  Ignoré          : {doc['filename']} ({score}/10 — {raison})")
