@@ -3852,15 +3852,18 @@
       ],
       "versions": [],
       "score_initial": 5,
-      "score_final": null,
+      "score_final": 0,
       "link_status": "ok",
       "link_checked": "2026-06-25T15:35:32Z",
       "lang": "en",
       "download_status": "already_present",
       "enrichment": {
         "error": "pdf_vide_ou_scanne",
-        "char_count": 62
-      }
+        "char_count": 62,
+        "summary": "Αλφα (68). Document accessible à https://archive.org/download/alpha_068/alpha_068.pdf. Extrait : ",
+        "score_final": 0
+      },
+      "title": "Αλφα (68)"
     },
     "a238e5bd": {
       "id": "a238e5bd",
@@ -6510,7 +6513,8 @@
       "score_final": 4,
       "link_status": "ok",
       "link_checked": "2026-06-25T15:35:32Z",
-      "lang": "fr"
+      "lang": "fr",
+      "title": "HDR — Déterminants économiques des changements technologiques en agriculture"
     },
     "a0156fb8": {
       "id": "a0156fb8",
@@ -8257,7 +8261,10 @@
       "hal_id": "",
       "link_status": "unchecked",
       "link_checked": "2026-05-23T14:03:33Z",
-      "title": "Reforma Agraria Guatemala"
+      "title": "Reforma Agraria Guatemala",
+      "enrichment": {
+        "download_status": "archive.org restricted — login requis (401)"
+      }
     },
     "1ce39b6d": {
       "id": "1ce39b6d",
@@ -9398,7 +9405,8 @@
       "hal_id": "",
       "link_status": "ok",
       "link_checked": "2026-06-25T15:35:32Z",
-      "archive_url": "https://web.archive.org/web/20260524162309/https://infokiosques.net/IMG/pdf/ni_ici_ni_ailleurs-couleur-recale_pour_massicot-v2_.pdf"
+      "archive_url": "https://web.archive.org/web/20260524162309/https://infokiosques.net/IMG/pdf/ni_ici_ni_ailleurs-couleur-recale_pour_massicot-v2_.pdf",
+      "title": "Ni ici ni ailleurs — Géothermie à Haute-Sorne, résistance locale"
     },
     "463900a0": {
       "id": "463900a0",
@@ -9586,7 +9594,8 @@
       "hal_id": "",
       "link_status": "ok",
       "link_checked": "2026-06-25T15:35:32Z",
-      "archive_url": "http://web.archive.org/web/20260221074342/https://infokiosques.net/IMG/pdf/ni_ici_ni_ailleurs-nb-24pa4-avr2024-cahier.pdf"
+      "archive_url": "http://web.archive.org/web/20260221074342/https://infokiosques.net/IMG/pdf/ni_ici_ni_ailleurs-nb-24pa4-avr2024-cahier.pdf",
+      "title": "Ni ici ni ailleurs — Brochure contre la géothermie profonde (cahier)"
     },
     "dfbd677b": {
       "id": "dfbd677b",
@@ -10054,7 +10063,8 @@
       "isbn": "",
       "hal_id": "",
       "link_status": "unchecked",
-      "link_checked": "2026-05-24T16:26:10Z"
+      "link_checked": "2026-05-24T16:26:10Z",
+      "title": "Grève des loyers Sonacotra 1973-1981"
     },
     "f1dba73d": {
       "id": "f1dba73d",
@@ -10522,7 +10532,8 @@
       "hal_id": "",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T16:28:08Z",
-      "archive_url": "http://web.archive.org/web/20260226003733/https://infokiosques.net/IMG/pdf/pas_de_liberation_queer_sans_la_palestine-pageparpage-20pa5-juin2025.pdf"
+      "archive_url": "http://web.archive.org/web/20260226003733/https://infokiosques.net/IMG/pdf/pas_de_liberation_queer_sans_la_palestine-pageparpage-20pa5-juin2025.pdf",
+      "title": "Pas de libération queer sans la Palestine"
     },
     "83b6390f": {
       "id": "83b6390f",
@@ -11036,7 +11047,10 @@
       "doi": "",
       "isbn": "",
       "hal_id": "",
-      "title": "Human Rights and the Commons"
+      "title": "Human Rights and the Commons",
+      "enrichment": {
+        "download_status": "archive.org restricted — login requis"
+      }
     },
     "2e2e4bc7": {
       "id": "2e2e4bc7",
@@ -11084,7 +11098,10 @@
       "doi": "",
       "isbn": "",
       "hal_id": "",
-      "title": "The Condo/Co-op Book"
+      "title": "The Condo/Co-op Book",
+      "enrichment": {
+        "download_status": "archive.org restricted — login requis (403)"
+      }
     },
     "931fc89b": {
       "id": "931fc89b",
@@ -11224,7 +11241,7 @@
       "latest_run": "2026-06-25_14-34",
       "latest_score": 0,
       "downloaded": false,
-      "saved_as": null,
+      "saved_as": "docs/28b7cb2c_laidlaw-1973-cooperative-way-of-housing-.pdf",
       "runs": [
         {
           "date": "2026-05-18_05-12",
@@ -11260,7 +11277,11 @@
       "doi": "",
       "isbn": "",
       "hal_id": "",
-      "title": "Laidlaw 1973 cooperative way of housing canada"
+      "title": "The Cooperative Way of Housing in Canada",
+      "enrichment": {
+        "summary": "THE COOPERATIVE WAY OF HOUSING IN CANADA. THE COOPERATIVE WAY OF HOUSING IN CANADA\nA paper prepared for the\nThird International Symposium \non Lower-Cost Housing Problems\nOrganized by the\nInternational Association for Housing Science\nto be held at\nSir George Williams University, Montreal\nMay 27-30, 1974\n- by -\nDr. A.F. Laidlaw\nSenior Advisor, Cooperative Housing \nCentral Mortgage and Housing Corporation \nGovernment of Canada \nOttawa\nTHE CO",
+        "score_final": 7
+      }
     },
     "2175f7a3": {
       "id": "2175f7a3",
@@ -11272,7 +11293,7 @@
       "latest_run": "2026-06-25_14-34",
       "latest_score": 0,
       "downloaded": false,
-      "saved_as": null,
+      "saved_as": "docs/2175f7a3_Housing_You_Can_Afford_Laidlaw_1977.pdf",
       "runs": [
         {
           "date": "2026-05-18_05-12",
@@ -11308,7 +11329,11 @@
       "doi": "",
       "isbn": "",
       "hal_id": "",
-      "title": "Housing you can afford cooperative housing canada laidlaw"
+      "title": "Housing You Can Afford — Cooperative Housing in Canada",
+      "enrichment": {
+        "summary": "Housing You Can Afford. Housing You Can Afford \n2 \nHOUSING YOU CAN AFFORD \nPRINTED AND BOUND IN CANADA \nCopyrtght 1977 \nGreen Tree Publishing Company Ltd. \nToronto, Canada \nAll rights reserved. Except for use in a review, the reproduction or utilization of thii \nwork in any fonn or by any electronic, mechanical, or other means now known 01 \nhereinafter invented, including xerography, photocopying, and recording, and in a",
+        "score_final": 7
+      }
     },
     "d2d6df24": {
       "id": "d2d6df24",
@@ -11426,7 +11451,10 @@
       "hal_id": "",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T18:32:57Z",
-      "title": "From Rental to Co-op"
+      "title": "From Rental to Co-op",
+      "enrichment": {
+        "download_status": "archive.org restricted — login requis"
+      }
     },
     "a1a438d4": {
       "id": "a1a438d4",
@@ -11544,7 +11572,7 @@
     },
     "b0917bdf": {
       "id": "b0917bdf",
-      "url": "https://documents1.worldbank.org/curated/fr/587161533140402275/pdf/129135-WP-Integrating-Customary-Tenure-into-Fortmal-Systems.pdf",
+      "url": "https://documents.worldbank.org/curated/en/587161533140402275/pdf/129135-WP-Integrating-Customary-Tenure-into-Fortmal-Systems.pdf",
       "filename": "129135-WP-Integrating-Customary-Tenure-into-Fortmal-Systems.pdf",
       "format": "pdf",
       "source": "International Land Coalition — latest",
@@ -11552,7 +11580,7 @@
       "latest_run": "2026-06-25_14-34",
       "latest_score": 0,
       "downloaded": false,
-      "saved_as": null,
+      "saved_as": "docs/b0917bdf_integrating-customary-tenure.pdf",
       "runs": [
         {
           "date": "2026-05-18_05-12",
@@ -11599,7 +11627,11 @@
       "link_status": "dead",
       "link_checked": "2026-06-25T15:35:32Z",
       "archive_url": "http://web.archive.org/web/20250224174034/https://documents1.worldbank.org/curated/fr/587161533140402275/pdf/129135-WP-Integrating-Customary-Tenure-into-Fortmal-Systems.pdf",
-      "title": "Integrating Customary Tenure into Formal Systems"
+      "title": "Integrating Customary Tenure into Formal Systems",
+      "enrichment": {
+        "score_final": 8,
+        "summary": "Note thématique de la Banque mondiale sur l'intégration des régimes fonciers coutumiers dans les systèmes formels de gouvernance foncière. Aborde les conflits fonciers, la sécurisation des droits d'usage coutumiers, et les mécanismes permettant de reconnaître les droits collectifs autochtones dans le droit formel. Particulièrement pertinent pour les communs fonciers et la propriété d'usage."
+      }
     },
     "1fe48a41": {
       "id": "1fe48a41",
@@ -11736,7 +11768,8 @@
         "angle_journalistique": "20 millions de paysans et autochtones organisés dans 45 coordinations mondiales — qui remporte les batailles récentes pour la terre, et où résistent les résistances les plus déterminées ?",
         "model": "claude-haiku-4-5",
         "prompt_version": "2fd9976d65"
-      }
+      },
+      "title": "REGIONAL AZUL"
     },
     "6125738a": {
       "id": "6125738a",
@@ -11947,7 +11980,8 @@
       "isbn": "",
       "hal_id": "",
       "link_status": "ok",
-      "link_checked": "2026-06-25T15:35:32Z"
+      "link_checked": "2026-06-25T15:35:32Z",
+      "title": "ILC — Cartographie des organisations paysannes par pays (farmers)"
     },
     "b225af88": {
       "id": "b225af88",
@@ -12091,7 +12125,8 @@
       "hal_id": "",
       "link_status": "ok",
       "link_checked": "2026-06-25T15:35:32Z",
-      "archive_url": "https://web.archive.org/web/20260524183402/https://d1n0nj0ml605fq.cloudfront.net/media/documents/2025_3_ilc_po_maps_of_all_constituencies_by_country_pastoralists.pdf"
+      "archive_url": "https://web.archive.org/web/20260524183402/https://d1n0nj0ml605fq.cloudfront.net/media/documents/2025_3_ilc_po_maps_of_all_constituencies_by_country_pastoralists.pdf",
+      "title": "ILC — Cartographie des organisations de pasteurs et éleveurs"
     },
     "581a53c8": {
       "id": "581a53c8",
@@ -13662,7 +13697,7 @@
       "enriched_at": "2026-06-25T10:08:36Z",
       "enrichment_method": "manual_rescue_score3",
       "archive_url": "https://web.archive.org/web/20240513041206/https://infokiosques.net/IMG/pdf/Notre_ble_est_politique-24p-cahier-juil2019.pdf",
-      "title": "Notre blé est politique — Introduction aux semences paysannes et à ses combats face à l'industrie boulangère",
+      "title": "Notre blé est politique — Introduction aux semences paysannes et à ses combats",
       "enrichment": {
         "summary": "Livret du Groupe blé (réseau Ardear Auvergne-Rhône-Alpes / Confédération paysanne) présentant les semences paysannes comme un commun cultivé et échangé librement hors du système des variétés enregistrées. Le texte explique la distinction entre blés populations et variétés pures, défend le mélange dynamique comme pratique agricole et politique, et retrace l'histoire du mouvement depuis les années 1970. Les semences paysannes y sont définies formellement comme 'librement échangeables dans le respect des droits d'usage définis par les collectifs qui les font vivre', inscrivant clairement la sélection semencière dans une logique de commun. Le document s'attaque également à l'industrie boulangère et aux normes d'homogénéité imposées par l'État comme obstacles à la biodiversité cultivée.",
         "citations": [
@@ -14019,7 +14054,7 @@
       "latest_run": "2026-06-25_14-34",
       "collected_date": "2026-06-25_14-34",
       "score_initial": 3,
-      "score_final": 5,
+      "score_final": 2,
       "latest_score": 3,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -14069,7 +14104,12 @@
         "peasantry"
       ],
       "enriched_at": "2026-06-25T10:08:36Z",
-      "enrichment_method": "manual_rescue_score3"
+      "enrichment_method": "manual_rescue_score3",
+      "enrichment": {
+        "summary": "Ce document. Document accessible à https://infokiosques.net/IMG/pdf/agriculture_booklet_english.pdf. Extrait : It’s time to recognize the major role of industrial agriculture in causing The climate justice movement has had great success exposing how the fossil fuel industry is brutally killing the planet for profit, but so far the industrial agricultural system has largely gone under the radar. This booklet will show how agricultural businesses are enforcing false and",
+        "score_final": 2
+      },
+      "title": "Smash Industrial Agriculture for Climate Justice"
     },
     "fe77002b": {
       "id": "fe77002b",
@@ -14192,7 +14232,7 @@
       "enriched_at": "2026-06-25T10:08:36Z",
       "enrichment_method": "manual_rescue_score3",
       "archive_url": "https://web.archive.org/web/20260625153955/https://infokiosques.net/IMG/pdf/agriculture_industrielle_et_chaos_climatique-20p-fil-2018.pdf",
-      "title": "L'agriculture industrielle et le chaos climatique (livret fil 2018)",
+      "title": "L'agriculture industrielle et le chaos climatique",
       "enrichment": {
         "summary": "Version fil à coudre (2018) du livret du Climate Collective sur l'agriculture industrielle et la crise climatique, traduit par les Brigades d'Actions Paysannes. Le texte détaille les caractéristiques de l'agriculture industrielle — spécialisation, mécanisation, concentration, monoculture, engrais de synthèse — et sa responsabilité dans les émissions de gaz à effet de serre. Il appelle à s'attaquer au système agro-industriel par l'éducation, la résistance directe et la construction d'alternatives fondées sur la souveraineté alimentaire et l'agroécologie. Contenu identique à la version couleur inverse (95e763e1), format différent pour l'impression militante.",
         "citations": [
@@ -14394,7 +14434,7 @@
       "latest_run": "2026-06-25_14-34",
       "collected_date": "2026-06-25_14-34",
       "score_initial": 0,
-      "score_final": 8,
+      "score_final": 7,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -17964,7 +18004,7 @@
       "enriched_at": "2026-06-25T10:08:36Z",
       "enrichment_method": "manual_rescue_score3",
       "archive_url": "http://web.archive.org/web/20251028012313/https://infokiosques.net/IMG/pdf/jasmin_naturaliste_en_lutte-40p-A5-livret.pdf",
-      "title": "Jasmin, naturaliste en lutte — Entretien sur la ZAD de Notre-Dame-des-Landes",
+      "title": "Jasmin, naturaliste en lutte — Entretien (ZAD / NO TAV, juillet 2015)",
       "enrichment": {
         "summary": "Entretien avec Jasmin, naturaliste professionnel devenu habitant de la ZAD de Notre-Dame-des-Landes, publié par le Collectif Mauvaise Troupe en juillet 2015. Il raconte comment sa sensibilité écologique l'a conduit à l'engagement politique radical contre le projet d'aéroport porté par Vinci. Le texte décrit la vie collective sur la ZAD — 60 lieux de vie, des centaines d'hectares cultivés — et les stratégies de résistance mêlant contre-expertise juridique, actions directes et construction d'un avenir commun. L'ouvrage illustre comment un territoire occupé peut devenir un laboratoire d'alternatives agricoles et foncières face à l'aménagement marchand du territoire.",
         "citations": [
@@ -18711,7 +18751,7 @@
         "prompt_version": "b42b0d4d7c"
       },
       "archive_url": "https://web.archive.org/web/20260626145935/https://infokiosques.net/IMG/pdf/zomia-12p-A5-fil.pdf",
-      "title": "Zomia",
+      "title": "Zomia ou l'art de ne pas être gouverné",
       "cover": "covers/47c6599a.png"
     },
     "c8e1f2ff": {
@@ -19744,7 +19784,7 @@
         ],
         "acteurs": []
       },
-      "title": "Campagnes (cahier A5, 16 pages)"
+      "title": "Campagnes à vendre — Le miroir aux illusions (André Dréan)"
     },
     "aff51cb1": {
       "id": "aff51cb1",
@@ -20117,7 +20157,7 @@
       ],
       "enriched_at": "2026-06-25T10:08:36Z",
       "enrichment_method": "manual_rescue_score3",
-      "title": "Aveux complets des véritables mobiles du crime commis au CIRAD le 5 juin 1999 (version page par page)",
+      "title": "René Riesel — Aveux complets des véritables mobiles du crime commis au CIRAD",
       "enrichment": {
         "summary": "Déclaration de René Riesel au tribunal correctionnel de Montpellier (8 février 2001), lors de son jugement pour participation au fauchage de riz transgénique au CIRAD en 1999 avec la Caravane intercontinentale de paysans indiens. Riesel y développe une critique radicale du génie génétique comme vecteur d'éradication des paysanneries et d'extension de la domination technologique sur le vivant. Il dénonce l'utopie scientiste depuis Berthelot jusqu'aux OGM, relie les applications agricoles du génie génétique à la réduction de l'autonomie paysanne, et revendique le sabotage comme acte politique conscient. Version mise en page pour impression page par page (2001, réédition 2006).",
         "citations": [
@@ -20475,7 +20515,8 @@
         "angle_journalistique": "Enquête sur comment les gouvernements de gauche (Brésil/Lula) et les mouvements écologistes institutionnalisés (Verts européens) se sont retrouvés à faciliter la domination monopolistique de Monsanto sur les semences, malgré leur discours critique.",
         "model": "claude-haiku-4-5",
         "prompt_version": "6a360996ab"
-      }
+      },
+      "title": "Alcuni nemici del migliore dei mondi"
     },
     "1c7c962e": {
       "id": "1c7c962e",
@@ -20697,7 +20738,8 @@
         "angle_journalistique": "Reconstituer le devenir des trois protagonistes après 1972 : ont-ils continué à expérimenter des formes collectives ? Comment cette histoire 'oubliée' dialogue-t-elle avec les expériences actuelles de vie commune et de foncier collectif ?",
         "model": "claude-haiku-4-5",
         "prompt_version": "e1c1b25793"
-      }
+      },
+      "title": "Tentative communautaire"
     },
     "8f7080e5": {
       "id": "8f7080e5",
@@ -22206,7 +22248,7 @@
       "download_status": "ok",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "Un an après les expulsions (cahier)",
+      "title": "Un an après les expulsions, qu'est-ce qu'on fait encore sur la ZAD ?",
       "enrichment": {
         "error": "pdf_absent_disque",
         "summary": "Bilan un an après les expulsions de la ZAD de Notre-Dame-des-Landes (printemps 2018). Le document analyse ce qui subsiste de l'expérience collective, les projets agricoles légalisés, les tensions avec l'État et la préfecture, et les débats internes au mouvement sur la normalisation versus le maintien d'une zone libre. Il documente la transformation progressive d'une occupation politique en formes d'agriculture alternative reconnues, et les pertes et gains de cette transition pour les communs fonciers nés de la lutte.",
@@ -29632,7 +29674,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 5,
-      "score_final": null,
+      "score_final": 6,
       "latest_score": 5,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -29661,8 +29703,11 @@
       "link_checked": "2026-06-25T15:35:32Z",
       "download_status": "already_present",
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:10am (Europe/Paris)\n stderr="
-      }
+        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:10am (Europe/Paris)\n stderr=",
+        "summary": "Atop the Watchtower. Document accessible à https://theanarchistlibrary.org/library/ejercito-zapatista-de-liberacion-nacional-atop-the-watchtower.pdf. Extrait : Ejército Zapatista de Liberación Nacional This is a presentation over what the compañeros and compañeras, jefas and jefes will talk about how the idea of the Commons was born. So this is Atop the Watchtower: A Long Look at Yesterday. It is more or less a small short history of how everything began. Some of these words were conceived over a year ago. Foreseeing that with the coming of",
+        "score_final": 6
+      },
+      "title": "Atop the Watchtower"
     },
     "7d4cb4f0": {
       "id": "7d4cb4f0",
@@ -34103,7 +34148,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 5,
-      "score_final": null,
+      "score_final": 5,
       "latest_score": 5,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -34132,8 +34177,11 @@
       "link_checked": "2026-06-25T15:35:32Z",
       "download_status": "already_present",
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:10am (Europe/Paris)\n stderr="
-      }
+        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:10am (Europe/Paris)\n stderr=",
+        "summary": "Battle Against Bayer: The End…or is it?. Document accessible à https://theanarchistlibrary.org/library/anonymous-the-battle-against-bayer-the-end-or-is-it.pdf. Extrait : The Battle Against Bayer: The End…or is it? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . The facts of the anti-GM movement in the UK would seem to be this: Inspired by anti-GM actions, the first of which took place in California in 1987, followed by others all across the world, people in the UK began to take action against GM crop trials 6 years ago. This mostly",
+        "score_final": 5
+      },
+      "title": "Battle Against Bayer: The End…or is it?"
     },
     "df13538a": {
       "id": "df13538a",
@@ -36834,7 +36882,10 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "Going Co-op"
+      "title": "Going Co-op",
+      "enrichment": {
+        "download_status": "archive.org restricted — login requis (401)"
+      }
     },
     "6325ebd3": {
       "id": "6325ebd3",
@@ -36999,7 +37050,7 @@
       "latest_run": "2026-05-23_00-59",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 5,
-      "score_final": null,
+      "score_final": 2,
       "latest_score": 5,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -37028,8 +37079,11 @@
       "link_checked": "2026-06-25T15:35:32Z",
       "download_status": "already_present",
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:10am (Europe/Paris)\n stderr="
-      }
+        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:10am (Europe/Paris)\n stderr=",
+        "summary": "Q:\\Powers 33 MSJ OPINION.wpd. Document accessible à https://archive.org/download/gov.uscourts.miwd.54658/gov.uscourts.miwd.54658.pdf. Extrait : Plaintiff filed a civil rights action against defendants. This matter is now before the court on defendants’ motion to dismiss and for summary judgment (docket no. 33). Plaintiff has named two defendants in this action, the Kalamazoo Breakthrough Consumer Housing Cooperative (“KBCHC”) and Midwest Management Company (“Midwest Management”).  KBCHC owns the New Horizon Village Apartments (“New Horizon”).  Midwest",
+        "score_final": 2
+      },
+      "title": "Powers v. Kalamazoo Breakthrough Consumer Housing Cooperative — Opinion (2009)"
     },
     "6d4f3628": {
       "id": "6d4f3628",
@@ -37079,7 +37133,10 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "Sweat Equity Co-operative"
+      "title": "Sweat Equity Co-operative",
+      "enrichment": {
+        "download_status": "archive.org restricted — login requis (401)"
+      }
     },
     "de3ff94a": {
       "id": "de3ff94a",
@@ -37279,7 +37336,10 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "We're in Charge: Cohousing"
+      "title": "We're in Charge: Cohousing",
+      "enrichment": {
+        "download_status": "archive.org restricted — login requis"
+      }
     },
     "ef21f9ed": {
       "id": "ef21f9ed",
@@ -37953,7 +38013,8 @@
       },
       "download_status": "ok",
       "link_status": "ok",
-      "link_checked": "2026-06-25T15:35:32Z"
+      "link_checked": "2026-06-25T15:35:32Z",
+      "title": "Chicago Community Land Trust — Procès-verbal du conseil (décembre 2017)"
     },
     "f7638ce0": {
       "id": "f7638ce0",
@@ -54676,7 +54737,7 @@
     }
   },
   "meta": {
-    "last_updated": "2026-06-26T16:20:51+00:00",
+    "last_updated": "2026-06-26T16:42:12+00:00",
     "total_docs": 965,
     "total_downloaded": 269,
     "total_published": 145,
@@ -54706,7 +54767,7 @@
       "9": 20,
       "10": 0
     },
-    "last_archive_run": "2026-06-26T16:20:51+00:00",
+    "last_archive_run": "2026-06-26T16:42:12+00:00",
     "archived_total": 699
   }
 }
