@@ -12,7 +12,7 @@
 <meta property="og:description" content="Fiche documentaire BIBLIO — analyse, citations, contexte.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://biblio.actitude.org/fiches/fiche.html">
-<meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.svg">
+<meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -211,8 +211,8 @@ function updateMetaTags(doc, basePath) {
   setMeta('og:description', teaser);
   setMeta('og:type', 'article');
   setMeta('og:url', canonicalUrl);
-  // og:image : couverture en URL absolue si disponible (sinon défaut)
-  const ogImg = `https://biblio.actitude.org/assets/covers/${doc.id}.png`;
+  // og:image : carte sociale (assets/og/), couverture (assets/covers/), sinon défaut
+  const ogImg = `https://biblio.actitude.org/assets/og/${doc.id}.png`;
   setMeta('og:image', ogImg);
   // Schema.org JSON-LD (ScholarlyArticle ou Book selon format/page_count)
   injectJsonLd(doc, { title, teaser, author, year, keywords, canonicalUrl, ogImg });

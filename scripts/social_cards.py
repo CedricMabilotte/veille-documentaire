@@ -324,8 +324,10 @@ def generate_all(catalog_path: Path = CATALOG_PATH,
 
     stats = {"cards": 0, "citation_cards": 0, "og_default": False}
 
-    # OG par défaut (toujours)
-    if render_og_default(ROOT / "site" / "assets" / "og-default.png"):
+    # OG par défaut (toujours) — généré dans assets/img/ pour correspondre
+    # aux références dans les templates statiques
+    og_default_path = ROOT / "site" / "assets" / "img" / "og-default.png"
+    if render_og_default(og_default_path):
         stats["og_default"] = True
 
     if not catalog_path.exists():

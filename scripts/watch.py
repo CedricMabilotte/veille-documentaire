@@ -934,15 +934,19 @@ def _prerender_fiches(catalog: dict) -> int:
         # ── JSON-LD ScholarlyArticle (mêmes champs que côté JS) ──────────────
         canonical_url = f"{SITE_BASE_URL}/fiches/{doc_id}.html"
         # A2 — og:image pointe vers la carte sociale générée (1200x630).
-        # Fallback : couverture PDF brute, puis image OG par défaut.
+        # Priorité : assets/og/ (alias stable), puis assets/cards/, puis
+        # couverture PDF brute, puis image OG par défaut.
+        og_file   = SITE_PATH / "assets" / "og"    / f"{doc_id}.png"
         card_file = SITE_PATH / "assets" / "cards" / f"{doc_id}.png"
         cover_file = SITE_PATH / "assets" / "covers" / f"{doc_id}.png"
-        if card_file.exists():
+        if og_file.exists():
+            og_image = f"{SITE_BASE_URL}/assets/og/{doc_id}.png"
+        elif card_file.exists():
             og_image = f"{SITE_BASE_URL}/assets/cards/{doc_id}.png"
         elif cover_file.exists():
             og_image = f"{SITE_BASE_URL}/assets/covers/{doc_id}.png"
         else:
-            og_image = f"{SITE_BASE_URL}/assets/og-default.png"
+            og_image = f"{SITE_BASE_URL}/assets/img/og-default.png"
         page_count = 0
         if isinstance(doc.get("meta"), dict):
             page_count = doc["meta"].get("page_count", 0) or 0
@@ -1149,10 +1153,11 @@ def publish_site(run_date: str) -> None:
     else:
         print("  ℹ  Pillow indisponible — cartes sociales non générées")
 
-    # 4. Génération RSS + sitemap
+    # 4. Génération RSS + sitemap + robots.txt
     catalog = json.loads(catalog_src.read_text(encoding="utf-8"))
     _write_rss(catalog, run_date)
     _write_sitemap(catalog)
+    _write_robots()
 
     # 4bis. Pré-rendu HTML statique par fiche (og:* + canonical + JSON-LD)
     # → pour les crawlers sociaux (Twitter/Mastodon/FB/LI) et le SEO
@@ -1216,20 +1221,31 @@ def _rss_item(d: dict) -> str:
         link_text = d["runs"][-1].get("link_text", "")
         if link_text:
             title = link_text
+    # Fix 6 — nettoyer les titres : retirer le préfixe « · » et le suffixe « (PDF) »
+    title = title.strip()
+    if title.startswith("· "):
+        title = title[2:].strip()
+    if title.endswith(" (PDF)"):
+        title = title[:-6].strip()
     url_fiche = f"{SITE_BASE_URL}/fiches/{d['id']}.html"
     enrich = d.get("enrichment") or {}
     description = ""
     if isinstance(enrich, dict):
         description = enrich.get("summary", "") or ""
+    # Fix 3 — ne pas utiliser la raison si elle contient "erreur" ou est vide
     if not description and d.get("runs"):
-        description = d["runs"][-1].get("raison", "") or ""
+        raison = d["runs"][-1].get("raison", "") or ""
+        if raison and "erreur" not in raison.lower():
+            description = raison
     pub = _rfc822(d.get("latest_run", "") or d.get("collected_date", ""))
+    # Fix 3 — omettre <description> si vide plutôt que d'émettre une balise vide
+    desc_tag = (f"\n      <description>{_xml_escape(description[:600])}</description>"
+                if description.strip() else "")
     return f"""    <item>
       <title>{_xml_escape(title)}</title>
       <link>{url_fiche}</link>
       <guid isPermaLink="true">{url_fiche}</guid>
-      <pubDate>{pub}</pubDate>
-      <description>{_xml_escape(description[:600])}</description>
+      <pubDate>{pub}</pubDate>{desc_tag}
       <category>{_xml_escape(d.get('source', ''))}</category>
     </item>"""
 
@@ -1324,8 +1340,20 @@ def _write_rss(catalog: dict, run_date: str) -> None:
           f"({len(scoops)}), {len(feed_index)} feed(s) par concept")
 
 
+def _write_robots() -> None:
+    """Génère site/robots.txt (idempotent)."""
+    content = (
+        "User-agent: *\n"
+        "Allow: /\n"
+        "\n"
+        f"Sitemap: {SITE_BASE_URL}/sitemap.xml\n"
+    )
+    (SITE_PATH / "robots.txt").write_text(content, encoding="utf-8")
+
+
 def _write_sitemap(catalog: dict) -> None:
     """Sitemap XML avec les pages principales + une fiche par doc."""
+    today = datetime.utcnow().strftime("%Y-%m-%d")
     urls = [
         f"{SITE_BASE_URL}/",
         f"{SITE_BASE_URL}/fiches/",
@@ -1339,7 +1367,9 @@ def _write_sitemap(catalog: dict) -> None:
     for d in catalog.get("docs", {}).values():
         if _is_publishable(d):
             urls.append(f"{SITE_BASE_URL}/fiches/{d['id']}.html")
-    body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
+    body = "\n".join(
+        f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>" for u in urls
+    )
     sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {body}
