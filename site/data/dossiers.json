@@ -1,24 +1,28 @@
 {
-  "generated_at": "2026-06-25T15:40:12Z",
+  "generated_at": "2026-06-26T14:59:42Z",
   "total_dossiers": 10,
   "dossiers": [
     {
       "slug": "sortir-une-terre-du-marche",
       "titre": "Sortir une terre du marché",
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-      "doc_count": 33,
+      "doc_count": 46,
       "docs": [
         "931fc89b",
         "2ab410d3",
         "dd858578",
+        "de3ff94a",
         "f7638ce0",
+        "ff069338",
         "9e831a55",
         "e5341cc9",
         "7b89d6d1",
         "572794b2",
         "5f5dadd2",
         "97c3bbb4",
+        "2e2e4bc7",
         "ed6b79d9",
+        "99a6d367",
         "089ddfba",
         "2e5629b5",
         "33f14cc5",
@@ -26,19 +30,28 @@
         "54f18780",
         "de8665e3",
         "6325ebd3",
+        "6d4f3628",
+        "941861fb",
         "18b4c3ab",
+        "f51dd9f5",
+        "b2d08fef",
+        "876db11d",
         "2db11a52",
         "85a0da6c",
+        "28b7cb2c",
+        "2175f7a3",
         "12a4e254",
         "7d4cb4f0",
         "8156629f",
         "915b8d79",
+        "eb18a3de",
         "c210135f",
         "1d3081c2",
         "8470552d",
         "02b2b6df",
         "d992c836",
         "258bddb2",
+        "095f8db9",
         "f6ebd39c",
         "a7658db1"
       ],
@@ -71,11 +84,27 @@
           ]
         },
         {
+          "id": "de3ff94a",
+          "title": "Community Land Trust Book",
+          "score": 9,
+          "matched_on": [
+            "community land trust"
+          ]
+        },
+        {
           "id": "f7638ce0",
           "title": "The senior cohousing handbook : a community approach to independent living",
           "score": 9,
           "matched_on": [
             "community land trust"
+          ]
+        },
+        {
+          "id": "ff069338",
+          "title": "mini-manuel",
+          "score": 9,
+          "matched_on": [
+            "bail emphytéotique"
           ]
         },
         {
@@ -131,8 +160,25 @@
           ]
         },
         {
+          "id": "2e2e4bc7",
+          "title": "The condo and co-op book : a game plan for winning the condo/co-op conversion battle",
+          "score": 8,
+          "matched_on": [
+            "fiducie foncière",
+            "community land trust"
+          ]
+        },
+        {
           "id": "ed6b79d9",
           "title": "7. IJBGM Legal Issues In Co Operatives Rosini",
+          "score": 8,
+          "matched_on": [
+            "community land trust"
+          ]
+        },
+        {
+          "id": "99a6d367",
+          "title": "From rental to cooperative : improving low and moderate income housing",
           "score": 8,
           "matched_on": [
             "community land trust"
@@ -199,11 +245,52 @@
           ]
         },
         {
+          "id": "6d4f3628",
+          "title": "Sweat equity : cooperative house-building in Newfoundland, 1920 1974",
+          "score": 8,
+          "matched_on": [
+            "community land trust"
+          ]
+        },
+        {
+          "id": "941861fb",
+          "title": "We're in charge : cohousing communities of older people in the Netherlands : lessons for Britain",
+          "score": 8,
+          "matched_on": [
+            "community land trust"
+          ]
+        },
+        {
           "id": "18b4c3ab",
           "title": "A study of co-operative housing",
           "score": 8,
           "matched_on": [
             "community land trust"
+          ]
+        },
+        {
+          "id": "f51dd9f5",
+          "title": "mini-manuel",
+          "score": 8,
+          "matched_on": [
+            "fonds de dotation"
+          ]
+        },
+        {
+          "id": "b2d08fef",
+          "title": "mini-manuel",
+          "score": 8,
+          "matched_on": [
+            "fonds de dotation",
+            "bail emphytéotique"
+          ]
+        },
+        {
+          "id": "876db11d",
+          "title": "mini-manuel",
+          "score": 8,
+          "matched_on": [
+            "fonds de dotation"
           ]
         },
         {
@@ -221,6 +308,22 @@
           "matched_on": [
             "propriété d'usage",
             "fonds de dotation"
+          ]
+        },
+        {
+          "id": "28b7cb2c",
+          "title": "The Cooperative Way of Housing in Canada, by Alexander F. Laidlaw, conference paper, Third International Symposium on Lower-Cost Housing Problems, International Association for Housing Science, Montreal, 1974.",
+          "score": 7,
+          "matched_on": [
+            "community land trust"
+          ]
+        },
+        {
+          "id": "2175f7a3",
+          "title": "Housing You Can Afford (co-op housing in Canada) (1977) Alexander F. Laidlaw, Toronto: Greentree Publishing.",
+          "score": 7,
+          "matched_on": [
+            "community land trust"
           ]
         },
         {
@@ -254,6 +357,14 @@
           "score": 7,
           "matched_on": [
             "propriété d'usage"
+          ]
+        },
+        {
+          "id": "eb18a3de",
+          "title": "Going co-op : the complete guide to buying and owning your own apartment",
+          "score": 7,
+          "matched_on": [
+            "community land trust"
           ]
         },
         {
@@ -305,6 +416,14 @@
           ]
         },
         {
+          "id": "095f8db9",
+          "title": "· ZADissidences 3 (page par page) (PDF)",
+          "score": 6,
+          "matched_on": [
+            "fonds de dotation"
+          ]
+        },
+        {
           "id": "f6ebd39c",
           "title": "In Defense — Such As It Is — of Usufructory Land Ownership",
           "score": 6,
@@ -326,25 +445,36 @@
       "slug": "zad-defense-de-territoires",
       "titre": "ZAD & défense de territoires",
       "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-      "doc_count": 25,
+      "doc_count": 36,
       "docs": [
+        "38a113bc",
         "de319a22",
         "b4712d32",
         "2e5629b5",
         "f61a2368",
         "33f14cc5",
         "67a24eca",
+        "c97fba28",
         "54f18780",
         "7f6bdc89",
+        "a90d3977",
         "6772ded1",
         "b7d54170",
         "a54f94c8",
+        "df840ff3",
+        "9789d29b",
+        "e9b2bf94",
+        "f2168aa7",
         "f9be42fe",
         "8156629f",
         "02b2b6df",
         "b85c8bc1",
         "d992c836",
+        "b651aa85",
         "258bddb2",
+        "095f8db9",
+        "073089a1",
+        "ce124b01",
         "38f15499",
         "5ea1719f",
         "bc522fd4",
@@ -355,6 +485,15 @@
         "df13538a"
       ],
       "docs_detail": [
+        {
+          "id": "38a113bc",
+          "title": "· La fin de la ZAD, le début de quoi ? (cahier) (PDF)",
+          "score": 9,
+          "matched_on": [
+            "zad",
+            "occupation"
+          ]
+        },
         {
           "id": "de319a22",
           "title": "· réflexions sur la zad (version brochure) (PDF)",
@@ -416,6 +555,15 @@
           ]
         },
         {
+          "id": "c97fba28",
+          "title": "· Un an après les expulsions, qu’est-ce qu’on fait encore sur la ZAD ? (cahier) (PDF)",
+          "score": 8,
+          "matched_on": [
+            "zad",
+            "occupation"
+          ]
+        },
+        {
           "id": "54f18780",
           "title": "The Highland Land War",
           "score": 8,
@@ -428,6 +576,15 @@
           "title": "Beyond the Peasant International",
           "score": 8,
           "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "a90d3977",
+          "title": "· Que reste-t-il du champ des possibles ouvert par la zad ? (page par page) (PDF)",
+          "score": 7,
+          "matched_on": [
+            "zad",
             "occupation"
           ]
         },
@@ -450,6 +607,38 @@
         {
           "id": "a54f94c8",
           "title": "· Forêt en lutte - lutte en forêt (cahier) (PDF)",
+          "score": 7,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "df840ff3",
+          "title": "· Ocupar... é lutar (version portugaise, à lire sur l’écran) (PDF)",
+          "score": 7,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "9789d29b",
+          "title": "· To squat... is to struggle (version anglaise, à imprimer) (PDF)",
+          "score": 7,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "e9b2bf94",
+          "title": "· Occupare... è lottare (version italienne, à imprimer) (PDF)",
+          "score": 7,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "f2168aa7",
+          "title": "· Skvotuoti... Reiskia Kovoti (version lituanienne, à lire sur l’écran) (PDF)",
           "score": 7,
           "matched_on": [
             "occupation"
@@ -504,6 +693,14 @@
           ]
         },
         {
+          "id": "b651aa85",
+          "title": "· La grève des loyers dans les foyers Sonacotra - version légère page par page (PDF)",
+          "score": 6,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
           "id": "258bddb2",
           "title": "· ZADisiidences 3 (cahier) (PDF)",
           "score": 6,
@@ -512,6 +709,40 @@
             "zone à défendre",
             "notre-dame-des-landes",
             "occupation"
+          ]
+        },
+        {
+          "id": "095f8db9",
+          "title": "· ZADissidences 3 (page par page) (PDF)",
+          "score": 6,
+          "matched_on": [
+            "zad",
+            "notre-dame-des-landes",
+            "occupation",
+            "aéroport"
+          ]
+        },
+        {
+          "id": "073089a1",
+          "title": "· ZADissidences 2 (cahier) (PDF)",
+          "score": 6,
+          "matched_on": [
+            "zad",
+            "notre-dame-des-landes",
+            "occupation",
+            "aéroport"
+          ]
+        },
+        {
+          "id": "ce124b01",
+          "title": "· ZADissidences 2 (page par page) (PDF)",
+          "score": 6,
+          "matched_on": [
+            "zad",
+            "zone à défendre",
+            "notre-dame-des-landes",
+            "occupation",
+            "aéroport"
           ]
         },
         {
@@ -591,8 +822,13 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 40,
+      "doc_count": 46,
       "docs": [
+        "8bfe460c",
+        "03b9d287",
+        "35641d6d",
+        "dc1574ae",
+        "44510a9a",
         "931fc89b",
         "c2ab1111",
         "5da811ca",
@@ -624,6 +860,7 @@
         "496c1d78",
         "915b8d79",
         "02b2b6df",
+        "a238e5bd",
         "b85c8bc1",
         "d992c836",
         "95e763e1",
@@ -635,6 +872,50 @@
         "fba04469"
       ],
       "docs_detail": [
+        {
+          "id": "8bfe460c",
+          "title": "The Peasant Movement in Kwantung: Materials On The Agrarian Problem In China. Part II",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "03b9d287",
+          "title": "Combate 13 de Marzo año III nr. 29 (18 abril 1959)",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire",
+            "reforma agraria"
+          ]
+        },
+        {
+          "id": "35641d6d",
+          "title": "Lunes de Revolución nr. 10 (18 mayo 1959)",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire",
+            "reforma agraria"
+          ]
+        },
+        {
+          "id": "dc1574ae",
+          "title": "Combate 13 de Marzo año III nr. 33 (23 abril 1959)",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire",
+            "reforma agraria"
+          ]
+        },
+        {
+          "id": "44510a9a",
+          "title": "Reforma agraria : Guatemala - Bolivia - Cuba",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire",
+            "reforma agraria"
+          ]
+        },
         {
           "id": "931fc89b",
           "title": "Community Land Trust Leaflet",
@@ -916,6 +1197,14 @@
           ]
         },
         {
+          "id": "a238e5bd",
+          "title": "Dipankar Gupta Rivalry And Brotherhood Politics In The Life Of Farmers In Northern India Oxford University Press ( 1997)",
+          "score": 6,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
           "id": "b85c8bc1",
           "title": "· Contre la légende et l’oubli (page par page) (PDF)",
           "score": 6,
@@ -1002,19 +1291,23 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 59,
+      "doc_count": 72,
       "docs": [
         "d30c223f",
         "05392c72",
+        "96563571",
         "931fc89b",
         "5da811ca",
         "2ab410d3",
+        "54e772e7",
         "dd858578",
         "5e4ff884",
         "acd4bba6",
         "071a9375",
         "872bf6a1",
+        "de3ff94a",
         "f7638ce0",
+        "ff069338",
         "9e831a55",
         "e5341cc9",
         "7b89d6d1",
@@ -1023,7 +1316,9 @@
         "5f5dadd2",
         "97c3bbb4",
         "a91bd215",
+        "2e2e4bc7",
         "ed6b79d9",
+        "99a6d367",
         "089ddfba",
         "08baa6d1",
         "2e5629b5",
@@ -1037,9 +1332,14 @@
         "2aa52e26",
         "8413ce56",
         "6325ebd3",
+        "6d4f3628",
+        "941861fb",
         "18b4c3ab",
+        "876db11d",
         "2db11a52",
         "85a0da6c",
+        "28b7cb2c",
+        "2175f7a3",
         "12a4e254",
         "a54f94c8",
         "7d4cb4f0",
@@ -1050,12 +1350,14 @@
         "345aa541",
         "ea71c1cb",
         "915b8d79",
+        "eb18a3de",
         "c210135f",
         "1d3081c2",
         "8470552d",
         "d647480f",
         "b85c8bc1",
         "d992c836",
+        "b651aa85",
         "83b6390f",
         "95e763e1",
         "c0744b42",
@@ -1082,6 +1384,15 @@
             "communaux",
             "biens communaux",
             "terres communales",
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "96563571",
+          "title": "Human rights : the commons and the collective",
+          "score": 9,
+          "matched_on": [
             "enclosure",
             "commons"
           ]
@@ -1114,6 +1425,14 @@
             "communaux",
             "communs fonciers",
             "enclosure"
+          ]
+        },
+        {
+          "id": "54e772e7",
+          "title": "· La République des Escartons (cahier) (PDF)",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers"
           ]
         },
         {
@@ -1163,11 +1482,27 @@
           ]
         },
         {
+          "id": "de3ff94a",
+          "title": "Community Land Trust Book",
+          "score": 9,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
           "id": "f7638ce0",
           "title": "The senior cohousing handbook : a community approach to independent living",
           "score": 9,
           "matched_on": [
             "commons"
+          ]
+        },
+        {
+          "id": "ff069338",
+          "title": "mini-manuel",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers"
           ]
         },
         {
@@ -1250,8 +1585,24 @@
           ]
         },
         {
+          "id": "2e2e4bc7",
+          "title": "The condo and co-op book : a game plan for winning the condo/co-op conversion battle",
+          "score": 8,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
           "id": "ed6b79d9",
           "title": "7. IJBGM Legal Issues In Co Operatives Rosini",
+          "score": 8,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
+          "id": "99a6d367",
+          "title": "From rental to cooperative : improving low and moderate income housing",
           "score": 8,
           "matched_on": [
             "commons"
@@ -1375,11 +1726,35 @@
           ]
         },
         {
+          "id": "6d4f3628",
+          "title": "Sweat equity : cooperative house-building in Newfoundland, 1920 1974",
+          "score": 8,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
+          "id": "941861fb",
+          "title": "We're in charge : cohousing communities of older people in the Netherlands : lessons for Britain",
+          "score": 8,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
           "id": "18b4c3ab",
           "title": "A study of co-operative housing",
           "score": 8,
           "matched_on": [
             "commons"
+          ]
+        },
+        {
+          "id": "876db11d",
+          "title": "mini-manuel",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers"
           ]
         },
         {
@@ -1400,6 +1775,22 @@
           "matched_on": [
             "communs fonciers",
             "enclosure"
+          ]
+        },
+        {
+          "id": "28b7cb2c",
+          "title": "The Cooperative Way of Housing in Canada, by Alexander F. Laidlaw, conference paper, Third International Symposium on Lower-Cost Housing Problems, International Association for Housing Science, Montreal, 1974.",
+          "score": 7,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
+          "id": "2175f7a3",
+          "title": "Housing You Can Afford (co-op housing in Canada) (1977) Alexander F. Laidlaw, Toronto: Greentree Publishing.",
+          "score": 7,
+          "matched_on": [
+            "commons"
           ]
         },
         {
@@ -1495,6 +1886,14 @@
           ]
         },
         {
+          "id": "eb18a3de",
+          "title": "Going co-op : the complete guide to buying and owning your own apartment",
+          "score": 7,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
           "id": "c210135f",
           "title": "Creating community in the city : cooperatives and community gardens in Washington, D.C.",
           "score": 7,
@@ -1540,6 +1939,14 @@
         {
           "id": "d992c836",
           "title": "· Contre la légende et l’oubli (cahier) (PDF)",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "b651aa85",
+          "title": "· La grève des loyers dans les foyers Sonacotra - version légère page par page (PDF)",
           "score": 6,
           "matched_on": [
             "communs fonciers"
@@ -1610,15 +2017,20 @@
       "slug": "habitat-collectif-cooperatif",
       "titre": "Habitat collectif & coopératif",
       "chapo": "Habiter la terre autrement : coopératives d'habitants, habitat groupé, communautés intentionnelles, squats ruraux. Des formes de logement sorties de la spéculation et ancrées dans un sol partagé.",
-      "doc_count": 13,
+      "doc_count": 18,
       "docs": [
         "931fc89b",
         "f7638ce0",
+        "2e2e4bc7",
         "ed6b79d9",
+        "99a6d367",
         "2e5629b5",
         "33f14cc5",
         "67a24eca",
         "6325ebd3",
+        "28b7cb2c",
+        "2175f7a3",
+        "df840ff3",
         "8156629f",
         "c210135f",
         "1d3081c2",
@@ -1645,11 +2057,28 @@
           ]
         },
         {
+          "id": "2e2e4bc7",
+          "title": "The condo and co-op book : a game plan for winning the condo/co-op conversion battle",
+          "score": 8,
+          "matched_on": [
+            "habitat coopératif"
+          ]
+        },
+        {
           "id": "ed6b79d9",
           "title": "7. IJBGM Legal Issues In Co Operatives Rosini",
           "score": 8,
           "matched_on": [
             "habitat coopératif"
+          ]
+        },
+        {
+          "id": "99a6d367",
+          "title": "From rental to cooperative : improving low and moderate income housing",
+          "score": 8,
+          "matched_on": [
+            "habitat coopératif",
+            "housing cooperative"
           ]
         },
         {
@@ -1686,6 +2115,32 @@
           "matched_on": [
             "habitat coopératif",
             "coopérative d'habitants",
+            "logement collectif"
+          ]
+        },
+        {
+          "id": "28b7cb2c",
+          "title": "The Cooperative Way of Housing in Canada, by Alexander F. Laidlaw, conference paper, Third International Symposium on Lower-Cost Housing Problems, International Association for Housing Science, Montreal, 1974.",
+          "score": 7,
+          "matched_on": [
+            "habitat coopératif",
+            "housing cooperative"
+          ]
+        },
+        {
+          "id": "2175f7a3",
+          "title": "Housing You Can Afford (co-op housing in Canada) (1977) Alexander F. Laidlaw, Toronto: Greentree Publishing.",
+          "score": 7,
+          "matched_on": [
+            "habitat coopératif",
+            "housing cooperative"
+          ]
+        },
+        {
+          "id": "df840ff3",
+          "title": "· Ocupar... é lutar (version portugaise, à lire sur l’écran) (PDF)",
+          "score": 7,
+          "matched_on": [
             "logement collectif"
           ]
         },
@@ -1745,18 +2200,24 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 70,
+      "doc_count": 86,
       "docs": [
+        "8bfe460c",
         "c2ab1111",
+        "38a113bc",
         "5da811ca",
+        "ba64641a",
         "642889b8",
         "2ab410d3",
+        "54e772e7",
         "c8d42f2f",
         "dd858578",
         "5e4ff884",
         "071a9375",
+        "ff069338",
         "9e831a55",
         "c99e6da4",
+        "e4f64264",
         "55db5001",
         "7b89d6d1",
         "0b22d51b",
@@ -1777,11 +2238,13 @@
         "95ced9d7",
         "7f6bdc89",
         "5a759db6",
+        "876db11d",
         "2db11a52",
         "d64f2d03",
         "46327ff6",
         "85a0da6c",
         "a6be9af5",
+        "a90d3977",
         "6772ded1",
         "b7d54170",
         "235a98fb",
@@ -1795,16 +2258,24 @@
         "496c1d78",
         "915b8d79",
         "02b2b6df",
+        "a238e5bd",
+        "5ea6c0cc",
         "d647480f",
         "b85c8bc1",
         "d992c836",
+        "b651aa85",
         "83b6390f",
         "95e763e1",
         "9e8c8fc5",
         "6161499c",
         "258bddb2",
+        "095f8db9",
+        "073089a1",
+        "ce124b01",
         "38f15499",
         "5ea1719f",
+        "336d8c22",
+        "22b1d1f9",
         "7e814cb7",
         "779edb5d",
         "aff51cb1",
@@ -1820,6 +2291,15 @@
       ],
       "docs_detail": [
         {
+          "id": "8bfe460c",
+          "title": "The Peasant Movement in Kwantung: Materials On The Agrarian Problem In China. Part II",
+          "score": 9,
+          "matched_on": [
+            "paysan",
+            "peasant"
+          ]
+        },
+        {
           "id": "c2ab1111",
           "title": "· Cultiver ou mourir (page par page) (PDF)",
           "score": 9,
@@ -1831,6 +2311,15 @@
           ]
         },
         {
+          "id": "38a113bc",
+          "title": "· La fin de la ZAD, le début de quoi ? (cahier) (PDF)",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
           "id": "5da811ca",
           "title": "· Récupération de terres (page par page) (PDF)",
           "score": 9,
@@ -1838,6 +2327,15 @@
             "paysannerie",
             "paysan",
             "agroécologie"
+          ]
+        },
+        {
+          "id": "ba64641a",
+          "title": "· Récupération de terres (cahier) (PDF)",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
           ]
         },
         {
@@ -1852,6 +2350,15 @@
         {
           "id": "2ab410d3",
           "title": "· Les radicaux urbains et paysans dans la révolution anglaise (cahier) (PDF)",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "54e772e7",
+          "title": "· La République des Escartons (cahier) (PDF)",
           "score": 9,
           "matched_on": [
             "paysannerie",
@@ -1895,6 +2402,14 @@
           ]
         },
         {
+          "id": "ff069338",
+          "title": "mini-manuel",
+          "score": 9,
+          "matched_on": [
+            "paysan"
+          ]
+        },
+        {
           "id": "9e831a55",
           "title": "The Tree, The Rock, and the Morrow",
           "score": 8,
@@ -1914,6 +2429,16 @@
             "paysannerie",
             "paysan",
             "souveraineté alimentaire",
+            "peasant"
+          ]
+        },
+        {
+          "id": "e4f64264",
+          "title": "Podłoże ruchu chłopskiego : uwagi socjologiczne",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
             "peasant"
           ]
         },
@@ -2120,6 +2645,16 @@
           ]
         },
         {
+          "id": "876db11d",
+          "title": "mini-manuel",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture paysanne"
+          ]
+        },
+        {
           "id": "2db11a52",
           "title": "Chaire VALCOM - Valoriser les communs fonciers",
           "score": 7,
@@ -2161,6 +2696,15 @@
         {
           "id": "a6be9af5",
           "title": "· Agricultures libertaires et révolutions (cahier) (PDF)",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "a90d3977",
+          "title": "· Que reste-t-il du champ des possibles ouvert par la zad ? (page par page) (PDF)",
           "score": 7,
           "matched_on": [
             "paysannerie",
@@ -2293,6 +2837,24 @@
           ]
         },
         {
+          "id": "a238e5bd",
+          "title": "Dipankar Gupta Rivalry And Brotherhood Politics In The Life Of Farmers In Northern India Oxford University Press ( 1997)",
+          "score": 6,
+          "matched_on": [
+            "paysan",
+            "peasant"
+          ]
+        },
+        {
+          "id": "5ea6c0cc",
+          "title": "Ulka Mahajan in Manthan Nov-Dec 2006",
+          "score": 6,
+          "matched_on": [
+            "paysan",
+            "peasant"
+          ]
+        },
+        {
           "id": "d647480f",
           "title": "Communs « fonciers », communs « informationnels ». Traits communs et différences.",
           "score": 6,
@@ -2313,6 +2875,15 @@
         {
           "id": "d992c836",
           "title": "· Contre la légende et l’oubli (cahier) (PDF)",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "b651aa85",
+          "title": "· La grève des loyers dans les foyers Sonacotra - version légère page par page (PDF)",
           "score": 6,
           "matched_on": [
             "paysannerie",
@@ -2369,6 +2940,33 @@
           ]
         },
         {
+          "id": "095f8db9",
+          "title": "· ZADissidences 3 (page par page) (PDF)",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "073089a1",
+          "title": "· ZADissidences 2 (cahier) (PDF)",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "ce124b01",
+          "title": "· ZADissidences 2 (page par page) (PDF)",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
           "id": "38f15499",
           "title": "· La fin de la ZAD, le début de quoi ? (page par page) (PDF)",
           "score": 6,
@@ -2380,6 +2978,24 @@
         {
           "id": "5ea1719f",
           "title": "· Zadissidences (page par page) (PDF)",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "336d8c22",
+          "title": "· Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-livret (PDF)",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "22b1d1f9",
+          "title": "· Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-fil (PDF)",
           "score": 6,
           "matched_on": [
             "paysannerie",
@@ -2505,7 +3121,7 @@
       "slug": "land-back-autochtones",
       "titre": "Land Back & souverainetés autochtones",
       "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-      "doc_count": 20,
+      "doc_count": 22,
       "docs": [
         "c2ab1111",
         "5da811ca",
@@ -2517,6 +3133,8 @@
         "afcd5ef8",
         "47c6599a",
         "f61a2368",
+        "2c9a5575",
+        "19101c21",
         "54f18780",
         "95ced9d7",
         "7f6bdc89",
@@ -2614,6 +3232,24 @@
           "score": 8,
           "matched_on": [
             "droit coutumier"
+          ]
+        },
+        {
+          "id": "2c9a5575",
+          "title": "· Acerca de las comunidades mapuche en guerra y la solidaridad anárquica (version espagnole - page par page) (PDF)",
+          "score": 8,
+          "matched_on": [
+            "terra indígena",
+            "indigenous"
+          ]
+        },
+        {
+          "id": "19101c21",
+          "title": "· À propos des communautés mapuches en guerre et de la solidarité anarchiste (cahier) (PDF)",
+          "score": 8,
+          "matched_on": [
+            "terra indígena",
+            "indigenous"
           ]
         },
         {
@@ -2751,10 +3387,11 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 42,
+      "doc_count": 43,
       "docs": [
         "d30c223f",
         "05392c72",
+        "96563571",
         "931fc89b",
         "c2ab1111",
         "5da811ca",
@@ -2808,6 +3445,14 @@
         {
           "id": "05392c72",
           "title": "Observations sur le décret du 28 aoust 1792, qui accorde aux habitans des communes la propriété et le partage des biens dits communaux /",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "96563571",
+          "title": "Human rights : the commons and the collective",
           "score": 9,
           "matched_on": [
             "enclosure"
