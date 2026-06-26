@@ -4855,78 +4855,6 @@
     "acteurs": []
    }
   },
-  "22b9da21": {
-   "id": "22b9da21",
-   "url": "https://infokiosques.net/IMG/pdf/marcel_paysan_inderacinable-24p-A5-livret.pdf",
-   "filename": "marcel_paysan_inderacinable-24p-A5-livret.pdf",
-   "format": "pdf",
-   "source": "Infokiosques.net — Paysannerie & ruralité",
-   "first_seen": "2026-05-23_00-59",
-   "latest_run": "2026-06-25_14-34",
-   "collected_date": "2026-06-25_14-34",
-   "score_initial": 8,
-   "score_final": 8,
-   "latest_score": 8,
-   "doc_type": "autre",
-   "recit_de_lutte": false,
-   "doc_date": "2016-01-05",
-   "lang": "fr",
-   "editeur": "",
-   "doi": "",
-   "isbn": "",
-   "hal_id": "",
-   "versions": [],
-   "downloaded": true,
-   "saved_as": "docs/22b9da21_marcel_paysan_inderacinable-24p-A5-livret.pdf",
-   "runs": [
-    {
-     "date": "2026-05-23_00-59",
-     "score": 9,
-     "raison": "Titre contient explicitement 'paysan', mot-clé central (paysannerie, paysans libres, paysannerie familiale, accès à la terre).",
-     "context_seen": "formats: · HTML · marcel_paysan_inderacinable-24p-A5-livret.pdf (PDF) · marcel_paysan_inderacinable-48p-A4-fil-pdf.pdf (PDF)",
-     "link_text": "· marcel_paysan_inderacinable-24p-A5-livret.pdf (PDF)",
-     "downloaded": true,
-     "model": "",
-     "prompt_version": ""
-    },
-    {
-     "date": "2026-06-25_14-34",
-     "score": 8,
-     "raison": "Titre 'marcel_paysan_inderacinable' cite explicitement le mot-clé 'paysan'",
-     "context_seen": "formats: · HTML · marcel_paysan_inderacinable-24p-A5-livret.pdf (PDF) · marcel_paysan_inderacinable-48p-A4-fil-pdf.pdf (PDF)",
-     "link_text": "· marcel_paysan_inderacinable-24p-A5-livret.pdf (PDF)",
-     "downloaded": true,
-     "model": "",
-     "prompt_version": ""
-    }
-   ],
-   "cover": "covers/22b9da21.png",
-   "bulle": "bulles/22b9da21.json",
-   "meta": {
-    "page_count": 24,
-    "pdf_title": "",
-    "pdf_author": "",
-    "pdf_creator": "TeX"
-   },
-   "enrichment": {
-    "error": "pdf_absent_disque",
-    "summary": "Livret de 24 pages en format A5 racontant l'histoire de Marcel, paysan résistant à l'expropriation et défenseur de la paysannerie. Le titre 'indéracinable' évoque l'attachement viscéral à la terre et la résistance à la dépossession foncière. Ce document s'inscrit dans la tradition des témoignages de paysans en lutte contre l'agrandissement des exploitations, les remembrements forcés ou les projets d'aménagement du territoire menaçant les fermes familiales.",
-    "citations": [],
-    "matched_keywords": [
-     "paysannerie",
-     "résistance foncière",
-     "expropriation",
-     "terre",
-     "luttes agraires"
-    ],
-    "acteurs": []
-   },
-   "download_status": "already_present",
-   "link_status": "unchecked",
-   "link_checked": "2026-05-24T19:16:12Z",
-   "archive_url": "http://web.archive.org/web/20240629031242/https://infokiosques.net/IMG/pdf/marcel_paysan_inderacinable-24p-A5-livret.pdf",
-   "title": "Marcel, paysan indéracinable (livret A5, 24 pages)"
-  },
   "642889b8": {
    "id": "642889b8",
    "url": "https://infokiosques.net/IMG/pdf/marcel_paysan_inderacinable-48p-A4-fil-pdf.pdf",
@@ -11573,7 +11501,7 @@
   }
  },
  "meta": {
-  "last_updated": "2026-06-26T16:42:12+00:00",
+  "last_updated": "2026-06-26T16:48:46+00:00",
   "total_docs": 965,
   "total_downloaded": 269,
   "total_published": 145,
@@ -11603,7 +11531,7 @@
    "9": 20,
    "10": 0
   },
-  "last_archive_run": "2026-06-26T16:42:12+00:00",
+  "last_archive_run": "2026-06-26T16:48:46+00:00",
   "archived_total": 699
  }
 }
