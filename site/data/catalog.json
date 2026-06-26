@@ -556,6 +556,174 @@
    "link_status": "dead",
    "link_checked": "2026-06-25T15:35:32Z"
   },
+  "e4f64264": {
+   "id": "e4f64264",
+   "url": "https://archive.org/download/rcin.org.pl.WA308_15801_B2125_PODLOZE-RUCHU_I_5638/rcin.org.pl.WA308_15801_B2125_PODLOZE-RUCHU_I_5638.pdf",
+   "filename": "rcin.org.pl.WA308_15801_B2125_PODLOZE-RUCHU_I_5638.pdf",
+   "format": "pdf",
+   "source": "Archive.org — peasant movements",
+   "first_seen": "2026-05-15_16-10",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": true,
+   "saved_as": "docs/e4f64264_rcin.org.pl.WA308_15801_B2125_PODLOZE-RUCHU_I_5638.pdf",
+   "runs": [
+    {
+     "date": "2026-05-15_16-10",
+     "score": 6,
+     "raison": "Titre indique une étude sociologique des mouvements paysans, pertinent mais contexte insuffisant.",
+     "context_seen": "rcin.org.pl.WA308_15801_B2125_PODLOZE-RUCHU_I_5638.pdf",
+     "link_text": "rcin.org.pl.WA308_15801_B2125_PODLOZE-RUCHU_I_5638.pdf",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-16_08-58",
+     "score": 9,
+     "raison": "Titre cite 'ruchu chłopskiego' (mouvement paysan) — thématique centrale",
+     "context_seen": "24 p. ; 23 cm;Bibliographical footnotes",
+     "link_text": "Podłoże ruchu chłopskiego : uwagi socjologiczne",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-17_19-48",
+     "score": 7,
+     "raison": "Titre cite 'ruchu chłopskiego' (mouvement paysan, paysannerie)",
+     "context_seen": "24 p. ; 23 cm;Bibliographical footnotes",
+     "link_text": "Podłoże ruchu chłopskiego : uwagi socjologiczne",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-23_00-59",
+     "score": 8,
+     "raison": "Titre cite 'ruchu chłopskiego' (mouvement paysan), qui correspond au mot-clé central 'paysannerie' de la thématique",
+     "context_seen": "24 p. ; 23 cm;Bibliographical footnotes",
+     "link_text": "Podłoże ruchu chłopskiego : uwagi socjologiczne",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "24 p. ; 23 cm;Bibliographical footnotes",
+     "link_text": "Podłoże ruchu chłopskiego : uwagi socjologiczne",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok_via_variant",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 8,
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2012-05-27",
+   "lang": "en",
+   "editeur": "ABBYY FineReader 10",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "cover": "covers/e4f64264.png",
+   "meta": {
+    "page_count": 24,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": ""
+   },
+   "enrichment": {
+    "error": "json_parse: Expecting property name enclosed in double quotes: line 6 column 106 (char 1504)",
+    "raw_response": "{\n  \"summary\": \"Stefan Czarnowski propose une analyse sociologique des mouvements paysans, retraçant leur histoire millénaire depuis les Bagaudes romains jusqu'aux révoltes paysannes polonaises du XIXe siècle. L'auteur situe la classe paysanne comme l'une des plus anciennes couches sociales, fondement matériel de toute société (les « nourrisseurs » selon la doctrine médiévale), exploitée par les aristocraties féodale et cléricale. Czarnowski caractérise le paysannat par un traditionalisme radica"
+   },
+   "link_status": "dead",
+   "link_checked": "2026-06-25T15:35:32Z"
+  },
+  "8bfe460c": {
+   "id": "8bfe460c",
+   "url": "https://archive.org/download/borodin-m.-volin-m.-yolk-e.-the-peasant-movement-in-kwantung.-materials-on-the-a/borodin-m.-volin-m.-yolk-e.-the-peasant-movement-in-kwantung.-materials-on-the-a.pdf",
+   "filename": "borodin-m.-volin-m.-yolk-e.-the-peasant-movement-in-kwantung.-materials-on-the-a.pdf",
+   "format": "pdf",
+   "source": "Archive.org — peasant movements",
+   "first_seen": "2026-05-15_16-10",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": true,
+   "saved_as": "docs/8bfe460c_borodin-m.-volin-m.-yolk-e.-the-peasant-movement-in-kwantung.-materials-on-the-a.pdf",
+   "runs": [
+    {
+     "date": "2026-05-15_16-10",
+     "score": 9,
+     "raison": "Directement sur le mouvement paysan ET le problème agraire en Chine, couvre des enjeux de réforme agraire.",
+     "context_seen": "borodin-m.-volin-m.-yolk-e.-the-peasant-movement-in-kwantung.-materials-on-the-a.pdf",
+     "link_text": "borodin-m.-volin-m.-yolk-e.-the-peasant-movement-in-kwantung.-materials-on-the-a.pdf",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-16_08-58",
+     "score": 5,
+     "raison": "Contexte mentionne 'peasant movement' et 'Jat farmers' mais l'étude porte sur 'politics' et 'traditions revived for contemporary purposes', sans mention explicite de propriété foncière, réforme agraire ou communs",
+     "context_seen": "Бородин, Михаил Маркович, 1884-1951, Йолк, Евгений Сигизмундович, 1900-1937, Волин, М., (Беленький Семен Натанович), 1896-? — Canton, China: The Canton Gazette Publishing Co., 1927. — 648 p. Part Two represents a collection of special materials, translated from the Chinese, referring to the peasant movement and covering the past several years (chiefly 19’25 and 1926). The main source of those mat…",
+     "link_text": "The Peasant Movement in Kwantung: Materials On The Agrarian Problem In China. Part II",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-17_19-48",
+     "score": 9,
+     "raison": "Titre cite explicitement 'The Peasant Movement in Kwantung' et 'The Agrarian Problem In China'",
+     "context_seen": "Бородин, Михаил Маркович, 1884-1951, Йолк, Евгений Сигизмундович, 1900-1937, Волин, М., (Беленький Семен Натанович), 1896-? — Canton, China: The Canton Gazette Publishing Co., 1927. — 648 p. Part Two represents a collection of special materials, translated from the Chinese, referring to the peasant movement and covering the past several years (chiefly 19’25 and 1926). The main source of those mat…",
+     "link_text": "The Peasant Movement in Kwantung: Materials On The Agrarian Problem In China. Part II",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-23_00-59",
+     "score": 9,
+     "raison": "Titre cite explicitement 'Peasant Movement' et 'Agrarian Problem In China' ; collection de matériaux primaires (1927) documentant mouvements paysans",
+     "context_seen": "Бородин, Михаил Маркович, 1884-1951, Йолк, Евгений Сигизмундович, 1900-1937, Волин, М., (Беленький Семен Натанович), 1896-? — Canton, China: The Canton Gazette Publishing Co., 1927. — 648 p. Part Two represents a collection of special materials, translated from the Chinese, referring to the peasant movement and covering the past several years (chiefly 19’25 and 1926). The main source of those mat…",
+     "link_text": "The Peasant Movement in Kwantung: Materials On The Agrarian Problem In China. Part II",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Бородин, Михаил Маркович, 1884-1951, Йолк, Евгений Сигизмундович, 1900-1937, Волин, М., (Беленький Семен Натанович), 1896-? — Canton, China: The Canton Gazette Publishing Co., 1927. — 648 p. Part Two represents a collection of special materials, translated from the Chinese, referring to the peasant movement and covering the past several years (chiefly 19’25 and 1926). The main source of those mat…",
+     "link_text": "The Peasant Movement in Kwantung: Materials On The Agrarian Problem In China. Part II",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok_via_variant",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 9,
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "en",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "cover": "covers/8bfe460c.png",
+   "meta": {
+    "page_count": 651,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": ""
+   },
+   "enrichment": {
+    "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
+    "raw_response": "Je constate que le texte fourni ne contient que des marqueurs de page `[p.1]` à `[p.651]`, sans aucun contenu textuel réel entre ces balises. Le document semble être vide ou mal extrait du PDF.\n\n**Je ne peux pas produire l'analyse demandée car il n'y a rien à analyser.** Selon vos instructions explicites (\"Ne fabrique RIEN\"), je refuserai d'inventer du contenu ou des matched keywords.\n\nPouvez-vous :\n1. **Vérifier l'extraction du PDF** — s'assurer que le texte brut contient effectivement le conte"
+   },
+   "link_status": "dead",
+   "link_checked": "2026-06-25T15:35:32Z"
+  },
   "55db5001": {
    "id": "55db5001",
    "url": "https://archive.org/download/lvc-we-feed-the-world-a-5-en-compressed/lvc-we-feed-the-world-a-5-en-compressed.pdf",
@@ -766,6 +934,89 @@
     "prompt_version": "bc3c42da11"
    },
    "link_status": "dead",
+   "link_checked": "2026-06-25T15:35:32Z"
+  },
+  "5ea6c0cc": {
+   "id": "5ea6c0cc",
+   "url": "https://archive.org/download/ulka-mahajan-manthan-NovDec2006/ulka-mahajan-manthan-NovDec2006.pdf",
+   "filename": "ulka-mahajan-manthan-NovDec2006.pdf",
+   "format": "pdf",
+   "source": "Archive.org — peasant movements",
+   "first_seen": "2026-05-15_16-10",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": true,
+   "saved_as": "docs/5ea6c0cc_ulka-mahajan-manthan-NovDec2006.pdf",
+   "runs": [
+    {
+     "date": "2026-05-15_16-10",
+     "score": 6,
+     "raison": "Porte sur l'organisation paysanne au Maharashtra, pertinent pour mouvements paysans mais contexte limité.",
+     "context_seen": "ulka-mahajan-manthan-NovDec2006.pdf",
+     "link_text": "ulka-mahajan-manthan-NovDec2006.pdf",
+     "downloaded": true
+    },
+    {
+     "date": "2026-05-16_08-58",
+     "score": 8,
+     "raison": "Contexte : 'on the peasant organisation in Maharashtra'",
+     "context_seen": "Ulka Mahajan on the peasant organisation in Maharashtra. Published in bengali bimonthly magazine Manthan Samayiki in November-December issue in 2006",
+     "link_text": "Ulka Mahajan in Manthan Nov-Dec 2006",
+     "downloaded": true
+    },
+    {
+     "date": "2026-05-17_19-48",
+     "score": 8,
+     "raison": "Contexte cite explicitement 'peasant organisation in Maharashtra'",
+     "context_seen": "Ulka Mahajan on the peasant organisation in Maharashtra. Published in bengali bimonthly magazine Manthan Samayiki in November-December issue in 2006",
+     "link_text": "Ulka Mahajan in Manthan Nov-Dec 2006",
+     "downloaded": true
+    },
+    {
+     "date": "2026-05-23_00-59",
+     "score": 6,
+     "raison": "Contexte mentionne 'peasant organisation in Maharashtra' ; axé sur l'organisation paysanne sans focus explicite sur terres/communs",
+     "context_seen": "Ulka Mahajan on the peasant organisation in Maharashtra. Published in bengali bimonthly magazine Manthan Samayiki in November-December issue in 2006",
+     "link_text": "Ulka Mahajan in Manthan Nov-Dec 2006",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Ulka Mahajan on the peasant organisation in Maharashtra. Published in bengali bimonthly magazine Manthan Samayiki in November-December issue in 2006",
+     "link_text": "Ulka Mahajan in Manthan Nov-Dec 2006",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "cover": "covers/5ea6c0cc.png",
+   "meta": {
+    "page_count": 3,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": ""
+   },
+   "enrichment": {
+    "error": "text_too_short_or_empty"
+   },
+   "download_status": "ok",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 6,
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2006",
+   "lang": "en",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "link_status": "ok",
    "link_checked": "2026-06-25T15:35:32Z"
   },
   "d647480f": {
@@ -2255,6 +2506,265 @@
    "link_checked": "2026-06-25T15:35:32Z",
    "lang": "en"
   },
+  "03b9d287": {
+   "id": "03b9d287",
+   "url": "https://archive.org/download/CombateAno3Nr2918Abril1959/CombateAno3Nr2918Abril1959.pdf",
+   "filename": "CombateAno3Nr2918Abril1959.pdf",
+   "format": "pdf",
+   "source": "Archive.org — Cuba (ES, réforme agraire & coopératives)",
+   "first_seen": "2026-05-17_23-39",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": true,
+   "saved_as": "docs/03b9d287_CombateAno3Nr2918Abril1959.pdf",
+   "runs": [
+    {
+     "date": "2026-05-17_23-39",
+     "score": 9,
+     "raison": "Contexte cite explicitement 'Compraremos las tierras para la Reforma Agraria'",
+     "context_seen": "Habla Faure Chomón: Enemigos de la Revolución hablan de comunismo y anticomunismo Cuba siempre ha perdido con E.U., dijo Fidel Castro en Washington sobre cuestiones azucareras Dañan relaciones ataques de prensa 1 millón de pesos ocupan en acciones Compraremos las tierras para la Reforma Agraria",
+     "link_text": "Combate 13 de Marzo año III nr. 29 (18 abril 1959)",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-23_00-59",
+     "score": 9,
+     "raison": "Contexte cite 'Compraremos las tierras para la Reforma Agraria'",
+     "context_seen": "Habla Faure Chomón: Enemigos de la Revolución hablan de comunismo y anticomunismo Cuba siempre ha perdido con E.U., dijo Fidel Castro en Washington sobre cuestiones azucareras Dañan relaciones ataques de prensa 1 millón de pesos ocupan en acciones Compraremos las tierras para la Reforma Agraria",
+     "link_text": "Combate 13 de Marzo año III nr. 29 (18 abril 1959)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Habla Faure Chomón: Enemigos de la Revolución hablan de comunismo y anticomunismo Cuba siempre ha perdido con E.U., dijo Fidel Castro en Washington sobre cuestiones azucareras Dañan relaciones ataques de prensa 1 millón de pesos ocupan en acciones Compraremos las tierras para la Reforma Agraria",
+     "link_text": "Combate 13 de Marzo año III nr. 29 (18 abril 1959)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok_via_variant",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 9,
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "1959",
+   "lang": "es",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "cover": "covers/03b9d287.png",
+   "meta": {
+    "page_count": 8,
+    "pdf_title": "ACDSee PDF Image.",
+    "pdf_author": "",
+    "pdf_creator": "ACDSee"
+   },
+   "enrichment": {
+    "error": "text_too_short_or_empty"
+   },
+   "link_status": "dead",
+   "link_checked": "2026-06-25T15:35:32Z"
+  },
+  "35641d6d": {
+   "id": "35641d6d",
+   "url": "https://archive.org/download/LunesDeRevolucion01018DeMayo1959/LunesDeRevolucion01018DeMayo1959.pdf",
+   "filename": "LunesDeRevolucion01018DeMayo1959.pdf",
+   "format": "pdf",
+   "source": "Archive.org — Cuba (ES, réforme agraire & coopératives)",
+   "first_seen": "2026-05-17_23-39",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": true,
+   "saved_as": "docs/35641d6d_LunesDeRevolucion01018DeMayo1959.pdf",
+   "runs": [
+    {
+     "date": "2026-05-17_23-39",
+     "score": 9,
+     "raison": "Contexte cite explicitement 'Reforma Agraria y el desarrollo económico de Cuba'",
+     "context_seen": "Reforma Agraria y el desarrollo económico de Cuba La entrega del mercado cubano. Aranceles y Tratados de \"Reciprocidad\" Comercial Banca, moneda y crédito para una economía colonial",
+     "link_text": "Lunes de Revolución nr. 10 (18 mayo 1959)",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-23_00-59",
+     "score": 9,
+     "raison": "Contexte cite 'Reforma Agraria y el desarrollo económico de Cuba'",
+     "context_seen": "Reforma Agraria y el desarrollo económico de Cuba La entrega del mercado cubano. Aranceles y Tratados de \"Reciprocidad\" Comercial Banca, moneda y crédito para una economía colonial",
+     "link_text": "Lunes de Revolución nr. 10 (18 mayo 1959)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Reforma Agraria y el desarrollo económico de Cuba La entrega del mercado cubano. Aranceles y Tratados de \"Reciprocidad\" Comercial Banca, moneda y crédito para una economía colonial",
+     "link_text": "Lunes de Revolución nr. 10 (18 mayo 1959)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok_via_variant",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 9,
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "1959",
+   "lang": "es",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "cover": "covers/35641d6d.png",
+   "meta": {
+    "page_count": 48,
+    "pdf_title": "ACDSee PDF Image.",
+    "pdf_author": "",
+    "pdf_creator": "ACDSee"
+   },
+   "enrichment": {
+    "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
+    "raw_response": "Je constate que le texte du document fourni ne contient que des marqueurs de page `[p.1]` à `[p.48]` sans aucun contenu textuel.\n\n**Je ne peux pas générer l'analyse demandée** car :\n- Il n'y a rien à lire pour identifier les passages pertinents\n- Je ne peux extraire aucune citation réelle\n- Je ne peux pas détecter les mots-clés ou acteurs présents\n- Je ne peux pas évaluer la pertinence du document\n\n**Pouvez-vous :**\n1. Vérifier que le texte du PDF a bien été extrait (il est possible que le PDF s"
+   },
+   "link_status": "dead",
+   "link_checked": "2026-06-25T15:35:32Z"
+  },
+  "dc1574ae": {
+   "id": "dc1574ae",
+   "url": "https://archive.org/download/CombateAno3Nr3323Abril1959/CombateAno3Nr3323Abril1959.pdf",
+   "filename": "CombateAno3Nr3323Abril1959.pdf",
+   "format": "pdf",
+   "source": "Archive.org — Cuba (ES, réforme agraire & coopératives)",
+   "first_seen": "2026-05-17_23-39",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": true,
+   "saved_as": "docs/dc1574ae_CombateAno3Nr3323Abril1959.pdf",
+   "runs": [
+    {
+     "date": "2026-05-17_23-39",
+     "score": 9,
+     "raison": "Contexte cite explicitement 'ayudar a la Reforma Agraria'",
+     "context_seen": "Fidel Castro en la O.N.U. Estudia ese organismo ayudar a la Reforma Agraria con 500 mil pesos Arrestan a un norteamericano que planeaba invasión contra Nicaragua desde Cuba En vigor rebaja de las medicinas",
+     "link_text": "Combate 13 de Marzo año III nr. 33 (23 abril 1959)",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-23_00-59",
+     "score": 9,
+     "raison": "Contexte mentionne 'Reforma Agraria con 500 mil pesos'",
+     "context_seen": "Fidel Castro en la O.N.U. Estudia ese organismo ayudar a la Reforma Agraria con 500 mil pesos Arrestan a un norteamericano que planeaba invasión contra Nicaragua desde Cuba En vigor rebaja de las medicinas",
+     "link_text": "Combate 13 de Marzo año III nr. 33 (23 abril 1959)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Fidel Castro en la O.N.U. Estudia ese organismo ayudar a la Reforma Agraria con 500 mil pesos Arrestan a un norteamericano que planeaba invasión contra Nicaragua desde Cuba En vigor rebaja de las medicinas",
+     "link_text": "Combate 13 de Marzo año III nr. 33 (23 abril 1959)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok_via_variant",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 9,
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "1959",
+   "lang": "es",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "cover": "covers/dc1574ae.png",
+   "meta": {
+    "page_count": 8,
+    "pdf_title": "ACDSee PDF Image.",
+    "pdf_author": "",
+    "pdf_creator": "ACDSee"
+   },
+   "enrichment": {
+    "error": "text_too_short_or_empty"
+   },
+   "link_status": "dead",
+   "link_checked": "2026-06-25T15:35:32Z"
+  },
+  "44510a9a": {
+   "id": "44510a9a",
+   "url": "https://archive.org/download/reformagrariaguat/reformagrariaguat.pdf",
+   "filename": "reformagrariaguat.pdf",
+   "format": "pdf",
+   "source": "Archive.org — Cuba (ES, réforme agraire & coopératives)",
+   "first_seen": "2026-05-17_23-39",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": false,
+   "saved_as": null,
+   "runs": [
+    {
+     "date": "2026-05-17_23-39",
+     "score": 10,
+     "raison": "Titre cite explicitement 'Reforma agraria : Guatemala - Bolivia - Cuba'",
+     "context_seen": "Menjívar, Rafael (Autor Principal) Castillo, Fabio (Prólogo)",
+     "link_text": "Reforma agraria : Guatemala - Bolivia - Cuba",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-23_00-59",
+     "score": 9,
+     "raison": "Titre cite explicitement 'Reforma agraria'",
+     "context_seen": "Menjívar, Rafael (Autor Principal) Castillo, Fabio (Prólogo)",
+     "link_text": "Reforma agraria : Guatemala - Bolivia - Cuba",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Menjívar, Rafael (Autor Principal) Castillo, Fabio (Prólogo)",
+     "link_text": "Reforma agraria : Guatemala - Bolivia - Cuba",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "failed_network",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 9,
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "es",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-23T14:03:33Z"
+  },
   "b85c8bc1": {
    "id": "b85c8bc1",
    "url": "https://infokiosques.net/IMG/pdf/contre-la-legende-et-l-oubli-pageparpage.pdf",
@@ -2495,6 +3005,121 @@
    "link_checked": "2026-06-25T15:35:32Z",
    "archive_url": "http://web.archive.org/web/20240921090434/https://infokiosques.net/IMG/pdf/contre-la-legende-et-l-oubli-cahier-a3.pdf"
   },
+  "2478138a": {
+   "id": "2478138a",
+   "url": "https://infokiosques.net/IMG/pdf/greve_des_loyers_sonacotra_1973-1981-mars2025-cahier-version_legere-22pa5.pdf",
+   "filename": "greve_des_loyers_sonacotra_1973-1981-mars2025-cahier-version_legere-22pa5.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Squat (rapport à l'habiter)",
+   "first_seen": "2026-05-18_05-12",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": true,
+   "saved_as": "docs/2478138a_greve_des_loyers_sonacotra_1973-1981-mars2025-cahier-version_legere-22pa5.pdf",
+   "runs": [
+    {
+     "date": "2026-05-18_05-12",
+     "score": 3,
+     "raison": "Titre 'Lettre aux villes qui s'aseptisent' critique l'urbanisme mais ne mentionne pas explicitement communs ou habitat collectif",
+     "context_seen": "formats: · HTML · La grève des loyers dans les foyers Sonacotra - version légère cahier (PDF) · La grève des loyers dans les foyers Sonacotra - version légère page par page (PDF) · La grève des loyers dans les foyers Sonacotra - version cahier avec fond (PDF) · La grève des loyers dans les foyers Sonacotra - version page par page avec fond (PDF)",
+     "link_text": "· La grève des loyers dans les foyers Sonacotra - version légère cahier (PDF)",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-23_00-59",
+     "score": 6,
+     "raison": "Titre 'grève des loyers dans les foyers Sonacotra' recoupe l'accès au logement et les communs urbains sans les cibler explicitement",
+     "context_seen": "formats: · HTML · La grève des loyers dans les foyers Sonacotra - version légère cahier (PDF) · La grève des loyers dans les foyers Sonacotra - version légère page par page (PDF) · La grève des loyers dans les foyers Sonacotra - version cahier avec fond (PDF) · La grève des loyers dans les foyers Sonacotra - version page par page avec fond (PDF)",
+     "link_text": "· La grève des loyers dans les foyers Sonacotra - version légère cahier (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · La grève des loyers dans les foyers Sonacotra - version légère cahier (PDF) · La grève des loyers dans les foyers Sonacotra - version légère page par page (PDF) · La grève des loyers dans les foyers Sonacotra - version cahier avec fond (PDF) · La grève des loyers dans les foyers Sonacotra - version page par page avec fond (PDF)",
+     "link_text": "· La grève des loyers dans les foyers Sonacotra - version légère cahier (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "already_present",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 6,
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "1981",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T16:25:45Z"
+  },
+  "b651aa85": {
+   "id": "b651aa85",
+   "url": "https://infokiosques.net/IMG/pdf/greve_des_loyers_sonacotra_1973-1981-mars2025-pageparpage-version_legere-44pa5.pdf",
+   "filename": "greve_des_loyers_sonacotra_1973-1981-mars2025-pageparpage-version_legere-44pa5.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Squat (rapport à l'habiter)",
+   "first_seen": "2026-05-18_05-12",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": true,
+   "saved_as": "docs/b651aa85_greve_des_loyers_sonacotra_1973-1981-mars2025-pageparpage-version_legere-44pa5.pdf",
+   "runs": [
+    {
+     "date": "2026-05-18_05-12",
+     "score": 4,
+     "raison": "Titre 'Lo squat dalla A alla Z' évoque occupation collective d'espace urbain sans mention explicite des thèmes ciblés (terres, paysannerie, communs fonciers)",
+     "context_seen": "formats: · HTML · La grève des loyers dans les foyers Sonacotra - version légère cahier (PDF) · La grève des loyers dans les foyers Sonacotra - version légère page par page (PDF) · La grève des loyers dans les foyers Sonacotra - version cahier avec fond (PDF) · La grève des loyers dans les foyers Sonacotra - version page par page avec fond (PDF)",
+     "link_text": "· La grève des loyers dans les foyers Sonacotra - version légère page par page (PDF)",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-23_00-59",
+     "score": 6,
+     "raison": "Titre 'grève des loyers dans les foyers Sonacotra' recoupe l'accès au logement et les communs urbains sans les cibler explicitement",
+     "context_seen": "formats: · HTML · La grève des loyers dans les foyers Sonacotra - version légère cahier (PDF) · La grève des loyers dans les foyers Sonacotra - version légère page par page (PDF) · La grève des loyers dans les foyers Sonacotra - version cahier avec fond (PDF) · La grève des loyers dans les foyers Sonacotra - version page par page avec fond (PDF)",
+     "link_text": "· La grève des loyers dans les foyers Sonacotra - version légère page par page (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · La grève des loyers dans les foyers Sonacotra - version légère cahier (PDF) · La grève des loyers dans les foyers Sonacotra - version légère page par page (PDF) · La grève des loyers dans les foyers Sonacotra - version cahier avec fond (PDF) · La grève des loyers dans les foyers Sonacotra - version page par page avec fond (PDF)",
+     "link_text": "· La grève des loyers dans les foyers Sonacotra - version légère page par page (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 6,
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "1981",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T16:26:07Z",
+   "archive_url": "http://web.archive.org/web/20250915092736/https://infokiosques.net/IMG/pdf/greve_des_loyers_sonacotra_1973-1981-mars2025-pageparpage-version_legere-44pa5.pdf"
+  },
   "83b6390f": {
    "id": "83b6390f",
    "url": "https://archive.org/download/Jeff_Shantz_Commonist_Tendencies/Jeff_Shantz_Commonist_Tendencies.pdf",
@@ -2663,6 +3288,100 @@
    "link_status": "dead",
    "link_checked": "2026-06-25T15:35:32Z"
   },
+  "96563571": {
+   "id": "96563571",
+   "url": "https://archive.org/download/humanrightscommo0000west/humanrightscommo0000west.pdf",
+   "filename": "humanrightscommo0000west.pdf",
+   "format": "pdf",
+   "source": "Archive.org — commons / enclosure / agrarian (strict)",
+   "first_seen": "2026-05-18_05-12",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": false,
+   "saved_as": null,
+   "runs": [
+    {
+     "date": "2026-05-18_05-12",
+     "score": 9,
+     "raison": "Titre cite 'Land Law (Ireland) Acts', 'Labourers (Ireland) Acts', 'Purchase of Land' — réforme foncière et accès à la terre explicites",
+     "context_seen": "Westra, Laura — xxi, 365 p. ; 24 cm, Includes bibliographical references (p. [312]-341) and index, Individual rights and collective rights in conflict : the ecocentric perspective and the commons -- The common good and the public interest : jus cogens norms and erga omnes obligations in a lawless world -- Communities and collectives : the interface -- Collective basic rights today -- Globalizatio…",
+     "link_text": "Human rights : the commons and the collective",
+     "downloaded": false
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Westra, Laura — xxi, 365 p. ; 24 cm, Includes bibliographical references (p. [312]-341) and index, Individual rights and collective rights in conflict : the ecocentric perspective and the commons -- The common good and the public interest : jus cogens norms and erga omnes obligations in a lawless world -- Communities and collectives : the interface -- Collective basic rights today -- Globalizatio…",
+     "link_text": "Human rights : the commons and the collective",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "failed_network",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 9,
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T18:32:29Z",
+   "lang": "en",
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": ""
+  },
+  "2e2e4bc7": {
+   "id": "2e2e4bc7",
+   "url": "https://archive.org/download/condocoopbookgam0000shap/condocoopbookgam0000shap.pdf",
+   "filename": "condocoopbookgam0000shap.pdf",
+   "format": "pdf",
+   "source": "Archive.org — community land trusts & housing commons",
+   "first_seen": "2026-05-18_05-12",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": false,
+   "saved_as": null,
+   "runs": [
+    {
+     "date": "2026-05-18_05-12",
+     "score": 8,
+     "raison": "Titre cite 'Co-op Housing Members' et contexte mentionne explicitement 'The Land Trust for Toronto Area Co-operatives', correspondant directement à habitat coopératif et fiducie foncière",
+     "context_seen": "Shapiro, Eugene D — vi, 186 p. ; 20 cm, Includes index",
+     "link_text": "The condo and co-op book : a game plan for winning the condo/co-op conversion battle",
+     "downloaded": false
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Shapiro, Eugene D — vi, 186 p. ; 20 cm, Includes index",
+     "link_text": "The condo and co-op book : a game plan for winning the condo/co-op conversion battle",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "failed_network",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 8,
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T18:32:34Z",
+   "lang": "en",
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": ""
+  },
   "931fc89b": {
    "id": "931fc89b",
    "url": "https://archive.org/download/Community_Land_Trust_Leaflet/Community_Land_Trust_Leaflet.pdf",
@@ -2790,6 +3509,100 @@
    "link_checked": "2026-06-25T15:35:32Z",
    "lang": "en"
   },
+  "28b7cb2c": {
+   "id": "28b7cb2c",
+   "url": "https://archive.org/download/laidlaw-1973-cooperative-way-of-housing-canada/laidlaw-1973-cooperative-way-of-housing-canada.pdf",
+   "filename": "laidlaw-1973-cooperative-way-of-housing-canada.pdf",
+   "format": "pdf",
+   "source": "Archive.org — community land trusts & housing commons",
+   "first_seen": "2026-05-18_05-12",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": false,
+   "saved_as": null,
+   "runs": [
+    {
+     "date": "2026-05-18_05-12",
+     "score": 7,
+     "raison": "Titre cite explicitement 'Housing Cooperative', concept clé correspondant à habitat coopératif de la thématique",
+     "context_seen": "Alexander F. Laidlaw — The Cooperative Way of Housing in Canada , by Alexander F. Laidlaw, a conference paper prepared for the Third International Symposium on Lower-Cost Housing Problems, Organized by the International Association for Housing Science, held at Sir George Williams University, Montreal, May 27-30, 1974.   Dr. Alexander F. Laidlaw, Senior Advisor, Co-operative Housing, Central Mortg…",
+     "link_text": "The Cooperative Way of Housing in Canada, by Alexander F. Laidlaw, conference paper, Third International Symposium on Lower-Cost Housing Problems, International Association for Housing Science, Montreal, 1974.",
+     "downloaded": false
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Alexander F. Laidlaw — The Cooperative Way of Housing in Canada , by Alexander F. Laidlaw, a conference paper prepared for the Third International Symposium on Lower-Cost Housing Problems, Organized by the International Association for Housing Science, held at Sir George Williams University, Montreal, May 27-30, 1974.   Dr. Alexander F. Laidlaw, Senior Advisor, Co-operative Housing, Central Mortg…",
+     "link_text": "The Cooperative Way of Housing in Canada, by Alexander F. Laidlaw, conference paper, Third International Symposium on Lower-Cost Housing Problems, International Association for Housing Science, Montreal, 1974.",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "failed_network",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 7,
+   "link_status": "dead",
+   "link_checked": "2026-06-25T15:35:32Z",
+   "lang": "en",
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "1974",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": ""
+  },
+  "2175f7a3": {
+   "id": "2175f7a3",
+   "url": "https://archive.org/download/housing-you-can-afford-cooperative-housing-canada-laidlaw-1977/housing-you-can-afford-cooperative-housing-canada-laidlaw-1977.pdf",
+   "filename": "housing-you-can-afford-cooperative-housing-canada-laidlaw-1977.pdf",
+   "format": "pdf",
+   "source": "Archive.org — community land trusts & housing commons",
+   "first_seen": "2026-05-18_05-12",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": false,
+   "saved_as": null,
+   "runs": [
+    {
+     "date": "2026-05-18_05-12",
+     "score": 7,
+     "raison": "Titre cite explicitement 'Mutual Housing Cooperative', concept clé correspondant à habitat coopératif de la thématique",
+     "context_seen": "Alexander F. Laidlaw — Housing You Can Afford  (co-operative housing in Canada) , Alexander F. Laidlaw, Toronto: Greentree Publishing, 1977.    This book puts forward the argument for an inn-ovation that began to appear in Canada a little over ten years ago: the non-profit continuing housing cooperative.  It  is based on the simple   premise that people should own the housing in which they live,…",
+     "link_text": "Housing You Can Afford (co-op housing in Canada) (1977) Alexander F. Laidlaw, Toronto: Greentree Publishing.",
+     "downloaded": false
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Alexander F. Laidlaw — Housing You Can Afford  (co-operative housing in Canada) , Alexander F. Laidlaw, Toronto: Greentree Publishing, 1977.    This book puts forward the argument for an inn-ovation that began to appear in Canada a little over ten years ago: the non-profit continuing housing cooperative.  It  is based on the simple   premise that people should own the housing in which they live,…",
+     "link_text": "Housing You Can Afford (co-op housing in Canada) (1977) Alexander F. Laidlaw, Toronto: Greentree Publishing.",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "failed_network",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 7,
+   "link_status": "dead",
+   "link_checked": "2026-06-25T15:35:32Z",
+   "lang": "en",
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "1977",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": ""
+  },
   "ed6b79d9": {
    "id": "ed6b79d9",
    "url": "https://archive.org/download/Httpwww.iaset.usview_archives.phpyear2015id32jtype2page2_201509/Httpwww.iaset.usview_archives.phpyear2015id32jtype2page2_201509.pdf",
@@ -2818,6 +3631,121 @@
    "link_status": "dead",
    "link_checked": "2026-06-25T15:35:32Z",
    "lang": "en"
+  },
+  "99a6d367": {
+   "id": "99a6d367",
+   "url": "https://archive.org/download/fromrentaltocoop0000zimm/fromrentaltocoop0000zimm.pdf",
+   "filename": "fromrentaltocoop0000zimm.pdf",
+   "format": "pdf",
+   "source": "Archive.org — community land trusts & housing commons",
+   "first_seen": "2026-05-18_05-12",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": false,
+   "saved_as": null,
+   "runs": [
+    {
+     "date": "2026-05-18_05-12",
+     "score": 1,
+     "raison": "Contexte insuffisant ; titre 'Radical Routes directory 2004' seul est indéterminable",
+     "context_seen": "Zimmer, Jonathan E — 68 p. : 22 cm, Bibliography: p. 66-68",
+     "link_text": "From rental to cooperative : improving low and moderate income housing",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-23_00-59",
+     "score": 8,
+     "raison": "Titre cite explicitement 'cooperative' pour le logement, concept présent dans la thématique housing cooperative et habitat coopératif",
+     "context_seen": "Zimmer, Jonathan E — 68 p. : 22 cm, Bibliography: p. 66-68",
+     "link_text": "From rental to cooperative : improving low and moderate income housing",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Zimmer, Jonathan E — 68 p. : 22 cm, Bibliography: p. 66-68",
+     "link_text": "From rental to cooperative : improving low and moderate income housing",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "failed_network",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 8,
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "en",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T18:32:57Z"
+  },
+  "b0917bdf": {
+   "id": "b0917bdf",
+   "url": "https://documents1.worldbank.org/curated/fr/587161533140402275/pdf/129135-WP-Integrating-Customary-Tenure-into-Fortmal-Systems.pdf",
+   "filename": "129135-WP-Integrating-Customary-Tenure-into-Fortmal-Systems.pdf",
+   "format": "pdf",
+   "source": "International Land Coalition — latest",
+   "first_seen": "2026-05-18_05-12",
+   "latest_run": "2026-06-25_14-34",
+   "latest_score": 0,
+   "downloaded": false,
+   "saved_as": null,
+   "runs": [
+    {
+     "date": "2026-05-18_05-12",
+     "score": 0,
+     "raison": "Lien générique 'Download brochure' sans indication de contenu ou d'auteur ; contexte vide, indéterminable",
+     "context_seen": "When communities lose access to communal grazing grounds, traditional farming areas, or when their lands are rendered infertile or unfit for cultivation, their ways of life become untennable. The impacts ripple across entire regions. Ecosystems degrade due to unsustainable use, food systems fragment, poverty and inequality deepen, and social and cultural structures fall apart. In this way, the lan",
+     "link_text": "World Bank",
+     "downloaded": false
+    },
+    {
+     "date": "2026-05-23_00-59",
+     "score": 8,
+     "raison": "Contexte cite littéralement 'communities lose access to communal grazing grounds, traditional farming areas... their lands'",
+     "context_seen": "When communities lose access to communal grazing grounds, traditional farming areas, or when their lands are rendered infertile or unfit for cultivation, their ways of life become untennable. The impacts ripple across entire regions. Ecosystems degrade due to unsustainable use, food systems fragment, poverty and inequality deepen, and social and cultural structures fall apart. In this way, the lan",
+     "link_text": "World Bank",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "When communities lose access to communal grazing grounds, traditional farming areas, or when their lands are rendered infertile or unfit for cultivation, their ways of life become untennable. The impacts ripple across entire regions. Ecosystems degrade due to unsustainable use, food systems fragment, poverty and inequality deepen, and social and cultural structures fall apart. In this way, the lan",
+     "link_text": "World Bank",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "failed_network",
+   "versions": [],
+   "score_initial": 0,
+   "score_final": 8,
+   "collected_date": "2026-06-25_14-34",
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "en",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "link_status": "dead",
+   "link_checked": "2026-06-25T15:35:32Z",
+   "archive_url": "http://web.archive.org/web/20250224174034/https://documents1.worldbank.org/curated/fr/587161533140402275/pdf/129135-WP-Integrating-Customary-Tenure-into-Fortmal-Systems.pdf"
   },
   "b4712d32": {
    "id": "b4712d32",
@@ -3599,6 +4527,56 @@
    "link_checked": "2026-06-25T15:35:32Z",
    "archive_url": "http://web.archive.org/web/20220419015428/https://infokiosques.net/IMG/pdf/que-reste-t-il-du-champ-des-possibles-sur-la-ZAD-cahier.pdf"
   },
+  "a90d3977": {
+   "id": "a90d3977",
+   "url": "https://infokiosques.net/IMG/pdf/que-reste-t-il-du-champ-des-possibles-sur-la-ZAD-pageparpage.pdf",
+   "filename": "que-reste-t-il-du-champ-des-possibles-sur-la-ZAD-pageparpage.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Paysannerie & ruralité",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/a90d3977_que-reste-t-il-du-champ-des-possibles-sur-la-ZAD-pageparpage.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 7,
+     "raison": "Titre mentionne 'zad' et 'champ des possibles' — réflexion sur occupation foncière collective",
+     "context_seen": "formats: · HTML · Que reste-t-il du champ des possibles ouvert par la zad ? (cahier) (PDF) · Que reste-t-il du champ des possibles ouvert par la zad ? (page par page) (PDF)",
+     "link_text": "· Que reste-t-il du champ des possibles ouvert par la zad ? (page par page) (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Que reste-t-il du champ des possibles ouvert par la zad ? (cahier) (PDF) · Que reste-t-il du champ des possibles ouvert par la zad ? (page par page) (PDF)",
+     "link_text": "· Que reste-t-il du champ des possibles ouvert par la zad ? (page par page) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z",
+   "archive_url": "http://web.archive.org/web/20220419015421/https://infokiosques.net/IMG/pdf/que-reste-t-il-du-champ-des-possibles-sur-la-ZAD-pageparpage.pdf"
+  },
   "c2ab1111": {
    "id": "c2ab1111",
    "url": "https://infokiosques.net/IMG/pdf/Cultiver_ou_mourir-pageparpage.pdf",
@@ -4063,6 +5041,403 @@
    },
    "download_status": "ok"
   },
+  "095f8db9": {
+   "id": "095f8db9",
+   "url": "https://infokiosques.net/IMG/pdf/zadissidences3-52p-A5-fil.pdf",
+   "filename": "zadissidences3-52p-A5-fil.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Paysannerie & ruralité",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 6,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2018-09-27",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/095f8db9_zadissidences3-52p-A5-fil.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 6,
+     "raison": "Titre mentionne 'ZAD' et critique ('dissidences') — lié à l'occupation foncière",
+     "context_seen": "formats: · HTML · ZADisiidences 3 (cahier) (PDF) · ZADissidences 3 (page par page) (PDF)",
+     "link_text": "· ZADissidences 3 (page par page) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · ZADisiidences 3 (cahier) (PDF) · ZADissidences 3 (page par page) (PDF)",
+     "link_text": "· ZADissidences 3 (page par page) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z",
+   "archive_url": "http://web.archive.org/web/20260108130732/https://infokiosques.net/IMG/pdf/zadissidences3-52p-A5-fil.pdf",
+   "cover": "covers/095f8db9.png",
+   "meta": {
+    "page_count": 52,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "Scribus 1.4.7"
+   },
+   "enrichment": {
+    "summary": "ZADissidences 3 est un recueil de textes critiques publiés après la deuxième vague d'expulsions à la ZAD de Notre-Dame-des-Landes en mai 2018. Le document dénonce les mécanismes de censure et de contrôle du récit au sein du mouvement contre l'aéroport, particulièrement par les groupes dominants (CMDO, Maison de la Grève, Lundi matin). L'éditorial critique la création d'un « fonds de dotation » vu comme une tentative d'institutionnalisation et de légalisation du mouvement auprès des structures de gauche institutionnelle, au détriment des tendances plus radicales et des voix dissidentes. Le document expose comment des sites de contre-information comme zad.nadir.org ont dépublié les premiers numéros de ZADissidences au motif qu'ils « alimentaient les querelles » ou contenaient des textes « inintelligibles » — ce que les auteurs interprètent comme une dépolitisation des conflits réels et une réhéabilitation de l'image publique de la ZAD. Le texte s'inscrit dans une bataille pour l'écriture de l'histoire du mouvement : d'un côté, une narration héroïque et consensuelle servant les intérêts des composantes institutionnalisées ; de l'autre, une volonté de documenter les clivages politiques et les « couteaux dans le dos » que le mouvement officiel préfère occulter. Les auteurs appellent à chercher d'autres sources d'information (zadresist.antirep.net, nantes.indymedia.org) pour accéder à des voix contraires. Le ton est celui d'une rage politique face à ce qu'ils perçoivent comme une trahison des principes horizontaux et conflictuels de la lutte.",
+    "citations": [
+     {
+      "page": 3,
+      "quote": "On voit naître un « fond de dotation » pour diversifier et pérenniser l'investissement des dernières années dans la composition et les liens avec « la gauche » et sa manne financière.",
+      "why_relevant": "Critique explicite de l'utilisation d'une structure de type fonds de dotation comme outil d'institutionnalisation et de capture des ressources collectives.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "jusqu'à l'échelle plus petite des réseaux indépendants de contre-information, on perçoit une entreprise discrète et diffuse de censure et d'étouffement des quelques voix qui ont réussi à se faire entendre",
+      "why_relevant": "Dénonce les mécanismes de suppression des voix dissidentes au sein des circuits militants de communication.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 4,
+      "quote": "Ça semble à la mode de dépolitiser les conflits et de cantonner au privé ce qui se joue dans les luttes.",
+      "why_relevant": "Critique la dépolitisation des enjeux collectifs et territoriaux par la domination d'une tendance unique.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "La critique politique et les conflits sont à étouffer discrètement, et une image positive de la zad est à reconstruire d'urgence.",
+      "why_relevant": "Identifie la gestion narrative du mouvement comme un enjeu politique : effacement des divergences pour une légitimité publique.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 5,
+      "quote": "Une des postures doit gagner et l'autre doit perdre, la diversité des tactiques devient impossible parce que les buts diffèrent",
+      "why_relevant": "Formule le clivage central : réformisme vs radicalisme, légalisation vs refus de dialogue avec l'État.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 6,
+      "quote": "CMDO : « Comité pour le Maintien De l'Occupation » est un regroupement d'occupant-es de divers lieux... Ce groupe au départ secret s'est peu à peu « autonomisé » du reste de l'occupation",
+      "why_relevant": "Documente la formation d'une structure de pouvoir cloisonnée au sein de l'occupation collective.",
+      "verified": false,
+      "page_physical": null
+     }
+    ],
+    "matched_keywords": [
+     "ZAD",
+     "fonds de dotation",
+     "Confédération Paysanne",
+     "occupation",
+     "collectif",
+     "agriculteurs"
+    ],
+    "relevance_score": 3,
+    "relevance_notes": "Le document concerne une occupation de territoire (ZAD) et mentionne des structures foncières (fonds de dotation) et des acteurs paysans, mais ne traite pas réellement de la thématique veille. C'est principalement une critique des conflits politiques internes et des mécanismes de censure dans un mouvement contre un projet d'infrastructure, sans analyse substantielle des communs, propriété d'usage, paysannerie ou agroécologie.",
+    "en_clair": "Ce texte raconte comment un grand mouvement d'occupation de terre contre un aéroport s'est divisé en secret : une partie a voulu se légaliser avec un fonds de dotation et du soutien politique classique, pendant qu'une autre voulait rester radicale. Les voix dissidentes ont été censurées des sites militants, et on a cherché à peindre un portrait lisse du mouvement — comme si tout le monde était d'accord alors qu'il y avait vraiment des clivages profonds. C'est utile pour comprendre comment l'institutionnalisation peut détruire une lutte collective de l'intérieur.",
+    "acteurs": [
+     "Coordination d'opposant·e·s à l'aéroport (Coord)",
+     "ACIPA",
+     "ADECA",
+     "Europe Écologie Les Verts",
+     "Parti de Gauche",
+     "ATTAC",
+     "Modem",
+     "Solidaires",
+     "Confédération Paysanne",
+     "COPAIN",
+     "CMDO",
+     "Maison de la Grève de Rennes",
+     "POMPS",
+     "Lundi matin",
+     "paris-luttes.info",
+     "expansive.info",
+     "zad.nadir.org",
+     "zadresist.antirep.net",
+     "nantes.indymedia.org"
+    ],
+    "controverse": "Le clivage fondamental est celui entre une tendance réformiste-institutionnalisante (cherchant légalisation par fonds de dotation et dialogue avec partis de gauche) et une tendance radicale-autonome (refusant l'État et les structures de pouvoir). Cette division est voilée par un travail de censure et de réécriture narrative où les choix difficiles sont présentés comme inévitables et nécessaires, alors que les critiques les accusent de trahison et d'abandon des plus radicaux.",
+    "angle_journalistique": "Enquête sur les mécanismes cachés d'institutionnalisation et de capture du pouvoir au sein des mouvements radicaux occupant des terres : comment une lutte collecte-t-elle des ressources et se légitime-t-elle publiquement, et à quel prix politique ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "17cea93f57"
+   },
+   "download_status": "ok"
+  },
+  "073089a1": {
+   "id": "073089a1",
+   "url": "https://infokiosques.net/IMG/pdf/zadissidences2-24p-A4-cahier.pdf",
+   "filename": "zadissidences2-24p-A4-cahier.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Paysannerie & ruralité",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 6,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "PyPDF2",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/073089a1_zadissidences2-24p-A4-cahier.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 6,
+     "raison": "Titre 'ZADissidences 2' mentionne 'ZAD' — lié à l'occupation foncière",
+     "context_seen": "formats: · HTML · ZADissidences 2 (cahier) (PDF) · ZADissidences 2 (page par page) (PDF)",
+     "link_text": "· ZADissidences 2 (cahier) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · ZADissidences 2 (cahier) (PDF) · ZADissidences 2 (page par page) (PDF)",
+     "link_text": "· ZADissidences 2 (cahier) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z",
+   "archive_url": "http://web.archive.org/web/20260307211505/https://infokiosques.net/IMG/pdf/zadissidences2-24p-A4-cahier.pdf",
+   "cover": "covers/073089a1.png",
+   "meta": {
+    "page_count": 24,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": ""
+   },
+   "enrichment": {
+    "summary": "ZADissidences 2 est un cahier compilant des textes critiques du mouvement de lutte contre l'aéroport de Notre-Dame-des-Landes (NDDL) pendant les première et deuxième vagues d'expulsions en avril 2018. Le document expose une fracture politique majeure au sein du mouvement d'occupation : d'un côté, une tendance réformiste qui a cherché à négocier avec l'État en déposant des fiches de projet individuelles et en acceptant des Conventions d'Occupations Précaires ; de l'autre, une tendance radicale refusant tout compromis avec l'appareil étatique. L'introduction critique la progression des concessions : des chicanes routières jusqu'à la livraison d'une liste exhaustive de noms et de parcelles à la préfecture, sans que les occupant·e·s n'aient réellement le contrôle du processus décisionnel. Elle dénonce la double stratégie de l'État — répression militaire couplée à des négociations administratives et une gestion médiatique — qui a fragmenté le mouvement et permis aux autorités de jouer l'épuisement. Le cahier met en évidence les tensions internes : marginalisation des 'soutiens', fermeture des assemblées générales, bureaucratisation de l'occupation, renommage des 'occupant·e·s' en 'habitant·e·s'. Ces conflits, loin d'être des 'embrouilles', révèlent des divergences fondamentales sur le sens politique de la lutte — défendre un territoire contre l'ordre capitaliste ou le régulariser foncièrement auprès de l'État. Le texte d'introduction refuse le 'lyrisme' officiel et appelle à donner de la place à d'autres voix critiques.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "De la route des chicanes aux fiches de projets individuels, en quelques mois la liste est longue de tous ces pas faits vers la préfète",
+      "why_relevant": "Montre la progression du réformisme foncier : des ajustements territoriaux mineurs à la capitulation sur un registre administratif exhaustif de noms et parcelles",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "une partie du mouvement qui s'est proposée en interlocutrice, en donnant des signes de bonne volonté qu'il a su interpréter à juste titre comme des signes de faiblesse",
+      "why_relevant": "Analyse critique de la négociation : comment l'ouverture au dialogue peut être instrumentalisée par l'adversaire comme occasion de division",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "le fameux flou du 'manteau' l'est surtout pour les occupant·e·s elleux-mêmes. Illes doivent spéculer à partir des articles de la presse locale pour comprendre ce qui se joue",
+      "why_relevant": "Critique de l'opacité administrative et de la perte du contrôle collectif sur le processus foncier en cours",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 4,
+      "quote": "les côte-à-côte et face-à-face permanents entre des visions tellement opposées du sens de ce qui se joue ici minent le quotidien",
+      "why_relevant": "Expose les conflits politiques profonds sur la nature collective de la lutte et du rapport au territoire",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 2,
+      "quote": "il nous semble urgent de permettre à chacun·e de se faire sa propre idée de ce qui se passe ici, par d'autres angles de vue que le lyrisme à grands moyens",
+      "why_relevant": "Appel à la démocratisation du récit : critique de la monopolisation du discours par une tendance dominante",
+      "verified": true,
+      "page_physical": 4
+     }
+    ],
+    "matched_keywords": [
+     "occupation",
+     "lieux de vie",
+     "habitat collectif",
+     "collectif d'habitants",
+     "territoire",
+     "libération des terres"
+    ],
+    "relevance_score": 5,
+    "relevance_notes": "La ZAD est une lutte territoriale réelle contre l'accaparement foncier, avec des formes d'habitation collective et une gestion collective des espaces. Cependant, ce n'est pas une lutte paysanne, agroécologique ou théorisée autour de 'propriété d'usage' ou 'communs fonciers' au sens strict de la veille. C'est une lutte écologiste anti-développement et anti-autoritaire, sur un territoire périurbain, portant sur le droit d'occuper versus le droit d'accumuler du capital par l'infrastructure. Le document fourni est surtout un éditorial ; le contenu analytique réel n'est accessible que par les titres de la table des matières.",
+    "en_clair": "Ce texte raconte comment un mouvement collectif qui occupait une terre s'est divisé entre ceux qui ont accepté de négocier avec l'État pour légaliser leur présence, et ceux qui ont refusé tout compromis. C'est une leçon sur comment le réformisme affaiblit les luttes radicales de l'intérieur, et comment l'État utilise la division pour imposer son ordre.",
+    "acteurs": [
+     "État français",
+     "Préfecture de Loire-Atlantique",
+     "Collectif hors-norme",
+     "Légal team (ZAD)",
+     "l'Ancre Noire",
+     "Zadnews",
+     "occupant·e·s de NDDL"
+    ],
+    "controverse": "Débat politique central : faut-il négocier avec l'État pour obtenir une régularisation légale de l'occupation (position réformiste), ou refuser tout compromis et maintenir une opposition radicale (position anti-autoritaire) ? Cette tension a fragmenté le mouvement et permis à l'État de diviser pour régner.",
+    "angle_journalistique": "Enquête : comment l'État utilise la combinaison de répression militaire + co-option réformiste pour désagréger les mouvements d'occupation collectifs ? Qui initie et finance les négociations ? Quel prix social et politique paie un mouvement quand il accepte la légalisation foncière auprès de l'État ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "dfb9764792"
+   },
+   "download_status": "ok"
+  },
+  "ce124b01": {
+   "id": "ce124b01",
+   "url": "https://infokiosques.net/IMG/pdf/zadissidences2-48p-A5-fil.pdf",
+   "filename": "zadissidences2-48p-A5-fil.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Paysannerie & ruralité",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 6,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2018-07-04",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/ce124b01_zadissidences2-48p-A5-fil.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 7,
+     "raison": "Titre 'ZADissidences 2' cite 'ZAD', occupation collective de terres",
+     "context_seen": "formats: · HTML · ZADissidences 2 (cahier) (PDF) · ZADissidences 2 (page par page) (PDF)",
+     "link_text": "· ZADissidences 2 (page par page) (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · ZADissidences 2 (cahier) (PDF) · ZADissidences 2 (page par page) (PDF)",
+     "link_text": "· ZADissidences 2 (page par page) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "cover": "covers/ce124b01.png",
+   "meta": {
+    "page_count": 48,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "Scribus 1.4.6"
+   },
+   "enrichment": {
+    "summary": "ZADissidences 2 est un recueil de textes critiques compilés dans le contexte des expulsions de la Zone à Défendre (ZAD) de Notre-Dame-des-Landes en avril 2018. Le document rassemble les voix dissidentes du mouvement d'occupation, celles qui refusent la stratégie de négociation avec l'État et dénoncent les tendances dominantes et réformistes qui ont émergé après l'abandon du projet d'aéroport en janvier 2018.\n\nAprès cette « victoire » initiale, une partie du mouvement s'est orientée vers la négociation avec la préfecture, cherchant une régularisation administrative des occupations. Cette faction s'est rebaptisée « habitant·e·s », abandonnant progressivement l'identité d'occupant·e·s de lutte. Les autres occupant·e·s dénoncent cette stratégie comme une capitulation progressive et réformiste face à l'État.\n\nLes événements d'avril-mai 2018 décrits ici montrent une répression massive : plus de 35 cabanes détruites, plus de 70 arrestations, plus de 300 blessés, et un siège militaire de la zone. L'État a déployé une stratégie double : militaire sur le terrain, administrative dans les négociations, médiatique pour la population. En parallèle, la partie « négociatrice » du mouvement a progressivement cédé sur tous ses points d'arrêt : de la « route des chicanes » aux « fiches de projets individuels », elle s'est rapprochée de la préfète, obtenant seulement des Conventions d'Occupations Précaires valables jusqu'à fin 2018.\n\nCe qui frappe dans ce recueil critique, c'est l'analyse de comment l'État a transformé une occupation collective permanente de terres en processus fragmenté de régularisation individuelle. Les occupant·e·s se retrouvent à spéculer à partir de la presse locale pour savoir si leur lieu a été inclus dans une « fiche », si leurs noms et parcelles ont été listés auprès de la préfecture.\n\nLe document met aussi en lumière les divisions et exclusions internes : les assemblées générales fermées aux « soutiens » et « personnes de passage », bien que ces mêmes personnes aient massivement participé à la résistance. Des centaines de personnes venues défendre la ZAD se retrouvent reléguées à un rôle passif, tandis que le mouvement se restructure autour d'une vision très précise (« l'avenir du bocage »).\n\nLe recueil vise à transmettre les leçons politiques de cette expérience : comment une occupation collective peut être fragmentée par un processus de négociation État-mouvement; comment la répression militaire et l'épuisement physique favorisent la capitulation; comment les divisions internes sapent la résistance collective. C'est un texte écrit dans la rage, destiné aux luttes foncières à venir.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "l'idée est ici de continuer à compiler des textes qui causent de la zad, critiquent la tendance dominante dans le mouvement de lutte contre l'aéroport de Notre-Dame-des-Landes",
+      "why_relevant": "Énonce le projet du recueil : capturer les voix critiques envers la stratégie réformiste dominante du mouvement ZAD.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "L'état a donc enfin trouvé comment sortir de son impuissance. Il a vu un tapis rouge déroulé devant lui par une partie du mouvement qui s'est proposée en interlocutrice",
+      "why_relevant": "Analyse critique : comment l'État exploite la négociation pour fragmenter l'occupation collective.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "De la route des chicanes aux fiches de projets individuels, en quelques mois la liste est longue de tous ces pas faits vers la préfète",
+      "why_relevant": "Documente la glissade progressive vers des régularisations individuelles au détriment des principes collectifs.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "Chose étonnante, alors que la préfecture a finalement obtenu une liste très claire de noms et de parcelles, on constate que le flou du « manteau » l'est surtout pour les occupant·e·s elleux-mêmes",
+      "why_relevant": "Révèle l'asymétrie du processus : l'État possède l'information tandis que les occupant·e·s restent dans l'incertitude.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 4,
+      "quote": "Elles parlent des AG fermées aux dits soutiens, du mépris d'être reléguées au rôle de personnes de passage sans qui pourtant cette zone n'existerait plus depuis longtemps",
+      "why_relevant": "Met en lumière les divisions et exclusions internes du mouvement d'occupation.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 2,
+      "quote": "Sa vieille stratégie couplée entre le militaire sur le terrain et l'administratif dans les négociations, et le médiatique pour la population, lui a permis de jouer l'épuisement et la dissociation",
+      "why_relevant": "Analyse l'articulation entre répression militaire, négociation administrative et gestion médiatique pour fragmenter l'occupation.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 2,
+      "quote": "Des voix de ce mouvement qu'on entend moins et qui refusent les choix et les visions politiques d'une partie des occupant·e·s, notamment celle qu'on entend beaucoup et qui depuis quelques mois préfère se nommer « habitant·e·s »",
+      "why_relevant": "Expose le cœur du conflit : deux visions politiques irréconciliables du projet ZAD.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Accepter des Conventions d'Occupations Précaires valables uniquement jusqu'à la fin de l'année 2018",
+      "why_relevant": "Montre l'absence de garantie durable dans la régularisation : une légalité temporaire et révocable seulement.",
+      "verified": true,
+      "page_physical": 3
+     }
+    ],
+    "matched_keywords": [
+     "collectif d'habitants",
+     "lutte pour la terre",
+     "accès à la terre"
+    ],
+    "relevance_score": 5,
+    "relevance_notes": "Le texte documente une occupation collective de terre et sa confrontation à la répression d'État, sujet clairement lié aux luttes foncières. Cependant, il traite surtout des enjeux politiques internes et de la stratégie de répression/négociation, non des dimensions substantielles des communs fonciers, de la propriété d'usage ou des structures collectives d'exploitation alternative. C'est un témoignage critique d'une lutte pour la terre, pas une théorisation des communs.",
+    "en_clair": "La ZAD était une occupation collective pour bloquer un aéroport et conserver les terres. Une partie du mouvement a négocié avec l'État pour rester légalement, mais en acceptant une régularisation individuelle et précaire. Ce texte critique dénonce cette fragmentation de l'occupation collective. Pour une lutte : comprendre comment l'État divise les occupations, pourquoi certains refusent la négociation même si ça paraît précaire, et les conséquences politiques de la régularisation fragmentée.",
+    "acteurs": [
+     "Nicole Klein",
+     "Cedpa",
+     "Zadnews",
+     "ZAD"
+    ],
+    "controverse": "Faut-il négocier avec l'État pour obtenir une régularisation légale (même précaire et temporaire), ou refuser toute négociation pour maintenir une occupation radicale ? Plus largement : la ZAD doit-elle être un projet de transformation radicale de la relation à la terre, ou une tentative pragmatique d'obtenir la reconnaissance légale et la permanence pour un groupe d'occupant·e·s ?",
+    "angle_journalistique": "Comment l'État fragmente les occupations collectives : l'articulation entre répression militaire et négociation administrative qui transforme une zone d'occupation collective en archipel d'occupations individuelles régularisées et précaires.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "748e8d4970"
+   },
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z",
+   "archive_url": "http://web.archive.org/web/20260312165008/https://infokiosques.net/IMG/pdf/zadissidences2-48p-A5-fil.pdf"
+  },
   "38f15499": {
    "id": "38f15499",
    "url": "https://infokiosques.net/IMG/pdf/la_fin_de_la_zad-pageparpage.pdf",
@@ -4201,6 +5576,56 @@
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z"
+  },
+  "38a113bc": {
+   "id": "38a113bc",
+   "url": "https://infokiosques.net/IMG/pdf/la_fin_de_la_zad-cahier.pdf",
+   "filename": "la_fin_de_la_zad-cahier.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Paysannerie & ruralité",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 9,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/38a113bc_la_fin_de_la_zad-cahier.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 9,
+     "raison": "Titre 'La fin de la ZAD, le début de quoi ?' cite explicitement 'ZAD', occupation collective de terres",
+     "context_seen": "formats: · HTML · La fin de la ZAD, le début de quoi ? (page par page) (PDF) · La fin de la ZAD, le début de quoi ? (cahier) (PDF)",
+     "link_text": "· La fin de la ZAD, le début de quoi ? (cahier) (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · La fin de la ZAD, le début de quoi ? (page par page) (PDF) · La fin de la ZAD, le début de quoi ? (cahier) (PDF)",
+     "link_text": "· La fin de la ZAD, le début de quoi ? (cahier) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z",
+   "archive_url": "http://web.archive.org/web/20221005213247/https://infokiosques.net/IMG/pdf/la_fin_de_la_zad-cahier.pdf"
   },
   "5ea1719f": {
    "id": "5ea1719f",
@@ -4528,6 +5953,56 @@
    "link_checked": "2026-05-24T19:16:12Z",
    "archive_url": "http://web.archive.org/web/20260110161043/https://infokiosques.net/IMG/pdf/recuperation_de_terres-bejuco-pageparpage.pdf"
   },
+  "ba64641a": {
+   "id": "ba64641a",
+   "url": "https://infokiosques.net/IMG/pdf/recuperation_de_terres-bejuco-cahier.pdf",
+   "filename": "recuperation_de_terres-bejuco-cahier.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Paysannerie & ruralité",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 9,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/ba64641a_recuperation_de_terres-bejuco-cahier.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 9,
+     "raison": "Titre 'Récupération de terres' cite explicitement la récupération/libération des terres, thème central de la documentation cible",
+     "context_seen": "formats: · HTML · Récupération de terres (page par page) (PDF) · Récupération de terres (cahier) (PDF)",
+     "link_text": "· Récupération de terres (cahier) (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Récupération de terres (page par page) (PDF) · Récupération de terres (cahier) (PDF)",
+     "link_text": "· Récupération de terres (cahier) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z",
+   "archive_url": "http://web.archive.org/web/20260111155023/https://infokiosques.net/IMG/pdf/recuperation_de_terres-bejuco-cahier.pdf"
+  },
   "22b9da21": {
    "id": "22b9da21",
    "url": "https://infokiosques.net/IMG/pdf/marcel_paysan_inderacinable-24p-A5-livret.pdf",
@@ -4769,6 +6244,104 @@
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
    "archive_url": "https://web.archive.org/web/20260625150500/https://infokiosques.net/IMG/pdf/jeanne_squatteuse_enracinee-40p-A4-fil.pdf"
+  },
+  "336d8c22": {
+   "id": "336d8c22",
+   "url": "https://infokiosques.net/IMG/pdf/elias_fonzy_moki_grandir_contre_l_aerport-28p-A5-livret.pdf",
+   "filename": "elias_fonzy_moki_grandir_contre_l_aerport-28p-A5-livret.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Paysannerie & ruralité",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 2,
+   "score_final": 6,
+   "latest_score": 2,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": false,
+   "saved_as": null,
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 6,
+     "raison": "Titre 'grandir contre l'aérport' indique une lutte territoriale, tangentielle à autonomie territoriale et libération des terres sans citation explicite de mots-clés.",
+     "context_seen": "formats: · HTML · Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-livret (PDF) · Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-fil (PDF)",
+     "link_text": "· Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-livret (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 2,
+     "raison": "Titre 'grandir contre l'aérport' — aucune mention explicite de terre, communs, foncier ou paysannerie",
+     "context_seen": "formats: · HTML · Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-livret (PDF) · Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-fil (PDF)",
+     "link_text": "· Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-livret (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z",
+   "archive_url": "https://web.archive.org/web/20260524191837/https://infokiosques.net/IMG/pdf/elias_fonzy_moki_grandir_contre_l_aerport-28p-A5-livret.pdf"
+  },
+  "22b1d1f9": {
+   "id": "22b1d1f9",
+   "url": "https://infokiosques.net/IMG/pdf/elias_fonzy_moki_grandir_contre_l_aerport-28p-A4-fil.pdf",
+   "filename": "elias_fonzy_moki_grandir_contre_l_aerport-28p-A4-fil.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Paysannerie & ruralité",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 2,
+   "score_final": 6,
+   "latest_score": 2,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": false,
+   "saved_as": null,
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 6,
+     "raison": "Titre 'grandir contre l'aérport' indique une lutte territoriale, tangentielle à autonomie territoriale et libération des terres sans citation explicite de mots-clés.",
+     "context_seen": "formats: · HTML · Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-livret (PDF) · Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-fil (PDF)",
+     "link_text": "· Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-fil (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 2,
+     "raison": "Titre 'grandir contre l'aérport' — aucune mention explicite de terre, communs, foncier ou paysannerie",
+     "context_seen": "formats: · HTML · Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-livret (PDF) · Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-fil (PDF)",
+     "link_text": "· Elias_Fonzy_Moki_grandir_contre_l’aérport-28p-A5-fil (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z",
+   "archive_url": "http://web.archive.org/web/20240629113836/https://infokiosques.net/IMG/pdf/elias_fonzy_moki_grandir_contre_l_aerport-28p-A4-fil.pdf"
   },
   "235a98fb": {
    "id": "235a98fb",
@@ -5624,6 +7197,56 @@
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z",
    "archive_url": "http://web.archive.org/web/20251125030717/https://infokiosques.net/IMG/pdf/Escartons-pageparpage.pdf"
+  },
+  "54e772e7": {
+   "id": "54e772e7",
+   "url": "https://infokiosques.net/IMG/pdf/Escartons-cahier.pdf",
+   "filename": "Escartons-cahier.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Paysannerie & ruralité",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 3,
+   "score_final": 9,
+   "latest_score": 3,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/54e772e7_Escartons-cahier.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 9,
+     "raison": "Le titre 'La République des Escartons' cite explicitement un terme historique central : les Escartons sont des institutions de gestion collective des terres et communs fonciers",
+     "context_seen": "formats: · HTML · La République des Escartons (page par page) (PDF) · La République des Escartons (cahier) (PDF) · sur le site web",
+     "link_text": "· La République des Escartons (cahier) (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 3,
+     "raison": "Titre 'La République des Escartons' ne cite aucun mot-clé explicite (communs, foncier, paysans, terres, libération)",
+     "context_seen": "formats: · HTML · La République des Escartons (page par page) (PDF) · La République des Escartons (cahier) (PDF) · sur le site web",
+     "link_text": "· La République des Escartons (cahier) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok",
+   "link_status": "ok",
+   "link_checked": "2026-06-25T15:35:32Z",
+   "archive_url": "http://web.archive.org/web/20221209005221/https://infokiosques.net/IMG/pdf/Escartons-cahier.pdf"
   },
   "779edb5d": {
    "id": "779edb5d",
@@ -6756,6 +8379,55 @@
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z"
   },
+  "c97fba28": {
+   "id": "c97fba28",
+   "url": "https://infokiosques.net/IMG/pdf/un-an-apres-les-expulsions-cahier.pdf",
+   "filename": "un-an-apres-les-expulsions-cahier.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Squat (rapport à l'habiter)",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 8,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/c97fba28_un-an-apres-les-expulsions-cahier.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 8,
+     "raison": "Titre cite 'expulsions' et 'ZAD' — occupation foncière et résistance",
+     "context_seen": "formats: · HTML · Un an après les expulsions, qu’est-ce qu’on fait encore sur la ZAD ? (page par page) (PDF) · Un an après les expulsions, qu’est-ce qu’on fait encore sur la ZAD ? (cahier) (PDF)",
+     "link_text": "· Un an après les expulsions, qu’est-ce qu’on fait encore sur la ZAD ? (cahier) (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Un an après les expulsions, qu’est-ce qu’on fait encore sur la ZAD ? (page par page) (PDF) · Un an après les expulsions, qu’est-ce qu’on fait encore sur la ZAD ? (cahier) (PDF)",
+     "link_text": "· Un an après les expulsions, qu’est-ce qu’on fait encore sur la ZAD ? (cahier) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z"
+  },
   "bc522fd4": {
    "id": "bc522fd4",
    "url": "https://infokiosques.net/IMG/pdf/ocupar_e_lutar-cahierx2.pdf",
@@ -6868,6 +8540,104 @@
     "prompt_version": "3e10792385",
     "whitelist": true
    },
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z"
+  },
+  "df840ff3": {
+   "id": "df840ff3",
+   "url": "https://infokiosques.net/IMG/pdf/ocupar_e_lutar-1984-8pa6-pageparpage.pdf",
+   "filename": "ocupar_e_lutar-1984-8pa6-pageparpage.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Squat (rapport à l'habiter)",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "1984",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/df840ff3_ocupar_e_lutar-1984-8pa6-pageparpage.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 7,
+     "raison": "Titre 'Ocupar... é lutar' évoque explicitement l'occupation d'espaces par le verbe 'ocupar', lié à logement collectif et communs urbains",
+     "context_seen": "formats: · HTML · Ocupar... é lutar (version portugaise, à imprimer) (PDF) · Ocupar... é lutar (version portugaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à imprimer) (PDF) · Occupare... è lottare (version italienne, à lire sur l’écran) (PDF) · Occupare... è lottare (version italienne, à im",
+     "link_text": "· Ocupar... é lutar (version portugaise, à lire sur l’écran) (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Ocupar... é lutar (version portugaise, à imprimer) (PDF) · Ocupar... é lutar (version portugaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à imprimer) (PDF) · Occupare... è lottare (version italienne, à lire sur l’écran) (PDF) · Occupare... è lottare (version italienne, à im",
+     "link_text": "· Ocupar... é lutar (version portugaise, à lire sur l’écran) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z"
+  },
+  "9789d29b": {
+   "id": "9789d29b",
+   "url": "https://infokiosques.net/IMG/pdf/To-squat-is-to-struggle-1984-bookletX2.pdf",
+   "filename": "To-squat-is-to-struggle-1984-bookletX2.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Squat (rapport à l'habiter)",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "1984",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/9789d29b_To-squat-is-to-struggle-1984-bookletX2.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 7,
+     "raison": "Titre 'To squat... is to struggle' recoupe explicitement occupation et lutte, thématique habitat collectif/communs urbains",
+     "context_seen": "formats: · HTML · Ocupar... é lutar (version portugaise, à imprimer) (PDF) · Ocupar... é lutar (version portugaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à imprimer) (PDF) · Occupare... è lottare (version italienne, à lire sur l’écran) (PDF) · Occupare... è lottare (version italienne, à im",
+     "link_text": "· To squat... is to struggle (version anglaise, à imprimer) (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Ocupar... é lutar (version portugaise, à imprimer) (PDF) · Ocupar... é lutar (version portugaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à imprimer) (PDF) · Occupare... è lottare (version italienne, à lire sur l’écran) (PDF) · Occupare... è lottare (version italienne, à im",
+     "link_text": "· To squat... is to struggle (version anglaise, à imprimer) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z"
@@ -6988,6 +8758,164 @@
     "model": "claude-haiku-4-5",
     "prompt_version": "3b0e36c580"
    },
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z"
+  },
+  "e9b2bf94": {
+   "id": "e9b2bf94",
+   "url": "https://infokiosques.net/IMG/pdf/Occupare_e_lottare-2x8pA6-to-print.pdf",
+   "filename": "Occupare_e_lottare-2x8pA6-to-print.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Squat (rapport à l'habiter)",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/e9b2bf94_Occupare_e_lottare-2x8pA6-to-print.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 7,
+     "raison": "Titre 'Occupare... è lottare' évoque occupation et lutte, lié à habitat collectif et communs urbains",
+     "context_seen": "formats: · HTML · Ocupar... é lutar (version portugaise, à imprimer) (PDF) · Ocupar... é lutar (version portugaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à imprimer) (PDF) · Occupare... è lottare (version italienne, à lire sur l’écran) (PDF) · Occupare... è lottare (version italienne, à im",
+     "link_text": "· Occupare... è lottare (version italienne, à imprimer) (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Ocupar... é lutar (version portugaise, à imprimer) (PDF) · Ocupar... é lutar (version portugaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à imprimer) (PDF) · Occupare... è lottare (version italienne, à lire sur l’écran) (PDF) · Occupare... è lottare (version italienne, à im",
+     "link_text": "· Occupare... è lottare (version italienne, à imprimer) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z"
+  },
+  "f2168aa7": {
+   "id": "f2168aa7",
+   "url": "https://infokiosques.net/IMG/pdf/Skvotuoti_Reiskia_Kovoti-8pA6-to-read.pdf",
+   "filename": "Skvotuoti_Reiskia_Kovoti-8pA6-to-read.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Squat (rapport à l'habiter)",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/f2168aa7_Skvotuoti_Reiskia_Kovoti-8pA6-to-read.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 7,
+     "raison": "Titre 'Skvotuoti... Reiskia Kovoti' contient le terme lituanien d'occupation, lié à habitat collectif et communs urbains",
+     "context_seen": "formats: · HTML · Ocupar... é lutar (version portugaise, à imprimer) (PDF) · Ocupar... é lutar (version portugaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à imprimer) (PDF) · Occupare... è lottare (version italienne, à lire sur l’écran) (PDF) · Occupare... è lottare (version italienne, à im",
+     "link_text": "· Skvotuoti... Reiskia Kovoti (version lituanienne, à lire sur l’écran) (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Ocupar... é lutar (version portugaise, à imprimer) (PDF) · Ocupar... é lutar (version portugaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à lire sur l’écran) (PDF) · To squat... is to struggle (version anglaise, à imprimer) (PDF) · Occupare... è lottare (version italienne, à lire sur l’écran) (PDF) · Occupare... è lottare (version italienne, à im",
+     "link_text": "· Skvotuoti... Reiskia Kovoti (version lituanienne, à lire sur l’écran) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "cover": "covers/f2168aa7.png",
+   "meta": {
+    "page_count": 8,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": ""
+   },
+   "enrichment": {
+    "error": "json_parse: Expecting property name enclosed in double quotes: line 11 column 95 (char 2087)",
+    "raw_response": "{\n  \"summary\": \"Ce texte paru en 1984 à Paris constitue un manifeste du mouvement squatter parisien des années 1980. Sous le pseudonyme Molotovas, l'auteur analyse la crise du logement dans la capitale (50 000 sans-abri, 300 000 logements vides) comme enjeu politique central, au-delà de la simple pénurie. Le texte décrit le projet d'ordre urbain des autorités : répartition spatiale des pauvres dans des ghettos séparés, surveillance, contrôle des corps via l'exigence d'adresse officielle, de stat"
+   },
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z"
+  },
+  "2d0a1772": {
+   "id": "2d0a1772",
+   "url": "https://infokiosques.net/IMG/pdf/la_resistance_aux_expulsions_australie_1929-1936_pageparpage.pdf",
+   "filename": "la_resistance_aux_expulsions_australie_1929-1936_pageparpage.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Squat (rapport à l'habiter)",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/2d0a1772_la_resistance_aux_expulsions_australie_1929-1936_pageparpage.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 7,
+     "raison": "Titre cite explicitement 'La résistance aux expulsions' (1929-1936) ; lutte directe pour l'accès/maintien au logement",
+     "context_seen": "formats: · HTML · Lock Out The Landlords ! (en anglais - cahier) (PDF) · Lock Out The Landlords ! (en anglais - page par page) (PDF) · ¡A la calle los propietarios ! (en espagnol - page par page) (PDF) · ¡A la calle los propietarios ! (en espagnol - cahier) (PDF) · La résistance aux expulsions - Australie 1929-1936 (version cahier)  (PDF) · La résistance aux expulsions - Australie 1929-1936 (versi",
+     "link_text": "· La résistance aux expulsions - Australie 1929-1936 (version page par page)  (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Lock Out The Landlords ! (en anglais - cahier) (PDF) · Lock Out The Landlords ! (en anglais - page par page) (PDF) · ¡A la calle los propietarios ! (en espagnol - page par page) (PDF) · ¡A la calle los propietarios ! (en espagnol - cahier) (PDF) · La résistance aux expulsions - Australie 1929-1936 (version cahier)  (PDF) · La résistance aux expulsions - Australie 1929-1936 (versi",
+     "link_text": "· La résistance aux expulsions - Australie 1929-1936 (version page par page)  (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z"
@@ -7133,6 +9061,55 @@
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z"
   },
+  "98360cb9": {
+   "id": "98360cb9",
+   "url": "https://infokiosques.net/IMG/pdf/Barcelone-1931-Greve-des-loyers.pdf",
+   "filename": "Barcelone-1931-Greve-des-loyers.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Squat (rapport à l'habiter)",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/98360cb9_Barcelone-1931-Greve-des-loyers.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 7,
+     "raison": "Titre cite 'Grève massive des loyers' (Barcelone 1931) ; action collective directe sur le droit foncier/immobilier",
+     "context_seen": "formats: · HTML · Barcelone 1931 - Grève massive des loyers  - page par page A6 (PDF) · Barcelone 1931 - Grève massive des loyers - cahier (PDF) · sur le site web",
+     "link_text": "· Barcelone 1931 - Grève massive des loyers - cahier (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Barcelone 1931 - Grève massive des loyers  - page par page A6 (PDF) · Barcelone 1931 - Grève massive des loyers - cahier (PDF) · sur le site web",
+     "link_text": "· Barcelone 1931 - Grève massive des loyers - cahier (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z"
+  },
   "5c511048": {
    "id": "5c511048",
    "url": "https://infokiosques.net/IMG/pdf/acerca-de-las-comunidades-mapuche-cuaderno.pdf",
@@ -7266,6 +9243,55 @@
     "model": "claude-haiku-4-5",
     "prompt_version": "f97966bef8"
    },
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z"
+  },
+  "2c9a5575": {
+   "id": "2c9a5575",
+   "url": "https://infokiosques.net/IMG/pdf/acerca-de-las-comunidades-mapuche-pageparpage.pdf",
+   "filename": "acerca-de-las-comunidades-mapuche-pageparpage.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Anticolonialismes",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 8,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/2c9a5575_acerca-de-las-comunidades-mapuche-pageparpage.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 8,
+     "raison": "Titre cite 'comunidades mapuche en guerra' directement pertinent aux mots-clés indigenous land rights, terra indígena, autonomía territorial",
+     "context_seen": "formats: · HTML · Acerca de las comunidades mapuche en guerra y la solidaridad anárquica (version espagnole - cahier) (PDF) · Acerca de las comunidades mapuche en guerra y la solidaridad anárquica (version espagnole - page par page) (PDF) · À propos des communautés mapuches en guerre et de la solidarité anarchiste (page par page) (PDF) · À propos des communautés mapuches en guerre et de la solidar",
+     "link_text": "· Acerca de las comunidades mapuche en guerra y la solidaridad anárquica (version espagnole - page par page) (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Acerca de las comunidades mapuche en guerra y la solidaridad anárquica (version espagnole - cahier) (PDF) · Acerca de las comunidades mapuche en guerra y la solidaridad anárquica (version espagnole - page par page) (PDF) · À propos des communautés mapuches en guerre et de la solidarité anarchiste (page par page) (PDF) · À propos des communautés mapuches en guerre et de la solidar",
+     "link_text": "· Acerca de las comunidades mapuche en guerra y la solidaridad anárquica (version espagnole - page par page) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z"
@@ -7443,6 +9469,55 @@
     "model": "claude-haiku-4-5",
     "prompt_version": "19a7861857"
    },
+   "download_status": "ok",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z"
+  },
+  "19101c21": {
+   "id": "19101c21",
+   "url": "https://infokiosques.net/IMG/pdf/communautes-mapuche-et-solidarite-anarchiste-cahier.pdf",
+   "filename": "communautes-mapuche-et-solidarite-anarchiste-cahier.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Anticolonialismes",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 8,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/19101c21_communautes-mapuche-et-solidarite-anarchiste-cahier.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 8,
+     "raison": "Titre cite 'communautés mapuches en guerre' directement pertinent aux mots-clés indigenous land rights, terra indígena, autonomía territorial",
+     "context_seen": "formats: · HTML · Acerca de las comunidades mapuche en guerra y la solidaridad anárquica (version espagnole - cahier) (PDF) · Acerca de las comunidades mapuche en guerra y la solidaridad anárquica (version espagnole - page par page) (PDF) · À propos des communautés mapuches en guerre et de la solidarité anarchiste (page par page) (PDF) · À propos des communautés mapuches en guerre et de la solidar",
+     "link_text": "· À propos des communautés mapuches en guerre et de la solidarité anarchiste (cahier) (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Acerca de las comunidades mapuche en guerra y la solidaridad anárquica (version espagnole - cahier) (PDF) · Acerca de las comunidades mapuche en guerra y la solidaridad anárquica (version espagnole - page par page) (PDF) · À propos des communautés mapuches en guerre et de la solidarité anarchiste (page par page) (PDF) · À propos des communautés mapuches en guerre et de la solidar",
+     "link_text": "· À propos des communautés mapuches en guerre et de la solidarité anarchiste (cahier) (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
    "download_status": "ok",
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z"
@@ -11598,6 +13673,55 @@
    "link_status": "unchecked",
    "link_checked": "2026-05-24T19:16:12Z"
   },
+  "eb18a3de": {
+   "id": "eb18a3de",
+   "url": "https://archive.org/download/goingcoopcomplet0000coug/goingcoopcomplet0000coug.pdf",
+   "filename": "goingcoopcomplet0000coug.pdf",
+   "format": "pdf",
+   "source": "Archive.org — community land trusts & housing commons",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "en",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": false,
+   "saved_as": null,
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 7,
+     "raison": "Titre cite 'Going co-op' et 'the complete guide to buying and owning your own apartment'",
+     "context_seen": "Coughlan, William, 1946- — xi, 249 p. ; 21 cm, Includes index",
+     "link_text": "Going co-op : the complete guide to buying and owning your own apartment",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Coughlan, William, 1946- — xi, 249 p. ; 21 cm, Includes index",
+     "link_text": "Going co-op : the complete guide to buying and owning your own apartment",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "failed_network",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z"
+  },
   "6325ebd3": {
    "id": "6325ebd3",
    "url": "https://archive.org/download/getyourownhomeco00danerich/getyourownhomeco00danerich.pdf",
@@ -11749,6 +13873,164 @@
    "download_status": "ok",
    "link_status": "ok",
    "link_checked": "2026-06-25T15:35:32Z"
+  },
+  "6d4f3628": {
+   "id": "6d4f3628",
+   "url": "https://archive.org/download/sweatequitycoope0000shar/sweatequitycoope0000shar.pdf",
+   "filename": "sweatequitycoope0000shar.pdf",
+   "format": "pdf",
+   "source": "Archive.org — community land trusts & housing commons",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 8,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "1974",
+   "lang": "en",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": false,
+   "saved_as": null,
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 8,
+     "raison": "Titre cite 'cooperative house-building in Newfoundland, 1920-1974' ; contexte : ouvrage de 438 pages avec 'bibliographical references'",
+     "context_seen": "Sharpe, Christopher A., 1947-, author — 438 pages : 24 cm, Includes bibliographical references (pages 404-430) and index",
+     "link_text": "Sweat equity : cooperative house-building in Newfoundland, 1920 1974",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Sharpe, Christopher A., 1947-, author — 438 pages : 24 cm, Includes bibliographical references (pages 404-430) and index",
+     "link_text": "Sweat equity : cooperative house-building in Newfoundland, 1920 1974",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "failed_network",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z"
+  },
+  "de3ff94a": {
+   "id": "de3ff94a",
+   "url": "https://archive.org/download/Community_Land_Trust_Book/Community_Land_Trust_Book.pdf",
+   "filename": "Community_Land_Trust_Book.pdf",
+   "format": "pdf",
+   "source": "Archive.org — community land trusts & housing commons",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 9,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2007-06-26",
+   "lang": "en",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/de3ff94a_Community_Land_Trust_Book.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 9,
+     "raison": "Titre cite 'Community Land Trust' — mot-clé central de la liste thématique",
+     "context_seen": "Community Land Trust Book",
+     "link_text": "Community Land Trust Book",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Community Land Trust Book",
+     "link_text": "Community Land Trust Book",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "cover": "covers/de3ff94a.png",
+   "meta": {
+    "page_count": 133,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": ""
+   },
+   "enrichment": {
+    "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
+    "raw_response": "# ⚠️ Contenu du document manquant\n\nJe ne peux pas générer l'analyse demandée : le texte du PDF n'a pas été transmis. Entre les marqueurs `[p.1]` et `[p.133]`, il n'y a que des numéros de page vides, sans aucun contenu textuel.\n\n**Ce qui s'est passé probablement :**\n- L'extraction du PDF vers texte brut n'a pas fonctionné correctement\n- Le texte n'a pas été copié complètement dans votre message\n- Le fichier PDF est corrompu ou vide\n\n**Pour avancer :**\nPeux-tu renvoyer le texte brut du document ? "
+   },
+   "download_status": "ok",
+   "link_status": "ok",
+   "link_checked": "2026-06-25T15:35:32Z"
+  },
+  "941861fb": {
+   "id": "941861fb",
+   "url": "https://archive.org/download/wereinchargecoho0000bren/wereinchargecoho0000bren.pdf",
+   "filename": "wereinchargecoho0000bren.pdf",
+   "format": "pdf",
+   "source": "Archive.org — community land trusts & housing commons",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-06-25_14-34",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 8,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "",
+   "lang": "en",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": false,
+   "saved_as": null,
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 8,
+     "raison": "Titre cite explicitement 'cohousing communities', concept de la thématique des communs urbains et habitat collectif",
+     "context_seen": "Brenton, Maria, 1945- — vii, 80 p. ; 30 cm, \"The Housing Corporation\", Includes bibliographical references",
+     "link_text": "We're in charge : cohousing communities of older people in the Netherlands : lessons for Britain",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Brenton, Maria, 1945- — vii, 80 p. ; 30 cm, \"The Housing Corporation\", Includes bibliographical references",
+     "link_text": "We're in charge : cohousing communities of older people in the Netherlands : lessons for Britain",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "download_status": "failed_network",
+   "link_status": "unchecked",
+   "link_checked": "2026-05-24T19:16:12Z"
   },
   "c210135f": {
    "id": "c210135f",
@@ -11947,7 +14229,7 @@
   }
  },
  "meta": {
-  "last_updated": "2026-06-25T15:40:13+00:00",
+  "last_updated": "2026-06-26T12:51:28+00:00",
   "total_docs": 965,
   "total_downloaded": 264,
   "total_published": 102,
@@ -11977,7 +14259,7 @@
    "9": 9,
    "10": 0
   },
-  "last_archive_run": "2026-06-25T15:40:13+00:00",
+  "last_archive_run": "2026-06-26T12:51:28+00:00",
   "archived_total": 699
  }
 }

@@ -1,11 +1,139 @@
-# Overrides manuels de score_final — survivent aux ré-enrichissements.
-# Format : <id>: {score: N, raison: "..."}
 score_overrides:
-  f6ebd39c: {score: 6, raison: "Propriété d'usage par occupancy-and-use — Carson, texte de référence direct"}
-  41e09539: {score: 6, raison: "Proudhon, Qu'est-ce que la propriété ? — source primaire fondatrice"}
-  d992c836: {score: 6, raison: "ZAD NDDL — communs fonciers en acte, notes critiques"}
-  38f15499: {score: 6, raison: "La fin de la ZAD — réflexion collective sur le tournant post-aéroport"}
-  5ea1719f: {score: 6, raison: "ZADissidences — textes critiques internes ZAD"}
-  3b2f3224: {score: 6, raison: "Barcelone 1931, grève des loyers — résistance à l'expulsion"}
-  bc522fd4: {score: 6, raison: "Ocupar é lutar — occupation urbaine comme commun (PT, 1984)"}
-  c0744b42: {score: 6, raison: "Tolstoï, Some Social Remedies — critique propriété et socialisme"}
+  03b9d287:
+    raison: restauré après ré-enrichissement CI (était 9)
+    score: 9
+  073089a1:
+    raison: restauré après ré-enrichissement CI (était 6)
+    score: 6
+  095f8db9:
+    raison: restauré après ré-enrichissement CI (était 6)
+    score: 6
+  19101c21:
+    raison: restauré après ré-enrichissement CI (était 8)
+    score: 8
+  2175f7a3:
+    raison: restauré après ré-enrichissement CI (était 7)
+    score: 7
+  22b1d1f9:
+    raison: restauré après ré-enrichissement CI (était 6)
+    score: 6
+  2478138a:
+    raison: restauré après ré-enrichissement CI (était 6)
+    score: 6
+  28b7cb2c:
+    raison: restauré après ré-enrichissement CI (était 7)
+    score: 7
+  2c9a5575:
+    raison: restauré après ré-enrichissement CI (était 8)
+    score: 8
+  2d0a1772:
+    raison: restauré après ré-enrichissement CI (était 7)
+    score: 7
+  2e2e4bc7:
+    raison: restauré après ré-enrichissement CI (était 8)
+    score: 8
+  336d8c22:
+    raison: restauré après ré-enrichissement CI (était 6)
+    score: 6
+  35641d6d:
+    raison: restauré après ré-enrichissement CI (était 9)
+    score: 9
+  38a113bc:
+    raison: restauré après ré-enrichissement CI (était 9)
+    score: 9
+  38f15499:
+    raison: La fin de la ZAD — réflexion collective sur le tournant post-aéroport
+    score: 6
+  3b2f3224:
+    raison: Barcelone 1931, grève des loyers — résistance à l'expulsion
+    score: 6
+  41e09539:
+    raison: Proudhon, Qu'est-ce que la propriété ? — source primaire fondatrice
+    score: 6
+  44510a9a:
+    raison: restauré après ré-enrichissement CI (était 9)
+    score: 9
+  54e772e7:
+    raison: restauré après ré-enrichissement CI (était 9)
+    score: 9
+  5ea1719f:
+    raison: ZADissidences — textes critiques internes ZAD
+    score: 6
+  5ea6c0cc:
+    raison: restauré après ré-enrichissement CI (était 6)
+    score: 6
+  6d4f3628:
+    raison: restauré après ré-enrichissement CI (était 8)
+    score: 8
+  8bfe460c:
+    raison: restauré après ré-enrichissement CI (était 9)
+    score: 9
+  941861fb:
+    raison: restauré après ré-enrichissement CI (était 8)
+    score: 8
+  '96563571':
+    raison: restauré après ré-enrichissement CI (était 9)
+    score: 9
+  9789d29b:
+    raison: restauré après ré-enrichissement CI (était 7)
+    score: 7
+  98360cb9:
+    raison: restauré après ré-enrichissement CI (était 7)
+    score: 7
+  99a6d367:
+    raison: restauré après ré-enrichissement CI (était 8)
+    score: 8
+  a238e5bd:
+    raison: restauré après ré-enrichissement CI (était 6)
+    score: 6
+  a90d3977:
+    raison: restauré après ré-enrichissement CI (était 7)
+    score: 7
+  b0917bdf:
+    raison: restauré après ré-enrichissement CI (était 8)
+    score: 8
+  b651aa85:
+    raison: restauré après ré-enrichissement CI (était 6)
+    score: 6
+  ba64641a:
+    raison: restauré après ré-enrichissement CI (était 9)
+    score: 9
+  bc522fd4:
+    raison: Ocupar é lutar — occupation urbaine comme commun (PT, 1984)
+    score: 6
+  c0744b42:
+    raison: Tolstoï, Some Social Remedies — critique propriété et socialisme
+    score: 6
+  c97fba28:
+    raison: restauré après ré-enrichissement CI (était 8)
+    score: 8
+  ce124b01:
+    raison: restauré après ré-enrichissement CI (était 6)
+    score: 6
+  d992c836:
+    raison: ZAD NDDL — communs fonciers en acte, notes critiques
+    score: 6
+  dc1574ae:
+    raison: restauré après ré-enrichissement CI (était 9)
+    score: 9
+  de3ff94a:
+    raison: restauré après ré-enrichissement CI (était 9)
+    score: 9
+  df840ff3:
+    raison: restauré après ré-enrichissement CI (était 7)
+    score: 7
+  e4f64264:
+    raison: restauré après ré-enrichissement CI (était 8)
+    score: 8
+  e9b2bf94:
+    raison: restauré après ré-enrichissement CI (était 7)
+    score: 7
+  eb18a3de:
+    raison: restauré après ré-enrichissement CI (était 7)
+    score: 7
+  f2168aa7:
+    raison: restauré après ré-enrichissement CI (était 7)
+    score: 7
+  f6ebd39c:
+    raison: Propriété d'usage par occupancy-and-use — Carson, texte de référence direct
+    score: 6
