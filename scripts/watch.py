@@ -456,6 +456,37 @@ def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
         print(f"     ⚠  build_metadata raté : {e}")
         out["bib"] = {}
 
+    # ── Skip enrichissement si score_final déjà présent ─────────────────────
+    # Évite d'écraser un score_final existant valide lors d'un re-run CI.
+    # Forcer le ré-enrichissement : FORCE_REENRICH=true en variable d'env.
+    _force_reenrich = os.getenv("FORCE_REENRICH", "false").lower() == "true"
+    _existing_score_final = None
+    if not _force_reenrich:
+        try:
+            _catalog_path = SYNOPSIS_PATH / "catalog.json"
+            if _catalog_path.exists():
+                _cat = json.loads(_catalog_path.read_text(encoding="utf-8"))
+                _fiche = _cat.get("docs", {}).get(uid, {})
+                _sf = _fiche.get("score_final")
+                if _sf is not None and _sf != "" and _sf != 0:
+                    _existing_score_final = _sf
+        except Exception as _e:
+            print(f"     ⚠  lecture catalog pour skip-check raté : {_e}")
+
+    if _existing_score_final is not None and not _force_reenrich:
+        print(f"     ⏭  skip enrichissement — score_final déjà présent ({_existing_score_final})")
+        # Réinjecter l'enrichissement existant depuis le catalog pour que
+        # update_synopsis_catalog ne reparte pas de zéro.
+        try:
+            _catalog_path = SYNOPSIS_PATH / "catalog.json"
+            _cat = json.loads(_catalog_path.read_text(encoding="utf-8"))
+            _fiche = _cat.get("docs", {}).get(uid, {})
+            if isinstance(_fiche.get("enrichment"), dict):
+                out["enrichment"] = _fiche["enrichment"]
+        except Exception:
+            pass
+        return out
+
     if text:
         print(f"     📖  Texte extrait ({len(text)} chars), enrichissement…")
         title_hint = doc.get("link_text") or doc["filename"]
