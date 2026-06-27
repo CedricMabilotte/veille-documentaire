@@ -660,6 +660,20 @@ def update_synopsis_catalog(report: dict) -> None:
                 fiche["downloaded"] = True
                 fiche["saved_as"]   = r["saved_as"]
             fiche.update({k: v for k, v in extras.items() if v})
+            # T1 — titre normalisé : renseigner doc.title si absent, à la première
+            # téléchargement. On ne l'écrase jamais (corrections manuelles préservées).
+            if r["downloaded"] and not fiche.get("title"):
+                _pdf_title = ""
+                if isinstance(extras.get("meta"), dict):
+                    _pdf_title = extras["meta"].get("pdf_title", "") or ""
+                _norm = doc_metadata.normalize_title(
+                    link_text=r.get("link_text", "") or "",
+                    pdf_title=_pdf_title,
+                    filename=r.get("filename", "") or "",
+                    author_hint=fiche.get("author", "") or "",
+                )
+                if _norm:
+                    fiche["title"] = _norm
         else:
             catalog["docs"][doc_id] = {
                 "id":             doc_id,
@@ -687,6 +701,19 @@ def update_synopsis_catalog(report: dict) -> None:
                 "runs":           [run_entry],
                 **extras,
             }
+            # T1 — titre normalisé à la création du doc (premier téléchargement)
+            if r["downloaded"]:
+                _pdf_title = ""
+                if isinstance(extras.get("meta"), dict):
+                    _pdf_title = extras["meta"].get("pdf_title", "") or ""
+                _norm = doc_metadata.normalize_title(
+                    link_text=r.get("link_text", "") or "",
+                    pdf_title=_pdf_title,
+                    filename=r.get("filename", "") or "",
+                    author_hint=bib.get("author", "") or "",
+                )
+                if _norm:
+                    catalog["docs"][doc_id]["title"] = _norm
 
     # B12 — recoupement versions/traductions
     try:

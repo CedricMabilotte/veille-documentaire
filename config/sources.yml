@@ -100,6 +100,26 @@ keywords:
   - agricultura campesina
   - tenencia colectiva
   - movimiento sin tierra
+  # M15 / Indignados (ajouté session #8)
+  - 15M
+  - indignados
+  - asamblea popular
+  - autogestión
+  - commons urbanos
+  - espacios autogestionados
+  - democracia real ya
+  - acampada
+  - Barcelona en Comú
+  # Cuba — coopérativisme et poder popular (ajouté session #8)
+  - UBPC
+  - cooperativa agropecuaria
+  - agricultura urbana
+  - organopónico
+  - poder popular
+  - período especial
+  - campesino a campesino
+  - ANAP
+  - usufructo estatal
   # ── Português (BR / MST / lusophone) ────────────────────────────────────
   - Movimento Sem Terra
   - MST
@@ -731,6 +751,97 @@ sources:
   #   orientation: institutionnel
   #   default_lang: en
   #   min_interval_days: 30
+
+  # ═══ M15 — Mouvement des indignés espagnols ════════════════════════════════
+  # Ajoutées session #8 (2026-06-27) — angles morts identifiés dans le corpus.
+  # Le mouvement 15M a produit des textes sur l'autogestion, les communs
+  # urbains, les assemblées populaires, les alternatives à la propriété.
+
+  # Traficantes de Sueños : éditeur militant madrilène, tous les livres en
+  # PDF Creative Commons. ~10 titres sur le 15M confirmés + communs/autogestion.
+  - label: "Traficantes de Sueños — 15M (matière)"
+    url: "https://traficantes.net/materias/15-m"
+    type: deep_html
+    orientation: militant
+    default_lang: es
+    min_interval_days: 30
+
+  - label: "Traficantes de Sueños — Bienes comunes"
+    url: "https://traficantes.net/materias/bienes-comunes"
+    type: deep_html
+    orientation: militant
+    default_lang: es
+    min_interval_days: 30
+
+  - label: "Traficantes de Sueños — Autogestion"
+    url: "https://traficantes.net/materias/autogestion"
+    type: deep_html
+    orientation: militant
+    default_lang: es
+    min_interval_days: 30
+
+  # HAL — travaux académiques sur le 15M / indignados
+  - label: "HAL Science — 15M / indignados"
+    url: "https://api.archives-ouvertes.fr/search/?q=15M+indignados&fq=language_s:es&fl=halId_s,title_s,authFullName_s,fileMain_s&rows=50&wt=json"
+    type: hal
+    orientation: academique
+    default_lang: es
+    auto_download: true
+    min_interval_days: 30
+
+  # Archive.org — bienes comunes + communs urbains (ES)
+  - label: "Archive.org — bienes comunes espagnol (15M/communs)"
+    url: "https://archive.org/advancedsearch.php?q=%22bienes+comunes%22+language%3Aspa+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
+    type: archive_org
+    orientation: militant
+    default_lang: es
+    min_interval_days: 30
+
+  # ═══ Cuba — bases documentaires gouvernementales et populaires ══════════════
+  # Ajoutées session #8 (2026-06-27).
+  # Thèmes cibles : réforme agraire, UBPC, ANAP, agroécologie, poder popular.
+
+  # MINAG Cuba — agriculture urbaine et législation (WordPress)
+  - label: "MINAG Cuba — Agricultura Urbana (publications)"
+    url: "https://www.minag.gob.cu/category/categoria-publicaciones/agricultura-urbana/"
+    type: deep_html
+    orientation: institutionnel
+    default_lang: es
+    min_interval_days: 30
+
+  # CLACSO — coopératives et agriculture Cuba
+  - label: "CLACSO Repositorio — Cuba cooperativas agricultura"
+    url: "https://biblioteca-repositorio.clacso.edu.ar/discover?query=cuba+cooperativas+agricultura&rpp=20"
+    type: deep_html
+    orientation: academique
+    default_lang: es
+    min_interval_days: 30
+
+  # CIRAD Agritrop — OAI-PMH, publications sur le coopérativisme cubain
+  - label: "Agritrop CIRAD — Cuba coopératives (OAI-PMH)"
+    url: "http://agritrop.cirad.fr/cgi/oai2?verb=ListRecords&metadataPrefix=oai_dc"
+    type: hal
+    orientation: academique
+    default_lang: fr
+    auto_download: true
+    min_interval_days: 60
+
+  # OpenEdition — études caribéennes (agroécologie cubaine confirmée)
+  - label: "OpenEdition — Études caribéennes (Cuba agraire)"
+    url: "https://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=revues:etudescaribeennes"
+    type: hal
+    orientation: academique
+    default_lang: fr
+    auto_download: true
+    min_interval_days: 60
+
+  # Archive.org — Cuba agriculture agroécologie
+  - label: "Archive.org — Cuba agriculture agroécologie"
+    url: "https://archive.org/advancedsearch.php?q=subject%3ACuba+AND+%28agricultura+OR+cooperativa+OR+agroecologia%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50"
+    type: archive_org
+    orientation: institutionnel
+    default_lang: es
+    min_interval_days: 30
 
   # ═══ Ajoute tes propres sources ici ════════════════════════════════════════
   # - label: "Mon blog de référence"

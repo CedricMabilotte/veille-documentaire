@@ -246,6 +246,192 @@ def find_hal_id(*texts: str) -> str:
     return ""
 
 
+# ── Normalisation des titres ──────────────────────────────────────────────────
+
+# Expressions de format à supprimer des titres (suffixes ou parenthétiques).
+# Ordre : du plus long au plus court pour éviter les sous-matches.
+_FORMAT_SUFFIXES = re.compile(
+    r"\s*\(\s*(?:"
+    r"PDF|pdf"
+    r"|page\s+par\s+page|pageparpage"
+    r"|cahier"
+    r"|à\s+lire(?:\s+sur\s+(?:l[''’])?écran)?|to[\s_]read"
+    r"|à\s+imprimer|to[\s_]print"
+    r"|livret\s+A[3456]?|brochure|booklet"
+    r"|[0-9]+\s*pages?\s*A[3-6]|[0-9]+\s*p\s*A[3-6]|[0-9]+\s*p\b"
+    r"|version\s+(?:légère|light|recto-verso)"
+    r"|fil\b|NB\b|noir[\s-]et[\s-]blanc"
+    r"|x[0-9]+\s*A[3-6]"
+    r"|recto[- ]verso|double[\s-]face"
+    r")\s*\)\s*$",
+    re.I,
+)
+# Préfixe « · » ou «·» (puce infokiosques)
+_BULLET_PREFIX = re.compile(r"^[·•]\s*")
+# Tiret simple ASCII entouré d'espaces → tiret demi-cadratin
+_ASCII_DASH = re.compile(r"\s+-\s+")
+# Colon sans espace avant (typographie française)
+_BARE_COLON = re.compile(r"(\S):\s")
+# Parenthétique auteur en fin de titre : « (Prénom Nom) »
+_AUTHOR_PARENS = re.compile(
+    r"\s*\(([A-ZÀÂÉÈÊÎÔÙÛ][a-zàâéèêîôùûäëïü]+"
+    r"(?:\s+[A-ZÀÂÉÈÊÎÔÙÛ][a-zàâéèêîôùûäëïü]+)+)\)\s*$"
+)
+# pdf_title "empoisonné" — vient d'une app, d'un convertisseur ou est
+# un nom de fichier sans valeur éditoriale.
+_POISONED_PDF_TITLE = re.compile(
+    r"(?:Microsoft\s+Word|Untitled|OpenOffice|LibreOffice"
+    r"|InDesign|\.(pmd|qxd|odt|doc|indd|docx)\b"
+    r"|\b[0-9]+p\s*A[3-6]\b|\b8pp\b|\bA[3456]\b"
+    r"|World\s+Bank\s+Document|Public\s+Disclosure"
+    r"|Working\s+Paper\b|Technical\s+(?:Note|Report)\b"
+    r"|Thematic\s+(?:Note|Guidance)\s+Note"
+    r"|Discussion\s+Paper\b|Policy\s+Brief\b)",
+    re.I,
+)
+# Parenthétique de format (sans auteur) à nettoyer en fin de titre
+_FORMAT_PARENS = re.compile(
+    r"\s*\(\s*(?:version\s+(?:page\s+par\s+page|légère|light|cahier)"
+    r"|[0-9]+\s*p|A[3456]|\d+\s*pages?)\s*\)\s*$",
+    re.I,
+)
+
+
+def normalize_title(
+    link_text: str = "",
+    pdf_title: str = "",
+    filename: str = "",
+    author_hint: str = "",
+) -> str:
+    """Produit un titre éditorial propre depuis les sources brutes disponibles.
+
+    Ordre de préférence :
+      1. pdf_title — si non empoisonné (pas un nom d'app, pas un nom de fichier)
+      2. link_text — texte du lien sur la page source
+      3. filename  — fallback : nom de fichier humanisé
+
+    Nettoyages appliqués (tous les cas) :
+      - Préfixe « · » retiré
+      - Suffixe « (PDF) » et parenthétiques de format retirés
+      - Tiret ASCII ` - ` → tiret demi-cadratin ` — `
+      - Colon non précédé d'espace → espace inséré (typographie française)
+      - Parenthétique auteur retiré si l'auteur est déjà fourni
+      - Série Mini-Manuel : normalisation `Mini-Manuel : Titre`
+    """
+    # Détecter si le link_text indique une série Mini-Manuel (lien générique)
+    _is_mini_manuel_series = bool(
+        re.search(r"mini[-\s]manuel", link_text, re.I)
+        and not re.search(r"mini[-\s]manuel.{3,}", link_text, re.I)
+    )
+
+    # Choisir la source la moins bruitée
+    raw = ""
+    if pdf_title and not _POISONED_PDF_TITLE.search(pdf_title):
+        raw = pdf_title
+    elif link_text and not re.match(r"^mini[-\s]manuel\s*$", link_text.strip(), re.I):
+        # link_text = "mini-manuel" seul est trop générique ; on passe au pdf_title
+        raw = link_text
+    elif pdf_title and not _POISONED_PDF_TITLE.search(pdf_title):
+        # Deuxième chance : pdf_title (même si on a préféré l'ignorer pour link_text)
+        raw = pdf_title
+
+    if not raw and filename:
+        # Humaniser le filename en dernier recours
+        raw = re.sub(r"\.[a-z0-9]+$", "", filename, flags=re.I)
+        raw = raw.replace("_", " ").replace("-", " ")
+
+    if not raw:
+        return ""
+
+    t = raw.strip()
+
+    # Rejeter le résultat si c'est entièrement un code de format (ex: "8pp A5")
+    _FORMAT_ONLY = re.compile(
+        r"^(?:[0-9]+\s*(?:p|pp|pages?)\s*A[3-6]?|[0-9]+\s*pp?\b|A[3-6]\b"
+        r"|\bNB\b|fil\b|cahier\b|booklet\b)\s*$",
+        re.I,
+    )
+    if _FORMAT_ONLY.match(t):
+        # Repli sur le filename humanisé
+        if filename:
+            raw = re.sub(r"\.[a-z0-9]+$", "", filename, flags=re.I)
+            t = raw.replace("_", " ").replace("-", " ").strip()
+        if not t or _FORMAT_ONLY.match(t):
+            return ""   # impossible de produire un titre propre
+
+    # 1. Préfixe puce
+    t = _BULLET_PREFIX.sub("", t)
+
+    # 2. Suffixes de format en fin de titre  « (PDF) », « (page par page) »…
+    for _ in range(3):          # passer plusieurs fois pour les doubles parenthèses
+        t = _FORMAT_SUFFIXES.sub("", t)
+        t = _FORMAT_PARENS.sub("", t)
+    t = t.strip()
+
+    # 3. Suffixe « (PDF) » nu non couvert par le regex ci-dessus
+    t = re.sub(r"\s*\(PDF\)\s*$", "", t, flags=re.I).strip()
+
+    # 3b. Suffixes de format NON parenthétiques en fin de titre :
+    #     "Titre 16 pages A5" → "Titre" ; "Titre NB" → "Titre"
+    t = re.sub(
+        r"\s+(?:[0-9]+\s*pages?\s*A[3-6]|[0-9]+\s*pp?\s*A[3-6]"
+        r"|[0-9]+\s*pp?\b(?!\s*[A-Za-z])"
+        r"|\bNB\b|\bfil\b)\s*$",
+        "", t, flags=re.I,
+    ).strip()
+
+    # 3c. Dans les parenthèses mixtes "(version X, format)" retirer la partie
+    #     format (après virgule) tout en conservant la partie éditoriale :
+    #     "(version italienne, à imprimer)" → "(version italienne)"
+    def _clean_mixed_parens(m: re.Match) -> str:
+        content = m.group(1)
+        # Retirer les sous-segments de format après une virgule
+        parts = [p.strip() for p in content.split(",")]
+        _fmt_re = re.compile(
+            r"^(?:à\s+(?:lire|imprimer)|to\s+(?:read|print)|page\s+par\s+page"
+            r"|cahier|[0-9]+\s*p|NB|fil|booklet|sur\s+(?:l')?écran)\b",
+            re.I,
+        )
+        kept = [p for p in parts if not _fmt_re.match(p)]
+        if not kept:
+            return ""   # tout était du format → supprimer toute la parenthèse
+        return f"({', '.join(kept)})"
+
+    t = re.sub(r"\(([^)]+)\)", _clean_mixed_parens, t)
+
+    # 4. Tiret ASCII → demi-cadratin
+    t = _ASCII_DASH.sub(" — ", t)
+
+    # 5. Colon sans espace avant (FR)
+    t = _BARE_COLON.sub(r"\1 : ", t)
+
+    # 6. Auteur entre parenthèses en fin → retire si hint fourni
+    if author_hint:
+        t = _AUTHOR_PARENS.sub("", t).strip()
+
+    # 7. Série Mini-Manuel : normaliser « Mini-Manuel X » → « Mini-Manuel : X »
+    #    et s'assurer que ce qui suit est en majuscule.
+    #    Cas spécial : si le link_text était "mini-manuel" (lien générique) et
+    #    que le titre vient du pdf_title "Manuel X", préfixer "Mini-Manuel :".
+    m = re.match(r"^(Mini[-\s]Manuel)\s*[:\-]?\s*(.+)$", t, re.I)
+    if m:
+        rest = m.group(2).strip()
+        rest = rest[0].upper() + rest[1:] if rest else rest
+        t = f"Mini-Manuel : {rest}"
+    elif _is_mini_manuel_series and re.match(r"^Manuel\s+", t, re.I):
+        # pdf_title "Manuel X" → "Mini-Manuel : X"
+        rest = re.sub(r"^Manuel\s+", "", t, flags=re.I).strip()
+        rest = rest[0].upper() + rest[1:] if rest else rest
+        t = f"Mini-Manuel : {rest}"
+
+    # 8. Nettoyage final
+    t = re.sub(r"\s{2,}", " ", t).strip()
+    # Retirer les points de suspension orphelins en fin
+    t = re.sub(r"\s*\.\.\.\s*$", "", t).strip()
+
+    return t
+
+
 def _parse_pdf_date(raw: str) -> str:
     """Convertit une date PDF (D:20210315...) en année/ISO."""
     if not raw:
