@@ -61,11 +61,15 @@ def audit_apercu(uid: str, doc: dict) -> list[str]:
     # On distingue du style encyclopédique "Titre est un..." → OK
     if title and len(title) >= 15:
         slug = re.sub(r"\s+", " ", title[:25]).lower()
-        sum_start = re.sub(r"\s+", " ", summary[:30]).lower()
+        sum_start = re.sub(r"\s+", " ", summary[:35]).lower()
         if sum_start.startswith(slug):
-            # Vérifier si le mot suivant est un verbe descriptif → style OK
+            # Style encyclopédique OK : "Titre est un/une..." ou immédiatement suivi d'un verbe
             rest = summary[len(title):].strip()
-            ok_verbs = re.match(r"^(est|is|are|constitue|présente|propose|recueille|compile|documente|analyse)\b", rest, re.I)
+            ok_verbs = re.match(
+                r"^(est\b|is\b|are\b|constitue|présente|propose|recueille|compile"
+                r"|documente|analyse|retrace|montre|décrit|explore|examine|rassemble)",
+                rest, re.I,
+            )
             if not ok_verbs:
                 issues.append("REPETE_TITRE")
 
