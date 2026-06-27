@@ -898,9 +898,12 @@ def _prerender_fiches(catalog: dict) -> int:
         if not _is_publishable(doc):
             skipped += 1
             continue
-        # ── Titre : link_text du dernier run, sinon filename sans extension ──
-        title = ""
-        if doc.get("runs"):
+        # ── Titre : doc.title (backfillé) > link_text > filename ──────────────
+        # doc.title est le titre éditorial soigné (backfillé session #5).
+        # link_text est le texte brut du lien sur la page source (peut contenir
+        # des indications de format : "(PDF)", "page par page"…).
+        title = doc.get("title", "") or ""
+        if not title and doc.get("runs"):
             title = doc["runs"][-1].get("link_text", "") or ""
         if not title:
             title = doc.get("filename", "")
@@ -929,7 +932,9 @@ def _prerender_fiches(catalog: dict) -> int:
 
         # ── Source + score pour le fallback HTML ─────────────────────────────
         source = doc.get("source", "") or ""
-        score = doc.get("latest_score", 0)
+        # Score effectif : score_final > score_initial > latest_score (cohérent
+        # avec _effective_score et docScore côté JS).
+        score = _effective_score(doc)
 
         # ── JSON-LD ScholarlyArticle (mêmes champs que côté JS) ──────────────
         canonical_url = f"{SITE_BASE_URL}/fiches/{doc_id}.html"
@@ -1057,9 +1062,9 @@ def _prune_site_orphans(catalog: dict) -> dict:
 
     def _doc_id_of(stem: str):
         head = stem[:8]
-        if (len(head) == 8
-                and all(c in "0123456789abcdef" for c in head)
-                and head in docs):
+        # On vérifie uniquement le format (8 hex) — pas la présence dans docs.
+        # Un UID qui a quitté le catalogue doit aussi être purgé.
+        if len(head) == 8 and all(c in "0123456789abcdef" for c in head):
             return head
         return None
 
@@ -1216,12 +1221,15 @@ def _rfc822(run_date: str) -> str:
 
 def _rss_item(d: dict) -> str:
     """Construit un <item> RSS 2.0 pour un doc du catalog."""
-    title = d.get("filename", d.get("id", ""))
-    if d.get("runs"):
+    # Titre éditorial (backfillé) en priorité, sinon link_text, sinon filename.
+    title = d.get("title", "") or ""
+    if not title and d.get("runs"):
         link_text = d["runs"][-1].get("link_text", "")
         if link_text:
             title = link_text
-    # Fix 6 — nettoyer les titres : retirer le préfixe « · » et le suffixe « (PDF) »
+    if not title:
+        title = d.get("filename", d.get("id", ""))
+    # Nettoyer le préfixe « · » et le suffixe « (PDF) » résiduels
     title = title.strip()
     if title.startswith("· "):
         title = title[2:].strip()

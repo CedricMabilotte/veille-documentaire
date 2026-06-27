@@ -41,9 +41,13 @@ def _load_docs() -> dict:
 
 def _doc_id_of(stem: str, docs: dict):
     """Identifiant de doc préfixant un nom de fichier généré, sinon None
-    (gabarit statique ou fichier hors-corpus)."""
+    (gabarit statique ou fichier hors-corpus).
+
+    On teste uniquement le format (8 hex) — pas la présence dans docs — pour
+    attraper aussi les UIDs qui ont quitté le catalogue (archivés, supprimés).
+    """
     head = stem[:8]
-    return head if ID_RE.match(head) and head in docs else None
+    return head if ID_RE.match(head) else None
 
 
 def check_orphans(docs: dict, publishable: set) -> list[str]:
