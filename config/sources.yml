@@ -297,6 +297,25 @@ sources:
     orientation: academique
     min_interval_days: 21
 
+  # ── Théoriciens des communs — titres canoniques (Ostrom, Federici, Bollier) ──
+  # Ces œuvres ne contiennent aucun keyword dans leur titre ("Governing the
+  # Commons", "Caliban and the Witch"…) → score_initial = 0 sans cette source.
+  # Requête par creator/sujet pour les attraper directement.
+  - label: "Archive.org — théorie des communs (Ostrom, CPR, collective action)"
+    url: "https://archive.org/advancedsearch.php?q=%28creator%3A%22ostrom%22+OR+creator%3A%22federici%22+OR+creator%3A%22bollier%22+OR+%22governing+the+commons%22+OR+%22common+pool+resource%22+OR+%22commoning%22%29+AND+mediatype%3Atexts+AND+language%3A%28eng+OR+fra%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30"
+    type: archive_org
+    orientation: academique
+    default_lang: en
+    min_interval_days: 30
+
+  # ── Féminisme et communs — Federici, accumulation primitive, enclosures ─────
+  - label: "Archive.org — féminisme et communs (Federici, accumulation primitive)"
+    url: "https://archive.org/advancedsearch.php?q=%28%22caliban+and+the+witch%22+OR+%22primitive+accumulation%22+OR+%22feminist+commons%22+OR+%22agrarian+feminism%22+OR+creator%3A%22federici%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30"
+    type: archive_org
+    orientation: academique
+    default_lang: en
+    min_interval_days: 30
+
   # ═══ API HAL Science — académique francophone ═══════════════════════════════
   - label: "HAL — communs fonciers"
     url: "https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
