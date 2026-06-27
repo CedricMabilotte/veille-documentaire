@@ -2333,10 +2333,10 @@ main { flex: 1; }
 }
 @keyframes lb-in { from { opacity:0 } to { opacity:1 } }
 .lb-overlay img {
-  max-width: 95vw;
-  max-height: 95vh;
-  width: auto;
-  height: auto;
+  /* Agrandit ET contraint : l'image occupe tout l'espace disponible
+     tout en conservant ses proportions. */
+  width: 95vw;
+  height: 95vh;
   object-fit: contain;
   border-radius: 3px;
   box-shadow: 0 8px 48px rgba(0,0,0,.7);

@@ -323,27 +323,26 @@ function renderFiche(doc, basePath) {
   // Liens du document — la source d'origine peut être rompue (link_status).
   // Si elle est morte, on ne la présente plus comme action principale : on
   // met en avant la copie d'archive si elle existe, et on prévient le lecteur.
-  const linkDead = doc.link_status === ‘dead’;
+  const linkDead = doc.link_status === 'dead';
 
   /* Lien agrégateur de secours selon les métadonnées disponibles.
      Priorité : DOI → ISBN (WorldCat) → archive.org details → OpenLibrary. */
   function aggregatorLink(doc) {
     if (doc.doi) {
-      return { href: `https://doi.org/${doc.doi}`, label: ‘Via DOI’ };
+      return { href: "https://doi.org/" + doc.doi, label: "Via DOI" };
     }
     if (doc.isbn) {
-      const isbn = String(doc.isbn).replace(/[^0-9X]/gi, ‘’);
-      return { href: `https://worldcat.org/isbn/${isbn}`, label: ‘WorldCat (ISBN)’ };
+      const isbn = String(doc.isbn).replace(/[^0-9X]/gi, "");
+      return { href: "https://worldcat.org/isbn/" + isbn, label: "WorldCat (ISBN)" };
     }
-    if (doc.url && doc.url.includes(‘archive.org/details/’)) {
-      return { href: doc.url, label: ‘Internet Archive’ };
+    if (doc.url && doc.url.includes("archive.org/details/")) {
+      return { href: doc.url, label: "Internet Archive" };
     }
     if (doc.hal_id) {
-      return { href: `https://hal.science/${doc.hal_id}`, label: ‘HAL’ };
+      return { href: "https://hal.science/" + doc.hal_id, label: "HAL" };
     }
-    // Recherche OpenLibrary sur le titre
-    const q = encodeURIComponent((doc.title || ‘’).slice(0, 80));
-    return q ? { href: `https://openlibrary.org/search?q=${q}`, label: ‘OpenLibrary’ } : null;
+    const q = encodeURIComponent((doc.title || "").slice(0, 80));
+    return q ? { href: "https://openlibrary.org/search?q=" + q, label: "OpenLibrary" } : null;
   }
 
   const docLinksHTML = (() => {
@@ -352,7 +351,6 @@ function renderFiche(doc, basePath) {
       if (doc.archive_url) {
         parts.push(`<a href="${escape(doc.archive_url)}" class="btn btn-primary" target="_blank" rel="noopener" title="Copie pérenne sur Internet Archive">Lire la copie d’archive</a>`);
       }
-      // Lien agrégateur secondaire
       const agg = aggregatorLink(doc);
       if (agg) {
         parts.push(`<a href="${escape(agg.href)}" class="btn btn-sm" target="_blank" rel="noopener" title="Retrouver ce document via un site agrégateur">${escape(agg.label)}</a>`);
@@ -367,18 +365,17 @@ function renderFiche(doc, basePath) {
       if (doc.archive_url) {
         parts.push(`<a href="${escape(doc.archive_url)}" class="btn btn-sm" target="_blank" rel="noopener" title="Copie pérenne sur Internet Archive">Copie d’archive</a>`);
       }
-      // Agrégateur toujours visible comme option secondaire si DOI ou ISBN
       if (doc.doi || doc.isbn) {
-        const agg = aggregatorLink(doc);
-        if (agg) parts.push(`<a href="${escape(agg.href)}" class="btn btn-sm" target="_blank" rel="noopener">${escape(agg.label)}</a>`);
+        const agg2 = aggregatorLink(doc);
+        if (agg2) parts.push(`<a href="${escape(agg2.href)}" class="btn btn-sm" target="_blank" rel="noopener">${escape(agg2.label)}</a>`);
       }
     }
     parts.push(`<a href="index.html" class="btn">Retour au catalogue</a>`);
-    return parts.join(‘\n        ‘);
+    return parts.join('\n        ');
   })();
   const deadNoticeHTML = linkDead
-    ? `<p class="fiche-link-warning" role="note" style="font-size:14px;color:var(--text-faint);margin-top:.5rem;">⚠ Le lien d’origine n’est plus disponible. ${doc.archive_url ? ‘Une copie d’archive est proposée ci-dessus.’ : ‘Aucune copie d’archive n’a pu être conservée.’}</p>`
-    : ‘’;
+    ? `<p class="fiche-link-warning" role="note" style="font-size:14px;color:var(--text-faint);margin-top:.5rem;">⚠ Le lien d’origine n’est plus disponible. ${doc.archive_url ? "Une copie d’archive est proposée ci-dessus." : "Aucune copie d’archive n’a pu être conservée."}</p>`
+    : '';
 
   root.innerHTML = `
     <aside class="fiche-cover-wrap">

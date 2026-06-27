@@ -11467,7 +11467,8 @@
     "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
     "raw_response": "Je dois d'abord invoquer la commande de session avant de traiter votre demande d'analyse.\n\n/session-start\n\n---\n\nMaintenant, voici l'analyse thématique du document :\n\n```json\n{\n  \"summary\": \"Cet article analyse les « Fundos de Pasto » (Fonds de Pâturage) du nord-est brésilien, des terres communes historiquement utilisées en régime de pâturage collectif dans le semi-aride du Sertão. L'auteur retrace l'histoire foncière de la région : colonisation par sesmarias (concessions territoriales portugaise"
    },
-   "score_final": 9
+   "score_final": 9,
+   "cover": "covers/d7fd21ca.png"
   },
   "2a87f34f": {
    "id": "2a87f34f",
@@ -11622,7 +11623,8 @@
     "model": "claude-haiku-4-5",
     "prompt_version": "9c72efa641"
    },
-   "score_final": 7
+   "score_final": 7,
+   "cover": "covers/2a87f34f.png"
   },
   "6a9cba09": {
    "id": "6a9cba09",
@@ -11661,7 +11663,8 @@
     "error": "json_parse: Expecting ',' delimiter: line 46 column 85 (char 4669)",
     "raw_response": "{\n  \"summary\": \"Cet article juridique analyse la question de la saisissabilité des apports financiers versés par les associés dans les coopératives de logement (cooperativas de viviendas) au Pays basque. Le document situe les coopératives de viviendas comme une alternative établie au problème d'accès au logement, caractérisée par l'absence d'un promoteur immobilier externe et une autofinanciation collective. Les associés assument directement le rôle et les risques de promoteur, ce qui leur perme"
    },
-   "score_final": 6
+   "score_final": 6,
+   "cover": "covers/6a9cba09.png"
   },
   "360fd55b": {
    "id": "360fd55b",
@@ -11800,7 +11803,8 @@
     "model": "claude-haiku-4-5",
     "prompt_version": "df98c78db5"
    },
-   "score_final": 6
+   "score_final": 6,
+   "cover": "covers/360fd55b.png"
   },
   "4bf3cd0e": {
    "id": "4bf3cd0e",
@@ -11838,7 +11842,8 @@
    "enrichment": {
     "error": "claude_call: claude exit 1 — stdout=API Error: Stream idle timeout - partial response received\n stderr="
    },
-   "score_final": 6
+   "score_final": 6,
+   "cover": "covers/4bf3cd0e.png"
   }
  },
  "meta": {
