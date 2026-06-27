@@ -391,10 +391,10 @@ function renderFiche(doc, basePath) {
         <div><dt>Repérée le</dt><dd>${escape(formatDate(doc.collected_date || doc._latestRunDate))}</dd></div>
       </dl>
 
-      ${run && run.raison ? `
+      ${(run && run.raison && !summary && !cleanRaison(run.raison).startsWith('_SKIP')) ? `
         <section class="fiche-section">
           <h2>Pourquoi cette fiche</h2>
-          <p class="prose" style="font-style:italic;color:var(--text-dim);">${escape(run.raison)}</p>
+          <p class="prose" style="font-style:italic;color:var(--text-dim);">${escape(cleanRaison(run.raison))}</p>
         </section>
       ` : ''}
 
@@ -428,13 +428,15 @@ function renderFiche(doc, basePath) {
         <section class="fiche-section">
           <h2>Historique de la veille</h2>
           <ul style="list-style:none;padding:0;margin:0;">
-            ${doc.runs.slice().reverse().map(r => `
+            ${doc.runs.slice().reverse().map(r => {
+              const cr = r.raison ? cleanRaison(r.raison) : '';
+              return `
               <li style="border-left:2px solid var(--border);padding:6px 0 6px 14px;margin-bottom:10px;">
                 <strong style="font-family:var(--font-serif);">${escape(formatDate(r.date))}</strong>
                 <span class="score-pill ${scoreClass(r.score)}" style="margin-left:8px;">${r.score}/10</span>
-                ${r.raison ? `<div style="color:var(--text-dim);font-size:14px;margin-top:4px;">${escape(r.raison)}</div>` : ''}
-              </li>
-            `).join('')}
+                ${cr && !cr.startsWith('_SKIP') ? `<div style="color:var(--text-dim);font-size:14px;margin-top:4px;">${escape(cr)}</div>` : ''}
+              </li>`;
+            }).join('')}
           </ul>
         </section>
       ` : ''}
@@ -483,6 +485,54 @@ function renderFiche(doc, basePath) {
 }
 
 /* Libellé lisible d'un statut de lien (C1 / S3). */
+/* Nettoie une raison de scoring avant de l'afficher au visiteur.
+   - Retourne '_SKIP' si la raison est du bruit pipeline (à masquer).
+   - Retire les descripteurs de format (filenames, extensions, puce ·, (PDF)).
+   - Simplifie les raisons trop techniques (Titre 'X' contient…).
+*/
+function cleanRaison(raison) {
+  if (!raison) return '';
+  const r = raison.trim();
+
+  // Raisons pipelines à masquer totalement
+  const SKIP = [
+    /^erreur\s+scoring$/i,
+    /^score\s+initial/i,
+    /^pdf_absent/i,
+    /^json_parse/i,
+    /^claude_call/i,
+    /^text_too_short/i,
+  ];
+  if (SKIP.some(p => p.test(r))) return '_SKIP';
+
+  // Simplifier "Titre 'X (cahier) (PDF)' contient 'Y'…"
+  // → extraire uniquement la partie pertinente après "contient" ou "cite"
+  let cleaned = r;
+
+  // Retirer les descripteurs de format dans les guillemets du titre cité
+  cleaned = cleaned.replace(
+    /(['«""])(.*?)(['»""])/g,
+    (_, open, inner, close) => {
+      const stripped = inner
+        .replace(/\s*\((?:PDF|cahier|page\s*par\s*page|pageparpage|fil|NB|A[3-6]|[0-9]+\s*p(?:ages?)?|à\s*(?:lire|imprimer)|booklet|livret)[^)]*\)\s*/gi, '')
+        .replace(/[-_]+(?:cahier|pageparpage|fil|A[3-6]|[0-9]+p|livret|NB)(?:[-_]|\.pdf|$)/gi, ' ')
+        .replace(/\.pdf$/i, '')
+        .replace(/[-_]+/g, ' ')
+        .trim();
+      return open + stripped + close;
+    }
+  );
+
+  // Retirer la puce · en tête
+  cleaned = cleaned.replace(/^·\s*/, '');
+
+  // Nettoyer les espaces multiples
+  cleaned = cleaned.replace(/\s{2,}/g, ' ').trim();
+
+  return cleaned || '_SKIP';
+}
+window.cleanRaison = cleanRaison;
+
 function linkStatusLabel(s) {
   const map = { ok: 'actif', alive: 'actif', broken: 'cassé', dead: 'cassé',
                 redirect: 'redirigé', timeout: 'injoignable', unknown: 'non vérifié' };

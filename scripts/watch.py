@@ -94,10 +94,19 @@ def score_batch(docs: list[dict], keywords: list[str]) -> list[dict]:
 
     docs_block = ""
     for i, d in enumerate(docs, 1):
+        # T3 — normaliser le link_text avant de l'envoyer au scorer.
+        # Sans ça, le scorer cite littéralement "(page par page) (PDF)" ou
+        # "jeanne_squatteuse_enracinee-20p-A5-livret.pdf" dans sa raison,
+        # et ces descripteurs de format se retrouvent dans le rendu visiteur.
+        raw_link = d.get("link_text") or d.get("filename") or ""
+        clean_link = doc_metadata.normalize_title(
+            link_text=raw_link,
+            filename=d.get("filename") or "",
+        ) or raw_link
         docs_block += (
             f"\nDocument {i} :\n"
             f"  Source  : {d.get('source', '')}\n"
-            f"  Lien    : {d['link_text']}\n"
+            f"  Titre   : {clean_link}\n"
             f"  Format  : {d['extension'].upper()}\n"
             f"  Contexte: {d['context']}\n"
         )
