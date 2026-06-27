@@ -11463,6 +11463,10 @@
    "score_initial": 9,
    "doc_type": "essai",
    "recit_de_lutte": false,
+   "enrichment": {
+    "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
+    "raw_response": "Je dois d'abord invoquer la commande de session avant de traiter votre demande d'analyse.\n\n/session-start\n\n---\n\nMaintenant, voici l'analyse thématique du document :\n\n```json\n{\n  \"summary\": \"Cet article analyse les « Fundos de Pasto » (Fonds de Pâturage) du nord-est brésilien, des terres communes historiquement utilisées en régime de pâturage collectif dans le semi-aride du Sertão. L'auteur retrace l'histoire foncière de la région : colonisation par sesmarias (concessions territoriales portugaise"
+   },
    "score_final": 9
   },
   "2a87f34f": {
@@ -11498,7 +11502,127 @@
    "score_initial": 9,
    "doc_type": "essai",
    "recit_de_lutte": false,
-   "score_final": 9
+   "enrichment": {
+    "summary": "Cet article analyse le renouvellement générationnel en agriculture, distinguant deux profils : les agriculteurs « traditionnels » (issus de familles agricoles) qui perpétuent les pratiques conventionnelles, et les agriculteurs « nouveaux » (d'origine non-agricole) qui incarnent un nouveau paradigme agrosocial. L'auteur constate l'émergence d'un « nouveau campesinado » — des personnes ancrées à la terre, cherchant leur autonomie, optimistes malgré un contexte d'industrialisation destructrice qui a expulsé massivement les paysans des terres au cours du XXe siècle. Le texte théorise ce nouveau paradigme en s'appuyant sur quatre cadres analytiques majeurs : le Nouveau Paradigme Rural de l'OCDE (articulation territoriale et gouvernance locale), les travaux de Bryden sur la ruralité du XXIe siècle (économies locales, formation, capacités endogènes), la conception latino-américaine de la nouvelle ruralité chez Acosta (perspective de genre, participation démocratique, autogestión), et les principes de l'agriculture campésine selon Bove et Dufour et Ploeg (autonomie maximale, coopération, solidarité internationale, respect de la nature). Ce nouveau campesinado se caractérise par la coprodution, l'autocontrôle des ressources, l'ordenación des relations marchandes, la pluriactivité et des modèles de coopération qui visent à « libérer l'agriculture des chaînes du système capitaliste » pour qu'elle puisse « réécrire sa propre histoire ».",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "Este grupo de personas arraigadas a la tierra, que busca su propia autonomía y que se mantienen optimistas sobre el futuro es El Nuevo campesinado.",
+      "why_relevant": "Définition centrale du sujet : le campesinado como groupe politique et social ancré territorialement, recherchant l'autonomie — exact dans la thématique.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "Buena parte de los agricultores fueron expulsados de sus tierras por no alcanzar los estándares de productividad exigidos por el mercado",
+      "why_relevant": "Critique de l'industrialisation agricole et de l'accaparement via l'imposition de normes capitalistes — thème de libération des terres.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "una nueva generación que confía en el compromiso social de las personas que trabajan la tierra y de las que consumen sus alimentos.",
+      "why_relevant": "Liens de solidarité producteurs-consommateurs, souveraineté alimentaire, économie solidaire agricole.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "El paradigma de la industrialización consiguió, en parte, su objetivo de desvincular las actividades agrarias de las personas y de su entorno.",
+      "why_relevant": "Critique explicite de la déshumanisation et du déracinement ; le nouveau campesinado représente un contre-paradigme.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 4,
+      "quote": "repartir los volúmenes de producción para permitir acceder al oficio de agricultor y de vivir un número máximo de personas",
+      "why_relevant": "Principe de l'agriculture campésina : accès collectif à la terre, subsistence du maximum, contre l'accaparement.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "alcanzar una autonomía máxima en el funcionamiento de las explotaciones agrarias",
+      "why_relevant": "Centralité de l'autonomía — concept clé de la propriété d'usage et du campesinado politique.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "El desarrollo rural pasa porque el sector agrario se desate de los lazos que el sistema capitalista le ha atado y vuelva a escribir su propia historia.",
+      "why_relevant": "Critique radicale du capitalisme foncier ; autonomía narrativa et politique du campesinado.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 3,
+      "quote": "perspectiva de género... participación democrática y desarrollo comunitario y autogestión",
+      "why_relevant": "Intégration du féminisme agraire et de l'autogestión dans le nouveau paradigme rural.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 4,
+      "quote": "reivindicar el papel del sector agrario arraigado a la tierra, de las relaciones de confianza entre la misma agricultura y entre la sociedad",
+      "why_relevant": "Valorisation de l'enracinement territorial et des rapports non-marchands, contre la marchandisation.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "modelos de cooperación",
+      "why_relevant": "Coopératives et mutualisme foncier ; formes collectives de propriété/gestion.",
+      "verified": true,
+      "page_physical": 4
+     }
+    ],
+    "matched_keywords": [
+     "campesinado",
+     "nuevo campesinado",
+     "agricultura campesina",
+     "agricultura familiar",
+     "tierra",
+     "arraigado a la tierra",
+     "autonomía",
+     "autonomía territorial",
+     "agroecología",
+     "sostenibilidad",
+     "soberanía alimentaria",
+     "relevo generacional",
+     "paradigma rural",
+     "participación democrática",
+     "gobernanza local",
+     "capital social",
+     "reforma agraria",
+     "contrarreforma agraria",
+     "perspectiva de género",
+     "autogestión",
+     "autogestión comunitaria",
+     "solidaridad",
+     "cooperación",
+     "cooperativas",
+     "desarrollo comunitario",
+     "industrialización agricultura"
+    ],
+    "relevance_score": 7,
+    "relevance_notes": "Le texte offre une théorisation académique rigoureuse du campesinado comme sujet politique, centre sur l'autonomía, la solidarité, le respect de la nature et la critique implicite de l'industrialisation capitaliste de la terre. Bien que manquent les formes juridiques concrètes (fiducies, communs fonciers explicites) et les cas de lutte organisée (MST, Via Campesina, mouvements autochtones), c'est une contribution utile à la compréhension du campesinado émergent et de ses principes.",
+    "en_clair": "Ce texte montre qu'une nouvelle génération de paysans apparaît, qui refusent le modèle industriel et imaginent une agriculture enracinée, collective, autonome et respectueuse. C'est important pour comprendre qu'il existe déjà des gens qui pratiquent une autre agriculture et qui réfléchissent ensemble à comment la libérer de la domination du marché.",
+    "acteurs": [
+     "Neus Monllor (auteur)",
+     "OCDE",
+     "Bryden",
+     "Crosta",
+     "Acosta",
+     "Bove",
+     "Dufour",
+     "Ploeg"
+    ],
+    "controverse": "Tension centrale entre l'industrialisation capitaliste de l'agriculture (qui a expulsé les paysans et détruit les savoirs locaux) et l'émergence d'un nouveau campesinado qui cherche à sortir de ce modèle par l'autonomía, la coopération et le respect de la nature. Le texte affirme que cette rupture est possible et déjà en cours.",
+    "angle_journalistique": "Enquête : qui sont concrètement ces nouveaux agriculteurs qui arrivent aux terres ? Quelles stratégies légales, économiques et organisationnelles mettent-ils en place pour rester libres du marché ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "9c72efa641"
+   },
+   "score_final": 7
   },
   "6a9cba09": {
    "id": "6a9cba09",
@@ -11533,6 +11657,10 @@
    "score_initial": 6,
    "doc_type": "rapport",
    "recit_de_lutte": false,
+   "enrichment": {
+    "error": "json_parse: Expecting ',' delimiter: line 46 column 85 (char 4669)",
+    "raw_response": "{\n  \"summary\": \"Cet article juridique analyse la question de la saisissabilité des apports financiers versés par les associés dans les coopératives de logement (cooperativas de viviendas) au Pays basque. Le document situe les coopératives de viviendas comme une alternative établie au problème d'accès au logement, caractérisée par l'absence d'un promoteur immobilier externe et une autofinanciation collective. Les associés assument directement le rôle et les risques de promoteur, ce qui leur perme"
+   },
    "score_final": 6
   },
   "360fd55b": {
@@ -11568,6 +11696,110 @@
    "score_initial": 6,
    "doc_type": "enquete",
    "recit_de_lutte": false,
+   "enrichment": {
+    "summary": "Cet article analyse comment les coopératives de logement à Harare (Zimbabwe) et dans la région du Grand Harare ont été instrumentalisées par des pratiques de politiques distributives et de clientélisme politique. Initialement conçues comme réponse technique au manque aigu de logements urbains et à l'absence de l'État-providence, ces coopératives ont progressivement glissé vers des logiques électorales où le parti au pouvoir (ZANU PF) utilise l'allocation de terrain—la ressource politique par excellence—comme monnaie d'échange avec les électeurs pauvres. Le document montre que la terre reste formellement une « prérogative de l'État » que le régime ZANU PF contrôle depuis plus de 30 ans, tandis que les coopératives, bien qu'elles possèdent une démocratie interne qui les renforce théoriquement, se trouvent « apron-tied » (inféodées) aux agendas gouvernementaux. Les auteurs documentent comment, lors des campagnes électorales de 1990 à 2008, la distribution de terrains aux sans-logis s'est systématiquement alignée sur les calendriers politiques, transformant l'habitat coopératif en machine de vote buying et de patronage. Ce mécanisme révèle une tension fondamentale : quand l'État contrôle l'accès à la terre—et non les communautés—les formes collectives d'habitat, même structurées démocratiquement, deviennent vulnérables à la capture politique. L'article s'inscrit dans une littérature plus large montrant comment les gouvernements des pays en développement utilisent les coopératives comme outils de contrôle populaire plutôt que comme véhicules d'autonomie membre-centrée. En Afrique du Sud-Ouest particulièrement, cela illustre comment la dépendance des ménages pauvres à l'égard des allocations étatiques—sans filet de sécurité social alternatif—crée les conditions pour un clientélisme persistant autour de la terre.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "the purpose of this paper is to demonstrate how the role of housing cooperatives, meant to serve a technical problem of housing the homeless, has shifted from the mere technical agenda to the political one in which clientilism, patronage and manipulation are the manifestations",
+      "why_relevant": "Énoncé explicite du basculement des coopératives d'habitat : de réponse technique à logique électorale et de contrôle politique",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "land as a resource remains a prerogative of the state, which the ZANU PF regime has controlled for a span of more than 30 years now. Housing cooperatives in Harare, as elsewhere in the country, try to identify with ZANU PF as a party identifying with conservativism enshrined in the existing laws… Cooperatives have become a tool in which ZANU PF has re-asserted its influence and hegemony.",
+      "why_relevant": "Illustre comment la terre, en tant que ressource d'État, permet à un régime autoritaire de détourner les coopératives comme instruments de contrôle politique",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "in the developing world, cooperatives '… have often been used as tools of development by governments that have not allowed them to become fully autonomous, member-owned businesses'",
+      "why_relevant": "Citation synthétique du problème transversal en Afrique et ailleurs : les gouvernements sapent l'autonomie des coopératives",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Land is the key resource that defines where homebuilders can locate the houses. In this paper, we explain how the ruling party, ZANU PF, which identifies with equity in the distribution of land, has through its various apparatus including the institution of the Ministry of Local Government, Publics Works and National Housing, has outwitted the MDC.",
+      "why_relevant": "Montre le rôle décisif de la terre comme levier politique, et la centralité de l'État dans le contrôle de l'accès",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "When land and other assets are allocated via political hierarchies rather than through impersonal market relationships, voters, citizens, and business people lack the economic and political autonomy that is a sine qua non of liberal democracy.",
+      "why_relevant": "Énonce un principe clé : l'allocation hiérarchique (non-marchande mais non-communcommunale) de la terre détruit l'autonomie citoyenne",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 4,
+      "quote": "Specifically in Zimbabwe, land has been used as a good for subverting the landless voters to vote for ZANU PF. […] Mugabe used promises and plans of land acquisitions and state-sponsored resettlement to rev up political support",
+      "why_relevant": "Exemple africain concret et datéde l'utilisation électorale systématique de l'accès à la terre comme arme de clientélisme",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "the cooperative approach by poor households hinges of the needs and aspirations of the members, a factor which makes them strong (internally)",
+      "why_relevant": "Reconnaît la force intrinsèque des coopératives (démocratie interne, alignement sur les besoins), avant leur capture politique",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "the politicization of service provision … can lead to uneven coverage or inequalities that further entrench societal divisions",
+      "why_relevant": "Montre comment le détournement politique des coopératives crée des exclusions et des inégalités, au-delà du simple électoralisme",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "During elections in many countries, clientelist parties (or political machines) distribute benefits to citizens in direct exchange for political support. Such parties compete not only [because] of policy platforms but also with material inducements given to individuals.",
+      "why_relevant": "Cadre théorique clair du clientélisme comme système d'échange terre/vote, transposable au cas africain",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 2,
+      "quote": "housing cooperatives have the power to control their members with respect to the contributions that each member can make in terms of finance and sweat equity (labor)",
+      "why_relevant": "Identifie le problème de contrôle interne des coopératives sur leurs membres, qui peut faciliter leur instrumentalisation politique",
+      "verified": true,
+      "page_physical": 1
+     }
+    ],
+    "matched_keywords": [
+     "housing cooperative",
+     "housing cooperatives",
+     "land",
+     "land access",
+     "access to land",
+     "land rights",
+     "state control",
+     "distributive politics",
+     "urban commons",
+     "collectif d'habitants",
+     "habitat coopératif"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Le document traite explicitement des coopératives d'habitat (core concept) et de la terre comme ressource politique en contexte africain (Zimbabwe). Cependant, l'angle dominant est celui de la CAPTURE POLITIQUE et du clientélisme plutôt que celui des communs fonciers émancipateurs, de la propriété d'usage, ou de l'anti-spéculation. C'est un texte qui montre les RISQUES de détournement des formes collectives, pas leur potentiel émancipatoire. Absence de références à : fiducies foncières, communaux coutumiers, agroécologie, paysannerie, réforme agraire, mouvements sans-terre. Pertinent pour comprendre la vulnérabilité politique des coopératives en Afrique du Sud-Ouest, mais hors du cœur militant de la thématique.",
+    "en_clair": "En Afrique du Sud-Ouest (Zimbabwe), les coopératives de logement—qui devraient donner du terrain aux pauvres—sont devenues des outils de vote buying : le gouvernement promet du terrain juste avant les élections pour acheter les votes des sans-abri. Leçon : si la terre reste contrôlée par l'État et non par les habitants eux-mêmes, même une coopérative démocratique peut être détournée par les politiciens.",
+    "acteurs": [
+     "ZANU PF",
+     "MDC (Movement for Democratic Change)",
+     "Robert Mugabe",
+     "Ministry of Local Government, Publics Works and National Housing (Zimbabwe)",
+     "Greater Harare region (Harare City, Chitungwiza, Norton, Epworth, Ruwa)",
+     "Innocent Chirisa (auteur)",
+     "University of Zimbabwe"
+    ],
+    "controverse": "Tension entre la force intrinsèque des coopératives (démocratie interne, réponse aux besoins collectifs) et leur vulnérabilité à l'instrumentalisation politique par les gouvernements qui contrôlent l'accès à la terre. Le texte suggère que l'autonomie des coopératives est impossible tant que l'État monopolise la ressource foncière—une critique implicite de la dépossession étatique.",
+    "angle_journalistique": "Enquête : comment les élections en Afrique du Sud-Ouest (Zimbabwe, Zambie) utilisent les promesses d'accès à la terre pour capturer le vote des sans-abri, et comment les coopératives d'habitat deviennent des machines de vote buying plutôt que des outils d'émancipation foncière.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "df98c78db5"
+   },
    "score_final": 6
   },
   "4bf3cd0e": {
@@ -11603,42 +11835,10 @@
    "score_initial": 6,
    "doc_type": "rapport",
    "recit_de_lutte": false,
+   "enrichment": {
+    "error": "claude_call: claude exit 1 — stdout=API Error: Stream idle timeout - partial response received\n stderr="
+   },
    "score_final": 6
-  },
-  "fde54248": {
-   "id": "fde54248",
-   "url": "https://czasopisma.uwm.edu.pl/index.php/aspal/article/download/4318/3752",
-   "filename": "fde54248_3752.pdf",
-   "format": "pdf",
-   "source": "discovery_promoted",
-   "first_seen": "2026-06-27T16:56:30",
-   "latest_run": "2026-06-27T16:56:30",
-   "latest_score": null,
-   "downloaded": true,
-   "saved_as": "docs/fde54248_3752.pdf",
-   "title": "ANALYSIS OF THE IMPLEMENTATION OF LAWS ON THE TRANSFORMATION OF THE RIGHT OF PERPETUAL USUFRUCT INTO OWNERSHIP",
-   "journal": "Acta Scientiarum Polonorum Administratio Locorum",
-   "doi": "10.31648/aspal.4318",
-   "published_date": "2019-12-18",
-   "runs": [
-    {
-     "date": "",
-     "score": 9,
-     "raison": "Titre « Perpetual Usufruct » et analyse de sa transformation légale — régimes fonciers alternatifs explicites",
-     "doc_type": "rapport"
-    },
-    {
-     "date": "",
-     "score": 7,
-     "raison": "Titre cite 'Perpetual Usufruct' et parle de 'Transformation... into Ownership', question juridique foncière directe",
-     "doc_type": "rapport"
-    }
-   ],
-   "error": "text_too_short_or_empty",
-   "score_initial": 7,
-   "doc_type": "rapport",
-   "recit_de_lutte": false,
-   "score_final": 7
   }
  },
  "meta": {

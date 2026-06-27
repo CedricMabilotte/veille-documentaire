@@ -22,10 +22,12 @@ from __future__ import annotations
 
 import concurrent.futures
 import json
+import re
 import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import quote, urlparse, urlunparse
 
 import requests
 
@@ -37,6 +39,52 @@ HEAD_TIMEOUT = 12
 SAVE_TIMEOUT = 30
 # Ne pas re-vérifier un lien vérifié il y a moins de N jours
 RECHECK_AFTER_DAYS = 14
+
+
+def encode_url(url: str) -> str:
+    """Encode proprement une URL qui peut contenir des espaces ou accents.
+
+    Ne ré-encode pas les caractères déjà encodés (%xx) ni les délimiteurs
+    structuraux (/, :, ?, #, =, &). Indispensable pour les URLs stockées
+    depuis du HTML sans encodage (espaces dans noms de fichiers PDF, etc.).
+    """
+    if not url:
+        return url
+    try:
+        p = urlparse(url)
+        # Encoder le path en préservant les séparateurs structuraux
+        encoded_path = quote(p.path, safe='/:@!$&\'()*+,;=-.')
+        return urlunparse(p._replace(path=encoded_path))
+    except Exception:
+        return url
+
+
+def archive_org_fallback(url: str) -> tuple[str, str | None]:
+    """Pour une URL archive.org/download/ qui retourne 404 :
+    tente la page /details/<item_id> et retourne (status, new_url).
+
+    Logique :
+    - /download/<item>/<fichier> peut disparaître (CDL, renommage, restriction).
+    - /details/<item> est la page pérenne — toujours publique si l'item existe.
+    Retourne ('ok', new_url) si /details/ répond, ('dead', None) sinon.
+    """
+    m = re.match(r'(https?://archive\.org)/download/([^/]+)/', url)
+    if not m:
+        return ('dead', None)
+    details_url = f"{m.group(1)}/details/{m.group(2)}"
+    try:
+        r = requests.head(details_url, headers=HEADERS,
+                          timeout=HEAD_TIMEOUT, allow_redirects=True)
+        if 200 <= r.status_code < 400:
+            return ('ok', details_url)
+        r2 = requests.get(details_url, headers=HEADERS,
+                          timeout=HEAD_TIMEOUT, stream=True)
+        r2.close()
+        if 200 <= r2.status_code < 400:
+            return ('ok', details_url)
+    except requests.RequestException:
+        pass
+    return ('dead', None)
 
 
 def _iso_now() -> str:
@@ -54,36 +102,64 @@ def _days_since(iso: str | None) -> float:
         return float("inf")
 
 
-def check_url(url: str) -> str:
-    """Retourne 'ok', 'dead' ou 'unchecked' pour une URL.
+def check_url(url: str) -> tuple[str, str | None]:
+    """Retourne (status, corrected_url) pour une URL.
 
-    HEAD d'abord ; si la méthode HEAD est refusée (405/501) on tente un GET
-    léger. Les erreurs réseau renvoient 'unchecked' (on ne marque pas dead
-    un lien qu'on n'a pas pu joindre — prudence).
+    status : 'ok', 'dead' ou 'unchecked'.
+    corrected_url : URL corrigée si une alternative a été trouvée (ex: archive.org
+      /download/ → /details/), None sinon.
+
+    Stratégie :
+    1. Encodage URL (espaces, accents) avant tout test.
+    2. HEAD d'abord.
+    3. Fallback GET si HEAD retourne 4xx/5xx ambigu ou refus méthode
+       (405, 501, 403, 500) — certains serveurs (archive.org CDN) retournent
+       500 sur HEAD mais 200 sur GET.
+    4. Si archive.org /download/ retourne 404 : essai automatique /details/.
+    Les erreurs réseau → 'unchecked' (pas de verdict définitif).
     """
     if not url:
-        return "unchecked"
+        return ("unchecked", None)
+
+    url = encode_url(url)  # fix 2 : espaces / accents dans le path
+
+    def _get_fallback(u: str) -> int | None:
+        try:
+            rg = requests.get(u, headers=HEADERS, timeout=HEAD_TIMEOUT,
+                              allow_redirects=True, stream=True)
+            code = rg.status_code
+            rg.close()
+            return code
+        except requests.RequestException:
+            return None
+
     try:
         r = requests.head(url, headers=HEADERS, timeout=HEAD_TIMEOUT,
-                           allow_redirects=True)
+                          allow_redirects=True)
         code = r.status_code
-        if code in (405, 501, 403):
-            # Certains serveurs refusent HEAD : on retente en GET (stream)
-            try:
-                rg = requests.get(url, headers=HEADERS, timeout=HEAD_TIMEOUT,
-                                  allow_redirects=True, stream=True)
-                code = rg.status_code
-                rg.close()
-            except requests.RequestException:
-                return "unchecked"
+
+        # fix 3 : 405/501 = HEAD refusé ; 403/500 = parfois refus discret
+        # (archive.org CDN retourne 500 sur HEAD mais 200 sur GET)
+        if code in (403, 405, 500, 501):
+            fallback = _get_fallback(url)
+            if fallback is not None:
+                code = fallback
+
         if 200 <= code < 400:
-            return "ok"
+            return ("ok", None)
+
         if code in (404, 410):
-            return "dead"
-        # 5xx, 429 : indéterminé, on ne tranche pas
-        return "unchecked"
+            # fix 1 : archive.org /download/ → /details/
+            if "archive.org/download/" in url:
+                status, new_url = archive_org_fallback(url)
+                return (status, new_url)
+            return ("dead", None)
+
+        # 5xx résiduel, 429, etc. : indéterminé
+        return ("unchecked", None)
+
     except requests.RequestException:
-        return "unchecked"
+        return ("unchecked", None)
 
 
 def submit_to_wayback(url: str) -> str | None:
@@ -175,15 +251,21 @@ def check_catalog(catalog_path: Path = CATALOG_PATH, limit: int | None = None,
 
     # ── Phase 1 — vérifications HTTP en parallèle ────────────────────────────
     now = _iso_now()
+    url_corrections = 0
     with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as pool:
         futures = {pool.submit(check_url, d["url"]): d for d in to_check}
         for fut in concurrent.futures.as_completed(futures):
             doc = futures[fut]
             try:
-                status = fut.result()
+                status, corrected_url = fut.result()
             except Exception:
-                status = "unchecked"
+                status, corrected_url = "unchecked", None
             doc["link_status"] = status
+            # Si une URL alternative a été trouvée (archive.org /details/),
+            # on met à jour le catalog pour les runs suivants.
+            if corrected_url:
+                doc["url"] = corrected_url
+                url_corrections += 1
             # On n'horodate que les résultats définitifs (ok / dead). Un
             # statut « unchecked » (timeout, 5xx, 429 — souvent transitoire)
             # reste sans date `link_checked` : le doc redevient éligible dès
@@ -192,6 +274,10 @@ def check_catalog(catalog_path: Path = CATALOG_PATH, limit: int | None = None,
                 doc["link_checked"] = now
             stats["checked"] += 1
             stats[status] = stats.get(status, 0) + 1
+    if url_corrections:
+        stats["url_corrections"] = url_corrections
+        print(f"[link_check] {url_corrections} URL(s) corrigée(s) "
+              f"(archive.org /download/→/details/ ou encodage)")
 
     # ── Phase 2 — archivage Wayback : séquentiel, poli, borné ────────────────
     # archive.org rate-limite Save Page Now : on ne parallélise jamais ici.

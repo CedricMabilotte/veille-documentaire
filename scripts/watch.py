@@ -24,7 +24,7 @@ import requests
 from pathlib import Path
 from datetime import datetime
 from collections import defaultdict
-from urllib.parse import urlparse
+from urllib.parse import urlparse, quote, urlunparse
 
 # Ajouter scripts/ au PYTHONPATH pour pouvoir importer parsers/ et utilitaires
 sys.path.insert(0, str(Path(__file__).parent))
@@ -75,6 +75,20 @@ def load_config() -> dict:
 
 def file_uid(url: str) -> str:
     return hashlib.md5(url.encode()).hexdigest()[:8]
+
+
+def safe_url(url: str) -> str:
+    """Encode les espaces et accents dans le path d'une URL sans ré-encoder
+    les caractères déjà encodés ou les délimiteurs structuraux.
+    Appelé au premier stockage d'une URL dans le catalog."""
+    if not url:
+        return url
+    try:
+        p = urlparse(url)
+        encoded_path = quote(p.path, safe='/:@!$&\'()*+,;=-.')
+        return urlunparse(p._replace(path=encoded_path))
+    except Exception:
+        return url
 
 
 # Modèle utilisé pour le scoring sur titre (cf. invocation claude plus bas)
@@ -692,7 +706,7 @@ def update_synopsis_catalog(report: dict) -> None:
         else:
             catalog["docs"][doc_id] = {
                 "id":             doc_id,
-                "url":            r["url"],
+                "url":            safe_url(r["url"]),
                 "filename":       r["filename"],
                 "format":         r["format"],
                 "source":         r["source"],
@@ -1649,7 +1663,7 @@ def main() -> None:
             raison = item.get("raison", "")
 
             result = {
-                "url":          doc["url"],
+                "url":          safe_url(doc["url"]),
                 "filename":     doc["filename"],
                 "format":       doc["extension"],
                 "source":       label,
