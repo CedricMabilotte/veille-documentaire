@@ -3404,11 +3404,12 @@
    "hal_id": "",
    "title": "The Cooperative Way of Housing in Canada",
    "enrichment": {
-    "summary": "THE COOPERATIVE WAY OF HOUSING IN CANADA. THE COOPERATIVE WAY OF HOUSING IN CANADA\nA paper prepared for the\nThird International Symposium \non Lower-Cost Housing Problems\nOrganized by the\nInternational Association for Housing Science\nto be held at\nSir George Williams University, Montreal\nMay 27-30, 1974\n- by -\nDr. A.F. Laidlaw\nSenior Advisor, Cooperative Housing \nCentral Mortgage and Housing Corporation \nGovernment of Canada \nOttawa\nTHE CO",
+    "summary": "Communication de A.F. Laidlaw (Société canadienne d'hypothèques et de logement) pour le 3e symposium international sur le logement à faible coût (Montréal, 1974). Présente le modèle coopératif d'habitation — une alternative à la propriété individuelle et à la location marchande — et son état de développement au Canada en 1973 : coopératives de construction individuelle, coopératives de logement collectif en location-accession. Analyse les principes fondateurs (un membre = une voix, profit redistribué aux usagers), compare avec les modèles scandinaves et nord-américains, et esquisse le potentiel de déploiement dans les grands centres urbains canadiens.",
     "score_final": 7,
     "en_clair": "Présentation synthétique du modèle coopératif d'habitation au Canada, préparée pour un symposium international sur le logement abordable. Utile pour comprendre les fondements et l'organisation pratique des coopératives d'habitants."
    },
-   "summary": "Étude de A.F. Laidlaw (1973) présentée au 3e symposium international sur le logement abordable (Montréal, 1974). Analyse le logement coopératif comme alternative à la propriété privée individuelle au Canada : structures juridiques, financement public, rôle social des coopératives d'habitation."
+   "summary": "Étude de A.F. Laidlaw (1973) présentée au 3e symposium international sur le logement abordable (Montréal, 1974). Analyse le logement coopératif comme alternative à la propriété privée individuelle au Canada : structures juridiques, financement public, rôle social des coopératives d'habitation.",
+   "author": "A.F. Laidlaw"
   },
   "2175f7a3": {
    "id": "2175f7a3",
@@ -6871,9 +6872,21 @@
    "link_checked": "2026-06-25T15:35:32Z",
    "download_status": "already_present",
    "enrichment": {
-    "summary": "Atop the Watchtower. Document accessible à https://theanarchistlibrary.org/library/ejercito-zapatista-de-liberacion-nacional-atop-the-watchtower.pdf. Extrait : Ejército Zapatista de Liberación Nacional This is a presentation over what the compañeros and compañeras, jefas and jefes will talk about how the idea of the Commons was born. So this is Atop the Watchtower: A Long Look at Yesterday. It is more or less a small short history of how everything began. Some of these words were conceived over a year ago. Foreseeing that with the coming of",
+    "summary": "Texte de l’EZLN du 28 décembre 2024, pour le 30e anniversaire du soulèvement du 1er janvier 1994 au Chiapas. L’EZLN retrace la nuit précédant le soulèvement — milices qui font leurs adieux, insurgent·e·s qui descendent de la montagne — et explique comment l’idée des communs a émergé de cette expérience : pas comme concept préfabriqué mais comme pratique née de la survie collective de communautés indigènes mayas organisées en silence, sans soutien extérieur ni médias. Réponse aux récupérations et falsifications de l’histoire zapatiste des 30 ans.",
     "score_final": 6,
-    "en_clair": "Un texte de l'armée zapatiste (EZLN) sur leur vision politique et leur lutte pour la terre et l'autonomie des peuples indigènes. Un document de résistance qui articule la question foncière avec l'autodétermination."
+    "en_clair": "Un texte de l'armée zapatiste (EZLN) sur leur vision politique et leur lutte pour la terre et l'autonomie des peuples indigènes. Un document de résistance qui articule la question foncière avec l'autodétermination.",
+    "citations": [
+     {
+      "quote": "This is a presentation over what the compañeros and compañeras, jefas and jefes will talk about how the idea of the Commons was born.",
+      "quote_fr": "C’est une présentation sur comment l’idée des Communs est née, telle que la racontent les compas, jefas et jefes.",
+      "page": 1
+     },
+     {
+      "quote": "Tomorrow, when the morning star rises, we will turn the world on its head.",
+      "quote_fr": "Demain, quand l’étoile du matin se lèvera, nous allons renverser le monde.",
+      "page": 3
+     }
+    ]
    },
    "title": "Atop the Watchtower — A Long Look at Yesterday",
    "author": "Ejército Zapatista de Liberación Nacional",
@@ -10978,12 +10991,14 @@
    "enrichment": {
     "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
     "raw_response": "# ⚠️ Contenu du document manquant\n\nJe ne peux pas générer l'analyse demandée : le texte du PDF n'a pas été transmis. Entre les marqueurs `[p.1]` et `[p.133]`, il n'y a que des numéros de page vides, sans aucun contenu textuel.\n\n**Ce qui s'est passé probablement :**\n- L'extraction du PDF vers texte brut n'a pas fonctionné correctement\n- Le texte n'a pas été copié complètement dans votre message\n- Le fichier PDF est corrompu ou vide\n\n**Pour avancer :**\nPeux-tu renvoyer le texte brut du document ? ",
-    "en_clair": "L'ouvrage fondateur sur les Community Land Trusts -- modèle de propriété collective de la terre qui soustrait le foncier au marché. Un classique pour comprendre et mettre en place des structures d'accès durable à la terre ou au logement."
+    "en_clair": "L'ouvrage de référence fondateur sur les Community Land Trusts — modèle où une communauté détient la terre collectivement pour toujours, hors du marché. Indispensable pour comprendre les CLT et monter une structure d'accès durable à la terre ou au logement.",
+    "summary": "Ouvrage fondateur sur les Community Land Trusts (CLT), publié en 1972 par l'Institute for Community Economics (ICE, USA). Premier manuel complet sur ce modèle de propriété collective de la terre : la terre est détenue par une fiducie communautaire à perpétuité — hors marché — tandis que les bâtiments peuvent être possédés individuellement. L'ouvrage pose les bases théoriques, légales et organisationnelles des CLT, s'appuie sur les expériences pilotes des années 1960 (New Communities Inc. en Georgie, premier CLT rural américain), et propose un modèle reproductible pour maintenir un accès durable et abordable au logement et à la terre face à la spéculation foncière."
    },
    "download_status": "ok",
    "link_status": "ok",
    "link_checked": "2026-06-25T15:35:32Z",
-   "title": "Community Land Trust Book"
+   "title": "Community Land Trust Book",
+   "author": "Robert Swann, Shimon Gottschalk et al. (Institute for Community Economics)"
   },
   "f51dd9f5": {
    "id": "f51dd9f5",
