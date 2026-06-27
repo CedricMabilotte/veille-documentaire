@@ -448,7 +448,13 @@ def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
         print(f"     ⚠  extraction refs ratée : {e}")
 
     # Synopsis enrichi via Claude (sur le texte du PDF)
-    text = pdf_processor.extract_text(dest, max_chars=10000)
+    # T2 — on passe le titre pour que _denoise_page() retire les lignes
+    # qui le répètent (boilerplate Anarchist Library, Archive.org…).
+    # skip_cover=True : ignore la page 1 si c'est une page de couverture
+    # sans contenu réel (titre seul, auteur, date).
+    _doc_title_hint = doc.get("title") or doc.get("link_text") or doc.get("filename") or ""
+    text = pdf_processor.extract_text(dest, max_chars=10000,
+                                      doc_title=_doc_title_hint)
 
     # ── S2 — Métadonnées bibliographiques fiables ────────────────────────────
     # doc_date / lang / editeur / doi / isbn / hal_id, sans jamais inférer

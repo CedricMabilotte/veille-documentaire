@@ -233,6 +233,110 @@ def verify_citations(citations: list[dict], pdf_text: str) -> list[dict]:
     return out
 
 
+def _detect_enrichment_issues(data: dict, doc_title: str = "") -> list[str]:
+    """Identifie les champs de l'enrichissement qui nécessitent un retry.
+
+    Détecte :
+    - summary vide, trop court (< 80 chars réels), contenant une URL brute,
+      ou répétant le titre en tête sans vraiment résumer.
+    - en_clair vide.
+
+    Retourne la liste des noms de champs à relancer.
+    """
+    issues = []
+    summary = (data.get("summary") or "").strip()
+    en_clair = (data.get("en_clair") or "").strip()
+
+    # Longueur de contenu réel (URLs retirées)
+    real_summary = re.sub(r"https?://\S+", "", summary).strip()
+
+    if not summary:
+        issues.append("summary")
+    elif len(real_summary) < 80:
+        issues.append("summary")  # trop court
+    elif re.search(r"https?://", summary):
+        issues.append("summary")  # URL brute dans le résumé
+    elif doc_title and len(doc_title) >= 15:
+        # Le summary répète le titre mot pour mot en tête sans le développer
+        title_slug = re.sub(r"\s+", " ", doc_title[:30]).lower()
+        sum_start = re.sub(r"\s+", " ", summary[:35]).lower()
+        if sum_start.startswith(title_slug) and re.search(r"https?://", summary[:200]):
+            issues.append("summary")
+
+    if not en_clair:
+        issues.append("en_clair")
+
+    return issues
+
+
+def _retry_enrichment(fields: list[str], text: str,
+                      keywords: list[str], doc_title: str = "") -> dict:
+    """Retry ciblé pour les champs identifiés comme défaillants.
+
+    On envoie un prompt plus court et plus directif, centré uniquement
+    sur les champs à récupérer. Coût : 1 appel Claude supplémentaire.
+    Retourne un dict avec seulement les champs demandés.
+    """
+    result = {}
+
+    if not text or not fields:
+        return result
+
+    keywords_block = "\n".join(f"  - {kw}" for kw in keywords[:20])
+    fields_json = {}
+    fields_desc = []
+
+    if "summary" in fields:
+        fields_json["summary"] = (
+            "résumé de 200-400 mots centré sur le lien avec la thématique. "
+            "COMMENCE par une phrase présentant le document, son auteur ou contexte. "
+            "N'inclus JAMAIS d'URL. Ne répète pas le titre seul."
+        )
+        fields_desc.append("summary (résumé documentaire)")
+
+    if "en_clair" in fields:
+        fields_json["en_clair"] = (
+            "EXACTEMENT 2 phrases courtes (max 50 mots chacune) en français très simple, "
+            "sans jargon. Concrètement : à quoi ce texte peut servir dans une lutte ? "
+            "Commence par 'Ce texte...' ou 'Ce document...' ou similaire."
+        )
+        fields_desc.append("en_clair (utilité concrète, 2 phrases simples)")
+
+    if not fields_json:
+        return result
+
+    # Construire le JSON template pour le prompt
+    json_template = "{\n"
+    for k, desc in fields_json.items():
+        json_template += f'  "{k}": "{desc}",\n'
+    json_template = json_template.rstrip(",\n") + "\n}"
+
+    prompt = f"""Tu es un assistant de veille documentaire.
+
+Titre du document : "{doc_title}"
+
+Thématique (mots-clés) :
+{keywords_block}
+
+Ta tâche : génère UNIQUEMENT le JSON suivant, sans balise markdown :
+
+{json_template}
+
+Texte du document (peut être tronqué) :
+{text[:6000]}"""
+
+    try:
+        raw = _call_claude(prompt, timeout=120)
+        parsed = json.loads(raw)
+        for field in fields:
+            if field in parsed:
+                result[field] = parsed[field]
+    except Exception as e:
+        print(f"     ⚠  retry_enrichment raté : {e}")
+
+    return result
+
+
 def enrich(text: str, keywords: list[str], doc_title: str = "") -> dict:
     """Produit le synopsis enrichi d'un document.
 
@@ -338,6 +442,19 @@ Texte du document (peut être tronqué) :
         for field, default in defaults.items():
             if field not in data:
                 data[field] = default
+
+        # ── V1 — Validation qualité et retry ciblé ──────────────────────────
+        # Le modèle peut retourner un summary vide, pollué par une URL, ou
+        # calqué sur le titre — dans ce cas on relance avec un prompt ciblé.
+        needs_retry = _detect_enrichment_issues(data, doc_title)
+        if needs_retry:
+            print(f"     🔄  Enrichissement partiel — retry ciblé : {needs_retry}")
+            retry_result = _retry_enrichment(needs_retry, text, keywords, doc_title)
+            for field in needs_retry:
+                if field in retry_result and retry_result[field]:
+                    data[field] = retry_result[field]
+                    print(f"     ✅  {field} récupéré via retry")
+
         # A4 — vérification des citations littérales dans le texte du PDF
         try:
             data["citations"] = verify_citations(data.get("citations", []), text)
