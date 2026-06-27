@@ -267,7 +267,7 @@ function buildCard(d) {
     <div class="card-head">
       ${coverHtml}
       <div style="flex:1; min-width:0">
-        <div class="title">${escape(latestRun.link_text || d.filename)}</div>
+        <div class="title">${escape(d.title || (d.meta && d.meta.pdf_title) || latestRun.link_text || d.filename)}</div>
         <div class="filename">${escape(d.filename)}</div>
         <div class="badges">
           <span class="badge">${escape(d.source)}</span>

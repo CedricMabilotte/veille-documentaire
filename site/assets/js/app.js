@@ -657,9 +657,9 @@
     document.addEventListener('keydown', onKey);
   }
 
-  // Délégation sur toute image dans .fiche-cover ou .fiche-cover-wrap
+  // Délégation sur toute image dans .fiche-cover, .fiche-cover-wrap (fiche) ou .book-cover (catalogue)
   document.addEventListener('click', function (e) {
-    const img = e.target.closest('.fiche-cover img, .fiche-cover-wrap img');
+    const img = e.target.closest('.fiche-cover img, .fiche-cover-wrap img, .book-cover img');
     if (!img || img.closest('.placeholder')) return;
     if (img.naturalWidth === 0) return; // image non chargée
     e.preventDefault();

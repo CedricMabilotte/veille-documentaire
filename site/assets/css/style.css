@@ -2348,4 +2348,5 @@ main { flex: 1; }
 }
 .lb-close:hover { opacity: 1; }
 .fiche-cover img,
-.fiche-cover-wrap img { cursor: zoom-in; }
+.fiche-cover-wrap img,
+.book-cover img { cursor: zoom-in; }
