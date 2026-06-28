@@ -830,7 +830,7 @@ SITE_BASE_URL = "https://biblio.actitude.org"
 # Seuil de publication (S1) : un doc n'est publié (RSS, sitemap, fiche
 # pré-rendue) que si son score post-lecture l'autorise. catalog.json reste
 # complet pour la transparence.
-PUBLISH_THRESHOLD = 6
+PUBLISH_THRESHOLD = int(os.getenv("PUBLISH_THRESHOLD", "4"))
 
 # Seuil de téléchargement (S0) : score minimum pour déclencher le
 # téléchargement du fichier. Volontairement plus bas que PUBLISH_THRESHOLD

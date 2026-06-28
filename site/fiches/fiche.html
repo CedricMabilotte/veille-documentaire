@@ -308,7 +308,7 @@ function renderFiche(doc, basePath) {
   const hasBulle = !!doc.bulle_data;
   const shareUrl = window.location.href;
   // B4 : champ « en clair » — texte en langue simple
-  const enClair = bulle.en_clair || '';
+  const enClair = bulle.en_clair || (doc.enrichment && doc.enrichment.en_clair) || '';
   // C1 : type de document, B1 : orientation de la source
   const dt = docType(doc);
   const orient = docOrientation(doc);
@@ -392,6 +392,7 @@ function renderFiche(doc, basePath) {
     <section class="fiche-body fade-in">
       ${hasBulle ? `<span class="fiche-bulle-ribbon">★ Sélection de la rédaction</span>` : ''}
       <h1 class="fiche-title">${escape(title)}</h1>
+      ${doc.title_fr && doc.title_fr !== title ? `<p class="fiche-title-fr" style="color:var(--text-muted,#888);font-style:italic;margin-top:2px;font-size:0.95em">↳ ${escape(doc.title_fr)}</p>` : ''}
       ${subtitle ? `<p class="fiche-subtitle">${escape(subtitle)}</p>` : ''}
 
       ${enClair ? `
