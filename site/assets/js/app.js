@@ -657,11 +657,14 @@
     document.addEventListener('keydown', onKey);
   }
 
-  // Délégation sur toute image dans .fiche-cover, .fiche-cover-wrap (fiche) ou .book-cover (catalogue)
+  // Délégation : clic sur la zone de couverture (image OU padding du container)
+  // On monte vers le container (.fiche-cover-wrap, .fiche-cover, .book-cover),
+  // puis on trouve l'img à l'intérieur — couvre tous les cas de clic.
   document.addEventListener('click', function (e) {
-    const img = e.target.closest('.fiche-cover img, .fiche-cover-wrap img, .book-cover img');
-    if (!img || img.closest('.placeholder')) return;
-    if (img.naturalWidth === 0) return; // image non chargée
+    const wrap = e.target.closest('.fiche-cover-wrap, .fiche-cover, .book-cover');
+    if (!wrap || wrap.classList.contains('placeholder')) return;
+    const img = wrap.querySelector('img');
+    if (!img || img.naturalWidth === 0) return; // image absente ou non chargée
     e.preventDefault();
     openLightbox(img.src, img.alt);
   });

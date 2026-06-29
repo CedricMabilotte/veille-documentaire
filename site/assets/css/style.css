@@ -2333,14 +2333,19 @@ main { flex: 1; }
 }
 @keyframes lb-in { from { opacity:0 } to { opacity:1 } }
 .lb-overlay img {
-  /* Agrandit ET contraint : l'image occupe tout l'espace disponible
-     tout en conservant ses proportions. */
-  width: 95vw;
-  height: 95vh;
+  /* Plein écran : contraint à 92vw × 92vh maximum, centré.
+     max-width/max-height respectent les proportions sans étirer au-delà. */
+  max-width: 92vw;
+  max-height: 92vh;
+  width: auto;
+  height: auto;
+  display: block;
   object-fit: contain;
   border-radius: 3px;
   box-shadow: 0 8px 48px rgba(0,0,0,.7);
   cursor: default;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 .lb-close {
   position: fixed; top: 20px; right: 24px;
