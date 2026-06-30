@@ -12943,7 +12943,7 @@
    "latest_run": "2026-06-29T15:54:06",
    "collected_date": "2026-06-25_14-34",
    "score_initial": 0,
-   "score_final": 4,
+   "score_final": 6,
    "latest_score": 4,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -12982,7 +12982,7 @@
    "link_checked": "2026-06-25T15:35:32Z",
    "title": "Nature et anarchie,",
    "enrichment": {
-    "summary": "Ce texte est une introduction polémique à un ouvrage intitulé « Nature et anarchie ». Il ouvre par une critique virulente de deux positions jugées complices de l'ordre existant : d'abord le réformisme et l'alternatisme (municipalisme libertaire, projets associatifs, squats institutionnalisés, occupations de bâtiments municipaux) qui négocient et se compromettent avec le pouvoir plutôt que de le combattre ; ensuite la collapsologie, cette tendance à se préparer passivement à l'effondrement sans affronter ses racines, qui instille une culpabilisation interclassiste et détourne l'énergie révolutionnaire en gestion résiliente du désastre. L'auteur y voit deux formes d'aliénation contemporaine. Face à ces impasses, il revendique un anarchisme combattant, anti-industriel et radicalement anti-capitaliste. L'ouvrage entreprend alors une articulation entre anarchisme historique et question de la nature — non comme sauvegarde d'une nature abstraite séparée de l'humain, mais comme rapport vivant entre les gens et leur milieu de vie. L'anarchisme, dès sa naissance avec Proudhon (1840), s'oppose à la propriété privée et à tous les rapports de domination. Son originalité est de lier critique matérielle et critique de tous les aspects de la vie, y compris la dégradation des conditions d'existence par le développement industriel. Le texte annonce un parcours à travers les penseurs anarchistes — Bakounine, Reclus, Déjacque, Malatesta, Morris, Kropotkine, Bookchin, Amoros — pour montrer comment l'anarchisme a toujours posé la question du rapport à la nature et à l'habiter, contre l'illusion écologiste et la co-gestion étatique.",
+    "summary": "Ouvrage de Jack Déjean (2e édition, 2023, 384 pages) reconstituant l'histoire longue du rapport entre anarchisme et nature/terre, de Bakounine à l'anti-industrialisme contemporain. Structuré en quatre parties : (I) les liens originels — Bakounine (philosophie de la nature, liberté comme enracinement dans le milieu), Élisée Reclus (géographie, interdépendance sol-peuples, critique du progrès linéaire), André Léo et Malatesta sur la question agraire (land question : propriété paysanne, communs ruraux, réforme agraire), retour à la vie naturelle des anarchistes naturiens, William Morris. (II) Impasses conjoncturelles : Kropotkine et le communisme anarchiste, l'industrialisation par les \"anarchistes\" de gouvernement. (III) L'anarchie contre les ravages industriels : Bookchin (écologie sociale), Miguel Amoros (anti-industrialisme), anarchisme anti-nucléaire, antispécisme, primitivisme, \"la guerre du sous-sol\" (luttes minières et extractivisme). (IV) Face à face avec l'ennemi : critique radicale de la collapsologie, de l'alternativisme, du municipalisme libertaire et de tout projet qui \"s'arrange\" avec le pouvoir au lieu de le rompre — avec référence explicite à la ZAD de Notre-Dame-des-Landes comme horizon. L'ouvrage constitue une référence théorique dense sur les luttes pour la terre, les communs ruraux, l'anti-extractivisme et les alternatives radicales à la propriété privée.",
     "citations": [
      {
       "page": 8,
@@ -13031,7 +13031,7 @@
     ],
     "relevance_score": 3,
     "relevance_notes": "Le texte touche tangentiellement la thématique foncière via mentions de la ZAD et squats, ainsi qu'une opposition de principe à la propriété privée. Cependant, il reste une introduction philosophique et critique au rapport anarchisme-nature, sans développer les questions centrales du corpus : communs fonciers, paysannerie, agroécologie, libération des terres, propriété d'usage, coopératives agricoles. C'est un texte de positionnement politique général, non un texte sur les luttes concrètes pour la terre.",
-    "en_clair": "Ce texte dit qu'il faut arrêter de faire semblant que les projets qui s'arrangent avec le pouvoir (squats municipalisés, associations subventionnées) peuvent créer du changement — il faut vraiment rompre. Il rappelle aussi que les anarchistes historiques ont toujours lié la critique du système à la critique du rapport à la nature, ce qui peut servir pour penser la terre comme enjeu de liberté.",
+    "en_clair": "Ce livre retrace 150 ans d'anarchistes qui ont réfléchi au rapport à la terre : comment la posséder collectivement, pourquoi refuser les mines et l'industrie qui la détruisent, et ce que la ZAD de Notre-Dame-des-Landes nous dit sur les alternatives concrètes. C'est l'histoire de gens qui ont pensé les communs avant qu'on les appelle communs.",
     "acteurs": [
      "Pierre-Joseph Proudhon",
      "Joseph Déjacque",
@@ -13052,7 +13052,9 @@
     "model": "claude-haiku-4-5",
     "prompt_version": "2bfde4d099"
    },
-   "cover": "assets/covers/0539b385.png"
+   "cover": "assets/covers/0539b385.png",
+   "score_override": 6,
+   "score_override_reason": "Synthèse de 384 pages sur anarchisme et rapport à la nature/terre. Chapitre direct sur la question agraire (André Léo, Malatesta), Élisée Reclus (géographie et milieux), ZAD NDDL, guerre du sous-sol (mining), critique de l'alternativisme. Référence théorique majeure pour la veille."
   },
   "16e8446d": {
    "id": "16e8446d",
@@ -13537,7 +13539,7 @@
    "latest_run": "2026-06-25_14-34",
    "collected_date": "2026-06-25_14-34",
    "score_initial": 0,
-   "score_final": 4,
+   "score_final": 5,
    "latest_score": 4,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -13577,7 +13579,7 @@
    "download_status": "already_present",
    "enrichment": {
     "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:10am (Europe/Paris)\n stderr=",
-    "summary": "Ce texte de Ratgeb défend une théorie révolutionnaire de l'autogestion généralisée comme réponse aux grèves sauvages et aux occupations d'usines. L'auteur critique le système marchand, le travail forcé, l'État bureaucratique et les appareils de contrôle (partis, syndicats). Il énumère les refus quotidiens du travail (retards, détournements, sabotages) comme germes d'une société radicalement nouvelle où les travailleurs disposeraient eux-mêmes du temps, de l'espace et de la production. Le projet repose sur trois axes : rejeter la marchandise et le profit, abolir le travail forcé et la hiérarchie, et organiser la distribution gratuite des biens selon les désirs collectifs. Le texte insiste sur l'urgence révolutionnaire, affirmant que les techniques existent, que la conscience monte, et qu'il ne reste qu'à passer à l'action pour éviter que des bureaucrates ne confisquent l'autogestion au profit d'une nouvelle classe dominante. Malgré des mentions très fugaces des « champs » et des « biens de la terre », le document ne traite pas de questions foncières, agraires, paysannes ou de communs territoriaux : il s'agit d'une théorie générale de l'autogestion industrielle et urbaine, tournée vers la critique du travail salarié et de l'État, non vers l'accès à la terre ou les régimes d'usage collectif du sol.",
+    "summary": "Ce texte de Raoul Vaneigem (publié sous le pseudonyme Ratgeb, 1974) développe une théorie révolutionnaire de l'autogestion généralisée à partir des grèves sauvages et des occupations d'usines. L'auteur part des refus quotidiens du travail forcé (retards, sabotages, détournements) pour en extraire la logique d'une société radicalement nouvelle : des assemblées d'autogestion disposant librement des forces productives et distribuant gratuitement les biens, sans État, sans marché, sans hiérarchie. Le texte s'articule en trois parties : (I) critique de la société de survie et du système spectaculaire-marchand, qui réduit toute activité humaine à une marchandise ; (II) catalogue des pratiques insurrectionnelles (sabotage, détournement, occupation, grève sauvage) comme passage vers l'auto-organisation ; (III) modèle de société d'autogestion généralisée fondée sur la satisfaction des désirs et la fin du travail forcé. L'autogestion est définie comme la prise de contrôle collective des moyens de production, de distribution et de la vie quotidienne — « les biens de la terre et de l'industrie appartenant aux assemblées de grève ». La critique situationniste de la marchandise, du spectacle et du rôle social nourrit directement une théorie des communs productifs : ce que Vaneigem appelle autogestion, les théoriciens contemporains des communs appellent gouvernance collective par les usagers. Texte court (31 pages), dense, pédagogique dans sa forme (questions/réponses), destiné à être lu et discuté dans les ateliers.",
     "citations": [
      {
       "page": 1,
@@ -13604,7 +13606,7 @@
     "matched_keywords": [],
     "relevance_score": 2,
     "relevance_notes": "Hors-champ de la thématique veille. Ce texte théorise l'autogestion générale (industrie, villes, État) contre la marchandise et le travail, non les régimes fonciers, la paysannerie, ou les communs territoriaux. Les deux mentions de 'terre' et 'champs' sont anecdotiques et dénuées de problématique foncière.",
-    "en_clair": "Ce texte défend l'idée que les ouvriers doivent prendre eux-mêmes le contrôle de l'usine et de la société, sans patrons ni chefs, en refusant le travail inutile et en partageant les biens. C'est un appel à la révolution urbaine et industrielle, pas un guide pour accéder à la terre ou pour cultiver ensemble.",
+    "en_clair": "Vaneigem propose un plan concret : les travailleurs reprennent le contrôle des usines et des terres collectivement, sans patron ni État, et distribuent gratuitement ce qu'ils produisent. Ce que nous appelons aujourd'hui « communs » (la gestion collective de ressources sans propriété privée), il l'appelle autogestion généralisée — et il explique comment y arriver à partir des petits refus quotidiens du travail.",
     "acteurs": [
      "Ratgeb (auteur)",
      "Lénine (critique)",
@@ -13620,7 +13622,9 @@
     "prompt_version": "1686e16abd"
    },
    "title": "De la gréve sauvage à l’autogestion généralisée",
-   "cover": "assets/covers/6596ad83.png"
+   "cover": "assets/covers/6596ad83.png",
+   "score_override": 5,
+   "score_override_reason": "Texte fondateur de Raoul Vaneigem (Ratgeb) sur l'autogestion généralisée — concept central de la théorie des communs (gestion collective sans État ni marché). Directement pertinent : assemblées d'autogestion, distribution gratuite des biens, communs productifs."
   },
   "804ecf0d": {
    "id": "804ecf0d",
@@ -16823,7 +16827,7 @@
    "latest_run": "2026-06-25_14-34",
    "collected_date": "2026-06-25_14-34",
    "score_initial": 0,
-   "score_final": 4,
+   "score_final": 5,
    "latest_score": 0,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -16942,7 +16946,7 @@
     ],
     "relevance_score": 4,
     "relevance_notes": "Le document est largement centré sur l'anarchisme pratique et l'auto-organisation urbaine (Shaheen Bagh). La thématique foncière et agraire est mentionnée mais peu développée dans ce qui est fourni (texte tronqué). Les éléments présents — petits agriculteurs, crise agraire, mouvements paysans, aide mutuelle, absence de hiérarchie — sont conceptuellement pertinents pour la veille, mais le contenu détaillé manque.",
-    "en_clair": "Ce texte montre comment des gens ordinaires, sans attendre des chefs ni d'organisations formelles, peuvent créer ensemble des solutions concrètes (cuisines gratuites, services médicaux, bibliothèques). C'est utile pour comprendre comment les mouvements paysans et populaires peuvent fonctionner par entraide plutôt que par ordres d'en haut.",
+    "en_clair": "Des millions de paysans indiens ont bloqué Delhi pendant un an pour refuser des lois qui allaient livrer leurs terres et leurs récoltes aux grandes entreprises. Ce texte montre que cette lutte fonctionnait exactement comme les théoriciens anarchistes le décrivent : sans chef, par aide mutuelle, avec des cuisines gratuites et des bibliothèques autogérées.",
     "acteurs": [
      "Jamia Millia Islamia University",
      "Jawaharlal Nehru University (JNU)",
@@ -16957,7 +16961,9 @@
    "download_status": "ok",
    "link_status": "ok",
    "link_checked": "2026-06-25T15:35:32Z",
-   "title": "Anarchism, Mutual Aid, And Self-Organization : From The George Floyd Uprising To India’s Farmer Rebellion"
+   "title": "Anarchism, Mutual Aid, And Self-Organization : From The George Floyd Uprising To India’s Farmer Rebellion",
+   "score_override": 5,
+   "score_override_reason": "Analyse du mouvement des agriculteurs indiens (2020-2021) contre les lois pro-entreprises de Modi comme cas d'auto-organisation anarchiste sans direction formelle. La lutte des paysans indiens est directement sur la défense des communs agraires contre la privatisation des marchés agricoles."
   },
   "a7658db1": {
    "id": "a7658db1",

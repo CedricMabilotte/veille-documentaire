@@ -413,6 +413,53 @@ sources:
     max_pages: 20
     min_interval_days: 7
 
+  # ═══ Organisations membres ILC — extraites des cartographies 9f38ee12 + cc483884 ═══
+  # Ajoutées session #16 (2026-06-30).
+
+  # KPA — Konsorsium Pembaruan Agraria (Indonésie)
+  # 187 orgs affiliées, réforme agraire, conflits fonciers. Bibliothèque en ligne.
+  - label: "KPA Indonesia — document library (réforme agraire)"
+    url: "https://www.kpa.or.id/document-library/"
+    type: deep_html
+    orientation: militant
+    default_lang: id
+    auto_download: true
+    max_pages: 10
+    min_interval_days: 30
+
+  # Réseau Billital Maroobé — pasteurs et éleveurs Afrique de l'Ouest / Sahel
+  # 75 organisations dans 9 pays, bulletin bimestriel sur le pastoralisme.
+  - label: "Réseau Billital Maroobé — publications"
+    url: "https://maroobe.com/"
+    type: deep_html
+    orientation: militant
+    default_lang: fr
+    auto_download: true
+    max_pages: 8
+    min_interval_days: 30
+
+  # European Shepherds Network — pastoralisme européen
+  # Rapports sur le pastoralisme, droits des bergers, terres communes.
+  - label: "European Shepherds Network — publications"
+    url: "https://shepherdnet.eu/"
+    type: deep_html
+    orientation: militant
+    default_lang: en
+    auto_download: true
+    max_pages: 8
+    min_interval_days: 30
+
+  # CONFRAS — Confederación de Federaciones de la Reforma Agraria Salvadoreña
+  # Luttes paysannes El Salvador, réforme agraire, organisations campesinas.
+  - label: "CONFRAS El Salvador — publicaciones"
+    url: "http://www.confras.org/"
+    type: deep_html
+    orientation: militant
+    default_lang: es
+    auto_download: true
+    max_pages: 8
+    min_interval_days: 30
+
   # TNI Land & Food — think-tank progressiste, géopolitique foncière
   # TESTÉ 2026-06-22 : pas de flux RSS disponible. /rss.xml et /en/rss.xml
   # redirigent vers sitemap.xml. /feed/ et /en/feed/ retournent 429.
