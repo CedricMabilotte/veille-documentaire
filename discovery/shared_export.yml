@@ -87,6 +87,24 @@ project_keywords:
 - agricultura campesina
 - tenencia colectiva
 - movimiento sin tierra
+- 15M
+- indignados
+- asamblea popular
+- autogestión
+- commons urbanos
+- espacios autogestionados
+- democracia real ya
+- acampada
+- Barcelona en Comú
+- UBPC
+- cooperativa agropecuaria
+- agricultura urbana
+- organopónico
+- poder popular
+- período especial
+- campesino a campesino
+- ANAP
+- usufructo estatal
 - Movimento Sem Terra
 - MST
 - reforma agrária
@@ -103,15 +121,15 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-06-26T15:01:54.894951+00:00'
+exported_at: '2026-06-30T21:12:56.935259+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
   type: html
-  fertility: 5.14
-  runs: 7
-  docs_dl: 36
-  docs_seen: 330
+  fertility: 4.75
+  runs: 8
+  docs_dl: 38
+  docs_seen: 376
 - url: https://infokiosques.net/paysannerie_ruralite
   label: Infokiosques.net — Paysannerie & ruralité
   type: html
@@ -238,6 +256,20 @@ sources:
   runs: 3
   docs_dl: 8
   docs_seen: 90
+- url: https://archive.org/advancedsearch.php?q=%28creator%3A%22ostrom%22+OR+creator%3A%22federici%22+OR+creator%3A%22bollier%22+OR+%22governing+the+commons%22+OR+%22common+pool+resource%22+OR+%22commoning%22%29+AND+mediatype%3Atexts+AND+language%3A%28eng+OR+fra%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
+  label: Archive.org — théorie des communs (Ostrom, CPR, collective action)
+  type: archive_org
+  fertility: 1.0
+  runs: 1
+  docs_dl: 1
+  docs_seen: 30
+- url: https://archive.org/advancedsearch.php?q=%28%22caliban+and+the+witch%22+OR+%22primitive+accumulation%22+OR+%22feminist+commons%22+OR+%22agrarian+feminism%22+OR+creator%3A%22federici%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
+  label: Archive.org — féminisme et communs (Federici, accumulation primitive)
+  type: archive_org
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 30
 - url: https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
   label: HAL — communs fonciers
   type: hal
@@ -294,6 +326,34 @@ sources:
   runs: 3
   docs_dl: 2
   docs_seen: 30
+- url: https://www.kpa.or.id/document-library/
+  label: KPA Indonesia — document library (réforme agraire)
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://maroobe.com/
+  label: Réseau Billital Maroobé — publications
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://shepherdnet.eu/
+  label: European Shepherds Network — publications
+  type: deep_html
+  fertility: 10.0
+  runs: 1
+  docs_dl: 10
+  docs_seen: 10
+- url: http://www.confras.org/
+  label: CONFRAS El Salvador — publicaciones
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
 - url: https://www.culturalsurvival.org/rss.xml
   label: Cultural Survival — RSS
   type: rss
@@ -427,3 +487,129 @@ sources:
   runs: 1
   docs_dl: 0
   docs_seen: 10
+- url: https://openknowledge.fao.org/oai/request?verb=ListRecords&metadataPrefix=oai_dc&set=foodsecurity
+  label: FAO Open Repository — food security (OAI-PMH)
+  type: hal
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://thecommonsjournal.org/articles
+  label: International Journal of the Commons — articles
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://viacampesina.org/en/wp-json/wp/v2/media?mime_type=application/pdf
+  label: La Vía Campesina — publications (WP REST)
+  type: wp_rest
+  fertility: 539.0
+  runs: 1
+  docs_dl: 539
+  docs_seen: 542
+- url: https://www.fian.org/wp-json/wp/v2/media?mime_type=application/pdf
+  label: FIAN International — publications (WP REST)
+  type: wp_rest
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://books.openedition.org/
+  label: OpenEdition Books — catalogue (deep_html)
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://focusweb.org/category/publications/
+  label: Focus on the Global South — publications
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://www.clacso.org/?s=tierra+communs&post_type=publication
+  label: CLACSO — búsqueda tierra y communs
+  type: deep_html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 93
+- url: https://nyeleni.org/fr/documents-finaux/
+  label: Nyéléni — documents finaux
+  type: deep_html
+  fertility: 22.0
+  runs: 1
+  docs_dl: 22
+  docs_seen: 22
+- url: https://traficantes.net/materias/15-m
+  label: Traficantes de Sueños — 15M (matière)
+  type: deep_html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 3
+- url: https://traficantes.net/materias/bienes-comunes
+  label: Traficantes de Sueños — Bienes comunes
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://traficantes.net/materias/autogestion
+  label: Traficantes de Sueños — Autogestion
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://api.archives-ouvertes.fr/search/?q=15M+indignados&fq=language_s:es&fl=halId_s,title_s,authFullName_s,fileMain_s&rows=50&wt=json
+  label: HAL Science — 15M / indignados
+  type: hal
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://archive.org/advancedsearch.php?q=%22bienes+comunes%22+language%3Aspa+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
+  label: Archive.org — bienes comunes espagnol (15M/communs)
+  type: archive_org
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 37
+- url: https://www.minag.gob.cu/category/categoria-publicaciones/agricultura-urbana/
+  label: MINAG Cuba — Agricultura Urbana (publications)
+  type: deep_html
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 24
+- url: https://biblioteca-repositorio.clacso.edu.ar/discover?query=cuba+cooperativas+agricultura&rpp=20
+  label: CLACSO Repositorio — Cuba cooperativas agricultura
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: http://agritrop.cirad.fr/cgi/oai2?verb=ListRecords&metadataPrefix=oai_dc
+  label: Agritrop CIRAD — Cuba coopératives (OAI-PMH)
+  type: hal
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=revues:etudescaribeennes
+  label: OpenEdition — Études caribéennes (Cuba agraire)
+  type: hal
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://archive.org/advancedsearch.php?q=subject%3ACuba+AND+%28agricultura+OR+cooperativa+OR+agroecologia%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
+  label: Archive.org — Cuba agriculture agroécologie
+  type: archive_org
+  fertility: 0.0
+  runs: 1
+  docs_dl: 0
+  docs_seen: 17
