@@ -218,7 +218,18 @@ def main():
                     reset_paris += datetime.timedelta(days=1)
                 wait_secs = (reset_paris - now_paris).total_seconds() + 300
                 log(f'⏸  Token limit (heure non parsée). Reprise à 20h10 Paris (dans {int(wait_secs//3600)}h{int((wait_secs%3600)//60)}min)')
-            time.sleep(wait_secs)
+            # Garde-fou : jamais plus de 6h de sleep (évite les process zombies)
+            MAX_SLEEP = 6 * 3600
+            if wait_secs > MAX_SLEEP:
+                log(f'⚠  wait_secs={wait_secs:.0f}s > 6h — plafonné à {MAX_SLEEP}s')
+                wait_secs = MAX_SLEEP
+            # Sleep par tranches de 5 min pour rester réactif
+            CHUNK = 300
+            elapsed = 0
+            while elapsed < wait_secs:
+                chunk = min(CHUNK, wait_secs - elapsed)
+                time.sleep(chunk)
+                elapsed += chunk
             log('⏰ Reprise après reset tokens.')
 
         elif status == 'skip':
