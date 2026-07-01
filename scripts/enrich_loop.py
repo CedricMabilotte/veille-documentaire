@@ -114,8 +114,7 @@ def enrich_one(uid):
     pdf = DOCS / fn if fn else None
     if not pdf or not pdf.exists():
         pdf = next(iter(list(DOCS.glob(f'{uid}_*.pdf'))), None)
-    if not pdf or not pdf.exists():
-        return 'skip', 'no_pdf'
+
 
     # Phase 2 : en_clair manquant alors que summary présent → générer depuis summary
     if has_summary and not has_enclair:
@@ -142,6 +141,9 @@ def enrich_one(uid):
             CATALOG.write_text(json.dumps(cat, ensure_ascii=False, indent=2))
             return 'ok', f'en_clair ({len(r.stdout.strip())}c)'
         return 'error', f'en_clair failed (exit {r.returncode})'
+
+    if not pdf or not pdf.exists():
+        return 'skip', 'no_pdf'
     text = pdf_processor.extract_text(pdf)
     if not text:
         cat['docs'][uid].setdefault('enrichment', {})['summary'] = ''
