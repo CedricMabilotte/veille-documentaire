@@ -89,6 +89,9 @@ def build_stats(catalog_path: Path = CATALOG_PATH,
     catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
     docs = catalog.get("docs", {})
     orientations = _load_source_orientations()
+    import yaml as _yaml
+    _excl_path = ROOT / "config" / "exclusions.yml"
+    exclusion_ids = set(_yaml.safe_load(_excl_path.read_text()).get("excluded", []) if _excl_path.exists() else [])
 
     by_lang = Counter()
     by_source = Counter()
@@ -97,7 +100,7 @@ def build_stats(catalog_path: Path = CATALOG_PATH,
     by_type = Counter()
     by_orientation = Counter()
     downloaded = 0
-    published = 0  # score effectif >= 6
+    published = 0  # score effectif >= PUBLISH_THRESHOLD
 
     for doc in docs.values():
         lang = doc.get("lang") or "inconnu"
@@ -112,7 +115,12 @@ def build_stats(catalog_path: Path = CATALOG_PATH,
 
         score = _effective_score(doc)
         by_score[str(score)] += 1
-        if score >= 6:
+        # Logique simplifiée de _is_publishable (sans import circulaire)
+        _score = score
+        _excluded = doc.get("id") in exclusion_ids
+        _has_format = doc.get("format","") in ("pdf","epub","txt","") or not doc.get("format")
+        _not_article = doc.get("doc_type","") not in ("article_html",)
+        if not _excluded and _score >= 4 and _has_format and _not_article:
             published += 1
 
         if doc.get("downloaded"):

@@ -56,19 +56,24 @@ def log(msg):
         f.flush()
 
 def pending_uids():
+    """Phase 1 : summary manquant. Phase 2 : en_clair manquant."""
     cat = json.loads(CATALOG.read_text())
-    uids = []
+    phase1, phase2 = [], []
     for uid, d in cat['docs'].items():
         if not watch._is_publishable(d): continue
         enr = d.get('enrichment') or {}
-        if 'summary' in enr: continue  # déjà traité (vide ou non)
         fn = d.get('filename', '')
         pdf = DOCS / fn if fn else None
         if not pdf or not pdf.exists():
             pdf = next(iter(list(DOCS.glob(f'{uid}_*.pdf'))), None)
-        if pdf and pdf.exists():
-            uids.append(uid)
-    return uids
+        has_pdf = pdf and pdf.exists()
+        has_summary = bool((enr.get('summary') or '').strip())
+        has_enclair = bool((enr.get('en_clair') or '').strip())
+        if not has_summary and 'summary' not in enr and has_pdf:
+            phase1.append(uid)
+        elif has_summary and not has_enclair and has_pdf:
+            phase2.append(uid)
+    return phase1 + phase2
 
 def parse_reset_time(error_msg):
     """Extrait l'heure de reset depuis le message d'erreur. Retourne datetime UTC ou None."""
@@ -188,9 +193,8 @@ def main():
     while True:
         uids = pending_uids()
         if not uids:
-            log(f'✅ Tout enrichi — done={done} skip={skipped} err={errors}')
-            publish_and_deploy()
-            sys.exit(0)
+            log(f'✅ Summaries + en_clair terminés — done={done} skip={skipped} err={errors}')
+            break
 
         log(f'{len(uids)} docs en attente…')
         uid = uids[0]
@@ -239,6 +243,22 @@ def main():
         else:  # error
             log(f'  ✗ {uid} {info}')
             errors += 1
+
+    # ── Phase 3 : traduction des citations ──────────────────────────────
+    log('Phase 3 — traduction des citations en français…')
+    r = subprocess.run(
+        [sys.executable, str(ROOT / 'scripts' / 'translate_citations_batch.py')],
+        cwd=str(ROOT)
+    )
+    if r.returncode == 2:
+        log('⏸  Token limit pendant la traduction — sera repris au prochain cycle.')
+        sys.exit(2)
+    elif r.returncode == 0:
+        log('✅ Traductions citations terminées.')
+    else:
+        log(f'⚠  translate_citations_batch exit {r.returncode}')
+    publish_and_deploy()
+    sys.exit(0)
 
 if __name__ == '__main__':
     main()
