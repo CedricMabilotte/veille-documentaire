@@ -368,11 +368,21 @@ function renderStats(meta, docs) {
   const sources = new Set(docs.map(d => d.source).filter(Boolean));
   const latest = docs.map(d => d._latestRunDate).filter(Boolean).sort().slice(-1)[0];
 
+  const bp = (typeof basePath === 'string') ? basePath : '';
   wrap.innerHTML = `
-    <div class="stat"><div class="stat-num">${total}</div><div class="stat-label">Fiches au catalogue</div></div>
-    <div class="stat"><div class="stat-num">${sources.size}</div><div class="stat-label">Sources surveillées</div></div>
-    <div class="stat"><div class="stat-num">${withBulle}</div><div class="stat-label">Publications à la une</div></div>
-    <div class="stat"><div class="stat-num" style="font-size:22px;line-height:1.4;">${escape(formatDate(latest) || '—')}</div><div class="stat-label">Dernière veille</div></div>
+    <a class="stat" href="${bp}fiches/index.html" aria-label="Parcourir les ${total} fiches du catalogue">
+      <div class="stat-num">${total}</div><div class="stat-label">Fiches au catalogue</div>
+    </a>
+    <a class="stat" href="${bp}etat-corpus.html#sources" aria-label="Voir les ${sources.size} sources surveillées">
+      <div class="stat-num">${sources.size}</div><div class="stat-label">Sources surveillées</div>
+    </a>
+    <a class="stat" href="${bp}dossiers.html" aria-label="Voir les ${withBulle} dossiers éditoriaux">
+      <div class="stat-num">${withBulle}</div><div class="stat-label">Dossiers éditoriaux</div>
+    </a>
+    <a class="stat" href="${bp}apropos.html" aria-label="Lire la méthodologie">
+      <div class="stat-num" style="font-size:22px;line-height:1.4;">${escape(formatDate(latest) || '—')}</div>
+      <div class="stat-label">Dernière veille</div>
+    </a>
   `;
 }
 </script>

@@ -515,6 +515,24 @@ main { flex: 1; }
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
 }
+a.stat {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+  cursor: pointer;
+}
+a.stat:hover,
+a.stat:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 2px 12px rgba(0,0,0,.08);
+  transform: translateY(-2px);
+  outline: none;
+}
+a.stat:hover .stat-label,
+a.stat:focus-visible .stat-label {
+  color: var(--accent);
+}
 .stat-num {
   font-family: var(--font-serif);
   font-size: 44px;
@@ -527,6 +545,7 @@ main { flex: 1; }
   font-size: 13px;
   color: var(--text-dim);
   letter-spacing: 0.04em;
+  transition: color 0.15s;
 }
 
 /* --- Méthodologie en bref / 3 colonnes texte --- */
@@ -2289,6 +2308,11 @@ main { flex: 1; }
 [data-palette="militant"] .graph-wrap {
   border-width: 2px;
   box-shadow: var(--shadow-sm);
+}
+[data-palette="militant"] a.stat:hover,
+[data-palette="militant"] a.stat:focus-visible {
+  box-shadow: 4px 4px 0 var(--accent);
+  transform: translate(-2px, -2px);
 }
 [data-palette="militant"] .featured-card:hover { transform: translate(-2px, -2px); box-shadow: var(--shadow-md); }
 [data-palette="militant"] .btn { border-width: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
