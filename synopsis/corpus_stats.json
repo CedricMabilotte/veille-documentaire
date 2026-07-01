@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-30T20:51:20Z",
-  "total": 1760,
-  "total_docs": 1760,
+  "generated_at": "2026-07-01T15:07:12Z",
+  "total": 1755,
+  "total_docs": 1755,
   "total_downloaded": 1342,
-  "total_published": 832,
+  "total_published": 930,
   "by_lang": {
     "en": 770,
-    "fr": 394,
+    "fr": 389,
     "es": 245,
     "pt": 220,
     "inconnu": 96,
@@ -14,7 +14,7 @@
   },
   "by_language": {
     "en": 770,
-    "fr": 394,
+    "fr": 389,
     "es": 245,
     "pt": 220,
     "inconnu": 96,
@@ -52,7 +52,6 @@
     "The Anarchist Library — OPDS feed": 8,
     "HAL — communs fonciers": 8,
     "HAL — paysannerie / agriculture vivrière": 8,
-    "Infokiosques.net — nouveautés": 8,
     "Portal OACA — Libros anarquistas (catégorie)": 8,
     "Infokiosques.net — index C": 6,
     "HAL — propriété d'usage / fonds de dotation": 6,
@@ -62,6 +61,7 @@
     "Infokiosques.net — index L (Libération, Luttes)": 4,
     "Archive.org — anarchism + land/peasant (strict)": 4,
     "CLACSO — búsqueda tierra y communs": 4,
+    "Infokiosques.net — nouveautés": 3,
     "Tierra.org (Amigos de la Tierra ES)": 3,
     "CLACSO — Publicaciones générales": 3,
     "Traficantes de Sueños — 15M (matière)": 3,
@@ -78,12 +78,12 @@
     "2000s": 63,
     "2010s": 371,
     "2020s": 636,
-    "inconnu": 658
+    "inconnu": 653
   },
   "by_score": {
     "0": 674,
-    "1": 69,
-    "2": 54,
+    "1": 65,
+    "2": 53,
     "3": 33,
     "4": 42,
     "5": 56,
@@ -94,25 +94,25 @@
     "10": 3
   },
   "by_doc_type": {
-    "autre": 1624,
+    "autre": 1619,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1188,
+    "militant": 1183,
     "academique": 363,
     "non_renseigne": 137,
     "institutionnel": 72
   },
   "blind_spots": [
-    "Forte dominante militante (67.5%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (67.4%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (67.5%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (67.4%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
@@ -293,13 +293,6 @@
       "count": 8
     },
     {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
-      "count": 8
-    },
-    {
       "label": "Portal OACA — Libros anarquistas (catégorie)",
       "url": "https://www.portaloaca.com/categoria/pensamientolibertario/libros-anarquistas/",
       "type": "deep_html",
@@ -353,6 +346,13 @@
       "url": "https://www.clacso.org/publicaciones/",
       "type": "deep_html",
       "orientation": "academique",
+      "count": 3
+    },
+    {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
       "count": 3
     },
     {
