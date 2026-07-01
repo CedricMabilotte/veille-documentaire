@@ -1,31 +1,43 @@
-[2026-07-01 15:35:16] === translate_citations_batch démarré ===
-Traceback (most recent call last):
-  File "/home/ced/Documents/Claude/Projects/biblio/scripts/translate_citations_batch.py", line 134, in <module>
-    main()
-  File "/home/ced/Documents/Claude/Projects/biblio/scripts/translate_citations_batch.py", line 105, in main
-    items = pending_items(cat)
-            ^^^^^^^^^^^^^^^^^^
-  File "/home/ced/Documents/Claude/Projects/biblio/scripts/translate_citations_batch.py", line 46, in pending_items
-    published = set(
-                ^^^^
-  File "/home/ced/Documents/Claude/Projects/biblio/scripts/translate_citations_batch.py", line 47, in <genexpr>
-    f.replace('.html','') for f in Path('site/fiches').iterdir()
-    ^^^^^^^^^^^^^^^^^^^^^
-TypeError: Path.replace() takes 2 positional arguments but 3 were given
+[2026-07-01 22:32:23] === translate_citations_batch démarré ===
+[2026-07-01 22:32:23] 535 citations à traduire, par lots de 15
+[2026-07-01 22:33:31]   ✓ lot 1 : 15/15 traduits (total 15)
+[2026-07-01 22:34:11]   ✓ lot 2 : 15/15 traduits (total 30)
+[2026-07-01 22:34:58]   ✓ lot 3 : 15/15 traduits (total 45)
+[2026-07-01 22:35:29]   ✓ lot 4 : 15/15 traduits (total 60)
+[2026-07-01 22:36:10]   ✓ lot 5 : 15/15 traduits (total 75)
+[2026-07-01 22:36:36]   ✓ lot 6 : 15/15 traduits (total 90)
+[2026-07-01 22:37:13]   ✓ lot 7 : 15/15 traduits (total 105)
+[2026-07-01 22:37:32]   ✓ lot 8 : 15/15 traduits (total 120)
+[2026-07-01 22:37:57]   ✓ lot 9 : 15/15 traduits (total 135)
+[2026-07-01 22:38:29]   ✓ lot 10 : 15/15 traduits (total 150)
+[2026-07-01 22:38:56]   ✓ lot 11 : 15/15 traduits (total 165)
+[2026-07-01 22:39:20]   ✓ lot 12 : 15/15 traduits (total 180)
+[2026-07-01 22:39:44]   ✓ lot 13 : 15/15 traduits (total 195)
+[2026-07-01 22:40:31]   ✓ lot 14 : 15/15 traduits (total 210)
+[2026-07-01 22:40:55]   ✓ lot 15 : 15/15 traduits (total 225)
+[2026-07-01 22:41:19]   ✓ lot 16 : 15/15 traduits (total 240)
+[2026-07-01 22:42:27]   ✓ lot 17 : 15/15 traduits (total 255)
+[2026-07-01 22:42:53]   ✓ lot 18 : 15/15 traduits (total 270)
+[2026-07-01 22:43:22]   ✓ lot 19 : 15/15 traduits (total 285)
+[2026-07-01 22:43:54]   ✓ lot 20 : 15/15 traduits (total 300)
+[2026-07-01 22:44:27]   ✓ lot 21 : 15/15 traduits (total 315)
+[2026-07-01 22:45:02]   ✓ lot 22 : 15/15 traduits (total 330)
+[2026-07-01 22:45:29]   ✓ lot 23 : 15/15 traduits (total 345)
+[2026-07-01 22:45:45]   ✓ lot 24 : 15/15 traduits (total 360)
+[2026-07-01 22:46:14]   ✓ lot 25 : 15/15 traduits (total 375)
+[2026-07-01 22:46:57]   ✓ lot 26 : 15/15 traduits (total 390)
+[2026-07-01 22:47:39]   ✓ lot 27 : 15/15 traduits (total 405)
+[2026-07-01 22:48:10]   ✓ lot 28 : 15/15 traduits (total 420)
+[2026-07-01 22:48:32]   ✓ lot 29 : 15/15 traduits (total 435)
+[2026-07-01 22:48:55]   ✓ lot 30 : 15/15 traduits (total 450)
+[2026-07-01 22:49:16]   ✓ lot 31 : 15/15 traduits (total 465)
+[2026-07-01 22:49:34]   ✓ lot 32 : 15/15 traduits (total 480)
+[2026-07-01 22:50:14]   ✓ lot 33 : 15/15 traduits (total 495)
+[2026-07-01 22:50:45]   ✓ lot 34 : 15/15 traduits (total 510)
+[2026-07-01 22:51:13]   ✓ lot 35 : 15/15 traduits (total 525)
+[2026-07-01 22:51:34]   ✓ lot 36 : 10/10 traduits (total 535)
+[2026-07-01 22:51:34] ✅ Traductions terminées — 535 citations.
 /home/ced/Documents/Claude/Projects/biblio/scripts/enrich_loop.py:199: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   watch.publish_site(dt.utcnow().strftime('%Y-%m-%d_%H-%M'))
-5:34:49] 3 docs en attente…
-[2026-07-01 15:34:49]   → cc483884 ILC — Cartographie des organisations de pasteurs e
-[2026-07-01 15:35:00]   ✓ cc483884 en_clair (331c)
-[2026-07-01 15:35:00] 2 docs en attente…
-[2026-07-01 15:35:00]   → 0c97a0c5 Données comme infrastructure publique (EPUB) — Böl
-[2026-07-01 15:35:10]   ✓ 0c97a0c5 en_clair (358c)
-[2026-07-01 15:35:10] 1 docs en attente…
-[2026-07-01 15:35:10]   → 98e8416d Battle Against Bayer: The End…or is it?
-[2026-07-01 15:35:16]   ✓ 98e8416d en_clair (380c)
-[2026-07-01 15:35:16] ✅ Summaries + en_clair terminés — done=9 skip=0 err=0
-[2026-07-01 15:35:16] Phase 3 — traduction des citations en français…
-[2026-07-01 15:35:16] ⚠  translate_citations_batch exit 1
-[2026-07-01 15:35:16] Publication en cours…
-[2026-07-01 15:36:06] publish_site OK
-[2026-07-01 15:36:07] OK — site cohérent avec le catalogue.
+[2026-07-01 22:52:14] publish_site OK
+[2026-07-01 22:52:14] OK — site cohérent avec le catalogue.
