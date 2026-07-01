@@ -44,8 +44,8 @@ def pending_items(cat):
     """Retourne [(uid, i_cit, quote, lang)] pour les citations sans quote_fr."""
     items = []
     published = set(
-        f.replace('.html','') for f in Path('site/fiches').iterdir()
-        if f.name.endswith('.html') and f.name not in ('index.html','fiche.html')
+        f.stem for f in Path('site/fiches').iterdir()
+        if f.suffix == '.html' and f.stem not in ('index','fiche')
     )
     for uid in published:
         d = cat['docs'].get(uid)
