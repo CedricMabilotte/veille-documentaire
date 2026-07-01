@@ -71,8 +71,8 @@ def pending_uids():
         has_enclair = bool((enr.get('en_clair') or '').strip())
         if not has_summary and 'summary' not in enr and has_pdf:
             phase1.append(uid)
-        elif has_summary and not has_enclair and has_pdf:
-            phase2.append(uid)
+        elif has_summary and not has_enclair:
+            phase2.append(uid)  # pas besoin de PDF, on génère depuis le summary
     return phase1 + phase2
 
 def parse_reset_time(error_msg):
@@ -105,7 +105,9 @@ def enrich_one(uid):
     if not d:
         return 'skip', 'not_found'
     enr = d.get('enrichment') or {}
-    if 'summary' in enr:
+    has_summary = bool((enr.get('summary') or '').strip())
+    has_enclair = bool((enr.get('en_clair') or '').strip())
+    if has_summary and has_enclair:
         return 'skip', 'already'
 
     fn = d.get('filename', '')
@@ -115,6 +117,31 @@ def enrich_one(uid):
     if not pdf or not pdf.exists():
         return 'skip', 'no_pdf'
 
+    # Phase 2 : en_clair manquant alors que summary présent → générer depuis summary
+    if has_summary and not has_enclair:
+        summary_txt = enr.get('summary', '')
+        import subprocess as _sp
+        prompt = (
+            "En deux phrases simples en français (accessibles à tous), explique l'essentiel "
+            "de ce document dont voici le résumé :\n\n" + summary_txt[:1200] +
+            "\n\nRéponds uniquement avec l'explication, sans titre ni introduction."
+        )
+        r = _sp.run(
+            ['claude','-p', prompt,'--model','claude-haiku-4-5',
+             '--output-format','text','--no-session-persistence',
+             '--dangerously-skip-permissions'],
+            capture_output=True, text=True, timeout=120, cwd='/tmp', stdin=_sp.DEVNULL
+        )
+        combined = r.stdout + r.stderr
+        if 'session limit' in combined.lower() or 'hit your' in combined.lower():
+            return 'token_limit', parse_reset_time(combined)
+        if r.returncode == 0 and r.stdout.strip():
+            enr2 = d.get('enrichment') or {}
+            enr2['en_clair'] = r.stdout.strip()
+            cat['docs'][uid]['enrichment'] = enr2
+            CATALOG.write_text(json.dumps(cat, ensure_ascii=False, indent=2))
+            return 'ok', f'en_clair ({len(r.stdout.strip())}c)'
+        return 'error', f'en_clair failed (exit {r.returncode})'
     text = pdf_processor.extract_text(pdf)
     if not text:
         cat['docs'][uid].setdefault('enrichment', {})['summary'] = ''
