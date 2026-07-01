@@ -222,7 +222,6 @@
       buf.push(`<p class="corpus-total"><strong>${stats.total}</strong> documents dans le corpus complet.</p>`);
     }
     buf.push(barBlock('Répartition par langue', stats.by_lang || stats.langues));
-    buf.push(barBlock('Répartition par source', stats.by_source || stats.sources));
     buf.push(barBlock('Répartition par décennie', stats.by_decade || stats.decennies));
     buf.push(barBlock('Répartition par score', stats.by_score || stats.scores));
     buf.push(barBlock('Répartition par type de document', stats.by_doc_type || stats.types));

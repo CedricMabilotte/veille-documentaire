@@ -104,12 +104,23 @@
     </div>
   </section>
 
+  <section class="section" aria-labelledby="stats-title">
+    <div class="container">
+      <span class="section-kicker">En un coup d'œil</span>
+      <h2 id="stats-title" class="section-title">L'état de la veille</h2>
+      <div class="stats" id="stats-grid"></div>
+      <p class="text-center mt-3">
+        <a href="etat-corpus.html" class="btn">Voir l'état complet du corpus &amp; ses biais</a>
+      </p>
+    </div>
+  </section>
+
   <section class="section" aria-labelledby="dossiers-semaine-title">
     <div class="container">
       <span class="section-kicker">Sélection de la rédaction</span>
       <h2 id="dossiers-semaine-title" class="section-title">Dossiers de la semaine</h2>
       <p class="section-lede">
-        Les cinq textes que nous avons lus avec attention cette semaine — un fragment d'archive,
+        Six textes que nous avons lus avec attention cette semaine — un fragment d'archive,
         une enquête militante, une recherche universitaire qui éclaire autrement le rapport à la terre.
       </p>
       <div class="featured" id="featured-grid" aria-live="polite">
@@ -159,17 +170,6 @@
       <p class="text-center mt-3">
         <a href="fiches/index.html" class="btn btn-primary">Parcourir tout le catalogue</a>
 </p>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="stats-title">
-    <div class="container">
-      <span class="section-kicker">En un coup d'œil</span>
-      <h2 id="stats-title" class="section-title">L'état de la veille</h2>
-      <div class="stats" id="stats-grid"></div>
-      <p class="text-center mt-3">
-        <a href="etat-corpus.html" class="btn">Voir l'état complet du corpus &amp; ses biais</a>
-      </p>
     </div>
   </section>
 
@@ -304,24 +304,25 @@ window.pageInit = function (basePath) {
   });
 };
 
-/* (a) Dossiers de la semaine : 5 bulles éditoriales (score ≥ 9) */
+/* (a) Dossiers de la semaine : 6 bulles éditoriales (score ≥ 9) */
 function renderFeatured(docs, basePath) {
   const wrap = document.getElementById('featured-grid');
   if (!wrap) return;
+  const N = 6;
   // Priorité : docs avec bulle + score le plus élevé (≥ 9 idéalement), sinon ≥ 7
   const sortByScore = (a, b) => (b.latest_score || 0) - (a.latest_score || 0);
   const withBulleHigh = docs.filter(d => d.bulle && (d.latest_score || 0) >= 9).sort(sortByScore);
   const withBulle = docs.filter(d => d.bulle).sort(sortByScore);
-  let picks = withBulleHigh.slice(0, 5);
-  if (picks.length < 5) {
+  let picks = withBulleHigh.slice(0, N);
+  if (picks.length < N) {
     const have = new Set(picks.map(d => d.id));
-    const more = withBulle.filter(d => !have.has(d.id)).slice(0, 5 - picks.length);
+    const more = withBulle.filter(d => !have.has(d.id)).slice(0, N - picks.length);
     picks = picks.concat(more);
   }
-  if (picks.length < 5) {
+  if (picks.length < N) {
     const have = new Set(picks.map(d => d.id));
     const fallback = docs.filter(d => !have.has(d.id) && (d.latest_score || 0) >= 7)
-                         .sort(sortByScore).slice(0, 5 - picks.length);
+                         .sort(sortByScore).slice(0, N - picks.length);
     picks = picks.concat(fallback);
   }
   if (picks.length === 0) {
