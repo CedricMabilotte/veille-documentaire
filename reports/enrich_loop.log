@@ -39,5 +39,12 @@
 [2026-07-01 22:51:34] ✅ Traductions terminées — 535 citations.
 /home/ced/Documents/Claude/Projects/biblio/scripts/enrich_loop.py:199: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
   watch.publish_site(dt.utcnow().strftime('%Y-%m-%d_%H-%M'))
-[2026-07-01 22:52:14] publish_site OK
-[2026-07-01 22:52:14] OK — site cohérent avec le catalogue.
+  📦 Catalog public filtré : 870 docs publiés (score eff. >= 4, hors exclusions)
+[social_cards] {'cards': 930, 'citation_cards': 138, 'og_default': True}
+  🖼  Cartes sociales : 930 cartes, 138 citation-cards
+  📡 RSS : feed principal (30), scoops (30), 5 feed(s) par concept
+  ℹ  Pré-rendu : 885 fiche(s) non publiée(s) (score effectif < 4)
+  🔗 Pré-rendu : 870 fiches statiques
+  🧹 Orphelins purgés : 15 bulles, 120 covers, 84 cards
+  📦 Exports copiés : 3 fichier(s) → site/exports/
+  🌐 Site publié : 691 couvertures, 53 bulles, 3 exports, 1755 fiches au catalog

@@ -31,14 +31,20 @@
       <span class="brand-sub">Bibliothèque documentaire ouverte</span>
     </a>
     <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
-      <a href="../index.html">Accueil</a>
-      <a href="index.html">Catalogue</a>
+      <a href="../fiches/index.html">Catalogue</a>
       <a href="../dossiers.html">Dossiers</a>
-<a href="../auteurs.html">Auteurs</a>
-      <a href="../chronologie.html">Chronologie</a>
       <a href="../concepts/index.html">Concepts</a>
-      <a href="../etat-corpus.html">Corpus</a>
-      <a href="../apropos.html">Méthodologie</a>
+      <a href="../chronologie.html">Chronologie</a>
+      <div class="nav-dropdown" id="nav-apropos">
+        <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="nav-apropos-menu">
+          À propos<svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true" class="nav-dropdown-caret"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </button>
+        <ul class="nav-dropdown-menu" id="nav-apropos-menu" role="menu">
+          <li><a href="../auteurs.html" role="menuitem">Auteurs</a></li>
+          <li><a href="../etat-corpus.html" role="menuitem">Corpus</a></li>
+          <li><a href="../apropos.html" role="menuitem">Méthodologie</a></li>
+        </ul>
+      </div>
     </nav>
     <div class="header-tools">
       <div class="search-box">
@@ -132,7 +138,6 @@
 </footer>
 
 <script src="../assets/js/router.js"></script>
-<script src="../assets/js/search.js"></script>
 <script src="../assets/js/app.js"></script>
 <script src="../assets/js/home.js"></script>
 <script>
@@ -206,7 +211,11 @@ function updateMetaTags(doc, basePath) {
   const desc = document.querySelector('meta[name="description"]');
   if (desc) desc.setAttribute('content', teaser);
   // Open Graph dynamiques (titre, description, url, image)
-  const canonicalUrl = `https://biblio.actitude.org/fiches/fiche.html?id=${encodeURIComponent(doc.id)}`;
+  const canonicalUrl = `https://biblio.actitude.org/fiches/${encodeURIComponent(doc.id)}.html`;
+  // Canonical link vers l'URL statique (pour SEO / bots)
+  let canonEl = document.querySelector('link[rel="canonical"]');
+  if (!canonEl) { canonEl = document.createElement('link'); canonEl.rel = 'canonical'; document.head.appendChild(canonEl); }
+  canonEl.href = canonicalUrl;
   setMeta('og:title', title + ' — BIBLIO');
   setMeta('og:description', teaser);
   setMeta('og:type', 'article');
@@ -418,7 +427,6 @@ function renderFiche(doc, basePath) {
         ${dt ? `<div><dt>Type</dt><dd>${escape(docTypeLabel(dt))}</dd></div>` : ''}
         <div><dt>Format</dt><dd>${escape((doc.format || '').toUpperCase())}${doc.meta && doc.meta.page_count ? ' · ' + doc.meta.page_count + ' p.' : ''}</dd></div>
         ${doc.lang ? `<div><dt>Langue</dt><dd>${escape(String(doc.lang).toUpperCase())}</dd></div>` : ''}
-        <div><dt>Repérée le</dt><dd>${escape(formatDate(doc.collected_date || doc._latestRunDate))}</dd></div>
       </dl>
 
       ${(run && run.raison && !summary && !cleanRaison(run.raison).startsWith('_SKIP')) ? `
@@ -437,6 +445,11 @@ function renderFiche(doc, basePath) {
         </section>
       ` : ''}
 
+      ${!summary ? `
+        <section class="fiche-section fiche-en-attente">
+          <p class="biblio-en-attente">⏳ <strong>Synopsis en cours d'enrichissement</strong> — cette fiche sera complétée prochainement. Le document original reste accessible ci-dessus.</p>
+        </section>
+      ` : ''}
       ${citationsSectionHTML(citations)}
 
       ${deeperSectionHTML(bulle)}
@@ -452,6 +465,7 @@ function renderFiche(doc, basePath) {
 
       ${versionsSectionHTML(doc, basePath)}
 
+      ${fichesProchesSectionHTML(doc, basePath)}
       ${citeSectionHTML(doc, { title, author, pubYear })}
 
       ${doc.runs && doc.runs.length > 1 ? `
@@ -490,6 +504,16 @@ function renderFiche(doc, basePath) {
   `;
 
   // B3 : partage natif (Web Share API) si disponible
+  document.querySelectorAll('.biblio-cite-share').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const url = btn.dataset.url;
+      navigator.clipboard.writeText(url).then(() => toast('Lien copié !')).catch(() => {
+        const ta = document.createElement('textarea'); ta.value = url;
+        document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+        document.body.removeChild(ta); toast('Lien copié !');
+      });
+    });
+  });
   const nativeBtn = document.getElementById('btn-share-native');
   if (nativeBtn) {
     if (navigator.share) {
@@ -592,25 +616,30 @@ function shareButtonsHTML(doc, title) {
 /* Section citations — distingue les citations vérifiées / non retrouvées. */
 function citationsSectionHTML(citations) {
   if (!citations || !citations.length) return '';
+  const baseUrl = window.location.href.split('#')[0];
   return `
-    <section class="fiche-section">
+    <section class="fiche-section" id="citations">
       <h2>Citations</h2>
-      ${citations.map(c => {
-        const verifiedKnown = (c.verified === true || c.verified === false);
+      ${citations.map((c, i) => {
+        const cid = 'c' + (i + 1);
+        const citUrl = baseUrl + '#' + cid;
         let mention = '';
-        if (c.verified === false) {
-          mention = '<span class="biblio-cite-unverified">⚠ Citation non retrouvée dans le PDF — à vérifier sur la source.</span>';
-        } else if (c.verified === true) {
-          mention = '<span class="biblio-cite-verified">✓ Citation vérifiée dans le document.</span>';
-        }
+        if (c.verified === false) mention = '<span class="biblio-cite-unverified">⚠ Citation non retrouvée dans le PDF.</span>';
+        else if (c.verified === true) mention = '<span class="biblio-cite-verified">✓ Vérifiée dans le document.</span>';
         const displayQuote = c.quote_fr || c.quote || '';
         const origQuote = c.quote_fr && c.quote ? c.quote : '';
         return `
-          <blockquote class="citation-block">
+          <blockquote class="citation-block" id="${cid}">
             ${escape(displayQuote)}
             ${origQuote ? `<span class="quote-orig" style="display:block;font-size:0.85em;color:var(--text-muted,#888);margin-top:4px;font-style:italic">↳ ${escape(origQuote)}</span>` : ''}
-            <span class="quote-meta">${c.page ? `p. ${escape(c.page)}` : ''}${c.why_relevant ? ' — ' + escape(c.why_relevant) : ''}</span>
-            ${mention}
+            <div class="citation-foot">
+              <span class="quote-meta">${c.page ? `p. ${escape(c.page)}` : ''}${c.why_relevant ? ' — ' + escape(c.why_relevant) : ''}</span>
+              ${mention}
+              <button type="button" class="biblio-cite-share" data-url="${escape(citUrl)}" title="Copier le lien vers cette citation">
+                <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6.5 9.5a3 3 0 0 0 4.24 0l2-2a3 3 0 0 0-4.24-4.24l-1.12 1.12"/><path d="M9.5 6.5a3 3 0 0 0-4.24 0l-2 2a3 3 0 0 0 4.24 4.24l1.12-1.12"/></svg>
+                #${i+1}
+              </button>
+            </div>
           </blockquote>
         `;
       }).join('')}
@@ -699,6 +728,48 @@ function citeSectionHTML(doc, ctx) {
     </div>
   `;
 }
+
+/* ── Fiches proches — même source ou même concept ──────────────────── */
+function fichesProchesSectionHTML(doc, basePath) {
+  const all = window._biblioAllDocs || [];
+  if (!all.length) return '';
+  const docId = doc.id;
+  const docSource = doc.source || '';
+  const docKeywords = (doc.enrichment && doc.enrichment.matched_keywords) || [];
+  const docScore = (s) => s.latest_score || s.score_final || 0;
+  // Candidats : même source OU mot-clé commun, excluant ce doc
+  const scored = all
+    .filter(d => d.id !== docId && (d.bulle || docScore(d) >= 7))
+    .map(d => {
+      let score = 0;
+      if (d.source && d.source === docSource) score += 3;
+      const dk = (d.enrichment && d.enrichment.matched_keywords) || [];
+      const common = dk.filter(k => docKeywords.includes(k)).length;
+      score += common * 2;
+      return { d, score };
+    })
+    .filter(x => x.score > 0)
+    .sort((a, b) => b.score - a.score || docScore(b.d) - docScore(a.d))
+    .slice(0, 4)
+    .map(x => x.d);
+  if (!scored.length) return '';
+  const items = scored.map(d => {
+    const url = BiblioRouter.ficheUrl(d.id, basePath);
+    const t = docTitle(d);
+    const s = docScore(d);
+    return `<li class="fiches-proches-item">
+      <a href="${escape(url)}" class="fiches-proches-link">${escape(t)}</a>
+      <span class="score-pill ${scoreClass(s)}">${s}/10</span>
+    </li>`;
+  }).join('');
+  return `
+    <section class="fiche-section fiches-proches">
+      <h2>Fiches proches</h2>
+      <ul class="fiches-proches-list">${items}</ul>
+    </section>
+  `;
+}
+
 </script>
 
 </body>

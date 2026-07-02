@@ -61,14 +61,20 @@
       <span class="brand-sub">Bibliothèque documentaire ouverte</span>
     </a>
     <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
-      <a href="index.html">Accueil</a>
       <a href="fiches/index.html">Catalogue</a>
       <a href="dossiers.html">Dossiers</a>
-<a href="auteurs.html">Auteurs</a>
-      <a href="chronologie.html">Chronologie</a>
       <a href="concepts/index.html">Concepts</a>
-      <a href="etat-corpus.html">Corpus</a>
-      <a href="apropos.html">Méthodologie</a>
+      <a href="chronologie.html">Chronologie</a>
+      <div class="nav-dropdown" id="nav-apropos">
+        <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="nav-apropos-menu">
+          À propos<svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true" class="nav-dropdown-caret"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </button>
+        <ul class="nav-dropdown-menu" id="nav-apropos-menu" role="menu">
+          <li><a href="auteurs.html" role="menuitem">Auteurs</a></li>
+          <li><a href="etat-corpus.html" role="menuitem">Corpus</a></li>
+          <li><a href="apropos.html" role="menuitem">Méthodologie</a></li>
+        </ul>
+      </div>
     </nav>
     <div class="header-tools">
       <div class="search-box">
@@ -120,24 +126,11 @@
       <span class="section-kicker">Sélection de la rédaction</span>
       <h2 id="dossiers-semaine-title" class="section-title">Dossiers de la semaine</h2>
       <p class="section-lede">
-        Six textes que nous avons lus avec attention cette semaine — un fragment d'archive,
-        une enquête militante, une recherche universitaire qui éclaire autrement le rapport à la terre.
+        Sept textes choisis cette semaine — dont le document de la semaine mis en avant par la rédaction.
+        Un fragment d'archive, une enquête militante, une recherche qui éclaire autrement le rapport à la terre.
       </p>
       <div class="featured" id="featured-grid" aria-live="polite">
         <p class="text-center" style="grid-column:1/-1;color:var(--text-faint);">Chargement…</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="une-teaser-section" aria-label="Document de la semaine">
-    <div class="container">
-      <div class="une-teaser" id="une-teaser">
-        <div class="une-teaser-corps">
-          <span class="une-teaser-kicker">Le document de la semaine</span>
-          <p class="une-teaser-titre">À la une</p>
-          <p class="une-teaser-texte">La rédaction met un texte en avant chaque semaine.</p>
-        </div>
-        <a href="une.html" class="btn btn-primary une-teaser-link">Lire « la une »</a>
       </div>
     </div>
   </section>
@@ -279,7 +272,6 @@
 </footer>
 
 <script src="assets/js/router.js"></script>
-<script src="assets/js/search.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/home.js"></script>
 <script>
@@ -304,48 +296,53 @@ window.pageInit = function (basePath) {
   });
 };
 
-/* (a) Dossiers de la semaine : 6 bulles éditoriales (score ≥ 9) */
+/* (a) Dossiers de la semaine : 6 dossiers + la "une" en premier (7 total) */
 function renderFeatured(docs, basePath) {
   const wrap = document.getElementById('featured-grid');
   if (!wrap) return;
   const N = 6;
-  // Priorité : docs avec bulle + score le plus élevé (≥ 9 idéalement), sinon ≥ 7
   const sortByScore = (a, b) => (b.latest_score || 0) - (a.latest_score || 0);
   const withBulleHigh = docs.filter(d => d.bulle && (d.latest_score || 0) >= 9).sort(sortByScore);
   const withBulle = docs.filter(d => d.bulle).sort(sortByScore);
   let picks = withBulleHigh.slice(0, N);
   if (picks.length < N) {
     const have = new Set(picks.map(d => d.id));
-    const more = withBulle.filter(d => !have.has(d.id)).slice(0, N - picks.length);
-    picks = picks.concat(more);
+    picks = picks.concat(withBulle.filter(d => !have.has(d.id)).slice(0, N - picks.length));
   }
   if (picks.length < N) {
     const have = new Set(picks.map(d => d.id));
-    const fallback = docs.filter(d => !have.has(d.id) && (d.latest_score || 0) >= 7)
-                         .sort(sortByScore).slice(0, N - picks.length);
-    picks = picks.concat(fallback);
+    picks = picks.concat(docs.filter(d => !have.has(d.id) && (d.latest_score || 0) >= 7).sort(sortByScore).slice(0, N - picks.length));
   }
   if (picks.length === 0) {
     wrap.innerHTML = '<p class="text-center" style="grid-column:1/-1;color:var(--text-faint);font-style:italic;">Aucun dossier cette semaine. Le catalogue se construit.</p>';
     return;
   }
-  // Charge les bulles en parallèle (pour afficher titre_accroche + teaser)
-  Promise.all(picks.map(d => d.bulle ? loadBulle(d.id, basePath).then(b => { d.bulle_data = b; }) : Promise.resolve()))
-    .then(() => {
-      wrap.innerHTML = picks.map(d => featuredCardHTML(d, basePath)).join('');
-    });
+  // Charger la "une" (featured.json) ET les bulles en parallèle
+  Promise.all([
+    loadJSON(`${basePath}data/featured.json`).catch(() => null),
+    ...picks.map(d => d.bulle ? loadBulle(d.id, basePath).then(b => { d.bulle_data = b; }) : Promise.resolve())
+  ]).then(([featuredData]) => {
+    const uneId = featuredData && featuredData.featured;
+    const uneDoc = uneId ? docs.find(d => d.id === uneId) : null;
+    let html = '';
+    if (uneDoc) html += featuredCardHTML(uneDoc, basePath, true);
+    html += picks.filter(d => !uneDoc || d.id !== uneDoc.id).map(d => featuredCardHTML(d, basePath, false)).join('');
+    wrap.innerHTML = html;
+  });
 }
 
-function featuredCardHTML(doc, basePath) {
+function featuredCardHTML(doc, basePath, isUne = false) {
   const url = BiblioRouter.ficheUrl(doc.id, basePath);
   const cover = coverPath(doc, basePath);
   const title = docTitle(doc);
   const teaser = docTeaser(doc);
   const src = doc.source || '';
   const date = formatDate(doc._latestRunDate || doc.latest_run);
+  const ribbonLabel = isUne ? 'À la une' : 'Dossier';
+  const ribbonClass = isUne ? 'ribbon ribbon-une' : 'ribbon';
   return `
-    <article class="featured-card fade-in">
-      <span class="ribbon">Dossier</span>
+    <article class="featured-card fade-in${isUne ? ' featured-card-une' : ''}">
+      <span class="${ribbonClass}">${ribbonLabel}</span>
       <a href="${escape(url)}" class="featured-cover" aria-label="Lire la fiche : ${escape(title)}" data-initial="${escape(title.slice(0,1).toUpperCase())}">
         <img src="${escape(cover)}" alt="" loading="lazy" onerror="this.style.display='none';this.parentNode.style.display='flex';this.parentNode.style.alignItems='center';this.parentNode.style.justifyContent='center';this.parentNode.style.fontFamily='var(--font-serif)';this.parentNode.style.fontSize='80px';this.parentNode.style.color='var(--text-faint)';this.parentNode.textContent=this.parentNode.dataset.initial||'';">
       </a>

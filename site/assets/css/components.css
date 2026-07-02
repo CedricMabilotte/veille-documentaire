@@ -462,3 +462,70 @@ mark.biblio-hl {
   .corpus-bar-row { grid-template-columns: 1fr; gap: 2px; }
   .corpus-bar-val { text-align: right; }
 }
+
+/* ── Fiche en attente d'enrichissement ─────────────────────────────── */
+.fiche-en-attente { background: var(--bg-elev); border-radius: var(--radius-md); }
+.biblio-en-attente {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  font-size: 15px;
+  color: var(--text-dim);
+  margin: 0;
+}
+.biblio-en-attente strong { color: var(--text); }
+
+/* ── Citation : pied + bouton partage ──────────────────────────────── */
+.citation-foot {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.biblio-cite-share {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-faint);
+  font-size: 11px;
+  padding: 3px 8px;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+  margin-left: auto;
+}
+.biblio-cite-share:hover { color: var(--accent); border-color: var(--accent); }
+
+/* ── Fiches proches ─────────────────────────────────────────────────── */
+.fiches-proches-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.fiches-proches-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  background: var(--bg-elev);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  transition: border-color var(--transition);
+}
+.fiches-proches-item:hover { border-color: var(--accent); }
+.fiches-proches-link {
+  flex: 1;
+  font-family: var(--font-serif);
+  font-size: 15px;
+  color: var(--text);
+  text-decoration: none;
+}
+.fiches-proches-link:hover { color: var(--accent); }

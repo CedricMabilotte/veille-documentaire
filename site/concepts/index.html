@@ -30,14 +30,20 @@
       <span class="brand-sub">Bibliothèque documentaire ouverte</span>
     </a>
     <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
-      <a href="../index.html">Accueil</a>
       <a href="../fiches/index.html">Catalogue</a>
       <a href="../dossiers.html">Dossiers</a>
-<a href="../auteurs.html">Auteurs</a>
+      <a href="../concepts/index.html">Concepts</a>
       <a href="../chronologie.html">Chronologie</a>
-      <a href="index.html">Concepts</a>
-      <a href="../etat-corpus.html">Corpus</a>
-      <a href="../apropos.html">Méthodologie</a>
+      <div class="nav-dropdown" id="nav-apropos">
+        <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="nav-apropos-menu">
+          À propos<svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true" class="nav-dropdown-caret"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </button>
+        <ul class="nav-dropdown-menu" id="nav-apropos-menu" role="menu">
+          <li><a href="../auteurs.html" role="menuitem">Auteurs</a></li>
+          <li><a href="../etat-corpus.html" role="menuitem">Corpus</a></li>
+          <li><a href="../apropos.html" role="menuitem">Méthodologie</a></li>
+        </ul>
+      </div>
     </nav>
     <div class="header-tools">
       <div class="search-box">
@@ -126,7 +132,6 @@
 </footer>
 
 <script src="../assets/js/router.js"></script>
-<script src="../assets/js/search.js"></script>
 <script src="../assets/js/app.js"></script>
 <script src="../assets/js/home.js"></script>
 <script>

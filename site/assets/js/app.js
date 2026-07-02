@@ -515,6 +515,47 @@
     });
   }
 
+  // ----- Dropdown "À propos" ------------------------------------------------
+  function initNavDropdown() {
+    const dropdown = $('#nav-apropos');
+    if (!dropdown) return;
+    const toggle = dropdown.querySelector('.nav-dropdown-btn');
+    const closeDropdown = () => {
+      dropdown.removeAttribute('data-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+    const openDropdown = () => {
+      dropdown.setAttribute('data-open', '');
+      toggle.setAttribute('aria-expanded', 'true');
+    };
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.hasAttribute('data-open') ? closeDropdown() : openDropdown();
+    });
+    // Fermer sur clic extérieur
+    document.addEventListener('click', (e) => {
+      if (!dropdown.contains(e.target)) closeDropdown();
+    });
+    // Fermer sur Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeDropdown();
+    });
+    // Navigation clavier dans le menu
+    const items = Array.from(dropdown.querySelectorAll('.nav-dropdown-menu a'));
+    toggle.addEventListener('keydown', (e) => {
+      if ((e.key === 'ArrowDown' || e.key === 'Enter') && !dropdown.hasAttribute('data-open')) {
+        e.preventDefault(); openDropdown(); items[0] && items[0].focus();
+      }
+    });
+    items.forEach((item, i) => {
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowDown') { e.preventDefault(); items[i + 1] && items[i + 1].focus(); }
+        if (e.key === 'ArrowUp')   { e.preventDefault(); i === 0 ? toggle.focus() : items[i - 1].focus(); }
+        if (e.key === 'Escape')    { closeDropdown(); toggle.focus(); }
+      });
+    });
+  }
+
   // ----- Recherche header (redirige vers /fiches/?q=...) --------------------
   function initHeaderSearch(basePath = '') {
     const input = $('#header-search');
@@ -597,6 +638,7 @@
     initTheme();
     initPalette(basePath);
     initMenu();
+    initNavDropdown();
     initHeaderSearch(basePath);
     initKeyboardShortcuts();
 
