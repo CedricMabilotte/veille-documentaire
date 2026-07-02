@@ -121,7 +121,7 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-07-02T07:04:57.837200+00:00'
+exported_at: '2026-07-02T13:13:01.388492+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
@@ -613,3 +613,24 @@ sources:
   runs: 1
   docs_dl: 0
   docs_seen: 17
+- url: https://grain.org/feed.xml
+  label: GRAIN — articles & rapports
+  type: rss
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://www.tni.org/en/publications?topic=agrarian-justice&type=publications
+  label: TNI — Agrarian & Environmental Justice
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0
+- url: https://www.fian.org/en/publications
+  label: FIAN International — publications
+  type: deep_html
+  fertility: 0.0
+  runs: 0
+  docs_dl: 0
+  docs_seen: 0

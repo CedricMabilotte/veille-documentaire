@@ -1,4 +1,4 @@
-last_updated: '2026-07-02T06:56:11+00:00'
+last_updated: '2026-07-02T13:02:26+00:00'
 total_candidates: 2571
 candidates:
 - url: http://infokiosques.net/mauvaises_intentions
@@ -13854,6 +13854,18 @@ candidates:
   - doc_id: ac896a11
     context: 8 https://www.facebook.com/ECVC-European-Coordination-Via-Campesina-322102744638450/
     page: 25
+- url: https://www.facebook.com/share/1BVSrq57dR/
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Facebook
+    page: null
 - url: https://www.helloasso.com/associations/l-epicerie-locale-favorisant-l-entraide/collectes/un-nouveau-car-a-vrac
   type: mastodon
   found_from:
@@ -14525,6 +14537,18 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Linkedin-in
+    page: null
 - url: https://www.linphone.org/belledonne-communications-a-propos/
   type: mastodon
   found_from:
@@ -15544,6 +15568,30 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://x.com/rbm_maroobe
+  type: external_link
+  domain: x.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: X-twitter
+    page: null
+- url: https://youtube.com/@reseaubillitalmaroobe7381
+  type: external_link
+  domain: youtube.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Youtube
+    page: null
 - url: https://youtube.com/live/licQxBiw-dk?feature=share
   type: mastodon
   found_from:
@@ -20190,18 +20238,6 @@ candidates:
   - doc_id: libcom.org — library
     context: lien depuis https://libcom.org/library
     page: null
-- url: https://www.facebook.com/share/1BVSrq57dR/
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-02'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Facebook
-    page: null
 - url: https://www.foodsovereignty.org/es/ciradr20-debe-ir-mas-alla-de-soluciones-tecnocraticas-para-implementar-una-reforma-agraria-real-e-integral-movimientos-sociales-globales-en-cartagena
   type: mastodon
   found_from:
@@ -20570,18 +20606,6 @@ candidates:
   found_from:
   - doc_id: International Land Coalition — latest
     context: LinkedIn
-    page: null
-- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
-  type: external_link
-  domain: www.linkedin.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-02'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Linkedin-in
     page: null
 - url: https://www.monvoisin.xyz/faut-il-mettre-du-jus-de-lutin-dans-nos-tracteurs/
   type: mastodon
@@ -21211,18 +21235,6 @@ candidates:
   - doc_id: Böll Stiftung — Agriculture Atlas (EN)
     context: Watch on YouTube
     page: null
-- url: https://x.com/rbm_maroobe
-  type: external_link
-  domain: x.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-02'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: X-twitter
-    page: null
 - url: https://youtu.be/XCC75frWSfo
   type: mastodon
   found_from:
@@ -21275,18 +21287,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://youtube.com/@reseaubillitalmaroobe7381
-  type: external_link
-  domain: youtube.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-02'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Youtube
-    page: null
 - url: https://zad.nadir.org/spip.php?article5973
   type: footnote
   domain: zad.nadir.org

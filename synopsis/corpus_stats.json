@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-07-02T07:00:09Z",
+  "generated_at": "2026-07-02T13:06:15Z",
   "total": 1755,
   "total_docs": 1755,
   "total_downloaded": 1342,
   "total_published": 930,
   "by_lang": {
-    "en": 770,
+    "en": 772,
     "fr": 389,
     "es": 245,
     "pt": 220,
-    "inconnu": 96,
+    "inconnu": 94,
     "de": 35
   },
   "by_language": {
-    "en": 770,
+    "en": 772,
     "fr": 389,
     "es": 245,
     "pt": 220,
-    "inconnu": 96,
+    "inconnu": 94,
     "de": 35
   },
   "by_source": {
@@ -475,6 +475,13 @@
       "count": 0
     },
     {
+      "label": "FIAN International — publications",
+      "url": "https://www.fian.org/en/publications",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 0
+    },
+    {
       "label": "FIAN International — publications (WP REST)",
       "url": "https://www.fian.org/wp-json/wp/v2/media?mime_type=application/pdf",
       "type": "wp_rest",
@@ -485,6 +492,13 @@
       "label": "Focus on the Global South — publications",
       "url": "https://focusweb.org/category/publications/",
       "type": "deep_html",
+      "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "GRAIN — articles & rapports",
+      "url": "https://grain.org/feed.xml",
+      "type": "rss",
       "orientation": "militant",
       "count": 0
     },
@@ -591,6 +605,13 @@
       "url": "https://www.tierra.org/feed/",
       "type": "rss",
       "orientation": "militant",
+      "count": 0
+    },
+    {
+      "label": "TNI — Agrarian & Environmental Justice",
+      "url": "https://www.tni.org/en/publications?topic=agrarian-justice&type=publications",
+      "type": "deep_html",
+      "orientation": "academique",
       "count": 0
     },
     {

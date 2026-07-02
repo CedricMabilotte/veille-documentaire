@@ -1,8 +1,8 @@
-# Share sources — 2026-07-02 07:04 UTC
+# Share sources — 2026-07-02 13:13 UTC
 
 ## Export local — `communs-terres-paysannerie`
 
-- Sources exportées : **70**
+- Sources exportées : **73**
 - Mots-clés : ["propriété d'usage", 'fonds de dotation', 'libération des terres', 'communs fonciers', 'communaux', 'accès à la terre', 'sans-terre', 'paysans libres', "collectif d'habitants", 'paysannerie']
 
 ### Top sources par fertilité
