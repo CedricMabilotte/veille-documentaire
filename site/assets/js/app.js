@@ -42,10 +42,10 @@
   }
   window.formatDate = formatDate;
 
-  // Chemin de la couverture (les PNG sont copiées dans assets/covers/<id>.png)
+  // Chemin de la couverture (JPEG dans assets/covers/<id>.jpg)
   function coverPath(doc, basePath = '') {
     if (!doc || !doc.id) return null;
-    return `${basePath}assets/covers/${doc.id}.png`;
+    return `${basePath}assets/covers/${doc.id}.jpg`;
   }
   window.coverPath = coverPath;
 

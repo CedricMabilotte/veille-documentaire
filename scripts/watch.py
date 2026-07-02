@@ -441,10 +441,10 @@ def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
         "pdf_creator": meta.get("creator", ""),
     }
 
-    # Couverture page 1 → PNG
-    cover_path = COVERS_PATH / f"{uid}.png"
+    # Couverture page 1 → JPEG
+    cover_path = COVERS_PATH / f"{uid}.jpg"
     if pdf_processor.extract_cover(dest, cover_path, max_width=1200):
-        out["cover"] = f"covers/{uid}.png"   # chemin relatif depuis interface/
+        out["cover"] = f"covers/{uid}.jpg"   # chemin relatif depuis interface/
         print(f"     🖼  Couverture extraite : {out['cover']}")
 
     # ── Archivage Wayback « à la capture » ───────────────────────────────────
@@ -999,13 +999,13 @@ def _prerender_fiches(catalog: dict) -> int:
         # couverture PDF brute, puis image OG par défaut.
         og_file   = SITE_PATH / "assets" / "og"    / f"{doc_id}.png"
         card_file = SITE_PATH / "assets" / "cards" / f"{doc_id}.png"
-        cover_file = SITE_PATH / "assets" / "covers" / f"{doc_id}.png"
+        cover_file = SITE_PATH / "assets" / "covers" / f"{doc_id}.jpg"
         if og_file.exists():
             og_image = f"{SITE_BASE_URL}/assets/og/{doc_id}.png"
         elif card_file.exists():
             og_image = f"{SITE_BASE_URL}/assets/cards/{doc_id}.png"
         elif cover_file.exists():
-            og_image = f"{SITE_BASE_URL}/assets/covers/{doc_id}.png"
+            og_image = f"{SITE_BASE_URL}/assets/covers/{doc_id}.jpg"
         else:
             og_image = f"{SITE_BASE_URL}/assets/img/og-default.png"
         page_count = 0
@@ -1279,7 +1279,7 @@ def _prune_site_orphans(catalog: dict) -> dict:
     targets = [
         (SITE_PATH / "fiches",            "*.html"),
         (SITE_PATH / "data" / "bulles",   "*.json"),
-        (SITE_PATH / "assets" / "covers", "*.png"),
+        (SITE_PATH / "assets" / "covers", "*.jpg"),
         (SITE_PATH / "assets" / "cards",  "*.png"),
     ]
     removed: dict = {}
