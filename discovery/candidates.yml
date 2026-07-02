@@ -1,5 +1,5 @@
-last_updated: '2026-07-01T15:03:37+00:00'
-total_candidates: 2559
+last_updated: '2026-07-02T06:56:11+00:00'
+total_candidates: 2571
 candidates:
 - url: http://infokiosques.net/mauvaises_intentions
   type: footnote
@@ -20190,6 +20190,18 @@ candidates:
   - doc_id: libcom.org — library
     context: lien depuis https://libcom.org/library
     page: null
+- url: https://www.facebook.com/share/1BVSrq57dR/
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Facebook
+    page: null
 - url: https://www.foodsovereignty.org/es/ciradr20-debe-ir-mas-alla-de-soluciones-tecnocraticas-para-implementar-una-reforma-agraria-real-e-integral-movimientos-sociales-globales-en-cartagena
   type: mastodon
   found_from:
@@ -20558,6 +20570,18 @@ candidates:
   found_from:
   - doc_id: International Land Coalition — latest
     context: LinkedIn
+    page: null
+- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Linkedin-in
     page: null
 - url: https://www.monvoisin.xyz/faut-il-mettre-du-jus-de-lutin-dans-nos-tracteurs/
   type: mastodon
@@ -21187,6 +21211,18 @@ candidates:
   - doc_id: Böll Stiftung — Agriculture Atlas (EN)
     context: Watch on YouTube
     page: null
+- url: https://x.com/rbm_maroobe
+  type: external_link
+  domain: x.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: X-twitter
+    page: null
 - url: https://youtu.be/XCC75frWSfo
   type: mastodon
   found_from:
@@ -21239,6 +21275,18 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://youtube.com/@reseaubillitalmaroobe7381
+  type: external_link
+  domain: youtube.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Youtube
+    page: null
 - url: https://zad.nadir.org/spip.php?article5973
   type: footnote
   domain: zad.nadir.org
@@ -23546,6 +23594,21 @@ candidates:
   metadata:
     title: Amplifier
   suggested_action: follow_one_time
+- url: https://lundi.am/Brutalites-policiere-a-la-marche-trans-de-San-Francisco
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Brutalités policière à la marche trans de San Francisco — En juin 2026, à San Francisco, la police a chargé la
+      Marche Trans — là même où, soixante ans plus tôt, l'émeute de Compton's avait allumé les premières braises de la libération
+      queer. Récit, par l'artiste et activiste Keith Hennessy, d'une vi
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Brutalités policière à la marche trans de San Francisco
+  suggested_action: follow_one_time
 - url: https://lundi.am/C-est-l-histoire-d-un-type
   type: rss
   found_from:
@@ -23559,6 +23622,62 @@ candidates:
   last_seen: '2026-05-17'
   metadata:
     title: C'est l'histoire d'un type...
+  suggested_action: follow_one_time
+- url: https://lundi.am/Economie-politique-d-un-jeune-artistauteur-d-aujourd-hui
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Économie politique d'un jeune artistauteur d'aujourd'hui — Baptiste Thery-Guilbert - 29 juin / Avec une grosse
+      photo en haut , Littérature , 4
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Économie politique d'un jeune artistauteur d'aujourd'hui
+  suggested_action: follow_one_time
+- url: https://lundi.am/Feminismes-ennemis-contre-la-sororite
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Féminismes ennemis : contre la sororité — Sophie Lewis [extraits] - 29 juin / Avec une grosse photo en haut
+      , Mouvement , 4'
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'Féminismes ennemis : contre la sororité'
+  suggested_action: follow_one_time
+- url: https://lundi.am/Foutre-la-paix-a-l-oeuvre
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Foutre la paix à l'œuvre — Parham Shahrjerdi - 29 juin / Littérature , Terreur , Avec une grosse photo en haut
+      , 4
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Foutre la paix à l'œuvre
+  suggested_action: follow_one_time
+- url: https://lundi.am/Free-party-vs-data-centers-pour-une-politique-du-bug
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Free party vs data centers : pour une politique du bug — Récit d''un week-end partisan et caniculaire contre
+      le technofascisme - 29 juin / Avec une grosse photo en haut , Mouvement , 4'
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'Free party vs data centers : pour une politique du bug'
   suggested_action: follow_one_time
 - url: https://lundi.am/Gloire-a-Kateb
   type: rss
@@ -23574,6 +23693,19 @@ candidates:
   metadata:
     title: Gloire à Kateb !
   suggested_action: follow_one_time
+- url: https://lundi.am/Il-neige-du-phosphore-blanc
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Il neige du phosphore blanc — L'Êtrangère - 29 juin / Avec une grosse photo en haut , Littérature , 4
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Il neige du phosphore blanc
+  suggested_action: follow_one_time
 - url: https://lundi.am/L-avenir-ne-dure-pas-longtemps
   type: rss
   found_from:
@@ -23587,6 +23719,20 @@ candidates:
   last_seen: '2026-05-17'
   metadata:
     title: L'avenir ne dure pas longtemps
+  suggested_action: follow_one_time
+- url: https://lundi.am/La-campagne-de-France
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'La campagne de France — [Journal de campagne #3] Jean-Louis Tornatore - 29 juin / Histoire , 4 , Avec une grosse
+      photo en haut'
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: La campagne de France
   suggested_action: follow_one_time
 - url: https://lundi.am/La-chasse-a-l-enfant-La-frontiere-au-pied-de-l-immeuble
   type: rss
@@ -23615,6 +23761,76 @@ candidates:
   last_seen: '2026-05-17'
   metadata:
     title: La fabrique de la haine au pouvoir
+  suggested_action: follow_one_time
+- url: https://lundi.am/La-lutte-pour-la-baignade
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: La lutte pour la baignade — ou le mépris de la gauche pour une jouissance populaire - 29 juin / Mouvement , Avec
+      une grosse photo en haut , 2
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: La lutte pour la baignade
+  suggested_action: follow_one_time
+- url: https://lundi.am/Le-canal-il-est-a-qui-A-nous-A-nous-A-nous
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Le canal, il est à qui ? À nous ! À nous ! À nous ! — Bernard Chevalier - 29 juin / Avec une grosse photo en
+      haut , Positions , 4
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Le canal, il est à qui ? À nous ! À nous ! À nous !
+  suggested_action: follow_one_time
+- url: https://lundi.am/Le-cinema-deboussole
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Le cinéma déboussolé (Retour vers le futur) — Ré-arpenter le travail du critique de cinéma Serge Daney - 29 juin
+      / Avec une grosse photo en haut , Littérature , 2
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Le cinéma déboussolé (Retour vers le futur)
+  suggested_action: follow_one_time
+- url: https://lundi.am/Le-foot-est-il-un-terrain-politique
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Le foot est-il un terrain politique ? — Fred Bozzi - 29 juin / Avec une grosse photo en haut , Fred Bozzi , Positions
+      , 2
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Le foot est-il un terrain politique ?
+  suggested_action: follow_one_time
+- url: https://lundi.am/Le-syndrome-Florent-Richard
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Le syndrome Florent Richard ? — Procès Airbnb, coaching immobilier, chasse aux crevards... C'est l'été à Marseille
+      ! Victor Collet - 29 juin / Avec une grosse photo en haut , Mouvement , 2
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Le syndrome Florent Richard ?
   suggested_action: follow_one_time
 - url: https://lundi.am/Quelques-reflexions-sur-la-desertion-du-monde-technique
   type: rss
@@ -23658,6 +23874,20 @@ candidates:
   metadata:
     title: Smashphone !
   suggested_action: follow_one_time
+- url: https://lundi.am/Sur-la-question-animale-la-gauche-est-de-droite
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: « Sur la question animale, la gauche est de droite » — L'antispécisme comme lutte sociale Un lundisoir avec Victor
+      Duran-Le Peuch - 29 juin / lundisoir , Mouvement , Avec une grosse photo en haut , 4
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: « Sur la question animale, la gauche est de droite »
+  suggested_action: follow_one_time
 - url: https://lundi.am/Sur-quelques-problemes-que-presente-le-pacifisme
   type: rss
   found_from:
@@ -23671,6 +23901,20 @@ candidates:
   last_seen: '2026-05-17'
   metadata:
     title: Sur quelques problèmes que présente le pacifisme
+  suggested_action: follow_one_time
+- url: https://lundi.am/Tout-continue-comme-avant
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Tout continue comme avant — L'antitsiganisme dans le patriarcat producteur de marchandises - 29 juin / Avec une
+      grosse photo en haut , 4 , Mouvement
+    timestamp: '2026-06-30T17:07:11'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Tout continue comme avant
   suggested_action: follow_one_time
 - url: https://mail.viacampesina.org/lists/listinfo/Via-info-en
   type: footnote
@@ -24112,6 +24356,21 @@ candidates:
   metadata:
     title: Plus de 14 000 ours abattus au Japon en un an
   suggested_action: follow_one_time
+- url: https://reporterre.net/A69-la-decision-du-Conseil-d-Etat-pourrait-faciliter-les-grands-projets-d-amenagement
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'A69 : la décision du Conseil d''État pourrait « faciliter les grands projets d''aménagement » — Lundi 29 juin,
+      le Conseil d''État a validé définitivement la construction de l''autoroute A69. Une décision qui semble ouvrir la voie
+      à un assouplissement des règles en la matière. Le dossier pourrait désorma'
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'A69 : la décision du Conseil d''État pourrait « faciliter les grands projets d''aménagement »'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/A69-les-locaux-du-concessionnaire-de-l-autoroute-ont-ete-perquisitionnes
   type: rss
   found_from:
@@ -24141,6 +24400,66 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: 'Bulles de savoir : nos meilleurs BD pour s''informer sur l''écologie'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/C-est-officiel-l-autoroute-A69-definitivement-validee-par-le-Conseil-d-Etat
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« C''est officiel » : l''autoroute A69 définitivement validée par le Conseil d''État — Le Conseil d''État a
+      entériné le projet d''autoroute A69 entre Toulouse et Castres. Les autorisations environnementales de ce projet aux
+      répercussions désastreuses et largement documentés sont désormais définitives. Le'
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: '« C''est officiel » : l''autoroute A69 définitivement validée par le Conseil d''État'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/C-etait-David-contre-Goliath-recit-d-une-victoire-contre-un-mega-entrepot
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« C''était David contre Goliath » : récit d''une victoire contre un méga entrepôt — Grâce à une alliance entre
+      militants, associatifs et politiques, des collectifs ont réussi à faire reculer le grand projet d''entrepôts Green Dock
+      qui aurait menacé une réserve en Île-de-France. « C''est incroyable d''avo'
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: '« C''était David contre Goliath » : récit d''une victoire contre un méga entrepôt'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Canicule-au-moins-1-000-morts-supplementaires-en-France
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Canicule : au moins 1 000 morts supplémentaires en France — Santé publique France a publié le 28 juin un premier
+      bilan temporaire de la canicule. Depuis le 24 juin, environ 1 000 décès supplémentaires ont été comptabilisés par rapport
+      aux décès observés les mois précédents. Cette augmentation est pl'
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'Canicule : au moins 1 000 morts supplémentaires en France'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Comment-les-parcs-eoliens-pourraient-transformer-durablement-les-ecosystemes-marins
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Dauphins, goélands et mollusques bouleversés par les parcs éoliens en mer — Bruit, risque de collision, routes
+      migratoires modifiées : une vaste étude recense les pressions générées sur les écosystèmes par les parcs éoliens en
+      mer. L''ampleur des conséquences pour la biodiversité reste inconnue. En M'
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Dauphins, goélands et mollusques bouleversés par les parcs éoliens en mer
   suggested_action: follow_one_time
 - url: https://reporterre.net/Conge-climatique-l-exemple-espagnol-qui-relance-le-debat-en-France
   type: rss
@@ -24172,6 +24491,21 @@ candidates:
   metadata:
     title: Déforestation, tourisme... Ces facteurs environnementaux qui boostent l'hantavirus
   suggested_action: follow_one_time
+- url: https://reporterre.net/Des-militants-infiltrent-une-usine-du-chimiste-BASF-et-finissent-a-la-gendarmerie
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Des militants infiltrent une usine du chimiste BASF et finissent à la gendarmerie — Une trentaine de Faucheurs
+      et faucheuses volontaires d' OGM ont réalisé une « inspection citoyenne », lundi 29 juin, en s'introduisant dans un
+      entrepôt du site Seveso seuil haut de BASF à Genay, au nord de Lyon. Un a
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Des militants infiltrent une usine du chimiste BASF et finissent à la gendarmerie
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Dieselgate-Volkswagen-devra-verser-100-000-euros-a-une-association-de-consommateurs
   type: rss
   found_from:
@@ -24202,6 +24536,21 @@ candidates:
   metadata:
     title: 'Gratuit et sans réservation : ces communes réinventent le covoiturage'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Fast-fashion-la-loi-enfin-adoptee-mais-edulcoree
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Fast-fashion : la loi enfin adoptée, mais édulcorée — Voilà, elle est adoptée. Le 29 juin, la loi visant à «
+      réduire l''impact environnemental de l''industrie textile » a été définitivement adoptée par le Sénat. Il aura fallu
+      plus de deux ans — la proposition de loi avait été déposée début 2024 — pour'
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'Fast-fashion : la loi enfin adoptée, mais édulcorée'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Hantavirus-et-ecoanxiete-S-inquieter-est-plutot-une-reaction-saine
   type: rss
   found_from:
@@ -24216,6 +24565,21 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: 'Hantavirus : « Se sentir affecté est un signe de courage »'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/INF-Jusqu-a-20-millions-d-especes-d-insectes-sur-Terre-selon-une-nouvelle-etude-La-Terre
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '20 millions d''espèces d''insectes sur Terre : des chercheurs révèlent l''étendue d''une biodiversité insoupçonnée
+      — Une nouvelle évaluation scientifique estime qu''il pourrait exister 20 millions d''espèces d''insectes sur Terre.
+      Un chiffre aussi énorme qu''inédit, qui devrait inciter à redoubler les effor'
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: '20 millions d''espèces d''insectes sur Terre : des chercheurs révèlent l''étendue d''une biodiversité insoupçonnée'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Ici-on-a-droit-a-la-parole-dans-ce-village-c-est-l-assemblee-citoyenne-qui-prend-les
   type: rss
@@ -24232,6 +24596,36 @@ candidates:
   metadata:
     title: '« Aujourd''hui, j''ose prendre la parole » : dans ce village, le pouvoir est entre les mains des habitants'
   suggested_action: follow_one_time
+- url: https://reporterre.net/L-Etat-condamne-a-en-faire-plus-pour-la-protection-des-cetaces
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: L'État condamné à en faire plus pour la protection des cétacés — L'État à nouveau condamné pour préjudice écologique.
+      Le tribunal administratif de Paris a reconnu, le 26 juin, sa faute dans la protection des petits cétacés du golfe de
+      Gascogne et lui a enjoint « d'élaborer et de commencer à mettre e
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: L'État condamné à en faire plus pour la protection des cétacés
+  suggested_action: follow_one_time
+- url: https://reporterre.net/L-Etat-ne-nous-donne-pas-le-choix-ils-s-infiltrent-dans-une-usine-a-la-recherche-de-pesticides-interdits
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'BASF encore pris la main dans le sac : deux pesticides interdits découverts dans une usine française — Des militants
+      des Faucheurs volontaires se sont introduits sur le site de BASF , près de Lyon. En inspectant les produits stockés
+      par l''entreprise, ils ont découvert deux pesticides dont le commerc'
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'BASF encore pris la main dans le sac : deux pesticides interdits découverts dans une usine française'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/L-imaginaire-un-levier-essentiel-pour-nous-sortir-du-capitalisme-mortifere
   type: rss
   found_from:
@@ -24246,6 +24640,21 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: 'L''imaginaire : un levier essentiel pour nous sortir du capitalisme mortifère'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-Perou-bascule-a-l-extreme-droite-avec-l-election-de-Keiko-Fujimori
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Le Pérou bascule à l'extrême droite avec l'élection de Keiko Fujimori — Après la Colombie, le Pérou bascule lui
+      aussi à l'extrême droite. À la suite d'un mois de dépouillement, la fille de l'ancien autocrate Alberto Fujimori, Keiko
+      Fujimori, a été élue présidente du pays. La dirigeante du parti Fuer
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Le Pérou bascule à l'extrême droite avec l'élection de Keiko Fujimori
   suggested_action: follow_one_time
 - url: https://reporterre.net/Le-conducteur-de-SUV-qui-a-ecrase-le-cycliste-Paul-Varry-sera-juge-pour-meurtre
   type: rss
@@ -24276,6 +24685,81 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: Le loriot, ce mystérieux « merle d'or » au sale caractère
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-transport-des-animaux-en-mer-se-fait-dans-des-conditions-epouvantables
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Le transport des animaux en mer se fait « dans des conditions épouvantables » — Le transport des animaux en mer
+      se fait « dans des conditions épouvantables ». Telle est l'une des conclusions du rapport publié le 28 juin par les
+      associations Robin des bois, Animal Welfare Foundation ( AWF ) et Tiersc
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Le transport des animaux en mer se fait « dans des conditions épouvantables »
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Les-actions-contre-le-rechauffement-climatique-annulees-a-cause-du-rechauffement
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Trop chaud pour se mobiliser : quand le réchauffement climatique empêche les luttes écologistes — Dans un cercle
+      de plus en plus vicieux, la chaleur a forcé de nombreux activistes à renoncer à des actions contre des industries polluantes
+      qui portent une responsabilité dans les canicules, dénonce not'
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'Trop chaud pour se mobiliser : quand le réchauffement climatique empêche les luttes écologistes'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Les-ecologistes-s-organisent-contre-le-RN-a-la-campagne-mais-peinent-a-sortir-de-l-entre
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Les écologistes s'organisent contre le RN à la campagne... mais peinent à sortir de l'entre-soi — Les Écologistes
+      organisaient dans le Tarn, la quatrième édition de leurs universités des ruralités. L'occasion pour le parti de tenter
+      de parler depuis ces territoires et de réfléchir à sa stratégie vis
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Les écologistes s'organisent contre le RN à la campagne... mais peinent à sortir de l'entre-soi
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Loi-d-urgence-agricole-le-Senat-vote-le-retour-de-l-acetamipride
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Loi d''urgence agricole : le Sénat vote le retour de l''acétamipride — Le Sénat a réintroduit les pesticides
+      de la loi Duplomb dans le projet de loi d''urgence agricole. Dans la nuit du 29 au 30 juin, les sénateurs ont adopté,
+      par 183 voix contre 129, un amendement porté par la droite et les centristes'
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'Loi d''urgence agricole : le Sénat vote le retour de l''acétamipride'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/MaPrimRenov-encore-moins-de-travaux-eligibles
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'MaPrimRénov'' : encore moins de travaux éligibles — Nouveaux chamboulements à prévoir pour le dispositif MaPrimRénov''.
+      Le gouvernement envisage de réduire, encore une fois, la liste des travaux éligibles à cette aide financière destinée
+      à la rénovation énergétique. Seraient concernés une bonne partie'
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'MaPrimRénov'' : encore moins de travaux éligibles'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Master-poulet-Tasty-Crousty-derriere-le-succes-des-poulets-en-elevage-ultra-intensif
   type: rss
@@ -24353,6 +24837,21 @@ candidates:
   metadata:
     title: 'Pompes à chaleur : comment limiter les nuisances sonores ?'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Pour-eux-ici-c-est-Disneyland-des-bergers-s-opposent-au-VTT-en-montagne
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Pour eux, ici, c''est Disneyland » : des bergers s''opposent au VTT en montagne — Les bergers des Gets, en
+      Haute-Savoie, sont en colère. Deux nouvelles pistes de VTT pourraient être construites sur l''alpage d''un mont préservé.
+      Un conflit qui pose l''épineuse question de l''avenir des montagnes au sort'
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: '« Pour eux, ici, c''est Disneyland » : des bergers s''opposent au VTT en montagne'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Pour-qu-une-ampoule-s-allume-il-faut-tout-un-reseau-de-lignes-a-haute-tension-de-cables-d
   type: rss
   found_from:
@@ -24367,6 +24866,21 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: « La sobriété énergétique n'est plus un bon plan de communication politique »
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Que-propose-la-gauche-face-a-la-canicule-Tour-d-horizon-en-cinq-propositions
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Congé climatique, droit à la fraîcheur... Que propose la gauche face à la canicule ? — Alors que la France vient
+      de subir une canicule d'une sévérité exceptionnelle et pourrait en connaître de nouvelles, tour d'horizon des solutions
+      portées par la gauche pour faire face aux vagues de chaleur. Ventil
+    timestamp: '2026-06-30T17:07:01'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Congé climatique, droit à la fraîcheur... Que propose la gauche face à la canicule ?
   suggested_action: follow_one_time
 - url: https://reporterre.net/Vagues-soleil-et-bacteries-les-surfeurs-senegalais-s-engagent-contre-la-pollution-des
   type: rss
@@ -24889,18 +25403,6 @@ candidates:
   - doc_id: d273ba77
     context: 'Per maggiori approfondimenti: https://www.eurovia.org/'
     page: 5
-- url: https://www.facebook.com/share/1BVSrq57dR/
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-01'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Facebook
-    page: null
 - url: https://www.fao.org/3/ng989en/ng989en.pdf
   type: footnote
   domain: www.fao.org
@@ -25153,18 +25655,6 @@ candidates:
   - doc_id: 5f5dadd2
     context: https://www.lincolninst.edu/sites/default/files/pubfiles/mendive-wp14cm2sp-full_0.pdf.
     page: 90
-- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
-  type: external_link
-  domain: www.linkedin.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-01'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Linkedin-in
-    page: null
 - url: https://www.medecinesciences.org/en/articles/medsci/full_html/2019/09/msc190183/
   type: footnote
   domain: www.medecinesciences.org
@@ -25512,30 +26002,6 @@ candidates:
   - doc_id: 950a4eca
     context: https://www.transparency.org/whatwedo/publication/corruption_perceptions_index_2016.
     page: 20
-- url: https://x.com/rbm_maroobe
-  type: external_link
-  domain: x.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-01'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: X-twitter
-    page: null
-- url: https://youtube.com/@reseaubillitalmaroobe7381
-  type: external_link
-  domain: youtube.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-01'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Youtube
-    page: null
 - url: https://zad.nadir.org/IMG/pdf/6pointszad-a3-2.pdf
   type: footnote
   domain: zad.nadir.org
@@ -35679,21 +36145,6 @@ candidates:
   metadata:
     title: Action directe indigènes
   suggested_action: follow_one_time
-- url: https://lundi.am/Brutalites-policiere-a-la-marche-trans-de-San-Francisco
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Brutalités policière à la marche trans de San Francisco — En juin 2026, à San Francisco, la police a chargé la
-      Marche Trans — là même où, soixante ans plus tôt, l'émeute de Compton's avait allumé les premières braises de la libération
-      queer. Récit, par l'artiste et activiste Keith Hennessy, d'une vi
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Brutalités policière à la marche trans de San Francisco
-  suggested_action: follow_one_time
 - url: https://lundi.am/C-est-une-requisition-populaire
   type: rss
   found_from:
@@ -35735,89 +36186,6 @@ candidates:
   metadata:
     title: Deux procureurs
   suggested_action: follow_one_time
-- url: https://lundi.am/Economie-politique-d-un-jeune-artistauteur-d-aujourd-hui
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Économie politique d'un jeune artistauteur d'aujourd'hui — Baptiste Thery-Guilbert - 29 juin / Avec une grosse
-      photo en haut , Littérature , 4
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Économie politique d'un jeune artistauteur d'aujourd'hui
-  suggested_action: follow_one_time
-- url: https://lundi.am/Feminismes-ennemis-contre-la-sororite
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: 'Féminismes ennemis : contre la sororité — Sophie Lewis [extraits] - 29 juin / Avec une grosse photo en haut
-      , Mouvement , 4'
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: 'Féminismes ennemis : contre la sororité'
-  suggested_action: follow_one_time
-- url: https://lundi.am/Foutre-la-paix-a-l-oeuvre
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Foutre la paix à l'œuvre — Parham Shahrjerdi - 29 juin / Littérature , Terreur , Avec une grosse photo en haut
-      , 4
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Foutre la paix à l'œuvre
-  suggested_action: follow_one_time
-- url: https://lundi.am/Free-party-vs-data-centers-pour-une-politique-du-bug
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: 'Free party vs data centers : pour une politique du bug — Récit d''un week-end partisan et caniculaire contre
-      le technofascisme - 29 juin / Avec une grosse photo en haut , Mouvement , 4'
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: 'Free party vs data centers : pour une politique du bug'
-  suggested_action: follow_one_time
-- url: https://lundi.am/Il-neige-du-phosphore-blanc
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Il neige du phosphore blanc — L'Êtrangère - 29 juin / Avec une grosse photo en haut , Littérature , 4
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Il neige du phosphore blanc
-  suggested_action: follow_one_time
-- url: https://lundi.am/La-campagne-de-France
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: 'La campagne de France — [Journal de campagne #3] Jean-Louis Tornatore - 29 juin / Histoire , 4 , Avec une grosse
-      photo en haut'
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: La campagne de France
-  suggested_action: follow_one_time
 - url: https://lundi.am/La-colere-nous-appartient
   type: rss
   found_from:
@@ -35832,62 +36200,6 @@ candidates:
   metadata:
     title: La colère nous appartient
   suggested_action: follow_one_time
-- url: https://lundi.am/La-lutte-pour-la-baignade
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: La lutte pour la baignade — ou le mépris de la gauche pour une jouissance populaire - 29 juin / Mouvement , Avec
-      une grosse photo en haut , 2
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: La lutte pour la baignade
-  suggested_action: follow_one_time
-- url: https://lundi.am/Le-canal-il-est-a-qui-A-nous-A-nous-A-nous
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Le canal, il est à qui ? À nous ! À nous ! À nous ! — Bernard Chevalier - 29 juin / Avec une grosse photo en
-      haut , Positions , 4
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Le canal, il est à qui ? À nous ! À nous ! À nous !
-  suggested_action: follow_one_time
-- url: https://lundi.am/Le-cinema-deboussole
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Le cinéma déboussolé (Retour vers le futur) — Ré-arpenter le travail du critique de cinéma Serge Daney - 29 juin
-      / Avec une grosse photo en haut , Littérature , 2
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Le cinéma déboussolé (Retour vers le futur)
-  suggested_action: follow_one_time
-- url: https://lundi.am/Le-foot-est-il-un-terrain-politique
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Le foot est-il un terrain politique ? — Fred Bozzi - 29 juin / Avec une grosse photo en haut , Fred Bozzi , Positions
-      , 2
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Le foot est-il un terrain politique ?
-  suggested_action: follow_one_time
 - url: https://lundi.am/Le-regard-de-l-Occident-ou-la-nuance-contre-l-interruption
   type: rss
   found_from:
@@ -35901,20 +36213,6 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: Le regard de l'Occident, ou la « nuance » contre l'interruption
-  suggested_action: follow_one_time
-- url: https://lundi.am/Le-syndrome-Florent-Richard
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Le syndrome Florent Richard ? — Procès Airbnb, coaching immobilier, chasse aux crevards... C'est l'été à Marseille
-      ! Victor Collet - 29 juin / Avec une grosse photo en haut , Mouvement , 2
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Le syndrome Florent Richard ?
   suggested_action: follow_one_time
 - url: https://lundi.am/Quand-l-IA-corrige-l-IA-un-bac-de-philo-tres-augmente
   type: rss
@@ -35957,34 +36255,6 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: Suffit-il d'un cerveau pour rebondir ?
-  suggested_action: follow_one_time
-- url: https://lundi.am/Sur-la-question-animale-la-gauche-est-de-droite
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: « Sur la question animale, la gauche est de droite » — L'antispécisme comme lutte sociale Un lundisoir avec Victor
-      Duran-Le Peuch - 29 juin / lundisoir , Mouvement , Avec une grosse photo en haut , 4
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: « Sur la question animale, la gauche est de droite »
-  suggested_action: follow_one_time
-- url: https://lundi.am/Tout-continue-comme-avant
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Tout continue comme avant — L'antitsiganisme dans le patriarcat producteur de marchandises - 29 juin / Avec une
-      grosse photo en haut , 4 , Mouvement
-    timestamp: '2026-06-30T17:07:11'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Tout continue comme avant
   suggested_action: follow_one_time
 - url: https://lundi.am/Transcarpatie-un-carnet-de-voyage
   type: rss
@@ -37255,6 +37525,21 @@ candidates:
   metadata:
     title: '« 100 % recyclable » : Volvic épinglé pour pratiques trompeuses'
   suggested_action: follow_one_time
+- url: https://reporterre.net/21-oC-a-la-surface-des-oceans-un-record-absolu-pour-la-saison
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '21 °C à la surface des océans : un record absolu pour la saison — L''océan a atteint un record de chaleur pour
+      la saison, d''après les données du service Copernicus sur le changement climatique et du service Copernicus sur le milieu
+      marin. Le 21 juin, la température moyenne à la surface de l''océan glo'
+    timestamp: '2026-07-02T06:52:45'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-07-02'
+  last_seen: '2026-07-02'
+  metadata:
+    title: '21 °C à la surface des océans : un record absolu pour la saison'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/3oC-dans-le-golfe-de-Gascogne-la-mer-aussi-suffoque-de-chaleur
   type: rss
   found_from:
@@ -37299,21 +37584,6 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 78 % des rivières perdent de l'oxygène, notamment à cause du réchauffement climatique
-  suggested_action: follow_one_time
-- url: https://reporterre.net/A69-la-decision-du-Conseil-d-Etat-pourrait-faciliter-les-grands-projets-d-amenagement
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'A69 : la décision du Conseil d''État pourrait « faciliter les grands projets d''aménagement » — Lundi 29 juin,
-      le Conseil d''État a validé définitivement la construction de l''autoroute A69. Une décision qui semble ouvrir la voie
-      à un assouplissement des règles en la matière. Le dossier pourrait désorma'
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: 'A69 : la décision du Conseil d''État pourrait « faciliter les grands projets d''aménagement »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Acheter-sur-TikTok-Facebook-et-Insta-les-ravages-de-la-fast-fashion-en-ligne
   type: rss
@@ -37402,36 +37672,6 @@ candidates:
   metadata:
     title: 'Bulles de savoir : nos meilleurs BD pour s''informer sur l''écologie'
   suggested_action: follow_one_time
-- url: https://reporterre.net/C-est-officiel-l-autoroute-A69-definitivement-validee-par-le-Conseil-d-Etat
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« C''est officiel » : l''autoroute A69 définitivement validée par le Conseil d''État — Le Conseil d''État a
-      entériné le projet d''autoroute A69 entre Toulouse et Castres. Les autorisations environnementales de ce projet aux
-      répercussions désastreuses et largement documentés sont désormais définitives. Le'
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: '« C''est officiel » : l''autoroute A69 définitivement validée par le Conseil d''État'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/C-etait-David-contre-Goliath-recit-d-une-victoire-contre-un-mega-entrepot
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« C''était David contre Goliath » : récit d''une victoire contre un méga entrepôt — Grâce à une alliance entre
-      militants, associatifs et politiques, des collectifs ont réussi à faire reculer le grand projet d''entrepôts Green Dock
-      qui aurait menacé une réserve en Île-de-France. « C''est incroyable d''avo'
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: '« C''était David contre Goliath » : récit d''une victoire contre un méga entrepôt'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Cadmium-les-donnees-cles-d-une-contamination
   type: rss
   found_from:
@@ -37446,21 +37686,6 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Cadmium : les données clés d''une contamination'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Canicule-au-moins-1-000-morts-supplementaires-en-France
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Canicule : au moins 1 000 morts supplémentaires en France — Santé publique France a publié le 28 juin un premier
-      bilan temporaire de la canicule. Depuis le 24 juin, environ 1 000 décès supplémentaires ont été comptabilisés par rapport
-      aux décès observés les mois précédents. Cette augmentation est pl'
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: 'Canicule : au moins 1 000 morts supplémentaires en France'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Canicule-ce-mardi-est-la-journee-la-plus-chaude-jamais-enregistree-en-France
   type: rss
@@ -37522,6 +37747,21 @@ candidates:
   metadata:
     title: 'Canicule : des centaines de milliers de volailles meurent dans les élevages intensifs'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Canicule-et-loi-d-urgence-agricole-ce-n-est-pas-une-secheresse-nous-sommes-asseches-Face
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Canicule et loi agricole : « Les "assoiffeurs" profitent des crises pour renforcer leur mainmise sur l''eau »
+      — Alors que la vigilance sécheresse s''étend à plus de 80 départements, la loi agricole, examinée au Sénat, risque de
+      renforcer davantage la mainmise du secteur sur l''eau, écrivent les journal'
+    timestamp: '2026-07-02T06:52:45'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-07-02'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'Canicule et loi agricole : « Les "assoiffeurs" profitent des crises pour renforcer leur mainmise sur l''eau »'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Canicule-et-troubles-psys-C-est-angoisse-puissance-1000-avec-cette-chaleur
   type: rss
   found_from:
@@ -37552,6 +37792,21 @@ candidates:
   metadata:
     title: 'Canicule : la centrale nucléaire de Golfech arrêtée'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Canicule-les-eleveurs-bretons-forces-d-enfouir-des-tonnes-de-cadavres-d-animaux
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Canicule : 5000 tonnes de cadavres d''animaux enfouis en Bretagne — 5 000 tonnes d''animaux morts de chaleur
+      et désormais enfouis un peu partout en Bretagne. Dans cette région de France qui concentre le plus d''élevages pour
+      la viande, la canicule de juin a été un véritable carnage pour les bêtes. Dès '
+    timestamp: '2026-07-02T06:52:45'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-07-02'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'Canicule : 5000 tonnes de cadavres d''animaux enfouis en Bretagne'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Ce-centre-qui-a-permis-a-des-milliers-d-enfants-de-decouvrir-la-mer-pourrait-fermer
   type: rss
   found_from:
@@ -37581,6 +37836,21 @@ candidates:
   last_seen: '2026-05-24'
   metadata:
     title: '« Ce qu''on veut, c''est aider » : des habitants achètent des terres qu''ils louent à des paysans bio'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Chlordecone-500-parties-civiles-se-pourvoient-en-cassation
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Chlordécone : 500 parties civiles se pourvoient en cassation — Énième rebondissement dans l''affaire qui oppose
+      l''État aux victimes de la chlordécone. Plus d''un demi-millier de parties civiles se pourvoient en cassation, a déclaré
+      le 30 juin l''un de leurs avocats, M e Christophe Lèguevaques. Objectif'
+    timestamp: '2026-07-02T06:52:45'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-07-02'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'Chlordécone : 500 parties civiles se pourvoient en cassation'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Cinq-activistes-opposes-a-une-deviation-ont-passe-le-weekend-en-prison
   type: rss
@@ -37624,20 +37894,35 @@ candidates:
   - doc_id: de319a22
     context: 5. https://reporterre.net/Comment-j-ai-ete-blessee-sur-la-ZAD
     page: 2
-- url: https://reporterre.net/Comment-les-parcs-eoliens-pourraient-transformer-durablement-les-ecosystemes-marins
+- url: https://reporterre.net/Comment-la-canicule-met-les-centrales-nucleaires-a-l-epreuve
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Dauphins, goélands et mollusques bouleversés par les parcs éoliens en mer — Bruit, risque de collision, routes
-      migratoires modifiées : une vaste étude recense les pressions générées sur les écosystèmes par les parcs éoliens en
-      mer. L''ampleur des conséquences pour la biodiversité reste inconnue. En M'
-    timestamp: '2026-06-30T17:07:01'
+    context: 'Sécheresse et températures trop élevées : le nucléaire souffre aussi des canicules — Vanté comme l''énergie
+      idéale face aux canicules, le nucléaire souffre pourtant lui aussi des fortes chaleurs. Malgré des efforts d''adaptation,
+      le parc français a dû renoncer à plus de 8 % de sa capacité de productio'
+    timestamp: '2026-07-02T06:52:45'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
+  first_seen: '2026-07-02'
+  last_seen: '2026-07-02'
   metadata:
-    title: Dauphins, goélands et mollusques bouleversés par les parcs éoliens en mer
+    title: 'Sécheresse et températures trop élevées : le nucléaire souffre aussi des canicules'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Consigne-sur-le-plastique-elus-et-ONG-claquent-la-porte-de-la-concertation
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Consigne sur le plastique : élus et ONG claquent la porte de la concertation — « NON à la fausse consigne. »
+      C''est le message clair et net que les représentants d''élus locaux et plusieurs associations de défense de l''environnement
+      ont adressé à Mathieu Lefèvre, ministre délégué chargé de la Transiti'
+    timestamp: '2026-07-02T06:52:45'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-07-02'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'Consigne sur le plastique : élus et ONG claquent la porte de la concertation'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Des-jardins-sans-gazon-Ca-existe-et-c-est-reussi
   type: rss
@@ -37653,21 +37938,6 @@ candidates:
   last_seen: '2026-06-30'
   metadata:
     title: Des jardins sans gazon ? Ça existe, et c'est réussi !
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Des-militants-infiltrent-une-usine-du-chimiste-BASF-et-finissent-a-la-gendarmerie
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Des militants infiltrent une usine du chimiste BASF et finissent à la gendarmerie — Une trentaine de Faucheurs
-      et faucheuses volontaires d' OGM ont réalisé une « inspection citoyenne », lundi 29 juin, en s'introduisant dans un
-      entrepôt du site Seveso seuil haut de BASF à Genay, au nord de Lyon. Un a
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Des militants infiltrent une usine du chimiste BASF et finissent à la gendarmerie
   suggested_action: follow_one_time
 - url: https://reporterre.net/Des-pesticides-interdits-retrouves-dans-des-epices-Ducros-du-riz-Taureau-Aile-et-du-the
   type: rss
@@ -37699,6 +37969,21 @@ candidates:
   metadata:
     title: '« Du poison dans votre café » : une tasse sur cinq est contaminée aux pesticides'
   suggested_action: follow_one_time
+- url: https://reporterre.net/EN-BREF-Sainte-Soline-la-cour-d-appel-confirme-les-condamnations-de-quatre-organisateurs
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Sainte-Soline : la cour d''appel confirme les condamnations de quatre organisateurs — Mercredi 1 er juillet,
+      la cour d''appel de Poitiers a confirmé une partie des condamnations prononcées contre quatre organisateurs de la manifestation
+      contre les mégabassines de Sainte-Soline, organisée le 25 mars 20'
+    timestamp: '2026-07-02T06:52:45'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-07-02'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'Sainte-Soline : la cour d''appel confirme les condamnations de quatre organisateurs'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Face-aux-canicules-faisons-corps-avec-les-arbres
   type: rss
   found_from:
@@ -37713,21 +37998,6 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: Dans cette fournaise, nous ne pouvons pas vivre sans les arbres
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Fast-fashion-la-loi-enfin-adoptee-mais-edulcoree
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Fast-fashion : la loi enfin adoptée, mais édulcorée — Voilà, elle est adoptée. Le 29 juin, la loi visant à «
-      réduire l''impact environnemental de l''industrie textile » a été définitivement adoptée par le Sénat. Il aura fallu
-      plus de deux ans — la proposition de loi avait été déposée début 2024 — pour'
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: 'Fast-fashion : la loi enfin adoptée, mais édulcorée'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Fleurs-bio-et-francaises-une-filiere-qui-se-developpe-a-la-debrouille
   type: rss
@@ -37773,21 +38043,6 @@ candidates:
   metadata:
     title: Guillaume Meurice, Camille Étienne... 200 personnalités disent non à la première méga-usine de saumons en France
   suggested_action: follow_one_time
-- url: https://reporterre.net/INF-Jusqu-a-20-millions-d-especes-d-insectes-sur-Terre-selon-une-nouvelle-etude-La-Terre
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '20 millions d''espèces d''insectes sur Terre : des chercheurs révèlent l''étendue d''une biodiversité insoupçonnée
-      — Une nouvelle évaluation scientifique estime qu''il pourrait exister 20 millions d''espèces d''insectes sur Terre.
-      Un chiffre aussi énorme qu''inédit, qui devrait inciter à redoubler les effor'
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: '20 millions d''espèces d''insectes sur Terre : des chercheurs révèlent l''étendue d''une biodiversité insoupçonnée'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Je-craque-le-desarroi-des-soignants-face-a-l-afflux-d-animaux-sonnes-par-la-chaleur
   type: rss
   found_from:
@@ -37803,35 +38058,20 @@ candidates:
   metadata:
     title: '« Je craque » : le désarroi des soignants face à l''afflux d''animaux sonnés par la chaleur'
   suggested_action: follow_one_time
-- url: https://reporterre.net/L-Etat-condamne-a-en-faire-plus-pour-la-protection-des-cetaces
+- url: https://reporterre.net/Jusqu-a-46-oC-ressentis-la-Coupe-du-monde-en-alerte-canicule
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: L'État condamné à en faire plus pour la protection des cétacés — L'État à nouveau condamné pour préjudice écologique.
-      Le tribunal administratif de Paris a reconnu, le 26 juin, sa faute dans la protection des petits cétacés du golfe de
-      Gascogne et lui a enjoint « d'élaborer et de commencer à mettre e
-    timestamp: '2026-06-30T17:07:01'
+    context: 'Jusqu''à 46 °C ressentis : la Coupe du monde en alerte canicule — Jusqu''à 46 °C degrés ressentis en pleine
+      Coupe du monde de football. Alors que les États-Unis accueillent la compétition et s''apprêtent à célébrer les 250 ans
+      de leur déclaration d''indépendance samedi 4 juillet, des températures canicu'
+    timestamp: '2026-07-02T06:52:45'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
+  first_seen: '2026-07-02'
+  last_seen: '2026-07-02'
   metadata:
-    title: L'État condamné à en faire plus pour la protection des cétacés
-  suggested_action: follow_one_time
-- url: https://reporterre.net/L-Etat-ne-nous-donne-pas-le-choix-ils-s-infiltrent-dans-une-usine-a-la-recherche-de-pesticides-interdits
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'BASF encore pris la main dans le sac : deux pesticides interdits découverts dans une usine française — Des militants
-      des Faucheurs volontaires se sont introduits sur le site de BASF , près de Lyon. En inspectant les produits stockés
-      par l''entreprise, ils ont découvert deux pesticides dont le commerc'
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: 'BASF encore pris la main dans le sac : deux pesticides interdits découverts dans une usine française'
+    title: 'Jusqu''à 46 °C ressentis : la Coupe du monde en alerte canicule'
   suggested_action: follow_one_time
 - url: https://reporterre.net/L-extreme-droite-francaise-participe-a-un-sommet-antiwoke-et-anticlimat-a-Londres
   type: rss
@@ -37950,21 +38190,6 @@ candidates:
   metadata:
     title: La loi d'urgence agricole veut donner carte blanche aux élevages intensifs
   suggested_action: follow_one_time
-- url: https://reporterre.net/Le-Perou-bascule-a-l-extreme-droite-avec-l-election-de-Keiko-Fujimori
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Le Pérou bascule à l'extrême droite avec l'élection de Keiko Fujimori — Après la Colombie, le Pérou bascule lui
-      aussi à l'extrême droite. À la suite d'un mois de dépouillement, la fille de l'ancien autocrate Alberto Fujimori, Keiko
-      Fujimori, a été élue présidente du pays. La dirigeante du parti Fuer
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Le Pérou bascule à l'extrême droite avec l'élection de Keiko Fujimori
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Le-retour-du-debat-autour-de-la-consigne-pour-les-bouteilles-plastiques
   type: rss
   found_from:
@@ -37979,36 +38204,6 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Consigne pour les bouteilles plastiques : Macron remet sur la table cette proposition critiquée'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Le-transport-des-animaux-en-mer-se-fait-dans-des-conditions-epouvantables
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Le transport des animaux en mer se fait « dans des conditions épouvantables » — Le transport des animaux en mer
-      se fait « dans des conditions épouvantables ». Telle est l'une des conclusions du rapport publié le 28 juin par les
-      associations Robin des bois, Animal Welfare Foundation ( AWF ) et Tiersc
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Le transport des animaux en mer se fait « dans des conditions épouvantables »
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Les-actions-contre-le-rechauffement-climatique-annulees-a-cause-du-rechauffement
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Trop chaud pour se mobiliser : quand le réchauffement climatique empêche les luttes écologistes — Dans un cercle
-      de plus en plus vicieux, la chaleur a forcé de nombreux activistes à renoncer à des actions contre des industries polluantes
-      qui portent une responsabilité dans les canicules, dénonce not'
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: 'Trop chaud pour se mobiliser : quand le réchauffement climatique empêche les luttes écologistes'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Les-chaleurs-humides-mettent-en-danger-la-vie-de-millions-de-personnes
   type: rss
@@ -38025,6 +38220,22 @@ candidates:
   metadata:
     title: 'Chaleur humide mortelle : un péril en forte hausse'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Les-deconditionneurs-avalent-les-dechets-de-l-agro-et-rejettent-des-microplastiques-dans
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Plus ils sont petits, plus ils sont toxiques » : comment les déchets de l''agro-industrie finissent en microplastiques
+      dans les champs — Ils sont en plein essor en Bretagne : les déconditionneurs désemballent les rebuts de l''industrie
+      agro-alimentaire pour alimenter des méthaniseurs. Mais cette tec'
+    timestamp: '2026-07-02T06:52:45'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-07-02'
+  last_seen: '2026-07-02'
+  metadata:
+    title: '« Plus ils sont petits, plus ils sont toxiques » : comment les déchets de l''agro-industrie finissent en microplastiques
+      dans les champs'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Les-ecogestes-reprise-en-main-de-son-quotidien-ou-depolitisation-de-l-ecologie
   type: rss
   found_from:
@@ -38040,21 +38251,6 @@ candidates:
   metadata:
     title: 'Les écogestes : reprise en main de son quotidien ou dépolitisation de l''écologie ?'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Les-ecologistes-s-organisent-contre-le-RN-a-la-campagne-mais-peinent-a-sortir-de-l-entre
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Les écologistes s'organisent contre le RN à la campagne... mais peinent à sortir de l'entre-soi — Les Écologistes
-      organisaient dans le Tarn, la quatrième édition de leurs universités des ruralités. L'occasion pour le parti de tenter
-      de parler depuis ces territoires et de réfléchir à sa stratégie vis
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Les écologistes s'organisent contre le RN à la campagne... mais peinent à sortir de l'entre-soi
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Les-forets-francaises-stockent-moins-de-CO2-a-cause-de-mauvais-choix-politiques
   type: rss
   found_from:
@@ -38069,36 +38265,6 @@ candidates:
   last_seen: '2026-06-30'
   metadata:
     title: Les forêts françaises stockent moins de CO2 à cause de mauvais choix politiques
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Loi-d-urgence-agricole-le-Senat-vote-le-retour-de-l-acetamipride
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Loi d''urgence agricole : le Sénat vote le retour de l''acétamipride — Le Sénat a réintroduit les pesticides
-      de la loi Duplomb dans le projet de loi d''urgence agricole. Dans la nuit du 29 au 30 juin, les sénateurs ont adopté,
-      par 183 voix contre 129, un amendement porté par la droite et les centristes'
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: 'Loi d''urgence agricole : le Sénat vote le retour de l''acétamipride'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/MaPrimRenov-encore-moins-de-travaux-eligibles
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'MaPrimRénov'' : encore moins de travaux éligibles — Nouveaux chamboulements à prévoir pour le dispositif MaPrimRénov''.
-      Le gouvernement envisage de réduire, encore une fois, la liste des travaux éligibles à cette aide financière destinée
-      à la rénovation énergétique. Seraient concernés une bonne partie'
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: 'MaPrimRénov'' : encore moins de travaux éligibles'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Megafeux-en-France-Tous-les-ingredients-sont-la-pour-qu-ils-se-multiplient
   type: rss
@@ -38129,6 +38295,21 @@ candidates:
   last_seen: '2026-06-30'
   metadata:
     title: Menacé d'extinction, ce poisson fantôme a été observé en Normandie
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Meteo-France-annonce-un-nouvel-episode-de-chaleur-a-partir-de-ce-weekend-Meteo-France-Sur
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Météo France : « Dès vendredi, les températures repartent à la hausse » — Patrick Galois, prévisionniste à Météo
+      France, fait le point sur les tendances qui se dessinent pour les prochaines semaines, alors que le mois de juin enregistre
+      déjà une moyenne des températures à + 4 °C. Le répit ne sera qu'
+    timestamp: '2026-07-02T06:52:45'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-07-02'
+  last_seen: '2026-07-02'
+  metadata:
+    title: 'Météo France : « Dès vendredi, les températures repartent à la hausse »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Nassima-maraichere-bio-et-queer-Le-principal-c-est-qu-on-se-sente-a-notre-place-en-campagne
   type: rss
@@ -38205,21 +38386,6 @@ candidates:
   metadata:
     title: 'Pollution de l''eau : quand détruire coûte moins cher que respecter les règles'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Pour-eux-ici-c-est-Disneyland-des-bergers-s-opposent-au-VTT-en-montagne
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Pour eux, ici, c''est Disneyland » : des bergers s''opposent au VTT en montagne — Les bergers des Gets, en
-      Haute-Savoie, sont en colère. Deux nouvelles pistes de VTT pourraient être construites sur l''alpage d''un mont préservé.
-      Un conflit qui pose l''épineuse question de l''avenir des montagnes au sort'
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: '« Pour eux, ici, c''est Disneyland » : des bergers s''opposent au VTT en montagne'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Pour-extraire-son-sable-Lafarge-devore-les-meandres-de-la-Seine
   type: rss
   found_from:
@@ -38264,21 +38430,6 @@ candidates:
   last_seen: '2026-06-30'
   metadata:
     title: Quand la marche nourrit, guérit et émancipe
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Que-propose-la-gauche-face-a-la-canicule-Tour-d-horizon-en-cinq-propositions
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Congé climatique, droit à la fraîcheur... Que propose la gauche face à la canicule ? — Alors que la France vient
-      de subir une canicule d'une sévérité exceptionnelle et pourrait en connaître de nouvelles, tour d'horizon des solutions
-      portées par la gauche pour faire face aux vagues de chaleur. Ventil
-    timestamp: '2026-06-30T17:07:01'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-06-30'
-  metadata:
-    title: Congé climatique, droit à la fraîcheur... Que propose la gauche face à la canicule ?
   suggested_action: follow_one_time
 - url: https://reporterre.net/Redressement-judiciaire-de-FNE-Rhone-le-tribunal-valide-le-plan-de-l-association
   type: rss
@@ -38339,6 +38490,36 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: '« C''est purement scandaleux » : la justice refuse de rouvrir l''enquête sur le chlordécone'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Si-je-suis-encore-vivante-c-est-grace-a-eux-ces-benevoles-viennent-au-secours-d-agriculteurs-en-detresse
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Face à un « système qui les broie », des agriculteurs soutenus par des bénévoles — En Gironde, une association
+      vient en aide aux agriculteurs en grande difficulté, parfois au bord du suicide. Sa poignée de bénévoles leur offre
+      une aide juridique, administrative, et surtout un soutien psychologique. '
+    timestamp: '2026-07-02T06:52:45'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-07-02'
+  last_seen: '2026-07-02'
+  metadata:
+    title: Face à un « système qui les broie », des agriculteurs soutenus par des bénévoles
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Soleil-tunisien-profits-francais-drole-de-transition-verte
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Soleil tunisien, profits français : drôle de transition verte ! » — Cinq projets solaires en Tunisie ont été
+      attribués à des multinationales, au bénéfice complet des capitaux étrangers. L''auteur de cette tribune dénonce la poursuite
+      de politiques néocoloniales sous couvert de « transition verte ».'
+    timestamp: '2026-07-02T06:52:45'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-07-02'
+  last_seen: '2026-07-02'
+  metadata:
+    title: '« Soleil tunisien, profits français : drôle de transition verte ! »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Sous-testosterone-les-poissons-d-elevage-egyptiens-bientot-importes-en-Europe
   type: rss
