@@ -357,7 +357,7 @@ def extract_text(path: Path, max_chars: int = 12000,
 
 
 def extract_cover(path: Path, out_png: Path,
-                   max_width: int = 400) -> bool:
+                   max_width: int = 1200) -> bool:
     """Sauve la page 1 du PDF comme PNG (largeur max=max_width)."""
     if not PYMUPDF_AVAILABLE:
         return False
@@ -370,7 +370,7 @@ def extract_cover(path: Path, out_png: Path,
         # Calculer le zoom pour atteindre max_width
         rect = page.rect
         zoom = max_width / rect.width if rect.width > 0 else 1.0
-        zoom = min(zoom, 2.0)  # cap à 2x pour éviter PNG énormes
+        zoom = min(zoom, 4.0)  # cap à 4x (évite PNG énormes pour PDFs très étroits)
         mat = fitz.Matrix(zoom, zoom)
         pix = page.get_pixmap(matrix=mat)
         out_png.parent.mkdir(parents=True, exist_ok=True)

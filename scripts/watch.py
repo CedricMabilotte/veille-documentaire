@@ -443,7 +443,7 @@ def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
 
     # Couverture page 1 → PNG
     cover_path = COVERS_PATH / f"{uid}.png"
-    if pdf_processor.extract_cover(dest, cover_path, max_width=400):
+    if pdf_processor.extract_cover(dest, cover_path, max_width=1200):
         out["cover"] = f"covers/{uid}.png"   # chemin relatif depuis interface/
         print(f"     🖼  Couverture extraite : {out['cover']}")
 
