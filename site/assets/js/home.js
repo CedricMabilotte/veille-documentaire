@@ -367,22 +367,50 @@
   window.initOutils = initOutils;
 
   /* =====================================================================
-     Formulaire newsletter (A3) — pas de backend : ouvre un mailto.
+     Formulaire newsletter — Buttondown si configuré, sinon mailto.
+     Pour activer Buttondown : créer un compte sur buttondown.com,
+     puis définir window.BUTTONDOWN_SLUG = 'votre-slug' dans index.html
+     (avant le chargement de home.js).
      S'applique à tout formulaire portant la classe .newsletter-form.
      ===================================================================== */
   function initNewsletter() {
     const forms = document.querySelectorAll('.newsletter-form');
     forms.forEach(form => {
-      form.addEventListener('submit', function (e) {
+      form.addEventListener('submit', async function (e) {
         e.preventDefault();
         const input = form.querySelector('input[type="email"]');
+        const btn   = form.querySelector('button[type="submit"]');
         const email = input ? input.value.trim() : '';
-        const subject = encodeURIComponent('Inscription newsletter biblio');
-        const body = encodeURIComponent(
-          'Bonjour,\n\nJe souhaite m\'abonner à la lettre de la veille BIBLIO.\n'
-          + (email ? 'Adresse : ' + email + '\n' : '')
-          + '\nMerci !');
-        window.location.href = `mailto:contact@actitude.org?subject=${subject}&body=${body}`;
+        if (!email) return;
+
+        const slug = window.BUTTONDOWN_SLUG || '';
+        if (slug) {
+          // ── Buttondown embed-subscribe ──────────────────────────────────
+          if (btn) { btn.disabled = true; btn.textContent = '…'; }
+          try {
+            const res = await fetch(
+              `https://buttondown.com/api/emails/embed-subscribe/${slug}`,
+              { method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email }) }
+            );
+            if (res.ok || res.status === 201) {
+              form.innerHTML = '<p style="color:var(--accent);font-family:var(--font-serif);margin:0;">✓ Inscription enregistrée — vérifiez votre boîte mail.</p>';
+            } else {
+              const err = await res.text().catch(() => '');
+              form.innerHTML = `<p style="color:var(--text-dim);margin:0;">Erreur (${res.status}) — écrivez-nous à <a href="mailto:contact@actitude.org">contact@actitude.org</a>.</p>`;
+            }
+          } catch (_) {
+            if (btn) { btn.disabled = false; btn.textContent = "S'inscrire"; }
+          }
+        } else {
+          // ── Repli mailto ────────────────────────────────────────────────
+          const subject = encodeURIComponent('Inscription newsletter biblio');
+          const body = encodeURIComponent(
+            'Bonjour,\n\nJe souhaite m\'abonner à la lettre de la veille BIBLIO.\n'
+            + (email ? 'Adresse : ' + email + '\n' : '')
+            + '\nMerci !');
+          window.location.href = `mailto:contact@actitude.org?subject=${subject}&body=${body}`;
+        }
       });
     });
   }

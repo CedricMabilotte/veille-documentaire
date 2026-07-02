@@ -1060,11 +1060,71 @@ def _prerender_fiches(catalog: dict) -> int:
         source_h   = esc(source)
         doc_id_h   = esc(doc_id)
 
-        # ── HTML statique — minimal, ciblé crawlers + SEO ────────────────────
+        # ── Sections de contenu pré-calculées (hors f-string) ───────────────
+        html_lang  = lang if lang and lang not in ('', '?') else 'fr'
+        doc_date_h = esc(doc.get('doc_date', '') or '')
+        editeur_h  = esc(doc.get('editeur', '') or '')
+
+        def _paras(text: str) -> str:
+            parts = [p.strip() for p in (text or '').split('\n\n') if p.strip()]
+            return '\n'.join(f'<p>{esc(p)}</p>' for p in parts) or f'<p>{esc(str(text))}</p>'
+
+        _summary_sec = ''
+        if summary:
+            _summary_sec = (
+                '<section class="fiche-section">'
+                '<h2>Synopsis</h2>'
+                + _paras(summary) + '</section>'
+            )
+
+        _ec = (enrich.get('en_clair', '') or '') if isinstance(enrich, dict) else ''
+        _enclair_sec = ''
+        if _ec:
+            _enclair_sec = (
+                '<section class="fiche-section">'
+                '<h2>En clair</h2>'
+                + _paras(_ec) + '</section>'
+            )
+
+        _raw_cits = (enrich.get('citations') or []) if isinstance(enrich, dict) else []
+        _valid_cits = [c for c in _raw_cits
+                       if isinstance(c, dict) and (c.get('quote_fr') or c.get('quote'))]
+        _cits_sec = ''
+        if _valid_cits:
+            _items = []
+            for _i, _c in enumerate(_valid_cits[:10], 1):
+                _qt = esc(_c.get('quote_fr') or _c.get('quote') or '')
+                _pg = _c.get('page') or ''
+                _pg_html = f'<small>p. {esc(str(_pg))}</small>' if _pg else ''
+                _items.append(
+                    f'<blockquote id="c{_i}" class="fiche-citation">'
+                    f'<p>{_qt}</p>'
+                    + (f'<footer>{_pg_html}</footer>' if _pg_html else '')
+                    + '</blockquote>'
+                )
+            _cits_sec = (
+                '<section class="fiche-section">'
+                '<h2>Extraits</h2>'
+                + '\n'.join(_items) + '</section>'
+            )
+
+        _meta_extra = (
+            (f' <span aria-hidden="true">·</span> <span>{doc_date_h}</span>'
+             if doc_date_h else '')
+            + (f' <span aria-hidden="true">·</span> <span>{editeur_h}</span>'
+               if editeur_h else '')
+        )
+        _orig_html = (
+            f'<a class="btn btn-sm btn-ghost" href="{esc(doc.get("url",""))}"'
+            f' target="_blank" rel="noopener">Document original ↗</a>'
+        ) if doc.get('url') else ''
+
+        # ── HTML statique complet — crawlable et lisible sans JS ─────────────
         html = f"""<!doctype html>
-<html lang="fr">
+<html lang="{html_lang}">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title_h} — BIBLIO</title>
 <link rel="canonical" href="{canonical_url}">
 <meta name="description" content="{desc_h}">
@@ -1076,16 +1136,108 @@ def _prerender_fiches(catalog: dict) -> int:
 <meta property="og:site_name" content="BIBLIO — biblio.actitude.org">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{ld_json}</script>
-<meta http-equiv="refresh" content="0; url=fiche.html?id={doc_id_h}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/components.css">
 </head>
 <body>
-<main style="max-width: 60ch; margin: 4rem auto; padding: 0 1.5rem; font-family: 'EB Garamond', serif;">
-  <h1>{title_h}</h1>
-  <p><em>{source_h}</em> · Score : {score}/10</p>
-  <p>{desc_h}</p>
-  <p><a href="fiche.html?id={doc_id_h}">Voir la fiche détaillée →</a></p>
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <a href="../index.html" class="brand" aria-label="BIBLIO — accueil">
+      <img src="../assets/img/logo.svg" alt="" class="brand-mark">
+      <span class="brand-name">BIBLIO</span>
+      <span class="brand-sub">Bibliothèque documentaire ouverte</span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <a href="index.html">Catalogue</a>
+      <a href="../dossiers.html">Dossiers</a>
+      <a href="../concepts/index.html">Concepts</a>
+      <a href="../chronologie.html">Chronologie</a>
+      <div class="nav-dropdown" id="nav-apropos">
+        <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true" aria-controls="nav-apropos-menu">
+          À propos<svg viewBox="0 0 10 6" width="10" height="6" aria-hidden="true" class="nav-dropdown-caret"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+        </button>
+        <ul class="nav-dropdown-menu" id="nav-apropos-menu" role="menu">
+          <li><a href="../auteurs.html" role="menuitem">Auteurs</a></li>
+          <li><a href="../etat-corpus.html" role="menuitem">Corpus</a></li>
+          <li><a href="../apropos.html" role="menuitem">Méthodologie</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="header-tools">
+      <button class="theme-toggle" type="button" aria-label="Basculer le thème"></button>
+      <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav aria-label="fil d'Ariane">
+      <ol class="breadcrumbs">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="index.html">Catalogue</a></li>
+        <li>{title_h}</li>
+      </ol>
+    </nav>
+
+    <article class="mt-3">
+      <header>
+        <h1 style="font-family:var(--font-serif);font-size:clamp(20px,4vw,30px);font-weight:600;line-height:1.25;margin:14px 0 10px;">{title_h}</h1>
+        <p style="font-size:14px;color:var(--text-dim);margin:0 0 14px;">{source_h} · Score {score}/10{_meta_extra}</p>
+        {_orig_html}
+      </header>
+
+{_summary_sec}
+{_enclair_sec}
+{_cits_sec}
+
+      <div style="border-top:1px solid var(--border);padding-top:20px;margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+        <a class="btn btn-sm" href="fiche.html?id={doc_id_h}">Version interactive ↗</a>
+        <span style="font-size:13px;color:var(--text-faint)">Fiches proches · BibTeX · partage par citation</span>
+      </div>
+    </article>
+  </div>
 </main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div>
+      <h4>BIBLIO</h4>
+      <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
+      <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+    </div>
+    <div>
+      <h4>Naviguer</h4>
+      <ul>
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="index.html">Catalogue</a></li>
+        <li><a href="../dossiers.html">Dossiers</a></li>
+        <li><a href="../etat-corpus.html">Corpus</a></li>
+        <li><a href="../apropos.html">Méthodologie</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Suivre &amp; réutiliser</h4>
+      <ul>
+        <li><a href="../feed.xml">Flux RSS — nouvelles fiches</a></li>
+        <li>Fiches sous <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" rel="noopener">CC-BY-NC-SA 4.0</a></li>
+        <li><a href="mailto:contact@actitude.org">Contact</a></li>
+      </ul>
+    </div>
+    <div class="colophon">
+      <span>© 2026 BIBLIO · <code>biblio.actitude.org</code></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/router.js"></script>
+<script src="../assets/js/app.js"></script>
 </body>
 </html>
 """

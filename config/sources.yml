@@ -890,6 +890,33 @@ sources:
     default_lang: es
     min_interval_days: 30
 
+  # ─── GRAIN — foncier, semences, alimentation ────────────────────────────────
+  - label: "GRAIN — articles & rapports"
+    url: "https://grain.org/feed.xml"
+    type: rss
+    orientation: militant
+    default_lang: en
+    min_interval_days: 7
+    auto_download: true
+
+  # ─── Transnational Institute (TNI) — terres, extractivisme, souveraineté ───
+  - label: "TNI — Agrarian & Environmental Justice"
+    url: "https://www.tni.org/en/publications?topic=agrarian-justice&type=publications"
+    type: deep_html
+    orientation: academique
+    default_lang: en
+    min_interval_days: 14
+    auto_download: true
+
+  # ─── FIAN International — droit à l'alimentation, accès à la terre ─────────
+  - label: "FIAN International — publications"
+    url: "https://www.fian.org/en/publications"
+    type: deep_html
+    orientation: institutionnel
+    default_lang: en
+    min_interval_days: 14
+    auto_download: true
+
   # ═══ Ajoute tes propres sources ici ════════════════════════════════════════
   # - label: "Mon blog de référence"
   #   url: "https://example.com/articles-en-pdf/"

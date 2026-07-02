@@ -83,6 +83,8 @@ def _gather_doc_text(doc: dict) -> str:
     parts.append(enrichment.get("summary") or "")
     parts.append(enrichment.get("relevance_notes") or "")
     for cit in enrichment.get("citations") or []:
+        if not isinstance(cit, dict):
+            continue
         parts.append(cit.get("quote") or "")
         parts.append(cit.get("why_relevant") or "")
     parts.extend(enrichment.get("matched_keywords") or [])

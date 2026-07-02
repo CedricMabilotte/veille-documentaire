@@ -529,3 +529,17 @@ mark.biblio-hl {
   text-decoration: none;
 }
 .fiches-proches-link:hover { color: var(--accent); }
+
+/* ----- Fiche statique : citation pré-rendue ------------------------- */
+.fiche-citation {
+  margin: 0 0 16px;
+  padding: 14px 18px;
+  border-left: 3px solid var(--accent);
+  background: var(--bg-elev);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-family: var(--font-serif);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.fiche-citation p { margin: 0 0 6px; }
+.fiche-citation footer { font-size: 13px; color: var(--text-faint); }
