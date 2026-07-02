@@ -1,0 +1,33 @@
+name: Publish → biblio-actitude-org
+on:
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout veille-documentaire
+        uses: actions/checkout@v5
+        with:
+          lfs: false
+
+      - name: Publier site/ vers biblio-actitude-org
+        env:
+          PUBLISH_TOKEN: ${{ secrets.BIBLIO_PUBLISH_TOKEN }}
+        run: |
+          git clone "https://x-access-token:${PUBLISH_TOKEN}@github.com/CedricMabilotte/biblio-actitude-org.git" /tmp/biblio --depth=1 -q
+          rsync -a --delete --exclude='.git' site/ /tmp/biblio/
+          cd /tmp/biblio
+          git config user.name  "Library Bot"
+          git config user.email "bot@library.local"
+          git add -A
+          git diff --staged --stat
+          git diff --staged --quiet && echo "Rien à publier." && exit 0
+          git commit -m "publish: covers PNG→JPEG 1200px (session biblio #16)"
+          git push origin main -q
+          echo "→ Publié : biblio-actitude-org"
