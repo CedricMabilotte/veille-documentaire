@@ -223,6 +223,10 @@ function updateMetaTags(doc, basePath) {
   // og:image : carte sociale (assets/og/), couverture (assets/covers/), sinon défaut
   const ogImg = `https://biblio.actitude.org/assets/og/${doc.id}.png`;
   setMeta('og:image', ogImg);
+  // Hints de dimension (accélèrent le cache Facebook, évitent un rendu dégradé) —
+  // la carte sociale générée par scripts/social_cards.py est toujours en 1200x630.
+  setMeta('og:image:width', '1200');
+  setMeta('og:image:height', '630');
   // Schema.org JSON-LD (ScholarlyArticle ou Book selon format/page_count)
   injectJsonLd(doc, { title, teaser, author, year, keywords, canonicalUrl, ogImg });
 }

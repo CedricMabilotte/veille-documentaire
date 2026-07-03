@@ -1131,6 +1131,8 @@ def _prerender_fiches(catalog: dict) -> int:
 <meta property="og:title" content="{title_h}">
 <meta property="og:description" content="{desc_h}">
 <meta property="og:image" content="{og_image}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="{canonical_url}">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="BIBLIO — biblio.actitude.org">
