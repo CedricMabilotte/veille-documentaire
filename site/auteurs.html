@@ -243,9 +243,10 @@ function renderAuthors(groups, basePath) {
     const top3 = list.slice(0, 3);
     const slug = isUnk ? 'auteur-indetermine' : slugifyAuthor(name);
     buf.push(`
-      <article class="author-card" id="${escape(slug)}">
+      <article class="author-card biblio-fichecard biblio-fichecard-dense" id="${escape(slug)}">
+        <span class="biblio-fichecard-tape"></span>
         <h3>${escape(name)}</h3>
-        <div class="author-count">${list.length} fiche${list.length > 1 ? 's' : ''}</div>
+        <span class="biblio-stampbox">${list.length} FICHE${list.length > 1 ? 'S' : ''}</span>
         <ul>
           ${top3.map(d => {
             const s = docScore(d);

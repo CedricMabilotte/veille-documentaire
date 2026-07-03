@@ -213,14 +213,15 @@ function routeFromHash(basePath) {
 /* Sommaire (sans hash) : cartes pour chaque concept */
 function renderConceptIndex(basePath) {
   const root = document.getElementById('concept-root');
-  const buf = ['<div class="concepts-grid">'];
+  const buf = ['<div class="biblio-dossiers-grid concepts-grid">'];
   for (const c of CONCEPTS_STATE.concepts) {
     const matches = matchDocsForConcept(c).length;
     buf.push(`
-      <a href="#${escape(c.slug)}" class="concept-card">
+      <a href="#${escape(c.slug)}" class="concept-card biblio-fichecard fade-in">
+        <span class="biblio-fichecard-tape"></span>
         <h3>${escape(c.name)}</h3>
-        <p class="concept-def">${escape(c.definition.slice(0, 180))}${c.definition.length > 180 ? '…' : ''}</p>
-        <div class="concept-card-meta">${matches} fiche${matches > 1 ? 's' : ''} associée${matches > 1 ? 's' : ''} →</div>
+        <p class="concept-def biblio-fichecard-chapo">${escape(c.definition.slice(0, 180))}${c.definition.length > 180 ? '…' : ''}</p>
+        <span class="biblio-stampbox">${matches} FICHE${matches > 1 ? 'S' : ''} →</span>
       </a>
     `);
   }
@@ -331,7 +332,7 @@ function renderConcept(concept, basePath) {
               </span>
               ${c.verified === false
                 ? '<span class="biblio-cite-unverified">⚠ Citation non retrouvée dans le PDF — à vérifier sur la source.</span>'
-                : (c.verified === true ? '<span class="biblio-cite-verified">✓ Citation vérifiée dans le document.</span>' : '')}
+                : (c.verified === true ? '<span class="biblio-stampbox biblio-stampbox-good">VÉRIFIÉE</span>' : '')}
             </blockquote>
           `).join('')}
         </section>

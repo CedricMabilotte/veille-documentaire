@@ -734,3 +734,49 @@ mark.biblio-hl {
   border-color: var(--good);
   color: var(--good);
 }
+
+/* ----- sommaire concepts/index.html : cartes-fiches (même famille que
+   l'encart dossiers) — le .concept-card d'origine (bordure nette, radius)
+   cède la place au papier scotché quand les deux classes sont combinées */
+.concept-card.biblio-fichecard {
+  border: none;
+  border-radius: 0;
+}
+.concept-card.biblio-fichecard:hover {
+  transform: translateY(-2px) rotate(0deg);
+  box-shadow: var(--shadow-lg, var(--shadow-md));
+}
+.concept-card.biblio-fichecard h3 {
+  font-size: 20px;
+  color: var(--accent);
+}
+
+/* ----- variante « dense » : listes à cardinalité élevée (auteurs.html,
+   potentiellement des dizaines de cartes) — on garde le papier/scotch/
+   coin corné mais on désactive la rotation aléatoire par carte, qui
+   devient illisible/criarde au-delà d'une poignée d'éléments */
+.biblio-fichecard-dense,
+.biblio-fichecard-dense:nth-child(3n+1),
+.biblio-fichecard-dense:nth-child(3n+2),
+.biblio-fichecard-dense:nth-child(3n) {
+  transform: none;
+}
+.biblio-fichecard-dense:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+.author-card.biblio-fichecard-dense {
+  border: none;
+  border-radius: 0;
+}
+.author-card.biblio-fichecard-dense h3 {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  margin: 8px 0 4px;
+  color: var(--text);
+  font-weight: 600;
+}
+.author-card.biblio-fichecard-dense .biblio-stampbox {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
