@@ -5,24 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Cache-Control" content="max-age=3600">
 <title>Dossiers thématiques — BIBLIO</title>
-<meta name="description" content="Les dossiers thématiques de BIBLIO : regroupements éditoriaux par catégorie des fiches les mieux scorées.">
+<meta name="description" content="Dix dossiers thématiques du corpus BIBLIO — communs fonciers, ZAD, sans-terre, habitat coopératif, féminismes de la terre — avec leurs pièces les mieux notées.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="BIBLIO — Nouvelles fiches" href="feed.xml">
 <link rel="canonical" href="https://biblio.actitude.org/dossiers.html">
 <meta property="og:title" content="Dossiers thématiques — BIBLIO">
-<meta property="og:description" content="Les dossiers éditoriaux regroupant nos fiches phares par thème.">
+<meta property="og:description" content="Dix dossiers thématiques du corpus, avec leurs pièces les mieux notées.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Special+Elite&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/components.css">
 <link rel="manifest" href="manifest.json">
 </head>
 <body>
+
+<!-- Filtre d'encre irrégulière pour les tampons "biblio-stampbox" (C6, anarcho-champêtre) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="biblio-inkrough" x="-30%" y="-30%" width="160%" height="160%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1.4 0 0 0 -0.4" result="a"/>
+    <feComposite in="SourceGraphic" in2="a" operator="in"/>
+  </filter>
+</svg>
 
 <header class="site-header" role="banner">
   <div class="container">
@@ -75,7 +84,8 @@
     <header class="mt-3">
       <h1 style="font-family:var(--font-serif);font-size:36px;margin:14px 0 6px;font-weight:600;">Dossiers thématiques</h1>
       <p style="font-family:var(--font-serif);font-style:italic;color:var(--text-dim);font-size:18px;margin:0 0 8px;">
-        Les fiches phares regroupées par champ thématique. Une lecture par dossier, comme une revue.
+        Dix chantiers vivants du corpus. Pour chacun, la formule dominante barrée et le concept que
+        le dossier défend à la place — puis ses pièces les mieux notées.
       </p>
     </header>
 
@@ -134,94 +144,76 @@
 <script src="assets/js/app.js"></script>
 <script src="assets/js/home.js" defer></script>
 <script>
-/* ===== Dossiers thématiques — regroupement par catégorisation des bulles ===== */
+/* ===== Dossiers thématiques — reconstruit sur data/dossiers.json (2026-07-09) =====
+   Avant : regroupement ad hoc des docs score≥9 par categorisation[] des bulles,
+   recalculé à chaque visite à partir du catalogue complet (1755 docs).
+   Maintenant : les 10 dossiers curés de data/dossiers.json (slug, titre, chapo,
+   doc_count, docs_detail déjà triés par score) — pas besoin de charger le
+   catalogue ni les bulles pour cette page. La rature éditoriale vit à part,
+   dans data/dossiers_rature.json (jamais régénérée automatiquement). */
 window.pageInit = function (basePath) {
-  loadCatalog(basePath).then(async ({ docs, _error }) => {
-    const root = document.getElementById('dossiers-root');
-    if (_error) {
+  const root = document.getElementById('dossiers-root');
+  Promise.all([
+    loadJSON(`${basePath}data/dossiers.json`),
+    loadJSON(`${basePath}data/dossiers_rature.json`).catch(() => null)
+  ]).then(([dossiersData, ratureData]) => {
+    const dossiers = (dossiersData && dossiersData.dossiers) || [];
+    const rature = (ratureData && ratureData.rature) || {};
+    if (dossiers.length === 0) {
       visitorError(root, {
         title: 'Les dossiers n’ont pas pu se charger',
         message: 'La bibliothèque est momentanément indisponible. Vérifiez votre connexion, puis réessayez.',
-        onRetry: () => { resetCatalogCache(); window.pageInit(basePath); },
+        onRetry: () => window.pageInit(basePath),
       });
       return;
     }
-    if (!docs.length) {
-      root.innerHTML = '<p class="biblio-empty-note">Aucune fiche publiée pour le moment — revenez bientôt.</p>';
-      return;
+    renderDossiers(dossiers, rature, basePath);
+    // Scroll vers l'ancre si présente dans l'URL (cible #dossier-<slug>,
+    // même pattern que auteurs.html)
+    if (window.location.hash && window.location.hash.length > 1) {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+        target.classList.add('biblio-target');
+      }
     }
-    // On ne prend que les docs scorés ≥ 9 et marqués comme ayant une bulle
-    const eligible = docs.filter(d => d.bulle && docScore(d) >= 9);
-    if (eligible.length === 0) {
-      root.innerHTML = '<p style="text-align:center;color:var(--text-faint);font-style:italic;padding:60px 0;">Aucune bulle éditoriale disponible — les dossiers émergent quand la veille trouve des textes scorés 9 ou 10.</p>';
-      return;
-    }
-    // Charge toutes les bulles
-    await Promise.all(eligible.map(d => loadBulle(d.id, basePath).then(b => { d.bulle_data = b; })));
-    const dossiers = groupByCategory(eligible);
-    renderDossiers(dossiers, basePath);
   });
 };
 
-/* Construit un Map<catégorie, [docs]> en aplatissant les categorisation[] des bulles. */
-function groupByCategory(docs) {
-  const map = new Map();
-  for (const d of docs) {
-    const cats = (d.bulle_data && d.bulle_data.categorisation) || [];
-    if (cats.length === 0) {
-      // Doc sans catégorie → "Non classé"
-      const k = 'Non classé';
-      if (!map.has(k)) map.set(k, []);
-      map.get(k).push(d);
-      continue;
-    }
-    for (const c of cats) {
-      const k = String(c).trim();
-      if (!k) continue;
-      if (!map.has(k)) map.set(k, []);
-      map.get(k).push(d);
-    }
-  }
-  // Trie : catégories les plus garnies d'abord, "Non classé" à la fin
-  const entries = Array.from(map.entries());
-  entries.sort((x, y) => {
-    if (x[0] === 'Non classé') return 1;
-    if (y[0] === 'Non classé') return -1;
-    return y[1].length - x[1].length;
-  });
-  // Trie chaque dossier par score décroissant
-  for (const [, list] of entries) {
-    list.sort((a, b) => docScore(b) - docScore(a));
-  }
-  return entries;
-}
-
-function renderDossiers(dossiers, basePath) {
+function renderDossiers(dossiers, rature, basePath) {
   const root = document.getElementById('dossiers-root');
-  const buf = ['<div class="dossiers-grid">'];
-  for (const [name, list] of dossiers) {
+  const VISIBLE = 6; // pièces affichées d'emblée, le reste dans <details>
+  const buf = ['<div class="biblio-dossiers-grid-full">'];
+  for (const d of dossiers) {
+    const r = rature[d.slug];
+    const details = d.docs_detail || [];
+    const head = details.slice(0, VISIBLE);
+    const rest = details.slice(VISIBLE);
+    const ratureHTML = r
+      ? `<p class="biblio-fichecard-rature"><span class="biblio-rature-avant">${escape(r.avant)}</span> <span class="biblio-rature-apres">${escape(r.apres)}</span></p>`
+      : '';
+    const docLi = (doc) => {
+      const url = BiblioRouter.ficheUrl(doc.id, basePath);
+      return `<li><a href="${escape(url)}">${escape(doc.title)}</a><span class="score-pill ${scoreClass(doc.score)}">${doc.score}/10</span></li>`;
+    };
     buf.push(`
-      <article class="dossier-card">
-        <h3>${escape(capitalize(name))}</h3>
-        <div class="dossier-count">${list.length} fiche${list.length > 1 ? 's' : ''}</div>
-        <ul>
-          ${list.map(d => {
-            const url = BiblioRouter.ficheUrl(d.id, basePath);
-            const score = docScore(d);
-            return `<li><a href="${escape(url)}">${escape(docTitle(d))}</a><span class="score-pill ${scoreClass(score)}" title="${escape(scoreLabel(score))}">${score}/10</span></li>`;
-          }).join('')}
-        </ul>
+      <article class="biblio-fichecard biblio-fichecard-full" id="dossier-${escape(d.slug)}">
+        <span class="biblio-fichecard-tape"></span>
+        <h3>${escape(d.titre)}</h3>
+        <p class="biblio-fichecard-chapo">${escape(d.chapo || '')}</p>
+        ${ratureHTML}
+        <span class="biblio-stampbox">${escape(String(d.doc_count))} PIÈCES · OUVERT</span>
+        <ul class="biblio-fichecard-doclist">${head.map(docLi).join('')}</ul>
+        ${rest.length ? `
+        <details class="biblio-fichecard-more">
+          <summary>Voir les ${rest.length} pièce${rest.length > 1 ? 's' : ''} restantes</summary>
+          <ul class="biblio-fichecard-doclist">${rest.map(docLi).join('')}</ul>
+        </details>` : ''}
       </article>
     `);
   }
   buf.push('</div>');
   root.innerHTML = buf.join('');
-}
-
-/* Met la première lettre en majuscule (sans toucher au reste). */
-function capitalize(s) {
-  if (!s) return '';
-  return s.charAt(0).toUpperCase() + s.slice(1);
 }
 </script>
 

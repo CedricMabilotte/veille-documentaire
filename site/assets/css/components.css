@@ -646,3 +646,58 @@ mark.biblio-hl {
   transform: rotate(-1.5deg);
   filter: url(#biblio-inkrough);
 }
+
+/* ----- page dossiers.html : grille pleine page (2 colonnes, plus de place
+   que l'encart d'accueil) + liste de pièces dépliable ------------------- */
+.biblio-dossiers-grid-full {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 24px;
+}
+@media (max-width: 760px) { .biblio-dossiers-grid-full { grid-template-columns: 1fr; } }
+
+.biblio-fichecard-full { padding: 22px 24px 20px; }
+.biblio-fichecard-full h3 { font-size: 20px; }
+.biblio-fichecard-full .biblio-fichecard-chapo { font-size: 14px; }
+.biblio-fichecard-full .biblio-fichecard-rature { font-size: 14px; }
+.biblio-fichecard-full .biblio-rature-apres { font-size: 16.5px; }
+
+.biblio-fichecard-doclist {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 10px 0 0;
+  border-top: 1px dotted var(--border);
+  font-size: 13.5px;
+}
+.biblio-fichecard-doclist li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 0;
+}
+.biblio-fichecard-doclist a { color: var(--text); flex: 1; }
+.biblio-fichecard-doclist a:hover { color: var(--accent); }
+
+.biblio-fichecard-more {
+  margin-top: 6px;
+}
+.biblio-fichecard-more > summary {
+  cursor: pointer;
+  font-family: "Special Elite", monospace;
+  font-size: 11px;
+  color: var(--text-faint);
+  list-style: none;
+  padding: 6px 0 0;
+}
+.biblio-fichecard-more > summary::-webkit-details-marker { display: none; }
+.biblio-fichecard-more > summary::before { content: "+ "; color: var(--accent); }
+.biblio-fichecard-more[open] > summary::before { content: "− "; }
+
+/* cible d'ancrage #dossier-<slug> depuis l'encart d'accueil */
+.biblio-fichecard.biblio-target {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 6px var(--accent-soft);
+  transition: outline 0.4s, box-shadow 0.4s;
+}

@@ -347,7 +347,7 @@ function dossierCardHTML(d, r) {
     : '';
   const pickHTML = pick ? `<p class="biblio-fichecard-pick">→ ${escape(pick.title)} (${pick.score}/10)</p>` : '';
   return `
-    <a href="dossiers.html" class="biblio-fichecard fade-in" style="text-decoration:none;color:inherit;display:block;">
+    <a href="dossiers.html#dossier-${escape(d.slug)}" class="biblio-fichecard fade-in" style="text-decoration:none;color:inherit;display:block;">
       <span class="biblio-fichecard-tape"></span>
       <h3>${escape(d.titre)}</h3>
       <p class="biblio-fichecard-chapo">${escape(chapo)}</p>
