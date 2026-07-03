@@ -1,0 +1,16 @@
+{
+  "_comment": "Contenu éditorial écrit à la main, séparé du catalogue généré (dossiers.json). Une paire par dossier : le terme dominant (avant, rayé à l'affichage) et le concept que le dossier défend (après, en écriture manuscrite). À enrichir/réviser dossier par dossier, jamais régénéré automatiquement.",
+  "updated": "2026-07-09",
+  "rature": {
+    "sortir-une-terre-du-marche": { "avant": "propriété privée", "apres": "propriété d'usage" },
+    "zad-defense-de-territoires": { "avant": "terrain à aménager", "apres": "territoire à défendre" },
+    "sans-terre-reforme-agraire": { "avant": "héritage", "apres": "réforme agraire" },
+    "communs-fonciers-histoire": { "avant": "terres vacantes", "apres": "communs vivants" },
+    "habitat-collectif-cooperatif": { "avant": "investissement locatif", "apres": "habitat partagé" },
+    "paysanneries-agroecologie": { "avant": "filière", "apres": "paysannerie politique" },
+    "land-back-autochtones": { "avant": "domaine public", "apres": "souveraineté restituée" },
+    "feminismes-de-la-terre": { "avant": "travail neutre", "apres": "travail genré, disputé" },
+    "accaparements-resistances": { "avant": "investissement foncier", "apres": "dépossession" },
+    "cooperatives-mutualisme": { "avant": "rente", "apres": "entraide" }
+  }
+}

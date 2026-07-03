@@ -15,6 +15,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://biblio.actitude.org/">
 <meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <!-- JSON-LD : Site + Organisation (SEO + AI visibility) -->
 <script type="application/ld+json">
@@ -47,11 +49,21 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Special+Elite&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/components.css">
 <link rel="manifest" href="manifest.json">
 </head>
 <body>
+
+<!-- Filtre d'encre irrégulière pour les tampons "biblio-stampbox" (C6, anarcho-champêtre) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="biblio-inkrough" x="-30%" y="-30%" width="160%" height="160%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1.4 0 0 0 -0.4" result="a"/>
+    <feComposite in="SourceGraphic" in2="a" operator="in"/>
+  </filter>
+</svg>
 
 <header class="site-header" role="banner">
   <div class="container">
@@ -123,15 +135,19 @@
 
   <section class="section" aria-labelledby="dossiers-semaine-title">
     <div class="container">
-      <span class="section-kicker">Sélection de la rédaction</span>
+      <span class="section-kicker">Dossiers ouverts</span>
       <h2 id="dossiers-semaine-title" class="section-title">Dossiers de la semaine</h2>
       <p class="section-lede">
-        Sept textes choisis cette semaine — dont le document de la semaine mis en avant par la rédaction.
-        Un fragment d'archive, une enquête militante, une recherche qui éclaire autrement le rapport à la terre.
+        Six chantiers thématiques du corpus, tirés au sort chaque semaine parmi les dix dossiers
+        vivants. Chaque fiche affiche la formule dominante barrée et le concept que le dossier
+        défend à la place.
       </p>
-      <div class="featured" id="featured-grid" aria-live="polite">
+      <div class="biblio-dossiers-grid" id="featured-grid" aria-live="polite">
         <p class="text-center" style="grid-column:1/-1;color:var(--text-faint);">Chargement…</p>
       </div>
+      <p class="text-center mt-3">
+        <a href="dossiers.html" class="btn">Voir les dix dossiers</a>
+      </p>
     </div>
   </section>
 
@@ -283,77 +299,62 @@ window.pageInit = function (basePath) {
   // home.js : fil d'activité (C7), récits de lutte (C3), derniers ajouts, teaser « une ».
   if (typeof window.initAccueil === 'function') window.initAccueil(basePath);
 
+  renderDossiersOuverts(basePath);
+
   loadCatalog(basePath).then(({ meta, docs, _error }) => {
     if (_error) {
-      ['featured-grid','stats-grid'].forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-faint);font-style:italic;">Le catalogue n\'a pas encore été déployé sur ce site. <br>Lancez la veille (<code>scripts/watch.py</code>) pour générer <code>site/data/catalog.json</code>.</p>';
-      });
+      const el = document.getElementById('stats-grid');
+      if (el) el.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:var(--text-faint);font-style:italic;">Le catalogue n\'a pas encore été déployé sur ce site. <br>Lancez la veille (<code>scripts/watch.py</code>) pour générer <code>site/data/catalog.json</code>.</p>';
       return;
     }
-    renderFeatured(docs, basePath);
     renderStats(meta, docs);
   });
 };
 
-/* (a) Dossiers de la semaine : 6 dossiers + la "une" en premier (7 total) */
-function renderFeatured(docs, basePath) {
+/* (a) Dossiers ouverts : 6 des 10 dossiers réels de data/dossiers.json,
+   rotation hebdomadaire déterministe (change chaque semaine, pas aléatoire
+   à chaque chargement). Rature éditoriale chargée séparément depuis
+   data/dossiers_rature.json (contenu écrit à la main, jamais régénéré). */
+function renderDossiersOuverts(basePath) {
   const wrap = document.getElementById('featured-grid');
   if (!wrap) return;
-  const N = 6;
-  const sortByScore = (a, b) => (b.latest_score || 0) - (a.latest_score || 0);
-  const withBulleHigh = docs.filter(d => d.bulle && (d.latest_score || 0) >= 9).sort(sortByScore);
-  const withBulle = docs.filter(d => d.bulle).sort(sortByScore);
-  let picks = withBulleHigh.slice(0, N);
-  if (picks.length < N) {
-    const have = new Set(picks.map(d => d.id));
-    picks = picks.concat(withBulle.filter(d => !have.has(d.id)).slice(0, N - picks.length));
-  }
-  if (picks.length < N) {
-    const have = new Set(picks.map(d => d.id));
-    picks = picks.concat(docs.filter(d => !have.has(d.id) && (d.latest_score || 0) >= 7).sort(sortByScore).slice(0, N - picks.length));
-  }
-  if (picks.length === 0) {
-    wrap.innerHTML = '<p class="text-center" style="grid-column:1/-1;color:var(--text-faint);font-style:italic;">Aucun dossier cette semaine. Le catalogue se construit.</p>';
-    return;
-  }
-  // Charger la "une" (featured.json) ET les bulles en parallèle
   Promise.all([
-    loadJSON(`${basePath}data/featured.json`).catch(() => null),
-    ...picks.map(d => d.bulle ? loadBulle(d.id, basePath).then(b => { d.bulle_data = b; }) : Promise.resolve())
-  ]).then(([featuredData]) => {
-    const uneId = featuredData && featuredData.featured;
-    const uneDoc = uneId ? docs.find(d => d.id === uneId) : null;
-    let html = '';
-    if (uneDoc) html += featuredCardHTML(uneDoc, basePath, true);
-    html += picks.filter(d => !uneDoc || d.id !== uneDoc.id).map(d => featuredCardHTML(d, basePath, false)).join('');
-    wrap.innerHTML = html;
+    loadJSON(`${basePath}data/dossiers.json`).catch(() => null),
+    loadJSON(`${basePath}data/dossiers_rature.json`).catch(() => null)
+  ]).then(([dossiersData, ratureData]) => {
+    const dossiers = (dossiersData && dossiersData.dossiers) || [];
+    const rature = (ratureData && ratureData.rature) || {};
+    if (dossiers.length === 0) {
+      wrap.innerHTML = '<p class="text-center" style="grid-column:1/-1;color:var(--text-faint);font-style:italic;">Aucun dossier pour le moment. Le catalogue se construit.</p>';
+      return;
+    }
+    const N = Math.min(6, dossiers.length);
+    const weekNum = Math.floor(Date.now() / (7 * 24 * 3600 * 1000));
+    const start = weekNum % dossiers.length;
+    const picks = [];
+    for (let i = 0; i < N; i++) picks.push(dossiers[(start + i) % dossiers.length]);
+    wrap.innerHTML = picks.map(d => dossierCardHTML(d, rature[d.slug])).join('');
+  }).catch(() => {
+    wrap.innerHTML = '<p class="text-center" style="grid-column:1/-1;color:var(--text-faint);font-style:italic;">Les dossiers n\'ont pas pu se charger.</p>';
   });
 }
 
-function featuredCardHTML(doc, basePath, isUne = false) {
-  const url = BiblioRouter.ficheUrl(doc.id, basePath);
-  const cover = coverPath(doc, basePath);
-  const title = docTitle(doc);
-  const teaser = docTeaser(doc);
-  const src = doc.source || '';
-  const date = formatDate(doc._latestRunDate || doc.latest_run);
-  const ribbonLabel = isUne ? 'À la une' : 'Dossier';
-  const ribbonClass = isUne ? 'ribbon ribbon-une' : 'ribbon';
+function dossierCardHTML(d, r) {
+  const pick = (d.docs_detail && d.docs_detail[0]) || null;
+  const chapo = d.chapo && d.chapo.length > 120 ? d.chapo.slice(0, 118) + '…' : (d.chapo || '');
+  const ratureHTML = r
+    ? `<p class="biblio-fichecard-rature"><span class="biblio-rature-avant">${escape(r.avant)}</span> <span class="biblio-rature-apres">${escape(r.apres)}</span></p>`
+    : '';
+  const pickHTML = pick ? `<p class="biblio-fichecard-pick">→ ${escape(pick.title)} (${pick.score}/10)</p>` : '';
   return `
-    <article class="featured-card fade-in${isUne ? ' featured-card-une' : ''}">
-      <span class="${ribbonClass}">${ribbonLabel}</span>
-      <a href="${escape(url)}" class="featured-cover" aria-label="Lire la fiche : ${escape(title)}" data-initial="${escape(title.slice(0,1).toUpperCase())}">
-        <img src="${escape(cover)}" alt="" loading="lazy" onerror="this.style.display='none';this.parentNode.style.display='flex';this.parentNode.style.alignItems='center';this.parentNode.style.justifyContent='center';this.parentNode.style.fontFamily='var(--font-serif)';this.parentNode.style.fontSize='80px';this.parentNode.style.color='var(--text-faint)';this.parentNode.textContent=this.parentNode.dataset.initial||'';">
-      </a>
-      <div class="featured-body">
-        <h3 class="featured-title">
-          <a href="${escape(url)}" class="featured-title-link">${escape(title)}</a>
-        </h3>
-        <p class="featured-teaser">${escape(teaser)}</p>
-        <div class="featured-meta">${escape(src)}${date ? ' · ' + escape(date) : ''}</div>
-      </div>
-    </article>
+    <a href="dossiers.html" class="biblio-fichecard fade-in" style="text-decoration:none;color:inherit;display:block;">
+      <span class="biblio-fichecard-tape"></span>
+      <h3>${escape(d.titre)}</h3>
+      <p class="biblio-fichecard-chapo">${escape(chapo)}</p>
+      ${ratureHTML}
+      ${pickHTML}
+      <span class="biblio-stampbox">${escape(String(d.doc_count))} PIÈCES · OUVERT</span>
+    </a>
   `;
 }
 
