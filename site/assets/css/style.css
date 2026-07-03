@@ -334,6 +334,7 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
 .palette-swatch.sw-biblio { background: linear-gradient(135deg, #a44a2c 50%, #f7f2e7 50%); }
 .palette-swatch.sw-academique { background: linear-gradient(135deg, #1f3a5f 50%, #ffffff 50%); }
 .palette-swatch.sw-militant { background: linear-gradient(135deg, #cc0000 50%, #000 50%); }
+.palette-swatch.sw-champetre { background: linear-gradient(135deg, #a3441f 50%, #ece3c8 50%); }
 
 /* --- Main --- */
 main { flex: 1; }
@@ -2436,6 +2437,113 @@ a.stat:focus-visible .stat-label {
 }
 [data-palette="militant"] .site-nav a.active { border-bottom-width: 3px; }
 [data-palette="militant"] .keywords .kw { border-width: 2px; font-weight: 600; }
+
+/* ===================================================================
+   C6 — Harmonie des palettes avec les composants anarcho-champêtre
+   (.biblio-fichecard, .biblio-stampbox, .biblio-rature-*). Le papier
+   scotché et le tampon à encre irrégulière sont l'identité du preset
+   Bibliothèque (par défaut) et du nouveau preset Champêtre ci-dessous ;
+   Académique et Militant les adaptent à leur propre grammaire plutôt que
+   de les afficher tels quels.
+   =================================================================== */
+
+/* Académique : sobre — pas de scotch ni de pochette pliée, rature nette
+   sans écriture manuscrite, tampon sans texture d'encre irrégulière. */
+[data-palette="academique"] .biblio-fichecard-tape,
+[data-palette="academique"] .biblio-fichecard::after {
+  display: none;
+}
+[data-palette="academique"] .biblio-fichecard { box-shadow: var(--shadow-sm); border: 1px solid var(--border); }
+[data-palette="academique"] .biblio-rature-apres {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--accent);
+}
+[data-palette="academique"] .biblio-stampbox,
+[data-palette="academique"] .biblio-fichecard-pick {
+  filter: none;
+  font-family: inherit;
+  border-width: 1px;
+}
+
+/* Militant : le scotch et la rature manuscrite restent (ils vont bien
+   avec le tract) mais durcis — plus de rotation, plus de filtre d'encre,
+   tampon plein comme les autres éléments "pastille" du preset. */
+[data-palette="militant"] .biblio-fichecard { transform: none !important; border: 2px solid #000; box-shadow: var(--shadow-sm); }
+[data-palette="militant"] .biblio-fichecard-tape { background: #000; opacity: 1; transform: translateX(-50%); }
+[data-palette="militant"] .biblio-fichecard::after { border-color: transparent transparent #000 transparent; filter: none; }
+[data-palette="militant"] .biblio-stampbox {
+  filter: none;
+  border-width: 2px;
+  border-radius: 0;
+  transform: none;
+  background: var(--accent);
+  color: #fff;
+  border-color: #000;
+}
+[data-palette="militant"] .biblio-rature-apres { color: var(--accent); font-weight: 700; }
+
+/* ===================================================================
+   BIBLIO — Thème Champêtre
+   Le prolongement assumé du preset par défaut : kraft plus profond,
+   encre plus noire, accent plus terreux. C'est la pleine expression du
+   papier scotché / tamponné (voir components.css, section C6).
+   =================================================================== */
+
+[data-palette="champetre"] {
+  --bg: #ece3c8;
+  --bg-alt: #e2d5ac;
+  --bg-card: #f7f0dc;
+  --bg-elev: #ded0a3;
+  --text: #201c16;
+  --text-dim: #4a4030;
+  --text-faint: #6b6048;
+  --accent: #a3441f;
+  --accent-soft: rgba(163, 68, 31, 0.12);
+  --accent-strong: #7f3216;
+  --good: #566b34;
+  --good-soft: rgba(86, 107, 52, 0.13);
+  --gold: #93731f;
+  --gold-soft: rgba(147, 115, 31, 0.15);
+  --bad: #a02f1f;
+  --border: #c9b98a;
+  --border-strong: #a3916a;
+  --shadow-sm: 1px 2px 4px rgba(32, 28, 22, 0.10);
+  --shadow-md: 2px 5px 12px rgba(32, 28, 22, 0.22);
+  --shadow-lg: 4px 10px 22px rgba(32, 28, 22, 0.28);
+}
+[data-palette="champetre"][data-theme="dark"] {
+  --bg: #1a1610;
+  --bg-alt: #221c14;
+  --bg-card: #262016;
+  --bg-elev: #302819;
+  --text: #ede4cc;
+  --text-dim: #bdad8c;
+  --text-faint: #8f8163;
+  --accent: #d97a4c;
+  --accent-soft: rgba(217, 122, 76, 0.15);
+  --accent-strong: #e88f63;
+  --good: #8aa276;
+  --good-soft: rgba(138, 162, 118, 0.15);
+  --gold: #cdae5c;
+  --gold-soft: rgba(205, 174, 92, 0.15);
+  --bad: #d9765f;
+  --border: #3a3021;
+  --border-strong: #544632;
+}
+/* Kickers et labels en machine à écrire — l'identité "fichier tamponné" */
+[data-palette="champetre"] .section-kicker,
+[data-palette="champetre"] .hero .by-line,
+[data-palette="champetre"] .breadcrumbs { font-family: "Special Elite", monospace; letter-spacing: 0.08em; }
+[data-palette="champetre"] .featured-card,
+[data-palette="champetre"] .author-card,
+[data-palette="champetre"] .dossier-card,
+[data-palette="champetre"] .stat {
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-strong);
+}
+[data-palette="champetre"] .biblio-fichecard { box-shadow: var(--shadow-md); }
 
 /* ── Page Corpus : liste des sources surveillées ──────────────────── */
 .corpus-sources { margin-top: 40px; }

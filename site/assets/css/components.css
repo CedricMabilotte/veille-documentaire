@@ -701,3 +701,36 @@ mark.biblio-hl {
   box-shadow: 0 0 0 6px var(--accent-soft);
   transition: outline 0.4s, box-shadow 0.4s;
 }
+
+/* ----- fiche détaillée : couverture "montée" (scotch + coin écorné) --- */
+.biblio-cover-mounted { position: relative; }
+.biblio-cover-mounted::before {
+  content: "";
+  position: absolute;
+  top: -9px; left: 50%;
+  width: 60px; height: 18px;
+  transform: translateX(-50%) rotate(-3deg);
+  background: linear-gradient(var(--border-strong), var(--border));
+  opacity: 0.5;
+  z-index: 2;
+}
+.fiche-cover.biblio-cover-fold {
+  position: relative;
+}
+.fiche-cover.biblio-cover-fold::after {
+  content: "";
+  position: absolute;
+  bottom: 0; right: 0;
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 0 0 20px 20px;
+  border-color: transparent transparent var(--bg-elev) transparent;
+  filter: drop-shadow(-1px -1px 1px rgba(0,0,0,.20));
+  z-index: 2;
+}
+
+/* ----- stamp de vérification (citation confirmée dans le PDF) --------- */
+.biblio-stampbox-good {
+  border-color: var(--good);
+  color: var(--good);
+}

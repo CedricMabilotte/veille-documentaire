@@ -1140,11 +1140,19 @@ def _prerender_fiches(catalog: dict) -> int:
 <script type="application/ld+json">{ld_json}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Special+Elite&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/components.css">
 </head>
 <body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="biblio-inkrough" x="-30%" y="-30%" width="160%" height="160%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="7" result="n"/>
+    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  1.4 0 0 0 -0.4" result="a"/>
+    <feComposite in="SourceGraphic" in2="a" operator="in"/>
+  </filter>
+</svg>
 
 <header class="site-header" role="banner">
   <div class="container">
@@ -1191,7 +1199,7 @@ def _prerender_fiches(catalog: dict) -> int:
     <article class="mt-3">
       <header>
         <h1 style="font-family:var(--font-serif);font-size:clamp(20px,4vw,30px);font-weight:600;line-height:1.25;margin:14px 0 10px;">{title_h}</h1>
-        <p style="font-size:14px;color:var(--text-dim);margin:0 0 14px;">{source_h} · Score {score}/10{_meta_extra}</p>
+        <p style="font-size:14px;color:var(--text-dim);margin:0 0 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">{source_h}{_meta_extra} <span class="biblio-stampbox">SCORE {score}/10</span></p>
         {_orig_html}
       </header>
 

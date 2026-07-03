@@ -453,6 +453,7 @@
     { id: 'biblio',     label: 'Bibliothèque', swatch: 'sw-biblio' },
     { id: 'academique', label: 'Académique',   swatch: 'sw-academique' },
     { id: 'militant',   label: 'Militant',     swatch: 'sw-militant' },
+    { id: 'champetre',  label: 'Champêtre',    swatch: 'sw-champetre' },
   ];
   function applyPalette(palette) {
     if (palette === 'biblio') {
