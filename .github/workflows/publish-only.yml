@@ -24,6 +24,16 @@ jobs:
         with:
           lfs: false
 
+      - name: Cache-bust automatique du service worker (CACHE_VERSION = SHA du commit publié)
+        run: |
+          # L36 (lecons-biblio.md) : un CACHE_VERSION oublié = tous les visiteurs
+          # restent bloqués sur l'ancien CSS/JS en cache, indéfiniment. Plutôt que
+          # de compter sur un bump manuel à chaque session touchant site/assets/,
+          # on dérive la version du SHA du commit qu'on publie : chaque publication
+          # invalide donc automatiquement le cache précédent, sans y penser.
+          sed -i "s/const CACHE_VERSION = '[^']*';/const CACHE_VERSION = 'biblio-${GITHUB_SHA::8}';/" site/sw.js
+          grep CACHE_VERSION site/sw.js
+
       - name: Publier site/ vers biblio-actitude-org
         env:
           PUBLISH_TOKEN: ${{ secrets.BIBLIO_PUBLISH_TOKEN }}
