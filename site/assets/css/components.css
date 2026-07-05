@@ -557,6 +557,30 @@ mark.biblio-hl {
 .biblio-fichecard:nth-child(3n+2) { transform: rotate(0.8deg); }
 .biblio-fichecard:nth-child(3n)   { transform: rotate(-0.5deg); }
 
+/* ----- encart d'accueil « Dossiers de la semaine » : effet tableau
+   d'affichage humain — chaque fiche a sa propre inclinaison ET hauteur
+   d'épingle, pas de rythme répétitif à 3 (contrairement au reste du site
+   où .biblio-fichecard sert aussi en grilles denses). Se redresse au
+   survol pour rester lisible. Scopé à .biblio-dossiers-grid uniquement :
+   ne touche ni dossiers.html (grid-full), ni concepts/auteurs. */
+.biblio-dossiers-grid .biblio-fichecard {
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.biblio-dossiers-grid .biblio-fichecard:nth-child(1) { transform: rotate(-2.4deg) translateY(-4px); }
+.biblio-dossiers-grid .biblio-fichecard:nth-child(2) { transform: rotate(1.8deg)  translateY(6px); }
+.biblio-dossiers-grid .biblio-fichecard:nth-child(3) { transform: rotate(-1deg)   translateY(-2px); }
+.biblio-dossiers-grid .biblio-fichecard:nth-child(4) { transform: rotate(2.6deg)  translateY(3px); }
+.biblio-dossiers-grid .biblio-fichecard:nth-child(5) { transform: rotate(-1.9deg) translateY(-6px); }
+.biblio-dossiers-grid .biblio-fichecard:nth-child(6) { transform: rotate(1.3deg)  translateY(2px); }
+.biblio-dossiers-grid .biblio-fichecard:hover {
+  transform: translateY(-3px) rotate(0deg);
+  box-shadow: var(--shadow-lg, var(--shadow-md));
+  z-index: 2;
+}
+/* le scotch aussi, planté un peu de travers selon la fiche */
+.biblio-dossiers-grid .biblio-fichecard:nth-child(2n) .biblio-fichecard-tape { transform: translateX(-50%) rotate(4deg); }
+.biblio-dossiers-grid .biblio-fichecard:nth-child(3n) .biblio-fichecard-tape { transform: translateX(-50%) rotate(-6deg); }
+
 /* un bout de scotch, pas d'épingle */
 .biblio-fichecard-tape {
   position: absolute;
@@ -618,15 +642,23 @@ mark.biblio-hl {
   margin: 6px 0 0;
 }
 
-/* tampon en fin de fiche, encre irrégulière (filtre #biblio-inkrough) */
+/* tampon en fin de fiche — inspiré des tampons encreurs réels : double
+   liseré (border: double), forme pilule, texte majuscule espacé. L'encre
+   irrégulière (filtre #biblio-inkrough, assoupli en même temps que cette
+   règle — cf. lecons-biblio.md L37) reste visible mais ne troue plus les
+   lettres : avant, le filtre découpait le SourceGraphic (donc le texte
+   lui-même) par un masque de bruit quasi binaire, illisible sous 10px. */
 .biblio-stampbox {
   display: inline-block;
   margin-top: 10px;
-  border: 1.6px solid var(--text);
-  padding: 3px 9px;
+  border: 3px double var(--text);
+  border-radius: 999px;
+  padding: 4px 14px;
   font-family: "Special Elite", monospace;
-  font-size: 9px;
-  letter-spacing: .03em;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
   color: var(--text);
   transform: rotate(-1.5deg);
   filter: url(#biblio-inkrough);

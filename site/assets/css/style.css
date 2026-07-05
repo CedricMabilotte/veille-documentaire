@@ -2465,6 +2465,8 @@ a.stat:focus-visible .stat-label {
   filter: none;
   font-family: inherit;
   border-width: 1px;
+  border-style: solid;
+  border-radius: var(--radius);
 }
 
 /* Militant : le scotch et la rature manuscrite restent (ils vont bien
@@ -2476,6 +2478,7 @@ a.stat:focus-visible .stat-label {
 [data-palette="militant"] .biblio-stampbox {
   filter: none;
   border-width: 2px;
+  border-style: solid;
   border-radius: 0;
   transform: none;
   background: var(--accent);
