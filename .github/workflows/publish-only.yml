@@ -1,6 +1,14 @@
 name: Publish → biblio-actitude-org
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
   workflow_dispatch:
+
+concurrency:
+  group: publish-biblio-actitude-org
+  cancel-in-progress: true
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -28,6 +36,6 @@ jobs:
           git add -A
           git diff --staged --stat
           git diff --staged --quiet && echo "Rien à publier." && exit 0
-          git commit -m "publish: covers PNG→JPEG 1200px (session biblio #16)"
+          git commit -m "publish: $(date '+%Y-%m-%d %H:%M') — sync depuis veille-documentaire@${GITHUB_SHA::7}"
           git push origin main -q
           echo "→ Publié : biblio-actitude-org"
