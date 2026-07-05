@@ -24,6 +24,17 @@ TTF sur la machine qui génère ces images (fonts Google, pas des paquets
 système) : DejaVu Sans Mono en fait office côté "tampon/machine à
 écrire", DejaVu Serif côté "EB Garamond".
 
+Poids/perf (round du 2026-07-09 suite à une critique de session) : le grain
+papier (_paper_grain) est généré à 1/4 de résolution puis ré-agrandi, ce qui
+réduit le poids PNG d'environ 55% sans coût CPU mesurable (le bruit plein
+format est un cas quasi-incompressible pour PNG). PNG.save() garde
+volontairement compress_level par défaut (6) : `optimize=True` +
+`compress_level=9` ne gagnaient qu'environ 11% de poids supplémentaire pour
+un coût mesuré de ~15x le temps d'encodage (0.11s → 1.6s par image) — sur un
+batch de ~870 docs x jusqu'à 3 images, ça veut dire près d'une heure de plus
+pour un gain marginal. Ne pas réactiver optimize=True sans revérifier ce
+compromis.
+
 Usage autonome :
   python scripts/social_cards.py
 """
@@ -138,11 +149,19 @@ def _paper_grain(Image, img, seed: int | None = None, opacity: int = 10):
 
     Équivalent du radial-gradient de bruit utilisé en CSS (style.css) —
     ici via Image.effect_noise, sans dépendance externe (numpy…).
+
+    Le bruit est généré à résolution réduite (1/4) puis ré-agrandi : un
+    bruit plein format est un cas pathologique pour la compression PNG
+    (entropie maximale, quasi-incompressible) et gonflait le poids de
+    chaque carte pour un effet à peine perceptible. Le bruit rééchantillonné
+    reste visuellement un grain de papier — plus doux, pas plus voyant —
+    mais compresse nettement mieux (image lissée par le rééchantillonnage).
     """
     try:
         rng = random.Random(seed)
-        noise = Image.effect_noise(img.size, 24)
-        noise = noise.convert("RGB")
+        small_size = (max(1, img.width // 4), max(1, img.height // 4))
+        noise = Image.effect_noise(small_size, 24)
+        noise = noise.resize(img.size, Image.BILINEAR).convert("RGB")
         return Image.blend(img, noise, opacity / 255)
     except Exception:
         return img

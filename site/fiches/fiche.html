@@ -14,9 +14,7 @@
 <meta property="og:url" content="https://biblio.actitude.org/fiches/fiche.html">
 <meta property="og:image" content="https://biblio.actitude.org/assets/img/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Special+Elite&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/fonts.css">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/components.css">
 <link rel="manifest" href="../manifest.json">
@@ -464,7 +462,7 @@ function renderFiche(doc, basePath) {
           <p class="biblio-en-attente">⏳ <strong>Synopsis en cours d'enrichissement</strong> — cette fiche sera complétée prochainement. Le document original reste accessible ci-dessus.</p>
         </section>
       ` : ''}
-      ${citationsSectionHTML(citations)}
+      ${citationsSectionHTML(citations, doc.id, !!(bulle.citations_phares && bulle.citations_phares.length))}
 
       ${deeperSectionHTML(bulle)}
 
@@ -621,7 +619,10 @@ function linkStatusLabel(s) {
   return map[String(s).toLowerCase()] || String(s);
 }
 
-/* B3 : boutons de partage — Web Share + Mastodon / Bluesky / LinkedIn. */
+/* B3 : boutons de partage — Web Share + Mastodon / Bluesky / LinkedIn.
+   + téléchargement de la carte portrait (Instagram n'a pas d'intent de
+   partage web ni d'unfurl OG : upload natif uniquement — voir recherche de
+   formats sociaux, session anarcho-champêtre). */
 function shareButtonsHTML(doc, title) {
   const url = window.location.href;
   const text = (title || 'BIBLIO') + ' — via BIBLIO';
@@ -631,18 +632,26 @@ function shareButtonsHTML(doc, title) {
   const masto = `https://tootpick.org/#text=${t}%20${u}`;
   const bsky = `https://bsky.app/intent/compose?text=${t}%20${u}`;
   const linkedin = `https://www.linkedin.com/sharing/share-offsite/?url=${u}`;
+  const portraitImg = `https://biblio.actitude.org/assets/cards/${doc.id}-portrait.png`;
   return `
     <div class="biblio-share" aria-label="Partager cette fiche">
       <button type="button" class="biblio-share-btn" id="btn-share-native">Partager</button>
       <a class="biblio-share-btn" href="${escape(masto)}" target="_blank" rel="noopener">Mastodon</a>
       <a class="biblio-share-btn" href="${escape(bsky)}" target="_blank" rel="noopener">Bluesky</a>
       <a class="biblio-share-btn" href="${escape(linkedin)}" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="biblio-share-btn" href="${escape(portraitImg)}" download title="Instagram n'accepte pas les liens partagés : téléchargez l'image et publiez-la vous-même (post ou story).">Image (Instagram)</a>
     </div>
   `;
 }
 
-/* Section citations — distingue les citations vérifiées / non retrouvées. */
-function citationsSectionHTML(citations) {
+/* Section citations — distingue les citations vérifiées / non retrouvées.
+   Lien "image" : seules les 3 premières citations, ET seulement quand elles
+   viennent de bulle.citations_phares, ont une citation-card générée
+   (scripts/social_cards.py ne rend une image que pour cette source précise
+   et se limite aux 3 premières — voir generate_all). Le fallback
+   enrichment.citations n'a pas d'image correspondante ; ne pas proposer de
+   lien dans ce cas, ce serait un lien mort. */
+function citationsSectionHTML(citations, docId, hasCitationCards) {
   if (!citations || !citations.length) return '';
   const baseUrl = window.location.href.split('#')[0];
   return `
@@ -652,10 +661,13 @@ function citationsSectionHTML(citations) {
         const cid = 'c' + (i + 1);
         const citUrl = baseUrl + '#' + cid;
         let mention = '';
-        if (c.verified === false) mention = '<span class="biblio-cite-unverified">⚠ Citation non retrouvée dans le PDF.</span>';
+        if (c.verified === false) mention = '<span class="biblio-stampbox biblio-stampbox-warn">⚠ NON RETROUVÉE</span>';
         else if (c.verified === true) mention = '<span class="biblio-stampbox biblio-stampbox-good">VÉRIFIÉE</span>';
         const displayQuote = c.quote_fr || c.quote || '';
         const origQuote = c.quote_fr && c.quote ? c.quote : '';
+        const cardUrl = (hasCitationCards && i < 3)
+          ? `https://biblio.actitude.org/assets/cards/${docId}-cite-${i + 1}.png`
+          : null;
         return `
           <blockquote class="citation-block" id="${cid}">
             ${escape(displayQuote)}
@@ -667,6 +679,7 @@ function citationsSectionHTML(citations) {
                 <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6.5 9.5a3 3 0 0 0 4.24 0l2-2a3 3 0 0 0-4.24-4.24l-1.12 1.12"/><path d="M9.5 6.5a3 3 0 0 0-4.24 0l-2 2a3 3 0 0 0 4.24 4.24l1.12-1.12"/></svg>
                 #${i+1}
               </button>
+              ${cardUrl ? `<a class="biblio-cite-share" href="${escape(cardUrl)}" download title="Télécharger cette citation en image (1080×1080)">🖼 Image</a>` : ''}
             </div>
           </blockquote>
         `;

@@ -922,6 +922,15 @@ def _is_publishable(doc: dict) -> bool:
     Trois conditions : non écarté par décision éditoriale (exclusions.yml),
     score effectif suffisant, ET ouvrage dans un format ouvert (jamais un
     article HTML — bibliothèque, pas revue de presse).
+
+    SOURCE UNIQUE — ne pas réimplémenter ce calcul ailleurs (ex. un simple
+    `score >= seuil`). Au moins deux régressions distinctes ont déjà été
+    causées par une réimplémentation partielle de ce prédicat, dans deux
+    scripts différents (`corpus_stats.py` puis `social_cards.py` — voir
+    L28 et L34 dans lecons-biblio.md). Tout script qui a besoin de savoir
+    si un doc est publiable doit importer et appeler cette fonction
+    (import différé si le script est lui-même importé par watch.py, pour
+    éviter un cycle).
     """
     if doc.get("id") in _EXCLUSIONS:
         return False
@@ -1138,9 +1147,7 @@ def _prerender_fiches(catalog: dict) -> int:
 <meta property="og:site_name" content="BIBLIO — biblio.actitude.org">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{ld_json}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Special+Elite&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/fonts.css">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/components.css">
 </head>

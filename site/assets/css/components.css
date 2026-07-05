@@ -403,22 +403,6 @@ mark.biblio-hl {
 }
 .biblio-versions li:last-child { border-bottom: none; }
 
-/* ----- citations vérifiées / non retrouvées ------------------------ */
-.biblio-cite-unverified {
-  display: block;
-  font-size: 11.5px;
-  color: var(--gold, #b5860f);
-  margin-top: 6px;
-  font-style: normal;
-}
-.biblio-cite-verified {
-  display: block;
-  font-size: 11.5px;
-  color: var(--good, #4a7c4a);
-  margin-top: 6px;
-  font-style: normal;
-}
-
 /* ----- A8 : rendu corpus_stats ------------------------------------- */
 .corpus-total { font-size: 16px; color: var(--text-dim); }
 .corpus-stat-block { margin: 0 0 28px; }
@@ -495,6 +479,7 @@ mark.biblio-hl {
   font-size: 11px;
   padding: 3px 8px;
   cursor: pointer;
+  text-decoration: none;
   transition: color var(--transition), border-color var(--transition);
   margin-left: auto;
 }
@@ -729,10 +714,18 @@ mark.biblio-hl {
   z-index: 2;
 }
 
-/* ----- stamp de vérification (citation confirmée dans le PDF) --------- */
+/* ----- stamp de vérification (citation confirmée / non confirmée dans le
+   PDF) — même famille visuelle pour les deux états, seule la couleur change
+   (avant cette unification : la citation vérifiée avait le tampon papier,
+   la non-vérifiée restait en texte d'alerte simple — deux registres
+   différents pour la même notion) */
 .biblio-stampbox-good {
   border-color: var(--good);
   color: var(--good);
+}
+.biblio-stampbox-warn {
+  border-color: var(--gold);
+  color: var(--gold);
 }
 
 /* ----- sommaire concepts/index.html : cartes-fiches (même famille que
