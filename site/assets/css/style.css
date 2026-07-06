@@ -98,13 +98,32 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
 /* --- Header --- */
 .site-header {
   background: var(--bg-card);
-  border-bottom: 1px solid var(--border);
+  border-bottom: none;
   position: sticky;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(6px);
 }
+/* C7 — bord déchiré à la main, remplace le trait net d'origine */
+.site-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 14px;
+  background: var(--bg-card);
+  clip-path: polygon(
+    0 0, 100% 0,
+    100% 42%, 96% 74%, 92% 38%, 88% 78%, 84% 34%, 80% 74%, 76% 40%,
+    72% 78%, 68% 34%, 64% 74%, 60% 38%, 56% 78%, 52% 34%, 48% 74%,
+    44% 38%, 40% 78%, 36% 34%, 32% 74%, 28% 38%, 24% 78%, 20% 34%,
+    16% 74%, 12% 38%, 8% 78%, 4% 34%, 0 74%
+  );
+  pointer-events: none;
+}
 .site-header .container {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -112,12 +131,30 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
   padding-bottom: 14px;
 }
 .brand {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
   color: var(--text);
   flex-shrink: 0;
+  background: var(--bg-elev);
+  padding: 7px 16px 8px 10px;
+  transform: rotate(-1.6deg);
+  box-shadow: 2px 3px 5px rgba(35, 31, 28, 0.14);
+  clip-path: polygon(2% 8%, 30% 0, 65% 4%, 98% 0, 100% 55%, 97% 100%, 62% 95%, 25% 100%, 0 88%);
+}
+/* ruban de scotch au sommet de l'étiquette du logo */
+.brand::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 46px;
+  height: 16px;
+  transform: translateX(-50%) rotate(-3deg);
+  background: linear-gradient(var(--border-strong), var(--border));
+  opacity: 0.6;
 }
 .brand:hover { text-decoration: none; color: var(--accent); }
 .brand-mark {
@@ -144,46 +181,58 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
 
 .site-nav {
   display: flex;
-  gap: 22px;
+  gap: 10px;
   align-items: center;
   margin-left: auto;
 }
 .site-nav a {
+  position: relative;
   color: var(--text-dim);
   font-size: 15px;
-  padding: 8px 4px;
-  min-height: 44px;
+  padding: 9px 14px 7px;
+  min-height: 40px;
   display: inline-flex;
   align-items: center;
-  border-bottom: 2px solid transparent;
-  transition: color var(--transition), border-color var(--transition);
+  background: var(--bg-elev);
+  box-shadow: 1px 2px 3px rgba(35, 31, 28, 0.10);
+  clip-path: polygon(3% 14%, 22% 0, 55% 5%, 92% 0, 100% 24%, 98% 100%, 58% 94%, 28% 100%, 0 92%);
+  border-bottom: none;
+  transition: color var(--transition), background var(--transition);
 }
-.site-nav a:hover { color: var(--accent); text-decoration: none; border-bottom-color: var(--accent); }
-.site-nav a.active { color: var(--text); border-bottom-color: var(--accent); }
+.site-nav a:nth-child(4n+1) { transform: rotate(-1.2deg); }
+.site-nav a:nth-child(4n+2) { transform: rotate(0.9deg); }
+.site-nav a:nth-child(4n+3) { transform: rotate(-0.6deg); }
+.site-nav a:nth-child(4n+4) { transform: rotate(1.3deg); }
+.site-nav a:hover { color: var(--accent); text-decoration: none; background: var(--accent-soft); }
+.site-nav a.active { color: var(--text); background: var(--accent-soft); font-weight: 600; }
 
 /* ── Dropdown "À propos" ─────────────────────────────────────────── */
 .nav-dropdown {
   position: relative;
 }
 .nav-dropdown-btn {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: none;
+  background: var(--bg-elev);
   border: none;
   cursor: pointer;
   font-family: inherit;
   font-size: 15px;
   color: var(--text-dim);
-  padding: 8px 4px;
-  min-height: 44px;
-  border-bottom: 2px solid transparent;
-  transition: color var(--transition), border-color var(--transition);
+  padding: 9px 14px 7px;
+  min-height: 40px;
+  box-shadow: 1px 2px 3px rgba(35, 31, 28, 0.10);
+  clip-path: polygon(4% 10%, 25% 0, 60% 4%, 94% 0, 100% 30%, 96% 100%, 65% 95%, 30% 100%, 0 88%);
+  transform: rotate(-0.8deg);
+  border-bottom: none;
+  transition: color var(--transition), background var(--transition);
 }
 .nav-dropdown-btn:hover,
 .nav-dropdown[data-open] .nav-dropdown-btn {
   color: var(--accent);
-  border-bottom-color: var(--accent);
+  background: var(--accent-soft);
 }
 .nav-dropdown-caret {
   transition: transform 0.18s;
@@ -233,28 +282,30 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
   position: relative;
   display: flex;
   align-items: center;
+  transform: rotate(-0.6deg);
 }
 .search-box input {
-  background: var(--bg-elev);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 9px 14px 9px 36px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--border-strong);
+  border-radius: 0;
+  padding: 9px 4px 7px 30px;
   font: inherit;
   font-size: 14px;
   color: var(--text);
-  width: 220px;
+  width: 190px;
   min-height: 40px;
   transition: border-color var(--transition), box-shadow var(--transition);
 }
 .search-box input:focus {
   outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-soft);
+  border-bottom-color: var(--accent);
+  box-shadow: none;
 }
 .search-box::before {
   content: "";
   position: absolute;
-  left: 12px;
+  left: 4px;
   top: 50%;
   width: 16px;
   height: 16px;
@@ -264,30 +315,36 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
 }
 .search-box .kbd {
   position: absolute;
-  right: 8px;
+  right: 0;
+  bottom: 8px;
   font-size: 11px;
   padding: 2px 6px;
   border: 1px solid var(--border);
-  border-radius: 3px;
   color: var(--text-faint);
   background: var(--bg-card);
   pointer-events: none;
 }
 
 .theme-toggle, .menu-toggle, .palette-toggle {
-  background: transparent;
-  border: 1px solid var(--border);
+  position: relative;
+  background: var(--bg-elev);
+  border: none;
   color: var(--text-dim);
   width: 40px;
   height: 40px;
-  border-radius: var(--radius);
+  border-radius: 0;
+  box-shadow: 1px 2px 3px rgba(35, 31, 28, 0.10);
+  clip-path: polygon(10% 6%, 70% 0, 100% 20%, 94% 78%, 100% 100%, 30% 96%, 0 100%, 4% 30%);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: background var(--transition), color var(--transition);
 }
-.theme-toggle:hover, .menu-toggle:hover, .palette-toggle:hover { background: var(--bg-elev); color: var(--accent); }
+.theme-toggle { transform: rotate(-2deg); }
+.palette-toggle { transform: rotate(1.5deg); }
+.menu-toggle { transform: rotate(-1deg); }
+.theme-toggle:hover, .menu-toggle:hover, .palette-toggle:hover { background: var(--accent-soft); color: var(--accent); }
 .theme-toggle svg, .menu-toggle svg, .palette-toggle svg { width: 18px; height: 18px; }
 .menu-toggle { display: none; }
 
@@ -1950,7 +2007,15 @@ a.stat:focus-visible .stat-label {
   flex-wrap: wrap;
   margin-top: 28px;
 }
-.hero-actions .btn { min-width: 200px; font-size: 15px; }
+.hero-actions .btn {
+  min-width: 200px;
+  font-size: 15px;
+  position: relative;
+  box-shadow: 2px 3px 6px rgba(35, 31, 28, 0.16);
+  clip-path: polygon(3% 8%, 40% 0, 80% 4%, 100% 0, 100% 55%, 96% 92%, 60% 100%, 20% 96%, 0 62%, 2% 30%);
+}
+.hero-actions .btn:nth-child(1) { transform: rotate(-1.6deg); }
+.hero-actions .btn:nth-child(2) { transform: rotate(1.3deg); }
 .hero-search {
   margin: 22px auto 0;
   max-width: 460px;
@@ -2488,6 +2553,89 @@ a.stat:focus-visible .stat-label {
 [data-palette="militant"] .biblio-rature-apres { color: var(--accent); font-weight: 700; }
 
 /* ===================================================================
+   C7 — Harmonie des palettes pour le chrome papier déchiré/collage
+   (.site-header, .brand, .site-nav a, .search-box, .hero-actions .btn).
+   Même logique que C6 : Bibliothèque (par défaut) et Champêtre gardent
+   la pleine expression du découpage à la main ; Académique revient à un
+   bandeau net (aucune découpe, aucune rotation) ; Militant garde des
+   bords marqués mais durs, sans découpe organique ni rotation.
+   =================================================================== */
+
+/* Académique : sobre — bandeau net, pas de découpe ni de rotation. */
+[data-palette="academique"] .site-header { border-bottom: 1px solid var(--border); }
+[data-palette="academique"] .site-header::after,
+[data-palette="academique"] .brand::before { display: none; }
+[data-palette="academique"] .brand,
+[data-palette="academique"] .site-nav a,
+[data-palette="academique"] .nav-dropdown-btn,
+[data-palette="academique"] .theme-toggle,
+[data-palette="academique"] .palette-toggle,
+[data-palette="academique"] .menu-toggle,
+[data-palette="academique"] .hero-actions .btn {
+  clip-path: none;
+  transform: none;
+  box-shadow: none;
+  border-radius: var(--radius);
+}
+[data-palette="academique"] .brand { background: transparent; padding: 0; }
+[data-palette="academique"] .site-nav a,
+[data-palette="academique"] .nav-dropdown-btn {
+  background: transparent;
+  border-bottom: 2px solid transparent;
+}
+[data-palette="academique"] .site-nav a:hover,
+[data-palette="academique"] .site-nav a.active,
+[data-palette="academique"] .nav-dropdown-btn:hover,
+[data-palette="academique"] .nav-dropdown[data-open] .nav-dropdown-btn {
+  background: transparent;
+  border-bottom-color: var(--accent);
+}
+[data-palette="academique"] .theme-toggle,
+[data-palette="academique"] .palette-toggle,
+[data-palette="academique"] .menu-toggle { border: 1px solid var(--border); }
+[data-palette="academique"] .search-box { transform: none; }
+[data-palette="academique"] .search-box input {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding-left: 36px;
+}
+
+/* Militant : bords marqués mais nets — pas de découpe organique, pas de
+   rotation, la texture devient un trait dur plutôt qu'un objet froissé. */
+[data-palette="militant"] .site-header { border-bottom: 3px solid var(--border-strong); }
+[data-palette="militant"] .site-header::after,
+[data-palette="militant"] .brand::before { display: none; }
+[data-palette="militant"] .brand,
+[data-palette="militant"] .theme-toggle,
+[data-palette="militant"] .palette-toggle,
+[data-palette="militant"] .menu-toggle,
+[data-palette="militant"] .hero-actions .btn {
+  clip-path: none;
+  transform: none !important;
+  box-shadow: none;
+  border-radius: 0;
+  border: 2px solid var(--border-strong);
+}
+[data-palette="militant"] .brand { background: transparent; }
+[data-palette="militant"] .site-nav a,
+[data-palette="militant"] .nav-dropdown-btn {
+  clip-path: none;
+  transform: none !important;
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 3px solid transparent;
+}
+[data-palette="militant"] .site-nav a:hover,
+[data-palette="militant"] .site-nav a.active,
+[data-palette="militant"] .nav-dropdown-btn:hover,
+[data-palette="militant"] .nav-dropdown[data-open] .nav-dropdown-btn {
+  background: transparent;
+  border-bottom-color: var(--accent);
+}
+[data-palette="militant"] .search-box { transform: none; }
+[data-palette="militant"] .search-box input { border-bottom: 2px solid var(--border-strong); }
+
+/* ===================================================================
    BIBLIO — Thème Champêtre
    Le prolongement assumé du preset par défaut : kraft plus profond,
    encre plus noire, accent plus terreux. C'est la pleine expression du
@@ -2547,6 +2695,11 @@ a.stat:focus-visible .stat-label {
   border-color: var(--border-strong);
 }
 [data-palette="champetre"] .biblio-fichecard { box-shadow: var(--shadow-md); }
+/* C7 — Champêtre amplifie simplement les ombres du chrome collage, pas de neutralisation */
+[data-palette="champetre"] .brand,
+[data-palette="champetre"] .site-nav a,
+[data-palette="champetre"] .nav-dropdown-btn,
+[data-palette="champetre"] .hero-actions .btn { box-shadow: var(--shadow-md); }
 
 /* ── Page Corpus : liste des sources surveillées ──────────────────── */
 .corpus-sources { margin-top: 40px; }
