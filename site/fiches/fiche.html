@@ -398,11 +398,13 @@ function renderFiche(doc, basePath) {
     ? `<p class="fiche-link-warning" role="note" style="font-size:14px;color:var(--text-faint);margin-top:.5rem;">⚠ Le lien d’origine n’est plus disponible. ${doc.archive_url ? "Une copie d’archive est proposée ci-dessus." : "Aucune copie d’archive n’a pu être conservée."}</p>`
     : '';
 
+  const ficheCoverInitial = escape(title.slice(0,1).toUpperCase());
+  const ficheCoverHTML = cover
+    ? `<img src="${escape(cover)}" alt="Couverture de ${escape(title)}" onerror="this.parentNode.classList.add('placeholder');this.parentNode.style.display='flex';this.parentNode.style.alignItems='center';this.parentNode.style.justifyContent='center';this.parentNode.style.fontFamily='var(--font-serif)';this.parentNode.style.fontSize='80px';this.parentNode.style.color='var(--text-faint)';this.parentNode.textContent=this.parentNode.dataset.initial||'';">`
+    : '';
   root.innerHTML = `
     <aside class="fiche-cover-wrap biblio-cover-mounted">
-      <div class="fiche-cover biblio-cover-fold" data-initial="${escape(title.slice(0,1).toUpperCase())}">
-        <img src="${escape(cover)}" alt="Couverture de ${escape(title)}" onerror="this.parentNode.classList.add('placeholder');this.parentNode.style.display='flex';this.parentNode.style.alignItems='center';this.parentNode.style.justifyContent='center';this.parentNode.style.fontFamily='var(--font-serif)';this.parentNode.style.fontSize='80px';this.parentNode.style.color='var(--text-faint)';this.parentNode.textContent=this.parentNode.dataset.initial||'';">
-      </div>
+      <div class="fiche-cover biblio-cover-fold${cover ? '' : ' placeholder'}" data-initial="${ficheCoverInitial}">${cover ? ficheCoverHTML : ficheCoverInitial}</div>
       <div class="fiche-actions">
         ${docLinksHTML}
       </div>

@@ -1397,6 +1397,27 @@ def publish_site(run_date: str) -> None:
         shutil.copy2(c, site_covers / c.name)
         cover_count += 1
 
+    # 3bis-cover-flag — has_cover par doc dans le catalog publié, calculé
+    # d'après l'existence RÉELLE du fichier dans site/assets/covers/ (et non
+    # d'après un champ `cover` du catalogue source, qui peut être obsolète —
+    # cf. lecons-biblio.md : ~16% du corpus publiable sans couverture, PDF
+    # source manquant ou jamais traité). Permet au JS client de sauter la
+    # tentative de requête image plutôt que de laisser un 404 arriver puis
+    # être rattrapé par onerror.
+    if catalog_src.exists():
+        _cat2 = json.loads(site_catalog.read_text(encoding="utf-8"))
+        n_with_cover = 0
+        for _id, _d in _cat2.get("docs", {}).items():
+            has_cover = (site_covers / f"{_id}.jpg").exists()
+            _d["has_cover"] = has_cover
+            if has_cover:
+                n_with_cover += 1
+        site_catalog.write_text(
+            json.dumps(_cat2, ensure_ascii=False, indent=1),
+            encoding="utf-8")
+        print(f"  🖼  has_cover : {n_with_cover}/{len(_cat2.get('docs', {}))} "
+              f"docs publiés ont une couverture")
+
     # 3bis. A2 — Cartes sociales Open Graph + citation-cards + og-default.png
     # (généré AVANT le pré-rendu pour que og:image pointe vers la carte)
     if social_cards is not None:

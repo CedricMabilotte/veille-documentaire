@@ -48,11 +48,12 @@
     const s = score(doc);
     const author = (window.docAuthor && window.docAuthor(doc)) || doc.source || '';
     const initial = window.escape(title.slice(0, 1).toUpperCase());
+    const coverHTML = cover
+      ? `<img src="${window.escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.textContent=this.parentNode.dataset.initial||'';">`
+      : '';
     return `
       <a href="${window.escape(url)}" class="book-card fade-in" aria-label="Lire la fiche : ${window.escape(title)}">
-        <div class="book-cover" data-initial="${initial}">
-          <img src="${window.escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.textContent=this.parentNode.dataset.initial||'';">
-        </div>
+        <div class="book-cover${cover ? '' : ' placeholder'}" data-initial="${initial}">${cover ? coverHTML : initial}</div>
         <div class="book-info">
           <h4 class="book-title">${window.escape(title)}</h4>
           <div class="book-meta">${window.escape(author)}</div>

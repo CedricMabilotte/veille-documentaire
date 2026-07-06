@@ -357,11 +357,13 @@ function conceptCardHTML(doc, basePath, big = false) {
   const title = docTitle(doc);
   const teaser = docTeaser(doc) || docSummary(doc).slice(0, 160);
   const score = docScore(doc);
+  const initial = escape(title.slice(0,1).toUpperCase());
+  const coverHTML = cover
+    ? `<img src="${escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.textContent=this.parentNode.dataset.initial||'';">`
+    : '';
   return `
     <a href="${escape(url)}" class="book-card${big ? ' featured-mini' : ''} fade-in" aria-label="Lire la fiche : ${escape(title)}">
-      <div class="book-cover" data-initial="${escape(title.slice(0,1).toUpperCase())}">
-        <img src="${escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.textContent=this.parentNode.dataset.initial||'';">
-      </div>
+      <div class="book-cover${cover ? '' : ' placeholder'}" data-initial="${initial}">${cover ? coverHTML : initial}</div>
       <div class="book-info">
         <h4 class="book-title">${escape(title)}</h4>
         ${teaser ? `<div class="book-meta" style="font-style:italic;">${escape(teaser.slice(0, 110))}${teaser.length > 110 ? '…' : ''}</div>` : ''}

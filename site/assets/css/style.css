@@ -877,6 +877,12 @@ a.stat:focus-visible .stat-label {
   box-shadow: var(--shadow-md);
 }
 .fiche-cover img { width: 100%; height: 100%; object-fit: cover; }
+.fiche-cover.placeholder {
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 80px;
+  color: var(--text-faint);
+}
 .fiche-actions { margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
 
 .fiche-body { min-width: 0; }

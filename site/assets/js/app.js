@@ -42,9 +42,15 @@
   }
   window.formatDate = formatDate;
 
-  // Chemin de la couverture (JPEG dans assets/covers/<id>.jpg)
+  // Chemin de la couverture (JPEG dans assets/covers/<id>.jpg), ou null si
+  // aucune couverture n'a pu être extraite pour ce doc (has_cover === false,
+  // calculé côté publication d'après l'existence réelle du fichier — cf.
+  // lecons-biblio.md, ~16% du corpus concerné : PDF manquant/jamais traité).
+  // Sans ce flag (catalog ancien encore en cache), on tente quand même
+  // l'URL par prudence : le onerror des appelants gère l'échec.
   function coverPath(doc, basePath = '') {
     if (!doc || !doc.id) return null;
+    if (doc.has_cover === false) return null;
     return `${basePath}assets/covers/${doc.id}.jpg`;
   }
   window.coverPath = coverPath;

@@ -898,9 +898,14 @@ function shelfBookHTML(doc, basePath) {
   const title = docTitle(doc);
   // Largeur fictive variée selon la longueur du titre (petits livres / gros volumes)
   const w = Math.max(28, Math.min(90, 30 + (title.length % 13) * 4));
+  // Pas de couverture connue (has_cover === false) : placeholder direct,
+  // sans tenter la requête image (évite le 404 réseau — cf. lecons-biblio.md).
+  const imgHTML = cover
+    ? `<img src="${escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.innerHTML='<span>'+this.parentNode.getAttribute('title').slice(0,40)+'</span>';">`
+    : `<span>${escape(title.slice(0, 40))}</span>`;
   return `
-    <a href="${escape(url)}" class="shelf-book" style="width:${w}px;" aria-label="Lire la fiche : ${escape(title)}" title="${escape(title)}">
-      <img src="${escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.innerHTML='<span>'+this.parentNode.getAttribute('title').slice(0,40)+'</span>';">
+    <a href="${escape(url)}" class="shelf-book${cover ? '' : ' placeholder'}" style="width:${w}px;" aria-label="Lire la fiche : ${escape(title)}" title="${escape(title)}">
+      ${imgHTML}
       <div class="shelf-overlay">${escape(title.slice(0, 60))}${title.length > 60 ? '…' : ''}</div>
     </a>
   `;
@@ -917,11 +922,13 @@ function bookCardHTML(doc, basePath) {
   // B7 : surlignage des occurrences de la recherche dans le titre
   const terms = STATE.filters.q.trim() ? BiblioSearch.queryTerms(STATE.filters.q) : [];
   const titleHTML = terms.length ? highlightTerms(title, terms) : escape(title);
+  const initial = escape(title.slice(0,1).toUpperCase());
+  const coverHTML = cover
+    ? `<img src="${escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.textContent=this.parentNode.dataset.initial||'';">`
+    : '';
   return `
     <a href="${escape(url)}" class="book-card${featuredClass} fade-in" aria-label="Lire la fiche : ${escape(title)}">
-      <div class="book-cover" data-initial="${escape(title.slice(0,1).toUpperCase())}">
-        <img src="${escape(cover)}" alt="" loading="lazy" onerror="this.parentNode.classList.add('placeholder');this.parentNode.textContent=this.parentNode.dataset.initial||'';">
-      </div>
+      <div class="book-cover${cover ? '' : ' placeholder'}" data-initial="${initial}">${cover ? coverHTML : initial}</div>
       <div class="book-info">
         <h4 class="book-title">${titleHTML}</h4>
         <div class="book-meta">${dt ? `<span class="biblio-type-badge">${escape(docTypeLabel(dt))}</span>` : ''}${escape(author)}</div>
