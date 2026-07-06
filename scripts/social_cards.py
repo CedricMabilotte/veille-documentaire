@@ -14,9 +14,20 @@ Génère, par fiche publiée, des images Open Graph avec Pillow :
 
 Génère aussi `site/assets/og-default.png` (image OG par défaut).
 
-Sortie : site/assets/cards/<id>.png            (1200x630, alias og/<id>.png)
-         site/assets/cards/<id>-portrait.png    (1080x1350)
-         site/assets/cards/<id>-cite-N.png      (1080x1080)
+Sortie : site/assets/cards/<id>.jpg            (1200x630, og:image)
+         site/assets/cards/<id>-portrait.jpg    (1080x1350)
+         site/assets/cards/<id>-cite-N.jpg      (1080x1080)
+
+JPEG (pas PNG) depuis le 2026-07-06 : le grain papier plein format est
+quasi-incompressible en PNG (cf. note perf ci-dessous) mais compresse très
+bien en JPEG (bruit haute fréquence = cas d'usage du DCT). Sur ~870 docs
+x jusqu'à 5 images, le total était passé à 985 Mo (site/assets/cards) +
+299 Mo de duplication (site/assets/og, alias byte-à-byte de <id>.png,
+supprimé le même jour) — assez pour dépasser la limite de 1 Go d'un
+artefact de déploiement GitHub Pages et faire échouer silencieusement des
+publications (voir lecons-biblio.md). JPEG qualité 85 : aucune image ici
+n'a de canal alpha (toujours `Image.new("RGB", ...)`), donc pas de perte
+de transparence à gérer.
 
 Pur Python + Pillow. Dégradation propre si Pillow absent. Les polices
 Special Elite / Caveat utilisées côté web n'existent pas forcément comme
@@ -270,7 +281,7 @@ def render_social_card(doc: dict, out_path: Path) -> bool:
                   fill=COL_ACCENT)
 
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        img.save(out_path, "PNG")
+        img.save(out_path, "JPEG", quality=85)
         return True
     except Exception as e:
         print(f"  ⚠  carte sociale ratée : {e}")
@@ -349,7 +360,7 @@ def render_portrait_card(doc: dict, out_path: Path,
                   font=f_brand, fill=COL_ACCENT)
 
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        img.save(out_path, "PNG")
+        img.save(out_path, "JPEG", quality=85)
         return True
     except Exception as e:
         print(f"  ⚠  carte portrait ratée : {e}")
@@ -400,7 +411,7 @@ def render_citation_card(quote: str, attribution: str, out_path: Path) -> bool:
                   fill=COL_ACCENT)
 
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        img.save(out_path, "PNG")
+        img.save(out_path, "JPEG", quality=85)
         return True
     except Exception as e:
         print(f"  ⚠  citation-card ratée : {e}")
@@ -562,19 +573,16 @@ def generate_all(catalog_path: Path = CATALOG_PATH,
         payload = _doc_payload(doc_id, doc)
 
         # Carte sociale principale (1200x630, og:image)
-        card_path = CARDS_DIR / f"{doc_id}.png"
+        card_path = CARDS_DIR / f"{doc_id}.jpg"
         if render_social_card(payload, card_path):
             stats["cards"] += 1
-            # Alias og/<id>.png
-            try:
-                from PIL import Image as _I
-                _I.open(card_path).save(OG_DIR / f"{doc_id}.png", "PNG")
-            except Exception:
-                pass
+            # Plus d'alias og/<id> depuis le 2026-07-06 (cf. docstring) :
+            # og/ dupliquait byte-à-byte cards/ pour 299 Mo — watch.py et
+            # fiche.html référencent désormais directement cards/.
 
         # Carte portrait (1080x1350, publication native)
         cover_path = COVERS_DIR / f"{doc_id}.jpg"
-        portrait_path = CARDS_DIR / f"{doc_id}-portrait.png"
+        portrait_path = CARDS_DIR / f"{doc_id}-portrait.jpg"
         if render_portrait_card(payload, portrait_path, cover_path):
             stats["portrait_cards"] += 1
 
@@ -590,7 +598,7 @@ def generate_all(catalog_path: Path = CATALOG_PATH,
                     attr = f"{attribution}"
                     if page:
                         attr += f" — p.{page}"
-                    cc_path = CARDS_DIR / f"{doc_id}-cite-{i}.png"
+                    cc_path = CARDS_DIR / f"{doc_id}-cite-{i}.jpg"
                     if render_citation_card(quote, attr, cc_path):
                         stats["citation_cards"] += 1
                         n_cit = i
@@ -598,8 +606,8 @@ def generate_all(catalog_path: Path = CATALOG_PATH,
                 print(f"  ⚠  citation-cards {doc_id} : {e}")
         # Nettoyage des citation-cards devenues excédentaires (moins de
         # citations_phares qu'au run précédent) pour ce doc
-        for stale in CARDS_DIR.glob(f"{doc_id}-cite-*.png"):
-            m = re.search(r"-cite-(\d+)\.png$", stale.name)
+        for stale in CARDS_DIR.glob(f"{doc_id}-cite-*.jpg"):
+            m = re.search(r"-cite-(\d+)\.jpg$", stale.name)
             if m and int(m.group(1)) > n_cit:
                 stale.unlink(missing_ok=True)
 
@@ -609,10 +617,10 @@ def generate_all(catalog_path: Path = CATALOG_PATH,
                         if is_publishable(doc)}
     n_removed = 0
     id_re = re.compile(r"^[0-9a-f]{8}")
-    for directory in (CARDS_DIR, OG_DIR):
+    for directory in (CARDS_DIR,):
         if not directory.is_dir():
             continue
-        for f in directory.glob("*.png"):
+        for f in directory.glob("*.jpg"):
             m = id_re.match(f.stem)
             if m and m.group(0) not in publishable_ids:
                 f.unlink(missing_ok=True)

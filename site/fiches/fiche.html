@@ -228,8 +228,8 @@ function updateMetaTags(doc, basePath) {
   setMeta('og:description', teaser);
   setMeta('og:type', 'article');
   setMeta('og:url', canonicalUrl);
-  // og:image : carte sociale (assets/og/), couverture (assets/covers/), sinon défaut
-  const ogImg = `https://biblio.actitude.org/assets/og/${doc.id}.png`;
+  // og:image : carte sociale (assets/cards/), couverture (assets/covers/), sinon défaut
+  const ogImg = `https://biblio.actitude.org/assets/cards/${doc.id}.jpg`;
   setMeta('og:image', ogImg);
   // Hints de dimension (accélèrent le cache Facebook, évitent un rendu dégradé) —
   // la carte sociale générée par scripts/social_cards.py est toujours en 1200x630.
@@ -632,7 +632,7 @@ function shareButtonsHTML(doc, title) {
   const masto = `https://tootpick.org/#text=${t}%20${u}`;
   const bsky = `https://bsky.app/intent/compose?text=${t}%20${u}`;
   const linkedin = `https://www.linkedin.com/sharing/share-offsite/?url=${u}`;
-  const portraitImg = `https://biblio.actitude.org/assets/cards/${doc.id}-portrait.png`;
+  const portraitImg = `https://biblio.actitude.org/assets/cards/${doc.id}-portrait.jpg`;
   return `
     <div class="biblio-share" aria-label="Partager cette fiche">
       <button type="button" class="biblio-share-btn" id="btn-share-native">Partager</button>
@@ -677,7 +677,7 @@ function citationsSectionHTML(citations, docId, hasCitationCards) {
         const displayQuote = c.quote_fr || c.quote || '';
         const origQuote = c.quote_fr && c.quote ? c.quote : '';
         const cardUrl = (hasCitationCards && origIndex < 3)
-          ? `https://biblio.actitude.org/assets/cards/${docId}-cite-${origIndex + 1}.png`
+          ? `https://biblio.actitude.org/assets/cards/${docId}-cite-${origIndex + 1}.jpg`
           : null;
         return `
           <blockquote class="citation-block" id="${cid}">

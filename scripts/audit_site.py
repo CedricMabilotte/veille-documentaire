@@ -57,7 +57,7 @@ def check_orphans(docs: dict, publishable: set) -> list[str]:
         ("fiches", "*.html"),
         ("data/bulles", "*.json"),
         ("assets/covers", "*.png"),
-        ("assets/cards", "*.png"),
+        ("assets/cards", "*.jpg"),
     ]
     for sub, pattern in targets:
         directory = SITE / sub

@@ -1004,15 +1004,14 @@ def _prerender_fiches(catalog: dict) -> int:
         # ── JSON-LD ScholarlyArticle (mêmes champs que côté JS) ──────────────
         canonical_url = f"{SITE_BASE_URL}/fiches/{doc_id}.html"
         # A2 — og:image pointe vers la carte sociale générée (1200x630).
-        # Priorité : assets/og/ (alias stable), puis assets/cards/, puis
-        # couverture PDF brute, puis image OG par défaut.
-        og_file   = SITE_PATH / "assets" / "og"    / f"{doc_id}.png"
-        card_file = SITE_PATH / "assets" / "cards" / f"{doc_id}.png"
+        # Priorité : assets/cards/, puis couverture PDF brute, puis image
+        # OG par défaut. (assets/og/ supprimé le 2026-07-06 : dupliquait
+        # byte-à-byte assets/cards/ pour 299 Mo — cf. lecons-biblio.md,
+        # l'artefact de déploiement GitHub Pages avait dépassé 1 Go.)
+        card_file = SITE_PATH / "assets" / "cards" / f"{doc_id}.jpg"
         cover_file = SITE_PATH / "assets" / "covers" / f"{doc_id}.jpg"
-        if og_file.exists():
-            og_image = f"{SITE_BASE_URL}/assets/og/{doc_id}.png"
-        elif card_file.exists():
-            og_image = f"{SITE_BASE_URL}/assets/cards/{doc_id}.png"
+        if card_file.exists():
+            og_image = f"{SITE_BASE_URL}/assets/cards/{doc_id}.jpg"
         elif cover_file.exists():
             og_image = f"{SITE_BASE_URL}/assets/covers/{doc_id}.jpg"
         else:
@@ -1307,12 +1306,12 @@ def _prune_site_orphans(catalog: dict) -> dict:
         # orphelins PNG s'accumuler silencieusement (trouvé session #20,
         # symétrique au même bug côté copie dans publish_site()).
         (SITE_PATH / "assets" / "covers", ["*.jpg", "*.png"]),
-        # cartes sociales (social_cards.py) : og/<id>.png (carte og:image
-        # principale) + cards/<id>.png et cards/<id>-portrait.png. Avant
-        # session #20, seul cards/*.png était purgé — og/*.png ne l'était
-        # jamais (gap distinct trouvé en même temps que le bug covers).
-        (SITE_PATH / "assets" / "og",     ["*.png"]),
-        (SITE_PATH / "assets" / "cards",  ["*.png"]),
+        # cartes sociales (social_cards.py) : cards/<id>.jpg (og:image),
+        # cards/<id>-portrait.jpg, cards/<id>-cite-N.jpg. JPEG depuis le
+        # 2026-07-06 (l'ancien PNG + l'alias assets/og/ dupliqué avaient fait
+        # dépasser 1 Go l'artefact de déploiement GitHub Pages — assets/og/
+        # supprimé, cf. lecons-biblio.md).
+        (SITE_PATH / "assets" / "cards",  ["*.jpg"]),
     ]
     removed: dict = {}
     for directory, patterns in targets:
