@@ -3,21 +3,34 @@
 check_deploy.py — Détecte une désynchronisation entre site/ local et le site live.
 
 Compare quelques fichiers sentinelles (app.js, catalog.json meta, style.css)
-entre la version locale et biblio.actitude.org.
+entre la version locale et biblio.actitude.org, ET vérifie que le dernier
+déploiement GitHub Pages sur le dépôt public a réellement réussi.
 
-Sortie 0  → site live à jour.
-Sortie 1  → écart détecté → lancer publish_direct.sh.
+Garde-fou ajouté le 2026-07-06 (session #22) : le workflow publish-only.yml
+ne vérifie que le succès de son propre `git push` vers biblio-actitude-org —
+pas le déploiement Pages déclenché en aval par GitHub sur CE dépôt, qui peut
+échouer silencieusement (ex. artefact > 1 Go) sans qu'aucune alerte ne
+remonte côté dépôt source. Voir lecons-biblio.md L45 et le manuel transverse
+§6.11.
+
+Sortie 0  → site live à jour ET dernier déploiement Pages réussi.
+Sortie 1  → écart de contenu détecté → lancer publish_direct.sh.
+Sortie 2  → dernier déploiement Pages en échec → voir le diagnostic affiché.
 
 Usage : python3 scripts/check_deploy.py
 """
 
 import hashlib
+import json
+import subprocess
 import sys
 import urllib.request
 from pathlib import Path
 
 BASE_URL = "https://biblio.actitude.org"
 SITE_PATH = Path(__file__).parent.parent / "site"
+PAGES_REPO = "CedricMabilotte/biblio-actitude-org"
+MAX_SITE_MB = 700  # limite GitHub Pages = 1024 Mo ; marge de sécurité ~30 %
 
 # Fichiers sentinelles : (chemin local dans site/, URL relative sur le live)
 SENTINELS = [
@@ -42,6 +55,52 @@ def fetch(url: str, timeout: int = 10) -> bytes | None:
         print(f"  ⚠  Impossible de joindre {url} : {e}")
         return None
 
+def check_site_size() -> bool:
+    """Alerte si site/ approche la limite de 1 Go de GitHub Pages."""
+    total = sum(f.stat().st_size for f in SITE_PATH.rglob("*") if f.is_file())
+    mb = total / (1024 * 1024)
+    if mb > MAX_SITE_MB:
+        print(f"  ✗  site/ pèse {mb:.0f} Mo (seuil d'alerte {MAX_SITE_MB} Mo, "
+              f"limite dure GitHub Pages = 1024 Mo) — voir manuel §6.11")
+        return False
+    print(f"  ✓  Taille de site/ : {mb:.0f} Mo (< {MAX_SITE_MB} Mo)")
+    return True
+
+
+def check_pages_deployment() -> bool:
+    """Vérifie que le dernier déploiement GitHub Pages du dépôt public a
+    réussi — gh run list sur le dépôt source ne le détecte PAS (cf. docstring)."""
+    try:
+        out = subprocess.run(
+            ["gh", "api", f"repos/{PAGES_REPO}/deployments?per_page=1"],
+            capture_output=True, text=True, timeout=20, check=True,
+        )
+        deployments = json.loads(out.stdout)
+        if not deployments:
+            print("  ?  Aucun déploiement trouvé — ignoré")
+            return True
+        dep_id = deployments[0]["id"]
+        sha = deployments[0]["sha"][:8]
+        out2 = subprocess.run(
+            ["gh", "api", f"repos/{PAGES_REPO}/deployments/{dep_id}/statuses"],
+            capture_output=True, text=True, timeout=20, check=True,
+        )
+        statuses = json.loads(out2.stdout)
+        if not statuses:
+            print(f"  ?  Déploiement {sha} sans statut — ignoré")
+            return True
+        state = statuses[0]["state"]
+        if state == "success":
+            print(f"  ✓  Dernier déploiement Pages ({sha}) : success")
+            return True
+        print(f"  ✗  Dernier déploiement Pages ({sha}) : {state} — "
+              f"log : {statuses[0].get('log_url', '?')}")
+        return False
+    except Exception as e:
+        print(f"  ⚠  Impossible de vérifier le déploiement Pages : {e}")
+        return True  # ne bloque pas si gh/API indisponible — vérif best-effort
+
+
 def main() -> int:
     print("check_deploy — comparaison local ↔ biblio.actitude.org")
     ecarts = []
@@ -64,15 +123,23 @@ def main() -> int:
         else:
             print(f"  ✓  {local_rel}")
 
+    print()
+    size_ok = check_site_size()
+    deploy_ok = check_pages_deployment()
+
     if ecarts:
         print()
         print("⚠  Le site live n'est PAS à jour.")
         print("   → bash scripts/publish_direct.sh")
         return 1
-    else:
+    if not deploy_ok:
         print()
-        print("✓  Site live synchronisé avec les sources locales.")
-        return 0
+        print("⚠  Le dernier déploiement GitHub Pages a échoué — voir le log ci-dessus.")
+        return 2
+    print()
+    print("✓  Site live synchronisé avec les sources locales" +
+          ("" if size_ok else " (mais taille à surveiller)") + ".")
+    return 0
 
 if __name__ == "__main__":
     sys.exit(main())
