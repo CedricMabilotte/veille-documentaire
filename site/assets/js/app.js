@@ -175,14 +175,24 @@
     return '';
   }
   window.docDate = docDate;
-  // Année de publication : doc_date prioritaire, puis inferYear
+  // Année de publication : uniquement depuis doc_date (voir commentaire
+  // détaillé dans le corps de la fonction).
   function docYear(doc) {
+    // N'utilise QUE doc_date (source arbitrée côté serveur, cf.
+    // scripts/backfill_dates.py + scripts/arbitrate_dates_evidence.py) — pas
+    // de repli heuristique côté client. Un ancien repli sur des indices
+    // faibles (métadonnée de numérisation PDF, année trouvée dans le nom de
+    // fichier) pouvait confondre un fragment du hash-UID du document (préfixe
+    // de `filename`, ex. « a1543a19_... ») avec une année de publication —
+    // exactement le genre d'invention de date que ce projet refuse (cf.
+    // L12/L40). Un document sans doc_date fiable doit rester sans année
+    // plutôt que d'en afficher une fausse.
     const dd = docDate(doc);
     if (dd) {
       const m = dd.match(/(?:1[5-9]\d{2}|20\d{2})/);
       if (m) return parseInt(m[0], 10);
     }
-    return (window.inferYear ? window.inferYear(doc) : null);
+    return null;
   }
   window.docYear = docYear;
 
@@ -359,21 +369,17 @@
   }
   window.inferAuthor = inferAuthor;
 
-  // Tente d'extraire une année (4 chiffres 1500-2099) depuis meta.creationDate, filename, link_text
-  function inferYear(doc) {
-    const cand = [];
-    if (doc.meta && doc.meta.creationDate) cand.push(String(doc.meta.creationDate));
-    if (doc.meta && doc.meta.pdf_creation_date) cand.push(String(doc.meta.pdf_creation_date));
-    if (doc.filename) cand.push(doc.filename);
-    if (doc.link_text) cand.push(doc.link_text);
-    if (doc.bulle_data && doc.bulle_data.date) cand.push(String(doc.bulle_data.date));
-    for (const s of cand) {
-      const m = s.match(/(?:1[5-9]\d{2}|20\d{2})/);
-      if (m) return parseInt(m[0], 10);
-    }
-    return null;
-  }
-  window.inferYear = inferYear;
+  // inferYear() a été retiré (2026-07-06) : il devinait une "année de
+  // publication" depuis meta.creationDate (date de numérisation PDF, pas de
+  // publication), le filename (dont le préfixe est le hash-UID du document —
+  // un fragment comme "a1543a19_..." était lu comme l'année 1543) ou
+  // link_text, sans aucun des garde-fous de crédibilité appliqués côté
+  // serveur (doc_metadata.build_metadata, backfill_dates.py). Résultat vérifié
+  // sur le catalogue : 41 fiches sans doc_date auraient affiché une fausse
+  // année (jusqu'à "1507", "1543", "1634"...) dans la chronologie, la fiche
+  // détaillée (page + JSON-LD datePublished + export BibTeX) et le filtre
+  // décennie du catalogue. Ne PAS le réintroduire : cf. docYear() ci-dessus,
+  // et L12/L40 dans lecons-biblio.md.
 
   // ----- Recherche avancée multi-critères (B11) -----------------------------
   // Filtre une liste de docs sur la conjonction (ET) de plusieurs critères

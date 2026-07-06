@@ -209,7 +209,7 @@ function updateMetaTags(doc, basePath) {
   const title = docTitle(doc);
   const teaser = (docTeaser(doc) || docSummary(doc) || '').slice(0, 200);
   const author = inferAuthor(doc);
-  const year = inferYear(doc);
+  const year = docYear(doc);
   const keywords = ((doc.bulle_data && doc.bulle_data.categorisation)
                     || (doc.enrichment && doc.enrichment.matched_keywords) || []);
   // Titre + breadcrumb
