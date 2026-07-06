@@ -74,35 +74,19 @@
      ACCUEIL (index.html) — sections refondues
      ===================================================================== */
 
-  // C7 — Preuve sociale : « N nouveaux documents ce mois-ci » + mini-fil daté.
+  // C7 — Preuve sociale : « N nouveaux documents ce mois-ci ». Le mini-fil
+  // texte daté qui suivait a été retiré (session #21) : il répétait exactement
+  // les mêmes fiches que la grille imagée juste en dessous (#derniers-ajouts-grid).
   function renderActivite(docs, basePath) {
-    const wrap = document.getElementById('activite-fil');
     const counter = document.getElementById('activite-compte');
-    if (!docs || !docs.length) return;
+    if (!docs || !docs.length || !counter) return;
     const dated = docs
       .map(d => ({ d: d, when: collectedDate(d) }))
       .filter(x => x.when);
     const ceMois = dated.filter(x => daysAgo(x.when) <= 30).length;
-    if (counter) {
-      counter.textContent = ceMois > 0
-        ? `${ceMois} nouveau${ceMois > 1 ? 'x' : ''} document${ceMois > 1 ? 's' : ''} versé${ceMois > 1 ? 's' : ''} ce mois-ci`
-        : 'Veille en cours — le prochain lot arrive bientôt';
-    }
-    if (!wrap) return;
-    const recents = dated
-      .sort((a, b) => String(b.when).localeCompare(String(a.when)))
-      .slice(0, 6);
-    if (!recents.length) {
-      wrap.innerHTML = '<li class="activite-item"><span class="activite-when">—</span> Pas encore d\'ajout daté.</li>';
-      return;
-    }
-    wrap.innerHTML = recents.map(x => {
-      const url = window.BiblioRouter.ficheUrl(x.d.id, basePath);
-      return `<li class="activite-item">
-        <span class="activite-when">${window.escape(window.formatDate(x.when) || '')}</span>
-        <a href="${window.escape(url)}">${window.escape(window.docTitle(x.d))}</a>
-      </li>`;
-    }).join('');
+    counter.textContent = ceMois > 0
+      ? `${ceMois} nouveau${ceMois > 1 ? 'x' : ''} document${ceMois > 1 ? 's' : ''} versé${ceMois > 1 ? 's' : ''} ce mois-ci`
+      : 'Veille en cours — le prochain lot arrive bientôt';
   }
 
   // C3 — « Elles et ils l'ont fait » : docs recit_de_lutte:true.
