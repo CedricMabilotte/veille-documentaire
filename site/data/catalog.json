@@ -4663,38 +4663,6 @@
    "summary": "Guide pratique (1977, Green Tree Publishing, Toronto) sur les coopératives de logement au Canada comme voie d'accès à un habitat abordable hors marché immobilier classique. Présente les structures coopératives, leurs modes de financement et les droits d'usage en lieu et place de la propriété.",
    "cover": "covers/2175f7a3.png"
   },
-  "d2d6df24": {
-   "id": "d2d6df24",
-   "url": "https://archive.org/download/housingassociati0000alde/housingassociati0000alde.pdf",
-   "filename": "housingassociati0000alde.pdf",
-   "format": "pdf",
-   "source": "Archive.org — community land trusts & housing commons",
-   "first_seen": "2026-05-18_05-12",
-   "latest_run": "2026-05-18_05-12",
-   "latest_score": 5,
-   "downloaded": false,
-   "saved_as": null,
-   "runs": [
-    {
-     "date": "2026-05-18_05-12",
-     "score": 5,
-     "raison": "Titre mentionne 'cooperative purchase' mais dans contexte exclusif d'accès au crédit bancaire, pas d'habitat coopératif ou communs fonciers",
-     "context_seen": "Alder, John — xxxviii, 438 pages ; 26 cm, \"This is the only legal text which deals exclusively with housing associations and social landlords from a multi-disciplinary perspective, bringing together material from all the relevant branches of the law, namely public, housing, corporate, charity and tax law. It offers a thorough discussion, paying particular emphasis to the current concern with acco…",
-     "link_text": "Housing association law and practice",
-     "downloaded": false
-    }
-   ],
-   "versions": [],
-   "score_initial": 5,
-   "score_final": null,
-   "link_status": "unchecked",
-   "link_checked": "2026-05-24T18:32:50Z",
-   "lang": "en",
-   "download_status": "failed_network",
-   "download_error": "access_restricted_lending_library",
-   "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification.",
-   "title": "Housing association law and practice"
-  },
   "2bf90eb8": {
    "id": "2bf90eb8",
    "url": "https://www.landcoalition.org/documents/1836/2024_5_brochure_people_climate_and_nature_rio_dialogues_4_pager_1.pdf",
@@ -19410,59 +19378,17 @@
    "title": "Memories of a Makhnovist Partisan by Ossip Tsebry",
    "cover": "assets/covers/9405b8a5.png"
   },
-  "2a7c0099": {
-   "id": "2a7c0099",
-   "url": "https://archive.org/download/agriculturestate00wegr/agriculturestate00wegr.pdf",
-   "filename": "agriculturestate00wegr.pdf",
-   "format": "pdf",
-   "source": "Archive.org — commons / enclosure / agrarian (strict)",
-   "first_seen": "2026-05-23_00-59",
-   "latest_run": "2026-05-23_00-59",
-   "collected_date": "2026-05-23_00-59",
-   "score_initial": 4,
-   "score_final": null,
-   "latest_score": 4,
-   "doc_type": "autre",
-   "recit_de_lutte": false,
-   "doc_date": "",
-   "lang": "en",
-   "editeur": "",
-   "doi": "",
-   "isbn": "",
-   "hal_id": "",
-   "versions": [],
-   "downloaded": false,
-   "saved_as": null,
-   "runs": [
-    {
-     "date": "2026-05-23_00-59",
-     "score": 4,
-     "raison": "Titre 'Agriculture and the state in Soviet and post-Soviet Russia' ; 'agriculture' ne mentionne pas explicitement paysannerie, réforme agraire ou communs",
-     "context_seen": "Stephen K. Wegren",
-     "link_text": "Agriculture and the state in Soviet and post-Soviet Russia",
-     "downloaded": false,
-     "model": "",
-     "prompt_version": ""
-    }
-   ],
-   "link_status": "unchecked",
-   "link_checked": "2026-05-24T19:16:12Z",
-   "download_status": "failed_network",
-   "download_error": "access_restricted_lending_library",
-   "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification.",
-   "title": "Agriculture and the state in Soviet and post-Soviet Russia"
-  },
   "14f9c4d0": {
    "id": "14f9c4d0",
-   "url": "https://archive.org/download/landpoliciesforg0000dein/landpoliciesforg0000dein.pdf",
-   "filename": "landpoliciesforg0000dein.pdf",
+   "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/dcc8fa81-9407-5ca7-b05a-468b42a6a6fd/content",
+   "filename": "14f9c4d0_land-policies-for-growth-and-poverty-reduction.pdf",
    "format": "pdf",
-   "source": "Archive.org — commons / enclosure / agrarian (strict)",
+   "source": "World Bank — Open Knowledge Repository (accès ouvert ; copie archive.org d'origine sous emprunt restreint ACS DRM)",
    "first_seen": "2026-05-23_00-59",
    "latest_run": "2026-05-23_00-59",
    "collected_date": "2026-05-23_00-59",
    "score_initial": 5,
-   "score_final": null,
+   "score_final": 6,
    "latest_score": 5,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -19473,8 +19399,8 @@
    "isbn": "",
    "hal_id": "",
    "versions": [],
-   "downloaded": false,
-   "saved_as": null,
+   "downloaded": true,
+   "saved_as": "docs/14f9c4d0_land-policies-for-growth-and-poverty-reduction.pdf",
    "runs": [
     {
      "date": "2026-05-23_00-59",
@@ -19487,54 +19413,46 @@
      "prompt_version": ""
     }
    ],
-   "link_status": "unchecked",
-   "link_checked": "2026-05-24T19:16:12Z",
-   "download_status": "failed_network",
-   "download_error": "access_restricted_lending_library",
-   "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification.",
-   "title": "Land policies for growth and poverty reduction"
-  },
-  "f18a7678": {
-   "id": "f18a7678",
-   "url": "https://archive.org/download/journeyoftzotzil0000eber/journeyoftzotzil0000eber.pdf",
-   "filename": "journeyoftzotzil0000eber.pdf",
-   "format": "pdf",
-   "source": "Archive.org — commons / enclosure / agrarian (strict)",
-   "first_seen": "2026-05-23_00-59",
-   "latest_run": "2026-05-23_00-59",
-   "collected_date": "2026-05-23_00-59",
-   "score_initial": 5,
-   "score_final": null,
-   "latest_score": 5,
-   "doc_type": "autre",
-   "recit_de_lutte": false,
-   "doc_date": "",
-   "lang": "en",
-   "editeur": "",
-   "doi": "",
-   "isbn": "",
-   "hal_id": "",
-   "versions": [],
-   "downloaded": false,
-   "saved_as": null,
-   "runs": [
-    {
-     "date": "2026-05-23_00-59",
-     "score": 5,
-     "raison": "Indigenous movement, earth et Chiapas mentionnés en contexte de conflicts and struggles, mais pas explicitement terre/communs/paysannerie",
-     "context_seen": "Eber, Christine Engla — xxxii, 244 p. : 24 cm, \"Most recent books about Chiapas, Mexico, focus on political conflicts and the indigenous movement for human rights at the macro level. None has explored those conflicts and struggles in-depth through an individual woman's life story. The Journey of a Tzotzil-Maya Woman of Chiapas, Mexico now offers that perspective in one woman's own words. Anthropo…",
-     "link_text": "The journey of a Tzotzil-Maya woman of Chiapas, Mexico : pass well over the earth",
-     "downloaded": false,
-     "model": "",
-     "prompt_version": ""
-    }
-   ],
-   "link_status": "unchecked",
-   "link_checked": "2026-05-24T19:16:12Z",
-   "download_status": "failed_network",
-   "download_error": "access_restricted_lending_library",
-   "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification.",
-   "title": "The journey of a Tzotzil-Maya woman of Chiapas, Mexico : pass well over the earth"
+   "link_status": "ok",
+   "link_checked": "2026-07-06T08:04:37Z",
+   "download_status": null,
+   "download_error": null,
+   "download_note": "Substitué le 2026-07-06 : copie archive.org (housingassociati... non, landpoliciesforg0000dein) inaccessible sans emprunt (ACS DRM). Édition identique en accès libre via openknowledge.worldbank.org/handle/10986/15125 (bitstream ORIGINAL).",
+   "title": "Land policies for growth and poverty reduction",
+   "archive_url": "https://openknowledge.worldbank.org/handle/10986/15125",
+   "enrichment": {
+    "summary": "Rapport de recherche de la Banque mondiale (Klaus Deininger, 2003) sur les politiques foncières dans les pays en développement, articulé autour de la croissance économique et de la réduction de la pauvreté rurale. Le rapport documente en détail les systèmes de tenure coutumière et communautaire (Afrique subsaharienne notamment, où ils couvrent l'essentiel du territoire hors zones urbaines), et prend une position notable pour une institution de ce type : il déconseille explicitement le remplacement systématique de ces régimes par la propriété privée individuelle — politique que la Banque mondiale elle-même avait recommandée en 1975 (« establishing freehold title and subdividing the commons ») — jugeant cette approche historique « ni nécessaire ni souhaitable » dans la plupart des cas, les systèmes coutumiers s'étant adaptés sur le temps long aux besoins locaux. Le rapport documente aussi comment l'investissement (plantations, terrassements, mise en culture) génère localement des droits individuels renforcés au sein même des régimes fonciers communaux, sans nécessiter de titre formel. Sa perspective reste résolument réformiste et économique (croissance, marché, sécurité juridique des investissements) plutôt que critique de la propriété privée en tant que telle — le rapport ne remet jamais en cause le cadre de la propriété comme horizon, il cherche à l'articuler avec les tenures existantes plutôt qu'à les abolir. Document de référence institutionnel utile en creux : il documente empiriquement l'ampleur et la résilience des tenures communes/coutumières dans le Sud, et une reconnaissance croissante — jusque du côté de la Banque mondiale — des risques de l'enclosure forcée.",
+    "citations": [
+     {
+      "page": 47,
+      "quote": "a fundamental rule found in most customary or communal land tenure institutions is that investment in observable land improvements, such as planting trees, is rewarded with strong individual land rights",
+      "why_relevant": "Documente comment des droits individuels émergent au sein même des régimes fonciers communaux par l'investissement, sans nécessiter de titre de propriété privée formel.",
+      "quote_fr": "une règle fondamentale que l'on retrouve dans la plupart des institutions de tenure foncière coutumière ou communale est que l'investissement dans des améliorations observables du terrain, comme la plantation d'arbres, est récompensé par des droits fonciers individuels forts."
+     },
+     {
+      "page": null,
+      "quote": "customary tenure systems have evolved over a long period of time, they are often well adapted to specific conditions and needs",
+      "why_relevant": "Le rapport déconseille explicitement le remplacement systématique des tenures coutumières/communales par la propriété privée individuelle — une prise de position notable pour une institution comme la Banque mondiale.",
+      "quote_fr": "les systèmes de tenure coutumière se sont développés sur une longue période ; ils sont souvent bien adaptés à des conditions et des besoins spécifiques."
+     },
+     {
+      "page": null,
+      "quote": "the imposition of property rights to land by outside forces or local overlords has affected the nature of such rights... the goal of such intervention was to obtain surpluses from local smallholder populations or to force independent smallholders into wage labor by preventing them from acquiring independent land rights",
+      "why_relevant": "Critique de l'imposition coloniale/autoritaire de droits de propriété comme mécanisme d'extraction et de prolétarisation forcée des paysans.",
+      "quote_fr": "l'imposition de droits de propriété sur la terre par des forces extérieures ou des seigneurs locaux a affecté la nature de ces droits... l'objectif de cette intervention était d'obtenir des surplus des populations paysannes locales ou de forcer des paysans indépendants vers le salariat en les empêchant d'acquérir des droits fonciers indépendants."
+     }
+    ],
+    "matched_keywords": [
+     "land tenure",
+     "customary tenure",
+     "commons",
+     "land reform",
+     "property rights"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Document institutionnel (Banque mondiale) hors du corpus habituel par son positionnement réformiste/économique, mais substantiellement pertinent : traitement documenté et développé des tenures coutumières/communales, avec une position explicite contre leur remplacement forcé par la propriété privée. Valeur de contre-point/référence plutôt que de plaidoyer — cohérent avec d'autres documents Banque mondiale déjà présents dans le corpus."
+   },
+   "cover": "covers/14f9c4d0.jpg"
   },
   "acd4bba6": {
    "id": "acd4bba6",
@@ -20347,48 +20265,6 @@
    "link_checked": "2026-06-25T15:35:32Z",
    "title": "Community Land Trust Book",
    "author": "Robert Swann, Shimon Gottschalk et al. (Institute for Community Economics)"
-  },
-  "1ff998ce": {
-   "id": "1ff998ce",
-   "url": "https://archive.org/download/housingourselves0000rich/housingourselves0000rich.pdf",
-   "filename": "housingourselves0000rich.pdf",
-   "format": "pdf",
-   "source": "Archive.org — community land trusts & housing commons",
-   "first_seen": "2026-05-23_00-59",
-   "latest_run": "2026-05-23_00-59",
-   "collected_date": "2026-05-23_00-59",
-   "score_initial": 4,
-   "score_final": null,
-   "latest_score": 4,
-   "doc_type": "autre",
-   "recit_de_lutte": false,
-   "doc_date": "",
-   "lang": "en",
-   "editeur": "",
-   "doi": "",
-   "isbn": "",
-   "hal_id": "",
-   "versions": [],
-   "downloaded": false,
-   "saved_as": null,
-   "runs": [
-    {
-     "date": "2026-05-23_00-59",
-     "score": 4,
-     "raison": "Titre 'Housing ourselves' pourrait évoquer habitat alternatif mais le contexte fourni ne mentionne pas explicitement communs urbains, cohousing ou collectif",
-     "context_seen": "Burnham, Richard — ix, 198 pages : 24 cm, Includes index",
-     "link_text": "Housing ourselves : creating affordable, sustainable shelter",
-     "downloaded": false,
-     "model": "",
-     "prompt_version": ""
-    }
-   ],
-   "link_status": "unchecked",
-   "link_checked": "2026-05-24T19:16:12Z",
-   "download_status": "failed_network",
-   "download_error": "access_restricted_lending_library",
-   "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification.",
-   "title": "Housing ourselves : creating affordable, sustainable shelter"
   },
   "5736cd8e": {
    "id": "5736cd8e",

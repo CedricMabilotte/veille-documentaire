@@ -80,18 +80,15 @@ def enrich_one(uid):
     existing.update(result)
     cat['docs'][uid]['enrichment'] = existing
     
-    # Générer couverture si absente
+    # Générer couverture si absente — JPEG 1200px (cf. session #17-18 :
+    # le front-end (app.js) attend systématiquement assets/covers/<id>.jpg,
+    # jamais .png ; ce bloc générait encore du PNG 400px, régression latente
+    # détectée et corrigée session #20 (cf. lecons-biblio.md).
     if not d.get('cover'):
         try:
-            import fitz, PIL.Image
-            doc_fitz = fitz.open(str(pdf))
-            pix = doc_fitz[0].get_pixmap(matrix=fitz.Matrix(1.5,1.5))
-            img = PIL.Image.frombytes("RGB",[pix.width,pix.height],pix.samples)
-            img.thumbnail((400,600))
-            cover = ROOT / 'site' / 'assets' / 'covers' / f'{uid}.png'
-            img.save(cover,"PNG")
-            cat['docs'][uid]['cover'] = f'assets/covers/{uid}.png'
-            doc_fitz.close()
+            cover = ROOT / 'site' / 'assets' / 'covers' / f'{uid}.jpg'
+            if pdf_processor.extract_cover(pdf, cover, max_width=1200):
+                cat['docs'][uid]['cover'] = f'covers/{uid}.jpg'
         except: pass
 
     CATALOG.write_text(json.dumps(cat, ensure_ascii=False, indent=2))

@@ -1294,23 +1294,33 @@ def _prune_site_orphans(catalog: dict) -> dict:
         return None
 
     targets = [
-        (SITE_PATH / "fiches",            "*.html"),
-        (SITE_PATH / "data" / "bulles",   "*.json"),
-        (SITE_PATH / "assets" / "covers", "*.jpg"),
-        (SITE_PATH / "assets" / "cards",  "*.png"),
+        (SITE_PATH / "fiches",            ["*.html"]),
+        (SITE_PATH / "data" / "bulles",   ["*.json"]),
+        # .jpg (convention depuis session #17-18) ET .png (fichiers plus
+        # anciens pas encore migrés) — un glob *.jpg seul laissait les
+        # orphelins PNG s'accumuler silencieusement (trouvé session #20,
+        # symétrique au même bug côté copie dans publish_site()).
+        (SITE_PATH / "assets" / "covers", ["*.jpg", "*.png"]),
+        # cartes sociales (social_cards.py) : og/<id>.png (carte og:image
+        # principale) + cards/<id>.png et cards/<id>-portrait.png. Avant
+        # session #20, seul cards/*.png était purgé — og/*.png ne l'était
+        # jamais (gap distinct trouvé en même temps que le bug covers).
+        (SITE_PATH / "assets" / "og",     ["*.png"]),
+        (SITE_PATH / "assets" / "cards",  ["*.png"]),
     ]
     removed: dict = {}
-    for directory, pattern in targets:
+    for directory, patterns in targets:
         if not directory.is_dir():
             continue
         n = 0
-        for f in directory.glob(pattern):
-            doc_id = _doc_id_of(f.stem)
-            if doc_id is None:        # gabarit ou fichier hors-corpus → garder
-                continue
-            if doc_id not in keep:    # document non publiable → orphelin
-                f.unlink()
-                n += 1
+        for pattern in patterns:
+            for f in directory.glob(pattern):
+                doc_id = _doc_id_of(f.stem)
+                if doc_id is None:        # gabarit ou fichier hors-corpus → garder
+                    continue
+                if doc_id not in keep:    # document non publiable → orphelin
+                    f.unlink()
+                    n += 1
         if n:
             removed[directory.name] = n
     return removed
@@ -1361,11 +1371,24 @@ def publish_site(run_date: str) -> None:
         shutil.copy2(b, site_bulles / b.name)
         bulle_count += 1
 
-    # 3. Couvertures
+    # 3. Couvertures — JPEG (convention depuis session #17-18, 1200px) en
+    # priorité ; PNG (interface/covers/ contient encore des couvertures
+    # 400px pas migrées) uniquement en fallback quand aucun JPEG n'existe
+    # pour ce doc. Un premier correctif (session #20) copiait *.png sans
+    # condition — corrigé une seconde fois le jour même : ça dupliquait
+    # 572 couvertures déjà migrées en JPEG (le PNG legacy coexistant à côté
+    # de son JPEG, jamais nettoyé). La bonne règle : jamais de PNG si un
+    # JPEG existe déjà pour l'id, que ce soit fraîchement copié ci-dessous
+    # ou déjà présent depuis la migration session #18.
     site_covers = SITE_PATH / "assets" / "covers"
     site_covers.mkdir(parents=True, exist_ok=True)
     cover_count = 0
+    for c in COVERS_PATH.glob("*.jpg"):
+        shutil.copy2(c, site_covers / c.name)
+        cover_count += 1
     for c in COVERS_PATH.glob("*.png"):
+        if (site_covers / f"{c.stem}.jpg").exists():
+            continue  # JPEG déjà présent pour ce doc — ne pas dupliquer
         shutil.copy2(c, site_covers / c.name)
         cover_count += 1
 
