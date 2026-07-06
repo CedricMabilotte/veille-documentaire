@@ -23,6 +23,11 @@ SITE_PATH = Path(__file__).parent.parent / "site"
 SENTINELS = [
     ("assets/js/app.js",       "assets/js/app.js"),
     ("assets/css/style.css",   "assets/css/style.css"),
+    # Ajouté (biblio session #22, 2026-07-06) : data/catalog.json n'est
+    # normalement resynchronisé que par publish_site() — un backfill/correctif
+    # ciblé qui n'appelle que la source (synopsis/catalog.json) peut le
+    # laisser périmé sans que rien ne le signale. Cf. lecons-biblio.md L42.
+    ("data/catalog.json",      "data/catalog.json"),
 ]
 
 def md5(data: bytes) -> str:
