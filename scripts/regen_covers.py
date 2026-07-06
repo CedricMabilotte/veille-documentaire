@@ -37,7 +37,15 @@ def find_local_pdf(uid: str) -> Path | None:
 
 
 def download_pdf(url: str, uid: str, filename: str) -> Path | None:
-    """Télécharge un PDF et le sauve dans docs/."""
+    """Télécharge un PDF et le sauve dans docs/.
+
+    Valide les magic bytes (%PDF) avant d'accepter le téléchargement — sans
+    ce contrôle, une page de blocage anti-bot ou une page "detail/borrow"
+    d'archive.org (renvoyée avec un statut HTTP 200) est silencieusement
+    sauvée comme si c'était le PDF réel, invisible jusqu'à un audit manuel
+    (cf. lecons-biblio.md, session #21 suite — audit_citations.py a détecté
+    20 fiches publiées dont le PDF local était en fait une telle page).
+    """
     dest = DOCS / filename
     if dest.exists():
         return dest
@@ -45,6 +53,11 @@ def download_pdf(url: str, uid: str, filename: str) -> Path | None:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 biblio-regen"})
         with urllib.request.urlopen(req, timeout=30) as r, open(dest, "wb") as f:
             f.write(r.read())
+        if not pdf_processor.validate_pdf(dest):
+            print(f"    ✗  Download for {uid} n'est pas un PDF valide "
+                  f"(page de blocage/erreur ?) — rejeté")
+            dest.unlink(missing_ok=True)
+            return None
         return dest
     except Exception as e:
         print(f"    ✗  Download failed for {uid}: {e}")
