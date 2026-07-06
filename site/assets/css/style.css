@@ -1105,6 +1105,69 @@ a.stat:focus-visible .stat-label {
 }
 
 /* --- Responsive --- */
+
+/* Bug signalé 2026-07-06 (Ced) : "la palette ne répond plus au clic".
+   Cause réelle : .site-header .container est en display:flex sans wrap ;
+   brand (363px) + site-nav (517px, 5 liens) + header-tools (298px, recherche
+   + palette + thème) = ~1249px de largeur nécessaire, mais le nav ne bascule
+   en menu hamburger qu'en-dessous de 700px. Entre 700px et ~1250px (fenêtre
+   de nombreux laptops, fenêtre non maximisée…), le contenu déborde
+   silencieusement à droite de la fenêtre (overflow:visible partout dans la
+   chaîne d'ancêtres) : palette-toggle et theme-toggle restent dans le DOM et
+   sont peints hors-écran, donc invisibles ET non cliquables — confirmé via
+   document.elementFromPoint : 0 point cliquable sur toute leur boîte dès que
+   la largeur de viewport est inférieure à leur position réelle. Cf.
+   lecons-biblio.md L47.
+   Fix : bascule vers le menu mobile dès 1300px (marge de sécurité au-delà
+   des ~1249px nécessaires), + flex-wrap en filet de sécurité générique si le
+   contenu du header venait à s'élargir encore (ajout de liens, etc.). */
+.site-header .container { flex-wrap: wrap; row-gap: 8px; }
+@media (max-width: 1300px) {
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 18px;
+    margin: 0;
+    box-shadow: var(--shadow-md);
+  }
+  .site-nav.open { display: flex; }
+  .site-nav a { padding: 12px 4px; border-bottom: 1px solid var(--border); }
+  .menu-toggle { display: inline-flex; order: 3; }
+  .nav-dropdown { width: 100%; }
+  .nav-dropdown-btn {
+    width: 100%;
+    justify-content: space-between;
+    padding: 12px 4px;
+    border-bottom: 1px solid var(--border);
+    border-radius: 0;
+  }
+  .nav-dropdown[data-open] .nav-dropdown-btn { border-bottom-color: var(--accent); }
+  .nav-dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 0 0 0 14px;
+  }
+  .nav-dropdown[data-open] .nav-dropdown-menu { display: block; }
+  .nav-dropdown-menu li a {
+    padding: 10px 4px;
+    border-bottom: 1px solid var(--border);
+    font-size: 15px;
+  }
+  .nav-dropdown-menu li:last-child a { border-bottom: none; }
+  .header-tools { flex: 1; }
+}
+
 @media (max-width: 900px) {
   .catalog-layout { grid-template-columns: 1fr; }
   .catalog-sidebar {
