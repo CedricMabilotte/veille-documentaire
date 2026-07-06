@@ -5,15 +5,21 @@
   "citations_phares": [
     {
       "page": 1,
-      "quote": "the land was a question of central political importance in the century"
+      "quote": "the land was a question of central political importance in the century",
+      "verified": true,
+      "page_physical": 1
     },
     {
       "page": 1,
-      "quote": "agricultural labourers... tried to control the means of their existence"
+      "quote": "agricultural labourers... tried to control the means of their existence",
+      "verified": false,
+      "page_physical": null
     },
     {
       "page": 3,
-      "quote": "The Chartist Land Plan... was heavily supported by factory workers who saw self sufficiency on the land as one way of escaping from their exploited position"
+      "quote": "The Chartist Land Plan... was heavily supported by factory workers who saw self sufficiency on the land as one way of escaping from their exploited position",
+      "verified": false,
+      "page_physical": null
     }
   ],
   "categorisation": [

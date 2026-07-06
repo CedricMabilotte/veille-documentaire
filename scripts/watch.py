@@ -1095,9 +1095,15 @@ def _prerender_fiches(catalog: dict) -> int:
                 + _paras(_ec) + '</section>'
             )
 
+        # Une citation non confirmée verbatim dans le texte source reste
+        # masquée tant qu'elle n'est pas confirmée (verified === true) —
+        # décision de Ced, 6 juillet 2026 (session #22, suite). Cohérent
+        # avec le filtre appliqué côté SPA (fiche.html::citationsSectionHTML).
+        # Les données ne sont pas supprimées, seul l'affichage filtre.
         _raw_cits = (enrich.get('citations') or []) if isinstance(enrich, dict) else []
         _valid_cits = [c for c in _raw_cits
-                       if isinstance(c, dict) and (c.get('quote_fr') or c.get('quote'))]
+                       if isinstance(c, dict) and (c.get('quote_fr') or c.get('quote'))
+                       and c.get('verified') is True]
         _cits_sec = ''
         if _valid_cits:
             _items = []

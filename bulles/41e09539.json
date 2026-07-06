@@ -5,15 +5,21 @@
   "citations_phares": [
     {
       "page": 3,
-      "quote": "La propriété est impossible"
+      "quote": "La propriété est impossible",
+      "verified": true,
+      "page_physical": 3
     },
     {
       "page": 5,
-      "quote": "La propriété est mère de tyrannie"
+      "quote": "La propriété est mère de tyrannie",
+      "verified": false,
+      "page_physical": null
     },
     {
       "page": 8,
-      "quote": "améliorer la condition physique, morale et intellectuelle de la classe la plus nombreuse et la plus pauvre"
+      "quote": "améliorer la condition physique, morale et intellectuelle de la classe la plus nombreuse et la plus pauvre",
+      "verified": true,
+      "page_physical": 8
     }
   ],
   "categorisation": [

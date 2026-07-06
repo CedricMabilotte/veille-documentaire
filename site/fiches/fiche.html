@@ -644,29 +644,40 @@ function shareButtonsHTML(doc, title) {
   `;
 }
 
-/* Section citations — distingue les citations vérifiées / non retrouvées.
-   Lien "image" : seules les 3 premières citations, ET seulement quand elles
-   viennent de bulle.citations_phares, ont une citation-card générée
-   (scripts/social_cards.py ne rend une image que pour cette source précise
-   et se limite aux 3 premières — voir generate_all). Le fallback
-   enrichment.citations n'a pas d'image correspondante ; ne pas proposer de
-   lien dans ce cas, ce serait un lien mort. */
+/* Section citations — n'affiche jamais une citation qui n'a pas été
+   confirmée verbatim dans le texte source (`verified === true`). Une
+   citation non confirmée (jamais retrouvée, ou PDF local indisponible/
+   invalide pour la re-vérifier) reste masquée tant qu'elle n'est pas
+   confirmée — décision de Ced, 6 juillet 2026 (session #22, suite) :
+   voir reports/2026-07-06_verification-citations-dates.md. Les données ne
+   sont pas supprimées (`enrichment.citations` garde toutes les entrées) :
+   seul l'affichage filtre. Lien "image" : seules les 3 premières
+   citations, ET seulement quand elles viennent de bulle.citations_phares,
+   ont une citation-card générée (scripts/social_cards.py ne rend une
+   image que pour cette source précise et se limite aux 3 premières — voir
+   generate_all). Le fallback enrichment.citations n'a pas d'image
+   correspondante ; ne pas proposer de lien dans ce cas, ce serait un lien
+   mort. */
 function citationsSectionHTML(citations, docId, hasCitationCards) {
-  if (!citations || !citations.length) return '';
+  // origIndex conservé AVANT filtrage : les citation-cards (social_cards.py)
+  // sont nommées d'après la position dans la liste d'origine (les 3
+  // premières de bulle.citations_phares) — un citation masquée ne doit pas
+  // décaler la numérotation des cardUrl des citations qui la suivent.
+  const confirmed = (citations || [])
+    .map((c, origIndex) => ({ c, origIndex }))
+    .filter(({ c }) => c && c.verified === true);
+  if (!confirmed.length) return '';
   const baseUrl = window.location.href.split('#')[0];
   return `
     <section class="fiche-section" id="citations">
       <h2>Citations</h2>
-      ${citations.map((c, i) => {
+      ${confirmed.map(({ c, origIndex }, i) => {
         const cid = 'c' + (i + 1);
         const citUrl = baseUrl + '#' + cid;
-        let mention = '';
-        if (c.verified === false) mention = '<span class="biblio-stampbox biblio-stampbox-warn">⚠ NON RETROUVÉE</span>';
-        else if (c.verified === true) mention = '<span class="biblio-stampbox biblio-stampbox-good">VÉRIFIÉE</span>';
         const displayQuote = c.quote_fr || c.quote || '';
         const origQuote = c.quote_fr && c.quote ? c.quote : '';
-        const cardUrl = (hasCitationCards && i < 3)
-          ? `https://biblio.actitude.org/assets/cards/${docId}-cite-${i + 1}.png`
+        const cardUrl = (hasCitationCards && origIndex < 3)
+          ? `https://biblio.actitude.org/assets/cards/${docId}-cite-${origIndex + 1}.png`
           : null;
         return `
           <blockquote class="citation-block" id="${cid}">
@@ -674,7 +685,6 @@ function citationsSectionHTML(citations, docId, hasCitationCards) {
             ${origQuote ? `<span class="quote-orig" style="display:block;font-size:0.85em;color:var(--text-muted,#888);margin-top:4px;font-style:italic">↳ ${escape(origQuote)}</span>` : ''}
             <div class="citation-foot">
               <span class="quote-meta">${c.page ? `p. ${escape(c.page)}` : ''}${c.why_relevant ? ' — ' + escape(c.why_relevant) : ''}</span>
-              ${mention}
               <button type="button" class="biblio-cite-share" data-url="${escape(citUrl)}" title="Copier le lien vers cette citation">
                 <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6.5 9.5a3 3 0 0 0 4.24 0l2-2a3 3 0 0 0-4.24-4.24l-1.12 1.12"/><path d="M9.5 6.5a3 3 0 0 0-4.24 0l-2 2a3 3 0 0 0 4.24 4.24l1.12-1.12"/></svg>
                 #${i+1}
