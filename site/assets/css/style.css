@@ -1119,9 +1119,14 @@ a.stat:focus-visible .stat-label {
    la largeur de viewport est inférieure à leur position réelle. Cf.
    lecons-biblio.md L47.
    Fix : bascule vers le menu mobile dès 1300px (marge de sécurité au-delà
-   des ~1249px nécessaires), + flex-wrap en filet de sécurité générique si le
-   contenu du header venait à s'élargir encore (ajout de liens, etc.). */
-.site-header .container { flex-wrap: wrap; row-gap: 8px; }
+   des ~1249px nécessaires).
+   Correctif du 2026-07-06 (suite) : un premier essai ajoutait un
+   `flex-wrap: wrap` inconditionnel sur `.site-header .container` en filet
+   de sécurité — retiré, Ced l'a signalé comme rendant le header "ultra
+   moche" (le nav se scindait sur plusieurs lignes de façon désordonnée
+   dès que la largeur devenait juste un peu trop juste, y compris sur
+   grand écran zoomé). Le nowrap d'origine est rétabli ; seule la bascule
+   du seuil (700px → 1300px) est conservée. */
 @media (max-width: 1300px) {
   .site-nav {
     display: none;
@@ -1165,7 +1170,11 @@ a.stat:focus-visible .stat-label {
     font-size: 15px;
   }
   .nav-dropdown-menu li:last-child a { border-bottom: none; }
-  .header-tools { flex: 1; }
+  /* margin-left:auto (pas flex:1) : pousse header-tools contre le bord
+     droit sans l'étirer — flex:1 laissait un grand vide vide entre la
+     recherche et le bord (contenu non extensible dans une boîte étirée),
+     contribuant à l'aspect "ultra moche" signalé. */
+  .header-tools { margin-left: auto; }
 }
 
 @media (max-width: 900px) {
