@@ -20,6 +20,7 @@ Usage autonome :
 
 from __future__ import annotations
 
+import html
 import json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -71,12 +72,30 @@ def _doc_haystack(doc: dict) -> str:
 
 
 def _doc_title(doc: dict) -> str:
+    """Titre éditorial d'un doc pour les JSON générés (dossiers/featured).
+
+    Corrigé le 2026-07-07 (signalé par Ced : titres bruts type "0bf022d5_5036"
+    dans un dossier thématique) — cette fonction ignorait totalement doc["title"]
+    (le titre backfillé/nettoyé, seule source utilisée côté front par docTitle()
+    dans app.js) et retombait directement sur runs[-1].link_text (texte brut du
+    lien source, souvent absent) puis sur le nom de fichier tel quel. Résultat :
+    504/1043 titres de site/data/dossiers.json différaient du catalogue, dont
+    une vingtaine de titres illisibles (nom de fichier avec préfixe UID).
+    Priorité alignée sur docTitle() (app.js) : title > link_text > filename
+    nettoyé > id. html.unescape() : ~62 titres du catalogue contiennent des
+    entités HTML non décodées (&#8211; etc., capturées brutes à la source).
+    """
+    title = (doc.get("title") or "").strip()
+    if title:
+        return html.unescape(title)
     if doc.get("runs"):
-        t = doc["runs"][-1].get("link_text", "")
+        t = (doc["runs"][-1].get("link_text", "") or "").strip()
         if t:
-            return t
-    t = doc.get("filename", "")
-    return t.rsplit(".", 1)[0] if "." in t else t
+            return html.unescape(t)
+    t = doc.get("filename", "") or ""
+    t = t.rsplit(".", 1)[0] if "." in t else t
+    t = t.replace("_", " ").replace("-", " ").strip()
+    return t or doc.get("id", "")
 
 
 def build_dossiers(catalog_path: Path = CATALOG_PATH,
