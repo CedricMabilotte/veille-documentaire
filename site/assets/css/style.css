@@ -325,28 +325,56 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
   pointer-events: none;
 }
 
+/* Régression du 2026-07-07 signalée par Ced : le décor "papier déchiré"
+   (fond + ombre + clip-path) était posé directement sur le bouton. Or
+   .palette-menu est ajouté en ENFANT de .palette-toggle par initPalette()
+   (app.js) — et clip-path clippe toute la sous-arborescence au rendu, y
+   compris les descendants en position:absolute qui dépassent visuellement
+   de la boîte. Résultat : le menu déroulant restait invisible ET non
+   cliquable dès que ce clip décoratif a été introduit (chantier graphique
+   "champêtre"), alors même que display:block et la classe .open étaient
+   correctement posés — confirmé par un test en direct (menu détecté au
+   hit-test seulement après retrait du clip-path du bouton parent). Cf.
+   lecons-biblio.md L48.
+   Fix : le décor est déporté sur un ::before (z-index négatif, dans le
+   contexte d'empilement local du bouton) — le bouton lui-même n'a plus de
+   clip-path et ne clippe donc plus ses enfants. */
 .theme-toggle, .menu-toggle, .palette-toggle {
   position: relative;
-  background: var(--bg-elev);
+  z-index: 0;
+  background: transparent;
   border: none;
   color: var(--text-dim);
   width: 40px;
   height: 40px;
   border-radius: 0;
-  box-shadow: 1px 2px 3px rgba(35, 31, 28, 0.10);
-  clip-path: polygon(10% 6%, 70% 0, 100% 20%, 94% 78%, 100% 100%, 30% 96%, 0 100%, 4% 30%);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: background var(--transition), color var(--transition);
+  transition: color var(--transition);
+}
+.theme-toggle::before, .menu-toggle::before, .palette-toggle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--bg-elev);
+  box-shadow: 1px 2px 3px rgba(35, 31, 28, 0.10);
+  clip-path: polygon(10% 6%, 70% 0, 100% 20%, 94% 78%, 100% 100%, 30% 96%, 0 100%, 4% 30%);
+  transition: background var(--transition);
 }
 .theme-toggle { transform: rotate(-2deg); }
 .palette-toggle { transform: rotate(1.5deg); }
 .menu-toggle { transform: rotate(-1deg); }
-.theme-toggle:hover, .menu-toggle:hover, .palette-toggle:hover { background: var(--accent-soft); color: var(--accent); }
+.theme-toggle:hover, .menu-toggle:hover, .palette-toggle:hover { color: var(--accent); }
+.theme-toggle:hover::before, .menu-toggle:hover::before, .palette-toggle:hover::before { background: var(--accent-soft); }
 .theme-toggle svg, .menu-toggle svg, .palette-toggle svg { width: 18px; height: 18px; }
 .menu-toggle { display: none; }
+/* Contre-rotation : .palette-menu est ajouté en enfant du bouton tourné
+   (transform hérité par toute la sous-arborescence) — sans ça le menu
+   déroulant apparaîtrait légèrement incliné. */
+.palette-menu { transform: rotate(-1.5deg); }
 
 /* --- Sélecteur de palette (3 presets) --- */
 .palette-toggle { position: relative; }
@@ -2688,6 +2716,16 @@ a.stat:focus-visible .stat-label {
 [data-palette="academique"] .theme-toggle,
 [data-palette="academique"] .palette-toggle,
 [data-palette="academique"] .menu-toggle { border: 1px solid var(--border); }
+/* Le décor "papier déchiré" vit désormais sur ::before (cf. fix
+   clip-path/menu invisible plus haut) — le neutraliser ici aussi, sinon
+   la forme découpée réapparaît en fond malgré le style sobre voulu. */
+[data-palette="academique"] .theme-toggle::before,
+[data-palette="academique"] .palette-toggle::before,
+[data-palette="academique"] .menu-toggle::before {
+  clip-path: none;
+  box-shadow: none;
+  background: transparent;
+}
 [data-palette="academique"] .search-box { transform: none; }
 [data-palette="academique"] .search-box input {
   border: 1px solid var(--border);
@@ -2729,6 +2767,13 @@ a.stat:focus-visible .stat-label {
 }
 [data-palette="militant"] .search-box { transform: none; }
 [data-palette="militant"] .search-box input { border-bottom: 2px solid var(--border-strong); }
+[data-palette="militant"] .theme-toggle::before,
+[data-palette="militant"] .palette-toggle::before,
+[data-palette="militant"] .menu-toggle::before {
+  clip-path: none;
+  box-shadow: none;
+  background: transparent;
+}
 
 /* ===================================================================
    BIBLIO — Thème Champêtre
