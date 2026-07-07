@@ -1128,23 +1128,35 @@ a.stat:focus-visible .stat-label {
    grand écran zoomé). Le nowrap d'origine est rétabli ; seule la bascule
    du seuil (700px → 1300px) est conservée. */
 @media (max-width: 1300px) {
+  /* Retour de Ced (2026-07-06) : le menu déroulant en pleine largeur avec
+     texte collé à gauche était "ultra moche". Remplacé par un menu compact
+     ancré sous l'icône sandwich (à droite, comme le dropdown "À propos"),
+     texte centré dans chaque étiquette. */
   .site-nav {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: calc(100% + 6px);
     right: 0;
+    left: auto;
+    min-width: 200px;
+    max-width: 280px;
     flex-direction: column;
     align-items: stretch;
-    gap: 0;
+    gap: 6px;
     background: var(--bg-card);
-    border-bottom: 1px solid var(--border);
-    padding: 12px 18px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 10px;
     margin: 0;
     box-shadow: var(--shadow-md);
   }
   .site-nav.open { display: flex; }
-  .site-nav a { padding: 12px 4px; border-bottom: 1px solid var(--border); }
+  .site-nav a {
+    justify-content: center;
+    padding: 12px 4px;
+    border-bottom: 1px solid var(--border);
+  }
+  .site-nav a:last-child { border-bottom: none; }
   .menu-toggle { display: inline-flex; order: 3; }
   .nav-dropdown { width: 100%; }
   .nav-dropdown-btn {
@@ -1202,23 +1214,28 @@ a.stat:focus-visible .stat-label {
   .site-nav {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: calc(100% + 6px);
     right: 0;
+    left: auto;
+    min-width: 200px;
+    max-width: 280px;
     flex-direction: column;
     align-items: stretch;
-    gap: 0;
+    gap: 6px;
     background: var(--bg-card);
-    border-bottom: 1px solid var(--border);
-    padding: 12px 18px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 10px;
     margin: 0;
     box-shadow: var(--shadow-md);
   }
   .site-nav.open { display: flex; }
   .site-nav a {
+    justify-content: center;
     padding: 12px 4px;
     border-bottom: 1px solid var(--border);
   }
+  .site-nav a:last-child { border-bottom: none; }
   .menu-toggle { display: inline-flex; order: 3; }
   /* Dropdown mobile : liste plate inline dans la nav */
   .nav-dropdown { width: 100%; }
