@@ -14,6 +14,14 @@ vécu longtemps sans être repérées :
                       réelle du document (et non un 'fr' figé).
   4. Licence        — la licence nommée dans LICENSE est celle annoncée sur le
                       site (page Méthodologie).
+  5. Titres         — le titre affiché dans dossiers.json/featured.json
+     éditoriaux       correspond à _doc_title() (editorial.py) appliqué aux
+                      données actuelles du catalogue. Attrape toute nouvelle
+                      divergence entre la logique de titre du pré-rendu
+                      statique et celle du catalogue (cf. lecons-biblio.md
+                      L49 : _doc_title() avait dérivé de doc["title"] pendant
+                      plusieurs sessions sans qu'aucun contrôle ne le
+                      détecte).
 
 Sortie : code 0 si tout est cohérent, 1 sinon. Rapport lisible sur stdout.
 
@@ -27,6 +35,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import watch  # noqa: E402  — _is_publishable, prédicat de publication
+import editorial  # noqa: E402  — _doc_title, logique canonique de titre
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
@@ -164,6 +173,57 @@ def check_license() -> list[str]:
     return []
 
 
+def check_editorial_titles(docs: dict) -> list[str]:
+    """Le titre affiché dans dossiers.json/featured.json doit correspondre à
+    _doc_title() (scripts/editorial.py) appliqué aux données actuelles du
+    catalogue. Garde-fou posé après L49 (2026-07-07) : ces deux JSON sont
+    générés une fois puis committés — rien ne les revalide si _doc_title()
+    change de logique, ou si un doc["title"] est corrigé après coup sans
+    relancer editorial.build_dossiers()/build_featured()."""
+    problems = []
+    mismatches = []
+
+    dossiers_path = SITE / "data" / "dossiers.json"
+    if dossiers_path.exists():
+        data = json.loads(dossiers_path.read_text(encoding="utf-8"))
+        for dossier in data.get("dossiers", []):
+            for entry in dossier.get("docs_detail", []):
+                doc_id = entry.get("id")
+                doc = docs.get(doc_id)
+                if doc is None:
+                    continue  # doc archivé/supprimé : hors périmètre de ce contrôle
+                expected = editorial._doc_title(doc)
+                got = entry.get("title", "")
+                if got != expected:
+                    mismatches.append(
+                        f"{doc_id} (dossiers.json='{got}', attendu='{expected}')"
+                    )
+
+    featured_path = SITE / "data" / "featured.json"
+    if featured_path.exists():
+        data = json.loads(featured_path.read_text(encoding="utf-8"))
+        feat = data.get("featured")
+        if feat:
+            doc_id = feat.get("id")
+            doc = docs.get(doc_id)
+            if doc is not None:
+                expected = editorial._doc_title(doc)
+                got = feat.get("title", "")
+                if got != expected:
+                    mismatches.append(
+                        f"{doc_id} (featured.json='{got}', attendu='{expected}')"
+                    )
+
+    if mismatches:
+        problems.append(
+            f"{len(mismatches)} divergence(s) entre dossiers.json/"
+            f"featured.json et _doc_title() — ex. {mismatches[0]} — "
+            f"relancer editorial.build_dossiers()/build_featured() puis "
+            f"republier"
+        )
+    return problems
+
+
 def main() -> int:
     docs = _load_docs()
     publishable = {i for i, d in docs.items() if watch._is_publishable(d)}
@@ -173,6 +233,7 @@ def main() -> int:
         ("Sitemap", check_sitemap(publishable)),
         ("Langue JSON-LD", check_lang(docs, publishable)),
         ("Licence", check_license()),
+        ("Titres éditoriaux", check_editorial_titles(docs)),
     ]
 
     print(f"audit_site — {len(docs)} docs au catalogue, "
