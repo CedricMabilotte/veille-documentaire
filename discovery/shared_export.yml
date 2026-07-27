@@ -121,141 +121,141 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-07-02T13:13:01.388492+00:00'
+exported_at: '2026-07-27T15:40:56.986384+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
   type: html
-  fertility: 4.75
-  runs: 8
+  fertility: 4.22
+  runs: 9
   docs_dl: 38
-  docs_seen: 376
+  docs_seen: 428
 - url: https://infokiosques.net/paysannerie_ruralite
   label: Infokiosques.net — Paysannerie & ruralité
   type: html
-  fertility: 22.0
-  runs: 3
-  docs_dl: 66
-  docs_seen: 369
+  fertility: 47.25
+  runs: 4
+  docs_dl: 189
+  docs_seen: 492
 - url: https://infokiosques.net/ecologie_radicale
   label: Infokiosques.net — Écologie radicale
   type: html
-  fertility: 6.0
-  runs: 3
+  fertility: 4.5
+  runs: 4
   docs_dl: 18
-  docs_seen: 465
+  docs_seen: 621
 - url: https://infokiosques.net/anticapitalisme
   label: Infokiosques.net — Anticapitalisme
   type: html
   fertility: 0.0
-  runs: 3
+  runs: 4
   docs_dl: 0
-  docs_seen: 282
+  docs_seen: 376
 - url: https://infokiosques.net/squat
   label: Infokiosques.net — Squat (rapport à l'habiter)
   type: html
-  fertility: 14.0
-  runs: 3
+  fertility: 10.5
+  runs: 4
   docs_dl: 42
-  docs_seen: 369
+  docs_seen: 492
 - url: https://infokiosques.net/anticolonialismes
   label: Infokiosques.net — Anticolonialismes
   type: html
-  fertility: 2.67
-  runs: 3
+  fertility: 2.0
+  runs: 4
   docs_dl: 8
-  docs_seen: 249
+  docs_seen: 332
 - url: https://www.boell.de/en/topics/agriculture
   label: Böll Stiftung — Agriculture & Food (EN topic)
   type: deep_html
   fertility: 0.0
-  runs: 1
+  runs: 2
   docs_dl: 0
-  docs_seen: 44
+  docs_seen: 88
 - url: https://www.boell.de/en/agriculture-atlas-2019
   label: Böll Stiftung — Agriculture Atlas (EN)
   type: deep_html
   fertility: 0.0
-  runs: 3
+  runs: 4
   docs_dl: 0
-  docs_seen: 114
+  docs_seen: 157
 - url: https://www.boell.de/en/meat-atlas
   label: Böll Stiftung — Meat Atlas (EN)
   type: deep_html
   fertility: 0.0
-  runs: 3
+  runs: 4
   docs_dl: 0
-  docs_seen: 114
+  docs_seen: 157
 - url: https://www.boell.de/de/publikationen
   label: Böll Stiftung — publications DE (deep crawl)
   type: deep_html
-  fertility: 0.33
-  runs: 3
+  fertility: 0.25
+  runs: 4
   docs_dl: 1
-  docs_seen: 512
+  docs_seen: 712
 - url: https://libcom.org/library
   label: libcom.org — library
   type: deep_html
   fertility: 0.0
-  runs: 5
+  runs: 6
   docs_dl: 0
-  docs_seen: 5
+  docs_seen: 6
 - url: https://crimethinc.com/zines
   label: CrimethInc — zines
   type: deep_html
   fertility: 0.0
-  runs: 1
+  runs: 2
   docs_dl: 0
-  docs_seen: 29
+  docs_seen: 59
 - url: https://cras31.info/
   label: CRAS (Centre de Recherches sur les Alternatives Sociales)
   type: deep_html
-  fertility: 5.4
-  runs: 5
-  docs_dl: 27
-  docs_seen: 499
+  fertility: 22.33
+  runs: 6
+  docs_dl: 134
+  docs_seen: 606
 - url: https://theanarchistlibrary.org/opds/new
   label: The Anarchist Library — OPDS (new releases)
   type: opds
-  fertility: 15.33
-  runs: 3
+  fertility: 11.5
+  runs: 4
   docs_dl: 46
-  docs_seen: 300
+  docs_seen: 400
 - url: https://archive.org/advancedsearch.php?q=cuba+AND+language%3A%22spa%22+AND+%28cooperativ*+OR+campesin*+OR+agrari*+OR+%22reforma+agraria%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — Cuba (ES, réforme agraire & coopératives)
   type: archive_org
-  fertility: 1.0
-  runs: 3
+  fertility: 0.75
+  runs: 4
   docs_dl: 3
-  docs_seen: 15
+  docs_seen: 22
 - url: https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
   label: Archive.org — anarchism + land/peasant (strict)
   type: archive_org
-  fertility: 1.0
-  runs: 3
+  fertility: 0.75
+  runs: 4
   docs_dl: 3
-  docs_seen: 51
+  docs_seen: 68
 - url: https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
   label: Archive.org — peasant movements
   type: archive_org
-  fertility: 1.4
-  runs: 5
+  fertility: 1.17
+  runs: 6
   docs_dl: 7
-  docs_seen: 50
+  docs_seen: 60
 - url: https://archive.org/advancedsearch.php?q=%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land+reform%22+OR+subject%3A%22enclosure%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
   label: Archive.org — commons / enclosure / agrarian (strict)
   type: archive_org
-  fertility: 1.33
-  runs: 3
+  fertility: 1.0
+  runs: 4
   docs_dl: 4
-  docs_seen: 150
+  docs_seen: 200
 - url: https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — community land trusts & housing commons
   type: archive_org
-  fertility: 2.67
-  runs: 3
+  fertility: 2.0
+  runs: 4
   docs_dl: 8
-  docs_seen: 90
+  docs_seen: 120
 - url: https://archive.org/advancedsearch.php?q=%28creator%3A%22ostrom%22+OR+creator%3A%22federici%22+OR+creator%3A%22bollier%22+OR+%22governing+the+commons%22+OR+%22common+pool+resource%22+OR+%22commoning%22%29+AND+mediatype%3Atexts+AND+language%3A%28eng+OR+fra%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — théorie des communs (Ostrom, CPR, collective action)
   type: archive_org
@@ -316,16 +316,16 @@ sources:
   label: MST Brésil — biblioteca (WP REST API)
   type: wp_rest
   fertility: 0.0
-  runs: 1
+  runs: 2
   docs_dl: 0
-  docs_seen: 193
+  docs_seen: 387
 - url: https://www.landcoalition.org/en/latest/
   label: International Land Coalition — latest
   type: deep_html
-  fertility: 0.67
-  runs: 3
-  docs_dl: 2
-  docs_seen: 30
+  fertility: 2.75
+  runs: 4
+  docs_dl: 11
+  docs_seen: 40
 - url: https://www.kpa.or.id/document-library/
   label: KPA Indonesia — document library (réforme agraire)
   type: deep_html
@@ -378,10 +378,10 @@ sources:
 - url: https://www.troisiemesvoix.org/fr
   label: Troisièmes Voix — éditions
   type: deep_html
-  fertility: 0.0
-  runs: 1
-  docs_dl: 0
-  docs_seen: 5
+  fertility: 2.5
+  runs: 2
+  docs_dl: 5
+  docs_seen: 10
 - url: https://www.cnt.es/feed/
   label: CNT-AIT España
   type: rss
@@ -400,9 +400,9 @@ sources:
   label: Portal OACA — Libros anarquistas (catégorie)
   type: deep_html
   fertility: 0.0
-  runs: 1
+  runs: 2
   docs_dl: 0
-  docs_seen: 8
+  docs_seen: 16
 - url: https://cgt.org.es/feed/
   label: CGT España — RSS
   type: rss
@@ -449,23 +449,23 @@ sources:
   label: CLACSO Libros (acceso abierto)
   type: deep_html
   fertility: 0.0
-  runs: 3
+  runs: 4
   docs_dl: 0
-  docs_seen: 217
+  docs_seen: 325
 - url: https://www.clacso.org/libros-de-clacso-en-coedicion/
   label: CLACSO — Libros en coedición
   type: deep_html
   fertility: 0.0
-  runs: 3
+  runs: 4
   docs_dl: 0
-  docs_seen: 321
+  docs_seen: 429
 - url: https://www.clacso.org/publicaciones/
   label: CLACSO — Publicaciones générales
   type: deep_html
   fertility: 0.0
-  runs: 3
+  runs: 4
   docs_dl: 0
-  docs_seen: 312
+  docs_seen: 417
 - url: https://www.tierra.org/feed/
   label: Tierra.org — RSS general
   type: rss
@@ -504,10 +504,10 @@ sources:
 - url: https://viacampesina.org/en/wp-json/wp/v2/media?mime_type=application/pdf
   label: La Vía Campesina — publications (WP REST)
   type: wp_rest
-  fertility: 539.0
-  runs: 1
-  docs_dl: 539
-  docs_seen: 542
+  fertility: 540.0
+  runs: 2
+  docs_dl: 1080
+  docs_seen: 1086
 - url: https://www.fian.org/wp-json/wp/v2/media?mime_type=application/pdf
   label: FIAN International — publications (WP REST)
   type: wp_rest
