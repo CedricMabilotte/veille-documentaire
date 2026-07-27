@@ -211,9 +211,13 @@ def publish_and_deploy():
             f'feat: enrichissement complet {datetime.date.today()}'],
            capture_output=True)
     sp.run(['git', '-C', str(ROOT), 'push'], capture_output=True)
-    res = sp.run(['bash', 'scripts/publish_direct.sh'], capture_output=True, text=True, cwd=str(ROOT))
-    log(res.stdout.strip() or res.stderr.strip() or 'publish_direct.sh OK')
-    log('🎉 Déploiement terminé.')
+    # Pas de second appel à publish_direct.sh ici : ce push, s'il touche
+    # site/, déclenche déjà automatiquement publish-only.yml côté GitHub
+    # Actions (trigger on: push, paths: site/**). Appeler publish_direct.sh
+    # en plus republiait une seconde fois vers biblio-actitude-org en
+    # parallèle du workflow — même classe de risque que la leçon L27
+    # (deux publications concurrentes sur le même dépôt cible).
+    log('🎉 Déploiement terminé (publication déléguée à publish-only.yml).')
 
 def main():
     log('=== enrich_loop démarré ===')

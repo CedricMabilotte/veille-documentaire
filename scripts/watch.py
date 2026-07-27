@@ -1633,24 +1633,95 @@ def _write_robots() -> None:
     (SITE_PATH / "robots.txt").write_text(content, encoding="utf-8")
 
 
+SITEMAP_LASTMOD_PATH = SYNOPSIS_PATH / "sitemap_lastmod.json"
+
+
+def _doc_fingerprint(doc: dict) -> str:
+    """Empreinte du contenu visible d'une fiche publiée.
+
+    Sert à ne mettre à jour <lastmod> dans le sitemap que si quelque chose a
+    réellement changé pour ce document — sinon (comportement précédent) le
+    sitemap datait TOUTES les fiches au jour du run, à chaque régénération
+    (plusieurs fois par jour possible via enrich_loop). Un <lastmod> qui ment
+    sur ~870 URLs à chaque run noie le signal que les moteurs utilisent pour
+    prioriser le recrawl. Vérification indexation du 2026-07-27.
+    """
+    enr = doc.get("enrichment") or {}
+    citations = enr.get("citations") or []
+    payload = {
+        "title":     doc.get("title") or doc.get("link_text") or "",
+        "title_fr":  doc.get("title_fr") or "",
+        "author":    doc.get("author") or "",
+        "doc_date":  doc.get("doc_date") or "",
+        "score":     _effective_score(doc),
+        "summary":   enr.get("summary") or "",
+        "en_clair":  enr.get("en_clair") or "",
+        "citations": [
+            [(c.get("quote_fr") or c.get("quote") or ""), bool(c.get("verified"))]
+            for c in citations
+        ],
+        "cover":       doc.get("cover") or "",
+        "url":         doc.get("url") or "",
+        "link_status": doc.get("link_status") or "",
+    }
+    raw = json.dumps(payload, ensure_ascii=False, sort_keys=True)
+    return hashlib.md5(raw.encode("utf-8")).hexdigest()
+
+
+def _load_sitemap_lastmod() -> dict:
+    if SITEMAP_LASTMOD_PATH.exists():
+        try:
+            return json.loads(SITEMAP_LASTMOD_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            return {}
+    return {}
+
+
 def _write_sitemap(catalog: dict) -> None:
-    """Sitemap XML avec les pages principales + une fiche par doc."""
+    """Sitemap XML avec les pages principales + une fiche par doc.
+
+    <lastmod> par fiche reflète la dernière fois où son contenu a réellement
+    changé (empreinte comparée à `synopsis/sitemap_lastmod.json`), pas la
+    date du run courant. Les pages agrégées (accueil, dossiers…) gardent
+    `today` : leur contenu (liste des dernières fiches, compteurs) évolue
+    structurellement à chaque publication.
+    """
     today = datetime.utcnow().strftime("%Y-%m-%d")
-    urls = [
-        f"{SITE_BASE_URL}/",
-        f"{SITE_BASE_URL}/fiches/",
-        f"{SITE_BASE_URL}/apropos.html",
-        f"{SITE_BASE_URL}/auteurs.html",
-        f"{SITE_BASE_URL}/chronologie.html",
-        f"{SITE_BASE_URL}/graph.html",
-        f"{SITE_BASE_URL}/dossiers.html",
+    entries = [
+        (f"{SITE_BASE_URL}/", today),
+        (f"{SITE_BASE_URL}/fiches/", today),
+        (f"{SITE_BASE_URL}/apropos.html", today),
+        (f"{SITE_BASE_URL}/auteurs.html", today),
+        (f"{SITE_BASE_URL}/chronologie.html", today),
+        (f"{SITE_BASE_URL}/graph.html", today),
+        (f"{SITE_BASE_URL}/dossiers.html", today),
     ]
+
+    store = _load_sitemap_lastmod()
+    seen_ids = set()
     # S1 — seules les fiches publiables (score effectif >= seuil) sont indexées
     for d in catalog.get("docs", {}).values():
-        if _is_publishable(d):
-            urls.append(f"{SITE_BASE_URL}/fiches/{d['id']}.html")
+        if not _is_publishable(d):
+            continue
+        doc_id = d["id"]
+        seen_ids.add(doc_id)
+        fp = _doc_fingerprint(d)
+        prev = store.get(doc_id)
+        lastmod = prev["lastmod"] if prev and prev.get("hash") == fp else today
+        store[doc_id] = {"hash": fp, "lastmod": lastmod}
+        entries.append((f"{SITE_BASE_URL}/fiches/{doc_id}.html", lastmod))
+
+    # Purge des entrées de docs dépubliés — évite un fichier qui grossit sans fin
+    for doc_id in list(store.keys()):
+        if doc_id not in seen_ids:
+            del store[doc_id]
+    SITEMAP_LASTMOD_PATH.write_text(
+        json.dumps(store, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
     body = "\n".join(
-        f"  <url><loc>{u}</loc><lastmod>{today}</lastmod></url>" for u in urls
+        f"  <url><loc>{_xml_escape(u)}</loc><lastmod>{lm}</lastmod></url>"
+        for u, lm in entries
     )
     sitemap = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

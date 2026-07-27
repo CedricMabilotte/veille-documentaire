@@ -1,6 +1,11 @@
 name: Veille documentaire
 
 on:
+  schedule:
+    # Veille quotidienne automatique, 03:00 UTC (creux de trafic). Avant ce
+    # cron, "watch.yml" n'avait qu'un déclenchement manuel (workflow_dispatch)
+    # — la "veille automatisée" ne l'était donc pas vraiment en pratique.
+    - cron: '0 3 * * *'
   workflow_dispatch:
     inputs:
       score_threshold:
@@ -33,6 +38,28 @@ jobs:
       - name: Checkout du repo
         uses: actions/checkout@v5
 
+      - name: Résolution des paramètres de run (cron vs déclenchement manuel)
+        run: |
+          # Un run planifié ("schedule") n'a pas d'objet "inputs" — les steps
+          # suivants lisaient directement github.event.inputs.*, ce qui aurait
+          # fait planter "Lancement de la veille" (SCORE_THRESHOLD="" → int("")
+          # lève une exception dans watch.py) sur tout run cron. On calcule ici
+          # des valeurs par défaut sûres pour un run planifié, en conservant le
+          # comportement existant pour un déclenchement manuel.
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "SCORE_THRESHOLD=6"      >> "$GITHUB_ENV"
+            echo "DRY_RUN=false"          >> "$GITHUB_ENV"
+            DOW=$(date -u +%u)   # 1 = lundi
+            DOM=$(date -u +%d)
+            if [ "$DOW" = "1" ]; then echo "DO_DISCOVERY_WEEKLY=true" >> "$GITHUB_ENV"; else echo "DO_DISCOVERY_WEEKLY=false" >> "$GITHUB_ENV"; fi
+            if [ "$DOM" = "01" ]; then echo "DO_DISCOVERY_MONTHLY=true" >> "$GITHUB_ENV"; else echo "DO_DISCOVERY_MONTHLY=false" >> "$GITHUB_ENV"; fi
+          else
+            echo "SCORE_THRESHOLD=${{ github.event.inputs.score_threshold }}"   >> "$GITHUB_ENV"
+            echo "DRY_RUN=${{ github.event.inputs.dry_run }}"                   >> "$GITHUB_ENV"
+            echo "DO_DISCOVERY_WEEKLY=${{ github.event.inputs.do_discovery_weekly }}"   >> "$GITHUB_ENV"
+            echo "DO_DISCOVERY_MONTHLY=${{ github.event.inputs.do_discovery_monthly }}" >> "$GITHUB_ENV"
+          fi
+
       - name: Setup Python 3.11
         uses: actions/setup-python@v6
         with:
@@ -55,18 +82,18 @@ jobs:
       - name: Lancement de la veille
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          SCORE_THRESHOLD:         ${{ github.event.inputs.score_threshold }}
-          DRY_RUN:                 ${{ github.event.inputs.dry_run }}
+          SCORE_THRESHOLD:         ${{ env.SCORE_THRESHOLD }}
+          DRY_RUN:                 ${{ env.DRY_RUN }}
         run: python scripts/watch.py
 
       - name: Installation de rclone
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.DRY_RUN != 'true' }}
         run: |
           curl -fsSL https://rclone.org/install.sh | sudo bash
           rclone version | head -3
 
       - name: Configuration rclone
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.DRY_RUN != 'true' }}
         env:
           # base64 du contenu de rclone.conf — évite le mask line-by-line
           # et le conflit avec la variable réservée RCLONE_CONFIG
@@ -80,7 +107,7 @@ jobs:
           rclone listremotes
 
       - name: Sync docs/ vers Google Drive
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.DRY_RUN != 'true' }}
         run: |
           rclone copy docs/ gdrive:Veille_documentaire/ \
             --create-empty-src-dirs --stats 30s --stats-one-line
@@ -88,7 +115,7 @@ jobs:
           rclone size gdrive:Veille_documentaire/
 
       - name: Sync interface/ + bulles/ vers Google Drive
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.DRY_RUN != 'true' }}
         run: |
           rclone copy interface/ gdrive:Veille_documentaire/interface/ \
             --stats-one-line --stats 30s
@@ -97,14 +124,14 @@ jobs:
           echo "→ Interface + bulles dispos sur Drive"
 
       - name: Exports BibTeX / RIS / CSL JSON
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.DRY_RUN != 'true' }}
         run: |
           mkdir -p exports
           python scripts/export_bibtex.py || echo "  export_bibtex skipped: $?"
           ls -la exports/ 2>/dev/null || true
 
       - name: Notifications webhooks (Discord/Slack/Mastodon, docs ≥ 9)
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.DRY_RUN != 'true' }}
         env:
           WEBHOOK_DISCORD:   ${{ secrets.WEBHOOK_DISCORD }}
           WEBHOOK_SLACK:     ${{ secrets.WEBHOOK_SLACK }}
@@ -113,24 +140,24 @@ jobs:
         run: 'python scripts/webhooks.py || echo "  webhooks skipped"'
 
       - name: Review des Issues GitHub (suggestions communautaires)
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.DRY_RUN != 'true' }}
         env:
           GH_TOKEN: ${{ secrets.BIBLIO_PUBLISH_TOKEN }}
         run: 'python scripts/review_issues.py || echo "  review_issues skipped"'
 
       - name: Export sources de cet agent (pour cross-pollination future)
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.DRY_RUN != 'true' }}
         run: 'python scripts/share_sources.py || echo "  share_sources skipped"'
 
       - name: "Discovery hebdo (OpenAlex + Semantic Scholar + Mastodon)"
-        if: ${{ github.event.inputs.do_discovery_weekly == 'true' }}
+        if: ${{ env.DO_DISCOVERY_WEEKLY == 'true' }}
         run: |
           python scripts/discovery_openalex.py        || echo "  openalex skipped"
           python scripts/discovery_semantic_scholar.py || echo "  s2 skipped"
           python scripts/discovery_mastodon.py        || echo "  mastodon skipped"
 
       - name: "Discovery mensuelle (LLM suggest + angles morts)"
-        if: ${{ github.event.inputs.do_discovery_monthly == 'true' }}
+        if: ${{ env.DO_DISCOVERY_MONTHLY == 'true' }}
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: |
@@ -138,14 +165,14 @@ jobs:
           python scripts/discovery_blind_spots.py || echo "  blind_spots skipped"
 
       - name: Sync discoveries vers Drive
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.DRY_RUN != 'true' }}
         run: |
           if [ -d discovery/ ]; then
             rclone copy discovery/ gdrive:Veille_documentaire/discovery/ --stats-one-line --stats 30s || true
           fi
 
       - name: Commit reports + catalog + interface + bulles + discoveries
-        if: ${{ github.event.inputs.dry_run != 'true' }}
+        if: ${{ env.DRY_RUN != 'true' }}
         run: |
           git config --global user.name  "Library Bot"
           git config --global user.email "bot@library.local"
