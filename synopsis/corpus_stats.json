@@ -1,24 +1,24 @@
 {
-  "generated_at": "2026-07-27T15:17:05Z",
-  "total": 1929,
-  "total_docs": 1929,
+  "generated_at": "2026-07-28T06:01:26Z",
+  "total": 1857,
+  "total_docs": 1857,
   "total_downloaded": 1406,
   "total_published": 1056,
   "by_lang": {
-    "en": 806,
-    "fr": 408,
+    "en": 793,
+    "fr": 390,
     "es": 250,
     "pt": 234,
-    "inconnu": 164,
-    "de": 67
+    "inconnu": 150,
+    "de": 40
   },
   "by_language": {
-    "en": 806,
-    "fr": 408,
+    "en": 793,
+    "fr": 390,
     "es": 250,
     "pt": 234,
-    "inconnu": 164,
-    "de": 67
+    "inconnu": 150,
+    "de": 40
   },
   "by_source": {
     "La Vía Campesina — publications (WP REST)": 544,
@@ -29,8 +29,7 @@
     "CLACSO Libros (acceso abierto)": 99,
     "Archive.org — community land trusts & housing commons": 75,
     "discovery_promoted": 72,
-    "The Anarchist Library — OPDS (new releases)": 70,
-    "Böll Stiftung — publications DE (deep crawl)": 37,
+    "The Anarchist Library — OPDS (new releases)": 44,
     "Archive.org — bienes comunes espagnol (15M/communs)": 37,
     "Infokiosques.net — Squat (rapport à l'habiter)": 31,
     "CrimethInc — zines": 31,
@@ -38,18 +37,18 @@
     "Archive.org — féminisme et communs (Federici, accumulation primitive)": 30,
     "MINAG Cuba — Agricultura Urbana (publications)": 24,
     "Nyéléni — documents finaux": 22,
-    "Infokiosques.net — nouveautés": 18,
     "Archive.org — Cuba agriculture agroécologie": 17,
     "Archive.org — commons / enclosure": 16,
     "Böll Stiftung — Agriculture & Food (EN topic)": 15,
     "Infokiosques.net — Anticolonialismes": 14,
-    "Infokiosques.net — Écologie radicale": 13,
     "Portal OACA — Libros anarquistas (catégorie)": 13,
     "Archive.org — subject:anarchism (texts)": 10,
     "Archive.org — peasant movements": 10,
+    "Infokiosques.net — Écologie radicale": 10,
     "International Land Coalition — latest": 10,
     "Troisièmes Voix — éditions": 10,
     "European Shepherds Network — publications": 10,
+    "Böll Stiftung — publications DE (deep crawl)": 9,
     "Infokiosques.net — index A": 8,
     "Böll Stiftung — publications DE": 8,
     "The Anarchist Library — OPDS feed": 8,
@@ -62,6 +61,7 @@
     "Infokiosques.net — index L (Libération, Luttes)": 4,
     "Archive.org — anarchism + land/peasant (strict)": 4,
     "CLACSO — búsqueda tierra y communs": 4,
+    "Infokiosques.net — nouveautés": 3,
     "Tierra.org (Amigos de la Tierra ES)": 3,
     "CLACSO — Publicaciones générales": 3,
     "Traficantes de Sueños — 15M (matière)": 3,
@@ -78,15 +78,15 @@
     "1970s": 9,
     "1980s": 15,
     "1990s": 8,
-    "2000s": 141,
-    "2010s": 476,
-    "2020s": 735,
-    "inconnu": 531
+    "2000s": 140,
+    "2010s": 475,
+    "2020s": 702,
+    "inconnu": 494
   },
   "by_score": {
-    "0": 754,
-    "1": 54,
-    "2": 39,
+    "0": 689,
+    "1": 49,
+    "2": 37,
     "3": 26,
     "4": 38,
     "5": 54,
@@ -97,24 +97,24 @@
     "10": 3
   },
   "by_doc_type": {
-    "autre": 1793,
+    "autre": 1721,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1252,
+    "militant": 1208,
     "academique": 435,
     "non_renseigne": 138,
-    "institutionnel": 104
+    "institutionnel": 76
   },
   "blind_spots": [
-    "Forte dominante militante (64.9%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (65.1%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (64.9%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (65.1%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "sources_list": [
@@ -172,20 +172,13 @@
       "url": "https://theanarchistlibrary.org/opds/new",
       "type": "opds",
       "orientation": "militant",
-      "count": 70
+      "count": 44
     },
     {
       "label": "Archive.org — bienes comunes espagnol (15M/communs)",
       "url": "https://archive.org/advancedsearch.php?q=%22bienes+comunes%22+language%3Aspa+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
       "type": "archive_org",
       "orientation": "militant",
-      "count": 37
-    },
-    {
-      "label": "Böll Stiftung — publications DE (deep crawl)",
-      "url": "https://www.boell.de/de/publikationen",
-      "type": "deep_html",
-      "orientation": "institutionnel",
       "count": 37
     },
     {
@@ -231,13 +224,6 @@
       "count": 22
     },
     {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
-      "count": 18
-    },
-    {
       "label": "Archive.org — Cuba agriculture agroécologie",
       "url": "https://archive.org/advancedsearch.php?q=subject%3ACuba+AND+%28agricultura+OR+cooperativa+OR+agroecologia%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
       "type": "archive_org",
@@ -257,13 +243,6 @@
       "type": "html",
       "orientation": "militant",
       "count": 14
-    },
-    {
-      "label": "Infokiosques.net — Écologie radicale",
-      "url": "https://infokiosques.net/ecologie_radicale",
-      "type": "html",
-      "orientation": "militant",
-      "count": 13
     },
     {
       "label": "Portal OACA — Libros anarquistas (catégorie)",
@@ -287,6 +266,13 @@
       "count": 10
     },
     {
+      "label": "Infokiosques.net — Écologie radicale",
+      "url": "https://infokiosques.net/ecologie_radicale",
+      "type": "html",
+      "orientation": "militant",
+      "count": 10
+    },
+    {
       "label": "International Land Coalition — latest",
       "url": "https://www.landcoalition.org/en/latest/",
       "type": "deep_html",
@@ -299,6 +285,13 @@
       "type": "deep_html",
       "orientation": "militant",
       "count": 10
+    },
+    {
+      "label": "Böll Stiftung — publications DE (deep crawl)",
+      "url": "https://www.boell.de/de/publikationen",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 9
     },
     {
       "label": "HAL — communs fonciers",
@@ -354,6 +347,13 @@
       "url": "https://www.clacso.org/publicaciones/",
       "type": "deep_html",
       "orientation": "academique",
+      "count": 3
+    },
+    {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
       "count": 3
     },
     {

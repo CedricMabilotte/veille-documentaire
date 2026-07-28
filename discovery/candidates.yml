@@ -1,4 +1,4 @@
-last_updated: '2026-07-27T15:10:50+00:00'
+last_updated: '2026-07-28T05:57:25+00:00'
 total_candidates: 2887
 candidates:
 - url: http://www.software602.com/
@@ -5834,6 +5834,18 @@ candidates:
   - doc_id: de1c36db
     context: GoZ (2002), Environmental Management Act (EMA Act), https://www.ema.co.zw/index.php/2014-
     page: 20
+- url: https://www.facebook.com/share/1BVSrq57dR/
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-28'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Facebook
+    page: null
 - url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdaily.jstor.org%2Fland-of-the-free-home-of-the-bootleggers%2F
   type: external_link
   domain: www.facebook.com
@@ -6206,6 +6218,18 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-28'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Linkedin-in
+    page: null
 - url: https://www.ohchr.org/en/statements/2023/07/press-
   type: footnote
   domain: www.ohchr.org
@@ -6301,6 +6325,30 @@ candidates:
   found_from:
   - doc_id: MST Brésil — biblioteca questão agraria
     context: lien depuis https://mst.org.br/biblioteca-da-questao-agraria/
+    page: null
+- url: https://x.com/rbm_maroobe
+  type: external_link
+  domain: x.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-28'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: X-twitter
+    page: null
+- url: https://youtube.com/@reseaubillitalmaroobe7381
+  type: external_link
+  domain: youtube.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-07-28'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Youtube
     page: null
 - url: https://zad.nadir.org/spip.php?article4576
   type: footnote
@@ -6510,18 +6558,6 @@ candidates:
   - doc_id: 073089a1
     context: keufs et reprendre les lieux détruits. https://nantes.indymedia.org/events/41053
     page: 12
-- url: https://www.facebook.com/share/1BVSrq57dR/
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-27'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Facebook
-    page: null
 - url: https://www.lci.fr/societe/zad-notre-dame-des-landes-les-leaders-historiques-
   type: footnote
   domain: www.lci.fr
@@ -6537,42 +6573,6 @@ candidates:
   - doc_id: 073089a1
     context: https://www.lci.fr/societe/zad-notre-dame-des-landes-les-leaders-historiques-
     page: 11
-- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
-  type: external_link
-  domain: www.linkedin.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-27'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Linkedin-in
-    page: null
-- url: https://x.com/rbm_maroobe
-  type: external_link
-  domain: x.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-27'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: X-twitter
-    page: null
-- url: https://youtube.com/@reseaubillitalmaroobe7381
-  type: external_link
-  domain: youtube.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-27'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Youtube
-    page: null
 - url: https://zad.nadir.org/spip.php?article5973
   type: footnote
   domain: zad.nadir.org
