@@ -1,0 +1,62 @@
+{
+  "titre_accroche": "Les Luddites : quand les artisans refusaient la dépossession",
+  "teaser": "Bien avant la lutte pour les terres, les Luddites anglais ont mené une révolte morale contre l'industrialisation sauvage. Christian Ferrer réhabilite cette mémoire oubliée d'une résistance organisée, enracinée dans le droit coutumier du \"Fair Play\".",
+  "abstract_editorial": "Christian Ferrer redonne vie à un mythe étouffé par l'historiographie dominante. Les Luddites n'étaient pas des obscurantistes technophobes, mais une force organisée de petits artisans textiles qui, entre 1811 et 1813, ont refusé la spoliation systématique de leurs marchés et de leur autonomie économique. Leur mouvement porte une leçon cruciale pour qui s'intéresse aux enjeux fonciers et aux communs : la résistance à la dépossession ne suppose pas la conquête du pouvoir, mais la capacité à dévier les dynamiques dominantes.\n\nCet essai retrace une sublevation sans leaders centralisés, sans programme politique, mais dotée d'une sophistication redoutable : délégués de terrain, serments secrets, mythologie collective autour de Ned Ludd, et un corpus de chansons révolutionnaires. L'État anglais mobilisa 10 000 soldats pour la réprimer, révélant l'ampleur réelle du mouvement et son ancrage populaire profond.\n\nPlus encore : les Luddites héritaient d'une tradition juridique oubliée, celle du droit coutumier anglais et du principe de \"Fair Play\" — un droit à la rente décente, à un prix juste, à la propriété d'usage de ses savoirs et de son travail. En ce sens, leur lutte préfigure les débats contemporains sur les communs, la propriété collective et la résistance à l'accaparement des ressources. Ferrer nous rappelle que cette mémoire, macérée sur des générations, demeure vivante et pédagogique pour ceux qui cherchent à penser autrement les relations à la terre, au travail et à l'autonomie économique.",
+  "citations_phares": [
+    {
+      "page": 3,
+      "quote": "Ce fut une sublevation sans leaders, sans organisation centralisée, sans livres capitaux et avec un objectif chimérique : discuter d'égal à égal avec les nouveaux industriels"
+    },
+    {
+      "page": 4,
+      "quote": "L'objectif des Luddites n'était pas politique mais social et moral : non pas conquérir le pouvoir, mais pouvoir dévier la dynamique de l'industrialisation accélérée"
+    },
+    {
+      "page": 5,
+      "quote": "Cette sublevation... s'incubait depuis des années, générations se transmettant un héritage de mauvais traitement, populations entières macérant des savoirs de résistance"
+    }
+  ],
+  "categorisation": [
+    "communs",
+    "résistance anti-industrielle",
+    "propriété d'usage",
+    "droit coutumier",
+    "autonomie économique",
+    "paysannerie et artisanat",
+    "économie morale",
+    "mémoire oubliée"
+  ],
+  "slug": "luddites-ferrer-droit-coutumier-propriete",
+  "en_clair": "Ce texte raconte la révolte des ouvriers tisserands anglais qui cassaient les machines pour défendre leurs emplois et leur dignité contre l'industrialisation. C'est de l'histoire passionnante, mais ça ne parle pas de la terre, de l'agriculture, ou de comment les paysans contrôlent ensemble leurs terres.",
+  "acteurs": [
+    "William Cartwright",
+    "General Thomas Maitland",
+    "Wellington",
+    "Ned Ludd (figure mythique collective)",
+    "Christian Ferrer (auteur)"
+  ],
+  "controverse": "Le texte remet en cause la caricature historiographique des ludites comme des obscurantistes technophobes ou des « revenants médiévaux ». Il affirme au contraire qu'ils menaient une critique morale et sociale cohérente contre la destruction d'un ordre économique et social antérieur, sans projet de prise du pouvoir.",
+  "angle_journalistique": "Comment les mouvements ouvriers ruraux et urbains du 19e siècle se sont-ils organisés sans hiérarchie centralisée ? Quels savoirs de résistance transmettaient-ils oralement et collectivement ?",
+  "citations_verifiees": [
+    {
+      "quote": "aquella fue una sublevación sin líderes, sin organización centralizada, sin libros capitales y con un objetivo quimérico: discutir de igual a igual con los nuevos industriales",
+      "page": 3,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "el objetivo de los luditas no era político sino social y moral: no querían el poder sino poder desviar la dinámica de la industrialización acelerada",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "aquella fue una sublevación sin líderes... Lleva años de incubación, generaciones transmitiéndose una herencia de maltrato, poblaciones enteras macerando saberes de resistencia",
+      "page": 5,
+      "page_physical": null,
+      "verified": false
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "65ff6e8431"
+}

@@ -121,15 +121,15 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-07-30T06:13:57.630079+00:00'
+exported_at: '2026-07-31T07:57:18.175101+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
   type: html
-  fertility: 4.22
-  runs: 9
-  docs_dl: 38
-  docs_seen: 428
+  fertility: 4.0
+  runs: 10
+  docs_dl: 40
+  docs_seen: 481
 - url: https://infokiosques.net/paysannerie_ruralite
   label: Infokiosques.net — Paysannerie & ruralité
   type: html
@@ -259,17 +259,17 @@ sources:
 - url: https://archive.org/advancedsearch.php?q=%28creator%3A%22ostrom%22+OR+creator%3A%22federici%22+OR+creator%3A%22bollier%22+OR+%22governing+the+commons%22+OR+%22common+pool+resource%22+OR+%22commoning%22%29+AND+mediatype%3Atexts+AND+language%3A%28eng+OR+fra%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — théorie des communs (Ostrom, CPR, collective action)
   type: archive_org
-  fertility: 1.0
-  runs: 1
+  fertility: 0.5
+  runs: 2
   docs_dl: 1
-  docs_seen: 30
+  docs_seen: 60
 - url: https://archive.org/advancedsearch.php?q=%28%22caliban+and+the+witch%22+OR+%22primitive+accumulation%22+OR+%22feminist+commons%22+OR+%22agrarian+feminism%22+OR+creator%3A%22federici%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — féminisme et communs (Federici, accumulation primitive)
   type: archive_org
-  fertility: 0.0
-  runs: 1
-  docs_dl: 0
-  docs_seen: 30
+  fertility: 0.5
+  runs: 2
+  docs_dl: 1
+  docs_seen: 60
 - url: https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
   label: HAL — communs fonciers
   type: hal
@@ -344,9 +344,9 @@ sources:
   label: European Shepherds Network — publications
   type: deep_html
   fertility: 10.0
-  runs: 1
-  docs_dl: 10
-  docs_seen: 10
+  runs: 2
+  docs_dl: 20
+  docs_seen: 20
 - url: http://www.confras.org/
   label: CONFRAS El Salvador — publicaciones
   type: deep_html
@@ -533,9 +533,9 @@ sources:
   label: CLACSO — búsqueda tierra y communs
   type: deep_html
   fertility: 0.0
-  runs: 1
+  runs: 2
   docs_dl: 0
-  docs_seen: 93
+  docs_seen: 186
 - url: https://nyeleni.org/fr/documents-finaux/
   label: Nyéléni — documents finaux
   type: deep_html
@@ -547,9 +547,9 @@ sources:
   label: Traficantes de Sueños — 15M (matière)
   type: deep_html
   fertility: 0.0
-  runs: 1
+  runs: 2
   docs_dl: 0
-  docs_seen: 3
+  docs_seen: 6
 - url: https://traficantes.net/materias/bienes-comunes
   label: Traficantes de Sueños — Bienes comunes
   type: deep_html
@@ -574,17 +574,17 @@ sources:
 - url: https://archive.org/advancedsearch.php?q=%22bienes+comunes%22+language%3Aspa+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
   label: Archive.org — bienes comunes espagnol (15M/communs)
   type: archive_org
-  fertility: 0.0
-  runs: 1
-  docs_dl: 0
-  docs_seen: 37
+  fertility: 7.0
+  runs: 2
+  docs_dl: 14
+  docs_seen: 74
 - url: https://www.minag.gob.cu/category/categoria-publicaciones/agricultura-urbana/
   label: MINAG Cuba — Agricultura Urbana (publications)
   type: deep_html
-  fertility: 0.0
-  runs: 1
-  docs_dl: 0
-  docs_seen: 24
+  fertility: 2.0
+  runs: 2
+  docs_dl: 4
+  docs_seen: 48
 - url: https://biblioteca-repositorio.clacso.edu.ar/discover?query=cuba+cooperativas+agricultura&rpp=20
   label: CLACSO Repositorio — Cuba cooperativas agricultura
   type: deep_html
@@ -609,10 +609,10 @@ sources:
 - url: https://archive.org/advancedsearch.php?q=subject%3ACuba+AND+%28agricultura+OR+cooperativa+OR+agroecologia%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
   label: Archive.org — Cuba agriculture agroécologie
   type: archive_org
-  fertility: 0.0
-  runs: 1
-  docs_dl: 0
-  docs_seen: 17
+  fertility: 0.5
+  runs: 2
+  docs_dl: 1
+  docs_seen: 34
 - url: https://grain.org/feed.xml
   label: GRAIN — articles & rapports
   type: rss

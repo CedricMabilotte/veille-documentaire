@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-30T05:56:26Z",
+  "generated_at": "2026-07-31T07:34:29Z",
   "total_dossiers": 10,
   "dossiers": [
     {
       "slug": "sortir-une-terre-du-marche",
       "titre": "Sortir une terre du marché",
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-      "doc_count": 87,
+      "doc_count": 90,
       "docs": [
         "9c49c870",
         "931fc89b",
@@ -84,6 +84,7 @@
         "8af5f6c1",
         "8741a8e6",
         "2f0c58b3",
+        "8ee3f263",
         "02b2b6df",
         "d992c836",
         "258bddb2",
@@ -94,7 +95,9 @@
         "9405b8a5",
         "b0e87371",
         "e0c37afa",
-        "a66578a6"
+        "b8a9d650",
+        "a66578a6",
+        "bd18d74a"
       ],
       "docs_detail": [
         {
@@ -740,6 +743,14 @@
           ]
         },
         {
+          "id": "8ee3f263",
+          "title": "Ostrom, E. : El Gobierno de los Bienes Comunes. La Evolución de las Instituciones de Acción Colectiva, México, 2000.",
+          "score": 7,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
           "id": "02b2b6df",
           "title": "C'est quoi la ZAD ?",
           "score": 6,
@@ -821,11 +832,29 @@
           ]
         },
         {
+          "id": "b8a9d650",
+          "title": "Download in PDF",
+          "score": 6,
+          "matched_on": [
+            "stewardship"
+          ]
+        },
+        {
           "id": "a66578a6",
           "title": "Isreal Violation Sep.2020",
           "score": 6,
           "matched_on": [
             "propriété d'usage"
+          ]
+        },
+        {
+          "id": "bd18d74a",
+          "title": "Descripción Solicitud de Tierra",
+          "score": 6,
+          "matched_on": [
+            "propriété d'usage",
+            "anti-spéculat",
+            "inaliénab"
           ]
         }
       ]
@@ -834,7 +863,7 @@
       "slug": "zad-defense-de-territoires",
       "titre": "ZAD & défense de territoires",
       "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-      "doc_count": 77,
+      "doc_count": 78,
       "docs": [
         "38a113bc",
         "ba64641a",
@@ -847,6 +876,7 @@
         "b54759fb",
         "59028c2b",
         "1958fc06",
+        "fb76b5a1",
         "5536b369",
         "1ce39b6d",
         "b4712d32",
@@ -1004,6 +1034,14 @@
         {
           "id": "1958fc06",
           "title": "Webinar_Palestine_ The Struggle for Food Sovereignty under Occupation",
+          "score": 9,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "fb76b5a1",
+          "title": "El Manifiesto de la Carta Magna",
           "score": 9,
           "matched_on": [
             "occupation"
@@ -1590,7 +1628,7 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 192,
+      "doc_count": 196,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -1635,6 +1673,7 @@
         "cc218f22",
         "5362046f",
         "a15fbe47",
+        "fb76b5a1",
         "e7de54e2",
         "4bc13839",
         "7832cc13",
@@ -1731,6 +1770,7 @@
         "f2e916da",
         "d64aa10b",
         "bb0c829f",
+        "e8ee5514",
         "fac367e2",
         "2db11a52",
         "d64f2d03",
@@ -1781,9 +1821,11 @@
         "38b5fd88",
         "55b31ba8",
         "c8e0149d",
+        "cede62b7",
         "ad195f76",
         "3afcdc16",
-        "a685537e"
+        "a685537e",
+        "7c1b5f0c"
       ],
       "docs_detail": [
         {
@@ -2194,6 +2236,14 @@
           "matched_on": [
             "sans-terre",
             "via campesina"
+          ]
+        },
+        {
+          "id": "fb76b5a1",
+          "title": "El Manifiesto de la Carta Magna",
+          "score": 9,
+          "matched_on": [
+            "sans-terre"
           ]
         },
         {
@@ -3020,6 +3070,15 @@
           ]
         },
         {
+          "id": "e8ee5514",
+          "title": "Migraciones, agro, tercer cercamiento capitalista y el procomún",
+          "score": 8,
+          "matched_on": [
+            "réforme agraire",
+            "reforma agraria"
+          ]
+        },
+        {
           "id": "fac367e2",
           "title": "Ricardo Flores Magón, — Regeneración 1910",
           "score": 7,
@@ -3467,6 +3526,14 @@
           ]
         },
         {
+          "id": "cede62b7",
+          "title": "Download in French",
+          "score": 6,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
           "id": "ad195f76",
           "title": "NOT IN OUR NAME",
           "score": 6,
@@ -3491,6 +3558,15 @@
             "sans-terre",
             "landless"
           ]
+        },
+        {
+          "id": "7c1b5f0c",
+          "title": "História Agrária Da Revolução Cubana — Joana Vasconcelos",
+          "score": 6,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire"
+          ]
         }
       ]
     },
@@ -3498,11 +3574,12 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 157,
+      "doc_count": 169,
       "docs": [
         "d30c223f",
         "9c49c870",
         "39441dfc",
+        "c8210481",
         "05392c72",
         "96563571",
         "931fc89b",
@@ -3543,6 +3620,7 @@
         "c8842f31",
         "41df6222",
         "cc218f22",
+        "fb76b5a1",
         "e7de54e2",
         "4bc13839",
         "abcacc36",
@@ -3606,6 +3684,7 @@
         "85560c8a",
         "0a70b2b3",
         "54ae9934",
+        "e8ee5514",
         "2292aab6",
         "75de4c14",
         "2db11a52",
@@ -3629,9 +3708,12 @@
         "1d3081c2",
         "3fd40433",
         "8741a8e6",
+        "187000d0",
         "5ab070fc",
         "2f0c58b3",
         "a5a01a97",
+        "8f25f5d2",
+        "8ee3f263",
         "d647480f",
         "b85c8bc1",
         "d992c836",
@@ -3656,7 +3738,13 @@
         "55b31ba8",
         "360fd55b",
         "e0c37afa",
-        "c8e0149d"
+        "c8e0149d",
+        "b8a9d650",
+        "cede62b7",
+        "f640d991",
+        "7585c0aa",
+        "7c1b5f0c",
+        "13352415"
       ],
       "docs_detail": [
         {
@@ -3682,6 +3770,14 @@
           "score": 10,
           "matched_on": [
             "communs fonciers"
+          ]
+        },
+        {
+          "id": "c8210481",
+          "title": "Re-enchanting the World: Feminism and the Politics of the Commons",
+          "score": 10,
+          "matched_on": [
+            "commons"
           ]
         },
         {
@@ -4038,6 +4134,15 @@
           "score": 9,
           "matched_on": [
             "commons"
+          ]
+        },
+        {
+          "id": "fb76b5a1",
+          "title": "El Manifiesto de la Carta Magna",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers",
+            "enclosure"
           ]
         },
         {
@@ -4581,6 +4686,17 @@
           ]
         },
         {
+          "id": "e8ee5514",
+          "title": "Migraciones, agro, tercer cercamiento capitalista y el procomún",
+          "score": 8,
+          "matched_on": [
+            "communaux",
+            "terres communales",
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
           "id": "2292aab6",
           "title": "Mini-Manuel : Communalisme",
           "score": 8,
@@ -4781,6 +4897,16 @@
           ]
         },
         {
+          "id": "187000d0",
+          "title": "Download in German",
+          "score": 7,
+          "matched_on": [
+            "communs fonciers",
+            "terres collectives",
+            "enclosure"
+          ]
+        },
+        {
           "id": "5ab070fc",
           "title": "lvc_IT_A-Summit-Under-Siege_lowres2",
           "score": 7,
@@ -4802,6 +4928,23 @@
           "score": 7,
           "matched_on": [
             "terres collectives"
+          ]
+        },
+        {
+          "id": "8f25f5d2",
+          "title": "Horizontes comunitario-populares",
+          "score": 7,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
+          "id": "8ee3f263",
+          "title": "Ostrom, E. : El Gobierno de los Bienes Comunes. La Evolución de las Instituciones de Acción Colectiva, México, 2000.",
+          "score": 7,
+          "matched_on": [
+            "communs fonciers",
+            "commons"
           ]
         },
         {
@@ -5020,6 +5163,56 @@
           "score": 6,
           "matched_on": [
             "commons"
+          ]
+        },
+        {
+          "id": "b8a9d650",
+          "title": "Download in PDF",
+          "score": 6,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "cede62b7",
+          "title": "Download in French",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "f640d991",
+          "title": "Download in Greek",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers",
+            "terres collectives",
+            "enclosure"
+          ]
+        },
+        {
+          "id": "7585c0aa",
+          "title": "Ostrom, E. — El gobierno de los bienes comunes",
+          "score": 6,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
+          "id": "7c1b5f0c",
+          "title": "História Agrária Da Revolução Cubana — Joana Vasconcelos",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "13352415",
+          "title": "Silent theft : the private plunder of our common wealth",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
           ]
         }
       ]
@@ -5442,7 +5635,7 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 336,
+      "doc_count": 350,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -5497,6 +5690,8 @@
         "cc218f22",
         "5362046f",
         "a15fbe47",
+        "23558b3e",
+        "fb76b5a1",
         "e7de54e2",
         "4bc13839",
         "abcacc36",
@@ -5602,6 +5797,7 @@
         "83fad0f1",
         "4ee36902",
         "3ab1a62b",
+        "f75b67b2",
         "800b6f06",
         "1a3bdd23",
         "dff4b150",
@@ -5678,6 +5874,7 @@
         "d273ba77",
         "68742934",
         "3edc59bf",
+        "e8ee5514",
         "2292aab6",
         "75de4c14",
         "fac367e2",
@@ -5715,6 +5912,7 @@
         "bb0dcc2a",
         "a1543a19",
         "ded7eaa1",
+        "187000d0",
         "5ab070fc",
         "60f51b57",
         "982a7b44",
@@ -5726,6 +5924,7 @@
         "f5460d57",
         "a5a01a97",
         "7da5dacd",
+        "8ee3f263",
         "02b2b6df",
         "a238e5bd",
         "5ea6c0cc",
@@ -5772,6 +5971,9 @@
         "e0c37afa",
         "edd2691f",
         "c8e0149d",
+        "b8a9d650",
+        "cede62b7",
+        "f640d991",
         "e02bdae7",
         "ad195f76",
         "3afcdc16",
@@ -5779,7 +5981,12 @@
         "a66578a6",
         "93a242c7",
         "95c96790",
-        "a685537e"
+        "a685537e",
+        "7585c0aa",
+        "c1c58233",
+        "bd18d74a",
+        "7c1b5f0c",
+        "13352415"
       ],
       "docs_detail": [
         {
@@ -6329,6 +6536,22 @@
             "paysan",
             "agroécologie",
             "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "23558b3e",
+          "title": "Agenda política. Coalición de Mujeres del Caribe por la Tierra y el Territorio",
+          "score": 9,
+          "matched_on": [
+            "paysan"
+          ]
+        },
+        {
+          "id": "fb76b5a1",
+          "title": "El Manifiesto de la Carta Magna",
+          "score": 9,
+          "matched_on": [
+            "paysan"
           ]
         },
         {
@@ -7321,6 +7544,14 @@
           ]
         },
         {
+          "id": "f75b67b2",
+          "title": "Download in Spanish",
+          "score": 8,
+          "matched_on": [
+            "paysan"
+          ]
+        },
+        {
           "id": "800b6f06",
           "title": "EN_LVC_Position_ Paper_Food Sovereignty in the Face of War",
           "score": 8,
@@ -8011,6 +8242,16 @@
           ]
         },
         {
+          "id": "e8ee5514",
+          "title": "Migraciones, agro, tercer cercamiento capitalista y el procomún",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
           "id": "2292aab6",
           "title": "Mini-Manuel : Communalisme",
           "score": 8,
@@ -8358,6 +8599,18 @@
           ]
         },
         {
+          "id": "187000d0",
+          "title": "Download in German",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
           "id": "5ab070fc",
           "title": "lvc_IT_A-Summit-Under-Siege_lowres2",
           "score": 7,
@@ -8495,6 +8748,14 @@
             "agriculture vivrière",
             "souveraineté alimentaire",
             "peasant"
+          ]
+        },
+        {
+          "id": "8ee3f263",
+          "title": "Ostrom, E. : El Gobierno de los Bienes Comunes. La Evolución de las Instituciones de Acción Colectiva, México, 2000.",
+          "score": 7,
+          "matched_on": [
+            "paysan"
           ]
         },
         {
@@ -8938,6 +9199,43 @@
           ]
         },
         {
+          "id": "b8a9d650",
+          "title": "Download in PDF",
+          "score": 6,
+          "matched_on": [
+            "paysan",
+            "agroécologie",
+            "agriculture paysanne",
+            "peasant",
+            "agroecology"
+          ]
+        },
+        {
+          "id": "cede62b7",
+          "title": "Download in French",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "f640d991",
+          "title": "Download in Greek",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
           "id": "e02bdae7",
           "title": "EN-Brief-Analysis-of-the-Situation-in-Haiti",
           "score": 6,
@@ -9017,6 +9315,50 @@
             "agroecology",
             "food sovereignty"
           ]
+        },
+        {
+          "id": "7585c0aa",
+          "title": "Ostrom, E. — El gobierno de los bienes comunes",
+          "score": 6,
+          "matched_on": [
+            "paysan"
+          ]
+        },
+        {
+          "id": "c1c58233",
+          "title": "nuevo_fichero.pdf",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "bd18d74a",
+          "title": "Descripción Solicitud de Tierra",
+          "score": 6,
+          "matched_on": [
+            "paysan"
+          ]
+        },
+        {
+          "id": "7c1b5f0c",
+          "title": "História Agrária Da Revolução Cubana — Joana Vasconcelos",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie"
+          ]
+        },
+        {
+          "id": "13352415",
+          "title": "Silent theft : the private plunder of our common wealth",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
         }
       ]
     },
@@ -9024,7 +9366,7 @@
       "slug": "land-back-autochtones",
       "titre": "Land Back & souverainetés autochtones",
       "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-      "doc_count": 87,
+      "doc_count": 91,
       "docs": [
         "39441dfc",
         "c2ab1111",
@@ -9047,6 +9389,7 @@
         "cc218f22",
         "5362046f",
         "a15fbe47",
+        "fb76b5a1",
         "9e831a55",
         "55db5001",
         "0b22d51b",
@@ -9080,6 +9423,7 @@
         "85560c8a",
         "0cefefbc",
         "54ae9934",
+        "e8ee5514",
         "581a53c8",
         "12a4e254",
         "a54f94c8",
@@ -9093,6 +9437,7 @@
         "3fd40433",
         "ac638fb6",
         "8741a8e6",
+        "187000d0",
         "60f51b57",
         "8c4c211f",
         "0183b615",
@@ -9112,7 +9457,8 @@
         "9975470e",
         "ad195f76",
         "3afcdc16",
-        "a685537e"
+        "a685537e",
+        "7585c0aa"
       ],
       "docs_detail": [
         {
@@ -9293,6 +9639,14 @@
         {
           "id": "a15fbe47",
           "title": "Open Letter CJ – SEAf final PT",
+          "score": 9,
+          "matched_on": [
+            "droit coutumier"
+          ]
+        },
+        {
+          "id": "fb76b5a1",
+          "title": "El Manifiesto de la Carta Magna",
           "score": 9,
           "matched_on": [
             "droit coutumier"
@@ -9579,6 +9933,15 @@
           ]
         },
         {
+          "id": "e8ee5514",
+          "title": "Migraciones, agro, tercer cercamiento capitalista y el procomún",
+          "score": 8,
+          "matched_on": [
+            "autochtone",
+            "droit coutumier"
+          ]
+        },
+        {
           "id": "581a53c8",
           "title": "ILC — Cartes des constituencies (2025)",
           "score": 7,
@@ -9690,6 +10053,14 @@
           "matched_on": [
             "autochtone",
             "indigène"
+          ]
+        },
+        {
+          "id": "187000d0",
+          "title": "Download in German",
+          "score": 7,
+          "matched_on": [
+            "droit coutumier"
           ]
         },
         {
@@ -9858,6 +10229,14 @@
             "autochtone",
             "indigenous"
           ]
+        },
+        {
+          "id": "7585c0aa",
+          "title": "Ostrom, E. — El gobierno de los bienes comunes",
+          "score": 6,
+          "matched_on": [
+            "autochtone"
+          ]
         }
       ]
     },
@@ -9865,7 +10244,7 @@
       "slug": "feminismes-de-la-terre",
       "titre": "Féminismes de la terre",
       "chapo": "Le foncier a un genre. Place des femmes dans les luttes agraires, droits fonciers des femmes, écoféminisme rural, critique de la division genrée du travail de la terre.",
-      "doc_count": 31,
+      "doc_count": 32,
       "docs": [
         "7361abcf",
         "1ef49d91",
@@ -9878,6 +10257,7 @@
         "59b9dd0b",
         "41df6222",
         "5362046f",
+        "23558b3e",
         "9e831a55",
         "c99e6da4",
         "2bf90eb8",
@@ -9999,6 +10379,16 @@
           "matched_on": [
             "féminisme paysan",
             "féminisme agraire"
+          ]
+        },
+        {
+          "id": "23558b3e",
+          "title": "Agenda política. Coalición de Mujeres del Caribe por la Tierra y el Territorio",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan",
+            "féminisme agraire",
+            "mujeres campesinas"
           ]
         },
         {
@@ -10180,7 +10570,7 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 121,
+      "doc_count": 130,
       "docs": [
         "d30c223f",
         "39441dfc",
@@ -10215,6 +10605,8 @@
         "41df6222",
         "5362046f",
         "a15fbe47",
+        "23558b3e",
+        "fb76b5a1",
         "c99e6da4",
         "55db5001",
         "e5341cc9",
@@ -10242,6 +10634,7 @@
         "88dfd6e3",
         "037cb37e",
         "3ab1a62b",
+        "f75b67b2",
         "16c630c0",
         "f57050e5",
         "a18b6293",
@@ -10253,6 +10646,7 @@
         "85560c8a",
         "54ae9934",
         "2ff9a5d7",
+        "e8ee5514",
         "2db11a52",
         "85a0da6c",
         "581a53c8",
@@ -10271,6 +10665,7 @@
         "8741a8e6",
         "79ba213c",
         "f075bd56",
+        "187000d0",
         "5ab070fc",
         "60f51b57",
         "f94b3902",
@@ -10299,10 +10694,14 @@
         "bdaf5ec0",
         "55b31ba8",
         "e0c37afa",
+        "b8a9d650",
+        "cede62b7",
+        "f640d991",
         "e02bdae7",
         "a66578a6",
         "93a242c7",
-        "95c96790"
+        "95c96790",
+        "94025f98"
       ],
       "docs_detail": [
         {
@@ -10581,6 +10980,24 @@
           ]
         },
         {
+          "id": "23558b3e",
+          "title": "Agenda política. Coalición de Mujeres del Caribe por la Tierra y el Territorio",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "fb76b5a1",
+          "title": "El Manifiesto de la Carta Magna",
+          "score": 9,
+          "matched_on": [
+            "land grab",
+            "enclosure",
+            "extractivis"
+          ]
+        },
+        {
           "id": "c99e6da4",
           "title": "Eskum 3 in 1",
           "score": 8,
@@ -10809,6 +11226,15 @@
           ]
         },
         {
+          "id": "f75b67b2",
+          "title": "Download in Spanish",
+          "score": 8,
+          "matched_on": [
+            "accaparement",
+            "acaparamiento"
+          ]
+        },
+        {
           "id": "16c630c0",
           "title": "[PT] Manifesto 5 de junho – O planeta acima do lucro – Uma só Terra",
           "score": 8,
@@ -10899,6 +11325,15 @@
           "score": 8,
           "matched_on": [
             "accaparement"
+          ]
+        },
+        {
+          "id": "e8ee5514",
+          "title": "Migraciones, agro, tercer cercamiento capitalista y el procomún",
+          "score": 8,
+          "matched_on": [
+            "enclosure",
+            "extractivis"
           ]
         },
         {
@@ -11050,6 +11485,16 @@
           "score": 7,
           "matched_on": [
             "extractivis"
+          ]
+        },
+        {
+          "id": "187000d0",
+          "title": "Download in German",
+          "score": 7,
+          "matched_on": [
+            "accaparement",
+            "land grab",
+            "enclosure"
           ]
         },
         {
@@ -11283,6 +11728,33 @@
           ]
         },
         {
+          "id": "b8a9d650",
+          "title": "Download in PDF",
+          "score": 6,
+          "matched_on": [
+            "accaparement",
+            "land grab",
+            "enclosure"
+          ]
+        },
+        {
+          "id": "cede62b7",
+          "title": "Download in French",
+          "score": 6,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "f640d991",
+          "title": "Download in Greek",
+          "score": 6,
+          "matched_on": [
+            "accaparement",
+            "enclosure"
+          ]
+        },
+        {
           "id": "e02bdae7",
           "title": "EN-Brief-Analysis-of-the-Situation-in-Haiti",
           "score": 6,
@@ -11316,6 +11788,14 @@
             "accaparement",
             "land grab"
           ]
+        },
+        {
+          "id": "94025f98",
+          "title": "DENUNCIA AMBIENTAL",
+          "score": 6,
+          "matched_on": [
+            "accaparement"
+          ]
         }
       ]
     },
@@ -11323,7 +11803,7 @@
       "slug": "cooperatives-mutualisme",
       "titre": "Coopératives & mutualisme foncier",
       "chapo": "S'associer pour la terre : coopératives agricoles, GFA mutuels, foncières solidaires, mutuelles. Une économie de la terre fondée sur l'entraide plutôt que sur la rente.",
-      "doc_count": 24,
+      "doc_count": 26,
       "docs": [
         "c3bb4444",
         "95b490c8",
@@ -11348,7 +11828,9 @@
         "5c511048",
         "961e54e4",
         "fcb58745",
-        "6a9cba09"
+        "6a9cba09",
+        "bd18d74a",
+        "7c1b5f0c"
       ],
       "docs_detail": [
         {
@@ -11541,6 +12023,22 @@
         {
           "id": "6a9cba09",
           "title": "La embargabilidad en el régimen económico de las cooperativas de viviendas de Euskadi",
+          "score": 6,
+          "matched_on": [
+            "cooperativa"
+          ]
+        },
+        {
+          "id": "bd18d74a",
+          "title": "Descripción Solicitud de Tierra",
+          "score": 6,
+          "matched_on": [
+            "cooperativa"
+          ]
+        },
+        {
+          "id": "7c1b5f0c",
+          "title": "História Agrária Da Revolução Cubana — Joana Vasconcelos",
           "score": 6,
           "matched_on": [
             "cooperativa"
