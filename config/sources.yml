@@ -802,15 +802,26 @@ sources:
     default_lang: es
     min_interval_days: 30
 
-  - label: "Traficantes de Sueños — Bienes comunes"
-    url: "https://traficantes.net/materias/bienes-comunes"
-    type: deep_html
-    orientation: militant
-    default_lang: es
-    min_interval_days: 30
+  # Session 2026-08-01 — l'ancienne taxonomie /materias/* a été démantelée
+  # (site réorganisé en 7 "secciones" larges + sous-filtre "materia" par
+  # nid). "Bienes comunes" n'existe plus nulle part sur le site : les ~90
+  # sous-matières actuelles (secciones ecologia/movimientos-sociales/
+  # pensamiento/historia/feminismo/literatura, vérifiées une à une en direct)
+  # ne comportent aucun terme "comunes"/"bienes comunes". Le thème apparaît
+  # de façon éparse dans plusieurs sous-matières (ex. "ASOCIARSE PARA EL BIEN
+  # COMÚN", "REBELDÍAS EN COMÚN" sous Economía SOCIAL) sans page dédiée.
+  # Entrée supprimée plutôt que forcée sur une URL approximative — pas
+  # d'équivalent satisfaisant trouvé (voir investigation détaillée en séance).
 
-  - label: "Traficantes de Sueños — Autogestion"
-    url: "https://traficantes.net/materias/autogestion"
+  # Session 2026-08-01 — "autogestion" (matière) a disparu elle aussi, mais
+  # son contenu a été absorbé dans la sous-matière "Economía SOCIAL" de la
+  # seccion "pensamiento" (nid=172114), confirmée en direct : contient
+  # "AUTOGESTIÓN Y REVOLUCIÓN", "AUTOGESTIÓN PARA TIEMPO DE CRISIS",
+  # coopérativisme, économie sociale et solidaire — le meilleur proxy vivant
+  # trouvé pour ce thème. URL filtrée stable et paginée (curl direct, HTML
+  # statique exploitable en deep_html).
+  - label: "Traficantes de Sueños — Autogestion / Economía social"
+    url: "https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114"
     type: deep_html
     orientation: militant
     default_lang: es
