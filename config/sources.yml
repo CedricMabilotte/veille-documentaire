@@ -449,17 +449,6 @@ sources:
     max_pages: 8
     min_interval_days: 30
 
-  # CONFRAS — Confederación de Federaciones de la Reforma Agraria Salvadoreña
-  # Luttes paysannes El Salvador, réforme agraire, organisations campesinas.
-  - label: "CONFRAS El Salvador — publicaciones"
-    url: "http://www.confras.org/"
-    type: deep_html
-    orientation: militant
-    default_lang: es
-    auto_download: true
-    max_pages: 8
-    min_interval_days: 30
-
   # TNI Land & Food — think-tank progressiste, géopolitique foncière
   # TESTÉ 2026-06-22 : pas de flux RSS disponible. /rss.xml et /en/rss.xml
   # redirigent vers sitemap.xml. /feed/ et /en/feed/ retournent 429.
@@ -890,32 +879,33 @@ sources:
     default_lang: es
     min_interval_days: 30
 
-  # ─── GRAIN — foncier, semences, alimentation ────────────────────────────────
-  - label: "GRAIN — articles & rapports"
-    url: "https://grain.org/feed.xml"
-    type: rss
-    orientation: militant
-    default_lang: en
-    min_interval_days: 7
-    auto_download: true
+  # RETIRÉ 2026-08-01 : grain.org/feed.xml en 404 confirmé, doublon inutile de
+  # l'entrée "GRAIN — entries RSS" (grain.org/home/entries.rss) ci-dessus, qui
+  # fonctionne (200 OK, RSS valide) et est conservée telle quelle.
 
   # ─── Transnational Institute (TNI) — terres, extractivisme, souveraineté ───
-  - label: "TNI — Agrarian & Environmental Justice"
-    url: "https://www.tni.org/en/publications?topic=agrarian-justice&type=publications"
-    type: deep_html
-    orientation: academique
-    default_lang: en
-    min_interval_days: 14
-    auto_download: true
+  # DÉSACTIVÉ 2026-08-01 : 429 Too Many Requests confirmé en direct. Même
+  # constat que l'entrée TNI ci-dessus (désactivée le 2026-06-22) : tous les
+  # endpoints TNI sont bloqués en 429 (rate-limiting strict côté serveur).
+  # Cette entrée avait été réintroduite sans reprendre ce constat. À réactiver
+  # si TNI publie un feed public ou si un endpoint API est identifié.
+  # - label: "TNI — Agrarian & Environmental Justice"
+  #   url: "https://www.tni.org/en/publications?topic=agrarian-justice&type=publications"
+  #   type: deep_html
+  #   orientation: academique
+  #   default_lang: en
+  #   min_interval_days: 14
+  #   auto_download: true
 
   # ─── FIAN International — droit à l'alimentation, accès à la terre ─────────
   - label: "FIAN International — publications"
     url: "https://www.fian.org/en/publications"
     type: deep_html
     orientation: institutionnel
-    default_lang: en
+    default_lang: fr
     min_interval_days: 14
     auto_download: true
+    max_pages: 10
 
   # ═══ Ajoute tes propres sources ici ════════════════════════════════════════
   # - label: "Mon blog de référence"
