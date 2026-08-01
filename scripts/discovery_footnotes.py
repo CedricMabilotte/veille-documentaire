@@ -143,7 +143,7 @@ def discover_from_footnotes(docs_dir: Path,
         # Le filename "réel" dans le catalog = nom sans le préfixe "xxxxxxxx_"
         real_name = pdf.name.split("_", 1)[1] if "_" in pdf.name else pdf.name
         doc_id, doc_meta = by_filename.get(real_name, (pdf.stem, {}))
-        score = doc_meta.get("latest_score", 0)
+        score = doc_meta.get("latest_score") or 0
         if score < min_score:
             continue
 

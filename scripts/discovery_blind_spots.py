@@ -105,7 +105,7 @@ def compute_coverage_stats(catalog_path: Path) -> dict:
         src = d.get("source", "?")
         by_source[src] += 1
         runs_by_source[src] += 1
-        if d.get("latest_score", 0) >= 7:
+        if (d.get("latest_score") or 0) >= 7:
             high_score_by_source[src] += 1
         dec = _guess_decade(title)
         if dec:

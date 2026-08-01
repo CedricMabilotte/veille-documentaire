@@ -94,18 +94,18 @@ def build_context(catalog_path: Path, concepts_path: Path,
         if sources_path.exists() else {}
 
     docs = list(catalog.get("docs", {}).values())
-    docs_sorted = sorted(docs, key=lambda d: d.get("latest_score", 0), reverse=True)
+    docs_sorted = sorted(docs, key=lambda d: d.get("latest_score") or 0, reverse=True)
     top_docs = [
         {
             "title": d.get("filename", "")[:80],
-            "score": d.get("latest_score"),
+            "score": d.get("latest_score") or 0,
             "source": d.get("source"),
         }
         for d in docs_sorted[:20]
     ]
 
     source_counter = Counter(d.get("source", "?") for d in docs)
-    score_distribution = Counter(d.get("latest_score", 0) for d in docs)
+    score_distribution = Counter(d.get("latest_score") or 0 for d in docs)
 
     return {
         "ontology": concepts.get("ontology", {}),
@@ -119,7 +119,7 @@ def build_context(catalog_path: Path, concepts_path: Path,
             "total_docs": len(docs),
             "by_source": dict(source_counter.most_common(20)),
             "score_distribution": dict(sorted(score_distribution.items())),
-            "high_score_count": sum(1 for d in docs if d.get("latest_score", 0) >= 7),
+            "high_score_count": sum(1 for d in docs if (d.get("latest_score") or 0) >= 7),
         },
         "top_docs": top_docs,
     }

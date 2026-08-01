@@ -49,7 +49,7 @@ def build_digest(catalog_path: Path, since_days: int = 7, min_score: int = 8) ->
     cutoff = datetime.now() - timedelta(days=since_days)
     items: list[dict[str, Any]] = []
     for doc in catalog.get("docs", {}).values():
-        if int(doc.get("latest_score", 0)) < min_score:
+        if int(doc.get("latest_score") or 0) < min_score:
             continue
         d = _parse_run_date(doc.get("latest_run", "") or doc.get("first_seen", ""))
         if d is None or d < cutoff:
@@ -65,7 +65,7 @@ def build_digest(catalog_path: Path, since_days: int = 7, min_score: int = 8) ->
         items.append({
             "title": bulle.get("titre_accroche") or doc.get("meta", {}).get("pdf_title") or doc.get("filename", ""),
             "source": doc.get("source", ""),
-            "score": doc.get("latest_score", 0),
+            "score": doc.get("latest_score") or 0,
             "summary_short": _short_summary(doc),
             "url": doc.get("url", ""),
             "cover": doc.get("cover", ""),

@@ -121,7 +121,7 @@ def _iter_eligible(catalog_path: Path, min_score: int) -> Iterable[tuple[str, di
     """Itère sur les docs du catalog scorés >= min_score."""
     catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
     for doc_id, doc in catalog.get("docs", {}).items():
-        if int(doc.get("latest_score", 0)) >= min_score:
+        if int(doc.get("latest_score") or 0) >= min_score:
             yield doc_id, doc
 
 
