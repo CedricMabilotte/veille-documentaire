@@ -56,7 +56,8 @@ Le pipeline s'articule en étages, orchestrés par `scripts/watch.py` :
 6. **Exports & découverte** — `export_bibtex.py` (BibTeX/RIS/CSL) et les
    `discovery_*.py` (découverte de nouvelles sources).
 
-Seuil de publication : `PUBLISH_THRESHOLD = 6` dans `watch.py` — un document
+Seuil de publication : `PUBLISH_THRESHOLD = 4` dans `watch.py` (via `os.getenv`,
+défaut `4` — tranché session #20, cf. `etat-projet-biblio.md` §4.1) — un document
 n'est exposé (RSS, sitemap, fiche pré-rendue) que si son score effectif
 (`score_final`, sinon `score_initial`) l'atteint, et s'il s'agit d'un ouvrage
 en format ouvert (PDF, EPUB, TXT, ODT).
