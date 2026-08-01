@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>BIBLIO — exploration du chrome, passe organique/artisanale</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Kalam:wght@400;700&family=Permanent+Marker&family=Vollkorn:ital@0;1&family=Lora:ital@0;1&family=Cormorant+Garamond:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: system-ui, sans-serif; background:#0f0f0f; }
+
+  .intro { max-width: 760px; margin: 0 auto; padding: 48px 24px 32px; color:#ddd; line-height:1.55; }
+  .intro h1 { color:#fff; font-size: 1.4rem; margin-bottom: .3em; }
+  .intro p { color:#bbb; font-size: .95rem; }
+
+  .meta { max-width: 1100px; margin: 40px auto 0; padding: 14px 24px; background:#1a1a1a; color:#e8dcc0; font-size:.85rem; border-radius:4px 4px 0 0; }
+  .meta b { color:#fff; font-size: 1rem; }
+  .meta span { display:block; margin-top:4px; opacity:.8; }
+
+  .frame { max-width: 1100px; margin: 0 auto 60px; box-shadow: 0 20px 50px rgba(0,0,0,.5); overflow: visible; }
+
+  /* ================= A — Papier déchiré / collage ================= */
+  .pa { background:#f0e6d2; font-family:'Vollkorn', serif; color:#3a2c17; position:relative; }
+  .pa header {
+    position:relative; display:flex; align-items:center; gap:14px; padding:20px 30px 30px;
+    background:#e7d8b8;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 97% 95%, 94% 89%, 90% 96%, 86% 90%, 82% 97%, 78% 89%,
+      74% 95%, 70% 90%, 66% 96%, 62% 89%, 58% 95%, 54% 90%, 50% 98%, 46% 89%, 42% 95%, 38% 90%,
+      34% 96%, 30% 89%, 26% 95%, 22% 90%, 18% 97%, 14% 89%, 10% 95%, 6% 90%, 3% 96%, 0 90%);
+  }
+  .pa .logo {
+    font-family:'Caveat', cursive; font-weight:700; font-size:1.9rem; color:#6b3a1f;
+    background:#f8f1df; padding:6px 16px 8px; transform: rotate(-3deg);
+    box-shadow: 2px 3px 6px rgba(0,0,0,.15);
+    clip-path: polygon(2% 8%, 30% 0, 68% 4%, 98% 0, 100% 60%, 96% 100%, 62% 96%, 25% 100%, 0 92%);
+  }
+  .pa nav { display:flex; gap:10px; margin-left:12px; flex-wrap:wrap; }
+  .pa nav a {
+    text-decoration:none; color:#3a2c17; font-size:.85rem; padding:6px 12px;
+    background:#f8f1df; box-shadow: 1px 2px 4px rgba(0,0,0,.12);
+  }
+  .pa nav a:nth-child(1){ transform: rotate(-2deg); clip-path: polygon(4% 10%,90% 0,100% 70%,94% 100%,8% 92%,0 30%); }
+  .pa nav a:nth-child(2){ transform: rotate(1.5deg); clip-path: polygon(0 4%,96% 0,100% 88%,86% 100%,10% 96%,2% 60%); }
+  .pa nav a:nth-child(3){ transform: rotate(-1deg); clip-path: polygon(2% 0,98% 6%,100% 92%,90% 100%,6% 96%,0 40%); }
+  .pa nav a:nth-child(4){ transform: rotate(2deg); clip-path: polygon(6% 4%,94% 0,100% 70%,96% 100%,4% 94%,0 20%); }
+  .pa nav a:nth-child(5){ transform: rotate(-1.5deg); clip-path: polygon(0 8%,92% 0,100% 60%,98% 96%,10% 100%,2% 50%); }
+  .pa .search { margin-left:auto; display:flex; align-items:center; gap:6px; }
+  .pa .search input {
+    border:none; border-bottom: 3px solid #6b3a1f; background:transparent;
+    font-family:'Caveat', cursive; font-size:1.1rem; width:150px; padding:2px 4px; outline:none;
+  }
+  .pa .toggles { display:flex; gap:8px; margin-left:14px; font-family:'Caveat', cursive; font-size:1.2rem; color:#6b3a1f; }
+  .pa .hero { text-align:center; padding:50px 24px 70px; }
+  .pa .hero .cote { font-family:'Caveat', cursive; font-size:1.15rem; color:#8a4a2a; }
+  .pa .hero h2 { font-family:'Caveat', cursive; font-weight:700; font-size:5rem; margin:2px 0; color:#3a2c17; }
+  .pa .hero p { font-style: italic; font-size:1.15rem; opacity:.85; margin:14px 0 32px; }
+  .pa .ctas { display:flex; gap:22px; justify-content:center; }
+  .pa .btn {
+    font-family:'Caveat', cursive; font-weight:700; font-size:1.35rem; padding:10px 26px 14px;
+    background:#f8f1df; color:#3a2c17; box-shadow: 2px 3px 6px rgba(0,0,0,.18);
+  }
+  .pa .btn:nth-child(1){ transform: rotate(-2deg); clip-path: polygon(3% 6%,90% 0,100% 55%,97% 92%,60% 100%,10% 96%,0 40%); background:#c9743f; color:#fdf6e8; }
+  .pa .btn:nth-child(2){ transform: rotate(1.5deg); clip-path: polygon(0 10%,94% 0,100% 90%,88% 100%,8% 94%,2% 45%); }
+
+  /* ================= B — Couture / carnet relié ================= */
+  .pb { background:#eee6d6; font-family:'Lora', serif; color:#2c2a1c; }
+  .pb header { position:relative; padding:22px 30px 20px; background:#e5dcc4; }
+  .pb header svg.stitch { position:absolute; left:0; right:0; bottom:0; width:100%; height:14px; }
+  .pb .row { display:flex; align-items:center; gap:16px; }
+  .pb .logo {
+    font-family:'Kalam', cursive; font-weight:700; font-size:1.7rem; color:#4a5a3a;
+    padding:4px 4px 4px 0;
+  }
+  .pb nav { display:flex; gap:4px; margin-left:8px; }
+  .pb nav a {
+    text-decoration:none; color:#2c2a1c; font-family:'Kalam', cursive; font-size:1rem;
+    padding:8px 14px; position:relative; border-radius: 40% 60% 55% 45% / 50% 45% 55% 50%;
+  }
+  .pb nav a.active { background:#fdfaf0; box-shadow: inset 0 0 0 1.5px #8a6a3a; }
+  .pb nav a.active::before, .pb nav a.active::after {
+    content:"✕"; position:absolute; font-size:.6rem; color:#8a6a3a; opacity:.7;
+  }
+  .pb nav a.active::before { top:2px; left:2px; }
+  .pb nav a.active::after { bottom:2px; right:2px; }
+  .pb .search { margin-left:auto; display:flex; align-items:center; gap:6px; background:#fdfaf0;
+    border-radius: 45% 55% 50% 50% / 55% 45% 55% 45%; padding:6px 14px; box-shadow: inset 0 0 0 1.5px #c8bd9c; }
+  .pb .search input { border:none; background:transparent; font-family:'Lora', serif; font-size:.85rem; width:130px; outline:none; }
+  .pb .toggles { display:flex; gap:10px; margin-left:14px; font-family:'Kalam', cursive; font-size:.95rem; color:#4a5a3a; }
+  .pb .hero { text-align:center; padding:60px 24px 74px; }
+  .pb .hero .cote { font-family:'Kalam', cursive; font-size:1rem; color:#8a6a3a; }
+  .pb .hero h2 { font-family:'Kalam', cursive; font-weight:700; font-size:4.2rem; margin:6px 0; color:#3a4a2e; }
+  .pb .hero p { font-style: italic; margin:16px 0 32px; opacity:.85; }
+  .pb .ctas { display:flex; gap:26px; justify-content:center; }
+  .pb .btn {
+    font-family:'Kalam', cursive; font-weight:700; font-size:1.05rem; padding:12px 24px;
+    background:#fdfaf0; color:#2c2a1c; border-radius: 40% 60% 55% 45% / 50% 45% 55% 50%;
+    box-shadow: inset 0 0 0 1.5px #c8bd9c; position:relative;
+  }
+  .pb .btn.fill { background:#5a4a2e; color:#fdfaf0; box-shadow:none; }
+  .pb .btn .knot { position:absolute; top:-10px; left:50%; transform:translateX(-50%); font-size:1rem; }
+
+  /* ================= C — Encre & aquarelle ================= */
+  .pc { background:#f4f1e8; font-family:'Cormorant Garamond', serif; color:#241f30; position:relative; overflow:hidden; }
+  .pc header {
+    position:relative; display:flex; align-items:center; gap:18px; padding:22px 30px;
+    background:
+      radial-gradient(ellipse 55% 90% at 8% 30%, rgba(96,64,120,.14), transparent 70%),
+      radial-gradient(ellipse 40% 80% at 90% 60%, rgba(150,70,40,.10), transparent 70%);
+  }
+  .pc .logo { font-family:'Permanent Marker', cursive; font-size:1.6rem; color:#4a2f5c; position:relative; }
+  .pc nav { display:flex; gap:22px; margin-left:14px; font-size:1.05rem; font-style: italic; }
+  .pc nav a { text-decoration:none; color:#241f30; position:relative; padding-bottom:6px; }
+  .pc nav a.active { color:#4a2f5c; font-weight:600; }
+  .pc nav a.active::after {
+    content:""; position:absolute; left:-6%; right:-6%; bottom:-2px; height:10px;
+    background: radial-gradient(ellipse 100% 100% at 50% 0%, rgba(74,47,92,.35), transparent 75%);
+  }
+  .pc .search { margin-left:auto; display:flex; align-items:center; gap:6px;
+    background: radial-gradient(ellipse 100% 100% at 50% 50%, rgba(255,255,255,.6), rgba(255,255,255,.15));
+    border-radius: 60% 40% 45% 55% / 45% 55% 45% 55%; padding:6px 16px; }
+  .pc .search input { border:none; background:transparent; font-family:'Cormorant Garamond', serif; font-style:italic; font-size:.95rem; width:140px; outline:none; }
+  .pc .toggles { display:flex; gap:12px; margin-left:16px; font-style:italic; color:#4a2f5c; }
+  .pc .hero { text-align:center; padding:60px 24px 76px; position:relative; }
+  .pc .hero::before {
+    content:""; position:absolute; inset:0;
+    background:
+      radial-gradient(ellipse 45% 60% at 30% 20%, rgba(96,64,120,.10), transparent 70%),
+      radial-gradient(ellipse 50% 50% at 75% 70%, rgba(150,70,40,.08), transparent 70%);
+    pointer-events:none;
+  }
+  .pc .hero .cote { font-style:italic; font-size:1.1rem; color:#6b4a80; position:relative; }
+  .pc .hero h2 { font-family:'Permanent Marker', cursive; font-size:4.4rem; margin:10px 0; color:#2e2440; position:relative; }
+  .pc .hero p { font-style: italic; font-size:1.2rem; margin:14px 0 32px; opacity:.85; position:relative; }
+  .pc .ctas { display:flex; gap:24px; justify-content:center; position:relative; }
+  .pc .btn {
+    font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1.25rem; padding:12px 30px;
+    border-radius: 55% 45% 50% 50% / 45% 55% 50% 50%;
+  }
+  .pc .btn:nth-child(1){ background: radial-gradient(ellipse 100% 100% at 40% 40%, #6b4a80, #4a2f5c 75%); color:#f4f1e8; }
+  .pc .btn:nth-child(2){ background: radial-gradient(ellipse 100% 100% at 50% 50%, rgba(255,255,255,.7), rgba(255,255,255,.25)); color:#2e2440; }
+</style>
+</head>
+<body>
+
+<div class="intro">
+  <h1>Exploration — passe organique / artisanale du chrome</h1>
+  <p>Suite à <code>chrome-exploration.html</code> (conservé pour comparaison) : les propositions 2 et 4 de
+  cette première passe étaient jugées trop dures/géométriques (grille cadastrale, agitprop à angles droits).
+  Ici, trois pistes qui misent sur l'imperfection assumée — bords découpés à la main, couture visible,
+  lavis d'encre — plutôt que sur des formes vectorielles nettes. Toujours uniquement le chrome (header,
+  recherche, hero, boutons) ; les fiches/dossiers papier restent inchangées.</p>
+</div>
+
+<div class="meta"><b>Proposition A — Papier déchiré / collage</b>
+<span>Bord de header découpé en dents irrégulières, nav en scraps de papier collés, chacun avec sa propre rotation et son ombre portée — l'idée d'un tableau de liège recomposé à la main.</span></div>
+<div class="frame chrome pa">
+  <header>
+    <div class="logo">Biblio</div>
+    <nav>
+      <a href="#">Catalogue</a><a href="#">Dossiers</a><a href="#">Concepts</a><a href="#">Chronologie</a><a href="#">À propos</a>
+    </nav>
+    <div class="search">🔍<input placeholder="chercher…"></div>
+    <div class="toggles"><span>◐</span><span>☾</span></div>
+  </header>
+  <div class="hero">
+    <div class="cote">bibliothèque documentaire ouverte</div>
+    <h2>Biblio</h2>
+    <p>Communs, terres, paysanneries.</p>
+    <div class="ctas">
+      <div class="btn">Explorer les fiches</div>
+      <div class="btn">Parcourir les dossiers</div>
+    </div>
+  </div>
+</div>
+
+<div class="meta"><b>Proposition B — Couture / carnet relié</b>
+<span>Point de couture visible en pied de header, onglets de nav en formes tissées légèrement asymétriques, marques en croix aux coins de l'onglet actif — l'objet convoqué est le carnet cousu main, pas la fiche cartonnée.</span></div>
+<div class="frame chrome pb">
+  <header>
+    <svg class="stitch" viewBox="0 0 1000 14" preserveAspectRatio="none">
+      <path d="M0,7 Q25,0 50,7 T100,7 T150,7 T200,7 T250,7 T300,7 T350,7 T400,7 T450,7 T500,7 T550,7 T600,7 T650,7 T700,7 T750,7 T800,7 T850,7 T900,7 T950,7 T1000,7"
+        fill="none" stroke="#8a6a3a" stroke-width="1.4" stroke-dasharray="6 5" opacity=".65"/>
+    </svg>
+    <div class="row">
+      <div class="logo">Biblio</div>
+      <nav>
+        <a href="#" class="active">Catalogue</a><a href="#">Dossiers</a><a href="#">Concepts</a><a href="#">Chronologie</a>
+      </nav>
+      <div class="search">🔎<input placeholder="chercher…"></div>
+      <div class="toggles"><span>jour</span><span>nuit</span></div>
+    </div>
+  </header>
+  <div class="hero">
+    <div class="cote">carnet de veille</div>
+    <h2>Biblio</h2>
+    <p>Bibliothèque documentaire ouverte. Communs, terres, paysanneries.</p>
+    <div class="ctas">
+      <div class="btn fill"><span class="knot">🎗</span>Explorer les fiches</div>
+      <div class="btn"><span class="knot">🎗</span>Parcourir les dossiers</div>
+    </div>
+  </div>
+</div>
+
+<div class="meta"><b>Proposition C — Encre &amp; aquarelle</b>
+<span>Lavis de couleur diffus en fond de header et de hero, soulignement au pinceau sous le lien actif, boutons en flaque d'encre plutôt qu'en rectangle — l'imperfection vient du dégradé flou, pas de la découpe.</span></div>
+<div class="frame chrome pc">
+  <header>
+    <div class="logo">Biblio</div>
+    <nav>
+      <a href="#" class="active">Catalogue</a><a href="#">Dossiers</a><a href="#">Concepts</a><a href="#">Chronologie</a>
+    </nav>
+    <div class="search">✎<input placeholder="chercher…"></div>
+    <div class="toggles"><span>jour</span><span>nuit</span></div>
+  </header>
+  <div class="hero">
+    <div class="cote">bibliothèque documentaire ouverte</div>
+    <h2>Biblio</h2>
+    <p>Communs, terres, paysanneries.</p>
+    <div class="ctas">
+      <div class="btn">Explorer les fiches</div>
+      <div class="btn">Parcourir les dossiers</div>
+    </div>
+  </div>
+</div>
+
+<div class="intro" style="padding-bottom:80px;">
+  <p>Trois techniques distinctes de fabrication de l'imperfection : découpe/collage (A), couture/tissu (B),
+  lavis/pinceau (C) — plutôt que trois palettes de couleur sur un même gabarit. Dis-moi ce qui accroche
+  vraiment (même un seul détail, ex. "les scraps collés de A mais le nœud de B") : c'est ce niveau de
+  retour précis, élément par élément, qui a fait avancer le reste du site jusqu'ici.</p>
+</div>
+
+</body>
+</html>
