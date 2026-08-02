@@ -1,5 +1,5 @@
-last_updated: '2026-08-01T06:09:15+00:00'
-total_candidates: 2967
+last_updated: '2026-08-02T06:15:44'
+total_candidates: 2978
 candidates:
 - url: http://www.software602.com/
   type: footnote
@@ -3180,6 +3180,54 @@ candidates:
   - doc_id: Böll Stiftung — Agriculture & Food (EN topic)
     context: Paris Office - France, Italy
     page: null
+- url: https://www.facebook.com/share/1BVSrq57dR/
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Facebook
+    page: null
+- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Linkedin-in
+    page: null
+- url: https://x.com/rbm_maroobe
+  type: external_link
+  domain: x.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: X-twitter
+    page: null
+- url: https://youtube.com/@reseaubillitalmaroobe7381
+  type: external_link
+  domain: youtube.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 11
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Youtube
+    page: null
 - url: http://goo.gl/forms/yyhXa2Pb4c
   type: footnote
   domain: goo.gl
@@ -3696,54 +3744,6 @@ candidates:
   - doc_id: 682f226c
     context: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
     page: 6
-- url: https://www.facebook.com/share/1BVSrq57dR/
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-08-01'
-  seen_count: 10
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Facebook
-    page: null
-- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
-  type: external_link
-  domain: www.linkedin.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-08-01'
-  seen_count: 10
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Linkedin-in
-    page: null
-- url: https://x.com/rbm_maroobe
-  type: external_link
-  domain: x.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-08-01'
-  seen_count: 10
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: X-twitter
-    page: null
-- url: https://youtube.com/@reseaubillitalmaroobe7381
-  type: external_link
-  domain: youtube.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-08-01'
-  seen_count: 10
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Youtube
-    page: null
 - url: http://agroecologia.espora.org
   type: footnote
   domain: agroecologia.espora.org
@@ -4954,6 +4954,24 @@ candidates:
   - doc_id: 6125738a_commitment_toolkit__5_book_-2019-web_spread
     context: http://www.landcoalition.org/en/
     page: 9
+- url: https://creativecommons.org/licenses/by/4.0/
+  type: external_link
+  domain: creativecommons.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-08-02'
+  seen_count: 7
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Böll Stiftung — Agriculture Atlas (EN)
+    context: these conditions
+    page: null
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: CC BY 4.0
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: CC BY 4.0
+    page: null
 - url: https://infokiosques.net/spip.php?article204
   type: footnote
   domain: infokiosques.net
@@ -5496,21 +5514,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://creativecommons.org/licenses/by/4.0/
-  type: external_link
-  domain: creativecommons.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-07-31'
-  seen_count: 6
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Böll Stiftung — Agriculture Atlas (EN)
-    context: these conditions
-    page: null
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: CC BY 4.0
-    page: null
 - url: https://data.unicef.org/resources/child-marriage-in-
   type: footnote
   domain: data.unicef.org
@@ -10388,6 +10391,17 @@ candidates:
     year: 2016
     doi: 10.1007/s12053-016-9477-0
   suggested_action: follow_one_time
+  promoted_pdf_url: https://link.springer.com/content/pdf/10.1007/s12053-016-9477-0.pdf
+  promoted_at: '2026-08-02T06:13:51'
+  promoted_metadata:
+    doi: 10.1007/s12053-016-9477-0
+    title: 'Energy performance contracting (EPC): a suitable mechanism for achieving energy savings in housing cooperatives?
+      Results from a Norwegian pilot project'
+    journal: Energy Efficiency
+    published_date: '2016-09-05'
+    genre: journal-article
+    html_url: https://link.springer.com/content/pdf/10.1007/s12053-016-9477-0.pdf
+    source: unpaywall
 - url: https://doi.org/10.1016/j
   type: footnote
   domain: doi.org
@@ -13542,6 +13556,34 @@ candidates:
   metadata:
     title: Ben Morea, In Memoriam
   suggested_action: follow_one_time
+- url: https://lundi.am/CANICULALYPSE-7655
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Caniculalypse — (suite sans fin) Emmanuel Thomazo - Été 2026 / Avec une grosse photo en haut , Littérature ,
+      4
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Caniculalypse
+  suggested_action: follow_one_time
+- url: https://lundi.am/Canicules-et-incendies-apprendre-a-avoir-peur
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Canicules et incendies : apprendre à avoir peur — « Le signe que quelque chose en nous insiste et résiste à
+      la fatalité » Jérôme Santolini - Été 2026 / Avec une grosse photo en haut , Positions , 2'
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'Canicules et incendies : apprendre à avoir peur'
+  suggested_action: follow_one_time
 - url: https://lundi.am/Cloaca-Maxima
   type: rss
   found_from:
@@ -13584,6 +13626,33 @@ candidates:
   metadata:
     title: Du progrès à l'illusion groupale
   suggested_action: follow_one_time
+- url: https://lundi.am/Du-sujet-a-caution-au-statut-de-chasseuse-cueilleuse-en-festival
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: « Du sujet à caution au statut de chasseuse-cueilleuse en festival » — SNG (Natacha Guiller) - Été 2026 / Avec
+      une grosse photo en haut , Littérature , 4
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-02'
+  metadata:
+    title: « Du sujet à caution au statut de chasseuse-cueilleuse en festival »
+  suggested_action: follow_one_time
+- url: https://lundi.am/Editions-lundimatin
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Éditions lundimatin — Vous procurer directement nos livres... - Été 2026 / Avec une grosse photo en haut , 4
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Éditions lundimatin
+  suggested_action: follow_one_time
 - url: https://lundi.am/L-innommable
   type: rss
   found_from:
@@ -13596,6 +13665,20 @@ candidates:
   last_seen: '2026-05-24'
   metadata:
     title: L'innommable
+  suggested_action: follow_one_time
+- url: https://lundi.am/Le-Megacanal-prend-l-eau-Le-feu-jaillit
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Le Megacanal prend l'eau – Le feu jaillit — Récit d'un week-end de lutte aquatique - Été 2026 / Avec une grosse
+      photo en haut , 2 , Mouvement
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Le Megacanal prend l'eau – Le feu jaillit
   suggested_action: follow_one_time
 - url: https://lundi.am/Le-cinema-est-cerne-7536
   type: rss
@@ -13610,6 +13693,76 @@ candidates:
   last_seen: '2026-05-24'
   metadata:
     title: Le cinéma est cerné
+  suggested_action: follow_one_time
+- url: https://lundi.am/Le-dernier-vertige-7642
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Le dernier vertige — Wittgenstein et l'intelligence artificielle Eric Chauvier - Été 2026 / Avec une grosse photo
+      en haut , Cybernétique , 2
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Le dernier vertige
+  suggested_action: follow_one_time
+- url: https://lundi.am/Le-retour-de-l-ecole
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Le retour de l'école — (ou l'enfance vue comme un feu tricolore) - Été 2026 / Avec une grosse photo en haut ,
+      Littérature , 2
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Le retour de l'école
+  suggested_action: follow_one_time
+- url: https://lundi.am/Letexier-et-le-stratageme-de-la-cage-de-verre-de-la-FIFA
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Letexier et le stratagème de la « cage de verre » de la FIFA — « Vive le foot ingouvernable » - Été 2026 / Avec
+      une grosse photo en haut , Histoire , 4
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Letexier et le stratagème de la « cage de verre » de la FIFA
+  suggested_action: follow_one_time
+- url: https://lundi.am/Liberer-Mehdi-Blackwind
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Libérer Mehdi Blackwind — Des nouvelles depuis Casablanca - Été 2026 / Avec une grosse photo en haut , Terreur
+      , 2
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Libérer Mehdi Blackwind
+  suggested_action: follow_one_time
+- url: https://lundi.am/Mourir-a-Romainville
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Mourir à Romainville — « Comment savez-vous si la Terre n'est pas l'enfer d'une autre planète. » - Été 2026 /
+      Avec une grosse photo en haut , 2 , Terreur
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Mourir à Romainville
   suggested_action: follow_one_time
 - url: https://lundi.am/Red-flag
   type: rss
@@ -19519,6 +19672,36 @@ candidates:
   - doc_id: afcd5ef8
     context: 'vidéos: http://petanimerdeka.tk/blog/'
     page: 2
+- url: http://taller.traficantes.net
+  type: external_link
+  domain: taller.traficantes.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Diseño
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Diseño
+    page: null
+- url: http://taller.traficantes.net/
+  type: external_link
+  domain: taller.traficantes.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Taller de diseño
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Taller de diseño
+    page: null
 - url: http://www.agroscope.admin.ch/biosicherheit/06948/index.html?lang=fr
   type: footnote
   domain: www.agroscope.admin.ch
@@ -19581,6 +19764,21 @@ candidates:
   - doc_id: c45d24db
     context: Now”, http://www.cfjn.org/
     page: 3
+- url: http://www.culturaydeporte.gob.es/cultura/libro-bibliotecas.html
+  type: external_link
+  domain: www.culturaydeporte.gob.es
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
 - url: http://www.fao.org/3/a-
   type: footnote
   domain: www.fao.org
@@ -20720,6 +20918,36 @@ candidates:
   - doc_id: a90d3977
     context: '[https://france3-regions.francetvinfo.fr/pays-de-la-loire/loire-'
     page: 14
+- url: https://fundaciondeloscomunes.net
+  type: external_link
+  domain: fundaciondeloscomunes.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
+- url: https://gestionmadrid.mercadosocial.net/media/reports/Mercado_Social_Madrid_Infografia_Balance_Social_Traficantes_de_Suenos.pdf
+  type: external_link
+  domain: gestionmadrid.mercadosocial.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
 - url: https://gofund.me/d0cc0587
   type: mastodon
   found_from:
@@ -21157,145 +21385,21 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://lundi.am/CANICULALYPSE-7655
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Caniculalypse — (suite sans fin) Emmanuel Thomazo - Été 2026 / Avec une grosse photo en haut , Littérature ,
-      4
-    timestamp: '2026-07-27T12:51:43'
+- url: https://madrid.mercadosocial.net
+  type: external_link
+  domain: madrid.mercadosocial.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
   seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-07-31'
-  metadata:
-    title: Caniculalypse
   suggested_action: follow_one_time
-- url: https://lundi.am/Canicules-et-incendies-apprendre-a-avoir-peur
-  type: rss
+  notes: ''
   found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: 'Canicules et incendies : apprendre à avoir peur — « Le signe que quelque chose en nous insiste et résiste à
-      la fatalité » Jérôme Santolini - Été 2026 / Avec une grosse photo en haut , Positions , 2'
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-07-31'
-  metadata:
-    title: 'Canicules et incendies : apprendre à avoir peur'
-  suggested_action: follow_one_time
-- url: https://lundi.am/Du-sujet-a-caution-au-statut-de-chasseuse-cueilleuse-en-festival
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: « Du sujet à caution au statut de chasseuse-cueilleuse en festival » — SNG (Natacha Guiller) - Été 2026 / Avec
-      une grosse photo en haut , Littérature , 4
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-07-31'
-  metadata:
-    title: « Du sujet à caution au statut de chasseuse-cueilleuse en festival »
-  suggested_action: follow_one_time
-- url: https://lundi.am/Editions-lundimatin
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Éditions lundimatin — Vous procurer directement nos livres... - Été 2026 / Avec une grosse photo en haut , 4
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-07-31'
-  metadata:
-    title: Éditions lundimatin
-  suggested_action: follow_one_time
-- url: https://lundi.am/Le-Megacanal-prend-l-eau-Le-feu-jaillit
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Le Megacanal prend l'eau – Le feu jaillit — Récit d'un week-end de lutte aquatique - Été 2026 / Avec une grosse
-      photo en haut , 2 , Mouvement
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-07-31'
-  metadata:
-    title: Le Megacanal prend l'eau – Le feu jaillit
-  suggested_action: follow_one_time
-- url: https://lundi.am/Le-dernier-vertige-7642
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Le dernier vertige — Wittgenstein et l'intelligence artificielle Eric Chauvier - Été 2026 / Avec une grosse photo
-      en haut , Cybernétique , 2
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-07-31'
-  metadata:
-    title: Le dernier vertige
-  suggested_action: follow_one_time
-- url: https://lundi.am/Le-retour-de-l-ecole
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Le retour de l'école — (ou l'enfance vue comme un feu tricolore) - Été 2026 / Avec une grosse photo en haut ,
-      Littérature , 2
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-07-31'
-  metadata:
-    title: Le retour de l'école
-  suggested_action: follow_one_time
-- url: https://lundi.am/Letexier-et-le-stratageme-de-la-cage-de-verre-de-la-FIFA
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Letexier et le stratagème de la « cage de verre » de la FIFA — « Vive le foot ingouvernable » - Été 2026 / Avec
-      une grosse photo en haut , Histoire , 4
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-07-31'
-  metadata:
-    title: Letexier et le stratagème de la « cage de verre » de la FIFA
-  suggested_action: follow_one_time
-- url: https://lundi.am/Liberer-Mehdi-Blackwind
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Libérer Mehdi Blackwind — Des nouvelles depuis Casablanca - Été 2026 / Avec une grosse photo en haut , Terreur
-      , 2
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-07-31'
-  metadata:
-    title: Libérer Mehdi Blackwind
-  suggested_action: follow_one_time
-- url: https://lundi.am/Mourir-a-Romainville
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Mourir à Romainville — « Comment savez-vous si la Terre n'est pas l'enfer d'une autre planète. » - Été 2026 /
-      Avec une grosse photo en haut , 2 , Terreur
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-07-31'
-  metadata:
-    title: Mourir à Romainville
-  suggested_action: follow_one_time
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
 - url: https://mailchi.mp/afsafrica.org/ma-semence-ma-vie-2026-clbrons-notre-hritage-en-cette-journe-internationale-des-semences
   type: mastodon
   found_from:
@@ -21909,6 +22013,21 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://reas.red
+  type: external_link
+  domain: reas.red
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
 - url: https://reporterre.net/30-000-euros-d-amende-et-prison-avec-sursis-pour-la-femme-qui-a-tue-un-lynx
   type: rss
   found_from:
@@ -22374,6 +22493,21 @@ candidates:
   metadata:
     title: Pourquoi la France n'arrive pas à fabriquer davantage de panneaux solaires
   suggested_action: follow_one_time
+- url: https://reporterre.net/Reforme-du-marche-carbone-europeen-encore-du-temps-de-gagne-pour-polluer
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Réforme du marché carbone européen : encore du temps de gagné pour polluer — La Commission européenne entend
+      réformer le système d''échange de quotas de CO 2 en assouplissant progressivement ses contraintes. Une philosophie assez
+      claire : donner davantage de temps à l''industrie pour sa décarbonation.'
+    timestamp: '2026-07-29T06:05:20'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-07-29'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'Réforme du marché carbone européen : encore du temps de gagné pour polluer'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Sans-l-Ademe-ces-six-projets-ecolos-n-auraient-pas-existe
   type: rss
   found_from:
@@ -22433,6 +22567,21 @@ candidates:
   last_seen: '2026-05-24'
   metadata:
     title: En abandonnant le plan vélo, l'État a aussi sacrifié la santé
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Transmission-des-fermes-la-region-Paca-coupe-100-000-euros-de-subvention
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Transmission des fermes : la région Paca coupe 100 000 euros de subvention — Alors que plus de la moitié des
+      agriculteurs de Provence-Alpes-Côte d''Azur arrivent à l''âge de la retraite et que les canicules et les sécheresses
+      jouent avec leurs nerfs, la région Sud a refusé d''attribuer 100 000 euros de'
+    timestamp: '2026-07-29T06:05:20'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-07-29'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'Transmission des fermes : la région Paca coupe 100 000 euros de subvention'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Trump-supprime-les-restrictions-sur-de-puissants-gaz-a-effet-de-serre-utilises-dans-les
   type: rss
@@ -23041,6 +23190,51 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://t.me/NocionesComunes
+  type: external_link
+  domain: t.me
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: TELEGRAM
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: TELEGRAM
+    page: null
+- url: https://t.me/Traficantes
+  type: external_link
+  domain: t.me
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Canal de Telegram
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Canal de Telegram
+    page: null
+- url: https://taller.traficantes.net
+  type: external_link
+  domain: taller.traficantes.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Diseño
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Diseño
+    page: null
 - url: https://theconversation.com/comment-generaliser-lagroecologie-280841
   type: mastodon
   found_from:
@@ -23064,6 +23258,81 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://traficantes.org/suscripciones
+  type: external_link
+  domain: traficantes.org
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Suscribirme
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Suscribirme
+    page: null
+- url: https://twitter.com/DistriTrafis
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Twitter
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Twitter
+    page: null
+- url: https://twitter.com/NocionesComunes
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: TWITTER
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: TWITTER
+    page: null
+- url: https://twitter.com/Traficantes_Ed
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Twitter
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Twitter
+    page: null
+- url: https://twitter.com/traficantes2010
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Twitter
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Twitter
+    page: null
 - url: https://vert.eco/articles/cest-notre-survie-qui-est-en-jeu-une-grande-marche-contre-les-pesticides-et-pour-lagroecologie-ce-samedi-a-paris
   type: mastodon
   found_from:
@@ -23477,6 +23746,21 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.culturaydeporte.gob.es/portada.html
+  type: external_link
+  domain: www.culturaydeporte.gob.es
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
 - url: https://www.europe-solidaire.org/spip.php?article78552&amp;utm_source=dlvr.it&amp;utm_medium=bluesky
   type: mastodon
   found_from:
@@ -23552,6 +23836,36 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.facebook.com/editorial.Traficantes
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Facebook
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Facebook
+    page: null
+- url: https://www.facebook.com/traficantes.desuenos/
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Facebook
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Facebook
+    page: null
 - url: https://www.foodsovereignty.org/es/ciradr20-debe-ir-mas-alla-de-soluciones-tecnocraticas-para-implementar-una-reforma-agraria-real-e-integral-movimientos-sociales-globales-en-cartagena
   type: mastodon
   found_from:
@@ -23823,6 +24137,21 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.instagram.com/traficantes_libreria/
+  type: external_link
+  domain: www.instagram.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Instagram
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Instagram
+    page: null
 - url: https://www.latelierpaysan.org/L-Atelier-Paysan-face-a-la-liquidation-elargissons-le-mouvement
   type: mastodon
   found_from:
@@ -23846,6 +24175,21 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.madrid.es/portal/site/munimadrid
+  type: external_link
+  domain: www.madrid.es
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
 - url: https://www.monvoisin.xyz/faut-il-mettre-du-jus-de-lutin-dans-nos-tracteurs/
   type: mastodon
   found_from:
@@ -24194,6 +24538,21 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.youtube.com/channel/UCRMUh8n03HR1o7VB4vDYRCA
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-02'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Youtube
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Youtube
+    page: null
 - url: https://www.youtube.com/live/Ch98BvBho0g
   type: footnote
   domain: www.youtube.com
@@ -25838,30 +26197,6 @@ candidates:
   - doc_id: b1420894
     context: 20 http://stage.lobbyfacts.nestor.coop/representative/fad762cef5ba4685937ab10626026631/dow-europe-gmbh
     page: 4
-- url: http://taller.traficantes.net
-  type: external_link
-  domain: taller.traficantes.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Diseño
-    page: null
-- url: http://taller.traficantes.net/
-  type: external_link
-  domain: taller.traficantes.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Taller de diseño
-    page: null
 - url: http://taz.de/Behoerden
   type: footnote
   domain: taz.de
@@ -27178,18 +27513,6 @@ candidates:
   found_from:
   - doc_id: MINAG Cuba — Agricultura Urbana (publications)
     context: CubadebateCubadebate
-    page: null
-- url: http://www.culturaydeporte.gob.es/cultura/libro-bibliotecas.html
-  type: external_link
-  domain: www.culturaydeporte.gob.es
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
     page: null
 - url: http://www.daysofpalestine.com/news/israeli-jewish-settler-kills-81-year-old-palestinian
   type: footnote
@@ -31416,18 +31739,6 @@ candidates:
   - doc_id: 69b25d66
     context: Palestinian Central Bureau of Statistics, available at https://fscluster.org/sites/default/files/documents/
     page: 3
-- url: https://fundaciondeloscomunes.net
-  type: external_link
-  domain: fundaciondeloscomunes.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
 - url: https://furtherafrica
   type: footnote
   domain: furtherafrica
@@ -31452,18 +31763,6 @@ candidates:
   - doc_id: 5b4920df
     context: https://gasap.be/spg-2/
     page: 13
-- url: https://gestionmadrid.mercadosocial.net/media/reports/Mercado_Social_Madrid_Infografia_Balance_Social_Traficantes_de_Suenos.pdf
-  type: external_link
-  domain: gestionmadrid.mercadosocial.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
 - url: https://globalforestcoalition.org/wp-content/uploads/2013/11/REDD-
   type: footnote
   domain: globalforestcoalition.org
@@ -32160,18 +32459,6 @@ candidates:
   - doc_id: d00fb8da
     context: https://m.facebook.com/fnsa.maroc/
     page: 2
-- url: https://madrid.mercadosocial.net
-  type: external_link
-  domain: madrid.mercadosocial.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
 - url: https://matheo.uliege.be/bitstream/2268.2/13318/10/FLAS-2021-TFE-Logements_inoccupes.pdf
   type: footnote
   domain: matheo.uliege.be
@@ -32652,18 +32939,6 @@ candidates:
   - doc_id: 53cd97c8
     context: https://rbi.org.in/scripts/NotificationUser.aspx?Id=7866
     page: 14
-- url: https://reas.red
-  type: external_link
-  domain: reas.red
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
 - url: https://reliefweb.int/report/myanmar/41-
   type: footnote
   domain: reliefweb.int
@@ -32778,6 +33053,21 @@ candidates:
   metadata:
     title: 'Arbres replantés : on est très loin du milliard promis par Emmanuel Macron'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Atteint-le-30-juillet-le-jour-du-depassement-des-limites-planetaires-n-est-jamais-arrive
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Atteint le 30 juillet, le jour du dépassement des limites planétaires n'est jamais arrivé si tôt — La planète
+      a atteint son jour du dépassement jeudi 30 juillet, selon l' ONG Global Footprint Network. Cet indicateur marque la
+      date à laquelle l'humanité a consommé toutes les ressources que la Terre p
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Atteint le 30 juillet, le jour du dépassement des limites planétaires n'est jamais arrivé si tôt
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Bulles-de-savoir-nos-meilleures-BD-pour-apprendre-sur-l-ecologie
   type: rss
   found_from:
@@ -32823,6 +33113,21 @@ candidates:
   metadata:
     title: '« C''est officiel » : l''autoroute A69 définitivement validée par le Conseil d''État'
   suggested_action: follow_one_time
+- url: https://reporterre.net/C-est-un-carnage-ces-nouveaux-maires-d-extreme-droite-s-acharnent-contre-des-projets
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« C''est un carnage » : ces nouveaux maires d''extrême droite s''acharnent contre des projets écolos — Jardins,
+      écoquartiers, ferme municipale... Une fois élus, les maires d''extrême droite ne s''attaquent pas qu''à la culture et
+      aux syndicats. Ils sabotent aussi des projets écologiques. Exemples dans tro'
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: '« C''est un carnage » : ces nouveaux maires d''extrême droite s''acharnent contre des projets écolos'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/C-etait-David-contre-Goliath-recit-d-une-victoire-contre-un-mega-entrepot
   type: rss
   found_from:
@@ -32838,6 +33143,21 @@ candidates:
   metadata:
     title: '« C''était David contre Goliath » : récit d''une victoire contre un méga entrepôt'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Canicule-a-Paris-sans-abri-le-jour-sans-place-la-nuit-des-familles-campent-devant-le
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Canicule à Paris : sans abri le jour, sans place la nuit, des familles campent devant le Samusocial — Devant
+      le siège du Samusocial de Paris, des personnes sans-abri, des associations qui les accompagnent et des salariés grévistes
+      de la structure se mobilisent ensemble pour réclamer davantage de moy'
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'Canicule à Paris : sans abri le jour, sans place la nuit, des familles campent devant le Samusocial'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Canicule-au-moins-1-000-morts-supplementaires-en-France
   type: rss
   found_from:
@@ -32852,6 +33172,21 @@ candidates:
   last_seen: '2026-07-02'
   metadata:
     title: 'Canicule : au moins 1 000 morts supplémentaires en France'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Canicule-la-LPO-appelle-a-donner-de-l-eau-aux-animaux
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Canicule : la LPO appelle à donner de l''eau aux animaux — « Aidez la faune sauvage pendant la canicule », en
+      créant un point d''eau en libre service sur votre balcon ou dans votre jardin : c''est l''appel lancé par la Ligue pour
+      la protection des oiseaux ( LPO ). Car, au-delà des feux, les animaux sauv'
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'Canicule : la LPO appelle à donner de l''eau aux animaux'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Ces-canaux-provencaux-vieux-de-cinq-siecles-rechargent-les-nappes-et-font-vivre-les
   type: rss
@@ -32912,6 +33247,21 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: 'Congé climatique : l''exemple espagnol qui inspire la France'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/DIRECT-Incendie-en-Gironde-le-feu-stabilise-mais-une-meteo-defavorable
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Incendie en Gironde : 5 millions de masques FFP2 livrés — L''incendie qui ravage la Gironde depuis une semaine
+      est stabilisé, mais les conditions météorologiques ne sont pas favorables mercredi. Suivez notre direct. Le mégafeu
+      qui frappe la Gironde depuis le 22 juillet a dévoré 42 000 hectares de for'
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'Incendie en Gironde : 5 millions de masques FFP2 livrés'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Deforestation-tourisme-Ces-facteurs-environnementaux-qui-boostent-l-hantavirus
   type: rss
@@ -33123,6 +33473,21 @@ candidates:
   metadata:
     title: 'Incendie en Gironde : « Importante reprise de feu » à Lège-Cap-Ferret'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Incendies-a-Fontainebleau-apres-les-flammes-quel-avenir-pour-cette-cathedrale-du-vivant
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Incendies à Fontainebleau : après les flammes, quel avenir pour cette cathédrale du vivant ? — Depuis les incendies
+      qui ont assailli la forêt de Fontainebleau début juillet, l'' ONF et les associations locales tentent de dresser le
+      bilan des dégâts et d''envisager la régénération des milieux affectés.'
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'Incendies à Fontainebleau : après les flammes, quel avenir pour cette cathédrale du vivant ?'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Incendies-avec-les-fumees-le-danger-voyage-sur-des-centaines-de-kilometres
   type: rss
   found_from:
@@ -33152,6 +33517,21 @@ candidates:
   last_seen: '2026-07-29'
   metadata:
     title: 'Incendies : en brûlant, les forêts françaises alimentent le dérèglement climatique qui les détruit'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Incendies-faut-il-interdire-la-chasse-pour-laisser-du-repit-aux-animaux-sauvages
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Incendies : faut-il interdire la chasse pour laisser du répit aux animaux sauvages ? — Plusieurs associations
+      animalistes demandent un moratoire sur la chasse à Fontainebleau après les incendies. Une requête critiquée par les
+      chasseurs qui n''envisagent pas de faire une croix sur leur loisir. Alors q'
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'Incendies : faut-il interdire la chasse pour laisser du répit aux animaux sauvages ?'
   suggested_action: follow_one_time
 - url: https://reporterre.net/J-ai-cru-que-ma-vie-allait-partir-en-fumee-les-grimpeurs-pleurent-la-foret-de
   type: rss
@@ -33255,6 +33635,21 @@ candidates:
   metadata:
     title: L'incendie de Gironde a produit son propre « orage de feu »
   suggested_action: follow_one_time
+- url: https://reporterre.net/La-France-sous-les-flammes-la-faillite-criminelle-du-neoliberalisme
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'La France sous les flammes : la faillite criminelle du néolibéralisme — La France brûle, et nos dirigeants ne
+      font qu''aggraver une situation qu''ils connaissent pourtant parfaitement. Sont-ils totalement irrationnels ? Non, répond
+      cet éditorial, ils appliquent juste le dogme néolibéral qui nous entra'
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'La France sous les flammes : la faillite criminelle du néolibéralisme'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/La-Gironde-face-aux-incendies-ceux-qui-restent-ceux-qui-fuient-ceux-qui-ont-tout-perdu
   type: rss
   found_from:
@@ -33329,6 +33724,36 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: Le loriot, ce mystérieux « merle d'or » au sale caractère
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-pin-est-une-veritable-boite-d-allumettes
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: « Le pin est une véritable boîte d'allumettes » — Alors que les feux ravagent la Gironde, l'ingénieur forestier
+      Sylvain Angerand, directeur de l'association Canopée, dédiée à la protection des forêts, dénonce une sylviculture intensive
+      inadaptée au changement climatique. Près de 43 000 hectares sont
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: « Le pin est une véritable boîte d'allumettes »
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-risque-d-incendie-a-double-en-40-ans-en-Europe
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Le risque d'incendie a doublé en 40 ans en Europe — Le sud de l'Europe devient de plus en plus inflammable. D'après
+      une étude publiée le 30 juillet dans la revue Scientific Reports, le nombre de journées d'été présentant des conditions
+      très propices au déclenchement et à la propagation de feux de fo
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Le risque d'incendie a doublé en 40 ans en Europe
   suggested_action: follow_one_time
 - url: https://reporterre.net/Le-tour-de-France-interrompu-de-Marine-Tondelier-rattrape-par-les-incendies
   type: rss
@@ -33435,6 +33860,21 @@ candidates:
   metadata:
     title: 'Loi d''urgence agricole : le Sénat vote le retour de l''acétamipride'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Lutte-contre-les-incendies-10-ans-de-sous-investissement-rattrapes-par-les-flammes
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Lutte contre les incendies : 10 ans de sous-investissement rattrapés par les flammes — Entre atermoiements,
+      austérité et prise de conscience tardive, les moyens consacrés à la lutte contre les incendies n''ont pas été renforcés
+      à la hauteur de l''urgence durant les deux quinquennats d''Emmanuel Macron.'
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'Lutte contre les incendies : 10 ans de sous-investissement rattrapés par les flammes'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/MaPrimRenov-encore-moins-de-travaux-eligibles
   type: rss
   found_from:
@@ -33480,6 +33920,21 @@ candidates:
   metadata:
     title: 'Ni poules, ni coquilles : le marché des œufs végétaux tente d''éclore'
   suggested_action: follow_one_time
+- url: https://reporterre.net/On-fait-ce-qu-on-peut-comme-on-peut-en-Gironde-des-benevoles-au-secours-des-animaux
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Des chats sont bloqués depuis six jours » : en Gironde, des bénévoles au secours des animaux laissés sur place
+      — En Gironde, des bénévoles se rendent dans les zones évacuées pour tenter, avec les moyens du bord, de sauver les animaux
+      blessés ou ceux que leurs propriétaires n''ont pas eu le temps d'''
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: '« Des chats sont bloqués depuis six jours » : en Gironde, des bénévoles au secours des animaux laissés sur place'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/PFAS-des-rapporteurs-de-l-ONU-epinglent-deux-geants-de-la-vallee-de-la-chimie
   type: rss
   found_from:
@@ -33495,6 +33950,21 @@ candidates:
   metadata:
     title: 'Polluants éternels : même l''ONU dénonce l''impunité des industriels français'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Pannes-aliments-gaches-quand-les-canicules-mettent-nos-frigos-hors-service
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Pannes, aliments gâchés : quand les canicules mettent nos frigos hors service — Les récents épisodes de canicule
+      ont fait flancher des frigos chez les particuliers comme dans les supermarchés. Voici quelques pistes pour adapter ces
+      appareils indispensables à la chaleur. Cette fois, c''est la confitur'
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'Pannes, aliments gâchés : quand les canicules mettent nos frigos hors service'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Pesticides-une-alternative-aux-approbations-illimitees-validee-par-l-EFSA
   type: rss
   found_from:
@@ -33509,6 +33979,21 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: 'Pesticides : 1re victoire pour Générations futures face aux dérégulations voulues par l''Europe'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Plaque-tournante-du-chlordecone-une-ville-de-l-Aude-au-coeur-d-une-enquete-pour-son
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Plaque tournante du chlordécone, une ville de l'Aude au cœur d'une enquête pour son héritage toxique — Véritable
+      plaque tournante du chlordécone, Port-la-Nouvelle, dans l'Aude, est au cœur d'une enquête menée par un institut écocitoyen.
+      Les tests mesurant le pesticide dans l'eau seront ensuite parta
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Plaque tournante du chlordécone, une ville de l'Aude au cœur d'une enquête pour son héritage toxique
   suggested_action: follow_one_time
 - url: https://reporterre.net/Plus-de-baleines-percutees-par-des-bateaux-de-marchandises-a-cause-de-la-guerre-au-Moyen-Orient
   type: rss
@@ -33571,6 +34056,36 @@ candidates:
   metadata:
     title: « La sobriété énergétique n'est plus un bon plan de communication politique »
   suggested_action: follow_one_time
+- url: https://reporterre.net/Precieux-allie-contre-les-incendies-le-castor-est-de-retour-dans-les-rivieres-francaises
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Précieux allié contre les incendies, le castor est de retour dans les rivières françaises — Quasiment disparu
+      en France il y a un siècle, le castor est de retour en nombre dans nos rivières. Illustration aux portes de Toulouse,
+      entre Garonne et Ariège, où ce mammifère a été aperçu pour la première f
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Précieux allié contre les incendies, le castor est de retour dans les rivières françaises
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Que-du-macadam-pas-d-arbres-l-ete-infernal-des-gens-du-voyage-pres-de-Lille
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Que du macadam, pas d''arbres » : l''été infernal des gens du voyage près de Lille — Sol en bitume, absence
+      d''ombre, poussière... Durant les vagues de chaleur, l''aire d''accueil des gens du voyage d''Hellemmes-Ronchin, dans
+      le Nord, devient une fournaise. Ses habitants se battent pour être mis à l''abr'
+    timestamp: '2026-07-31T06:31:24'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
+  metadata:
+    title: '« Que du macadam, pas d''arbres » : l''été infernal des gens du voyage près de Lille'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Que-propose-la-gauche-face-a-la-canicule-Tour-d-horizon-en-cinq-propositions
   type: rss
   found_from:
@@ -33585,21 +34100,6 @@ candidates:
   last_seen: '2026-07-02'
   metadata:
     title: Congé climatique, droit à la fraîcheur... Que propose la gauche face à la canicule ?
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Reforme-du-marche-carbone-europeen-encore-du-temps-de-gagne-pour-polluer
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Réforme du marché carbone européen : encore du temps de gagné pour polluer — La Commission européenne entend
-      réformer le système d''échange de quotas de CO 2 en assouplissant progressivement ses contraintes. Une philosophie assez
-      claire : donner davantage de temps à l''industrie pour sa décarbonation.'
-    timestamp: '2026-07-29T06:05:20'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-07-29'
-  last_seen: '2026-07-31'
-  metadata:
-    title: 'Réforme du marché carbone européen : encore du temps de gagné pour polluer'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Reintroduction-des-pesticides-interdits-est-ce-vraiment-la-science-qui-decidera
   type: rss
@@ -33632,20 +34132,20 @@ candidates:
     title: '« Sans notre intervention, il n''y aurait quasiment plus de busards en France » : comment agriculteurs et écologistes
       protègent ces oiseaux des champs'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Transmission-des-fermes-la-region-Paca-coupe-100-000-euros-de-subvention
+- url: https://reporterre.net/Savourons-cette-victoire-la-serre-geante-Tropicalia-ne-verra-pas-le-jour-dans-le-Pas-de
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Transmission des fermes : la région Paca coupe 100 000 euros de subvention — Alors que plus de la moitié des
-      agriculteurs de Provence-Alpes-Côte d''Azur arrivent à l''âge de la retraite et que les canicules et les sécheresses
-      jouent avec leurs nerfs, la région Sud a refusé d''attribuer 100 000 euros de'
-    timestamp: '2026-07-29T06:05:20'
+    context: '« Savourons cette victoire » : la serre géante Tropicalia ne verra pas le jour dans le Pas-de-Calais — Le projet
+      de serre géante Tropicalia, dans les Hauts-de-France, a été définitivement abandonné faute de financement. Son promoteur,
+      Cédric Guérin l''a confirmé mercredi 29 juillet sur Ici Hauts-de-F'
+    timestamp: '2026-07-31T06:31:24'
   seen_count: 2
   domain: reporterre.net
-  first_seen: '2026-07-29'
-  last_seen: '2026-07-31'
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-02'
   metadata:
-    title: 'Transmission des fermes : la région Paca coupe 100 000 euros de subvention'
+    title: '« Savourons cette victoire » : la serre géante Tropicalia ne verra pas le jour dans le Pas-de-Calais'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Vagues-artificielles-Sans-la-mer-le-surf-n-est-plus-qu-image-et-performance
   type: rss
@@ -33748,42 +34248,6 @@ candidates:
   found_from:
   - doc_id: CrimethInc — zines
     context: Buy Now
-    page: null
-- url: https://t.me/NocionesComunes
-  type: external_link
-  domain: t.me
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: TELEGRAM
-    page: null
-- url: https://t.me/Traficantes
-  type: external_link
-  domain: t.me
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Canal de Telegram
-    page: null
-- url: https://taller.traficantes.net
-  type: external_link
-  domain: taller.traficantes.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Diseño
     page: null
 - url: https://tanzlii.org/akn/tz/judg-
   type: footnote
@@ -33917,18 +34381,6 @@ candidates:
   - doc_id: d3babc9e
     context: 'Site Web de TNRF. Page sur les changements climatiques: https://tnrf.org/fr/climatechange.'
     page: 15
-- url: https://traficantes.org/suscripciones
-  type: external_link
-  domain: traficantes.org
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Suscribirme
-    page: null
 - url: https://transnationalmigrantplatform.net/en-es-massacre-of-
   type: footnote
   domain: transnationalmigrantplatform.net
@@ -33977,18 +34429,6 @@ candidates:
   - doc_id: 839a02a4
     context: 'October: Day of action for peoples’ food sovereignty and against transnational corporations(https://tv.viacampesina.org/October'
     page: 24
-- url: https://twitter.com/DistriTrafis
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Twitter
-    page: null
 - url: https://twitter.com/MINAGCuba
   type: external_link
   domain: twitter.com
@@ -33999,30 +34439,6 @@ candidates:
   notes: ''
   found_from:
   - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Twitter
-    page: null
-- url: https://twitter.com/NocionesComunes
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: TWITTER
-    page: null
-- url: https://twitter.com/Traficantes_Ed
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
     context: Twitter
     page: null
 - url: https://twitter.com/antiimperial_20
@@ -34037,18 +34453,6 @@ candidates:
   - doc_id: 38c834f3
     context: 'Twitter: https://twitter.com/antiimperial_20'
     page: 6
-- url: https://twitter.com/traficantes2010
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Twitter
-    page: null
 - url: https://uhri.ohchr.org/en/
   type: footnote
   domain: uhri.ohchr.org
@@ -35184,18 +35588,6 @@ candidates:
   metadata:
     title: 'In Memoriam 2025: Remembering Indigenous Defenders Murdered in Latin America'
   suggested_action: follow_one_time
-- url: https://www.culturaydeporte.gob.es/portada.html
-  type: external_link
-  domain: www.culturaydeporte.gob.es
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
 - url: https://www.data.gouv.fr/datasets/donnees-
   type: footnote
   domain: www.data.gouv.fr
@@ -35453,18 +35845,6 @@ candidates:
   - doc_id: 38c834f3
     context: 'Facebook: https://www.facebook.com/antiimperialiststruggle/'
     page: 6
-- url: https://www.facebook.com/editorial.Traficantes
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Facebook
-    page: null
 - url: https://www.facebook.com/europeanshepherdnetwork
   type: external_link
   domain: www.facebook.com
@@ -35513,18 +35893,6 @@ candidates:
   - doc_id: 99f919b8
     context: 1 -  http://www.hoyquecomierontushijos.org/, http://elpoderdelconsumidor.org/, https://www.facebook.com/pages/Encuentro-Nacional-Defensa-de-la-tierra-agua-y-vi-
     page: 3
-- url: https://www.facebook.com/traficantes.desuenos/
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Facebook
-    page: null
 - url: https://www.fao.org/3/CA3129EN/CA3129EN.pdf
   type: footnote
   domain: www.fao.org
@@ -36147,18 +36515,6 @@ candidates:
   - doc_id: 38c834f3
     context: 'Instagram: https://www.instagram.com/anti.imperialist.struggle/'
     page: 6
-- url: https://www.instagram.com/traficantes_libreria/
-  type: external_link
-  domain: www.instagram.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Instagram
-    page: null
 - url: https://www.ippmedia.com/en/news/bashe-orders-misenyi-dc-support-investors-promote-agro-in-
   type: footnote
   domain: www.ippmedia.com
@@ -36372,18 +36728,6 @@ candidates:
   - doc_id: 53cd97c8
     context: https://www.maannews.com/Content.aspx?id=775373
     page: 28
-- url: https://www.madrid.es/portal/site/munimadrid
-  type: external_link
-  domain: www.madrid.es
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
 - url: https://www.mangerdemain.be/green-deal-cantines-durables/
   type: footnote
   domain: www.mangerdemain.be
@@ -37464,18 +37808,6 @@ candidates:
   - doc_id: 8532edfe
     context: 'barabara nchini Tanzania: https://www.worldbank.org/content/dam/documents/sanctions/office-of-suspension-and-debar-'
     page: 10
-- url: https://www.youtube.com/channel/UCRMUh8n03HR1o7VB4vDYRCA
-  type: external_link
-  domain: www.youtube.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-07-31'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Youtube
-    page: null
 - url: https://www.youtube.com/channel/UCUZssJdBEW4X5Sm4G0f3GYg?view_as=subscri
   type: footnote
   domain: www.youtube.com
@@ -38045,6 +38377,16 @@ candidates:
     year: 2024
     doi: 10.17528/cifor-icraf/009239
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.cifor.org/publications/pdf_files/infobrief/9239-Infobrief.pdf
+  promoted_at: '2026-08-02T06:14:57'
+  promoted_metadata:
+    doi: 10.17528/cifor-icraf/009239
+    title: 'Les régimes fonciers coutumiers en vigueur à Madagascar: Aperçu général'
+    journal: Center for International Forestry Research (CIFOR) eBooks
+    published_date: '2024-01-01'
+    genre: monograph
+    html_url: https://www.cifor.org/publications/pdf_files/infobrief/9239-Infobrief.pdf
+    source: unpaywall
 - url: http://dzumenvis.nic.in/Microbes%20and%20Soil%20Fertility/
   type: footnote
   domain: dzumenvis.nic.in
@@ -41210,6 +41552,16 @@ candidates:
     year: 2020
     doi: 10.1016/j.worlddev.2020.105333
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.sciencedirect.com/science/article/pii/S0305750X20304605/pdf
+  promoted_at: '2026-08-02T06:15:06'
+  promoted_metadata:
+    doi: 10.1016/j.worlddev.2020.105333
+    title: 'Cooperation and coercion: The quest for quasi-voluntary compliance in the governance of African commons'
+    journal: World Development
+    published_date: '2020-12-16'
+    genre: journal-article
+    html_url: https://www.sciencedirect.com/science/article/pii/S0305750X20304605/pdf
+    source: unpaywall
 - url: https://doi.org/10.1080/03066150.2019.1672665
   type: footnote
   domain: doi.org
@@ -44694,21 +45046,6 @@ candidates:
   metadata:
     title: 'Amine Kessaci : « La lutte antimafia est une question de santé publique »'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Atteint-le-30-juillet-le-jour-du-depassement-des-limites-planetaires-n-est-jamais-arrive
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Atteint le 30 juillet, le jour du dépassement des limites planétaires n'est jamais arrivé si tôt — La planète
-      a atteint son jour du dépassement jeudi 30 juillet, selon l' ONG Global Footprint Network. Cet indicateur marque la
-      date à laquelle l'humanité a consommé toutes les ressources que la Terre p
-    timestamp: '2026-07-31T06:31:24'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
-  metadata:
-    title: Atteint le 30 juillet, le jour du dépassement des limites planétaires n'est jamais arrivé si tôt
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Au-coeur-d-un-ete-cataclysmique-TotalEnergies-annonce-9-8-milliards-d-euros-de-profits
   type: rss
   found_from:
@@ -44784,20 +45121,20 @@ candidates:
   metadata:
     title: 'Bulles de savoir : nos meilleurs BD pour s''informer sur l''écologie'
   suggested_action: follow_one_time
-- url: https://reporterre.net/C-est-un-carnage-ces-nouveaux-maires-d-extreme-droite-s-acharnent-contre-des-projets
+- url: https://reporterre.net/Ca-a-ete-un-lieu-de-souffrance-la-memoire-ressuscitee-des-harkis-forces-de-reboiser-la
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« C''est un carnage » : ces nouveaux maires d''extrême droite s''acharnent contre des projets écolos — Jardins,
-      écoquartiers, ferme municipale... Une fois élus, les maires d''extrême droite ne s''attaquent pas qu''à la culture et
-      aux syndicats. Ils sabotent aussi des projets écologiques. Exemples dans tro'
-    timestamp: '2026-07-31T06:31:24'
+    context: '« Ça a été un lieu de souffrance » : la mémoire ressuscitée des harkis forcés de reboiser la Provence — Après
+      la guerre d''Algérie, nombre de harkis exilés en France ont été envoyés dans des hameaux reculés pour participer au
+      reboisement des forêts. Un pan méconnu de l''histoire forestière mis à l''hon'
+    timestamp: '2026-08-02T06:09:17'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-02'
   metadata:
-    title: '« C''est un carnage » : ces nouveaux maires d''extrême droite s''acharnent contre des projets écolos'
+    title: '« Ça a été un lieu de souffrance » : la mémoire ressuscitée des harkis forcés de reboiser la Provence'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Cadmium-les-donnees-cles-d-une-contamination
   type: rss
@@ -44814,20 +45151,21 @@ candidates:
   metadata:
     title: 'Cadmium : les données clés d''une contamination'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Canicule-a-Paris-sans-abri-le-jour-sans-place-la-nuit-des-familles-campent-devant-le
+- url: https://reporterre.net/Canicule-Le-rechauffement-climatique-a-pris-corps-beaucoup-de-personnes-ont-vecu-cette
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Canicule à Paris : sans abri le jour, sans place la nuit, des familles campent devant le Samusocial — Devant
-      le siège du Samusocial de Paris, des personnes sans-abri, des associations qui les accompagnent et des salariés grévistes
-      de la structure se mobilisent ensemble pour réclamer davantage de moy'
-    timestamp: '2026-07-31T06:31:24'
+    context: 'Canicule : « Le réchauffement climatique a pris corps, beaucoup de personnes ont vécu cette bascule dans leur
+      chair » — Après la terrible vague de chaleur de fin juin, la chercheuse Mélusine Boon-Falleur a lancé un questionnaire
+      en ligne pour recueillir des ressentis de cette canicule. Premiers résu'
+    timestamp: '2026-08-02T06:09:17'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-02'
   metadata:
-    title: 'Canicule à Paris : sans abri le jour, sans place la nuit, des familles campent devant le Samusocial'
+    title: 'Canicule : « Le réchauffement climatique a pris corps, beaucoup de personnes ont vécu cette bascule dans leur
+      chair »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Canicule-ce-mardi-est-la-journee-la-plus-chaude-jamais-enregistree-en-France
   type: rss
@@ -44919,21 +45257,6 @@ candidates:
   metadata:
     title: '« C''est l''angoisse puissance 1000 » : pourquoi la canicule aggrave les troubles psys'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Canicule-la-LPO-appelle-a-donner-de-l-eau-aux-animaux
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Canicule : la LPO appelle à donner de l''eau aux animaux — « Aidez la faune sauvage pendant la canicule », en
-      créant un point d''eau en libre service sur votre balcon ou dans votre jardin : c''est l''appel lancé par la Ligue pour
-      la protection des oiseaux ( LPO ). Car, au-delà des feux, les animaux sauv'
-    timestamp: '2026-07-31T06:31:24'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
-  metadata:
-    title: 'Canicule : la LPO appelle à donner de l''eau aux animaux'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Canicule-la-centrale-nucleaire-de-Golfech-arretee
   type: rss
   found_from:
@@ -44979,6 +45302,21 @@ candidates:
   metadata:
     title: '« Ces enfants n''ont parfois jamais touché de crabe » : un historique centre de classe de mer pourrait fermer'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Ce-qu-on-fait-subir-au-fleuve-on-se-le-fait-subir-une-nuit-de-bivouac-sur-la-Loire-avec
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Ce qu''on fait subir au fleuve, on se le fait subir » : une nuit de bivouac sur la Loire avec Étienne Davodeau
+      — Le temps d''une soirée, notre journaliste Vincent Lucchese a accompagné Étienne Davodeau bivouaquer dans l''un de
+      ses coins préférés en Maine-et-Loire. Pour l''auteur de bandes dessinées, l'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-02'
+  metadata:
+    title: '« Ce qu''on fait subir au fleuve, on se le fait subir » : une nuit de bivouac sur la Loire avec Étienne Davodeau'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Ce-qu-on-veut-c-est-aider-des-habitants-achetent-des-terres-qu-ils-louent-a-des-paysans-bio
   type: rss
   found_from:
@@ -44993,6 +45331,36 @@ candidates:
   last_seen: '2026-05-24'
   metadata:
     title: '« Ce qu''on veut, c''est aider » : des habitants achètent des terres qu''ils louent à des paysans bio'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Ces-animaux-qui-peignent-dansent-et-construisent-des-cathedrales-de-sable
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Ces animaux qui peignent, dansent et construisent des cathédrales de sable — Un singe qui peint, un poisson
+      capable de faire de magnifiques rosaces, des abeilles qui dansent et un oiseau qui construit des dômes bleus : les animaux
+      aussi sont capables de faire de l''art. [Chronique « Animaux géniaux »'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-02'
+  metadata:
+    title: Ces animaux qui peignent, dansent et construisent des cathédrales de sable
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Champs-secs-rendements-en-chute-les-vagues-de-chaleur-mettent-les-maraichers-a-l-epreuve
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Plants grillés, pommes de terre minuscules, choux replantés trois fois : l''été qui épuise les maraîchers —
+      Les quatre vagues de chaleur qui se sont abattues sur la France depuis fin mai ont laissé des traces chez les maraîchers.
+      Plants grillés, récoltes réduites, légumes minuscules... Ils sont nombr'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'Plants grillés, pommes de terre minuscules, choux replantés trois fois : l''été qui épuise les maraîchers'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Chlordecone-500-parties-civiles-se-pourvoient-en-cassation
   type: rss
@@ -45081,20 +45449,20 @@ candidates:
   metadata:
     title: 'Consigne sur le plastique : élus et ONG claquent la porte de la concertation'
   suggested_action: follow_one_time
-- url: https://reporterre.net/DIRECT-Incendie-en-Gironde-le-feu-stabilise-mais-une-meteo-defavorable
+- url: https://reporterre.net/Dans-notre-malheur-on-aura-fait-de-belles-rencontres-a-Bordeaux-avec-les-derniers-evacues
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Incendie en Gironde : 5 millions de masques FFP2 livrés — L''incendie qui ravage la Gironde depuis une semaine
-      est stabilisé, mais les conditions météorologiques ne sont pas favorables mercredi. Suivez notre direct. Le mégafeu
-      qui frappe la Gironde depuis le 22 juillet a dévoré 42 000 hectares de for'
-    timestamp: '2026-07-31T06:31:24'
+    context: '« Dans notre malheur, on aura fait de belles rencontres » : à Bordeaux, avec les derniers évacués de l''incendie
+      — Depuis une semaine, le parc des expositions de Bordeaux accueille les évacués des communes touchées par l''incendie
+      en Gironde. Ils ne sont plus qu''une cinquantaine et s''apprêtent à parti'
+    timestamp: '2026-08-02T06:09:17'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-02'
   metadata:
-    title: 'Incendie en Gironde : 5 millions de masques FFP2 livrés'
+    title: '« Dans notre malheur, on aura fait de belles rencontres » : à Bordeaux, avec les derniers évacués de l''incendie'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Data-centers-la-consommation-d-electricite-pourrait-doubler-en-5-ans
   type: rss
@@ -45186,6 +45554,21 @@ candidates:
   metadata:
     title: 'Sainte-Soline : la cour d''appel confirme les condamnations de quatre organisateurs'
   suggested_action: follow_one_time
+- url: https://reporterre.net/En-Bulgarie-des-ossements-de-mammouth-decouverts-dans-le-lit-asseche-du-Danube
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: En Bulgarie, des ossements de mammouth découverts dans le lit asséché du Danube — En Bulgarie, le niveau exceptionnellement
+      bas du fleuve Danube a mis au jour des ossements de mammouth. Probablement issus d'un jeune mammouth laineux de la période
+      glaciaire, ils ont été découverts le mercredi 29 juil
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-02'
+  metadata:
+    title: En Bulgarie, des ossements de mammouth découverts dans le lit asséché du Danube
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Face-aux-canicules-faisons-corps-avec-les-arbres
   type: rss
   found_from:
@@ -45245,20 +45628,35 @@ candidates:
   metadata:
     title: Guillaume Meurice, Camille Étienne... 200 personnalités disent non à la première méga-usine de saumons en France
   suggested_action: follow_one_time
-- url: https://reporterre.net/Incendies-a-Fontainebleau-apres-les-flammes-quel-avenir-pour-cette-cathedrale-du-vivant
+- url: https://reporterre.net/Incendie-en-Gironde-des-obus-de-la-Seconde-Guerre-mondiale-ont-explose
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Incendies à Fontainebleau : après les flammes, quel avenir pour cette cathédrale du vivant ? — Depuis les incendies
-      qui ont assailli la forêt de Fontainebleau début juillet, l'' ONF et les associations locales tentent de dresser le
-      bilan des dégâts et d''envisager la régénération des milieux affectés.'
-    timestamp: '2026-07-31T06:31:24'
+    context: 'Incendie en Gironde : des obus de la Seconde Guerre mondiale ont explosé — Des obus de la Seconde Guerre mondiale
+      ont été découverts au Porge, ce village lourdement touché par les incendies qui ont traversé la Gironde. Enterrés dans
+      un champ calciné, à quelques mètres des habitations, ils ont explos'
+    timestamp: '2026-08-02T06:09:17'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-02'
   metadata:
-    title: 'Incendies à Fontainebleau : après les flammes, quel avenir pour cette cathédrale du vivant ?'
+    title: 'Incendie en Gironde : des obus de la Seconde Guerre mondiale ont explosé'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Incendies-17-des-fumeurs-jettent-leur-megot-par-la-fenetre-de-leur-voiture
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Incendies : 17 % des fumeurs jettent leur mégot par la fenêtre de leur voiture — 17 % des fumeurs reconnaissent
+      jeter leur mégot par la fenêtre de leur véhicule. C''est le constat alarmant de la fondation Vinci autoroutes, dans
+      son enquête annuelle sur les déchets.Parmi ces fumeurs imprudents, plus d'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-02'
+  metadata:
+    title: 'Incendies : 17 % des fumeurs jettent leur mégot par la fenêtre de leur voiture'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Incendies-a-Fontainebleau-sous-terre-la-foret-brule-toujours
   type: rss
@@ -45289,21 +45687,6 @@ candidates:
   last_seen: '2026-07-29'
   metadata:
     title: 'Incendies en Espagne : le Premier ministre Pedro Sánchez appelle à un « pacte d''État » sur l''urgence climatique'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Incendies-faut-il-interdire-la-chasse-pour-laisser-du-repit-aux-animaux-sauvages
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Incendies : faut-il interdire la chasse pour laisser du répit aux animaux sauvages ? — Plusieurs associations
-      animalistes demandent un moratoire sur la chasse à Fontainebleau après les incendies. Une requête critiquée par les
-      chasseurs qui n''envisagent pas de faire une croix sur leur loisir. Alors q'
-    timestamp: '2026-07-31T06:31:24'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
-  metadata:
-    title: 'Incendies : faut-il interdire la chasse pour laisser du répit aux animaux sauvages ?'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Je-craque-le-desarroi-des-soignants-face-a-l-afflux-d-animaux-sonnes-par-la-chaleur
   type: rss
@@ -45379,21 +45762,6 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: La Coordination rurale appelle à désobéir aux interdictions d'arroser en pleine sécheresse
-  suggested_action: follow_one_time
-- url: https://reporterre.net/La-France-sous-les-flammes-la-faillite-criminelle-du-neoliberalisme
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'La France sous les flammes : la faillite criminelle du néolibéralisme — La France brûle, et nos dirigeants ne
-      font qu''aggraver une situation qu''ils connaissent pourtant parfaitement. Sont-ils totalement irrationnels ? Non, répond
-      cet éditorial, ils appliquent juste le dogme néolibéral qui nous entra'
-    timestamp: '2026-07-31T06:31:24'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
-  metadata:
-    title: 'La France sous les flammes : la faillite criminelle du néolibéralisme'
   suggested_action: follow_one_time
 - url: https://reporterre.net/La-canicule-est-une-violence-politique
   type: rss
@@ -45485,20 +45853,20 @@ candidates:
   metadata:
     title: 'Le cap Ferret évacué, des milliers d''hectares en fumée : l''incendie de Gironde rappelle le cauchemar de 2022'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Le-pin-est-une-veritable-boite-d-allumettes
+- url: https://reporterre.net/Le-changement-climatique-a-bien-favorise-les-feux-de-foret
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: « Le pin est une véritable boîte d'allumettes » — Alors que les feux ravagent la Gironde, l'ingénieur forestier
-      Sylvain Angerand, directeur de l'association Canopée, dédiée à la protection des forêts, dénonce une sylviculture intensive
-      inadaptée au changement climatique. Près de 43 000 hectares sont
-    timestamp: '2026-07-31T06:31:24'
+    context: Le changement climatique a bien favorisé les feux de forêt — Aucun doute possible. Selon une nouvelle étude du
+      réseau scientifique World Weather Attribution ( WWA ), le changement climatique a bien alimenté les phénomènes météorologiques
+      extrêmes à l'origine des incendies dévastateurs en France et e
+    timestamp: '2026-08-02T06:09:17'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-02'
   metadata:
-    title: « Le pin est une véritable boîte d'allumettes »
+    title: Le changement climatique a bien favorisé les feux de forêt
   suggested_action: follow_one_time
 - url: https://reporterre.net/Le-retour-du-debat-autour-de-la-consigne-pour-les-bouteilles-plastiques
   type: rss
@@ -45514,21 +45882,6 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Consigne pour les bouteilles plastiques : Macron remet sur la table cette proposition critiquée'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Le-risque-d-incendie-a-double-en-40-ans-en-Europe
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Le risque d'incendie a doublé en 40 ans en Europe — Le sud de l'Europe devient de plus en plus inflammable. D'après
-      une étude publiée le 30 juillet dans la revue Scientific Reports, le nombre de journées d'été présentant des conditions
-      très propices au déclenchement et à la propagation de feux de fo
-    timestamp: '2026-07-31T06:31:24'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
-  metadata:
-    title: Le risque d'incendie a doublé en 40 ans en Europe
   suggested_action: follow_one_time
 - url: https://reporterre.net/Legitime-defense-des-policiers-la-petition-a-730-000-signatures-enterree-par-l-Assemblee
   type: rss
@@ -45621,21 +45974,6 @@ candidates:
   metadata:
     title: Le retour de l'acétamipride à nouveau contesté devant le Conseil Constitutionnel
   suggested_action: follow_one_time
-- url: https://reporterre.net/Lutte-contre-les-incendies-10-ans-de-sous-investissement-rattrapes-par-les-flammes
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Lutte contre les incendies : 10 ans de sous-investissement rattrapés par les flammes — Entre atermoiements,
-      austérité et prise de conscience tardive, les moyens consacrés à la lutte contre les incendies n''ont pas été renforcés
-      à la hauteur de l''urgence durant les deux quinquennats d''Emmanuel Macron.'
-    timestamp: '2026-07-31T06:31:24'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
-  metadata:
-    title: 'Lutte contre les incendies : 10 ans de sous-investissement rattrapés par les flammes'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Megafeux-en-France-Tous-les-ingredients-sont-la-pour-qu-ils-se-multiplient
   type: rss
   found_from:
@@ -45726,20 +46064,20 @@ candidates:
   metadata:
     title: '« Notre peur, c''est qu''il y ait des morts » : des saisonniers survivent dans des bidonvilles en surchauffe'
   suggested_action: follow_one_time
-- url: https://reporterre.net/On-fait-ce-qu-on-peut-comme-on-peut-en-Gironde-des-benevoles-au-secours-des-animaux
+- url: https://reporterre.net/On-a-signe-pour-aller-au-charbon-pas-a-l-echafaud-les-pompiers-asphyxies-par-les-fumees
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Des chats sont bloqués depuis six jours » : en Gironde, des bénévoles au secours des animaux laissés sur place
-      — En Gironde, des bénévoles se rendent dans les zones évacuées pour tenter, avec les moyens du bord, de sauver les animaux
-      blessés ou ceux que leurs propriétaires n''ont pas eu le temps d'''
-    timestamp: '2026-07-31T06:31:24'
+    context: '« On a signé pour aller au charbon, pas à l''échafaud » : les pompiers asphyxiés par les fumées des incendies
+      — En première ligne pour lutter contre les incendies, les pompiers inhalent de nombreuses substances toxiques présentes
+      dans les fumées. Ils dénoncent une protection insuffisante et un manque'
+    timestamp: '2026-08-02T06:09:17'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-02'
   metadata:
-    title: '« Des chats sont bloqués depuis six jours » : en Gironde, des bénévoles au secours des animaux laissés sur place'
+    title: '« On a signé pour aller au charbon, pas à l''échafaud » : les pompiers asphyxiés par les fumées des incendies'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Oublies-par-leur-bailleur-ils-installent-des-stores-faits-maison-contre-la-canicule
   type: rss
@@ -45771,21 +46109,6 @@ candidates:
   metadata:
     title: 'PFAS : l''Europe baisse drastiquement le seuil tolérable d''exposition aux TFA'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Pannes-aliments-gaches-quand-les-canicules-mettent-nos-frigos-hors-service
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Pannes, aliments gâchés : quand les canicules mettent nos frigos hors service — Les récents épisodes de canicule
-      ont fait flancher des frigos chez les particuliers comme dans les supermarchés. Voici quelques pistes pour adapter ces
-      appareils indispensables à la chaleur. Cette fois, c''est la confitur'
-    timestamp: '2026-07-31T06:31:24'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
-  metadata:
-    title: 'Pannes, aliments gâchés : quand les canicules mettent nos frigos hors service'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Perquisitions-millions-d-euros-demandes-un-promoteur-immobilier-fait-pression-sur-des
   type: rss
   found_from:
@@ -45815,21 +46138,6 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: 'Pesticides : l''État fait fi de sa condamnation, des associations contre-attaquent'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Plaque-tournante-du-chlordecone-une-ville-de-l-Aude-au-coeur-d-une-enquete-pour-son
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Plaque tournante du chlordécone, une ville de l'Aude au cœur d'une enquête pour son héritage toxique — Véritable
-      plaque tournante du chlordécone, Port-la-Nouvelle, dans l'Aude, est au cœur d'une enquête menée par un institut écocitoyen.
-      Les tests mesurant le pesticide dans l'eau seront ensuite parta
-    timestamp: '2026-07-31T06:31:24'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
-  metadata:
-    title: Plaque tournante du chlordécone, une ville de l'Aude au cœur d'une enquête pour son héritage toxique
   suggested_action: follow_one_time
 - url: https://reporterre.net/Pollution-de-l-eau-quand-detruire-coute-moins-cher-que-respecter-les-regles
   type: rss
@@ -45861,21 +46169,6 @@ candidates:
   metadata:
     title: Pour extraire son sable, Lafarge dévore les méandres de la Seine
   suggested_action: follow_one_time
-- url: https://reporterre.net/Precieux-allie-contre-les-incendies-le-castor-est-de-retour-dans-les-rivieres-francaises
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Précieux allié contre les incendies, le castor est de retour dans les rivières françaises — Quasiment disparu
-      en France il y a un siècle, le castor est de retour en nombre dans nos rivières. Illustration aux portes de Toulouse,
-      entre Garonne et Ariège, où ce mammifère a été aperçu pour la première f
-    timestamp: '2026-07-31T06:31:24'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
-  metadata:
-    title: Précieux allié contre les incendies, le castor est de retour dans les rivières françaises
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Prenons-soin-de-notre-montagne-disons-non-a-son-artificialisation
   type: rss
   found_from:
@@ -45905,21 +46198,6 @@ candidates:
   last_seen: '2026-06-30'
   metadata:
     title: Quand la marche nourrit, guérit et émancipe
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Que-du-macadam-pas-d-arbres-l-ete-infernal-des-gens-du-voyage-pres-de-Lille
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Que du macadam, pas d''arbres » : l''été infernal des gens du voyage près de Lille — Sol en bitume, absence
-      d''ombre, poussière... Durant les vagues de chaleur, l''aire d''accueil des gens du voyage d''Hellemmes-Ronchin, dans
-      le Nord, devient une fournaise. Ses habitants se battent pour être mis à l''abr'
-    timestamp: '2026-07-31T06:31:24'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
-  metadata:
-    title: '« Que du macadam, pas d''arbres » : l''été infernal des gens du voyage près de Lille'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Redressement-judiciaire-de-FNE-Rhone-le-tribunal-valide-le-plan-de-l-association
   type: rss
@@ -45965,21 +46243,6 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: Sans le changement climatique, la canicule aurait été plus fraîche de 2,4 °C à Paris
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Savourons-cette-victoire-la-serre-geante-Tropicalia-ne-verra-pas-le-jour-dans-le-Pas-de
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Savourons cette victoire » : la serre géante Tropicalia ne verra pas le jour dans le Pas-de-Calais — Le projet
-      de serre géante Tropicalia, dans les Hauts-de-France, a été définitivement abandonné faute de financement. Son promoteur,
-      Cédric Guérin l''a confirmé mercredi 29 juillet sur Ici Hauts-de-F'
-    timestamp: '2026-07-31T06:31:24'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-07-31'
-  last_seen: '2026-07-31'
-  metadata:
-    title: '« Savourons cette victoire » : la serre géante Tropicalia ne verra pas le jour dans le Pas-de-Calais'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Scandale-du-chlordecone-Nous-faisons-face-a-un-Etat-tricheur-empoisonneur-et-criminel
   type: rss

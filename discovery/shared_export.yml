@@ -121,7 +121,7 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-08-01T06:20:55.241476+00:00'
+exported_at: '2026-08-02T06:28:48.685000+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
@@ -347,13 +347,6 @@ sources:
   runs: 2
   docs_dl: 20
   docs_seen: 20
-- url: http://www.confras.org/
-  label: CONFRAS El Salvador — publicaciones
-  type: deep_html
-  fertility: 0.0
-  runs: 0
-  docs_dl: 0
-  docs_seen: 0
 - url: https://www.culturalsurvival.org/rss.xml
   label: Cultural Survival — RSS
   type: rss
@@ -550,20 +543,13 @@ sources:
   runs: 2
   docs_dl: 0
   docs_seen: 6
-- url: https://traficantes.net/materias/bienes-comunes
-  label: Traficantes de Sueños — Bienes comunes
+- url: https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+  label: Traficantes de Sueños — Autogestion / Economía social
   type: deep_html
   fertility: 0.0
-  runs: 0
+  runs: 1
   docs_dl: 0
-  docs_seen: 0
-- url: https://traficantes.net/materias/autogestion
-  label: Traficantes de Sueños — Autogestion
-  type: deep_html
-  fertility: 0.0
-  runs: 0
-  docs_dl: 0
-  docs_seen: 0
+  docs_seen: 3
 - url: https://api.archives-ouvertes.fr/search/?q=15M+indignados&fq=language_s:es&fl=halId_s,title_s,authFullName_s,fileMain_s&rows=50&wt=json
   label: HAL Science — 15M / indignados
   type: hal
@@ -613,20 +599,6 @@ sources:
   runs: 2
   docs_dl: 1
   docs_seen: 34
-- url: https://grain.org/feed.xml
-  label: GRAIN — articles & rapports
-  type: rss
-  fertility: 0.0
-  runs: 0
-  docs_dl: 0
-  docs_seen: 0
-- url: https://www.tni.org/en/publications?topic=agrarian-justice&type=publications
-  label: TNI — Agrarian & Environmental Justice
-  type: deep_html
-  fertility: 0.0
-  runs: 0
-  docs_dl: 0
-  docs_seen: 0
 - url: https://www.fian.org/en/publications
   label: FIAN International — publications
   type: deep_html
