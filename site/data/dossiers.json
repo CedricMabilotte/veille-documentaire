@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T06:42:13Z",
+  "generated_at": "2026-08-04T06:09:46Z",
   "total_dossiers": 10,
   "dossiers": [
     {
@@ -1628,7 +1628,7 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 196,
+      "doc_count": 197,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -1638,6 +1638,7 @@
         "dc1574ae",
         "44510a9a",
         "931fc89b",
+        "b225af88",
         "c2ab1111",
         "38a113bc",
         "5da811ca",
@@ -1901,6 +1902,18 @@
           "matched_on": [
             "sans-terre",
             "réforme agraire"
+          ]
+        },
+        {
+          "id": "b225af88",
+          "title": "Download",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "via campesina",
+            "landless",
+            "agrarian reform"
           ]
         },
         {
@@ -3574,7 +3587,7 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 169,
+      "doc_count": 170,
       "docs": [
         "d30c223f",
         "9c49c870",
@@ -3719,6 +3732,7 @@
         "d992c836",
         "b651aa85",
         "83b6390f",
+        "6125738a",
         "88bfc0cb",
         "3731bf2e",
         "95e763e1",
@@ -4993,6 +5007,14 @@
           ]
         },
         {
+          "id": "6125738a",
+          "title": "Download",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
           "id": "88bfc0cb",
           "title": "Pour un veganisme populaire et décolonial — version cahier — modifié",
           "score": 6,
@@ -5635,7 +5657,7 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 350,
+      "doc_count": 352,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -5643,6 +5665,7 @@
         "03b9d287",
         "35641d6d",
         "dc1574ae",
+        "b225af88",
         "c2ab1111",
         "38a113bc",
         "5da811ca",
@@ -5933,6 +5956,7 @@
         "d992c836",
         "b651aa85",
         "83b6390f",
+        "6125738a",
         "88bfc0cb",
         "3731bf2e",
         "95e763e1",
@@ -6050,6 +6074,16 @@
           "matched_on": [
             "paysannerie",
             "paysan"
+          ]
+        },
+        {
+          "id": "b225af88",
+          "title": "Download",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "peasant"
           ]
         },
         {
@@ -8833,6 +8867,18 @@
           ]
         },
         {
+          "id": "6125738a",
+          "title": "Download",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
           "id": "88bfc0cb",
           "title": "Pour un veganisme populaire et décolonial — version cahier — modifié",
           "score": 6,
@@ -9366,7 +9412,7 @@
       "slug": "land-back-autochtones",
       "titre": "Land Back & souverainetés autochtones",
       "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-      "doc_count": 91,
+      "doc_count": 92,
       "docs": [
         "39441dfc",
         "c2ab1111",
@@ -9443,6 +9489,7 @@
         "0183b615",
         "2f0c58b3",
         "5ea6c0cc",
+        "6125738a",
         "88bfc0cb",
         "5c511048",
         "83eafaac",
@@ -10105,6 +10152,16 @@
           ]
         },
         {
+          "id": "6125738a",
+          "title": "Download",
+          "score": 6,
+          "matched_on": [
+            "autochtone",
+            "indigenous",
+            "droit coutumier"
+          ]
+        },
+        {
           "id": "88bfc0cb",
           "title": "Pour un veganisme populaire et décolonial — version cahier — modifié",
           "score": 6,
@@ -10244,8 +10301,9 @@
       "slug": "feminismes-de-la-terre",
       "titre": "Féminismes de la terre",
       "chapo": "Le foncier a un genre. Place des femmes dans les luttes agraires, droits fonciers des femmes, écoféminisme rural, critique de la division genrée du travail de la terre.",
-      "doc_count": 32,
+      "doc_count": 33,
       "docs": [
+        "b225af88",
         "7361abcf",
         "1ef49d91",
         "0bf022d5",
@@ -10280,6 +10338,16 @@
         "55b31ba8"
       ],
       "docs_detail": [
+        {
+          "id": "b225af88",
+          "title": "Download",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan",
+            "droits fonciers des femmes",
+            "agrarian feminism"
+          ]
+        },
         {
           "id": "7361abcf",
           "title": "Cancioneiro Jornada das Mulheres Sem Terra PR 2023",
@@ -10570,13 +10638,14 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 130,
+      "doc_count": 131,
       "docs": [
         "d30c223f",
         "39441dfc",
         "05392c72",
         "96563571",
         "931fc89b",
+        "b225af88",
         "c2ab1111",
         "5da811ca",
         "2ab410d3",
@@ -10742,6 +10811,15 @@
           "score": 9,
           "matched_on": [
             "accaparement"
+          ]
+        },
+        {
+          "id": "b225af88",
+          "title": "Download",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
           ]
         },
         {
@@ -11803,7 +11881,7 @@
       "slug": "cooperatives-mutualisme",
       "titre": "Coopératives & mutualisme foncier",
       "chapo": "S'associer pour la terre : coopératives agricoles, GFA mutuels, foncières solidaires, mutuelles. Une économie de la terre fondée sur l'entraide plutôt que sur la rente.",
-      "doc_count": 26,
+      "doc_count": 27,
       "docs": [
         "c3bb4444",
         "95b490c8",
@@ -11825,6 +11903,7 @@
         "0183b615",
         "be137b2e",
         "83b6390f",
+        "6125738a",
         "5c511048",
         "961e54e4",
         "fcb58745",
@@ -11991,6 +12070,14 @@
         {
           "id": "83b6390f",
           "title": "Commonist Tendencies",
+          "score": 6,
+          "matched_on": [
+            "mutuelle"
+          ]
+        },
+        {
+          "id": "6125738a",
+          "title": "Download",
           "score": 6,
           "matched_on": [
             "mutuelle"

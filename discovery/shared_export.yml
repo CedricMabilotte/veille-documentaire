@@ -121,7 +121,7 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-08-03T06:50:54.493236+00:00'
+exported_at: '2026-08-04T06:22:53.285229+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
@@ -322,10 +322,10 @@ sources:
 - url: https://www.landcoalition.org/en/latest/
   label: International Land Coalition — latest
   type: deep_html
-  fertility: 2.75
-  runs: 4
-  docs_dl: 11
-  docs_seen: 40
+  fertility: 4.0
+  runs: 5
+  docs_dl: 20
+  docs_seen: 50
 - url: https://www.kpa.or.id/document-library/
   label: KPA Indonesia — document library (réforme agraire)
   type: deep_html
