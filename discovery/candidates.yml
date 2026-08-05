@@ -1,5 +1,5 @@
-last_updated: '2026-08-04T06:07:13'
-total_candidates: 3423
+last_updated: '2026-08-05T05:57:44'
+total_candidates: 3445
 candidates:
 - url: http://www.software602.com/
   type: footnote
@@ -2680,6 +2680,18 @@ candidates:
   - doc_id: CLACSO — búsqueda tierra y communs
     context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
     page: null
+- url: https://www.facebook.com/share/1BVSrq57dR/
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-05'
+  seen_count: 14
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Facebook
+    page: null
 - url: https://www.instagram.com/clacso_oficial/?hl=es-la
   type: external_link
   domain: www.instagram.com
@@ -2721,6 +2733,18 @@ candidates:
     page: null
   - doc_id: CLACSO — búsqueda tierra y communs
     context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
+    page: null
+- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-05'
+  seen_count: 14
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Linkedin-in
     page: null
 - url: https://www.tiktok.com/@clacso
   type: external_link
@@ -2805,6 +2829,30 @@ candidates:
     page: null
   - doc_id: CLACSO — búsqueda tierra y communs
     context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
+    page: null
+- url: https://x.com/rbm_maroobe
+  type: external_link
+  domain: x.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-05'
+  seen_count: 14
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: X-twitter
+    page: null
+- url: https://youtube.com/@reseaubillitalmaroobe7381
+  type: external_link
+  domain: youtube.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-05'
+  seen_count: 14
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Youtube
     page: null
 - url: http://www.foei.org/es/
   type: external_link
@@ -2987,18 +3035,6 @@ candidates:
   - doc_id: Tierra.org — Biodiversidad
     context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
     page: null
-- url: https://www.facebook.com/share/1BVSrq57dR/
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-08-04'
-  seen_count: 13
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Facebook
-    page: null
 - url: https://www.flickr.com/photos/60108073@N02/albums
   type: external_link
   domain: www.flickr.com
@@ -3052,42 +3088,6 @@ candidates:
     page: null
   - doc_id: Tierra.org — Biodiversidad
     context: lien depuis https://www.tierra.org/06_biodiversidad/02actualidad-biodiversidad/
-    page: null
-- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
-  type: external_link
-  domain: www.linkedin.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-08-04'
-  seen_count: 13
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Linkedin-in
-    page: null
-- url: https://x.com/rbm_maroobe
-  type: external_link
-  domain: x.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-08-04'
-  seen_count: 13
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: X-twitter
-    page: null
-- url: https://youtube.com/@reseaubillitalmaroobe7381
-  type: external_link
-  domain: youtube.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-08-04'
-  seen_count: 13
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Youtube
     page: null
 - url: https://bsky.app/search?q=%23Souverainet%C3%A9Alimentaire
   type: mastodon
@@ -6371,6 +6371,75 @@ candidates:
   - doc_id: CrimethInc — library
     context: Switch to the lite version of the site →
     page: null
+- url: https://lundi.am/Canicules-et-incendies-apprendre-a-avoir-peur
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Canicules et incendies : apprendre à avoir peur — « Le signe que quelque chose en nous insiste et résiste à
+      la fatalité » Jérôme Santolini - Été 2026 / Avec une grosse photo en haut , Positions , 2'
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 6
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'Canicules et incendies : apprendre à avoir peur'
+  suggested_action: follow_one_time
+- url: https://lundi.am/Du-sujet-a-caution-au-statut-de-chasseuse-cueilleuse-en-festival
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: « Du sujet à caution au statut de chasseuse-cueilleuse en festival » — SNG (Natacha Guiller) - Été 2026 / Avec
+      une grosse photo en haut , Littérature , 4
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 6
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-05'
+  metadata:
+    title: « Du sujet à caution au statut de chasseuse-cueilleuse en festival »
+  suggested_action: follow_one_time
+- url: https://lundi.am/Editions-lundimatin
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Éditions lundimatin — Vous procurer directement nos livres... - Été 2026 / Avec une grosse photo en haut , 4
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 6
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-05'
+  metadata:
+    title: Éditions lundimatin
+  suggested_action: follow_one_time
+- url: https://lundi.am/Le-retour-de-l-ecole
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Le retour de l'école — (ou l'enfance vue comme un feu tricolore) - Été 2026 / Avec une grosse photo en haut ,
+      Littérature , 2
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 6
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-05'
+  metadata:
+    title: Le retour de l'école
+  suggested_action: follow_one_time
+- url: https://lundi.am/Liberer-Mehdi-Blackwind
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Libérer Mehdi Blackwind — Des nouvelles depuis Casablanca - Été 2026 / Avec une grosse photo en haut , Terreur
+      , 2
+    timestamp: '2026-07-27T12:51:43'
+  seen_count: 6
+  domain: lundi.am
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-05'
+  metadata:
+    title: Libérer Mehdi Blackwind
+  suggested_action: follow_one_time
 - url: https://nosplantamos.org/encuentros
   type: external_link
   domain: nosplantamos.org
@@ -9277,47 +9346,6 @@ candidates:
   metadata:
     title: Caniculalypse
   suggested_action: follow_one_time
-- url: https://lundi.am/Canicules-et-incendies-apprendre-a-avoir-peur
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: 'Canicules et incendies : apprendre à avoir peur — « Le signe que quelque chose en nous insiste et résiste à
-      la fatalité » Jérôme Santolini - Été 2026 / Avec une grosse photo en haut , Positions , 2'
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 5
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-08-03'
-  metadata:
-    title: 'Canicules et incendies : apprendre à avoir peur'
-  suggested_action: follow_one_time
-- url: https://lundi.am/Du-sujet-a-caution-au-statut-de-chasseuse-cueilleuse-en-festival
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: « Du sujet à caution au statut de chasseuse-cueilleuse en festival » — SNG (Natacha Guiller) - Été 2026 / Avec
-      une grosse photo en haut , Littérature , 4
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 5
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-08-03'
-  metadata:
-    title: « Du sujet à caution au statut de chasseuse-cueilleuse en festival »
-  suggested_action: follow_one_time
-- url: https://lundi.am/Editions-lundimatin
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Éditions lundimatin — Vous procurer directement nos livres... - Été 2026 / Avec une grosse photo en haut , 4
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 5
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-08-03'
-  metadata:
-    title: Éditions lundimatin
-  suggested_action: follow_one_time
 - url: https://lundi.am/Le-Megacanal-prend-l-eau-Le-feu-jaillit
   type: rss
   found_from:
@@ -9346,20 +9374,6 @@ candidates:
   metadata:
     title: Le dernier vertige
   suggested_action: follow_one_time
-- url: https://lundi.am/Le-retour-de-l-ecole
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Le retour de l'école — (ou l'enfance vue comme un feu tricolore) - Été 2026 / Avec une grosse photo en haut ,
-      Littérature , 2
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 5
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-08-03'
-  metadata:
-    title: Le retour de l'école
-  suggested_action: follow_one_time
 - url: https://lundi.am/Letexier-et-le-stratageme-de-la-cage-de-verre-de-la-FIFA
   type: rss
   found_from:
@@ -9373,20 +9387,6 @@ candidates:
   last_seen: '2026-08-03'
   metadata:
     title: Letexier et le stratagème de la « cage de verre » de la FIFA
-  suggested_action: follow_one_time
-- url: https://lundi.am/Liberer-Mehdi-Blackwind
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Libérer Mehdi Blackwind — Des nouvelles depuis Casablanca - Été 2026 / Avec une grosse photo en haut , Terreur
-      , 2
-    timestamp: '2026-07-27T12:51:43'
-  seen_count: 5
-  domain: lundi.am
-  first_seen: '2026-07-27'
-  last_seen: '2026-08-03'
-  metadata:
-    title: Libérer Mehdi Blackwind
   suggested_action: follow_one_time
 - url: https://lundi.am/Mourir-a-Romainville
   type: rss
@@ -24192,6 +24192,37 @@ candidates:
   metadata:
     title: '« C''est un carnage » : ces nouveaux maires d''extrême droite s''acharnent contre des projets écolos'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Ca-a-ete-un-lieu-de-souffrance-la-memoire-ressuscitee-des-harkis-forces-de-reboiser-la
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Ça a été un lieu de souffrance » : la mémoire ressuscitée des harkis forcés de reboiser la Provence — Après
+      la guerre d''Algérie, nombre de harkis exilés en France ont été envoyés dans des hameaux reculés pour participer au
+      reboisement des forêts. Un pan méconnu de l''histoire forestière mis à l''hon'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-05'
+  metadata:
+    title: '« Ça a été un lieu de souffrance » : la mémoire ressuscitée des harkis forcés de reboiser la Provence'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Canicule-Le-rechauffement-climatique-a-pris-corps-beaucoup-de-personnes-ont-vecu-cette
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Canicule : « Le réchauffement climatique a pris corps, beaucoup de personnes ont vécu cette bascule dans leur
+      chair » — Après la terrible vague de chaleur de fin juin, la chercheuse Mélusine Boon-Falleur a lancé un questionnaire
+      en ligne pour recueillir des ressentis de cette canicule. Premiers résu'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'Canicule : « Le réchauffement climatique a pris corps, beaucoup de personnes ont vécu cette bascule dans leur
+      chair »'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Canicule-a-Paris-sans-abri-le-jour-sans-place-la-nuit-des-familles-campent-devant-le
   type: rss
   found_from:
@@ -24222,6 +24253,21 @@ candidates:
   metadata:
     title: 'Canicule : la LPO appelle à donner de l''eau aux animaux'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Ce-qu-on-fait-subir-au-fleuve-on-se-le-fait-subir-une-nuit-de-bivouac-sur-la-Loire-avec
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Ce qu''on fait subir au fleuve, on se le fait subir » : une nuit de bivouac sur la Loire avec Étienne Davodeau
+      — Le temps d''une soirée, notre journaliste Vincent Lucchese a accompagné Étienne Davodeau bivouaquer dans l''un de
+      ses coins préférés en Maine-et-Loire. Pour l''auteur de bandes dessinées, l'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-05'
+  metadata:
+    title: '« Ce qu''on fait subir au fleuve, on se le fait subir » : une nuit de bivouac sur la Loire avec Étienne Davodeau'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Cela-me-fend-le-coeur-pour-proteger-une-fleur-rare-un-chatelain-se-dresse-contre-l-A69
   type: rss
   found_from:
@@ -24236,6 +24282,36 @@ candidates:
   last_seen: '2026-05-24'
   metadata:
     title: '« Cela me fend le cœur » : pour protéger une fleur rare, un châtelain se dresse contre l''A69'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Ces-animaux-qui-peignent-dansent-et-construisent-des-cathedrales-de-sable
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Ces animaux qui peignent, dansent et construisent des cathédrales de sable — Un singe qui peint, un poisson
+      capable de faire de magnifiques rosaces, des abeilles qui dansent et un oiseau qui construit des dômes bleus : les animaux
+      aussi sont capables de faire de l''art. [Chronique « Animaux géniaux »'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-05'
+  metadata:
+    title: Ces animaux qui peignent, dansent et construisent des cathédrales de sable
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Champs-secs-rendements-en-chute-les-vagues-de-chaleur-mettent-les-maraichers-a-l-epreuve
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Plants grillés, pommes de terre minuscules, choux replantés trois fois : l''été qui épuise les maraîchers —
+      Les quatre vagues de chaleur qui se sont abattues sur la France depuis fin mai ont laissé des traces chez les maraîchers.
+      Plants grillés, récoltes réduites, légumes minuscules... Ils sont nombr'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'Plants grillés, pommes de terre minuscules, choux replantés trois fois : l''été qui épuise les maraîchers'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Chloe-interdite-de-Festival-de-Cannes-en-raison-de-son-engagement-ecolo
   type: rss
@@ -24296,6 +24372,21 @@ candidates:
   last_seen: '2026-08-03'
   metadata:
     title: 'Incendie en Gironde : 5 millions de masques FFP2 livrés'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Dans-notre-malheur-on-aura-fait-de-belles-rencontres-a-Bordeaux-avec-les-derniers-evacues
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Dans notre malheur, on aura fait de belles rencontres » : à Bordeaux, avec les derniers évacués de l''incendie
+      — Depuis une semaine, le parc des expositions de Bordeaux accueille les évacués des communes touchées par l''incendie
+      en Gironde. Ils ne sont plus qu''une cinquantaine et s''apprêtent à parti'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-05'
+  metadata:
+    title: '« Dans notre malheur, on aura fait de belles rencontres » : à Bordeaux, avec les derniers évacués de l''incendie'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Des-collectifs-poursuivent-l-Etat-dans-le-scandale-des-PFAS
   type: rss
@@ -24372,6 +24463,21 @@ candidates:
   metadata:
     title: 'Désinformation climatique : les États-Unis et la Russie visent l''Europe'
   suggested_action: follow_one_time
+- url: https://reporterre.net/En-Bulgarie-des-ossements-de-mammouth-decouverts-dans-le-lit-asseche-du-Danube
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: En Bulgarie, des ossements de mammouth découverts dans le lit asséché du Danube — En Bulgarie, le niveau exceptionnellement
+      bas du fleuve Danube a mis au jour des ossements de mammouth. Probablement issus d'un jeune mammouth laineux de la période
+      glaciaire, ils ont été découverts le mercredi 29 juil
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-05'
+  metadata:
+    title: En Bulgarie, des ossements de mammouth découverts dans le lit asséché du Danube
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Fuite-de-tonnes-de-PFAS-terres-englouties-encore-un-enorme-data-center-polluant
   type: rss
   found_from:
@@ -24416,6 +24522,36 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: Huiles, tisanes, bonbons... Le CBD à usage alimentaire interdit en France
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Incendie-en-Gironde-des-obus-de-la-Seconde-Guerre-mondiale-ont-explose
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Incendie en Gironde : des obus de la Seconde Guerre mondiale ont explosé — Des obus de la Seconde Guerre mondiale
+      ont été découverts au Porge, ce village lourdement touché par les incendies qui ont traversé la Gironde. Enterrés dans
+      un champ calciné, à quelques mètres des habitations, ils ont explos'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'Incendie en Gironde : des obus de la Seconde Guerre mondiale ont explosé'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Incendies-17-des-fumeurs-jettent-leur-megot-par-la-fenetre-de-leur-voiture
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Incendies : 17 % des fumeurs jettent leur mégot par la fenêtre de leur voiture — 17 % des fumeurs reconnaissent
+      jeter leur mégot par la fenêtre de leur véhicule. C''est le constat alarmant de la fondation Vinci autoroutes, dans
+      son enquête annuelle sur les déchets.Parmi ces fumeurs imprudents, plus d'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'Incendies : 17 % des fumeurs jettent leur mégot par la fenêtre de leur voiture'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Incendies-faut-il-interdire-la-chasse-pour-laisser-du-repit-aux-animaux-sauvages
   type: rss
@@ -24641,6 +24777,21 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: « Je propose d'offrir des houes aux managers »
+  suggested_action: follow_one_time
+- url: https://reporterre.net/On-a-signe-pour-aller-au-charbon-pas-a-l-echafaud-les-pompiers-asphyxies-par-les-fumees
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« On a signé pour aller au charbon, pas à l''échafaud » : les pompiers asphyxiés par les fumées des incendies
+      — En première ligne pour lutter contre les incendies, les pompiers inhalent de nombreuses substances toxiques présentes
+      dans les fumées. Ils dénoncent une protection insuffisante et un manque'
+    timestamp: '2026-08-02T06:09:17'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-02'
+  last_seen: '2026-08-05'
+  metadata:
+    title: '« On a signé pour aller au charbon, pas à l''échafaud » : les pompiers asphyxiés par les fumées des incendies'
   suggested_action: follow_one_time
 - url: https://reporterre.net/On-fait-ce-qu-on-peut-comme-on-peut-en-Gironde-des-benevoles-au-secours-des-animaux
   type: rss
@@ -33361,6 +33512,16 @@ candidates:
   - doc_id: ef1dbd7a
     context: Research  22:107–126. doi:10.1038/cr.2011.158.
     page: 52
+  promoted_pdf_url: https://www.nature.com/articles/cr2011158.pdf
+  promoted_at: '2026-08-05T05:56:51'
+  promoted_metadata:
+    doi: 10.1038/cr.2011.158
+    title: 'Exogenous plant MIR168a specifically targets mammalian LDLRAP1: evidence of cross-kingdom regulation by microRNA'
+    journal: Cell Research
+    published_date: '2011-09-20'
+    genre: journal-article
+    html_url: https://www.nature.com/articles/cr2011158.pdf
+    source: unpaywall
 - url: https://doi.org/10.1038/nature12132
   type: footnote
   domain: doi.org
@@ -34596,6 +34757,16 @@ candidates:
     year: 2013
     doi: 10.1038/ngeo1830
   suggested_action: follow_one_time
+  promoted_pdf_url: https://orbi.uliege.be/bitstream/2268/150126/1/regnier_et_al_2013.pdf
+  promoted_at: '2026-08-05T05:57:23'
+  promoted_metadata:
+    doi: 10.1038/ngeo1830
+    title: Anthropogenic perturbation of the carbon fluxes from land to ocean
+    journal: Nature Geoscience
+    published_date: '2013-06-07'
+    genre: journal-article
+    html_url: https://orbi.uliege.be/bitstream/2268/150126/1/regnier_et_al_2013.pdf
+    source: unpaywall
 - url: https://focusweb.org/
   type: footnote
   domain: focusweb.org
@@ -34934,6 +35105,17 @@ candidates:
     year: 2021
     doi: 10.3917/ripc.272.0061
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=RIPC_272_0061&download=1
+  promoted_at: '2026-08-05T05:57:25'
+  promoted_metadata:
+    doi: 10.3917/ripc.272.0061
+    title: Les « plans fonciers ruraux » au Bénin (1992-2015). La carrière d’un instrument « pilote » au sein de politiques
+      non stabilisées
+    journal: Revue internationale de politique comparée
+    published_date: '2021-03-15'
+    genre: journal-article
+    html_url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=RIPC_272_0061&download=1
+    source: unpaywall
 - url: https://handsontheland.net/infographics-the-state-of-land-concentra­
   type: footnote
   domain: handsontheland.net
@@ -36488,37 +36670,6 @@ candidates:
   metadata:
     title: '« C''était David contre Goliath » : récit d''une victoire contre un méga entrepôt'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Ca-a-ete-un-lieu-de-souffrance-la-memoire-ressuscitee-des-harkis-forces-de-reboiser-la
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Ça a été un lieu de souffrance » : la mémoire ressuscitée des harkis forcés de reboiser la Provence — Après
-      la guerre d''Algérie, nombre de harkis exilés en France ont été envoyés dans des hameaux reculés pour participer au
-      reboisement des forêts. Un pan méconnu de l''histoire forestière mis à l''hon'
-    timestamp: '2026-08-02T06:09:17'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-08-02'
-  last_seen: '2026-08-03'
-  metadata:
-    title: '« Ça a été un lieu de souffrance » : la mémoire ressuscitée des harkis forcés de reboiser la Provence'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Canicule-Le-rechauffement-climatique-a-pris-corps-beaucoup-de-personnes-ont-vecu-cette
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Canicule : « Le réchauffement climatique a pris corps, beaucoup de personnes ont vécu cette bascule dans leur
-      chair » — Après la terrible vague de chaleur de fin juin, la chercheuse Mélusine Boon-Falleur a lancé un questionnaire
-      en ligne pour recueillir des ressentis de cette canicule. Premiers résu'
-    timestamp: '2026-08-02T06:09:17'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-08-02'
-  last_seen: '2026-08-03'
-  metadata:
-    title: 'Canicule : « Le réchauffement climatique a pris corps, beaucoup de personnes ont vécu cette bascule dans leur
-      chair »'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Canicule-au-moins-1-000-morts-supplementaires-en-France
   type: rss
   found_from:
@@ -36534,36 +36685,6 @@ candidates:
   metadata:
     title: 'Canicule : au moins 1 000 morts supplémentaires en France'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Ce-qu-on-fait-subir-au-fleuve-on-se-le-fait-subir-une-nuit-de-bivouac-sur-la-Loire-avec
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Ce qu''on fait subir au fleuve, on se le fait subir » : une nuit de bivouac sur la Loire avec Étienne Davodeau
-      — Le temps d''une soirée, notre journaliste Vincent Lucchese a accompagné Étienne Davodeau bivouaquer dans l''un de
-      ses coins préférés en Maine-et-Loire. Pour l''auteur de bandes dessinées, l'
-    timestamp: '2026-08-02T06:09:17'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-08-02'
-  last_seen: '2026-08-03'
-  metadata:
-    title: '« Ce qu''on fait subir au fleuve, on se le fait subir » : une nuit de bivouac sur la Loire avec Étienne Davodeau'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Ces-animaux-qui-peignent-dansent-et-construisent-des-cathedrales-de-sable
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Ces animaux qui peignent, dansent et construisent des cathédrales de sable — Un singe qui peint, un poisson
-      capable de faire de magnifiques rosaces, des abeilles qui dansent et un oiseau qui construit des dômes bleus : les animaux
-      aussi sont capables de faire de l''art. [Chronique « Animaux géniaux »'
-    timestamp: '2026-08-02T06:09:17'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-08-02'
-  last_seen: '2026-08-03'
-  metadata:
-    title: Ces animaux qui peignent, dansent et construisent des cathédrales de sable
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Ces-canaux-provencaux-vieux-de-cinq-siecles-rechargent-les-nappes-et-font-vivre-les
   type: rss
   found_from:
@@ -36578,21 +36699,6 @@ candidates:
   last_seen: '2026-07-29'
   metadata:
     title: Ces canaux provençaux vieux de cinq siècles rechargent les nappes et font vivre les paysans
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Champs-secs-rendements-en-chute-les-vagues-de-chaleur-mettent-les-maraichers-a-l-epreuve
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Plants grillés, pommes de terre minuscules, choux replantés trois fois : l''été qui épuise les maraîchers —
-      Les quatre vagues de chaleur qui se sont abattues sur la France depuis fin mai ont laissé des traces chez les maraîchers.
-      Plants grillés, récoltes réduites, légumes minuscules... Ils sont nombr'
-    timestamp: '2026-08-02T06:09:17'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-08-02'
-  last_seen: '2026-08-03'
-  metadata:
-    title: 'Plants grillés, pommes de terre minuscules, choux replantés trois fois : l''été qui épuise les maraîchers'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Clotures-et-forets-engrillagees-comment-retrouver-la-liberte-de-cheminer
   type: rss
@@ -36639,20 +36745,20 @@ candidates:
   metadata:
     title: 'Congé climatique : l''exemple espagnol qui inspire la France'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Dans-notre-malheur-on-aura-fait-de-belles-rencontres-a-Bordeaux-avec-les-derniers-evacues
+- url: https://reporterre.net/Dans-l-Allier-la-plus-grande-mine-de-lithium-d-Europe-s-attaque-a-une-foret-pleine-d
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Dans notre malheur, on aura fait de belles rencontres » : à Bordeaux, avec les derniers évacués de l''incendie
-      — Depuis une semaine, le parc des expositions de Bordeaux accueille les évacués des communes touchées par l''incendie
-      en Gironde. Ils ne sont plus qu''une cinquantaine et s''apprêtent à parti'
-    timestamp: '2026-08-02T06:09:17'
+    context: 'Dans l''Allier, la plus grande mine de lithium d''Europe s''attaque à une forêt pleine d''espèces protégées
+      — Dans l''Allier, la plus grande mine de lithium d''Europe a été lancée au beau milieu d''une forêt. Sur place, certains
+      habitants et naturalistes craignent de voir le territoire « pourri et dévasté '
+    timestamp: '2026-08-03T06:35:02'
   seen_count: 2
   domain: reporterre.net
-  first_seen: '2026-08-02'
-  last_seen: '2026-08-03'
+  first_seen: '2026-08-03'
+  last_seen: '2026-08-05'
   metadata:
-    title: '« Dans notre malheur, on aura fait de belles rencontres » : à Bordeaux, avec les derniers évacués de l''incendie'
+    title: Dans l'Allier, la plus grande mine de lithium d'Europe s'attaque à une forêt pleine d'espèces protégées
   suggested_action: follow_one_time
 - url: https://reporterre.net/Deforestation-tourisme-Ces-facteurs-environnementaux-qui-boostent-l-hantavirus
   type: rss
@@ -36744,20 +36850,20 @@ candidates:
   metadata:
     title: 'Gratuit et sans réservation : ces communes réinventent le covoiturage'
   suggested_action: follow_one_time
-- url: https://reporterre.net/En-Bulgarie-des-ossements-de-mammouth-decouverts-dans-le-lit-asseche-du-Danube
+- url: https://reporterre.net/En-Bretagne-l-agriculture-intensive-pollue-et-l-Etat-la-paie-pour-nettoyer-ses-algues
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: En Bulgarie, des ossements de mammouth découverts dans le lit asséché du Danube — En Bulgarie, le niveau exceptionnellement
-      bas du fleuve Danube a mis au jour des ossements de mammouth. Probablement issus d'un jeune mammouth laineux de la période
-      glaciaire, ils ont été découverts le mercredi 29 juil
-    timestamp: '2026-08-02T06:09:17'
+    context: En Bretagne, l'agriculture intensive pollue… et l'État la paie pour nettoyer ses algues vertes — Principale responsable
+      de la prolifération des algues vertes, l'agriculture intensive ne finance pas leur ramassage. À la place, les collectivités
+      publiques embauchent des entreprises de… travaux agricol
+    timestamp: '2026-08-03T06:35:02'
   seen_count: 2
   domain: reporterre.net
-  first_seen: '2026-08-02'
-  last_seen: '2026-08-03'
+  first_seen: '2026-08-03'
+  last_seen: '2026-08-05'
   metadata:
-    title: En Bulgarie, des ossements de mammouth découverts dans le lit asséché du Danube
+    title: En Bretagne, l'agriculture intensive pollue… et l'État la paie pour nettoyer ses algues vertes
   suggested_action: follow_one_time
 - url: https://reporterre.net/Face-a-la-secheresse-l-Etat-accuse-de-tergiverser
   type: rss
@@ -36864,6 +36970,21 @@ candidates:
   metadata:
     title: '« Aujourd''hui, j''ose prendre la parole » : dans ce village, le pouvoir est entre les mains des habitants'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Ils-sortent-des-toilettes-des-eviers-Ibiza-debordee-par-la-proliferation-des-serpents
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Ils sortent des toilettes, des éviers » : Ibiza débordée par la prolifération des serpents — Alors qu''aucun
+      serpent n''y vivait au début du siècle, Ibiza est désormais peuplée de dizaines de milliers de couleuvres fer-à-cheval.
+      Inoffensives pour l''humain, elles déciment le lézard des Pityuses, espè'
+    timestamp: '2026-08-03T06:35:02'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-08-03'
+  last_seen: '2026-08-05'
+  metadata:
+    title: '« Ils sortent des toilettes, des éviers » : Ibiza débordée par la prolifération des serpents'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Incendie-en-Gironde-Importante-reprise-de-feu-a-Lege-Cap-Ferret
   type: rss
   found_from:
@@ -36878,36 +36999,6 @@ candidates:
   last_seen: '2026-07-31'
   metadata:
     title: 'Incendie en Gironde : « Importante reprise de feu » à Lège-Cap-Ferret'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Incendie-en-Gironde-des-obus-de-la-Seconde-Guerre-mondiale-ont-explose
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Incendie en Gironde : des obus de la Seconde Guerre mondiale ont explosé — Des obus de la Seconde Guerre mondiale
-      ont été découverts au Porge, ce village lourdement touché par les incendies qui ont traversé la Gironde. Enterrés dans
-      un champ calciné, à quelques mètres des habitations, ils ont explos'
-    timestamp: '2026-08-02T06:09:17'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-08-02'
-  last_seen: '2026-08-03'
-  metadata:
-    title: 'Incendie en Gironde : des obus de la Seconde Guerre mondiale ont explosé'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Incendies-17-des-fumeurs-jettent-leur-megot-par-la-fenetre-de-leur-voiture
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Incendies : 17 % des fumeurs jettent leur mégot par la fenêtre de leur voiture — 17 % des fumeurs reconnaissent
-      jeter leur mégot par la fenêtre de leur véhicule. C''est le constat alarmant de la fondation Vinci autoroutes, dans
-      son enquête annuelle sur les déchets.Parmi ces fumeurs imprudents, plus d'
-    timestamp: '2026-08-02T06:09:17'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-08-02'
-  last_seen: '2026-08-03'
-  metadata:
-    title: 'Incendies : 17 % des fumeurs jettent leur mégot par la fenêtre de leur voiture'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Incendies-a-Fontainebleau-apres-les-flammes-quel-avenir-pour-cette-cathedrale-du-vivant
   type: rss
@@ -37295,21 +37386,6 @@ candidates:
   last_seen: '2026-07-31'
   metadata:
     title: 'Ni poules, ni coquilles : le marché des œufs végétaux tente d''éclore'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/On-a-signe-pour-aller-au-charbon-pas-a-l-echafaud-les-pompiers-asphyxies-par-les-fumees
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« On a signé pour aller au charbon, pas à l''échafaud » : les pompiers asphyxiés par les fumées des incendies
-      — En première ligne pour lutter contre les incendies, les pompiers inhalent de nombreuses substances toxiques présentes
-      dans les fumées. Ils dénoncent une protection insuffisante et un manque'
-    timestamp: '2026-08-02T06:09:17'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-08-02'
-  last_seen: '2026-08-03'
-  metadata:
-    title: '« On a signé pour aller au charbon, pas à l''échafaud » : les pompiers asphyxiés par les fumées des incendies'
   suggested_action: follow_one_time
 - url: https://reporterre.net/PFAS-des-rapporteurs-de-l-ONU-epinglent-deux-geants-de-la-vallee-de-la-chimie
   type: rss
@@ -42575,6 +42651,16 @@ candidates:
     year: 2025
     doi: 10.53766/rgv/2025.66.2.03
   suggested_action: follow_one_time
+  promoted_pdf_url: http://erevistas.saber.ula.ve/index.php/regeoven/article/download/21644/21921933504
+  promoted_at: '2026-08-05T05:57:35'
+  promoted_metadata:
+    doi: 10.53766/rgv/2025.66.2.03
+    title: Áreas de restricción para la expansión urbana de la ciudad de Pregonero, estado Táchira, Venezuela, 2023
+    journal: REVISTA GEOGRÁFICA VENEZOLANA
+    published_date: '2025-01-01'
+    genre: journal-article
+    html_url: http://erevistas.saber.ula.ve/index.php/regeoven/article/download/21644/21921933504
+    source: unpaywall
 - url: http://espaceautogere.squat.net/infokiosk/editions/nonauxogm.pdf
   type: footnote
   domain: espaceautogere.squat.net
@@ -42671,6 +42757,16 @@ candidates:
     year: 2006
     doi: 10.2307/jj.41379766.16
   suggested_action: follow_one_time
+  promoted_pdf_url: http://hdl.handle.net/10535/4282
+  promoted_at: '2026-08-05T05:57:36'
+  promoted_metadata:
+    doi: 10.2307/jj.41379766.16
+    title: The Tragedy Of The Commons
+    journal: Princeton University Press eBooks
+    published_date: '2006-06-15'
+    genre: book-chapter
+    html_url: http://hdl.handle.net/10535/4282
+    source: unpaywall
 - url: http://hdl.handle.net/10535/6178
   type: openalex
   found_from:
@@ -42865,6 +42961,16 @@ candidates:
     year: 2002
     doi: 10.4000/abpo.1532
   suggested_action: follow_one_time
+  promoted_pdf_url: http://journals.openedition.org/abpo/pdf/1532
+  promoted_at: '2026-08-05T05:57:39'
+  promoted_metadata:
+    doi: 10.4000/abpo.1532
+    title: 'Français et Américains en Basse-Seine à la Libération (1944-1946) : des relations ambivalentes'
+    journal: Annales de Bretagne et des pays de l Ouest
+    published_date: '2002-01-01'
+    genre: journal-article
+    html_url: http://journals.openedition.org/abpo/pdf/1532
+    source: unpaywall
 - url: http://journals.openedition.org/com/13123
   type: openalex
   found_from:
@@ -42901,6 +43007,16 @@ candidates:
     year: 2008
     doi: 10.4000/developpementdurable.5553
   suggested_action: follow_one_time
+  promoted_pdf_url: http://journals.openedition.org/developpementdurable/pdf/5553
+  promoted_at: '2026-08-05T05:57:42'
+  promoted_metadata:
+    doi: 10.4000/developpementdurable.5553
+    title: 'Propriété, biens publics mondiaux, bien(s) commun(s) : Une lecture des concepts économiques'
+    journal: Développement durable et territoires
+    published_date: '2008-01-01'
+    genre: journal-article
+    html_url: http://journals.openedition.org/developpementdurable/pdf/5553
+    source: unpaywall
 - url: http://journals.openedition.org/economierurale/pdf/7010
   type: openalex
   found_from:
@@ -42919,6 +43035,16 @@ candidates:
     year: 2019
     doi: 10.4000/economierurale.7010
   suggested_action: follow_one_time
+  promoted_pdf_url: http://journals.openedition.org/economierurale/pdf/7010
+  promoted_at: '2026-08-05T05:57:43'
+  promoted_metadata:
+    doi: 10.4000/economierurale.7010
+    title: Terre de Liens, un levier foncier militant au service d’un projet politique pour l’agriculture
+    journal: Économie rurale
+    published_date: '2019-01-01'
+    genre: journal-article
+    html_url: http://journals.openedition.org/economierurale/pdf/7010
+    source: unpaywall
 - url: http://journals.openedition.org/ema/pdf/3510
   type: openalex
   found_from:
@@ -42937,6 +43063,16 @@ candidates:
     year: 2015
     doi: 10.4000/ema.3510
   suggested_action: follow_one_time
+  promoted_pdf_url: http://journals.openedition.org/ema/pdf/3510
+  promoted_at: '2026-08-05T05:57:44'
+  promoted_metadata:
+    doi: 10.4000/ema.3510
+    title: Les « femmes de Sissi » ? Mutations des discours du genre et limites du féminisme d’État
+    journal: Égypte/Monde arabe
+    published_date: '2015-01-01'
+    genre: journal-article
+    html_url: http://journals.openedition.org/ema/pdf/3510
+    source: unpaywall
 - url: http://journals.openedition.org/ere/pdf/1545
   type: openalex
   found_from:
@@ -50851,6 +50987,34 @@ candidates:
   metadata:
     title: « C'est une réquisition populaire »
   suggested_action: follow_one_time
+- url: https://lundi.am/Cassandre
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Cassandre — Entretien avec la réalisatrice Hélène Merlin [Visionnage conseillé avant lecture] - Été 2026 suite
+      / Avec une grosse photo en haut , Littérature , 2
+    timestamp: '2026-08-05T05:52:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: Cassandre
+  suggested_action: follow_one_time
+- url: https://lundi.am/Ceuta-la-hogra-et-le-monde-qui-brule-7665
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Ceuta : la hogra et le monde qui brûle — Par Sylvain George - Été 2026 suite / Avec une grosse photo en haut
+      , Terreur , 2'
+    timestamp: '2026-08-05T05:52:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'Ceuta : la hogra et le monde qui brûle'
+  suggested_action: follow_one_time
 - url: https://lundi.am/Dans-les-sombres-temps-de-la-normalisation
   type: rss
   found_from:
@@ -50891,6 +51055,21 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: Deux procureurs
+  suggested_action: follow_one_time
+- url: https://lundi.am/Discrimination-en-travail
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Discrimination en travail — « Dans un style ampoulé et emphatique, une logorrhée diarrhéique qui dissimule à
+      peine qu'ils te parlent comme à une merde » Laura Montmory - Été 2026 suite / Avec une grosse photo en haut , Littérature
+      , 2
+    timestamp: '2026-08-05T05:52:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: Discrimination en travail
   suggested_action: follow_one_time
 - url: https://lundi.am/Enfants-e%CC%81cole-travail-ville
   type: rss
@@ -50962,6 +51141,19 @@ candidates:
   metadata:
     title: Le regard de l'Occident, ou la « nuance » contre l'interruption
   suggested_action: follow_one_time
+- url: https://lundi.am/Matcha-latte-pour-la-fin-des-temps
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Matcha latte pour la fin des temps — Yazan Alloujami - Été 2026 suite / Avec une grosse photo en haut , 2 , Positions
+    timestamp: '2026-08-05T05:52:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: Matcha latte pour la fin des temps
+  suggested_action: follow_one_time
 - url: https://lundi.am/Quand-l-IA-corrige-l-IA-un-bac-de-philo-tres-augmente
   type: rss
   found_from:
@@ -50989,6 +51181,20 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: Vague de sabotages
+  suggested_action: follow_one_time
+- url: https://lundi.am/Soumission-et-compromission-Moteur
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Soumission et compromission : Moteur ! — « 980 millions d''euros pour le cinéma, à condition qu''il ferme bien
+      sa gueule » - Été 2026 suite'
+    timestamp: '2026-08-05T05:52:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'Soumission et compromission : Moteur !'
   suggested_action: follow_one_time
 - url: https://lundi.am/Suffit-il-d-un-cerveau-pour-rebondir
   type: rss
@@ -52599,6 +52805,21 @@ candidates:
   metadata:
     title: '1 700 rivières contaminées en partie : la carte inédite de la pollution chimique des cours d''eau en France'
   suggested_action: follow_one_time
+- url: https://reporterre.net/100-hectares-brules-dans-une-reserve-naturelle-aux-Pays-Bas
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '100 hectares brûlés dans une réserve naturelle aux Pays-Bas — Les incendies sévissent de plus en plus au nord
+      : la réserve naturelle de Boschhuizerbergen, dans le sud-est des Pays-Bas, est en proie aux flammes depuis lundi 3 août.
+      Le feu s''est rapidement propagé : de 21 hectares brûlés lundi après-m'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 100 hectares brûlés dans une réserve naturelle aux Pays-Bas
+  suggested_action: follow_one_time
 - url: https://reporterre.net/100-recyclable-Volvic-epingle-pour-pratiques-trompeuses
   type: rss
   found_from:
@@ -52689,6 +52910,21 @@ candidates:
   metadata:
     title: 78 % des rivières perdent de l'oxygène, notamment à cause du réchauffement climatique
   suggested_action: follow_one_time
+- url: https://reporterre.net/99-grands-feux-actifs-les-Etats-Unis-en-proie-aux-flammes
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '99 grands feux actifs : les États-Unis en proie aux flammes — Après le Canada, toujours en proie aux flammes,
+      le nord-ouest des États-Unis brûle à son tour. À Spokane, dans l''État de Washington, trois incendies ont forcé quelque
+      60 000 personnes à fuir en urgence durant le week-end. Lundi 3 août, le'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: '99 grands feux actifs : les États-Unis en proie aux flammes'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Acheter-sur-TikTok-Facebook-et-Insta-les-ravages-de-la-fast-fashion-en-ligne
   type: rss
   found_from:
@@ -52733,6 +52969,21 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: Au cœur d'un été cataclysmique, TotalEnergies annonce 9,8 milliards d'euros de profits
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Avant-l-ecofeminisme-Suzanne-Cesaire-tissait-deja-le-lien-entre-colonisation-et
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Avant l'écoféminisme, Suzanne Césaire tissait déjà le lien entre colonisation et destruction du vivant — [Ces
+      précurseuses écolos et féministes 2/5] Longtemps restée dans l'ombre de son mari, Suzanne Césaire a pourtant, dans sa
+      courte carrière littéraire, tracé les lignes d'une identité martiniquais
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: Avant l'écoféminisme, Suzanne Césaire tissait déjà le lien entre colonisation et destruction du vivant
   suggested_action: follow_one_time
 - url: https://reporterre.net/Avec-la-canicule-moins-de-nucleaire-mais-plus-de-gaz
   type: rss
@@ -52779,6 +53030,21 @@ candidates:
   metadata:
     title: 'Avion repeint en vert : les mêmes amendes demandées en appel contre les activistes'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Balade-dans-le-jardin-de-George-Sand-pionniere-de-la-pensee-ecologiste
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Balade dans le jardin de George Sand, pionnière de la pensée écologiste — [Ces précurseuses écolos et féministes
+      3/5] George Sand, autrice aux plus de 70 romans, est connue pour ses combats humanistes et féministes. Mais elle se
+      passionnait surtout pour la nature, notamment dans son domaine du Berry
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: Balade dans le jardin de George Sand, pionnière de la pensée écologiste
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Bulles-de-savoir-nos-meilleurs-BD-pour-s-informer-sur-l-ecologie
   type: rss
   found_from:
@@ -52793,6 +53059,36 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Bulles de savoir : nos meilleurs BD pour s''informer sur l''écologie'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/C-est-du-mepris-de-classe-une-mairie-profite-des-incendies-pour-supprimer-des-jardins
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« C''est du mépris de classe » : une mairie profite des incendies pour supprimer des jardins familiaux — Dans
+      les Pyrénées-Orientales, des habitants ont reçu l''ordre d''évacuer des jardins communaux afin que soit créée une «
+      ceinture de protection » contre les incendies. Ils dénoncent la violence de c'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: '« C''est du mépris de classe » : une mairie profite des incendies pour supprimer des jardins familiaux'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/C-est-la-campagne-silencieuse-quand-les-vergers-sont-remplaces-par-des-champs-de-mais
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« C''est la campagne silencieuse » : quand les vergers sont remplacés par des champs de maïs — Dans le Val-d''Oise,
+      de nombreux vergers sont arrachés et remplacés par des cultures céréalières. Leur disparition entraîne une réduction
+      de la diversité des habitats, pourtant essentiels à la faune. Ézanvil'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: '« C''est la campagne silencieuse » : quand les vergers sont remplacés par des champs de maïs'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Cadmium-les-donnees-cles-d-une-contamination
   type: rss
@@ -53046,20 +53342,20 @@ candidates:
   metadata:
     title: 'Consigne sur le plastique : élus et ONG claquent la porte de la concertation'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Dans-l-Allier-la-plus-grande-mine-de-lithium-d-Europe-s-attaque-a-une-foret-pleine-d
+- url: https://reporterre.net/Dans-cette-ville-du-Texas-une-illustration-du-capitalisme-du-desastre
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Dans l''Allier, la plus grande mine de lithium d''Europe s''attaque à une forêt pleine d''espèces protégées
-      — Dans l''Allier, la plus grande mine de lithium d''Europe a été lancée au beau milieu d''une forêt. Sur place, certains
-      habitants et naturalistes craignent de voir le territoire « pourri et dévasté '
-    timestamp: '2026-08-03T06:35:02'
+    context: '« C''est une guerre de l''eau » : aux États-Unis, cette ville pourrait devenir la première à manquer d''eau
+      — Face à la cinquième année de sécheresse à Corpus Christi, ses habitants militent contre les passe-droits accordés
+      aux usines qui entourent la cité côtière et captent 60 % de l''eau potable. Corp'
+    timestamp: '2026-08-05T05:52:37'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-08-03'
-  last_seen: '2026-08-03'
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
   metadata:
-    title: Dans l'Allier, la plus grande mine de lithium d'Europe s'attaque à une forêt pleine d'espèces protégées
+    title: '« C''est une guerre de l''eau » : aux États-Unis, cette ville pourrait devenir la première à manquer d''eau'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Data-centers-la-consommation-d-electricite-pourrait-doubler-en-5-ans
   type: rss
@@ -53075,6 +53371,21 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: 'Data centers : la consommation d''électricité pourrait doubler en 5 ans'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Des-cimetieres-marins-les-canicules-ravagent-aussi-la-vie-marine
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« L''équivalent d''une forêt brûlée » : les canicules marines ravagent les fonds marins — Les fortes chaleurs
+      entraînent aussi des canicules sous l''eau. Mers et océans sont en surchauffe cet été, créant des « incendies » aquatiques
+      aux conséquences considérables sur les écosystèmes. Imaginez : trois m'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: '« L''équivalent d''une forêt brûlée » : les canicules marines ravagent les fonds marins'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Des-jardins-sans-gazon-Ca-existe-et-c-est-reussi
   type: rss
@@ -53167,21 +53478,6 @@ candidates:
   metadata:
     title: 'Sainte-Soline : la cour d''appel confirme les condamnations de quatre organisateurs'
   suggested_action: follow_one_time
-- url: https://reporterre.net/En-Bretagne-l-agriculture-intensive-pollue-et-l-Etat-la-paie-pour-nettoyer-ses-algues
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: En Bretagne, l'agriculture intensive pollue… et l'État la paie pour nettoyer ses algues vertes — Principale responsable
-      de la prolifération des algues vertes, l'agriculture intensive ne finance pas leur ramassage. À la place, les collectivités
-      publiques embauchent des entreprises de… travaux agricol
-    timestamp: '2026-08-03T06:35:02'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-08-03'
-  last_seen: '2026-08-03'
-  metadata:
-    title: En Bretagne, l'agriculture intensive pollue… et l'État la paie pour nettoyer ses algues vertes
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Face-aux-canicules-faisons-corps-avec-les-arbres
   type: rss
   found_from:
@@ -53241,20 +53537,20 @@ candidates:
   metadata:
     title: Guillaume Meurice, Camille Étienne... 200 personnalités disent non à la première méga-usine de saumons en France
   suggested_action: follow_one_time
-- url: https://reporterre.net/Ils-sortent-des-toilettes-des-eviers-Ibiza-debordee-par-la-proliferation-des-serpents
+- url: https://reporterre.net/Incendie-sur-un-site-Seveso-en-Moselle-le-confinement-de-30-000-personnes-leve
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Ils sortent des toilettes, des éviers » : Ibiza débordée par la prolifération des serpents — Alors qu''aucun
-      serpent n''y vivait au début du siècle, Ibiza est désormais peuplée de dizaines de milliers de couleuvres fer-à-cheval.
-      Inoffensives pour l''humain, elles déciment le lézard des Pityuses, espè'
-    timestamp: '2026-08-03T06:35:02'
+    context: 'Incendie sur un site Seveso en Moselle : le confinement de 30 000 personnes levé — 30 000 personnes ont été
+      appelées à se confiner pendant plusieurs heures, dimanche 2 août, en raison de l''incendie d''un entrepôt classé Seveso,
+      à Gandrange (Moselle). Un nouvel épisode révélateur de la vulnérabilité d'
+    timestamp: '2026-08-05T05:52:37'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-08-03'
-  last_seen: '2026-08-03'
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
   metadata:
-    title: '« Ils sortent des toilettes, des éviers » : Ibiza débordée par la prolifération des serpents'
+    title: 'Incendie sur un site Seveso en Moselle : le confinement de 30 000 personnes levé'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Incendies-a-Fontainebleau-sous-terre-la-foret-brule-toujours
   type: rss
@@ -53300,6 +53596,21 @@ candidates:
   last_seen: '2026-06-30'
   metadata:
     title: '« Je craque » : le désarroi des soignants face à l''afflux d''animaux sonnés par la chaleur'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Juillet-2026-le-mois-le-plus-chaud-jamais-enregistre-en-France
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Juillet 2026 : le mois le plus chaud jamais enregistré en France — Marqué par une vague de chaleur « remarquable
+      par sa durée », le mois de juillet que nous venons de vivre est le plus chaud jamais relevé par Météo-France depuis
+      1900. Le mois de juillet 2026 est le plus chaud jamais enregistré en Fr'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'Juillet 2026 : le mois le plus chaud jamais enregistré en France'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Jusqu-a-46-oC-ressentis-la-Coupe-du-monde-en-alerte-canicule
   type: rss
@@ -53436,6 +53747,21 @@ candidates:
   metadata:
     title: La loi d'urgence agricole veut donner carte blanche aux élevages intensifs
   suggested_action: follow_one_time
+- url: https://reporterre.net/La-secheresse-des-petits-cours-d-eau-en-juillet-est-la-plus-critique-jamais-observee
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: La sécheresse des petits cours d'eau en juillet est « la plus critique jamais observée » — Selon les derniers
+      relevés de l'Office français de la biodiversité ( OFB ), les observations réalisées sur l'écoulement des petits cours
+      d'eau sur le territoire fin juillet confirment « une situation exception
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: La sécheresse des petits cours d'eau en juillet est « la plus critique jamais observée »
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Le-cap-Ferret-evacue-des-milliers-d-hectares-en-fumee-l-incendie-de-Gironde-rappelle-le
   type: rss
   found_from:
@@ -53557,6 +53883,21 @@ candidates:
   metadata:
     title: Le retour de l'acétamipride à nouveau contesté devant le Conseil Constitutionnel
   suggested_action: follow_one_time
+- url: https://reporterre.net/Megaferme-a-saumons-le-projet-conteste-est-autorise-par-la-prefecture-de-Gironde
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Mégaferme à saumons : le projet contesté est autorisé par la préfecture de Gironde — Par un arrêté du 4 août,
+      la préfète de la Gironde, Sophie Brocas, a accordé l''autorisation environnementale au projet très contesté de méga-usine
+      terrestre de saumons, à Verdon-sur-Mer. Ce projet porté par la sociét'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'Mégaferme à saumons : le projet contesté est autorisé par la préfecture de Gironde'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Megafeux-en-France-Tous-les-ingredients-sont-la-pour-qu-ils-se-multiplient
   type: rss
   found_from:
@@ -53661,6 +54002,21 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: Oubliés par leur bailleur, ils installent des stores faits maison contre la canicule
+  suggested_action: follow_one_time
+- url: https://reporterre.net/PFAS-dans-l-eau-la-decontamination-pourrait-couter-jusqu-a-5-7-milliards-d-euros
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'PFAS dans l''eau : la décontamination pourrait coûter jusqu''à 5,7 milliards d''euros — Les eaux destinées à
+      la consommation humaine ( EDCH ) sont largement contaminées par différents polluants. En 2024, un peu plus de 29 % de
+      la population française a été exposée, via son eau de consommation courante,'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'PFAS dans l''eau : la décontamination pourrait coûter jusqu''à 5,7 milliards d''euros'
   suggested_action: follow_one_time
 - url: https://reporterre.net/PFAS-l-Europe-baisse-drastiquement-le-seuil-tolerable-d-exposition-aux-TFA
   type: rss
@@ -53767,6 +54123,21 @@ candidates:
   metadata:
     title: Quand la marche nourrit, guérit et émancipe
   suggested_action: follow_one_time
+- url: https://reporterre.net/Redecouvrir-Rosa-Luxemburg-icone-revolutionnaire-et-precurseuse-ecologiste
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Les précurseuses de l''écologie : Rosa Luxemburg, icône révolutionnaire et naturaliste passionnée — [Ces précurseuses
+      écolos et féministes 1/5] Ces dernières années, les écologistes redécouvrent la révolutionnaire Rosa Luxemburg. Sa sensibilité
+      et son attachement au vivant nous rappelle que le combat'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'Les précurseuses de l''écologie : Rosa Luxemburg, icône révolutionnaire et naturaliste passionnée'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Redressement-judiciaire-de-FNE-Rhone-le-tribunal-valide-le-plan-de-l-association
   type: rss
   found_from:
@@ -53826,6 +54197,36 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: '« C''est purement scandaleux » : la justice refuse de rouvrir l''enquête sur le chlordécone'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Secheresse-plusieurs-reacteurs-nucleaires-a-l-arret-en-France-et-en-Hongrie
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Sécheresse : plusieurs réacteurs nucléaires à l''arrêt en France et en Hongrie — La sécheresse très étendue
+      que traverse l''Europe en ce mois d''août affecte aussi les réacteurs nucléaires, dont certains dépendent de l''eau
+      des fleuves pour assurer leur refroidissement. La centrale nucléaire de Chooz, d'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'Sécheresse : plusieurs réacteurs nucléaires à l''arrêt en France et en Hongrie'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Secheresse-un-village-englouti-refait-surface-en-Indonesie
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Sécheresse : un village englouti refait surface en Indonésie — Les images aériennes sont saisissantes. Le village
+      indonésien de Somang, dans l''ouest de l''île de Java, était englouti sous les eaux d''un réservoir créé en 2023 pour
+      approvisionner Jakarta. Mais la baisse du niveau de l''eau due à la séch'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: 'Sécheresse : un village englouti refait surface en Indonésie'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Si-je-suis-encore-vivante-c-est-grace-a-eux-ces-benevoles-viennent-au-secours-d-agriculteurs-en-detresse
   type: rss
@@ -53991,6 +54392,21 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: 'Une première : la justice ordonne la destruction de 4 mégabassines illégales'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Une-start-up-soutenue-par-Jeff-Bezos-veut-s-approprier-des-archives-coloniales-pour
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Une start-up soutenue par Jeff Bezos veut s'approprier des archives coloniales pour trouver du lithium au Congo
+      — À l'AfricaMuseum de Tervuren, en Belgique, des archives géologiques héritées du Congo belge attisent les convoitises
+      de KoBold Metals, une start-up minière étasunienne dopée à l' IA et s
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-05'
+  metadata:
+    title: Une start-up soutenue par Jeff Bezos veut s'approprier des archives coloniales pour trouver du lithium au Congo
   suggested_action: follow_one_time
 - url: https://repositorio.unal.edu.co/handle/unal/49435
   type: openalex
