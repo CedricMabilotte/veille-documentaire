@@ -712,10 +712,12 @@
   }
 
   // Délégation : clic sur la zone de couverture (image OU padding du container)
-  // On monte vers le container (.fiche-cover-wrap, .fiche-cover, .book-cover),
-  // puis on trouve l'img à l'intérieur — couvre tous les cas de clic.
+  // .fiche-cover / .book-cover sont scopés strictement à la boîte de couverture
+  // — surtout PAS .fiche-cover-wrap (l'aside sticky de la fiche), qui contient
+  // aussi les boutons d'action et de partage (régression corrigée le 6 août
+  // 2026 : ces boutons se faisaient intercepter par la lightbox).
   document.addEventListener('click', function (e) {
-    const wrap = e.target.closest('.fiche-cover-wrap, .fiche-cover, .book-cover');
+    const wrap = e.target.closest('.fiche-cover, .book-cover');
     if (!wrap || wrap.classList.contains('placeholder')) return;
     const img = wrap.querySelector('img');
     if (!img || img.naturalWidth === 0) return; // image absente ou non chargée
