@@ -1,5 +1,5 @@
-last_updated: '2026-08-06T06:02:13'
-total_candidates: 3462
+last_updated: '2026-08-07T05:09:11'
+total_candidates: 3463
 candidates:
 - url: http://www.software602.com/
   type: footnote
@@ -880,6 +880,54 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.facebook.com/share/1BVSrq57dR/
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-07'
+  seen_count: 16
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Facebook
+    page: null
+- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-07'
+  seen_count: 16
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Linkedin-in
+    page: null
+- url: https://x.com/rbm_maroobe
+  type: external_link
+  domain: x.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-07'
+  seen_count: 16
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: X-twitter
+    page: null
+- url: https://youtube.com/@reseaubillitalmaroobe7381
+  type: external_link
+  domain: youtube.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-08-07'
+  seen_count: 16
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Youtube
+    page: null
 - url: http://dx.doi.org/10.5209/rev_TK.2015.v12.n3.50361
   type: footnote
   domain: dx.doi.org
@@ -2208,18 +2256,6 @@ candidates:
   - doc_id: Böll Stiftung — Agriculture & Food (EN topic)
     context: Facebook
     page: null
-- url: https://www.facebook.com/share/1BVSrq57dR/
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-08-06'
-  seen_count: 15
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Facebook
-    page: null
 - url: https://www.flickr.com/photos/boellstiftung/sets/
   type: external_link
   domain: www.flickr.com
@@ -2340,18 +2376,6 @@ candidates:
   - doc_id: Böll Stiftung — Agriculture & Food (EN topic)
     context: Instagram
     page: null
-- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
-  type: external_link
-  domain: www.linkedin.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-08-06'
-  seen_count: 15
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Linkedin-in
-    page: null
 - url: https://www.openstreetmap.org/node/4597099723
   type: external_link
   domain: www.openstreetmap.org
@@ -2471,30 +2495,6 @@ candidates:
     page: null
   - doc_id: Böll Stiftung — Agriculture & Food (EN topic)
     context: YouTube
-    page: null
-- url: https://x.com/rbm_maroobe
-  type: external_link
-  domain: x.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-08-06'
-  seen_count: 15
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: X-twitter
-    page: null
-- url: https://youtube.com/@reseaubillitalmaroobe7381
-  type: external_link
-  domain: youtube.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-08-06'
-  seen_count: 15
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Youtube
     page: null
 - url: https://za.boell.org
   type: external_link
@@ -4487,6 +4487,21 @@ candidates:
   - doc_id: 2f5fce84
     context: "nuation \x14, p. 73–76, FAO, Rome 2006. http://www.fao.org/3/a-a0701f.pdf."
     page: 102
+- url: https://limacemenace.noblogs.org/
+  type: external_link
+  domain: limacemenace.noblogs.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-08-07'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés (deep crawl)
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
 - url: http://contreinfo7.internetdown.org/spip.php?article143
   type: external_link
   domain: contreinfo7.internetdown.org
@@ -4938,21 +4953,6 @@ candidates:
     context: · sur le site web
     page: null
   - doc_id: Infokiosques.net — Anticolonialismes
-    context: · sur le site web
-    page: null
-- url: https://limacemenace.noblogs.org/
-  type: external_link
-  domain: limacemenace.noblogs.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-08-03'
-  seen_count: 8
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés (deep crawl)
-    context: · sur le site web
-    page: null
-  - doc_id: Infokiosques.net — nouveautés
     context: · sur le site web
     page: null
 - url: https://linagora.com/
@@ -6332,6 +6332,18 @@ candidates:
   - doc_id: 8fed46af
     context: https://itssodifferenthereblog.tumblr.com/
     page: 3
+- url: https://laquadrature.net/guiderecofaciale
+  type: external_link
+  domain: laquadrature.net
+  first_seen: '2026-06-25'
+  last_seen: '2026-08-07'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
 - url: https://libcom.org/article/raven-17-use-land
   type: footnote
   domain: libcom.org
@@ -9284,18 +9296,6 @@ candidates:
   - doc_id: International Land Coalition — latest
     context: lien depuis https://www.landcoalition.org/en/latest/
     page: null
-- url: https://laquadrature.net/guiderecofaciale
-  type: external_link
-  domain: laquadrature.net
-  first_seen: '2026-06-25'
-  last_seen: '2026-08-03'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés
-    context: · sur le site web
-    page: null
 - url: https://lareleveetlapeste.fr/the-fox-le-tout-premier-ecosaboteur-contre-lindustrie-chimique/
   type: mastodon
   found_from:
@@ -10462,6 +10462,36 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.boamp.fr/explore/data-
+  type: footnote
+  domain: www.boamp.fr
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-07'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 12d37871_industrie_de_l_enfermement_et_de_l_explusion-2025-cahier-16pa4
+    context: 'Tableau de données brutes : https://www.boamp.fr/explore/data-'
+    page: 14
+  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
+    context: 'Tableau de données brutes : https://www.boamp.fr/explore/data-'
+    page: 19
+- url: https://www.budget.gouv.fr/documentation/documents-budge-
+  type: footnote
+  domain: www.budget.gouv.fr
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-07'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 12d37871_industrie_de_l_enfermement_et_de_l_explusion-2025-cahier-16pa4
+    context: https://www.budget.gouv.fr/documentation/documents-budge-
+    page: 10
+  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
+    context: https://www.budget.gouv.fr/documentation/documents-budge-
+    page: 23
 - url: https://www.confederationpaysanne.fr/actu.php?id=16679
   type: mastodon
   found_from:
@@ -10493,6 +10523,21 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.data.gouv.fr/datasets/donnees-
+  type: footnote
+  domain: www.data.gouv.fr
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-07'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 12d37871_industrie_de_l_enfermement_et_de_l_explusion-2025-cahier-16pa4
+    context: 'ponible sur data.gouv.fr : https://www.data.gouv.fr/datasets/donnees-'
+    page: 8
+  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
+    context: 'ponible sur data.gouv.fr : https://www.data.gouv.fr/datasets/donnees-'
+    page: 25
 - url: https://www.dev.ngo/
   type: external_link
   domain: www.dev.ngo
@@ -11168,6 +11213,21 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.vie-publique.fr/rapport/292560-la-politique-
+  type: footnote
+  domain: www.vie-publique.fr
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-07'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 12d37871_industrie_de_l_enfermement_et_de_l_explusion-2025-cahier-16pa4
+    context: https://www.vie-publique.fr/rapport/292560-la-politique-
+    page: 10
+  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
+    context: https://www.vie-publique.fr/rapport/292560-la-politique-
+    page: 23
 - url: https://www.youtube.com/channel/UCcPuJ8iM4Yi0QQJ4963H3UQ
   type: external_link
   domain: www.youtube.com
@@ -16659,6 +16719,18 @@ candidates:
     genre: book-chapter
     html_url: https://link.springer.com/content/pdf/10.1007%2F978-3-030-28014-7_6.pdf
     source: unpaywall
+- url: https://linksta.cc/@petite_hortensia
+  type: external_link
+  domain: linksta.cc
+  first_seen: '2026-07-27'
+  last_seen: '2026-08-07'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
 - url: https://lstu.fr/composermondes
   type: mastodon
   found_from:
@@ -19867,36 +19939,6 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.boamp.fr/explore/data-
-  type: footnote
-  domain: www.boamp.fr
-  first_seen: '2026-07-31'
-  last_seen: '2026-08-03'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 12d37871_industrie_de_l_enfermement_et_de_l_explusion-2025-cahier-16pa4
-    context: 'Tableau de données brutes : https://www.boamp.fr/explore/data-'
-    page: 14
-  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
-    context: 'Tableau de données brutes : https://www.boamp.fr/explore/data-'
-    page: 19
-- url: https://www.budget.gouv.fr/documentation/documents-budge-
-  type: footnote
-  domain: www.budget.gouv.fr
-  first_seen: '2026-07-31'
-  last_seen: '2026-08-03'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 12d37871_industrie_de_l_enfermement_et_de_l_explusion-2025-cahier-16pa4
-    context: https://www.budget.gouv.fr/documentation/documents-budge-
-    page: 10
-  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
-    context: https://www.budget.gouv.fr/documentation/documents-budge-
-    page: 23
 - url: https://www.cairn.info/load_pdf.php?ID_ARTICLE=ESP_158_0049&download=1
   type: openalex
   found_from:
@@ -20121,21 +20163,6 @@ candidates:
   - doc_id: dfbd677b
     context: https://www.connaissancedesenergies.org/fiche-pedagogique/hydroelectricite-stations-de-transfert-
     page: 21
-- url: https://www.data.gouv.fr/datasets/donnees-
-  type: footnote
-  domain: www.data.gouv.fr
-  first_seen: '2026-07-31'
-  last_seen: '2026-08-03'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 12d37871_industrie_de_l_enfermement_et_de_l_explusion-2025-cahier-16pa4
-    context: 'ponible sur data.gouv.fr : https://www.data.gouv.fr/datasets/donnees-'
-    page: 8
-  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
-    context: 'ponible sur data.gouv.fr : https://www.data.gouv.fr/datasets/donnees-'
-    page: 25
 - url: https://www.eca.europa.eu/en/Pages/DocItem.aspx?did=58913
   type: footnote
   domain: www.eca.europa.eu
@@ -22060,21 +22087,6 @@ candidates:
   - doc_id: 950a4eca
     context: https://www.transparency.org/whatwedo/publication/corruption_perceptions_index_2016.
     page: 20
-- url: https://www.vie-publique.fr/rapport/292560-la-politique-
-  type: footnote
-  domain: www.vie-publique.fr
-  first_seen: '2026-07-31'
-  last_seen: '2026-08-03'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 12d37871_industrie_de_l_enfermement_et_de_l_explusion-2025-cahier-16pa4
-    context: https://www.vie-publique.fr/rapport/292560-la-politique-
-    page: 10
-  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
-    context: https://www.vie-publique.fr/rapport/292560-la-politique-
-    page: 23
 - url: https://www.youtube.com/watch?v=3M0k-8hg-wc
   type: mastodon
   found_from:
@@ -22653,6 +22665,30 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://abaslescra.noblogs.org/files/2024/03/
+  type: footnote
+  domain: abaslescra.noblogs.org
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-07'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
+    context: ': https://abaslescra.noblogs.org/files/2024/03/'
+    page: 12
+- url: https://abaslescra.noblogs.org/infos-pratiques/liste-des-
+  type: footnote
+  domain: abaslescra.noblogs.org
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-07'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
+    context: 'a jour ici : https://abaslescra.noblogs.org/infos-pratiques/liste-des-'
+    page: 2
 - url: https://abcoemstore.com/product/adobe-acrobat-xi-pro/
   type: external_link
   domain: abcoemstore.com
@@ -22691,6 +22727,18 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://annuaire-entreprises.data.gouv.fr/
+  type: footnote
+  domain: annuaire-entreprises.data.gouv.fr
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-07'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
+    context: https://annuaire-entreprises.data.gouv.fr/
+    page: 24
 - url: https://bsky.app/profile/deputeeobono.bsky.social/post/3ma7aqv3byc2z
   type: mastodon
   found_from:
@@ -23440,6 +23488,18 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://guide.boum.org/
+  type: footnote
+  domain: guide.boum.org
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-07'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
+    context: défense Numerique (https://guide.boum.org/)
+    page: 18
 - url: https://hal.science/hal-04467920/document
   type: openalex
   found_from:
@@ -23665,18 +23725,6 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://linksta.cc/@petite_hortensia
-  type: external_link
-  domain: linksta.cc
-  first_seen: '2026-07-27'
-  last_seen: '2026-08-03'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés
-    context: · sur le site web
-    page: null
 - url: https://madrid.mercadosocial.net
   type: external_link
   domain: madrid.mercadosocial.net
@@ -24019,6 +24067,18 @@ candidates:
     genre: journal-article
     html_url: https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1477-8947.12054
     source: unpaywall
+- url: https://paris-luttes.info/prisons-cra-trouve-en-2-minutes-
+  type: footnote
+  domain: paris-luttes.info
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-07'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
+    context: https://paris-luttes.info/prisons-cra-trouve-en-2-minutes-
+    page: 26
 - url: https://pixelfed.social/LaPetiteFoire
   type: mastodon
   found_from:
@@ -25465,6 +25525,18 @@ candidates:
   - doc_id: Traficantes de Sueños — Autogestion / Economía social
     context: Diseño
     page: null
+- url: https://ted
+  type: footnote
+  domain: ted
+  first_seen: '2026-07-31'
+  last_seen: '2026-08-07'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
+    context: 'qui peut se passer dans le reste de union européenne: https://ted.'
+    page: 20
 - url: https://traficantes.org/suscripciones
   type: external_link
   domain: traficantes.org
@@ -32361,30 +32433,6 @@ candidates:
   - doc_id: f57050e5
     context: https://50by40.org/
     page: 22
-- url: https://abaslescra.noblogs.org/files/2024/03/
-  type: footnote
-  domain: abaslescra.noblogs.org
-  first_seen: '2026-07-31'
-  last_seen: '2026-08-03'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
-    context: ': https://abaslescra.noblogs.org/files/2024/03/'
-    page: 12
-- url: https://abaslescra.noblogs.org/infos-pratiques/liste-des-
-  type: footnote
-  domain: abaslescra.noblogs.org
-  first_seen: '2026-07-31'
-  last_seen: '2026-08-03'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
-    context: 'a jour ici : https://abaslescra.noblogs.org/infos-pratiques/liste-des-'
-    page: 2
 - url: https://academic.oup.com/gpb/advance-article-pdf/doi/10.1093/gpbjnl/qzaf074/64114516/qzaf074.pdf
   type: openalex
   found_from:
@@ -32661,18 +32709,6 @@ candidates:
   - doc_id: d00fb8da
     context: https://amdh.org.ma/img/upload/contents/fichiers/c00c39fdbe276
     page: 6
-- url: https://annuaire-entreprises.data.gouv.fr/
-  type: footnote
-  domain: annuaire-entreprises.data.gouv.fr
-  first_seen: '2026-07-31'
-  last_seen: '2026-08-03'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
-    context: https://annuaire-entreprises.data.gouv.fr/
-    page: 24
 - url: https://api.nfp-energie.ch/api/fr/export_service/project_export?id=97&class=UmbrellaProject
   type: footnote
   domain: api.nfp-energie.ch
@@ -35056,18 +35092,6 @@ candidates:
   - doc_id: 73da28ae
     context: 'See, for instance: https://gspp.berkeley.edu/research-and-impact/centers/cepp/projects/berkeley-carbontrading-'
     page: 3
-- url: https://guide.boum.org/
-  type: footnote
-  domain: guide.boum.org
-  first_seen: '2026-07-31'
-  last_seen: '2026-08-03'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
-    context: défense Numerique (https://guide.boum.org/)
-    page: 18
 - url: https://habitat3.org/the-new-urban-agenda/
   type: footnote
   domain: habitat3.org
@@ -36480,18 +36504,6 @@ candidates:
   - doc_id: 5b4920df
     context: https://parcel-app.org/
     page: 11
-- url: https://paris-luttes.info/prisons-cra-trouve-en-2-minutes-
-  type: footnote
-  domain: paris-luttes.info
-  first_seen: '2026-07-31'
-  last_seen: '2026-08-03'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
-    context: https://paris-luttes.info/prisons-cra-trouve-en-2-minutes-
-    page: 26
 - url: https://participedia.net/case/the-national-land-rights-forum-peasant-led-advocacy-for-land-
   type: footnote
   domain: participedia.net
@@ -38324,18 +38336,6 @@ candidates:
   - doc_id: 650ebb33
     context: tanzlii.org/akn/tz/judgment/tzhccomd/2021/3517/eng@2021-12-13) and Balton Tanzania (https://tanzlii.org/akn/tz/judg-
     page: 9
-- url: https://ted
-  type: footnote
-  domain: ted
-  first_seen: '2026-07-31'
-  last_seen: '2026-08-03'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: 3b243e16_industrie_de_l_enfermement_et_de_l_explusion-2025-pageparpage-32pa5
-    context: 'qui peut se passer dans le reste de union européenne: https://ted.'
-    page: 20
 - url: https://theconversation.com/climate-scientists-concept-of-net-zero-is-a-dangerous-trap-157368
   type: footnote
   domain: theconversation.com
@@ -43962,6 +43962,16 @@ candidates:
     year: null
     doi: 10.35537/10915/196658
   suggested_action: follow_one_time
+  promoted_pdf_url: http://sedici.unlp.edu.ar/bitstream/handle/10915/196658/Documento_completo.pdf?sequence=1
+  promoted_at: '2026-08-07T05:09:02'
+  promoted_metadata:
+    doi: 10.35537/10915/196658
+    title: Lineamientos generales para la gestión ecohidrológica de lagunas en urbanizaciones cerradas
+    journal: Universidad Nacional de La Plata
+    published_date: '2026-06-29'
+    genre: dissertation
+    html_url: http://sedici.unlp.edu.ar/bitstream/handle/10915/196658/Documento_completo.pdf?sequence=1
+    source: unpaywall
 - url: http://sedici.unlp.edu.ar/handle/10915/10384
   type: openalex
   found_from:
@@ -44058,6 +44068,16 @@ candidates:
     year: 2017
     doi: 10.1080/15710882.2017.1355000
   suggested_action: follow_one_time
+  promoted_pdf_url: http://hdl.handle.net/2043/23194
+  promoted_at: '2026-08-07T05:09:03'
+  promoted_metadata:
+    doi: 10.1080/15710882.2017.1355000
+    title: Enabling urban commons
+    journal: CoDesign
+    published_date: '2017-07-03'
+    genre: journal-article
+    html_url: http://hdl.handle.net/2043/23194
+    source: unpaywall
 - url: http://usfoodsovereigntyalliance.org/what-is-food-sovereignty/
   type: footnote
   domain: usfoodsovereigntyalliance.org
@@ -44178,6 +44198,17 @@ candidates:
     year: 1993
     doi: 10.1051/forest:19930502
   suggested_action: follow_one_time
+  promoted_pdf_url: http://www.afs-journal.org/articles/forest/pdf/1993/05/AFS_0003-4312_1993_50_5_ART0002.pdf
+  promoted_at: '2026-08-07T05:09:04'
+  promoted_metadata:
+    doi: 10.1051/forest:19930502
+    title: Comparaison des eaux liées et des eaux libres des sols de 3 peuplements d'épicéa (Picea abies Karst) des Vosges.
+      Application à l'étude du fonctionnement actuel des sols et conséquences pour l'état sanitaire des peuplements
+    journal: Annales des Sciences Forestières
+    published_date: '1993-01-01'
+    genre: journal-article
+    html_url: http://www.afs-journal.org/articles/forest/pdf/1993/05/AFS_0003-4312_1993_50_5_ART0002.pdf
+    source: unpaywall
 - url: http://www.agronomy-journal.org/articles/agro/pdf/1988/07/Agronomie_0249-5627_1988_8_7_ART0002.pdf
   type: openalex
   found_from:
@@ -44196,6 +44227,16 @@ candidates:
     year: 1988
     doi: 10.1051/agro:19880702
   suggested_action: follow_one_time
+  promoted_pdf_url: http://www.agronomy-journal.org/articles/agro/pdf/1988/07/Agronomie_0249-5627_1988_8_7_ART0002.pdf
+  promoted_at: '2026-08-07T05:09:05'
+  promoted_metadata:
+    doi: 10.1051/agro:19880702
+    title: Pourquoi choisir la méthode Olsen pour estimer le phosphore « assimilable » des sols ?
+    journal: Agronomie
+    published_date: '1988-01-01'
+    genre: journal-article
+    html_url: http://www.agronomy-journal.org/articles/agro/pdf/1988/07/Agronomie_0249-5627_1988_8_7_ART0002.pdf
+    source: unpaywall
 - url: http://www.agronomy-journal.org/articles/agro/pdf/1988/09/Agronomie_0249-5627_1988_8_9_ART0001.pdf
   type: openalex
   found_from:
@@ -44215,6 +44256,17 @@ candidates:
     year: 1988
     doi: 10.1051/agro:19880901
   suggested_action: follow_one_time
+  promoted_pdf_url: http://www.agronomy-journal.org/articles/agro/pdf/1988/09/Agronomie_0249-5627_1988_8_9_ART0001.pdf
+  promoted_at: '2026-08-07T05:09:07'
+  promoted_metadata:
+    doi: 10.1051/agro:19880901
+    title: Influence des systèmes de culture sur les risques d'érosion par ruissellement concentré. II. Evaluation des possibilités
+      de maîtrise du phénomène dans les exploitations agricoles
+    journal: Agronomie
+    published_date: '1988-01-01'
+    genre: journal-article
+    html_url: http://www.agronomy-journal.org/articles/agro/pdf/1988/09/Agronomie_0249-5627_1988_8_9_ART0001.pdf
+    source: unpaywall
 - url: http://www.agroscope.admin.ch/biosicherheit/06948/index.html?lang=de
   type: footnote
   domain: www.agroscope.admin.ch
@@ -44485,6 +44537,16 @@ candidates:
     year: 2026
     doi: 10.59307/rerne4.8171
   suggested_action: follow_one_time
+  promoted_pdf_url: http://www.elcolegiodehidalgo.edu.mx:81/index.php/revista/article/download/171/281
+  promoted_at: '2026-08-07T05:09:08'
+  promoted_metadata:
+    doi: 10.59307/rerne4.8171
+    title: Desigualdad territorial y calidad de vida en la Ciudad de México
+    journal: Revista de Estudios Regionales Nueva Época
+    published_date: '2026-07-18'
+    genre: journal-article
+    html_url: http://www.elcolegiodehidalgo.edu.mx:81/index.php/revista/article/download/171/281
+    source: unpaywall
 - url: http://www.engdahl.oilgeopolitics.net/Financial_Tsunami/Warfar
   type: footnote
   domain: www.engdahl.oilgeopolitics.net
@@ -44515,6 +44577,16 @@ candidates:
     year: 2005
     doi: 10.7202/021813ar
   suggested_action: follow_one_time
+  promoted_pdf_url: http://www.erudit.org/fr/revues/cgq/1986-v30-n81-cgq2653/021813ar.pdf
+  promoted_at: '2026-08-07T05:09:09'
+  promoted_metadata:
+    doi: 10.7202/021813ar
+    title: Prémisses d’une théorie de la propriété
+    journal: Cahiers de géographie du Québec
+    published_date: '2005-04-12'
+    genre: journal-article
+    html_url: http://www.erudit.org/fr/revues/cgq/1986-v30-n81-cgq2653/021813ar.pdf
+    source: unpaywall
 - url: http://www.erudit.org/fr/revues/cgq/2012-v56-n158-cgq0478/1014554ar.pdf
   type: openalex
   found_from:
@@ -44533,6 +44605,16 @@ candidates:
     year: 2013
     doi: 10.7202/1014554ar
   suggested_action: follow_one_time
+  promoted_pdf_url: http://www.erudit.org/fr/revues/cgq/2012-v56-n158-cgq0478/1014554ar.pdf
+  promoted_at: '2026-08-07T05:09:11'
+  promoted_metadata:
+    doi: 10.7202/1014554ar
+    title: Mesurer l’accessibilité territoriale par les transports collectifs
+    journal: Cahiers de géographie du Québec
+    published_date: '2013-02-28'
+    genre: journal-article
+    html_url: http://www.erudit.org/fr/revues/cgq/2012-v56-n158-cgq0478/1014554ar.pdf
+    source: unpaywall
 - url: http://www.erudit.org/fr/revues/crs/1998-n30-crs1517846/1002660ar.pdf
   type: openalex
   found_from:
@@ -52723,6 +52805,18 @@ candidates:
     year: 1978
     doi: 10.5565/rev/papers/v9n0.1001
   suggested_action: follow_one_time
+- url: https://paris-luttes.info/resister-collectivement-a-l-amende-20865?lang=fr
+  type: external_link
+  domain: paris-luttes.info
+  first_seen: '2026-08-07'
+  last_seen: '2026-08-07'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
 - url: https://pedagogiaderecho.uchile.cl/index.php/RPUD/article/download/77513/82314
   type: semantic_scholar
   found_from:

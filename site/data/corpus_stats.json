@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-06T06:03:53Z",
-  "total": 1904,
-  "total_docs": 1904,
+  "generated_at": "2026-08-07T05:10:29Z",
+  "total": 1910,
+  "total_docs": 1910,
   "total_downloaded": 1426,
   "total_published": 1077,
   "by_lang": {
     "en": 840,
-    "fr": 390,
+    "fr": 396,
     "es": 249,
     "pt": 235,
     "inconnu": 150,
@@ -14,7 +14,7 @@
   },
   "by_language": {
     "en": 840,
-    "fr": 390,
+    "fr": 396,
     "es": 249,
     "pt": 235,
     "inconnu": 150,
@@ -48,6 +48,7 @@
     "International Land Coalition — latest": 10,
     "Troisièmes Voix — éditions": 10,
     "European Shepherds Network — publications": 10,
+    "Infokiosques.net — nouveautés": 9,
     "Böll Stiftung — publications DE (deep crawl)": 9,
     "Infokiosques.net — index A": 8,
     "Böll Stiftung — publications DE": 8,
@@ -61,7 +62,6 @@
     "Infokiosques.net — index L (Libération, Luttes)": 4,
     "Archive.org — anarchism + land/peasant (strict)": 4,
     "CLACSO — búsqueda tierra y communs": 4,
-    "Infokiosques.net — nouveautés": 3,
     "Tierra.org (Amigos de la Tierra ES)": 3,
     "CLACSO — Publicaciones générales": 3,
     "Traficantes de Sueños — 15M (matière)": 3,
@@ -81,12 +81,12 @@
     "2000s": 140,
     "2010s": 486,
     "2020s": 705,
-    "inconnu": 521
+    "inconnu": 527
   },
   "by_score": {
     "0": 559,
-    "1": 93,
-    "2": 111,
+    "1": 95,
+    "2": 115,
     "3": 64,
     "4": 43,
     "5": 58,
@@ -97,24 +97,24 @@
     "10": 4
   },
   "by_doc_type": {
-    "autre": 1768,
+    "autre": 1774,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1208,
+    "militant": 1214,
     "academique": 482,
     "non_renseigne": 138,
     "institutionnel": 76
   },
   "blind_spots": [
-    "Forte dominante militante (63.4%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (63.6%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (63.4%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (63.6%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "sources_list": [
@@ -294,6 +294,13 @@
       "count": 9
     },
     {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
+      "count": 9
+    },
+    {
       "label": "HAL — communs fonciers",
       "url": "https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50",
       "type": "hal",
@@ -347,13 +354,6 @@
       "url": "https://www.clacso.org/publicaciones/",
       "type": "deep_html",
       "orientation": "academique",
-      "count": 3
-    },
-    {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
       "count": 3
     },
     {
