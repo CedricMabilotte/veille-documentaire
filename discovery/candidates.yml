@@ -1,5 +1,5 @@
-last_updated: '2026-08-08T04:21:45'
-total_candidates: 3479
+last_updated: '2026-08-09T04:27:31'
+total_candidates: 3484
 candidates:
 - url: http://www.software602.com/
   type: footnote
@@ -736,8 +736,8 @@ candidates:
   type: external_link
   domain: www.facebook.com
   first_seen: '2026-06-30'
-  last_seen: '2026-08-08'
-  seen_count: 17
+  last_seen: '2026-08-09'
+  seen_count: 18
   suggested_action: follow_one_time
   notes: ''
   found_from:
@@ -748,8 +748,8 @@ candidates:
   type: external_link
   domain: www.linkedin.com
   first_seen: '2026-06-30'
-  last_seen: '2026-08-08'
-  seen_count: 17
+  last_seen: '2026-08-09'
+  seen_count: 18
   suggested_action: follow_one_time
   notes: ''
   found_from:
@@ -760,8 +760,8 @@ candidates:
   type: external_link
   domain: x.com
   first_seen: '2026-06-30'
-  last_seen: '2026-08-08'
-  seen_count: 17
+  last_seen: '2026-08-09'
+  seen_count: 18
   suggested_action: follow_one_time
   notes: ''
   found_from:
@@ -772,8 +772,8 @@ candidates:
   type: external_link
   domain: youtube.com
   first_seen: '2026-06-30'
-  last_seen: '2026-08-08'
-  seen_count: 17
+  last_seen: '2026-08-09'
+  seen_count: 18
   suggested_action: follow_one_time
   notes: ''
   found_from:
@@ -17944,6 +17944,96 @@ candidates:
   - doc_id: dfbd677b
     context: https://renverse.co/infos-locales/article/projet-de-geothermie-proffonde-en-haute-sorne-4416
     page: 2
+- url: https://reporterre.net/100-hectares-brules-dans-une-reserve-naturelle-aux-Pays-Bas
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '100 hectares brûlés dans une réserve naturelle aux Pays-Bas — Les incendies sévissent de plus en plus au nord
+      : la réserve naturelle de Boschhuizerbergen, dans le sud-est des Pays-Bas, est en proie aux flammes depuis lundi 3 août.
+      Le feu s''est rapidement propagé : de 21 hectares brûlés lundi après-m'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 4
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 100 hectares brûlés dans une réserve naturelle aux Pays-Bas
+  suggested_action: follow_one_time
+- url: https://reporterre.net/99-grands-feux-actifs-les-Etats-Unis-en-proie-aux-flammes
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '99 grands feux actifs : les États-Unis en proie aux flammes — Après le Canada, toujours en proie aux flammes,
+      le nord-ouest des États-Unis brûle à son tour. À Spokane, dans l''État de Washington, trois incendies ont forcé quelque
+      60 000 personnes à fuir en urgence durant le week-end. Lundi 3 août, le'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 4
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-09'
+  metadata:
+    title: '99 grands feux actifs : les États-Unis en proie aux flammes'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Avant-l-ecofeminisme-Suzanne-Cesaire-tissait-deja-le-lien-entre-colonisation-et
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Avant l'écoféminisme, Suzanne Césaire tissait déjà le lien entre colonisation et destruction du vivant — [Ces
+      précurseuses écolos et féministes 2/5] Longtemps restée dans l'ombre de son mari, Suzanne Césaire a pourtant, dans sa
+      courte carrière littéraire, tracé les lignes d'une identité martiniquais
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 4
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-09'
+  metadata:
+    title: Avant l'écoféminisme, Suzanne Césaire tissait déjà le lien entre colonisation et destruction du vivant
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Balade-dans-le-jardin-de-George-Sand-pionniere-de-la-pensee-ecologiste
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Balade dans le jardin de George Sand, pionnière de la pensée écologiste — [Ces précurseuses écolos et féministes
+      3/5] George Sand, autrice aux plus de 70 romans, est connue pour ses combats humanistes et féministes. Mais elle se
+      passionnait surtout pour la nature, notamment dans son domaine du Berry
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 4
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-09'
+  metadata:
+    title: Balade dans le jardin de George Sand, pionnière de la pensée écologiste
+  suggested_action: follow_one_time
+- url: https://reporterre.net/C-est-du-mepris-de-classe-une-mairie-profite-des-incendies-pour-supprimer-des-jardins
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« C''est du mépris de classe » : une mairie profite des incendies pour supprimer des jardins familiaux — Dans
+      les Pyrénées-Orientales, des habitants ont reçu l''ordre d''évacuer des jardins communaux afin que soit créée une «
+      ceinture de protection » contre les incendies. Ils dénoncent la violence de c'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 4
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-09'
+  metadata:
+    title: '« C''est du mépris de classe » : une mairie profite des incendies pour supprimer des jardins familiaux'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/C-est-la-campagne-silencieuse-quand-les-vergers-sont-remplaces-par-des-champs-de-mais
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« C''est la campagne silencieuse » : quand les vergers sont remplacés par des champs de maïs — Dans le Val-d''Oise,
+      de nombreux vergers sont arrachés et remplacés par des cultures céréalières. Leur disparition entraîne une réduction
+      de la diversité des habitats, pourtant essentiels à la faune. Ézanvil'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 4
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-09'
+  metadata:
+    title: '« C''est la campagne silencieuse » : quand les vergers sont remplacés par des champs de maïs'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Ca-a-ete-un-lieu-de-souffrance-la-memoire-ressuscitee-des-harkis-forces-de-reboiser-la
   type: rss
   found_from:
@@ -17974,6 +18064,36 @@ candidates:
   metadata:
     title: Ces animaux qui peignent, dansent et construisent des cathédrales de sable
   suggested_action: follow_one_time
+- url: https://reporterre.net/Des-cimetieres-marins-les-canicules-ravagent-aussi-la-vie-marine
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« L''équivalent d''une forêt brûlée » : les canicules marines ravagent les fonds marins — Les fortes chaleurs
+      entraînent aussi des canicules sous l''eau. Mers et océans sont en surchauffe cet été, créant des « incendies » aquatiques
+      aux conséquences considérables sur les écosystèmes. Imaginez : trois m'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 4
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-09'
+  metadata:
+    title: '« L''équivalent d''une forêt brûlée » : les canicules marines ravagent les fonds marins'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Juillet-2026-le-mois-le-plus-chaud-jamais-enregistre-en-France
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Juillet 2026 : le mois le plus chaud jamais enregistré en France — Marqué par une vague de chaleur « remarquable
+      par sa durée », le mois de juillet que nous venons de vivre est le plus chaud jamais relevé par Météo-France depuis
+      1900. Le mois de juillet 2026 est le plus chaud jamais enregistré en Fr'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 4
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Juillet 2026 : le mois le plus chaud jamais enregistré en France'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/La-croissance-verte-est-une-mystification-absolue
   type: footnote
   domain: reporterre.net
@@ -17995,6 +18115,36 @@ candidates:
   - doc_id: dfbd677b
     context: https://reporterre.net/La-croissance-verte-est-une-mystification-absolue .
     page: 19
+- url: https://reporterre.net/La-secheresse-des-petits-cours-d-eau-en-juillet-est-la-plus-critique-jamais-observee
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: La sécheresse des petits cours d'eau en juillet est « la plus critique jamais observée » — Selon les derniers
+      relevés de l'Office français de la biodiversité ( OFB ), les observations réalisées sur l'écoulement des petits cours
+      d'eau sur le territoire fin juillet confirment « une situation exception
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 4
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-09'
+  metadata:
+    title: La sécheresse des petits cours d'eau en juillet est « la plus critique jamais observée »
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Megaferme-a-saumons-le-projet-conteste-est-autorise-par-la-prefecture-de-Gironde
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Mégaferme à saumons : le projet contesté est autorisé par la préfecture de Gironde — Par un arrêté du 4 août,
+      la préfète de la Gironde, Sophie Brocas, a accordé l''autorisation environnementale au projet très contesté de méga-usine
+      terrestre de saumons, à Verdon-sur-Mer. Ce projet porté par la sociét'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 4
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Mégaferme à saumons : le projet contesté est autorisé par la préfecture de Gironde'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Podcast-Se-passer-de-l-Etat-Ils-l-ont-fait
   type: mastodon
   found_from:
@@ -18025,6 +18175,36 @@ candidates:
   metadata:
     hashtag: ZAD
     instance: mamot.fr
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Secheresse-un-village-englouti-refait-surface-en-Indonesie
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Sécheresse : un village englouti refait surface en Indonésie — Les images aériennes sont saisissantes. Le village
+      indonésien de Somang, dans l''ouest de l''île de Java, était englouti sous les eaux d''un réservoir créé en 2023 pour
+      approvisionner Jakarta. Mais la baisse du niveau de l''eau due à la séch'
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 4
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Sécheresse : un village englouti refait surface en Indonésie'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Une-start-up-soutenue-par-Jeff-Bezos-veut-s-approprier-des-archives-coloniales-pour
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Une start-up soutenue par Jeff Bezos veut s'approprier des archives coloniales pour trouver du lithium au Congo
+      — À l'AfricaMuseum de Tervuren, en Belgique, des archives géologiques héritées du Congo belge attisent les convoitises
+      de KoBold Metals, une start-up minière étasunienne dopée à l' IA et s
+    timestamp: '2026-08-05T05:52:37'
+  seen_count: 4
+  domain: reporterre.net
+  first_seen: '2026-08-05'
+  last_seen: '2026-08-09'
+  metadata:
+    title: Une start-up soutenue par Jeff Bezos veut s'approprier des archives coloniales pour trouver du lithium au Congo
   suggested_action: follow_one_time
 - url: https://repository.arizona.edu/bitstream/10150/642976/1/19893-34442-1-PB.pdf
   type: openalex
@@ -23725,6 +23905,48 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://lundi.am/Je-desire-la-sterilite
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: « Je désire la stérilité » — Pour un désarmement démographique - Été 2026 suite / Avec une grosse photo en haut
+      , 2 , Positions
+    timestamp: '2026-08-06T05:56:57'
+  seen_count: 3
+  domain: lundi.am
+  first_seen: '2026-08-06'
+  last_seen: '2026-08-09'
+  metadata:
+    title: « Je désire la stérilité »
+  suggested_action: follow_one_time
+- url: https://lundi.am/Le-deni-persistant-du-langage-animal-1-6-le-syndrome-Pepee
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Le déni persistant du langage animal [1/6] : le syndrome Pépée — Les évadés de la planète des signes Julian
+      Aranguren - Été 2026 suite / Avec une grosse photo en haut , Positions , 2'
+    timestamp: '2026-08-06T05:56:57'
+  seen_count: 3
+  domain: lundi.am
+  first_seen: '2026-08-06'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Le déni persistant du langage animal [1/6] : le syndrome Pépée'
+  suggested_action: follow_one_time
+- url: https://lundi.am/Les-neons-de-l-incendie
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Les néons de l'incendie — Avec les évacués du Parc des expositions de Bordeaux - Été 2026 suite / Avec une grosse
+      photo en haut , Terreur , 2
+    timestamp: '2026-08-06T05:56:57'
+  seen_count: 3
+  domain: lundi.am
+  first_seen: '2026-08-06'
+  last_seen: '2026-08-09'
+  metadata:
+    title: Les néons de l'incendie
+  suggested_action: follow_one_time
 - url: https://madrid.mercadosocial.net
   type: external_link
   domain: madrid.mercadosocial.net
@@ -24192,20 +24414,20 @@ candidates:
   - doc_id: Traficantes de Sueños — Autogestion / Economía social
     context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
     page: null
-- url: https://reporterre.net/100-hectares-brules-dans-une-reserve-naturelle-aux-Pays-Bas
+- url: https://reporterre.net/22-oC-sans-clim-le-pari-reussi-de-la-maison-en-terre-et-en-bois
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: '100 hectares brûlés dans une réserve naturelle aux Pays-Bas — Les incendies sévissent de plus en plus au nord
-      : la réserve naturelle de Boschhuizerbergen, dans le sud-est des Pays-Bas, est en proie aux flammes depuis lundi 3 août.
-      Le feu s''est rapidement propagé : de 21 hectares brûlés lundi après-m'
-    timestamp: '2026-08-05T05:52:37'
+    context: '22 °C sans clim : le pari réussi de la maison en terre et en bois — Gwendal Le Ménahèze a rénové sa maison avec
+      des matériaux naturels, écologiques et énergétiquement performants. Deux ans et demi de travaux, entre récupération,
+      entraide et bons plans, pour une adaptation réussie aux fortes chaleurs'
+    timestamp: '2026-08-06T05:56:40'
   seen_count: 3
   domain: reporterre.net
-  first_seen: '2026-08-05'
-  last_seen: '2026-08-08'
+  first_seen: '2026-08-06'
+  last_seen: '2026-08-09'
   metadata:
-    title: 100 hectares brûlés dans une réserve naturelle aux Pays-Bas
+    title: '22 °C sans clim : le pari réussi de la maison en terre et en bois'
   suggested_action: follow_one_time
 - url: https://reporterre.net/30-000-euros-d-amende-et-prison-avec-sursis-pour-la-femme-qui-a-tue-un-lynx
   type: rss
@@ -24221,21 +24443,6 @@ candidates:
   last_seen: '2026-05-24'
   metadata:
     title: 30 000 euros d'amende et prison avec sursis pour la femme qui a tué un lynx
-  suggested_action: follow_one_time
-- url: https://reporterre.net/99-grands-feux-actifs-les-Etats-Unis-en-proie-aux-flammes
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '99 grands feux actifs : les États-Unis en proie aux flammes — Après le Canada, toujours en proie aux flammes,
-      le nord-ouest des États-Unis brûle à son tour. À Spokane, dans l''État de Washington, trois incendies ont forcé quelque
-      60 000 personnes à fuir en urgence durant le week-end. Lundi 3 août, le'
-    timestamp: '2026-08-05T05:52:37'
-  seen_count: 3
-  domain: reporterre.net
-  first_seen: '2026-08-05'
-  last_seen: '2026-08-08'
-  metadata:
-    title: '99 grands feux actifs : les États-Unis en proie aux flammes'
   suggested_action: follow_one_time
 - url: https://reporterre.net/A69-l-Autorite-environnementale-somme-le-concessionnaire-de-revoir-sa-copie
   type: rss
@@ -24296,66 +24503,6 @@ candidates:
   last_seen: '2026-08-03'
   metadata:
     title: Atteint le 30 juillet, le jour du dépassement des limites planétaires n'est jamais arrivé si tôt
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Avant-l-ecofeminisme-Suzanne-Cesaire-tissait-deja-le-lien-entre-colonisation-et
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Avant l'écoféminisme, Suzanne Césaire tissait déjà le lien entre colonisation et destruction du vivant — [Ces
-      précurseuses écolos et féministes 2/5] Longtemps restée dans l'ombre de son mari, Suzanne Césaire a pourtant, dans sa
-      courte carrière littéraire, tracé les lignes d'une identité martiniquais
-    timestamp: '2026-08-05T05:52:37'
-  seen_count: 3
-  domain: reporterre.net
-  first_seen: '2026-08-05'
-  last_seen: '2026-08-08'
-  metadata:
-    title: Avant l'écoféminisme, Suzanne Césaire tissait déjà le lien entre colonisation et destruction du vivant
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Balade-dans-le-jardin-de-George-Sand-pionniere-de-la-pensee-ecologiste
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Balade dans le jardin de George Sand, pionnière de la pensée écologiste — [Ces précurseuses écolos et féministes
-      3/5] George Sand, autrice aux plus de 70 romans, est connue pour ses combats humanistes et féministes. Mais elle se
-      passionnait surtout pour la nature, notamment dans son domaine du Berry
-    timestamp: '2026-08-05T05:52:37'
-  seen_count: 3
-  domain: reporterre.net
-  first_seen: '2026-08-05'
-  last_seen: '2026-08-08'
-  metadata:
-    title: Balade dans le jardin de George Sand, pionnière de la pensée écologiste
-  suggested_action: follow_one_time
-- url: https://reporterre.net/C-est-du-mepris-de-classe-une-mairie-profite-des-incendies-pour-supprimer-des-jardins
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« C''est du mépris de classe » : une mairie profite des incendies pour supprimer des jardins familiaux — Dans
-      les Pyrénées-Orientales, des habitants ont reçu l''ordre d''évacuer des jardins communaux afin que soit créée une «
-      ceinture de protection » contre les incendies. Ils dénoncent la violence de c'
-    timestamp: '2026-08-05T05:52:37'
-  seen_count: 3
-  domain: reporterre.net
-  first_seen: '2026-08-05'
-  last_seen: '2026-08-08'
-  metadata:
-    title: '« C''est du mépris de classe » : une mairie profite des incendies pour supprimer des jardins familiaux'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/C-est-la-campagne-silencieuse-quand-les-vergers-sont-remplaces-par-des-champs-de-mais
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« C''est la campagne silencieuse » : quand les vergers sont remplacés par des champs de maïs — Dans le Val-d''Oise,
-      de nombreux vergers sont arrachés et remplacés par des cultures céréalières. Leur disparition entraîne une réduction
-      de la diversité des habitats, pourtant essentiels à la faune. Ézanvil'
-    timestamp: '2026-08-05T05:52:37'
-  seen_count: 3
-  domain: reporterre.net
-  first_seen: '2026-08-05'
-  last_seen: '2026-08-08'
-  metadata:
-    title: '« C''est la campagne silencieuse » : quand les vergers sont remplacés par des champs de maïs'
   suggested_action: follow_one_time
 - url: https://reporterre.net/C-est-un-carnage-ces-nouveaux-maires-d-extreme-droite-s-acharnent-contre-des-projets
   type: rss
@@ -24553,21 +24700,6 @@ candidates:
   metadata:
     title: '« Dans notre malheur, on aura fait de belles rencontres » : à Bordeaux, avec les derniers évacués de l''incendie'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Des-cimetieres-marins-les-canicules-ravagent-aussi-la-vie-marine
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« L''équivalent d''une forêt brûlée » : les canicules marines ravagent les fonds marins — Les fortes chaleurs
-      entraînent aussi des canicules sous l''eau. Mers et océans sont en surchauffe cet été, créant des « incendies » aquatiques
-      aux conséquences considérables sur les écosystèmes. Imaginez : trois m'
-    timestamp: '2026-08-05T05:52:37'
-  seen_count: 3
-  domain: reporterre.net
-  first_seen: '2026-08-05'
-  last_seen: '2026-08-08'
-  metadata:
-    title: '« L''équivalent d''une forêt brûlée » : les canicules marines ravagent les fonds marins'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Des-collectifs-poursuivent-l-Etat-dans-le-scandale-des-PFAS
   type: rss
   found_from:
@@ -24627,6 +24759,21 @@ candidates:
   last_seen: '2026-05-24'
   metadata:
     title: 'Nourriture ultratransformée : les additifs augmentent le risque de cancers et autres maladies'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Desarmer-Bollore-la-lutte-contre-le-milliardaire-se-deplace-en-face-de-son-ile-privee
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Désarmer Bolloré » : la lutte contre le milliardaire se déplace en face de son île privée — Des militants
+      du collectif Lever les voiles mènent depuis le début du mois d''août une campagne de tractage dans le Finistère pour
+      informer sur les dangers du groupe Bolloré, dont les médias diffusent une id'
+    timestamp: '2026-08-06T05:56:40'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-06'
+  last_seen: '2026-08-09'
+  metadata:
+    title: '« Désarmer Bolloré » : la lutte contre le milliardaire se déplace en face de son île privée'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Desinformation-climatique-les-Etats-Unis-et-la-Russie-visent-l-Europe
   type: rss
@@ -24718,6 +24865,21 @@ candidates:
   metadata:
     title: Huiles, tisanes, bonbons... Le CBD à usage alimentaire interdit en France
   suggested_action: follow_one_time
+- url: https://reporterre.net/Ils-m-empechent-de-rejoindre-mes-oliviers-au-Sud-Liban-la-vie-sous-occupation-israelienne
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Ils m''empêchent de rejoindre mes oliviers » : au Sud-Liban, la vie sous occupation israélienne — Alors qu''Israël
+      occupe de larges pans du Sud-Liban, des villages se retrouvent coupés du monde, d''autres rasés, leurs champs et vergers
+      brûlés. Pendant que des agriculteurs bravent le danger en restant'
+    timestamp: '2026-08-06T05:56:40'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-06'
+  last_seen: '2026-08-09'
+  metadata:
+    title: '« Ils m''empêchent de rejoindre mes oliviers » : au Sud-Liban, la vie sous occupation israélienne'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Ils-sortent-des-toilettes-des-eviers-Ibiza-debordee-par-la-proliferation-des-serpents
   type: rss
   found_from:
@@ -24793,21 +24955,6 @@ candidates:
   metadata:
     title: 'Incendies : faut-il interdire la chasse pour laisser du répit aux animaux sauvages ?'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Juillet-2026-le-mois-le-plus-chaud-jamais-enregistre-en-France
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Juillet 2026 : le mois le plus chaud jamais enregistré en France — Marqué par une vague de chaleur « remarquable
-      par sa durée », le mois de juillet que nous venons de vivre est le plus chaud jamais relevé par Météo-France depuis
-      1900. Le mois de juillet 2026 est le plus chaud jamais enregistré en Fr'
-    timestamp: '2026-08-05T05:52:37'
-  seen_count: 3
-  domain: reporterre.net
-  first_seen: '2026-08-05'
-  last_seen: '2026-08-08'
-  metadata:
-    title: 'Juillet 2026 : le mois le plus chaud jamais enregistré en France'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/L-ONU-adopte-une-resolution-pour-renforcer-la-responsabilite-climatique-des-Etats
   type: rss
   found_from:
@@ -24838,20 +24985,20 @@ candidates:
   metadata:
     title: 'La France sous les flammes : la faillite criminelle du néolibéralisme'
   suggested_action: follow_one_time
-- url: https://reporterre.net/La-secheresse-des-petits-cours-d-eau-en-juillet-est-la-plus-critique-jamais-observee
+- url: https://reporterre.net/La-guerre-contre-l-Iran-a-fait-exploser-les-benefices-des-plus-gros-producteurs-de
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: La sécheresse des petits cours d'eau en juillet est « la plus critique jamais observée » — Selon les derniers
-      relevés de l'Office français de la biodiversité ( OFB ), les observations réalisées sur l'écoulement des petits cours
-      d'eau sur le territoire fin juillet confirment « une situation exception
-    timestamp: '2026-08-05T05:52:37'
+    context: 'La guerre contre l''Iran a fait exploser les bénéfices des plus gros producteurs de pétrole — À l''heure où
+      les chaleurs de l''été ont déjà provoqué près de 6 000 morts en France, les compagnies pétrolières responsables du dérèglement
+      climatique ont encore vu leurs profits exploser. Les huit plus gros '
+    timestamp: '2026-08-06T05:56:40'
   seen_count: 3
   domain: reporterre.net
-  first_seen: '2026-08-05'
-  last_seen: '2026-08-08'
+  first_seen: '2026-08-06'
+  last_seen: '2026-08-09'
   metadata:
-    title: La sécheresse des petits cours d'eau en juillet est « la plus critique jamais observée »
+    title: La guerre contre l'Iran a fait exploser les bénéfices des plus gros producteurs de pétrole
   suggested_action: follow_one_time
 - url: https://reporterre.net/Laits-contamines-les-entreprises-ont-beaucoup-tarde-a-avertir-les-autorites
   type: rss
@@ -24987,21 +25134,6 @@ candidates:
   last_seen: '2026-08-03'
   metadata:
     title: 'Lutte contre les incendies : 10 ans de sous-investissement rattrapés par les flammes'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Megaferme-a-saumons-le-projet-conteste-est-autorise-par-la-prefecture-de-Gironde
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Mégaferme à saumons : le projet contesté est autorisé par la préfecture de Gironde — Par un arrêté du 4 août,
-      la préfète de la Gironde, Sophie Brocas, a accordé l''autorisation environnementale au projet très contesté de méga-usine
-      terrestre de saumons, à Verdon-sur-Mer. Ce projet porté par la sociét'
-    timestamp: '2026-08-05T05:52:37'
-  seen_count: 3
-  domain: reporterre.net
-  first_seen: '2026-08-05'
-  last_seen: '2026-08-08'
-  metadata:
-    title: 'Mégaferme à saumons : le projet contesté est autorisé par la préfecture de Gironde'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Millevaches-se-mobilise-contre-un-elevage-de-1-200-porcs-Siamo-tutti-antiporcherie
   type: rss
@@ -25273,20 +25405,20 @@ candidates:
   metadata:
     title: '« Savourons cette victoire » : la serre géante Tropicalia ne verra pas le jour dans le Pas-de-Calais'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Secheresse-un-village-englouti-refait-surface-en-Indonesie
+- url: https://reporterre.net/Secheresse-l-arret-d-une-centrale-nucleaire-force-la-Hongrie-a-la-sobriete-electrique
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Sécheresse : un village englouti refait surface en Indonésie — Les images aériennes sont saisissantes. Le village
-      indonésien de Somang, dans l''ouest de l''île de Java, était englouti sous les eaux d''un réservoir créé en 2023 pour
-      approvisionner Jakarta. Mais la baisse du niveau de l''eau due à la séch'
-    timestamp: '2026-08-05T05:52:37'
+    context: La sécheresse prive la Hongrie d'électricité, le ministre de l'Énergie redécouvre les jeux de société — La seule
+      centrale nucléaire de Hongrie étant presque à l'arrêt à cause de la sécheresse, le pays a dû réduire sa consommation
+      d'électricité. Mis à contribution, particuliers et grandes entreprises
+    timestamp: '2026-08-06T05:56:40'
   seen_count: 3
   domain: reporterre.net
-  first_seen: '2026-08-05'
-  last_seen: '2026-08-08'
+  first_seen: '2026-08-06'
+  last_seen: '2026-08-09'
   metadata:
-    title: 'Sécheresse : un village englouti refait surface en Indonésie'
+    title: La sécheresse prive la Hongrie d'électricité, le ministre de l'Énergie redécouvre les jeux de société
   suggested_action: follow_one_time
 - url: https://reporterre.net/Soirees-techno-et-huile-d-olive-une-ferme-engagee-menacee-de-fermeture
   type: rss
@@ -25408,21 +25540,6 @@ candidates:
   metadata:
     title: 'Cancer colorectal chez les jeunes : un pesticide identifié comme facteur de risque'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Une-start-up-soutenue-par-Jeff-Bezos-veut-s-approprier-des-archives-coloniales-pour
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Une start-up soutenue par Jeff Bezos veut s'approprier des archives coloniales pour trouver du lithium au Congo
-      — À l'AfricaMuseum de Tervuren, en Belgique, des archives géologiques héritées du Congo belge attisent les convoitises
-      de KoBold Metals, une start-up minière étasunienne dopée à l' IA et s
-    timestamp: '2026-08-05T05:52:37'
-  seen_count: 3
-  domain: reporterre.net
-  first_seen: '2026-08-05'
-  last_seen: '2026-08-08'
-  metadata:
-    title: Une start-up soutenue par Jeff Bezos veut s'approprier des archives coloniales pour trouver du lithium au Congo
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Velo-un-usage-en-hausse-debut-2026-surtout-en-ruralite
   type: rss
   found_from:
@@ -25437,6 +25554,21 @@ candidates:
   last_seen: '2026-05-24'
   metadata:
     title: 'Vélo : un usage en hausse début 2026, surtout en ruralité'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Vitamine-D-le-dangereux-business-des-complements-alimentaires-pour-les-bebes
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Vitamine D pour les bébés : un business dangereux pour leur santé — Vantés sur les réseaux sociaux, des compléments
+      alimentaires en vitamine D pour bébés peuvent faire courir des dangers d''atteintes rénales en cas de surdosage. Un
+      produit de la marque Nateos, estampillée naturelle, a fait l''objet d'''
+    timestamp: '2026-08-06T05:56:40'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-08-06'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Vitamine D pour les bébés : un business dangereux pour leur santé'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Zoos-humains-la-Guyane-va-recuperer-les-ossements-d-autochtones-detenus-par-des-musees
   type: rss
@@ -29994,6 +30126,21 @@ candidates:
   - doc_id: b1420894
     context: to-enhance-whole-farm-management-for-growers-300161138.html; http://www.digitalfarming.bayer.com/bdf-farming-tool.html;
     page: 5
+- url: http://www.domainepublic.net/Pare-feu-web-active.html
+  type: external_link
+  domain: www.domainepublic.net
+  first_seen: '2026-08-09'
+  last_seen: '2026-08-09'
+  seen_count: 2
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: FIAN International (droit à l'alimentation, ES)
+    context: Pare-feu web activé
+    page: null
+  - doc_id: FIAN International — publications
+    context: Pare-feu web activé
+    page: null
 - url: http://www.dow.com/-
   type: footnote
   domain: www.dow.com
@@ -35756,6 +35903,20 @@ candidates:
   metadata:
     title: 'Archéologie d''un vrai-faux silence : Michel Foucault, Israël et les Palestiniens [2/3]'
   suggested_action: follow_one_time
+- url: https://lundi.am/Au-dela-de-l-instrumentalisation-la-nouvelle-grammaire-morale-de-la-politique
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Au-delà de l''instrumentalisation : la nouvelle grammaire morale de la politique colombienne — Diego Meza Gavilanes
+      - Été 2026 suite / 2 , International , Avec une grosse photo en haut'
+    timestamp: '2026-08-08T04:16:33'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Au-delà de l''instrumentalisation : la nouvelle grammaire morale de la politique colombienne'
+  suggested_action: follow_one_time
 - url: https://lundi.am/Brutalites-policiere-a-la-marche-trans-de-San-Francisco
   type: rss
   found_from:
@@ -35812,6 +35973,34 @@ candidates:
   last_seen: '2026-08-06'
   metadata:
     title: 'Ceuta : la hogra et le monde qui brûle'
+  suggested_action: follow_one_time
+- url: https://lundi.am/Colombie-l-extreme-droite-d-Abelardo-de-la-Espriella-au-pouvoir
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Colombie : l''extrême droite d''Abelardo de la Espriella au pouvoir — Un dossier - Été 2026 suite / Avec une
+      grosse photo en haut , International , 4'
+    timestamp: '2026-08-08T04:16:33'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Colombie : l''extrême droite d''Abelardo de la Espriella au pouvoir'
+  suggested_action: follow_one_time
+- url: https://lundi.am/Colombie-la-nouvelle-extreme-droite-sous-l-angle-decolonial
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Colombie : la nouvelle extrême droite sous l''angle décolonial — Lina Álvarez Villarreal - Été 2026 suite /
+      Avec une grosse photo en haut , International , 2'
+    timestamp: '2026-08-08T04:16:33'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Colombie : la nouvelle extrême droite sous l''angle décolonial'
   suggested_action: follow_one_time
 - url: https://lundi.am/Dark-Taoism
   type: rss
@@ -35939,20 +36128,6 @@ candidates:
   metadata:
     title: Il neige du phosphore blanc
   suggested_action: follow_one_time
-- url: https://lundi.am/Je-desire-la-sterilite
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: « Je désire la stérilité » — Pour un désarmement démographique - Été 2026 suite / Avec une grosse photo en haut
-      , 2 , Positions
-    timestamp: '2026-08-06T05:56:57'
-  seen_count: 2
-  domain: lundi.am
-  first_seen: '2026-08-06'
-  last_seen: '2026-08-08'
-  metadata:
-    title: « Je désire la stérilité »
-  suggested_action: follow_one_time
 - url: https://lundi.am/L-avenir-ne-dure-pas-longtemps
   type: rss
   found_from:
@@ -36023,6 +36198,20 @@ candidates:
   metadata:
     title: La lutte pour la baignade
   suggested_action: follow_one_time
+- url: https://lundi.am/La-narco-esthetique-du-Tigre-5-0-a-l-ere-de-l-intelligence-artificielle
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: La narco-esthétique du Tigre 5.0 à l'ère de l'intelligence artificielle — Juliana Marín Taborda & Alejandro Giraldo
+      Quintero - Été 2026 suite / Avec une grosse photo en haut , International , 2
+    timestamp: '2026-08-08T04:16:33'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
+  metadata:
+    title: La narco-esthétique du Tigre 5.0 à l'ère de l'intelligence artificielle
+  suggested_action: follow_one_time
 - url: https://lundi.am/Le-canal-il-est-a-qui-A-nous-A-nous-A-nous
   type: rss
   found_from:
@@ -36051,19 +36240,19 @@ candidates:
   metadata:
     title: Le cinéma déboussolé (Retour vers le futur)
   suggested_action: follow_one_time
-- url: https://lundi.am/Le-deni-persistant-du-langage-animal-1-6-le-syndrome-Pepee
+- url: https://lundi.am/Le-fils-du-tigre-sort-avec-ses-rayures
   type: rss
   found_from:
   - source: 'RSS feed: Lundi.am — RSS principal'
-    context: 'Le déni persistant du langage animal [1/6] : le syndrome Pépée — Les évadés de la planète des signes Julian
-      Aranguren - Été 2026 suite / Avec une grosse photo en haut , Positions , 2'
-    timestamp: '2026-08-06T05:56:57'
+    context: Le fils du tigre sort avec ses rayures — Arturo Escobar - Été 2026 suite / Avec une grosse photo en haut , 2
+      , International
+    timestamp: '2026-08-08T04:16:33'
   seen_count: 2
   domain: lundi.am
-  first_seen: '2026-08-06'
-  last_seen: '2026-08-08'
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
   metadata:
-    title: 'Le déni persistant du langage animal [1/6] : le syndrome Pépée'
+    title: Le fils du tigre sort avec ses rayures
   suggested_action: follow_one_time
 - url: https://lundi.am/Le-foot-est-il-un-terrain-politique
   type: rss
@@ -36092,20 +36281,6 @@ candidates:
   last_seen: '2026-07-02'
   metadata:
     title: Le syndrome Florent Richard ?
-  suggested_action: follow_one_time
-- url: https://lundi.am/Les-neons-de-l-incendie
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Les néons de l'incendie — Avec les évacués du Parc des expositions de Bordeaux - Été 2026 suite / Avec une grosse
-      photo en haut , Terreur , 2
-    timestamp: '2026-08-06T05:56:57'
-  seen_count: 2
-  domain: lundi.am
-  first_seen: '2026-08-06'
-  last_seen: '2026-08-08'
-  metadata:
-    title: Les néons de l'incendie
   suggested_action: follow_one_time
 - url: https://lundi.am/Matcha-latte-pour-la-fin-des-temps
   type: rss
@@ -36162,6 +36337,20 @@ candidates:
   last_seen: '2026-05-17'
   metadata:
     title: Quelques réflexions sur la désertion du monde technique
+  suggested_action: follow_one_time
+- url: https://lundi.am/Reconfigurations-de-la-droite-colombienne-d-Uribe-a-De-la-Espriella
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Reconfigurations de la droite colombienne d'Uribe à De la Espriella — Anibal Pineda Canabal - Été 2026 suite
+      / Avec une grosse photo en haut , 4 , International
+    timestamp: '2026-08-08T04:16:33'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
+  metadata:
+    title: Reconfigurations de la droite colombienne d'Uribe à De la Espriella
   suggested_action: follow_one_time
 - url: https://lundi.am/Seditium-un-nouvel-element-qui-agite-la-recherche
   type: rss
@@ -37002,20 +37191,20 @@ candidates:
   metadata:
     title: Plus de 14 000 ours abattus au Japon en un an
   suggested_action: follow_one_time
-- url: https://reporterre.net/22-oC-sans-clim-le-pari-reussi-de-la-maison-en-terre-et-en-bois
+- url: https://reporterre.net/40-oC-bati-inadapte-la-Bretagne-n-est-pas-le-refuge-climatique-qu-on-croit
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: '22 °C sans clim : le pari réussi de la maison en terre et en bois — Gwendal Le Ménahèze a rénové sa maison avec
-      des matériaux naturels, écologiques et énergétiquement performants. Deux ans et demi de travaux, entre récupération,
-      entraide et bons plans, pour une adaptation réussie aux fortes chaleurs'
-    timestamp: '2026-08-06T05:56:40'
+    context: '40 °C, bâti inadapté : la Bretagne n''est pas le refuge climatique qu''on croit — Sol granitique qui stocke
+      peu l''eau, bâti inadapté... Longtemps considérée comme un territoire refuge, la Bretagne se trouve aujourd''hui particulièrement
+      peu préparée aux effets du réchauffement climatique. Des records d'
+    timestamp: '2026-08-08T04:16:15'
   seen_count: 2
   domain: reporterre.net
-  first_seen: '2026-08-06'
-  last_seen: '2026-08-08'
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
   metadata:
-    title: '22 °C sans clim : le pari réussi de la maison en terre et en bois'
+    title: '40 °C, bâti inadapté : la Bretagne n''est pas le refuge climatique qu''on croit'
   suggested_action: follow_one_time
 - url: https://reporterre.net/A69-la-decision-du-Conseil-d-Etat-pourrait-faciliter-les-grands-projets-d-amenagement
   type: rss
@@ -37164,6 +37353,21 @@ candidates:
   metadata:
     title: 'Canicule : au moins 1 000 morts supplémentaires en France'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Canicules-incendies-comment-l-extreme-droite-en-fait-un-argument-contre-l-ecologie
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Canicules, incendies : comment l''extrême droite en fait un argument contre l''écologie — Les événements climatiques
+      extrêmes de cet été sont instrumentalisés par l''extrême droite, qui en profite pour sortir son technosolutionnisme
+      et faire avancer ses idées anti-écologistes. Juliette Quénéa est docto'
+    timestamp: '2026-08-08T04:16:15'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Canicules, incendies : comment l''extrême droite en fait un argument contre l''écologie'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Ces-canaux-provencaux-vieux-de-cinq-siecles-rechargent-les-nappes-et-font-vivre-les
   type: rss
   found_from:
@@ -37284,21 +37488,6 @@ candidates:
   metadata:
     title: 'Des pointes à 40 °C : une 4e vague de fortes chaleurs débute mardi'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Desarmer-Bollore-la-lutte-contre-le-milliardaire-se-deplace-en-face-de-son-ile-privee
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Désarmer Bolloré » : la lutte contre le milliardaire se déplace en face de son île privée — Des militants
-      du collectif Lever les voiles mènent depuis le début du mois d''août une campagne de tractage dans le Finistère pour
-      informer sur les dangers du groupe Bolloré, dont les médias diffusent une id'
-    timestamp: '2026-08-06T05:56:40'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-08-06'
-  last_seen: '2026-08-08'
-  metadata:
-    title: '« Désarmer Bolloré » : la lutte contre le milliardaire se déplace en face de son île privée'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Dieselgate-Volkswagen-devra-verser-100-000-euros-a-une-association-de-consommateurs
   type: rss
   found_from:
@@ -37389,6 +37578,21 @@ candidates:
   metadata:
     title: 'Fast-fashion : la loi enfin adoptée, mais édulcorée'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Flora-Tristan-la-revolutionnaire-qui-denoncait-deja-la-pollution-industrielle-au-XIXe
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Flora Tristan, la révolutionnaire qui dénonçait déjà la pollution industrielle au XIXe siècle — [Ces précurseuses
+      écolos et féministes 4/5] Critique du progrès industriel et pionnière du socialisme, Flora Tristan aura passé sa vie
+      à tenter d'améliorer le sort des ouvriers et la condition des femmes.
+    timestamp: '2026-08-08T04:16:15'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
+  metadata:
+    title: Flora Tristan, la révolutionnaire qui dénonçait déjà la pollution industrielle au XIXe siècle
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Fumees-cendres-et-sideration-Bordeaux-suffoque-sous-l-incendie-de-Gironde
   type: rss
   found_from:
@@ -37419,6 +37623,36 @@ candidates:
   metadata:
     title: 'Hantavirus : « Se sentir affecté est un signe de courage »'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Hiroshima-Nagasaki-nos-armes-culturelles-pour-maintenir-la-memoire-des-bombes-atomiques
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Hiroshima, Nagasaki : maintenir la mémoire des bombes atomiques — 81 ans après le largage des bombes nucléaires
+      sur Hiroshima et Nagasaki, la pression de l''arme atomique ne cesse d''augmenter. Reporterre conseille ainsi de s''armer
+      intellectuellement pour maintenir la mémoire de cet événement historiq'
+    timestamp: '2026-08-08T04:16:15'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Hiroshima, Nagasaki : maintenir la mémoire des bombes atomiques'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/IA-pas-moyen-ils-refusent-le-geant-data-center-de-Microsoft-en-Alsace
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« IA pas moyen » : ils refusent le data center géant de Microsoft en Alsace — À Petit-Landau, près de Mulhouse,
+      le projet de construction d''un des plus grands data centers européens de Microsoft inquiète riverains, associations
+      et agriculteurs. Leur opposition a donné naissance au collectif IA pas m'
+    timestamp: '2026-08-08T04:16:15'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
+  metadata:
+    title: '« IA pas moyen » : ils refusent le data center géant de Microsoft en Alsace'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/INF-Jusqu-a-20-millions-d-especes-d-insectes-sur-Terre-selon-une-nouvelle-etude-La-Terre
   type: rss
   found_from:
@@ -37448,21 +37682,6 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: '« Aujourd''hui, j''ose prendre la parole » : dans ce village, le pouvoir est entre les mains des habitants'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Ils-m-empechent-de-rejoindre-mes-oliviers-au-Sud-Liban-la-vie-sous-occupation-israelienne
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Ils m''empêchent de rejoindre mes oliviers » : au Sud-Liban, la vie sous occupation israélienne — Alors qu''Israël
-      occupe de larges pans du Sud-Liban, des villages se retrouvent coupés du monde, d''autres rasés, leurs champs et vergers
-      brûlés. Pendant que des agriculteurs bravent le danger en restant'
-    timestamp: '2026-08-06T05:56:40'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-08-06'
-  last_seen: '2026-08-08'
-  metadata:
-    title: '« Ils m''empêchent de rejoindre mes oliviers » : au Sud-Liban, la vie sous occupation israélienne'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Incendie-en-Gironde-Importante-reprise-de-feu-a-Lege-Cap-Ferret
   type: rss
@@ -37641,20 +37860,20 @@ candidates:
   metadata:
     title: 'La Gironde face aux incendies : ceux qui restent, ceux qui fuient, ceux qui ont tout perdu'
   suggested_action: follow_one_time
-- url: https://reporterre.net/La-guerre-contre-l-Iran-a-fait-exploser-les-benefices-des-plus-gros-producteurs-de
+- url: https://reporterre.net/La-grande-soif-les-chiffres-d-une-secheresse-historique
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'La guerre contre l''Iran a fait exploser les bénéfices des plus gros producteurs de pétrole — À l''heure où
-      les chaleurs de l''été ont déjà provoqué près de 6 000 morts en France, les compagnies pétrolières responsables du dérèglement
-      climatique ont encore vu leurs profits exploser. Les huit plus gros '
-    timestamp: '2026-08-06T05:56:40'
+    context: 'La France à sec : les premiers ravages d''une sécheresse hors norme — L''été 2026 est l''un des plus secs jamais
+      observés en France, avec déjà des conséquences catastrophiques pour l''agriculture, l''énergie ou encore l''eau potable.
+      Et la politique du gouvernement ne fera qu''aggraver le problème. Poisson'
+    timestamp: '2026-08-08T04:16:15'
   seen_count: 2
   domain: reporterre.net
-  first_seen: '2026-08-06'
-  last_seen: '2026-08-08'
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
   metadata:
-    title: La guerre contre l'Iran a fait exploser les bénéfices des plus gros producteurs de pétrole
+    title: 'La France à sec : les premiers ravages d''une sécheresse hors norme'
   suggested_action: follow_one_time
 - url: https://reporterre.net/La-quatrieme-canicule-de-l-ete-attendue-en-France
   type: rss
@@ -37836,6 +38055,21 @@ candidates:
   metadata:
     title: 'Loi d''urgence agricole : le Sénat vote le retour de l''acétamipride'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Louise-Michel-l-amour-des-animaux-au-coeur-de-la-revolution-38317
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Louise Michel, l'amour des animaux au cœur de la révolution — [Ces précurseuses écolos et féministes 5/5] Dans
+      ses écrits, la révolutionnaire Louise Michel défend son amour des animaux et sa profonde sensibilité. L'égalité vaut
+      pour tous et toutes, y compris les non-humains, rappelle-t-elle. Quel so
+    timestamp: '2026-08-08T04:16:15'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
+  metadata:
+    title: Louise Michel, l'amour des animaux au cœur de la révolution
+  suggested_action: follow_one_time
 - url: https://reporterre.net/MaPrimRenov-encore-moins-de-travaux-eligibles
   type: rss
   found_from:
@@ -37880,6 +38114,21 @@ candidates:
   last_seen: '2026-07-31'
   metadata:
     title: 'Ni poules, ni coquilles : le marché des œufs végétaux tente d''éclore'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Nous-voulons-construire-un-territoire-robuste-face-aux-feux-apres-les-incendies-le-monde
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Nous voulons construire un territoire robuste face aux feux » : après les incendies, le monde paysan se réorganise
+      — Un an après l''incendie des Corbières, dans l''Aude, ce drame continue de hanter le monde paysan. Mais il a aussi
+      permis de renforcer les liens et d''engager une réflexion globale sur '
+    timestamp: '2026-08-08T04:16:15'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
+  metadata:
+    title: '« Nous voulons construire un territoire robuste face aux feux » : après les incendies, le monde paysan se réorganise'
   suggested_action: follow_one_time
 - url: https://reporterre.net/PFAS-des-rapporteurs-de-l-ONU-epinglent-deux-geants-de-la-vallee-de-la-chimie
   type: rss
@@ -38033,21 +38282,6 @@ candidates:
     title: '« Sans notre intervention, il n''y aurait quasiment plus de busards en France » : comment agriculteurs et écologistes
       protègent ces oiseaux des champs'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Secheresse-l-arret-d-une-centrale-nucleaire-force-la-Hongrie-a-la-sobriete-electrique
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: La sécheresse prive la Hongrie d'électricité, le ministre de l'Énergie redécouvre les jeux de société — La seule
-      centrale nucléaire de Hongrie étant presque à l'arrêt à cause de la sécheresse, le pays a dû réduire sa consommation
-      d'électricité. Mis à contribution, particuliers et grandes entreprises
-    timestamp: '2026-08-06T05:56:40'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-08-06'
-  last_seen: '2026-08-08'
-  metadata:
-    title: La sécheresse prive la Hongrie d'électricité, le ministre de l'Énergie redécouvre les jeux de société
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Secheresse-plusieurs-reacteurs-nucleaires-a-l-arret-en-France-et-en-Hongrie
   type: rss
   found_from:
@@ -38062,6 +38296,21 @@ candidates:
   last_seen: '2026-08-06'
   metadata:
     title: 'Sécheresse : plusieurs réacteurs nucléaires à l''arrêt en France et en Hongrie'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Son-fils-est-ne-avec-une-malformation-une-mere-en-colere-contre-les-pesticides-et-leurs
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Son fils est né avec une malformation : une mère en colère contre les pesticides et leurs « lobbyistes sans
+      scrupules » — Les parents d''un garçon né avec une malformation potentiellement liée aux pesticides se livrent à une
+      double bataille : dénoncer le pouvoir de l''agrochimie, notamment au Parlemen'
+    timestamp: '2026-08-08T04:16:15'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-08-08'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Son fils est né avec une malformation : une mère en colère contre les pesticides et leurs « lobbyistes sans scrupules »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Vagues-artificielles-Sans-la-mer-le-surf-n-est-plus-qu-image-et-performance
   type: rss
@@ -38092,21 +38341,6 @@ candidates:
   last_seen: '2026-05-23'
   metadata:
     title: 'Vagues, soleil… et bactéries : les surfeurs sénégalais s''engagent contre la pollution des eaux'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Vitamine-D-le-dangereux-business-des-complements-alimentaires-pour-les-bebes
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Vitamine D pour les bébés : un business dangereux pour leur santé — Vantés sur les réseaux sociaux, des compléments
-      alimentaires en vitamine D pour bébés peuvent faire courir des dangers d''atteintes rénales en cas de surdosage. Un
-      produit de la marque Nateos, estampillée naturelle, a fait l''objet d'''
-    timestamp: '2026-08-06T05:56:40'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-08-06'
-  last_seen: '2026-08-08'
-  metadata:
-    title: 'Vitamine D pour les bébés : un business dangereux pour leur santé'
   suggested_action: follow_one_time
 - url: https://research.wur.nl/en/publications/ethiopian-agricultural-cooperatives-in-an-era-of-global-commodity
   type: openalex
@@ -46982,6 +47216,17 @@ candidates:
     year: 2026
     doi: 10.30927/ijpf.1710180
   suggested_action: follow_one_time
+  promoted_pdf_url: https://dergipark.org.tr/en/download/article-file/4918940
+  promoted_at: '2026-08-09T04:27:24'
+  promoted_metadata:
+    doi: 10.30927/ijpf.1710180
+    title: 'The Role of Macroprudential Policies in the Institutional Transformation Process: A Conceptual Assessment on Emerging
+      Market Economies'
+    journal: International Journal of Public Finance
+    published_date: '2026-06-30'
+    genre: journal-article
+    html_url: https://dergipark.org.tr/en/download/article-file/4918940
+    source: unpaywall
 - url: https://dergipark.org.tr/en/download/article-file/5786676
   type: semantic_scholar
   found_from:
@@ -47000,6 +47245,16 @@ candidates:
     year: 2026
     doi: 10.54467/trjasw.1903816
   suggested_action: follow_one_time
+  promoted_pdf_url: https://dergipark.org.tr/en/download/article-file/5786676
+  promoted_at: '2026-08-09T04:27:26'
+  promoted_metadata:
+    doi: 10.54467/trjasw.1903816
+    title: 'THE HISTORICAL DIMENSION OF SOCIAL WORK PRACTICES IN SPAIN: DEVELOPMENT PROCESS AND CURRENT POLICIES'
+    journal: Turkish Journal of Applied Social Work
+    published_date: '2026-06-29'
+    genre: journal-article
+    html_url: https://dergipark.org.tr/en/download/article-file/5786676
+    source: unpaywall
 - url: https://dialnet.unirioja.es/servlet/articulo?codigo=3109693
   type: openalex
   found_from:
@@ -51759,20 +52014,6 @@ candidates:
   metadata:
     title: 'Archéologie d''un vrai-faux silence : Michel Foucault, Israël et les Palestiniens [1/3]'
   suggested_action: follow_one_time
-- url: https://lundi.am/Au-dela-de-l-instrumentalisation-la-nouvelle-grammaire-morale-de-la-politique
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: 'Au-delà de l''instrumentalisation : la nouvelle grammaire morale de la politique colombienne — Diego Meza Gavilanes
-      - Été 2026 suite / 2 , International , Avec une grosse photo en haut'
-    timestamp: '2026-08-08T04:16:33'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: 'Au-delà de l''instrumentalisation : la nouvelle grammaire morale de la politique colombienne'
-  suggested_action: follow_one_time
 - url: https://lundi.am/C-est-une-requisition-populaire
   type: rss
   found_from:
@@ -51786,34 +52027,6 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: « C'est une réquisition populaire »
-  suggested_action: follow_one_time
-- url: https://lundi.am/Colombie-l-extreme-droite-d-Abelardo-de-la-Espriella-au-pouvoir
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: 'Colombie : l''extrême droite d''Abelardo de la Espriella au pouvoir — Un dossier - Été 2026 suite / Avec une
-      grosse photo en haut , International , 4'
-    timestamp: '2026-08-08T04:16:33'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: 'Colombie : l''extrême droite d''Abelardo de la Espriella au pouvoir'
-  suggested_action: follow_one_time
-- url: https://lundi.am/Colombie-la-nouvelle-extreme-droite-sous-l-angle-decolonial
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: 'Colombie : la nouvelle extrême droite sous l''angle décolonial — Lina Álvarez Villarreal - Été 2026 suite /
-      Avec une grosse photo en haut , International , 2'
-    timestamp: '2026-08-08T04:16:33'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: 'Colombie : la nouvelle extrême droite sous l''angle décolonial'
   suggested_action: follow_one_time
 - url: https://lundi.am/Dans-les-sombres-temps-de-la-normalisation
   type: rss
@@ -51870,6 +52083,20 @@ candidates:
   metadata:
     title: Enfants, école, travail, ville
   suggested_action: follow_one_time
+- url: https://lundi.am/Intelligence-multiple-contre-polycrise-entrepreneuriale
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Intelligence multiple contre polycrise entrepreneuriale — Le débat entre les candidats à la vice-présidence Quilcué
+      et Restrepo par Santiago Arcila & Juan Cortés - Été 2026 suite / Avec une grosse photo en haut , International , 2
+    timestamp: '2026-08-09T04:23:44'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-08-09'
+  last_seen: '2026-08-09'
+  metadata:
+    title: Intelligence multiple contre polycrise entrepreneuriale
+  suggested_action: follow_one_time
 - url: https://lundi.am/La-colere-nous-appartient
   type: rss
   found_from:
@@ -51884,20 +52111,6 @@ candidates:
   metadata:
     title: La colère nous appartient
   suggested_action: follow_one_time
-- url: https://lundi.am/La-narco-esthetique-du-Tigre-5-0-a-l-ere-de-l-intelligence-artificielle
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: La narco-esthétique du Tigre 5.0 à l'ère de l'intelligence artificielle — Juliana Marín Taborda & Alejandro Giraldo
-      Quintero - Été 2026 suite / Avec une grosse photo en haut , International , 2
-    timestamp: '2026-08-08T04:16:33'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: La narco-esthétique du Tigre 5.0 à l'ère de l'intelligence artificielle
-  suggested_action: follow_one_time
 - url: https://lundi.am/La-voix-et-le-combat-d-une-soeur
   type: rss
   found_from:
@@ -51911,20 +52124,6 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: La voix et le combat d'une sœur
-  suggested_action: follow_one_time
-- url: https://lundi.am/Le-fils-du-tigre-sort-avec-ses-rayures
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Le fils du tigre sort avec ses rayures — Arturo Escobar - Été 2026 suite / Avec une grosse photo en haut , 2
-      , International
-    timestamp: '2026-08-08T04:16:33'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: Le fils du tigre sort avec ses rayures
   suggested_action: follow_one_time
 - url: https://lundi.am/Le-paysage-les-noms-les-gens-la-sagesse-et-l-ethnographe
   type: rss
@@ -51967,20 +52166,6 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: 'Quand l''IA corrige l''IA : un bac de philo très augmenté'
-  suggested_action: follow_one_time
-- url: https://lundi.am/Reconfigurations-de-la-droite-colombienne-d-Uribe-a-De-la-Espriella
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Reconfigurations de la droite colombienne d'Uribe à De la Espriella — Anibal Pineda Canabal - Été 2026 suite
-      / Avec une grosse photo en haut , 4 , International
-    timestamp: '2026-08-08T04:16:33'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: Reconfigurations de la droite colombienne d'Uribe à De la Espriella
   suggested_action: follow_one_time
 - url: https://lundi.am/Sabotages
   type: rss
@@ -53677,21 +53862,6 @@ candidates:
   metadata:
     title: Méditerranée, golfe de Gascogne... La mer aussi surchauffe
   suggested_action: follow_one_time
-- url: https://reporterre.net/40-oC-bati-inadapte-la-Bretagne-n-est-pas-le-refuge-climatique-qu-on-croit
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '40 °C, bâti inadapté : la Bretagne n''est pas le refuge climatique qu''on croit — Sol granitique qui stocke
-      peu l''eau, bâti inadapté... Longtemps considérée comme un territoire refuge, la Bretagne se trouve aujourd''hui particulièrement
-      peu préparée aux effets du réchauffement climatique. Des records d'
-    timestamp: '2026-08-08T04:16:15'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: '40 °C, bâti inadapté : la Bretagne n''est pas le refuge climatique qu''on croit'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/40-oC-sol-granitique-bati-inadapte-la-Bretagne-n-est-pas-le-refuge-climatique-qu-on-croit
   type: rss
   found_from:
@@ -53977,21 +54147,6 @@ candidates:
   metadata:
     title: 'Canicule : 5000 tonnes de cadavres d''animaux enfouis en Bretagne'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Canicules-incendies-comment-l-extreme-droite-en-fait-un-argument-contre-l-ecologie
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Canicules, incendies : comment l''extrême droite en fait un argument contre l''écologie — Les événements climatiques
-      extrêmes de cet été sont instrumentalisés par l''extrême droite, qui en profite pour sortir son technosolutionnisme
-      et faire avancer ses idées anti-écologistes. Juliette Quénéa est docto'
-    timestamp: '2026-08-08T04:16:15'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: 'Canicules, incendies : comment l''extrême droite en fait un argument contre l''écologie'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Ce-centre-qui-a-permis-a-des-milliers-d-enfants-de-decouvrir-la-mer-pourrait-fermer
   type: rss
   found_from:
@@ -54124,6 +54279,21 @@ candidates:
   metadata:
     title: 'Data centers : la consommation d''électricité pourrait doubler en 5 ans'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Des-data-centers-dans-l-espace-la-promesse-intenable-d-Elon-Musk-et-Jeff-Bezos
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Des data centers dans l''espace : la nouvelle lubie désastreuse d''Elon Musk et Jeff Bezos — Face à l''explosion
+      des besoins de l''intelligence artificielle, les géants de la tech rêvent de voir des data centers dans l''espace. Une
+      promesse spectaculaire, freinée par des coûts vertigineux, des impasses t'
+    timestamp: '2026-08-09T04:23:27'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-09'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Des data centers dans l''espace : la nouvelle lubie désastreuse d''Elon Musk et Jeff Bezos'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Des-jardins-sans-gazon-Ca-existe-et-c-est-reussi
   type: rss
   found_from:
@@ -54245,21 +54415,6 @@ candidates:
   metadata:
     title: 'Cultiver des fleurs bio et françaises : « Un boom des installations »'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Flora-Tristan-la-revolutionnaire-qui-denoncait-deja-la-pollution-industrielle-au-XIXe
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Flora Tristan, la révolutionnaire qui dénonçait déjà la pollution industrielle au XIXe siècle — [Ces précurseuses
-      écolos et féministes 4/5] Critique du progrès industriel et pionnière du socialisme, Flora Tristan aura passé sa vie
-      à tenter d'améliorer le sort des ouvriers et la condition des femmes.
-    timestamp: '2026-08-08T04:16:15'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: Flora Tristan, la révolutionnaire qui dénonçait déjà la pollution industrielle au XIXe siècle
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Furieux-d-etre-associes-a-cet-evenement-des-vignerons-se-levent-contre-le-Canon-francais
   type: rss
   found_from:
@@ -54288,36 +54443,6 @@ candidates:
   last_seen: '2026-06-30'
   metadata:
     title: Guillaume Meurice, Camille Étienne... 200 personnalités disent non à la première méga-usine de saumons en France
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Hiroshima-Nagasaki-nos-armes-culturelles-pour-maintenir-la-memoire-des-bombes-atomiques
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Hiroshima, Nagasaki : maintenir la mémoire des bombes atomiques — 81 ans après le largage des bombes nucléaires
-      sur Hiroshima et Nagasaki, la pression de l''arme atomique ne cesse d''augmenter. Reporterre conseille ainsi de s''armer
-      intellectuellement pour maintenir la mémoire de cet événement historiq'
-    timestamp: '2026-08-08T04:16:15'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: 'Hiroshima, Nagasaki : maintenir la mémoire des bombes atomiques'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/IA-pas-moyen-ils-refusent-le-geant-data-center-de-Microsoft-en-Alsace
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« IA pas moyen » : ils refusent le data center géant de Microsoft en Alsace — À Petit-Landau, près de Mulhouse,
-      le projet de construction d''un des plus grands data centers européens de Microsoft inquiète riverains, associations
-      et agriculteurs. Leur opposition a donné naissance au collectif IA pas m'
-    timestamp: '2026-08-08T04:16:15'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: '« IA pas moyen » : ils refusent le data center géant de Microsoft en Alsace'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Incendies-a-Fontainebleau-sous-terre-la-foret-brule-toujours
   type: rss
@@ -54468,21 +54593,6 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: Grâce au solaire citoyen, ils offrent une électricité à prix fixe
-  suggested_action: follow_one_time
-- url: https://reporterre.net/La-grande-soif-les-chiffres-d-une-secheresse-historique
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'La France à sec : les premiers ravages d''une sécheresse hors norme — L''été 2026 est l''un des plus secs jamais
-      observés en France, avec déjà des conséquences catastrophiques pour l''agriculture, l''énergie ou encore l''eau potable.
-      Et la politique du gouvernement ne fera qu''aggraver le problème. Poisson'
-    timestamp: '2026-08-08T04:16:15'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: 'La France à sec : les premiers ravages d''une sécheresse hors norme'
   suggested_action: follow_one_time
 - url: https://reporterre.net/La-loi-d-urgence-agricole-ignore-la-realite-climatique
   type: rss
@@ -54650,21 +54760,6 @@ candidates:
   metadata:
     title: Le retour de l'acétamipride à nouveau contesté devant le Conseil Constitutionnel
   suggested_action: follow_one_time
-- url: https://reporterre.net/Louise-Michel-l-amour-des-animaux-au-coeur-de-la-revolution-38317
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Louise Michel, l'amour des animaux au cœur de la révolution — [Ces précurseuses écolos et féministes 5/5] Dans
-      ses écrits, la révolutionnaire Louise Michel défend son amour des animaux et sa profonde sensibilité. L'égalité vaut
-      pour tous et toutes, y compris les non-humains, rappelle-t-elle. Quel so
-    timestamp: '2026-08-08T04:16:15'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: Louise Michel, l'amour des animaux au cœur de la révolution
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Megafeux-en-France-Tous-les-ingredients-sont-la-pour-qu-ils-se-multiplient
   type: rss
   found_from:
@@ -54755,20 +54850,20 @@ candidates:
   metadata:
     title: '« Notre peur, c''est qu''il y ait des morts » : des saisonniers survivent dans des bidonvilles en surchauffe'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Nous-voulons-construire-un-territoire-robuste-face-aux-feux-apres-les-incendies-le-monde
+- url: https://reporterre.net/On-a-une-responsabilite-quand-on-ecrit-des-chansons-une-apres-midi-avec-Emily-Loizeau
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Nous voulons construire un territoire robuste face aux feux » : après les incendies, le monde paysan se réorganise
-      — Un an après l''incendie des Corbières, dans l''Aude, ce drame continue de hanter le monde paysan. Mais il a aussi
-      permis de renforcer les liens et d''engager une réflexion globale sur '
-    timestamp: '2026-08-08T04:16:15'
+    context: '« On a une responsabilité quand on écrit des chansons » : une après-midi avec Emily Loizeau — Nous avons partagé
+      avec la chanteuse Emily Loizeau une balade près des emblématiques murs à pêches de Montreuil. L''artiste de 51 ans,
+      connue pour son engagement écolo, raconte son rapport à la nature et son'
+    timestamp: '2026-08-09T04:23:27'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
+  first_seen: '2026-08-09'
+  last_seen: '2026-08-09'
   metadata:
-    title: '« Nous voulons construire un territoire robuste face aux feux » : après les incendies, le monde paysan se réorganise'
+    title: '« On a une responsabilité quand on écrit des chansons » : une après-midi avec Emily Loizeau'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Oublies-par-leur-bailleur-ils-installent-des-stores-faits-maison-contre-la-canicule
   type: rss
@@ -54799,6 +54894,21 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: 'PFAS : l''Europe baisse drastiquement le seuil tolérable d''exposition aux TFA'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Partir-seule-tracer-sa-route-ces-livres-feministes-pour-passer-a-l-acte
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Partir seule, tracer sa route : ces livres féministes pour passer à l''acte — Voyager seule, à pied ou à vélo,
+      est profondément féministe. Réoccuper l''espace public est un geste politique fort d''émancipation, montrent ces autrices
+      dans leurs écrits, autant de cris de rage contre le patriarcat qui met'
+    timestamp: '2026-08-09T04:23:27'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-08-09'
+  last_seen: '2026-08-09'
+  metadata:
+    title: 'Partir seule, tracer sa route : ces livres féministes pour passer à l''acte'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Perquisitions-millions-d-euros-demandes-un-promoteur-immobilier-fait-pression-sur-des
   type: rss
@@ -54979,21 +55089,6 @@ candidates:
   last_seen: '2026-07-02'
   metadata:
     title: '« Soleil tunisien, profits français : drôle de transition verte ! »'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Son-fils-est-ne-avec-une-malformation-une-mere-en-colere-contre-les-pesticides-et-leurs
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Son fils est né avec une malformation : une mère en colère contre les pesticides et leurs « lobbyistes sans
-      scrupules » — Les parents d''un garçon né avec une malformation potentiellement liée aux pesticides se livrent à une
-      double bataille : dénoncer le pouvoir de l''agrochimie, notamment au Parlemen'
-    timestamp: '2026-08-08T04:16:15'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-08-08'
-  last_seen: '2026-08-08'
-  metadata:
-    title: 'Son fils est né avec une malformation : une mère en colère contre les pesticides et leurs « lobbyistes sans scrupules »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Sous-testosterone-les-poissons-d-elevage-egyptiens-bientot-importes-en-Europe
   type: rss
