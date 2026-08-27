@@ -20,6 +20,7 @@ import json
 import yaml
 import hashlib
 import subprocess
+import claude_guard
 import requests
 from pathlib import Path
 from datetime import datetime
@@ -212,6 +213,7 @@ Documents :
 {docs_block}"""
 
     try:
+        claude_guard.guard_before_call()
         result = subprocess.run(
             [
                 "claude",
@@ -230,6 +232,7 @@ Documents :
             stdin=subprocess.DEVNULL,
         )
         if result.returncode != 0:
+            claude_guard.check_result(result.stdout, result.stderr)
             raise RuntimeError(
                 f"claude exit {result.returncode} — "
                 f"stdout={result.stdout[:200]} stderr={result.stderr[:200]}"
@@ -2011,6 +2014,7 @@ def main() -> None:
                 print(f"    ✗  Ignoré          : {doc['filename']} ({score}/10 — {raison})")
 
             report["results"].append(result)
+    report["claude_session_limit_hit"] = claude_guard.session_limit_active()
 
     json_path = REPORTS_PATH / f"run_{run_date}.json"
     json_path.write_text(json.dumps(report, ensure_ascii=False, indent=2),
@@ -2160,6 +2164,10 @@ def main() -> None:
     except Exception as e:
         print(f"  ⚠  audit_site raté : {e}")
 
+    if claude_guard.session_limit_active():
+        print(f"⚠️  Limite de session Claude atteinte pendant ce run — scoring/"
+              f"enrichissement dégradés pour le reste des documents (fallback "
+              f"appliqué). Voir claude_session_limit_hit dans le rapport.")
     print(f"""
 ╔══════════════════════════════════════════╗
   Veille terminée — {run_date}
@@ -2167,6 +2175,7 @@ def main() -> None:
   Documents trouvés   : {report['documents_found']}
   Scorés par Claude   : {report['documents_scored']}
   Téléchargés         : {report['documents_downloaded']}
+  Limite session Claude : {"OUI — voir ci-dessus" if claude_guard.session_limit_active() else "non"}
   Rapport             : {json_path}
 ╚══════════════════════════════════════════╝""")
 
