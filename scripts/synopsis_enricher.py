@@ -15,6 +15,7 @@ Pour les docs scorés ≥ 9, génère aussi une "bulle de publication" prête
 import json
 import re
 import subprocess
+import claude_guard
 import sys
 from pathlib import Path
 
@@ -118,6 +119,7 @@ _VOICE_BLOCK    = _build_voice_block(_CONCEPTS)
 
 def _call_claude(prompt: str, timeout: int = CLAUDE_TIMEOUT_SEC) -> str:
     """Appelle claude -p et retourne le texte brut. Lève RuntimeError si exit ≠ 0."""
+    claude_guard.guard_before_call()
     result = subprocess.run(
         ["claude", "-p", prompt, "--model", CLAUDE_MODEL] + CLAUDE_FLAGS,
         capture_output=True,
@@ -127,6 +129,7 @@ def _call_claude(prompt: str, timeout: int = CLAUDE_TIMEOUT_SEC) -> str:
         stdin=subprocess.DEVNULL,
     )
     if result.returncode != 0:
+        claude_guard.check_result(result.stdout, result.stderr)
         raise RuntimeError(
             f"claude exit {result.returncode} — "
             f"stdout={result.stdout[:200]} stderr={result.stderr[:200]}"
