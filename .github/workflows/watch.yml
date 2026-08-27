@@ -31,6 +31,14 @@ env:
 jobs:
   watch:
     runs-on: ubuntu-latest
+    # 2026-08-26 : incident ou le job est reste bloque 6h (limite max du
+    # runner) sur l'etape "Lancement de la veille" -- Claude Code CLI avait
+    # atteint sa limite de session et le script retentait chaque document en
+    # boucle sans jamais s'arreter (cf. scripts/claude_guard.py, ajoute dans
+    # le meme commit que ce timeout). Ce timeout-minutes est un filet de
+    # securite independant : meme un futur blocage d'une autre nature echoue
+    # en 1h plutot qu'en 6h.
+    timeout-minutes: 60
     permissions:
       contents: write
 
