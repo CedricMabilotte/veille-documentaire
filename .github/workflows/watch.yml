@@ -38,7 +38,7 @@ jobs:
     # le meme commit que ce timeout). Ce timeout-minutes est un filet de
     # securite independant : meme un futur blocage d'une autre nature echoue
     # en 1h plutot qu'en 6h.
-    timeout-minutes: 60
+    timeout-minutes: 180
     permissions:
       contents: write
 
