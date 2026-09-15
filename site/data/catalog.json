@@ -2672,9 +2672,19 @@
      "context_seen": "Koffi Moïse KOUASSI, Gowé Yannick Fleure Assah — Dans la société traditionnelle ivoirienne, notamment dans l’ouest du pays, la femme rurale joue un rôle essentiel dans la gestion du ménage, assurant à la fois l’éducation des enfants et la transformation quotidienne des aliments. Cette fonction la rend davantage attractive aux activités ménagères, mais surtout à l’agriculture vivrière d’autosubsist",
      "link_text": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
      "downloaded": false
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 4,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
-   "cover": "covers/e41de87d.png",
+   "cover": "covers/e41de87d.jpg",
    "meta": {
     "page_count": 23,
     "pdf_title": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire: le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
@@ -2682,18 +2692,118 @@
     "pdf_creator": "HAL"
    },
    "enrichment": {
-    "error": "json_parse: Expecting ',' delimiter: line 31 column 16 (char 3674)",
-    "raw_response": "{\n  \"summary\": \"Cet article d'anthropologie et de sociologie ivoirienne, fondé sur une ethnographie qualitative menée à Guiglo dans l'ouest du pays, s'inscrit dans le domaine critique des études foncières et aborde un enjeu central pour les objectifs de développement durable : l'inégal accès à la terre selon le genre. Les auteurs démontrent que les pratiques foncières endogènes, régies par les normes coutumières villageoises, favorisent systématiquement les hommes et les élites locales au détrim"
+    "summary": "Ce document de recherche ethnographique, issu d'un colloque international en hommage au Professeur Albert Tingbé Azalou (Bénin, 2024), examine les obstacles fonciers auxquels font face les femmes rurales de l'ouest de la Côte d'Ivoire dans leur quête d'autosuffisance alimentaire. Les auteurs Kouassi et Assah (Université Alassane Ouattara) montrent comment les pratiques foncières coutumières — régies par des normes sociales longtemps établies — réservent la terre aux hommes et aux élites locales, reléguant les femmes à des parcelles marginales et peu productives. Bien que les femmes assurent la production vivrière d'autoconsommation et la sécurité alimentaire du ménage, elles n'ont ni contrôle ni maîtrise des ressources foncières, demeurant des « cadettes sociales » cantonnées au statut de main-d'œuvre sur les plantations masculines (cacao, hévéa, café). L'étude qualitative, menée dans le département de Guiglo via ethnographie des droits d'usage et entretiens avec femmes, chefs de ménage et autorités coutumières, montre que l'expansion historique des cultures de rente a accéléré la marchandisation et l'individualisation des terres, créant une pression foncière qui restreint davantage l'accès des femmes. Migration de populations (Baoulé, Sénoufo, Malinké, Mali, Haute-Volta) et saturation foncière aggravent le tableau. Le document soulève ainsi un enjeu central du développement durable en Afrique de l'Ouest : comment concilier équité foncière de genre et sécurité alimentaire des ménages dans un contexte où les normes coutumières entrent en tension avec les Objectifs de Développement Durable appelant à l'équité et l'égalité des chances.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "les femmes, malgré leur rôle crucial dans la production alimentaire, sont restreintes dans leurs droits et contraintes de travailler sur des parcelles marginales et moins productives",
+      "why_relevant": "Énoncé direct de l'inégalité foncière genrée — core du document et de la thématique féminisme agraire + accès à la terre.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "les pratiques foncières endogènes, dictées par les normes coutumières, favorisent principalement les hommes et les élites locales, limitant ainsi l'accès des femmes aux terres favorables à l'agriculture vivrière",
+      "why_relevant": "Articulation explicite entre foncier coutumier, inégalités, et agriculture vivrière — trois core concepts croisés.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 4,
+      "quote": "La terre est considérée avant tout comme un domaine familial dont la gestion revient exclusivement du ressort de l'homme",
+      "why_relevant": "Régime de propriété collective-familiale (communs africains) structurellement genré, excluant les femmes de la maîtrise foncière.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "Tandis que la femme intervient généralement dans les plantations masculines en tant que main-d'œuvre et en assure la réalisation d'activités de production pour la sécurité alimentaire du ménage",
+      "why_relevant": "Division sexuée du travail foncier : femmes responsables de la vivrière mais sans contrôle foncier — clé de l'argument féministe agraire.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "l'essor de l'agriculture de rente, notamment le cacao, le café et l'hévéa ont fortement impacté ce système traditionnel de gestion foncière",
+      "why_relevant": "Articule comment l'agro-industrie perturbe les régimes fonciers coutumiers — lien avec accaparement des terres et commodification.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "Ces cultures ont par exemple accéléré le processus de marchandisation et d'individualisation des terres, tout en entraînant une pression foncière qui contribue à réduire extrêmement l'accès de la femme au foncier agricole",
+      "why_relevant": "Mécanisme concret : la rente drive la marchandisation qui pénalise les femmes et l'agriculture vivrière.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "la coutume n'a pas cessé d'organiser et de régir le mode de fonctionnement des systèmes fonciers malgré l'avènement du droit étatique moderne",
+      "why_relevant": "Pluralité juridique foncière : droit coutumier persistent vs. droit étatique — enjeu central des communs africains.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 5,
+      "quote": "leurs productions vivrières proviennent généralement des parcelles négociées auprès de leur époux ou octroyées par leur père ou les hommes de sa famille",
+      "why_relevant": "Dépendance foncière genrée : aucune sécurité de tenure, accès entièrement conditionné au bon vouloir masculin.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 5,
+      "quote": "Dans ce jeu d'intérêt où les femmes sont d'office moins fortes parce qu'elles ont généralement moins de pouvoir politique et moins de réseaux pour faire avancer leurs intérêts, leur production agricole demeure faible",
+      "why_relevant": "Analyse politique de l'inégalité foncière : absence de pouvoir, réseaux, et reconnaissance structurent l'exclusion.",
+      "verified": true,
+      "page_physical": 5
+     }
+    ],
+    "matched_keywords": [
+     "inégalités foncières",
+     "accès à la terre",
+     "agriculture vivrière",
+     "autosuffisance alimentaire",
+     "sécurité alimentaire",
+     "foncier coutumier",
+     "droit coutumier",
+     "pratiques foncières endogènes",
+     "femmes et terre",
+     "droits fonciers des femmes",
+     "paysannerie",
+     "agriculteurs familiaux",
+     "féminisme agraire",
+     "biens communs africains",
+     "marchandisation des terres",
+     "pression foncière",
+     "communs africains"
+    ],
+    "relevance_score": 9,
+    "relevance_notes": "Très pertinent (9/10) : croise explicitement féminisme agraire, foncier coutumier africain, agriculture vivrière, et sécurité alimentaire. Étude empirique dense sur l'une des tensions majeures de la thématique — comment les régimes fonciers coutumiers, légitimes culturellement, reproduisent aussi les inégalités de genre et entravent l'autosuffisance alimentaire.",
+    "en_clair": "En Côte d'Ivoire, les coutumes disent que la terre appartient aux hommes. Les femmes doivent cultiver la nourriture pour nourrir la famille, mais elles n'ont accès qu'à des petits bouts de terre que le mari ou le père leur autorisent — c'est précaire et pas assez productif pour bien nourrir tout le monde.",
+    "acteurs": [
+     "Koffi Moïsse KOUASSI",
+     "Gowé Yannick Fleure Assah",
+     "Université Alassane Ouattara",
+     "Professeur Albert Tingbé AZALOU",
+     "UEMOA"
+    ],
+    "controverse": "Tension centrale non-résolue : les normes foncières coutumières, longtemps stables et socialement-embedded en Afrique de l'Ouest, opèrent comme mécanisme structurel d'exclusion des femmes des ressources productives, contredisant les ODD. Comment réformer le foncier sans délégitimer la coutume, et sans perpétuer les inégalités genrées ?",
+    "angle_journalistique": "Enquête reportage auprès de femmes paysannes de Guiglo (Côte d'Ivoire) : comment elles cultivent et nourrissent la famille malgré l'absence de terre sécurisée, stratégies de contournement, solidarités féminines — et zoom sur les initiatives de réforme foncière sensible au genre en Afrique de l'Ouest.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "e44f3f3f04"
    },
    "download_status": "ok_via_playwright",
    "versions": [],
    "score_initial": 4,
-   "score_final": null,
+   "score_final": 9,
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
    "lang": "fr",
    "title": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
    "archive_url": "http://web.archive.org/web/20260915180936/https://hal.science/hal-04860045/document",
+   "bulle": "bulles/e41de87d.json",
+   "doc_date": "2026-08-19",
+   "hal_id": "hal-04860045",
    "has_cover": true
   },
   "d64f2d03": {
@@ -42421,6 +42531,10 @@
    "title": "climate-livestock-full-report-en-web.pdf",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "doublon de 522a0b03",
+    "date": "2026-09-16"
+   },
    "has_cover": true
   },
   "522a0b03": {
@@ -43382,7 +43496,7 @@
    "latest_run": "2026-07-31_06-19",
    "collected_date": "2026-07-31_06-19",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 7,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -43415,6 +43529,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Download in Italian",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/1d909eda.jpg",
@@ -43425,8 +43549,112 @@
     "pdf_creator": "Word"
    },
    "enrichment": {
-    "error": "json_parse: Expecting value: line 1 column 1 (char 0)",
-    "raw_response": "Je lis attentivement ce document — déclaration de la Rete europea del pastoralismo (European Shepherd Network) — pour identifier ce qui touche à votre thématique foncière et paysanne.\n\n```json\n{\n  \"summary\": \"Ce manifeste de la European Shepherd Network réunit des pasteurs de 17 pays européens (transhumants, crofters, éleveurs de rennes, ovins, bovins et caprins extensifs) pour affirmer leurs contributions sociales, environnementales, culturelles et alimentaires, et dénoncer les menaces systémiq"
+    "summary": "Ce manifeste politique rassemble des pasteurs européens provenant de 17 pays autour de l'European Shepherd Network (3e congrès tenu à Coblence). Ils représentent diverses formes de pastoralisme : petits propriétaires terriens (crofters), transhumance, pastoralisme nomade, élevage extensif de ovins, bovins, caprins et rennes, souvent de races autoctones. Le document affirme que la pastorizia contribue essentiellement à l'Europe : création de valeur économique (viande, lait, fromages, laine, peaux), défense des écosystèmes (préservation de faune et flore menacées, prévention des incendies, stockage du carbone), contributions sociales (nourriture saine, paysages, économies locales, zones rurales vivantes) et riche héritage culturel immatériel. Cependant, la pastorizia est en crise existentielle : perte massive de pascoli due au développement infrastructurel, mines, énergie (éolien, biocarburants), tourisme, agriculture intensive ; accès à la terre devenant prohibitif pour les jeunes générations ; concurrence déloyale des multinationales agroalimentaires vendant des imitations industrielles ; exclusion systématique des processus décisionnels — notamment la PAC qui ignore les spécificités pastorales. En réponse, les pasteurs s'organisent en fédérations, réseaux régionaux, pôles de recherche avec institutions scientifiques. Leurs revendications politiques sont directes : reconnaissance légale de la spécificité du pastoralisme, prix équitables, inclusion des pasteurs dans toute décision concernant les terres qu'ils habitent traditionnellement, révision de la PAC, arrêt du « land grabbing » et protection d'un réseau européen de sentiers de transhumance. Ce manifeste défend un droit d'usage collectif de la terre et une autonomie territoriale contre l'appropriation foncière et l'industrialisation.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "Stiam perdendo i nostri pascoli a causa dello sviluppo delle infrastrutture e del settore energetico, delle attività minerarie, delle riserve naturali, del settore delle case vacanza e di quello delle colture per la produzione di biocarburanti",
+      "why_relevant": "Énumère les formes d'accaparement foncier (land grabbing) contemporain qui menacent l'accès à la terre pour les pasteurs — énergie verte, mines, tourisme, biocarburants.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "I giovani pastori di alcune aree si vedono obbligati ad abbandonare il nostro modo di vivere e a dedicarsi a forme di allevamento più intensivo. Per i giovani, infatti, è spesso difficile avere accesso alla terra.",
+      "why_relevant": "Décrit la crise d'accès à la terre pour la nouvelle génération de paysans-pasteurs, forçant à l'industrialisation.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Sebbene siamo noi quelli che tradizionalmente utilizzano la terra, veniamo sistematicamente esclusi dai processi decisionali che ne riguardano la gestione.",
+      "why_relevant": "Critique l'exclusion politique des usagers historiques de la terre des processus de décision — enjeu central de libération foncière et autonomie.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "Bloccare la perdita di pascoli, 'l'appropriazione fondiaria' (land grabbing) e le restrizioni alla mobilità che rendono impossibile l'esistenza di un sano sistema pastorale.",
+      "why_relevant": "Demande politique explicite d'arrêt du land grabbing et protection des droits de mobilité collectifs (transhumance) — cœur du droit d'usage collectif.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 1,
+      "quote": "Alleviamo ovini, bovini, caprini e renne; si tratta spesso di razze autoctone, particolarmente adattate a uno specifico ambiente locale.",
+      "why_relevant": "Préservation de races paysannes locales et de savoirs agropastoraux ancrés dans l'environnement, opposée à l'industrialisation.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "cerchiamo di incrementare la consapevolezza dei consumatori e di vendere direttamente a loro",
+      "why_relevant": "Affirmation de souveraineté alimentaire via vente directe et circuits courts — sortie de la dépendance aux multinationales.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "Noi sosteniamo anche la creazione e la protezione di una rete europea di sentieri per la transumanza.",
+      "why_relevant": "Demande de reconnaissance institutionnelle des biens collectifs pastoraux — les chemins de transhumance comme patrimoine commun européen.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 1,
+      "quote": "La pratica del pascolo, inoltre, favorisce l'immagazzinamento dell'anidride carbonica atmosferica e rallenta il cambiamento climatico. Ci occupiamo con successo della gestione delle risorse naturali, perché viviamo grazie a loro.",
+      "why_relevant": "Affirme que les systèmes agroécologiques paysans produisent des services publics — intégration écosystémique vs. agriculture industrielle.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "L'equilibrio simbiotico tra ambiente e pastorizia è minacciato da decisioni politiche sbagliate che non includono la pastorizia nei processi decisionali",
+      "why_relevant": "Souligne la relation symbiotique entre pratique paysanne et gestion écologique du territoire, annulée par exclusion politique.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "La Politica agricola comune, in particolare, non riconoscendo le caratteristiche specifiche dell'attività pastorizia, pone questo sistema di produzione in una situazione di svantaggio economico.",
+      "why_relevant": "Critique des politiques agricoles qui marginalisent les systèmes traditionnels au profit de l'industrialisation intensive.",
+      "verified": true,
+      "page_physical": 2
+     }
+    ],
+    "matched_keywords": [
+     "paysannerie",
+     "pastorizia",
+     "agriculture vivrière",
+     "agroécologie",
+     "accaparement",
+     "land grabbing",
+     "accès à la terre",
+     "land rights",
+     "communs fonciers",
+     "propriété collective",
+     "transhumance",
+     "souveraineté alimentaire",
+     "agriculture familiale",
+     "paysans libres",
+     "autonomie territoriale",
+     "libération des terres",
+     "coopératives agricoles",
+     "patrimoine culturel",
+     "ecosystèmes"
+    ],
+    "relevance_score": 7,
+    "relevance_notes": "Ce manifeste est pertinent pour le corpus sur la 'libération des terres' et la 'paysannerie'. C'est une voix d'acteurs situés qui défendent systématiquement un droit d'usage collectif de la terre contre l'appropriation foncière (land grabbing) et l'industrialisation. Cependant, ce n'est pas une théorisation formelle de communs fonciers (fiducies, CLT) ni une agroécologie politique organisée (type MST/Via Campesina), mais une pratique de résistance paysanne européenne.",
+    "en_clair": "Les pasteurs européens disent : on nous vole nos terres pour y mettre des mines, des parcs à énergie renouvelable, des résidences touristiques, et les jeunes ne peuvent plus accéder à la terre. On veut le droit de continuer notre travail d'élevage collectif, avec nos races locales et nos chemins de transhumance partagés depuis des siècles, et on veut avoir notre mot à dire quand les décideurs changent les lois qui nous concernent.",
+    "acteurs": [
+     "European Shepherd Network (Rete europea del pastoralismo)",
+     "Associazione dei pastori transumanti del Triveneto, Italia",
+     "Associazione Regionale Produttori Ovicaprini, Abruzzo, Italy"
+    ],
+    "controverse": "Conflit central entre modèle d'élevage extensif traditionnel et collectif (droit d'usage ancestral) vs. modèle industriel intensif supporté par les politiques (PAC, développement infrastructurel). Enjeu : qui a le droit d'utiliser la terre — ceux qui l'habitent et la travaillent depuis des générations (pasteurs), ou ceux qui possèdent le capital pour y implanter des projets (énergies renouvelables, tourisme, mines, biocarburantes) ? Accessoirement, tension sur l'exclusion des pasteurs de tout processus décisionnel concernant les terres qu'ils gèrent traditionnellement.",
+    "angle_journalistique": "Enquête sur comment la transition énergétique européenne (parcs éoliens, solaires, biocarburants) et les politiques de conservation (parcs protégés) accélèrent l'appropriation foncière des pascoli historiques, tout en marginalisant les pasteurs des processus de décision qui façonnent leur territoire.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "1f5e21cd75"
    },
    "download_status": "ok",
    "archive_url": "https://web.archive.org/web/20260630170926/https://shepherdnet.eu/wp-content/uploads/2015/08/27.06.15-Koblenz_Declaration-Final-IT.pdf",
@@ -43584,11 +43812,11 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 8,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
-   "doc_date": "2026-05-28",
+   "doc_date": "2026-05-25",
    "lang": "en",
    "editeur": "Adobe PDF Library 16.0.7",
    "doi": "",
@@ -43617,6 +43845,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "EN-Nyeleni_Common_Political_Agenda_2026-2",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/d4f9ca0a.jpg",
@@ -43627,7 +43865,125 @@
     "pdf_creator": "Adobe InDesign 17.4 (Windows)"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Ce document est l'agenda politique commun du Forum Nyéléni 2026, rassemblement international de mouvements paysans, autochtones, féministes et de justice sociale. Héritier des Forums de 2007 et 2015, il pose un diagnostic critique du système capitaliste et colonial comme cause majeure de la déposséssion foncière rurale et de la déstructuration des systèmes alimentaires. L'agenda dénonce comment le capital sépare violemment les peuples de la nature, transforme les écosystèmes et les « biens communs » en commodités, et concentre le pouvoir corporatif via la capture des espaces multilatéraux (ONU, FAO). Au cœur de la critique figurent l'accaparement foncier (land grabbing) pour l'industrie, les plantations et l'extraction minière, qui provoquent une déposséssion rurale et une urbanisation « ingouvernée ». Le document centre son action politique sur trois piliers : la souveraineté alimentaire et l'agroécologie (héritées de luttes décennales), l'autodétermination territoriale des peuples autochtones et l'endiguement de la violence coloniale du peuplement (settler colonialism), et le féminisme populaire — en hommage à Nyéléni, paysanne malienne symbolisant le rôle central des femmes dans les systèmes alimentaires et la vie collective. L'agenda refuse la séparation Nature/Société et valorise les épistémologies autochtones et les savoirs paysans. Il appelle à construire une « people's democracy » basée sur l'action grassroots collective, la mobilisation internationaliste et la communication populaire face aux narratifs corporatistes et d'extrême-droite qui délégitimisent les mouvements.",
+    "citations": [
+     {
+      "page": 9,
+      "quote": "Capitalism has violently separated us from nature. It is exploiting the planet's ecosystems, biodiversity and common goods, transforming them into commodities for consumption.",
+      "why_relevant": "Critique frontale du système capitaliste comme cause de la séparation des peuples d'avec la nature et la terre ; transformation des communs en marchandises.",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 10,
+      "quote": "Peasants feel the weight of corporate concentration when agricultural land is grabbed for industrial development, plantations or extractive mining.",
+      "why_relevant": "Énoncé direct de l'accaparement foncier (land grabbing) comme mécanisme de déposséssion rurale et de déprise paysanne.",
+      "verified": true,
+      "page_physical": 10
+     },
+     {
+      "page": 6,
+      "quote": "Nyéléni, a Malian peasant woman who symbolizes the central role of women in sustaining food systems, territories, and collective life.",
+      "why_relevant": "Affirmation du rôle central et politique des femmes paysannes dans la reproduction des systèmes alimentaires et territoriaux ; féminisme paysan.",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 9,
+      "quote": "Neoliberal legislation deepens export dependence, rural dispossession and ungoverned urbanization.",
+      "why_relevant": "Analyse de la déposséssion rurale comme produit des politiques néolibérales ; lien entre foncier et urbanisation capitaliste.",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 7,
+      "quote": "Food sovereignty and agroecology, popular feminism, people's sovereignty and self-determination over their territories.",
+      "why_relevant": "Articulation de la vision politique clé : souveraineté alimentaire, agroécologie, féminisme et autodétermination territoriale.",
+      "verified": true,
+      "page_physical": 7
+     },
+     {
+      "page": 11,
+      "quote": "The genocide in Palestine offers a stark reminder of how food is weaponized to advance colonial agendas.",
+      "why_relevant": "Connexion entre enjeux fonciers/alimentaires et colonialisme contemporain ; critique de la violence de peuplement (settler colonialism).",
+      "verified": true,
+      "page_physical": 11
+     },
+     {
+      "page": 6,
+      "quote": "We inherit the legacies of the struggles for food sovereignty and other goals that have kept the fight against oppression alive.",
+      "why_relevant": "Inscription du Forum dans l'histoire longue des luttes paysannes et de souveraineté alimentaire ; memory activism.",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 7,
+      "quote": "It seeks to build unity for action from our diversity, grounded in dialogue and the exchange of knowledge.",
+      "why_relevant": "Affirmation du collectivisme et de la démocratie grassroots comme méthode d'action alternative au système dominant.",
+      "verified": true,
+      "page_physical": 7
+     },
+     {
+      "page": 11,
+      "quote": "Indigenous Peoples endure ongoing genocide.",
+      "why_relevant": "Reconnaissance explicite des luttes autochtones pour la terre et la restitution territoriale ; perspective décoloniale.",
+      "verified": true,
+      "page_physical": 11
+     },
+     {
+      "page": 10,
+      "quote": "Transnational corporations are capturing multilateral spaces... competing with legitimate multilateral decision-making spaces.",
+      "why_relevant": "Critique de la co-optation des institutions de gouvernance mondiale par le capital, vs. autonomie décisionnelle des peuples.",
+      "verified": false,
+      "page_physical": null
+     }
+    ],
+    "matched_keywords": [
+     "paysannerie",
+     "sans-terre",
+     "agriculture familiale",
+     "agriculture vivrière",
+     "souveraineté alimentaire",
+     "agroécologie",
+     "réforme agraire",
+     "accaparement des terres",
+     "accaparement",
+     "libération des terres",
+     "accès à la terre",
+     "déposséssion rurale",
+     "féminisme paysan",
+     "féminisme agraire",
+     "femmes et terre",
+     "peuples autochtones",
+     "autonomie territoriale",
+     "mouvements autochtones",
+     "biens communs",
+     "communs",
+     "décolonial",
+     "décolonisation",
+     "colonialisme",
+     "justice environnementale",
+     "justice climatique",
+     "solidarité internationaliste",
+     "collectifs",
+     "action collective",
+     "peuples opprimés",
+     "justice alimentaire"
+    ],
+    "relevance_score": 8,
+    "relevance_notes": "8/10 — Le document pose un diagnostic politique puissant et pertinent de la déposséssion foncière rurale, de l'accaparement par le capital, et de l'importance centrale de la souveraineté alimentaire, l'agroécologie, l'autonomie territoriale et le féminisme paysan. C'est un manifeste qui articule plusieurs des core-concepts de la thématique (paysannerie, souveraineté alimentaire, agroécologie, accès à la terre, mouvements autochtones, décolonisation). Limitation : c'est un document de diagnostic et de vision politique macro, non une analyse détaillée des structures institutionnelles de propriété d'usage (fiducies foncières, usufruit, CLT, communs urbains) ni des pratiques concrètes d'expérimentation.",
+    "en_clair": "Ce document dit : les grandes entreprises et les gouvernements volent les terres aux paysans et aux peuples autochtones, et transforment même la nourriture en arme pour dominer. Les mouvements mondiaux pour la souveraineté alimentaire doivent s'unir, avec les femmes et les peuples autochtones en tête de file, pour reprendre le contrôle des terres et construire une vie collective juste et libre.",
+    "acteurs": [
+     "Nyéléni (Forum et symbole collectif)",
+     "Organisation des Nations Unies pour l'alimentation et l'agriculture (FAO)",
+     "Comité pour la sécurité alimentaire mondiale (CFS)",
+     "Forum économique mondial (WEF)",
+     "Nations Unies (ONU)"
+    ],
+    "controverse": "Le document pose une posture de confrontation explicite entre le système capitaliste/colonial (corporations, États complices, propriété privée) et les peuples opprimés luttant pour l'autodétermination et la terre. La controverse centrale est : comment les mouvements grassroots peuvent-ils reprendre le pouvoir face à la capture des institutions multilatérales par le capital corporatif?",
+    "angle_journalistique": "Enquête : comment les mouvements Nyéléni (paysans, autochtones, féministes) conçoivent-ils une alternative concrète aux initiatives « multistakeholder » de l'ONU/FAO, et quelles stratégies territoriales et politiques envisagent-ils pour récupérer les terres et construire l'autonomie face à l'accaparement corporatif?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "080134e85e"
    },
    "download_status": "ok",
    "archive_url": "https://web.archive.org/web/20260710084211/https://viacampesina.org/en/wp-content/uploads/sites/2/2026/05/EN-Nyeleni_Common_Political_Agenda_2026-2.pdf",
@@ -43696,6 +44052,10 @@
    "title": "Batista N Silva Poem1",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "doublon de ccbb0fe5",
+    "date": "2026-09-16"
+   },
    "has_cover": true
   },
   "ccbb0fe5": {
@@ -43759,7 +44119,7 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 9,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -43792,6 +44152,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Morocco- Meknes_Appeal_SIAM2026_EN",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/8f2fc293.jpg",
@@ -43802,13 +44172,139 @@
     "pdf_creator": "Writer"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Ce document est un appel public de l'Union nationale des paysans marocains, affiliée au syndicat UMT, adressé aux autorités lors de la 18e édition du Salon international de l'agriculture (SIAM 2026) à Meknes. L'appel dénonce une « schizophrénie » de l'agriculture marocaine : d'un côté, un slogan de souveraineté alimentaire ; de l'autre, une réalité où 85 % des petits paysans sont marginalisés, endettés et dépossédés de droits fonciers, semenciers et hydriques. Les auteurs affirment que la lutte marocaine s'inscrit dans une bataille mondiale contre « l'accaparement des corporations transnationales » et pour la reconnaissance des droits paysans (UNDROP). Le texte dénonce spécifiquement : (1) la dépendance génétique imposée par les semences hybrides des multinationales, menaçant la continuité historique du savoir-faire paysan ; (2) l'assurance maladie obligatoire (AMO) qui pousse les paysans à abandonner leur identité professionnelle sous le poids des dettes ; (3) la justice hydrique : les paysans familiaux manquent d'eau tandis que des « oasis artificielles » de luxe (dates, avocats, pastèques) drainent les aquifères pour l'exportation ; (4) l'inégalité de redistribution : 15 % des terres monopolisent l'essentiel des aides publiques, les autres 85 % restent livrés à la sécheresse, l'endettement et les intermédiaires. En réponse, l'Union revendique 18 mesures : annulation des dettes, loi protégeant les semences locales, priorité à la « panier marocain » (alimentation locale), droits collectifs des populations rurales (femmes et hommes), simplification de l'accès à la terre d'État (anciennes terres Makhzen) et des terres collectives/tribales pour les paysans sans terre, gestion démocratique de l'eau, financement dédié, coopératives paysannes autonomes, et circuits courts de commercialisation.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "Moroccan agriculture today is living through an alarming state of \"schizophrenia,\" torn between a glittering façade and a grim reality in which small farmers, and even medium-sized ones, suffer",
+      "why_relevant": "Critique radicale du modèle agricole dominant et de son écart avec la réalité paysanne — thème central de la veille foncière",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "the Moroccan farmer's right to his land, his seeds, his water, and his free decision is not a \"favour\" bestowed by anyone; it is an inherent right guaranteed by the United Nations Declaration on the Rights of Peasants (UNDROP)",
+      "why_relevant": "Revendication explicite des droits paysans reconnus internationalement — droits fonciers, semenciers, hydriques",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "our farmers are being turned into \"permanent clients\" of transnational seed corporations, through hybrid seeds (Hybrides) that yield only once — severing the thread of historical continuity of the Moroccan farmer",
+      "why_relevant": "Dépendance génétique et critique de l'agriculture industrielle — autonomie semencière comme enjeu de libération paysanne",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Small farmers have been driven to \"deny their professional identity\" and to strike the designation \"farmer\" from their national identity cards simply to escape accumulating debts and late-payment penalties",
+      "why_relevant": "Paupérisation extrême des petits paysans — enjeu de dignité et d'identité paysanne en jeu",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Today, the billions flow to support exports and large landholders (15%), while 85% of Morocco's farmers are left bare-chested to face drought, debt, and middlemen",
+      "why_relevant": "Inégalité structurelle de redistribution des ressources publiques — polarisation entre agrobusiness et paysannerie familiale",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "\"artificial oases\" draining the national water table to produce water-intensive crops (dates, avocados, watermelons, and the like) destined exclusively for the luxury of foreign markets",
+      "why_relevant": "Accaparement de l'eau par les gros exploitants pour l'export vs. accès des petits paysans — justice hydrique",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "water is the public property of the Moroccan people, and absolute priority must go to \"staple food crops\" that put bread on Moroccan tables — not to \"hard-currency crops\"",
+      "why_relevant": "Conception de l'eau comme bien public/collectif et priorité à la souveraineté alimentaire locale",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 4,
+      "quote": "reclaiming agricultural land and distributing it to landless farmers",
+      "why_relevant": "Appel explicite à la réforme agraire et à l'accès à la terre pour les paysans sans terre",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "Organising the management of communal lands, pasturelands, and the lands of the agrarian-reform cooperatives; expediting the settlement of the land-tenure problems that hinder their optimal use; and putting an end to their plunder",
+      "why_relevant": "Gestion démocratique des terres communales et régulation des coopératives agraires — enjeu de propriété/usage collectif",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 5,
+      "quote": "Protecting small farmers from the large companies and \"cooperatives\" that contract with them to buy their produce under \"adhesion contracts\"",
+      "why_relevant": "Critique des structures pseudo-coopératives au service de l'agrobusiness — enjeu de coopération authentique vs. captation",
+      "verified": true,
+      "page_physical": 5
+     }
+    ],
+    "matched_keywords": [
+     "souveraineté alimentaire",
+     "food sovereignty",
+     "petits paysans",
+     "small farmers",
+     "paysannerie",
+     "peasantry",
+     "réforme agraire",
+     "agrarian reform",
+     "accès à la terre",
+     "land rights",
+     "paysans sans terre",
+     "landless farmers",
+     "semences indigènes",
+     "native seeds",
+     "indépendance génétique",
+     "genetic independence",
+     "terres collectives",
+     "collective lands",
+     "terres communales",
+     "communal lands",
+     "usufruct",
+     "agriculture familiale",
+     "family farming",
+     "droits de l'eau",
+     "water rights",
+     "justice hydrique",
+     "coopératives agricoles",
+     "agricultural cooperatives",
+     "accaparement",
+     "land grabbing",
+     "propriété collective",
+     "collective ownership",
+     "terres de réforme agraire",
+     "agrarian reform lands",
+     "femmes paysannes",
+     "peasant women"
+    ],
+    "relevance_score": 9,
+    "relevance_notes": "Ce texte touche frontalement à au moins 5 core concepts de la thématique : libération des terres (land rights, réforme agraire, paysans sans terre), paysannerie et souveraineté alimentaire, communs fonciers (terres collectives, communales, usufruct), critique de la dépendance génétique et semencière, et justice hydrique. Il est ancré dans un contexte africain concret (Maroc) et combine critique radicale + revendications politiques structurelles. Limitation : le féminisme paysan reste implicite et marginal.",
+    "en_clair": "Ce texte montre comment au Maroc, les petits paysans sont écrasés par un système qui vend l'eau et la nourriture au marché mondial au lieu de les garder pour nourrir les Marocains. L'appel demande que l'État rende les terres aux paysans sans terre, qu'il protège les semences locales, qu'il partage l'eau équitablement, et qu'il annule les dettes qui ruinent les petits paysans.",
+    "acteurs": [
+     "National Farmers' Union (Union nationale des paysans)",
+     "National Federation of the Agricultural Sector (FNSA)",
+     "Moroccan Workers' Union (UMT)",
+     "United Nations Declaration on the Rights of Peasants (UNDROP)",
+     "CNSS (National Social Security Fund)",
+     "SIAM 2026 (International Agricultural Exhibition, Meknes)"
+    ],
+    "controverse": "Conflit fondamental entre deux visions de l'agriculture marocaine : d'un côté, un modèle d'agro-exportation (cultures de luxe pour marchés étrangers, eau industrielle, semences hybrides) soutenu par les politiques publiques ; de l'autre, la revendication d'une souveraineté alimentaire locale, d'une autonomie paysanne et d'une justice hydrique/foncière. Le texte dénonce aussi l'écart entre le slogan officiel de « souveraineté alimentaire » de la SIAM 2026 et l'absence totale de moyens pour les 85 % de paysans familiaux.",
+    "angle_journalistique": "Enquêter sur le fossé entre le discours gouvernemental de souveraineté alimentaire (affiché à la SIAM 2026) et la réalité quotidienne des petits paysans marocains endettés, dépossédés de leurs semences locales et de l'accès à l'eau, forcés à l'exode rural.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "72b514ffc5"
    },
    "download_status": "ok",
    "archive_url": "https://web.archive.org/web/20260630171224/https://viacampesina.org/en/wp-content/uploads/sites/2/2026/04/Morocco-Meknes_Appeal_SIAM2026_EN.pdf",
    "title": "The Meknes Appeal – SIAM 2026",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "bulle": "bulles/8f2fc293.json",
    "has_cover": true
   },
   "800b6f06": {
@@ -43883,11 +44379,11 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 6,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
-   "doc_date": "2026-04-15",
+   "doc_date": "2026",
    "lang": "en",
    "editeur": "Pdftools SDK",
    "doi": "",
@@ -43916,6 +44412,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Flyer-New-GMOs-EN-web-compressed",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/a4b0d3c1.jpg",
@@ -43926,7 +44432,85 @@
     "pdf_creator": ""
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Ce flyer de l'European Coordination Via Campesina (ECVC) s'oppose à la dérégulation des nouveaux organismes génétiquement modifiés (NGT) débattue au Parlement européen. Le texte dénonce comment cette dérégulation renforcerait la privatisation des semences par les six grandes multinationales (Corteva, Bayer-Monsanto, BASF, Syngenta, KWS, Limagrain) qui contrôlent déjà 60% du marché mondial. Selon le flyer, les conséquences seraient : (1) un quasi-monopole irréversible des agrochimistes sur le marché des semences ; (2) la criminalisation des agriculteurs produisant sans OMG dont les récoltes seraient contaminées ; (3) l'absence de traçabilité et l'inversion du fardeau de la preuve ; (4) la suppression de l'évaluation des risques ; (5) des OMG cachés non-étiquetés. Le document cadre le problème dans une perspective de souveraineté alimentaire et de défense des droits des paysans sur les semences et appelle au rejet de la proposition et à la modification de la loi européenne pour prévenir les abus de brevets et préserver l'agriculture paysanne familiale diversifiée et durable.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "The privatisation of all seeds by large multinationals: all new GMOs are patented, which will strengthen the monopoly of large multinationals on seeds at the expense of peasants' rights on seeds and small seed producers' rights",
+      "why_relevant": "Critique directe de l'enclosure des semences (ressource foncière/agraire) via les brevets, menace aux droits collectifs des paysans",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 1,
+      "quote": "Patents and the financial speculation that comes with them lead to a monopolistic market concentration of seeds and an increase in prices. Today, six multinationals control 60% of the global seed market through their patents",
+      "why_relevant": "Analyse de la concentration du marché et du rôle des brevets dans la monopolisation, parallèle à l'accaparement foncier",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "There will no longer be any traceability for these GMOs, which means that there will be a dangerous reversal of the burden of proof, where farmers will be unable to prove that they haven't used any patented GMOs.",
+      "why_relevant": "Menace concrète aux droits et à l'autonomie des agriculteurs productrices sans OMG",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "The deregulation will CREATE AN IRREVERSIVE NEAR-monopoly of agrochemical multinationals over the seed MARKET and a hostile legal framework for peasants' rights on seeds.",
+      "why_relevant": "Analyse explicite des conséquences systémiques : monopole et cadre légal hostile aux droits paysans",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "Plants obtained by 'new genomic techniques' are presented as a miracle solution for agriculture. Actually, they are nothing but GMOs under a different name that lead agriculture towards false technological solutions.",
+      "why_relevant": "Critique des fausses solutions technologiques imposées contre l'autonomie paysanne",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "Food Sovereignty is at the heart of our work, the main aim of which is to defend the rights of peasants and agricultural workers, and to promote diversified and sustainable peasant family farming.",
+      "why_relevant": "Explicite le cadrage politique : souveraineté alimentaire, droits paysans, agriculture familiale diversifiée",
+      "verified": true,
+      "page_physical": 2
+     }
+    ],
+    "matched_keywords": [
+     "paysannerie",
+     "paysans",
+     "droits des paysans",
+     "agriculture familiale",
+     "paysannerie familiale",
+     "agriculture vivrière",
+     "souveraineté alimentaire",
+     "agroécologie",
+     "enclosure",
+     "accaparement",
+     "privatisation",
+     "monopoly",
+     "land grabbing",
+     "propriété collective",
+     "droits collectifs"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Document pertinent pour une veille sur les enjeux paysans et la souveraineté alimentaire, mais tangentiel aux communs fonciers. Critique la privatisation/monopolisation des semences (ressource agraire) du point de vue paysan, sans proposer des formes institutionnelles alternatives (communs, propriété d'usage, fonds de dotation, fiducies foncières). C'est une opposition politique plutôt qu'une construction d'alternatives.",
+    "en_clair": "Les grandes entreprises chimiques veulent breveter toutes les semences et interdire aux paysans de les réutiliser librement. Si ça passe, les agriculteurs seront sous contrôle total de six multinationales, leurs récoltes risquent d'être contaminées, et ils pourraient être poursuivis en justice s'ils produisent des semences non-brevetées. Ce flyer demande aux parlementaires européens de dire non.",
+    "acteurs": [
+     "European Coordination Via Campesina (ECVC)",
+     "Corteva",
+     "Bayer-Monsanto",
+     "BASF",
+     "Syngenta",
+     "KWS",
+     "Limagrain",
+     "European Parliament"
+    ],
+    "controverse": "Débat au Parlement européen sur la dérégulation des nouveaux OMG (NGT) : l'industrie agrochimique défend la dérégulation comme solution technologique « sûre » ; Via Campesina et les organisations paysannes/écologiques la dénoncent comme accélération de la monopolisation des semences et menace à la souveraineté alimentaire et l'indépendance des agriculteurs.",
+    "angle_journalistique": "Enquête sur la concentration oligopolistique du marché mondial des semences : comment six multinationales contrôlent 60% du marché et comment la brevization accélère l'expropriation des droits d'agriculteurs.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "5a2c129bf6"
    },
    "download_status": "ok",
    "title": "Flyer-New-GMOs-EN-web-compressed",
@@ -43945,11 +44529,11 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 6,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
-   "doc_date": "2026-04-07",
+   "doc_date": "2026-03-23",
    "lang": "en",
    "editeur": "",
    "doi": "",
@@ -43978,6 +44562,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "2026-03-23-Press-release-Australia-trade-deal-threatens-food-sovereignty",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/b5e00be0.jpg",
@@ -43988,7 +44582,73 @@
     "pdf_creator": "Microsoft® Word 2019"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "La European Coordination Via Campesina (ECVC) alerte sur les risques qu'un accord commercial UE-Australie pose pour la souveraineté alimentaire européenne et pour les agriculteurs du continent. Dans un contexte de crises géopolitiques (guerre en Iran, instabilité au Moyen-Orient) et de renchérissement des coûts de production, la Commission européenne finalise un accord incluant secteurs agricoles sensibles (sucre, bœuf, mouton) selon des modalités opaques. L'ECVC dénonce trois enjeux majeurs : (1) le manque de transparence dans les négociations, notamment sur les quotas d'importation ; (2) l'ignorance délibérée par la Commission des conclusions du Strategic Dialogue de septembre 2024 sur l'avenir de l'agriculture européenne, issu d'un large consensus entre acteurs de la chaîne alimentaire ; (3) la réduction de l'agriculture à un simple « bargaining chip » dans des accords multisectoriels, ce qui marginalise les agriculteurs europé\nens en difficulté économique et menace la souveraineté alimentaire. Le texte pose l'enjeu politique central : face aux crises de sécurité, la souveraineté alimentaire territoriale ne peut être sacrifiée sur l'autel du libre-échange. L'ECVC appelle à un abandon de cette approche commerciale et à une réforme radicale de la politique commerciale agricole de l'UE.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "Using agriculture as a bargaining chip in multisectoral trade deals is not only contrary to the Strategic Dialogue's recommendations – it is a direct affront to the farmers who are struggling to make a living, and to European food sovereignty.",
+      "why_relevant": "Énonce le cœur de la critique : l'agriculture est traitée comme marchandise, non comme question vitale pour les agriculteurs et la souveraineté alimentaire — concept central de la thématique.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "What is clear is that this European Commission is once again showing a profound disconnection from the agricultural sector",
+      "why_relevant": "Illustre la marginalisation des agriculteurs et de leurs organisations dans les décisions commerciales/politiques — tension structurante entre paysannerie et institutions.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "The Commission is systematically ignoring the conclusions of the September 2024 Strategic Dialogue on the Future of EU Agriculture.",
+      "why_relevant": "Montre comment les institutions ignorent les processus consultatifs censés représenter les agriculteurs — enjeu de pouvoir et de représentation.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "food sovereignty has never played such an important role in the security of European people",
+      "why_relevant": "Relie directement souveraineté alimentaire à sécurité territoriale/géopolitique — argument politique pour l'autonomie agricole contre la dépendance commerciale.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "negotiations once again lack transparency, with key import quotas still undefined",
+      "why_relevant": "Dénonce l'opacité des processus décisionnels affectant l'agriculture — impératif démocratique et informationnel.",
+      "verified": true,
+      "page_physical": 1
+     }
+    ],
+    "matched_keywords": [
+     "souveraineté alimentaire",
+     "food sovereignty",
+     "paysannerie",
+     "agriculteurs",
+     "agriculture",
+     "farmers",
+     "agricultural sector",
+     "agriculture paysanne",
+     "European Coordination Via Campesina",
+     "Via Campesina",
+     "ECVC"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Le texte touche frontalement la souveraineté alimentaire et mobilise un acteur paysan structurant (ECVC/Via Campesina), mais sous angle critique des menaces commerciales plutôt que constructif des alternatives foncières (communs, propriété d'usage). Format court d'alerte polémique sans développement des modèles alternatifs centraux à la thématique.",
+    "en_clair": "L'accord commercial UE-Australie va inonder l'Europe de sucre, viande et produits agricoles australiens à bas prix, ce qui tuera les revenus des paysans européens. L'UE décide ça en secret, sans écouter les agriculteurs, alors qu'elle devrait au contraire protéger sa capacité à se nourrir elle-même.",
+    "acteurs": [
+     "European Commission",
+     "Ursula von der Leyen",
+     "Maroš Šefčovič",
+     "European Coordination Via Campesina (ECVC)",
+     "Andoni Garcia Arriola",
+     "Morgan Ody",
+     "Australia"
+    ],
+    "controverse": "Tension entre logique de libre-échange commercial multisectorial et impératif de souveraineté alimentaire territoriale. L'ECVC critique la Commission pour avoir sacrifié les agriculteurs et l'autonomie alimentaire européenne sur l'autel d'un accord commercial dont les termes restent opaques.",
+    "angle_journalistique": "Enquêter sur qui est présent aux tables de négociation commerciale de l'UE, qui en est exclu, et comment les revendications des mouvements paysans issus de consultations officielles (Strategic Dialogue) sont systématiquement ignorées au profit d'intérêts commerciaux plus larges.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "5a111dca24"
    },
    "download_status": "ok",
    "title": "2026-03-23-Press-release-Australia-trade-deal-threatens-food-sovereignty",
@@ -44006,7 +44666,7 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 7,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -44039,6 +44699,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "EN Presentation_Framework (web version)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/72a2c796.jpg",
@@ -44049,7 +44719,95 @@
     "pdf_creator": "Canva"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Ce document présente un framework de principes alternatifs pour la gouvernance alimentaire mondiale, centré sur le droit à la souveraineté alimentaire pour tous les peuples et pays. S'appuyant sur la définition de Nyéléni, il énonce des principes directeurs : le respect des droits humains et des conventions internationales, la coopération internationale solidaire, et la mise en œuvre d'une alimentation saine, nutritive et accessible, particulièrement pour les familles à faible revenu et les populations en extrême pauvreté. Le framework défend explicitement les petits producteurs agricoles, les femmes, les jeunes et les groupes historiquement marginalisés, tout en promouvant les économies rurales solidaires, les chaînes d'approvisionnement courtes, et l'agroécologie. Sur le plan institutionnel, il réclame que les États et les Nations Unies soutiennent les politiques de souveraineté alimentaire, mettent fin à la spéculation sur les prix agricoles, prohibent l'utilisation de la nourriture comme arme, et défendent les terres, les eaux et les territoires contre l'accaparement par les corporations transnationales. Un document de synthèse programmatique plutôt qu'analytique, qui énonce les lignes d'un projet alternatif au système agroalimentaire mondial dominé par les intérêts corporatistes et l'hégémonie commerciale.",
+    "citations": [
+     {
+      "page": 11,
+      "quote": "IN DEFENSE OF LAND, WATER, TERRITORIES AND COMMONS",
+      "why_relevant": "Énonce explicitement la défense des communs fonciers comme principe structurant, au cœur de la thématique de veille",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 11,
+      "quote": "long-term lease of territories to transnational corporations or foreign investors",
+      "why_relevant": "Identifie l'accaparement des terres par les corporations transnationales comme menace majeure à contrer",
+      "verified": true,
+      "page_physical": 11
+     },
+     {
+      "page": 2,
+      "quote": "Strengthen small-scale production, build rural solidarity economies, local processing, storage, and shorter food supply chains",
+      "why_relevant": "Défend explicitement la paysannerie et les économies rurales solidaires contre la mondialisation du commerce",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 8,
+      "quote": "Prohibit Speculation in the prices of agricultural and food products and agricultural inputs",
+      "why_relevant": "Pose le principe anti-spéculatif appliqué au foncier et aux denrées, clé dans la critique de la marchandisation",
+      "verified": true,
+      "page_physical": 8
+     },
+     {
+      "page": 2,
+      "quote": "Strengthen small-scale production, build rural solidarity economies... incentivize agroecology and empower small-scale producers",
+      "why_relevant": "Lie agroécologie et empowerment des petits producteurs comme stratégie commune",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "Prioritize and protect: Small-scale food producers and Food system workers; including women and youth and historically marginalized groups",
+      "why_relevant": "Reconnaît l'importance des femmes et jeunes dans les systèmes alimentaires alternatifs (féminisme agraire)",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 4,
+      "quote": "The Right Of All Peoples And States To Determine Their Agricultural And Food Policies",
+      "why_relevant": "Affirme l'autodétermination territoriale et alimentaire des peuples — notion clé du Land Back et de l'autonomie",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 7,
+      "quote": "Food Sovereignty through United Nations Mechanisms.... and safeguards against corporate capture",
+      "why_relevant": "Pose le défi institutionnel : comment préserver la souveraineté alimentaire face à la capture régulatoire",
+      "verified": true,
+      "page_physical": 7
+     }
+    ],
+    "matched_keywords": [
+     "souveraineté alimentaire",
+     "communs fonciers",
+     "communs",
+     "terres collectives",
+     "accaparement des terres",
+     "paysannerie",
+     "agriculture vivrière",
+     "petits producteurs",
+     "agroécologie",
+     "économie rurale solidaire",
+     "paysans",
+     "agriculture familiale",
+     "droits fonciers",
+     "femmes et terre",
+     "peuples autochtones",
+     "autodétermination territoriale",
+     "libération des terres"
+    ],
+    "relevance_score": 7,
+    "relevance_notes": "Le document mobilise frontalement la souveraineté alimentaire et la défense des communs fonciers, deux core concepts, tout en promouvant la paysannerie et l'agroécologie. Cependant, c'est un framework programmatique plutôt qu'une analyse empirique ou théorique approfondie — il énonce des principes sans cas d'études ni débats internes vraiment développés.",
+    "en_clair": "Ce texte dit : les petits paysans et le peuple doivent pouvoir décider ce qu'ils mangent et cultiver, sans que les grandes entreprises ne s'accaparent les terres et ne contrôlent les prix. Il faut défendre les terres communes et stopper la spéculation. C'est utile pour rappeler les principes qu'on défend et pour négocier à l'international.",
+    "acteurs": [
+     "Nyéléni (définition/mouvement)",
+     "Nations Unies"
+    ],
+    "controverse": "Tension implicite entre la souveraineté des États-nations et la gouvernance internationale de la souveraineté alimentaire : comment imposer des politiques qui protègent les paysans et les communs quand les mécanismes de l'ONU sont eux-mêmes capturés par les logiques marchandes et corporatistes ?",
+    "angle_journalistique": "Enquête : quels pays du Sud (Afrique, Asie, Amérique latine) ont effectivement intégré cette définition de souveraineté alimentaire dans leur constitution ou lois agricoles, et quelles résistances ont-ils rencontrées de la part des institutions internationales et des corporations ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "05b59ed4cd"
    },
    "download_status": "ok",
    "archive_url": "https://web.archive.org/web/20260630171315/https://viacampesina.org/en/wp-content/uploads/sites/2/2026/03/EN-Presentation_Framework-web-version.pdf",
@@ -44068,7 +44826,7 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 7,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -44101,6 +44859,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "EN Presentation_Framework (compressed)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/3cc0465a.jpg",
@@ -44111,7 +44879,125 @@
     "pdf_creator": "Canva"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Ce document présente un cadre politique alternatif au système commercial mondial actuel, centré sur la souveraineté alimentaire des petits producteurs. Issu des mouvements sociaux du Sud Global et de leurs alliés, il propose une réorientation radicale des politiques agricoles et commerciales internationales, notamment via les mécanismes de l'ONU. Le texte critique l'utilisation de l'alimentation comme arme de contrôle géopolitique, la spéculation sur les prix alimentaires, et l'accaparement des terres par les corporations transnationales. Il valorise la petite production agricole, l'agroécologie, la construction d'économies de solidarité rurale, et défend explicitement le droit des peuples (dont les peuples autochtones) à déterminer leurs propres politiques agricoles et alimentaires. Les principes fondamentaux incluent : la souveraineté alimentaire selon la définition de Nyéléni, la coopération internationale fondée sur l'égalité souveraine, la protection des droits humains et environnementaux, et la défense des « terres, eaux, territoires et communs ». Le document souligne l'importance de protéger les petits producteurs alimentaires, les femmes, les jeunes et les groupes historiquement marginalisés. Il propose un processus consultatif pour construire collectivement une alternative, en apprenant de l'expérience de la Déclaration des droits des paysans (UNDROP) et en s'appuyant sur les gouvernements progressistes, la ministérielle de l'OMC au Cameroun (mars 2026) étant une opportunité identifiée pour lancer une première ébauche.",
+    "citations": [
+     {
+      "page": 6,
+      "quote": "Will defend Food Sovereignty: based on Nyeleni definition",
+      "why_relevant": "Explicit invocation of a core concept: food sovereignty as defined by the Nyéléni forum, which centers peasant and small-scale producer perspectives.",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 6,
+      "quote": "Strengthen small-scale production, build rural solidarity economies, local processing, storage, and shorter food supply chains... incentivize agroecology and empower small-scale producers.",
+      "why_relevant": "Combines agroecology and peasant empowerment with rural solidarity economies—key elements of the land and food commons framework.",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 6,
+      "quote": "Prioritize and protect: Small-scale food producers and Food system workers; including women and youth and historically marginalized groups",
+      "why_relevant": "Explicitly addresses women's rights in peasant agriculture and inclusion of marginalized groups, touching on agrarian feminism.",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 7,
+      "quote": "In Defense of Land, Water, Territories and Commons",
+      "why_relevant": "Direct reference to land commons as a core principle, framing defense against corporate enclosure.",
+      "verified": true,
+      "page_physical": 7
+     },
+     {
+      "page": 8,
+      "quote": "The Right Of All Peoples And States To Determine Their Agricultural And Food Policies",
+      "why_relevant": "Asserts territorial autonomy and food sovereignty, aligned with peasant and indigenous land rights frameworks.",
+      "verified": true,
+      "page_physical": 8
+     },
+     {
+      "page": 15,
+      "quote": "long-term lease of territories to transnational corporations or foreign investors",
+      "why_relevant": "Implicit critique of land grabbing and corporate land control, opposing enclosure mechanisms.",
+      "verified": true,
+      "page_physical": 15
+     },
+     {
+      "page": 6,
+      "quote": "Indigenous Peoples and food workers lives, livelihoods and incomes",
+      "why_relevant": "Recognition of indigenous peoples as key actors in food systems and land defense.",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 16,
+      "quote": "Learn from UNDROP Experience",
+      "why_relevant": "Reference to the UN Declaration on the Rights of Peasants, a foundational legal document on peasant and land rights.",
+      "verified": true,
+      "page_physical": 17
+     },
+     {
+      "page": 12,
+      "quote": "Prohibit Speculation in the prices of agricultural and food products and agricultural inputs",
+      "why_relevant": "Opposition to financialization and speculation, echoing critiques of land as commodity.",
+      "verified": true,
+      "page_physical": 12
+     },
+     {
+      "page": 14,
+      "quote": "Prohibition of Food as a Weapon in Armed Conflict",
+      "why_relevant": "Defense of food access and autonomy against weaponization, related to food sovereignty and liberation frameworks.",
+      "verified": true,
+      "page_physical": 15
+     }
+    ],
+    "matched_keywords": [
+     "souveraineté alimentaire",
+     "food sovereignty",
+     "petits producteurs",
+     "small-scale food producers",
+     "agroécologie",
+     "agroecology",
+     "paysannerie",
+     "peasantry",
+     "terres",
+     "land",
+     "territoires",
+     "territories",
+     "communs",
+     "commons",
+     "peuples autochtones",
+     "indigenous peoples",
+     "droits des femmes",
+     "women rights",
+     "économies de solidarité",
+     "solidarity economies",
+     "agroécologie paysanne",
+     "accaparement des terres",
+     "land grabbing",
+     "coopération internationale",
+     "international cooperation",
+     "droits des paysans",
+     "peasant rights",
+     "UNDROP"
+    ],
+    "relevance_score": 7,
+    "relevance_notes": "Pertinence moyenne-haute : le document est centré sur la souveraineté alimentaire et la défense des petits producteurs contre l'accaparement foncier. Il touche explicitement à plusieurs core concepts (souveraineté alimentaire, agroécologie, communs, terres, droits des femmes paysannes, peuples autochtones). Cependant, il reste au niveau de la politique commerciale et alimentaire internationale plutôt que d'approfondir les enjeux fonciers concrets (régimes de propriété alternatifs, fiducies foncières, communs spécifiquement gérés, luttes pour la terre).",
+    "en_clair": "Ce texte propose une nouvelle règle du jeu pour le commerce alimentaire mondial : au lieu de laisser les grandes corporations et les riches gouvernements décider ce qu'on mange et d'où ça vient, les paysans et les petits producteurs du monde entier pourraient fixer ensemble les règles pour que chacun puisse cultiver et se nourrir dignement. Il défend la terre et l'eau comme des ressources communes, pas des marchandises à vendre aux plus offrants.",
+    "acteurs": [
+     "G77",
+     "United Nations (UN)",
+     "World Trade Organization (WTO)",
+     "Progressive governments",
+     "NGOs",
+     "Cameroon",
+     "Social movements"
+    ],
+    "controverse": "Tension entre un système commercial mondial fondé sur la libre circulation des marchandises (WTO néolibéral) et un modèle d'autonomie alimentaire où chaque pays/peuple peut protéger sa production locale et refuser les importations destructrices. Également : opposition entre le droit des corporations à louer les terres à long terme vs. le droit des peuples à contrôler leurs terres et territoires.",
+    "angle_journalistique": "Enquête sur les négociations à la ministérielle OMC du Cameroun (mars 2026) : comment les mouvements paysans mondiaux et les gouvernements du Sud tentent-ils de faire basculer les règles du commerce alimentaire vers la souveraineté alimentaire et la protection contre l'accaparement foncier ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "bfa7281af1"
    },
    "download_status": "ok",
    "archive_url": "https://web.archive.org/web/20260630171329/https://viacampesina.org/en/wp-content/uploads/sites/2/2026/03/EN-Presentation_Framework-compressed.pdf",
@@ -44130,7 +45016,7 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 8,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -44163,6 +45049,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "16.03.26_EN_International Trade framework La Via Campesina",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/63caf67a.jpg",
@@ -44173,7 +45069,129 @@
     "pdf_creator": "Writer"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Ce document est un brouillon de cadre global pour restructurer les relations commerciales internationales autour de la souveraineté alimentaire, inspiré par la définition établie au Forum mondial Nyéléni (2007). Il propose de refonder les échanges commerciaux en plaçant les droits humains, la justice sociale et environnementale, et la gouvernance démocratique des systèmes alimentaires au cœur de la régulation. Le texte énonce sept principes fondamentaux : la primauté de la souveraineté alimentaire (droit inaliénable des peuples à déterminer leurs politiques agricoles) ; les droits humains comme fondement non-négociable du commerce ; une coopération internationale solidaire remplaçant l'exploitation par l'échange équitable ; la protection de la planète et la reconnaissance des peuples autochtones comme gardiens des écosystèmes ; l'inclusivité et la transparence avec protection explicite des petits producteurs (paysans, travailleurs agricoles, pêcheurs, pasteurs), des femmes et minorités de genre. Les articles développent concrètement ces principes : droit souverain aux mécanismes de régulation du marché (gestion d'approvisionnements, prix de soutien, restrictions à l'importation, stocks publics stratégiques, subventions aux producteurs) ; participation significative des petits producteurs et peuples autochtones aux décisions politiques ; subordination des règles commerciales aux droits humains et accords environnementaux existants ; interdiction de l'exclusion coercive du commerce agricole (sanctions) ; priorité au commerce régional et aux contrats États-à-États de long terme. Le document critique implicitement l'ordre commercial actuel dominé par l'OMC et les intérêts agro-industriels, refusant de traiter l'alimentation comme marchandise. Tension centrale : comment réconcilier le droit souverain des États à réguler leurs marchés agricoles avec les obligations commerciales imposées par les traités existants ? Le texte soulève aussi la question des mécanismes de mise en œuvre concrète et de recours juridiques quand ces principes sont violés.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "Primacy of Food Sovereignty: Trade relations shall respect the inalienable right of peoples and nations to determine their agricultural and food policies, recognizing food as a fundamental human right rather than a commodity.",
+      "why_relevant": "Pose frontalement que la souveraineté alimentaire et l'accès à la terre est un droit humain inaliénable, non un bien marchand — cœur du corpus",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "The meaningful participation of small-scale food producers, including peasants, fishers, pastoralists, and Indigenous Peoples, in the design, implementation, and evaluation of agricultural, food, and trade policies shall be guaranteed and actively promoted.",
+      "why_relevant": "Nomme explicitement les paysans comme acteurs politiques centraux devant gouverner les systèmes alimentaires — core de la paysannerie",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "Regional food systems and agroecological practices over corporate-controlled global supply chains.",
+      "why_relevant": "Affirme la priorité à l'agroécologie et aux systèmes régionaux contre l'agro-industrie — axe central du corpus",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "1.7 Prohibition of Dumping: The practice of dumping—defined as the export of agricultural or food products at prices below their cost of production or domestic market value—is prohibited, as it undermines local food systems and the livelihoods of small-scale producers.",
+      "why_relevant": "Protection explicite contre l'accaparement des marchés et l'appauvrissement des petits producteurs — libération des terres par voie économique",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 3,
+      "quote": "1.2 Localization and Democratization of Food Systems: Agricultural, food, and trade policies shall prioritize the re-localization and democratization of food systems, ensuring transparency, accountability, and the active involvement of all stakeholders in policy formulation and implementation.",
+      "why_relevant": "Démocratisation et localisation des systèmes alimentaires — directement lié aux communs et à la souveraineté territoriale",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "States shall have the right to provide targeted support to small-scale food producers, including through public investment aid and credit facilities at affordable rates and public subsidies and procurement programs",
+      "why_relevant": "Soutien institutionnel explicite aux petits producteurs et paysannerie contre l'agro-industrie dominante",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "Trade policies shall prioritize and protect: Small-scale food producers (peasants, farm-workers, fishers, pastoralists) and Food system workers; Historically marginalized groups, with particular attention to women and gender minorities",
+      "why_relevant": "Articule paysannerie, travail agricole, et féminisme agraire comme enjeux inséparables du commerce équitable",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 3,
+      "quote": "1.6 Public Stockholding for Food Security: States retain the right to establish and maintain public stocks of agricultural and food products to mitigate food crises, stabilize markets, and ensure national and regional food security/sovereignty.",
+      "why_relevant": "Stocks publics comme instrument de souveraineté alimentaire et de régulation collective contre l'instabilité marchande",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 2,
+      "quote": "Uphold the rights of Indigenous Peoples as custodians of ecosystems",
+      "why_relevant": "Reconnaît les peuples autochtones comme gestionnaires légitimes des terres et écosystèmes — Land Back implicite",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 5,
+      "quote": "The rules governing international trade shall be subordinated to, and fully aligned with, existing international and national human rights obligations, environmental agreements, and social protections.",
+      "why_relevant": "Inversion du rapport hiérarchique : les droits humains dominent le commerce, pas l'inverse — paradigme anti-extractiviste",
+      "verified": false,
+      "page_physical": null
+     }
+    ],
+    "matched_keywords": [
+     "souveraineté alimentaire",
+     "paysans",
+     "petits producteurs",
+     "travailleurs agricoles",
+     "pêcheurs",
+     "pasteurs",
+     "peuples autochtones",
+     "agriculture vivrière",
+     "agroécologie",
+     "pratiques agroécologiques",
+     "systèmes alimentaires régionaux",
+     "féminisme paysan",
+     "droits des femmes",
+     "droits humains",
+     "droit à l'alimentation",
+     "sécurité alimentaire",
+     "réforme agraire",
+     "accès à la terre",
+     "anti-dumping",
+     "prohibit dumping",
+     "stocks publics",
+     "subventions aux producteurs",
+     "mécanismes de régulation du marché",
+     "commerce régional",
+     "gouvernance démocratique",
+     "participation inclusive",
+     "autonomie territoriale",
+     "droits coutumiers",
+     "protection environnementale",
+     "biodiversité"
+    ],
+    "relevance_score": 8,
+    "relevance_notes": "Document hautement pertinent : frontal sur la souveraineté alimentaire, la paysannerie et l'agroécologie ; nomme explicitement les petits producteurs comme acteurs politiques centraux ; affirme les droits des peuples autochtones ; critique l'agro-industrie ; articule féminisme paysan. Cependant, focus sur régulation du commerce plutôt que sur réforme agraire, propriété foncière, communs fonciers ou mouvements de libération des terres comme tels (MST, ZAD, Land Back) — c'est un cadre juridico-politique, pas une théorie des communs ou une critique de l'enclosure.",
+    "en_clair": "Ce texte dit que les petits paysans et les États doivent pouvoir décider comment nourrir leur peuple sans être écrasés par les gros producteurs mondiaux. Les règles du commerce international doivent protéger les paysans, les femmes et la nature, pas laisser les corporations gagner sur la faim.",
+    "acteurs": [
+     "La Via Campesina",
+     "FAO (Food and Agriculture Organization)",
+     "IFAD (International Fund for Agricultural Development)",
+     "CFS (Committee on World Food Security)",
+     "Nations unies",
+     "États (collectivement)",
+     "Peuples autochtones (collectivement)",
+     "Paysans (collectivement)",
+     "Travailleurs agricoles (collectivement)"
+    ],
+    "controverse": "Comment les États peuvent-ils exercer leur droit « souverain » de régulation agricole quand l'OMC et les traités commerciaux existants les interdisent explicitement ? Qui arbitrera le conflit entre la souveraineté alimentaire et les obligations commerciales internationales actuelles ? Le texte laisse aussi ouverte la question des mécanismes de recours et des tribunaux compétents si ces principes sont violés.",
+    "angle_journalistique": "Investiguer comment les États et mouvements paysans (Via Campesina, MST, etc.) tentent de contourner ou de refonder les règles de l'OMC pour protéger leur agriculture locale — et comment les agro-industries et gouvernements pro-libre-échange réagissent à ce cadre alternatif.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "639da83f9b"
    },
    "download_status": "ok",
    "archive_url": "https://web.archive.org/web/20260727130804/https://viacampesina.org/en/wp-content/uploads/sites/2/2026/03/16.03.26_EN_International-Trade-framework-La-Via-Campesina.pdf",
@@ -44192,7 +45210,7 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 9,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -44225,6 +45243,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "LVC EN declaration Yaounde Cameroon 2026",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/b2d4d2ce.jpg",
@@ -44235,12 +45263,136 @@
     "pdf_creator": "Writer"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "La Via Campesina, rassemblant des paysans, pêcheurs artisanaux, pasteurs et peuples autochtones venus d'Afrique, d'Amérique latine, des Caraïbes, d'Europe, d'Asie et d'Amérique du Nord, s'est réuni à Yaoundé le 24-29 mars 2026 lors de la 14e Conférence ministérielle (MC14) du WTO. Leur déclaration constate que, depuis trente ans, le WTO et les accords de libre-échange détruisent systématiquement les petits producteurs alimentaires du Sud global, appauvrissent les populations rurales et concentrent le pouvoir dans les mains des transnationales agricoles. Le document détaille comment le libre-échange force les pays à abandonner leur souveraineté alimentaire, entraînant la ruine des petits paysans, leur expulsion des terres, les migrations forcées vers les villes, et l'accaparement des terres par les corporations. La Via Campesina rejette catégoriquement toute négociation avec le WTO, qu'elle considère comme une institution irréformable au service des puissances du Nord. Elle appelle à l'abolition pure et simple du WTO. En alternative, le mouvement propose un nouveau cadre commercial fondé sur quatre principes : (1) la primauté de la souveraineté alimentaire — la nourriture comme droit, non comme marchandise ; (2) la subordination du droit commercial aux droits humains (UNDRIP pour les peuples autochtones, UNDROP pour les paysans) ; (3) l'autodétermination des peuples et la solidarité internationale ; (4) la réaffectation des négociations commerciales du WTO vers des forums légitimes (CFS, FAO, UNCTAD). Cette déclaration incarne une critique radicale de l'ordre commercial néolibéral et pose l'enjeu foncier au cœur du débat commercial global — chaque État doit pouvoir protéger ses petits producteurs et son environnement contre la concurrence mondialisée.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "the WTO and free trade agreements hinder the development of countries in the Global South and lead to the ruin of small-scale producers worldwide",
+      "why_relevant": "Énoncé central de la critique du WTO, liant directement libre-échange et destruction de la paysannerie",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "Small-scale food producers have suffered under the capitalist and neoliberal ideology, which forces countries to abandon their food sovereignty",
+      "why_relevant": "Articule l'opposition entre la logique néolibérale et la souveraineté alimentaire des peuples",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "Every country has the right and the duty to defend its food sovereignty, so as to ensure that its population has enough to eat. To this end, small-scale producers, peasants, fishers, pastoralists and Indigenous Peoples must be protected and supported",
+      "why_relevant": "Formule l'argument politico-juridique clé : droit à l'autodétermination alimentaire et protection des catégories productives",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "Cheap imported foods are destroying local food systems. It is driving small-scale producers to ruin and forcing them to abandon their farms, migrate and become informal migrant workers",
+      "why_relevant": "Décrit le mécanisme de paupérisation et d'expulsion des terres qui produit les migrations forcées",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Free trade agreements and their investment chapters lead to the grabbing of land, water and territories by multinational corporations, which drive out rural populations and ravage our environment",
+      "why_relevant": "Établit explicitement le lien entre libre-échange et accaparement des terres",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Our job as peasants or artisanal fishers is not to compete with small-scale producers on other continents; our job is to produce healthy food for our fellow citizens in our territories",
+      "why_relevant": "Énonce une philosophie d'autonomie territoriale et de production locale contre la logique compétitive mondialisée",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "Our proposal is based on the primacy of food sovereignty: food is a right, not a commodity",
+      "why_relevant": "Pose la décommodification de la nourriture comme fondement d'une alternative systémique",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "We believe that trade law must be subordinate to human rights, and in particular to the rights of Indigenous Peoples (UNDRIP) and the Rights of Peasants and Other People Working in Rural Areas (UNDROP)",
+      "why_relevant": "Ancre la lutte dans l'architecture des droits humains et des droits des paysans récemment reconnus par l'ONU",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 1,
+      "quote": "making a population's food supply dependent on international trade flows is suicidal",
+      "why_relevant": "Dénonce la vulnérabilité stratégique créée par la dépendance au commerce mondialisé (illustration par la crise actuelle Iran)",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 3,
+      "quote": "trade must be reimagined as an instrument serving the common good, peoples self-determination and leading to shared prosperity among nations",
+      "why_relevant": "Articule une vision du commerce subordonné à l'intérêt collectif et à l'autonomie, plutôt qu'aux profits des transnationales",
+      "verified": true,
+      "page_physical": 3
+     }
+    ],
+    "matched_keywords": [
+     "souveraineté alimentaire",
+     "paysannerie",
+     "paysans",
+     "petits producteurs",
+     "agriculture vivrière",
+     "pêche artisanale",
+     "accaparement des terres",
+     "land grabbing",
+     "libération des terres",
+     "sans-terre",
+     "autonomie territoriale",
+     "autodétermination des peuples",
+     "peuples autochtones",
+     "peuples autochtones",
+     "propriété collective",
+     "accès à la terre",
+     "migration forcée",
+     "agriculture familiale",
+     "family farming",
+     "smallholder",
+     "petite agriculture paysanne",
+     "protection de l'environnement",
+     "agroécologie",
+     "food sovereignty",
+     "peasant movement",
+     "indigenous land rights",
+     "land rights",
+     "agrarian solidarity",
+     "commons"
+    ],
+    "relevance_score": 9,
+    "relevance_notes": "9/10 — Document frontal du corpus. La Via Campesina est un acteur canonique des luttes foncières et paysannes ; la déclaration articule explicitement souveraineté alimentaire, propriété de la terre, droits des paysans et peuples autochtones, critique du néolibéralisme et de l'accaparement. Trois core concepts du corpus sont centraux : paysannerie & agroécologie, libération des terres, mouvements autochtones. L'absence de mention explicite de propriété d'usage, communs fonciers ou féminisme agraire ne l'abaisse pas, car le document se concentre légitimement sur l'enjeu commercial international, pas une synthèse du corpus entier.",
+    "en_clair": "Ce texte dit : le commerce mondial force les petits paysans du Sud à disparaître en les écrasant avec la concurrence, et enrichit les multinationales agricoles qui accaparent les terres. La Via Campesina propose l'inverse : chaque pays doit nourrir sa population lui-même, en soutenant ses propres paysans et pêcheurs. Ça peut servir de manifeste ou de base légale pour demander l'annulation des accords de libre-échange qui détruisent l'agriculture locale.",
+    "acteurs": [
+     "La Via Campesina",
+     "PROPAC (Central African regional platform of peasants' organisation)",
+     "WTO",
+     "FAO",
+     "UNCTAD",
+     "United Nations",
+     "World Committee on Food Security (CFS)",
+     "European Union",
+     "Brazil",
+     "China",
+     "United States"
+    ],
+    "controverse": "Opposition frontale entre le modèle du WTO (libre-échange, déréglementation, accès des transnationales aux marchés) et le modèle défendu par La Via Campesina (souveraineté alimentaire, protection des petits producteurs, droit de chaque État à soutenir ses paysans). Débat interne au mouvement antimondialiste : doit-on réformer le WTO ou l'abolir ? La Via Campesina tranche pour l'abolition.",
+    "angle_journalistique": "Enquête : comment les clauses d'investissement des traités de libre-échange légalisent l'accaparement des terres et créent une classe de petits paysans sans terre en Afrique et Amérique latine ? Quels sont les cas d'école ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "02af480284"
    },
    "download_status": "ok",
    "title": "LVC EN declaration Yaounde Cameroon 2026",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "bulle": "bulles/b2d4d2ce.json",
    "has_cover": true
   },
   "d9dd0148": {
@@ -44253,11 +45405,11 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 8,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
-   "doc_date": "2026-03-13",
+   "doc_date": "2026-03-12",
    "lang": "en",
    "editeur": "",
    "doi": "",
@@ -44286,6 +45438,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "NFFC-NFU joint statement on ICARRD+20",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/d9dd0148.jpg",
@@ -44296,7 +45458,120 @@
     "pdf_creator": "Microsoft® Word LTSC"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Ce communiqué conjoint de la National Farmers Union (Canada) et de la National Family Farm Coalition (États-Unis), publié en février 2026 suite à la conférence internationale ICARRD+20, constitue un appel politique direct aux gouvernements nord-américains pour une réforme agraire transformatrice. Les deux organisations, représentant plus de 100 000 petit·es exploitant·es, paysan·nes, pêcheur·ses et peuples autochtones, placent au cœur de leur diagnostic l'urgence de l'accès équitable à la terre face à la concentration croissante, la financiarisation et la marchandisation des terres agricoles. Le texte définit la réforme agraire comme un droit à l'accès équitable, à l'usage démocratique et au contrôle collectif des ressources foncières, inséparable de la souveraineté alimentaire et de l'agroécologie. Les auteur·es insistent sur quatre principes directeurs : Restitution, Reconnaissance, Redistribution et Régulation. Ils·elles articulent trois demandes politiques majeures : (1) le respect des droits autochtones et de la Déclaration des Nations unies sur les droits des peuples autochtones (UNDRIP) ; (2) l'arrêt de la consolidation des terres et de la spéculation foncière, en gardant les terres agricoles « entre les mains de celles et ceux qui les cultivent » ; (3) l'abandon des accords commerciaux de libre-échange (ALÉNA/ASMCA) qui ont appauvri les petit·es paysan·nes depuis trois décennies. Le document s'inscrit dans un courant international de convergence des mouvements paysans et autochtones autour d'une vision politique qui refuse de traiter la terre comme une marchandise et recentre l'agriculture sur les besoins locaux, écologiques et justiciers.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "agrarian reform is the 'equitable and sustainable access to, use of, and democratic control over land, fisheries, forests, water and territories with redistributive tenure policies and people-led rural development rooted in justice, equity, people's self-determination and the defense of life and Mother Earth'",
+      "why_relevant": "Définition formelle de la réforme agraire selon l'IPC, touchant frontalement à la propriété d'usage, au contrôle démocratique et à la redistribution — core concepts de la veille",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "Without agrarian reform, there can be 'no food sovereignty, no just transitions to food systems based on agroecology… and no peace'",
+      "why_relevant": "Lie explicitement réforme agraire, souveraineté alimentaire et agroécologie — trois piliers de la thématique",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "global movements to converge and articulate their demands for popular, integral agrarian reform based on four principles: Restitution, Recognition, Redistribution, and Regulation",
+      "why_relevant": "Les quatre principes fondamentaux de la réforme agraire nord-américaine ; Restitution évoque le Land Back, Redistribution la libération des terres",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "agrarian reform in the North American context cannot be carried out without respecting and upholding Indigenous rights as outlined in the UN Declaration on the Rights of Indigenous Peoples (UNDRIP)",
+      "why_relevant": "Relie frontalement réforme agraire et droits autochtones, validant le core concept 'Mouvements autochtones & Land Back'",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 1,
+      "quote": "This is especially important in the context of increasing land concentration and financialization and historical and ongoing dispossession of Indigenous Peoples and Black farmers",
+      "why_relevant": "Diagnostic critique de l'accaparement foncier et de la financiarisation — anti-concepts de la veille explicitement nommés comme problèmes",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "farmland must not be treated as a commodity targeted for financial speculation, and large-scale corporations should not be able to buy and consolidate more farmland. We must keep farmland in the hands of those who steward it and feed our communities",
+      "why_relevant": "Critique explicite de la marchandisation et défense de la propriété d'usage ('stewardship') — core concept anti-spéculatif",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Free trade agreements across North America have disenfranchised small-scale farmers and peasants in our region for more than three decades",
+      "why_relevant": "Contextualise les luttes paysannes contemporaines dans une critique des régimes commerciaux qui appauvrissent la paysannerie",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "support a paradigm shift in the role of public institutions toward building socio-ecological resilience in rural communities",
+      "why_relevant": "Articule agroécologie et résilience territoriale ; demande une transformation de l'intervention publique en faveur des paysans",
+      "verified": true,
+      "page_physical": 2
+     }
+    ],
+    "matched_keywords": [
+     "agrarian reform",
+     "réforme agraire",
+     "land rights",
+     "droits fonciers",
+     "food sovereignty",
+     "souveraineté alimentaire",
+     "agroecology",
+     "agroécologie",
+     "land grabbing",
+     "accaparement des terres",
+     "Indigenous Peoples",
+     "peuples autochtones",
+     "Indigenous rights",
+     "droits autochtones",
+     "land consolidation",
+     "land concentration",
+     "financialization",
+     "financiarisation",
+     "smallholders",
+     "petit·es exploitant·es",
+     "peasants",
+     "paysan·nes",
+     "family farmers",
+     "paysannerie familiale",
+     "farmworkers",
+     "ouvrier·es agricoles",
+     "Land Back",
+     "property rights",
+     "droits de propriété",
+     "democratic control",
+     "contrôle démocratique",
+     "equitable access to land",
+     "accès équitable à la terre",
+     "redistribution",
+     "corporate control",
+     "contrôle corporatif",
+     "commodity",
+     "marchandise"
+    ],
+    "relevance_score": 8,
+    "relevance_notes": "Document hautement pertinent : articule quatre core concepts majeurs (réforme agraire, souveraineté alimentaire, mouvements autochtones & Land Back, critique de la spéculation foncière) avec un cadrage politique explicite anti-corporate et pro-paysannerie. Écrit par des acteurs situés nord-américains. Seul léger point faible : ne mentionne pas explicitement les 'communs fonciers' ni les structures de type fiducies foncières, mais en défend la logique sous-jacente.",
+    "en_clair": "Les petit·es paysan·nes et peuples autochtones d'Amérique du Nord disent aux gouvernements : arrêtez de laisser les grandes entreprises acheter toutes nos terres et les revendre au plus offrant. Donnez-nous accès à la terre pour la cultiver, la soigner, et nourrir notre région sans que ce soit une simple affaire d'argent. Changez les règles du commerce qui nous écrases depuis 30 ans.",
+    "acteurs": [
+     "National Farmers Union (NFU) — Canada",
+     "National Family Farm Coalition (NFFC) — États-Unis",
+     "International Planning Committee for Food Sovereignty (IPC)",
+     "Yellowhead Institute",
+     "UN (United Nations)",
+     "ICARRD (International Conference on Agrarian Reform and Rural Development)"
+    ],
+    "controverse": "La tension centrale : comment concilier l'accès à la terre pour les paysan·nes et peuples autochtones (redistribution, restitution) avec la protection contre la financiarisation et la concentration corporative, sachant que les accords de libre-échange des 30 dernières années ont structurellement appauvri les petit·es producteur·trices nord-américain·es tout en enrichissant les agro-industries. Le texte suggère que cette conciliation passe par un régime foncier radicalement différent : propriété d'usage collective, contrôle démocratique, exclusion des spéculateurs.",
+    "angle_journalistique": "Enquête sur la réémergence de la réforme agraire comme enjeu politique nord-américain : comment les crises climatique, alimentaire et d'endettement des paysan·nes créent une alliance inédite entre mouvements paysans et autochtones qui demandent une refonte des régimes de propriété foncière, contre deux générations de dérégulation corporatiste.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "85967da094"
    },
    "download_status": "ok",
    "title": "NFFC-NFU joint statement on ICARRD+20",
@@ -44314,7 +45589,7 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 5,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -44347,6 +45622,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "8M 2026 Manifesto Feminist Coalition of Paraguay",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/401baabb.jpg",
@@ -44357,7 +45642,77 @@
     "pdf_creator": "Microsoft Office Word"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Ce manifeste de la Coalition féministe du Paraguay, publié pour le 8 mars 2026, articule un féminisme intersectionnel qui croise luttes des femmes, paysannerie et droits territoriaux. Le document dénonce un gouvernement capitaliste, conservateur et patriarcal qui « commodifie » tous les droits, y compris l'accès à la terre. Ses critiques portent sur la réforme du Fonds fiscal (affectant gravement les enseignantes), la violence genrée (37 féminicides en 2025), la précarité du travail informel — particulièrement pour les 40 % de ménages dirigés par des femmes seules —, et l'exploitation du travail de soin. Centralement pour la thématique foncière : le texte dénonce les « expulsions cruelles » de familles paysannes et autochtones et l'absence de politiques publiques soutenant l'agriculture paysanne, malgré son rôle crucial dans la souveraineté alimentaire « en milieu rural et urbain ». Il critique aussi la criminalisation des luttes paysannes et autochtones, et la répression disproportionnée des femmes qui manifestent. Le manifeste réclame reconnaissance des droits du travail (ratification de la Convention 190 de l'OIT), fin de la violence genrée, protection des enfants contre les mariages précoces forcés, et reconnaissance du travail du sexe comme travail. Bien que le ton soit féministe et syndicaliste plutôt que foncier stricto sensu, le document expose clairement le nexus entre dépossession territoriale paysanne, pauvreté des femmes rurales, et absence de souveraineté alimentaire — un angle où le féminisme paysan devient arme de lutte.",
+    "citations": [
+     {
+      "page": 3,
+      "quote": "cruel evictions of peasant, indigenous, and working-class families and women, leaving many without the possibility of continuing to care for our children.",
+      "why_relevant": "Articule directement expulsions foncières et impact sexué (responsabilités de soin) — point clé du croisement féminisme/dépossession",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "we continue to produce healthy food to guarantee food sovereignty in the countryside and the city.",
+      "why_relevant": "Positionne l'agriculture paysanne comme productrice de souveraineté alimentaire malgré l'absence de soutien d'État",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "public policies are never promoted to guarantee fair prices, accessible markets, and passable roads all year round for our production.",
+      "why_relevant": "Critique l'absence de politiques publiques pro-paysannerie, situation qui force la dépossession",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "We denounce the criminalization of the struggle in the countryside, in indigenous communities, and in the city",
+      "why_relevant": "Criminalisation des luttes foncières et autochtones — contexte de répression des mouvements paysan/terrien",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 1,
+      "quote": "We are women from the countryside and the city, peasants, indigenous women, trade unionists, teachers, students",
+      "why_relevant": "Identification explicite des actrices : paysannes et autochtones comme sujets du féminisme",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 3,
+      "quote": "Informal employment hits female heads of household particularly hard, as they represent approximately 40% of Paraguayan households.",
+      "why_relevant": "Contextualise la précarité foncière/agricole via la perspective des ménages dirigés par femmes",
+      "verified": true,
+      "page_physical": 3
+     }
+    ],
+    "matched_keywords": [
+     "peasants / paysannes",
+     "indigenous women / femmes autochtones",
+     "food sovereignty / souveraineté alimentaire",
+     "peasant agriculture / agriculture paysanne",
+     "evictions / expulsions",
+     "agrarian struggle / lutte agraire",
+     "criminalization / criminalisation",
+     "women's rights / droits des femmes",
+     "feminist / féminisme"
+    ],
+    "relevance_score": 5,
+    "relevance_notes": "5/10 — Le document croise féminisme + paysannerie + enjeux territoriaux (expulsions, souveraineté alimentaire) de manière pertinente pour la veille, mais reste centré sur les droits du travail et les violences genrées. Les formes alternatives de propriété (communs, propriété d'usage, réforme agraire institutionnelle) n'y sont pas engagées ; les expulsions sont dénoncées mais sans proposer des alternatives foncières organisées.",
+    "en_clair": "Ce texte crie que le gouvernement du Paraguay expulse les familles paysannes et autochtones de leurs terres, sans leur proposer d'aide pour cultiver, ce qui affame le pays. Les femmes paysannes trinquent deux fois : elles perdent leur terre ET doivent nourrir leurs enfants.",
+    "acteurs": [
+     "Coalition féministe du Paraguay",
+     "Gouvernement du Paraguay",
+     "Parti colorado",
+     "Union nationale des enseignants",
+     "Organismes de travail du sexe (mentionnés collectivement)",
+     "Vivian Genes (étudiante et militante sociale, persécutée)"
+    ],
+    "controverse": "Tension centrale entre l'État qui refuse de soutenir l'agriculture paysanne tout en expulsant les paysannes de leurs terres, et les femmes paysannes qui doivent assurer la souveraineté alimentaire de façon invisible et précaire. Aucun débat interne au texte ; la controverse est entièrement dirigée contre le gouvernement et l'ordre patriarcal-capitaliste.",
+    "angle_journalistique": "Enquête sur l'impact genré des expulsions paysannes au Paraguay : comment les femmes rurales se retrouvent sans terre, sans emploi, et responsables de nourrir des familles entières dans un contexte d'inflation.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "a5df7b9bb8"
    },
    "download_status": "ok",
    "title": "Manifiesto 8M 2026 Articulación Feminista del Paraguay",
@@ -44375,11 +45730,11 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 9,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
-   "doc_date": "2026-03-11",
+   "doc_date": "2025-07-08",
    "lang": "en",
    "editeur": "Adobe PDF Library 17.0",
    "doi": "",
@@ -44408,6 +45763,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Mag2_interview-with-Susan-Owiti",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/75fe7394.jpg",
@@ -44418,12 +45783,137 @@
     "pdf_creator": "Adobe InDesign 20.4 (Windows)"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Cet interview capture le témoignage de Susan Owiti, militante féministe et paysanne kenyane, co-fondatrice de la Kenyan Peasants League (KPL) et membre de La Vía Campesina, suite à une victoire juridique majeure du 7 mars 2025 contre le gouvernement kenyan sur l'importation d'OGM. L'article dépasse la critique environnementale habituelle des OGM pour mettre au centre les impacts sanitaires directs et profonds — mentaux et physiques — particulièrement pour les femmes paysannes. Owiti explicite le mécanisme de contrôle corporatif : les multinationales biotechnologiques (Bayer AG notamment) ciblent délibérément les paysannes en promettant l'« autonomisation » des femmes, mais les enferment en réalité dans des cycles d'endettement inévitables. Puisque les semences hybrides et OGM sont brevetées et ne peuvent légalement être reproduites, les paysannes doivent emprunter chaque saison — créant une vulnérabilité permanente. Cette précarité économique s'entrelace avec la violence de genre : quand des femmes contractent des dettes sans consentement du mari, elles risquent les violences domestiques ; quand elles ne peuvent rembourser, c'est la dépression, le stress, parfois le suicide. L'interview présente la réponse de la KPL : l'organisation paysanne via l'agroécologie politique, le développement de banques de semences indigènes (reproductibles librement), et l'action collective incluant un centre d'accueil pour femmes victimes de violences et de dépossession foncière créé en 2022. L'agroécologie n'est pas présentée comme technologie alternative, mais comme récupération de l'autonomie et du savoir paysans. Texte d'une densité politique rare qui noue trois enjeux centraux : souveraineté alimentaire, féminisme agraire, et résistance à l'accaparement foncier et semencier.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "GMOs are false solutions... they trap farmers in Kenya in cycles of debt.",
+      "why_relevant": "Énoncé fondateur de la critique : les OGM ne sont pas une solution au changement climatique mais un mécanisme structurel d'endettement paysan.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "European biotech companies such as Bayer AG have been selling pesticides to Kenya that are banned in the EU due to their risks to human health.",
+      "why_relevant": "Dénonce le double standard nord-sud de l'agro-industrie : produits toxiques exportés depuis l'Europe vers le Kenya.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Hybrid and GMO seeds have contributed a lot to women's mental health problems, especially for smallholder food producers.",
+      "why_relevant": "Établit explicitement le lien semences brevetées-santé mentale féminine, angle rarement documenté et central au féminisme agraire.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "It is illegal to save hybrid and GMO seeds from season to season – because they are patented. That means every time farmers want to grow, they need money.",
+      "why_relevant": "Explique le mécanisme d'enfermement par la propriété intellectuelle — clé de la dépendance créée vs souveraineté semencière.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "Gender-based violence often arises when women sign documents they do not understand, and maybe they do this without their husband knowing or consenting.",
+      "why_relevant": "Lie directement l'endettement par semences brevetées à la violence de genre conjugale — intersection féminisme agraire / luttes foncières.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "These are the women who ensure that the world has enough food, but when it comes to decision making and issues of access, they face a lot of violence and discrimination.",
+      "why_relevant": "Formule politique claire de l'exploitation genrée : travail agricole des femmes valorisé, décisions foncières et économiques confisquées.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "Recently, in 2022, we successfully crowdfunded to buy land for a rescue center for women facing gender-based violence and land grabbing.",
+      "why_relevant": "Construction d'une contre-institution paysanne : autonomie foncière et protection des femmes comme stratégie couplée.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "Agroecology gives us the power of independence: we have our own seeds, we have our own knowledge, and so we cannot be deceived by the companies.",
+      "why_relevant": "Synthèse politique : l'agroécologie comme reprise de contrôle foncier et épistémologique — oppose autonomie paysanne au contrôle corporatif.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "Let us preserve them, let us multiply them, because that is the only way we can fight the multinational companies.",
+      "why_relevant": "Appel à l'action collective pour la préservation des semences — fondement politique de la lutte pour la souveraineté alimentaire.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 2,
+      "quote": "When the women cannot repay on time it can lead to depression, stress or even suicide.",
+      "why_relevant": "Lien explicite : cycle d'endettement → dépression/suicide — documente l'impact sanitaire aigu des semences brevetées.",
+      "verified": true,
+      "page_physical": 2
+     }
+    ],
+    "matched_keywords": [
+     "paysannerie",
+     "paysans libres",
+     "agriculture vivrière",
+     "agroécologie",
+     "souveraineté alimentaire",
+     "féminisme paysan",
+     "féminisme agraire",
+     "droits fonciers des femmes",
+     "femmes et terre",
+     "semences indigènes",
+     "accaparement des terres",
+     "land grabbing",
+     "libération des terres",
+     "accès à la terre",
+     "autonomie territoriale",
+     "collectif d'habitants",
+     "sans-terre",
+     "réforme agraire",
+     "peasantry",
+     "subsistence farming",
+     "food sovereignty",
+     "agrarian feminism",
+     "women land rights",
+     "indigenous land rights",
+     "land liberation",
+     "smallholder",
+     "family farming",
+     "peasant agriculture",
+     "agroecology",
+     "campesinado",
+     "agricultura campesina",
+     "agroecología",
+     "soberanía alimentaria",
+     "feminismo agrario"
+    ],
+    "relevance_score": 9,
+    "relevance_notes": "Score 9/10 — Texte central au corpus : croise frontalement quatre core_concepts (paysannerie + féminisme agraire + agroécologie + souveraineté alimentaire) avec cadrage politique explicite contre l'accaparement corporatif et pour l'autonomie paysanne. Particularité majeure : documente le lien rarement étudié entre endettement par semences brevetées et violences de genre, ouvrant une sous-thématique cruciale du féminisme agraire africain. Interview matérialiste et situé.",
+    "en_clair": "Des femmes paysannes kenyanes qui empruntent pour acheter des semences de multinationales se retrouvent piégées dans la dette, ce qui provoque de la dépression et des violences conjugales. La Kenyan Peasants League montre une voie : cultiver l'agroécologie et reproduire ses propres semences pour reprendre le contrôle de sa nourriture, sa terre, et sa sécurité.",
+    "acteurs": [
+     "Susan Owiti",
+     "Kenyan Peasants League (KPL)",
+     "Women's Articulation of the Kenyan Peasants League",
+     "La Vía Campesina (LVC)",
+     "Law Society of Kenya",
+     "Bayer AG",
+     "Kenyan government"
+    ],
+    "controverse": "Tension fondamentale : les multinationales biotechnologiques présentent les OGM et semences hybrides comme solutions au changement climatique et à la pauvreté paysanne, en ciblant particulièrement les femmes ; l'interview et le KPL les dénoncent comme pièges créant l'endettement permanent, la dépendance corporative, la destruction écologique et la vulnérabilité accrue aux violences de genre.",
+    "angle_journalistique": "Enquête approfondie sur les liens peu documentés entre l'endettement causé par les semences brevetées, l'effondrement de la santé mentale (dépression, suicide), et l'augmentation des violences de genre dans les communautés paysannes d'Afrique de l'Est — angle quasi-absent du débat public sur les OGM.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "645dd03fe9"
    },
    "download_status": "ok",
    "title": "Mag2_interview-with-Susan-Owiti",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "bulle": "bulles/75fe7394.json",
    "has_cover": true
   },
   "21554d7f": {
@@ -44486,6 +45976,10 @@
    "title": "EN-ICARRD20-Forum-Declaration_DEF",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "doublon de 1dfbe2cb",
+    "date": "2026-09-16"
+   },
    "has_cover": true
   },
   "1dfbe2cb": {
@@ -44549,11 +46043,11 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 9,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
-   "doc_date": "2026-02-21",
+   "doc_date": "2026-02-12",
    "lang": "en",
    "editeur": "Adobe PDF Library 16.0.7",
    "doi": "",
@@ -44582,6 +46076,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "EN-LVC_Position_Paper-WEB",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/5a26bb5f.jpg",
@@ -44592,7 +46096,155 @@
     "pdf_creator": "Adobe InDesign 17.4 (Windows)"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Ce document est le 'briefing note' de La Via Campesina pour la Second International Conference on Agrarian Reform and Rural Development (ICARRD+20) en février 2025. Il articule une critique radicale du modèle agraire néolibéral (Banque mondiale, propriété individuelle, marchéification des terres) et propose un cadre de réforme agraire intégrale fondé sur quatre piliers : Restitution, Redistribution, Recognition, Regulation.\n\nLe diagnostic : le texte met au jour une vague d'accaparement territorial mondiale, combinant plusieurs mécanismes : (1) privatisation des terres via des titres individuels imposés par les réformes pro-marché ; (2) financiarisation de la nature, où fonds de pension et investisseurs transforment les territoires en actifs spéculatifs ; (3) greenwashing climatique (parcs solaires, zones de conservation, projets de carbone), qui criminalise sous prétexte environnemental les pratiques agricoles traditionnelles et l'accès coutumier ; (4) militarisation des frontières et appropriation des ressources pour la 'sécurité nationale'. Cette accumulation affecte disproportionnément les paysans, les peuples autochtones, les femmes, les jeunes. Le texte souligne que l'héritage colonial (terra nullius, droit de conquête) persiste et s'intensifie sous des formes capitalistes contemporaines.\n\nLe cadre proposé repose sur quatre axes : Restitution des terres ancestrales aux autochtones et aux communautés spoliées (land back) ; Redistribution équitable, priorité aux femmes et aux groupes marginalisés ; Recognition des droits coutumiers et de l'autonomie territoriale ; Regulation par cadres légaux anti-spéculatifs assurant la souveraineté alimentaire et le contrôle démocratique. Ce n'est pas un document technocratique, mais une parole politique militante qui assume sa dimension décoloniale, féministe et intersectionnelle. La Palestine y figure comme cas paradigmatique de colonialisme de peuplement contemporain.",
+    "citations": [
+     {
+      "page": 5,
+      "quote": "Palestinian farmers are denied access to their own lands, while water resources are transferred to settlements and controlled through a complex matrix of military orders, permits and surveillance.",
+      "why_relevant": "Exemple paradigmatique d'accaparement colonial contemporain, liant dépossession foncière et contrôle de l'eau.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 6,
+      "quote": "Financialization of nature, the process by which global finance 'puts a pricetag' on land and ecosystems, turns natural territories into speculative assets and enables massive investment by pension funds, banks and asset managers—leading to dispossession, environmental destruction and commodification of the commons.",
+      "why_relevant": "Critique frontale de la financiarisation comme mécanisme d'accaparement des communs.",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 7,
+      "quote": "World Bank treats land as a commodity rather than a historical right. This model prioritizes individual title deeds, undermining communal and Indigenous systems, particularly affecting women and marginalized groups",
+      "why_relevant": "Critique de la propriété individuelle comme outil de décolonisation, impact genré et intersectionnel.",
+      "verified": true,
+      "page_physical": 7
+     },
+     {
+      "page": 7,
+      "quote": "Often, the myth of 'unused' land, or 'Terra Nullius' justifies such dispossession – despite the fact that much of the so-called vacant land supports grazing, shifting cultivation, foraging, and cultural practices.",
+      "why_relevant": "Déconstruction du mythe colonial de terra nullius, reconnaissance des pratiques ancestrales.",
+      "verified": true,
+      "page_physical": 7
+     },
+     {
+      "page": 8,
+      "quote": "De-ruralization has been a conscious choice on the part of policymakers and corporate giants without the consent of rural people: capitalism and colonialism have violently created the conditions for such dispossession.",
+      "why_relevant": "Analyse politique de la déruralisation systématique, connectée à la paysannerie comme acteur.",
+      "verified": true,
+      "page_physical": 8
+     },
+     {
+      "page": 9,
+      "quote": "These dynamics disproportionately affect women, youth and gender-and-sexually-diverse people, who are already more vulnerable to landlessness and exclusion.",
+      "why_relevant": "Dimension féministe explicite de la critique, accentuant les inégalités genrées dans l'accès foncier.",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 15,
+      "quote": "Around the world, land-back movements demand reparations for stolen territories and the return of ancestral lands unlawfully seized by states, corporations and settlers.",
+      "why_relevant": "Cadrage explicite du land back comme mouvement mondial, lié aux réparations et à la restitution.",
+      "verified": true,
+      "page_physical": 15
+     },
+     {
+      "page": 16,
+      "quote": "Forest Acts, conservation zones, wildlife corridors, carbon-offset projects and 'eco-tourism' regimes are frequently used to criminalize traditional livelihoods, deny customary access and expel peasants and Indigenous Peoples under the guise of environmental protection.",
+      "why_relevant": "Critique du greenwashing climatique masquant la dépossession, reconnaissance du droit coutumier.",
+      "verified": true,
+      "page_physical": 16
+     },
+     {
+      "page": 6,
+      "quote": "The market-linked reforms actively promoted by institutions like the World Bank reinforce a model of individual private property, which leads to the dispossession of small farmers, Afro-Descendant peoples and Indigenous Peoples, and to the development of export-oriented monoculture, industrial agriculture, and special economic zones.",
+      "why_relevant": "Lien entre propriété individuelle, agro-industrie, et dispossession racialisée.",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 9,
+      "quote": "Effective agrarian reform must address these intersecting threats by protecting communal tenure, restoring historical justice, ensuring equitable access for women and marginalized groups, strengthening local governance, promoting food sovereignty and democratic control over territories.",
+      "why_relevant": "Synthèse programmatique : tenure communale, justice historique, féminisme, souveraineté alimentaire, démocratie territoriale.",
+      "verified": true,
+      "page_physical": 9
+     }
+    ],
+    "matched_keywords": [
+     "réforme agraire",
+     "accaparement des terres",
+     "land grabbing",
+     "terres collectives",
+     "propriété collective",
+     "propriété individuelle (en critique)",
+     "paysannerie",
+     "paysans",
+     "souveraineté alimentaire",
+     "food sovereignty",
+     "land back",
+     "libération des terres",
+     "restitution",
+     "redistribution",
+     "accès à la terre",
+     "sans-terre",
+     "landlessness",
+     "peuples autochtones",
+     "Indigenous Peoples",
+     "droit coutumier",
+     "customary tenure",
+     "communs",
+     "commons",
+     "commodification",
+     "financiarisation de la nature",
+     "spéculation foncière",
+     "colonialisme",
+     "colonialism",
+     "settler colonialism",
+     "colonialisme de peuplement",
+     "terre et eau",
+     "territories",
+     "femmes et terre",
+     "féminisme agraire",
+     "agriculture industrielle",
+     "agroécologie implicite (via 'farming knowledge', 'food production')",
+     "agriculture vivrière",
+     "subsistence agriculture",
+     "autonomie territoriale",
+     "décolonisation",
+     "greenwashing",
+     "conservation (critique)",
+     "criminalisation des droits fonciers",
+     "agriculture familiale",
+     "small farmers",
+     "peuples pescadores",
+     "fishing communities",
+     "communautés pastorales",
+     "pastoral communities",
+     "Palestine",
+     "occupation militaire",
+     "déruralisation",
+     "de-ruralization",
+     "jeunesse rurale",
+     "youth landlessness",
+     "marginalisés",
+     "intersectionnalité foncière"
+    ],
+    "relevance_score": 9,
+    "relevance_notes": "Ce document touche frontalement à quatre core_concepts centraux (libération des terres, réforme agraire, mouvements autochtones, propriété collective vs. individuelle) et à trois axes majeurs (féminisme agraire, foncier coutumier, financiarisation). C'est une prise de parole politique de coalition internationale (Via Campesina) qui structure intégralement sa critique autour des enjeux fonciers, agraires, décoloniaux et de souveraineté alimentaire. Pas d'anti-concepts. Type étalon du corpus.",
+    "en_clair": "La Via Campesina dit que la terre ne doit pas être achetée et vendue comme une marchandise par les banques, mais rester entre les mains des paysans, des autochtones et des femmes qui en ont besoin pour vivre et nourrir leurs familles. Le système actuel vole les terres aux pauvres pour les donner aux riches et aux corporations, ce qui crée la famine et l'exil.",
+    "acteurs": [
+     "La Via Campesina",
+     "World Bank",
+     "Palestinian farmers",
+     "Indigenous Peoples",
+     "Afro-Descendant peoples",
+     "pastoral communities",
+     "fishing communities",
+     "pension funds, banks, asset managers (génériques)"
+    ],
+    "controverse": "La tension principale : le modèle néolibéral de la Banque mondiale (propriété privée individuelle, marchéification, titres fonciers) vs. le modèle de réforme agraire intégrale (restitution historique, propriété collective, droit coutumier, contrôle démocratique, souveraineté alimentaire). Via Campesina refuse catégoriquement les 'réformes libéralisées' comme solution.",
+    "angle_journalistique": "Enquête : comment l'alliance entre États, Banque mondiale et institutions financières privatise la terre mondiale, expulse les paysans et les autochtones sous couvert de 'développement durable', et alimente l'exil rural massif.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "dcdb0fcf7b"
    },
    "download_status": "ok",
    "title": "EN-LVC_Position_Paper-WEB",
@@ -44672,7 +46324,7 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 8,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -44705,6 +46357,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Comunicado_Cheias_Africa_Austral_LVC_SEAf_COMPLETO",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/14662b8d.jpg",
@@ -44715,7 +46377,81 @@
     "pdf_creator": "Microsoft® Word 2021"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Cet appel de La Via Campesina porte sur les inondations catastrophiques de janvier 2026 en Afrique Australe (Mozambique, Afrique du Sud, Zimbabwe), qui ont détruit quasi 60 000 hectares de terres cultivées et affecté plus de 585 000 personnes, principalement des communautés rurales et paysannes. Le document s'inscrit dans une perspective de justice climatique : affirmant que les petits producteurs paysans, qui ont le moins contribué à la crise climatique, en paient le prix le plus lourd. Quatre organisations-membres de La Via Campesina — le Landless People's Movement (LPM), la Food Sovereignty Campaign (FSC), le Zimbabwe Smallholder Organic Farmers Forum (ZIMSOFF) et l'União Nacional de Camponeses (UNAC) — ont documenté ces impacts massifs. Le texte articule deux crises interdépendantes : une crise climatique structurelle (sécheresses récurrentes liées à El Niño, puis inondations dévastatrices) qui menace la viabilité de l'agriculture paysanne, et une crise d'insécurité alimentaire qui frappe les familles paysannes vivant de cultures vivrières et d'élevage de subsistance. L'appel formule une critique politique claire : les gouvernements du Sud adoptent des « fausses solutions climatiques » promues par le Nord Global et les firmes multinationales, au lieu de protéger et renforcer « les systèmes de production paysanne, comme l'agroécologie ». Le document rattache ainsi la catastrophe climatique à des enjeux plus larges de souveraineté alimentaire, d'agroécologie politique et de résilience paysanne. Bien que n'en développant pas explicitement une théorie, le texte soulève implicitement une question fondamentale pour la veille foncière : comment les paysan·nes, dont la tenure est précaire ou dépendante de l'État, font-ils/elles face aux catastrophes climatiques ? Qui perd d'abord ses terres, et pourquoi ? C'est une entrée politique dans les questions de justice foncière et de vulnérabilité différenciée.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "as comunidades rurais e camponesas — que menos contribuíram para a crise climática — estão a pagar o preço mais elevado",
+      "why_relevant": "Pose la justice climatique comme enjeu central : les paysans, premiers touchés, sont les moins responsables de la crise.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "A região da África Austral e Oriental da La Via Campesina conta com quatro organizações-membro nos países afetados, nomeadamente o Landless People's Movement (LPM)",
+      "why_relevant": "Montre l'intersection entre mouvements paysan transnationaux et mouvements des sans-terre.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "Só em Moçambique, quase 60.000 hectares de áreas cultivadas foram permanentemente perdidos devido às cheias",
+      "why_relevant": "Articule destruction massive des terres paysannes et perte des moyens de subsistance agricoles.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "afetando pelo menos 83.000 produtores camponeses. Isto significa que mais pessoas enfrentarão insegurança alimentar",
+      "why_relevant": "Lie destruction foncière directement à l'insécurité alimentaire, deux core concepts de la veille.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "implementem políticas que protejam os sistemas de produção camponesa, como a agroecologia, essenciais para reforçar a resiliência",
+      "why_relevant": "Plaide explicitement pour l'agroécologie comme système de production paysan alternatif et résilient.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "os governos do Sul que continuam a adotar falsas soluções climáticas promovidas pelo Norte Global",
+      "why_relevant": "Critique la dépendance Nord-Sud et les solutions marchandes/technocratiques versus solutions locales paysannes.",
+      "verified": true,
+      "page_physical": 2
+     }
+    ],
+    "matched_keywords": [
+     "paysannerie",
+     "campesinado",
+     "agriculture paysanne",
+     "agriculture familiale",
+     "smallholder",
+     "souveraineté alimentaire",
+     "food sovereignty",
+     "agroécologie",
+     "agroecologia",
+     "landless movement",
+     "mouvement sans-terre",
+     "producteurs camponeses",
+     "peasant agriculture",
+     "subsistence farming"
+    ],
+    "relevance_score": 8,
+    "relevance_notes": "Document très pertinent : croise frontalement paysannerie + souveraineté alimentaire + agroécologie, avec ancrage géographique et organisations paysannes africaines nommées. Limite : ce n'est pas un texte théorique sur la propriété d'usage, les communs ou la réforme agraire formelle, mais une intervention politique d'urgence climatique où ces enjeux restent implicites.",
+    "en_clair": "Ce texte explique comment des inondations terribles ont détruit les récoltes et les terres des petits paysans en Afrique du Sud, au Mozambique et au Zimbabwe, et montre que ce sont les plus pauvres qui paient le prix du changement climatique. Il appelle les paysans du monde à s'entraider et demande aux gouvernements de soutenir l'agriculture écologique paysanne plutôt que d'adopter les fausses solutions des riches pays du Nord.",
+    "acteurs": [
+     "La Via Campesina",
+     "Landless People's Movement (LPM)",
+     "Food Sovereignty Campaign (FSC)",
+     "Zimbabwe Smallholder Organic Farmers Forum (ZIMSOFF)",
+     "União Nacional de Camponeses (UNAC)"
+    ],
+    "controverse": "Tension entre les « fausses solutions climatiques » du Nord Global (solutions marchandes, tech-centrées, carbone-centriques) et les solutions paysannes alternatives (agroécologie politique, souveraineté alimentaire). Implicite aussi : la vulnérabilité structurelle des paysan·nes dont la tenure foncière est précaire ou dépendante de l'État face aux chocs climatiques.",
+    "angle_journalistique": "Enquête auprès des organisations paysannes du Sud sur leur réorganisation post-catastrophe climatique, leur promotion de l'agroécologie comme stratégie de résilience, et leur critique des « fausses solutions » gouvernementales.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "e41d020137"
    },
    "download_status": "ok",
    "title": "Comunicado_Cheias_Africa_Austral_LVC_SEAf_COMPLETO",
@@ -44734,7 +46470,7 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 7,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -44767,6 +46503,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "SOLIDARITY OF SPI FOR FRENCH PEASANTS CONFÉDÉRATION PAYSANNE",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/1a3bdd23.jpg",
@@ -44777,7 +46523,81 @@
     "pdf_creator": "Writer"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Cette déclaration du SPI (Union des paysans indonésiens), datée du 15 janvier 2026, exprime la solidarité internationale avec la Confédération Paysanne française suite à une occupation pacifique du ministère de l'Agriculture à Paris. Le 15 janvier, plus de 150 paysans ont occupé pacifiquement le bâtiment du ministère pour protester contre les politiques agricoles et commerciales jugées préjudiciables, notamment l'accord de libre-échange UE-Mercosur et la domination de l'agro-industrie. L'État a réagi par la répression : 52 paysans ont été arrêtés, dont trois porte-paroles de la Confédération Paysanne et Morgan Ody, coordonnateur général de La Via Campesina. Le SPI dénonce cette criminalisation des luttes pacifiques comme violation des droits humains et des droits des paysans. Le document soulève aussi les enjeux spécifiques des paysans des Départements et Régions d'Outre-Mer (DROM), confrontés depuis des décennies à des discriminations et pratiques néo-coloniales : dépendance imposée aux importations alimentaires et inégalités dans l'aide publique (POSEI). Le SPI inscrit cette lutte dans le cadre de La Via Campesina, affirme que l'attaque contre les paysans français est une attaque contre le mouvement paysan mondial, et exige le respect de la UNDROP (Déclaration de l'ONU sur les droits des paysans). C'est un texte militant qui cristallise les tensions actuelles entre mouvements paysans internationaux, États répressifs et structures de commerce mondial.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "more than 150 peasants who are members of the Confédération Paysanne, including a delegation of peasants from the Départements et Régions d'Outre-Mer (DROM), staged a peaceful occupation of the French Ministry of Agriculture building.",
+      "why_relevant": "Décrit concrètement l'action paysanne et inclut explicitement la dimension d'Outre-Mer, révélant les enjeux de néo-colonialisme dans le système alimentaire français.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "This action was a form of open protest against agricultural and trade policies that are increasingly detrimental to peasants, threaten food sovereignty, and strengthen the dominance of agro-industry and corporate lobbies.",
+      "why_relevant": "Articule les trois axes centraux de la lutte : critique des politiques agricoles et commerciales, défense de la souveraineté alimentaire, critique de l'agro-industrie.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "the criminalization of peaceful actions by peasants is a serious violation of human rights, the right to freedom of assembly and expression, and the fundamental right of peasants to fight for fair and sovereign livelihoods and food systems.",
+      "why_relevant": "Positionne la lutte paysanne comme enjeu de droits humains fondamentaux et droit à l'auto-détermination alimentaire.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "SPI asserts that the criminalization of French peasants Confédération Paysanne is a violation of the UN Declaration on the Rights of Peasants and Other People Working in Rural Areas (UNDROP).",
+      "why_relevant": "Invoque le cadre international UNDROP comme fondement juridique pour les droits paysans face à la répression.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "conditions of peasants in the DROM region, who for decades have faced discriminatory treatment and neo-colonial practices through agricultural policies that are not contextual, dependence on food imports",
+      "why_relevant": "Nomme explicitement les rapports néo-coloniaux contemporains via les politiques agricoles imposées et la dépendance alimentaire structurelle.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "The attack on the French peasants Confédération Paysanne is an attack on the entire global peasants' movement!",
+      "why_relevant": "Affirme la solidarité mondiale et inscrit la lutte locale dans une perspective internationaliste de la paysannerie.",
+      "verified": true,
+      "page_physical": 2
+     }
+    ],
+    "matched_keywords": [
+     "paysannerie",
+     "peasants",
+     "peasants' rights",
+     "food sovereignty",
+     "souveraineté alimentaire",
+     "agroindustry",
+     "agro-industrie",
+     "agricultural policies",
+     "free trade",
+     "peasant movement",
+     "La Via Campesina",
+     "UNDROP",
+     "neo-colonial",
+     "land rights",
+     "Confédération Paysanne"
+    ],
+    "relevance_score": 7,
+    "relevance_notes": "Très pertinent pour les thématiques « paysannerie et mouvements paysans » et « souveraineté alimentaire »; révèle aussi les tensions actuelles de criminalisation des luttes. Cependant, ce n'est pas une analyse des communs fonciers, de la propriété d'usage ou des instruments anti-spéculatifs (fiducies foncières, CLT, etc.). C'est une déclaration politique internationale, précise et bien articulée, pas une étude de régimes de propriété.",
+    "en_clair": "Des paysans français ont occupé le ministère de l'Agriculture pour dire « non » aux accords commerciaux et à l'agro-industrie qui les ruinent. 52 ont été arrêtés. Des paysans du monde entier répondent : c'est un droit humain de lutter pour notre nourriture et nos terres, pas un crime.",
+    "acteurs": [
+     "Confédération Paysanne",
+     "SPI (Serikat Petani Indonesia / Indonesian Peasants' Union)",
+     "La Via Campesina",
+     "Morgan Ody (General Coordinator of La Via Campesina)"
+    ],
+    "controverse": "Répression d'État contre les manifestations paysannes pacifiques. Conflit entre libre-échange commercial (UE-Mercosur) et souveraineté alimentaire des paysans. Enjeux de néo-colonialisme dans les DROM français : dépendance alimentaire imposée, discriminations structurelles, inégalités d'accès aux politiques de soutien agricole.",
+    "angle_journalistique": "Enquête sur les raisons de la répression policière contre les mouvements paysans en 2026 : qui bénéficie vraiment des accords de libre-échange UE-Mercosur, et qui les paie (paysans, pays du Sud, DROM) ? Analyse du rôle de La Via Campesina dans la coordination mondiale des luttes.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "0285f89bcb"
    },
    "download_status": "ok",
    "title": "SOLIDARITY OF SPI FOR FRENCH PEASANTS CONFÉDÉRATION PAYSANNE",
@@ -44796,7 +46616,7 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 7,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -44829,6 +46649,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "2026 01 15 EN &#8211; SOLIDARITY to Confederation Paysanne France",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/dff4b150.jpg",
@@ -44839,7 +46669,86 @@
     "pdf_creator": "Writer"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Ce document est un communiqué de solidarité internationale datant du 15 janvier 2026, émis par La Via Campesina (délégation Asie du Sud-Est et Est) en soutien à la Confédération Paysanne France suite à l'invasion du Ministère de l'Agriculture survenue le 14 janvier. Plus de 150 paysans, dont une importante délégation des départements, régions et collectivités d'outre-mer (DROMs), ont mené cette action pour exprimer leur colère face au mépris gouvernemental envers la paysannerie et réclamer la « décolonisation » de l'agriculture. Cinquante-deux paysans ont été arrêtés, notamment Morgan Ody, coordinateur général de La Via Campesina. Le texte articule la critique du gouvernement français sur trois niveaux : (1) la répression policière contre une protestation pacifique de représentants d'une organisation agricole reconnue ; (2) l'indifférence politique envers les spécificités et difficultés des paysans des DROMs ; (3) l'impact conjugué de la crise sanitaire bovine (DNC) et de l'accord commercial UE-Mercosur sur les fermiers français et ultramarins. Le communiqué demande la libération immédiate des paysans arrêtés et la reconnaissance de leurs droits fondamentaux, invoquant tant la Déclaration universelle des droits de l'homme que la Déclaration des Nations unies sur les droits des paysans et des autres personnes travaillant dans les zones rurales (UNDROP). Ce document cristallise les tensions contemporaines entre un mouvement paysan organisé à l'échelle internationale et des politiques agro-commerciales supranationales qui marginalisent les petits producteurs.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "Invaded the Ministry of Agriculture: the anger of peasants from the DROMs and mainland France criminalized by the government",
+      "why_relevant": "Montre l'articulation directe entre mouvement paysan et criminalisation politique ; la paysannerie comme sujet politique confronté à l'État.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "to demand the 'decolonisation' of agriculture from these lobbies",
+      "why_relevant": "La décolonisation de l'agriculture est le mot-clé revendicatif : elle croise critique des lobbies agro-industriels et autonomie paysanne.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "According to the police, 52 peasants were arrested including Morgan Ody the General Coordinator of La Via Campesina",
+      "why_relevant": "Nomme La Via Campesina et son leadership, ancrée l'action dans un mouvement paysan structuré et international.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "The government and the police must respect and realize the fundamental rights of our members enshrined in the Universal Declaration of Human Rights and also the UN Declaration on the rights of peasants and other people working in rural areas (UNDROP)",
+      "why_relevant": "Invoque l'UNDROP, instrument clé de codification des droits paysans internationalement ; revendique une légalité supra-gouvernementale.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 1,
+      "quote": "This occupation of the Ministry's premises aims to denounce this situation",
+      "why_relevant": "L'occupation comme forme d'action directe de la paysannerie face à l'indifférence institutionnelle.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "More than 150 peasants from the Confédération Paysanne from all over France, including a large delegation from the DROMs, invaded the Ministry of Agriculture on 14th January 2026",
+      "why_relevant": "Docummente la mobilisation paysanne en métropole ET en DROMs coordonnée, révélant des solidarités territoriales.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "The anger that has been expressed for weeks in mainland France over the management of the DNC crisis and the EU-Mercosur agreement echoes the difficulties faced by farmers in the DROMs",
+      "why_relevant": "Articule crise sanitaire et accord commercial comme enjeux communs affectant la paysannerie.",
+      "verified": true,
+      "page_physical": 1
+     }
+    ],
+    "matched_keywords": [
+     "paysannerie",
+     "paysans",
+     "mouvements paysans",
+     "luttes paysannes",
+     "droits des paysans",
+     "via campesina",
+     "confédération paysanne",
+     "agriculture",
+     "décolonisation",
+     "souveraineté (implicitement alimentaire)",
+     "UNDROP"
+    ],
+    "relevance_score": 7,
+    "relevance_notes": "Le document touche frontalement à la paysannerie en tant que sujet politique et mouvement international, avec ancrage dans des revendications concrètes (droits, UNDROP, décolonisation). Cependant, il ne traite pas des enjeux fonciers proprement dits (propriété, communs, accaparement, propriété d'usage) — c'est un communiqué de soutien à une action de protestation, non une exploration théorique ou une proposition alternative sur le régime des terres.",
+    "en_clair": "Des paysans français (organisés en Confédération Paysanne, alliés à un mouvement paysan mondial) ont occupé le ministère de l'agriculture en janvier 2026 pour dire au gouvernement qu'il ne les respecte pas et qu'il favorisel'agro-industrie au détriment des petits paysans. C'est utile pour comprendre comment les paysans se battent aujourd'hui à l'échelle internationale, y compris à travers des organisations comme Via Campesina.",
+    "acteurs": [
+     "La Via Campesina (Southeast Asia and East Asia)",
+     "Confédération Paysanne",
+     "Morgan Ody (Coordinateur général de La Via Campesina)",
+     "Gouvernement français",
+     "Ministère de l'Agriculture français",
+     "Police française"
+    ],
+    "controverse": "Tension fondamentale entre droit à la protestation et répression policière : le gouvernement français criminalise une occupation pacifique organisée par une organisation agricole reconnue. Débat sous-jacent sur la pertinence de l'accord UE-Mercosur et de sa gestion de la crise sanitaire bovine (DNC) pour les paysans français, notamment ultramarins.",
+    "angle_journalistique": "Enquête sur la coordination entre mouvements paysans métropolitains et ultramarins dans une même mobilisation, et sur le rôle de Via Campesina dans la structuration d'une solidarité internationale face aux politiques agro-commerciales de l'UE.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "f62b5cb447"
    },
    "download_status": "ok",
    "archive_url": "https://web.archive.org/web/20260630171634/https://viacampesina.org/en/wp-content/uploads/sites/2/2026/01/2026-01-15-EN-SOLIDARITY-to-Confederation-Paysanne-France.pdf",
@@ -44910,6 +46819,10 @@
    "title": "CP_Occupation_Ministère",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "doublon de 65c76d04",
+    "date": "2026-09-16"
+   },
    "has_cover": true
   },
   "65c76d04": {
@@ -44975,7 +46888,7 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 6,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
@@ -45008,6 +46921,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Agriculture in Sudan",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/063632b1.jpg",
@@ -45018,7 +46941,106 @@
     "pdf_creator": "Microsoft® Word 2021"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Ce document présente le contexte agricole soudanais et une mobilisation paysanne d'urgence face aux destructions de la guerre d'avril 2023. Le Soudan dispose de ressources foncières massives (200 millions d'acres) et une population à 80% dépendante de l'agriculture, mais le secteur est paralysé par des politiques néolibérales : privatisations, accaparement des terres par des investisseurs étrangers (7 millions d'acres loués pour jusqu'à 99 ans), et impossibilité d'accès aux intrants agricoles. Le projet Gezira-Managil, autrefois le plus grand projet agricole du monde (2,3 millions d'acres, 130 000 fermiers, 4,5 millions de personnes concernées), a été gravément détérioré par les restructurations privatisantes de 2005.\n\nEn réponse à la destruction de guerre, l'Alliance des Agriculteurs de Gezira et Managil a lancé en janvier 2025 la campagne « We Must Sow » (Il faut semer) avec quatre objectifs : défendre la terre, combattre la faim, préserver les infrastructures restantes, et traiter les effets psychologiques de la guerre. Cette campagne représente un tournant décisif : elle pivote d'un modèle d'agriculture intensive dépendante des intrants coûteux vers une agriculture vivrière sans intrants fondée sur les jardins potagers familiaux, l'élevage de volailles et le biogaz.\n\nEn phase 1 (janvier-avril 2025), le mouvement a mobilisé 2 540 familles dans 42 villages couvrant 9 sections, touchant 20 000 personnes. L'organisation repose sur des comités villageois pour le recensement, l'achat et la distribution de semences, la formation paysanne et le soutien aux femmes et aux jeunes. La phase 2 (août-décembre 2025) prévoit 10 000 jardins potagers familiaux, la restauration des canaux d'irrigation, la création de pépinières, de coopératives de formation, et une banque de semences communale.\n\nLe texte porte implicitement trois enjeux politiques majeurs : (1) le « droit à la terre » est vital et non négociable ; (2) l'accaparement des terres par les investisseurs étrangers est un enjeu de souveraineté alimentaire et d'indépendance ; (3) la reconstruction paysanne collective constitue une alternative politique concrète aux modèles d'agriculture industrielle et de dépendance aux institutions internationales. C'est un document de mobilisation urgente qui documente comment une paysannerie en crise reconstruits son autonomie alimentaire et sa capacité d'action collective face au néolibéralisme agraire.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "According to the FAO, 7 million acres (≈ 2.8 million hectares) have been leased to foreign investors for periods of up to 99 years.",
+      "why_relevant": "Illustration directe de l'accaparement des terres (land grabbing) par les investisseurs étrangers au Soudan — enjeu central de libération des terres.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 1,
+      "quote": "More than 80% of the Sudanese population depends on agriculture, which forms the basis of the national economy",
+      "why_relevant": "Établit la paysannerie comme classe économiquement centrale, fondement de toute lutte pour l'accès à la terre au Soudan.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "Fight hunger by providing food.",
+      "why_relevant": "Objectif explicite de souveraineté alimentaire ; la campagne « We Must Sow » place la production vivrière au cœur de sa mobilisation.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Defend the land.",
+      "why_relevant": "Énoncé lapidaire de la libération des terres comme premier objectif politique du mouvement paysans.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "The right to land is vital and the 'We Must Sow' campaign represents an alternative way to revive agriculture",
+      "why_relevant": "Formulation du droit à la terre comme besoin vital ; reconnaissance que l'alternative paysanne collective s'oppose au modèle dominant.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 2,
+      "quote": "Privatisation and restructuring under the 2005 law, leading to the deterioration of the project.",
+      "why_relevant": "Critique explicite du néolibéralisme agraire et de la privatisation comme causes de la destruction du projet Gezira-Managil.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "began with no-input farming and domestic agriculture (family vegetable gardens)",
+      "why_relevant": "Agriculture vivrière familiale sans intrants coûteux : modèle alternatif d'autonomie paysanne et d'agriculture soutenable.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Difficult access to agricultural inputs, The lack of agricultural advice, Increased taxes and fees",
+      "why_relevant": "Énumération des barrières structurelles qui empêchent la paysannerie de produire autonomement ; causes de dépossession.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "success depends on the collective effort of all Sudanese people around the world.",
+      "why_relevant": "Cadre collectif et transnational de la mobilisation paysanne ; reconnaissance que l'autonomie alimentaire exige l'organisation collective.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 2,
+      "quote": "Training of cooperatives",
+      "why_relevant": "Formation de structures coopératives agricoles ; approche collective et mutualisée de l'accès aux ressources et aux savoirs.",
+      "verified": true,
+      "page_physical": 3
+     }
+    ],
+    "matched_keywords": [
+     "accaparement des terres",
+     "accès à la terre",
+     "agriculture vivrière",
+     "agriculture familiale",
+     "paysannerie",
+     "souveraineté alimentaire",
+     "coopératives agricoles",
+     "libération des terres",
+     "collectif d'habitants",
+     "sans-terre",
+     "paysan agriculture"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Texte pertinent pour les luttes paysannes concrètes : souveraineté alimentaire, accès à la terre, organisation collective, et critique de l'accaparement. Manque cependant les dimensions théoriques plus radicales : régimes fonciers alternatifs (communs, fiducie foncière), propriété d'usage explicite, ancrage féministe autonome, ou pensée décoloniale. C'est un plaidoyer d'urgence situé dans une lutte réelle, pas une réflexion systématique sur les alternatives de propriété.",
+    "en_clair": "Les paysans soudanais se mobilisent collectivement pour récupérer le droit de cultiver leurs propres terres et nourrir leurs familles, après que la guerre a détruit tout, en refusant de dépendre des investisseurs étrangers et des engrais coûteux. Ce texte montre concrètement comment une organisation paysanne de base peut reconstruire l'indépendance alimentaire et reprendre le contrôle de la terre face au pillage néolibéral.",
+    "acteurs": [
+     "Alliance of Farmers of Gezira and Managil",
+     "Abdelraouf Omar Ahmed",
+     "FAO",
+     "Rapid Support Forces",
+     "Sudanese army"
+    ],
+    "controverse": "Tension entre le modèle dominant d'agriculture intensive dépendante des investissements étrangers et de la privatisation, versus une reconstruction paysanne par le bas fondée sur l'agriculture vivrière familiale, les coopératives et l'autonomie locale. La guerre a cristallisé cette opposition en forçant les paysans à imaginer une alternative concrète à la dépendance et à la dépossession.",
+    "angle_journalistique": "« Comment les paysans soudanais reconstruisent leur agriculture face à l'accaparement des terres : la campagne 'We Must Sow' comme riposte à la guerre et au néolibéralisme agraire » — enquête sur la mobilisation paysanne réelle comme réponse à la destruction et à l'accaparement foncier.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "f2e1a4cc6a"
    },
    "download_status": "ok",
    "archive_url": "https://web.archive.org/web/20260630171658/https://viacampesina.org/en/wp-content/uploads/sites/2/2025/12/Agriculture-in-Sudan.pdf",
@@ -45089,67 +47111,6 @@
    "link_checked": "2026-09-15T19:11:44Z",
    "has_cover": true
   },
-  "e82874eb": {
-   "id": "e82874eb",
-   "url": "https://viacampesina.org/en/wp-content/uploads/sites/2/2025/12/2025-12-16-ECVC-letter-to-David-Lammy-MP-.pdf",
-   "filename": "2025-12-16-ECVC-letter-to-David-Lammy-MP-.pdf",
-   "format": "pdf",
-   "source": "La Vía Campesina — publications (WP REST)",
-   "first_seen": "2026-06-30_16-59",
-   "latest_run": "2026-07-27_11-06",
-   "collected_date": "2026-07-27_11-06",
-   "score_initial": 8,
-   "score_final": null,
-   "latest_score": 8,
-   "doc_type": "autre",
-   "recit_de_lutte": false,
-   "doc_date": "2025-12-17",
-   "lang": "en",
-   "editeur": "",
-   "doi": "",
-   "isbn": "3222173112",
-   "hal_id": "",
-   "versions": [],
-   "downloaded": true,
-   "saved_as": "docs/e82874eb_2025-12-16-ECVC-letter-to-David-Lammy-MP-.pdf",
-   "runs": [
-    {
-     "date": "2026-06-30_16-59",
-     "score": 8,
-     "raison": "auto_download (source fiable)",
-     "context_seen": "2025-12-16 ECVC letter to David Lammy MP",
-     "link_text": "2025-12-16 ECVC letter to David Lammy MP",
-     "downloaded": true,
-     "model": "",
-     "prompt_version": ""
-    },
-    {
-     "date": "2026-07-27_11-06",
-     "score": 8,
-     "raison": "auto_download (source fiable)",
-     "context_seen": "2025-12-16 ECVC letter to David Lammy MP",
-     "link_text": "2025-12-16 ECVC letter to David Lammy MP",
-     "downloaded": true,
-     "model": "",
-     "prompt_version": ""
-    }
-   ],
-   "cover": "covers/e82874eb.jpg",
-   "meta": {
-    "page_count": 1,
-    "pdf_title": " ",
-    "pdf_author": "GC",
-    "pdf_creator": "Microsoft® Word 2019"
-   },
-   "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
-   },
-   "download_status": "ok",
-   "archive_url": "https://web.archive.org/web/20260727131201/https://viacampesina.org/en/wp-content/uploads/sites/2/2025/12/2025-12-16-ECVC-letter-to-David-Lammy-MP-.pdf",
-   "link_status": "ok",
-   "link_checked": "2026-09-15T19:11:44Z",
-   "has_cover": true
-  },
   "97cc4549": {
    "id": "97cc4549",
    "url": "https://viacampesina.org/en/wp-content/uploads/sites/2/2025/12/Sri_Lanka_Disaster_Report_MONLAR_2025.pdf",
@@ -45160,11 +47121,11 @@
    "latest_run": "2026-07-27_11-06",
    "collected_date": "2026-07-27_11-06",
    "score_initial": 8,
-   "score_final": null,
+   "score_final": 7,
    "latest_score": 8,
    "doc_type": "autre",
    "recit_de_lutte": false,
-   "doc_date": "2025-12-05",
+   "doc_date": "2025-12-02",
    "lang": "en",
    "editeur": "",
    "doi": "",
@@ -45193,6 +47154,16 @@
      "downloaded": true,
      "model": "",
      "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-15_22-41",
+     "score": 8,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Sri_Lanka_Disaster_Report_MONLAR_2025",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
     }
    ],
    "cover": "covers/97cc4549.jpg",
@@ -45203,7 +47174,91 @@
     "pdf_creator": "Writer"
    },
    "enrichment": {
-    "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+    "summary": "Ce rapport documente la réponse de MONLAR, une organisation sri-lankaise, face au Cyclone Ditwah (novembre-décembre 2025) qui a dévasté le Sri Lanka en inondations et glissements de terrain. Environ 1 million de personnes sont affectées, plus de 15 000 maisons détruites, et 180 000 personnes sont déplacées dans des abris d'urgence. Les pertes agricoles sont massives, notamment pour les petits producteurs, fermiers de plantation et personnes sans terre. MONLAR mobilise ses réseaux locaux (People's Planning Forums) pour une réponse coordonnée, mais surtout pour lancer un programme de reconstruction agricole fondé sur l'agroécologie. L'organisation vise à supporter 5 000+ foyers de fermiers avec semences, restauration des sols, formation à l'agroécologie, et renforcement de la résilience climatique. De manière significative, MONLAR ancre sa stratégie dans l'expérience du tsunami 2004, où elle a lutté contre la « capture corporatiste des terres côtières ». Aujourd'hui, elle applique des leçons identiques : une reconstruction basée sur les droits, la prévention de l'appropriation par les intérêts commerciaux, la souveraineté alimentaire, et l'engagement collectif plutôt que la récupération individualisée par foyer. L'organisation plaide en parallèle pour un allègement de la dette externe auprès du FMI et de la Banque mondiale, reconnaissant que la capacité de reconstruction dépend de l'espace budgétaire libéré pour l'investissement public. Le texte souligne explicitement le risque que les personnes sans terre ou en tenure informelle ne soient exclues de la reconstruction et subissent une « aggravation des inégalités ».",
+    "citations": [
+     {
+      "page": 4,
+      "quote": "Ensure that recovery efforts strengthen, rather than weaken, community land rights, resource access, and livelihood security.",
+      "why_relevant": "Énonce clairement que les droits fonciers communautaires sont un enjeu central de la reconstruction post-catastrophe, pas secondaire.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "Prevent corporate interests from exploiting disaster-affected areas and communities.",
+      "why_relevant": "Lutte explicite contre l'accaparement foncier en période de crise, leçon du tsunami 2004.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 3,
+      "quote": "Promoting agroecological methods that rebuild soil health, restore biodiversity, and increase resilience against future climate events (floods, landslides, erratic rainfall).",
+      "why_relevant": "Agroécologie comme politique de reconstruction, pas simple technique environnementale.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "using PPFs to mobilize communities, rebuild local networks, and ensure collective engagement, rather than single-household recovery, promoting food sovereignty and social solidarity.",
+      "why_relevant": "Souveraineté alimentaire explicite + solidarité collective vs. logique individualisée.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "many affected are landless or have informal tenure, recovery must avoid deepening inequality or encouraging dispossession.",
+      "why_relevant": "Identification de la vulnérabilité foncière comme risque post-catastrophe, enjeu central.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "In 2004, MONLAR played a critical role in advocating against policies that enabled corporate capture of coastal lands and undermined community rights.",
+      "why_relevant": "Historicité politique de la lutte contre l'appropriation des terres après désastre.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 3,
+      "quote": "Targeting at least 5,000 affected farmer-households across affected districts for direct support, including restoration of farmland, provision of seeds, ecological inputs, tools, and technical guidance for resilient cultivation.",
+      "why_relevant": "Petit productivisme et appui technique à la paysannerie comme stratégie de reconstruction.",
+      "verified": true,
+      "page_physical": 3
+     }
+    ],
+    "matched_keywords": [
+     "agroécologie",
+     "souveraineté alimentaire",
+     "petits producteurs",
+     "smallholder",
+     "droits fonciers",
+     "accès à la terre",
+     "sans-terre",
+     "landless",
+     "agriculture vivrière",
+     "résilience",
+     "engagement communautaire",
+     "collectif",
+     "prévention de l'accaparement",
+     "land rights",
+     "farmer movements",
+     "rural livelihoods"
+    ],
+    "relevance_score": 7,
+    "relevance_notes": "Document hautement pertinent pour l'agroécologie politique et la souveraineté alimentaire en contexte de résilience post-catastrophe. Touche frontalement aux droits fonciers, aux petits producteurs, et à la lutte contre l'appropriation. Limité par : absence de théorisation conceptuelle (c'est un rapport d'action, non d'analyse), pas de propositions institutionnelles concrètes de communs (CLT, fiducies), pas de féminisme paysan explicite. Score 7 plutôt que 9 parce que c'est un texte pragmatique d'urgence, non idéologique.",
+    "en_clair": "Ce texte montre comment une organisation sri-lankaise reconstruit l'agriculture après une catastrophe en donnant du pouvoir aux petits paysans — en leur donnant des semences écologiques, de la formation, et en s'opposant aux corporations qui voudraient s'approprier les terres détruites. Utile si tu travailles sur : comment les petits producteurs se défendent après une crise climatique, ou comment l'agriculture écologique peut être une stratégie d'émancipation foncière, pas seulement environnementale.",
+    "acteurs": [
+     "MONLAR",
+     "People's Planning Forums (PPFs)",
+     "District Secretariats",
+     "Government of Sri Lanka",
+     "IMF",
+     "World Bank"
+    ],
+    "controverse": "Tension implicite entre logique de reconstruction centrée sur l'État/marché (relogement, indemnisation) et approche communautaire agroécologique. Risque explicite : la catastrophe sert de prétexte à l'accaparement foncier corporatiste (leçon du 2004). Enjeu non résolu : comment financer une reconstruction juste quand la dette externe paralyse l'État.",
+    "angle_journalistique": "Enquête : comment les catastrophes climatiques deviennent des opportunités pour les corporations de s'approprier les terres des paysans, et quelles sont les stratégies de contre-attaque des organisations qui défendent les droits fonciers.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "b879d185a0"
    },
    "download_status": "ok",
    "archive_url": "https://web.archive.org/web/20260727131212/https://viacampesina.org/en/wp-content/uploads/sites/2/2025/12/Sri_Lanka_Disaster_Report_MONLAR_2025.pdf",

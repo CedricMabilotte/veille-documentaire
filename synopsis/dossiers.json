@@ -1,14 +1,15 @@
 {
-  "generated_at": "2026-09-15T19:16:16Z",
+  "generated_at": "2026-09-15T23:13:44Z",
   "total_dossiers": 10,
   "dossiers": [
     {
       "slug": "sortir-une-terre-du-marche",
       "titre": "Sortir une terre du marché",
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-      "doc_count": 93,
+      "doc_count": 96,
       "docs": [
         "9c49c870",
+        "e41de87d",
         "931fc89b",
         "2ab410d3",
         "dd858578",
@@ -28,6 +29,7 @@
         "f036ef85",
         "d53c0a12",
         "87d237f9",
+        "5a26bb5f",
         "59b9dd0b",
         "9e831a55",
         "e5341cc9",
@@ -59,6 +61,7 @@
         "876db11d",
         "6db5a69d",
         "88dfd6e3",
+        "63caf67a",
         "9044708c",
         "69b25d66",
         "f8d54f16",
@@ -111,6 +114,14 @@
             "propriété d'usage",
             "anti-spéculat",
             "inaliénab"
+          ]
+        },
+        {
+          "id": "e41de87d",
+          "title": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
+          "score": 9,
+          "matched_on": [
+            "propriété d'usage"
           ]
         },
         {
@@ -273,6 +284,14 @@
         {
           "id": "87d237f9",
           "title": "Dra. territorios en disputa: ¿la autogestión de hábitat como estrategia de reapropiación de comunes urbanos?.",
+          "score": 9,
+          "matched_on": [
+            "anti-spéculat"
+          ]
+        },
+        {
+          "id": "5a26bb5f",
+          "title": "EN-LVC_Position_Paper-WEB",
           "score": 9,
           "matched_on": [
             "anti-spéculat"
@@ -538,6 +557,14 @@
           "score": 8,
           "matched_on": [
             "propriété d'usage"
+          ]
+        },
+        {
+          "id": "63caf67a",
+          "title": "16.03.26_EN_International Trade framework La Via Campesina",
+          "score": 8,
+          "matched_on": [
+            "inaliénab"
           ]
         },
         {
@@ -893,7 +920,7 @@
       "slug": "zad-defense-de-territoires",
       "titre": "ZAD & défense de territoires",
       "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-      "doc_count": 83,
+      "doc_count": 85,
       "docs": [
         "38a113bc",
         "ba64641a",
@@ -905,6 +932,7 @@
         "1ef49d91",
         "b54759fb",
         "59028c2b",
+        "5a26bb5f",
         "1958fc06",
         "fb76b5a1",
         "5536b369",
@@ -952,6 +980,7 @@
         "3fd40433",
         "ac638fb6",
         "8741a8e6",
+        "1a3bdd23",
         "0183b615",
         "02b2b6df",
         "b85c8bc1",
@@ -1061,6 +1090,14 @@
         {
           "id": "59028c2b",
           "title": "Liberación de la Madre Tierra: Resistencia del pueblo nasa en el Norte del Cauca.",
+          "score": 9,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "5a26bb5f",
+          "title": "EN-LVC_Position_Paper-WEB",
           "score": 9,
           "matched_on": [
             "occupation"
@@ -1470,6 +1507,14 @@
           ]
         },
         {
+          "id": "1a3bdd23",
+          "title": "SOLIDARITY OF SPI FOR FRENCH PEASANTS CONFÉDÉRATION PAYSANNE",
+          "score": 7,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
           "id": "0183b615",
           "title": "Memorandum to Commerce Ministry : ICCFM",
           "score": 7,
@@ -1714,11 +1759,12 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 195,
+      "doc_count": 209,
       "docs": [
         "9c49c870",
         "39441dfc",
         "8bfe460c",
+        "e41de87d",
         "03b9d287",
         "35641d6d",
         "dc1574ae",
@@ -1751,6 +1797,10 @@
         "0bf022d5",
         "a78347a3",
         "f873e704",
+        "8f2fc293",
+        "b2d4d2ce",
+        "75fe7394",
+        "5a26bb5f",
         "1958fc06",
         "59b9dd0b",
         "c8842f31",
@@ -1809,7 +1859,10 @@
         "7a9e87db",
         "684ffd64",
         "7b77750e",
+        "d4f9ca0a",
         "63caf67a",
+        "d9dd0148",
+        "14662b8d",
         "1fe2d929",
         "26e16076",
         "31af3403",
@@ -1877,6 +1930,9 @@
         "8741a8e6",
         "2a87f34f",
         "79ba213c",
+        "1a3bdd23",
+        "dff4b150",
+        "97cc4549",
         "5ab070fc",
         "60f51b57",
         "982a7b44",
@@ -1907,6 +1963,9 @@
         "55b31ba8",
         "c8e0149d",
         "cede62b7",
+        "a4b0d3c1",
+        "b5e00be0",
+        "063632b1",
         "ad195f76",
         "3afcdc16",
         "a685537e",
@@ -1937,6 +1996,14 @@
         {
           "id": "8bfe460c",
           "title": "The Peasant Movement in Kwantung — Materials on the Agrarian Question",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "e41de87d",
+          "title": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
           "score": 9,
           "matched_on": [
             "réforme agraire"
@@ -2243,6 +2310,47 @@
           "matched_on": [
             "réforme agraire",
             "mst"
+          ]
+        },
+        {
+          "id": "8f2fc293",
+          "title": "The Meknes Appeal – SIAM 2026",
+          "score": 9,
+          "matched_on": [
+            "sans terre",
+            "réforme agraire",
+            "landless",
+            "agrarian reform"
+          ]
+        },
+        {
+          "id": "b2d4d2ce",
+          "title": "LVC EN declaration Yaounde Cameroon 2026",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "75fe7394",
+          "title": "Mag2_interview-with-Susan-Owiti",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "5a26bb5f",
+          "title": "EN-LVC_Position_Paper-WEB",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "via campesina",
+            "landless",
+            "agrarian reform"
           ]
         },
         {
@@ -2764,11 +2872,40 @@
           ]
         },
         {
+          "id": "d4f9ca0a",
+          "title": "EN-Nyeleni_Common_Political_Agenda_2026-2",
+          "score": 8,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire"
+          ]
+        },
+        {
           "id": "63caf67a",
           "title": "16.03.26_EN_International Trade framework La Via Campesina",
           "score": 8,
           "matched_on": [
+            "réforme agraire",
             "via campesina"
+          ]
+        },
+        {
+          "id": "d9dd0148",
+          "title": "NFFC-NFU joint statement on ICARRD+20",
+          "score": 8,
+          "matched_on": [
+            "réforme agraire",
+            "agrarian reform"
+          ]
+        },
+        {
+          "id": "14662b8d",
+          "title": "Comunicado_Cheias_Africa_Austral_LVC_SEAf_COMPLETO",
+          "score": 8,
+          "matched_on": [
+            "sans-terre",
+            "via campesina",
+            "landless"
           ]
         },
         {
@@ -3355,6 +3492,32 @@
           ]
         },
         {
+          "id": "1a3bdd23",
+          "title": "SOLIDARITY OF SPI FOR FRENCH PEASANTS CONFÉDÉRATION PAYSANNE",
+          "score": 7,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
+          "id": "dff4b150",
+          "title": "2026 01 15 EN – SOLIDARITY to Confederation Paysanne France",
+          "score": 7,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
+          "id": "97cc4549",
+          "title": "Sri_Lanka_Disaster_Report_MONLAR_2025",
+          "score": 7,
+          "matched_on": [
+            "sans-terre",
+            "sans terre",
+            "landless"
+          ]
+        },
+        {
           "id": "5ab070fc",
           "title": "lvc_IT_A-Summit-Under-Siege_lowres2",
           "score": 7,
@@ -3616,6 +3779,30 @@
           ]
         },
         {
+          "id": "a4b0d3c1",
+          "title": "Flyer-New-GMOs-EN-web-compressed",
+          "score": 6,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
+          "id": "b5e00be0",
+          "title": "2026-03-23-Press-release-Australia-trade-deal-threatens-food-sovereignty",
+          "score": 6,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
+          "id": "063632b1",
+          "title": "Agriculture in Sudan",
+          "score": 6,
+          "matched_on": [
+            "sans-terre"
+          ]
+        },
+        {
           "id": "ad195f76",
           "title": "NOT IN OUR NAME",
           "score": 6,
@@ -3656,12 +3843,13 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 180,
+      "doc_count": 188,
       "docs": [
         "d30c223f",
         "9c49c870",
         "39441dfc",
         "c8210481",
+        "e41de87d",
         "05392c72",
         "96563571",
         "931fc89b",
@@ -3698,6 +3886,9 @@
         "4ac23f59",
         "10c92b7a",
         "9d002cb9",
+        "8f2fc293",
+        "b2d4d2ce",
+        "5a26bb5f",
         "59b9dd0b",
         "c8842f31",
         "41df6222",
@@ -3797,6 +3988,9 @@
         "3fd40433",
         "8741a8e6",
         "187000d0",
+        "1d909eda",
+        "72a2c796",
+        "3cc0465a",
         "5ab070fc",
         "2f0c58b3",
         "a5a01a97",
@@ -3834,6 +4028,7 @@
         "b8a9d650",
         "cede62b7",
         "f640d991",
+        "a4b0d3c1",
         "7585c0aa",
         "7c1b5f0c",
         "13352415",
@@ -3871,6 +4066,14 @@
           "score": 10,
           "matched_on": [
             "commons"
+          ]
+        },
+        {
+          "id": "e41de87d",
+          "title": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers"
           ]
         },
         {
@@ -4191,6 +4394,32 @@
           "title": "Re-enchanting the world : feminism and the politics of the commons",
           "score": 9,
           "matched_on": [
+            "commons"
+          ]
+        },
+        {
+          "id": "8f2fc293",
+          "title": "The Meknes Appeal – SIAM 2026",
+          "score": 9,
+          "matched_on": [
+            "terres collectives",
+            "terres communales"
+          ]
+        },
+        {
+          "id": "b2d4d2ce",
+          "title": "LVC EN declaration Yaounde Cameroon 2026",
+          "score": 9,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
+          "id": "5a26bb5f",
+          "title": "EN-LVC_Position_Paper-WEB",
+          "score": 9,
+          "matched_on": [
+            "terres collectives",
             "commons"
           ]
         },
@@ -5060,6 +5289,31 @@
           ]
         },
         {
+          "id": "1d909eda",
+          "title": "Download in Italian",
+          "score": 7,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "72a2c796",
+          "title": "Copy of For Nyeleni (Size Adapted)_Framework Presentation EN (2304 x 768 px)",
+          "score": 7,
+          "matched_on": [
+            "communs fonciers",
+            "terres collectives"
+          ]
+        },
+        {
+          "id": "3cc0465a",
+          "title": "Copy of For Nyeleni (Size Adapted)_Framework Presentation EN (2304 x 768 px)",
+          "score": 7,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
           "id": "5ab070fc",
           "title": "lvc_IT_A-Summit-Under-Siege_lowres2",
           "score": 7,
@@ -5375,6 +5629,14 @@
           "matched_on": [
             "communs fonciers",
             "terres collectives",
+            "enclosure"
+          ]
+        },
+        {
+          "id": "a4b0d3c1",
+          "title": "Flyer-New-GMOs-EN-web-compressed",
+          "score": 6,
+          "matched_on": [
             "enclosure"
           ]
         },
@@ -5871,11 +6133,12 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 322,
+      "doc_count": 338,
       "docs": [
         "9c49c870",
         "39441dfc",
         "8bfe460c",
+        "e41de87d",
         "03b9d287",
         "35641d6d",
         "dc1574ae",
@@ -5918,6 +6181,10 @@
         "f873e704",
         "ca782793",
         "61797131",
+        "8f2fc293",
+        "b2d4d2ce",
+        "75fe7394",
+        "5a26bb5f",
         "1958fc06",
         "59b9dd0b",
         "c8842f31",
@@ -5996,9 +6263,11 @@
         "4ee36902",
         "3ab1a62b",
         "f75b67b2",
+        "d4f9ca0a",
         "800b6f06",
-        "1a3bdd23",
-        "dff4b150",
+        "63caf67a",
+        "d9dd0148",
+        "14662b8d",
         "05377a49",
         "40220080",
         "3ce78398",
@@ -6115,6 +6384,12 @@
         "a1543a19",
         "ded7eaa1",
         "187000d0",
+        "1d909eda",
+        "72a2c796",
+        "3cc0465a",
+        "1a3bdd23",
+        "dff4b150",
+        "97cc4549",
         "5ab070fc",
         "60f51b57",
         "982a7b44",
@@ -6181,6 +6456,9 @@
         "b8a9d650",
         "cede62b7",
         "f640d991",
+        "a4b0d3c1",
+        "b5e00be0",
+        "063632b1",
         "e02bdae7",
         "ad195f76",
         "3afcdc16",
@@ -6231,6 +6509,16 @@
             "paysannerie",
             "paysan",
             "peasant"
+          ]
+        },
+        {
+          "id": "e41de87d",
+          "title": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière"
           ]
         },
         {
@@ -6640,6 +6928,61 @@
             "paysan",
             "agroécologie",
             "agriculture vivrière"
+          ]
+        },
+        {
+          "id": "8f2fc293",
+          "title": "The Meknes Appeal – SIAM 2026",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "b2d4d2ce",
+          "title": "LVC EN declaration Yaounde Cameroon 2026",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "75fe7394",
+          "title": "Mag2_interview-with-Susan-Owiti",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "5a26bb5f",
+          "title": "EN-LVC_Position_Paper-WEB",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "food sovereignty"
           ]
         },
         {
@@ -7424,6 +7767,18 @@
           ]
         },
         {
+          "id": "d4f9ca0a",
+          "title": "EN-Nyeleni_Common_Political_Agenda_2026-2",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
           "id": "800b6f06",
           "title": "EN_LVC_Position_ Paper_Food Sovereignty in the Face of War",
           "score": 8,
@@ -7432,20 +7787,42 @@
           ]
         },
         {
-          "id": "1a3bdd23",
-          "title": "SOLIDARITY OF SPI FOR FRENCH PEASANTS CONFÉDÉRATION PAYSANNE",
+          "id": "63caf67a",
+          "title": "16.03.26_EN_International Trade framework La Via Campesina",
           "score": 8,
           "matched_on": [
             "paysan",
-            "peasant"
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
           ]
         },
         {
-          "id": "dff4b150",
-          "title": "2026 01 15 EN – SOLIDARITY to Confederation Paysanne France",
+          "id": "d9dd0148",
+          "title": "NFFC-NFU joint statement on ICARRD+20",
           "score": 8,
           "matched_on": [
-            "paysan"
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "14662b8d",
+          "title": "Comunicado_Cheias_Africa_Austral_LVC_SEAf_COMPLETO",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "food sovereignty"
           ]
         },
         {
@@ -8520,6 +8897,75 @@
           ]
         },
         {
+          "id": "1d909eda",
+          "title": "Download in Italian",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "72a2c796",
+          "title": "Copy of For Nyeleni (Size Adapted)_Framework Presentation EN (2304 x 768 px)",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "3cc0465a",
+          "title": "Copy of For Nyeleni (Size Adapted)_Framework Presentation EN (2304 x 768 px)",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "1a3bdd23",
+          "title": "SOLIDARITY OF SPI FOR FRENCH PEASANTS CONFÉDÉRATION PAYSANNE",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "dff4b150",
+          "title": "2026 01 15 EN – SOLIDARITY to Confederation Paysanne France",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "97cc4549",
+          "title": "Sri_Lanka_Disaster_Report_MONLAR_2025",
+          "score": 7,
+          "matched_on": [
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
           "id": "5ab070fc",
           "title": "lvc_IT_A-Summit-Under-Siege_lowres2",
           "score": 7,
@@ -9200,6 +9646,42 @@
           ]
         },
         {
+          "id": "a4b0d3c1",
+          "title": "Flyer-New-GMOs-EN-web-compressed",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "b5e00be0",
+          "title": "2026-03-23-Press-release-Australia-trade-deal-threatens-food-sovereignty",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "063632b1",
+          "title": "Agriculture in Sudan",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
           "id": "e02bdae7",
           "title": "EN-Brief-Analysis-of-the-Situation-in-Haiti",
           "score": 6,
@@ -9339,9 +9821,10 @@
       "slug": "land-back-autochtones",
       "titre": "Land Back & souverainetés autochtones",
       "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-      "doc_count": 95,
+      "doc_count": 105,
       "docs": [
         "39441dfc",
+        "e41de87d",
         "c2ab1111",
         "5da811ca",
         "42750467",
@@ -9355,6 +9838,10 @@
         "9a0dea36",
         "ca782793",
         "61797131",
+        "8f2fc293",
+        "b2d4d2ce",
+        "75fe7394",
+        "5a26bb5f",
         "59b9dd0b",
         "c8842f31",
         "7543801f",
@@ -9386,6 +9873,9 @@
         "037cb37e",
         "4ee36902",
         "3ab1a62b",
+        "d4f9ca0a",
+        "63caf67a",
+        "d9dd0148",
         "16c630c0",
         "f57050e5",
         "425ed458",
@@ -9412,6 +9902,8 @@
         "ac638fb6",
         "8741a8e6",
         "187000d0",
+        "72a2c796",
+        "3cc0465a",
         "60f51b57",
         "8c4c211f",
         "0183b615",
@@ -9445,6 +9937,14 @@
           "matched_on": [
             "autochtone",
             "indigenous"
+          ]
+        },
+        {
+          "id": "e41de87d",
+          "title": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
+          "score": 9,
+          "matched_on": [
+            "droit coutumier"
           ]
         },
         {
@@ -9557,6 +10057,43 @@
           "score": 9,
           "matched_on": [
             "autochtone"
+          ]
+        },
+        {
+          "id": "8f2fc293",
+          "title": "The Meknes Appeal – SIAM 2026",
+          "score": 9,
+          "matched_on": [
+            "indigène"
+          ]
+        },
+        {
+          "id": "b2d4d2ce",
+          "title": "LVC EN declaration Yaounde Cameroon 2026",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
+          "id": "75fe7394",
+          "title": "Mag2_interview-with-Susan-Owiti",
+          "score": 9,
+          "matched_on": [
+            "indigène",
+            "indigenous"
+          ]
+        },
+        {
+          "id": "5a26bb5f",
+          "title": "EN-LVC_Position_Paper-WEB",
+          "score": 9,
+          "matched_on": [
+            "land back",
+            "autochtone",
+            "indigenous",
+            "droit coutumier"
           ]
         },
         {
@@ -9822,6 +10359,32 @@
           ]
         },
         {
+          "id": "d4f9ca0a",
+          "title": "EN-Nyeleni_Common_Political_Agenda_2026-2",
+          "score": 8,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "63caf67a",
+          "title": "16.03.26_EN_International Trade framework La Via Campesina",
+          "score": 8,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "d9dd0148",
+          "title": "NFFC-NFU joint statement on ICARRD+20",
+          "score": 8,
+          "matched_on": [
+            "land back",
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
           "id": "16c630c0",
           "title": "[PT] Manifesto 5 de junho – O planeta acima do lucro – Uma só Terra",
           "score": 8,
@@ -10049,6 +10612,23 @@
           ]
         },
         {
+          "id": "72a2c796",
+          "title": "Copy of For Nyeleni (Size Adapted)_Framework Presentation EN (2304 x 768 px)",
+          "score": 7,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "3cc0465a",
+          "title": "Copy of For Nyeleni (Size Adapted)_Framework Presentation EN (2304 x 768 px)",
+          "score": 7,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
           "id": "60f51b57",
           "title": "LVC Position_FR_UN Food Summit_2020_LowRes3",
           "score": 7,
@@ -10258,8 +10838,9 @@
       "slug": "feminismes-de-la-terre",
       "titre": "Féminismes de la terre",
       "chapo": "Le foncier a un genre. Place des femmes dans les luttes agraires, droits fonciers des femmes, écoféminisme rural, critique de la division genrée du travail de la terre.",
-      "doc_count": 33,
+      "doc_count": 39,
       "docs": [
+        "e41de87d",
         "b225af88",
         "7361abcf",
         "1ef49d91",
@@ -10268,6 +10849,8 @@
         "a0be49c2",
         "f873e704",
         "61797131",
+        "75fe7394",
+        "5a26bb5f",
         "1958fc06",
         "59b9dd0b",
         "41df6222",
@@ -10278,6 +10861,8 @@
         "2bf90eb8",
         "f7775b72",
         "43584cf4",
+        "d4f9ca0a",
+        "63caf67a",
         "580cbbae",
         "b1383308",
         "40ea5e94",
@@ -10289,12 +10874,23 @@
         "3fe8867b",
         "ac638fb6",
         "ded7eaa1",
+        "72a2c796",
         "2f0c58b3",
         "a5a01a97",
         "5c511048",
         "55b31ba8"
       ],
       "docs_detail": [
+        {
+          "id": "e41de87d",
+          "title": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
+          "score": 9,
+          "matched_on": [
+            "féminisme agraire",
+            "droits fonciers des femmes",
+            "femmes et terre"
+          ]
+        },
         {
           "id": "b225af88",
           "title": "Download",
@@ -10364,6 +10960,27 @@
           "title": "Del huerto al territorio: la agroecología como estrategia para la defensa de la tierra y el derecho a decidir entre mujeres indígenas de Chiapas",
           "score": 9,
           "matched_on": [
+            "femmes et terre"
+          ]
+        },
+        {
+          "id": "75fe7394",
+          "title": "Mag2_interview-with-Susan-Owiti",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan",
+            "féminisme agraire",
+            "droits fonciers des femmes",
+            "femmes et terre",
+            "agrarian feminism"
+          ]
+        },
+        {
+          "id": "5a26bb5f",
+          "title": "EN-LVC_Position_Paper-WEB",
+          "score": 9,
+          "matched_on": [
+            "féminisme agraire",
             "femmes et terre"
           ]
         },
@@ -10457,6 +11074,24 @@
           "score": 8,
           "matched_on": [
             "féminisme agraire"
+          ]
+        },
+        {
+          "id": "d4f9ca0a",
+          "title": "EN-Nyeleni_Common_Political_Agenda_2026-2",
+          "score": 8,
+          "matched_on": [
+            "féminisme paysan",
+            "féminisme agraire",
+            "femmes et terre"
+          ]
+        },
+        {
+          "id": "63caf67a",
+          "title": "16.03.26_EN_International Trade framework La Via Campesina",
+          "score": 8,
+          "matched_on": [
+            "féminisme paysan"
           ]
         },
         {
@@ -10558,6 +11193,14 @@
           ]
         },
         {
+          "id": "72a2c796",
+          "title": "Copy of For Nyeleni (Size Adapted)_Framework Presentation EN (2304 x 768 px)",
+          "score": 7,
+          "matched_on": [
+            "femmes et terre"
+          ]
+        },
+        {
           "id": "2f0c58b3",
           "title": "2018-LVC-Annual-Report-EN-compressed",
           "score": 7,
@@ -10595,7 +11238,7 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 148,
+      "doc_count": 160,
       "docs": [
         "d30c223f",
         "39441dfc",
@@ -10625,6 +11268,10 @@
         "87d237f9",
         "85ac1cdf",
         "4ac23f59",
+        "8f2fc293",
+        "b2d4d2ce",
+        "75fe7394",
+        "5a26bb5f",
         "59b9dd0b",
         "c8842f31",
         "280a4ad1",
@@ -10669,6 +11316,8 @@
         "037cb37e",
         "3ab1a62b",
         "f75b67b2",
+        "d4f9ca0a",
+        "d9dd0148",
         "16c630c0",
         "f57050e5",
         "a18b6293",
@@ -10704,6 +11353,10 @@
         "79ba213c",
         "f075bd56",
         "187000d0",
+        "1d909eda",
+        "72a2c796",
+        "3cc0465a",
+        "97cc4549",
         "5ab070fc",
         "60f51b57",
         "f94b3902",
@@ -10738,6 +11391,8 @@
         "b8a9d650",
         "cede62b7",
         "f640d991",
+        "a4b0d3c1",
+        "063632b1",
         "e02bdae7",
         "a66578a6",
         "93a242c7",
@@ -10976,6 +11631,42 @@
           "score": 9,
           "matched_on": [
             "enclosure"
+          ]
+        },
+        {
+          "id": "8f2fc293",
+          "title": "The Meknes Appeal – SIAM 2026",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "b2d4d2ce",
+          "title": "LVC EN declaration Yaounde Cameroon 2026",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "75fe7394",
+          "title": "Mag2_interview-with-Susan-Owiti",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "5a26bb5f",
+          "title": "EN-LVC_Position_Paper-WEB",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
           ]
         },
         {
@@ -11351,6 +12042,24 @@
           ]
         },
         {
+          "id": "d4f9ca0a",
+          "title": "EN-Nyeleni_Common_Political_Agenda_2026-2",
+          "score": 8,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "d9dd0148",
+          "title": "NFFC-NFU joint statement on ICARRD+20",
+          "score": 8,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
           "id": "16c630c0",
           "title": "[PT] Manifesto 5 de junho – O planeta acima do lucro – Uma só Terra",
           "score": 8,
@@ -11648,6 +12357,40 @@
           ]
         },
         {
+          "id": "1d909eda",
+          "title": "Download in Italian",
+          "score": 7,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "72a2c796",
+          "title": "Copy of For Nyeleni (Size Adapted)_Framework Presentation EN (2304 x 768 px)",
+          "score": 7,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "3cc0465a",
+          "title": "Copy of For Nyeleni (Size Adapted)_Framework Presentation EN (2304 x 768 px)",
+          "score": 7,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "97cc4549",
+          "title": "Sri_Lanka_Disaster_Report_MONLAR_2025",
+          "score": 7,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
           "id": "5ab070fc",
           "title": "lvc_IT_A-Summit-Under-Siege_lowres2",
           "score": 7,
@@ -11927,6 +12670,24 @@
           "matched_on": [
             "accaparement",
             "enclosure"
+          ]
+        },
+        {
+          "id": "a4b0d3c1",
+          "title": "Flyer-New-GMOs-EN-web-compressed",
+          "score": 6,
+          "matched_on": [
+            "accaparement",
+            "land grab",
+            "enclosure"
+          ]
+        },
+        {
+          "id": "063632b1",
+          "title": "Agriculture in Sudan",
+          "score": 6,
+          "matched_on": [
+            "accaparement"
           ]
         },
         {
