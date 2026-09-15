@@ -21,9 +21,10 @@ Un doc qui ne peut pas être lu est MIS DE CÔTÉ avec une raison
 
 Limite de session Claude : pause jusqu'à l'heure de reset (+5 min), puis reprise
 sur le même doc. Checkpoint catalogue tous les 10 docs, commit+push tous les 50.
-En fin de backlog : régénération complète (interface, index, dossiers, exports,
-traduction des citations, site), audit_site, commit+push (le push humain
-déclenche publish-only.yml).
+Tous les REBUILD_EVERY docs, et en fin de backlog : déclenchement de
+.github/workflows/rebuild-site.yml, qui régénère et publie le site en CI
+(le site suit donc au fil de l'eau). En fin de backlog : traduction des
+citations, dernier push, sync des PDF vers Drive.
 
 Usage : setsid nohup python3 scripts/cleanup_backlog.py > /dev/null 2>&1 &
         python3 scripts/cleanup_backlog.py --status
@@ -82,26 +83,60 @@ def git(*args: str) -> subprocess.CompletedProcess:
     return subprocess.run(["git", *args], capture_output=True, text=True)
 
 
-def commit_push(message: str, paths: list[str]) -> None:
-    """Commit par plomberie + push.
+LOCAL_PATHS = ["synopsis/catalog.json", "synopsis/duplicates.json",
+               "interface/covers", "bulles"]
+REBUILD_EVERY = 150
 
-    Le checkout local est un clone partiel (--filter=blob:none) dont site/ n'est
-    pas matérialisé : `git commit` / `git write-tree` tenteraient de rapatrier
-    les ~2 300 blobs de site/ absents (des heures). `write-tree --missing-ok`
-    construit l'arbre sans les exiger ; seuls nos fichiers sont poussés."""
-    git("add", *paths)
-    if git("diff", "--staged", "--quiet").returncode == 0:
-        return
-    tree = git("write-tree", "--missing-ok").stdout.strip()
-    head = git("rev-parse", "HEAD").stdout.strip()
-    msg = (message + "\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n"
-           "Claude-Session: https://claude.ai/code/session_01BFvYB33vk7pWQSf27Lju7J")
-    c = git("commit-tree", tree, "-p", head, "-m", msg).stdout.strip()
-    if not c or git("update-ref", "refs/heads/main", c, head).returncode != 0:
-        log(f"  ✗ commit impossible (tree={tree[:8]} head={head[:8]})")
-        return
-    p = git("push")
-    log(f"  git : {c[:8]} {message} / push {'ok' if p.returncode == 0 else 'ÉCHEC ' + p.stderr.strip()[:150]}")
+
+def commit_push(message: str, paths: list[str] | None = None) -> bool:
+    """Commit par plomberie, rebasé sur origin/main, puis push.
+
+    - Clone partiel (--filter=blob:none), site/ non matérialisé : aucune
+      commande porcelaine qui lirait l'index complet (commit, reset, status).
+    - La CI (rebuild-site.yml) pousse site/ en parallèle : on reconstruit
+      l'arbre depuis origin/main et on n'y remplace QUE nos fichiers
+      (LOCAL_PATHS), jamais les autres — pas de conflit, pas de retour arrière.
+    """
+    paths = paths or LOCAL_PATHS
+    for attempt in range(3):
+        git("fetch", "-q", "origin", "main")
+        base = git("rev-parse", "origin/main").stdout.strip()
+        env = dict(os.environ, GIT_INDEX_FILE=str(ROOT / ".git" / "index-cleanup"))
+        run = lambda *a: subprocess.run(["git", *a], capture_output=True, text=True, env=env)
+        run("read-tree", base)
+        files = []
+        for pth in paths:
+            pp = ROOT / pth
+            files += [pp] if pp.is_file() else [f for f in pp.rglob("*") if f.is_file()]
+        # --index-info : ajout en masse sans lire les blobs absents
+        lines = []
+        for f in files:
+            oid = git("hash-object", "-w", str(f)).stdout.strip()
+            lines.append(f"100644 {oid}\t{f.relative_to(ROOT).as_posix()}")
+        subprocess.run(["git", "update-index", "--index-info"], input="\n".join(lines) + "\n",
+                       capture_output=True, text=True, env=env)
+        tree = run("write-tree", "--missing-ok").stdout.strip()
+        if tree == git("rev-parse", f"{base}^{{tree}}").stdout.strip():
+            return True  # rien de nouveau
+        msg = (message + "\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n"
+               "Claude-Session: https://claude.ai/code/session_01BFvYB33vk7pWQSf27Lju7J")
+        c = git("commit-tree", tree, "-p", base, "-m", msg).stdout.strip()
+        p = git("push", "origin", f"{c}:refs/heads/main")
+        if p.returncode == 0:
+            git("update-ref", "refs/heads/main", c)
+            git("read-tree", c)
+            log(f"  git : {c[:8]} {message} / push ok")
+            return True
+        log(f"  … push refusé (tentative {attempt + 1}) : {p.stderr.strip()[:120]}")
+        time.sleep(15)
+    log("  ✗ push impossible après 3 tentatives")
+    return False
+
+
+def trigger_rebuild() -> None:
+    r = subprocess.run(["gh", "workflow", "run", "rebuild-site.yml", "--ref", "main"],
+                       capture_output=True, text=True)
+    log(f"  🌐 rebuild-site.yml {'déclenché' if r.returncode == 0 else 'NON déclenché : ' + r.stderr.strip()[:120]}")
 
 
 def main() -> int:
@@ -145,10 +180,9 @@ def main() -> int:
     atexit.register(lambda: PIDFILE.unlink(missing_ok=True))
 
     # Garde-fou : on ne travaille que sur un arbre à jour et propre côté catalogue.
-    git("pull", "--ff-only")
-    if git("status", "--porcelain", "synopsis/").stdout.strip():
-        log("✗ synopsis/ a des modifications non commitées — arrêt (rien touché).")
-        return 1
+    # Pas de `git pull` : sur ce clone partiel il rapatrierait des milliers de
+    # blobs de site/. commit_push reconstruit chaque commit sur origin/main.
+    git("fetch", "-q", "origin", "main")
 
     config = watch.load_config()
     keywords = config.get("keywords", [])
@@ -280,39 +314,26 @@ def main() -> int:
             flush()
         if kind == "ok" and done % COMMIT_EVERY == 0:
             flush()
-            commit_push(f"data(backlog): nettoyage — {done} docs lus",
-                        ["synopsis/", "interface/", "bulles/"])
+            if commit_push(f"data(backlog): nettoyage — {done} docs lus") and done % REBUILD_EVERY == 0:
+                trigger_rebuild()
         if args.limit and done + len(retry) >= args.limit:
             break
     flush()
     log(f"Backlog : {done} lus ; reste {len(candidates())} à traiter.")
-    commit_push(f"data(backlog): nettoyage — {done} docs lus (lot)", ["synopsis/", "interface/", "bulles/"])
+    if commit_push(f"data(backlog): nettoyage — {done} docs lus (lot)") and not args.limit:
+        trigger_rebuild()
 
     if args.limit or args.no_final:
         return 0
 
-    log("Phase finale — régénération du site")
-    cat_path = watch.SYNOPSIS_PATH / "catalog.json"
-    steps = [
-        ("interface", lambda: watch.generate_interface()),
-        ("index", lambda: watch.fulltext_index.build_index(cat_path, watch.SYNOPSIS_PATH / "fulltext_index.json")),
-        ("corpus", lambda: watch.corpus_stats.build_stats(cat_path)),
-        ("dossiers", lambda: (watch.editorial.build_dossiers(cat_path), watch.editorial.build_featured(cat_path))),
-        ("exports", lambda: (watch.export_bibtex.export_bibtex(cat_path, Path("exports/catalog.bib")),
-                             watch.export_bibtex.export_ris(cat_path, Path("exports/catalog.ris")),
-                             watch.export_bibtex.export_csl_json(cat_path, Path("exports/catalog.csl.json")))),
-        ("citations", lambda: watch.translate_citations.run(catalog_path=cat_path, verbose=False)),
-        ("site", lambda: watch.publish_site(dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d_%H-%M"))),
-    ]
-    for name, fn in steps:
-        try:
-            fn(); log(f"  ✓ {name}")
-        except Exception as e:
-            log(f"  ⚠ {name} : {e}")
-    a = subprocess.run([sys.executable, "scripts/audit_site.py"], capture_output=True, text=True)
-    log(f"  audit_site exit={a.returncode} : {a.stdout.strip().splitlines()[-1] if a.stdout else ''}")
-    commit_push("data(backlog): fin du nettoyage — site régénéré",
-                ["synopsis/", "interface/", "bulles/", "site/", "exports/"])
+    log("Phase finale — traduction des citations, dernier push, reconstruction CI")
+    try:
+        st = watch.translate_citations.run(catalog_path=watch.SYNOPSIS_PATH / "catalog.json", verbose=False)
+        log(f"  ✓ citations : {st}")
+    except Exception as e:
+        log(f"  ⚠ citations : {e}")
+    if commit_push("data(backlog): fin du nettoyage — citations traduites"):
+        trigger_rebuild()
     try:
         s = subprocess.run(["rclone", "copy", "docs/", "gdrive:Veille_documentaire/"],
                            capture_output=True, text=True, timeout=3600)

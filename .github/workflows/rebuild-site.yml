@@ -1,0 +1,41 @@
+name: Rebuild site (sans veille)
+# 2026-09-16 : pendant le nettoyage local du backlog (cleanup_backlog.py), la
+# machine de Ced pousse le catalogue par lots et declenche ce workflow pour que
+# le site suive au fil de l'eau, sans lancer une veille complete. Ne touche ni
+# a synopsis/catalog.json ni a synopsis/duplicates.json (ecrits en local).
+on:
+  workflow_dispatch:
+concurrency:
+  group: rebuild-site
+  cancel-in-progress: false
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Dependances
+        run: pip install requests beautifulsoup4 pyyaml playwright pymupdf pillow
+      - name: Regeneration du site
+        run: python scripts/rebuild_site.py
+      - name: Commit + publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config --global user.name  "Library Bot"
+          git config --global user.email "bot@library.local"
+          git add site/ exports/ interface/index.html \
+            synopsis/fulltext_index.json synopsis/corpus_stats.json \
+            synopsis/dossiers.json synopsis/featured.json synopsis/sitemap_lastmod.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "rien a publier"; exit 0; fi
+          git commit -m "site: reconstruction $(date '+%Y-%m-%d %H:%M') (nettoyage backlog)"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 10; done
+          gh workflow run publish-only.yml --ref main
