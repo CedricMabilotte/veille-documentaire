@@ -5,7 +5,11 @@ on:
     # Veille quotidienne automatique, 03:00 UTC (creux de trafic). Avant ce
     # cron, "watch.yml" n'avait qu'un déclenchement manuel (workflow_dispatch)
     # — la "veille automatisée" ne l'était donc pas vraiment en pratique.
-    - cron: '0 3 * * *'
+    # 2026-09-15 : passage a un jour sur deux. Un run budgete dure ~1h30
+    # (collecte <= 75 min + installation + post-traitement) ; en quotidien on
+    # depasserait les 2 000 min/mois gratuites d'Actions sur depot prive
+    # (blocage de facturation du 10 au 25/08).
+    - cron: '0 3 */2 * *'
   workflow_dispatch:
     inputs:
       score_threshold:
