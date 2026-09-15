@@ -88,7 +88,14 @@ jobs:
         run: npm install -g @anthropic-ai/claude-code
 
       - name: Lancement de la veille
+        # 2026-09-15 : du 30/08 au 15/09, chaque run a ete tue au timeout de
+        # job (180 min) pendant cette etape, avant le commit -> 17 jours de
+        # travail perdus. watch.py s'arrete desormais de lui-meme quand la
+        # boucle de collecte depasse WATCH_BUDGET_MIN (sources restantes
+        # reportees au run suivant) ; ce timeout d'etape n'est qu'un filet.
+        timeout-minutes: 150
         env:
+          WATCH_BUDGET_MIN:        "75"
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           SCORE_THRESHOLD:         ${{ env.SCORE_THRESHOLD }}
           DRY_RUN:                 ${{ env.DRY_RUN }}

@@ -17,6 +17,8 @@ Usage :
 import os
 import sys
 import json
+import time
+from collections import Counter
 import yaml
 import hashlib
 import subprocess
@@ -68,7 +70,26 @@ for p in (DOCS_PATH, REPORTS_PATH, SYNOPSIS_PATH, INTERFACE_PATH, COVERS_PATH, B
 BATCH_SIZE = 8
 HEADERS    = {"User-Agent": "Mozilla/5.0 (compatible; LibraryBot/1.0)"}
 
-
+# ── Budget de run (incident 2026-08-30 → 2026-09-15) ────────────────────────
+# Pendant 17 jours, chaque run CI a été tué au timeout de 3 h AVANT l'étape de
+# commit : tout le travail (téléchargements, synopsis) était perdu, le
+# throttle n'était jamais persisté, donc toutes les sources redevenaient
+# « dues » le lendemain → boucle infinie de runs à 3 h sans rien produire.
+# Deux garde-fous :
+#   1. WATCH_BUDGET_MIN : temps max de la boucle de collecte. Au-delà, on
+#      s'arrête proprement (source en cours NON enregistrée dans le throttle,
+#      reprise au run suivant) et on passe au catalogue/site/commit.
+#   2. Les docs déjà connus et déjà traités sont écartés AVANT scoring et
+#      téléchargement (sur CI, docs/ est vide : sans ce filtre, chaque PDF
+#      déjà catalogué était re-téléchargé à chaque passage).
+WATCH_BUDGET_MIN    = float(os.getenv("WATCH_BUDGET_MIN", "75"))
+MAX_ENRICH_ATTEMPTS = int(os.getenv("MAX_ENRICH_ATTEMPTS", "4"))
+# auto_download (score 8 sans LLM) n'est honoré que si l'historique post-
+# lecture de la source le justifie : au moins AUTO_DL_MIN_READ docs lus, dont
+# une part ≥ AUTO_DL_MIN_RATIO au seuil de publication. Sinon la source
+# repasse par le scoring sur titre (cas CRAS : 7 faux positifs sur 14 lus).
+AUTO_DL_MIN_READ  = 10
+AUTO_DL_MIN_RATIO = 0.7
 def load_config() -> dict:
     with open(CONFIG_PATH, encoding="utf-8") as f:
         return yaml.safe_load(f)
@@ -1813,6 +1834,59 @@ def save_markdown_report(report: dict, path: Path) -> None:
             )
 
     path.with_suffix(".md").write_text("\n".join(lines), encoding="utf-8")
+def _load_known_docs() -> tuple[dict, set]:
+    """Catalogue courant (docs par uid) + uids archivés."""
+    docs, archived = {}, set()
+    try:
+        cp = SYNOPSIS_PATH / "catalog.json"
+        if cp.exists():
+            docs = json.loads(cp.read_text(encoding="utf-8")).get("docs", {})
+    except Exception as e:
+        print(f"  ⚠  lecture catalog (filtre docs connus) ratée : {e}")
+    try:
+        ap = SYNOPSIS_PATH / "catalog_archive.json"
+        if ap.exists():
+            archived = set(json.loads(ap.read_text(encoding="utf-8")).get("docs", {}).keys())
+    except Exception as e:
+        print(f"  ⚠  lecture catalog_archive ratée : {e}")
+    return docs, archived
+
+
+def _known_skip_reason(url: str, known: dict, archived: set,
+                       download_threshold: int) -> str | None:
+    """Raison d'écarter un doc déjà connu, ou None s'il reste à traiter.
+
+    Un doc connu reste à traiter tant qu'il n'a pas été lu (score_final absent)
+    et qu'on n'a pas épuisé MAX_ENRICH_ATTEMPTS tentatives."""
+    if os.getenv("FORCE_REENRICH", "false").lower() == "true":
+        return None
+    uids = {file_uid(url), file_uid(safe_url(url))}
+    if uids & archived:
+        return "archivé"
+    fiche = next((known[u] for u in uids if u in known), None)
+    if fiche is None:
+        return None
+    if fiche.get("score_final") not in (None, ""):
+        return "déjà lu"
+    runs = fiche.get("runs") or []
+    if (fiche.get("score_initial") or 0) < download_threshold and not fiche.get("downloaded"):
+        return "déjà écarté sur titre"
+    dl_runs = sum(1 for r in runs if r.get("downloaded"))
+    if dl_runs >= MAX_ENRICH_ATTEMPTS or len(runs) >= 2 * MAX_ENRICH_ATTEMPTS:
+        return "tentatives épuisées"
+    return None
+
+
+def _auto_download_trust(known: dict) -> dict:
+    """{source: (docs lus, docs lus au seuil de publication)}."""
+    stats: dict = defaultdict(lambda: [0, 0])
+    for d in known.values():
+        sf = d.get("score_final")
+        if isinstance(sf, (int, float)):
+            e = stats[d.get("source", "")]
+            e[0] += 1
+            e[1] += sf >= 4
+    return stats
 
 
 def main() -> None:
@@ -1834,9 +1908,26 @@ def main() -> None:
         "documents_scored":     0,
         "documents_downloaded": 0,
         "results":              [],
+        "interrupted":          None,
     }
+    t0 = time.monotonic()
+    known_docs, archived_uids = _load_known_docs()
+    trust = _auto_download_trust(known_docs)
+
+    def _stop_reason() -> str | None:
+        if claude_guard.session_limit_active():
+            return "limite de session Claude"
+        if time.monotonic() - t0 > WATCH_BUDGET_MIN * 60:
+            return f"budget de {WATCH_BUDGET_MIN:.0f} min atteint"
+        return None
 
     for source in sources:
+        stop = _stop_reason()
+        if stop:
+            report["interrupted"] = stop
+            print(f"\n⏹   Collecte interrompue ({stop}) — sources restantes "
+                  f"reportées au prochain run.")
+            break
         url       = source.get("url", "")
         label     = source.get("label", url)
         src_type  = source.get("type", "html")
@@ -1869,17 +1960,33 @@ def main() -> None:
 
         # Enregistrer le résultat dans le throttle. On compte le rendement brut
         # (docs_raw) pour ne pas étrangler les flux RSS qui servent la
-        # découverte même s'ils ne produisent aucune fiche.
-        try:
-            throttle.record_fetch(
-                source,
-                success=bool(docs_raw),
-                doc_count=len(docs_raw),
-                status_code=200 if docs_raw else 204,
-            )
-        except Exception as e:
-            print(f"  ⚠  throttle.record_fetch raté : {e}")
+        # découverte même s'ils ne produisent aucune fiche. Appelé seulement
+        # une fois la source ENTIÈREMENT traitée : une source interrompue par
+        # le budget reste « due » et sera reprise au run suivant.
+        def _record_fetch(source=source, docs_raw=docs_raw):
+            try:
+                throttle.record_fetch(
+                    source,
+                    success=bool(docs_raw),
+                    doc_count=len(docs_raw),
+                    status_code=200 if docs_raw else 204,
+                )
+            except Exception as e:
+                print(f"  ⚠  throttle.record_fetch raté : {e}")
 
+        # Docs déjà connus et déjà traités : écartés avant scoring/téléchargement.
+        fresh, skipped = [], Counter()
+        for d in docs:
+            why = _known_skip_reason(d.get("url", ""), known_docs, archived_uids,
+                                     download_threshold)
+            if why:
+                skipped[why] += 1
+            else:
+                fresh.append(d)
+        if skipped:
+            print(f"    ⏭  {sum(skipped.values())} doc(s) déjà connu(s) écarté(s) : "
+                  + ", ".join(f"{k} ×{v}" for k, v in skipped.items()))
+        docs = fresh
         # ── Capture des liens externes : alimente discovery/candidates.yml ─
         # On re-fetche la vraie page d'index pour parser TOUS ses <a href>
         # (pas seulement les docs déjà extraits). Coût : 1 GET de plus par
@@ -1900,8 +2007,8 @@ def main() -> None:
                 print(f"  ⚠  capture_links raté : {e}")
 
         if not docs:
+            _record_fetch()
             continue
-
         report["sources_scanned"] += 1
         print(f"    → {len(docs)} ouvrage(s) PDF trouvé(s)")
         report["documents_found"] += len(docs)
@@ -1915,7 +2022,14 @@ def main() -> None:
         # sont considérées fiables par construction : on leur attribue un
         # score de 8 sans appel LLM, ce qui économise des tokens et accélère
         # le pipeline. Le scoring post-lecture reste actif.
-        if source.get("auto_download"):
+        auto_dl = bool(source.get("auto_download"))
+        if auto_dl:
+            n_read, n_ok = trust.get(label, (0, 0))
+            if n_read >= AUTO_DL_MIN_READ and n_ok / n_read < AUTO_DL_MIN_RATIO:
+                auto_dl = False
+                print(f"    ⚠  auto_download ignoré : seulement {n_ok}/{n_read} docs lus "
+                      f"au seuil (< {AUTO_DL_MIN_RATIO:.0%}) — scoring sur titre")
+        if auto_dl:
             print(f"    ⚡  auto_download activé — score 8 attribué sans LLM")
             all_scores = [
                 {
@@ -1945,8 +2059,11 @@ def main() -> None:
                 all_scores.extend(batch_scores)
 
         report["documents_scored"] += len(all_scores)
-
+        interrupted = None
         for item in all_scores:
+            interrupted = _stop_reason()
+            if interrupted:
+                break
             idx = item.get("doc", 0) - 1
             if idx < 0 or idx >= len(docs):
                 continue
@@ -2014,6 +2131,12 @@ def main() -> None:
                 print(f"    ✗  Ignoré          : {doc['filename']} ({score}/10 — {raison})")
 
             report["results"].append(result)
+        if interrupted:
+            report["interrupted"] = interrupted
+            print(f"\n⏹   Collecte interrompue ({interrupted}) pendant « {label} » — "
+                  f"source non marquée comme visitée, reprise au prochain run.")
+            break
+        _record_fetch()
     report["claude_session_limit_hit"] = claude_guard.session_limit_active()
 
     json_path = REPORTS_PATH / f"run_{run_date}.json"
@@ -2175,6 +2298,8 @@ def main() -> None:
   Documents trouvés   : {report['documents_found']}
   Scorés par Claude   : {report['documents_scored']}
   Téléchargés         : {report['documents_downloaded']}
+  Collecte interrompue : {report['interrupted'] or "non"}
+  Durée collecte      : {(time.monotonic() - t0) / 60:.0f} min
   Limite session Claude : {"OUI — voir ci-dessus" if claude_guard.session_limit_active() else "non"}
   Rapport             : {json_path}
 ╚══════════════════════════════════════════╝""")
