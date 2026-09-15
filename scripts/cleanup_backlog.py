@@ -83,13 +83,25 @@ def git(*args: str) -> subprocess.CompletedProcess:
 
 
 def commit_push(message: str, paths: list[str]) -> None:
+    """Commit par plomberie + push.
+
+    Le checkout local est un clone partiel (--filter=blob:none) dont site/ n'est
+    pas matérialisé : `git commit` / `git write-tree` tenteraient de rapatrier
+    les ~2 300 blobs de site/ absents (des heures). `write-tree --missing-ok`
+    construit l'arbre sans les exiger ; seuls nos fichiers sont poussés."""
     git("add", *paths)
     if git("diff", "--staged", "--quiet").returncode == 0:
         return
-    r = git("commit", "-m", message)
+    tree = git("write-tree", "--missing-ok").stdout.strip()
+    head = git("rev-parse", "HEAD").stdout.strip()
+    msg = (message + "\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n"
+           "Claude-Session: https://claude.ai/code/session_01BFvYB33vk7pWQSf27Lju7J")
+    c = git("commit-tree", tree, "-p", head, "-m", msg).stdout.strip()
+    if not c or git("update-ref", "refs/heads/main", c, head).returncode != 0:
+        log(f"  ✗ commit impossible (tree={tree[:8]} head={head[:8]})")
+        return
     p = git("push")
-    log(f"  git : {r.stdout.strip().splitlines()[0] if r.stdout else r.stderr.strip()[:100]}"
-        f" / push {'ok' if p.returncode == 0 else 'ÉCHEC ' + p.stderr.strip()[:150]}")
+    log(f"  git : {c[:8]} {message} / push {'ok' if p.returncode == 0 else 'ÉCHEC ' + p.stderr.strip()[:150]}")
 
 
 def main() -> int:
