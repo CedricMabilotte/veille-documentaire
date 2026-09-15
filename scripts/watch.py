@@ -428,7 +428,8 @@ def download_and_validate(url: str, dest: Path) -> tuple[bool, str]:
 
 def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
                             keywords: list[str],
-                            source_default_lang: str = "") -> dict:
+                            source_default_lang: str = "",
+                            uid: str | None = None) -> dict:
     """Pour un PDF validé : extrait couverture, texte, et appelle Claude pour
     le synopsis enrichi. Si score ≥ 9, génère aussi la bulle de publication.
 
@@ -439,7 +440,9 @@ def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
     matched_keywords, relevance_score, bulle, references (si applicable).
     """
     out = {}
-    uid = file_uid(doc["url"])
+    # uid explicite possible : la clé catalogue ne vaut pas toujours
+    # file_uid(url) (297 fiches sur 1904 au 2026-09-15, URL réécrite après coup).
+    uid = uid or file_uid(doc["url"])
 
     # 0. Déduplication par hash de contenu : skip Claude si déjà vu ailleurs
     try:
@@ -1854,10 +1857,8 @@ def _load_known_docs() -> tuple[dict, set]:
 
 def _known_skip_reason(url: str, known: dict, archived: set,
                        download_threshold: int) -> str | None:
-    """Raison d'écarter un doc déjà connu, ou None s'il reste à traiter.
-
-    Un doc connu reste à traiter tant qu'il n'a pas été lu (score_final absent)
-    et qu'on n'a pas épuisé MAX_ENRICH_ATTEMPTS tentatives."""
+    """Raison d'écarter un doc déjà connu (repéré par son URL), ou None s'il
+    reste à traiter."""
     if os.getenv("FORCE_REENRICH", "false").lower() == "true":
         return None
     uids = {file_uid(url), file_uid(safe_url(url))}
@@ -1866,8 +1867,17 @@ def _known_skip_reason(url: str, known: dict, archived: set,
     fiche = next((known[u] for u in uids if u in known), None)
     if fiche is None:
         return None
+    return _fiche_skip_reason(fiche, download_threshold)
+
+
+def _fiche_skip_reason(fiche: dict, download_threshold: int) -> str | None:
+    """Même règle, à partir de la fiche. Un doc connu reste à traiter tant
+    qu'il n'a pas été lu (score_final absent), n'a pas été mis de côté, et
+    qu'on n'a pas épuisé MAX_ENRICH_ATTEMPTS tentatives."""
     if fiche.get("score_final") not in (None, ""):
         return "déjà lu"
+    if fiche.get("enrich_abandon"):
+        return "mis de côté"
     runs = fiche.get("runs") or []
     if (fiche.get("score_initial") or 0) < download_threshold and not fiche.get("downloaded"):
         return "déjà écarté sur titre"
