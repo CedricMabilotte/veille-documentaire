@@ -121,113 +121,113 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-08-09T04:38:01.292139+00:00'
+exported_at: '2026-09-15T19:33:46.767029+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
   type: html
-  fertility: 3.58
-  runs: 12
+  fertility: 3.31
+  runs: 13
   docs_dl: 43
-  docs_seen: 588
+  docs_seen: 604
 - url: https://infokiosques.net/paysannerie_ruralite
   label: Infokiosques.net — Paysannerie & ruralité
   type: html
-  fertility: 47.25
-  runs: 4
-  docs_dl: 189
-  docs_seen: 492
+  fertility: 45.0
+  runs: 5
+  docs_dl: 225
+  docs_seen: 540
 - url: https://infokiosques.net/ecologie_radicale
   label: Infokiosques.net — Écologie radicale
   type: html
-  fertility: 4.5
-  runs: 4
-  docs_dl: 18
-  docs_seen: 621
+  fertility: 4.2
+  runs: 5
+  docs_dl: 21
+  docs_seen: 653
 - url: https://infokiosques.net/anticapitalisme
   label: Infokiosques.net — Anticapitalisme
   type: html
   fertility: 0.0
-  runs: 4
+  runs: 5
   docs_dl: 0
-  docs_seen: 376
+  docs_seen: 382
 - url: https://infokiosques.net/squat
   label: Infokiosques.net — Squat (rapport à l'habiter)
   type: html
-  fertility: 10.5
-  runs: 4
+  fertility: 8.4
+  runs: 5
   docs_dl: 42
-  docs_seen: 492
+  docs_seen: 494
 - url: https://infokiosques.net/anticolonialismes
   label: Infokiosques.net — Anticolonialismes
   type: html
-  fertility: 2.0
-  runs: 4
+  fertility: 1.6
+  runs: 5
   docs_dl: 8
-  docs_seen: 332
+  docs_seen: 333
 - url: https://www.boell.de/en/topics/agriculture
   label: Böll Stiftung — Agriculture & Food (EN topic)
   type: deep_html
   fertility: 0.0
-  runs: 2
+  runs: 3
   docs_dl: 0
-  docs_seen: 88
+  docs_seen: 94
 - url: https://www.boell.de/en/agriculture-atlas-2019
   label: Böll Stiftung — Agriculture Atlas (EN)
   type: deep_html
   fertility: 0.0
-  runs: 4
+  runs: 5
   docs_dl: 0
-  docs_seen: 157
+  docs_seen: 163
 - url: https://www.boell.de/en/meat-atlas
   label: Böll Stiftung — Meat Atlas (EN)
   type: deep_html
   fertility: 0.0
-  runs: 4
+  runs: 5
   docs_dl: 0
-  docs_seen: 157
+  docs_seen: 163
 - url: https://www.boell.de/de/publikationen
   label: Böll Stiftung — publications DE (deep crawl)
   type: deep_html
-  fertility: 0.25
-  runs: 4
+  fertility: 0.2
+  runs: 5
   docs_dl: 1
-  docs_seen: 712
+  docs_seen: 725
 - url: https://libcom.org/library
   label: libcom.org — library
   type: deep_html
   fertility: 0.0
-  runs: 6
+  runs: 7
   docs_dl: 0
-  docs_seen: 6
+  docs_seen: 7
 - url: https://crimethinc.com/zines
   label: CrimethInc — zines
   type: deep_html
   fertility: 0.0
-  runs: 2
+  runs: 3
   docs_dl: 0
-  docs_seen: 59
+  docs_seen: 80
 - url: https://cras31.info/
   label: CRAS (Centre de Recherches sur les Alternatives Sociales)
   type: deep_html
-  fertility: 22.33
-  runs: 6
-  docs_dl: 134
-  docs_seen: 606
+  fertility: 20.71
+  runs: 7
+  docs_dl: 145
+  docs_seen: 701
 - url: https://theanarchistlibrary.org/opds/new
   label: The Anarchist Library — OPDS (new releases)
   type: opds
-  fertility: 11.5
-  runs: 4
-  docs_dl: 46
-  docs_seen: 400
+  fertility: 11.2
+  runs: 5
+  docs_dl: 56
+  docs_seen: 435
 - url: https://archive.org/advancedsearch.php?q=cuba+AND+language%3A%22spa%22+AND+%28cooperativ*+OR+campesin*+OR+agrari*+OR+%22reforma+agraria%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — Cuba (ES, réforme agraire & coopératives)
   type: archive_org
-  fertility: 0.75
-  runs: 4
-  docs_dl: 3
-  docs_seen: 22
+  fertility: 0.8
+  runs: 5
+  docs_dl: 4
+  docs_seen: 23
 - url: https://archive.org/advancedsearch.php?q=subject%3Aanarchism+AND+%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
   label: Archive.org — anarchism + land/peasant (strict)
   type: archive_org
@@ -245,17 +245,17 @@ sources:
 - url: https://archive.org/advancedsearch.php?q=%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land+reform%22+OR+subject%3A%22enclosure%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
   label: Archive.org — commons / enclosure / agrarian (strict)
   type: archive_org
-  fertility: 1.0
-  runs: 4
-  docs_dl: 4
-  docs_seen: 200
+  fertility: 2.2
+  runs: 5
+  docs_dl: 11
+  docs_seen: 245
 - url: https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — community land trusts & housing commons
   type: archive_org
-  fertility: 2.0
-  runs: 4
-  docs_dl: 8
-  docs_seen: 120
+  fertility: 2.6
+  runs: 5
+  docs_dl: 13
+  docs_seen: 132
 - url: https://archive.org/advancedsearch.php?q=%28creator%3A%22ostrom%22+OR+creator%3A%22federici%22+OR+creator%3A%22bollier%22+OR+%22governing+the+commons%22+OR+%22common+pool+resource%22+OR+%22commoning%22%29+AND+mediatype%3Atexts+AND+language%3A%28eng+OR+fra%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — théorie des communs (Ostrom, CPR, collective action)
   type: archive_org

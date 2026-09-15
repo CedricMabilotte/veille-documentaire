@@ -1,0 +1,72 @@
+{
+  "titre_accroche": "Brookline 1970 : quand l'habitat coopératif défie la propriété lucrative",
+  "teaser": "Comment une coopérative d'habitation urbaine des années 1970 a structuré la propriété collective pour éliminer profits intermédiaires et rentes. Un modèle oublié de mutualisation du logement.",
+  "abstract_editorial": "Cette brochure de la Brookline Cooperative (Massachusetts, années 1970) documente un modèle d'habitat collectif souvent absent des débats contemporains sur les communs : la copropriété démocratique urbaine. Loin des promesses de la propriété privée ou des compromis de la location, ce projet structure le droit de propriété autour du principe que les résidents en sont les seuls propriétaires, avec voix égale dans la gouvernance. Le document dévoile un mécanisme économique radical : en éliminant systématiquement les profits du constructeur, les frais de courtage et en allongeant la durée hypothécaire, la mutualisation réduit drastiquement les coûts mensuels. Chaque famille paie uniquement les « coûts réels » — un principe qui interroge la captation spéculative du foncier. Une section intrigante mentionne des avantages prioritaires pour les familles habitant le site avant sa redévelopment, révélant implicitement la tension entre renouvellement urbain et justice résidentielle. Bien que limité à l'enjeu du logement abordable urbain et dépourvu de dimension critique (c'est une pièce marketing), ce document offre un précédent historique concret : comment faire de la terre et de l'habitat des biens gérés collectivement, soustraits à la logique du profit. Pour les lecteurs de Troisièmes Voix, c'est une trace d'un débat sur les formes de propriété alternative, encore pertinent face aux crises actuelles du logement et de l'accès au foncier.",
+  "citations_phares": [
+    {
+      "page": 5,
+      "quote": "The residents are the sole owners of the property. You occupy the apartment of your choice as long as you wish."
+    },
+    {
+      "page": 5,
+      "quote": "Your monthly payments are amazingly low. You pay only actual costs. Costs are cut to the bone: longest mortgage term, special low interest rate, controlled builder fee, no closing cost or broker fee."
+    },
+    {
+      "page": 11,
+      "quote": "Families who lived on 'The Farm' site at the time title was taken by the Brookline Redevelopment Authority may qualify for special benefits including no down payments and guaranteed monthly charges."
+    }
+  ],
+  "categorisation": [
+    "communs",
+    "propriété collective",
+    "coopératives",
+    "logement",
+    "économie solidaire",
+    "histoire urbaine"
+  ],
+  "slug": "brookline-cooperative-habitat-propriete-collective-1970",
+  "en_clair": "Ce texte explique un système où des habitants se groupent pour acheter un immeuble ensemble, se le partagent, et gèrent collectivement les coûts sans qu'un propriétaire ne s'enrichisse dessus — un modèle pratique contre le logement trop cher. Mais c'est seulement sur du logement en ville, rien à voir avec les terres agricoles ou les luttes paysannes.",
+  "acteurs": [
+    "Foundation for Cooperative Housing",
+    "Brookline Redevelopment Authority",
+    "James H. Scheuer",
+    "Gini Company Inc.",
+    "S. and A. Allen Construction Company"
+  ],
+  "controverse": "Tension implicite entre redéveloppement urbain destructeur (perte du site « The Farm ») et tentative de compensation via accès prioritaire à la coopérative pour les familles déplacées — mais le document ne problématise pas cette contradiction ni ne l'analyse de manière critique.",
+  "angle_journalistique": "Enquête sur les familles du « Farm » : comment ont-elles été impactées par le redéveloppement ? Combien ont effectivement pu accéder à la coopérative ? Quelles leçons pour les luttes contre le déplacement résidentiel urbain contemporain ?",
+  "citations_verifiees": [
+    {
+      "quote": "The residents are the sole owners of the property. You occupy the apartment of your choice as long as you wish.",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "Each co-op family has one vote in election of directors. You help establish policy, rules and standards for your community.",
+      "page": 5,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "Your monthly payments are amazingly low. You pay only actual costs. Costs are cut to the bone: longest mortgage term, special low interest rate, controlled builder fee, no closing cost or broker fee.",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "all on a non-profit basis. Your monthly payment covers all expenses and reserve funds ... there is nothing else to pay",
+      "page": 9,
+      "page_physical": 9,
+      "verified": true
+    },
+    {
+      "quote": "Families who lived on 'The Farm' site at the time title was taken by the Brookline Redevelopment Authority may qualify for special benefits including no down payments and guaranteed monthly charges.",
+      "page": 11,
+      "page_physical": null,
+      "verified": false
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "db6dd79b37"
+}
