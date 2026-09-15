@@ -41,6 +41,7 @@ jobs:
     timeout-minutes: 180
     permissions:
       contents: write
+      actions: write   # declencher publish-only.yml (voir etape de commit)
 
     steps:
       - name: Checkout du repo
@@ -188,12 +189,24 @@ jobs:
 
       - name: Commit reports + catalog + interface + bulles + discoveries
         if: ${{ env.DRY_RUN != 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config --global user.name  "Library Bot"
           git config --global user.email "bot@library.local"
           git add reports/ synopsis/ interface/ bulles/ site/ discovery/ feedback.json exports/ 2>/dev/null || true
+          BEFORE=$(git rev-parse HEAD)
           git diff --staged --quiet || git commit -m "veille: $(date '+%Y-%m-%d %H:%M') — rapports + catalog + interface + bulles + discoveries"
           git push
+          # 2026-09-15 : un push fait avec le GITHUB_TOKEN ne declenche PAS les
+          # autres workflows (regle GitHub anti-boucle). Le trigger on:push de
+          # publish-only.yml ne partait donc jamais apres un run de veille : les
+          # commits bot des 06-09/08 n'ont jamais ete publies. workflow_dispatch,
+          # lui, est autorise avec GITHUB_TOKEN -> declenchement explicite.
+          if ! git diff --quiet "$BEFORE" HEAD -- site/; then
+            gh workflow run publish-only.yml --ref main
+            echo "→ publish-only.yml declenche (site/ modifie)"
+          fi
           # La publication vers biblio-actitude-org n'est plus faite ici : ce push,
           # s'il touche site/, déclenche automatiquement publish-only.yml (trigger
           # on: push, paths: site/**). Une seule logique de publication, à un seul
