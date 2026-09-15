@@ -85,7 +85,7 @@ def git(*args: str) -> subprocess.CompletedProcess:
 
 LOCAL_PATHS = ["synopsis/catalog.json", "synopsis/duplicates.json",
                "interface/covers", "bulles"]
-REBUILD_EVERY = 150
+REBUILD_EVERY = 50
 
 
 def commit_push(message: str, paths: list[str] | None = None) -> bool:
