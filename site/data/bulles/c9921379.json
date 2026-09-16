@@ -1,0 +1,95 @@
+{
+  "titre_accroche": "1 % des terres, 70 % du pouvoir — l'appel de l'IPC",
+  "teaser": "Pendant que 1 % des grandes fermes contrôlent 70 % des terres mondiales, des millions de paysans alimentent la planète avec quasi rien. L'IPC pose la question qui dérange : comment reprendre nos communs ?",
+  "abstract_editorial": "Vingt ans après Porto Alegre, le constat est impitoyable : la dépossession s'accélère. Le document de position du groupe Terres de l'IPC brise les illusions. Ce n'est pas une fatalité économique, mais un système organisé.\n\nLe chiffre choque : 1 % des plus grandes exploitations contrôlent 70 % des terres mondiales. En face, des centaines de millions de petits exploitants — les vrais producteurs qui nourrissent la planète — se partagent les miettes. Cette concentration résulte de politiques délibérées qui sacrifient le bien commun au profit du capital corporatiste.\n\nL'IPC analyse ce processus comme un continuum du colonialisme. L'agriculture industrielle, l'exploitation minière et le tourisme détruisent écosystèmes et territoires. Le discours du « développement » et de l'« investissement » masque une réalité crue : la dépossession organisée. Même logique dans les océans avec l'« accaparement bleu » qui marginalise les petites communautés de pêcheurs.\n\nMais il y a pire. Les fonds de pension, gestionnaires d'actifs et hedge funds transforment les sols, forêts et eaux en instruments spéculatifs. Les fondations de la vie deviennent du collatéral financier. Et les femmes rurales paient double : discriminations patriarcales plus exclusion des droits fonciers.\n\nLe verdict est sans appel : sans réforme agraire redistributive, pas de souveraineté alimentaire, pas de justice économique, pas d'agroécologie. Un manifeste qui crie : les actions doivent être réelles, contraignantes, mesurables — pas de promesses molles.",
+  "citations_phares": [
+    {
+      "page": 3,
+      "quote": "without broad, equitable and sustainable distribution of land, fisheries, forests, water and territories, there can be no food sovereignty"
+    },
+    {
+      "page": 4,
+      "quote": "What is presented as 'investment' or 'development' is, in reality, an organized process of plunder."
+    },
+    {
+      "page": 4,
+      "quote": "1% of the world's largest farms controls 70% of the world's farmland, while hundreds of millions of smallholders and family farmers control only a fraction of it."
+    }
+  ],
+  "categorisation": [
+    "communs",
+    "paysannerie",
+    "souveraineté alimentaire",
+    "accaparement foncier",
+    "réforme agraire",
+    "décolonisation",
+    "justice de genre",
+    "agroécologie"
+  ],
+  "slug": "reprenons-nos-terres-ipc-souverainete-alimentaire",
+  "en_clair": "Quelques grandes corporations contrôlent presque toutes les terres mondiales, tandis que les petits paysans qui nourrissent les gens se retrouvent sans terre et sans pouvoir. Le texte dit aux gouvernements : arrêtez les belles promesses, redistribuez vraiment les terres de façon juste, donnez le pouvoir aux paysans et aux peuples autochtones.",
+  "acteurs": [
+    "International Planning Committee for Food Sovereignty (IPC)",
+    "Working Group on Land, Forests, Water and Territories (IPC)",
+    "Colombia",
+    "Brazil",
+    "Pension funds",
+    "Hedge funds",
+    "Asset management companies",
+    "Corporations and corporate conglomerates"
+  ],
+  "controverse": "Tension centrale entre les régimes de propriété privée et financière de la terre (favorisés par les États et corporations) versus l'exigence de contrôle démocratique et collectif au service de la vie. Le texte appelle à un changement structurel radical (redistribution, réforme agraire) contre le statu quo de concentration croissante.",
+  "angle_journalistique": "Enquête : 20 ans après Porto Alegre, la concentration des terres s'est-elle intensifiée ? Quels États ont vraiment mis en place des réformes agraires redistributives et lesquels ont laissé les corporations accaparer ?",
+  "citations_verifiees": [
+    {
+      "quote": "without broad, equitable and sustainable distribution of land, fisheries, forests, water and territories, there can be no food sovereignty",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "What is presented as 'investment' or 'development' is, in reality, an organized process of plunder.",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "1% of the world's largest farms controls 70% of the world's farmland, while hundreds of millions of smallholders and family farmers control only a fraction of it.",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "this financialization of nature turns the foundations of life into collateral, and every living being into a subject of profit and loss",
+      "page": 4,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "continued reproduction of colonial patterns of domination and exploitation",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "Rural women face additional challenges of discrimination and exclusions arising from patriarchal norms",
+      "page": 4,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "redistributive tenure policies and people-led rural development rooted in justice, equity, people's self-determination",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "just transitions to food systems based on agroecology",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "b594a8dd81"
+}

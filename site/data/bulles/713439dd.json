@@ -1,0 +1,93 @@
+{
+  "titre_accroche": "Terre et patriarcat : quand la paysannerie se conjugue au féminin",
+  "teaser": "En Afrique de l'Est et australe, les femmes paysannes subissent une triple oppression. Via Campesina démontre que cette domination n'est pas naturelle — et que faire inscrire son nom sur le titre de propriété change tout.",
+  "abstract_editorial": "La Via Campesina nous confronte à une réalité occultée : les femmes produisent 80 % de l'alimentation africaine, mais contrôlent ni la terre ni les décisions. Ce texte analyse l'intersectionnalité de leur oppression. Femmes, paysannes et souvent sans statut foncier, elles sont prises dans un double système : le patriarcat qui reserve la propriété aux hommes, et le capitalisme colonial qui exproprie les paysanneries des ressources. Les régimes fonciers coutumiers maintiennent cette dépendance structurelle — la terre se transmet de père en fils, les femmes n'y accèdent que par médiation masculine. Elles cultivent mais ne décident pas : les hommes gèrent les cultures commerciales, les femmes les cultures vivrières. Le déplacement forcé les anéantit différemment : perte simultanée de territoire, de subsistance et de sécurité alimentaire familiale. Mais le document documente aussi des ruptures. Beatrice en Ouganda illustre ce tournant : apprendre que nul n'interdit aux femmes de posséder la terre, persuader son mari, faire inscrire son nom sur le titre. Cette reconnaissance légale simple — infinitésimale formellement — transforme l'autonomie, la dignité, la sécurité. Pour un débat sur les communs qui ignore les femmes paysannes, cette lecture est décisive : l'accès aux ressources communes n'existe que libéré du contrôle patriarcal.",
+  "citations_phares": [
+    {
+      "page": 5,
+      "quote": "Ngazi ya tatu ni ukatili wa kipekee tunaokutana nao kutokana na muingiliano kati ya ngazi mbili: kuwa wanawake na kuwa wakulima wadogo."
+    },
+    {
+      "page": 5,
+      "quote": "Wanaume mara nyingi hushughulika na mazao yanayotambulika kama ya biashara na sisi wanawake tunaruhusiwa kupanda mazao ya chakula, kwa ajili ya ustawi wa familia."
+    },
+    {
+      "page": 6,
+      "quote": "Ni dhahiri kwamba kunapokuwa na njaa, kuna ukatili, hususani ukatili wa kijinsia."
+    }
+  ],
+  "categorisation": [
+    "paysannerie",
+    "féminisme paysan",
+    "accès à la terre",
+    "patriarcat",
+    "intersectionnalité",
+    "Afrique",
+    "Via Campesina",
+    "autonomie des femmes",
+    "communs"
+  ],
+  "slug": "femmes-paysannes-terre-afrique",
+  "en_clair": "En Afrique, les règles d'héritage et de mariage empêchent les femmes de posséder la terre qu'elles cultivent — ce qui les rend vulnérables si le mari meurt ou s'en va. Pourtant, quand on change les papiers pour y mettre le nom de la femme, elle retrouve du pouvoir. Ce texte peut servir à montrer que les droits fonciers des femmes paysannes ne sont pas impossibles, et qu'ils changent concrètement les choses.",
+  "acteurs": [
+    "La Via Campesina (LVC)",
+    "Plateforme des femmes de La Via Campesina (Afrique de l'Est et australe)",
+    "ESAFF Uganda (East and Southern Africa Farmers Federation)",
+    "Beatrice Komurembe Katsigazi (case study, Uganda)",
+    "Flaida Jose Macheze (contributeur spécial)"
+  ],
+  "controverse": "Tension entre le droit coutumier patriarcal (qui réserve la propriété foncière aux hommes) et les droits humains formels modernes. Le texte montre que la loi n'interdit souvent pas aux femmes de posséder la terre, mais que des pratiques coutumières et discriminatoires le font de facto — révélant un fossé entre droit formel et pratiques enracinées.",
+  "angle_journalistique": "Enquête sur comment l'enregistrement du nom des femmes sur les titres de propriété transforme les rapports de pouvoir dans le ménage rural et améliore la sécurité alimentaire — en suivant des cas concrets comme celui de Beatrice en Uganda et d'autres femmes paysannes qui ont repris du contrôle.",
+  "citations_verifiees": [
+    {
+      "quote": "Ngazi ya tatu ni ukatili wa kipekee tunaokutana nao kutokana na muingiliano kati ya ngazi mbili: kuwa wanawake na kuwa wakulima wadogo.",
+      "page": 5,
+      "page_physical": 4,
+      "verified": true
+    },
+    {
+      "quote": "Wanawake nchini Kongo tunafanya kazi katika ardhi zinazomilikiwa na waume zetu. Umiliki wa ardhi ni haki iliyotengwa kwa ajili ya wanaume",
+      "page": 5,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "Mume wangu alipofariki, baadhi ya ndugu walijaribu kunifukuza kwenye ardhi na wakataka kuichukua iwe yao.",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "Wanaume mara nyingi hushughulika na mazao yanayotambulika kama ya biashara na sisi wanawake tunaruhusiwa kupanda mazao ya chakula, kwa ajili ya ustawi wa familia.",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "Ni dhahiri kwamba kunapokuwa na njaa, kuna ukatili, hususani ukatili wa kijinsia.",
+      "page": 6,
+      "page_physical": 6,
+      "verified": true
+    },
+    {
+      "quote": "Kuhamishwa katika ardhi kunatuathiri zaidi wanawake, moja kwa moja, kwa kuwa sisi ndio tunahusika kulisha familia, wakati tukiwa hatuna ardhi ya kulima.",
+      "page": 6,
+      "page_physical": 6,
+      "verified": true
+    },
+    {
+      "quote": "Hivi sasa, hati yetu ya ardhi ina jina langu pia",
+      "page": 7,
+      "page_physical": 7,
+      "verified": true
+    },
+    {
+      "quote": "wanawake tunazalisha asilimia 80 ya chakula barani Afrika",
+      "page": 7,
+      "page_physical": 7,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "2e93305573"
+}

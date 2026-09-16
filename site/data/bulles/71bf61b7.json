@@ -1,0 +1,79 @@
+{
+  "titre_accroche": "Justice agraire, paix durable : le plaidoyer de La Via Campesina",
+  "teaser": "Face aux crises multiples qui secouent le monde, La Via Campesina affirme que la réforme agraire n'est pas un enjeu rural mineur, mais une clé politique pour vaincre la faim, reconstruire les écosystèmes et bâtir une paix véritable.",
+  "abstract_editorial": "À l'ouverture de la 2e Conférence Internationale pour la Réforme Agraire et le Développement Rural (ICARRD), lancée par la Colombie en avril 2025, La Via Campesina—le plus grand réseau paysan international—énonce un plaidoyer d'une clarté politique remarquable : la réforme agraire n'est pas une nostalgieuse rédemption rurale, mais une réponse structurelle aux crises contemporaines de la faim, du dérèglement climatique et de l'instabilité géopolitique.\n\nLe mouvement affirme que l'accès à la terre et à l'eau constitue le socle d'une production alimentaire saine et souveraine, capable de massicer l'agroécologie, de séquestrer le carbone et de restaurer la biodiversité. Mais au-delà de l'écologie, La Via Campesina établit un lien cardinal : la réforme agraire fonde la justice agraire, qui elle-même devient le fondement d'une paix durable.\n\nPour un lectorat français attentif aux enjeux des communs et de la propriété d'usage, ce texte offre une précieuse résonance : La Via Campesina cite en exemples concrets des réformes foncières de portée mondiale (Haïti, Brésil, Chine, Mexique, Philippines), rappelant que la redistribution et la démocratisation des terres ne sont pas des utopies folkloriques, mais des politiques publiques réelles et transnationales. Enfin, l'engagement du mouvement pour une perspective inclusive envers les femmes et les peuples autochtones et afrodescendants signale que cette bataille pour la terre est aussi une bataille de décolonisation.",
+  "citations_phares": [
+    {
+      "page": 2,
+      "quote": "With Agrarian Reform, it is possible to overcome these existential crises. With Agrarian Reform, it is possible to overcome hunger, because if we as small producers have access to land and water, we are able to produce health foods, achieve food sovereignty and implement agroecology."
+    },
+    {
+      "page": 2,
+      "quote": "As Colombia shows us, peace is always the fruit of social justice. In a context of geopolitical tensions, agrarian reforms build agrarian justice, which is the basis for sustainable peace."
+    },
+    {
+      "page": 2,
+      "quote": "We are committed to promote a pluralist perspective on agrarian reforms, an inclusive perspective for women in particular, and also for the diversity of indigenous peoples´cosmovisions and Afro-descendent peoples."
+    }
+  ],
+  "categorisation": [
+    "réforme agraire",
+    "justice agraire",
+    "souveraineté alimentaire",
+    "agroécologie",
+    "libération des terres",
+    "communs",
+    "paysannerie",
+    "paix et décolonisation"
+  ],
+  "slug": "justice-agraire-paix-durable-via-campesina",
+  "en_clair": "La Via Campesina dit aux gouvernements du monde : donnez la terre aux paysans pauvres, et vous aurez plus de nourriture saine, un climat mieux protégé, et moins de conflits. Pour ça, il faut arrêter le vol de terre (l'accaparement) et la redistribuer justement, surtout aux femmes et aux peuples autochtones.",
+  "acteurs": [
+    "La Via Campesina",
+    "Gouvernement de Colombie",
+    "Nations Unies",
+    "Global Alliance Against Hunger and Poverty"
+  ],
+  "controverse": "Le texte n'expose pas de conflit ouvert, mais pose implicitement la question : comment les gouvernements signataires vont-ils concrètement appliquer une redistribution des terres face aux intérêts des propriétaires terriers et aux structures de pouvoir existantes ? La Via Campesina revendique une position « constructive et exigeante » face aux États, reconnaissant l'écart entre promesse rhétorique et réalité.",
+  "angle_journalistique": "Enquêter sur les obstacles rencontrés par les réformes agraires citées en exemple (Mali 2018, Brésil, Mexique) pour mesurer si la rhétorique de la 2e ICARRD peut déboucher sur des politiques concrètes d'ici 2026-2027.",
+  "citations_verifiees": [
+    {
+      "quote": "With Agrarian Reform, it is possible to overcome these existential crises. With Agrarian Reform, it is possible to overcome hunger, because if we as small producers have access to land and water, we are able to produce healthy food",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "With Agrarian Reform, it is possible to scale up agroecology and rebuild territories full of biodiversity, with trees that sequester carbon, with organic fertility that allows us to reduce the consumption of energy, chemical fertilisers and agrotoxins",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "As Colombia shows us, peace is always the fruit of social justice. In a context of geopolitical tensions, agrarian reforms build agrarian justice, which is the basis for sustainable peace.",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Nos comprometemos a movilizar nuestras bases desde lo local hasta lo internacional para apoyar las iniciativas de los gobiernos que permitan acabar con los acaparamientos de tierra e ir hacia una redistribución justa y democrática de las tierras y de los territorios.",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "We are committed to promote a pluralist perspective on agrarian reforms, an inclusive perspective for women in particular, and also for the diversity of indigenous peoples´cosmovisions and Afro-descendant communities",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "We already see many positive experiences that can inspire us to develop public policies for redistribution, restitution and democratisation of land, such as the land law in Mali in 2018, the land reform in Brazil, the land use system in China, the Ejidos in Mexico, the land reform in the Philippines, the land tenure law in France or the land redistributions in Colombia.",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "0d7ae4ca9e"
+}
