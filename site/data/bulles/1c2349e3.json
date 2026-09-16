@@ -1,0 +1,91 @@
+{
+  "titre_accroche": "Semences : le patrimoine des peuples face à l'industrie",
+  "teaser": "Comment les semences paysannes, patrimoine collectif nourri par des générations de femmes, deviennent l'enjeu d'une lutte mondiale contre la privatisation industrielle. La Via Campesina révèle l'imposture des traités internationaux et affirme la souveraineté alimentaire comme projet politique radical.",
+  "abstract_editorial": "Depuis le Néolithique, les paysans construisent ensemble un patrimoine vivant : les semences locales, sélectionnées, multipliées, échangées de génération en génération. Ce commun agraire incarne la dignité et l'autonomie des peuples face à la faim. Or, depuis soixante ans, ce patrimoine est systématiquement converti en ressources 'phytogénétiques' — dépossédées, cataloguées, brevetées. L'industrie semencière, sous couvert de progrès, a entrepris d'éliminer ces variétés des champs, les remplaçant par des hybrides stériles qui enchaînent les agriculteurs à l'achat annuel de semences et d'intrants chimiques. Le Traité international sur les ressources phytogénétiques (2001) promettait de reconnaître les droits collectifs des paysans. C'était une promesse creuse : l'industrie n'a partagé aucun bénéfice et presse les gouvernements de voter des lois qui violent ces droits mêmes. La Via Campesina, regroupant des millions de paysans du Sud et du Nord, renverse la perspective. Elle affirme que les semences paysannes ne sont pas une ressource à exploiter mais un patrimoine des peuples, à défendre collectivement. Elle place au cœur de ce combat les femmes — expertes séculaires en conservation et sélection — et redéfinit la politique agricole autour de la souveraineté alimentaire : reconstruire des systèmes alimentaires locaux, solidaires, fondés sur la dignité plutôt que le profit. Ce module de formation expose la mécanique du vol et propose un horizon : que les semences restent des communs vivants, générateurs de vie et de liberté.",
+  "citations_phares": [
+    {
+      "page": 3,
+      "quote": "Our political goal is to achieve Food Sovereignty… articulate a new model of economic and social relations based on dignity, solidarity, and ethics"
+    },
+    {
+      "page": 3,
+      "quote": "Women are important protagonists: especially in rescuing local varieties and knowledge about them; as well as its revaluation, conservation, reproduction, selection, crossing, multiplication, exchange"
+    },
+    {
+      "page": 7,
+      "quote": "The industry has never shared anything and is pressuring governments to pass laws that violate farmers' rights"
+    }
+  ],
+  "categorisation": [
+    "semences paysannes",
+    "communs",
+    "souveraineté alimentaire",
+    "paysannerie",
+    "droits collectifs",
+    "féminisme",
+    "propriété industrielle"
+  ],
+  "slug": "semences-souverainete-alimentaire",
+  "en_clair": "Ce texte raconte le combat des paysans du monde entier pour garder le droit de sauver leurs semences et d'en échanger entre eux, au lieu que les grandes entreprises de semences monopolisent tout. Même l'ONU et les traités mondiaux disent que ce droit existe, mais les gouvernements ne les appliquent pas — et voilà comment les paysans perdent leur liberté, leur nourriture, et leurs savoirs ancestraux disparaissent.",
+  "acteurs": [
+    "La Via Campesina (LVC)",
+    "FAO (Food and Agriculture Organization)",
+    "United Nations",
+    "Convention on Biological Diversity (CBD)",
+    "Sophie Holin (dessinatrice)"
+  ],
+  "controverse": "Le Traité international (ITPGRFA 2001) était censé équilibrer accès gratuit de l'industrie aux semences paysannes contre partage des bénéfices et respect des droits paysans. Réalité : l'industrie n'a jamais partagé et presse les gouvernements à violer ces droits. Tension profonde entre reconnaissance officielle des droits collectifs paysans (ITPGRFA, UNDROP 2018) et leur non-application pratique — révélant que les rapports de force (industrie vs paysans) l'emportent sur les engagements juridiques.",
+  "angle_journalistique": "Enquête d'investigation : pourquoi les États violent-ils les traités qu'ils ont signés protégeant les droits paysans aux semences ? Cartographie des pressions industrielles, des décideurs bloquant l'application de l'ITPGRFA et de l'UNDROP, et des cas d'emprisonnement de paysans pour sauvegarde de semences.",
+  "citations_verifiees": [
+    {
+      "quote": "Our political goal is to achieve Food Sovereignty, whose goal is to strengthen and rebuild local food systems and articulate a new model of economic and social relations based on dignity, solidarity, and ethics.",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "women are important protagonists: especially in rescuing local varieties and knowledge about them; as well as its revaluation, conservation, reproduction, selection, crossing, multiplication, exchange, distribution",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "The ITPGRFA is the only binding treaty in global multilateral governance that recognizes the collective rights of farmers to their seeds.",
+      "page": 7,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "the industry has never shared anything and is pressuring governments to pass laws that violate farmers' rights",
+      "page": 7,
+      "page_physical": 7,
+      "verified": true
+    },
+    {
+      "quote": "The global governance of seeds was created to preserve farmers' seeds and at the same time eliminate them from the fields, where they are replaced by industrial seeds.",
+      "page": 8,
+      "page_physical": 8,
+      "verified": true
+    },
+    {
+      "quote": "The common heritage of peasants has, thus, become the exclusive heritage of researchers, most of whom work for the industry.",
+      "page": 8,
+      "page_physical": 8,
+      "verified": true
+    },
+    {
+      "quote": "defending our ancestral knowledge and Mother Earth that sustains it, and sowing sovereignty in each of our territories",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "Genetic pollution, new biotechnologies, dematerialization of genetic information, and big data allow it to patent everything that lives on the Earth.",
+      "page": 7,
+      "page_physical": 7,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "f00d56f68d"
+}
