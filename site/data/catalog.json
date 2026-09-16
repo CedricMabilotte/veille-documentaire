@@ -8728,6 +8728,10 @@
     "error": "claude_call: embedded null byte"
    },
    "download_status": "ok",
+   "enrich_abandon": {
+    "reason": "enrichissement raté : json_parse: Expecting value: line 1 column 1 (char 0)",
+    "date": "2026-09-16"
+   },
    "has_cover": true
   },
   "08baa6d1": {
@@ -12329,6 +12333,192 @@
    "download_status": "failed_network",
    "has_cover": true
   },
+  "e1d2158e": {
+   "id": "e1d2158e",
+   "url": "https://infokiosques.net/IMG/pdf/shoyu_occupant_melomane-60p-A5-livret.pdf",
+   "filename": "shoyu_occupant_melomane-60p-A5-livret.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Paysannerie & ruralité",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-09-15_17-52",
+   "collected_date": "2026-09-15_17-52",
+   "score_initial": 3,
+   "score_final": 9,
+   "latest_score": 3,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2015-09-26",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/e1d2158e_shoyu_occupant_melomane-60p-A5-livret.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 2,
+     "raison": "Titre 'Shoyu occupant mélomane' — le mot 'occupant' seul est insuffisant sans contexte substantiel (Rule 1) ; pas de lien explicite à la thématique établi",
+     "context_seen": "formats: · HTML · Shoyu_occupant_mélomane-60p-A5-livret (PDF) · Shoyu_occupant_mélomane-60p-A5-fil (PDF)",
+     "link_text": "· Shoyu_occupant_mélomane-60p-A5-livret (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 2,
+     "raison": "Titre 'occupant mélomane' — occupation musicale, pas de lien explicite avec terre/foncier/communs",
+     "context_seen": "formats: · HTML · Shoyu_occupant_mélomane-60p-A5-livret (PDF) · Shoyu_occupant_mélomane-60p-A5-fil (PDF)",
+     "link_text": "· Shoyu_occupant_mélomane-60p-A5-livret (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Shoyu_occupant_mélomane-60p-A5-livret (PDF) · Shoyu_occupant_mélomane-60p-A5-fil (PDF)",
+     "link_text": "· Shoyu_occupant_mélomane-60p-A5-livret (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-09-15_17-52",
+     "score": 3,
+     "raison": "Titre 'Shoyu_occupant_mélomane' contient 'occupant' mais contexte vide insuffisant pour confirmer lien avec occupation foncière/habitation",
+     "context_seen": "formats: · HTML · Shoyu_occupant_mélomane-60p-A5-livret (PDF) · Shoyu_occupant_mélomane-60p-A5-fil (PDF)",
+     "link_text": "· Shoyu_occupant_mélomane-60p-A5-livret (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 3,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "· Shoyu_occupant_mélomane-60p-A5-livret (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "unchecked",
+   "link_checked": "2026-08-01T06:11:12Z",
+   "title": "Shoyu_occupant_mélomane-60p-A5-livret",
+   "cover": "covers/e1d2158e.jpg",
+   "meta": {
+    "page_count": 30,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "TeX"
+   },
+   "enrichment": {
+    "summary": "Ce document est un entretien réalisé en février 2015 avec Shoyu, occupant de la ZAD de Notre-Dame-des-Landes depuis 2009. Il constitue une source primaire majeure sur le mouvement d'occupation territorial français, qui s'oppose au projet d'aéroport en Loire-Atlantique. Le texte décrit le processus d'occupation progressive du territoire (plusieurs vagues de nouveaux venus entre 2009 et 2015), l'évolution des structures collectives (lieux de vie, cuisines partagées, fermes occupées), et la stratégie d'ancrage territorial face aux tentatives d'expulsion de l'État (notamment l'opération César d'octobre 2012). La ZAD devient progressivement une zone où se déploient des expériences politiques concrètes : agriculture collective (ferme de Bellevue occupée par COPAIN en 2013, opération 'Sème ta ZAD'), cuisine végétalienne populaire, culture musicale (noise), habitat collectif, réseaux de solidarité régionaux et nationaux (plus de 200 comités de soutien). Le récit oppose la volonté gouvernementale de 'vider' le territoire maison par maison à la densification croissante des liens collectifs sur le terrain. Le texte met l'accent sur l'alliance entre occupants urbains, paysans locaux, habitants ruraux et associations, construisant ensemble 'les bases d'un avenir commun et du maintien d'une zone libre'. C'est un témoignage de première main sur les formes d'habitation collective, d'usage collectif de la terre, et de résistance à l'accaparement territorial que représente le projet d'aéroport.",
+    "citations": [
+     {
+      "page": 3,
+      "quote": "nous sommes tout·e·s des habitant·e·s qui résistent !",
+      "why_relevant": "Formulation de l'identité collective des occupants fondée sur l'habitation et la résistance à l'expulsion — cœur de la lutte foncière",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 4,
+      "quote": "60 lieux de vie et des centaines d'hectares de terres reprises à Vinci sont cultivées",
+      "why_relevant": "Mesure concrète de l'occupation territoriale et de la mise en pratique d'une gestion collective des terres hors du marché",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "paysans, habitants et occupants – élaborent les bases d'un avenir commun et du maintien d'une zone libre",
+      "why_relevant": "Alliance explicite entre acteurs (paysans/occupants) pour construire un commun foncier et une autonomie territoriale",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 5,
+      "quote": "opération 'Sème ta ZAD'",
+      "why_relevant": "Nom d'une initiative collective de lancement de projets agricoles lors de la réoccupation massive du terrain après l'opération César",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 3,
+      "quote": "le Conseil Général s'ingéniait à vider maison par maison",
+      "why_relevant": "Décrit le processus d'expulsion progressive comme stratégie d'accaparement avant la construction de l'infrastructure",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 5,
+      "quote": "projet de cuisine itinérante végétalienne",
+      "why_relevant": "Illustration d'une pratique collective d'autonomie alimentaire liée à l'engagement dans la lutte territoriale",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 4,
+      "quote": "L'impuissance de la Préfecture et de Vinci sur le terrain se confirme : les arrêtés juridiques sont systématiquement transgressés",
+      "why_relevant": "Montre comment l'occupation crée un rapport de force échappant au cadre juridique et administratif de l'État",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 5,
+      "quote": "COPAIN, qui regroupe des organisations paysannes engagées dans la lutte, occupe la ferme de Bellevue et ses terres",
+      "why_relevant": "Alliance entre organisations paysannes et mouvement d'occupation pour la reprise et gestion collective de terres",
+      "verified": true,
+      "page_physical": 5
+     }
+    ],
+    "matched_keywords": [
+     "ZAD",
+     "occupation",
+     "libération des terres",
+     "habitat collectif",
+     "collectif d'habitants",
+     "communs fonciers",
+     "zone libre",
+     "paysans",
+     "agriculture collective",
+     "accaparement des terres",
+     "résistance à l'expulsion",
+     "terres collectives",
+     "autonomie territoriale",
+     "cuisine populaire",
+     "solidarité territoriale",
+     "projets agricoles"
+    ],
+    "relevance_score": 9,
+    "relevance_notes": "Ce texte touche frontalement aux core concepts de la thématique : occupation et libération des terres, communs fonciers, habitat et collectifs, alliance paysans-occupants. C'est un témoignage historique sur l'une des expériences les plus significatives de lutte foncière en France, avec une documentation des pratiques concrètes et des liens collectifs construits sur le terrain.",
+    "en_clair": "Ce texte raconte comment des gens ont occupé des terres qu'on voulait exproprier pour faire un aéroport, y ont créé une vie ensemble (cuisines partagées, fermes, maisons), et ont réussi à rester pendant des années. C'est l'histoire de comment des occupants, des paysans locaux et des habitants se battent ensemble pour garder et cultiver une zone qu'on leur vole.",
+    "acteurs": [
+     "Collectif Mauvaise Troupe",
+     "Shoyu",
+     "Stéphan de Ribou",
+     "Rémi Fraisse",
+     "Sammy",
+     "COPAIN",
+     "FNSEA",
+     "Vinci",
+     "Mouvement NoTAV"
+    ],
+    "controverse": "Tension centrale entre la stratégie gouvernementale et des aménageurs (Vinci) de vider progressivement le territoire par expulsion pour permettre la construction de l'aéroport, et la résistance des occupants, paysans et habitants qui construisent une vie collective alternative, renforcent leurs liens sur le terrain et refusent d'être expulsés. Le texte expose aussi les tensions internes au mouvement d'occupation liées aux pressions médiatiques et sécuritaires (contexte 'post-11 janvier'), ainsi que les fractures avec certains acteurs locaux (FNSEA).",
+    "angle_journalistique": "Enquête sur les formes concrètes d'organisation collective de la vie et de la terre émergentes dans les mouvements d'occupation : comment se nourrissent-ils, qui cultive, comment se prennent les décisions, quels liens construisent les urbains et les paysans, comment survivre à une occupation longue face à la répression d'État ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "838d3efc92"
+   },
+   "download_status": "ok",
+   "bulle": "bulles/e1d2158e.json",
+   "has_cover": true
+  },
   "fbb766e9": {
    "id": "fbb766e9",
    "url": "https://infokiosques.net/IMG/pdf/alice-36p-A5-livret.pdf",
@@ -12680,6 +12870,166 @@
     "angle_journalistique": "Comment les paysans du bocage ligérien et les nouveaux occupants urbains ont-ils surmonté leurs différences culturelles pour construire ensemble une résistance foncière de cinquante ans ?",
     "model": "claude-haiku-4-5",
     "prompt_version": "f1b7269712"
+   },
+   "download_status": "ok",
+   "has_cover": true
+  },
+  "143dfcce": {
+   "id": "143dfcce",
+   "url": "https://infokiosques.net/IMG/pdf/emilio_le_poissonnier-36p-A5-livret.pdf",
+   "filename": "emilio_le_poissonnier-36p-A5-livret.pdf",
+   "format": "pdf",
+   "source": "Infokiosques.net — Paysannerie & ruralité",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-09-15_17-52",
+   "collected_date": "2026-09-15_17-52",
+   "score_initial": 1,
+   "score_final": 5,
+   "latest_score": 1,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2015-09-26",
+   "lang": "fr",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/143dfcce_emilio_le_poissonnier-36p-A5-livret.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 2,
+     "raison": "Titre 'Emilio le poissonnier' obscur, aucune mention explicite de terres/communs/paysannerie dans le titre ou contexte fourni",
+     "context_seen": "formats: · HTML · Emilio_le_poissonnier-36p-A5-livret (PDF) · Emilio_le_poissonnier-36p-A5-fil (PDF)",
+     "link_text": "· Emilio_le_poissonnier-36p-A5-livret (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 1,
+     "raison": "Titre 'Emilio_le_poissonnier' — profession commerciale, sans lien explicite avec thématique foncière/communs",
+     "context_seen": "formats: · HTML · Emilio_le_poissonnier-36p-A5-livret (PDF) · Emilio_le_poissonnier-36p-A5-fil (PDF)",
+     "link_text": "· Emilio_le_poissonnier-36p-A5-livret (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "formats: · HTML · Emilio_le_poissonnier-36p-A5-livret (PDF) · Emilio_le_poissonnier-36p-A5-fil (PDF)",
+     "link_text": "· Emilio_le_poissonnier-36p-A5-livret (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-09-15_17-52",
+     "score": 1,
+     "raison": "Titre 'Emilio_le_poissonnier' ; aucun lien explicite avec foncier, paysannerie, communs ou accès à terre",
+     "context_seen": "formats: · HTML · Emilio_le_poissonnier-36p-A5-livret (PDF) · Emilio_le_poissonnier-36p-A5-fil (PDF)",
+     "link_text": "· Emilio_le_poissonnier-36p-A5-livret (PDF)",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 1,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "· Emilio_le_poissonnier-36p-A5-livret (PDF)",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "unchecked",
+   "link_checked": "2026-08-01T06:11:12Z",
+   "title": "Emilio_le_poissonnier-36p-A5-livret",
+   "cover": "covers/143dfcce.jpg",
+   "meta": {
+    "page_count": 18,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "TeX"
+   },
+   "enrichment": {
+    "summary": "Ce texte est un entretien avec Emilio, un habitant de Val Susa (nord de l'Italie) qui raconte sa transformation personnelle dans le mouvement No TAV, lutte contre un projet de ligne ferroviaire à grande vitesse qui menace la vallée. Ancien conformiste, Emilio bascule en juillet 2011 lors d'affrontements et devient un militant de premier plan, incarnant la diversité du mouvement : « Le mouvement est impossible à battre parce qu'il y a de tout, il y a le pacifique, le catholique, l'aguerri, l'intellectuel ». Le document narre aussi les stratégies répressives de l'État (militarisation du chantier, 1000 procès en cours, accusations de terrorisme, sabotages), et l'engagement physique du mouvement par l'occupation du terrain (presidi) et les actions directes. Bien que centré sur la lutte anti-infrastructure plutôt que foncière au sens strict, ce texte documente une forme de défense territoriale : le refus de voir une vallée habitée réduite à un espace de circulation marchand, au profit d'une infrastructure de capital. C'est une lutte pour l'autonomie territoriale face au projet d'État-Nation moderne, où les habitants s'auto-organisent en presidi (occupations de terrain) et maintiennent une présence physique continue. Le ton reste celui de la conviction et de l'engagement incarné : pas d'abstraction, mais une parole de lutte enracinée dans l'expérience vécue et les émotions du combat collectif.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "Un presidio c'est bien si tu veux faire la fête, pour manger, mais le vrai presidio ne doit pas avoir de toit, ne doit pas avoir d'adresse, le presidio c'est nous quatre, là, où que nous soyons, si on a un cœur qui bat et qu'on est contre le système.",
+      "why_relevant": "Définition politique de l'occupation territoriale et de la présence : le presidio comme forme de lutte ancrée dans le territoire, indépendante des structures fixes, basée sur la conviction collective.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 3,
+      "quote": "Le mouvement est impossible à battre parce qu'il y a de tout, il y a le pacifique, le catholique, l'aguerri, l'intellectuel, tu comprends ? Il y a le peuple.",
+      "why_relevant": "Caractérisation de la lutte comme mouvement populaire hétérogène, incluant des tactiques et des valeurs diverses, fondement de la résistance territoriale.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 4,
+      "quote": "Ça signifie bien qu'ils sont là pour défendre les riches. Et la preuve, c'est que le chantier est militarisé, il coûte 100.000 euros par jour, et c'est la collectivité qui paie.",
+      "why_relevant": "Critique de l'accaparement des terres par un projet d'État au profit du capital, militarisation du territoire, financiarisation des luttes pour l'espace.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 5,
+      "quote": "Je suis devenu Dame-jeanne molotov. Parce que mon idée c'est celle-là : combattre. Je suis devenu No TAV parce que j'ai vécu sur le terrain les émotions de la situation, et là tu te rends compte que nous sommes dans le vrai.",
+      "why_relevant": "Transformation d'un individu atomisé en militant territorialisé ; l'engagement naît de la présence physique et de l'expérience vécue du combat pour le territoire.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 5,
+      "quote": "Nous sommes tous des black blocks !",
+      "why_relevant": "Affirmation d'une solidarité globale avec les formes d'action directe, signe de la cohésion du mouvement face à la répression étatique.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 5,
+      "quote": "Les procédures judiciaires se multiplient, 1000 procès sont en cours contre des habitants du val Susa.",
+      "why_relevant": "Usage massif du droit pénal et anti-terroriste comme arme contre les luttes territoriales, criminalisation de la défense du territoire.",
+      "verified": true,
+      "page_physical": 5
+     }
+    ],
+    "matched_keywords": [
+     "luttes territoriales",
+     "occupation",
+     "mouvements populaires",
+     "autonomie territoriale",
+     "résistance foncière",
+     "sabotage anti-infrastructure"
+    ],
+    "relevance_score": 5,
+    "relevance_notes": "Bien que ce texte documente une lutte majeure pour le territoire (Val Susa), il n'entre que partiellement dans la thématique centrale : c'est une lutte de DÉFENSE contre l'accaparement territorial (infrastructure de capital) plus qu'une lutte constructive pour des communs, propriété d'usage ou paysannerie. Pas d'agriculture, pas de propriété alternative formalisée, pas d'agroécologie. Intérêt : illustre les formes d'occupation et d'autonomie territoriale face à l'État-capital, inspirant pour les mouvements fonciers, mais hors du cœur thématique.",
+    "en_clair": "Ce texte raconte comment des habitants d'une vallée se battent pour ne pas se faire enlever leur terre par un projet de train de luxe, en s'installant sur place en permanence et en refusant de partir. C'est utile pour comprendre comment s'organiser face à un accaparement territorial, même si le combat ici n'est pas directement sur qui cultive la terre ou qui la possède.",
+    "acteurs": [
+     "Emilio (60 ans, poissonnier et militant No TAV)",
+     "Collectif Mauvaise Troupe",
+     "Mouvement No TAV",
+     "Luca (blessé lors des affrontements)",
+     "Habitants de Val Susa",
+     "Police italienne (DIGOS, celerini, carabiniers, guardia di finanza)",
+     "Corps des chasseurs de Sardaigne",
+     "Corps des chasseurs de Calabre"
+    ],
+    "controverse": "Le mouvement No TAV est hétérogène et tensions existent entre stratégies pacifiques (catholiques, intellectuels) et action directe/sabotage (les « aguerris »). Emilio incarne cette mixité mais aussi les risques de criminalisation individuelle : son image de bourgeois (voiture neuve, élégance) le rapproche des figures répressives, alors qu'il en est l'opposé politique. La question du financement de la défense légale (140 ans de prison collectifs, centaines de milliers d'euros d'amendes) est un enjeu central pour la survie du mouvement.",
+    "angle_journalistique": "Portrait : comment un petit commerçant ordinaire devient radical en s'enracinant dans une lutte territoriale, et ce que cela révèle sur les fractures de classe et idéologiques au sein d'un mouvement anti-infrastructure de masse.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "40047fb408"
    },
    "download_status": "ok",
    "has_cover": true
@@ -18228,6 +18578,10 @@
     "en_clair": "Das böll.brief est une publication d'analyse de la Fondation Heinrich Böll qui propose des idées et des solutions pour transformer la société de façon plus juste et respectueuse de l'environnement. Elle traite de sujets comme l'énergie, le climat, la ville et l'économie, et paraît régulièrement sous forme de journal numérique avec des thèmes qui alternent."
    },
    "title": "Données comme infrastructure publique (EPUB) — Böll Stiftung",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_captcha (playwright_not_pdf)",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "aa5d50ec": {
@@ -27644,6 +27998,10 @@
    "download_error": "access_restricted_lending_library",
    "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification.",
    "title": "The weight loss club : the curious experiments of Nancy housing cooperative",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "6325ebd3": {
@@ -41026,6 +41384,356 @@
    },
    "has_cover": true
   },
+  "daaa0f43": {
+   "id": "daaa0f43",
+   "url": "https://mst.org.br/wp-content/uploads/2022/03/CartaAbertaDasMulheresSemTerra_8M2022.pdf",
+   "filename": "daaa0f43_CartaAbertaDasMulheresSemTerra_8M2022.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 9,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2022-03-11",
+   "lang": "pt",
+   "editeur": "Adobe PDF Library 15.0",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/daaa0f43_CartaAbertaDasMulheresSemTerra_8M2022.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "CartaAbertaDasMulheresSemTerra_8M2022",
+     "link_text": "CartaAbertaDasMulheresSemTerra_8M2022",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "CartaAbertaDasMulheresSemTerra_8M2022",
+     "link_text": "CartaAbertaDasMulheresSemTerra_8M2022",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "CartaAbertaDasMulheresSemTerra_8M2022",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "CartaAbertaDasMulheresSemTerra_8M2022",
+   "enrichment": {
+    "summary": "Lettre ouverte des femmes du Mouvement des sans-terre brésilien (MST), écrite pour la Journée nationale des femmes sans terre en mars 2022. Le texte articule trois axes : la célébration du rôle politique des femmes paysannes au-delà des tâches domestiques (cuisine, soin, mais aussi sabotage des trains, lutte contre les pesticides) ; le diagnostic de la destruction écologique et foncière : grilagem de terras (appropriation de terres), menace contre les peuples autochtones, quilombolas et l'agriculture familiale, déforestation de l'Amazonie, contamination alimentaire, inégalités qui tuent ; et la vision alternative proposée : territoires libres, communauté en fête, toit pour tous, jardins en abondance, nourriture saine, temps pour la vie. Le texte articule aussi explicitement la critique du patriarcat — les femmes traitées comme propriété des hommes, assassinées impunément — et oppose à la violence systémique une stratégie : partage contre tyrannie, solidarité contre cupidité, créativité contre peur, joie contre haine. Les femmes paysannes y deviennent 'criadoras, germinadoras de gente e sementes' — créatrices et génératrices de vie. Le texte ancre la lutte dans l'histoire : 'A história também é nossa e vamos decidi-la nas ruas, nas lutas e nos roçados' (l'histoire est aussi nôtre, nous la déciderons dans les champs cultivés). Slogan final : 'Terra, Trabalho, Direito de Existir' — Terre, Travail, Droit d'exister.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "Mulheres em luta não vão sucumbir!",
+      "why_relevant": "Identification clé : identité collective des femmes sans-terre comme sujet politique de la lutte foncière",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 1,
+      "quote": "grilagem de terras ameaça os povos indígenas, quilombolas e a agricultura familiar",
+      "why_relevant": "Diagnostic politique explicite de l'accaparement foncier et de ses victimes : autochtones, quilombolas, paysannerie familiale",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "paramos os trens da morte, os caminhões de venenos e o plantio das sementes transgênicas",
+      "why_relevant": "Action concrète des femmes paysannes contre l'agro-industrie et la destruction écologique",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "Nós somos as criadoras, germinadoras de gente e sementes",
+      "why_relevant": "Articulation féministe agraire : le rôle générateur des femmes paysannes comme créatrices de vie et de savoirs",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Juntas seguiremos construindo territórios livres, onde a criançada brinca feliz, a comunidade se reúne em festejo, partilhando os frutos de seu trabalho digno",
+      "why_relevant": "Vision politique d'une vie rurale libre, collective, partagée — écho à la souveraineté alimentaire et au travail digne",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Onde tenhamos todes um teto aconchegante, quintais cheios de fartura, frutas, flores, ervas, comida saudável",
+      "why_relevant": "Énumération de la souveraineté alimentaire et d'une vie paysanne reconfigurée",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "A história também é nossa e vamos decidi-la nas ruas, nas lutas e nos roçados",
+      "why_relevant": "Ancrage de l'autodétermination politique dans le roçado (champ paysan) — politisation de l'espace cultivé",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 1,
+      "quote": "enfrentamos tirania com partilha, ganância com solidariedade, medo com criatividade, ódio com alegria",
+      "why_relevant": "Stratégie politique alternative : solidarité et partage contre le capitalisme extractiviste",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 1,
+      "quote": "desmatamento destrói nossos bens naturais, que a comida envenenada nos adoece e apodrece o nosso solo",
+      "why_relevant": "Articulation entre destruction écologique, santé et qualité du sol — diagnostic agroécologique",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "Terra, Trabalho, Direito de Existir",
+      "why_relevant": "Slogan résumant les trois piliers de la revendication : accès foncier, travail paysan, reconnaissance d'existence",
+      "verified": true,
+      "page_physical": 2
+     }
+    ],
+    "matched_keywords": [
+     "sans-terre",
+     "Movimento Sem Terra",
+     "MST",
+     "libération des terres",
+     "accès à la terre",
+     "réforme agraire",
+     "agriculture familiale",
+     "souveraineté alimentaire",
+     "accaparement des terres",
+     "grilage",
+     "paysannerie",
+     "féminisme agraire",
+     "féminisme paysan",
+     "droits fonciers des femmes",
+     "mouvements autochtones",
+     "peuples indígènes",
+     "quilombolas",
+     "organisation collective",
+     "solidarité",
+     "territoires libres",
+     "travail digne"
+    ],
+    "relevance_score": 9,
+    "relevance_notes": "Score 9/10. Ce texte est au cœur de la thématique veille : manifeste du féminisme agraire brésilien, articulation explicite de la lutte sans-terre, critique des accaparements fonciers et de la destruction écologique, vision alternative d'une paysannerie libre et collective. C'est un document politique situé qui croise trois axes majeurs du corpus (libération des terres + féminisme agraire + paysannerie comme acteur).",
+    "en_clair": "C'est une lettre de femmes paysannes du Brésil qui disent : « On travaille la terre, on nourrit les gens, on s'organise entre nous, et on ne va pas se laisser voler nos terres ni accepter qu'on nous tue. On veut un monde où chacun·e peut vivre dignement, manger sainement, sur une terre qu'on cultive ensemble. » Elles montrent aussi que ce sont les femmes qui nourrissent les luttes paysannes.",
+    "acteurs": [
+     "Movimento dos Trabalhadores Rurais Sem Terra (MST)",
+     "Mulheres Sem Terra (femmes du MST)",
+     "Povos indígenas (peuples autochtones)",
+     "Quilombolas",
+     "Agricultura familiar (paysannerie familiale)"
+    ],
+    "controverse": "La tension centrale n'est pas interne au texte, mais celle qu'il pose : entre la revendication des femmes paysannes d'accès à la terre, de souveraineté alimentaire et de dignité, et la logique des poderosos (puissants) — grandes entreprises, minorités blanches riches, gouvernements — qui concentrent le foncier, détruisent l'Amazonie, empoisonnent la nourriture et maintiennent une structure patriarcale de violence. Le texte refuse le compromis.",
+    "angle_journalistique": "Comment les femmes du MST redéfinissent la lutte sans-terre autour du féminisme agraire et de la défense écologique de l'Amazonie, au-delà du diagnostic classique de la « réforme agraire ».",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "0b192df8e2"
+   },
+   "cover": "covers/daaa0f43.jpg",
+   "bulle": "bulles/daaa0f43.json",
+   "meta": {
+    "page_count": 2,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "Adobe InDesign CC 2017 (Macintosh)"
+   },
+   "has_cover": true
+  },
+  "a9917d40": {
+   "id": "a9917d40",
+   "url": "https://mst.org.br/wp-content/uploads/2022/03/Livro-Aline-Maria-Semente-Geminada-no-solo-fertil-da-luta.pdf",
+   "filename": "a9917d40_Livro-Aline-Maria-Semente-Geminada-no-solo-fertil-da-luta.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 9,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2021-09-28",
+   "lang": "pt",
+   "editeur": "Adobe PDF Library 15.0",
+   "doi": "",
+   "isbn": "9786599254147",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/a9917d40_Livro-Aline-Maria-Semente-Geminada-no-solo-fertil-da-luta.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Livro Aline Maria - Semente Geminada no solo fértil da luta",
+     "link_text": "Livro Aline Maria &#8211; Semente Geminada no solo fértil da luta",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Livro Aline Maria - Semente Geminada no solo fértil da luta",
+     "link_text": "Livro Aline Maria &#8211; Semente Geminada no solo fértil da luta",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Livro Aline Maria &#8211; Semente Geminada no solo fértil da luta",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Livro Aline Maria – Semente Geminada no solo fértil da luta",
+   "enrichment": {
+    "summary": "Ce recueil hommage est consacré à Aline Maria dos Santos Silva, agricultrice assentada du Mouvement des Sans-Terres brésilien (MST) qui s'est graduée en Droit à l'Université Fédérale du Paraná en 2019, avant de décéder prématurément de la Covid-19. Le volume compile ses travaux académiques, ses rapports d'extension universitaire (EKOA, Majup) et ses textes d'advocacy juridique produits dans le cadre d'une formation résolument ancrée dans la lutte paysanne.\n\nLe cœur du projet intellectuel d'Aline Maria articule quatre axes : la réforme agraire brésilienne, l'agroécologie, le féminisme paysan et les droits humains à la terre. Son analyse souligne les liens entre colonisation, modernité capitaliste et hiérarchies de genre dans l'accès à la terre. Elle considère les pratiques collectives d'usage et de culture du sol non comme des archaïsmes, mais comme des voies ouvertes vers d'autres chemins de développement rural — respectueux du genre, de la race et de la classe sociale.\n\nLe recueil a été constitué collectivement par ses filles, sœurs, amies et professeures, en partenariat avec le MST et l'organisation Terra de Direitos. Au-delà d'un simple hommage, il restitue les textes d'une intellectuelle organique paysanne qui combinait recherche académique rigoureuse, extension universitaire populaire et advocacy juridique enracinée dans le mouvement des sans-terre. L'ouvrage documente ainsi un modèle hybride : celui du droit paysan comme outil de défense d'un projet de transformation rurale fondé sur l'agroécologie, l'égalité de genre et la reconquête du droit fondamental à la terre.",
+    "citations": [
+     {
+      "page": 8,
+      "quote": "Agricultora, assentada da reforma agrária, graduou-se em Direito pela Universidade Federal do Paraná em 2019.",
+      "why_relevant": "Définit le statut d'Aline Maria : paysanne bénéficiaire de réforme agraire combinant activisme et formation juridique formelle.",
+      "verified": true,
+      "page_physical": 8
+     },
+     {
+      "page": 9,
+      "quote": "Aline Maria se preocupava com o acesso à terra das mulheres camponesas e apontava a ligação que há entre colonização, modernidade e a hierarquização de gênero.",
+      "why_relevant": "Énonce explicitement l'articulation genre + accès foncier + décolonisation, cœur du féminisme agraire.",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 9,
+      "quote": "Seus estudos incentivam a compreender a agroecologia e as práticas coletivas de uso e cultivo da terra como capazes de conduzir a outros caminhos para o desenvolvimento rural em respeito às questões de gênero, raça e classe.",
+      "why_relevant": "Positionne l'agroécologie et les pratiques collectives comme stratégies de développement alternatif incluant justice de genre et raciale.",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 8,
+      "quote": "A nossa conexão se formou em torno dos interesses comuns nos debates do direito à alimentação, da agroecologia, da reforma agrária, das relações de gênero",
+      "why_relevant": "Articule quatre core concepts de la thématique : droit à l'alimentation, agroécologie, réforme agraire, féminisme.",
+      "verified": true,
+      "page_physical": 8
+     },
+     {
+      "page": 9,
+      "quote": "Este livro surgiu pela iniciativa do Movimento das Trabalhadoras e Trabalhadores Rurais Sem Terra e da organização de direitos humanos Terra de Direitos.",
+      "why_relevant": "Identifie les acteurs collectifs centraux : MST et Terra de Direitos, organisations clés de la libération des terres au Brésil.",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 9,
+      "quote": "que seus textos nos inspirem a dar continuidade ao seu legado em defesa do direito humano e fundamental à terra, com iguais condições de produzir e de viver no campo",
+      "why_relevant": "Énonce le droit fondamental à la terre et l'égalité d'accès aux ressources productives — vision politique unifiée de la lutte.",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 9,
+      "quote": "Na pesquisa, na extensão, na advocacia popular, Aline Maria atuava com a consciência da sua condição de agricultora camponesa.",
+      "why_relevant": "Illustre le modèle d'intellectuel organique paysan : hybridation de recherche académique, extension et advocacy juridique.",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 8,
+      "quote": "a entrada na Universidade pública me trouxe esperança, esperança essa de que cada vez mais a Universidade acolha outras mulheres camponesas, mulheres que têm o sonho de transformar o mundo pelo conhecimento",
+      "why_relevant": "Montre comment l'accès éducatif pour les femmes paysannes est inscrit dans un projet transformateur collectif.",
+      "verified": true,
+      "page_physical": 8
+     }
+    ],
+    "matched_keywords": [
+     "reforma agrária",
+     "agroecologia",
+     "mulheres camponesas",
+     "sem terra",
+     "direito à terra",
+     "acesso à terra",
+     "práticas coletivas",
+     "advocacia popular",
+     "direito à alimentação",
+     "MST",
+     "Terra de Direitos",
+     "féminisme",
+     "droits humains",
+     "desenvolvimento rural",
+     "colonização",
+     "agronegócio",
+     "direito agrário",
+     "paysannerie",
+     "libération des terres"
+    ],
+    "relevance_score": 9,
+    "relevance_notes": "Score maximal : le document combine trois core concepts au cœur de la thématique (réforme agraire + agroécologie + féminisme paysan), identifie les acteurs clés (MST, Terra de Direitos), et offre une théorisation explicite du lien entre colonisation, genre et accès foncier. C'est un texte académique-militant hybride situé dans une lutte réelle.",
+    "en_clair": "Ce livre montre qu'une paysanne peut étudier le droit et l'utiliser pour défendre son peuple et sa terre — et que cela marche vraiment. Il démontre aussi que l'égalité entre femmes et hommes à la ferme et l'agroécologie vont ensemble.",
+    "acteurs": [
+     "Movimento dos Trabalhadores Rurais Sem Terra (MST)",
+     "Terra de Direitos",
+     "EKOA (Direito Ambiental para todxs)",
+     "Majup (Movimento de Assessoria Jurídica Universitária Popular)",
+     "Rede de Combate à Violência Doméstica do MST/SP",
+     "Turma Nilce de Souza Magalhães",
+     "Aline Maria dos Santos Silva",
+     "Katya Regina Isaguirre-Torres",
+     "Luciana Cristina Furquim Pivato",
+     "Renata Caroline da Silva",
+     "Selma de Fatima Santos"
+    ],
+    "controverse": "Le texte soulève implicitement la tension entre un modèle de développement rural capitaliste (agronégocio, modernité importée) et un projet alternatif (agroécologie, pratiques collectives, égalité de genre), mais sans débat interne explicite.",
+    "angle_journalistique": "Comment les femmes du MST utilisent la formation juridique universitaire pour défendre l'agroécologie, l'égalité de genre et le droit à la terre — le cas d'Aline Maria comme modèle d'intellectuel organique paysan.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "7a79f784ca"
+   },
+   "cover": "covers/a9917d40.jpg",
+   "bulle": "bulles/a9917d40.json",
+   "meta": {
+    "page_count": 272,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "Adobe InDesign CC 13.1 (Windows)"
+   },
+   "has_cover": true
+  },
   "c1118aff": {
    "id": "c1118aff",
    "url": "https://mst.org.br/wp-content/uploads/2022/03/Carta-O-povo-precisa-da-Defensoria.pdf",
@@ -44146,6 +44854,1691 @@
    },
    "has_cover": true
   },
+  "03e23323": {
+   "id": "03e23323",
+   "url": "https://mst.org.br/wp-content/uploads/2012/05/DossieAGT.pdf",
+   "filename": "03e23323_DossieAGT.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 6,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2012-04-29",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/03e23323_DossieAGT.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "DossieAGT",
+     "link_text": "DossieAGT",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "DossieAGT",
+     "link_text": "DossieAGT",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "DossieAGT",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "DossieAGT",
+   "enrichment": {
+    "summary": "Ce dossier de l'ABRASCO (Association brésilienne de santé collective) documente l'escalade de l'utilisation des pesticides au Brésil depuis 2002 et ses impacts sanitaires massifs. Le document établit un lien direct entre le modèle agroindustriel chimico-dépendant et la contamination de la population entière : travailleurs agricoles, riverains des usines, consommateurs. L'analyse porte sur l'expansion des frontières agricoles vouées à l'exportation de commodités (soja, canne à sucre, coton, eucalyptus) pour les agrocombustibles et l'industrie, au détriment du mode de vie et de la production paysanne d'aliments. Le dossier met en évidence les études scientifiques prouvant les dommages divers à la santé (cancers, troubles reproductifs, contamination de l'eau et du lait maternel) causés par la multiexposition aux résidus de pesticides. En contrepoint, l'agroécologie est proposée explicitement comme stratégie de promotion de la santé. Le document combine ainsi une critique radicale de la modernisation agricole conservatrice avec une défense implicite de la paysannerie et de sa capacité à produire des aliments souverainsement, contre un modèle qui « ne nourrit pas les gens » mais alimente les cycles industriels et d'exportation.",
+    "citations": [
+     {
+      "page": 11,
+      "quote": "Soja, cana-de-açúcar, algodão e eucalipto são exemplos de cultivos que vêm ocupando cada vez mais terras agricultáveis, para alimentar o ciclo dos agrocombustíveis, da celulose ou do ferro-aço, e não as pessoas, ao tempo em que avançam sobre biomas como o cerrado e Amazônia, impondo limites ao modo de vida e à produção camponesa de alimentos",
+      "why_relevant": "Nomme explicitement l'expansion foncière des monocultures exportatrices qui écrasent la production paysanne alimentaire — lien direct entre accaparement foncier et élimination de la paysannerie",
+      "verified": true,
+      "page_physical": 11
+     },
+     {
+      "page": 11,
+      "quote": "reprimarização da economia, da expansão das fronteiras agrícolas para a exportação de commodities, da afirmação do modelo da modernização agrícola conservadora e da monocultura químico-dependente",
+      "why_relevant": "Analyse structurelle de l'exportation de commodités comme driver de l'expansion agricole et critique du modèle industriel chimico-dépendant",
+      "verified": true,
+      "page_physical": 11
+     },
+     {
+      "page": 7,
+      "quote": "A Agroecologia como estratégia de promoção da saúde",
+      "why_relevant": "Reconnait l'agroécologie non comme technique mais comme stratégie de transformation du système productif et de protection de la santé collective",
+      "verified": true,
+      "page_physical": 7
+     },
+     {
+      "page": 11,
+      "quote": "Constatar a amplitude da população à qual o risco é imposto sublinha a sua relevância: trabalhadores das fábricas de agrotóxicos, da agricultura, da saúde pública e outros setores; população do entorno das fábricas e das áreas agrícolas; além dos consumidores de alimentos contaminados – toda a população",
+      "why_relevant": "Affirme que la contamination touche toute la population, particulièrement les travailleurs agricoles — vision de classe et de santé collective alignée aux enjeux paysans",
+      "verified": true,
+      "page_physical": 11
+     },
+     {
+      "page": 11,
+      "quote": "a elaboração do Dossiê nos colocou diante da enormidade do problema e da tarefa de abordá-lo adequadamente",
+      "why_relevant": "Reconnaît la complexité structurelle du problème — au-delà de la santé seule, une question systémique d'agriculture et de territoire",
+      "verified": true,
+      "page_physical": 11
+     }
+    ],
+    "matched_keywords": [
+     "paysannerie",
+     "production paysanne",
+     "agriculture vivrière",
+     "agroécologie",
+     "agroecologia",
+     "souveraineté alimentaire",
+     "segurança alimentar",
+     "monoculture",
+     "accaparement foncier",
+     "agriculture industrielle",
+     "expansion des frontières agricoles"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Le document critique frontalement l'agriculture industrielle chimico-dépendante et défend implicitement la paysannerie et sa capacité à produire des aliments, tout en proposant l'agroécologie comme alternative. Cependant, c'est d'abord un texte sanitaire et environnemental, non foncier : il ne traite pas explicitement de propriété d'usage, communs, ou libération des terres. Score 6 : pertinent comme contexte politique et sanitaire de pourquoi l'autonomie paysanne et l'agroécologie sont vitales.",
+    "en_clair": "Ce document montre que les pesticides utilisés pour cultiver du soja, de la canne à sucre et du coton destinés à l'export empoisonnent les Brésiliens et tuent la possibilité que les paysans cultivent librement pour nourrir leur peuple. C'est un lien direct entre santé, liberté de cultiver et terre accaparée pour les multinationales. Pour qui défend l'agroécologie et la paysannerie, c'est une arme : prouver que le système industriel détruit les deux.",
+    "acteurs": [
+     "ABRASCO (Associação Brasileira de Saúde Coletiva)",
+     "FIOCRUZ (Fundação Oswaldo Cruz)",
+     "CONSEA (Conselho Nacional de Segurança Alimentar e Nutricional)",
+     "CONAMA (Conselho Nacional de Meio Ambiente)",
+     "INCA (Instituto Nacional do Câncer)",
+     "Luiz Augusto Facchini (Presidente da ABRASCO)"
+    ],
+    "controverse": "Aucune controverse interne exposée. Le texte est une alerte univoque. Implicitement, une tension : les gouvernements brésilien et états (qui autorisent les pesticides) contre l'ABRASCO et les chercheurs qui crient l'alerte.",
+    "angle_journalistique": "Comment les pesticides destinés aux cultures d'exportation (soja, canne à sucre) se sont retrouvés dans le lait maternel des Brésiliennes, tandis que la paysannerie locale perd ses terres à cause de cette expansion agricole ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "5ddd04f5dc"
+   },
+   "cover": "covers/03e23323.jpg",
+   "meta": {
+    "page_count": 98,
+    "pdf_title": "Dossiê da ABRASCO sobre os impactos dos Agrotóxicos na Saúde",
+    "pdf_author": "fernando",
+    "pdf_creator": "Microsoft® Office Word 2007"
+   },
+   "has_cover": true
+  },
+  "c33f078c": {
+   "id": "c33f078c",
+   "url": "https://mst.org.br/wp-content/uploads/2013/08/CARTA-CONVITE-05-DE-AGOSTO.pdf",
+   "filename": "c33f078c_CARTA-CONVITE-05-DE-AGOSTO.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 6,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2013-07-16",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/c33f078c_CARTA-CONVITE-05-DE-AGOSTO.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "CARTA-CONVITE-05-DE-AGOSTO",
+     "link_text": "CARTA-CONVITE-05-DE-AGOSTO",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "CARTA-CONVITE-05-DE-AGOSTO",
+     "link_text": "CARTA-CONVITE-05-DE-AGOSTO",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "CARTA-CONVITE-05-DE-AGOSTO",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "CARTA-CONVITE-05-DE-AGOSTO",
+   "enrichment": {
+    "summary": "Carta-convite datée du 16 juillet 2013, lancée par les mouvements sociaux brésiliens après les massives mobilisations de juin-juillet 2013 (Jornadas de Junho). Le document appelle à l'unité des forces populaires — mouvements ruraux, centrales syndicales, mouvements de jeunes, pastorales — pour une Plenária Nacional le 5 août 2013. Le contexte : après des protestations urbaines contre le coût des transports et autres enjeux sociaux, le gouvernement Dilma a tenté de reprendre l'initiative avec des propositions de plebiscite et réformes constitutionnelles, mais a été vaincu par sa propre base parlementaire. La bourgeoisie est divisée et sans projet unifié. Le document analyse cette conjoncture politique et propose un calendrier de luttes : mobilisations contre la sous-traitance, pour les réformes politiques, et explicitement pour la réforme agraire et la souveraineté alimentaire. Point crucial pour la thématique : le MST et les mouvements du champ sont nommés comme acteurs des mobilisations de juin, et le texte affirme l'importance d'articuler les luttes rurales et urbaines. La réforme agraire figure parmi les reformas estruturais revendiquées. Une 'Jornada nacional' d'octobre vise à défendre « la souveraineté alimentaire et des aliments sains et bon marché pour tout le peuple » contre les entreprises transnationales de l'agro et les accaparements (leilões do pré-sal).",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "As bandeiras dos movimentos do campo e do MST estiveram presentes em todos os atos, e a reforma agraria, voltou a ser citada pela imprensa, de forma simpática.",
+      "why_relevant": "Nomme explicitement le MST (Movimento dos Trabalhadores Rurais Sem Terra) comme acteur des mobilisations de juin 2013, et pose la réforme agraire comme une revendication centrale réintroduite dans le débat public.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "O MST e os movimentos do campo precisamos estar cada vez mais estar antenados e articulados com os trabalhadores da cidade. Nossa luta pelas mudanças no campo, com a reforma agraria e o projeto de agricultura familiar, camponesa, somente avançarão junto com eles.",
+      "why_relevant": "Articule explicitement les luttes paysannes/rurales (réforme agraire, agriculture familiale) avec les luttes urbaines, reconnaissant l'interdépendance des deux axes — problématique centrale pour la libération des terres.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 4,
+      "quote": "reforma agraria, prioridade dos recursos públicos para educação, saúde e transporte publico; reforma tributaria; reforma do judiciário.",
+      "why_relevant": "Inscrit la réforme agraire au cœur des reformas estruturais à conquérir, parallèlement aux réformes fiscale et judiciaire.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 5,
+      "quote": "Jornada nacional e internacional, contra os leiloes do pré-sal, contra as empresas transnacionais do agro, contra a mineração. Em defesa da soberania alimentar e de alimentos sadios e baratos para todo povo.",
+      "why_relevant": "Lie explicitement la souveraineté alimentaire à la lutte contre l'accaparement (leilões du pré-sal, entreprises transnationales de l'agro, mineração) — démonstration de la convergence entre enjeux fonciers/alimentaires et luttes structurelles.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 3,
+      "quote": "Será um período que nos exigirá muita persistência, sabedoria, debate coletivo, para entendermos a cada momento, e uma certa ousadia para acertar nos passos que precisamos dar.",
+      "why_relevant": "Appel à une stratégie collective et réfléchie face à un contexte de recomposition politique — posture caractéristique des mouvements de longue durée (MST, Via Campesina).",
+      "verified": true,
+      "page_physical": 3
+     }
+    ],
+    "matched_keywords": [
+     "MST",
+     "reforma agrária",
+     "agricultura familiar",
+     "agricultura camponesa",
+     "soberania alimentar",
+     "movimentos sociais do campo",
+     "sans-terre",
+     "réforme agraire",
+     "paysannerie",
+     "souveraineté alimentaire"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Document de coordination politique (août 2013) qui nomme explicitement le MST, la réforme agraire et l'agriculture familiale paysanne comme enjeux centraux, mais qui n'approfondit pas théoriquement la thématique foncière/agraire. Pertinent car il documente comment les mouvements brésiliens ont articulé les luttes urbaines et rurales en 2013, mais c'est surtout un appel tactique, non une analyse structurelle des communs fonciers ou des alternatives à la propriété.",
+    "en_clair": "Ce texte montre comment, en 2013, les paysans sans-terre du Brésil (MST) ont profité des grandes révoltes urbaines pour faire avancer la réforme agraire et rappeler que la lutte pour manger sain, à bas prix, dépend d'une transformation du foncier et de l'agriculture. Il dit : urbains et ruraux, on doit marcher ensemble pour ça.",
+    "acteurs": [
+     "MST (Movimento dos Trabalhadores Rurais Sem Terra)",
+     "Governo Dilma Rousseff",
+     "PT, PMDB, PDT, PCdoB",
+     "Centrais sindicais",
+     "Pastorales (movimentos religiosos)"
+    ],
+    "controverse": "Tension entre réformes politiques/institutionnelles (plebiscite, amendements) et luttes directes pour transformation structurelle (réforme agraire, souveraineté alimentaire). Débat sur la stratégie du plebiscite populaire auto-organisé vs demande de plebiscite officiel — comment imposer les réformes structurelles quand le Congrès est bloqué.",
+    "angle_journalistique": "Comment le MST et les mouvements du champ brésilien ont-ils tenté de convertir la vague urbaine de juin 2013 en momentum pour la réforme agraire et la souveraineté alimentaire ? Bilan de cette stratégie d'articulation une décennie plus tard.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "c27bccd755"
+   },
+   "cover": "covers/c33f078c.jpg",
+   "meta": {
+    "page_count": 6,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "Writer"
+   },
+   "has_cover": true
+  },
+  "ca2a5541": {
+   "id": "ca2a5541",
+   "url": "https://mst.org.br/wp-content/uploads/2012/05/9artigodomes_2011.pdf",
+   "filename": "ca2a5541_9artigodomes_2011.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 6,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2011-09-02",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/ca2a5541_9artigodomes_2011.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "9artigodomes_2011",
+     "link_text": "9artigodomes_2011",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "9artigodomes_2011",
+     "link_text": "9artigodomes_2011",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "9artigodomes_2011",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "9artigodomes_2011",
+   "enrichment": {
+    "summary": "Cet article de 2011, publié par le NERA (centre brésilien d'études sur la réforme agraire), analyse le modèle de domination du capitalisme oligopoliste sur l'agriculture brésilienne via le contrôle des agrotoxiques. L'auteure, Larissa Mies Bombardi (géographe à l'USP), établit un diagnostic radical : alors que le Brésil est devenu le premier consommateur mondial de pesticides en 2009, 60-70 % de la nourriture quotidienne y provient encore des petites propriétés paysannes, qui sont contraintes de dépendre des six grandes transnationales agro-chimiques (Monsanto, Syngenta, Bayer, Dupont, Basf, Dow) pour leurs semences et intrants. Ce système produit une subordination systématique de la rente foncière paysanne au capital international monopoliste : chaque achat d'herbicide ou d'engrais transfère la richesse du paysan aux géants transnationaux. L'article, documenté par des diagrammes de fusions-acquisitions (2000-2007) montrant l'intégration verticale du secteur, décrit cette subordination comme « scellée » avec l'avènement des semences transgéniques — le paysan devient prisonnier d'une chaîne technique de dépendance. Cette structuration oligopoliste s'accompagne d'une crise sanitaire silencieuse : environ 62 000 intoxications par agrotoxiques agricoles sont notifiées entre 1999 et 2009 (une toutes les 90 minutes), frappant principalement les travailleurs ruraux. L'article pose ainsi la question du pouvoir politique et économique de la paysannerie dans un régime d'agriculture subordinonnée, sans proposer d'alternatives organisationnelles explicites.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "O Brasil, como é sabido, alcançou em 2009 o primeiro lugar no ranking mundial de consumo de agrotóxicos",
+      "why_relevant": "Établit le contexte d'une dépendance brésilienne extrême aux pesticides, enjeu de souveraineté alimentaire et autonomie agricole",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "92% foram controlados por empresas de capital estrangeiro: Syngenta (Suíça), Dupont (Estados Unidos), Dow Chemical, Bayer (Alemanha), Novartis (Suíça), Basf (Alemanha) e Milenia",
+      "why_relevant": "Démontre l'oligopolisation du secteur agrochimique par six transnationales, mécanisme clé de dépossession de la rente foncière",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "cerca de 60 a 70% daquilo que se consome cotidianamente no Brasil é produzido em pequenas propriedades",
+      "why_relevant": "Souligne le rôle vital de la petite agriculture paysanne pour la souveraineté alimentaire, malgré sa subordination au capital",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "o camponês permanece na terra até o limite de sua sobrevivência, porque seu objetivo é viver e não o lucro",
+      "why_relevant": "Définit l'antagonisme structurel entre la logique paysanne (subsistence, territorialité) et la logique capitaliste (accumulation)",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "A reprodução do capitalismo no campo se dá através da subordinação da renda da terra (seja ela camponesa ou não) ao capital",
+      "why_relevant": "Énonce le mécanisme de dépossession : le capital ne s'approprie pas la terre elle-même, mais le revenu et la production paysanne",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "Com o advento dos transgênicos, esta subordinação fica 'selada' em todas as suas pontas. Desde as sementes, passando pelos fertilizantes e chegando ao veneno",
+      "why_relevant": "Décrit la fermeture systémique de la dépendance technique et économique via l'agro-biotechnologie",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "o Brasil consome 84% dos agrotóxicos vendidos à América Latina... setor de agroquímicos está oligopolizado por 6 grandes marcas",
+      "why_relevant": "Chiffres de l'hyper-concentration sectorielle et de la position régionale du Brésil comme marché captif",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "Neste sentido, toda vez que o camponês destina parte de sua renda à compra de insumos químicos, esta renda é apropriada pelo capital industrial internacional",
+      "why_relevant": "Explicite le flux de dépossession : chaque investissement productif du paysan enrichit les transnationales",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 6,
+      "quote": "cerca de 62 mil intoxicações por agrotóxicos de uso agrícola... uma a cada 90 minutos",
+      "why_relevant": "Quantifie la violence écologique et corporelle du système : l'empoisonnement systématique des travailleurs ruraux",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 6,
+      "quote": "Este agudo processo de subordinação da renda da terra, no Brasil, ao capital monopolista internacional, através da aquisição e aplicação de agrotóxicos, tem sido acompanhado por um problema gravíssimo de saúde pública",
+      "why_relevant": "Lie explicitement crise agraire, extraction capitaliste et crise sanitaire comme dimensions d'un même processus",
+      "verified": true,
+      "page_physical": 6
+     }
+    ],
+    "matched_keywords": [
+     "paysannerie",
+     "agriculture vivrière",
+     "paysannerie familiale",
+     "agroécologie",
+     "souveraineté alimentaire",
+     "accaparement",
+     "petite agriculture paysanne",
+     "propriété foncière paysanne",
+     "subordination de la rente foncière",
+     "capital monopoliste",
+     "accaparement des terres"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Le texte éclaire frontalement la condition paysanne contemporaine et le mécanisme de subordination capitaliste de la petite agriculture. Pertinent pour la thématique via 'Paysannerie & agroécologie' et critique de l'accaparement via dépendance technique, mais ne propose pas d'alternatives organisationnelles positives (communs, coopératives, propriété d'usage) — c'est un diagnostic du système oppressif sans sortie pratique énoncée.",
+    "en_clair": "Au Brésil, six grandes entreprises chimiques mondiales contrôlent ce que les petits paysans peuvent cultiver et vendent : les paysans doivent acheter leurs semences et leurs pesticides à ces mêmes groupes, ce qui les rend prisonniers et empoisonne les travailleurs. Ce système fonctionne comme une trappe : plus le paysan travaille, plus il enrichit les transnationales.",
+    "acteurs": [
+     "Larissa Mies Bombardi",
+     "Victor Pelaez",
+     "Monsanto",
+     "Syngenta",
+     "Dupont",
+     "Dow Chemical",
+     "Bayer",
+     "Novartis",
+     "Basf",
+     "Milenia",
+     "NERA",
+     "SINITOX",
+     "IBGE",
+     "USP",
+     "UFPR",
+     "FIOCRUZ"
+    ],
+    "controverse": "Le texte pose implicitement la tension irrésolue : comment la petite paysannerie brésilienne, bien que productrice vitale de nourriture (60-70 % de la consommation), peut-elle échapper à la subordination complète au capital oligopoliste ? Aucune solution organisationnelle n'est envisagée dans ce texte critique.",
+    "angle_journalistique": "Enquête sur les initiatives de rupture avec le système agrochimique au Brésil : comment certains collectifs paysans ou mouvements sociaux construisent des alternatives de production (agroécologie paysanne, semences fermières, circuits courts) pour sortir de la dépendance aux transnationales ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "9421ba5e5d"
+   },
+   "cover": "covers/ca2a5541.jpg",
+   "meta": {
+    "page_count": 21,
+    "pdf_title": "Microsoft Word - 09artigodomes_2011",
+    "pdf_author": "nera",
+    "pdf_creator": "PScript5.dll Version 5.2.2"
+   },
+   "has_cover": true
+  },
+  "f36ccd77": {
+   "id": "f36ccd77",
+   "url": "https://mst.org.br/wp-content/uploads/2012/05/7artigodomes_2011.pdf",
+   "filename": "f36ccd77_7artigodomes_2011.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 6,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2011-07-01",
+   "lang": "pt",
+   "editeur": "NERA",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/f36ccd77_7artigodomes_2011.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "7artigodomes_2011",
+     "link_text": "7artigodomes_2011",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "7artigodomes_2011",
+     "link_text": "7artigodomes_2011",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "7artigodomes_2011",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "7artigodomes_2011",
+   "enrichment": {
+    "summary": "Cet article du NERA analyse l'aggravation présumée de la concentration foncière au Brésil entre 2003 et 2010, en particulier en Amazonie. Gerson Teixeira, ex-président de l'Association Brésilienne de Réforme Agraire (ABRA), retrace d'abord l'enracinement historique de cette concentration depuis les Sessmarias coloniales et la Loi de Terras de 1850. Il diagnostique ensuite les failles structurelles du cadre institutionnel brésilien : bien que la Constitution de 1988 impose que la propriété remplisse une « fonction sociale », cette exigence est vidée de sens car une terre « productive » (mesurée sur des critères de 1975) devient immunisée contre l'expropriation. Cette perméabilité légale s'aggrave sous la pression de la « course à la terre » (corrida pela terra) — un phénomène d'accaparement alimenté par trois facteurs majeurs : premièrement, la priorité politique brésilienne pour transformer le pays en grande puissance exportatrice de commodités agricoles et minérales, y compris les agro-combustibles ; deuxièmement, l'attraction du capital étranger cherchant des terres pour l'éthanol, la production de pâte à papier, et pour compenser la vulnérabilité alimentaire mondiale ; troisièmement, les opportunités spéculatives créées par les marchés climatiques (accords de la COP). Le texte souligne l'impuissance administrative : le programme « Terra Legal », censé régulariser les possessions sans litiges en Amazonie, échoue faute d'un cadre réglementaire cohérent dans un contexte où le foncier est forgé dans les conflits. Les données cadastrales de l'INCRA de 2010 révèlent, selon Teixeira, un approfondissement mesurable de la concentration, particulièrement au Nord/Amazonie. Reconnaissant le caractère exploratoire de son analyse — le cadastre est déclaratif et a pu être déformé par les attentes suscitées par les promesses fédérales de régularisation — Teixeira dessine un signal cohérent : le Brésil s'oriente vers une ultra-concentration foncière au service de l'agro-industrie extractiviste et du capital international, au détriment des petits exploitants et des territoires amazoniensLocalisés.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "a concentração da propriedade fundiária no Brasil foi ampliada e consolidada como marca [...] indissolúvel da nossa história",
+      "why_relevant": "Établit que la concentration foncière est un trait structurel brésilien ancré depuis les origines coloniales",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "a grande propriedade pode descumprir os demais graus e requisitos para o cumprimento da função social e, ainda assim, estará imune à desapropriação",
+      "why_relevant": "Révèle la faille critique : l'immunité de la propriété productive vide la fonction sociale de contenu régulateur",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "um movimento de aprofundamento da concentração da posse da terra no Brasil, mais precisamente no Norte/Amazônia",
+      "why_relevant": "Hypothèse centrale du texte : aggravation mesurable de la concentration entre 2003-2010",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "transformação do país em um grande protagonista no comércio internacional de commodities minerais e agrícolas",
+      "why_relevant": "Contexte politico-économique moteur : priorité aux exportations agro-industrielles plutôt qu'à la justice foncière",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "a procura de terras no país pelo capital externo, movida: (i) pela aposta no mercado global do etanol; (ii) para os investimentos das papeleiras",
+      "why_relevant": "Documente le land grabbing par acteurs étrangers motivés par agro-combustibles et pâte à papier",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "expressivo fenômeno de corrida pela terra e pelos bens ambientais no Brasil",
+      "why_relevant": "Décrit l'accélération de l'accaparement foncier comme phénomène systémique récent",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 2,
+      "quote": "a frouxidão dos controles e dos marcos regulatórios sobre o acesso à terra",
+      "why_relevant": "Identifie la laxité réglementaire comme moteur structurel de la concentration et de l'accaparement",
+      "verified": true,
+      "page_physical": 1
+     }
+    ],
+    "matched_keywords": [
+     "réforme agraire",
+     "concentration des terres",
+     "accaparement",
+     "accaparement des terres",
+     "fonction sociale de la propriété",
+     "propriété productive (critique)",
+     "agronegócio",
+     "capital étranger",
+     "land grabbing",
+     "Amazonie",
+     "terres publiques",
+     "régulation foncière",
+     "INCRA",
+     "exploitation agricole"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Texte pertinent car il analyse frontalement l'accaparement foncier et la concentration — le problème structurel que la thématique vise à critiquer. Cependant, c'est une analyse institutionnelle et statistique des causes de l'aggravation, sans exploration des alternatives (communs fonciers, propriété d'usage, agroécologie) ni voix de mouvements de sans-terre. Absence notable du MST (Movimento Sem Terra) pour un article brésilien de 2011.",
+    "en_clair": "Cet article explique pourquoi, au Brésil, malgré les lois qui devraient empêcher une seule personne de posséder trop de terres, les grandes fermes accaparent de plus en plus, surtout en Amazonie. Le gouvernement brésilien favise les grandes exploitations d'exportation et laisse le capital étranger acheter des terres sans limite. Les lois existent sur le papier, mais elles ne s'appliquent pas : une grosse ferme « productive » ne peut pas être reprise par l'État pour en donner aux sans-terre.",
+    "acteurs": [
+     "INCRA (Institut National de Colonisation et de Réforme Agraire)",
+     "ABRA (Association Brésilienne de Réforme Agraire)",
+     "NERA (Núcleo de Estudos, Pesquisas e Projetos de Reforma Agrária)",
+     "AGU (Procurature-Générale de l'Union)",
+     "Président Lula",
+     "Congrès National brésilien",
+     "Gerson Teixeira (auteur)",
+     "Deputado Beto Faro (PT/PA)"
+    ],
+    "controverse": "Tension centrale entre les restrictions constitutionnelles formelles (fonction sociale de la propriété, limites à l'appropriation) et leur non-application ou annulation de facto. L'immunité accordée à la propriété productive — indexée sur des critères obsolètes de 1975 — vide la Constitution de son effet régulateur. Débat implicite : la réforme agraire peut-elle fonctionner quand l'élite foncière contrôle l'interprétation des lois ?",
+    "angle_journalistique": "Enquête : Comment la stratégie brésilienne pour devenir un géant des commodités alimente-t-elle l'accaparement foncier en Amazonie ? Pourquoi les garde-fous constitutionnels (fonction sociale) ne produisent-ils aucun effet, et qui en profite réellement ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "0d1bb9eb43"
+   },
+   "cover": "covers/f36ccd77.jpg",
+   "meta": {
+    "page_count": 18,
+    "pdf_title": "07artigodomes_2011",
+    "pdf_author": "NERA",
+    "pdf_creator": "Doro PDF Writer [1.38] [http://run.to/sz]"
+   },
+   "has_cover": true
+  },
+  "75207006": {
+   "id": "75207006",
+   "url": "https://mst.org.br/wp-content/uploads/2011/09/agricultura_familiar_2011.pdf",
+   "filename": "75207006_agricultura_familiar_2011.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 6,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2011-09-27",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/75207006_agricultura_familiar_2011.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "agricultura_familiar_2011",
+     "link_text": "agricultura_familiar_2011",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "agricultura_familiar_2011",
+     "link_text": "agricultura_familiar_2011",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "agricultura_familiar_2011",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "agricultura_familiar_2011",
+   "enrichment": {
+    "summary": "Ce document de septembre 2011, publié par Repórter Brasil et le Centro de Monitoramento de Agrocombustíveis, analyse les enjeux de la réforme du Code forestier brésilien pour l'agriculture familiale. L'agriculture familiale revêt une importance économique majeure au Brésil : avec 4,3 millions d'établissements (90% des propriétés rurales), elle produit 70% des aliments consommés, emploie 74,4% des travailleurs ruraux et génère 38% de la recette brute de l'agriculture. Le texte expose une tension centrale entre protection environnementale et viabilité agricole : le secteur ruraliste a invoqué l'agriculture familiale comme « victime » des réglementations environnementales, notamment par le biais du député Aldo Rebelo (rapporteur du nouveau Code). Cependant, l'analyse révèle que les flexibilisations proposées — notamment la non-obligation de récupérer les réserves légales défrichées avant 2008, la possibilité de compenser les défrichements par l'achat de terres en dehors de la propriété, et la réduction des zones de protection des cours d'eau — ne bénéficient pas tant aux petits agriculteurs qu'aux grands propriétaires. Selon l'IPEA, 29,6 à 47 millions d'hectares de végétation native pourraient être perdus. Plus problématique encore : l'autorisation pour les grands propriétaires d'acquérir les terres préservées par l'agriculture familiale afin de satisfaire leurs obligations de réserves légales deepens la concentration foncière déjà critique. Le texte note une diversité d'opinions au sein du secteur agricole familial lui-même : tandis que des organisations favorisant des pratiques durables s'allient aux écologistes, d'autres organisations paysannes (notamment liées à la CONTAG) perçoivent dans ce débat une occasion de placer leurs demandes d'accès aux ressources. Le consensus qui émerge cependant est que l'agriculture familiale exige un traitement différencié dans la régulation du sol et des ressources naturelles — non par charité, mais pour reconnaître sa réalité structurelle radicalement différente des grandes exploitations.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "a agricultura familiar produz cerca de 70% dos alimentos consumidos no país, emprega 74,4% dos trabalhadores rurais e produz 38% da receita bruta da agropecuária brasileira",
+      "why_relevant": "Établit l'importance économique et alimentaire de l'agriculture familiale dans la production vivrière brésilienne — central à la souveraineté alimentaire",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "segmentos tão diversos como extrativistas e assentados, minifundiários e pequenos empresários, agroecologistas e monocultores",
+      "why_relevant": "Montre la diversité interne du secteur paysan brésilien, incluant les agroécologistes, pertinent pour comprendre les différentes visions de l'agriculture paysanne",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "O setor ruralista, réu majoritário em todas as categorias de processos por crimes ambientais",
+      "why_relevant": "Expose le conflit entre grands propriétaires terriens (accaparement) et protections environnementales",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 4,
+      "quote": "possibilita-se que áreas preservadas pela agricultura familiar sejam pressionadas por grandes proprietários em busca de reservas legais, aprofundando a já problemática concentração fundiária",
+      "why_relevant": "Articule directement l'enjeu de l'accaparement des terres et de la concentration foncière : le cadre juridique proposé creuse les inégalités foncières",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "29,6 milhões de hectares de vegetação nativa deixarão de compor o cálculo nacional das áreas ocupadas por reservas legais",
+      "why_relevant": "Impact quantifié des changements législatifs sur la biodiversité et la terre — enjeu concret de la lutte pour les communs écologiques",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 2,
+      "quote": "ocupar apenas 24,3% dá área utilizada em atividades agropecuárias no país, a agricultura familiar",
+      "why_relevant": "Révèle la disproportion structurelle : l'agriculture familiale produit 70% des aliments sur seulement 24% des terres — inégalité foncière fondamentale",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "o aprofundamento do tema logrou a construção de um consenso: a proposta de que o setor tenha um tratamento diferenciado na constituição dos regramentos para o uso do solo e dos recursos naturais",
+      "why_relevant": "Montre l'émergence d'un consensus politique : la nécessité de régimes spécifiques pour l'usage du sol paysan, clé à une régulation anti-accaparement",
+      "verified": true,
+      "page_physical": 3
+     }
+    ],
+    "matched_keywords": [
+     "agricultura familiar",
+     "pequenos agricultores",
+     "paysannerie",
+     "agroecologia",
+     "agroecologistas",
+     "concentração fundiária",
+     "accaparement",
+     "land concentration",
+     "propriedade agrícola",
+     "trabalhadores rurais",
+     "minifundiários",
+     "assentados",
+     "produção de alimentos",
+     "food production",
+     "vegetação nativa",
+     "terra",
+     "foncier"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Score 6/10 — Le texte est directement pertinent pour l'agriculture familiale et l'accaparement foncier en Brésil, mais c'est une analyse de politique législative plutôt qu'une exploration des régimes de propriété alternative, des communs fonciers, ou des mouvements de libération des terres. Toutefois, il documente précisément comment la loi peut creuser les inégalités foncières sous prétexte de flexibilité paysanne.",
+    "en_clair": "Le Brésil a changé ses lois de protection forestière en 2011. Les gros propriétaires terriens ont dit que ça faisait du mal aux petits paysans, mais en vérité, ces changements de loi permettaient aux grands propriétaires d'acheter les terres que les petits paysans avaient protégées — ce qui rendait plus difficile pour les paysans familiaux de rester propriétaires.",
+    "acteurs": [
+     "Aldo Rebelo (deputado, PC do B/SP)",
+     "Kátia Abreu (senadora, presidente da CNA)",
+     "CONTAG (Confederação Nacional dos Trabalhadores na Agricultura)",
+     "CNA (Confederação da Agricultura e Pecuária do Brasil)",
+     "IPEA (Instituto de Pesquisa Econômica Aplicada)",
+     "Repórter Brasil",
+     "Centro de Monitoramento de Agrocombustíveis"
+    ],
+    "controverse": "Tension centrale : les flexibilisations du Code forestier censées aider l'agriculture familiale bénéficient-elles réellement aux petits paysans, ou deepens-elles la concentration foncière en autorisant les grands propriétaires à presser les terres préservées par l'agriculture familiale pour satisfaire leurs obligations de réserves légales ? Désaccord au sein même du secteur paysan sur la stratégie : opposition entre organisations environnementales/agroécologiques et certaines branches de la CONTAG cherchant à négocier des exemptions.",
+    "angle_journalistique": "Enquête sur l'impact réel de la réforme du Code forestier de 2011 : les flexibilisations ont-elles effectivement aidé l'agriculture familiale à se développer, ou ont-elles surtout accéléré la concentration foncière et l'expulsion des petits paysans ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "026b26f7d7"
+   },
+   "cover": "covers/75207006.jpg",
+   "meta": {
+    "page_count": 17,
+    "pdf_title": "Microsoft Word - AF.doc",
+    "pdf_author": "Verena Glass",
+    "pdf_creator": "PScript5.dll Version 5.2"
+   },
+   "has_cover": true
+  },
+  "155e65f4": {
+   "id": "155e65f4",
+   "url": "https://mst.org.br/wp-content/uploads/2010/12/Mocao_Contra_o_Uso_dos_Agrotoxicos.pdf",
+   "filename": "155e65f4_Mocao_Contra_o_Uso_dos_Agrotoxicos.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 5,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2010-12-16",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/155e65f4_Mocao_Contra_o_Uso_dos_Agrotoxicos.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Mocao_Contra_o_Uso_dos_Agrotoxicos",
+     "link_text": "Mocao_Contra_o_Uso_dos_Agrotoxicos",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Mocao_Contra_o_Uso_dos_Agrotoxicos",
+     "link_text": "Mocao_Contra_o_Uso_dos_Agrotoxicos",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Mocao_Contra_o_Uso_dos_Agrotoxicos",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Mocao_Contra_o_Uso_dos_Agrotoxicos",
+   "enrichment": {
+    "summary": "Cette motion, adoptée le 10 décembre 2010 à Belém do Pará (Brésil) lors d'un symposium réunissant chercheurs, professionnels de la santé environnementale et militants, constitue un appel collectif contre la massification de l'usage des agrotoxiques (pesticides de synthèse) et pour une transition agroécologique.\n\nLe diagnostic est alarmant : depuis 2008, le Brésil occupe le premier rang mondial en consommation d'agrotoxiques, et autorise l'usage de produits que d'autres États ont bannis. Cette situation n'est pas accidentelle, mais résulte d'une pression politique systématique exercée par la « bancada ruralista » (bloc parlementaire agro-industriel) et les corporations transnationales, qui imposent un package technologique articulé autour de l'équation agrotoxiques-semences transgéniques-fertilisants synthétiques.\n\nLes impacts documentés sont multiples : contamination écosystémique (eaux, sols, atmosphère), dissémination par pulvérisation aérienne, dégradation de la biodiversité, risques sanitaires directs (exposition dans les champs et contamination alimentaire), altération de la qualité des aliments et de l'eau de consommation.\n\nEn riposte, Via Campesina — le réseau international de mouvements paysans — lance une « Campagne Permanente Contre les Agrotóxicos et Pour la Vie » (lancée le 7 avril 2011, Journée mondiale de la santé). Cette campagne articule mouvements sociaux, secteur académique, institutions de recherche et professionnels de la santé publique en une mobilisation multi-sectorielle qui transforme l'enjeu sanitaire en lutte politique.\n\nLe texte s'engage pour une transition agroécologique, entendue comme passage d'un modèle industrialisé à une production saine et durable, avec création de « territoires libres des agrotoxiques » — formulation qui dépasse la simple régulation pour affirmer une autonomie territoriale. Le soutien institutionnel de l'ABRASCO (association brésilienne de santé collective) et de l'Association latino-américaine de sociologie rurale confère une légitimité scientifique.\n\nImplicitement, le texte révèle une lutte profonde : la définition du modèle agricole brésilien s'est cristallisée en confrontation entre le complexe agroindustriel mondialisé et les mouvements paysans qui défendent une agriculture à petite échelle, écologique et de santé collective.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "O Brasil é desde 2008 o maior consumidor de agrotóxicos do mundo",
+      "why_relevant": "Établit le contexte brésilien comme central dans l'enjeu mondial de dépendance aux pesticides.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "O Brasil é o maior consumidor de agrotóxicos já banidos por outros países",
+      "why_relevant": "Révèle le décalage régulatoire : le Brésil autorise ce que d'autres États ont jugé trop dangereux.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "A bancada ruralista e as corporações transnacionais, responsáveis pelo agronegócio e pela indução e ampliação do pacote tecnológico agrotóxicos-transgênicos-fertilizantes fazem pressão constante sobre os órgãos reguladores",
+      "why_relevant": "Identifie l'adversaire politique : le lobby agro-industriel et ses alliances structurelles.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "Que a Via Campesina está articulando com as organizações sociais, academia e instituições de pesquisa, a Campanha Permanente Contra os Agrotóxicos e Pela Vida",
+      "why_relevant": "Démontre la mobilisation multi-sectorielle orchestrée par Via Campesina comme riposte politique.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "fomentar a transição agroecológica para a produção e consumo saudável e sustentável",
+      "why_relevant": "Affirme l'agroécologie comme alternative concrète et souhaitable au modèle industrialisé.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "movimentos sociais no sentido de proteger a saúde e o meio ambiente na promoção de territórios livres dos agrotóxicos",
+      "why_relevant": "Introduit le concept de « territoire libre » comme objectif politique d'autonomie territoriale.",
+      "verified": true,
+      "page_physical": 1
+     }
+    ],
+    "matched_keywords": [
+     "agroecologia"
+    ],
+    "relevance_score": 5,
+    "relevance_notes": "Le document est CONNEXE mais PÉRIPHÉRIQUE à la thématique veille. Émerge d'un acteur clé (Via Campesina) et touche l'agroécologie, mais ne traite pas des questions CENTRALES : propriété foncière, communs, libération des terres, accès foncier, réforme agraire. C'est une lutte PAYSANNE mais sur l'angle sanitaire/environnemental, non foncier.",
+    "en_clair": "Ce texte montre comment les paysans organisés par Via Campesina se battent contre l'empoisonnement chimique imposé par le lobby agricole brésilien. C'est utile pour comprendre comment une lutte paysanne s'organise politiquement face au système agro-industriel, même si le document ne parle pas directement de propriété de la terre ni de communs.",
+    "acteurs": [
+     "Via Campesina",
+     "ABRASCO (Associação Brasileira de Saúde Coletiva)",
+     "Associação Latinoamericana de Sociologia Rural",
+     "Campanha Permanente Contra os Agrotóxicos e Pela Vida"
+    ],
+    "controverse": "Tension majeure entre le lobby agro-industriel (bancada ruralista + corporations transnationales) qui cherche à assouplir la régulation des agrotoxiques, et les mouvements paysans + scientifiques qui exigent une régulation stricte et une transition agroécologique. La question implicite : quel modèle agricole pour le Brésil ?",
+    "angle_journalistique": "Enquête sur la mobilisation coordonnée de Via Campesina, scientifiques et professionnels de santé face au lobby agrochimique brésilien : comment les mouvements paysans construisent une alternative politique à l'agriculture industrielle.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "c6ea348eb7"
+   },
+   "cover": "covers/155e65f4.jpg",
+   "meta": {
+    "page_count": 1,
+    "pdf_title": "(Microsoft Word - Mo\\347\\343o Contra o Uso dos Agrot\\363xicos e Pela Vida - I Simp\\363si\\205)",
+    "pdf_author": "Ccom06",
+    "pdf_creator": "PScript5.dll Version 5.2.2"
+   },
+   "has_cover": true
+  },
+  "79c9723c": {
+   "id": "79c9723c",
+   "url": "https://mst.org.br/wp-content/uploads/2010/12/Carta_de_Belem.pdf",
+   "filename": "79c9723c_Carta_de_Belem.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 6,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2010-12-16",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/79c9723c_Carta_de_Belem.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Carta_de_Belem",
+     "link_text": "Carta_de_Belem",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Carta_de_Belem",
+     "link_text": "Carta_de_Belem",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Carta_de_Belem",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Carta_de_Belem",
+   "enrichment": {
+    "summary": "La Charte de Belém est un appel politique collectif rédigé en décembre 2010 par environ 1000 professeurs, chercheurs, étudiants et techniciens brésiliens. Elle formule une critique radicale du modèle capitaliste qui incorpore le Brésil à l'économie mondialisée comme producteur de commodités agricoles industrielles. Ce modèle repose sur une agriculture monoculturale chimiquement dépendante qui s'expanse sur l'Amazonie et le Cerrado, accompagnée de chaînes de mineração et pétrochimie générant contamination environnementale massive et dommages sanitaires. Le paradoxe pointé : malgré le statut de 6e économie mondiale, le Brésil accumule des retards énormes en santé, éducation, assainissement et qualité environnementale. L'État brésilien s'est rendu subordiné aux grandes corporations internationales, facilitant leur installation et mettant à disposition des ressources publiques massives. Les communautés sont expulsées de leurs terres, éloignées de leurs écosystèmes, perdant leur sécurité et souveraineté alimentaire. Le document critique aussi une crise éthique et paradigmatique du savoir scientifique, instrument d'une 'rationalité instrumentale économique'. Le tournant politique clef réside dans l'identification des acteurs de l'alternative : peuples autochtones, afrodescendants, communautés traditionnelles et travailleurs urbains pauvres qui 'résistent et avancent' en construisant des alternatives, notamment par l'Agroécologie et l'Économie Solidaire. Le texte appelle à produire des 'processus collectifs de production de connaissances émancipatrices' fondées sur une 'nouvelle conception de Science et Technologie', engageant signataires et institutions vers des politiques publiques garantissant le droit à la santé et un environnement sain.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "grande parte das comunidades...passam a ser atingidas por ele, expulsas de suas terras e afastadas de seus ecossistemas, perdendo sua segurança e soberania alimentar",
+      "why_relevant": "Énoncé direct de l'expulsion des terres et perte de souveraineté alimentaire — core de la thématique libération des terres et souveraineté alimentaire",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "povos indígenas, afrodescendentes, comunidades tradicionais, trabalhadores e moradores das periferias urbanas resistem e avançam na construção de alternativas a este modelo, como são a Agroecologia e a Economia Solidária",
+      "why_relevant": "Identification explicite des acteurs de résistance foncière (peuples autochtones, communautés traditionnelles) et nomination de l'agroécologie comme alternative",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 1,
+      "quote": "um modelo monocultor químico-dependente de padrão agro-bio-tecnológico, que se expande sobre biomas como a Amazônia e o Cerrado",
+      "why_relevant": "Caractérisation du régime agricole industriel qui s'empare des terres ; critique du modèle dominant d'agriculture",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "preservando suas culturas e saberes de cuidado com a Vida",
+      "why_relevant": "Valorisation des savoirs alternatifs des peuples autochtones et communautés — pertinent pour la paysannerie et les communs",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "processos coletivos de produção de conhecimentos emancipatórios e de proteção da saúde e do ambiente",
+      "why_relevant": "Approche collective et émancipatrice de la production de savoir — pertinent pour logique de commoning et autonomie",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 1,
+      "quote": "pacto perverso do capitalismo, que produz injustiças ambientais",
+      "why_relevant": "Dénonciation des injustices environnementales liées à l'accaparement capitaliste de la nature et des terres",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "Colocamos-nos ao lado dos cuidadores da vida",
+      "why_relevant": "Positionnement politique explicite aux côtés des acteurs de résistance foncière et agroécologique",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 1,
+      "quote": "Na vigência de uma economia cujo mercado está mundializado, nossa...a extensão de nossa terra...são elementos que delimitam uma escolha político-econômica",
+      "why_relevant": "Affirmation que la terre est enjeu politico-économique central, non marchandise neutre",
+      "verified": false,
+      "page_physical": null
+     }
+    ],
+    "matched_keywords": [
+     "soberanía alimentar",
+     "souveraineté alimentaire",
+     "Agroecologia",
+     "agroécologie",
+     "comunidades tradicionais",
+     "communautés traditionnelles",
+     "povos indígenas",
+     "peuples autochtones",
+     "Economia Solidária",
+     "économie solidaire",
+     "terra",
+     "terre",
+     "agricultura",
+     "agriculture",
+     "ecossistemas",
+     "écosystèmes",
+     "apropriação",
+     "appropriation",
+     "capitalismo",
+     "capitalisme"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Document pertinent pour comprendre le positionnement politique d'acteurs brésiliens (chercheurs, techniciens) face au modèle capitaliste agroindustriel ; identifie explicitement agroécologie, peuples autochtones, communautés traditionnelles et économie solidaire comme alternatives. Cependant, absence totale de contenu sur structures institutionnelles ou foncières concrètes : pas de communs fonciers nommés, pas de propriété d'usage, pas de coopératives agricoles, pas de réforme agraire, pas de fiducies foncières ou de land back. C'est un texte de posture politique collective, non d'analyse des mécanismes de libération des terres.",
+    "en_clair": "Ce texte dit que le Brésil a choisi un modèle économique qui chasse les gens de leurs terres pour planter des monocultures chimiques, mais que les peuples autochtones, paysans et habitants urbains pauvres construisent une autre voie : l'agroécologie et l'économie solidaire. Il appelle les scientifiques et techniciens à se mettre au service de ce changement.",
+    "acteurs": [],
+    "controverse": "Le texte énonce une opposition binaire entre modèle capitaliste mondialisé et alternatives construites par les mouvements autochtones, paysans et solidaires, sans débattre des tensions internes à ces alternatives (agroécologie commerciale vs subsistence, économie solidaire institutionnalisée vs autonome, etc.) ni des stratégies spécifiques de récupération/contrôle des terres.",
+    "angle_journalistique": "Enquête : Quels sont concrètement les collectifs brésiliens d'agroécologie et d'économie solidaire qui signent cette Charte, et quels territoires controlent-ils ? Quels résultats concrets sur la re-territorialisation des paysans et autochtones expulsés de leurs terres ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "3cc102ab4c"
+   },
+   "cover": "covers/79c9723c.jpg",
+   "meta": {
+    "page_count": 2,
+    "pdf_title": "(Microsoft Word - Carta de Belem - I Simp\\363sio Brasileiro de Sa\\372de Ambiental.\\205)",
+    "pdf_author": "Ccom06",
+    "pdf_creator": "PScript5.dll Version 5.2.2"
+   },
+   "has_cover": true
+  },
+  "4de4a141": {
+   "id": "4de4a141",
+   "url": "https://mst.org.br/wp-content/uploads/2010/09/indigenas_soja_MT.pdf",
+   "filename": "4de4a141_indigenas_soja_MT.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2010-09-22",
+   "lang": "pt",
+   "editeur": "Pc",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/4de4a141_indigenas_soja_MT.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "indigenas_soja_MT",
+     "link_text": "indigenas_soja_MT",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "indigenas_soja_MT",
+     "link_text": "indigenas_soja_MT",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "indigenas_soja_MT",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "indigenas_soja_MT",
+   "enrichment": {
+    "summary": "Ce rapport de juillet 2010 de l'ONG Repórter Brasil documente l'un des plus grands conflits fonciers contemporains au Brésil : l'expansion massive de la culture du soja dans le Mato Grosso (premier État producteur brésilien) et ses impacts directs sur 78 Terres Indígènes (TI) démarcées fédéralement. Le Mato Grosso, troisième État brésilien, accueille le plus grand nombre d'ethnies indígènes du pays et trois écosystèmes majeurs (Cerrado, forêts amazoniennes, Pantanal). Depuis les années 1970, sous dictature militaire, le gouvernement a promu l'expansion agro-industrielle : entre 2000 et 2010, la production de soja a explosé (de 8,8 millions à 18,2 millions de tonnes annuelles), accompagnée d'un desmatement dévastateur (175 000 km² d'Amazonie et 150 000 km² de Cerrado rasés, soit 35-42% des superficies originales).\n\nLe rapport identifie plusieurs formes de conflits fonciers affectant au moins 30 TI situées en zones à forte production de soja. D'abord, les invasions directes et massives : la TI Maraiwatsede (Xavantes) voit la soja occuper illégalement ses terres, dominant les classements régionaux des amendes de déboisement. Ensuite, les invasions graduelles systématiques : en TI Sangradouro (Xavantes), les cultivateurs incorporent annuellement 10-20 hectares de terres indígènes. Troisièmement, les tentatives de légalisation via l'arrendamento (location de terrains) et les « partenariats » : certaines ethnies (Paresi, Irantxe, Nambikwara) ont signé des accords formels, suscitant débats juridiques sur leur légalité. Les Xavantes ont refusé les grands contrats, craignant l'exploitation, mais acceptent des compensations monétaires pour éviter les conflits majeurs.\n\nL'impact écologique est devasta : contamination des rivières Sangradouro, Água Azul et Pindaíba par les pesticides (« couvertes de poissons morts »), détruisant chasse et pêche de subsistence ; dégradation des sols ; destruction des forêts riveraines ; brûlis causant maladies respiratoires ; imposition d'un paradigme capitaliste de consommation. Le soja, avec sa transgénie et monoculture, s'accompagne d'une charge lourde d'impacts écologiques et sanitaires, intensifiant le préjugé et racisme contre les indígènes.\n\nCe rapport révèle une tension fondamentale : les Terres Indígènes représentent un régime de propriété collective démarcée d'usufruit exclusif, fondé sur des droits coutumiers ancestraux reconnus par le droit fédéral brésilien. Cependant, ce régime collectif affronte une vague d'accaparement agro-industriel systématique, combinant invasion directe, location forcée et « partenariats » formellement consentis mais écologiquement et socialement destructeurs. Face à cette pression du complexe agro-exportateur, l'État brésilien offre une protection limitée.",
+    "citations": [
+     {
+      "page": 4,
+      "quote": "Das 78 Terras Indígenas (TIs) listadas pela Fundação Nacional do Índio (Funai), ao menos 30 ficam em municípios com mais de 10 mil hectares de soja",
+      "why_relevant": "Documenta le chevauchement géographique direct entre expansion du soja et Terres Indígènes démarcées — fondement quantitatif du conflit foncier.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "o estado do Mato Grosso é o maior produtor de soja do Brasil, sendo esta atividade uma das principais causas do desmatamento no Cerrado e da degradação ambiental nas cabeceiras dos rios que drenam as terras indígenas, colocando em risco a segurança alimentar, a cultura e a vida física e espiritual das comunidades indígenas",
+      "why_relevant": "Synthèse MOPIC de l'impact systémique du soja sur TI : destruction écosystémique, menace à la souveraineté alimentaire et survie culturelle des peuples indígènes.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 5,
+      "quote": "Há casos, como a TI Maraiwatsede em Alto da Boa Vista e Bom Jesus do Araguaia, dos Xavantes, onde a soja ocupa, como invasora, a terra dos índios",
+      "why_relevant": "Cas explicite d'invasion de territoire indígène démarcé par l'agriculture industrielle — quintessence du land grabbing contemporain en zone de communs fonciers.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 5,
+      "quote": "os sojicultores, além de incorporarem anualmente pequenas parcelas de 10 a 20 hectares de terras indígenas às suas áreas, fizeram várias tentativas de acordar arrendamentos de parcelas maiores de terra indígena",
+      "why_relevant": "Stratégie d'accaparement graduel et systématique : invasions annuelles + tentatives de 'légalisation' via arrendamento (location foncière).",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 5,
+      "quote": "A última tentativa de arrendamento ocorreu em 2009, mas no final os Xavantes recuaram. Eles não são grandes agricultores, e têm muito medo de serem explorados",
+      "why_relevant": "Résistance indígène explicite à l'arrendamento — conscience des risques d'exploitation et défense pragmatique de l'autonomie territoriale collective.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 5,
+      "quote": "Nas primeiras chuvas do ano, o veneno utilizado pelos sojeiros tem contaminado rios como Sangradouro, Água Azul e Pindaíba, que chegam a ficar cobertos de peixes mortos",
+      "why_relevant": "Impact écologique direct du soja sur ressources vitales (eau, pêche) des TI — destruction de la base écologique de la subsistence indígène.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 5,
+      "quote": "Há uma área que está em litígio. Lá os fazendeiros plantam soja, e acabam pagando um dinheiro aos indígenas por isso, que aceitam para evitar maiores conflitos",
+      "why_relevant": "Dynamique de compromise sous contrainte : indígènes acceptent perte de terre et compensation monétaire plutôt que conflit armé — révèle asymétrie de pouvoir foncier.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 5,
+      "quote": "Outras etnias, como os Paresi, Irantxe e Nambikwara, optaram por fazer parcerias com grandes fazendeiros, o que tem suscitado uma complexa discussão jurídica sobre a legalidade dos acordos",
+      "why_relevant": "Tension juridique et politique entre 'partenariats' consentis et leurs impacts écologiques/sociaux — interroge le consentement libre des communautés.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 5,
+      "quote": "Degradação, erosão, empobrecimento e desertificação do solo, destruição das matas ciliares, contaminação de cursos d'água, disseminação das queimadas, pulverização de venenos sobre pequenos agricultores, indígenas e suas plantações",
+      "why_relevant": "Énumération exhaustive des impacts écologiques et sanitaires du soja sur indígènes — afecte directement la base matérielle de la subsistence collective.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "TI – Terra Indígena, área de União demarcada para usufruto exclusivo de comunidades indígenas",
+      "why_relevant": "Définition institutionnelle des TI comme régime collectif d'usufruto (usufruit) — encadrement juridique du droit collectif d'usage face à l'accaparement.",
+      "verified": true,
+      "page_physical": 2
+     }
+    ],
+    "matched_keywords": [
+     "terra indígena",
+     "terras indígenas",
+     "usufruto",
+     "povos indígenas",
+     "comunidades indígenas",
+     "direitos indígenas",
+     "segurança alimentar",
+     "desmatamento",
+     "agropecuária",
+     "monocultura",
+     "agricultura extensiva",
+     "contaminação",
+     "etnias indígenas"
+    ],
+    "relevance_score": 7,
+    "relevance_notes": "Le document touche de front aux concepts core de 'mouvements autochtones & Land Back' et 'communs fonciers' (TI = régimes collectifs d'usufruit coutumier) face à l'accaparement agro-industriel et graduel du soja. Cependant, c'est essentiellement un rapport diagnostique et monitoring des invasions sans explorer théoriquement les alternatives collectives, fiducies foncières, agroécologie paysanne, ou les formes de mobilisation organisée au-delà des refus individuels.",
+    "en_clair": "Au Brésil, les grandes plantations de soja envahissent progressivement les terres que le gouvernement a reconnues comme propriété collective des peuples indígènes, en polluant leurs rivières et forçant des compromis désavantageux. Ce rapport documente comment une agriculture industrielle exportatrice colonise un régime de propriété collective, avec peu de protection de l'État.",
+    "acteurs": [
+     "Repórter Brasil",
+     "Centro de Monitoramento de Agrocombustíveis",
+     "CIMI (Conselho Indigenista Missionário)",
+     "Funai (Fundação Nacional do Índio)",
+     "Ibama",
+     "IBGE",
+     "Incra",
+     "ISA (Instituto Socioambiental)",
+     "MPF (Ministério Público Federal)",
+     "OPAN (Operação Amazônia Nativa)",
+     "Aprosoja-MT (Associação dos Produtores de Soja e Milho de Mato Grosso)",
+     "Conab (Companhia Brasileira de Abastecimento)",
+     "MOPIC (Mobilização dos Povos Indígenas do Cerrado)",
+     "Xavantes",
+     "Paresi",
+     "Irantxe",
+     "Nambikwara",
+     "Padre Luis Silva Leal"
+    ],
+    "controverse": "Débat juridique et politique sur la légalité des 'partenariats' et 'arrendamentos' (locations foncières) que certaines ethnies indígènes (Paresi, Irantxe, Nambikwara) acceptent de conclure avec les fazendeiros de soja. Tension entre défense totale du territoire collectif (refus des Xavantes des arrendamentos majeurs) et compromise pragmatique (paiements modestes) face à la pression économique et capacité de coercition de l'agro-industrie.",
+    "angle_journalistique": "Comment l'agro-industrie du soja utilise une stratégie graduée d'accaparement — invasions annuelles de petites parcelles + formalisation via 'arrendamentos' — pour coloniser les Terres Indígènes brésiliennes malgré leur reconnaissance fédérale comme propriété collective ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "fb3c98af7c"
+   },
+   "cover": "covers/4de4a141.jpg",
+   "meta": {
+    "page_count": 27,
+    "pdf_title": "Impactos da soja sobre TIs no MT - portugues",
+    "pdf_author": "Pc",
+    "pdf_creator": "Doro PDF Writer [1.56] [http://run.to/sz]"
+   },
+   "has_cover": true
+  },
+  "b071dbb5": {
+   "id": "b071dbb5",
+   "url": "https://mst.org.br/wp-content/uploads/2010/06/An%C3%A1lise-Terra-de-Direitos-C%C3%B3digo-Florestal.pdf",
+   "filename": "b071dbb5_An_C3_A1lise-Terra-de-Direitos-C_C3_B3digo-Florestal.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-06-29T16:10:48",
+   "collected_date": "2026-06-25_14-34",
+   "score_initial": 0,
+   "score_final": 8,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2010-08-02",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/b071dbb5_An_C3_A1lise-Terra-de-Direitos-C_C3_B3digo-Florestal.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Análise-Terra-de-Direitos-Código-Florestal",
+     "link_text": "Análise-Terra-de-Direitos-Código-Florestal",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Análise-Terra-de-Direitos-Código-Florestal",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "dead",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Análise-Terra-de-Direitos-Código-Florestal",
+   "enrichment": {
+    "summary": "Ce document, élaboré en 2009 par l'équipe brésilienne Terra de Direitos, analyse les modifications proposées au Code Forestier brésilien, avec un accent critique sur leurs impacts pour l'agriculture familiale paysanne. L'auteur·e pose d'abord un diagnostic : le modèle de production dominant (agronégocio) repose sur la simplification des systèmes de culture, les monocultures, l'emploi massif d'intrants chimiques, et provoque une dégradation écologique majeure (réduction de 50% du Cerrado en 40 ans) tout en concentrant les terres et expulsant les paysans. Le document souligne les violations de droits humains associées à ce modèle : travail esclave persistant, concentration foncière, perte de l'autonomie productive des agriculteurs via les « systèmes d'intégration ». L'enjeu éthique central est de construire un modèle où la préservation des forêts soit compatible avec une agriculture paysanne vivrière et une vie digne. Le texte fait alors l'histoire du Code Florestal brésilien, en particulier la notion révolutionnaire, dès 1934, de considérer les forêts comme un « bien d'intérêt commun » justifiant des restrictions au droit de propriété (notamment la Réserve Légale obligatoire). Il cartographie deux coalitions opposées : d'un côté, la CNA et la bancada ruralista défendent une vision libérale de la propriété (absence d'intervention étatique) ; de l'autre, les ONG environnementalistes, le Ministério Público et le CONAMA conditionnent l'usage de la terre au respect d'une fonction socio-environnementale. Le document est un outil politique pour équiper les mouvements sociaux paysans dans le débat législatif, en montrant comment la législation actuelle, malgré ses contradictions, offre des possibilités de protection pour l'agriculture familiale.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "democratização do acesso a terra e garantia dos direitos dos agricultores e agricultoras",
+      "why_relevant": "Formulation explicite de l'enjeu central de la veille : accès démocratique à la terre et droits des paysans",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "direitos dos agricultores ao livre uso da agrobiodiversidade e à garantia da soberania alimentar das comunidades",
+      "why_relevant": "Lien direct entre droits fonciers, liberté d'usage de la biodiversité et souveraineté alimentaire",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "O esgotamento deste modelo é fato cada vez mais inconteste... está nos levando a impasses estruturais; sementes caras e monopolizadas, tecnologias pesadas desenvolvidas apenas para monoculturas de grande escala, esterilização dos solos",
+      "why_relevant": "Critique politique de l'agronégocio et ses mécanismes de dépossession des paysans",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 3,
+      "quote": "concentração de terra, expulsão de famílias do campo e o atrelamento dos agricultores a um modelo que baseia-se na perda da autonomia produtiva",
+      "why_relevant": "Énumération des violences foncières et productives : enclosure contemporaine",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 3,
+      "quote": "a preservação das florestas seja compatível com a agricultura, a produção de alimentos e a garantia de uma vida digna aos agricultores",
+      "why_relevant": "Articulation entre écologie forestière et agriculture paysanne vivrière comme horizons politiques",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 4,
+      "quote": "bem de interesse comum dos habitantes do país",
+      "why_relevant": "Conceptualisation juridique des forêts comme bien commun dès 1934 — précédent légal pour penser le foncier hors propriété privée absolue",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "Código Florestal de 1934, pela primeira vez no país, regulamenta a tutela jurídica das 'florestas existentes no território nacional'",
+      "why_relevant": "Genèse légale de la limitation du droit de propriété en faveur d'un bien public/commun",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 3,
+      "quote": "exercício dos direitos de propriedade com as limitações que as leis estabelecem",
+      "why_relevant": "Formulation juridique de la propriété conditionnée à sa fonction sociale/environnementale",
+      "verified": true,
+      "page_physical": 4
+     }
+    ],
+    "matched_keywords": [
+     "agriculture familiale",
+     "agricultura familiar",
+     "agriculture paysanne",
+     "agricultura camponesa",
+     "souveraineté alimentaire",
+     "soberania alimentar",
+     "agroécologie",
+     "biodiversité",
+     "agrobiodiversidade",
+     "accès à la terre",
+     "acesso à terra",
+     "concentration foncière",
+     "concentração de terra",
+     "accaparement",
+     "expulsion",
+     "expulsão de famílias",
+     "autonomie productive",
+     "autonomia produtiva",
+     "propriété collective",
+     "fonction sociale de la propriété",
+     "função social da propriedade",
+     "bien d'intérêt commun",
+     "interesse comum",
+     "peuples et communautés traditionnels",
+     "povos e comunidades tradicionais",
+     "critique de l'agronégocio",
+     "agronegócio"
+    ],
+    "relevance_score": 8,
+    "relevance_notes": "Document hautement pertinent : analyse critique du cadre législatif foncier/forestier brésilien du point de vue des paysans et des communs. Articule clairement l'enjeu foncier (accès démocratique, fonction sociale de la propriété) avec la souveraineté alimentaire et la critique de l'agronégocio. Lacune : absence de mention explicite des communs fonciers, des alternatives de propriété (trusts, fiducies), ou de mouvements organisés (MST, Via Campesina). C'est un document légal-politique plutôt que de propositions alternatives, mais c'est un élément crucial du débat.",
+    "en_clair": "Ce texte explique comment les lois brésiliennes sur les forêts et la terre peuvent protéger (ou non) les paysans familiaux face aux grandes exploitations. Il montre qu'il y a déjà une loi qui dit que la terre n'est pas juste une propriété privée — elle a une obligation sociale et écologique — et que les paysans peuvent s'en servir pour défendre leurs droits.",
+    "acteurs": [
+     "Terra de Direitos",
+     "Fernando G. Vieira Prioste",
+     "João C. B. Camerini",
+     "Juliana Avanci",
+     "Larissa Pacher",
+     "Judith Vieira",
+     "Fundação Heirich Boell",
+     "José Augusto Pádua",
+     "Confederação Nacional da Agricultura (CNA)",
+     "bancada ruralista",
+     "Organizações Não-Governamentais Ambientalistas",
+     "Ministério Público",
+     "Conselho Nacional do Meio Ambiente (CONAMA)",
+     "Hely Lopes Meirelles",
+     "IAASTD (Avaliação Internacional do Conhecimento, da Ciência e da Tecnologia no Desenvolvimento Agrícola)"
+    ],
+    "controverse": "Le texte expose un conflit central entre deux visions : celle des défenseurs du droit de propriété illimitée et de la liberté d'exploitation (CNA, agronégocio, orientation libérale) versus celle de l'intervention d'État pour imposer la fonction socio-environnementale de la terre (ONG, Ministério Público, CONAMA). Le débat porte sur les limites légales au droit de propriété et sur la priorisation entre liberté d'exploitation agricole (monocultures, intensive) et préservation écologique + droits des paysans.",
+    "angle_journalistique": "Enquête : Comment le Code Forestier brésilien, présenté comme une loi environnementale, est-il devenu un outil politique clé dans la bataille entre l'agronégocio et les agriculteurs familiaux pour le contrôle des terres ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "c3fa732113"
+   },
+   "cover": "covers/b071dbb5.jpg",
+   "meta": {
+    "page_count": 26,
+    "pdf_title": "Análise Terra de Direitos Código Florestal",
+    "pdf_author": "Usuario",
+    "pdf_creator": "PDFCreator Version 0.9.8"
+   },
+   "has_cover": true
+  },
+  "8fbe9ead": {
+   "id": "8fbe9ead",
+   "url": "https://mst.org.br/wp-content/uploads/2010/06/ReqMST_a_Apreciar.pdf",
+   "filename": "8fbe9ead_ReqMST_a_Apreciar.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 4,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2009-12-09",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/8fbe9ead_ReqMST_a_Apreciar.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "ReqMST_a_Apreciar",
+     "link_text": "ReqMST_a_Apreciar",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "ReqMST_a_Apreciar",
+     "link_text": "ReqMST_a_Apreciar",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "ReqMST_a_Apreciar",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "ReqMST_a_Apreciar",
+   "enrichment": {
+    "summary": "Ce document est un relevé de requerimentos (demandes parlementaires) brésiliens datant de 2009-2010, adressés à diverses institutions et hauts fonctionnaires. Il s'agit principalement de demandes de transferts de secrets bancaires, fiscaux et téléphoniques concernant des organisations impliquées dans la réforme agraire brésilienne (CONCRAB, CEPATEC, ANCA, ANARA, ITAC, INOCAR, FEPAF) et de convocations de ministres du Développement Agraire, de la Justice, ainsi que du directeur de l'INCRA (Institut National de Colonisation et Réforme Agraire). Plusieurs demandes visent également à obtenir des informations sur les contacts entre des ministères fédéraux et le Mouvement des Travailleurs Rurais Sans Terre (MST). Le document soulève des questions d'irrégularités alléguées, de déviations de fonds publics destinés à des conventions avec des entités de réforme agraire, et de financements clandestins. Bien que le titre suggère une enquête parlementaire liée au MST, le contenu reste purement procédural et administratif, sans analyse substantive des enjeux politiques, économiques ou sociaux de la réforme agraire brésilienne, de la paysannerie, ou des formes alternatives de propriété foncière. C'est un document d'archive institutionnelle, potentiellement utilisé dans un contexte d'enquête politique ou judiciaire contre les acteurs de la réforme agraire.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "Confederação das Cooperativas da Reforma Agrária – CONCRAB, CNPJ 68.342.435/0001-58 no período de 01.01.2003 a 31.12.2006.",
+      "why_relevant": "Référence directe à la principale confédération coopérative brésilienne de réforme agraire, acteur central des luttes paysannes",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 3,
+      "quote": "Movimento dos Trabalhadores Rurais Sem Terra – MST",
+      "why_relevant": "Nomination du MST, mouvement paysan sans-terre majeur au Brésil, acteur structurant de la libération des terres",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 1,
+      "quote": "sobre financiamento clandestino e evasão de recursos para invasão de terras",
+      "why_relevant": "Évoque les mobilisations pour accès à la terre et les conflits fonciers sous-jacents",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 4,
+      "quote": "programas de desenvolvimento rural destinados à agricultura familiar e à realização da reforma agrária",
+      "why_relevant": "Mentionne agriculture familiale et réalisation de la réforme agraire comme enjeu politique fédéral",
+      "verified": true,
+      "page_physical": 4
+     }
+    ],
+    "matched_keywords": [
+     "reforma agrária",
+     "agricultura familiar",
+     "cooperativas",
+     "Movimento dos Trabalhadores Rurais Sem Terra",
+     "MST",
+     "terra",
+     "sem terra"
+    ],
+    "relevance_score": 4,
+    "relevance_notes": "Score bas : bien que le document nomme des acteurs et organisations centraux de la réforme agraire brésilienne (MST, CONCRAB, CEPATEC, INCRA), il est purement administratif et procédural. Aucune réflexion sur les modèles de propriété foncière, les communs, l'agroécologie, ou les enjeux politiques de l'accès à la terre. C'est une enquête parlementaire contre des organisations paysannes, pas une ressource théorique ou stratégique pour la thématique.",
+    "en_clair": "Ce document est un dossier administratif montrant qu'en 2009-2010, un parlement brésilien a tenté d'enquêter sur les organisations impliquées dans la réforme agraire et d'accéder à leurs dossiers bancaires — c'est une trace de conflit politique entre l'État et les mouvements paysans, mais il n'explique rien sur comment fonctionne vraiment la réforme agraire ou pourquoi la terre est en jeu.",
+    "acteurs": [
+     "INCRA (Instituto Nacional de Colonização e Reforma Agrária)",
+     "CONCRAB (Confederação das Cooperativas da Reforma Agrária)",
+     "CEPATEC (Centro de Formação e Pesquisa Contestado)",
+     "ANCA (Associação Nacional de Cooperação Agrícola)",
+     "ANARA (Associação Nacional de Apoio à Reforma Agrária)",
+     "FEPAF (Fundação de Estudos e Pesquisas Agrícolas e Florestais)",
+     "ITAC (Instituto Técnico de Estudos Agrários e Cooperativismo)",
+     "INOCAR (Instituto de Orientação Comunitária e Assistência Rural)",
+     "MST (Movimento dos Trabalhadores Rurais Sem Terra)",
+     "Guilherme Cassel",
+     "Tarso Genro",
+     "Alexandre Padilha",
+     "Rolf Hackbart",
+     "Bruno Costa de Albuquerque Maranhão",
+     "Edmilson de Oliveira Lima",
+     "Wilson Trezza"
+    ],
+    "controverse": "Le document révèle une tension majeure entre l'État brésilien (via une enquête parlementaire) et les organisations de réforme agraire : des demandes d'accès à des données bancaires/fiscales d'organisations paysannes (CONCRAB, CEPATEC, ANCA, etc.) et du MST, sous prétexte d'irrégularités et de financements clandestins, suggèrent une criminalisation politique des mouvements sans-terre et coopératifs agraires.",
+    "angle_journalistique": "Retracer l'histoire des attaques politiques et judiciaires contre les organisations de réforme agraire brésilienne (2009-2010) pour comprendre les obstacles institutionnels et les tentatives d'étouffement des mouvements paysans et sans-terre au Brésil.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "b2d570e0d0"
+   },
+   "cover": "covers/8fbe9ead.jpg",
+   "meta": {
+    "page_count": 340,
+    "pdf_title": "Microsoft Word - Requerimentos a serem apreciados.doc",
+    "pdf_author": "KENYCRIS",
+    "pdf_creator": "PScript5.dll Version 5.2.2"
+   },
+   "has_cover": true
+  },
+  "da8dac68": {
+   "id": "da8dac68",
+   "url": "https://mst.org.br/wp-content/uploads/2010/02/o_brasil_dos_agrocombustiveis_v6.pdf",
+   "filename": "da8dac68_o_brasil_dos_agrocombustiveis_v6.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 4,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2010-03-02",
+   "lang": "pt",
+   "editeur": "Adobe PDF Library 7.0",
+   "doi": "",
+   "isbn": "5713223551",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/da8dac68_o_brasil_dos_agrocombustiveis_v6.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "o_brasil_dos_agrocombustiveis_v6",
+     "link_text": "o_brasil_dos_agrocombustiveis_v6",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "o_brasil_dos_agrocombustiveis_v6",
+     "link_text": "o_brasil_dos_agrocombustiveis_v6",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "o_brasil_dos_agrocombustiveis_v6",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "o_brasil_dos_agrocombustiveis_v6",
+   "enrichment": {
+    "summary": "Ce rapport du Centro de Monitoramento de Agrocombustíveis (CMA) de l'ONG Repórter Brasil analyse les impacts socio-environnementaux de la production brésilienne d'agrocombustibles en 2009, en particulier dans le secteur sucro-alcoolier. Le document documente la consolidation du secteur sucrier après la crise de 2008 : les groupes internationaux capitalisés prennent le contrôle de 20 % de la production nationale de canne à sucre, tandis que la production totale croît de 7,1 % pour atteindre 612 millions de tonnes. Deux initiatives politiques sont lancées en 2009 — le Compromisso Nacional para Aperfeiçoar as Condições de Trabalho na Cana-de-Açúcar (juin) et le Zoneamento Agroecológico (ZAE) signé par le président Lula (septembre) proposant des restrictions à l'expansion en Amazonie, Pantanal et Alto Paraguai — mais toutes deux restent des promesses sans mise en application concrète, attendant des définitions réglementaires ou un vote du Congrès. Le rapport soulève une tension politique majeure : malgré les techniques modernes de cultivation qui font du Brésil un champion mondial de productivité agricole, les travailleurs demeurent privés de droits basiques, notamment des citoyens « esclavagés pour nettoyer la terre » en préparation des plantations. Le CMA appelle la société civile organisée — ONGs, syndicats, mouvements sociaux — à exercer une vigilance permanente pour que les bénéfices potentiels de l'expansion ne se concentrent pas aux mains de quelques groupes, et que les préoccupations environnementales et sociales demeurent prioritaires.",
+    "citations": [
+     {
+      "page": 5,
+      "quote": "O papel da sociedade civil organizada, das ONGs, sindicatos e movimentos sociais é o de alertar para que essa perspectiva não se torne realidade a qualquer custo.",
+      "why_relevant": "Définit le rôle des mouvements sociaux et de la société civile organisée dans la surveillance et le contre-pouvoir face à l'expansion de l'agroindustrie.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 5,
+      "quote": "Ainda convivem trabalhadores privados de seus direitos básicos - inclusive da liberdade. São cidadãos escravizados para limpar o solo para o plantio da braquiária que alimentará o gado ou cortar a cana que será transformada em etanol.",
+      "why_relevant": "Dénonce l'exploitation du travail agricole et les conditions de servitude dans le cycle de production des agrocombustibles.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 7,
+      "quote": "Grupos internacionais capitalizados adquiriram grandes companhias nacionais e já são responsáveis pela moagem de 20% da cana-de-açúcar produzida no país.",
+      "why_relevant": "Illustre la consolidation et le contrôle du secteur par des multinationales, enjeu central de l'accaparement économique des ressources agricoles.",
+      "verified": true,
+      "page_physical": 7
+     },
+     {
+      "page": 7,
+      "quote": "Em setembro, o presidente Luiz Inácio Lula da Silva assinou o Zoneamento Agroecológico (ZAE) da Cana-de-Açúcar, propondo vetos à expansão da cultura e à instalação de novas usinas na Amazônia, no Pantanal e na Bacia do Alto Paraguai.",
+      "why_relevant": "Montre l'existence de politiques de restriction territoriale (implicitement: protection de communs naturels et des droits des populations), bien qu'insuffisamment appliquées.",
+      "verified": true,
+      "page_physical": 7
+     },
+     {
+      "page": 5,
+      "quote": "Escutamos movimentos sociais e organizações não governamentais locais, entrevistamos governantes e empresários, coletamos dados no campo.",
+      "why_relevant": "Méthode de documentation des luttes locales et des impacts réels sur le terrain, relevant d'une démarche militante-académique.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 7,
+      "quote": "O 'Compromisso' aguarda a definição sobre como as usinas serão monitoradas, e o ZAE precisa ser votado pelo Congresso Nacional para ter força de lei.",
+      "why_relevant": "Révèle le fossé entre promesses politiques et mise en œuvre, critique des initiatives gouvernementales insuffisantes sans application.",
+      "verified": true,
+      "page_physical": 7
+     }
+    ],
+    "matched_keywords": [
+     "accaparement",
+     "paysannerie",
+     "agriculture vivrière",
+     "souveraineté alimentaire",
+     "exploitations agricoles",
+     "mouvements sociaux",
+     "communautés",
+     "environnement",
+     "droits des travailleurs",
+     "expansion territoriale",
+     "terre"
+    ],
+    "relevance_score": 4,
+    "relevance_notes": "Pertinence basse à moyenne (4/10). Le rapport documente de façon rigoureuse les impacts négatifs de l'agro-industrie sur les travailleurs et l'environnement, et critique l'expansion territoriale problématique, mais n'aborde PAS les solutions au cœur de la thématique de veille : il ne traite pas des communs fonciers, de la propriété d'usage, de la réforme agraire, de l'agroécologie politique, ni des mouvements collectifs d'accès et de gestion alternative des terres. C'est un diagnostic des problèmes, pas une exploration des alternatives.",
+    "en_clair": "Ce rapport montre comment les grandes entreprises étrangères rachètent les terres et usines au Brésil pour produire du carburant, en exploitant les travailleurs agricoles et en menaçant la forêt, tandis que les promesses du gouvernement restent sans suite. Utile pour comprendre CONTRE quoi les mouvements paysans et écologiques se battent, mais il ne parle pas de comment organiser autrement l'agriculture ou la terre.",
+    "acteurs": [
+     "Centro de Monitoramento de Agrocombustíveis (CMA)",
+     "ONG Repórter Brasil",
+     "Leonardo Sakamoto",
+     "Marcel Gomes",
+     "Comissão Pastoral da Terra (CPT)",
+     "Companhia Nacional de Abastecimento (Conab)",
+     "Federação dos Trabalhadores na Agricultura do Estado de Goiás (Fetaeg)",
+     "Instituto Brasileiro de Inovações pró-Sociedade Saudável (Ibiss)",
+     "Ministério Público Federal em Dourados, MS",
+     "SRTE-GO",
+     "Luiz Inácio Lula da Silva",
+     "Cordaid",
+     "Fundação Doen",
+     "Solidaridad"
+    ],
+    "controverse": "Tension entre l'expansion rapide et rentable de l'agro-industrie des agrocombustibles (soutenue par l'État brésilien comme solution énergétique et moteur économique) et ses impacts sociaux (travail exploité, esclavagisme moderne) et environnementaux (risque de déforestation en Amazonie et Pantanal). Le fossé entre les promesses politiques (Compromisso, ZAE) et leur non-application concrète reflète cette contradiction non résolue.",
+    "angle_journalistique": "Enquête : dix-huit mois après le Compromisso et le ZAE, comment sont appliquées ces mesures ? Qui contrôle réellement le secteur sucro-alcoolier brésilien après consolidation internationale, et quels sont les impacts vérifiables pour les travailleurs et les écosystèmes menacés ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "3d94f43488"
+   },
+   "cover": "covers/da8dac68.jpg",
+   "meta": {
+    "page_count": 64,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "Adobe InDesign CS2 (4.0)"
+   },
+   "has_cover": true
+  },
   "f51dd9f5": {
    "id": "f51dd9f5",
    "url": "https://www.troisiemesvoix.org/fr/editions/005/Mini-Manuel%20fonds%20dotation%20-%20Collectif%20Troisi%C3%A8mes%20Voix%20-%20Editions%202026.pdf",
@@ -44569,6 +46962,155 @@
    "summary": "Ce mini-manuel présente les forêts comme des systèmes nourriciers à protéger via des montages juridiques de communs fonciers (fonds de dotation, fondations, usufruit). Il compare l'agriculture industrielle destructrice à la forêt diversifiée et multi-centenaire, détaille les pratiques paysannes traditionnelles d'usage de la forêt (glandée, trognes, balivage, brûlis de lisière), et s'ancre dans des exemples historiques de peuples vivant de la forêt. La conclusion est un appel à sortir les forêts de la propriété privée pour en faire des biens communs transmis entre générations.",
    "has_cover": true
   },
+  "39ade733": {
+   "id": "39ade733",
+   "url": "https://editorialautodidacta.com/wp-content/uploads/2025/11/Ninarquia-Juegos-en-resitencia-Jorge-Enkis.pdf",
+   "filename": "39ade733_Ninarquia-Juegos-en-resitencia-Jorge-Enkis.pdf",
+   "format": "pdf",
+   "source": "Portal OACA — Libros anarquistas (catégorie)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 5,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2025-11-01",
+   "lang": "es",
+   "editeur": "Adobe PDF library 16.07",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/39ade733_Ninarquia-Juegos-en-resitencia-Jorge-Enkis.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "“Niñarquía” es el arte de jugar sin permiso. Es el espacio donde el juego se vuelve herramienta de resistencia, creación y libertad. Cada actividad de esta guía invita a cuestionar la obediencia, la competencia y el aburrimiento, promoviendo la autonomía, la cooperación y la imaginación. Ideal para comunidades que buscan una infancia libre. Descargar Libro [PDF] Jorge Enkis Editorial Autodidacta h",
+     "link_text": "Ninarquia-Juegos-en-resitencia-Jorge-Enkis.pdf",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "“Niñarquía” es el arte de jugar sin permiso. Es el espacio donde el juego se vuelve herramienta de resistencia, creación y libertad. Cada actividad de esta guía invita a cuestionar la obediencia, la competencia y el aburrimiento, promoviendo la autonomía, la cooperación y la imaginación. Ideal para comunidades que buscan una infancia libre. Descargar Libro [PDF] Jorge Enkis Editorial Autodidacta h",
+     "link_text": "Ninarquia-Juegos-en-resitencia-Jorge-Enkis.pdf",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Ninarquia-Juegos-en-resitencia-Jorge-Enkis.pdf",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "enrichment": {
+    "summary": "Niñarquía est un recueil de 55 jeux pédagogiques organisés en quatre chapitres, conçus comme des formes de « résistance » et d'« autogestión » collective. Le projet, présenté par Jorge Enkis, promeut une approche ludique et subversive : refuser les règles imposées, jouer « sans permission », et organiser les groupes « sans chef ». Le document expose une philosophie de la désobéissance joyeuse où le jeu devient un acte politique — une manière de réinventer les relations sociales et le rapport à l'espace. Le chapitre 3, « Territorios Libres », est le plus pertinent pour la thématique de veille : il propose des jeux situant le rapport à la terre et à la nature en dehors de la propriété et de l'exploitation (« La Huerta sin dueño », « La huerta compartida », « Manos de tierra »). La philosophie sous-jacente repose sur l'idée que « la tierra se ordena sola, si la escuchamos » et que « lo que florece sin dueño pertenece a todos ». Cependant, le texte n'aborde pas frontalement les enjeux de propriété foncière, de droits d'accès à la terre, de mouvements paysans ou de réforme agraire. Il s'agit plutôt d'une pédagogie de l'imagination collective et de l'autonomie relationnelle, très éloignée des cadres juridiques, politiques ou agraires qui structurent la thématique des communs fonciers.",
+    "citations": [
+     {
+      "page": 8,
+      "quote": "Creemos en los grupos sin jefes, en las rondas sin centro, en los parlamentos del juego donde todos tienen voz.",
+      "why_relevant": "Exprime un principe d'autogestión horizontale et de démocratie sans hiérarchie, concept apparenté aux modes d'organisation des communs.",
+      "verified": true,
+      "page_physical": 8
+     },
+     {
+      "page": 23,
+      "quote": "La tierra se ordena sola, si la escuchamos. Reflexión: Lo que florece sin dueño pertenece a todos.",
+      "why_relevant": "Articule explicitement une vision de la terre en dehors de la propriété individuelle, proche de la notion de communs fonciers, bien que dans un registre poétique et ludique.",
+      "verified": true,
+      "page_physical": 23
+     },
+     {
+      "page": 8,
+      "quote": "Construimos sin permiso, porque el mundo se rehace cada vez que imaginamos algo nuevo.",
+      "why_relevant": "Énonce un principe de désobéissance créative applicable à la réappropriation des espaces et des ressources.",
+      "verified": true,
+      "page_physical": 8
+     },
+     {
+      "page": 6,
+      "quote": "No hay roles fijos: todos pueden crear, proponer, transformar.",
+      "why_relevant": "Incarne une logique d'horizontalité et d'égalité des droits de parole, fondamentale aux projets d'autogestión collective.",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 18,
+      "quote": "El eco nunca repite: reinventa, así se construyen las comunidades que juegan, no obedeciendo, sino resonando.",
+      "why_relevant": "Définit la communauté par la résonance mutuelle plutôt que par l'obéissance à un ordre imposé, principe proche des communs.",
+      "verified": true,
+      "page_physical": 18
+     },
+     {
+      "page": 19,
+      "quote": "La libertad empieza cuando se juega sin permiso.",
+      "why_relevant": "Exprime une philosophie de l'autonomie et du refus de l'ordre établi, applicable aux luttes d'accès à la terre.",
+      "verified": true,
+      "page_physical": 20
+     },
+     {
+      "page": 8,
+      "quote": "Niñarquía no es un sistema, es una respiración colectiva.",
+      "why_relevant": "Positionne l'autogestión non comme idéologie rigide, mais comme pratique vivante et fluide, perspective proche des communs actifs.",
+      "verified": true,
+      "page_physical": 8
+     },
+     {
+      "page": 21,
+      "quote": "Romper el círculo no es romper el juego: es abrirlo.",
+      "why_relevant": "Suggère que la transformation des formes collectives passe par une rupture créative, non destructrice.",
+      "verified": true,
+      "page_physical": 22
+     }
+    ],
+    "matched_keywords": [
+     "autogestión",
+     "grupos sin jefes",
+     "tierra",
+     "huerta compartida",
+     "desobediencias colectivas",
+     "territorios libres",
+     "colectivo",
+     "sin dueño",
+     "autonomía"
+    ],
+    "relevance_score": 5,
+    "relevance_notes": "Le texte touche à des concepts apparentés (autogestión, anti-hiérarchie, désobéissance collective, rapports non-marchands à l'espace) mais demeure éloigné des core concepts de la thématique : pas de traitement du droit foncier, de propriété d'usage, de communs formels, de paysannerie ou de libération des terres au sens politique/juridique. C'est une pédagogie ludique de l'autonomie, pas une intervention sur le foncier.",
+    "en_clair": "Ce livre enseigne à jouer sans adulte qui surveille et sans chef — ensemble, sans permission du monde des grandes personnes. Quelques jeux parlent de jardins et de terre « sans propriétaire », ce qui peut inspirer comment inventer des espaces partagés. Mais ce n'est pas un guide pour créer une vraie ferme collective ou changer les lois sur qui possède la terre.",
+    "acteurs": [
+     "Jorge Enkis"
+    ],
+    "controverse": "Le document n'expose pas de controverse explicite. Il existe une tension implicite entre l'ordre établi (règles, hiérarchies, permission) et la création libre, mais cette tension n'est pas documentée comme débat ou désaccord politique.",
+    "angle_journalistique": "Comment les pédagogies ludiques de la désobéissance peuvent-elles nourrir des imaginaires collectifs d'autonomie territoriale et d'organisation sans hiérarchie ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "0f5b2fa6e8"
+   },
+   "cover": "covers/39ade733.jpg",
+   "meta": {
+    "page_count": 38,
+    "pdf_title": "Niñarquia - Juegos en resitencia - Jorge Enkis",
+    "pdf_author": "",
+    "pdf_creator": "Adobe Illustrator 27.0 (Windows)"
+   },
+   "title": "Niñarquia — Juegos en resitencia — Jorge Enkis",
+   "has_cover": true
+  },
   "64dbcc8a": {
    "id": "64dbcc8a",
    "url": "http://ejurnal.ubharajaya.ac.id/index.php/SASANA/article/download/491/448",
@@ -44858,6 +47400,136 @@
    "versions": [],
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "has_cover": true
+  },
+  "56a6a565": {
+   "id": "56a6a565",
+   "url": "http://www.e-revistes.uji.es/index.php/recerca/article/download/1062/1268",
+   "filename": "56a6a565_1268.pdf",
+   "format": "pdf",
+   "source": "discovery_promoted",
+   "first_seen": "2026-06-27T16:55:12",
+   "latest_run": "2026-06-27T16:55:12",
+   "latest_score": 5,
+   "downloaded": true,
+   "saved_as": "docs/56a6a565_1268.pdf",
+   "title": "Los bienes comunes intangibles en el capitalismo cognitivo.",
+   "journal": "Recerca Revista de pensament i anàlisi",
+   "doi": "10.6035/recerca15.6",
+   "published_date": "2014-10-02",
+   "runs": [
+    {
+     "date": "",
+     "score": 4,
+     "raison": "Titre « bienes comunes intangibles » — mot-clé présent mais appliqué aux biens immatériels, hors terre/foncier",
+     "doc_type": "essai"
+    },
+    {
+     "date": "",
+     "score": 3,
+     "raison": "Titre cite 'bienes comunes' mais qualifiés d'immatériels ('capitalismo cognitivo'), non fonciers",
+     "doc_type": "essai"
+    },
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 3,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "error": "text_too_short_or_empty",
+   "score_initial": 3,
+   "doc_type": "essai",
+   "recit_de_lutte": false,
+   "extension": "pdf",
+   "context": "Journal: Recerca Revista de pensament i anàlisi",
+   "versions": [],
+   "score_final": 4,
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "enrichment": {
+    "summary": "Cet article académique d'Álvaro Ramis analyse la théorie des biens communs intangibles dans le capitalisme cognitif contemporain. Il examine la transition d'un modèle fordiste-tayloriste vers un paradigme post-fordiste où l'information, la connaissance et la créativité deviennent centrales. L'auteur discute l'émergence d'une production « peer-to-peer » (p2p), alternative théorique au capitalisme traditionnel, basée sur la collaboration et la gestion décentralisée. Il analyse les tensions fondamentales : la connaissance est par nature non-appropriable et non-rivale, or le système des brevets et droits d'auteur impose une « fiction technique-juridique » pour la marchandiser. Ramis expose trois modèles économiques sur base commune — share economy, commons economy (logiciels libres), et crowdsourcing economy — et critique le risque de captation capitaliste de ces mécanismes. Le texte se situe dans la filiation de Benkler et Bauwens, qui proposent une théorie des communs applicables tant aux immatériels qu'aux ressources matérielles. Point crucial : Ramis souligne que le bien commun demeure un bien commun même sous un « déguisement » de marchandise, référencé à Polanyi et Gorz. Cependant, le texte reste focalisé sur l'économie de la connaissance, le logiciel libre et la propriété intellectuelle, sans engager directement la question foncière ou territoriale qui structure la thématique de veille.",
+    "citations": [
+     {
+      "page": 4,
+      "quote": "No obstante este disfraz no cambia nada a la realidad de bien común del bien así disfrazado",
+      "why_relevant": "Énonce le principe fondamental : un bien marchandisé reste un bien commun — applicable à la terre comme au logiciel.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 3,
+      "quote": "Bauwens considera que el cambio de paradigma tecno-productivo permite producir valores de uso directamente, fuera del control del mercado, «post-capitalistamente»",
+      "why_relevant": "Théorise une production d'usage en dehors du marché, concept clé pour penser l'autonomie et l'auto-organisation des ressources.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "La producción «entre pares» representaría un tercer modo de producción, auto-organizado, sobre la base de una amplia diversidad de pequeños grupos o individuos",
+      "why_relevant": "Décrit l'auto-organisation décentralisée ; structure conceptuelle parallèle aux communs fonciers autogérés.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 2,
+      "quote": "Se subjetivizan los vínculos con las mercancías, perfeccionando el trabajo relacional y comunicativo para interpretar a los deseos",
+      "why_relevant": "Critique la marchandisation des liens sociaux et du travail immédiat — prolongement critique de la critique de l'accaparement.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 4,
+      "quote": "La «economía del conocimiento» enfrenta un dilema crucial dada la dimensión inmaterial de sus mercancías",
+      "why_relevant": "Pose la tension constitutive : certains biens échappent naturellement à la marchandisation, d'où la nécessité de mécanismes juridiques coercitifs.",
+      "verified": true,
+      "page_physical": 4
+     }
+    ],
+    "matched_keywords": [
+     "bienes comunes / commons",
+     "propiedad intelectual / intellectual property",
+     "software libre / free software",
+     "producción peer-to-peer / p2p production",
+     "mercantilización / commodification",
+     "apropiación / appropriation",
+     "gestión colaborativa / collaborative management",
+     "derechos de autor / copyright"
+    ],
+    "relevance_score": 4,
+    "relevance_notes": "Score 4/10 — Le texte théorise les communs dans une optique intéressante (critique de la marchandisation, auto-organisation, production d'usage), mais il reste centré sur l'immatériel (propriété intellectuelle, logiciels, savoir). Aucune mention du foncier, de la terre, de l'accès à la terre, de la paysannerie ou de l'agriculture. Valeur théorique transférable mais corpus périphérique à la veille.",
+    "en_clair": "Ce texte explique comment les grandes entreprises essaient de transformer les idées et le savoir en propriété privée (brevets, copyright) alors qu'ils devraient rester libres et partagés. Les logiciels libres et les collectifs en ligne montrent qu'on peut créer et innover autrement — sans propriétaires qui prennent tout.",
+    "acteurs": [
+     "Álvaro Ramis",
+     "John Kenneth Galbraith",
+     "Yonichi Masuda",
+     "Yochai Benkler",
+     "Michel Bauwens",
+     "Kevin Kelly",
+     "Howard Rheingold",
+     "Cosma Orsi",
+     "Karl Polanyi",
+     "André Gorz"
+    ],
+    "controverse": "Peut-on vraiment parler d'une « économie des communs » basée sur la collaboration si elle est captée par des plateformes capitalistes (YouTube, Uber) qui monétisent l'activité gratuite des utilisateurs ? Les modèles peer-to-peer restent-ils émancipatoires ou deviennent-ils des outils de précarisation accrue du travail ?",
+    "angle_journalistique": "Enquête : comment les grandes entreprises tech se sont appropriées le langage des « communs » et de la « collaboration » pour légitimer des modèles d'extraction de valeur — parallèle à faire avec l'appropriation rhétorique du vocabulaire écologique par les acteurs de la spéculation foncière.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "d3a2a09292"
+   },
+   "cover": "covers/56a6a565.jpg",
+   "meta": {
+    "page_count": 21,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "Adobe InDesign CS3 (5.0)"
+   },
+   "doc_date": "2014-09-23",
+   "lang": "es",
+   "editeur": "Adobe PDF Library 8.0",
    "has_cover": true
   },
   "2a87f34f": {
@@ -49904,6 +52576,114 @@
    "link_checked": "2026-09-15T19:11:44Z",
    "has_cover": true
   },
+  "782b7ee8": {
+   "id": "782b7ee8",
+   "url": "https://publicaciones.unirioja.es/ojs/index.php/brocar/article/download/1730/1625",
+   "filename": "782b7ee8_1625.pdf",
+   "format": "pdf",
+   "source": "discovery_promoted",
+   "first_seen": "2026-06-28T16:46:49",
+   "latest_run": "2026-06-28T16:46:49",
+   "latest_score": 3,
+   "downloaded": true,
+   "saved_as": "docs/782b7ee8_1625.pdf",
+   "title": "Los orígenes del capitalismo en la Inglaterra medieval",
+   "journal": "Brocar Cuadernos de Investigación Histórica",
+   "doi": "10.18172/brocar.1730",
+   "published_date": "1998-06-28",
+   "runs": [
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 3,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "extension": "pdf",
+   "context": "Journal: Brocar Cuadernos de Investigación Histórica",
+   "versions": [],
+   "score_initial": 3,
+   "score_final": 6,
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "enrichment": {
+    "summary": "Cet article d'histoire sociale médiévale examine les origines du capitalisme en Angleterre au 15e-16e siècle, en particulier le mouvement des enclosures (cercamientos). L'auteur conteste la vision traditionnelle qui voyait les expulsions de paysans pour créer des pâturages à moutons comme le point de départ du capitalisme anglais, mais soutient que le 15e siècle marque effectivement une période de transition importante de la société féodale à la société capitaliste. Le texte décrit comment les propriétaires terriens ont expulsé de nombreux paysans pour accroître leurs terres de pâturage, transformant radicalement les structures foncières et les relations de tenure. L'auteur analyse la persistance des caractéristiques féodales (aristocratie dominant la société, extraction de rentes, justice privée) tout en montrant les signes émergents d'une économie capitaliste : croissance urbaine rapide, commercialisation accélérée, généralisation de l'usage monétaire, intégration des campesinos comme consommateurs et producteurs de marché. Le texte explore notamment comment les paysans, même les plus pauvres, se sont trouvés impliqués dans les circuits monétaires et commerciaux, tout en restant soumis à des rentes coutumières figées sur des bases de prestations de travail obsolètes. C'est une généalogie historique des dépossessions foncières qui ont constitué l'accumulation primitive du capitalisme.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "El movimiento de los cercamientos de tierras (ene/asures) de los siglos XV y XVI, en el que los propietarios de tierras expulsaron a muchos campesinos para ganar terrenos de pastos para las ovejas",
+      "why_relevant": "Description directe du mouvement d'enclosure comme mécanisme de dépossession paysanne — cœur historique de l'accaparement des terres",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "Hacia 1400 los campesinos ya no hacían prestaciones de trabajo personal en las reservas de los manors, sino que pagaban rentas en dinero",
+      "why_relevant": "Transformation de la tenure paysanne : passage de la prestation de travail au paiement monétaire, marquant la prolétarisation des paysans",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "una sociedad basada en la tierra, en la que una élite aristocrática ejercía una dominación social y política, en la que el poder del estado estaba fragmentado y en la que un campesinado dependiente tenía que entregar su excedente de la producción en forma de rentas",
+      "why_relevant": "Définition du féodalisme mettant l'accent sur le contrôle aristocratique de la terre et l'extraction des surplus paysans — structure préalable aux enclosures",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 4,
+      "quote": "La venta de productos agrarios se encuentra en todos los niveles sociales, desde los dominios de los grandes señores que producían grandes cantidades de grano, lana, productos derivados de la leche y ganado para el mercado, hasta los cientos de miles de campesinos que vendían pequeñas cantidades para poder pagar las rentas",
+      "why_relevant": "Dynamique de commercialisation forçant les paysans à vendre leurs récoltes pour payer les rentes monétaires — processus d'intégration marchande du paysannat",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "muchos campesinos pagaban rentas consuetudinarias fijadas en relación al valor de las prestaciones personales en trabajo que habían tenido que realizar sus antecesores 200 ó 300 años antes",
+      "why_relevant": "Figement des rentes coutumières créant un écart entre la terre et son usage réel — tension entre tenure héréditaire et dépossession progressive",
+      "verified": true,
+      "page_physical": 2
+     }
+    ],
+    "matched_keywords": [
+     "cercamientos",
+     "enclosure",
+     "campesinos",
+     "tierras",
+     "propriété",
+     "tenure",
+     "accaparement",
+     "dépossession paysanne",
+     "rentes",
+     "féodalisme"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Texte académique d'histoire sérieux qui offre une généalogie rigoureuse des enclosures et de la dépossession paysanne — éclaire la formation historique du capitalisme agraire par l'appropriation des terres. Pertinent pour les chercheur·ses et les militant·es qui veulent historiciser les luttes contemporaines pour la terre, mais sans dimension contemporaine, militante ou propositive (pas de communs, fiducies, mouvements paysan(n)es actuels).",
+    "en_clair": "Ce texte montre comment, au Moyen Âge, les riches propriétaires anglais ont jeté dehors les paysans pour transformer leurs terres en pâturages à moutons — et comment cela a créé une classe de sans-terre. Utile pour comprendre que les dépossessions foncières d'aujourd'hui ne sont pas nouvelles : elles ont des racines profondes dans l'histoire du capitalisme.",
+    "acteurs": [
+     "Ignacio Alvarez Borge",
+     "Universidad de Birmingham",
+     "Universidad de La Rioja"
+    ],
+    "controverse": "L'auteur conteste la chronologie traditionnelle : les enclosures ne seraient pas le point de départ unique du capitalisme, mais le 15e siècle marquerait une période de transition plus complexe, où les structures féodales persistent tout en s'adaptant par la monétarisation. Le texte indique que « la visión tradicional necesita modificarse » mais le fragment s'arrête avant de développer pleinement cette controverse historiographique.",
+    "angle_journalistique": "Enquête : comment l'histoire des enclosures anglaises du 15e-16e siècle éclaire les mécanismes actuels de land grabbing et d'accaparement foncier ? Quels parallèles entre la prolétarisation paysanne d'autrefois et les luttes sans-terre contemporaines ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "7ccc7dc89f"
+   },
+   "cover": "covers/782b7ee8.jpg",
+   "meta": {
+    "page_count": 13,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": ""
+   },
+   "lang": "es",
+   "has_cover": true
+  },
   "375334f1": {
    "id": "375334f1",
    "url": "https://revista.redipe.org/index.php/1/article/download/1015/925",
@@ -51571,6 +54351,279 @@
    "doc_date": "2021-06-08",
    "has_cover": true
   },
+  "78299ef6": {
+   "id": "78299ef6",
+   "url": "https://pure.rug.nl/ws/files/120244713/Environmental_justice_implications_of_land_grabbing_for_industrial_agriculture_and_forestry_in_Argentina.pdf",
+   "filename": "78299ef6_Environmental_justice_implications_of_land_grabbing_for_industrial_agriculture_a.pdf",
+   "format": "pdf",
+   "source": "discovery_promoted",
+   "first_seen": "2026-06-28T22:17:57",
+   "latest_run": "2026-06-28T22:17:57",
+   "latest_score": 0,
+   "downloaded": true,
+   "saved_as": "docs/78299ef6_Environmental_justice_implications_of_land_grabbing_for_industrial_agriculture_a.pdf",
+   "title": "Environmental justice implications of land grabbing for industrial agriculture and forestry in Argentina",
+   "doi": "10.1080/09640568.2019.1595546",
+   "lang": "en",
+   "score_final": 8,
+   "runs": [
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "versions": [],
+   "score_initial": 0,
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "enrichment": {
+    "summary": "Cet article universitaire analyse les implications de l'accaparement de terres en Argentine à travers le prisme de la justice environnementale. Les auteurs examinent comment les investissements à grande échelle en agriculture industrielle (principalement soja) et plantations d'arbres déplacent les petits paysans et les peuples autochtones. Le document décrit les mécanismes de l'accaparement : changement de régime foncier, non-reconnaissance des droits coutumiers et informels, absence des communautés locales dans la prise de décision, extraction de ressources au profit de capital étranger. Le cadre théorique croise justice environnementale (distribution inégale des risques et fardeaux environnementaux) et action socio-transformatrice. Les auteurs soulignent que les vulnerabilités pré-existantes des communautés locales les rendent moins enclines à résister activement : elles acceptent tacitement l'injustice foncière, préférant régler des enjeux plus immédiats. Le résultat : déplacement, insécurité foncière, fardeau social-environnemental disproportionné pour les populations déjà vulnérables. L'article plaide pour une analyse plus systématique des conditions qui rendent certains territoires et populations susceptibles à l'accaparement.",
+    "citations": [
+     {
+      "page": 3,
+      "quote": "Land grabbing results in social impacts, injustice, conflict and displacement of smallholders.",
+      "why_relevant": "Définition directe de l'accaparement des terres et ses impacts sur les paysans — cœur de la thématique.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "This land grabbing results in a change in land use from family farming to industrial tree monoculture and intensive agriculture.",
+      "why_relevant": "Articule clairement la tension entre agriculture paysanne/vivrière et accaparement industriel.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 4,
+      "quote": "For many rural people, especially Indigenous peoples, land is essential for the continuation of their livelihood activities and for the reproduction of their social, cultural and spiritual practices.",
+      "why_relevant": "Capture le rapport politique et culturel des peuples autochtones à la terre, distinct de la logique marchande.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "the lack of respect for customary and informal land tenure, the lack of influence of local communities in decision-making, diminishing resource access, and insecurity",
+      "why_relevant": "Énumère les violences procédurales et foncières : négation des droits coutumiers, exclusion politique, dessaisissement.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "Many countries in the Global South bear the disproportionate negative environmental and social cost of global production.",
+      "why_relevant": "Analyse la dimension structurelle Nord-Sud de l'accaparement et de la justice environnementale.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "environmental justice field has shown how socially transformative action can reduce environmental injustice, increase wellbeing in communities, and build social capital",
+      "why_relevant": "Articule le lien entre action transformatrice des mouvements et réduction de l'injustice foncière.",
+      "verified": true,
+      "page_physical": 4
+     }
+    ],
+    "matched_keywords": [
+     "accaparement",
+     "accaparement des terres",
+     "paysannerie",
+     "paysans",
+     "agriculture vivrière",
+     "family farming",
+     "agriculture familiale",
+     "smallholder",
+     "agriculture industrielle",
+     "sans-terre",
+     "accès à la terre",
+     "droit coutumier",
+     "tenure foncière",
+     "peuples autochtones",
+     "luttes autochtones",
+     "justice environnementale",
+     "resistance",
+     "protest",
+     "dispossession",
+     "extractivism",
+     "green grabbing"
+    ],
+    "relevance_score": 8,
+    "relevance_notes": "8/10 — L'article touche frontalement à plusieurs concepts centraux (accaparement, paysannerie, luttes autochtones, justice), mais reste davantage dans l'analyse des problèmes que dans la proposition de solutions (communs fonciers, propriété d'usage, coopératives). C'est un diagnostic d'injustice foncière très pertinent pour la thématique, mais non centré sur les alternatives institutionnelles.",
+    "en_clair": "Des grandes sociétés prennent les terres des paysans pour faire pousser du soja et des arbres : elles déplacent les familles et détruisent leurs moyens de vivre. Ces communautés ont souvent trop d'autres problèmes pour se défendre, alors elles acceptent l'injustice. Ce texte explique *pourquoi* c'est injuste et *comment* ça se passe.",
+    "acteurs": [
+     "Arturo Escobar",
+     "Paolo Freire",
+     "Ivan Illich",
+     "University of Groningen",
+     "KU Leuven"
+    ],
+    "controverse": "La tension entre la logique des investisseurs (profits, extraction, rendement) et celle des communautés locales (survie, continuité culturelle-spirituelle, accès à la terre). Le document pose également la question : pourquoi les populations vulnérables acceptent-elles tacitement l'injustice foncière au lieu de résister ?",
+    "angle_journalistique": "En Argentine, pourquoi les petits paysans et peuples autochtones confrontés aux plantations de soja et d'arbres des multinationales ne ripostent-ils pas davantage — et quels sont les coûts cachés de cette résignation.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "a0be73c569"
+   },
+   "cover": "covers/78299ef6.jpg",
+   "meta": {
+    "page_count": 25,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": ""
+   },
+   "doc_date": "2026-06-28",
+   "editeur": "OpenPDF 1.4.2",
+   "has_cover": true
+  },
+  "2a6a8489": {
+   "id": "2a6a8489",
+   "url": "https://pure.eur.nl/ws/files/48260626/Daniela-Andrade_Article_ISS.pdf",
+   "filename": "2a6a8489_Daniela-Andrade_Article_ISS.pdf",
+   "format": "pdf",
+   "source": "discovery_promoted",
+   "first_seen": "2026-06-28T22:18:02",
+   "latest_run": "2026-06-28T22:18:02",
+   "latest_score": 0,
+   "downloaded": true,
+   "saved_as": "docs/2a6a8489_Daniela-Andrade_Article_ISS.pdf",
+   "title": "Populism from above and below: the path to regression in Brazil",
+   "doi": "10.1080/03066150.2019.1680542",
+   "lang": "en",
+   "score_final": 6,
+   "runs": [
+    {
+     "date": "cleanup_2026-09-16_10-41",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "versions": [],
+   "score_initial": 0,
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "enrichment": {
+    "summary": "Cet article de Daniela Andrade analyse la régression politique et économique brésilienne (2016-2018) à travers la critique du populisme « d'en haut et d'en bas ». Le texte montre comment le Parti des Travailleurs (PT), au pouvoir pendant 13 ans (2003-2016) sous la présidence de Lula, a présenté son leadership comme représentant les intérêts des pauvres et des sans-terre, tout en protégeant ceux de l'agribusiness et des élites — une « ambiguïté populiste ». En contexte rural, les conséquences ont été dramatiques : après l'impeachment de Dilma Rousseff en 2016 (50 % des votes provenaient du Bloc Parlementaire de l'Agribusiness), l'interim government a aboli le Ministère du Développement Agraire et a drastiquement réduit les programmes d'aide à la paysannerie comme Bolsa Família et le PAA (Food Acquisition Program). Parallèlement, la violence contre les ruraux a explosé (132 meurtres de paysans entre 2016-2017, soit +100 % par rapport à 2005-2014). Le Mouvement des Travailleurs Sans Terre (MST), principal acteur des luttes pour l'accès à la terre au Brésil, a soutenu la candidature de Lula lors de la campagne pré-électorale 2017-2018. Andrade soutient cependant que cette stratégie électoraliste était problématique : la route vers la régression n'a pas commencé avec Bolsonaro, mais a été pavée sous le PT lui-même, avec son projet « néo-développementaliste » qui favorisait silencieusement l'agribusiness et reproduisait les structures d'inégalité. L'article s'inscrit dans le cadre de l'Emancipatory Rural Politics Initiative (ERPI) et pose une question politique centrale : le populisme de gauche, même soutenu par les mouvements paysans, peut-il créer un véritable chemin vers l'émancipation rurale, ou reproduit-il les mêmes dépendances de classe et les mêmes structures de domination ?",
+    "citations": [
+     {
+      "page": 3,
+      "quote": "the road to regression was paved during the tenure of the Workers' Party, when Lula's leadership emerged as representative of interests 'from below' while advancing a political project that protected and nurtured interests 'from above' - a populist ambiguity",
+      "why_relevant": "Énonce la thèse centrale : critique du populisme électoraliste qui masque la continuité des structures d'oppression de classe en milieu rural",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 4,
+      "quote": "50% of the impeachment votes in the Chamber of Deputies were cast by the so-called Agribusiness Parliamentary Front, which comprised 41% of the total number of serving parliamentarians",
+      "why_relevant": "Montre le poids politique structurel de l'agribusiness dans les institutions brésiliennes et son rôle dans le renversement de Dilma",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "the interim government abolished the Ministry of Agrarian Development and eliminated or severely reduced internationally celebrated programs that were providing support and welfare to the rural poor, such as the Bolsa Família or the Food Acquisition Program (PAA)",
+      "why_relevant": "Docummente les politiques anti-paysannes et anti-pauvreté rurales post-impeachment, montrant le désengagement de l'État vis-à-vis de la souveraineté alimentaire",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "Between 2016 and 2017, 132 rural dwellers, many of whom in leadership positions, were murdered – a 100% increase in the average number of murders per year compared with the 2005–2014 period",
+      "why_relevant": "Illustre la violence structurelle et la criminalisation des luttes paysannes et des acteurs de la réforme agraire au Brésil",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "from August 2017 to March 2018, the Landless Workers' Movement (Movimento dos Trabalhadores Sem Terra, MST) openly supported former president Luiz Inácio Lula da Silva (Lula, for the PT) during a pre-presidential election caravan",
+      "why_relevant": "Révèle la stratégie électoraliste du principal mouvement sans-terre brésilien face à la régression autoritaire, stratégie qu'Andrade interroge critiquement",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "the 'family farm' sector quickly started to experience the bitter effects of authoritarianism and austerity, including direct violence",
+      "why_relevant": "Situe l'impact de la régression politique sur les petites exploitations paysannes (family farms) en tant que classe sociale spécifiquement ciblée",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 4,
+      "quote": "agrarian movements and other organized social forces have been confronted with the pressing need to mobilize the masses to contest the drastic cutbacks in public support",
+      "why_relevant": "Reconnaît les mouvements agraires comme acteurs collectifs face aux politiques de régression, suggérant une nécessité de remobilisation autonome",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 5,
+      "quote": "its politics were celebrated for promoting a post-neoliberal and neo-developmentalist project that primarily affected the poor",
+      "why_relevant": "Critique le projet néo-développementaliste du PT qui, sous couvert de progressisme, reproduisait une dépendance vis-à-vis de l'agribusiness et des structures d'élites",
+      "verified": true,
+      "page_physical": 5
+     }
+    ],
+    "matched_keywords": [
+     "sans-terre",
+     "landless workers",
+     "MST",
+     "Movimento dos Trabalhadores Sem Terra",
+     "paysans",
+     "peasants",
+     "paysannerie",
+     "family farming",
+     "agriculture vivrière",
+     "agribusiness",
+     "réforme agraire",
+     "accès à la terre",
+     "souveraineté alimentaire",
+     "PAA",
+     "Food Acquisition Program",
+     "mouvements paysans",
+     "luttes paysannes",
+     "agriculture familiale",
+     "petit paysan",
+     "smallholder"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "L'article touche les core_concepts de paysannerie, sans-terre et MST, avec une critique explicite de l'agribusiness. Cependant, la thématique centrale porte sur le populisme politique et la régression, pas sur les régimes de propriété foncière alternative (communs, propriété d'usage, coopératives, fiducies). Score 6/10 : pertinent pour comprendre le contexte politique des luttes foncières au Brésil et les limites de la stratégie électoraliste, mais non-centré sur les solutions constructives de commoning ou de réforme foncière radicale.",
+    "en_clair": "Cet article explique que le soutien des mouvements sans-terre brésiliens aux gouvernements de gauche n'a pas créé de vrai changement foncier : les gouvernements du PT protégeaient l'agribusiness tout en se présentant comme amis des pauvres. C'est un avertissement utile : ne pas faire confiance aux promesses électorales de « gauche » sans exiger des changements concrets et immédiats de la propriété de la terre et du pouvoir paysan.",
+    "acteurs": [
+     "Emancipatory Rural Politics Initiative (ERPI)",
+     "Partido dos Trabalhadores (PT)",
+     "Workers' Party",
+     "Movimento dos Trabalhadores Sem Terra (MST)",
+     "Landless Workers' Movement",
+     "Dilma Rousseff",
+     "Jair Bolsonaro",
+     "Michel Temer",
+     "Luiz Inácio Lula da Silva",
+     "Lula",
+     "Agribusiness Parliamentary Front",
+     "Ian Scoones",
+     "Daniela Andrade"
+    ],
+    "controverse": "La tension centrale : le MST (mouvement sans-terre brésilien) a soutenu la candidature électorale de Lula et du PT en 2017-2018, espérant un retour au gouvernement de gauche, alors que Andrade argumente que le PT lui-même, sous Lula, avait déjà pavé la route vers la régression actuelle en favorisant l'agribusiness sous couvert de néo-développementalisme. Cette controverse remet en question la viabilité de la stratégie électoraliste pour les mouvements paysans.",
+    "angle_journalistique": "Pourquoi les plus grands mouvements de sans-terre d'Amérique latine (MST, Via Campesina) continuent-ils d'investir dans les stratégies électorales de gouvernements de gauche, même quand l'histoire montre que ces gouvernements reproduisent la domination de l'agribusiness et renoncent à la réforme agraire radicale ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "0f9044903b"
+   },
+   "cover": "covers/2a6a8489.jpg",
+   "meta": {
+    "page_count": 29,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": ""
+   },
+   "doc_date": "2026-06-28",
+   "editeur": "OpenPDF 1.4.2",
+   "has_cover": true
+  },
   "14cd7f81": {
    "id": "14cd7f81",
    "url": "https://archive.org/download/f58100fb-f99d-4b1e-9f4f-f851e34fe06f/f58100fb-f99d-4b1e-9f4f-f851e34fe06f.pdf",
@@ -51776,6 +54829,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "9d002cb9": {
@@ -51815,6 +54872,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "c8e0149d": {
@@ -51854,6 +54915,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "03f501f3": {
@@ -82353,6 +85418,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "66784ef0": {
@@ -88596,6 +91665,10 @@
    "title": "Final Posters EN_ES_FR",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "enrichissement raté : text_too_short_or_empty",
+    "date": "2026-09-16"
+   },
    "has_cover": true
   },
   "e02bdae7": {
@@ -94986,6 +98059,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "5d8b85ca": {
@@ -103355,6 +106432,10 @@
    "download_status": "failed_network",
    "link_status": "dead",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "71a81285": {
@@ -125361,6 +128442,10 @@
    "title": "Ici la déclaration finale (PDF).",
    "link_status": "dead",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "6cf221ce": {
@@ -125616,6 +128701,10 @@
    "title": "Bulletin Nyéléni n° 17 –Jeunesse et Agriculture",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "enrichissement raté : json_parse: Expecting value: line 1 column 1 (char 0)",
+    "date": "2026-09-16"
+   },
    "has_cover": true
   },
   "de3a4772": {
@@ -125667,6 +128756,10 @@
    "title": "Bulletin Nyéléni n° 28 –Agroécologie",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "enrichissement raté : json_parse: Expecting value: line 1 column 1 (char 0)",
+    "date": "2026-09-16"
+   },
    "has_cover": true
   },
   "effef8cb": {
@@ -128604,6 +131697,10 @@
    "link_checked": "2026-09-15T19:11:44Z",
    "download_status": "ok_via_variant",
    "title": "Ostrom, E. : El Gobierno de los Bienes Comunes. La Evolución de las Instituciones de Acción Colectiva, México, 2000.",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_captcha (playwright_not_pdf)",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "67d6c769": {
@@ -128711,6 +131808,10 @@
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
    "download_status": "failed_404_after_variants",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_captcha (playwright_not_pdf)",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "7585c0aa": {
@@ -130306,6 +133407,10 @@
    ],
    "link_status": "unchecked",
    "download_status": "failed_network",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "c2dac91f": {
@@ -131173,6 +134278,10 @@
    "download_status": "failed_404_after_variants",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_captcha (playwright_not_pdf)",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "13352415": {
@@ -131212,6 +134321,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "660c621a": {
@@ -131251,6 +134364,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "52136dfb": {
@@ -131290,6 +134407,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "a4e7c388": {
@@ -131342,6 +134463,10 @@
    "title": "Silvia Federici — Caliban ve Cadı : Kadınlar, Beden ve İlksel Birikim",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_captcha (playwright_not_pdf)",
+    "date": "2026-09-16"
+   },
    "has_cover": true
   },
   "5e384099": {
@@ -131780,6 +134905,10 @@
    "title": "ACDSee PDF Image.",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_captcha (playwright_not_pdf)",
+    "date": "2026-09-16"
+   },
    "has_cover": true
   },
   "d48ae684": {
@@ -131819,6 +134948,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "8c7a82f1": {
@@ -131858,6 +134991,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "8572db93": {
@@ -131897,6 +135034,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "74ad5743": {
@@ -131936,6 +135077,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "be3de0c3": {
@@ -132101,6 +135246,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "f5977eb9": {
@@ -132427,6 +135576,10 @@
    "title": "The Punjab Peasant",
    "link_status": "ok",
    "link_checked": "2026-09-15T19:11:44Z",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_captcha (playwright_not_pdf)",
+    "date": "2026-09-16"
+   },
    "has_cover": true
   },
   "5ad6ebc5": {
@@ -132466,6 +135619,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "070edf21": {
@@ -132505,6 +135662,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "143cdfbd": {
@@ -132544,6 +135705,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "4c142687": {
@@ -132583,6 +135748,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "632651da": {
@@ -132622,6 +135791,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "b86e992d": {
@@ -132661,6 +135834,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "75b5c5f8": {
@@ -132700,6 +135877,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "ab3b2eb1": {
@@ -132913,6 +136094,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "91c6dc3a": {
@@ -132952,6 +136137,10 @@
    ],
    "download_status": "failed_network",
    "link_status": "unchecked",
+   "enrich_abandon": {
+    "reason": "téléchargement impossible : failed_network",
+    "date": "2026-09-16"
+   },
    "has_cover": false
   },
   "7d428911": {
