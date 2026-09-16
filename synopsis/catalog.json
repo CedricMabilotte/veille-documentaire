@@ -25407,11 +25407,7 @@
       "enrichment": {
         "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
       },
-      "download_status": "ok",
-      "enrich_abandon": {
-        "reason": "doublon de 94340458",
-        "date": "2026-09-16"
-      }
+      "download_status": "ok"
     },
     "94340458": {
       "id": "94340458",
@@ -44799,7 +44795,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 1,
-      "score_final": null,
+      "score_final": 2,
       "latest_score": 1,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -44852,6 +44848,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 1,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "Traité de savoir-vivre a l’usage des jeunes générations",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -44865,7 +44871,58 @@
         "pdf_creator": "Writer"
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Le Traité de savoir-vivre de Raoul Vaneigem est une introduction philosophique situationniste qui critique le pouvoir, l'idéologie et la vie quotidienne vidée de sens sous le capitalisme. Vaneigem distingue l'« homme de la survie », écrasé par les mécanismes du pouvoir hiérarchisé, et l'« homme de la vie », capable de subjectivité et de refus. Le texte établit que la critique du pouvoir doit partir de l'expérience vécue — non des abstractions philosophiques — et que la lutte pour la vie et le sens s'entrelace avec la lutte contre les classes. Vaneigem refuse tant la mystification religieuse que l'objectivité technocratique vide de sens. Sa perspective générale est que le monde moderne, saturé d'idéologies, de publicité et de contrôle administratif, émietté les individus en fragments dociles. Il appelle à une pratique révolutionnaire ancrée dans le quotidien, capable de transformer les « banalités » en armes contre l'ordre établi. Bien que le texte ne traite pas spécifiquement des enjeux fonciers, agraires ou de propriété d'usage, son cadre critique radical du pouvoir et de l'aliénation capitaliste offre une toile de fond théorique pour penser les résistances territoriales, l'autonomie collective et le refus des hiérarchies qui structurent aussi les régimes de propriété foncière.",
+        "citations": [
+          {
+            "page": 2,
+            "quote": "Le monde est à refaire : tous les spécialistes de son reconditionnement ne l'empêcheront pas.",
+            "why_relevant": "Appel radical à une refondation totale du monde — pertinent pour penser les ruptures avec l'ordre foncier existant",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "Nous ne voulons pas d'un monde où la garantie de ne pas mourir de faim s'échange contre le risque de mourir d'ennui.",
+            "why_relevant": "Critique implicite de la survie marchande — touche à la souveraineté, à la vie digne, potentiellement à l'autonomie alimentaire",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 3,
+            "quote": "L'homme de la survie, c'est l'homme émietté dans les mécanismes du pouvoir hiérarchisé, dans une combinaison d'interférences, dans un chaos de techniques oppressives",
+            "why_relevant": "Description de l'aliénation sous le pouvoir — cadre théorique pour penser la domination foncière et la dépossession",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 3,
+            "quote": "La lutte du subjectif et de ce qui le corrompt élargit désormais les limites de la vieille lutte des classes.",
+            "why_relevant": "Élargit la critique de classe au-delà du travail — ouvre sur les enjeux de vie quotidienne, pertinent pour les luttes territoriales",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 6,
+            "quote": "Pas un geste, pas une pensée qui ne s'empêtre aujourd'hui dans le filet des idées reçues.",
+            "why_relevant": "Critique de l'idéologie dominante comme emprise totale — applicable à l'hégémonie de la propriété privée foncière",
+            "verified": true,
+            "page_physical": 6
+          }
+        ],
+        "matched_keywords": [],
+        "relevance_score": 2,
+        "relevance_notes": "Le texte est une critique radicale du pouvoir, de l'idéologie et de la vie quotidienne aliénée — pertinent pour une philosophie politique anti-capitaliste générale — MAIS n'aborde explicitement AUCUN des concepts-clés de la thématique foncière : pas de mention de terre, propriété, paysans, communs, agriculture, libération des terres, ou enjeux agraires. C'est de la théorie révolutionnaire générale, non du savoir situé sur les enjeux fonciers.",
+        "en_clair": "Ce texte dit que le pouvoir nous écrase en morceaux, nous vole notre vie quotidienne, et qu'il faut tout refuser ensemble — mais il ne parle pas du tout de qui possède la terre ni comment s'en emparer. C'est utile pour penser pourquoi on se bat, mais pas comment on s'approprie collectivement une terre.",
+        "acteurs": [
+          "Raoul Vaneigem",
+          "Lautréamont",
+          "Bosustov",
+          "Meslier"
+        ],
+        "controverse": "Aucune controverse spécifique soulevée dans le texte. Le texte expose une position révolutionnaire sans débattre d'alternatives ou de désaccords internes.",
+        "angle_journalistique": "« Pourquoi les théoriciens révolutionnaires des années 1960-70 (situationnistes, Vaneigem) n'ont-ils pas intégré les enjeux fonciers et agraires dans leur critique du pouvoir ? » — une histoire de l'angle mort urbain de la radicalité occidentale.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "fea98dc633"
       },
       "download_status": "ok"
     },
@@ -45036,7 +45093,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 1,
-      "score_final": null,
+      "score_final": 2,
       "latest_score": 1,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -45089,6 +45146,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 1,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "Adresse aux vivants",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -45102,7 +45169,39 @@
         "pdf_creator": "Adobe InDesign CS2 (4.0)"
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Ce manifeste poétique et philosophique, rédigé en 1989, est une critique radicale du système économique marchand et de l'aliénation quotidienne du travail. L'auteur dénonce l'« exil quotidien » imposé par la routine laborieus, l'usine et le « devoir », qui étouffent le désir humain et la vie authentique. Face à cette « négation de la vie », il appelle à une « révolution du vivant » fondée sur la gratuité, la création et la jouissance plutôt que sur la possession et le profit. Le texte esquisse une transition d'une « ère économique » vers une « civilisation du désir » où la nature se « donne » plutôt que ne s'« achète ». Bien que le ton soit celui d'un manifeste alternatif et libertaire prônant une transformation radicale de la société, le document n'engage aucune réflexion spécifique sur les communs fonciers, la propriété d'usage, la paysannerie, l'agroécologie, l'habitat collectif ou les luttes pour l'accès à la terre. Il s'agit d'une critique existentielle et philosophique du capitalisme, non d'une analyse des régimes fonciers ou des mouvements collectifs d'appropriation des terres.",
+        "citations": [
+          {
+            "page": 2,
+            "quote": "La fin de l'ère économique coïncide avec la naissance d'une civilisation du désir.",
+            "why_relevant": "Évoque un basculement systémique du régime économique ; pertinent pour penser une transition post-capitaliste (même si non situé foncièrement).",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "une nouvelle gratuité enseigne à saisir ce que la nature donne en sorte qu'elle se donne davantage",
+            "why_relevant": "Critique implicite de la marchandisation et appel à un rapport non-extractif à la nature, proche de logiques de communs.",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 2,
+            "quote": "En fait, je ne suis pas étranger au monde, mais tout m'est étranger d'un monde qui se vend au lieu de se donner",
+            "why_relevant": "Critique du régime marchande et de la vénalité généralisée ; soubassement philosophique possible pour une critique foncière, mais non développé.",
+            "verified": true,
+            "page_physical": 2
+          }
+        ],
+        "matched_keywords": [],
+        "relevance_score": 2,
+        "relevance_notes": "Texte hors-champ de la thématique. Manifeste philosophico-poétique critiquant le capitalisme et appelant à la « civilisation du désir », mais aucun ancrage dans les luttes foncières, les communs, la paysannerie, l'agroécologie ou l'habitat collectif — mots-clés et concepts centraux de la veille sont complètement absents.",
+        "en_clair": "Ce texte ne servira pas une lutte pour la terre ou les communs fonciers : c'est une critique générale du capitalisme et un appel à vivre autrement, mais sans parler de qui possède la terre, comment la partager ou comment cultiver. Utile pour la philosophie libertaire, pas pour les réalités concrètes du foncier.",
+        "acteurs": [],
+        "controverse": "Implicitement : faut-il accepter l'ordre du travail et de l'économie marchande, ou refuser radicalement cette aliénation quotidienne pour inventer une vie fondée sur le désir ? Mais cette tension ne croise pas les enjeux des luttes foncières spécifiquement.",
+        "angle_journalistique": "Qui sont les héritier·es de ce manifeste 1989 sur la « civilisation du désir » ? Comment les mouvements d'habitats collectifs, coopératives, et ZAD transforment-ils concrètement cette critique en pratiques foncières ?",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "af259f47a7"
       },
       "download_status": "ok",
       "archive_url": "https://web.archive.org/web/20260727123951/https://cras31.info/IMG/pdf/vaneigem-adresse-aux-vivants.pdf"
@@ -45117,7 +45216,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 1,
-      "score_final": null,
+      "score_final": 3,
       "latest_score": 1,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -45170,6 +45269,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 1,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "Banalités de base",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -45183,7 +45292,60 @@
         "pdf_creator": "Adobe InDesign CS2 (4.0.2)"
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Ce texte de Raoul Vaneigem (avril 1962, Bulletin de l'Internationale situationniste) est une critique théorique de l'aliénation sous le capitalisme bureaucratique et, plus largement, de la propriété privée comme forme d'appropriation du vivant. L'auteur remonte aux origines de la socialisation humaine pour montrer comment la division entre possédants et non-possédants s'est progressivement naturalisée. Il analyse la propriété privée comme un système d'exclusion mutuelle : en s'arrogeant un bien dont ils excluent les autres, les propriétaires reconnaissent à chacun un droit abstrait de possession, ce qui crée une illusion d'universalité. Cette « transcendance universelle » justifie par raison divine ou naturelle le droit d'appropriation et permet aux exploités de survivre en collaborant à leur propre exclusion. Le texte expose comment le travail aliéné devient paradoxalement la seule chance de survie des non-possédants, qui acceptent l'exploitation par nécessité physique. L'ensemble relève d'une critique radicale de la propriété comme condition de domination, mais sans proposer d'alternatives institutionnelles ou concrètes. Le registre est hautement abstrait et philosophique.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "Être propriétaire, c'est s'arroger un bien de la jouissance duquel on exclut les autres ; c'est, du même coup, reconnaître à chacun un droit abstrait de possession.",
+            "why_relevant": "Définition critique de la propriété privée ; touche à la thématique de l'appropriation et de l'exclusion.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "le devenir historique n'a cessé de se définir et de nous définir en fonction du mouvement d'appropriation privative, de la prise en charge par une classe, un groupe, une caste ou un individu d'un pouvoir général de survie économico-sociale",
+            "why_relevant": "Théorisation générale de l'appropriation privée comme logique historique ; fait mention explicite de 'classe', 'groupe' et domination économico-sociale.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "de la propriété d'une terre, d'un territoire, d'une usine, de capitaux — à l'exercice « pur » du pouvoir sur les hommes",
+            "why_relevant": "Mention explicite de terre et territoire comme objets d'appropriation privée et de pouvoir.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 3,
+            "quote": "L'accaparement et la domination à des fins privées sont ainsi imposées et ressenties primitivement comme un droit positif, mais sur le mode d'une universalité négative.",
+            "why_relevant": "Critique de l'accaparement (terme central de la veille) et de sa légitimation idéologique.",
+            "verified": true,
+            "page_physical": 3
+          }
+        ],
+        "matched_keywords": [
+          "appropriation",
+          "propriété privée",
+          "domination",
+          "exploitation",
+          "terre",
+          "territoire",
+          "accaparement",
+          "aliénation"
+        ],
+        "relevance_score": 3,
+        "relevance_notes": "Texte de critique philosophique radicale qui aborde la propriété privée et l'appropriation à un niveau hautement abstrait, mais reste détaché des enjeux concrets de la thématique veille : aucune mention de communs fonciers, habitat coopératif, paysannerie, agroécologie, mouvements de terre (MST, Via Campesina, etc.), fonds de dotation, fiducies, coopératives agricoles, ou luttes autochtones. C'est une critique générale de la domination hiérarchique et du capitalisme, pas une analyse ou une exploration des alternatives foncières et des pratiques collectives spécifiques à la veille.",
+        "en_clair": "Vaneigem explique pourquoi il existe des gens riches qui possèdent des terres et d'autres qui ne possèdent rien — et comment ce système nous fait tous accepter cette injustice comme naturelle. Mais le texte ne parle pas de solutions concrètes : ni des terres communes, ni des fermes collectives, ni des luttes réelles pour reprendre le contrôle de la terre.",
+        "acteurs": [
+          "Raoul Vaneigem (auteur)",
+          "G.-E. Debord (directeur du Bulletin)",
+          "Marx (cité)",
+          "Mircéa Éliade (cité)"
+        ],
+        "controverse": "Critique du marxisme orthodoxe et du bolchévisme dégénéré pour avoir renforcé les structures du capitalisme bureaucratique au lieu de les abolir ; critique de la « théorie de la coexistence pacifique » entre exploiteurs.",
+        "angle_journalistique": "Un entretien ou article rétrospectif sur la façon dont les penseurs radicaux des années 1960 concevaient la critique théorique de la propriété — et où se sont perdues les passerelles vers les mouvements de terrain qui construisaient des alternatives concrètes.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "15cfe80dcb"
       },
       "download_status": "ok",
       "archive_url": "https://web.archive.org/web/20260727124003/https://cras31.info/IMG/pdf/vaneigem-banalites-de-base.pdf"
@@ -45198,7 +45360,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 1,
-      "score_final": null,
+      "score_final": 4,
       "latest_score": 1,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -45251,6 +45413,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 1,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "Nous qui désirons sans fin",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -45264,7 +45436,74 @@
         "pdf_creator": "Adobe InDesign CS2 (4.0.4)"
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Ce texte de Raoul Vaneigem, philosophe issu de l'Internationale situationniste, présente une critique radicale du capitalisme comme « économie parasitaire » et stade ultime de l'exploitation de l'homme et de la nature. L'auteur trace une généalogie historique en distinguant trois phases : une « économie de cueillette » pré-historique (harmonieuse, créative, non-hiérarchique) ; une phase agricole (moment où s'institue la domination conjointe sur la nature et la femme) ; enfin l'industrie et le capitalisme contemporain (apothéose de la prédation systématique). Vaneigem argue que l'économie marchande a transformé la relation humaine en rapport marchand, forçant l'humanité à survivre pour l'économie au lieu de vivre. Cette inversion est au cœur de sa critique : « Les hommes ont renoncé à vivre pour assurer la survie d'une économie censée garantir la survie de l'espèce. » Le texte analyse une impasse contemporaine : une oligarchie financière accumule un capital qu'elle ne réinvestit plus dans la production réelle ; une terre épuisée par la rentabilité cesse de nourrir les peuples. Face à cette fatalité, Vaneigem appelle à une rupture radicale et évoque l'émergence d'une « internationale du genre humain » menée par l'affranchissement des femmes, une volonté de vivre collective opérant « du Chiapas à l'Oural ». Le texte reste cependant au niveau philosophique et généalogique. Il n'offre pas de solutions institutionnelles concrètes (communs fonciers, propriété d'usage, coopératives, agroécologie), mais pose les fondations pour une critique radicale des rapports de domination inhérents au capitalisme.",
+        "citations": [
+          {
+            "page": 2,
+            "quote": "Elle fonde sur le pillage et la destruction une civilisation où le rapport marchand se substitue à la relation humaine.",
+            "why_relevant": "Critique fondamentale de la subordination des relations humaines au marché, enjeu central pour penser les alternatives collectives.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "Une économie de cueillette existait avant que l'agriculture et la métallurgie fussent extraites de la terre comme le travail l'était de l'homme.",
+            "why_relevant": "Pose une généalogie alternative du rapport à la terre avant l'agriculture industrielle exploiteuse.",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 2,
+            "quote": "Les hommes n'ont conquis la terre que pour s'en laiser exproprier par le système de profit et de pouvoir dont ils tenaient leur conquête.",
+            "why_relevant": "Dialectique de l'expropiation : la terre conquise devient elle-même moyen de dépossession, pertinent pour la libération des terres.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 1,
+            "quote": "Il lui suffit de cette volonté de vivre individuelle et collective qui du Chiapas à l'Oural invente une humanité dont le vieux monde usurpait le nom pour en nier la qualité.",
+            "why_relevant": "Allusion aux luttes concrètes (Chiapas, zapatisme) et appel à un mouvement global de résistance anti-capitaliste.",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 1,
+            "quote": "Jamais n'a été pressentie aussi universellement l'exigence de privilégier le vivant sur le totalitarisme de l'argent et de la bureaucratie financière.",
+            "why_relevant": "Pose l'enjeu fondamental : vivant vs totalitarisme marchand, central pour une vision écologique radicale.",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 3,
+            "quote": "L'accumulation d'argent improductif et l'état d'une terre épuisée d'avoir produit de la rentabilité au lieu de nourrir les peuples désigne l'impasse d'une économie.",
+            "why_relevant": "La terre épuisée par la rentabilité plutôt que nourricière ; critique de la financiarisation et de l'impasse écologique.",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 2,
+            "quote": "Les hommes ont renoncé à vivre pour assurer la survie d'une économie censée garantir la survie de l'espèce.",
+            "why_relevant": "Inversion fondamentale : l'économie devient fin au lieu de moyen, critique du productivisme.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 1,
+            "quote": "ou prendre le plaisir de vivre et saisir à la gorge quiconque se met, au nom de l'économie, en travers de notre chemin.",
+            "why_relevant": "Appel explicite à la rupture radicale et à la lutte contre le système marchand.",
+            "verified": true,
+            "page_physical": 1
+          }
+        ],
+        "matched_keywords": [],
+        "relevance_score": 4,
+        "relevance_notes": "Critique radicale du capitalisme offrant une généalogie philosophique utile pour comprendre les origines de la domination sur la terre et la nature. Cependant, le texte n'aborde pas les concepts centraux de la thématique veille (communs fonciers, propriété d'usage, agroécologie politique, mouvements paysans, Community Land Trust, coopératives, fonds de dotation) et reste au niveau de la critique générale sans proposer de solutions situés ou institutionnelles.",
+        "en_clair": "Ce texte explique pourquoi le capitalisme a échoué : il a épuisé la terre au lieu de la nourrir. Utile pour comprendre que les solutions alternatives doivent sortir du système marchand — mais le texte ne dit pas comment construire ces alternatives concrètement.",
+        "acteurs": [],
+        "controverse": "Vaneigem argue que c'est l'agriculture elle-même (pas seulement l'industrie) qui inaugure la domination prédatrice de la nature et des femmes. Cette généalogie pourrait entrer en tension avec des approches valorisant la paysannerie ou l'agroécologie comme solutions au capitalisme.",
+        "angle_journalistique": "Pourquoi les penseurs radicaux du capitalisme évitent-ils de proposer des solutions concrètes et situées aux crises agraires ? Comment articuler la critique philosophique de Vaneigem avec les pratiques concrètes des mouvements paysans et des communs fonciers ?",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "0bb71d6ddf"
       },
       "download_status": "ok",
       "archive_url": "https://web.archive.org/web/20260727124014/https://cras31.info/IMG/pdf/vaneigem-nous-qui-desirons-sans-fin.pdf"
@@ -45395,7 +45634,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 3,
-      "score_final": null,
+      "score_final": 6,
       "latest_score": 3,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -45448,6 +45687,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 3,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "L’État n’est plus rien, soyons tout",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -45461,7 +45710,81 @@
         "pdf_creator": "Adobe InDesign CS5 (7.0.3)"
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Essai philosophique et politique de Raoul Vaneigem critiquant radicalement l'État moderne, le capitalisme et le consumérisme. Le texte analyse la faillite des démocraties représentatives et la réduction de l'État à un simple instrument de répression au service des multinationales et des banques. Face à cet effondrement annoncé, l'auteur propose une réorientation radicale de la société vers l'autogestion collective, la démocratie directe et l'abolition du régime de propriété privée. Le cœur du projet réside dans l'examen de ce qui pourrait remplacer l'État et le marché : Vaneigem cite les collectivités zapatistes du Chiapas comme modèle actuellement viable de démocratie directe où les terres sont mises en commun, excluant dès l'abord les conflits liés à l'appropriation privée. Chacun participe aux assemblées sans hiérarchie élective, les mandataires étant des délégués révocables pour des périodes limitées. Le texte soulève aussi la question de la disparition prochaine de l'argent et de la nécessité d'établir des relations humaines fondées sur le don plutôt que sur l'échange. Vaneigem affirme que cette transition vers des énergies et des biens offerts gratuitement par la nature marquera le moment où l'humain pourra devenir véritablement humain, en se niant comme esclave du travail et du pouvoir. Bien que le document soit tronqué, il demeure un manifeste pour l'autogestion territoriale et la sortie de la logique marchande.",
+        "citations": [
+          {
+            "page": 2,
+            "quote": "Les terres mises en commun excluent dès l'abord les conflits liés à leur appropriation privée.",
+            "why_relevant": "Énoncé direct d'un principe de communs fonciers : la propriété collective comme solution aux conflits de propriété privée.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "Les collectivités zapatistes du Chiapas sont peut-être les seules à appliquer aujourd'hui la démocratie directe.",
+            "why_relevant": "Identification des zapatistes comme expérience vivante de gouvernance directe avec terres communes.",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 1,
+            "quote": "une nouvelle alliance est en train de se conclure avec ce que la nature nous offre gratuitement, une alliance qui mettra fin à l'exploitation cupide de la terre et de l'homme.",
+            "why_relevant": "Critique de l'exploitation capitaliste de la terre et vision d'une relation alternative avec les ressources naturelles.",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 2,
+            "quote": "Les femmes, réticentes au début, en raison des habitudes patriarcales des Mayas, occupent maintenant une place prépondérante dans les « conseils de bon gouvernement ».",
+            "why_relevant": "Mention de l'émancipation des femmes dans les structures zapatistes de gouvernance directe.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "on propose seulement à des individus manifestant de l'intérêt pour certains domaines de devenir, pour une période limitée, les mandataires de la collectivité.",
+            "why_relevant": "Description des mécanismes de délégation révocable en démocratie directe, sans élus permanents.",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 2,
+            "quote": "comment supplanter par une relation humaine fondée sur le don plutôt que sur l'échange un rapport d'exploitation où le commerce des choses détermine le commerce des hommes.",
+            "why_relevant": "Critique de l'échange marchande et proposition d'économies du don comme alternative aux régimes d'exploitation.",
+            "verified": true,
+            "page_physical": 2
+          }
+        ],
+        "matched_keywords": [
+          "communs fonciers",
+          "terres mises en commun",
+          "propriété collective",
+          "démocratie directe",
+          "assemblées",
+          "autogestion",
+          "autogestionnaire",
+          "mouvements autochtones",
+          "terre",
+          "exploitation de la terre",
+          "appropriation privée",
+          "collectivités",
+          "collectif d'habitants",
+          "libération des terres",
+          "aliénation",
+          "propriété privée"
+        ],
+        "relevance_score": 6,
+        "relevance_notes": "Le texte touche explicitement à plusieurs concepts centraux (communs fonciers, démocratie directe, mouvements autochtones avec les zapatistes), mais reste un manifeste philosophique généraliste plutôt qu'une étude spécialisée du foncier ; la terre n'y est qu'un élément d'une critique plus large de l'État et du capitalisme.",
+        "en_clair": "Ce texte explique comment les zapatistes gèrent leurs terres ensemble sans les vendre, décident tous ensemble en assemblée, et n'ont pas de chef permanent. C'est un exemple concret pour montrer qu'on peut abolir la propriété privée de la terre et la gouverner collectivement, même avec des paysans.",
+        "acteurs": [
+          "Raoul Vaneigem",
+          "Collectivités zapatistes du Chiapas",
+          "La Boétie"
+        ],
+        "controverse": "Comment gérer la transition vers un système sans argent et sans État sans risquer le chaos social et la violence ? Le texte soulève le danger que la disparition de l'argent engendre une 'loi de la jungle sociale' avant que les nouvelles formes d'organisation communautaire se stabilisent.",
+        "angle_journalistique": "Enquête auprès des collectivités zapatistes du Chiapas pour documenter comment elles gèrent concrètement les terres communes, la démocratie directe, et l'absence de monnaie dans les échanges internes.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "0067b27275"
       },
       "download_status": "ok"
     },
@@ -45858,7 +46181,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 2,
-      "score_final": null,
+      "score_final": 1,
       "latest_score": 2,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -45911,6 +46234,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 2,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "Le fascisme rouge",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -45924,7 +46257,27 @@
         "pdf_creator": "Scribus 1.3.3.11"
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Ce texte présente une biographie de Voline (1882-1945), intellectuel anarchiste russe engagé dans les luttes révolutionnaires, puis une critique du régime stalinien sous le concept de « fascisme rouge » (juillet 1934). Voline y développe une analyse large du fascisme : toute dictature, indépendamment de son orientation idéologique, est intrinsèquement fasciste. Il établit un parallèle entre Staline et Mussolini, affirmant qu'aucune différence substantielle n'existe entre leurs régimes totalitaires. L'argument central repose sur le constat que le centralisme du pouvoir entre les mains d'une élite dirigeante — même qui prétend libérer la classe ouvrière — produit inévitablement une oppression des masses, quelle qu'en soit la rhétorique. Voline appelle les anarchistes à intensifier leur propagande pour que les masses tirent les leçons de l'« expérience russe » et rejettent définitivement l'idée de dictature comme instrument d'émancipation. Bien que Voline ait participé aux mouvements insurrectionnels ukrainiens (notamment avec Makhno), ce texte traite exclusivement de théorie politique générale et de critique du totalitarisme, sans aucun développement sur les dimensions foncières, agraires, ou collectives de la terre.",
+        "citations": [],
+        "matched_keywords": [],
+        "relevance_score": 1,
+        "relevance_notes": "Document hors champ pour cette thématique de veille. Voline était un anarchiste impliqué dans des luttes insurrectionnelles, mais ce texte critique uniquement le totalitarisme politique en général, sans aucun rapport aux enjeux fonciers, agraires, de propriété collective, ou de souveraineté alimentaire.",
+        "en_clair": "Ce texte ne parle pas de terre, de paysans, ni de propriété collective sur des champs. C'est une critique politique de gouvernements tyranniques — utile pour comprendre l'anarchisme généraliste, mais pas pour des luttes foncières ou paysannes.",
+        "acteurs": [
+          "Voline (Vsevolod Mikhaïlovitch Eichenbaum)",
+          "Trotsky",
+          "Staline",
+          "Mussolini",
+          "Makhno",
+          "A. Petrini",
+          "Sébastien Faure",
+          "Émile Danoën",
+          "Pierre Archinoff"
+        ],
+        "controverse": "Voline soutient qu'il n'existe aucune différence substantielle entre Staline et Mussolini — affirmation qui contredit la distinction gauche-droite habituelle et suggère que la structure dictatoriale prime sur l'idéologie affichée.",
+        "angle_journalistique": "Historiquement, les anarchistes russes ont-ils été plus clairvoyants que les autres courants de gauche sur la nature totalitaire du régime bolchévique ? Enquête sur la pertinence rétrospective de leurs critiques de 1934.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "7dbced2802"
       },
       "download_status": "ok"
     },
@@ -45938,7 +46291,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 1,
-      "score_final": null,
+      "score_final": 1,
       "latest_score": 1,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -45991,6 +46344,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 1,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "tome1",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -46004,7 +46367,21 @@
         "pdf_creator": "Microsoft Word: LaserWriter 8 8.7.1"
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Ce document est une édition numérique de « Simone Weil, Écrits historiques et politiques. Première partie : Histoire » (Gallimard, 1960). Il s'agit d'un recueil d'articles et de fragments écrits entre 1932 et 1943, rédigés pendant la période de montée du fascisme en Europe. Le texte visible (pages 1-11) comprend les métadonnées de numérisation, une table des matières détaillée, et les notes éditoriales expliquant la structure du recueil. Le contenu substantiel débute à peine avec un article intitulé « Quelques réflexions sur les origines de l'hitlérisme » (1939-1940). La table des matières annonce des articles sur Rome, l'Allemagne, l'Espagne, les colonies françaises, et la politique française. Le document note que Simone Weil a voyagé en Allemagne en 1932 et a participé à la Guerre d'Espagne en 1936, deux expériences qui ont nourri sa réflexion politique. Cependant, le fragment fourni ne permet d'accéder qu'aux préliminaires du recueil, pas à son contenu substantiel.",
+        "citations": [],
+        "matched_keywords": [],
+        "relevance_score": 1,
+        "relevance_notes": "Le texte visible ne touche aucune thématique de veille relative aux communs fonciers, à la paysannerie, à la propriété d'usage ou aux luttes de libération des terres. Il s'agit d'une couverture numérique, d'une table des matières et d'une introduction à des écrits politiques et historiques sur l'hitlérisme et la politique française (1932-1943). Bien que Simone Weil soit une penseur politique majeure et que le recueil complet puisse contenir des réflexions pertinentes (notamment sur les colonies ou les soulèvements sociaux en Espagne), le fragment fourni reste hors du champ thématique. Ressource potentiellement intéressante si l'on accédait aux articles sur l'Espagne ou les colonies, mais actuellement non pertinente.",
+        "en_clair": "C'est une numérisation d'un vieux recueil d'articles politiques de Simone Weil des années 1930-1940 sur Hitler, l'Allemagne et la politique française, mais on ne voit ici que la couverture et la table des matières. Aucun lien avec les terres, les paysans ou les communs.",
+        "acteurs": [
+          "Simone Weil",
+          "Marcelle Bergeron",
+          "Jean-Marie Tremblay"
+        ],
+        "controverse": "",
+        "angle_journalistique": "",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "0b63275613"
       },
       "download_status": "ok",
       "archive_url": "https://web.archive.org/web/20260727124355/https://cras31.info/IMG/pdf/simone_weil_-_ecrits_1_--_historiques.pdf"
@@ -46019,7 +46396,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 1,
-      "score_final": null,
+      "score_final": 2,
       "latest_score": 1,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -46072,6 +46449,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 1,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "tome2",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -46085,7 +46472,23 @@
         "pdf_creator": "Microsoft Word: LaserWriter 8 8.7.1"
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Ce document est une édition numérique du tome 2 des « Écrits historiques et politiques » de Simone Weil (1909-1943), publié par Gallimard en 1960. Il s'agit d'un recueil d'articles politiques et historiques couvrant principalement la période 1932-1943, organisé en trois sections : (1) Guerre et paix, (2) Front populaire, (3) Colonies. L'ouvrage rassemble les réflexions de Simone Weil sur la montée du nazisme, la politique étrangère française, la menace de guerre en Europe, et la question coloniale. Les textes s'appuient sur deux expériences directes de l'autrice : son voyage en Allemagne en août-septembre 1932 (où elle observe les tensions politiques et le mouvement hitlérien) et sa participation à la guerre d'Espagne en 1936. Bien que Simone Weil soit une intellectuelle de premier plan du XXe siècle, critique de la modernité industrielle et de la domination, le contenu visible du document (tables des matières et fragments initiaux) ne traite pas des enjeux fonciers, agraires, ou de communs. Les sections abordent plutôt la critique du fascisme, l'analyse du conflit guerre-paix, et les questions de politique coloniale du point de vue français. L'éditeur note que Simone Weil abandonna son pacifisme extrême après l'invasion de la Tchécoslovaquie en 1939, ce qui marqua un tournant dans sa pensée politique. Le document relève davantage de l'histoire politique générale et de la géopolitique du XXe siècle que de la veille spécialisée sur les communs fonciers, la paysannerie, ou les mouvements de libération des terres.",
+        "citations": [],
+        "matched_keywords": [],
+        "relevance_score": 2,
+        "relevance_notes": "2/10 — Ce document, bien qu'issu d'une intellectuelle importante du XXe siècle (Simone Weil), traite de questions générales de géopolitique, de critique du fascisme et de politique de guerre-paix, non des enjeux fonciers, agraires, ou de communs qui structurent la thématique de veille.",
+        "en_clair": "Ce livre parle de ce que pensait une grande intellectuelle française au XXe siècle sur le nazisme, la guerre, et la politique coloniale — c'est de l'histoire politique générale. Ça n'a rien à voir avec comment organiser les terres en commun, cultiver ensemble, ou accéder à la terre.",
+        "acteurs": [
+          "Simone Weil",
+          "George Bernanos",
+          "Alain",
+          "G. Bergery",
+          "Jean Giraudoux"
+        ],
+        "controverse": "Simone Weil était pacifiste extrême jusqu'en 1939, mais l'éditeur note qu'elle abandonna ce pacifisme suite à l'invasion de la Tchécoslovaquie par l'Allemagne hitlérienne — ce tournant révèle une tension entre conviction philosophique et réalité politique.",
+        "angle_journalistique": "Comment l'expérience directe de Simone Weil en Allemagne nazie (1932) et en Espagne pendant la guerre civile (1936) a transformé sa pensée politique et l'a conduite à abandonner son pacifisme absolu.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "e6b001ad13"
       },
       "download_status": "ok"
     },
@@ -46099,7 +46502,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 0,
-      "score_final": null,
+      "score_final": 0,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -46152,6 +46555,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 0,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "tractacus logico philosophicus",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -46165,7 +46578,17 @@
         "pdf_creator": ""
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Ce document est une traduction française du Tractatus Logico-Philosophicus de Wittgenstein, accompagnée d'une préface du traducteur Gilles Gaston Granger. Le texte proposé expose la philosophie du Tractatus : une enquête sur la nature du langage, la symbolisation et la relation logique entre les énoncés et les faits. Wittgenstein y développe une philosophie « négative » visant à délimiter les frontières du pensable plutôt qu'à affirmer des thèses sur la réalité. Le document traite de la structure des propositions, de la théorie de la connaissance, des principes de la physique, de l'éthique et du mystique. Selon Wittgenstein, la fonction essentielle du langage est d'affirmer ou de nier des faits, et un langage logiquement parfait devrait avoir des symboles simples (noms) correspondant à des objets simples, sans ambiguïté. La préface insiste sur la difficulté de traduction et la qualité littéraire du texte original, en illustrant le conflit entre Wittgenstein et Russell sur la pertinence de l'Introduction de ce dernier.",
+        "citations": [],
+        "matched_keywords": [],
+        "relevance_score": 0,
+        "relevance_notes": "Non pertinent. Le Tractatus est un ouvrage de philosophie analytique et de logique formelle sans rapport avec la thématique de veille (foncier, communs, paysannerie, libération des terres). Aucun concept, acteur ou mot-clé du périmètre n'apparaît dans le texte.",
+        "en_clair": "Ce texte parle de logique et de langage philosophique. Il n'a aucun lien avec les questions de terre, de propriété paysanne ou d'agriculture collective.",
+        "acteurs": [],
+        "controverse": "",
+        "angle_journalistique": "",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "aaafcf2ef2"
       },
       "download_status": "ok",
       "archive_url": "https://web.archive.org/web/20260727124444/https://cras31.info/IMG/pdf/wittgenstein_ludwig_-_tractatus_logico-philosophicus_-_gallimard.pdf"
@@ -46302,7 +46725,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 2,
-      "score_final": null,
+      "score_final": 2,
       "latest_score": 2,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -46355,6 +46778,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 2,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "Le Crépuscule de l’oubli - Aux fusillés à Alfajarin de José AlonzoValero",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -46368,7 +46801,51 @@
         "pdf_creator": "Writer"
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Ce document est une préface historique et testimoniale écrite par Gabriel José Alonso Valero, survivant aragonais de la Guerre civile espagnole (1936-1939). L'auteur entend publier un récit détaillé des événements qui se sont déroulés dans son village natal, Alfajarin, depuis la proclamation de la Deuxième République jusqu'après le 19 juillet 1936, date du soulèvement phalangiste. Valero critique explicitement la partialité des récits historiques dominants, en particulier le livre de José Maria Gironella intitulé « Un million de morts », qui s'est concentré unilatéralement sur les exécutions ordonnées par les républicains à Gerona, ignorant les atrocités commises par les phalangistes en Aragon. Son objectif déclaré est de préserver la mémoire des femmes et des hommes exécutés extrajudiciairement par les phalangistes, victimes de ce qu'il qualifie de « barbarie », afin qu'aucun être humain ne soit effacé de l'Histoire. Le texte porte une critique forte de l'impunité politique : Valero souligne l'absence de procès régulier et l'exécution « sans motif » des civils. Bien que rédigé en 1982, soit 46 ans après les faits, Valero affirme que « l'Histoire enregistre les faits à n'importe quel moment » et que « mieux vaut tard que jamais ». Ce document relève davantage de l'histoire politique et de la mémoire des violences d'État que de la thématique foncière ou paysanne stricto sensu, bien que la Guerre civile espagnole ait eu une importante dimension agraire souvent occultée.",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "L'auteur après avoir fait parait-il bon nombre de recherches a fixé son attention uniquement sur les fusillés par les républicains à Gerona, alors qu'il aurait pu si facilement constater les atrocités commises par les phalangistes dans la plupart des populations aragonaises",
+            "why_relevant": "Critique de la narration partiale des violences politiques ; dénonce l'occultation des crimes d'un côté du conflit",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 1,
+            "quote": "Le seul intérêt qui me pousse est celui de laisser sur le papier, noir sur blanc, comme souvenir adressé a ceux qui sont tombés dans la lutte, le témoignage des faits que j'ai vécus",
+            "why_relevant": "Intention testimoniale et mémorielle face à l'oubli politique ; ancrage dans l'expérience vécue",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 1,
+            "quote": "Ces hommes et ces femmes exécutés impunément et sans motif, de manière irresponsable et perverse car, à mon avis, aucun être humain ne doit être exécuté sans avoir été jugé régulièrement",
+            "why_relevant": "Critique radicale de l'absence de légalité et de l'impunité ; fondement éthique de la revendication de justice",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 1,
+            "quote": "L'Histoire enregistre les faits à n'importe quel moment. Et même si dans le cas concret dont il est question ce serait un peu tard, il me resterait à dire qu'il vaut mieux tard que jamais",
+            "why_relevant": "Affirmation du droit à la mémoire et à la rectification historique, face au temps qui passe",
+            "verified": true,
+            "page_physical": 1
+          }
+        ],
+        "matched_keywords": [],
+        "relevance_score": 2,
+        "relevance_notes": "Ce texte est un témoignage historique sur les crimes politiques et la mémoire de la Guerre civile espagnole, mais il ne traite pas des thématiques centrales de veille (communs fonciers, propriété d'usage, agroécologie, libération des terres, paysannerie comme acteur collectif). Bien que la Guerre civile ait eu une dimension agraire importante, cette préface n'en aborde aucun aspect. Hors-champ thématique malgré la pertinence historique générale.",
+        "en_clair": "Ce texte raconte comment un homme qui a survécu à la Guerre civile en Espagne veut enfin écrire ce qui s'est réellement passé dans son village, pour que les gens qu'on a tués sans jugement ne soient pas oubliés. C'est un cri pour que la vraie histoire soit écrite, pas celle que les gagnants racontent.",
+        "acteurs": [
+          "Gabriel José Alonso Valero (auteur)",
+          "José Maria Gironella (auteur critiqué)",
+          "CRAS (Collectif de recherche et d'actions sociales, Toulouse — diffuseur du texte)",
+          "Éditions El candil de la Memoria (éditeur)"
+        ],
+        "controverse": "Valero dénonce la narration partiale de la Guerre civile : les récits dominants (comme celui de Gironella) occultent systématiquement les atrocités phalangistes en Aragon pour ne mettre en avant que les crimes républicains, créant une histoire idéologiquement déformée. Il revendique le droit à une mémoire complète et équilibrée des violences.",
+        "angle_journalistique": "Enquête sur les archives oubliées et les témoignages étouffés de la Guerre civile en Aragon : comment les narrations officielles ont occultés les crimes fascistes, et quel travail de mémoire faire 45+ ans après pour rectifier l'histoire.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "39b6ea86ca"
       },
       "download_status": "ok",
       "archive_url": "https://web.archive.org/web/20260511072504/https://cras31.info/IMG/pdf/le_crepuscule_de_l_oubli_aux_fusilles_a_alfajarin_valero.pdf"
@@ -46516,7 +46993,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 0,
-      "score_final": null,
+      "score_final": 1,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -46569,6 +47046,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 0,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "Télécharger le bon de commande",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -46582,7 +47069,23 @@
         "pdf_creator": "Adobe InDesign CS5 (7.0)"
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Le document est essentiellement un bon de commande pour un ouvrage édité par le CRAS (Centre de Recherches sur l'Alternative Sociale) de Toulouse. Le contenu textuel présente le contexte éditorial : un livre de 296 pages consacré aux GARI (Groupes d'Action Révolutionnaires Internationalistes), un collectif anarchiste français actif en 1974-1977. Le texte retrace les actions menées par les GARI — notamment l'enlèvement du directeur de la Banque de Bilbao à Paris et une série d'attentats à l'explosif — dirigées contre les intérêts économiques espagnols et le franquisme, mobilisées par la solidarité envers des compagnons de lutte emprisonnés en Espagne, dont Salvador Puig Antich qui affronte la peine de mort au garrot. L'ouvrage propose une chronologie détaillée, une anthologie de textes (1974-1977) et des témoignages de protagonistes. Les auteurs se positionnent comme conservateurs de mémoire plutôt que comme historiens, préférant exposer les matériaux bruts conservés au centre de documentation du CRAS. Ce travail s'inscrit dans l'histoire des groupes autonomes libertaires post-1968 en France. Toutefois, aucun élément du contenu ne touche à la thématique de veille : pas de dimension foncière, agraire, territoriale ou de communs.",
+        "citations": [],
+        "matched_keywords": [],
+        "relevance_score": 1,
+        "relevance_notes": "Aucune pertinence pour la veille thématique. Bien que les GARI soient associés à une mouvance anarchiste/libertaire (concept related), le document traite exclusivement d'histoire politique urbaine et de luttes anti-franquistes années 1970, sans aucun ancrage dans les questions foncières, agraires, de propriété d'usage, de communs ou de paysannerie. Hors-champ.",
+        "en_clair": "Ce texte parle d'un groupe anarchiste français qui a mené des attentats contre l'Espagne des années 70 pour défendre des prisonniers politiques. Zéro rapport avec la terre, l'agriculture ou les luttes foncières.",
+        "acteurs": [
+          "GARI (Groupes d'Action Révolutionnaires Internationalistes)",
+          "MIL (Movimiento Ibérico de Liberación)",
+          "Salvador Puig Antich",
+          "CRAS (Centre de Recherches sur l'Alternative Sociale)",
+          "FICEDL (Fédération internationale des centres d'études et de documentation libertaires)"
+        ],
+        "controverse": "",
+        "angle_journalistique": "",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "4b22735d29"
       },
       "download_status": "ok"
     },
@@ -46596,7 +47099,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 2,
-      "score_final": null,
+      "score_final": 2,
       "latest_score": 2,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -46649,6 +47152,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 2,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "A télécharger : Livre GARI page par page",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -46662,7 +47175,54 @@
         "pdf_creator": ""
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Ce document est une introduction historiographique à un livre documentaire consacré aux GARI (Groupes d'Action Révolutionnaires Internationalistes), collectif libertaire français qui a mené des actions directes entre 1974 et 1977. Le cœur du récit tourne autour de l'enlèvement du banquier Angel Baltasar Suarez en mai 1974, acte de solidarité politique pour obtenir la libération de prisonniers de l'ex-MIL (Movimiento Ibérico de Liberación) face au régime franquiste espagnol, notamment suite à l'exécution par garrot de Salvador Puig Antich. Les auteurs, trop impliqués dans ces événements pour prétendre à une histoire académique, ont choisi de publier une anthologie de matériaux archivés par le CRAS (Centre de Recherches sur l'Alternative Sociale) : chronologie détaillée, textes de revendication, lettres de détention, témoignages d'époque. Le document trace ainsi une généalogie du militantisme anarchiste et autonome français post-1968, héritier de figures symboliques comme Tiburcio Ariza (Colonne de Fer, exécuté en 1936) ou François Coudray (prisonnier libertaire, décédé en 2009). Il aborde aussi les tensions internes : divergences politiques au sein de la coordination GARI, dissensions entre comités de soutien et inculpés, critiques du « mouvement » extraparlementaire face aux tactiques armées. Loin de célébrer ou de condamner les actions, le livre se propose de restituer les faits et la pensée de ceux qui les ont portées, tout en documentant un pan peu connu de l'après-Mai 68 français et des solidarités révolutionnaires franco-espagnoles.",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "Les GARI sont avant tout une coordination de groupes autonomes et d'individus de la mouvance libertaire en France, pour qui les protestations classiques de solidarité semblent insuffisantes",
+            "why_relevant": "Définition du collectif et de sa démarche politique autonome",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 7,
+            "quote": "on peut approcher la réflexion des individus et des groupes qui ont pris part aux GARI, prendre connaissance des raisons pour lesquelles ils se sont réunis pour intervenir sur les liens économiques et les rapports politiques entre la dictature franquiste et la République française",
+            "why_relevant": "Explicite le rapport politico-économique et anti-autoritaire de ces groupes",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 4,
+            "quote": "Tiburcio Ariza, anarchiste membre de la CNT (Confederación National del Trabajo), délégué d'une centurie de la Colonne de Fer pendant la guerre et la révolution en Espagne",
+            "why_relevant": "Généalogie historique du mouvement libertaire depuis la Révolution espagnole de 1936",
+            "verified": true,
+            "page_physical": 4
+          }
+        ],
+        "matched_keywords": [
+          "libertaire",
+          "anarchiste",
+          "solidarité"
+        ],
+        "relevance_score": 2,
+        "relevance_notes": "Score très bas : le document porte sur l'histoire politique d'un groupe anarchiste français en 1974-1977, entièrement déconnecté des enjeux fonciers, agraires, de commoning ou d'habitat coopératif qui structurent la thématique de veille. C'est un faux ami dont le titre prometteur et les marqueurs libertaires masquent l'absence totale de rapport à la terre, aux usages collectifs ou à la paysannerie.",
+        "en_clair": "Ce livre raconte l'histoire d'un groupe de militants anarchistes français qui ont kidnappé un banquier en 1974 pour réclamer la libération de prisonniers politiques espagnols. Utile uniquement si tu étudies l'histoire politique des mouvements révolutionnaires urbains français, pas pour les luttes foncières ou paysannes.",
+        "acteurs": [
+          "GARI (Groupes d'Action Révolutionnaires Internationalistes)",
+          "MIL (Movimiento Ibérico de Liberación)",
+          "CNT (Confederación Nacional del Trabajo)",
+          "Colonne de Fer",
+          "CRAS (Centre de Recherches sur l'Alternative Sociale)",
+          "CIRA (Centre International de Recherches sur l'Anarchie)",
+          "Tiburcio Ariza",
+          "François Coudray",
+          "Salvador Puig Antich",
+          "Angel Baltasar Suarez"
+        ],
+        "controverse": "Tensions internes au sein des GARI et des comités de soutien : divergences sur la stratégie (actions armées vs. solidarité classique), sur la conduite des procès (revendication totale vs. dénégation de participation), et critiques du mouvement extraparlementaire face aux tactiques explosives employées.",
+        "angle_journalistique": "Enquête sur les solidarités révolutionnaires franco-espagnoles pendant la fin du franquisme : comment les groupes libertaires français se sont mobilisés face aux exécutions du régime, et quels héritages politiques et organisationnels en subsistent.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "c13adc13a3"
       },
       "download_status": "ok"
     },
@@ -46676,7 +47236,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 0,
-      "score_final": null,
+      "score_final": 1,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -46729,6 +47289,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 0,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "Télécharger le bon de commande",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -46742,7 +47312,23 @@
         "pdf_creator": "Adobe InDesign CS2 (4.0)"
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Ce document est un bon de commande pour un ouvrage collectif sur le Movimiento Ibérico de Liberación (MIL), groupe révolutionnaire espagnol des années 1970. Le texte fournit un contexte historique : le MIL a émergé dans la Barcelone radicale de la fin des années 1960, en réaction à la dictature franquiste et au contexte mondial de contestation. Le groupe se caractérise par une organisation libertaire (sans hiérarchie entre théoriciens et acteurs), une volonté de soutenir les luttes ouvrières, la publication d'analyses politiques et de textes du courant d'ultra-gauche communiste. Ses membres ont financé leurs activités par des braquages de banque et ont vécu une aventure humaine de rupture avec le mode de vie dominant. Le groupe a disparu après l'exécution de Salvador Puig Antich (1974) et celle d'Oriol Solé Sugranyes. L'ouvrage annoncé rassemble des témoignages des protagonistes, des documents du MIL, des analyses sur les braquages, les procès et les débats internes. Publié par le CRAS (Centre de ressources anarchistes et syndicalistes), affilié à la FICEDL (fédération des centres de documentation libertaires), le livre de ~400 pages coûte 22€ port compris.",
+        "citations": [],
+        "matched_keywords": [],
+        "relevance_score": 1,
+        "relevance_notes": "Score 1/10. Le document traite d'un mouvement révolutionnaire urbain anarchiste des années 1970, sans aucun lien avec la thématique foncière, agraire ou paysanne. C'est un anti-concept explicite : 'anarchisme purement urbain et insurrectionnel (sans rapport à la terre)'. Aucun mot-clé de la veille (propriété d'usage, communs fonciers, terre, paysans, agriculture, habitat coopératif, etc.) n'apparaît.",
+        "en_clair": "C'est un livre sur des révolutionnaires urbains des années 1970 en Espagne, pas sur les terres ou l'agriculture. Inutile pour qui lutte pour l'accès à la terre ou les droits paysans.",
+        "acteurs": [
+          "MIL / Movimiento Ibérico de Liberación",
+          "Salvador Puig Antich",
+          "Oriol Solé Sugranyes",
+          "CRAS (Centre de ressources anarchistes et syndicalistes)",
+          "FICEDL (Fédération internationale des centres et de documentations libertaires)"
+        ],
+        "controverse": "Le texte souligne que Salvador Puig Antich a souvent été présenté comme 'un martyr de la lutte contre la dictature' avec 'des idées romantiques de révolution', occultant une 'réalité plus complexe' (les braquages et le financement des activités du groupe). Mais cette tension est interne à l'histoire du MIL, pas pertinente pour la veille foncière.",
+        "angle_journalistique": "",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "f44e9cd04f"
       },
       "download_status": "ok"
     },
@@ -46756,7 +47342,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 1,
-      "score_final": null,
+      "score_final": 1,
       "latest_score": 1,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -46809,6 +47395,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 1,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "livre_mil_cras_2016_.pdf",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -46821,7 +47417,25 @@
         "pdf_creator": ""
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Ce livre de mémoires publié par les Éditions CRAS en 2016 raconte l'histoire du Mouvement Ibérique de Libération (MIL), un groupe révolutionnaire clandestin actif en Catalogne à la fin des années 1960 et au début des années 1970. Le document constitue une introduction méthodologique à l'ouvrage, expliquant comment les auteurs ont reconstitué l'histoire du groupe à partir d'entretiens avec ses membres survivants, d'archives et de documents historiques. Le MIL est présenté comme un groupe anarchiste critique des organisations anarcho-syndicalistes établies (FAI, CNT), engagé dans la lutte armée (hold-ups) et la publication clandestine d'analyses politiques et de textes de la gauche communiste européenne, particulièrement critique envers le stalinisme et le marxisme-léninisme. Le texte souligne que le groupe ne s'inscrit pas d'abord dans la lutte antifranquiste consensuelle, mais dans une critique plus large de l'ordre établi et du capital. Les auteurs insistent sur la dimension humaine et existentielle : l'apprentissage de la liberté, la clandestinité, l'amitié politique et le désir de vivre différemment. L'exécution de Salvador Puig Antich en 1974 a fait du MIL un symbole de la répression franquiste, mais les auteurs cherchent à dépasser ce cliché réducteur pour explorer la complexité réelle du groupe.",
+        "citations": [],
+        "matched_keywords": [],
+        "relevance_score": 1,
+        "relevance_notes": "Score 1/10 — Le document ne touche à AUCUN des concepts centraux de la thématique veille (propriété d'usage, communs fonciers, libération des terres au sens agraire, paysannerie, agroécologie, habitat coopératif, etc.). Le MIL est un groupe révolutionnaire urbain radical centré sur la lutte armée et la critique communiste en contexte franquiste, avec aucun ancrage foncier, paysan ou agraire. La mention générale de 'luttes' et de 'rupture avec le mode de vie dominant' ne suffit pas à créer une pertinence thématique.",
+        "en_clair": "Ce livre parle d'un groupe révolutionnaire clandestin en Espagne dans les années 1970, pas du tout des terres, de l'agriculture ou des communs. Il ne peut pas servir une lutte pour la terre ou la paysannerie.",
+        "acteurs": [
+          "Mouvement Ibérique de Libération (MIL)",
+          "Salvador Puig Antich",
+          "Antonio Tellez Solà",
+          "Cortade",
+          "Sergi Rosés",
+          "CRAS (Centre de Ressources et d'Appui Solidaire)",
+          "Centre de Documentació Historico-Social de l'Ateneu Enciclopèdic Popular de Barcelone"
+        ],
+        "controverse": "La tension entre présenter le MIL comme un groupe antifranquiste (vision consensuelle et réductrice) versus le comprendre comme une critique radicale de l'ordre établi et du capital qui dépasse la simple opposition à la dictature franquiste. Également le débat sur la légitimité révolutionnaire de l'action armée au sein des courants communistes de gauche critiques du marxisme-léninisme.",
+        "angle_journalistique": "Une enquête sur comment la répression politique (l'exécution de Puig Antich) a transformé un groupe révolutionnaire complexe et critique en simple symbole de martyr antifranquiste, éclipsant l'histoire réelle des idées et de la vie clandestine.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "659d2147e4"
       },
       "download_status": "ok",
       "title": "livre_mil_cras_2016_.pdf"
@@ -46894,7 +47508,11 @@
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
       "title": "version texte",
-      "download_status": "ok"
+      "download_status": "ok",
+      "enrich_abandon": {
+        "reason": "doublon de d4e3157f",
+        "date": "2026-09-16"
+      }
     },
     "d4e3157f": {
       "id": "d4e3157f",
@@ -46964,7 +47582,11 @@
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
       "title": "version brochure",
-      "download_status": "ok"
+      "download_status": "ok",
+      "enrich_abandon": {
+        "reason": "doublon de 96f845bb",
+        "date": "2026-09-16"
+      }
     },
     "04aa2c99": {
       "id": "04aa2c99",
@@ -47118,7 +47740,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 2,
-      "score_final": null,
+      "score_final": 1,
       "latest_score": 2,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -47171,6 +47793,16 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 2,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "Liberté sur paroles de C. Soulié",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
@@ -47184,7 +47816,41 @@
         "pdf_creator": "Adobe Acrobat 11.0.23"
       },
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:20pm (UTC)\n stderr="
+        "summary": "Ce document est un ouvrage historique et politique consacré à la prison en France et au Comité d'Action des Prisonniers (CAP), un mouvement de lutte pour la dignité carcérale des années 1970-80. L'auteur, ancien prisonnier, entend restituer la parole des détenus face au « silence » qui les entoure, en contrepoint aux discours sécuritaires qui ont gagné les années 1980-90. Le texte examine la prison comme « monde clos » conçu pour étouffer les voix de ceux qui y sont enfermés, et plaide pour une réintroduction des détenus dans le tissu social via des formes de reconnaissance et de participation (exemple : exposer le produit de leur travail). L'ouvrage traite de l'enfermement comme phénomène politique et social, non technique, et critique l'invisibilité institutionnelle des prisonniers. Bien que le sujet soit celui des libertés et de la dépossession, il est centré sur l'enfermement carcéral, non sur les enjeux fonciers, agraires ou de propriété d'usage.",
+        "citations": [
+          {
+            "page": 5,
+            "quote": "l'idée claire sur la prison, à travers des groupes, le GIP, le CAP, des écrits, ce journal du CAP précisément, c'est qu'elle est essentiellement un monde clos",
+            "why_relevant": "Décrit la prison comme mécanisme de fermeture et d'invisibilisation — thématique de l'enclosure, mais appliquée à l'enfermement carcéral, non foncier.",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 13,
+            "quote": "En reprenant la parole, l'enfermement se détruit quelque part.",
+            "why_relevant": "Enjeu de restitution de voix et de subjectivité des opprimés — parallèle possible avec empowerment foncier, mais hors du contexte de ce texte.",
+            "verified": true,
+            "page_physical": 13
+          }
+        ],
+        "matched_keywords": [],
+        "relevance_score": 1,
+        "relevance_notes": "Score 1/10. Le document traite exclusivement de la prison comme institution carcérale, d'enfermement pénitentiaire, et de la lutte pour la dignité des détenus. Aucune mention de terre, de foncier, de propriété d'usage, de communs, de paysannerie, d'agriculture, d'habitat collectif, de libération foncière ou de tout autre concept central de la thématique. Le mot « liberté » du titre renvoie à la liberté de parole des prisonniers, non aux libertés foncières.",
+        "en_clair": "Ce livre raconte l'histoire d'un groupe de prisonniers qui ont créé un journal pour se faire entendre et rester humains en prison. Ce n'a absolument rien à voir avec la terre, l'agriculture ou la propriété : c'est sur l'enfermement derrière les barreaux.",
+        "acteurs": [
+          "Comité d'Action des Prisonniers (CAP)",
+          "Michel Foucault",
+          "Claude Mauriac",
+          "Paul Thibaut",
+          "Babette Auerbacher",
+          "Jean Lapeyrie",
+          "Christine Daure-Serfaty",
+          "Groupe d'Information sur les Prisons (GIP)"
+        ],
+        "controverse": "Débat sur la fonction de la prison elle-même : est-elle instrument de réinsertion (maintien de la dignité) ou d'élimination sociale pure ? Tension entre un discours sécuritaire (années 1980-90) qui renforce l'enfermement, et les voix des détenus qui en contestent le fondement.",
+        "angle_journalistique": "Enquête sur le silence systématique autour des prisons françaises : qui bénéficie du silence carcéral, et comment les prisonniers eux-mêmes organisent-ils des contre-espaces de parole malgré la censure ?",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "0cf8b5d2e1"
       },
       "download_status": "ok"
     },
@@ -47264,7 +47930,11 @@
       },
       "download_status": "ok",
       "archive_url": "https://web.archive.org/web/20260511072459/https://cras31.info/IMG/pdf/0.9.2002_-_usines_de_mort._l_exlosion_d_azf.pdf",
-      "title": "0.9.2002_-_usines_de_mort._l_exlosion_d_azf.pdf"
+      "title": "0.9.2002_-_usines_de_mort._l_exlosion_d_azf.pdf",
+      "enrich_abandon": {
+        "reason": "pas de texte extractible (PDF scanné ?)",
+        "date": "2026-09-16"
+      }
     },
     "20df6c39": {
       "id": "20df6c39",
@@ -47341,7 +48011,11 @@
         "pdf_creator": "Simple Scan 3.6.1"
       },
       "download_status": "ok",
-      "title": "oct_2001_les_idees_courtes._la_memoire_aussi.pdf"
+      "title": "oct_2001_les_idees_courtes._la_memoire_aussi.pdf",
+      "enrich_abandon": {
+        "reason": "pas de texte extractible (PDF scanné ?)",
+        "date": "2026-09-16"
+      }
     },
     "dfb7c837": {
       "id": "dfb7c837",
@@ -47662,13 +48336,13 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 2,
-      "score_final": null,
+      "score_final": 6,
       "latest_score": 2,
       "doc_type": "autre",
       "recit_de_lutte": false,
-      "doc_date": "2024",
+      "doc_date": "2026-02-01",
       "lang": "en",
-      "editeur": "",
+      "editeur": "xdvipdfmx (20220710)",
       "doi": "",
       "isbn": "",
       "hal_id": "",
@@ -47715,15 +48389,93 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 2,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "The Argentine Republic and English Radical Reformers",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
       "download_status": "already_present",
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:10am (Europe/Paris)\n stderr="
+        "summary": "Ce texte est le témoignage d'un observateur radical anglais (probablement écrit dans les années 1870-1880) qui critique l'écart abyssal entre les réformes politiques de l'Argentine libérale et la réalité économique vécue par les paysans, ouvriers et soldats. Bien que le pays se targue d'une constitution libre, du suffrage universel, de l'éducation publique et d'une propriété foncière entièrement libéralisée (« Land is free, and is sold freely in the market like any other commodity »), l'auteur documente comment ces institutions de papier produisent en réalité une exploitation systématique des classes laborieuses. Il rapporte des faits spécifiques : les peons (ouvriers agricoles) sont jetés en prison avant de signer leurs contrats de travail pour éviter qu'ils ne se rétractent ; les soldats à la frontière ne sont jamais payés, mal nourris et contraints à la corvée agricole pour leurs officiers ; les hommes sont arrachés à leurs familles par des contingents de conscription arbitraires, sans égard pour l'âge ou les responsabilités familiales. Le cœur de la critique est que le droit politique (le vote) ne protège pas contre l'asservissement économique : « The right of suffrage, also, far from being an advantage, has been and is a dreadful disadvantage to the poor man possessing it. » Ce texte préfigure une critique matérialiste du libéralisme : les réformes politiques formelles restent vaines tant que les conditions économiques — ici, la propriété foncière privatisée et la dépossession des travailleurs — demeurent inégalitaires. Pour la veille foncière et paysanne, le document est un diagnostic historique des ravages d'un régime où la terre est devenue une marchandise, entraînant l'exclusion structurelle des paysans malgré leurs droits politiques formels.",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "Land is free, and is sold freely in the market like any other commodity.",
+            "why_relevant": "Décrit explicitement le régime foncier libéral-privé en Argentine : la terre entièrement commodifiée, sans statut alternatif (usage, commun, collectif)",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 1,
+            "quote": "The right of suffrage, also, far from being an advantage, has been and is a dreadful disadvantage to the poor man possessing it.",
+            "why_relevant": "Critique centrale du texte : le vote ne protège pas contre l'exploitation économique des paysans et travailleurs",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 2,
+            "quote": "otherwise these free citizen-voters might repent and give up their engagement",
+            "why_relevant": "Montre comment les ouvriers agricoles sont privés de liberté réelle malgré le statut formel de citoyens libres",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "We found the soldiers delivered into the worst kind of slavery to their officers, and no regard whatever paid to anything they had a legal claim to as 'rights'.",
+            "why_relevant": "Documente l'exploitation systématique du travail paysan/soldatesque malgré les garanties formelles de droits",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 3,
+            "quote": "men were dragged from their homes with as little consideration as they would be in a slave hunt in Africa",
+            "why_relevant": "Compare l'extraction forcée du travail paysan en Argentine au régime esclavagiste, sans égard pour les familles ou le droit à la terre",
+            "verified": true,
+            "page_physical": 3
+          }
+        ],
+        "matched_keywords": [
+          "paysannerie",
+          "paysans",
+          "peons",
+          "gauchos",
+          "paysans libres",
+          "agriculture paysanne",
+          "propriété foncière",
+          "terre commodifiée"
+        ],
+        "relevance_score": 6,
+        "relevance_notes": "Document pertinent comme diagnostic historique des effets de la commodification foncière sur l'exploitation paysanne en Argentine libérale, mais il reste au niveau du diagnostic sans proposer d'alternatives structurelles (communs, coopératives, fiducies foncières). Intéressant pour contextualiser les enjeux, limité pour les solutions.",
+        "en_clair": "Ce texte montre qu'une constitution « libre » ne suffit pas : quand la terre peut être vendue comme une marchandise et que les paysans n'en possèdent rien, même le droit de vote ne les protège pas du travail forcé et de la misère. En Argentine au XIXe siècle, les ouvriers agricoles avaient formellement tous les droits politiques, mais étaient systématiquement emprisonnés, affamés et traités en esclaves.",
+        "acteurs": [
+          "Mr. Robert Crawford (ingénieur civil, chef d'expédition)",
+          "Mr. Bookey (officier commissaire et interprète)",
+          "Captain Cabrera (commandant des peons)",
+          "General Mitre (candidat présidentiel 1874)",
+          "Doctor Alsina (candidat présidentiel 1874)"
+        ],
+        "controverse": "Tension centrale entre réformes politiques formelles (suffrage universel, constitution libérale) et absence de droits économiques réels : la commodification totale de la terre et du travail produit une nouvelle forme d'esclavage malgré les libertés politiques affichées.",
+        "angle_journalistique": "Enquête historique sur le paradoxe des démocraties libérales du XIXe siècle : comment les constitutions « libres » ont coexisté avec l'exploitation systématique des paysans et travailleurs dépossédés de toute terre.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "5f990a96b7"
       },
-      "title": "The Argentine Republic and English Radical Reformers"
+      "title": "The Argentine Republic and English Radical Reformers",
+      "cover": "covers/af8b18a5.jpg",
+      "meta": {
+        "page_count": 9,
+        "pdf_title": "Argentine Republic and English Radical Reformers",
+        "pdf_author": "John Creaghe",
+        "pdf_creator": "LaTeX with hyperref"
+      }
     },
     "58c78e51": {
       "id": "58c78e51",
@@ -53118,13 +53870,13 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 3,
-      "score_final": null,
+      "score_final": 2,
       "latest_score": 3,
       "doc_type": "autre",
       "recit_de_lutte": false,
-      "doc_date": "",
+      "doc_date": "2021-12-12",
       "lang": "en",
-      "editeur": "",
+      "editeur": "xdvipdfmx (20200315)",
       "doi": "",
       "isbn": "",
       "hal_id": "",
@@ -53171,15 +53923,42 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 3,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "A View from the Plains",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
       "download_status": "already_present",
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:10am (Europe/Paris)\n stderr="
+        "summary": "Ce texte est une réflexion sur les défis de l'organisation politique révolutionnaire dans les petites villes du Midwest américain, en contraste avec les grandes métropoles côtières. L'auteur, actif lors des mobilisations Occupy en Iowa, explore pourquoi les organisateurs radicaux concentrent leurs efforts dans les zones urbaines denses et analyse ce qui manque aux zones moins politisées : infrastructure organisationnelle préexistante, subculture militante, ressources matérielles (espace, argent, temps). Le texte décrit comment les petits groupes (3-10 personnes) peinent à mener des campagnes de lutte de classe durables, notamment faute de masse critique et de réseaux d'appui. Il souligne aussi que la faible subculture politique locale force à transcender les divisions idéologiques — ce qui peut être un atout ou un handicap selon la perspective. Bien que le texte s'intéresse à l'organisation en zones rurales ou semi-rurales, il n'aborde **aucunement** les questions de terre, de propriété foncière, d'agriculture, d'accès au foncier, de communs, ou de paysannerie. C'est une contribution à la stratégie d'organisation politique générale, pas à la veille thématique des communs fonciers et de la libération des terres.",
+        "citations": [],
+        "matched_keywords": [],
+        "relevance_score": 2,
+        "relevance_notes": "Le document n'intersecte pas la thématique de veille. Bien qu'il porte sur l'organisation dans les zones rurales/semi-rurales du Midwest, il traite exclusivement de stratégie politique révolutionnaire générale (class struggle, Occupy) sans aucune dimension foncière, agraire, ou liée aux communs — les mots-clés centraux de la veille (terre, propriété d'usage, communs, paysannerie, agroécologie, etc.) sont complètement absents.",
+        "en_clair": "Ce texte raconte pourquoi c'est difficile d'organiser des luttes politiques dans les petites villes du Midwest américain, comparé aux grandes villes côtières. Mais il ne parle pas de terre, d'agriculture, ni de communs — donc il n'aide pas directement ceux qui se battent pour la libération des terres ou les communs fonciers.",
+        "acteurs": [],
+        "controverse": "Le texte soulève la tension entre l'attrait des grandes métropoles pour les organisateurs radicaux (ressources, masse critique, réseaux) et la nécessité d'impulser des luttes dans les zones moins politisées — mais cette tension reste au niveau stratégique général, sans application foncière.",
+        "angle_journalistique": "Un·e journaliste pourrait enquêter sur : comment les mouvements paysans et agraires se construisent-ils dans les zones rurales du Midwest quand les infrastructures militantes y sont presque inexistantes ?",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "786c40db26"
       },
-      "title": "A View from the Plains"
+      "title": "A View from the Plains",
+      "cover": "covers/3620b85f.jpg",
+      "meta": {
+        "page_count": 10,
+        "pdf_title": "View from the Plains",
+        "pdf_author": "R. Spourgítis",
+        "pdf_creator": "LaTeX with hyperref"
+      }
     },
     "dd858578": {
       "id": "dd858578",
@@ -54745,13 +55524,13 @@
       "latest_run": "2026-06-29T15:55:47",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 0,
-      "score_final": null,
+      "score_final": 0,
       "latest_score": 2,
       "doc_type": "autre",
       "recit_de_lutte": false,
-      "doc_date": "",
+      "doc_date": "2010-12-10",
       "lang": "en",
-      "editeur": "",
+      "editeur": "Recoded by LuraDocument PDF v2.28",
       "doi": "",
       "isbn": "",
       "hal_id": "",
@@ -54768,11 +55547,63 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 2,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "House bill [serial]",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
-      "title": "House bill [serial]"
+      "title": "House bill [serial]",
+      "enrichment": {
+        "summary": "Ce document est un projet de loi nord-carolinien créant une force militaire locale appelée « County Reserve » — une réserve de 50 hommes montés par comté, levée par volontariat ou conscription. Le texte établit la structure de commandement (capitaine et trois lieutenants élus, commissionnés par le gouverneur), les conditions de rémunération et d'équipement (alignées sur le service de cavalerie régulier), et les mécanismes de financement via les colonels de régiment qui font office de payeurs. La section 4 autorise le gouverneur à mobiliser les deux tiers de ces réserves pour défendre toute zone « exposée » de l'État. La section 5, cruciale, définit les devoirs des County Reserves : maintenir l'ordre dans leurs comtés en supprimant « tous les actes illégaux », qu'ils proviennent « d'esclaves ou de personnes libres », en empêchant « tous les rassemblements illégaux » et en veillant « à la vigilance pour que les lois de l'État concernant les esclaves et les personnes de couleur libres soient respectées », ainsi qu'en arrêtant « tous les personnages suspects ». C'est donc un instrument de contrôle social militarisé, spécifiquement conçu pour enforcer l'ordre esclavagiste et réprimer toute forme de résistance ou de rassemblement. Le document n'aborde aucunement les questions de terre, de propriété foncière, d'usage ou de régimes collectifs.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "by vigilant care that the laws of the State concerning slaves and free persons of color are kept",
+            "why_relevant": "Révèle l'objectif réel : enforcer les lois esclavagistes, confirmant le caractère répressif de l'institution",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 3,
+            "quote": "promptly suppressing all unlawful acts, whether by slaves or free persons",
+            "why_relevant": "Montre le double ciblage de la répression : populations esclavisées et personnes libres de couleur",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 2,
+            "quote": "to be raised by volunteering or drafting, at the discretion of the Governor",
+            "why_relevant": "Souligne la tension entre recrutement volontaire et conscription forcée pour servir un système répressif",
+            "verified": false,
+            "page_physical": null
+          }
+        ],
+        "matched_keywords": [],
+        "relevance_score": 0,
+        "relevance_notes": "Ce document ne relève absolument pas de la thématique de veille. C'est un projet de loi militaire créant un appareil répressif local destiné à maintenir l'ordre esclavagiste en Caroline du Nord — aucun rapport avec propriété d'usage, communs fonciers, libération des terres, paysannerie ou agroécologie.",
+        "en_clair": "C'est une loi qui crée une police montée locale chargée de réprimer les esclaves et les personnes noires libres qui oseraient se révolter ou se rassembler. Rien à voir avec les terres, les communs ou l'autonomie.",
+        "acteurs": [],
+        "controverse": "Tension entre recrutement par volontariat et conscription forcée pour servir une institution destinée à maintenir l'esclavage.",
+        "angle_journalistique": "Comment les États-Unis ont institutionnalisé la répression raciale et l'esclavage à travers des forces militaires décentralisées au niveau des comtés — une généalogie du contrôle racial local.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "9f0be2eaa8"
+      },
+      "cover": "covers/502c77dd.jpg",
+      "meta": {
+        "page_count": 4,
+        "pdf_title": "House bill [serial]",
+        "pdf_author": "North Carolina. General Assembly. House of Commons",
+        "pdf_creator": "Digitized by the Internet Archive"
+      }
     },
     "4ea57a38": {
       "id": "4ea57a38",
@@ -55371,15 +56202,15 @@
       "latest_run": "2026-06-29T15:55:56",
       "collected_date": "2026-05-23_00-59",
       "score_initial": 0,
-      "score_final": null,
+      "score_final": 0,
       "latest_score": 1,
       "doc_type": "autre",
       "recit_de_lutte": false,
-      "doc_date": "",
+      "doc_date": "2023-10-06",
       "lang": "en",
-      "editeur": "",
+      "editeur": "Internet Archive PDF 1.4.22; including mupdf and pymupdf/skimage",
       "doi": "",
-      "isbn": "",
+      "isbn": "0662600878",
       "hal_id": "",
       "versions": [],
       "downloaded": true,
@@ -55394,11 +56225,41 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 1,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "User's guide to House of Commons publications.",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
-      "title": "User's guide to House of Commons publications."
+      "title": "User's guide to House of Commons publications.",
+      "enrichment": {
+        "summary": "Ce document est un guide administratif et technique des publications du Parlement canadien (Chambre des communes), édité en 1989-1993. Il explique aux utilisateurs comment accéder et comprendre les différentes publications parlementaires officielles : Order Paper, Notice Paper, Journals, Bills, rapports de commissions, etc. Le texte détaille les procédures de notification (délais de 48h ou 24h), les catégories d'ordre du jour, les rôles respectifs des différentes branches administratives du Parlement, et la coordination avec les services de traduction et d'impression. C'est un document de référence interne au fonctionnement parlementaire canadien, sans dimension politique ou thématique liée aux enjeux fonciers, agraires ou de communs.",
+        "citations": [],
+        "matched_keywords": [],
+        "relevance_score": 0,
+        "relevance_notes": "0/10 — Le document est un guide procédural et administratif du Parlement canadien. Aucun rapport avec la thématique veille : pas de mention de terre, foncier, propriété d'usage, communs, paysannerie, agroécologie, libération, ou luttes sociales.",
+        "en_clair": "Ce texte ne parle que de la façon dont le Parlement canadien organise ses séances et publie ses documents officiels. Zéro utilité pour comprendre les luttes pour la terre ou les alternatives foncières.",
+        "acteurs": [],
+        "controverse": "",
+        "angle_journalistique": "",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "815ddb342b"
+      },
+      "cover": "covers/0a0f3fd2.jpg",
+      "meta": {
+        "page_count": 76,
+        "pdf_title": "User's guide to House of Commons publications.",
+        "pdf_author": "",
+        "pdf_creator": "Internet Archive (Scribe Version 6.1-initial-50-gb8fa32b2)"
+      }
     },
     "729be7bc": {
       "id": "729be7bc",
@@ -58761,11 +59622,11 @@
       "latest_run": "2026-07-31_06-19",
       "collected_date": "2026-07-31_06-19",
       "score_initial": 3,
-      "score_final": null,
+      "score_final": 1,
       "latest_score": 3,
       "doc_type": "autre",
       "recit_de_lutte": false,
-      "doc_date": "2015",
+      "doc_date": "2016-10-12",
       "lang": "es",
       "editeur": "",
       "doi": "",
@@ -58824,11 +59685,41 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-15_23-29",
+          "score": 3,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "Acta XXV Asamblea General Ordinaria. Medellín, Colombia – 9 de noviembre de 2015",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
-      "title": "Acta XXV Asamblea General Ordinaria. Medellín, Colombia – 9 de noviembre de 2015"
+      "title": "Acta XXV Asamblea General Ordinaria. Medellín, Colombia – 9 de noviembre de 2015",
+      "enrichment": {
+        "summary": "Ce document est le procès-verbal (acta) de la XXVe Assemblée générale ordinaire du CLACSO (Consejo Latinoamericano de Ciencias Sociales), réunie à Medellín, Colombie, le 9 novembre 2015. Il enregistre l'ouverture formelle de la session avec un quorum de 61% (255 centres membres pléniers sur 418 au total, représentant 20 pays), et déploie l'ordre du jour complet : élection des autorités de l'assemblée ; confirmation des procès-verbaux de 2012 ; afiliations et désafiliations de centres membres ; présentation des rapports d'activités et bilans financiers pour trois exercices comptables (30 juin 2013, 2014, 2015) ; établissement de lignes directrices programmatiques pour 2016-2018 ; élection du Secrétaire exécutif et du Comité directif ; choix du siège de la prochaine assemblée. Le reste du texte consiste en une accréditation exhaustive de délégués identifiés par leur institution et leur représentant, organisée par pays. Il s'agit entièrement d'un document administratif et constitutif, sans contenu substantiel de recherche ni débat thématique.",
+        "citations": [],
+        "matched_keywords": [],
+        "relevance_score": 1,
+        "relevance_notes": "Score 1/10 après lecture du contenu réel. Document purement administratif-procédural d'une assemblée académique. Aucune mention, même tangentielle, des communs fonciers, de la paysannerie, de la réforme agraire, de la souveraineté alimentaire, de l'agroécologie ou d'accès à la terre. Bien que le CLACSO soit une institution latino-américaine qui compte probablement des chercheur·ses travaillant sur ces sujets, le procès-verbal lui-même demeure un enregistrement de formalités statutaires sans contenu thématique.",
+        "en_clair": "C'est juste un procès-verbal de réunion administrative d'une association d'académiques. Il ne parle pas de terre, de paysans, ni de luttes foncières. Aucune utilité pour les luttes pour l'accès à la terre.",
+        "acteurs": [],
+        "controverse": "",
+        "angle_journalistique": "",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "dbc7af16b5"
+      },
+      "cover": "covers/87d7ca84.jpg",
+      "meta": {
+        "page_count": 19,
+        "pdf_title": "",
+        "pdf_author": "sabrinag",
+        "pdf_creator": "Microsoft® Word 2010"
+      }
     },
     "a46bb05d": {
       "id": "a46bb05d",
@@ -101967,11 +102858,7 @@
       "archive_url": "https://web.archive.org/web/20260630171831/https://viacampesina.org/en/wp-content/uploads/sites/2/2025/10/EN.pdf",
       "title": "EN",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de 3d30032a",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "26c9c90b": {
       "id": "26c9c90b",
@@ -102215,11 +103102,7 @@
       "download_status": "ok",
       "title": "EN_LVC Manifesto for COP30",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de 296bf0fd",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "26e16076": {
       "id": "26e16076",
@@ -102464,11 +103347,7 @@
       "download_status": "ok",
       "title": "EN_La Via Campesina Manifesto for COP30",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de 296bf0fd",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "64cb0a36": {
       "id": "64cb0a36",
@@ -110839,11 +111718,7 @@
       "archive_url": "https://web.archive.org/web/20250210215656/https://viacampesina.org/en/wp-content/uploads/sites/2/2024/04/A_HRC_NGO_Haiti-ENG.pdf",
       "title": "A_HRC_NGO_Haiti-ENG",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de 3bd24f3c",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "b96b99b4": {
       "id": "b96b99b4",
@@ -110904,11 +111779,7 @@
       "archive_url": "https://web.archive.org/web/20240619162919/https://viacampesina.org/en/wp-content/uploads/sites/2/2024/04/web-english_revised-Factsheet_sd.pdf",
       "title": "web-english_revised Factsheet_sd",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de 8c8e29f3",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "f4101e7a": {
       "id": "f4101e7a",
@@ -120980,11 +121851,7 @@
       "download_status": "ok",
       "title": "REPORT_e_Haiti-ENG",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de 3bd24f3c",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "3bd24f3c": {
       "id": "3bd24f3c",
@@ -121034,11 +121901,7 @@
       "download_status": "ok",
       "title": "7742_A_HRC_54_NGO_Sub_En",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de ac5232e2",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "d14bc26a": {
       "id": "d14bc26a",
@@ -121248,11 +122111,7 @@
       "download_status": "ok",
       "title": "web-english",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de b96b99b4",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "368caa4a": {
       "id": "368caa4a",
@@ -124563,11 +125422,7 @@
       "download_status": "ok",
       "title": "LVC-EN-Thematic-Booklet-5-UNDROP_web",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de 6e89a5c0",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "6e89a5c0": {
       "id": "6e89a5c0",
@@ -124617,11 +125472,7 @@
       "download_status": "ok",
       "title": "LVC-EN-Thematic-Booklet-4-UNDROP_web",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de 6d24e5bf",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "2d68f075": {
       "id": "2d68f075",
@@ -126014,11 +126865,7 @@
       "download_status": "ok",
       "title": "LVC-EN-Thematic-Booklet-2",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de 6d24e5bf",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "d00fb8da": {
       "id": "d00fb8da",
@@ -127693,11 +128540,7 @@
       "download_status": "ok",
       "title": "LVC-EN-Thematic-Booklet-2-WEB",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de 6d24e5bf",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "ed02e972": {
       "id": "ed02e972",
@@ -133101,11 +133944,7 @@
       "download_status": "ok",
       "title": "Dec_o_right to food LVC",
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z",
-      "enrich_abandon": {
-        "reason": "doublon de 425ed458",
-        "date": "2026-09-16"
-      }
+      "link_checked": "2026-09-15T19:11:44Z"
     },
     "713ccb53": {
       "id": "713ccb53",

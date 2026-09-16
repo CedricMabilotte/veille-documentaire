@@ -91,7 +91,7 @@ def jaccard(a: list[str] | set[str], b: list[str] | set[str]) -> float:
 
 
 # Seuil par défaut pour considérer 2 PDFs comme doublons textuels
-DUP_JACCARD_THRESHOLD = 0.85
+DUP_JACCARD_THRESHOLD = 0.95  # 2026-09-16 : 0.85 → 0.95, faux positifs entre brochures thématiques voisines (cf. L58)
 
 
 def _load_registry(registry_path: Path) -> dict:
