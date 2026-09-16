@@ -1,0 +1,103 @@
+{
+  "titre_accroche": "Les femmes du MST : créatrices de terre libre",
+  "teaser": "Au Brésil, les paysannes du Mouvement des sans-terre refusent l'accaparement des terres et le patriarcat. Leur lettre ouverte conjugue lutte écologique et vision émancipatrice : territoires libres, nourriture saine, droits d'exister.",
+  "abstract_editorial": "Écrite pour la Journée des femmes sans terre de mars 2022, cette lettre ouverte du MST brésilien articule trois mouvements : d'abord, la réaffirmation politique des femmes paysannes au-delà du domestique — elles sont aussi celles qui arrêtent les trains de la mort, sabotent les plantations transgéniques, défendent l'Amazonie. Ensuite, le diagnostic sans détour de la destruction : la *grilagem* (appropriation violente des terres), la menace contre les peuples autochtones et quilombolas, la contamination alimentaire par les pesticides, la mort lente des inégalités. Et enfin, la vision de ce qui est possible : des territoires libres où la communauté se réunit en fête, partageant les fruits d'un travail digne.\n\nLe texte noue explicitement deux luttes — écologique et féministe. Les femmes y sont nommées « créatrices, génératrices de gente et sementes » (de vie et de graines), rejouant en écho le langage de la génération contre celui de l'appropriation. C'est une revendication : pas de féminin essentialiste, mais une affirmation politique que les femmes paysannes sont productrices de mondes alternatifs — libres, communs, vivables.\n\nLe slogan final, « Terra, Trabalho, Direito de Existir » (Terre, Travail, Droit d'exister), concentre la convergence entre liberté des terres, autonomie économique et émancipation personnelle. Pour les lecteurs de Troisième Voix intéressés par les communs et la propriété d'usage, ce texte donne une voix brute au débat : comment se libère-t-on d'une terre appropriée, d'un corps approprié, d'une histoire imposée ?",
+  "citations_phares": [
+    {
+      "page": 1,
+      "quote": "Paramos os trens da morte, os caminhões de venenos e o plantio das sementes transgênicas"
+    },
+    {
+      "page": 2,
+      "quote": "Nós somos as criadoras, germinadoras de gente e sementes"
+    },
+    {
+      "page": 2,
+      "quote": "Juntas seguiremos construindo territórios livres, onde a criançada brinca feliz, a comunidade se reúne em festejo, partilhando os frutos de seu trabalho digno"
+    }
+  ],
+  "categorisation": [
+    "paysannerie",
+    "communs",
+    "libération des terres",
+    "féminisme paysan",
+    "autonomie alimentaire",
+    "écologie politique",
+    "résistance"
+  ],
+  "slug": "femmes-mst-creatrice-terre-libre",
+  "en_clair": "C'est une lettre de femmes paysannes du Brésil qui disent : « On travaille la terre, on nourrit les gens, on s'organise entre nous, et on ne va pas se laisser voler nos terres ni accepter qu'on nous tue. On veut un monde où chacun·e peut vivre dignement, manger sainement, sur une terre qu'on cultive ensemble. » Elles montrent aussi que ce sont les femmes qui nourrissent les luttes paysannes.",
+  "acteurs": [
+    "Movimento dos Trabalhadores Rurais Sem Terra (MST)",
+    "Mulheres Sem Terra (femmes du MST)",
+    "Povos indígenas (peuples autochtones)",
+    "Quilombolas",
+    "Agricultura familiar (paysannerie familiale)"
+  ],
+  "controverse": "La tension centrale n'est pas interne au texte, mais celle qu'il pose : entre la revendication des femmes paysannes d'accès à la terre, de souveraineté alimentaire et de dignité, et la logique des poderosos (puissants) — grandes entreprises, minorités blanches riches, gouvernements — qui concentrent le foncier, détruisent l'Amazonie, empoisonnent la nourriture et maintiennent une structure patriarcale de violence. Le texte refuse le compromis.",
+  "angle_journalistique": "Comment les femmes du MST redéfinissent la lutte sans-terre autour du féminisme agraire et de la défense écologique de l'Amazonie, au-delà du diagnostic classique de la « réforme agraire ».",
+  "citations_verifiees": [
+    {
+      "quote": "Mulheres em luta não vão sucumbir!",
+      "page": 1,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "grilagem de terras ameaça os povos indígenas, quilombolas e a agricultura familiar",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "paramos os trens da morte, os caminhões de venenos e o plantio das sementes transgênicas",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "Nós somos as criadoras, germinadoras de gente e sementes",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Juntas seguiremos construindo territórios livres, onde a criançada brinca feliz, a comunidade se reúne em festejo, partilhando os frutos de seu trabalho digno",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Onde tenhamos todes um teto aconchegante, quintais cheios de fartura, frutas, flores, ervas, comida saudável",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "A história também é nossa e vamos decidi-la nas ruas, nas lutas e nos roçados",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "enfrentamos tirania com partilha, ganância com solidariedade, medo com criatividade, ódio com alegria",
+      "page": 1,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "desmatamento destrói nossos bens naturais, que a comida envenenada nos adoece e apodrece o nosso solo",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "Terra, Trabalho, Direito de Existir",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "2fd49ab094"
+}
