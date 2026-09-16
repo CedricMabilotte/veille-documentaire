@@ -1,0 +1,105 @@
+{
+  "titre_accroche": "Terres confisquées, nature financiarisée : la Banque mondiale en accusation",
+  "teaser": "Une déclaration politique radicale expose comment la Banque mondiale transforme les territoires des peuples en actifs spéculatifs, malgré ses promesses écologiques. Accaparement systématique et faux climatisme : les mécanismes réels du capitalisme vert.",
+  "abstract_editorial": "Signée le 13 mai 2024 par un collectif international de petits producteurs alimentaires, peuples autochtones et organisations de défense des droits, cette déclaration adresse une critique systématique à la Banque mondiale comme artisan majeur de l'accaparement des terres et de la financiarisation de la nature. Loin d'être une instance neutre de développement, elle fonctionne selon trois mécanismes entrelacés : ses bras d'investissement privés (IFC, MIGA) financent directement les projets destructeurs (plantations industrielles, barrages) ; sa promotion de la « réforme agraire assistée par le marché » reproduit et légalise les rapports d'inégalité foncière ; ses investissements massifs dans les marchés du carbone constituent une nouvelle forme de dépossession territoriale au prétexte du climatisme. Le texte fournit des preuves concrètes : au Brésil (Piauí), les programmes de titrage foncier ont légalisé des accaparements et imposé des monocultures destructrices du Cerrado ; en Asie du Sud-Est, les barrages ont provoqué des déplacements massifs. Cette déclaration résonne fortement avec les débats portés par Troisième Voix sur la propriété d'usage, les communs et la libération des terres : elle démontre comment les institutions financières globales transforment les territoires vivants en actifs spéculatifs, détruisant les fondements matériels de l'autonomie paysanne et de la souveraineté alimentaire.",
+  "citations_phares": [
+    {
+      "page": 1,
+      "quote": "Against the Privatization and Financialization of People's Territories! For the Realization of the Right to Land and Agrarian Reform!"
+    },
+    {
+      "page": 1,
+      "quote": "The Bank's \"Market Assisted Land Reform\" with its model of 'willing buyer-willing seller' that was pushed in several developing countries increased land inequality and poverty"
+    },
+    {
+      "page": 1,
+      "quote": "The World Bank is a key actor of Rogue Capitalism, which transforms land, fisheries, forests and other natural resources into financial assets for speculation"
+    }
+  ],
+  "categorisation": [
+    "communs",
+    "paysannerie",
+    "autonomie territoriale",
+    "accaparement des terres",
+    "financiarisation de la nature",
+    "Banque mondiale",
+    "réforme agraire",
+    "souveraineté alimentaire",
+    "colonialisme économique",
+    "climatisme critique"
+  ],
+  "slug": "terres-confisquees-nature-financiarisee",
+  "en_clair": "La Banque mondiale prétend aider les paysans à sécuriser leurs terres, mais elle les vole en réalité en transformant ces terres en plantations industrielles ou en 'actifs' que les riches peuvent acheter/vendre ou utiliser pour des jeux d'argent carbone. Elle finance aussi des barrages et projets qui chassent les peuples de leurs territoires. Concrètement : ce texte arme les paysans et militants contre ces mensonges en montrant comment les vrais mécanismes fonctionnent.",
+  "acteurs": [
+    "World Bank",
+    "International Finance Corporation (IFC)",
+    "MIGA (Multilateral Investment Guarantee Agency)",
+    "Forest Carbon Partnership Facility"
+  ],
+  "controverse": "Tension fondamentale entre l'approche libérale de 'sécurisation de la tenure' via titrage foncier et marchés (prétendument pro-pauvres) et la critique radicale qui dénonce cette approche comme légalisant systématiquement l'accaparement au profit des corporations et du capital financier. La controverse centrale : peut-on 'sécuriser' les droits fonciers sans privatisation/marchandisation, ou cette dernière est-elle inévitable dès qu'on entre dans le cadre de la Banque mondiale ?",
+  "angle_journalistique": "Enquête : comment les programmes de titrage foncier de la Banque mondiale, présentés comme 'pro-pauvres' et 'sécurisants', renforcent-ils en pratique l'accaparement et la légalisation des grabs en Afrique, Asie du Sud-Est et Amérique latine ?",
+  "citations_verifiees": [
+    {
+      "quote": "Against the Privatization and Financialization of People's Territories! For the Realization of the Right to Land and Agrarian Reform!",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "the World Bank as a key actor that participates in and enables land and resource grabbing, while facilitating the privatization of natural resources",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "The Bank's \"Market Assisted Land Reform\" with its model of 'willing buyer-willing seller' that was pushed in several developing countries increased land inequality and poverty",
+      "page": 1,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "The World Bank is a key actor of Rogue Capitalism, which transforms land, fisheries, forests and other natural resources into financial assets for speculation",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "Indigenous Peoples and rural communities of peasants, small-scale fishers, animal herders and forest people have been the targets of violent attacks and have lost their territories",
+      "page": 2,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "a World Bank-funded land titling program has been used by the land grabbers to formalize and legalize their illegal activities",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "the displacement of communities and the people's loss of control over the natural resources that are critical to their livelihoods and food sovereignty",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Land, ecosystems and livelihoods are subordinated to the financialized economy, transforming our territories into 'assets' that are then traded on carbon and financial markets",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "at most 12 percent of the CO2 credits available on carbon markets lead to a real reduction emissions, showing, once again, that these are a false climate solution",
+      "page": 3,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "Research has extensively documented the devastating effects of REDD+ projects on communities and their territories",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "ebcf6ea8ae"
+}

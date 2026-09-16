@@ -1,0 +1,70 @@
+{
+  "titre_accroche": "Semences palestiniennes : quand la guerre passe par l'effacement agricole",
+  "teaser": "La destruction de la banque de semences de l'UAWC n'est pas un dégât collatéral. C'est l'attaque contre le bien commun paysan : millénaires de sélection, de résilience, d'identité. Un texte sur la dépossession à la racine.",
+  "abstract_editorial": "Le 31 juillet, les installations de conservation de semences paysannes palestiniennes de l'UAWC à Hébron ont été délibérément détruites. Ce n'est pas une incident de guerre. C'est l'attaque frontale contre ce que la Confédération Paysanne nomme la « fondation de la souveraineté alimentaire ».\n\nPendant des millénaires, les paysans palestiniens ont sélectionné, conservé et multiplié des semences adaptées à leurs terroirs, leurs climats, leurs cultures. Cette accumulation de savoirs n'est pas un stock de matière première. C'est un bien patrimonial vivant, porteur d'identité, de mémoire collective et de résilience écologique. La détruire, c'est amputer un peuple de sa capacité de reproduction.\n\nCe geste s'inscrit dans un système plus vaste de dépossession : confiscations foncières, violences de colons, restrictions à la circulation, vol d'eau. Mais la destruction des semences touche à quelque chose de plus profond : le droit des paysans à se reproduire, à persister, à nourrir les générations futures selon leurs propres logiques.\n\nDe ce point de vue, la question n'est pas seulement agronomique ou climatique (bien que le texte le souligne : ces semences sont essentielles pour l'adaptation aux crises climatiques). Elle est politique au sens strict : elle touche au contrôle de qui a le droit de cultiver, de nourrir, de transmettre, de rester sur une terre. C'est pourquoi la Confédération Paysanne, en invoquant l'UNDROP, place cet acte comme une arme de domination et appelle à la solidarité internationale des mouvements paysans.",
+  "citations_phares": [
+    {
+      "page": 1,
+      "quote": "Farmers' seeds are the foundation of food sovereignty. They contain millennia of knowledge, resilience, and adaptation to place and climate."
+    },
+    {
+      "page": 1,
+      "quote": "The deliberate destruction of facilities dedicated to the storage and multiplication of seeds is not only an attack on peasants, it is an attack on Palestinian identity, culture and history."
+    },
+    {
+      "page": 2,
+      "quote": "All those who care about food sovereignty and climate justice to stand in solidarity with Palestinian farmers, whose ability to save and share their seeds is a primary line of defense for biodiversity."
+    }
+  ],
+  "categorisation": [
+    "communs agricoles",
+    "paysannerie",
+    "souveraineté alimentaire",
+    "dépossession foncière",
+    "Palestine",
+    "justice climatique"
+  ],
+  "slug": "semences-palestiniennes-guerre-effacement-agricole",
+  "en_clair": "L'État israélien détruit volontairement les réserves de semences des paysans palestiniens pour les affaiblir et les empêcher de nourrir eux-mêmes. Ce texte montre comment la terre, les semences et la nourriture deviennent des armes pour contrôler les gens et les chasser de leurs terres.",
+  "acteurs": [
+    "Confédération Paysanne",
+    "Union of Agricultural Work Committees (UAWC)",
+    "La Via Campesina"
+  ],
+  "controverse": "Le texte encadre la destruction de semences comme attaque systématique contre la souveraineté alimentaire et l'identité palestinienne. Cela soulève une tension fondamentale : comment les conflits territoriaux et les politiques agricoles se croisent pour détruire ou maintenir un peuple sur ses terres.",
+  "angle_journalistique": "Enquête sur la militarisation des systèmes alimentaires : comment la destruction de semences et d'infrastructures agro-écologiques fonctionne comme arme de contrôle territorial et de dépossession dans les contextes occupés.",
+  "citations_verifiees": [
+    {
+      "quote": "Farmers' seeds are the foundation of food sovereignty. They contain millennia of knowledge, resilience, and adaptation to place and climate.",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "For centuries, Palestinian farmers have selected and saved seeds adapted to their local growing conditions. The UAWC continues and perpetuates this work, even more so in the absence of any public assumption of this task.",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "The deliberate destruction of facilities dedicated to the storage, storage and multiplication of seeds is not only an attack on peasants, it is an attack on Palestinian identity, culture and history, and an attempt to separate Palestinians from their land and erase their agricultural heritage.",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "Palestinian farmers, already facing land confiscations, settler violence, water theft and restrictions on movement, are now facing the deliberate destruction of their seed heritage.",
+      "page": 2,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "All those who care about food sovereignty and climate justice to stand in solidarity with Palestinian farmers, whose ability to save and share their seeds is a primary line of defense for biodiversity, human dignity, and climate resilience around the world.",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "13642c0acc"
+}
