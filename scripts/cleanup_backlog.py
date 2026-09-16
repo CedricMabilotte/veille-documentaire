@@ -88,49 +88,74 @@ LOCAL_PATHS = ["synopsis/catalog.json", "synopsis/duplicates.json",
 REBUILD_EVERY = 50
 
 
-def commit_push(message: str, paths: list[str] | None = None) -> bool:
-    """Commit par plomberie, rebasé sur origin/main, puis push.
+COVER_CHUNK = 10   # couvertures JPEG 1200px ≈ 200-300 Ko : ~3 Mo par push
 
-    - Clone partiel (--filter=blob:none), site/ non matérialisé : aucune
-      commande porcelaine qui lirait l'index complet (commit, reset, status).
-    - La CI (rebuild-site.yml) pousse site/ en parallèle : on reconstruit
-      l'arbre depuis origin/main et on n'y remplace QUE nos fichiers
-      (LOCAL_PATHS), jamais les autres — pas de conflit, pas de retour arrière.
-    """
-    paths = paths or LOCAL_PATHS
+
+def _push_files(files: list[Path], message: str) -> bool:
+    """Un commit (rebasé sur origin/main) qui remplace uniquement `files`, puis push."""
     for attempt in range(3):
         git("fetch", "-q", "origin", "main")
         base = git("rev-parse", "origin/main").stdout.strip()
         env = dict(os.environ, GIT_INDEX_FILE=str(ROOT / ".git" / "index-cleanup"))
-        run = lambda *a: subprocess.run(["git", *a], capture_output=True, text=True, env=env)
-        run("read-tree", base)
-        files = []
-        for pth in paths:
-            pp = ROOT / pth
-            files += [pp] if pp.is_file() else [f for f in pp.rglob("*") if f.is_file()]
-        # --index-info : ajout en masse sans lire les blobs absents
-        lines = []
-        for f in files:
-            oid = git("hash-object", "-w", str(f)).stdout.strip()
-            lines.append(f"100644 {oid}\t{f.relative_to(ROOT).as_posix()}")
+        subprocess.run(["git", "read-tree", base], capture_output=True, env=env)
+        lines = [f"100644 {git('hash-object', '-w', str(f)).stdout.strip()}\t{f.relative_to(ROOT).as_posix()}"
+                 for f in files]
         subprocess.run(["git", "update-index", "--index-info"], input="\n".join(lines) + "\n",
                        capture_output=True, text=True, env=env)
-        tree = run("write-tree", "--missing-ok").stdout.strip()
+        tree = subprocess.run(["git", "write-tree", "--missing-ok"], capture_output=True,
+                              text=True, env=env).stdout.strip()
         if tree == git("rev-parse", f"{base}^{{tree}}").stdout.strip():
-            return True  # rien de nouveau
+            return True
         msg = (message + "\n\nCo-Authored-By: Claude Opus 5 <noreply@anthropic.com>\n"
                "Claude-Session: https://claude.ai/code/session_01BFvYB33vk7pWQSf27Lju7J")
         c = git("commit-tree", tree, "-p", base, "-m", msg).stdout.strip()
         p = git("push", "origin", f"{c}:refs/heads/main")
         if p.returncode == 0:
             git("update-ref", "refs/heads/main", c)
-            git("read-tree", c)
             log(f"  git : {c[:8]} {message} / push ok")
             return True
-        log(f"  … push refusé (tentative {attempt + 1}) : {p.stderr.strip()[:120]}")
-        time.sleep(15)
-    log("  ✗ push impossible après 3 tentatives")
+        log(f"  … push refusé (tentative {attempt + 1}) : {p.stderr.strip()[-120:]}")
+        time.sleep(20)
+    log(f"  ✗ push impossible après 3 tentatives : {message}")
     return False
+
+
+def commit_push(message: str, paths: list[str] | None = None) -> bool:
+    """Commit(s) par plomberie, rebasés sur origin/main, puis push.
+
+    - Clone partiel (--filter=blob:none), site/ non matérialisé : aucune
+      commande porcelaine qui lirait l'index complet (commit, reset, status).
+    - La CI (rebuild-site.yml) pousse site/ en parallèle : chaque commit part
+      d'origin/main et ne remplace QUE nos fichiers.
+    - Liaison montante lente (HTTP 408 sur un push de 24 Mo, 16/09) : les
+      fichiers modifiés partent en plusieurs pushs — données d'abord, puis
+      couvertures par paquets de COVER_CHUNK.
+    """
+    paths = paths or LOCAL_PATHS
+    git("fetch", "-q", "origin", "main")
+    base = git("rev-parse", "origin/main").stdout.strip()
+    files = []
+    for pth in paths:
+        pp = ROOT / pth
+        files += [pp] if pp.is_file() else sorted(f for f in pp.rglob("*") if f.is_file())
+    changed = []
+    for f in files:
+        rel = f.relative_to(ROOT).as_posix()
+        remote = git("rev-parse", f"{base}:{rel}").stdout.strip()
+        local = git("hash-object", str(f)).stdout.strip()
+        if remote != local:
+            changed.append(f)
+    if not changed:
+        return True
+    covers = [f for f in changed if "covers" in f.parts]
+    data = [f for f in changed if f not in covers]
+    ok = True
+    if data:
+        ok = _push_files(data, message) and ok
+    for i in range(0, len(covers), COVER_CHUNK):
+        chunk = covers[i:i + COVER_CHUNK]
+        ok = _push_files(chunk, f"{message} — couvertures {i + 1}-{i + len(chunk)}/{len(covers)}") and ok
+    return ok
 
 
 def trigger_rebuild() -> None:
