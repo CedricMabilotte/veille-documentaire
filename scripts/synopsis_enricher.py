@@ -120,6 +120,9 @@ _VOICE_BLOCK    = _build_voice_block(_CONCEPTS)
 def _call_claude(prompt: str, timeout: int = CLAUDE_TIMEOUT_SEC) -> str:
     """Appelle claude -p et retourne le texte brut. Lève RuntimeError si exit ≠ 0."""
     claude_guard.guard_before_call()
+    # Un octet NUL (fréquent dans le texte extrait de PDF mal formés) fait lever
+    # « embedded null byte » à subprocess avant même l'appel.
+    prompt = prompt.replace("\x00", "")
     result = subprocess.run(
         ["claude", "-p", prompt, "--model", CLAUDE_MODEL] + CLAUDE_FLAGS,
         capture_output=True,
