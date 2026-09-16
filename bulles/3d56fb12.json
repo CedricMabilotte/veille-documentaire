@@ -1,0 +1,95 @@
+{
+  "titre_accroche": "La terre ou la mort : l'anarchisme vivant de Voltairine de Cleyre",
+  "teaser": "En 1912, une anarchiste américaine appelle ses camarades à soutenir la Révolution mexicaine : parce qu'elle attaque le fondement même de l'esclavage, la propriété foncière. Un manifeste pour un anarchisme incarné dans les luttes réelles des paysans.",
+  "abstract_editorial": "Voltairine de Cleyre n'a pas peur de déranger. En 1912, cette anarchiste américaine adresse un appel brûlant à ses camarades : soutenez la Révolution mexicaine, car elle s'attaque à la racine de tous les esclavages humains — la propriété foncière. C'est un texte qui bouscule l'anarchisme occidental de son époque, critiquant ceux qui refusent le soutien au motif que les leaders ne seraient pas formellement anarchistes. De Cleyre oppose à cette purisme théorique une vision radicale : un anarchisme qui s'enracine dans les luttes réelles ou qui ne vaut rien.\n\nCe qui fascine dans ce texte, c'est la compréhension viscérale du lien indissociable entre liberté politique et liberté économique. Sans accès à la terre, à l'eau, aux forêts, aux ressources — la liberté politique n'est qu'une illusion. La Junta du Parti libéral mexicain proclame l'expropriation radicale de tout : terres, maisons, mines, usines. Les Indiens mexicains, selon De Cleyre, sont anarchistes et communistes par instinct, porteurs d'une soif inextinguible de leur liberté ancestrale.\n\nPour les débats contemporains sur les communs et la propriété d'usage, ce texte reste saisissant. Il articule une théorie anarchiste de la libération foncière non pas en abstrait, mais ancrée dans un mouvement révolutionnaire concret. Il défie un anarchisme devenu trop lettriste de dépasser ses querelles théoriques pour s'engager auprès des paysans et des peuples autochtones. Le cri de ralliement des révolutionnaires mexicains — « la terre ou la mort » — reste troublant dans sa clarté.",
+  "citations_phares": [
+    {
+      "page": 1,
+      "quote": "the very basis of all human slavery, landed property, is being attacked"
+    },
+    {
+      "page": 2,
+      "quote": "political freedom is a hoax without the return of land"
+    },
+    {
+      "page": 2,
+      "quote": "the way for the people to regain their personal freedom is to obtain the land for themselves, and the way to get it back is to take it"
+    }
+  ],
+  "categorisation": [
+    "communs",
+    "propriété foncière",
+    "libération des terres",
+    "paysannerie",
+    "anarchisme",
+    "autonomie territoriale",
+    "autodétermination autochtone",
+    "Révolution mexicaine"
+  ],
+  "slug": "voltairine-cleyre-terre-mort-anarchisme",
+  "en_clair": "Ce texte de 1912 argue que les anarchistes DOIVENT soutenir la Révolution mexicaine parce que les paysans — surtout les Indiens — se battent pour reprendre la terre qu'on leur a volée, ce qui est la vraie base de la liberté. Pour une lutte foncière aujourd'hui, c'est un appel à cesser de demander si les gens qui se battent sont les « bons » révolutionnaires, et les soutenir parce qu'ils font ce qui compte : ils reprennent leur terre.",
+  "acteurs": [
+    "Voltairine de Cleyre",
+    "Ricardo Flores Magón",
+    "Enrique Magón",
+    "William C. Owen",
+    "Honoré J. Jaxon",
+    "Junta of the Mexican Liberal Party",
+    "Madero",
+    "Kropotkin"
+  ],
+  "controverse": "Désaccord entre Voltairine et les comrades italiens/anarchistes sur le critère de soutien : faut-il que les leaders d'un mouvement révolutionnaire soient explicitement anarchistes pour mériter le soutien des anarchistes, ou suffit-il que le mouvement avance des objectifs d'expropriation foncière et de liberté économique alignés aux principes anarchistes ? Voltairine défend une position pragmatique : l'anarchisme doit s'enraciner dans les luttes réelles, même imparfaites.",
+  "angle_journalistique": "Enquête historique : Comment les penseurs anarchistes occidentaux ont-ils compris (ou non) la Révolution mexicaine comme une lutte pour la terre ? Quel rôle les théories anarchistes sur la propriété foncière ont-elles joué dans les mouvements de libération agraire latinoaméricains ?",
+  "citations_verifiees": [
+    {
+      "quote": "the very basis of all human slavery, landed property, is being attacked",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "the freedom to access the land, the woods, the waters and the mineral deposits",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "the way for the people to regain their personal freedom is to obtain the land for themselves, and the way to get it back is to take it",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "political freedom is a hoax without the return of land",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "An anarchist is a person who believes that men can live without laws; an Indian is a man who lives without laws",
+      "page": 3,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "these Indians are by instinct anarchists — and communists also — and they have an unquenchable thirst for their ancient freedom",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "the heroic cry of the Mexican proletariat: 'give us land or give us death!'",
+      "page": 3,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "the expropriation by force of lands, waters, houses, mines, factories, workshops, railways — in short, everything, so that the poor can organize production in accordance with the needs of each productive community",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "6816ebb5ac"
+}
