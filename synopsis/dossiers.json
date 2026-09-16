@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-16T07:32:02Z",
+  "generated_at": "2026-09-16T09:13:46Z",
   "total_dossiers": 10,
   "dossiers": [
     {
       "slug": "sortir-une-terre-du-marche",
       "titre": "Sortir une terre du marché",
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-      "doc_count": 120,
+      "doc_count": 121,
       "docs": [
         "9c49c870",
         "e41de87d",
@@ -115,6 +115,7 @@
         "d992c836",
         "258bddb2",
         "095f8db9",
+        "089a2666",
         "f6ebd39c",
         "597a51e1",
         "a7658db1",
@@ -1026,6 +1027,14 @@
           ]
         },
         {
+          "id": "089a2666",
+          "title": "Manuscrits de 1844",
+          "score": 6,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
           "id": "f6ebd39c",
           "title": "In Defense — Such As It Is — of Usufructory Land Ownership",
           "score": 6,
@@ -1138,7 +1147,7 @@
       "slug": "zad-defense-de-territoires",
       "titre": "ZAD & défense de territoires",
       "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-      "doc_count": 109,
+      "doc_count": 112,
       "docs": [
         "38a113bc",
         "ba64641a",
@@ -1153,6 +1162,7 @@
         "5a26bb5f",
         "c60f8414",
         "ecbac40f",
+        "b30d5689",
         "1958fc06",
         "42b3fcc5",
         "c3c028c4",
@@ -1234,6 +1244,7 @@
         "5ea1719f",
         "59fe7d0a",
         "d96335e8",
+        "fbb766e9",
         "bc522fd4",
         "b375e8c5",
         "d7759e91",
@@ -1244,6 +1255,7 @@
         "9405b8a5",
         "55b31ba8",
         "5d38eef2",
+        "3e82bc24",
         "ac50ec8d",
         "a66578a6",
         "95c96790",
@@ -1356,6 +1368,14 @@
         {
           "id": "ecbac40f",
           "title": "Release-Geral-2024-Ingles-ENGLISH",
+          "score": 9,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "b30d5689",
+          "title": "2024-12-23 – Press release – LVC delegation to Palestine",
           "score": 9,
           "matched_on": [
             "occupation"
@@ -2070,6 +2090,14 @@
           ]
         },
         {
+          "id": "fbb766e9",
+          "title": "alice-36p-A5-livret",
+          "score": 6,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
           "id": "bc522fd4",
           "title": "Ocupar é lutar — version portugaise, à imprimer (1984)",
           "score": 6,
@@ -2151,6 +2179,14 @@
           ]
         },
         {
+          "id": "3e82bc24",
+          "title": "A_HRC_NGO_Haiti-ENG",
+          "score": 6,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
           "id": "ac50ec8d",
           "title": "ES Declaración sobre la Protección de los Polinizadores y sus Guardianes",
           "score": 6,
@@ -2196,7 +2232,7 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 422,
+      "doc_count": 448,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -2243,10 +2279,12 @@
         "3ce78398",
         "942d2c31",
         "26e16076",
+        "31af3403",
         "64cb0a36",
         "713439dd",
         "670cac5f",
         "528e48dc",
+        "f07ea277",
         "0f194683",
         "06a9c574",
         "c8529968",
@@ -2256,10 +2294,13 @@
         "71bf61b7",
         "bda2c8dd",
         "712ac4d4",
+        "b30d5689",
         "fba3ee51",
+        "b8250a9d",
         "4d2f1e8c",
         "73da28ae",
         "7be7f574",
+        "b96b99b4",
         "302ff4ec",
         "1d8fabfa",
         "f96f11f0",
@@ -2273,6 +2314,7 @@
         "0b41dc33",
         "08ddca96",
         "0d6f8d68",
+        "c46789b4",
         "1e6758fc",
         "970155cd",
         "81edbb96",
@@ -2281,6 +2323,7 @@
         "e51441e4",
         "bbe50d75",
         "1551ff4a",
+        "ee003742",
         "72751dba",
         "d16a5da1",
         "1958fc06",
@@ -2293,6 +2336,7 @@
         "5362046f",
         "a15fbe47",
         "bda18040",
+        "01e6d4e7",
         "42b3fcc5",
         "c281d375",
         "b71644b2",
@@ -2312,6 +2356,7 @@
         "eedf41a1",
         "4fe7bbc5",
         "e002b9c9",
+        "c0db52ab",
         "9288dc58",
         "cab79a82",
         "92a7c4e9",
@@ -2331,14 +2376,17 @@
         "624f3446",
         "6bbe59d1",
         "16c17fe6",
+        "6cf221ce",
         "effef8cb",
         "950381ec",
         "b877caba",
+        "38ce6806",
         "3edc59bf",
         "9da13ea1",
         "fb76b5a1",
         "940f15d7",
         "14d55842",
+        "3d56fb12",
         "d858b954",
         "d48ae684",
         "8572db93",
@@ -2393,7 +2441,6 @@
         "14662b8d",
         "d7046f16",
         "1fe2d929",
-        "31af3403",
         "c922a9c1",
         "4ad0bf52",
         "0c493ef3",
@@ -2415,8 +2462,10 @@
         "90d56082",
         "8dc9a55b",
         "9fec3f40",
+        "6d24e5bf",
         "98b84074",
         "d8acaea3",
+        "56b08adf",
         "a510ca9b",
         "0ab0211d",
         "38f41251",
@@ -2425,6 +2474,7 @@
         "16c630c0",
         "f57050e5",
         "425ed458",
+        "ac157bfd",
         "580cbbae",
         "64c638f4",
         "69b25d66",
@@ -2462,6 +2512,7 @@
         "0380ea78",
         "2b0e7e8a",
         "47cf9dc2",
+        "19fc8f6b",
         "800beb3c",
         "073110c7",
         "c4bb3e20",
@@ -2478,6 +2529,7 @@
         "f2e916da",
         "d64aa10b",
         "bb0c829f",
+        "4be03ed2",
         "fb9792a7",
         "1ae66ba3",
         "3c83efe1",
@@ -2516,6 +2568,7 @@
         "97cc4549",
         "38fdc6a7",
         "c337f18a",
+        "5961460a",
         "91ade57d",
         "5d460c05",
         "f4101e7a",
@@ -2530,6 +2583,7 @@
         "6090cf45",
         "5e5f73eb",
         "003d69b2",
+        "33db1440",
         "41934763",
         "5ab070fc",
         "60f51b57",
@@ -2542,6 +2596,7 @@
         "be9d4e12",
         "9edbd328",
         "ddfa4463",
+        "de1c36db",
         "ed2f274b",
         "c450b161",
         "9abcfde1",
@@ -2566,6 +2621,7 @@
         "59fe7d0a",
         "7e814cb7",
         "6081d442",
+        "089a2666",
         "6c98994c",
         "f6ebd39c",
         "597a51e1",
@@ -2587,6 +2643,7 @@
         "7089fbea",
         "5d38eef2",
         "45187f4f",
+        "fcdbebc4",
         "ecc7b31a",
         "04c99e3c",
         "3dbfb81d",
@@ -2600,9 +2657,14 @@
         "efb06b34",
         "d32ed3c3",
         "45a3b0e8",
+        "ac67562d",
+        "ac5232e2",
+        "8c8e29f3",
+        "ee4aabc3",
         "f7998c51",
         "33b352fe",
         "68426262",
+        "aba761bd",
         "db3c57d0",
         "ad195f76",
         "3afcdc16",
@@ -3048,6 +3110,14 @@
           ]
         },
         {
+          "id": "31af3403",
+          "title": "EN_La Via Campesina Manifesto for COP30",
+          "score": 9,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
           "id": "64cb0a36",
           "title": "UNDROP WG – Statement delivered by the current Chair of the Working Group EN",
           "score": 9,
@@ -3077,6 +3147,16 @@
           "title": "Women Peasants are Women-French",
           "score": 9,
           "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
+          "id": "f07ea277",
+          "title": "Women Peasants are Women (5) (1)",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
             "via campesina"
           ]
         },
@@ -3165,6 +3245,14 @@
           ]
         },
         {
+          "id": "b30d5689",
+          "title": "2024-12-23 – Press release – LVC delegation to Palestine",
+          "score": 9,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
           "id": "fba3ee51",
           "title": "La Via Campesina – Annual Report 2023 – EN",
           "score": 9,
@@ -3173,6 +3261,16 @@
             "réforme agraire",
             "via campesina",
             "agrarian reform"
+          ]
+        },
+        {
+          "id": "b8250a9d",
+          "title": "Writen_Statement_UNDROP_offic ENG",
+          "score": 9,
+          "matched_on": [
+            "sans terre",
+            "via campesina",
+            "landless"
           ]
         },
         {
@@ -3201,6 +3299,15 @@
           "score": 9,
           "matched_on": [
             "agrarian reform"
+          ]
+        },
+        {
+          "id": "b96b99b4",
+          "title": "web-english_revised Factsheet_sd",
+          "score": 9,
+          "matched_on": [
+            "sans terre",
+            "landless"
           ]
         },
         {
@@ -3329,6 +3436,14 @@
           ]
         },
         {
+          "id": "c46789b4",
+          "title": "Luo UNDROP",
+          "score": 9,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
           "id": "1e6758fc",
           "title": "Lançamento estudo – 17 de Março de 2023 PT",
           "score": 9,
@@ -3394,6 +3509,16 @@
           "score": 9,
           "matched_on": [
             "via campesina"
+          ]
+        },
+        {
+          "id": "ee003742",
+          "title": "LVC-EN02-Training-Module",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire",
+            "via campesina",
+            "agrarian reform"
           ]
         },
         {
@@ -3511,6 +3636,15 @@
           "score": 9,
           "matched_on": [
             "sans-terre",
+            "réforme agraire",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "01e6d4e7",
+          "title": "EN-rev7-lowres",
+          "score": 9,
+          "matched_on": [
             "réforme agraire",
             "via campesina"
           ]
@@ -3696,6 +3830,15 @@
           "score": 9,
           "matched_on": [
             "via campesina"
+          ]
+        },
+        {
+          "id": "c0db52ab",
+          "title": "ES-annual-report-2015",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire",
+            "reforma agraria"
           ]
         },
         {
@@ -3890,6 +4033,16 @@
           ]
         },
         {
+          "id": "6cf221ce",
+          "title": "Bulletin Nyéléni n° 13 –Souveraineté Alimentaire",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire",
+            "via campesina",
+            "agrarian reform"
+          ]
+        },
+        {
           "id": "effef8cb",
           "title": "Bulletin Nyéléni n° 52 –Processus Nyéléni : Reconnaître le pouvoir des mouvements populaires",
           "score": 9,
@@ -3912,6 +4065,15 @@
           "score": 9,
           "matched_on": [
             "sans-terre",
+            "réforme agraire",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "38ce6806",
+          "title": "Bulletin Nyéléni n° 30 –Faire progresser la Souveraineté Alimentaire",
+          "score": 9,
+          "matched_on": [
             "réforme agraire",
             "via campesina"
           ]
@@ -3955,6 +4117,16 @@
           "score": 9,
           "matched_on": [
             "via campesina"
+          ]
+        },
+        {
+          "id": "3d56fb12",
+          "title": "Attitude of Anarchists in the Face of the Mexican Revolution",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "landless"
           ]
         },
         {
@@ -4432,14 +4604,6 @@
           ]
         },
         {
-          "id": "31af3403",
-          "title": "EN_La Via Campesina Manifesto for COP30",
-          "score": 8,
-          "matched_on": [
-            "via campesina"
-          ]
-        },
-        {
           "id": "c922a9c1",
           "title": "CLOC_EN",
           "score": 8,
@@ -4635,6 +4799,18 @@
           ]
         },
         {
+          "id": "6d24e5bf",
+          "title": "LVC-EN-Thematic-Booklet-5-UNDROP_web",
+          "score": 8,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "via campesina",
+            "landless",
+            "agrarian reform"
+          ]
+        },
+        {
           "id": "98b84074",
           "title": "LVC-EN04-Training-Module",
           "score": 8,
@@ -4648,6 +4824,17 @@
           "score": 8,
           "matched_on": [
             "via campesina"
+          ]
+        },
+        {
+          "id": "56b08adf",
+          "title": "LVC-EN-Thematic-Booklet-2",
+          "score": 8,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "via campesina",
+            "landless"
           ]
         },
         {
@@ -4716,6 +4903,14 @@
           "matched_on": [
             "réforme agraire",
             "agrarian reform"
+          ]
+        },
+        {
+          "id": "ac157bfd",
+          "title": "Dec_o_right to food LVC",
+          "score": 8,
+          "matched_on": [
+            "via campesina"
           ]
         },
         {
@@ -5067,6 +5262,16 @@
           ]
         },
         {
+          "id": "19fc8f6b",
+          "title": "TOOLKIT_agroecology_FINAL",
+          "score": 8,
+          "matched_on": [
+            "sans-terre",
+            "via campesina",
+            "landless"
+          ]
+        },
+        {
           "id": "800beb3c",
           "title": "art-15-Ramona-Ecoruralis",
           "score": 8,
@@ -5193,6 +5398,15 @@
           "score": 8,
           "matched_on": [
             "via campesina"
+          ]
+        },
+        {
+          "id": "4be03ed2",
+          "title": "LVC-PARAGOS-Organic-Book",
+          "score": 8,
+          "matched_on": [
+            "via campesina",
+            "agrarian reform"
           ]
         },
         {
@@ -5548,6 +5762,15 @@
           ]
         },
         {
+          "id": "5961460a",
+          "title": "Compressed_EN_Tariffs_Briefing_Paper_LVC_2025",
+          "score": 7,
+          "matched_on": [
+            "réforme agraire",
+            "via campesina"
+          ]
+        },
+        {
           "id": "91ade57d",
           "title": "women Day _ statement_EN (1).pdf",
           "score": 7,
@@ -5675,6 +5898,14 @@
           ]
         },
         {
+          "id": "33db1440",
+          "title": "LVC-EN-Training-Module-FINAL",
+          "score": 7,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
           "id": "41934763",
           "title": "COP26; COMUNICADO DE IMPRENSA – PT",
           "score": 7,
@@ -5776,6 +6007,15 @@
             "sans-terre",
             "via campesina",
             "landless"
+          ]
+        },
+        {
+          "id": "de1c36db",
+          "title": "report_zimbabwe_shona_print",
+          "score": 7,
+          "matched_on": [
+            "réforme agraire",
+            "via campesina"
           ]
         },
         {
@@ -5987,6 +6227,14 @@
           ]
         },
         {
+          "id": "089a2666",
+          "title": "Manuscrits de 1844",
+          "score": 6,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
           "id": "6c98994c",
           "title": "L’ incendie millénariste",
           "score": 6,
@@ -6166,6 +6414,14 @@
           ]
         },
         {
+          "id": "fcdbebc4",
+          "title": "Solidarity with the peoples in struggle of Latin America and the Caribbean",
+          "score": 6,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
           "id": "ecc7b31a",
           "title": "FR Solidarity with the peoples in struggle of Latin America and the Caribbean",
           "score": 6,
@@ -6276,6 +6532,41 @@
           ]
         },
         {
+          "id": "ac67562d",
+          "title": "Petition_12.01.2024",
+          "score": 6,
+          "matched_on": [
+            "mst",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "ac5232e2",
+          "title": "REPORT_e_Haiti-ENG",
+          "score": 6,
+          "matched_on": [
+            "sans-terre"
+          ]
+        },
+        {
+          "id": "8c8e29f3",
+          "title": "web-english",
+          "score": 6,
+          "matched_on": [
+            "sans terre",
+            "réforme agraire",
+            "landless"
+          ]
+        },
+        {
+          "id": "ee4aabc3",
+          "title": "Zainal intervention – UN Human Rights Council Side event on multiple crises",
+          "score": 6,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
           "id": "f7998c51",
           "title": "WTO_FR_PDF",
           "score": 6,
@@ -6297,6 +6588,16 @@
           "score": 6,
           "matched_on": [
             "via campesina"
+          ]
+        },
+        {
+          "id": "aba761bd",
+          "title": "LVC-EN-Thematic-Booklet-2-WEB",
+          "score": 6,
+          "matched_on": [
+            "sans-terre",
+            "via campesina",
+            "landless"
           ]
         },
         {
@@ -6445,7 +6746,7 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 259,
+      "doc_count": 265,
       "docs": [
         "d30c223f",
         "9c49c870",
@@ -6494,6 +6795,7 @@
         "c9921379",
         "942d2c31",
         "26c9c90b",
+        "31af3403",
         "670cac5f",
         "0f194683",
         "06a9c574",
@@ -6509,6 +6811,7 @@
         "cb28e79a",
         "c96c67b0",
         "e51441e4",
+        "ee003742",
         "d16a5da1",
         "59b9dd0b",
         "c8842f31",
@@ -6533,6 +6836,7 @@
         "478bdaa1",
         "a645411f",
         "e2dc7756",
+        "6cf221ce",
         "effef8cb",
         "950381ec",
         "b877caba",
@@ -6679,6 +6983,7 @@
         "95e763e1",
         "83eafaac",
         "6c98994c",
+        "d860aef1",
         "c0744b42",
         "a7658db1",
         "ebb364a7",
@@ -6701,6 +7006,8 @@
         "a4b0d3c1",
         "3dbfb81d",
         "d32ed3c3",
+        "8c8e29f3",
+        "aba761bd",
         "85283063",
         "7585c0aa",
         "7c1b5f0c",
@@ -7123,6 +7430,14 @@
           ]
         },
         {
+          "id": "31af3403",
+          "title": "EN_La Via Campesina Manifesto for COP30",
+          "score": 9,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
           "id": "670cac5f",
           "title": "Women Peasants are Women – Portugues",
           "score": 9,
@@ -7251,6 +7566,14 @@
           "matched_on": [
             "terres collectives",
             "terres communales"
+          ]
+        },
+        {
+          "id": "ee003742",
+          "title": "LVC-EN02-Training-Module",
+          "score": 9,
+          "matched_on": [
+            "commons"
           ]
         },
         {
@@ -7454,6 +7777,14 @@
           "score": 9,
           "matched_on": [
             "communs fonciers"
+          ]
+        },
+        {
+          "id": "6cf221ce",
+          "title": "Bulletin Nyéléni n° 13 –Souveraineté Alimentaire",
+          "score": 9,
+          "matched_on": [
+            "communaux"
           ]
         },
         {
@@ -8714,6 +9045,14 @@
           ]
         },
         {
+          "id": "d860aef1",
+          "title": "L’État n’est plus rien, soyons tout",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
           "id": "c0744b42",
           "title": "Some Social Remedies",
           "score": 6,
@@ -8902,6 +9241,22 @@
           "score": 6,
           "matched_on": [
             "terres collectives"
+          ]
+        },
+        {
+          "id": "8c8e29f3",
+          "title": "web-english",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "aba761bd",
+          "title": "LVC-EN-Thematic-Booklet-2-WEB",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
           ]
         },
         {
@@ -9424,7 +9779,7 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 568,
+      "doc_count": 599,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -9480,12 +9835,16 @@
         "c9921379",
         "3ce78398",
         "942d2c31",
+        "296bf0fd",
         "26c9c90b",
+        "3d30032a",
         "26e16076",
+        "31af3403",
         "64cb0a36",
         "713439dd",
         "670cac5f",
         "528e48dc",
+        "f07ea277",
         "0f194683",
         "06a9c574",
         "c60f8414",
@@ -9496,10 +9855,13 @@
         "71bf61b7",
         "bda2c8dd",
         "712ac4d4",
+        "b30d5689",
         "fba3ee51",
+        "b8250a9d",
         "4d2f1e8c",
         "73da28ae",
         "7be7f574",
+        "b96b99b4",
         "e6d797da",
         "302ff4ec",
         "1d8fabfa",
@@ -9514,6 +9876,7 @@
         "0b41dc33",
         "08ddca96",
         "0d6f8d68",
+        "c46789b4",
         "1e6758fc",
         "970155cd",
         "81edbb96",
@@ -9522,6 +9885,7 @@
         "e51441e4",
         "bbe50d75",
         "1551ff4a",
+        "ee003742",
         "72751dba",
         "d16a5da1",
         "1958fc06",
@@ -9534,6 +9898,7 @@
         "5362046f",
         "a15fbe47",
         "bda18040",
+        "01e6d4e7",
         "42b3fcc5",
         "c281d375",
         "b71644b2",
@@ -9554,6 +9919,7 @@
         "eedf41a1",
         "4fe7bbc5",
         "e002b9c9",
+        "c0db52ab",
         "9288dc58",
         "cab79a82",
         "92a7c4e9",
@@ -9576,15 +9942,18 @@
         "624f3446",
         "6bbe59d1",
         "16c17fe6",
+        "6cf221ce",
         "effef8cb",
         "950381ec",
         "b877caba",
+        "38ce6806",
         "3edc59bf",
         "9da13ea1",
         "23558b3e",
         "fb76b5a1",
         "940f15d7",
         "14d55842",
+        "3d56fb12",
         "9e831a55",
         "c99e6da4",
         "e4f64264",
@@ -9659,7 +10028,6 @@
         "d7046f16",
         "05377a49",
         "40220080",
-        "f07ea277",
         "c922a9c1",
         "4ad0bf52",
         "0c493ef3",
@@ -9688,8 +10056,10 @@
         "8dc9a55b",
         "9fec3f40",
         "f6a96619",
+        "6d24e5bf",
         "98b84074",
         "d8acaea3",
+        "56b08adf",
         "a510ca9b",
         "0ab0211d",
         "38f41251",
@@ -9702,6 +10072,7 @@
         "16c630c0",
         "f57050e5",
         "425ed458",
+        "ac157bfd",
         "a18b6293",
         "9044708c",
         "580cbbae",
@@ -9755,6 +10126,7 @@
         "c45d24db",
         "7e5ee24a",
         "99f919b8",
+        "4be03ed2",
         "fb9792a7",
         "1ae66ba3",
         "3c83efe1",
@@ -9763,12 +10135,10 @@
         "9495d98c",
         "330c44e0",
         "4ae9c4ba",
-        "6cf221ce",
         "de3a4772",
         "eea43d6c",
         "cd323239",
         "b8959c2f",
-        "38ce6806",
         "ec46400e",
         "568f8778",
         "e8ee5514",
@@ -9823,6 +10193,7 @@
         "6731372f",
         "38fdc6a7",
         "c337f18a",
+        "5961460a",
         "c0264ecd",
         "91ade57d",
         "5cfca120",
@@ -9844,6 +10215,7 @@
         "6090cf45",
         "5e5f73eb",
         "003d69b2",
+        "33db1440",
         "41934763",
         "f487b2ba",
         "5ab070fc",
@@ -9861,6 +10233,7 @@
         "be9d4e12",
         "9edbd328",
         "ddfa4463",
+        "de1c36db",
         "ed2f274b",
         "c450b161",
         "9abcfde1",
@@ -9902,6 +10275,7 @@
         "336d8c22",
         "22b1d1f9",
         "d96335e8",
+        "fbb766e9",
         "ce49e81f",
         "7e814cb7",
         "6081d442",
@@ -9910,8 +10284,11 @@
         "cbb3d138",
         "f73fab0a",
         "d7759e91",
+        "089a2666",
         "6c98994c",
         "41e09539",
+        "d860aef1",
+        "af8b18a5",
         "f6ebd39c",
         "597a51e1",
         "2ca00b10",
@@ -9941,8 +10318,10 @@
         "4afd9e3e",
         "7089fbea",
         "5d38eef2",
+        "3e82bc24",
         "ac50ec8d",
         "45187f4f",
+        "fcdbebc4",
         "ecc7b31a",
         "85aa1837",
         "04c99e3c",
@@ -9958,12 +10337,18 @@
         "efb06b34",
         "d32ed3c3",
         "45a3b0e8",
+        "ac67562d",
+        "ac5232e2",
+        "3bd24f3c",
+        "8c8e29f3",
+        "ee4aabc3",
         "f7998c51",
         "fa4b5fd2",
         "33b352fe",
         "812f9005",
         "7cbe27ff",
         "68426262",
+        "aba761bd",
         "db3c57d0",
         "e02bdae7",
         "ad195f76",
@@ -9987,6 +10372,7 @@
         "85283063",
         "8e365250",
         "a8d6ce5c",
+        "3ba4b54f",
         "68742934",
         "7585c0aa",
         "c1c58233",
@@ -10556,6 +10942,21 @@
           ]
         },
         {
+          "id": "296bf0fd",
+          "title": "EN",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
+          ]
+        },
+        {
           "id": "26c9c90b",
           "title": "PT_LVC Manifesto_COP 30",
           "score": 9,
@@ -10567,6 +10968,20 @@
           ]
         },
         {
+          "id": "3d30032a",
+          "title": "EN_LVC Manifesto for COP30",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
+          ]
+        },
+        {
           "id": "26e16076",
           "title": "PT_Manifesto da Via Campesina para a COP30_Agroecologia e Direitos Camponeses para uma transição justa e soberana.pdf",
           "score": 9,
@@ -10575,6 +10990,20 @@
             "agroécologie",
             "souveraineté alimentaire",
             "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "31af3403",
+          "title": "EN_La Via Campesina Manifesto for COP30",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
           ]
         },
         {
@@ -10619,6 +11048,19 @@
           "matched_on": [
             "paysannerie",
             "paysan",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "peasant"
+          ]
+        },
+        {
+          "id": "f07ea277",
+          "title": "Women Peasants are Women (5) (1)",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
             "agriculture vivrière",
             "souveraineté alimentaire",
             "peasant"
@@ -10743,6 +11185,16 @@
           ]
         },
         {
+          "id": "b30d5689",
+          "title": "2024-12-23 – Press release – LVC delegation to Palestine",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
           "id": "fba3ee51",
           "title": "La Via Campesina – Annual Report 2023 – EN",
           "score": 9,
@@ -10752,6 +11204,21 @@
             "agroécologie",
             "souveraineté alimentaire",
             "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "b8250a9d",
+          "title": "Writen_Statement_UNDROP_offic ENG",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
           ]
         },
         {
@@ -10788,6 +11255,15 @@
             "peasant",
             "agroecology",
             "food sovereignty"
+          ]
+        },
+        {
+          "id": "b96b99b4",
+          "title": "web-english_revised Factsheet_sd",
+          "score": 9,
+          "matched_on": [
+            "paysan",
+            "peasant"
           ]
         },
         {
@@ -10960,6 +11436,17 @@
           ]
         },
         {
+          "id": "c46789b4",
+          "title": "Luo UNDROP",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
           "id": "1e6758fc",
           "title": "Lançamento estudo – 17 de Março de 2023 PT",
           "score": 9,
@@ -11054,6 +11541,21 @@
             "agriculture vivrière",
             "souveraineté alimentaire",
             "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "ee003742",
+          "title": "LVC-EN02-Training-Module",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
           ]
         },
         {
@@ -11208,6 +11710,21 @@
             "agroécologie",
             "agriculture vivrière",
             "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "01e6d4e7",
+          "title": "EN-rev7-lowres",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
           ]
         },
         {
@@ -11450,6 +11967,20 @@
             "paysannerie",
             "paysan",
             "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "c0db52ab",
+          "title": "ES-annual-report-2015",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "food sovereignty"
           ]
         },
         {
@@ -11745,6 +12276,21 @@
           ]
         },
         {
+          "id": "6cf221ce",
+          "title": "Bulletin Nyéléni n° 13 –Souveraineté Alimentaire",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
+          ]
+        },
+        {
           "id": "effef8cb",
           "title": "Bulletin Nyéléni n° 52 –Processus Nyéléni : Reconnaître le pouvoir des mouvements populaires",
           "score": 9,
@@ -11780,6 +12326,18 @@
             "agriculture vivrière",
             "souveraineté alimentaire",
             "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "38ce6806",
+          "title": "Bulletin Nyéléni n° 30 –Faire progresser la Souveraineté Alimentaire",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
           ]
         },
         {
@@ -11844,6 +12402,16 @@
             "paysan",
             "agroécologie",
             "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "3d56fb12",
+          "title": "Attitude of Anarchists in the Face of the Mexican Revolution",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "peasant"
           ]
         },
         {
@@ -12582,14 +13150,6 @@
           ]
         },
         {
-          "id": "f07ea277",
-          "title": "Women Peasants are Women (5) (1)",
-          "score": 8,
-          "matched_on": [
-            "peasant"
-          ]
-        },
-        {
           "id": "c922a9c1",
           "title": "CLOC_EN",
           "score": 8,
@@ -12886,6 +13446,21 @@
           ]
         },
         {
+          "id": "6d24e5bf",
+          "title": "LVC-EN-Thematic-Booklet-5-UNDROP_web",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
           "id": "98b84074",
           "title": "LVC-EN04-Training-Module",
           "score": 8,
@@ -12907,6 +13482,19 @@
             "paysannerie",
             "paysan",
             "agroécologie",
+            "souveraineté alimentaire",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "56b08adf",
+          "title": "LVC-EN-Thematic-Booklet-2",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière",
             "souveraineté alimentaire",
             "peasant",
             "food sovereignty"
@@ -13045,6 +13633,18 @@
             "peasant",
             "agroecology",
             "food sovereignty"
+          ]
+        },
+        {
+          "id": "ac157bfd",
+          "title": "Dec_o_right to food LVC",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
           ]
         },
         {
@@ -13548,7 +14148,14 @@
           "title": "TOOLKIT_agroecology_FINAL",
           "score": 8,
           "matched_on": [
-            "agroecology"
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
           ]
         },
         {
@@ -13656,6 +14263,18 @@
           ]
         },
         {
+          "id": "4be03ed2",
+          "title": "LVC-PARAGOS-Organic-Book",
+          "score": 8,
+          "matched_on": [
+            "paysan",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "peasant",
+            "agroecology"
+          ]
+        },
+        {
           "id": "fb9792a7",
           "title": "EN-05",
           "score": 8,
@@ -13745,14 +14364,6 @@
           ]
         },
         {
-          "id": "6cf221ce",
-          "title": "Bulletin Nyéléni n° 13 –Souveraineté Alimentaire",
-          "score": 8,
-          "matched_on": [
-            "souveraineté alimentaire"
-          ]
-        },
-        {
           "id": "de3a4772",
           "title": "Bulletin Nyéléni n° 28 –Agroécologie",
           "score": 8,
@@ -13784,14 +14395,9 @@
           "title": "Bulletin Nyéléni n° 60 –Résister à la menace de la finance mondiale, construire la souveraineté alimentaire",
           "score": 8,
           "matched_on": [
-            "souveraineté alimentaire"
-          ]
-        },
-        {
-          "id": "38ce6806",
-          "title": "Bulletin Nyéléni n° 30 –Faire progresser la Souveraineté Alimentaire",
-          "score": 8,
-          "matched_on": [
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
             "souveraineté alimentaire"
           ]
         },
@@ -14333,6 +14939,19 @@
           ]
         },
         {
+          "id": "5961460a",
+          "title": "Compressed_EN_Tariffs_Briefing_Paper_LVC_2025",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
           "id": "c0264ecd",
           "title": "Nyeleni_Newsletter_Num_59_EN",
           "score": 7,
@@ -14573,6 +15192,17 @@
           ]
         },
         {
+          "id": "33db1440",
+          "title": "LVC-EN-Training-Module-FINAL",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
           "id": "41934763",
           "title": "COP26; COMUNICADO DE IMPRENSA – PT",
           "score": 7,
@@ -14778,6 +15408,19 @@
             "peasant",
             "agroecology",
             "food sovereignty"
+          ]
+        },
+        {
+          "id": "de1c36db",
+          "title": "report_zimbabwe_shona_print",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
           ]
         },
         {
@@ -15207,6 +15850,15 @@
           ]
         },
         {
+          "id": "fbb766e9",
+          "title": "alice-36p-A5-livret",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
           "id": "ce49e81f",
           "title": "Viertelstunde — en allemand",
           "score": 6,
@@ -15282,6 +15934,15 @@
           ]
         },
         {
+          "id": "089a2666",
+          "title": "Manuscrits de 1844",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
           "id": "6c98994c",
           "title": "L’ incendie millénariste",
           "score": 6,
@@ -15297,6 +15958,25 @@
           "matched_on": [
             "paysannerie",
             "paysan"
+          ]
+        },
+        {
+          "id": "d860aef1",
+          "title": "L’État n’est plus rien, soyons tout",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "af8b18a5",
+          "title": "The Argentine Republic and English Radical Reformers",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture paysanne"
           ]
         },
         {
@@ -15602,6 +16282,18 @@
           ]
         },
         {
+          "id": "3e82bc24",
+          "title": "A_HRC_NGO_Haiti-ENG",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
           "id": "ac50ec8d",
           "title": "ES Declaración sobre la Protección de los Polinizadores y sus Guardianes",
           "score": 6,
@@ -15623,6 +16315,17 @@
             "agroécologie",
             "agriculture vivrière",
             "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "fcdbebc4",
+          "title": "Solidarity with the peoples in struggle of Latin America and the Caribbean",
+          "score": 6,
+          "matched_on": [
+            "paysan",
+            "souveraineté alimentaire",
+            "peasant",
+            "food sovereignty"
           ]
         },
         {
@@ -15795,6 +16498,67 @@
           ]
         },
         {
+          "id": "ac67562d",
+          "title": "Petition_12.01.2024",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "ac5232e2",
+          "title": "REPORT_e_Haiti-ENG",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "3bd24f3c",
+          "title": "7742_A_HRC_54_NGO_Sub_En",
+          "score": 6,
+          "matched_on": [
+            "paysan",
+            "souveraineté alimentaire",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "8c8e29f3",
+          "title": "web-english",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "peasant"
+          ]
+        },
+        {
+          "id": "ee4aabc3",
+          "title": "Zainal intervention – UN Human Rights Council Side event on multiple crises",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
+          ]
+        },
+        {
           "id": "f7998c51",
           "title": "WTO_FR_PDF",
           "score": 6,
@@ -15854,6 +16618,17 @@
             "souveraineté alimentaire",
             "peasant",
             "food sovereignty"
+          ]
+        },
+        {
+          "id": "aba761bd",
+          "title": "LVC-EN-Thematic-Booklet-2-WEB",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
           ]
         },
         {
@@ -16120,6 +16895,17 @@
           ]
         },
         {
+          "id": "3ba4b54f",
+          "title": "Bulletin Nyéléni n° 53 –Maladies émergentes et agriculture industrielle",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
           "id": "68742934",
           "title": "Bulletin Nyéléni n° 23 –Justice et Souveraineté Alimentaire aux USA",
           "score": 6,
@@ -16188,7 +16974,7 @@
       "slug": "land-back-autochtones",
       "titre": "Land Back & souverainetés autochtones",
       "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-      "doc_count": 234,
+      "doc_count": 259,
       "docs": [
         "39441dfc",
         "e41de87d",
@@ -16212,19 +16998,25 @@
         "c9921379",
         "3ce78398",
         "942d2c31",
+        "296bf0fd",
         "26c9c90b",
+        "3d30032a",
+        "31af3403",
         "64cb0a36",
         "713439dd",
         "670cac5f",
         "528e48dc",
+        "f07ea277",
         "0f194683",
         "06a9c574",
         "c60f8414",
         "ecbac40f",
         "71bf61b7",
         "bda2c8dd",
+        "b8250a9d",
         "4d2f1e8c",
         "73da28ae",
+        "b96b99b4",
         "e6d797da",
         "8532edfe",
         "b1e16e99",
@@ -16235,6 +17027,7 @@
         "cb28e79a",
         "c96c67b0",
         "bbe50d75",
+        "ee003742",
         "72751dba",
         "d16a5da1",
         "59b9dd0b",
@@ -16245,6 +17038,7 @@
         "5362046f",
         "a15fbe47",
         "bda18040",
+        "01e6d4e7",
         "b71644b2",
         "f2efce06",
         "710bd16d",
@@ -16265,11 +17059,14 @@
         "624f3446",
         "6bbe59d1",
         "16c17fe6",
+        "6cf221ce",
         "950381ec",
         "b877caba",
+        "38ce6806",
         "3edc59bf",
         "fb76b5a1",
         "940f15d7",
+        "3d56fb12",
         "9e831a55",
         "55db5001",
         "0b22d51b",
@@ -16308,8 +17105,10 @@
         "5ddd1380",
         "9fec3f40",
         "f6a96619",
+        "6d24e5bf",
         "98b84074",
         "d8acaea3",
+        "56b08adf",
         "0ab0211d",
         "38f41251",
         "8e62261e",
@@ -16317,6 +17116,7 @@
         "16c630c0",
         "f57050e5",
         "425ed458",
+        "ac157bfd",
         "580cbbae",
         "64c638f4",
         "b1383308",
@@ -16334,6 +17134,7 @@
         "8b15433d",
         "a9d136c1",
         "ac896a11",
+        "19fc8f6b",
         "a7ba0bf1",
         "073110c7",
         "fb9792a7",
@@ -16341,6 +17142,7 @@
         "330c44e0",
         "eea43d6c",
         "cd323239",
+        "b8959c2f",
         "568f8778",
         "e8ee5514",
         "581a53c8",
@@ -16367,6 +17169,7 @@
         "fcbb11e4",
         "0bb913f1",
         "003d69b2",
+        "33db1440",
         "41934763",
         "f487b2ba",
         "60f51b57",
@@ -16387,9 +17190,11 @@
         "7cf86983",
         "6125738a",
         "88bfc0cb",
+        "fbb766e9",
         "5c511048",
         "83eafaac",
         "6c98994c",
+        "d860aef1",
         "b9a459d4",
         "597a51e1",
         "df13538a",
@@ -16405,15 +17210,20 @@
         "5d38eef2",
         "ac50ec8d",
         "45187f4f",
+        "fcdbebc4",
         "ecc7b31a",
         "3dbfb81d",
         "466a50e7",
         "27c5e053",
         "efb06b34",
         "45a3b0e8",
+        "ac67562d",
+        "8c8e29f3",
+        "ee4aabc3",
         "f7998c51",
         "fa4b5fd2",
         "33b352fe",
+        "aba761bd",
         "db3c57d0",
         "ad195f76",
         "3afcdc16",
@@ -16422,6 +17232,7 @@
         "5fe86a39",
         "85b04e36",
         "85283063",
+        "3ba4b54f",
         "7585c0aa",
         "f5977eb9"
       ],
@@ -16620,12 +17431,36 @@
           ]
         },
         {
+          "id": "296bf0fd",
+          "title": "EN",
+          "score": 9,
+          "matched_on": [
+            "indigenous"
+          ]
+        },
+        {
           "id": "26c9c90b",
           "title": "PT_LVC Manifesto_COP 30",
           "score": 9,
           "matched_on": [
             "autochtone",
             "droit coutumier"
+          ]
+        },
+        {
+          "id": "3d30032a",
+          "title": "EN_LVC Manifesto for COP30",
+          "score": 9,
+          "matched_on": [
+            "indigenous"
+          ]
+        },
+        {
+          "id": "31af3403",
+          "title": "EN_La Via Campesina Manifesto for COP30",
+          "score": 9,
+          "matched_on": [
+            "indigenous"
           ]
         },
         {
@@ -16656,6 +17491,14 @@
         {
           "id": "528e48dc",
           "title": "Women Peasants are Women-French",
+          "score": 9,
+          "matched_on": [
+            "droit coutumier"
+          ]
+        },
+        {
+          "id": "f07ea277",
+          "title": "Women Peasants are Women (5) (1)",
           "score": 9,
           "matched_on": [
             "droit coutumier"
@@ -16714,6 +17557,15 @@
           ]
         },
         {
+          "id": "b8250a9d",
+          "title": "Writen_Statement_UNDROP_offic ENG",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
           "id": "4d2f1e8c",
           "title": "PT Open letter to SADC (2)",
           "score": 9,
@@ -16724,6 +17576,15 @@
         {
           "id": "73da28ae",
           "title": "EN_WB-Conference-2024_Statement_final_20240513",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
+          "id": "b96b99b4",
+          "title": "web-english_revised Factsheet_sd",
           "score": 9,
           "matched_on": [
             "autochtone",
@@ -16819,6 +17680,14 @@
           ]
         },
         {
+          "id": "ee003742",
+          "title": "LVC-EN02-Training-Module",
+          "score": 9,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
           "id": "72751dba",
           "title": "Speech-by-Morgan_IOS-Transition_2021",
           "score": 9,
@@ -16904,6 +17773,15 @@
           "score": 9,
           "matched_on": [
             "autochtone"
+          ]
+        },
+        {
+          "id": "01e6d4e7",
+          "title": "EN-rev7-lowres",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
           ]
         },
         {
@@ -17080,6 +17958,15 @@
           ]
         },
         {
+          "id": "6cf221ce",
+          "title": "Bulletin Nyéléni n° 13 –Souveraineté Alimentaire",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
           "id": "950381ec",
           "title": "Bulletin Nyéléni n° 61 –Ancrés dans la résistance : les territoires pour la justice climatique",
           "score": 9,
@@ -17095,6 +17982,14 @@
           "matched_on": [
             "autochtone",
             "droit coutumier"
+          ]
+        },
+        {
+          "id": "38ce6806",
+          "title": "Bulletin Nyéléni n° 30 –Faire progresser la Souveraineté Alimentaire",
+          "score": 9,
+          "matched_on": [
+            "autochtone"
           ]
         },
         {
@@ -17120,6 +18015,15 @@
           "matched_on": [
             "indigène",
             "droit coutumier"
+          ]
+        },
+        {
+          "id": "3d56fb12",
+          "title": "Attitude of Anarchists in the Face of the Mexican Revolution",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
           ]
         },
         {
@@ -17452,6 +18356,15 @@
           ]
         },
         {
+          "id": "6d24e5bf",
+          "title": "LVC-EN-Thematic-Booklet-5-UNDROP_web",
+          "score": 8,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
           "id": "98b84074",
           "title": "LVC-EN04-Training-Module",
           "score": 8,
@@ -17466,6 +18379,15 @@
           "score": 8,
           "matched_on": [
             "land back"
+          ]
+        },
+        {
+          "id": "56b08adf",
+          "title": "LVC-EN-Thematic-Booklet-2",
+          "score": 8,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
           ]
         },
         {
@@ -17525,6 +18447,14 @@
           "matched_on": [
             "autochtone",
             "indigenous"
+          ]
+        },
+        {
+          "id": "ac157bfd",
+          "title": "Dec_o_right to food LVC",
+          "score": 8,
+          "matched_on": [
+            "autochtone"
           ]
         },
         {
@@ -17679,6 +18609,15 @@
           ]
         },
         {
+          "id": "19fc8f6b",
+          "title": "TOOLKIT_agroecology_FINAL",
+          "score": 8,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
           "id": "a7ba0bf1",
           "title": "peoplesmanual",
           "score": 8,
@@ -17735,6 +18674,14 @@
           "score": 8,
           "matched_on": [
             "droit coutumier"
+          ]
+        },
+        {
+          "id": "b8959c2f",
+          "title": "Bulletin Nyéléni n° 60 –Résister à la menace de la finance mondiale, construire la souveraineté alimentaire",
+          "score": 8,
+          "matched_on": [
+            "autochtone"
           ]
         },
         {
@@ -17967,6 +18914,15 @@
           ]
         },
         {
+          "id": "33db1440",
+          "title": "LVC-EN-Training-Module-FINAL",
+          "score": 7,
+          "matched_on": [
+            "autochtone",
+            "indigène"
+          ]
+        },
+        {
           "id": "41934763",
           "title": "COP26; COMUNICADO DE IMPRENSA – PT",
           "score": 7,
@@ -18134,6 +19090,14 @@
           ]
         },
         {
+          "id": "fbb766e9",
+          "title": "alice-36p-A5-livret",
+          "score": 6,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
           "id": "5c511048",
           "title": "Acerca de las comunidades mapuche",
           "score": 6,
@@ -18154,6 +19118,14 @@
         {
           "id": "6c98994c",
           "title": "L’ incendie millénariste",
+          "score": 6,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "d860aef1",
+          "title": "L’État n’est plus rien, soyons tout",
           "score": 6,
           "matched_on": [
             "autochtone"
@@ -18288,6 +19260,15 @@
           ]
         },
         {
+          "id": "fcdbebc4",
+          "title": "Solidarity with the peoples in struggle of Latin America and the Caribbean",
+          "score": 6,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
           "id": "ecc7b31a",
           "title": "FR Solidarity with the peoples in struggle of Latin America and the Caribbean",
           "score": 6,
@@ -18344,6 +19325,32 @@
           ]
         },
         {
+          "id": "ac67562d",
+          "title": "Petition_12.01.2024",
+          "score": 6,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "8c8e29f3",
+          "title": "web-english",
+          "score": 6,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
+          "id": "ee4aabc3",
+          "title": "Zainal intervention – UN Human Rights Council Side event on multiple crises",
+          "score": 6,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
           "id": "f7998c51",
           "title": "WTO_FR_PDF",
           "score": 6,
@@ -18364,6 +19371,15 @@
           "title": "WTO_EN_1_PDF",
           "score": 6,
           "matched_on": [
+            "indigenous"
+          ]
+        },
+        {
+          "id": "aba761bd",
+          "title": "LVC-EN-Thematic-Booklet-2-WEB",
+          "score": 6,
+          "matched_on": [
+            "autochtone",
             "indigenous"
           ]
         },
@@ -18437,6 +19453,14 @@
           ]
         },
         {
+          "id": "3ba4b54f",
+          "title": "Bulletin Nyéléni n° 53 –Maladies émergentes et agriculture industrielle",
+          "score": 6,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
           "id": "7585c0aa",
           "title": "Ostrom, E. — El gobierno de los bienes comunes",
           "score": 6,
@@ -18459,7 +19483,7 @@
       "slug": "feminismes-de-la-terre",
       "titre": "Féminismes de la terre",
       "chapo": "Le foncier a un genre. Place des femmes dans les luttes agraires, droits fonciers des femmes, écoféminisme rural, critique de la division genrée du travail de la terre.",
-      "doc_count": 121,
+      "doc_count": 126,
       "docs": [
         "e41de87d",
         "b225af88",
@@ -18476,6 +19500,7 @@
         "713439dd",
         "670cac5f",
         "528e48dc",
+        "f07ea277",
         "0f194683",
         "cff2a789",
         "71bf61b7",
@@ -18492,11 +19517,13 @@
         "e51441e4",
         "bbe50d75",
         "1551ff4a",
+        "ee003742",
         "d16a5da1",
         "1958fc06",
         "59b9dd0b",
         "41df6222",
         "5362046f",
+        "01e6d4e7",
         "42b3fcc5",
         "c281d375",
         "e404774c",
@@ -18515,6 +19542,7 @@
         "a645411f",
         "e2dc7756",
         "16c17fe6",
+        "6cf221ce",
         "effef8cb",
         "950381ec",
         "b877caba",
@@ -18578,6 +19606,7 @@
         "5c511048",
         "55b31ba8",
         "812f9005",
+        "aba761bd",
         "db3c57d0",
         "08969309",
         "5fe86a39",
@@ -18728,6 +19757,17 @@
           ]
         },
         {
+          "id": "f07ea277",
+          "title": "Women Peasants are Women (5) (1)",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan",
+            "féminisme agraire",
+            "droits fonciers des femmes",
+            "femmes et terre"
+          ]
+        },
+        {
           "id": "0f194683",
           "title": "EN -Letter from the 22nd Agroecology Conference",
           "score": 9,
@@ -18872,6 +19912,15 @@
           ]
         },
         {
+          "id": "ee003742",
+          "title": "LVC-EN02-Training-Module",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan",
+            "agrarian feminism"
+          ]
+        },
+        {
           "id": "d16a5da1",
           "title": "LVC SEAf PRESS RELEASE COUNTER COP26- EN",
           "score": 9,
@@ -18917,6 +19966,15 @@
           "matched_on": [
             "féminisme paysan",
             "féminisme agraire"
+          ]
+        },
+        {
+          "id": "01e6d4e7",
+          "title": "EN-rev7-lowres",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan",
+            "agrarian feminism"
           ]
         },
         {
@@ -19079,6 +20137,14 @@
           "matched_on": [
             "féminisme paysan",
             "droits fonciers des femmes"
+          ]
+        },
+        {
+          "id": "6cf221ce",
+          "title": "Bulletin Nyéléni n° 13 –Souveraineté Alimentaire",
+          "score": 9,
+          "matched_on": [
+            "féminisme agraire"
           ]
         },
         {
@@ -19632,6 +20698,14 @@
           ]
         },
         {
+          "id": "aba761bd",
+          "title": "LVC-EN-Thematic-Booklet-2-WEB",
+          "score": 6,
+          "matched_on": [
+            "féminisme paysan"
+          ]
+        },
+        {
           "id": "db3c57d0",
           "title": "Abhilash (EN) #LVC30YEars",
           "score": 6,
@@ -19669,7 +20743,7 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 334,
+      "doc_count": 355,
       "docs": [
         "d30c223f",
         "39441dfc",
@@ -19707,11 +20781,15 @@
         "c9921379",
         "3ce78398",
         "942d2c31",
+        "296bf0fd",
         "26c9c90b",
+        "3d30032a",
         "26e16076",
+        "31af3403",
         "713439dd",
         "670cac5f",
         "528e48dc",
+        "f07ea277",
         "0f194683",
         "06a9c574",
         "c60f8414",
@@ -19719,7 +20797,9 @@
         "f41d62fd",
         "71bf61b7",
         "712ac4d4",
+        "b30d5689",
         "fba3ee51",
+        "b8250a9d",
         "4d2f1e8c",
         "73da28ae",
         "e6d797da",
@@ -19747,6 +20827,7 @@
         "5362046f",
         "a15fbe47",
         "bda18040",
+        "01e6d4e7",
         "42b3fcc5",
         "c281d375",
         "b71644b2",
@@ -19765,6 +20846,7 @@
         "eedf41a1",
         "4fe7bbc5",
         "e002b9c9",
+        "c0db52ab",
         "9288dc58",
         "cab79a82",
         "92a7c4e9",
@@ -19786,6 +20868,7 @@
         "effef8cb",
         "950381ec",
         "b877caba",
+        "38ce6806",
         "9da13ea1",
         "23558b3e",
         "fb76b5a1",
@@ -19845,7 +20928,9 @@
         "90d56082",
         "8dc9a55b",
         "9fec3f40",
+        "6d24e5bf",
         "d8acaea3",
+        "56b08adf",
         "0ab0211d",
         "38f41251",
         "b154e990",
@@ -19884,6 +20969,7 @@
         "330c44e0",
         "eea43d6c",
         "cd323239",
+        "b8959c2f",
         "ec46400e",
         "568f8778",
         "e8ee5514",
@@ -19916,6 +21002,7 @@
         "97cc4549",
         "38fdc6a7",
         "c337f18a",
+        "5961460a",
         "c0264ecd",
         "5cfca120",
         "1fc9c68b",
@@ -19964,6 +21051,7 @@
         "5ea1719f",
         "59fe7d0a",
         "d96335e8",
+        "fbb766e9",
         "779edb5d",
         "5095e5aa",
         "d7759e91",
@@ -19984,6 +21072,8 @@
         "f1a99666",
         "21dcbb56",
         "7089fbea",
+        "3e82bc24",
+        "fcdbebc4",
         "ecc7b31a",
         "85aa1837",
         "04c99e3c",
@@ -19994,6 +21084,10 @@
         "65dc41a4",
         "27c5e053",
         "d32ed3c3",
+        "ac5232e2",
+        "3bd24f3c",
+        "ee4aabc3",
+        "aba761bd",
         "e02bdae7",
         "a66578a6",
         "93a242c7",
@@ -20002,6 +21096,7 @@
         "28704038",
         "8e365250",
         "a8d6ce5c",
+        "3ba4b54f",
         "94025f98",
         "34a95a5f",
         "f5977eb9"
@@ -20313,6 +21408,16 @@
           ]
         },
         {
+          "id": "296bf0fd",
+          "title": "EN",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab",
+            "acaparamiento"
+          ]
+        },
+        {
           "id": "26c9c90b",
           "title": "PT_LVC Manifesto_COP 30",
           "score": 9,
@@ -20321,10 +21426,28 @@
           ]
         },
         {
+          "id": "3d30032a",
+          "title": "EN_LVC Manifesto for COP30",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
           "id": "26e16076",
           "title": "PT_Manifesto da Via Campesina para a COP30_Agroecologia e Direitos Camponeses para uma transição justa e soberana.pdf",
           "score": 9,
           "matched_on": [
+            "extractivis"
+          ]
+        },
+        {
+          "id": "31af3403",
+          "title": "EN_La Via Campesina Manifesto for COP30",
+          "score": 9,
+          "matched_on": [
+            "land grab",
             "extractivis"
           ]
         },
@@ -20351,6 +21474,15 @@
           "score": 9,
           "matched_on": [
             "accaparement"
+          ]
+        },
+        {
+          "id": "f07ea277",
+          "title": "Women Peasants are Women (5) (1)",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
           ]
         },
         {
@@ -20412,8 +21544,25 @@
           ]
         },
         {
+          "id": "b30d5689",
+          "title": "2024-12-23 – Press release – LVC delegation to Palestine",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
           "id": "fba3ee51",
           "title": "La Via Campesina – Annual Report 2023 – EN",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "b8250a9d",
+          "title": "Writen_Statement_UNDROP_offic ENG",
           "score": 9,
           "matched_on": [
             "accaparement",
@@ -20654,6 +21803,15 @@
           ]
         },
         {
+          "id": "01e6d4e7",
+          "title": "EN-rev7-lowres",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
           "id": "42b3fcc5",
           "title": "PEASANT STRUGGLES FOR JUSTICE",
           "score": 9,
@@ -20804,6 +21962,14 @@
         {
           "id": "e002b9c9",
           "title": "Cooling_the_Planet-FR",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "c0db52ab",
+          "title": "ES-annual-report-2015",
           "score": 9,
           "matched_on": [
             "accaparement"
@@ -20992,6 +22158,15 @@
           "score": 9,
           "matched_on": [
             "accaparement"
+          ]
+        },
+        {
+          "id": "38ce6806",
+          "title": "Bulletin Nyéléni n° 30 –Faire progresser la Souveraineté Alimentaire",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "extractivis"
           ]
         },
         {
@@ -21491,12 +22666,29 @@
           ]
         },
         {
+          "id": "6d24e5bf",
+          "title": "LVC-EN-Thematic-Booklet-5-UNDROP_web",
+          "score": 8,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
           "id": "d8acaea3",
           "title": "Tunis-Declaratio-1",
           "score": 8,
           "matched_on": [
             "accaparement",
             "land grab"
+          ]
+        },
+        {
+          "id": "56b08adf",
+          "title": "LVC-EN-Thematic-Booklet-2",
+          "score": 8,
+          "matched_on": [
+            "accaparement"
           ]
         },
         {
@@ -21822,6 +23014,14 @@
           ]
         },
         {
+          "id": "b8959c2f",
+          "title": "Bulletin Nyéléni n° 60 –Résister à la menace de la finance mondiale, construire la souveraineté alimentaire",
+          "score": 8,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
           "id": "ec46400e",
           "title": "Bulletin Nyéléni n° 17 –Jeunesse et Agriculture",
           "score": 8,
@@ -22092,6 +23292,14 @@
           "matched_on": [
             "accaparement",
             "land grab"
+          ]
+        },
+        {
+          "id": "5961460a",
+          "title": "Compressed_EN_Tariffs_Briefing_Paper_LVC_2025",
+          "score": 7,
+          "matched_on": [
+            "accaparement"
           ]
         },
         {
@@ -22500,6 +23708,14 @@
           ]
         },
         {
+          "id": "fbb766e9",
+          "title": "alice-36p-A5-livret",
+          "score": 6,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
           "id": "779edb5d",
           "title": "Campagnes",
           "score": 6,
@@ -22669,6 +23885,23 @@
           ]
         },
         {
+          "id": "3e82bc24",
+          "title": "A_HRC_NGO_Haiti-ENG",
+          "score": 6,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "fcdbebc4",
+          "title": "Solidarity with the peoples in struggle of Latin America and the Caribbean",
+          "score": 6,
+          "matched_on": [
+            "extractivis"
+          ]
+        },
+        {
           "id": "ecc7b31a",
           "title": "FR Solidarity with the peoples in struggle of Latin America and the Caribbean",
           "score": 6,
@@ -22758,6 +23991,39 @@
           ]
         },
         {
+          "id": "ac5232e2",
+          "title": "REPORT_e_Haiti-ENG",
+          "score": 6,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "3bd24f3c",
+          "title": "7742_A_HRC_54_NGO_Sub_En",
+          "score": 6,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "ee4aabc3",
+          "title": "Zainal intervention – UN Human Rights Council Side event on multiple crises",
+          "score": 6,
+          "matched_on": [
+            "extractivis"
+          ]
+        },
+        {
+          "id": "aba761bd",
+          "title": "LVC-EN-Thematic-Booklet-2-WEB",
+          "score": 6,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
           "id": "e02bdae7",
           "title": "EN-Brief-Analysis-of-the-Situation-in-Haiti",
           "score": 6,
@@ -22827,6 +24093,14 @@
           ]
         },
         {
+          "id": "3ba4b54f",
+          "title": "Bulletin Nyéléni n° 53 –Maladies émergentes et agriculture industrielle",
+          "score": 6,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
           "id": "94025f98",
           "title": "DENUNCIA AMBIENTAL",
           "score": 6,
@@ -22857,7 +24131,7 @@
       "slug": "cooperatives-mutualisme",
       "titre": "Coopératives & mutualisme foncier",
       "chapo": "S'associer pour la terre : coopératives agricoles, GFA mutuels, foncières solidaires, mutuelles. Une économie de la terre fondée sur l'entraide plutôt que sur la rente.",
-      "doc_count": 34,
+      "doc_count": 35,
       "docs": [
         "c3bb4444",
         "95b490c8",
@@ -22881,6 +24155,7 @@
         "772d3d06",
         "2a87f34f",
         "41e18c26",
+        "5961460a",
         "0183b615",
         "be137b2e",
         "55ec8164",
@@ -23072,6 +24347,14 @@
           "matched_on": [
             "mutuelle",
             "cooperative farming"
+          ]
+        },
+        {
+          "id": "5961460a",
+          "title": "Compressed_EN_Tariffs_Briefing_Paper_LVC_2025",
+          "score": 7,
+          "matched_on": [
+            "coopérative agricole"
           ]
         },
         {
