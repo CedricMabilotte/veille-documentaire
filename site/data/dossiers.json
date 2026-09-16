@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T13:07:11Z",
+  "generated_at": "2026-09-16T13:12:16Z",
   "total_dossiers": 10,
   "dossiers": [
     {
@@ -1192,7 +1192,7 @@
       "slug": "zad-defense-de-territoires",
       "titre": "ZAD & défense de territoires",
       "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-      "doc_count": 120,
+      "doc_count": 121,
       "docs": [
         "38a113bc",
         "ba64641a",
@@ -1295,6 +1295,7 @@
         "38f15499",
         "5ea1719f",
         "59fe7d0a",
+        "097e9516",
         "d96335e8",
         "fbb766e9",
         "bc522fd4",
@@ -2192,6 +2193,14 @@
             "notre-dame-des-landes",
             "occupation",
             "aéroport"
+          ]
+        },
+        {
+          "id": "097e9516",
+          "title": "Les Bure à cuire n°1",
+          "score": 6,
+          "matched_on": [
+            "occupation"
           ]
         },
         {
@@ -7367,7 +7376,7 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 276,
+      "doc_count": 277,
       "docs": [
         "d30c223f",
         "9c49c870",
@@ -7609,6 +7618,7 @@
         "88bfc0cb",
         "3731bf2e",
         "95e763e1",
+        "097e9516",
         "83eafaac",
         "6c98994c",
         "d860aef1",
@@ -9720,6 +9730,14 @@
           ]
         },
         {
+          "id": "097e9516",
+          "title": "Les Bure à cuire n°1",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
           "id": "83eafaac",
           "title": "Kanaky Nouvelle Calédonie : une colonie en lutte pour son indépendance — version cahier",
           "score": 6,
@@ -10529,7 +10547,7 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 643,
+      "doc_count": 644,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -11049,6 +11067,7 @@
         "38f15499",
         "5ea1719f",
         "59fe7d0a",
+        "097e9516",
         "336d8c22",
         "22b1d1f9",
         "d96335e8",
@@ -16896,6 +16915,15 @@
           ]
         },
         {
+          "id": "097e9516",
+          "title": "Les Bure à cuire n°1",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
           "id": "336d8c22",
           "title": "Elias, Fonzy, Moki : grandir contre l'aéroport",
           "score": 6,
@@ -22261,7 +22289,7 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 380,
+      "doc_count": 381,
       "docs": [
         "d30c223f",
         "39441dfc",
@@ -22584,6 +22612,7 @@
         "3d9a76fb",
         "5ea1719f",
         "59fe7d0a",
+        "097e9516",
         "d96335e8",
         "fbb766e9",
         "779edb5d",
@@ -25371,6 +25400,14 @@
         {
           "id": "59fe7d0a",
           "title": "Il \"movimento\" è morto, viva la... riforma ! (version italienne)",
+          "score": 6,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "097e9516",
+          "title": "Les Bure à cuire n°1",
           "score": 6,
           "matched_on": [
             "accaparement"
