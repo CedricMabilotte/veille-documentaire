@@ -1,0 +1,98 @@
+{
+  "titre_accroche": "Au Brésil, quand l'État transforme les communs en propriété marchande",
+  "teaser": "Le MST brésilien dénonce le programme « Titula Brasil » : une offensive contre la réforme agraire qui privatise les terres collectives et livre les paysans à la spéculation. Reportage d'une résistance.",
+  "abstract_editorial": "En 2020, le Mouvement des Sans Terre brésilien publie une analyse politique brûlante : comment le gouvernement Bolsonaro s'emploie à démanteler la réforme agraire en transformant les terres redistribuées en propriété privée marchande. Le programme « Titula Brasil » incarne cette offensive : il propose aux paysans assentados de convertir leur Concessão de Direito Real de Uso (CDRU) — un titre collectif garantissant l'usufruit durable et l'accès aux politiques publiques — en Título de Domínio, titre privé permettant la vente et la spéculation.\n\nCette conversion n'est pas technique : elle est politique. Elle transforme des paysans en « agronégocio » précaire, isolés, livrés aux forces du marché. Elle dissout le bien commun qu'était la terre d'assentamento dans la logique capitaliste de concentration.\n\nLe contexte rend ce enjeu explosif. L'année 2020 connaît un record de violences contre les travailleurs ruraux : 1 576 conflits. L'insécurité alimentaire touche 116,8 millions de Brésiliens. Les femmes sans terre jouent un rôle central dans la résistance agroécologique. Face à cette tempête, le MST réaffirme la terre comme bien commun — morada, source de nourriture, fruit du travail collectif — et appelle à fortifier l'organisation collective pour défendre une réforme agraire populaire.\n\nPour le lectorat français intéressé par les communs et la paysannerie, ce document expose un conflit universel : comment défendre le droit d'usage contre la propriété marchande ? Comment les communautés rurales résistent à la financiarisation de la terre ? Le cas brésilien montre que cette bataille n'est jamais gagnée.",
+  "citations_phares": [
+    {
+      "page": 2,
+      "quote": "A terra não é mercadoria, é de quem nela vive e trabalha"
+    },
+    {
+      "page": 2,
+      "quote": "Da terra que pisamos, é morada, nos alimenta, e para onde vai nosso suor do trabalho, gritamos: resistência ativa"
+    },
+    {
+      "page": 3,
+      "quote": "O MST considera a terra como um bem comum, assim como a água, ar, sol, as florestas"
+    }
+  ],
+  "categorisation": [
+    "communs",
+    "paysannerie",
+    "propriété d'usage",
+    "réforme agraire",
+    "Brésil",
+    "MST",
+    "résistance",
+    "autonomie territoriale",
+    "agro-écologie"
+  ],
+  "slug": "bresil-titula-brasil-terre-commun-privatisation",
+  "en_clair": "Le gouvernement Bolsonaro essaie de vendre les terres que l'État avait données aux paysans pauvres dans la réforme agraire — ce qui ferait perdre aux familles le droit de rester et les aides qui les aident. Le MST propose de leur donner la terre en droit d'usage permanent (pas de vente possible), pour que la terre reste aux mains de ceux qui y travaillent, sans spéculation. C'est un choix direct : terre pour vivre et cultiver, ou terre comme marchandise.",
+  "acteurs": [
+    "MST (Movimento Sem Terra)",
+    "INCRA (Instituto Nacional de Colonização e Reforma Agrária)",
+    "Comissão Pastoral da Terra (CPT)",
+    "Governo Bolsonaro",
+    "Bancada ruralista",
+    "Dilei Schiochet",
+    "Antônia Ivoneide",
+    "Solange Engelmann",
+    "Geanini Hackbardt",
+    "Rede Penssan"
+  ],
+  "controverse": "Clivage politique autour de la privatisation des assentamentos : le gouvernement Bolsonaro impose via 'Titula Brasil' la titulation privée (TD), permettant vente et spéculation, dissolvant les politiques de réforme agraire ; le MST défend la CDRU (titre collectif d'usufruit), garantissant accès durable à la terre et aux crédits, contre la marchandisation et l'isolement des familles.",
+  "angle_journalistique": "Enquête d'impact : comment le programme 'Titula Brasil' transforme les conditions de vie des familles assentadas ? Comparaison avant/après privatisation vs usufruit collectif, avec témoignages directs de familles et analyses des conséquences économiques et politiques.",
+  "citations_verifiees": [
+    {
+      "quote": "a terra não é mercadoria, é de quem nela vive e trabalha",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Da terra que pisamos, é morada, nos alimenta, e para onde vai nosso suor do trabalho, gritamos: resistência ativa",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "O MST considera a terra como um bem comum, assim como a água, ar, sol, as florestas",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "ao titular eu deixo de ser público da Reforma Agrária e passo a ser um 'agronegocinho'",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "A CDRU é um título definitivo, em que a família assentada tem o direito à posse da terra assegurado",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "116,8 milhões de pessoas vivem em insegurança alimentar, isto é, não tem condição de fazer as três refeições básicas",
+      "page": 2,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "1.576 conflitos por terra em 2020, com 171.625 famílias afetadas, conforme o 'Caderno de Conflitos no campo 2020'",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "facilitando a regularização da grilagem de terras",
+      "page": 3,
+      "page_physical": null,
+      "verified": false
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "a1d6154031"
+}
