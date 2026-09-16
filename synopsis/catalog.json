@@ -8295,7 +8295,11 @@
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
       "lang": "fr",
-      "title": "Récolte de paddy au Sud-est de Madagascar"
+      "title": "Récolte de paddy au Sud-est de Madagascar",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_captcha (playwright_exception: Response.body: Protocol error (Network.getResponseBody): No resource with given identifier found)",
+        "date": "2026-09-16"
+      }
     },
     "617861e6": {
       "id": "617861e6",
@@ -14845,7 +14849,11 @@
       "download_status": "failed_network",
       "download_error": "access_restricted_lending_library",
       "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification.",
-      "title": "Housing association law and practice"
+      "title": "Housing association law and practice",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "ed6b79d9": {
       "id": "ed6b79d9",
@@ -14875,7 +14883,11 @@
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
       "lang": "en",
-      "title": "7. IJBGM Legal Issues In Co Operatives Rosini"
+      "title": "7. IJBGM Legal Issues In Co Operatives Rosini",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_captcha (playwright_not_pdf)",
+        "date": "2026-09-16"
+      }
     },
     "99a6d367": {
       "id": "99a6d367",
@@ -24388,7 +24400,7 @@
       "latest_run": "2026-09-15_17-52",
       "collected_date": "2026-09-15_17-52",
       "score_initial": 1,
-      "score_final": null,
+      "score_final": 6,
       "latest_score": 1,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -24441,12 +24453,110 @@
           "downloaded": false,
           "model": "",
           "prompt_version": ""
+        },
+        {
+          "date": "cleanup_2026-09-16_10-41",
+          "score": 1,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "· Les Bure à cuire n°1 (cahier) (PDF)",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
         }
       ],
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
       "title": "Les Bure à cuire n°1",
-      "download_status": "failed_network"
+      "download_status": "failed_network",
+      "enrichment": {
+        "summary": "Ce texte est un témoignage d'engagement dans la lutte antinucléaire de Bure pendant l'été 2016, centré sur l'occupation du bois Lejuc. Le bois Lejuc est un ancien bien communal que la commune de Mandres-en-Barrois avait refusé de céder à l'Andra (l'agence chargée du projet d'enfouissement de déchets radioactifs Cigeo) lors d'une consultation en 2013. Pourtant, en 2015, un nouveau conseil municipal a approuvé cette cession par une délibération à bulletins secrets. Dès juin 2016, l'Andra a commencé les travaux de défrichement pour préparer l'implantation du projet. En réaction, des centaines d'opposants se sont mobilisés pour occuper la forêt, sabotage des machines, destruction des murs de béton. Pendant l'occupation, des cabanes ont été construites, des lieux de vie collectifs ont été établis, des potagers ont été créés. Le récit met l'accent sur la redéfinition des pratiques de lutte : passage d'une opposition légaliste et associative à des formes d'action directe et d'occupation constructive. Il soulève aussi la tension entre différentes composantes du mouvement (associations, radicaux, familles) et l'importance de respecter les temporalités et approches diverses tout en construisant ensemble une résistance efficace. La forêt occupée devient le symbole d'une appropriation alternative du sol face à l'accaparement étatique.",
+        "citations": [
+          {
+            "page": 4,
+            "quote": "ancien bois communal de Mandres-en-Barrois",
+            "why_relevant": "Identification explicite d'une forme de bien communal, central à la thématique des communs fonciers",
+            "verified": true,
+            "page_physical": 4
+          },
+          {
+            "page": 4,
+            "quote": "En 2013, les habitant.e.s de la commune ont refusé par consultation la cession de leur bois à l'Andra.",
+            "why_relevant": "Illustration d'une lutte pour le droit d'usage collectif contre l'appropriation institutionnelle de la terre",
+            "verified": true,
+            "page_physical": 4
+          },
+          {
+            "page": 3,
+            "quote": "des cabanes sont perchées haut dans les arbres, la forêt est de nouveau occupée",
+            "why_relevant": "Forme d'habitat collectif et d'occupation constructive de la terre (core concept du corpus)",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 3,
+            "quote": "bâtissent des barricades et sabotent les travaux de l'Andra",
+            "why_relevant": "Acte d'appropriation alternative et d'action directe pour la libération des terres",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "cabanes, des lieux de vie, des potagers",
+            "why_relevant": "Construction de formes collectives d'habiter et de cultiver la terre en occupation",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 4,
+            "quote": "des collectifs autonomes au cœur du désert nucléaire",
+            "why_relevant": "Référence à des formes d'organisation autonome et collective ancrées territorialement",
+            "verified": true,
+            "page_physical": 5
+          },
+          {
+            "page": 5,
+            "quote": "Il faut faire attention à ne pas être non plus transformé en « animateur de la lutte »",
+            "why_relevant": "Tension entre différentes formes d'engagement et de contrôle de l'action collective",
+            "verified": true,
+            "page_physical": 5
+          }
+        ],
+        "matched_keywords": [
+          "libération des terres",
+          "occupation",
+          "habitat collectif",
+          "collectif d'habitants",
+          "communs fonciers",
+          "bien communal",
+          "action directe",
+          "terre",
+          "accaparement"
+        ],
+        "relevance_score": 6,
+        "relevance_notes": "Le texte touche à l'occupation constructive de terre communale et à la défense collective contre l'appropriation étatique, ce qui le situe aux marges de la thématique. Il ne traite pas des formes institutionnalisées de propriété d'usage, de paysannerie ou d'agroécologie, mais illustre des pratiques concrètes de libération des terres et d'habitat collectif.",
+        "en_clair": "En 2016, des centaines de gens ont occupé une vieille forêt communale pour l'empêcher d'être transformée en dépôt nucléaire. Pendant plusieurs mois, ils ont construit des cabanes, des potagers, ont créé des lieux de vie collectifs — montrant qu'on peut prendre le contrôle de sa terre et l'utiliser autrement que ce que décident les autorités.",
+        "acteurs": [
+          "Éric",
+          "Andra (agence nucléaire)",
+          "Jean Paul Baillet",
+          "collectif des ScotcheusesI",
+          "Gendarmerie nationale",
+          "Conseil municipal de Mandres-en-Barrois",
+          "habitants de la commune"
+        ],
+        "controverse": "Tension entre les approches légalistes des associations (pétitions, documentation, débat) et les formes d'action directe (occupation, sabotage, destruction de structures). Le texte soulève aussi la contradiction entre le vote négatif des habitants (2013) et la décision du conseil municipal approuvant la cession par délibération à bulletins secrets (2015).",
+        "angle_journalistique": "Comment l'occupation constructive d'une forêt communale a redéfini les formes de résistance écologiste en France : passer de la contestation légale à l'appropriation collective du sol.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "f5981852d1"
+      },
+      "cover": "covers/097e9516.jpg",
+      "meta": {
+        "page_count": 14,
+        "pdf_title": "",
+        "pdf_author": "",
+        "pdf_creator": ""
+      }
     },
     "17b82661": {
       "id": "17b82661",
@@ -56767,7 +56877,11 @@
       "download_status": "failed_network",
       "download_error": "access_restricted_lending_library",
       "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification.",
-      "title": "Agriculture and the state in Soviet and post-Soviet Russia"
+      "title": "Agriculture and the state in Soviet and post-Soviet Russia",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "a0f5ef97": {
       "id": "a0f5ef97",
@@ -57051,7 +57165,11 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "BEE : helping or hurting?"
+      "title": "BEE : helping or hurting?",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "5e4ff884": {
       "id": "5e4ff884",
@@ -57091,7 +57209,11 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "The rape of the peasantry; Latin America's landholding system"
+      "title": "The rape of the peasantry; Latin America's landholding system",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "d30c223f": {
       "id": "d30c223f",
@@ -57131,7 +57253,11 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "¡Zapatistas! : making another world possible : chronicles of resistance, 2000-2006"
+      "title": "¡Zapatistas! : making another world possible : chronicles of resistance, 2000-2006",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "76479dbc": {
       "id": "76479dbc",
@@ -57171,7 +57297,11 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "Trespassing : an inquiry into the private ownership of land"
+      "title": "Trespassing : an inquiry into the private ownership of land",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "8ab9ad4b": {
       "id": "8ab9ad4b",
@@ -57540,7 +57670,11 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "A common privilege : the story of Outney Common, Bungay"
+      "title": "A common privilege : the story of Outney Common, Bungay",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "f18a7678": {
       "id": "f18a7678",
@@ -57582,7 +57716,11 @@
       "download_status": "failed_network",
       "download_error": "access_restricted_lending_library",
       "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification.",
-      "title": "The journey of a Tzotzil-Maya woman of Chiapas, Mexico : pass well over the earth"
+      "title": "The journey of a Tzotzil-Maya woman of Chiapas, Mexico : pass well over the earth",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "b960b499": {
       "id": "b960b499",
@@ -58564,7 +58702,11 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "William Ogilvie's birthright in land"
+      "title": "William Ogilvie's birthright in land",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "654354a2": {
       "id": "654354a2",
@@ -58799,7 +58941,11 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "Peasants and princes : agrarian unrest in the East Punjab states, 1920-48"
+      "title": "Peasants and princes : agrarian unrest in the East Punjab states, 1920-48",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "c4cc6bc8": {
       "id": "c4cc6bc8",
@@ -59073,7 +59219,11 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "The time of freedom : campesino workers in Guatemala's October Revolution"
+      "title": "The time of freedom : campesino workers in Guatemala's October Revolution",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "7153c008": {
       "id": "7153c008",
@@ -59795,7 +59945,11 @@
       "download_status": "failed_network",
       "download_error": "access_restricted_lending_library",
       "download_note": "Document disponible uniquement en emprunt sur archive.org (ACS DRM). Téléchargement impossible sans authentification.",
-      "title": "Housing ourselves : creating affordable, sustainable shelter"
+      "title": "Housing ourselves : creating affordable, sustainable shelter",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "941861fb": {
       "id": "941861fb",
@@ -60103,7 +60257,11 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "Creating community in the city : cooperatives and community gardens in Washington, D.C."
+      "title": "Creating community in the city : cooperatives and community gardens in Washington, D.C.",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "1d3081c2": {
       "id": "1d3081c2",
@@ -60143,7 +60301,11 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "New neighbours : a case study of cooperative housing in Toronto"
+      "title": "New neighbours : a case study of cooperative housing in Toronto",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "8470552d": {
       "id": "8470552d",
@@ -60606,7 +60768,11 @@
       "download_status": "failed_network",
       "link_status": "unchecked",
       "link_checked": "2026-05-24T19:16:12Z",
-      "title": "The senior cohousing handbook : a community approach to independent living"
+      "title": "The senior cohousing handbook : a community approach to independent living",
+      "enrich_abandon": {
+        "reason": "téléchargement impossible : failed_network",
+        "date": "2026-09-16"
+      }
     },
     "18b4c3ab": {
       "id": "18b4c3ab",
@@ -108558,12 +108724,77 @@
       "title": "EUROPEANIZATION AND RECODIFICATION. USUFRUCT",
       "doi": "10.17721/1728-2195/2021/4.119-8",
       "lang": "en",
-      "score_final": null,
-      "runs": [],
+      "score_final": 2,
+      "runs": [
+        {
+          "date": "cleanup_2026-09-16_10-41",
+          "score": 0,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
+        }
+      ],
       "versions": [],
       "score_initial": 0,
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z"
+      "link_checked": "2026-09-15T19:11:44Z",
+      "enrichment": {
+        "summary": "Cet article juridique ukrainien traite de l'introduction de l'usufruit dans le droit civil ukrainien, en harmonisation avec le droit européen et dans le contexte de la recodification législative. Les auteurs — juristes de l'université Taras Shevchenko de Kyiv — comparent les régimes d'usufruit en Allemagne, France, Pologne, Pays-Bas, Suisse, Géorgie, Moldavie et Russie. Ils établissent que l'usufruit est un « droit de possession personnelle pour l'usage » flexible et bien établi dans les systèmes juridiques continentaux européens. Le droit ukrainien actuel régule les usages prolongés de propriété d'autrui par plusieurs droits limités (emphytéose, superficies, droit de gestion économique, droit de gestion opérationnelle) et des constructions contractuelles (bail, management). Les auteurs argumentent que l'absence d'usufruit constitue un obstacle au développement d'un marché foncier stable et à la transition vers un cadre harmonisé avec l'Europe. Ils proposent que l'usufruit soit introduit comme un droit réel autonome et flexible, capable de remplir indifféremment des fonctions lucratives ou d'utilité sociale (charité, etc.), sans dépendre du type de bien ou de l'intention du titulaire. Selon eux, l'usufruit constituerait le meilleur substitut aux droits soviétiques obsolètes lors de la recodification. Cependant, le document reste exclusivement technique et comparatiste : il ne traite pas des enjeux politiques, collectifs ou paysans de l'accès à la terre, ni de la fonction anti-spéculative d'outils juridiques alternatifs. L'usufruit y apparaît comme un simple instrument de rationalisation juridique du droit positif.",
+        "citations": [
+          {
+            "page": 2,
+            "quote": "Узуфрукт, який є гнучким і загальновизнаним у праві країн Західної Європи речовим правом особистого володіння для користування",
+            "why_relevant": "Définition centrale du concept de propriété d'usage, même si présentée en contexte purement technique sans dimension politique collective",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 2,
+            "quote": "За своєю цільовою спрямованістю правова конструкція узуфрукта може виконувати будь-які функції особистого володіння для користування чужим майном, незалежно від того, чи метою є отримання доходу, чи іншого соціально корисного результату",
+            "why_relevant": "Indique le potentiel de flexibilité juridique de l'usufruit pour des fins sociales, bien que dans un cadre de rationalisation juridique",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 2,
+            "quote": "право користування земельною ділянкою для сільськогосподарських потреб (емфітевзис)",
+            "why_relevant": "Unique mention des terres agricoles, mais réduite au statut technique de l'emphytéose, sans dimension paysanne ou agro-politique",
+            "verified": true,
+            "page_physical": 2
+          }
+        ],
+        "matched_keywords": [
+          "usufruit",
+          "propriété d'usage",
+          "emphytéose",
+          "superficies",
+          "droit d'usage",
+          "droit d'usage agricole"
+        ],
+        "relevance_score": 2,
+        "relevance_notes": "Score 2/10. Le document mentionne le concept technique de « propriété d'usage » (usufruit) mais le vide entièrement de toute dimension politique, collective, paysanne ou anti-spéculative. C'est un article de droit civil positif comparatiste axé sur l'harmonisation juridique européenne, non une réflexion critique sur les communs, les luttes pour l'accès à la terre, ou la résistance à la marchandisation foncière.",
+        "en_clair": "Cet article explique comment moderniser la loi ukrainienne en copiant le droit européen sur un outil juridique appelé usufruit (un contrat qui laisse quelqu'un utiliser la terre de quelqu'un d'autre sans l'acheter). Pour une lutte foncière concrète — libérer des terres, les mettre en commun, empêcher l'accaparement — ça ne sert à rien : c'est juste du droit technique, pas de la stratégie collective.",
+        "acteurs": [
+          "Taras Shevchenko National University of Kyiv",
+          "Cabinet of Ministers of Ukraine"
+        ],
+        "controverse": "La tension entre unifier le droit ukrainien autour d'un seul concept (usufruit) versus maintenir une pluralité de droits limités (emphytéose, superficies, etc.) adaptés à des situations spécifiques. Les auteurs plaident pour l'unification, mais le document ne débat pas des implications pratiques pour l'accès réel à la terre.",
+        "angle_journalistique": "Comment la modernisation du droit civil ukrainien selon les standards européens impactera-t-elle concrètement l'accès à la terre pour les petits paysans et les agriculteurs familiaux ?",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "f355fd90c9"
+      },
+      "cover": "covers/3469a3aa.jpg",
+      "meta": {
+        "page_count": 11,
+        "pdf_title": "",
+        "pdf_author": "",
+        "pdf_creator": "pdf-lib (https://github.com/Hopding/pdf-lib)"
+      },
+      "doc_date": "2026-06-08",
+      "editeur": "pdf-lib (https://github.com/Hopding/pdf-lib)"
     },
     "78299ef6": {
       "id": "78299ef6",
@@ -108850,12 +109081,116 @@
       "title": "Agrarian anarchism and authoritarian populism: towards a more (state-)critical ‘critical agrarian studies’",
       "doi": "10.1080/03066150.2020.1755840",
       "lang": "en",
-      "score_final": null,
-      "runs": [],
+      "score_final": 5,
+      "runs": [
+        {
+          "date": "cleanup_2026-09-16_10-41",
+          "score": 0,
+          "raison": "nettoyage backlog (lecture différée)",
+          "context_seen": "",
+          "link_text": "",
+          "downloaded": true,
+          "model": "",
+          "prompt_version": ""
+        }
+      ],
       "versions": [],
       "score_initial": 0,
       "link_status": "ok",
-      "link_checked": "2026-09-15T19:11:44Z"
+      "link_checked": "2026-09-15T19:11:44Z",
+      "enrichment": {
+        "summary": "Cet article examiné l'anarchisme comme cadre théorique et pratique pour les études agraires critiques, particulièrement face à la montée du populisme autoritaire rural. Antonio Roman-Alcalá soutient que l'anarchisme — souvent mal compris comme simple rejet de l'État — offre trois niveaux d'analyse pertinents : les mouvements anarchistes explicites, les théories qu'ils produisent, et les pratiques « anarchistes » quotidiennes d'auto-organisation sociale. L'auteur applique cette perspective à la problématique contemporaine du populisme autoritaire aux États-Unis (Trump, Modi, Bolsonaro, Erdogan, Duterte), montrant comment les ressentiments paysans et ruraux face à l'exploitation capitaliste et à la marginalisation peuvent être détournés soit vers des projets autoritaires, soit vers des formes émancipatoires d'organisation collective. L'enjeu politique central identifié est le développement d'une vision idéologique capable de répondre aux besoins matériels concrets tout en renforçant les « économies morales » locales — c'est-à-dire les systèmes de valeurs et d'échanges enracinés dans l'expérience vécue des mondes ruraux. L'article constate l'absence notable de l'anarchisme dans les analyses des études agraires critiques (18 occurrences du mot « anarchism » contre 263 pour « Marxism » dans le *Journal of Peasant Studies*), malgré la pertinence persistante de l'anarchisme dans la théorie et la pratique des mouvements paysans et ruraux. Cette perspective state-critical offre une alternative aux analyses déterministes qui supposent l'inévitabilité de la disparition de la paysannerie ou la nécessité absolue de l'engagement étatique pour le changement émancipatoire.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "For the peasant, the state is a negative quantity, an evil, to be replaced in short shrift by their own 'homemade' social order.",
+            "why_relevant": "Synthétise la perspective anarchiste sur le rapport des paysans à l'État et leur préférence pour l'auto-organisation collective — central à la critique des formes étatiques",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 4,
+            "quote": "Throughout the rural world, capitalist 'economic-development' continues to exploit human and nonhuman resources, with the support of subnational, national, and international governments.",
+            "why_relevant": "Situe l'exploitation rurale comme système structural lié à l'État et au capitalisme, justifiant une perspective radicale d'études agraires",
+            "verified": true,
+            "page_physical": 4
+          },
+          {
+            "page": 4,
+            "quote": "partially in reaction to this marginalization, electorates have turned to a variety of scapegoating nationalisms, bolstering the electoral success of certain neo-'authoritarian populists'",
+            "why_relevant": "Lie marginalisation rurale et populisme autoritaire, montrant comment les mouvements paysans peuvent être polarisés vers l'autoritarisme",
+            "verified": true,
+            "page_physical": 4
+          },
+          {
+            "page": 4,
+            "quote": "like the peasantry, anarchism has never died the death it was supposed to. It survives in existing social movements applying the label in action",
+            "why_relevant": "Affirme la pertinence contemporaine de l'anarchisme comme pratique vivante, non comme historicisme",
+            "verified": true,
+            "page_physical": 4
+          },
+          {
+            "page": 4,
+            "quote": "anarchism's relevance is found at three levels: as movements, theories, and in anarchistic behaviors.",
+            "why_relevant": "Pose un cadre analytique utile pour saisir l'anarchisme au-delà du label : dans les pratiques quotidiennes d'auto-organisation",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 4,
+            "quote": "the anarchist lens is surely underutilized in CAS [Critical Agrarian Studies]",
+            "why_relevant": "Justifie l'apport d'une perspective anarchiste aux études agraires critiques, domaine de la veille",
+            "verified": true,
+            "page_physical": 4
+          }
+        ],
+        "matched_keywords": [
+          "anarchism",
+          "anarchistic",
+          "peasantry",
+          "peasants",
+          "agrarian studies",
+          "agrarian change",
+          "agrarian processes",
+          "rural politics",
+          "rural people",
+          "state",
+          "state power",
+          "social movements",
+          "social organization",
+          "populism",
+          "authoritarian populism",
+          "emancipatory politics",
+          "emancipatory movements",
+          "moral economy",
+          "lived moral economies",
+          "capitalism",
+          "capitalist development",
+          "exploitation"
+        ],
+        "relevance_score": 5,
+        "relevance_notes": "Texte solide d'études agraires critiques, mais tangent à la thématique spécifique. Article théorique sur anarchisme et politique agraire (approche state-critical pertinente), mais qui n'aborde pas les formes concrètes de propriété d'usage, communs fonciers, agroécologie, ou stratégies foncières collectives — les core concepts de la veille.",
+        "en_clair": "Cet article explique que les paysans et les gens du monde rural n'ont généralement pas confiance en l'État et préfèrent s'organiser eux-mêmes (c'est l'idée anarchiste). Le problème : ce méfiance peut être récupérée par des politiciens autoritaires (Trump, Bolsonaro) ou orientée vers des projets de libération — tout dépend de qui les organise et comment.",
+        "acteurs": [
+          "Eric Wolf (historien, cité)",
+          "Ian Scoones (coordinateur du forum JPS)",
+          "Emancipatory Rural Politics Initiative (ERPI)",
+          "Journal of Peasant Studies"
+        ],
+        "controverse": "Tension centrale : comment l'anarchisme (méfiance vis-à-vis de l'État) peut-il contribuer à des projets émancipatoires si ceux-ci doivent nécessairement engager ou transformer l'État pour le changement social ? L'article pose aussi le désaccord sur la capacité des paysans à disparaître (déterminisme marxiste rejeté).",
+        "angle_journalistique": "Enquête sur comment les analyses savantes des mouvements paysans et ruraux en Amérique du Nord négligent systématiquement l'anarchisme et les formes d'auto-organisation existantes, et sur les stratégies rurales de résistance au populisme autoritaire qui ne passent pas par l'État.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "52fbe7914f"
+      },
+      "cover": "covers/d4815a41.jpg",
+      "meta": {
+        "page_count": 33,
+        "pdf_title": "",
+        "pdf_author": "",
+        "pdf_creator": ""
+      },
+      "doc_date": "2026-06-28",
+      "editeur": "OpenPDF 1.4.2"
     },
     "1b60974e": {
       "id": "1b60974e",
