@@ -1,0 +1,91 @@
+{
+  "titre_accroche": "L'Amazonie : patrimoine commun ou marché prédateur ?",
+  "teaser": "Le MST et Via Campesina Brasil posent la question qui divise : l'Amazonie peut-elle rester un patrimoine de l'humanité face à l'exploitation capitaliste ? Cette cartilha de 2009 expose deux projets irréconciliables.",
+  "abstract_editorial": "Depuis 500 ans, l'Amazonie brésilienne endure le même cycle : pillage systématique au service du capital occidental. De la colonisation aux mines et agroindustries actuelles, ses richesses s'écoulent vers les métropoles tandis que ses habitants — paysans, autochtones, quilombolas, ribeirinhos — demeurent marginalisés.\n\nEn janvier 2009, le MST et Via Campesina Brasil publient une cartilha pour le Forum Social Mondial de Belém, exposant le cœur du conflit foncier : deux visions irréconciliables s'affrontent en Amazonie.\n\nD'un côté, le projet du capital : privatisation, extraction illimitée, profit immédiat. De l'autre, le projet historique des peuples locaux : coexistence pacifique humain-nature, justice sociale, développement durable.\n\nLe texte refuse de traiter l'Amazonie comme une ressource exploitable. Il la pose en patrimoine commun de l'humanité — comparable à l'Antarctique — dont la destruction menace la survie même de notre espèce. Cela rejoint directement l'enjeu des communs : pas qui la possède, mais qui la gouverne et selon quels principes.\n\nLes auteurs, dont Jean Pierre Leroy et João Pedro Stedile (leader du MST), qualifient l'extraction non régulée de vol : vol des richesses brésiliennes, vol de l'humanité.\n\nLa cartilha pose enfin la question décisive : l'Amazonie peut-elle devenir un espace de survie durable, régénéré par les communautés qui l'habitent ? Ou sera-t-elle détruite par le capital mondialisé ? Pour les mouvements paysans, seul le contrôle réel par les populations locales offre une alternative viable.",
+  "citations_phares": [
+    {
+      "page": 5,
+      "quote": "Il existe d'un autre côté un projet qui ne recherche pas le profit à tout prix, mais plutôt la coexistence pacifique entre êtres humains et nature, préservant nos richesses culturelles."
+    },
+    {
+      "page": 8,
+      "quote": "L'Amazonie, de par sa diversité biologique et génétique, doit être libre de toute privatisation ou intention d'appropriation privée, car elle est une partie essentielle du maintien de la vie sur la planète."
+    },
+    {
+      "page": 8,
+      "quote": "Le processus d'appropriation, privée ou publique, des ressources de la région pour l'enrichissement de la métropole a le même âge que la colonisation : plus de 500 ans."
+    }
+  ],
+  "categorisation": [
+    "communs",
+    "paysannerie",
+    "autonomie territoriale",
+    "lutte foncière",
+    "Amazonie",
+    "peuples autochtones",
+    "alternatives économiques"
+  ],
+  "slug": "amazonie-patrimoine-commun-mst",
+  "en_clair": "Ce texte montre que l'Amazonie est un enjeu de lutte foncière, pas seulement d'écologie : les multinationales accaparent les terres et les ressources depuis 500 ans, tandis que les paysans et les peuples autochtones en sont exclus. Le MST et Via Campesina proposent un projet alternatif : que l'Amazonie soit contrôlée et gérée par ses habitants pour nourrir tout le monde et protéger la nature.",
+  "acteurs": [
+    "MST (Movimento dos Trabalhadores Rurais Sem Terra)",
+    "Via Campesina Brasil",
+    "Via Campesina Pará",
+    "CTERRA (Centro de Pesquisa, Capacitação Desenvolvimento Mártires de Março)",
+    "Parauapebas-Pará Movements",
+    "Fase",
+    "Jean Pierre Leroy",
+    "Antônio A. R. Ioris",
+    "Raul Silva Telles do Valle",
+    "Jorge Eduardo S. Durão",
+    "João Pedro Stedile"
+  ],
+  "controverse": "Statut juridique et politique de l'Amazonie : doit-elle être traitée comme un patrimoine commun de l'humanité (régime comparable à l'Antarctique ou aux océans, avec interdiction d'exploitation minière et militaire) ou comme un bien national que chaque État souverain peut exploiter librement au profit du capital ? Le texte défend la première vision contre la seconde.",
+  "angle_journalistique": "Quel poids réel le MST et Via Campesina ont-ils dans la mise en place d'une alternative territoriale en Amazonie ? Comment les mouvements paysans s'opposent-ils concrètement aux grands projets miniers et agro-industriels dans la région de Marabá et Parauapebas ?",
+  "citations_verifiees": [
+    {
+      "quote": "The texts present the interests, dispute and the consequences of the struggle between two large political and economic projects for the Amazon region.",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "On the other hand, there is a project that does not seek profit at all cost, but rather the peaceful coexistence between human beings and nature, preserving our cultural riches and towards the construction of a sustainable society grounded on the principles of solidarity, social justice and equality.",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "there was also resistance from indigenous, quilombolas [traditional afro-descendent communities], peasants and ribeirinhos [communities living along rivers], who engage in social struggles to face the spoliation of our natural resources.",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "Amazonia, because of its biological and genetic diversity... must be free of any privatization or intention for private appropriation because it is an essential part of the sustenance of life on the planet.",
+      "page": 8,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "The process of appropriation, private or public, of the resources of the region for the enrichment of the metropolis... has the same age as colonization: more than 500 years.",
+      "page": 8,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "The Amazon possesses reaches in terms of land, biodiversity, water, minerals, sources of energy, forests, agricultural production and the thousand year old knowledge from indigenous communities, blacks, ribeirinhos and peasants.",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "This territory and its immense wealth cannot remain as a monopoly of transnational corporations.",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "e66385cbcf"
+}

@@ -1,0 +1,88 @@
+{
+  "titre_accroche": "Les paysans nourriront le monde. Pas l'agribusiness.",
+  "teaser": "La Vía Campesina le démontre : 24 % des terres, 87 % du manioc, 70 % des haricots. Avec l'agroécologie, les petits paysans produisent plus, nourrissent mieux, et régénèrent les sols. La vraie révolution alimentaire existe. Elle attend qu'on la défende.",
+  "abstract_editorial": "En septembre 2010, La Vía Campesina pose une question que les institutions ignorent : qui nourrit réellement le monde ? Réponse : ceux qu'on considère archaïques. Ce texte court mais dense défait le mythe fondateur du productivisme agricole. L'industrie agroalimentaire promise à la fin de la faim a échoué : 925 millions affamées, sols stérilisés, rendements plafonnés. Cependant, l'agroécologie paysanne produit davantage avec moins — et cela, ce n'est pas idéologie, c'est statistique brésilien.\n\nAu Brésil, les paysans fermiers occupent 24,3 % des terres mais produisent 87 % du manioc, 70 % des haricots, 58 % du lait. Moins d'un quart des terres arables ; 40 % de la valeur agricole totale. L'agribusiness, lui, exporte. Les paysans nourrissent.\n\nCe texte reframe la crise alimentaire : ce n'est pas une pénurie de production. C'est une pénurie d'accès, engendrée par la spéculation, les inégalités de revenus et le déni de terre aux paysans. L'agriculture paysanne agroécologique — diversifiée, territorialisée, sans intrants chimiques externes — n'est pas une nostalgie rurale. C'est une alternative productive, capable de régénérer les écosystèmes tout en nourissant l'humanité. Pour qui défend les communs, l'autonomie alimentaire et la libération des terres, ce texte est une munition argumentaire solide : la viabilité économique et écologique est déjà là. Il n'y a que les rapports de pouvoir à redéfaire.",
+  "citations_phares": [
+    {
+      "page": 3,
+      "quote": "The contemporary food crisis is not really a crisis of our ability to produce. It is more due to factors like the food speculation and hoarding"
+    },
+    {
+      "page": 6,
+      "quote": "Peasants and family farmers hold just 24.3% of farm land, though they make up 84.4% of all farms and gainfully employ three times as many people as does agribusiness"
+    },
+    {
+      "page": 3,
+      "quote": "Agroecological food production by small farmers is the agricultural model best suited to meeting future food needs"
+    }
+  ],
+  "categorisation": [
+    "paysannerie",
+    "agroécologie",
+    "communs",
+    "autonomie alimentaire",
+    "libération des terres",
+    "souveraineté alimentaire",
+    "alternative productive"
+  ],
+  "slug": "les-paysans-nourriront-le-monde",
+  "en_clair": "Les petits paysans nourrissent le monde, même s'ils contrôlent peu de terres. Ce texte prouve que l'agriculture paysanne durable peut nourrir plus de gens et mieux protéger les sols que l'agriculture industrielle.",
+  "acteurs": [
+    "La Vía Campesina",
+    "ETC"
+  ],
+  "controverse": "Aucune controverse explicite — c'est un manifeste unilatéral. La tension implicite oppose modèle paysan ancré et modèle agroindustriel extractiviste, mais elle n'est pas débattue interne au texte.",
+  "angle_journalistique": "Enquête : comment les petits paysans produisent 70% de la nourriture mondiale avec moins de 25% des terres — ce que révèlent les données brésiliennes sur la productivité réelle vs la concentration foncière.",
+  "citations_verifiees": [
+    {
+      "quote": "agroecological food production by small farmers is the agricultural model best suited to meeting future food needs",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "The contemporary food crisis is not really a crisis of our ability to produce. It is more due to factors like the food speculation and hoarding",
+      "page": 3,
+      "page_physical": 3,
+      "verified": true
+    },
+    {
+      "quote": "the dominant corporate food system is already failing to provide us with adequate and healthy food",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "Peasants and family farmers hold just 24.3% of farm land, though they make up 84.4% of all farms and gainfully employ three times as many people as does agribusiness",
+      "page": 6,
+      "page_physical": 6,
+      "verified": true
+    },
+    {
+      "quote": "On the one quarter of arable land that they farm, these small farmers produce 87% of all cassava, 70% of beans, 46% of maize, 34% of rice, 58% of milk",
+      "page": 6,
+      "page_physical": 6,
+      "verified": true
+    },
+    {
+      "quote": "Peasants and family farmers have a food producing vocation. Agribusiness has an export vocation.",
+      "page": 7,
+      "page_physical": 7,
+      "verified": true
+    },
+    {
+      "quote": "At least 370 million of these are also indigenous peoples. Together these peasants make up almost half the world's peoples and they grow at least 70% of the world's food.",
+      "page": 7,
+      "page_physical": 7,
+      "verified": true
+    },
+    {
+      "quote": "Peasant and small farm families are rooted in the place where they and their ancestors have farmed for generations, and where their children and grandchildren will farm in the future. This gives them reasons to nurture the productive capacity of the land",
+      "page": 8,
+      "page_physical": null,
+      "verified": false
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "a0b2f05cc0"
+}
