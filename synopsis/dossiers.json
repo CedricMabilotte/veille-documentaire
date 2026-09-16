@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-16T09:13:46Z",
+  "generated_at": "2026-09-16T10:43:12Z",
   "total_dossiers": 10,
   "dossiers": [
     {
       "slug": "sortir-une-terre-du-marche",
       "titre": "Sortir une terre du marché",
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-      "doc_count": 121,
+      "doc_count": 122,
       "docs": [
         "9c49c870",
         "e41de87d",
@@ -104,6 +104,7 @@
         "eb18a3de",
         "c210135f",
         "1d3081c2",
+        "e5436d2a",
         "8af5f6c1",
         "8741a8e6",
         "1fc9c68b",
@@ -939,6 +940,14 @@
           ]
         },
         {
+          "id": "e5436d2a",
+          "title": "PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 – PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 – DOU – Imprensa Nacional",
+          "score": 7,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
           "id": "8af5f6c1",
           "title": "CRI__Darcinopoliss",
           "score": 7,
@@ -1147,7 +1156,7 @@
       "slug": "zad-defense-de-territoires",
       "titre": "ZAD & défense de territoires",
       "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-      "doc_count": 112,
+      "doc_count": 113,
       "docs": [
         "38a113bc",
         "ba64641a",
@@ -1224,6 +1233,7 @@
         "5eb432e1",
         "f9be42fe",
         "8156629f",
+        "37eec026",
         "3fd40433",
         "ac638fb6",
         "8741a8e6",
@@ -1899,6 +1909,15 @@
           ]
         },
         {
+          "id": "37eec026",
+          "title": "Declaração Final do I ENP versão final_CPN",
+          "score": 7,
+          "matched_on": [
+            "zad",
+            "occupation"
+          ]
+        },
+        {
           "id": "3fd40433",
           "title": "CARTA-COMPROMISSO-AOS-CANDIDATOS-E-CANDIDATAS-NAS-ELEICOES-2022",
           "score": 7,
@@ -2232,7 +2251,7 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 448,
+      "doc_count": 456,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -2254,6 +2273,7 @@
         "9e8328d8",
         "5e0c210c",
         "44533d13",
+        "c85c6074",
         "06ab8397",
         "7a9b512f",
         "0a0fa2cf",
@@ -2555,7 +2575,11 @@
         "496c1d78",
         "915b8d79",
         "3b4f90d7",
+        "e5436d2a",
         "8af5f6c1",
+        "26eaccea",
+        "37eec026",
+        "03677257",
         "802c3d6c",
         "bcdd713c",
         "3fd40433",
@@ -2628,7 +2652,10 @@
         "961e54e4",
         "fba04469",
         "fde38caf",
+        "a1f23085",
         "bdaf5ec0",
+        "b64d8099",
+        "418efeb5",
         "38b5fd88",
         "55b31ba8",
         "c8e0149d",
@@ -2866,6 +2893,17 @@
           "title": "PT_Manifesto_em_defesa_dos_territ-rios_e_soberania_alimentar",
           "score": 9,
           "matched_on": [
+            "reforma agraria",
+            "mst"
+          ]
+        },
+        {
+          "id": "c85c6074",
+          "title": "Carta política ATA 2025",
+          "score": 9,
+          "matched_on": [
+            "sans terre",
+            "réforme agraire",
             "reforma agraria",
             "mst"
           ]
@@ -5641,10 +5679,51 @@
           ]
         },
         {
+          "id": "e5436d2a",
+          "title": "PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 – PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 – DOU – Imprensa Nacional",
+          "score": 7,
+          "matched_on": [
+            "sans-terre",
+            "sans terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
           "id": "8af5f6c1",
           "title": "CRI__Darcinopoliss",
           "score": 7,
           "matched_on": [
+            "mst"
+          ]
+        },
+        {
+          "id": "26eaccea",
+          "title": "RESULTADO FESTIVAL LITERÁRIO_VF – SELECIONADOS GERAL",
+          "score": 7,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
+          "id": "37eec026",
+          "title": "Declaração Final do I ENP versão final_CPN",
+          "score": 7,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
+          "id": "03677257",
+          "title": "PA_TABOCA",
+          "score": 7,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
             "mst"
           ]
         },
@@ -6290,11 +6369,38 @@
           ]
         },
         {
+          "id": "a1f23085",
+          "title": "cd7134en",
+          "score": 6,
+          "matched_on": [
+            "mst"
+          ]
+        },
+        {
           "id": "bdaf5ec0",
           "title": "IMPRESSÃO_Caderno de formação de militantes_260126_090557",
           "score": 6,
           "matched_on": [
             "sans-terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
+          "id": "b64d8099",
+          "title": "RESULTADO FESTIVAL LITERÁRIO_VF – SELECIONADOS ESCOLAS",
+          "score": 6,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
+          "id": "418efeb5",
+          "title": "Decisão-4",
+          "score": 6,
+          "matched_on": [
             "réforme agraire",
             "mst"
           ]
@@ -9779,7 +9885,7 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 599,
+      "doc_count": 606,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -9805,6 +9911,7 @@
         "ec7cce0f",
         "9e8328d8",
         "44533d13",
+        "c85c6074",
         "06ab8397",
         "7a9b512f",
         "0a0fa2cf",
@@ -10175,7 +10282,11 @@
         "ea71c1cb",
         "915b8d79",
         "3b4f90d7",
+        "e5436d2a",
         "8af5f6c1",
+        "26eaccea",
+        "37eec026",
+        "03677257",
         "3fd40433",
         "ac638fb6",
         "8741a8e6",
@@ -10302,6 +10413,8 @@
         "8d3d14cf",
         "0c65d825",
         "bdaf5ec0",
+        "b64d8099",
+        "418efeb5",
         "55b31ba8",
         "e0c37afa",
         "edd2691f",
@@ -10614,6 +10727,15 @@
           "matched_on": [
             "paysan",
             "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "c85c6074",
+          "title": "Carta política ATA 2025",
+          "score": 9,
+          "matched_on": [
+            "paysan",
+            "agroécologie"
           ]
         },
         {
@@ -14748,10 +14870,50 @@
           ]
         },
         {
+          "id": "e5436d2a",
+          "title": "PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 – PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 – DOU – Imprensa Nacional",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie"
+          ]
+        },
+        {
           "id": "8af5f6c1",
           "title": "CRI__Darcinopoliss",
           "score": 7,
           "matched_on": [
+            "paysan"
+          ]
+        },
+        {
+          "id": "26eaccea",
+          "title": "RESULTADO FESTIVAL LITERÁRIO_VF – SELECIONADOS GERAL",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie"
+          ]
+        },
+        {
+          "id": "37eec026",
+          "title": "Declaração Final do I ENP versão final_CPN",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "03677257",
+          "title": "PA_TABOCA",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
             "paysan"
           ]
         },
@@ -16112,6 +16274,25 @@
           ]
         },
         {
+          "id": "b64d8099",
+          "title": "RESULTADO FESTIVAL LITERÁRIO_VF – SELECIONADOS ESCOLAS",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière"
+          ]
+        },
+        {
+          "id": "418efeb5",
+          "title": "Decisão-4",
+          "score": 6,
+          "matched_on": [
+            "paysan"
+          ]
+        },
+        {
           "id": "55b31ba8",
           "title": "Carta-contra-violencia-Campanha-contra-violencia",
           "score": 6,
@@ -16974,7 +17155,7 @@
       "slug": "land-back-autochtones",
       "titre": "Land Back & souverainetés autochtones",
       "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-      "doc_count": 259,
+      "doc_count": 262,
       "docs": [
         "39441dfc",
         "e41de87d",
@@ -16982,6 +17163,7 @@
         "5da811ca",
         "42750467",
         "c3bb4444",
+        "c85c6074",
         "0a0fa2cf",
         "9db8fd72",
         "0ae5dad8",
@@ -17200,7 +17382,9 @@
         "df13538a",
         "9f9feb74",
         "8d3d14cf",
+        "a1f23085",
         "bdaf5ec0",
+        "418efeb5",
         "55b31ba8",
         "e0c37afa",
         "edd2691f",
@@ -17289,6 +17473,15 @@
           "score": 9,
           "matched_on": [
             "autochtone"
+          ]
+        },
+        {
+          "id": "c85c6074",
+          "title": "Carta política ATA 2025",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "droit coutumier"
           ]
         },
         {
@@ -19176,8 +19369,25 @@
           ]
         },
         {
+          "id": "a1f23085",
+          "title": "cd7134en",
+          "score": 6,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
           "id": "bdaf5ec0",
           "title": "IMPRESSÃO_Caderno de formação de militantes_260126_090557",
+          "score": 6,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "418efeb5",
+          "title": "Decisão-4",
           "score": 6,
           "matched_on": [
             "autochtone"
@@ -19483,7 +19693,7 @@
       "slug": "feminismes-de-la-terre",
       "titre": "Féminismes de la terre",
       "chapo": "Le foncier a un genre. Place des femmes dans les luttes agraires, droits fonciers des femmes, écoféminisme rural, critique de la division genrée du travail de la terre.",
-      "doc_count": 126,
+      "doc_count": 129,
       "docs": [
         "e41de87d",
         "b225af88",
@@ -19588,6 +19798,7 @@
         "ec46400e",
         "581a53c8",
         "3fe8867b",
+        "37eec026",
         "ac638fb6",
         "ded7eaa1",
         "72a2c796",
@@ -19604,6 +19815,8 @@
         "035d0b23",
         "d273ba77",
         "5c511048",
+        "a1f23085",
+        "b64d8099",
         "55b31ba8",
         "812f9005",
         "aba761bd",
@@ -20544,6 +20757,14 @@
           ]
         },
         {
+          "id": "37eec026",
+          "title": "Declaração Final do I ENP versão final_CPN",
+          "score": 7,
+          "matched_on": [
+            "féminisme agraire"
+          ]
+        },
+        {
           "id": "ac638fb6",
           "title": "Manifesto-da-Juventude-do-Pontal-do-Paranapanema-1",
           "score": 7,
@@ -20681,6 +20902,22 @@
           ]
         },
         {
+          "id": "a1f23085",
+          "title": "cd7134en",
+          "score": 6,
+          "matched_on": [
+            "droits fonciers des femmes"
+          ]
+        },
+        {
+          "id": "b64d8099",
+          "title": "RESULTADO FESTIVAL LITERÁRIO_VF – SELECIONADOS ESCOLAS",
+          "score": 6,
+          "matched_on": [
+            "féminisme paysan"
+          ]
+        },
+        {
           "id": "55b31ba8",
           "title": "Carta-contra-violencia-Campanha-contra-violencia",
           "score": 6,
@@ -20743,7 +20980,7 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 355,
+      "doc_count": 356,
       "docs": [
         "d30c223f",
         "39441dfc",
@@ -20761,6 +20998,7 @@
         "872bf6a1",
         "9e8328d8",
         "44533d13",
+        "c85c6074",
         "7a9b512f",
         "0a0fa2cf",
         "7361abcf",
@@ -21235,6 +21473,14 @@
             "accaparement",
             "land grab",
             "enclosure"
+          ]
+        },
+        {
+          "id": "c85c6074",
+          "title": "Carta política ATA 2025",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
           ]
         },
         {

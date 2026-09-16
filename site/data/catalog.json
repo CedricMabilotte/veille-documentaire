@@ -28630,6 +28630,457 @@
    "cover": "assets/covers/a5f5ceea.png",
    "has_cover": true
   },
+  "ec3680e6": {
+   "id": "ec3680e6",
+   "url": "https://www.clacso.org/wp-content/uploads/2022/02/ActaComiteDirectivoN63_5.pdf",
+   "filename": "ec3680e6_ActaComiteDirectivoN63_5.pdf",
+   "format": "pdf",
+   "source": "CLACSO Libros (acceso abierto)",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-07-31_06-19",
+   "collected_date": "2026-07-31_06-19",
+   "score_initial": 1,
+   "score_final": 5,
+   "latest_score": 1,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2009-01-29",
+   "lang": "es",
+   "editeur": "BCL easyPDF 4.30 (0615)",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/ec3680e6_ActaComiteDirectivoN63_5.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 0,
+     "raison": "Titre 'Acta Comité Directivo Nº 63' ; aucune mention explicite de thématique terres/communs/paysannerie",
+     "context_seen": "Acta Comité Directivo Nº 63 – 19/11/2001",
+     "link_text": "Acta Comité Directivo Nº 63",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Acta Comité Directivo Nº 63 – 19/11/2001",
+     "link_text": "Acta Comité Directivo Nº 63",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-30_16-59",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Acta Comité Directivo Nº 63 – 19/11/2001",
+     "link_text": "Acta Comité Directivo Nº 63",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Acta Comité Directivo Nº 63 – 19/11/2001",
+     "link_text": "Acta Comité Directivo Nº 63",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-31_06-19",
+     "score": 1,
+     "raison": "Procès-verbal administratif ('Acta Comité Directivo Nº 63') ; titre et contexte (date seule) ne mentionnent explicitement aucun concept-clé thématique. Source CLACSO élève minimallement (règle 4b)",
+     "context_seen": "Acta Comité Directivo Nº 63 – 19/11/2001",
+     "link_text": "Acta Comité Directivo Nº 63",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 1,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Acta Comité Directivo Nº 63",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "unchecked",
+   "link_checked": "2026-07-27T15:12:54Z",
+   "title": "Acta Comité Directivo Nº 63",
+   "enrichment": {
+    "summary": "Les minutes du 63e Comité directif de CLACSO (novembre 2001, Guadalajara) sont essentiellement un document de gouvernance académique. Cependant, elles révèlent un indicateur structurel pertinent : la reconnaissance institutionnelle de l'aggravation des conflits agraires en Amérique latine. Dans la discussion sur le renouvellement du Groupe de Travail « Desarrollo Rural » (coordiné par Norma Giarracca, alors en réunion à Mexico City), Emilio Taddei, Coordinateur académique, propose explicitement d'intégrer au programme de travail « el tema de los movimientos y protestas sociales agrarios », justifiant cette priorité par les observations de l'OSAL (Observatorio Social de América Latina) : « se acrecentaron los conflictos agrarios ». Ce moment — novembre 2001, quelques mois après la crise sociale de l'Argentine et alors que s'amplifient les mobilisations paysannes de la région — marque la visibilité des luttes agraires dans l'agenda de recherche d'une institution académique majeure. Le document ne développe pas ces enjeux substantiellement (c'est un procès-verbal administratif), mais il documente comment les institutions savantes latino-américaines intègrent progressivement les mouvements paysans et les protestations agraires comme objets d'étude dignes de priorité institutionnelle.",
+    "citations": [
+     {
+      "page": 3,
+      "quote": "Taddei propone incluir en el programa de trabajo para el nuevo coordinador el tema de los movimientos y protestas sociales agrarios, ya que, de acuerdo a las observaciones hechas a través del OSAL, se acrecentaron los conflictos agrarios.",
+      "why_relevant": "Mention explicite des mouvements et protestations sociales agraires comme enjeu émergent, et reconnaissance institutionnelle de l'aggravation des conflits agraires au moment critique de 2001.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 2,
+      "quote": "Norma Giarracca, coordinadora del grupo sobre Desarrollo rural está reunida con integrantes de su grupo en la Ciudad de México.",
+      "why_relevant": "Norma Giarracca est une figure clé de la recherche latino-américaine sur les mouvements paysans et le développement rural ; sa présence comme coordinatrice indique l'importance institutionnelle accordée à ces thèmes.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 2,
+      "quote": "se avanzó en el armado de redes interinstitucionales, en base a la recomendación de este Comité.",
+      "why_relevant": "Indique une intentionnalité de tisser des réseaux académiques autour du développement rural et de thèmes connexes, stratégie de renforcement collectif.",
+      "verified": true,
+      "page_physical": 2
+     }
+    ],
+    "matched_keywords": [
+     "movimientos sociales agrarios",
+     "conflictos agrarios",
+     "desarrollo rural",
+     "ecología política",
+     "paysannerie",
+     "protestas sociales agrarias"
+    ],
+    "relevance_score": 5,
+    "relevance_notes": "Document de gouvernance institutionnelle plutôt que d'analyse substantive. Pertinent comme *trace historique* : il documente la reconnaissance, en novembre 2001, de l'importance croissante des conflits agraires et mouvements paysans dans l'agenda de recherche latino-américain, et nomme Norma Giarracca comme actrice clé. Valeur : archivistique et contextuelle plutôt que théorique ou pratique.",
+    "en_clair": "En 2001, CLACSO, la principale organisation de chercheurs en sciences sociales d'Amérique latine, décide de faire des mouvements et conflits paysans un thème prioritaire de recherche, reconnaissant qu'ils s'intensifient. C'est un indice que les luttes à la campagne deviennent visibles et reconnues comme objet académique important.",
+    "acteurs": [
+     "Ramón Fogel",
+     "Francisca Raventós",
+     "María Isabel Remy",
+     "Gerónimo de Sierra",
+     "Jaime Zuluaga Nieto",
+     "Atilio A. Boron",
+     "Emilio Taddei",
+     "Norma Giarracca",
+     "Celso Garrido",
+     "CLACSO",
+     "OSAL (Observatorio Social de América Latina)"
+    ],
+    "controverse": "Discussion en marge : les critères d'action affirmative pour l'inclusion des chercheurs de Bolivie, Équateur et Paraguay dans les programmes de CLACSO — question d'équité régionale plutôt que directement liée aux enjeux fonciers.",
+    "angle_journalistique": "Enquête : comment les crises socio-agraires de 2001-2002 en Amérique latine (Argentine, Brésil) ont transformé l'agenda des institutions académiques régionales et légitimé les mouvements paysans comme objet de recherche prioritaire ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "85e78a6557"
+   },
+   "cover": "covers/ec3680e6.jpg",
+   "meta": {
+    "page_count": 12,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "easyPDF SDK 4.3"
+   },
+   "has_cover": true
+  },
+  "4e95177c": {
+   "id": "4e95177c",
+   "url": "https://www.clacso.org/wp-content/uploads/2022/02/ActaComiteDirectivoN83_297.pdf",
+   "filename": "4e95177c_ActaComiteDirectivoN83_297.pdf",
+   "format": "pdf",
+   "source": "CLACSO Libros (acceso abierto)",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-07-31_06-19",
+   "collected_date": "2026-07-31_06-19",
+   "score_initial": 2,
+   "score_final": 5,
+   "latest_score": 2,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2012-09-13",
+   "lang": "es",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/4e95177c_ActaComiteDirectivoN83_297.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 2,
+     "raison": "Titre 'Acta Comité Directivo Nº 83' – aucun mot-clé thématique explicite, contexte réduit à une date ; impossible à déterminer sans accès au contenu",
+     "context_seen": "Acta Comité Directivo Nº 83 – 24/11/2010",
+     "link_text": "Acta Comité Directivo Nº 83",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Acta Comité Directivo Nº 83 – 24/11/2010",
+     "link_text": "Acta Comité Directivo Nº 83",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-30_16-59",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Acta Comité Directivo Nº 83 – 24/11/2010",
+     "link_text": "Acta Comité Directivo Nº 83",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Acta Comité Directivo Nº 83 – 24/11/2010",
+     "link_text": "Acta Comité Directivo Nº 83",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-31_06-19",
+     "score": 2,
+     "raison": "Titre 'Acta Comité Directivo Nº 83' n'indique pas explicitement le contenu ; aucun mot-clé thématique (tierra, communs, paysannerie…) dans titre ni contexte fourni",
+     "context_seen": "Acta Comité Directivo Nº 83 – 24/11/2010",
+     "link_text": "Acta Comité Directivo Nº 83",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 2,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Acta Comité Directivo Nº 83",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Acta Comité Directivo Nº 83",
+   "enrichment": {
+    "summary": "Ce document capture l'acte administratif du 83e Période de Sessions Ordinaires du Comité Directeur de CLACSO (Conseil latino-américain de sciences sociales), tenu à Saint-Domingue les 24-26 novembre 2010. Son noyau pertinent réside dans la création de deux groupes de travail directement liés à la thématique foncière et agraire : le GT 8 « Développement Rural : Disputes Territoriales, Paysans et Décolonialité » (coordonné par Claudia Pilar Lizárraga Aranibar de Bolivie et Carlos Andrés Rodríguez Wallenius du Mexique) et le GT 12 « Économie solidaire et transformation sociale : une perspective décoloniale » (coordonné par Ivonne Farah Henrich de Bolivie et Boris Wolfang Marañón Pimentel du Mexique). Le document révèle une tension institutionnelle importante : la direction de CLACSO (Emir Sader, secrétaire exécutif) insiste sur l'obligation des groupes de travail de se connecter aux politiques publiques concrètes, tandis que certains membres du CD (Olga Zarza, José Vicente Tavares Dos Santos) demandent une approche plus politique et moins bureaucratique, articulée à la « coyunture actuelle » latino-américaine et à la « relation avec les mouvements sociaux, politiques et culturels ». Le document énumère 14 nouveaux groupes de travail selon des critères incluant l'excellence académique, l'innovation, l'équilibre de genre, et explicitement l'articulation avec les politiques publiques et les mouvements sociaux.",
+    "citations": [
+     {
+      "page": 3,
+      "quote": "Desarrollo Rural: Disputas Territoriales, Campesinos, y Decolonialidad",
+      "why_relevant": "Titre explicite du GT 8 : touche frontalement trois concepts-clés (développement rural, conflits territoriaux, paysans, décolonialité)",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "Economía solidaria y transformación social: una perspectiva descolonial",
+      "why_relevant": "Titre du GT 12 : articule économie solidaire, transformation sociale et perspective décoloniale (core concepts)",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 2,
+      "quote": "es necesario considerar muy especialmente las maneras de vinculación de la producción de cada GT con las políticas públicas",
+      "why_relevant": "Directive institutionnelle de CLACSO : lie la recherche aux politiques publiques concrètes, dimension stratégique de la pensée foncière",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "relación con movimientos sociales, políticos y culturales; búsqueda de fuentes alternativas de financiamiento",
+      "why_relevant": "Critères de sélection : CLACSO valorise le lien direct aux mouvements sociaux et l'autonomie financière",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 2,
+      "quote": "evitar el riesgo de la burocratización de los GT's así como su funcionamiento según criterios de poder antes que por las necesidades de conocimiento en la región",
+      "why_relevant": "Alerte politique : demande que la recherche soit pilotée par les besoins réels de la région, non par les jeux de pouvoir bureaucratiques",
+      "verified": true,
+      "page_physical": 2
+     }
+    ],
+    "matched_keywords": [
+     "Desarrollo Rural",
+     "Disputas Territoriales",
+     "Campesinos",
+     "Decolonialidad",
+     "Economía solidaria",
+     "transformación social",
+     "descolonial",
+     "mouvements sociaux"
+    ],
+    "relevance_score": 5,
+    "relevance_notes": "Score 5/10 : Document purement administratif qui annonce la création de deux groupes de travail académiques pertinents, mais sans contenu substantiel. Utile comme signal institutionnel que CLACSO place le développement rural, les disputes territoriales et l'économie solidaire au cœur de son agenda 2010-2012, et pour identifier les coordinateurs régionaux (Bolivie, Mexique) impliqués.",
+    "en_clair": "CLACSO, le principal réseau académique latino-américain, vient de créer officiellement deux groupes de recherche dédiés au développement rural, aux conflits fonciers et à l'économie solidaire. Si tu cherches où dialoguer avec des académiques sérieuses sur la terre et les paysans en Amérique latine, voilà les noms et les institutions — mais ce texte lui-même ne dit rien sur ce qu'ils vont faire.",
+    "acteurs": [
+     "CLACSO (Conseil latino-américain de sciences sociales)",
+     "Claudia Pilar Lizárraga Aranibar",
+     "Carlos Andrés Rodríguez Wallenius",
+     "Ivonne Farah Henrich",
+     "Boris Wolfang Marañón Pimentel",
+     "Emir Sader",
+     "Olga María Zarza",
+     "José Vicente Tavares Dos Santos"
+    ],
+    "controverse": "Tension déclarée au sein du CD sur le rôle des groupes de travail : la direction (Sader) insiste sur la liaison aux politiques publiques comme « responsabilité historique » ; des membres du CD (Zarza, Tavares Dos Santos) craignent une « burocratización » et demandent une priorité aux mouvements sociaux et aux « besoins de connaissance régionaux » plutôt qu'aux critères de pouvoir institutionnel.",
+    "angle_journalistique": "Enquête sur les priorés de recherche latino-américaines en 2010 : pourquoi ces deux thèmes (développement rural + disputes foncières d'une part, économie solidaire d'autre part) émergent-ils maintenant comme centraux pour CLACSO ? Qui pousse pour cette institutionnalisation ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "6891375909"
+   },
+   "cover": "covers/4e95177c.jpg",
+   "meta": {
+    "page_count": 13,
+    "pdf_title": "",
+    "pdf_author": "sabrinag",
+    "pdf_creator": "Microsoft® Word 2010"
+   },
+   "has_cover": true
+  },
+  "a480f492": {
+   "id": "a480f492",
+   "url": "https://www.clacso.org/wp-content/uploads/2022/02/InformedeGestion2011_317.pdf",
+   "filename": "a480f492_InformedeGestion2011_317.pdf",
+   "format": "pdf",
+   "source": "CLACSO Libros (acceso abierto)",
+   "first_seen": "2026-05-23_00-59",
+   "latest_run": "2026-07-31_06-19",
+   "collected_date": "2026-07-31_06-19",
+   "score_initial": 2,
+   "score_final": 4,
+   "latest_score": 2,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2011-12-20",
+   "lang": "es",
+   "editeur": "Adobe PDF Library 9.9",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/a480f492_InformedeGestion2011_317.pdf",
+   "runs": [
+    {
+     "date": "2026-05-23_00-59",
+     "score": 1,
+     "raison": "Titre 'Informe de Gestión 2011' est générique ; aucun mot-clé thématique cité",
+     "context_seen": "Informe de Gestión 2011",
+     "link_text": "Informe de Gestión 2011",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Informe de Gestión 2011",
+     "link_text": "Informe de Gestión 2011",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-06-30_16-59",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Informe de Gestión 2011",
+     "link_text": "Informe de Gestión 2011",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Informe de Gestión 2011",
+     "link_text": "Informe de Gestión 2011",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-31_06-19",
+     "score": 2,
+     "raison": "Titre 'Informe de Gestión 2011' ; rapport institutionnel générique, aucune mention littérale de la thématique.",
+     "context_seen": "Informe de Gestión 2011",
+     "link_text": "Informe de Gestión 2011",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 2,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Informe de Gestión 2011",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "unchecked",
+   "link_checked": "2026-07-27T15:12:54Z",
+   "title": "Informe de Gestión 2011",
+   "enrichment": {
+    "summary": "Ce rapport de gestion 2011 de CLACSO (Conseil latino-américain des sciences sociales) est un document administratif décrivant les activités, objectifs et résultats de cette institution de coordination de centres de recherche en Amérique latine et Caraïbes. Le document mentionne explicitement 'bienes comunes' (biens communs) comme l'une des deux grandes thématiques structurant le Programme régional de bourses de recherche en 2011, aux côtés du 'régimen de acumulación' (régime d'accumulation). Sur 158 candidatures reçues dans les concours de bourses CLACSO-ASDI 2011, 64 projets se rapportaient à la thématique des biens communs. Au terme de la sélection, 31 bourses ont été attribuées au total, dont 16 sur le thème 'bienes comunes'. Le rapport détaille les processus de sélection académique, d'évaluation par des spécialistes et de suivi de la recherche financée. L'institution réaffirme son engagement envers 'un Conocimiento para un mundo sustentable' (une connaissance pour un monde durable) via l'accès libre à la production académique, la formation de chercheurs, et le renforcement du réseau régional. Les objectifs institutionnels mentionnés visent à amplifier l'incidence des recherches sur les politiques publiques et les actions sociales. Bien que le document soit essentiellement administratif et technique, il signale l'existence d'une dynamique académique légitime autour des communs en Amérique latine et la capacité institutionnelle à financer et structurer la recherche sur ce thème.",
+    "citations": [
+     {
+      "page": 4,
+      "quote": "Distribuidas por tema: Bienes comunes (64) [B1 (4), B2 (33) y B3 (26)] y Régimen de acumulación (94)",
+      "why_relevant": "Seule mention explicite de 'bienes comunes' dans le texte : identifie ce thème comme prioritaire dans les concours de recherche CLACSO 2011.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 5,
+      "quote": "Distribuidas por tema: Bienes comunes (16) [B1 (2), B2 (4) y B3 (10)]",
+      "why_relevant": "Allocation effective des bourses : 16 des 31 bourses attribuées concernent les biens communs.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 3,
+      "quote": "Trabajar en la concreción de un Conocimiento para un mundo sustentable en dos líneas nodales: a) investigación y formación y b) conocimiento abierto y colaborativo.",
+      "why_relevant": "Objectif stratégique d'une 'connaissance pour un monde durable' centrant accès libre et collaboration — vision générale compatible avec les principes des communs.",
+      "verified": true,
+      "page_physical": 4
+     }
+    ],
+    "matched_keywords": [
+     "bienes comunes"
+    ],
+    "relevance_score": 4,
+    "relevance_notes": "Pertinence très faible malgré la mention explicite de 'bienes comunes' comme axe de recherche. Le texte est un rapport administratif sans contenu substantif sur les communs fonciers eux-mêmes : il énumère seulement des statistiques de bourses et de processus institutionnels. C'est un simple signal institutionnel, pas une analyse de fond.",
+    "en_clair": "Ce document montre qu'une grande organisation de chercheurs latino-américains finance et soutient la recherche sur les 'biens communs' (terres et ressources partagées). C'est un indicateur que ce thème est reconnu comme important dans le monde académique régional, mais le document lui-même ne contient pas d'analyse ou d'exemples concrets de luttes pour les communs.",
+    "acteurs": [
+     "CLACSO"
+    ],
+    "controverse": "",
+    "angle_journalistique": "Comment les institutions académiques latino-américaines légitiment et financent la recherche sur les communs fonciers comme domaine d'étude prioritaire.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "c98cd0c6d3"
+   },
+   "cover": "covers/a480f492.jpg",
+   "meta": {
+    "page_count": 125,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "Adobe InDesign CS5 (7.0)"
+   },
+   "has_cover": true
+  },
   "c877a40d": {
    "id": "c877a40d",
    "url": "https://www.naehrstoffwende.org/wp-content/uploads/2024/10/Handbuch-fuer-die-Sanitaer-und-Naehrstoffwende.pdf",
@@ -28899,6 +29350,605 @@
     "prompt_version": "36f06249d2"
    },
    "cover": "assets/covers/0c65d825.png",
+   "has_cover": true
+  },
+  "55d6778b": {
+   "id": "55d6778b",
+   "url": "https://cdn.crimethinc.com/assets/zines/to-change-everything/to-change-everything_screen_two_page_view.pdf",
+   "filename": "55d6778b_to-change-everything_screen_two_page_view.pdf",
+   "format": "pdf",
+   "source": "CrimethInc — zines",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-09-15_17-52",
+   "collected_date": "2026-09-15_17-52",
+   "score_initial": 0,
+   "score_final": 4,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2020-05-30",
+   "lang": "en",
+   "editeur": "Adobe PDF Library 15.0",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/55d6778b_to-change-everything_screen_two_page_view.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Screen Two Page View PDF",
+     "link_text": "Screen Two Page View PDF",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Screen Two Page View PDF",
+     "link_text": "Screen Two Page View PDF",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-09-15_17-52",
+     "score": 0,
+     "raison": "Titre 'Screen Two Page View PDF' — description technique de format, aucun mot-clé de la thématique. Contexte vide. Non-citable.",
+     "context_seen": "Screen Two Page View PDF",
+     "link_text": "Screen Two Page View PDF",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Screen Two Page View PDF",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Screen Two Page View PDF",
+   "enrichment": {
+    "summary": "Ce texte est un manifeste anarchiste généraliste qui défend l'autodétermination, le refus de l'obéissance et la distinction radicale entre pouvoir et autorité. L'auteur critique les institutions (bureaucraties, économie marchande, hiérarchies militaires) qui entravent la liberté et promeut une refondation des relations sociales sur la base de la confiance mutuelle, de l'association libre et de l'aide mutuelle. Le texte aborde l'interconnexion humaine, critique le désir marchandisé et invite à voir nos ennemis non pas en des personnes mais en des systèmes d'oppression. Une seule référence explicite touche le foncier : le contraste entre le locataire qui entretient le bâtiment (pouvoir) et le propriétaire dont le nom figure sur l'acte (autorité). Bien que les principes philosophiques énoncés — refus de l'autorité, valorisation du pouvoir collectif, confiance et association libre — constituent un soubassement potentiel pour les luttes foncières et les communs, le texte reste au niveau généraliste et n'engage aucun débat spécifique sur la propriété, la terre, l'agriculture ou les mouvements agraires.",
+    "citations": [
+     {
+      "page": 5,
+      "quote": "The tenants who maintain the building have power; the landlord whose name is on the deed has authority.",
+      "why_relevant": "Seule référence explicite au rapport foncier/propriété : illustre le contraste pouvoir/autorité appliqué à la terre et aux droits d'usage versus propriété légale.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 5,
+      "quote": "In this society, power and authority are so interlinked that we can barely distinguish them: we can only obtain power in return for obedience.",
+      "why_relevant": "Critique de la hiérarchie et de l'obéissance : cadre philosophique applicable aux luttes contre la centralisation du contrôle foncier.",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 6,
+      "quote": "Without imposed power imbalances, people have an incentive to work out conflicts to their mutual satisfaction—to earn each other's trust.",
+      "why_relevant": "Théorie de l'association libre basée sur la confiance mutuelle, applicable aux principes des communs et des structures coopératives.",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 6,
+      "quote": "we could reconstruct our relations on the basis of free association and mutual aid.",
+      "why_relevant": "Programme libertaire de refondation sociale hors hiérarchie : pertinent pour les utopies foncières et communales.",
+      "verified": true,
+      "page_physical": 6
+     }
+    ],
+    "matched_keywords": [],
+    "relevance_score": 4,
+    "relevance_notes": "Texte anarchiste/libertaire généraliste sans ancrage foncier, agraire ou territorial spécifique. Seule une phrase évoque la propriété foncière (locataire/propriétaire). Relève des « concepts apparentés » (anarchisme, association libre) mais absent des core concepts (communs fonciers, libération des terres, paysannerie, agroécologie). Utile comme philosophie de base, hors-champ comme veille foncière.",
+    "en_clair": "Ce texte prêche la liberté par l'association entre égaux et refuse la hiérarchie. Pour une lutte foncière, ça donne des principes généraux (confiance, pas de patron, entraide), mais zéro stratégie ni exemple concret sur la terre, les récoltes ou comment partager une ferme.",
+    "acteurs": [],
+    "controverse": "Tension classique entre liberté individuelle et contrainte collective : l'auteur tranche pour une interconnexion volontaire sans centre de pouvoir, mais n'aborde pas les conflits concrets que cela pose en matière de partage de ressources limitées (comme la terre).",
+    "angle_journalistique": "Comment les mouvements fonciers contemporains mobilisent la philosophie anarcho-libertaire d'association libre pour justifier leurs modèles alternatifs (communs, ZAD, terres collectives) — et où cette philosophie se heurte à la réalité des conflits d'usage.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "acf10ca069"
+   },
+   "cover": "covers/55d6778b.jpg",
+   "meta": {
+    "page_count": 25,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "Adobe InDesign 15.0 (Macintosh)"
+   },
+   "has_cover": true
+  },
+  "ff79fbaf": {
+   "id": "ff79fbaf",
+   "url": "https://cdn.crimethinc.com/assets/zines/to-change-everything/to-change-everything_print_black_and_white.pdf",
+   "filename": "ff79fbaf_to-change-everything_print_black_and_white.pdf",
+   "format": "pdf",
+   "source": "CrimethInc — zines",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-09-15_17-52",
+   "collected_date": "2026-09-15_17-52",
+   "score_initial": 0,
+   "score_final": 4,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2018-10-16",
+   "lang": "en",
+   "editeur": "Adobe PDF Library 15.0",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/ff79fbaf_to-change-everything_print_black_and_white.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Print B/W PDF",
+     "link_text": "Print B/W PDF",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Print B/W PDF",
+     "link_text": "Print B/W PDF",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-09-15_17-52",
+     "score": 0,
+     "raison": "Titre 'Print B/W PDF' — description technique de format, aucun mot-clé de la thématique. Contexte vide. Non-citable.",
+     "context_seen": "Print B/W PDF",
+     "link_text": "Print B/W PDF",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Print B/W PDF",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Print B/W PDF",
+   "enrichment": {
+    "summary": "Ce texte anarchiste de CrimethInc. propose une critique philosophique générale de la propriété privée, du capitalisme et de l'autorité comme systèmes de domination hiérarchique. L'auteur distingue le « pouvoir » (puissance réelle, capacité d'action) de l'« autorité » (domination imposée par la force). Il argumente que la propriété privée est une « construction sociale » héritée du féodalisme, imposée par la violence coercitive de l'État et du droit, et qu'elle produit des « inégalités artificielles » d'accès à la terre et aux ressources. Bien que le texte évoque brièvement l'agriculture industrielle (fermes « usines » avec pesticides et semences génétiquement modifiées) et mentionne les « imbalances in access to land », il ne propose pas d'alternatives concrètes : pas de communs fonciers, pas de coopératives, pas de fiducies foncières, pas de paysannerie. Il n'y a aucun ancrage dans les mouvements réels de libération foncière (MST, Via Campesina), les luttes sans-terre, ou les expériences d'habitat collectif. C'est un texte de cadrage idéologique anarchiste générale, utile comme base critique mais dénué du concret et du situé qui caractérisent la thématique de veille.",
+    "citations": [
+     {
+      "page": 10,
+      "quote": "The foundation of capitalism is property rights—another social construct we inherited from kings and aristocrats. Property shifts hands more rapidly today, but the concept is the same: the idea of ownership legitimizes the use of violence to enforce artificial imbalances in access to land and resources.",
+      "why_relevant": "Touche frontalement à la critique de la propriété privée et son lien à la violence pour imposer inégalités d'accès à la terre.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 9,
+      "quote": "The workers who perform the labor have power; the bosses who tell them what to do have authority. The tenants who maintain the building have power; the landlord whose name is on the deed has authority.",
+      "why_relevant": "Illustre la distinction entre le contrôle réel (tenants entretiennent) et la propriété légale (landlord sur le titre), question clé des enjeux fonciers.",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 10,
+      "quote": "Some people imagine that property could exist without the state. But property rights are meaningless without a centralized authority to impose them",
+      "why_relevant": "Soulève le lien entre propriété privée et État, fondamental pour comprendre les alternatives collectivement gérées.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 8,
+      "quote": "A scoundrel's worst fear is a society without property—for without it, he will only get the respect he deserves. Without money, people are valued for what they contribute to others' lives.",
+      "why_relevant": "Évoque une société sans propriété privée et son économie morale alternative basée sur la contribution, cadre idéologique des communs.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 5,
+      "quote": "the factory farm in which pesticides and herbicides defend sterile rows of genetically modified corn",
+      "why_relevant": "Seule référence à l'agriculture (critique), mais sans lien à l'agroécologie ou aux savoirs paysans alternatifs.",
+      "verified": true,
+      "page_physical": 5
+     }
+    ],
+    "matched_keywords": [
+     "anarchisme",
+     "critique de la propriété privée",
+     "propriété (property rights)",
+     "terre et ressources (land and resources)",
+     "autorité (authority)",
+     "autodétermination (self-determination)",
+     "agriculture industrielle (critique)"
+    ],
+    "relevance_score": 4,
+    "relevance_notes": "Le texte offre une critique philosophique solide de la propriété privée et du capitalisme comme fondements de domination, ce qui est théoriquement pertinent pour les luttes foncières. Cependant, il manque d'ancrage concret : aucune mention de communs fonciers, paysannerie, mouvements réels (MST, Via Campesina, Land Back), coopératives, ou expériences situés de libération foncière. C'est un texte de théorie anarchiste générale, pas un texte engagé dans les enjeux concrets et territorialisés d'accès et de contrôle de la terre.",
+    "en_clair": "Ce texte explique pourquoi la propriété privée est un problème et non une loi naturelle, ce qui aide à comprendre pourquoi certains veulent partager la terre autrement. Mais il ne dit pas comment le faire concrètement, ni comment les paysans ou les collectifs s'y prennent vraiment.",
+    "acteurs": [
+     "CrimethInc."
+    ],
+    "controverse": "",
+    "angle_journalistique": "Enquêter sur les tentatives concrètes, historiques et contemporaines, de créer des sociétés sans propriété privée (communes rurales, occupations, expériences collectives dans les Suds) et mettre à l'épreuve cette hypothèse philosophique anarchiste sur le terrain.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "c165c49e3b"
+   },
+   "cover": "covers/ff79fbaf.jpg",
+   "meta": {
+    "page_count": 24,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "Adobe InDesign CC 2017 (Macintosh)"
+   },
+   "has_cover": true
+  },
+  "2de0e722": {
+   "id": "2de0e722",
+   "url": "https://lakeeffect.noblogs.org/files/2025/11/Defense_V2_FINALREAD.pdf",
+   "filename": "2de0e722_Defense_V2_FINALREAD.pdf",
+   "format": "pdf",
+   "source": "CrimethInc — zines",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-09-15_17-52",
+   "collected_date": "2026-09-15_17-52",
+   "score_initial": 2,
+   "score_final": 4,
+   "latest_score": 2,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2025-11-16",
+   "lang": "en",
+   "editeur": "Adobe PDF Library 16.0.3",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/2de0e722_Defense_V2_FINALREAD.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Defend Our Neighbors, Defend Ourselves : Community Self-Defense from Los Angeles to Chicago",
+     "link_text": "Defend Our Neighbors, Defend Ourselves",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Defend Our Neighbors, Defend Ourselves : Community Self-Defense from Los Angeles to Chicago",
+     "link_text": "Defend Our Neighbors, Defend Ourselves",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-09-15_17-52",
+     "score": 2,
+     "raison": "Titre 'Community Self-Defense' ; contexte 'Los Angeles to Chicago' ; aucune mention explicite de terres, paysannerie, communs fonciers, accès à la terre ou réforme agraire",
+     "context_seen": "Defend Our Neighbors, Defend Ourselves : Community Self-Defense from Los Angeles to Chicago",
+     "link_text": "Defend Our Neighbors, Defend Ourselves",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 2,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Defend Our Neighbors, Defend Ourselves",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Defend Our Neighbors, Defend Ourselves",
+   "enrichment": {
+    "summary": "Ce document est un manuel pratique de tactique communautaire pour activistes anti-déportation aux États-Unis, centré sur la mise en place de « centros » ou « defense hubs » — des points d'appui locaux où les voisin·es d'un quartier se rassemblent pour prévenir et intervenir dans les arrestations menées par l'ICE (Immigration and Customs Enforcement). L'auteur rejette les formes de résistance purement spectatrices ou clandestines, arguant qu'une présence établie, ancrée territorialement, construit des « relations de confiance et d'obligation » durables plutôt que des confrontations isolées. Le texte situe cette approche dans une généalogie de self-defense autonome : il cite la Lowndes County Freedom Organization (années 1960, Alabama) et le Black Panther Party for Self-Defense, qui ont organisé la défense communautaire face à la terreur d'État contre les Noirs et les fermier·ères noirs. Le manuel détaille ensuite les étapes concrètes : identifier les lieux où l'ICE cible régulièrement les migrant·es (coins de day laborers, devant les Home Depots, stations-essence), dialoguer avec les résident·es et travailleur·ses locaux·ales existant·es, se laisser guider par leurs tactiques et besoins plutôt que de les imposer, et construire des réseaux informels (groupes WhatsApp/Signal) pour l'alerte précoce et les patrouilles. Le document insiste sur un principe clé : les defense hubs ne visent pas à contrôler le territoire ou imposer une ligne politique, mais à appuyer les formes de résistance et d'entraide mutuelle déjà en cours localement. Le texte entrelace plusieurs dimensions : l'autonomie populaire (« community outside and against the law »), l'entraide mutuelle (distribuer des masques, patrouilles), une critique de l'abandon de la population par les gouvernements locaux et fédéraux, et une philosophie de non-imposition (« with, not for »). Bien que le document ne traite pas de propriété foncière, de communs, d'agriculture ou d'habitat collectif, il demeure pertinent pour une veille sur les formes d'autonomie territoriale, d'auto-gouvernance populaire et de co-construction de l'infrastructure commune ancrées dans la défense d'un collectif situé.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "A centro is a place where anti-deportation activists can gather, building connections with the surrounding community and establishing a hub for anti-deportation activity.",
+      "why_relevant": "Définition de l'infrastructure : point de rassemblement pour renforcer les liens communautaires et la capacité collective d'action.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "This situated political work, unlike spectacular protests or clandestine activities, builds relationships of trust and obligation that continue beyond individual confrontations.",
+      "why_relevant": "Argument pour un ancrage territorial durable et des relations persistantes, plutôt que des actions ponctuelles.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "In crisis moments like these, when state, local, and federal governments abandon and terrorize whole populations, people have historically taken the conditions of their lives into their own hands.",
+      "why_relevant": "Pose l'autonomie populaire comme réponse historique au vide et à la violence de l'État.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 4,
+      "quote": "In the early sixties, in Lowndes County, Alabama, people organized autonomous militias and an independent political party, the Lowndes County Freedom Organization, to protect Black farmers from state and vigilante violence.",
+      "why_relevant": "Référence explicite à une forme d'auto-gouvernance et de défense collective ancrée territorialement, impliquant des fermier·ères noirs.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 4,
+      "quote": "These organizations responded to unchecked racist violence by empowering people to defend themselves: the Black Panther Party taught people their rights, but it also encouraged them to protect themselves however was necessary.",
+      "why_relevant": "Philosophie de l'empowerment autonome et du droit à l'auto-défense collective face à la terreur d'État.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 4,
+      "quote": "Instead of establishing control over an area and dictating what its inhabitants are allowed to do, defense hubs support what popular resistance already exists.",
+      "why_relevant": "Principe de non-imposition : l'infrastructure épouse les formes de lutte déjà vivantes localement.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 4,
+      "quote": "In Los Angeles, defense hubs have provided infrastructure for mutual aid and area patrols, spaces for politicized people to meet each other, and crucially, offered outraged people local, place-based relationships that give their anger direction.",
+      "why_relevant": "Articulation concrète d'entraide mutuelle, patrouilles, et création de liens ancrés spatialement — formes de commoning urbain.",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 6,
+      "quote": "It is essential to engage with locals as collaborators: you may be surprised by the tactics and priorities people bring to this project, and as a defense hub, your role is to support and facilitate them as much as possible.",
+      "why_relevant": "Épousailles de l'horizontalité et du respect des savoirs locaux — principe clé des structures d'auto-gouvernance.",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 6,
+      "quote": "No single group or organization, no matter their funding or professional presentation, should dictate what autonomous self-defense looks like.",
+      "why_relevant": "Refus de la centralisation et de l'autorité professionnelle/institutionnelle — affirmation de l'autonomie populaire décentralisée.",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 5,
+      "quote": "the centros could persist and become mature pieces of autonomous pro-social infrastructure against capitalist crises.",
+      "why_relevant": "Vision d'une infrastructure autonome, durable et orientée vers le bien commun face aux crises systémiques.",
+      "verified": true,
+      "page_physical": 5
+     }
+    ],
+    "matched_keywords": [],
+    "relevance_score": 4,
+    "relevance_notes": "Le texte n'aborde aucun des concepts core de la thématique (propriété d'usage, communs fonciers, agriculture, habitat coopératif). Cependant, il traite de formes d'autonomie territoriale, d'entraide mutuelle, et d'auto-gouvernance communautaire ancrées spatialement, et cite des références historiques (Black Panthers, Lowndes County Freedom Organization) liées aux luttes noires et paysannes. Ces dimensions tangent à la thématique mais par une entrée urbaine anti-déportation, non foncière ni agraire.",
+    "en_clair": "Ce guide montre comment créer des points de surveillance et d'entraide dans les quartiers pour bloquer les arrestations migratoires par l'État. C'est utile pour comprendre comment construire une action collective décentralisée ancrée dans le lieu et le rapport de confiance, pas seulement dans une idéologie.",
+    "acteurs": [
+     "ICE (Immigration and Customs Enforcement)",
+     "JB Pritzker",
+     "Lowndes County Freedom Organization",
+     "Black Panther Party for Self-Defense",
+     "Huey P. Newton",
+     "Bobby Seale"
+    ],
+    "controverse": "Le texte pose implicitement la tension entre formes institutionnelles (ONG, gouvernements locaux démocrates) et autonomie populaire radicale. Les politiciens locaux ne font que « parler » face aux raids ICE, tandis que la self-defense autonome doit se construire en dehors et contre les structures légales et professionnelles.",
+    "angle_journalistique": "Enquête sur l'efficacité des « centros » anti-déportation en Californie et dans le Midwest : comment les collectifs autogérés parviennent-ils à bloquer les arrestations ICE là où les ONG et les gouvernements locaux ont échoué ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "bb55248e54"
+   },
+   "cover": "covers/2de0e722.jpg",
+   "meta": {
+    "page_count": 12,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "Adobe InDesign 17.0 (Windows)"
+   },
+   "has_cover": true
+  },
+  "70f4364b": {
+   "id": "70f4364b",
+   "url": "https://tucsonabc.wordpress.com/wp-content/uploads/2013/10/foundations.pdf",
+   "filename": "70f4364b_foundations.pdf",
+   "format": "pdf",
+   "source": "CrimethInc — zines",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-09-15_17-52",
+   "collected_date": "2026-09-15_17-52",
+   "score_initial": 1,
+   "score_final": 4,
+   "latest_score": 1,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2011-12-14",
+   "lang": "en",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/70f4364b_foundations.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Beware the Funders of\nImmigrants’ Rights",
+     "link_text": "Beware the Funders of\nImmigrants’ Rights",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Beware the Funders of\nImmigrants’ Rights",
+     "link_text": "Beware the Funders of\nImmigrants’ Rights",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-09-15_17-52",
+     "score": 1,
+     "raison": "Titre 'Beware the Funders of Immigrants' Rights' ; critique des financeurs ; aucune mention de libération des terres, communs fonciers ou accès à la terre",
+     "context_seen": "Beware the Funders of\nImmigrants’ Rights",
+     "link_text": "Beware the Funders of\nImmigrants’ Rights",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 1,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Beware the Funders of\nImmigrants’ Rights",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Beware the Funders of\nImmigrants’ Rights",
+   "enrichment": {
+    "summary": "Cet article critique le rôle de la Ford Foundation et plus largement de la « Non-Profit Industrial Complex » (NPIC) dans la cooptation des mouvements de justice sociale, en particulier ceux des droits des immigrants en Arizona. L'auteur expose comment les fondations philanthropiques, tout en finançant des groupes de justice sociale, orientent leurs stratégies vers des approches légalistes, réformistes et « raisonnables » plutôt que radicales ou transformatrices. Le texte démonte également l'histoire coloniale de la Ford Foundation : son implication dans les coups d'État en Indonésie (1966) et au Chili (1973), son financement historique de la Population Council et des politiques de contrôle démographique — autant de stratégies de domination déguisées en progrès humanitaire. La contradiction centrale est frappante : un membre du conseil d'administration de Ford siège simultanément chez Corrections Corporation of America (CCA), une entreprise pénitentiaire privée, tandis que Ford finance des groupes militants contre CCA. L'article pose une question politique radicale : comment les mouvements sociaux peuvent-ils accepter des financements venant d'institutions dont l'agenda fondamental reste incompatible avec la transformation réelle ? C'est une critique de la capacité des fondations à « canaliser la résistance » en la rendant inoffensive pour le système capitaliste existant.",
+    "citations": [
+     {
+      "page": 4,
+      "quote": "the way in which capitalist interests and the state use non-profits to monitor and control social justice movements",
+      "why_relevant": "Critique fondamentale du rôle de contrôle politique du NPIC ; pertinent pour comprendre les pièges du financement institutionnel des mouvements",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "redirect activist energies into career-based modes of organizing instead of mass-based organizing capable of actually transforming society",
+      "why_relevant": "Pointe la dépolitisation et la professionnalisation des mouvements par le financement fondationnel ; tension clé entre approches radicales et réformistes",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 5,
+      "quote": "very few people are even calling for an end to immigration laws, border controls, and the like, much less total freedom and no borders",
+      "why_relevant": "Question radicale sur la radicalité réelle des mouvements financés ; invite à une critique des frontières comme dispositif de contrôle",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 5,
+      "quote": "Many of us are engaged in a battle against the deeply engrained myths about overpopulation which are part of the attack on the fourteenth amendment",
+      "why_relevant": "Critique du contrôle démographique comme arme de domination coloniale et raciale ; pertinent pour comprendre les stratégies impérialistes sous couvert de philanthropie",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 5,
+      "quote": "making themselves out to be benevolent funders of the 'empowerment' and 'education' of poor (brown) women, are making deflecting responsibility for poverty",
+      "why_relevant": "Dénonce l'instrumentalisation féministe par les fondations comme écran de fumée pour le maintien des hiérarchies coloniales",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 5,
+      "quote": "Ford Foundation focused on sending the country's intellectual elite [known later as the Berkeley Mafia] abroad for training, in the hope that one day they would inherit power",
+      "why_relevant": "Document l'implication de la Ford Foundation dans la préparation de coups d'État et la mise en place de régimes impérialistes",
+      "verified": true,
+      "page_physical": 5
+     },
+     {
+      "page": 6,
+      "quote": "when Ford dived into human rights, it defined the field as narrowly as possible. The foundation strongly favored groups that framed their work as legalistic struggles for the 'rule of law,' 'transparency' and 'good governance'",
+      "why_relevant": "Montre comment les fondations recyclent leur héritage violent en finançant une vision étroite, institutionnaliste et dépolitisée de la justice",
+      "verified": true,
+      "page_physical": 6
+     },
+     {
+      "page": 4,
+      "quote": "This is about whether the world we want to live in is compatible with that of any funder or anyone in positions of power",
+      "why_relevant": "Question politique radicale : l'incompatibilité structurelle entre transformations systémiques et acceptation du financement institutionnel",
+      "verified": true,
+      "page_physical": 4
+     }
+    ],
+    "matched_keywords": [],
+    "relevance_score": 4,
+    "relevance_notes": "Le texte critique des mécanismes de cooptation des mouvements sociaux par les fondations philanthropiques — question institutionnelle pertinente pour tous les mouvements de justice, y compris fonciers. Cependant, il n'aborde pas directement les core concepts de la thématique (communs fonciers, propriété d'usage, agroécologie, souveraineté alimentaire, paysannerie, habitat coopératif). Les références indirectes à des collectifs autochtones (O'odham, Tonatierra) et aux enjeux de frontière/territoire ne suffisent pas. Relevance institutionnelle plutôt que thématique.",
+    "en_clair": "Ce texte explique comment les grandes fondations philanthropiques (comme Ford) financent les mouvements pour les droits des immigrants, mais en les dirigeant vers des solutions légales et tièdes, au lieu de changements radicaux. C'est un piège : à chaque fois qu'un mouvement accepte de l'argent d'une fondation, il risque d'être canalisé vers des stratégies sans danger pour le système qu'on voudrait changer.",
+    "acteurs": [
+     "Ford Foundation",
+     "Corrections Corporation of America (CCA)",
+     "Population Council",
+     "INCITE! Women of Color Against Violence",
+     "Un Pueblo Sin Fronteras",
+     "Critical Resistance",
+     "O'odham Solidarity Across Borders Collective",
+     "Phoenix Class War Council",
+     "O'odham Solidarity Project",
+     "Corazón de Tucson",
+     "National Day Laborer Organizing Network (NDLON)",
+     "Alto Arizona",
+     "Brave New Foundation",
+     "Border Network for Human Rights",
+     "Grassroots Leadership",
+     "Interfaith Worker Justice",
+     "National Immigration Law Center",
+     "Puente Movement",
+     "Tonatierra",
+     "Tides Center and Foundation",
+     "Coalición de Derechos Humanos",
+     "Southern Poverty Law Center",
+     "Seventh Generation Fund",
+     "Resource Generation",
+     "Salvador Reza",
+     "Russell Pearce",
+     "Minuteman Project",
+     "Naomi Klein"
+    ],
+    "controverse": "La contradiction centrale : les fondations philanthropiques comme Ford financent-elles réellement des mouvements de justice, ou canalisent-elles la contestation vers des formes inoffensives (légalisme, réformisme) ? Tension entre accepter les financements institutionnels et maintenir l'indépendance politique des mouvements.",
+    "angle_journalistique": "Enquête sur les conflits d'intérêts au sein des conseils d'administration des grandes fondations philanthropiques : comment un même board member peut-il siéger chez Ford *et* chez une corporation exploitée par les mouvements que Ford finance ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "69bccb2451"
+   },
+   "cover": "covers/70f4364b.jpg",
+   "meta": {
+    "page_count": 16,
+    "pdf_title": "",
+    "pdf_author": "Gateway",
+    "pdf_creator": "Microsoft® Word Starter 2010"
+   },
    "has_cover": true
   },
   "5bb4d01f": {
@@ -30184,6 +31234,137 @@
    },
    "has_cover": true
   },
+  "e5436d2a": {
+   "id": "e5436d2a",
+   "url": "https://mst.org.br/wp-content/uploads/2026/04/PORTARIA-No-1.684-DE-13-DE-MARCO-DE-2026-PORTARIA-No-1.684-DE-13-DE-MARCO-DE-2026-DOU-Imprensa-Nacional.pdf",
+   "filename": "e5436d2a_PORTARIA-No-1.684-DE-13-DE-MARCO-DE-2026-PORTARIA-No-1.684-DE-13-DE-MA.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2026-04-14",
+   "lang": "pt",
+   "editeur": "Skia/PDF m146",
+   "doi": "",
+   "isbn": "6931093771",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/e5436d2a_PORTARIA-No-1.684-DE-13-DE-MARCO-DE-2026-PORTARIA-No-1.684-DE-13-DE-MA.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 - PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 - DOU - Imprensa Nacional",
+     "link_text": "PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 &#8211; PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 &#8211; DOU &#8211; Imprensa Nacional",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 - PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 - DOU - Imprensa Nacional",
+     "link_text": "PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 &#8211; PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 &#8211; DOU &#8211; Imprensa Nacional",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 &#8211; PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 &#8211; DOU &#8211; Imprensa Nacional",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 – PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 – DOU – Imprensa Nacional",
+   "enrichment": {
+    "summary": "Cette ordonnance du INCRA (Institut National de Colonisation et Réforme Agraire brésilien), publiée en mars 2026, approuve la création d'un Projet d'Assentamento (PA) au Tocantins, destiné à 43 familles paysannes. Le projet concerne un bien rural de 986,19 hectares acquis par arrecadação (expropriation) à São Sebastião do Tocantins et va transférer la propriété d'usage à 43 unidades familiares (familles rurales sans terre). C'est un acte administratif qui institutionnalise une parcelle du PNRA (Programme National de Réforme Agraire brésilien), l'une des politiques foncières les plus anciennes visant à donner accès à la terre aux paysans sans propriété. Le document reste technique et bureaucratique : il ne décrit ni le profil des bénéficiaires, ni les modalités d'exploitation future (agroécologie, collectif, etc.), ni les tensions possibles avec les acteurs locaux. C'est néanmoins un jalon concret de ce que peut signifier « réforme agraire » à l'échelle d'État — la redistribution foncière via l'action publique, sans médiation marchande ni initiative collective visible. Pour les mouvements paysans brésiliens (notamment le MST), ce type d'assentamento représente un progrès partiel : accès à la terre réalisé, mais souvent sans accompagnement agroécologique, sans dimension politique de libération, et sans reconnaissance des savoirs paysans.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "visando ao assentamento de 43 (quarenta e três reais) unidades familiares",
+      "why_relevant": "Cible explicitement les familles paysannes comme bénéficiaires de l'accès foncier — croisement direct entre réforme agraire et agriculture familiale.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "declarado de interesse social para fins de criação de Projeto de Assentamento Federal",
+      "why_relevant": "Reconnaît l'« intérêt social » de la réforme agraire — principe fondateur des luttes pour l'accès à la terre en Amérique latine.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "imóvel rural denominado Loteamento Praia Chata 1ª Parte, Lote 15P, com área de 986,1878 ha",
+      "why_relevant": "Spécification précise du bien redistribué — typique de la matérialité des projets de réforme agraire brésilienne.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "na forma de obtenção por Arrecadação",
+      "why_relevant": "Mode d'acquisition foncière non-marchand (arrecadação = saisie/expropriation) — critique implicite du marché foncier.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "Autorizar a Superintendência Regional dar início ao processo de seleção para a inclusão das unidades familiares como beneficiárias do PNRA",
+      "why_relevant": "Lance le processus bureaucratique d'attribution — document charnière entre décision administrative et réalité paysanne.",
+      "verified": true,
+      "page_physical": 1
+     }
+    ],
+    "matched_keywords": [
+     "réforme agraire",
+     "accès à la terre",
+     "agriculture familiale",
+     "paysannerie familiale",
+     "libération des terres",
+     "propriété d'usage",
+     "sans-terre (implicite)",
+     "redistribution foncière"
+    ],
+    "relevance_score": 7,
+    "relevance_notes": "Document factuellement pertinent car il documente un acte concret de réforme agraire brésilienne (un concept central de la veille), mais ontologiquement plat : c'est une ordonnance administrative sans prise de position critique, sans évocation d'agroécologie, de féminisme agraire ou de mouvements sociaux. Il fournit néanmoins un exemple empirique utile du « par le haut » de la redistribution foncière.",
+    "en_clair": "L'État brésilien donne 986 hectares de terre à 43 familles de paysans qui n'en avaient pas. C'est un acte officiel, bureaucratique, mais qui montre qu'en 2026, l'accès foncier familial passe encore par la décision gouvernementale, pas par le marché ni par l'occupation.",
+    "acteurs": [
+     "INCRA (Instituto Nacional de Colonização e Reforma Agrária)",
+     "Ministério do Desenvolvimento Agrário e Agricultura Familiar",
+     "Superintendência Regional de Tocantins",
+     "IBGE",
+     "César Fernando Schiavon Aldrighi (signataire, Président du INCRA)"
+    ],
+    "controverse": "Aucune controverse n'est explicite dans le document lui-même. Contextuellement, les assentamentos du INCRA sont régulièrement critiqués par le Movimento Sem Terra (MST) comme insuffisants, lents, dépourvus d'accompagnement agroécologique et trop bureaucratisés — mais ce débat n'apparaît pas dans cette ordonnance administrative de routine.",
+    "angle_journalistique": "Enquêter sur les 43 familles sélectionnées : qui sont-elles, d'où viennent-elles, comment le processus de sélection a-t-il fonctionné ? Quel accompagnement après attribution ? Quelles tensions avec les acteurs locaux ou les mouvements paysans du Tocantins ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "1f5700f49f"
+   },
+   "cover": "covers/e5436d2a.jpg",
+   "meta": {
+    "page_count": 1,
+    "pdf_title": "PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 - PORTARIA Nº 1.684, DE 13 DE MARÇO DE 2026 - DOU - Imprensa Nacional",
+    "pdf_author": "",
+    "pdf_creator": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36"
+   },
+   "has_cover": true
+  },
   "fde38caf": {
    "id": "fde38caf",
    "url": "https://mst.org.br/wp-content/uploads/2026/04/Op_84_de_2022___Fazenda_Prata___Imperio_Verde___TO_compressed.pdf",
@@ -30375,6 +31556,140 @@
     "prompt_version": "95e6f50548"
    },
    "cover": "assets/covers/8af5f6c1.png",
+   "has_cover": true
+  },
+  "a1f23085": {
+   "id": "a1f23085",
+   "url": "https://mst.org.br/wp-content/uploads/2026/03/cd7134en.pdf",
+   "filename": "a1f23085_cd7134en.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 6,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2026-02-19",
+   "lang": "en",
+   "editeur": "Adobe PDF Library 18.0",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/a1f23085_cd7134en.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "cd7134en",
+     "link_text": "cd7134en",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "cd7134en",
+     "link_text": "cd7134en",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "cd7134en",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "cd7134en",
+   "enrichment": {
+    "summary": "Ce rapport institutionnel de la FAO, l'ILC et le CIRAD fournit un diagnostic mondial sur l'état des droits fonciers et la gouvernance des terres. Le document constate que malgré deux décennies de progrès aux niveaux internationaux et politiques (VGGT, UNDROP, UNDRIP, Framework & Guidelines on Land Policy in Africa), la mise en œuvre reste très en retard. Le chiffre-clé est glaçant : plus de 1,1 milliard de personnes (23% de la population adulte mondiale) se sentent en insécurité foncière, craignant de perdre leurs droits aux terres et au logement dans les cinq prochaines années. Seulement 35% des terres sont formellement documentées, ce qui crée des vides juridiques où les droits demeurent contestés ou invisibilisés. Le rapport souligne aussi la faiblesse chronique des données foncières mondiales (score moyen de 16/100 pour la disponibilité, bien en dessous de secteurs comme la santé ou les finances publiques). Enfin, il pointe une démocratisation progressive des initiatives de collecte de données (participatory mapping communautaire, données géospatiales ouvertes) et une prise en compte croissante des thèmes critiques : droits fonciers des femmes, terres autochtones, inégalité foncière et violence contre les défenseurs des terres. C'est un document de baseline institutionnel qui cartographie l'ampleur du problème foncier global sans entrer dans les luttes concrètes ou les alternatives militantes.",
+    "citations": [
+     {
+      "page": 7,
+      "quote": "More than 1.1 billion people, about 23 percent of the global adult population, feel land-insecure and consider it likely or very likely that they could lose the rights to some or all of their land and housing within the next five years.",
+      "why_relevant": "Chiffrage de l'ampleur mondiale de l'insécurité foncière, donnée centrale pour argumenter l'urgence de réforme agraire et protection des droits.",
+      "verified": true,
+      "page_physical": 7
+     },
+     {
+      "page": 7,
+      "quote": "only 35 percent of land is formally documented, meaning its ownership, tenure, or use rights are officially recorded in recognized registries or cadasters.",
+      "why_relevant": "Illustre le gap massif entre titres juridiques et réalité : 65% des terres restent dans des régimes non-documentés, créant des espaces d'insécurité ou d'autodétermination.",
+      "verified": true,
+      "page_physical": 7
+     },
+     {
+      "page": 7,
+      "quote": "71 countries – representing 36 percent of the global total – have undertaken some form of land reform, 27 of which (38 percent) explicitly referenced the VGGT to varying extents.",
+      "why_relevant": "Quantifie le progrès en matière de réformes agraires ; pertinent pour contexte politique international des luttes foncières.",
+      "verified": true,
+      "page_physical": 7
+     },
+     {
+      "page": 9,
+      "quote": "As more groups and initiatives select their focus and refine their methodologies, insights are being gained into a wider range of themes, including women's land rights, land inequality and concentration, and violence against land and its defenders.",
+      "why_relevant": "Reconnaissance explicite de trois axes critiques : droits fonciers des femmes, concentration des terres (accaparement), violence contre défenseurs.",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 7,
+      "quote": "Secure land rights give them confidence in their land, encouraging investment, improving agricultural productivity, and enabling access to financial services.",
+      "why_relevant": "Cadrage développementaliste des droits fonciers ; utile pour comprendre la rhétorique institutionnelle dominante vs approches émancipatrices.",
+      "verified": true,
+      "page_physical": 7
+     }
+    ],
+    "matched_keywords": [
+     "land rights",
+     "land tenure",
+     "land governance",
+     "tenure security",
+     "women's land rights",
+     "indigenous land rights",
+     "customary tenure",
+     "land reform",
+     "land inequality",
+     "land concentration",
+     "violence against land defenders",
+     "land registration",
+     "land documentation"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Score 6/10 : le document touche des concepts pertinents (land rights, women, indigenous, land reform) MAIS d'un angle purement institutionnel et technocratique (data, indicators, benchmarking). Les concepts centraux de la veille (propriété d'usage, communs fonciers, libération des terres, paysannerie, agroécologie) sont absents. Approche développementaliste-onusienne, pas militante ni ancrée dans les luttes concrètes.",
+    "en_clair": "Ce rapport dit que plus d'un milliard de personnes ont peur de perdre leurs terres, et que les gouvernements signent des accords pour protéger les droits fonciers mais ne les appliquent presque pas sur le terrain. C'est utile pour chiffrer le problème mondial, mais ça ne dit pas comment les gens se battent pour garder leurs terres ou les reprendre.",
+    "acteurs": [
+     "Food and Agriculture Organization of the United Nations (FAO)",
+     "International Land Coalition (ILC)",
+     "Centre de coopération internationale en recherche agronomique pour le développement (CIRAD)"
+    ],
+    "controverse": "Tension majeure entre l'adoption formelle de cadres internationaux (VGGT 2012, UNDROP, UNDRIP, Framework & Guidelines Africa) et leur implémentation réelle : 71 pays ont réformé la gouvernance foncière, mais les principes demeurent largement appliqués de façon inégale ou superficielle. Pourquoi les gouvernements n'implémentent-ils pas ce qu'ils ont signé ?",
+    "angle_journalistique": "Enquête : comment et pourquoi les gouvernements signent les cadres du VGGT et de l'UNDROP mais échouent (ou refusent) de les mettre en œuvre ? Qui bénéficie de ce hiatus entre droit formel et pratique ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "33f8a23ea6"
+   },
+   "cover": "covers/a1f23085.jpg",
+   "meta": {
+    "page_count": 38,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "Adobe InDesign 21.0 (Macintosh)"
+   },
    "has_cover": true
   },
   "ec7cce0f": {
@@ -31229,6 +32544,147 @@
    },
    "has_cover": true
   },
+  "0d79f5f1": {
+   "id": "0d79f5f1",
+   "url": "https://mst.org.br/wp-content/uploads/2025/11/Luiza-Mahin_Uma-Rainha-Africana-noBrasil.pdf",
+   "filename": "0d79f5f1_Luiza-Mahin_Uma-Rainha-Africana-noBrasil.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 4,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2011-06-28",
+   "lang": "pt",
+   "editeur": "QuarkXPress(R) 8.16r2",
+   "doi": "",
+   "isbn": "9788599889244",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/0d79f5f1_Luiza-Mahin_Uma-Rainha-Africana-noBrasil.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Luiza Mahin: Uma Rainha Africana no Brasil Cartilha Novembro Negro",
+     "link_text": "Luiza Mahin: Uma Rainha Africana no Brasil",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Luiza Mahin: Uma Rainha Africana no Brasil Cartilha Novembro Negro",
+     "link_text": "Luiza Mahin: Uma Rainha Africana no Brasil",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Luiza Mahin: Uma Rainha Africana no Brasil",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Luiza Mahin : Uma Rainha Africana no Brasil",
+   "enrichment": {
+    "summary": "Ce texte est un cahier pédagogique publié par le CEAP visant à combler une lacune historiographique en enseignant l'histoire de Luiza Mahin et de la résistance noire féminine au Brésil. Il retrace la vie de figures de femmes guerrières et leaders qui ont refusé l'esclavage et la domination portugaise du XVIIe au XIXe siècle : Aqualtune, qui organisa un État noir fédéré à Palmares avec plus de 50 000 habitants libres ; Acotirene, matriarch du quilombo, dont le mocambo assumait une fonction agricola dans l'organisation territoriale ; Zeferina et Maria Felipa, leaders combattantes ; Tia Ciata, transmettrice de culture africaine et fondatrice d'espaces communautaires. Le document insiste sur le caractère actif et organisé de la résistance esclave, contre le silence historiographique officiel, et souligne l'héritage de cette lutte dans le féminisme noir brésilien contemporain (Lélia Gonzalez, Maria Carolina de Jesus). Bien que centré sur l'esclavage et la liberté physique plutôt que sur le foncier au sens strict, le texte documente la formation d'États et territoires autonomes (Palmares), des formes collectives d'organisation économique et politique, et la place centrale des femmes dans ces luttes pour l'autodétermination.",
+    "citations": [
+     {
+      "page": 8,
+      "quote": "Aqualtune liderou o mocambo que levava seu nome e lá também teve filhas, a mais velha das quais, chamada Sabina, deu-lhe um neto, nascido quando Palmares se preparava para mais um ataque holandês.",
+      "why_relevant": "Illustre l'organisation collective et autonome de Palmares, fondée par une femme qui organisa la fuite et l'établissement d'un territorialité noire libre.",
+      "verified": true,
+      "page_physical": 8
+     },
+     {
+      "page": 8,
+      "quote": "Mais de 50.000 habitantes livres, distribuídos em vários mocambos.",
+      "why_relevant": "Démontre l'ampleur de l'État noir autonome de Palmares, une forme de collectif territorial libéré de la domination coloniale et esclavagiste.",
+      "verified": true,
+      "page_physical": 8
+     },
+     {
+      "page": 9,
+      "quote": "Pela situação geográfica, esse mocambo tinha a função agrícola na organização do Quilombo.",
+      "why_relevant": "Référence directe à une fonction agricola dans l'organisation territoriale d'un quilombo, montrant la dimension productive et alimentaire de l'autonomie noire.",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 9,
+      "quote": "Zeferina foi presa, a muito custo, após um confronto com as tropas do governo do Conde dos Arcos.",
+      "why_relevant": "Illustre la résistance armée aux structures de pouvoir colonial et esclavagiste qui tentaient de reprendre le contrôle territorial.",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 7,
+      "quote": "Os africanos sequestrados e escravizados aqui jamais se mostraram passivos neste processo. Negros e negras lutaram, guerrearam e manifestaram insistentemente a recusa em aceitar a coisificação.",
+      "why_relevant": "Énoncé fondateur du texte : la lutte pour refuser la réduction à l'objet, qui est une forme de lutte pour la dignité et l'autonomie territoriale.",
+      "verified": true,
+      "page_physical": 7
+     }
+    ],
+    "matched_keywords": [
+     "libération",
+     "autonomie territoriale",
+     "collectif",
+     "quilombo",
+     "résistance noire",
+     "féminisme",
+     "agriculture",
+     "fonctions agrícolas",
+     "autonomie politique",
+     "État noir"
+    ],
+    "relevance_score": 4,
+    "relevance_notes": "Pertinence faible à modérée (4/10). Bien que le texte documente des formes de collectifs autonomes territorialisés (quilombos) avec une dimension agricola, il s'agit d'une histoire de résistance à l'esclavage plutôt qu'une analyse des régimes fonciers, des communs contemporains, ou de l'agroécologie politique. Les connexions thématiques (autonomie, féminisme, collectif, terre) existent mais restent implicites. Intérêt surtout pour une généalogie noire de l'autonomie territoriale et des luttes féminin·es.",
+    "en_clair": "C'est l'histoire de femmes noires au Brésil qui ont refusé l'esclavage et créé leurs propres territoires libres, organisés collectivement, avec des activités agricoles. Utile pour comprendre les racines historiques noires des luttes pour l'autonomie territoriale et le rôle des femmes.",
+    "acteurs": [
+     "Luiza Mahin",
+     "Aqualtune",
+     "Acotirene",
+     "Zeferina",
+     "Maria Felipa",
+     "Tia Ciata",
+     "Lélia Gonzalez",
+     "Maria Carolina de Jesus",
+     "Ganga Zumba",
+     "Zumbi",
+     "Luiz Gama",
+     "CEAP (Centro de Articulação de Populações Marginalizadas)",
+     "Vilma Reis"
+    ],
+    "controverse": "Le texte revendique explicitement de corriger le silence historiographique officiel brésilien sur la résistance noire féminine. La controverse soulevée est celle de la visibilité : des héroïnes comme Luiza Mahin, Aqualtune ou Zeferina existent dans la mémoire populaire mais sont absentes des histoires officielles, questionnant les critères de ce qui compte comme 'histoire du Brésil'.",
+    "angle_journalistique": "Enquête sur les continuités entre les formes autonomes noires du XVIIe-XIXe siècle (Palmares, quilombos) et les luttes contemporaines pour l'autonomie territoriale et l'accès à la terre au Brésil (MST, mouvements paysans, féminisme noir rural).",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "c04bf957a8"
+   },
+   "cover": "covers/0d79f5f1.jpg",
+   "meta": {
+    "page_count": 76,
+    "pdf_title": "Layout 1",
+    "pdf_author": "",
+    "pdf_creator": "QuarkXPress(R) 8.16r2"
+   },
+   "has_cover": true
+  },
   "44533d13": {
    "id": "44533d13",
    "url": "https://mst.org.br/wp-content/uploads/2025/10/PT_Manifesto_em_defesa_dos_territ-rios_e_soberania_alimentar.pdf",
@@ -31426,6 +32882,309 @@
    "cover": "assets/covers/44533d13.png",
    "has_cover": true
   },
+  "b64d8099": {
+   "id": "b64d8099",
+   "url": "https://mst.org.br/wp-content/uploads/2025/10/RESULTADO-FESTIVAL-LITERARIO_VF-SELECIONADOS-ESCOLAS.pdf",
+   "filename": "b64d8099_RESULTADO-FESTIVAL-LITERARIO_VF-SELECIONADOS-ESCOLAS.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 6,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2025",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/b64d8099_RESULTADO-FESTIVAL-LITERARIO_VF-SELECIONADOS-ESCOLAS.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "RESULTADO FESTIVAL LITERÁRIO_VF - SELECIONADOS ESCOLAS",
+     "link_text": "RESULTADO FESTIVAL LITERÁRIO_VF &#8211; SELECIONADOS ESCOLAS",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "RESULTADO FESTIVAL LITERÁRIO_VF - SELECIONADOS ESCOLAS",
+     "link_text": "RESULTADO FESTIVAL LITERÁRIO_VF &#8211; SELECIONADOS ESCOLAS",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "RESULTADO FESTIVAL LITERÁRIO_VF &#8211; SELECIONADOS ESCOLAS",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "RESULTADO FESTIVAL LITERÁRIO_VF – SELECIONADOS ESCOLAS",
+   "enrichment": {
+    "summary": "Ce document est un inventaire administratif des œuvres littéraires sélectionnées pour un festival littéraire du Movimento Sem Terra (MST), le principal mouvement de lutte pour la terre au Brésil. Le festival célèbre les 40 ans du MST et rassemble des contributions (contes, poèmes, chroniques) d'élèves provenant d'écoles itinérantes, d'écoles du champ, et d'assentamentos (établissements issus de la réforme agraire) du MST, situés dans plusieurs États brésiliens (Bahia, Ceará, Espírito Santo, Mato Grosso, Pará, Paraná, Rio Grande do Sul, Santa Catarina, Maranhão). Les titres des œuvres révèlent comment le MST utilise l'éducation et la culture pour transmettre une conscience politique foncière et paysanne aux générations nouvelles : ils traitent de résistance, d'histoire familiale paysanne, d'identité sans-terre, de vie sur la terre, d'agroécologie, et de célébration du mouvement. Des écoles « populaires » comme l'Escola Popular de Agroecologia e Agrofloresta Egídio Brunetto et l'Escola Popular Eduardo Galeano figurent parmi les institutions participantes. Le document témoigne de la place centrale de l'éducation du champ (Educação do Campo) dans la stratégie du MST et de l'imbrication entre lutte foncière, pédagogie radicale, et création culturelle.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "Carta Rumo aos 40 anos do MST",
+      "why_relevant": "Titre révélant que le MST, acteur central du corpus (libération des terres au Brésil), réfléchit collectivement à 40 ans de lutte.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "Sou mulher Sem Terra",
+      "why_relevant": "Intersection explicite entre identité sans-terre et féminisme paysan — une thématique du corpus.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Escola Popular de Agroecologia e Agrofloresta Egídio Brunetto",
+      "why_relevant": "Agroécologie paysanne et politisation de la formation agricole — core concept du corpus.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "Historicizando a Educação do Campo e do MST",
+      "why_relevant": "Historicisation explicite de l'éducation du champ liée au MST — lien entre lutte foncière et pédagogie radicale.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "Qual a importância de ser Sem Terrinha?",
+      "why_relevant": "Interroge la transmission générationnelle de l'identité sans-terre chez les enfants paysans.",
+      "verified": true,
+      "page_physical": 3
+     }
+    ],
+    "matched_keywords": [
+     "Movimento Sem Terra",
+     "MST",
+     "sans-terre",
+     "Sem Terra",
+     "Sem Terrinha",
+     "libération des terres",
+     "réforme agraire",
+     "assentamentos",
+     "éducation du champ",
+     "Educação do Campo",
+     "agroécologie",
+     "agroecologia",
+     "paysannerie",
+     "vie paysanne",
+     "agriculture vivrière",
+     "féminisme paysan",
+     "écoles du champ",
+     "résistance paysanne"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Score réel (contenu substantiel) : 6/10. Le document est surtout un inventaire administratif listant titres et auteurs, sans analyse approfondie. Cependant, il atteste concrètement de l'investissement du MST dans l'éducation politique via la culture et la littérature, ce qui enrichit le portrait des stratégies de lutte foncière et paysanne au Brésil.",
+    "en_clair": "Ce document montre comment les enfants de paysans sans-terre au Brésil apprennent à connaître leur propre histoire et leur lutte pour la terre, en écrivant des histoires et des poèmes dans les écoles du mouvement MST. C'est important parce qu'on voit là comment une conscience politique et une fierté paysanne se transmettent d'une génération à l'autre, pas seulement par la occupation et la lutte, mais aussi par l'éducation et la culture.",
+    "acteurs": [
+     "Movimento Sem Terra (MST)",
+     "Escola Popular de Agroecologia e Agrofloresta Egídio Brunetto",
+     "Escola Popular Eduardo Galeano",
+     "Écoles itinérantes du MST",
+     "Écoles du champ affiliées au MST"
+    ],
+    "controverse": "Aucune controverse explicite soulevée dans ce document inventaire. C'est un document de célébration interne du MST, documentant son investissement pédagogique et culturel.",
+    "angle_journalistique": "Comment le Movimento Sem Terra au Brésil utilise l'éducation radicale (écoles itinérantes, écoles du champ, pédagogie de la conscience) et la création culturelle pour former une nouvelle génération de militants paysans conscients de la lutte foncière ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "ce283fb481"
+   },
+   "cover": "covers/b64d8099.jpg",
+   "meta": {
+    "page_count": 4,
+    "pdf_title": "RESULTADO FESTIVAL LITERÁRIO_VF",
+    "pdf_author": "",
+    "pdf_creator": "Google Sheets"
+   },
+   "has_cover": true
+  },
+  "26eaccea": {
+   "id": "26eaccea",
+   "url": "https://mst.org.br/wp-content/uploads/2025/10/RESULTADO-FESTIVAL-LITERARIO_VF-SELECIONADOS-GERAL.pdf",
+   "filename": "26eaccea_RESULTADO-FESTIVAL-LITERARIO_VF-SELECIONADOS-GERAL.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2025",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/26eaccea_RESULTADO-FESTIVAL-LITERARIO_VF-SELECIONADOS-GERAL.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "RESULTADO FESTIVAL LITERÁRIO_VF - SELECIONADOS GERAL",
+     "link_text": "RESULTADO FESTIVAL LITERÁRIO_VF &#8211; SELECIONADOS GERAL",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "RESULTADO FESTIVAL LITERÁRIO_VF - SELECIONADOS GERAL",
+     "link_text": "RESULTADO FESTIVAL LITERÁRIO_VF &#8211; SELECIONADOS GERAL",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "RESULTADO FESTIVAL LITERÁRIO_VF &#8211; SELECIONADOS GERAL",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "RESULTADO FESTIVAL LITERÁRIO_VF – SELECIONADOS GERAL",
+   "enrichment": {
+    "summary": "Ce document est un index de sélections pour un festival littéraire brésilien (« Resultado Festival Literário »), listant poésies, contes et chroniques sélectionnés. Bien que les textes eux-mêmes ne soient pas fournis, les titres des contributions et les noms des auteur·es révèlent une orientation fortement ancrée dans les luttes foncières brésiliennes. Le document nomme explicitement le MST (Movimento Sem Terra) et énumère des œuvres ayant trait aux assentamentos (établissements agricoles issus de réformes agraires), à la vie paysanne et rurale, à la réforme agraire populaire, et aux enfants du mouvement sans-terre. Parmi les titres figurent des références à la « vie au champ », aux systèmes agroforestiers (SAF), à la « mística » (concept central du MST), et aux résistances des sans-terre. Le festival accueille des contributions d'auteur·es issus de multiples états brésiliens (MG, MS, PA, RS, SC, SP, PR, TO, ES, BA, CE, MA, MT, RN, RO), signe d'une mobilisation territoriale large du mouvement. Bien que le format soit celui d'une liste sans développement argumenté, l'accumulation des titres et la présence du MST comme acteur explicite posent cette publication comme un artifact culturel des luttes paysannes brésiliennes contemporaines.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "Carta aberta aos 28 anos do Assentamento Caldeirão",
+      "why_relevant": "Référence directe à un assentamento (établissement agricole issu de réforme agraire), core concept de la libération des terres au Brésil.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "Sobre o ideológico e a criança Sem Terra",
+      "why_relevant": "Thématique explicite du MST (Movimento Sem Terra) et de l'éducation politique des enfants dans le mouvement.",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "Diálogo entre Reforma Agrária Popular e o Agronegócio",
+      "why_relevant": "Tension frontale entre réforme agraire paysanne et agroindustrie — core débat politique.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Coletivo de Arte e Cultura MST MA",
+      "why_relevant": "Mention explicite du MST et de son rôle dans la production culturelle et militante.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Reconectando com a vida no campo!",
+      "why_relevant": "Reconnexion à la paysannerie et à la vie rurale.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Quando morre um Sem Terra",
+      "why_relevant": "Référence au sacrifice et à la mortalité des sans-terre dans la lutte foncière.",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Eu quero fazer um SAF",
+      "why_relevant": "Mention du Système Agroforestier (pratique agroécologique).",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "Alguns a chamam de Mística",
+      "why_relevant": "Référence à la 'mística' du MST — spiritualité politique du mouvement.",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "Louvores ao MST e o seu ABC dobrado",
+      "why_relevant": "Célébration du MST et de son double rôle en alphabétisation et lutte foncière.",
+      "verified": true,
+      "page_physical": 3
+     }
+    ],
+    "matched_keywords": [
+     "sans-terre",
+     "Movimento Sem Terra",
+     "MST",
+     "assentamento",
+     "libération des terres",
+     "réforme agraire",
+     "paysannerie",
+     "paysans",
+     "vie paysanne",
+     "vida no campo",
+     "agroécologie",
+     "SAF",
+     "système agroforestier",
+     "mística"
+    ],
+    "relevance_score": 7,
+    "relevance_notes": "Score 7/10 — Le document touche explicitement à la libération des terres brésilienne via le MST, les assentamentos, la réforme agraire populaire, la paysannerie et l'agroécologie (SAF). Cependant, c'est un index sans contenu substantiel : les textes des œuvres ne sont pas fournis, limitant la profondeur analytique.",
+    "en_clair": "C'est une liste de poésies et de récits d'un festival littéraire brésilien où des gens du mouvement sans-terre (MST) et des paysans racontent leurs luttes pour la terre, leurs assentamentos (fermes gagnées par la réforme agraire), et leur façon de vivre dignement à la campagne. On voit que les sans-terre utilisent la culture et l'art pour raconter leur combat et transmettre leurs idées.",
+    "acteurs": [
+     "MST (Movimento Sem Terra)",
+     "Coletivo de Arte e Cultura MST MA"
+    ],
+    "controverse": "Le titre « Diálogo entre Reforma Agrária Popular e o Agronegócio » encadre explicitement une tension non résolue : la coexistence ou l'affrontement entre réforme agraire paysanne et modèle agro-industriel dominant au Brésil.",
+    "angle_journalistique": "Enquête sur le rôle de la culture, de la poésie et de la mística comme outils de mobilisation politique et de transmission de savoirs au sein du MST brésilien — comment un mouvement social utilise la création artistique pour renforcer la cohésion et légitimer la lutte foncière.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "78202ae2ff"
+   },
+   "cover": "covers/26eaccea.jpg",
+   "meta": {
+    "page_count": 3,
+    "pdf_title": "RESULTADO FESTIVAL LITERÁRIO_VF",
+    "pdf_author": "",
+    "pdf_creator": "Google Sheets"
+   },
+   "has_cover": true
+  },
   "d8fc08d0": {
    "id": "d8fc08d0",
    "url": "https://mst.org.br/wp-content/uploads/2025/10/Carta-Fonec-Defesa-do-Pronera-Curso-de-Medicina.pdf",
@@ -31572,6 +33331,337 @@
     "prompt_version": "55de74baa8"
    },
    "cover": "assets/covers/d8fc08d0.png",
+   "has_cover": true
+  },
+  "418efeb5": {
+   "id": "418efeb5",
+   "url": "https://mst.org.br/wp-content/uploads/2025/10/Decisao-4.pdf",
+   "filename": "418efeb5_Decisao-4.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 6,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2025-10-07",
+   "lang": "pt",
+   "editeur": "iText® 5.5.13 ©2000-2018 iText Group NV (AGPL-version)",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/418efeb5_Decisao-4.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Decisão-4",
+     "link_text": "Decisão-4",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Decisão-4",
+     "link_text": "Decisão-4",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Decisão-4",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Decisão-4",
+   "enrichment": {
+    "summary": "Ce jugement brésilien porte sur la légalité d'un programme d'accès à l'enseignement supérieur réservé aux bénéficiaires du Plan National de Réforme Agraire (PNRA). L'Université Fédérale de Pernambuco (UFPE) défend la constitutionnalité d'un édit créant 80 places supplémentaires en Médecine pour les jeunes et adultes issus du PRONERA (Programa Nacional de Educação para Áreas de Reforma Agrária), opérationnel depuis 1998. Un citoyen a contesté cette sélection différenciée comme violation de la Loi des Quotas (Lei nº 12.711/2012). L'UFPE argue que le PRONERA n'est pas un acte isolé mais le « bras fondamental » du PNRA, avec un historique de 320 cours (1998-2011) formant 164.894 étudiants à tous les niveaux. Elle soutient que former des médecins issus du monde paysan et destinés aux régions carentes remplit simultanément le droit à l'éducation et le droit à la santé universelle. Le conflit central porte sur la légitimité des actions affirmatives pour les populations paysannes et marginalisées : est-il constitutionnel et légal qu'une université réserve des places à ceux qui bénéficient de la réforme agraire? L'UFPE mobilise une hiérarchie de textes juridiques (lois, décrets) et l'argument que ces « vagas supplémentaires » n'affectent pas le quantitatif régulier. Le document révèle l'ampleur matérielle en jeu : 1.201 candidats inscrits et 18,6 millions de reais (fonds INCRA) gelés en cas de suspension maintenue.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "um braço fundamental do Plano Nacional de Reforma Agrária (PNRA), atuando desde 1998, com o objetivo de oferecer educação formal aos jovens e adultos beneficiários do PNRA, em todos os níveis de ensino",
+      "why_relevant": "Définit le PRONERA comme instrument structurel de la réforme agraire brésilienne, établissant le lien entre accès à la terre et accès à l'éducation formelle",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "no período de 1998 a 2011, já registrava a realização de 320 (trezentos e vinte) cursos em nível superior, médio e fundamental, com 164.894 (cento e sessenta e quatro mil, oitocentos e noventa e quatro) educandos matriculados em todo o País",
+      "why_relevant": "Démontre l'ampleur quantitative du programme national d'éducation pour les bénéficiaires de réforme agraire, attestant sa légitimité historique",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "o processo seletivo do PRONERA seria uma ação afirmativa de inclusão social, caracterizando um precedente validado em outras seleções da própria UFPE para públicos específicos (como os cursos Intercultural Indígena e Quilombola)",
+      "why_relevant": "Situe le PRONERA dans une stratégie d'actions affirmatives destinées aux populations historiquement marginalisées (paysans, autochtones, afro-descendants)",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 3,
+      "quote": "o convênio entre o INCRA e a UFPE... se alinharia aos objetivos primordiais da República Federativa do Brasil: o de construir uma sociedade livre, justa e solidária e de reduzir as desigualdades sociais e regionais",
+      "why_relevant": "Articule l'éducation pour la réforme agraire aux objectifs constitutionnels de justice sociale et rédduction des inégalités régionales",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 4,
+      "quote": "ao formar médicos com vínculo com o campo e destinados à atuação em regiões carentes... concretizaria, simultaneamente, o direito à educação de qualidade... e a universalidade e integralidade do direito à saúde, garantindo o acesso a serviços básicos para populações historicamente negligenciadas",
+      "why_relevant": "Exprime la logique de retour professionnel au territoire : les médecins formés doivent servir les populations rurales carentes, articulation entre autonomie territoriale et souveraineté sanitaire",
+      "verified": false,
+      "page_physical": null
+     }
+    ],
+    "matched_keywords": [
+     "réforme agraire",
+     "reforma agrária",
+     "PRONERA",
+     "PNRA",
+     "Plan National de Réforme Agraire",
+     "bénéficiaires de réforme agraire",
+     "paysans",
+     "poblaciones rurales",
+     "actions affirmatives",
+     "ações afirmativas",
+     "réduction des inégalités régionales",
+     "accès à l'éducation",
+     "souveraineté sanitaire",
+     "autonomie territoriale",
+     "populations historiquement marginalisées",
+     "quilombola",
+     "autochtones",
+     "indígena",
+     "INCRA",
+     "minifundiários",
+     "pequenos agricultores"
+    ],
+    "relevance_score": 6,
+    "relevance_notes": "Document juridique pertinent comme cas d'étude contemporain des enjeux de réforme agraire au Brésil, spécifiquement l'accès à l'éducation formelle pour les paysans et bénéficiaires du PNRA. Cependant, le texte est processuel et suppose la thématique en arrière-plan plutôt que de l'analyser ou de la 'penser' directement — ce n'est pas un manifeste, une théorisation ou une enquête sociologique.",
+    "en_clair": "Au Brésil, depuis 1998, il existe un programme qui forme les paysans qui reçoivent de la terre par réforme agraire — pour qu'ils puissent devenir médecins, ingénieurs, etc., et revenir travailler dans leurs régions. Un juge a voulu arrêter ce programme en disant que c'était illégal; les universités et le gouvernement se battent pour le continuer. C'est un procès sur le droit des paysans à étudier et à accéder aux professions.\n\nPour toi dans une lutte : si tu gagnes l'accès à la terre via réforme agraire, il te faut aussi un accès à l'éducation et aux outils professionnels pour prospérer. Ce jugement montre comment les États et les universités peuvent (ou ne peuvent pas) construire ce système.",
+    "acteurs": [
+     "UNIVERSIDADE FEDERAL DE PERNAMBUCO (UFPE)",
+     "TADEU HENRIQUE PIMENTEL CALHEIROS",
+     "AYRTON CORDEIRO DE SOUSA ABSALAO",
+     "Instituto Nacional de Colonização e Reforma Agrária (INCRA)",
+     "Ministério do Desenvolvimento Agrário e Agricultura Familiar (MDA)",
+     "Supremo Tribunal Federal (STF)",
+     "Tribunal Regional Federal da 5ª Região (TRF5)",
+     "Juiz Federal da 9ª Vara Federal de Pernambuco",
+     "Des. FERNANDO BRAGA DAMASCENO"
+    ],
+    "controverse": "Faut-il reconnaître comme légale une sélection différenciée d'accès aux études supérieures pour les bénéficiaires de réforme agraire, même si elle crée des places 'supplémentaires' (donc n'affecte pas les places régulières)? Y a-t-il discrimination ou remédiation à une discrimination historique? La création de vagas supplémentaires échappe-t-elle au régime légal des quotas et peut-elle être justifiée par l'autonomie universitaire et les objectifs constitutionnels de justice sociale?",
+    "angle_journalistique": "Enquêter sur le PRONERA comme stratégie pérenne (1998 à nos jours) de formation professionnelle des bénéficiaires de réforme agraire au Brésil, et sur les résistances conservatrices juridiques et politiques qui tentent de l'étouffer — en comparant avec d'autres pays latino-américains.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "be9d158192"
+   },
+   "cover": "covers/418efeb5.jpg",
+   "meta": {
+    "page_count": 7,
+    "pdf_title": "PROCESSO: 0004781-15.2025.4.05.0000 - AGRAVO DE INSTRUMENTO",
+    "pdf_author": "PJe",
+    "pdf_creator": ""
+   },
+   "has_cover": true
+  },
+  "c85c6074": {
+   "id": "c85c6074",
+   "url": "https://mst.org.br/wp-content/uploads/2025/09/Carta-politica-ATA-2025.pdf",
+   "filename": "c85c6074_Carta-politica-ATA-2025.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 9,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2025-09-01",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/c85c6074_Carta-politica-ATA-2025.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Carta política ATA 2025",
+     "link_text": "Carta política ATA 2025",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Carta política ATA 2025",
+     "link_text": "Carta política ATA 2025",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Carta política ATA 2025",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Carta política ATA 2025",
+   "enrichment": {
+    "summary": "Ce document est une charte politique émise lors du VII Encontro Tocantinense de Agroecologia et du XIV Encontro de Camponeses e Camponesas du Tocantins (27-30 août 2025), rassemblant plus de 300 participants : paysans, peuples autochtones (Apinajé, Krahô, Xerente), agriculteurs familiaux, travailleurs sans terre, quilombolas, pêcheurs artisanaux, jeunesse rurale, et organisations sociales. La charte énonce une dénonciation radicale des politiques fédérales et étatiques insuffisantes en matière de régularisation des terres des peuples indígenas, communautés quilombolas et travailleurs sans terre. Elle met l'accent sur plusieurs fronts entrecroisés : l'accaparement par l'agronégoce et le projet MATOPIBA, l'expansion minière et la hydrovia Araguaia-Tocantins, la destruction des babaçuais et l'exclusion des casseurs de noix (majoritairement des femmes), la pollution par agrotoxiques, et les violences policières. Le document affirme positivement la nécessité d'une Politique d'État d'Agroécologie ancrée dans la réforme agraire, la régularisation territoriale, l'éducation rurale agroécologique, la protection de l'eau et des biomes, et la valorisation des savoirs traditionnels. Son originalité repose sur une intersectionnalité radicale explicite : féminisme, jeunesse, peuples autochtones, mouvements quilombolas et noirs, droits LGBTQIA+, et education rurale sont tous présentés comme indissociables de l'agroécologie et de la réforme agraire.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "A morosidade das políticas federais e estaduais de regularização das terras e territórios dos povos indígenas, comunidades quilombolas, comunidades tradicionais",
+      "why_relevant": "Dénonce directement l'insuffisance des politiques de régularisation foncière — enjeu central de la libération des terres",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "A escalada de violência policial e os despejos extrajudiciais promovidos pela Patrulha Rural da PM-TO para instrumentalizar os interesses privados de apropriação de terras públicas",
+      "why_relevant": "Articule répression d'État et accaparement ; criminalise l'agronégoce comme projet de classe",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "A urgente necessidade de construirmos uma Política Estadual de Agroecologia e Produção Orgânica. Essa deve incorporar a garantia do acesso à terra através da reforma agrária",
+      "why_relevant": "Lie explicitement agroécologie et réforme agraire — deux core_concepts de la thématique",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 1,
+      "quote": "O avanço do desmatamento, da grilagem, dos incêndios criminosos e da implementação de projetos do agronegócio nas terras e territórios dos povos indígenas",
+      "why_relevant": "Nomme grilagem (accaparement) et menace extractiviste sur les terres autochtones",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "O envenenamento das terras, das águas e da população por meio do uso abusivo de agrotóxicos, comprometendo o abastecimento de água, a soberania e segurança alimentar",
+      "why_relevant": "Lie agrotoxiques, eau, souveraineté alimentaire — dimensions écologique et nourricière du combat foncier",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "A continuidade da destruição dos babaçuais por derrubada e envenenamento e do acesso negado às quebradeiras de coco babaçu",
+      "why_relevant": "Croise défense d'une ressource traditionnelle avec droits des femmes paysannes (casseurs de noix, majoritairement féminins)",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "O respeito aos protocolos de consulta elaborados pelas comunidades tradicionais de acordo com a Convenção 169 da OIT",
+      "why_relevant": "Invoque le CPLAI (droit à la consultation libre, préalable et informée) — protections légales pour peuples autochtones",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "Sem Feminismo não há Agroecologia! Sem povos indígenas não há Agroecologia! Sem reforma agrária não há Agroecologia!",
+      "why_relevant": "Manifeste d'intersectionnalité : féminisme agraire, droits autochtones, réforme agraire indissociables",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 2,
+      "quote": "A urgência do avanço da reforma agrária através da criação de novos projetos de assentamento rural, implementação de infraestrutura e serviços",
+      "why_relevant": "Revendique réforme agraire concrète (assentamentos) avec équipements — mesure politico-matérielle",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "Garantia dos direitos humanos e da qualidade de vida digna nos acampamentos dos grupos Sem Terra através de proteção, infraestrutura e serviços",
+      "why_relevant": "Défend les acampamentos (campements de sans-terre) comme espaces de dignité et de lutte territoriale",
+      "verified": true,
+      "page_physical": 3
+     }
+    ],
+    "matched_keywords": [
+     "agroecologia",
+     "reforma agraria",
+     "soberania alimentar",
+     "povos indígenas",
+     "quilombolas",
+     "camponeses",
+     "agricultores familiares",
+     "sem terra",
+     "terras",
+     "territórios",
+     "feminismo",
+     "cooperativismo",
+     "comunidades tradicionais",
+     "direitos territoriais",
+     "grilagem",
+     "accaparamento de terras",
+     "agrotóxicos",
+     "desmatamento",
+     "educação do campo",
+     "água",
+     "babaçu",
+     "assentamento",
+     "consulta livre, prévia e informada",
+     "droit coutumier"
+    ],
+    "relevance_score": 9,
+    "relevance_notes": "Touche frontalement cinq core_concepts (agroécologie, libération des terres, mouvements autochtones, féminisme agraire, communs/coopérativisme) avec un ancrage territorial très concret (Tocantins, Brésil) et un cadrage politique explicitement anti-accaparement. La charte articule luttes paysannes et autochtones autour d'une vision de souveraineté alimentaire et d'agroécologie — pile au cœur du corpus.",
+    "en_clair": "Les paysans et peuples autochtones du Tocantins disent : donnez-nous nos terres régularisées, protégez-les des grandes entreprises, et aidez-nous à cultiver sans poison. Ce texte peut servir comme arme politique : les organisations le utilisent pour obliger le gouvernement à appliquer les lois qu'il a promis.",
+    "acteurs": [
+     "ATA (Articulação Tocantinense de Agroecologia)",
+     "Povo Apinajé",
+     "Povo Krahô",
+     "Povo Xerente",
+     "Comunidade Barriguda"
+    ],
+    "controverse": "Tension entre le modèle agro-industriel d'expansion du MATOPIBA (Desenvolvimento Agropecuário) et un modèle d'agroécologie paysanne et de droits territoriaux. Le document dénonce aussi l'inaction chronique de l'État du Tocantins : la « Lei Estadual de Babaçu Livre » reste sans régulation depuis des années, la « Resex Extremo Norte » n'a pas été implémentée, et les régularisations territoriales avancent à pas de tortue.",
+    "angle_journalistique": "Enquête sur l'articulation des luttes foncières intersectionnelles au Tocantins : comment paysans, femmes casseurs de noix babaçu, peuples autochtones et quilombolas s'unissent contre l'expansion du MATOPIBA et pour une agroécologie territoriale.",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "9127e81805"
+   },
+   "cover": "covers/c85c6074.jpg",
+   "bulle": "bulles/c85c6074.json",
+   "meta": {
+    "page_count": 3,
+    "pdf_title": "",
+    "pdf_author": "Windows User",
+    "pdf_creator": "Microsoft® Word 2010"
+   },
    "has_cover": true
   },
   "06ab8397": {
@@ -31935,6 +34025,195 @@
    "cover": "assets/covers/7a9b512f.png",
    "has_cover": true
   },
+  "37eec026": {
+   "id": "37eec026",
+   "url": "https://mst.org.br/wp-content/uploads/2025/07/Declaracao-Final-do-I-ENP-versao-final_CPN.pdf",
+   "filename": "37eec026_Declaracao-Final-do-I-ENP-versao-final_CPN.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2025-07-02",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/37eec026_Declaracao-Final-do-I-ENP-versao-final_CPN.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Declaração Final do I ENP versão final_CPN",
+     "link_text": "Declaração Final do I ENP versão final_CPN",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Declaração Final do I ENP versão final_CPN",
+     "link_text": "Declaração Final do I ENP versão final_CPN",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Declaração Final do I ENP versão final_CPN",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Declaração Final do I ENP versão final_CPN",
+   "enrichment": {
+    "summary": "Déclaration finale du I Encontro Nacional do Programa Nacional de Educação na Reforma Agrária (PRONERA), réunion de 291 militants, éducateurs et gestionnaires au Brésil en juillet 2025. Le texte réaffirme le PRONERA comme politique publique inscrite dans les luttes pour la réforme agraire, l'agroécologie et la souveraineté alimentaire. Il pose l'éducation du champ — une pédagogie critique, contextualizada à la réalité paysanne — comme instrument d'émancipation de la classe trabalhadora do campo face aux intérêts de l'agronégocio. Le document trace une généalogie des luttes (massacres de Corumbiara et Eldorado do Carajás, occupations, campements, quilombos) et énonce dix principes structurants : lien organique aux mouvements populaires, formation d'intelectuais collectivos, intégration des savoirs locaux et agroécologiques, reconnaissance du rôle des femmes via la Ciranda Infantil, gestion participative. Il affirme la rupture avec la pédagogie du capital et le projet socialiste, tout en alertant sur l'instabilité budgétaire menaçant la continuité du programme. C'est un manifeste politico-pédagogique qui fait de l'éducation un levier de transformation agraire et sociale.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "Constitui-se princípio fundamental da existência e prática social do PRONERA, a luta pela Reforma Agrária Popular; a Agroecologia e a produção de alimentos saudáveis",
+      "why_relevant": "Énonce explicitement trois core concepts de la thématique : réforme agraire, agroécologie, souveraineté alimentaire comme principes indissociables",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 1,
+      "quote": "Somos herdeiros e herdeiras das ocupações, dos acampamentos, quilombos, das marchas e lutas camponesas. Trazemos as marcas do sangue do Massacre de Corumbiara (1995) e do Massacre de Eldorado do Carajás (1996).",
+      "why_relevant": "Inscrit le PRONERA dans l'histoire de la libération des terres et des luttes paysannes; evoca les événements fondateurs du MST",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 2,
+      "quote": "projeto de agricultura familiar camponês agroecológico, em contraponto a superação à pedagogia do capital ligada aos interesses do agronegócio",
+      "why_relevant": "Pose explicitement l'agroécologie paysanne contre l'agriculture industrielle capitaliste; oppose deux modèles agricoles fondamentalement",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "formação de intelectuais coletivos da classe trabalhadora do campo",
+      "why_relevant": "Théorise l'éducation comme construction d'une pensée collective paysanne autonome; répond à une politique de conscientisation",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 3,
+      "quote": "entre os vários componentes curriculares de nossos cursos não podem faltar estudos da Questão Agrária, Economia Política, Questões Étnico-raciais, Ecologia Crítica",
+      "why_relevant": "Énonce un curriculum politique explicite; ancre l'éducation du champ dans l'analyse systémique des inégalités foncières et raciales",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 3,
+      "quote": "diálogo de saberes; articulando-os com os conteúdos pedagógicos das ciências e das artes",
+      "why_relevant": "Valorise les savoirs paysans locaux vs. savoirs académiques exclusifs; politique épistémologique des communs de connaissance",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 3,
+      "quote": "Reconhecemos a Ciranda Infantil como um espaço educativo primordial, conquistado pelas mulheres, que contribui para a permanência de educandas e educandos",
+      "why_relevant": "Explicite le féminisme agraire; reconnaît les femmes comme actrices politiques des luttes du champ et du care collectif",
+      "verified": true,
+      "page_physical": 3
+     },
+     {
+      "page": 2,
+      "quote": "O vínculo orgânico e permanente do PRONERA é com os movimentos e organizações populares de luta pela Reforma Agrária, os legítimos sujeitos da Educação do Campo",
+      "why_relevant": "Asserte l'autonomie et le protagonisme des mouvements paysans dans la définition de politique publique; démocratie participative contre technocratie",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "O PRONERA é indissociável das lutas em defesa da educação pública, da democracia e pela superação do modo de vida capitalista",
+      "why_relevant": "Ancre le PRONERA dans un projet anticapitaliste explicite; lie éducation, démocratie et transformation agraire",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 2,
+      "quote": "há de superar os desafios persistentes do PRONERA, especialmente a instabilidade orçamentária que causa insegurança às instituições de ensino",
+      "why_relevant": "Signale le risque d'étranglement financier des politiques publiques paysannes; contexte d'un État hostile aux luttes agraires",
+      "verified": true,
+      "page_physical": 4
+     }
+    ],
+    "matched_keywords": [
+     "réforme agraire",
+     "Reforma Agrária Popular",
+     "agroécologie",
+     "agroecologia",
+     "agriculture familiale",
+     "agricultura familiar",
+     "paysannerie",
+     "classe trabalhadora do campo",
+     "souveraineté alimentaire",
+     "alimentos saudáveis",
+     "mouvements paysans",
+     "movimentos populares do campo",
+     "quilombos",
+     "occupations",
+     "ocupações",
+     "campements",
+     "acampamentos",
+     "luttes collectives",
+     "lutas camponesas",
+     "féminisme agraire",
+     "mulheres",
+     "Ciranda Infantil",
+     "saberes locaux",
+     "saberes tradicionais",
+     "anti-capitalisme agraire",
+     "superação do modo de vida capitalista",
+     "educação transformadora",
+     "consciência politique",
+     "intelectuais coletivos",
+     "sans-terre",
+     "paysans libres",
+     "sujeitos coletivos do campo"
+    ],
+    "relevance_score": 7,
+    "relevance_notes": "7/10 — Document hautement pertinent pour les axes libération des terres, paysannerie collective, agroécologie politique, féminisme agraire et luttes populaires. MAIS absence totale des concepts de propriété alternative (propriété d'usage, communs fonciers, fiducies foncières, usufruit formalisé, land trusts), qui sont centraux à l'ontologie thématique. Le PRONERA est une politique publique d'éducation critique, pas un instrument de réforme du régime foncier lui-même.",
+    "en_clair": "Ce texte dit qu'au Brésil, les paysans se sont battus pour créer une école qui leur appartient vraiment — pas une école qui apprend aux jeunes à obéir au capitalisme agricole, mais une école qui les apprend à penser ensemble, à comprendre pourquoi leurs terres sont volées, et à se battre pour les récupérer. Les femmes y jouent un rôle central, et tout le monde apprend à cultiver sans poisons en respectant la terre. Concrètement : c'est un manuel de comment l'éducation peut devenir une arme de libération paysanne.",
+    "acteurs": [
+     "PRONERA (Programa Nacional de Educação na Reforma Agrária)",
+     "Movimentos e organizações populares do campo",
+     "Classe trabalhadora do campo",
+     "Mulheres"
+    ],
+    "controverse": "Tension implicite entre dépendance d'une politique publique (PRONERA) et autonomie des mouvements paysans face à un État potentiellement hostile. Le document affirme l'alliance État-mouvements tout en signalant la fragilité budgétaire chronique et la menace contre le programme lui-même — révélant les limites de l'institutionnalisation des luttes populaires.",
+    "angle_journalistique": "Au Brésil en 2025 : comment le PRONERA, programme public porté par le MST et les mouvements paysans, traverse-t-il une administration conservatrice ? Quelles stratégies de survie et d'enracinement les éducateurs du champ mobilisent-ils ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "7a4ba5e151"
+   },
+   "cover": "covers/37eec026.jpg",
+   "meta": {
+    "page_count": 4,
+    "pdf_title": "",
+    "pdf_author": "CPN PRONERA",
+    "pdf_creator": "Microsoft® Word 2013"
+   },
+   "has_cover": true
+  },
   "3b4d10ec": {
    "id": "3b4d10ec",
    "url": "https://mst.org.br/wp-content/uploads/2025/07/Carta-de-Brasilia-pelo-fortalecimento-do-Pronera.pdf",
@@ -32089,6 +34368,131 @@
     "prompt_version": "e274f9d991"
    },
    "cover": "assets/covers/3b4d10ec.png",
+   "has_cover": true
+  },
+  "9cb9f47b": {
+   "id": "9cb9f47b",
+   "url": "https://mst.org.br/wp-content/uploads/2025/07/Caderno-de-Recomendacoes-do-Forum-Popular-dos-BRICS-2025.pdf",
+   "filename": "9cb9f47b_Caderno-de-Recomendacoes-do-Forum-Popular-dos-BRICS-2025.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 4,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2025-07-05",
+   "lang": "pt",
+   "editeur": "",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/9cb9f47b_Caderno-de-Recomendacoes-do-Forum-Popular-dos-BRICS-2025.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Caderno de Recomendações do Fórum Popular dos BRICS 2025",
+     "link_text": "Caderno de Recomendações do Fórum Popular dos BRICS 2025",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "Caderno de Recomendações do Fórum Popular dos BRICS 2025",
+     "link_text": "Caderno de Recomendações do Fórum Popular dos BRICS 2025",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "Caderno de Recomendações do Fórum Popular dos BRICS 2025",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "Caderno de Recomendações do Fórum Popular dos BRICS 2025",
+   "enrichment": {
+    "summary": "Ce document est l'introduction administrative du Fórum Civil dos Povos do BRICS 2025 — un processus de consultation multi-pays organisé lors de la présidence brésilienne du BRICS. Il compile les recommandations de 120 organisations de société civile des cinq pays, réunies autour de sept Groupes de Travail thématiques : Santé, Éducation, Écologie, Culture, Finances, Souveraineté Numérique et Institutionnalité BRICS. Le document est structuré comme un résumé exécutif facilitant la compréhension des débats et la circulation auprès des gouvernements et médias. Au plan de la thématique foncière et paysanne, le texte présente un intérêt essentiellement *institutionnel* : il confirme la présence du Movimento Sem Terra (MST) et du Movimento das Mulheres Camponesas à une table de négociation impliquant les chefs d'État des BRICS, ainsi que celle d'organisations militantes sur les pesticides (Campanha permanente contra os agrotóxicos) et de mouvements sociaux urbains (MTST). Cependant, le document reste descriptif et administratif — il énumère les participants et la structure des débats sans exposer substantivement les contenus, recommandations ou désaccords sur les enjeux de terre, d'agriculture paysanne ou de souveraineté alimentaire. Le GT Écologie, seul potentiellement vecteur d'enjeux agro-territoriaux, n'est thématisé que sur des questions environnementales générales (« Justice climatique, alternatives de développement durable »). Aucune mention explicite de : propriété d'usage, communs fonciers, réforme agraire, agroécologie politique, droits fonciers autochtones ou féminisme agraire. L'intérêt principal réside donc dans la **reconnaissance politique** des mouvements paysans et sans-terre comme acteurs légitimes du dialogue Nord-Sud, moins dans le contenu substantif des enjeux fonciers eux-mêmes.",
+    "citations": [
+     {
+      "page": 2,
+      "quote": "movimentos populares do campo e da cidade, juventude, mulheres, negros, indígenas",
+      "why_relevant": "Mentionne explicitement les mouvements ruraux et la diversité des acteurs, mais de façon très générale sans spécifier enjeux fonciers ou agraires",
+      "verified": true,
+      "page_physical": 2
+     },
+     {
+      "page": 8,
+      "quote": "Campanha permanente contra os agrotóxicos e pela vida",
+      "why_relevant": "Campagne transversale aux enjeux paysans et de souveraineté alimentaire (pesticides = cœur des luttes agroécologiques)",
+      "verified": true,
+      "page_physical": 8
+     },
+     {
+      "page": 9,
+      "quote": "Movimento Sem Terra - MST",
+      "why_relevant": "Présence du principal mouvement brésilien de lutte pour la terre et la réforme agraire à la table des négociations BRICS",
+      "verified": true,
+      "page_physical": 9
+     },
+     {
+      "page": 9,
+      "quote": "Movimento das Mulheres Camponesas",
+      "why_relevant": "Organisation de femmes paysannes — intersection féminisme agraire + paysannerie directement nommée",
+      "verified": true,
+      "page_physical": 9
+     }
+    ],
+    "matched_keywords": [
+     "paysans",
+     "mouvements populaires du champ",
+     "mouvements sociaux ruraux",
+     "MST",
+     "féminisme paysan",
+     "femmes paysannes",
+     "mouvements sans-terre",
+     "agriculture (implicite via pesticides)",
+     "agroécologie (implicite via anti-pesticides)"
+    ],
+    "relevance_score": 4,
+    "relevance_notes": "Score bas : le document est un cadre administratif énumératif, non une analyse substantive des enjeux fonciers. Intérêt principal = reconnaissance institutionnelle du MST et des mouvements paysans comme acteurs légitimes du dialogue BRICS. Aucun contenu direct sur terre, communs, propriété d'usage, réforme agraire ou agroécologie politique.",
+    "en_clair": "Ce texte montre que les mouvements paysans brésiliens (MST, femmes camponesas) et les organisations contre les pesticides sont conviés à s'exprimer auprès des gouvernements des BRICS. C'est un signal politique que les luttes pour la terre et la souveraineté alimentaire sont reconnues comme légitimes dans les dialogues Sud-Sud, mais le document en lui-même ne dit rien de concret sur ce qu'ils demandent ni ce que les gouvernements vont en faire.",
+    "acteurs": [
+     "Movimento Sem Terra (MST)",
+     "Movimento das Mulheres Camponesas",
+     "Campanha permanente contra os agrotóxicos e pela vida",
+     "Conselho Popular dos BRICS / Civil BRICS Council",
+     "Marcha Mundial de Mulheres (MMM)"
+    ],
+    "controverse": "Absence remarquable : les sept Groupes de Travail ne comportent pas d'axe dédié explicitement à la terre, l'agriculture paysanne ou la souveraineté alimentaire. Les enjeux agraires et fonciers semblent absorbés sous le thème générique d'Écologie/Justice climatique, ce qui pose question sur leur visibilité politique dans les négociations BRICS.",
+    "angle_journalistique": "Enquête : à travers quels canaux (santé ? écologie ? finanças ?) les revendications du MST et des mouvements paysans seront-elles portées auprès des gouvernements BRICS en 2025 ? Manque-t-il un axe « agraire » explicite dans ce dialogue ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "5479ffee49"
+   },
+   "cover": "covers/9cb9f47b.jpg",
+   "meta": {
+    "page_count": 98,
+    "pdf_title": "",
+    "pdf_author": "Rita Coitinho",
+    "pdf_creator": "Microsoft® Word para Microsoft 365"
+   },
    "has_cover": true
   },
   "0a0fa2cf": {
@@ -32277,6 +34681,273 @@
     "prompt_version": "aff278a781"
    },
    "cover": "assets/covers/0a0fa2cf.png",
+   "has_cover": true
+  },
+  "3ba13a6d": {
+   "id": "3ba13a6d",
+   "url": "https://mst.org.br/wp-content/uploads/2025/04/COP-PA-1_36_000_000671_2023_67.pdf",
+   "filename": "3ba13a6d_COP-PA-1_36_000_000671_2023_67.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 5,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2023-10-19",
+   "lang": "pt",
+   "editeur": "iText® 5.5.13.3 ©2000-2022 iText Group NV (AGPL-version)",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/3ba13a6d_COP-PA-1_36_000_000671_2023_67.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "COP PA 1_36_000_000671_2023_67",
+     "link_text": "COP PA 1_36_000_000671_2023_67",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "COP PA 1_36_000_000671_2023_67",
+     "link_text": "COP PA 1_36_000_000671_2023_67",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "COP PA 1_36_000_000671_2023_67",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "COP PA 1_36_000_000671_2023_67",
+   "enrichment": {
+    "summary": "Ce document est un acte administratif du Ministério Público Federal brésilien, daté d'octobre 2023, instaurant un suivi de l'action de l'INCRA (Institut National de Colonisation et Réforme Agraire) concernant l'évaluation et la destinataire d'une parcelle dénommée Lote 14, Serra do Taquaruçu, à Monte do Carmo (Tocantins). Cette terre avait été confisquée pour créer le Projeto de Assentamento Taboca, un projet de réforme agraire destiné à l'Associação dos Pequenos Agricultores (association de petits agriculteurs). Le contexte : un titre de propriété avait été frauduleusement émis à Luciano Aires da Silva sur cette zone en 2018, bloquant ainsi l'assentamento. Le titre a depuis été annulé, mais l'INCRA n'a pas encore régularisé ni distribué la parcelle comme promis. Le procureur Paulo de Tarso Moreira Oliveira officie donc auprès du Superintendente de l'INCRA-Tocantins pour obtenir, dans 10 jours utiles, un rapport détaillé sur les procédures déjà engagées et le calendrier de structuration de l'assentamento. Ce document révèle les obstacles bureaucratiques et les titres illégitimes qui contrecarrent concrètement les politiques de réforme agraire au Brésil, tout en montrant le rôle du MPF comme institution de monitoring des droits collectifs aux terres.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "INTERESSADO - ASSOCIAÇÃO DOS PEQUENOS AGRICULTORES DO PROJETO DE ASSENTAMENTO TABOCA DE MONTE DO CARMO e outros",
+      "why_relevant": "Identifie l'acteur collectif central : une association de petits paysans organisée autour d'un projet d'assentamento (réforme agraire)",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 4,
+      "quote": "apurar irregularidades na emissão de título definitivo a Luciano Aires da Silva e realizar diligências para cancelamento da matrícula",
+      "why_relevant": "Montre la problématique des titres frauduleux qui bloquent l'accès à la terre et la nécessité d'annuler les immatriculations illégitimes",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "arrecadada para criação do Projeto de Assentamento Taboca",
+      "why_relevant": "La parcelle confisquée (arrecadada) est destinée à une réforme agraire institutionnelle via un assentamento",
+      "verified": true,
+      "page_physical": 1
+     },
+     {
+      "page": 4,
+      "quote": "os procedimentos necessários para avaliação e destinação da área do Lote 14 seriam iniciados em 2023",
+      "why_relevant": "Révèle le retard et les obstacles administratifs dans la mise en œuvre de la politique de réforme agraire",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 4,
+      "quote": "os empecilhos observados na resolução da demanda do mencionado IC e a necessidade de monitorar as medidas que serão adotadas pelo INCRA",
+      "why_relevant": "Explicite les obstacles ('empecilhos') à la régularisation foncière et justifie le rôle du MPF comme gardien des droits collectifs",
+      "verified": true,
+      "page_physical": 4
+     },
+     {
+      "page": 7,
+      "quote": "solicita informações sobre os procedimentos já adotados para destinação da área do Lote 14 e estruturação do assentamento do Projeto de Assentamento Taboca",
+      "why_relevant": "Le MPF exige un rapport de l'INCRA sur l'avancement concret de la redistribution foncière et de l'assentamento",
+      "verified": false,
+      "page_physical": null
+     }
+    ],
+    "matched_keywords": [
+     "reforma agrária",
+     "assentamento",
+     "accesso a la tierra",
+     "pequenos agricultores",
+     "libération des terres",
+     "INCRA",
+     "projeto de assentamento"
+    ],
+    "relevance_score": 5,
+    "relevance_notes": "Document thématiquement pertinent (réforme agraire, accès à la terre, assentamento = forme de redistribution foncière collective), mais très institutionnel et procédural — c'est un acte administratif sans analyse critique ni débat politique explicite. Utile pour une chronologie institutionnelle de la lutte foncière brésilienne, mais limité en richesse analytique.",
+    "en_clair": "Des petits paysans brésiliens attendent depuis des années une terre que l'État leur avait promise, bloqués par un titre frauduleux qu'on vient d'annuler. Un magistrat fédéral demande maintenant à l'INCRA de vraiment faire son travail : régulariser la terre et la donner à l'association. / C'est un exemple concret de comment les promesses de réforme agraire restent des promesses — il faut que des juges fédéraux forcent l'État à tenir ses engagements.",
+    "acteurs": [
+     "Associação dos Pequenos Agricultores do Projeto de Assentamento Taboca",
+     "INCRA (Instituto Nacional de Colonização e Reforma Agrária)",
+     "Ministério Público Federal (MPF)",
+     "Paulo de Tarso Moreira Oliveira (Procurador da República)",
+     "Edimundo Rodrigues Costa (Superintendente INCRA-Tocantins)",
+     "Luciano Aires da Silva"
+    ],
+    "controverse": "Tension implicite entre l'engagement de l'État brésilien (via INCRA) dans la réforme agraire institutionnalisée et les obstacles pratiques : titres frauduleux, retards administratifs, lenteur de la régularisation. Le document révèle que cinq ans après la découverte de l'irrégularité, la parcelle n'est toujours pas régularisée ni distribuée.",
+    "angle_journalistique": "Enquête sur les blocages bureaucratiques dans la réforme agraire brésilienne au Tocantins : pourquoi une parcelle destinée aux petits paysans depuis 2018 n'est-elle toujours pas régularisée en 2023, et quels obstacles structurels retardent les assentamentos promis ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "de84d91604"
+   },
+   "cover": "covers/3ba13a6d.jpg",
+   "meta": {
+    "page_count": 236,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": ""
+   },
+   "has_cover": true
+  },
+  "03677257": {
+   "id": "03677257",
+   "url": "https://mst.org.br/wp-content/uploads/2025/04/PA_TABOCA.pdf",
+   "filename": "03677257_PA_TABOCA.pdf",
+   "format": "pdf",
+   "source": "MST Brésil — biblioteca (WP REST API)",
+   "first_seen": "2026-06-25_14-34",
+   "latest_run": "2026-07-27_11-06",
+   "collected_date": "2026-07-27_11-06",
+   "score_initial": 0,
+   "score_final": 7,
+   "latest_score": 0,
+   "doc_type": "autre",
+   "recit_de_lutte": false,
+   "doc_date": "2009-06-22",
+   "lang": "pt",
+   "editeur": "5,0,0,255 1236832",
+   "doi": "",
+   "isbn": "",
+   "hal_id": "",
+   "versions": [],
+   "downloaded": true,
+   "saved_as": "docs/03677257_PA_TABOCA.pdf",
+   "runs": [
+    {
+     "date": "2026-06-25_14-34",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "PA_TABOCA",
+     "link_text": "PA_TABOCA",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "2026-07-27_11-06",
+     "score": 0,
+     "raison": "erreur scoring",
+     "context_seen": "PA_TABOCA",
+     "link_text": "PA_TABOCA",
+     "downloaded": false,
+     "model": "",
+     "prompt_version": ""
+    },
+    {
+     "date": "cleanup_2026-09-16_08-00",
+     "score": 0,
+     "raison": "nettoyage backlog (lecture différée)",
+     "context_seen": "",
+     "link_text": "PA_TABOCA",
+     "downloaded": true,
+     "model": "",
+     "prompt_version": ""
+    }
+   ],
+   "link_status": "ok",
+   "link_checked": "2026-09-15T19:11:44Z",
+   "title": "PA_TABOCA",
+   "enrichment": {
+    "summary": "Ce document est une résolution administrative de l'INCRA (Instituto Nacional de Colonização e Reforma Agrária), l'agence brésilienne de réforme agraire, datant de 2005 environ. Il approuve l'établissement d'un projet d'assentamento (installation agricole) nommé Taboca, dans l'État du Tocantins. Le projet concerne l'appropriation d'un bien rural de 701,9069 hectares, anciennement dénommé Serra do Taquaru, pour y installer 15 unités agricoles familiales. Le document formule la mise à disposition de cette terre à des agriculteurs et charge la Superintendência Regional du Tocantins de piloter son implantation en coordination avec la structure nationale de l'INCRA. Bien que le texte soit purement administratif et technique, il représente concrètement la mise en œuvre d'une politique de réforme agraire brésilienne, un pilier du processus historique de redistribution des terres au Brésil destiné aux paysans sans-terre et aux familles agricoles appauvries.",
+    "citations": [
+     {
+      "page": 1,
+      "quote": "INSTITUTO NACIONAL DE COLONIZAÇÃO E REFORMA AGRARIA - INCRA",
+      "why_relevant": "Nomme l'acteur institutionnel majeur de la réforme agraire brésilienne, au cœur de la libération des terres",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 1,
+      "quote": "Aprovar a proposita de destinação, para assentamento de agricultores, do imóvel rural",
+      "why_relevant": "Résume l'action concrète : destination de terres rurales à l'installation d'agriculteurs — cœur de la réforme agraire",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 1,
+      "quote": "15 (quinze) unidades agrícolas familiares",
+      "why_relevant": "Spécifie l'installation de 15 familles dans des unités agricoles familiales, clé de voûte de la paysannerie familiale",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 1,
+      "quote": "Projeto de Assentamento Taboca",
+      "why_relevant": "Dénomme le projet d'installation qui incarne le mécanisme de redistribution foncière",
+      "verified": false,
+      "page_physical": null
+     },
+     {
+      "page": 1,
+      "quote": "área de 701,9069 ha (setecentos e um mil oitocentos e sessenta e nove centiares)",
+      "why_relevant": "Quantifie le bien-fonds exproprié à des fins de réforme agraire — ampleur matérielle du transfert",
+      "verified": false,
+      "page_physical": null
+     }
+    ],
+    "matched_keywords": [
+     "réforme agraire",
+     "libération des terres",
+     "agriculture familiale",
+     "paysannerie familiale",
+     "assentamento",
+     "agriculteurs",
+     "sans-terre (implicite dans le processus d'installation)",
+     "brésil"
+    ],
+    "relevance_score": 7,
+    "relevance_notes": "Document très pertinent malgré son caractère bureaucratique : c'est un artefact concret de la réforme agraire brésilienne, montrant comment l'État s'empare de terres pour les redistribuer à des familles paysannes. Absent : philosophie, débat, critique — mais présent : la matérialité de la libération foncière.",
+    "en_clair": "Un document officiel brésilien qui montre une décision réelle : l'État prend 700 hectares à quelqu'un et les donne à 15 familles de paysans pauvres pour qu'elles cultivent. C'est concret, c'est du terrain, c'est la réforme agraire qui se fait.",
+    "acteurs": [
+     "INCRA (Instituto Nacional de Colonização e Reforma Agrária)",
+     "Superintendência Regional do INCRA no Estado do Tocantins",
+     "Ministério do Desenvolvimento Agrário (implicite)"
+    ],
+    "controverse": "Le document ne l'explicite pas, mais il incarne une tension majeure au Brésil : l'expropriation de terres pour réforme agraire génère une opposition farouche des propriétaires fonciers et des agro-industriels. C'est une politique controversée et contestée.",
+    "angle_journalistique": "Où en est-on en 2005–2025 ? Ce projet Taboca existe-t-il toujours ? Comment les 15 familles de paysans ont-elles pu tenir face à l'agro-industrie du Tocantins ?",
+    "model": "claude-haiku-4-5",
+    "prompt_version": "e1138ad4ab"
+   },
+   "cover": "covers/03677257.jpg",
+   "meta": {
+    "page_count": 1,
+    "pdf_title": "",
+    "pdf_author": "",
+    "pdf_creator": "I.R.I.S."
+   },
    "has_cover": true
   },
   "9db8fd72": {
