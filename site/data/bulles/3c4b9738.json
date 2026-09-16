@@ -1,0 +1,94 @@
+{
+  "titre_accroche": "Alimentação é direito ! Le MST face à la famine organisée de l'agronégocio",
+  "teaser": "Quand 20 millions d'affamés côtoient 1 % de latifundiaires contrôlant la moitié des terres : le Mouvement des Sans-Terre brésilien dénonce le vol organisé de l'agronégocio et affirme que nourrir le peuple est un droit non-négociable.",
+  "abstract_editorial": "Publié pour la Journée mondiale du droit à l'alimentation, ce manifeste du Mouvement des Sans-Terre (MST) brésilien expose un paradoxe politique radical : le Brésil, capable de nourrir le monde, abandonne 20 millions d'habitants à la faim et plonge 55 % de sa population dans l'insécurité alimentaire.\n\nLe diagnostic : ce n'est pas une crise naturelle, c'est un régime de classe organisé. Un pour cent de latifundiaires contrôlent plus de 50 % de toutes les terres du Brésil. L'agronégocio dicte la production selon les logiques extractivistes : soja, maïs, canne à sucre pour l'export, jamais pour nourrir le peuple. Pendant ce temps, le gouvernement Bolsonaro dérégule les pesticides, transformant les aliments en poisons. Chômage de masse (14,1 %), effondrement du logement, inflation galopante des denrées : tous les paramètres d'un système délibérément hostile au peuple travailleur.\n\nEn contraste radical, l'agriculture paysanne et familiale produit plus de 360 types d'aliments pour la subsistance locale. Pourtant elle ne reçoit aucun soutien d'État.\n\nCe manifeste parle directement aux débats sur les communs : comment une ressource vitale (la terre) peut être confisquée par une minorité de propriétaires absolus ; comment l'usage paysannal se distingue radicalement de la propriété latifundiaire ; comment la demande de réforme agraire est une demande de justesse non-négociable. Le MST expose quatre ruptures : élimination politique de Bolsonaro, abandon du modèle agronégocio, réforme agraire, démarcation des territoires indígenas et quilombolas.\n\nL'appel final—« Occuper les latifundia, au champ et à la ville ! »—n'est pas symbole mais pratique. Depuis 1984, le MST réalise ce que l'État refuse : libérer les terres par le bas. Pour qui croit que la faim est un crime politique.",
+  "citations_phares": [
+    {
+      "page": 1,
+      "quote": "ALIMENTAÇÃO É DIREITO DE TODO SER HUMANO!"
+    },
+    {
+      "page": 1,
+      "quote": "O agronegócio é formado por apenas 1% de fazendeiros, que controlam mais de 50% de todas as terras, alguns deles com áreas de mais de cem mil hectares."
+    },
+    {
+      "page": 2,
+      "quote": "o agronegócio se apropria de terras públicas e invade territórios camponeses, quilombolas e indígenas"
+    }
+  ],
+  "categorisation": [
+    "paysannerie",
+    "réforme agraire",
+    "communs",
+    "libération foncière",
+    "souveraineté alimentaire",
+    "Brésil",
+    "agronégocio"
+  ],
+  "slug": "alimentacao-direito-mst-agronegocio",
+  "en_clair": "Au Brésil, une poignée de riches contrôle 50 % des terres et n'y produit que du soja pour l'export — pendant que 20 millions de gens ont faim. Les paysans pourraient les nourrir s'ils avaient la terre, et le MST demande une réforme agraire pour leur en donner.",
+  "acteurs": [
+    "Movimento dos Trabalhadores Rurais Sem Terra (MST)",
+    "Frente Parlamentar da Agricultura"
+  ],
+  "controverse": "Responsabilité du modèle agronégocio dans la famine : le MST affirme que ce ne sont pas les paysans et l'agriculture familiale qui sont inefficaces, mais que c'est le détournement délibéré des terres vers l'export qui produit la faim. Tension aussi entre ceux qui défendent la réforme agraire et la Frente Parlamentar qui cherche à la « privatiser » (la neutraliser politiquement).",
+  "angle_journalistique": "Enquête : Au Brésil, comment un bloc de 241 députés pro-agronégocio au Congrès bloque-t-il la réforme agraire tandis que 20 millions de citoyens ont faim ?",
+  "citations_verifiees": [
+    {
+      "quote": "ALIMENTAÇÃO É DIREITO DE TODO SER HUMANO!",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "Mais de 20 milhões de brasileiros e brasileiras passam fome. 55% da população está em insegurança alimentar.",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "O agronegócio é formado por apenas 1% de fazendeiros, que controlam mais de 50% de todas as terras, alguns deles com áreas de mais de cem mil hectares.",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "A agricultura brasileira é dominada pelo agronegócio que não produz alimentos, e sim produtos para exportação",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "o agronegócio se apropria de terras públicas e invade territórios camponeses, quilombolas e indígenas",
+      "page": 2,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "A agricultura familiar e camponesa produz mais de 360 tipos de alimentos para o povo brasileiro, mas não recebe nenhum apoio",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "O direito à alimentação para todo o povo brasileiro somente será assegurado através da agricultura camponesa, agroecológica e agroflorestal, em equilíbrio com a natureza",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Precisamos fazer Reforma Agrária, demarcar terras indígenas, reconhecer os direitos de territórios quilombolas e camponeses",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Ocupar os latifúndios, no campo e na cidade!",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "a5b30d2de5"
+}

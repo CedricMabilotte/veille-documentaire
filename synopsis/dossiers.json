@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-16T10:43:12Z",
+  "generated_at": "2026-09-16T11:49:36Z",
   "total_dossiers": 10,
   "dossiers": [
     {
       "slug": "sortir-une-terre-du-marche",
       "titre": "Sortir une terre du marché",
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-      "doc_count": 122,
+      "doc_count": 126,
       "docs": [
         "9c49c870",
         "e41de87d",
@@ -20,6 +20,8 @@
         "c3bb4444",
         "44533d13",
         "0a0fa2cf",
+        "cc4597e5",
+        "7c7e1987",
         "ff069338",
         "d7fd21ca",
         "68b460d7",
@@ -69,6 +71,7 @@
         "c62d22bd",
         "3cd2f9c2",
         "7a9e87db",
+        "75aa847d",
         "f51dd9f5",
         "b2d08fef",
         "876db11d",
@@ -123,6 +126,7 @@
         "961e54e4",
         "9405b8a5",
         "b0e87371",
+        "252c896d",
         "e0c37afa",
         "b8a9d650",
         "85aa1837",
@@ -236,6 +240,22 @@
         {
           "id": "0a0fa2cf",
           "title": "The Nation_Essa Terra É Nossa_PT",
+          "score": 9,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
+          "id": "cc4597e5",
+          "title": "JST2021_Duplas_comCorte",
+          "score": 9,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
+          "id": "7c7e1987",
+          "title": "OFPRES_422_-MTO-_JUIZ Vara agraria – ariadnopolis d",
           "score": 9,
           "matched_on": [
             "propriété d'usage"
@@ -645,6 +665,14 @@
           "score": 8,
           "matched_on": [
             "propriété d'usage"
+          ]
+        },
+        {
+          "id": "75aa847d",
+          "title": "Carta Aberta Despejo Zero SP",
+          "score": 8,
+          "matched_on": [
+            "anti-spéculat"
           ]
         },
         {
@@ -1093,6 +1121,14 @@
           ]
         },
         {
+          "id": "252c896d",
+          "title": "Plataforma-Estadual-de-Emergência-FBP-MG",
+          "score": 6,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
           "id": "e0c37afa",
           "title": "Bienes comunes",
           "score": 6,
@@ -1156,7 +1192,7 @@
       "slug": "zad-defense-de-territoires",
       "titre": "ZAD & défense de territoires",
       "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-      "doc_count": 113,
+      "doc_count": 119,
       "docs": [
         "38a113bc",
         "ba64641a",
@@ -1166,6 +1202,8 @@
         "09bc2eef",
         "7361abcf",
         "1ef49d91",
+        "3c4b9738",
+        "7c7e1987",
         "b54759fb",
         "59028c2b",
         "5a26bb5f",
@@ -1197,6 +1235,7 @@
         "3cd2f9c2",
         "43584cf4",
         "7a9e87db",
+        "75aa847d",
         "9296480e",
         "65c76d04",
         "c922a9c1",
@@ -1237,6 +1276,8 @@
         "3fd40433",
         "ac638fb6",
         "8741a8e6",
+        "40e17ce3",
+        "0d195b90",
         "1a3bdd23",
         "91ade57d",
         "0183b615",
@@ -1264,6 +1305,7 @@
         "df13538a",
         "9405b8a5",
         "55b31ba8",
+        "252c896d",
         "5d38eef2",
         "3e82bc24",
         "ac50ec8d",
@@ -1338,6 +1380,22 @@
         {
           "id": "1ef49d91",
           "title": "Carta de compromisso da Juventude Sem Terra do Centro Oeste",
+          "score": 9,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "3c4b9738",
+          "title": "Alimentação é direito de todo ser humano",
+          "score": 9,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "7c7e1987",
+          "title": "OFPRES_422_-MTO-_JUIZ Vara agraria – ariadnopolis d",
           "score": 9,
           "matched_on": [
             "occupation"
@@ -1600,6 +1658,14 @@
         {
           "id": "7a9e87db",
           "title": "Balanco-Despejo-Zero-outubro-2022",
+          "score": 8,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "75aa847d",
+          "title": "Carta Aberta Despejo Zero SP",
           "score": 8,
           "matched_on": [
             "occupation"
@@ -1942,6 +2008,22 @@
           ]
         },
         {
+          "id": "40e17ce3",
+          "title": "Balanço das Jornadas de Lutas em Defesa da Reforma Agrária Popular 2022",
+          "score": 7,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "0d195b90",
+          "title": "Livro MST-editado-FINAL",
+          "score": 7,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
           "id": "1a3bdd23",
           "title": "SOLIDARITY OF SPI FOR FRENCH PEASANTS CONFÉDÉRATION PAYSANNE",
           "score": 7,
@@ -2190,6 +2272,14 @@
           ]
         },
         {
+          "id": "252c896d",
+          "title": "Plataforma-Estadual-de-Emergência-FBP-MG",
+          "score": 6,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
           "id": "5d38eef2",
           "title": "EN-Solidarity-Letter-for-Sheffield-Encampment-for-Gaza-Sheffield-Campus-Coalition-for-Palestine",
           "score": 6,
@@ -2251,7 +2341,7 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 456,
+      "doc_count": 484,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -2281,8 +2371,15 @@
         "95b490c8",
         "334c8921",
         "09bc2eef",
+        "a83a3021",
+        "bc65041c",
         "7361abcf",
         "1ef49d91",
+        "c0bf3206",
+        "3c4b9738",
+        "cc4597e5",
+        "7c7e1987",
+        "d5aa23f3",
         "d7fd21ca",
         "b54759fb",
         "59028c2b",
@@ -2360,6 +2457,7 @@
         "42b3fcc5",
         "c281d375",
         "b71644b2",
+        "76c35171",
         "710bd16d",
         "e404774c",
         "7f2e2b9c",
@@ -2452,6 +2550,10 @@
         "43584cf4",
         "17fe98fc",
         "7a9e87db",
+        "75aa847d",
+        "9ffe89af",
+        "69f230cd",
+        "30f54000",
         "684ffd64",
         "7b77750e",
         "d4f9ca0a",
@@ -2473,6 +2575,7 @@
         "2224ddf4",
         "65bc3fc0",
         "51ac7bb4",
+        "e7078d7a",
         "650ebb33",
         "115993e5",
         "12d55115",
@@ -2585,6 +2688,10 @@
         "3fd40433",
         "ac638fb6",
         "8741a8e6",
+        "40e17ce3",
+        "48a47a8f",
+        "0d195b90",
+        "a58c10cd",
         "2a87f34f",
         "79ba213c",
         "1a3bdd23",
@@ -2657,7 +2764,17 @@
         "b64d8099",
         "418efeb5",
         "38b5fd88",
+        "a2c763f2",
         "55b31ba8",
+        "c1118aff",
+        "4be4a4e2",
+        "3d90732c",
+        "52042110",
+        "252c896d",
+        "0db8cf7e",
+        "eb792172",
+        "f6812800",
+        "4f01fbcb",
         "c8e0149d",
         "cede62b7",
         "a4b0d3c1",
@@ -2688,6 +2805,7 @@
         "ac5232e2",
         "8c8e29f3",
         "ee4aabc3",
+        "c1228895",
         "f7998c51",
         "33b352fe",
         "68426262",
@@ -2978,6 +3096,25 @@
           ]
         },
         {
+          "id": "a83a3021",
+          "title": "NOTA-TAUA-ok",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
+          "id": "bc65041c",
+          "title": "Por-que-a-Medida-Provisoria-1151-nao-pode-ser-votada",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "mst"
+          ]
+        },
+        {
           "id": "7361abcf",
           "title": "Cancioneiro Jornada das Mulheres Sem Terra PR 2023",
           "score": 9,
@@ -2996,6 +3133,60 @@
             "sans terre",
             "réforme agraire",
             "mst"
+          ]
+        },
+        {
+          "id": "c0bf3206",
+          "title": "Carta-ao-Povo-Brasileiro_29.11.2022",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst",
+            "latifundi"
+          ]
+        },
+        {
+          "id": "3c4b9738",
+          "title": "Alimentação é direito de todo ser humano",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst",
+            "latifundi",
+            "occupation de terre"
+          ]
+        },
+        {
+          "id": "cc4597e5",
+          "title": "JST2021_Duplas_comCorte",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "sans terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
+          "id": "7c7e1987",
+          "title": "OFPRES_422_-MTO-_JUIZ Vara agraria – ariadnopolis d",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
+          "id": "d5aa23f3",
+          "title": "Recomendações-da-Sociedade-Civil-à-COP-12-e-MOP-7-",
+          "score": 9,
+          "matched_on": [
+            "sans terre",
+            "mst",
+            "via campesina"
           ]
         },
         {
@@ -3711,6 +3902,14 @@
         {
           "id": "b71644b2",
           "title": "Multiple crisis for small scale farmers.compressed",
+          "score": 9,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
+          "id": "76c35171",
+          "title": "LVC-AGROFUEL-EN.compressed",
           "score": 9,
           "matched_on": [
             "via campesina"
@@ -4563,6 +4762,42 @@
           ]
         },
         {
+          "id": "75aa847d",
+          "title": "Carta Aberta Despejo Zero SP",
+          "score": 8,
+          "matched_on": [
+            "mst"
+          ]
+        },
+        {
+          "id": "9ffe89af",
+          "title": "Despejo Campo do Meio_oficio_reuniao_Zema",
+          "score": 8,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
+          "id": "69f230cd",
+          "title": "ALEP_Voto_de_Louvor_Parana_Tadeu_Veneri",
+          "score": 8,
+          "matched_on": [
+            "sans-terre",
+            "mst"
+          ]
+        },
+        {
+          "id": "30f54000",
+          "title": "relatorioagrocombustiveis2012",
+          "score": 8,
+          "matched_on": [
+            "sans-terre",
+            "mst"
+          ]
+        },
+        {
           "id": "684ffd64",
           "title": "¿Qué es un campesino? ¿Qué son los campesinados?  Un breve documento sobre cuestiones de definición",
           "score": 8,
@@ -4753,6 +4988,14 @@
           "score": 8,
           "matched_on": [
             "via campesina"
+          ]
+        },
+        {
+          "id": "e7078d7a",
+          "title": "EN_synthesis-of-deliberations-FAFO2024-_final",
+          "score": 8,
+          "matched_on": [
+            "agrarian reform"
           ]
         },
         {
@@ -5778,6 +6021,49 @@
           ]
         },
         {
+          "id": "40e17ce3",
+          "title": "Balanço das Jornadas de Lutas em Defesa da Reforma Agrária Popular 2022",
+          "score": 7,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst",
+            "occupation de terre"
+          ]
+        },
+        {
+          "id": "48a47a8f",
+          "title": "ADPF828TPIIncidentalDecisaoAssinada",
+          "score": 7,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
+          "id": "0d195b90",
+          "title": "Livro MST-editado-FINAL",
+          "score": 7,
+          "matched_on": [
+            "sans terre",
+            "réforme agraire",
+            "reforma agraria",
+            "mst",
+            "landless"
+          ]
+        },
+        {
+          "id": "a58c10cd",
+          "title": "A-HISTÓRIA-DAS-LIGAS-CAMPONESAS",
+          "score": 7,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
           "id": "2a87f34f",
           "title": "El nuevo paradigma agrosocial, futuro del nuevo campesinado emergente",
           "score": 7,
@@ -6414,12 +6700,100 @@
           ]
         },
         {
+          "id": "a2c763f2",
+          "title": "Carta-Aberta-Apoio-a-Rodrigo-de-Medeiros-Para-Ouvidoria-da-DPE_RS-3",
+          "score": 6,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
           "id": "55b31ba8",
           "title": "Carta-contra-violencia-Campanha-contra-violencia",
           "score": 6,
           "matched_on": [
             "sans-terre",
             "sans terre",
+            "mst"
+          ]
+        },
+        {
+          "id": "c1118aff",
+          "title": "Carta – O povo precisa da Defensoria",
+          "score": 6,
+          "matched_on": [
+            "mst"
+          ]
+        },
+        {
+          "id": "4be4a4e2",
+          "title": "Curso_ Dilemas da Sociedade Brasileira _ programação",
+          "score": 6,
+          "matched_on": [
+            "mst",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "3d90732c",
+          "title": "Despejo-Zero-6-jun2021",
+          "score": 6,
+          "matched_on": [
+            "sans-terre",
+            "mst"
+          ]
+        },
+        {
+          "id": "52042110",
+          "title": "CIDH – PEDIDO DE INFORMAÇÃO AO BRASIL – MEDIDA CAUTELAR QUILOMBO CAMPO GRANDE – MG",
+          "score": 6,
+          "matched_on": [
+            "mst"
+          ]
+        },
+        {
+          "id": "252c896d",
+          "title": "Plataforma-Estadual-de-Emergência-FBP-MG",
+          "score": 6,
+          "matched_on": [
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
+          "id": "0db8cf7e",
+          "title": "Cinco-modelos-de-Reforma-Agrária-1",
+          "score": 6,
+          "matched_on": [
+            "réforme agraire",
+            "reforma agraria",
+            "mst"
+          ]
+        },
+        {
+          "id": "eb792172",
+          "title": "201411191735100.JornalEconomistasRioTextoRedCFje_jun2004_03",
+          "score": 6,
+          "matched_on": [
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
+          "id": "f6812800",
+          "title": "2014-EM_002_maio-Transgênicos_",
+          "score": 6,
+          "matched_on": [
+            "mst"
+          ]
+        },
+        {
+          "id": "4f01fbcb",
+          "title": "Accusacion-TPP-esp.version-final",
+          "score": 6,
+          "matched_on": [
             "mst"
           ]
         },
@@ -6673,6 +7047,14 @@
           ]
         },
         {
+          "id": "c1228895",
+          "title": "youth-report-EN-edit02",
+          "score": 6,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
           "id": "f7998c51",
           "title": "WTO_FR_PDF",
           "score": 6,
@@ -6852,7 +7234,7 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 265,
+      "doc_count": 274,
       "docs": [
         "d30c223f",
         "9c49c870",
@@ -6877,7 +7259,12 @@
         "c3bb4444",
         "44533d13",
         "0a0fa2cf",
+        "a83a3021",
+        "bc65041c",
         "1ef49d91",
+        "3c4b9738",
+        "cc4597e5",
+        "d5aa23f3",
         "ff069338",
         "d7fd21ca",
         "0ae5dad8",
@@ -6924,6 +7311,7 @@
         "41df6222",
         "cc218f22",
         "bda18040",
+        "76c35171",
         "710bd16d",
         "e404774c",
         "7f2e2b9c",
@@ -7103,6 +7491,9 @@
         "b0e87371",
         "bdaf5ec0",
         "55b31ba8",
+        "52042110",
+        "252c896d",
+        "eb792172",
         "360fd55b",
         "e0c37afa",
         "c8e0149d",
@@ -7328,11 +7719,53 @@
           ]
         },
         {
+          "id": "a83a3021",
+          "title": "NOTA-TAUA-ok",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "bc65041c",
+          "title": "Por-que-a-Medida-Provisoria-1151-nao-pode-ser-votada",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers",
+            "terres collectives"
+          ]
+        },
+        {
           "id": "1ef49d91",
           "title": "Carta de compromisso da Juventude Sem Terra do Centro Oeste",
           "score": 9,
           "matched_on": [
             "communs fonciers",
+            "terres collectives"
+          ]
+        },
+        {
+          "id": "3c4b9738",
+          "title": "Alimentação é direito de todo ser humano",
+          "score": 9,
+          "matched_on": [
+            "terres collectives"
+          ]
+        },
+        {
+          "id": "cc4597e5",
+          "title": "JST2021_Duplas_comCorte",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers",
+            "terres collectives"
+          ]
+        },
+        {
+          "id": "d5aa23f3",
+          "title": "Recomendações-da-Sociedade-Civil-à-COP-12-e-MOP-7-",
+          "score": 9,
+          "matched_on": [
             "terres collectives"
           ]
         },
@@ -7729,6 +8162,14 @@
         {
           "id": "bda18040",
           "title": "Open Letter CJ – SEAf final FR",
+          "score": 9,
+          "matched_on": [
+            "terres collectives"
+          ]
+        },
+        {
+          "id": "76c35171",
+          "title": "LVC-AGROFUEL-EN.compressed",
           "score": 9,
           "matched_on": [
             "terres collectives"
@@ -9272,6 +9713,30 @@
           ]
         },
         {
+          "id": "52042110",
+          "title": "CIDH – PEDIDO DE INFORMAÇÃO AO BRASIL – MEDIDA CAUTELAR QUILOMBO CAMPO GRANDE – MG",
+          "score": 6,
+          "matched_on": [
+            "terres collectives"
+          ]
+        },
+        {
+          "id": "252c896d",
+          "title": "Plataforma-Estadual-de-Emergência-FBP-MG",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "eb792172",
+          "title": "201411191735100.JornalEconomistasRioTextoRedCFje_jun2004_03",
+          "score": 6,
+          "matched_on": [
+            "terres collectives"
+          ]
+        },
+        {
           "id": "360fd55b",
           "title": "Distributive politics at play in Harare, Zimbabwe: case for housing cooperatives",
           "score": 6,
@@ -9412,7 +9877,7 @@
       "slug": "habitat-collectif-cooperatif",
       "titre": "Habitat collectif & coopératif",
       "chapo": "Habiter la terre autrement : coopératives d'habitants, habitat groupé, communautés intentionnelles, squats ruraux. Des formes de logement sorties de la spéculation et ancrées dans un sol partagé.",
-      "doc_count": 47,
+      "doc_count": 50,
       "docs": [
         "931fc89b",
         "f7638ce0",
@@ -9436,6 +9901,7 @@
         "6325ebd3",
         "1727bccf",
         "c62d22bd",
+        "75aa847d",
         "0f3318ce",
         "6db5a69d",
         "679c85f6",
@@ -9452,6 +9918,7 @@
         "8156629f",
         "c210135f",
         "1d3081c2",
+        "48a47a8f",
         "6090cf45",
         "fc44409e",
         "bc522fd4",
@@ -9459,6 +9926,7 @@
         "961e54e4",
         "fcb58745",
         "b0e87371",
+        "a2c763f2",
         "6a9cba09",
         "360fd55b"
       ],
@@ -9662,6 +10130,14 @@
           ]
         },
         {
+          "id": "75aa847d",
+          "title": "Carta Aberta Despejo Zero SP",
+          "score": 8,
+          "matched_on": [
+            "logement collectif"
+          ]
+        },
+        {
           "id": "0f3318ce",
           "title": "Review of the Participatory and Community-Based Approach in the Housing Cooperative Sector",
           "score": 8,
@@ -9801,6 +10277,14 @@
           ]
         },
         {
+          "id": "48a47a8f",
+          "title": "ADPF828TPIIncidentalDecisaoAssinada",
+          "score": 7,
+          "matched_on": [
+            "logement collectif"
+          ]
+        },
+        {
           "id": "6090cf45",
           "title": "ENV-International-Campaign-for-Zero-Evictions-WHAT-TO-DO",
           "score": 7,
@@ -9861,6 +10345,14 @@
           ]
         },
         {
+          "id": "a2c763f2",
+          "title": "Carta-Aberta-Apoio-a-Rodrigo-de-Medeiros-Para-Ouvidoria-da-DPE_RS-3",
+          "score": 6,
+          "matched_on": [
+            "habitat coopératif"
+          ]
+        },
+        {
           "id": "6a9cba09",
           "title": "La embargabilidad en el régimen económico de las cooperativas de viviendas de Euskadi",
           "score": 6,
@@ -9885,7 +10377,7 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 606,
+      "doc_count": 631,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -9918,8 +10410,15 @@
         "9db8fd72",
         "95b490c8",
         "09bc2eef",
+        "a83a3021",
+        "bc65041c",
         "7361abcf",
         "1ef49d91",
+        "c0bf3206",
+        "3c4b9738",
+        "cc4597e5",
+        "7c7e1987",
+        "d5aa23f3",
         "ff069338",
         "d7fd21ca",
         "b54759fb",
@@ -10010,6 +10509,7 @@
         "c281d375",
         "b71644b2",
         "f2efce06",
+        "76c35171",
         "710bd16d",
         "e404774c",
         "7f2e2b9c",
@@ -10116,6 +10616,10 @@
         "f7775b72",
         "78c719f9",
         "43584cf4",
+        "75aa847d",
+        "9ffe89af",
+        "69f230cd",
+        "30f54000",
         "876db11d",
         "679c85f6",
         "88dfd6e3",
@@ -10150,6 +10654,8 @@
         "2224ddf4",
         "65bc3fc0",
         "a4394095",
+        "51ac7bb4",
+        "e7078d7a",
         "3c9481c5",
         "650ebb33",
         "09fcb406",
@@ -10290,6 +10796,9 @@
         "3fd40433",
         "ac638fb6",
         "8741a8e6",
+        "40e17ce3",
+        "0d195b90",
+        "a58c10cd",
         "2a87f34f",
         "bb0dcc2a",
         "a1543a19",
@@ -10415,7 +10924,14 @@
         "bdaf5ec0",
         "b64d8099",
         "418efeb5",
+        "a2c763f2",
         "55b31ba8",
+        "c1118aff",
+        "4be4a4e2",
+        "0db8cf7e",
+        "eb792172",
+        "f6812800",
+        "4f01fbcb",
         "e0c37afa",
         "edd2691f",
         "c8e0149d",
@@ -10455,6 +10971,7 @@
         "3bd24f3c",
         "8c8e29f3",
         "ee4aabc3",
+        "c1228895",
         "f7998c51",
         "fa4b5fd2",
         "33b352fe",
@@ -10799,6 +11316,25 @@
           ]
         },
         {
+          "id": "a83a3021",
+          "title": "NOTA-TAUA-ok",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "bc65041c",
+          "title": "Por-que-a-Medida-Provisoria-1151-nao-pode-ser-votada",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie"
+          ]
+        },
+        {
           "id": "7361abcf",
           "title": "Cancioneiro Jornada das Mulheres Sem Terra PR 2023",
           "score": 9,
@@ -10821,6 +11357,64 @@
             "agriculture vivrière",
             "souveraineté alimentaire",
             "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "c0bf3206",
+          "title": "Carta-ao-Povo-Brasileiro_29.11.2022",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "3c4b9738",
+          "title": "Alimentação é direito de todo ser humano",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "cc4597e5",
+          "title": "JST2021_Duplas_comCorte",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "7c7e1987",
+          "title": "OFPRES_422_-MTO-_JUIZ Vara agraria – ariadnopolis d",
+          "score": 9,
+          "matched_on": [
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière"
+          ]
+        },
+        {
+          "id": "d5aa23f3",
+          "title": "Recomendações-da-Sociedade-Civil-à-COP-12-e-MOP-7-",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire"
           ]
         },
         {
@@ -11901,6 +12495,19 @@
             "agriculture paysanne",
             "peasant",
             "agroecology"
+          ]
+        },
+        {
+          "id": "76c35171",
+          "title": "LVC-AGROFUEL-EN.compressed",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
           ]
         },
         {
@@ -13078,6 +13685,47 @@
           ]
         },
         {
+          "id": "75aa847d",
+          "title": "Carta Aberta Despejo Zero SP",
+          "score": 8,
+          "matched_on": [
+            "agriculture vivrière"
+          ]
+        },
+        {
+          "id": "9ffe89af",
+          "title": "Despejo Campo do Meio_oficio_reuniao_Zema",
+          "score": 8,
+          "matched_on": [
+            "paysan",
+            "agriculture vivrière",
+            "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "69f230cd",
+          "title": "ALEP_Voto_de_Louvor_Parana_Tadeu_Veneri",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "30f54000",
+          "title": "relatorioagrocombustiveis2012",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "food sovereignty"
+          ]
+        },
+        {
           "id": "876db11d",
           "title": "Mini-Manuel : Forêts nourricières",
           "score": 8,
@@ -13420,6 +14068,29 @@
           "matched_on": [
             "paysan",
             "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "51ac7bb4",
+          "title": "Déclaration de La Via Campesina contre l’Offensive Néocolonialiste en Haïti",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "e7078d7a",
+          "title": "EN_synthesis-of-deliberations-FAFO2024-_final",
+          "score": 8,
+          "matched_on": [
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
           ]
         },
         {
@@ -14947,6 +15618,32 @@
           ]
         },
         {
+          "id": "40e17ce3",
+          "title": "Balanço das Jornadas de Lutas em Defesa da Reforma Agrária Popular 2022",
+          "score": 7,
+          "matched_on": [
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "0d195b90",
+          "title": "Livro MST-editado-FINAL",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "a58c10cd",
+          "title": "A-HISTÓRIA-DAS-LIGAS-CAMPONESAS",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
           "id": "2a87f34f",
           "title": "El nuevo paradigma agrosocial, futuro del nuevo campesinado emergente",
           "score": 7,
@@ -16293,6 +16990,18 @@
           ]
         },
         {
+          "id": "a2c763f2",
+          "title": "Carta-Aberta-Apoio-a-Rodrigo-de-Medeiros-Para-Ouvidoria-da-DPE_RS-3",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
           "id": "55b31ba8",
           "title": "Carta-contra-violencia-Campanha-contra-violencia",
           "score": 6,
@@ -16300,6 +17009,62 @@
             "paysannerie",
             "paysan",
             "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "c1118aff",
+          "title": "Carta – O povo precisa da Defensoria",
+          "score": 6,
+          "matched_on": [
+            "paysan",
+            "agroécologie"
+          ]
+        },
+        {
+          "id": "4be4a4e2",
+          "title": "Curso_ Dilemas da Sociedade Brasileira _ programação",
+          "score": 6,
+          "matched_on": [
+            "paysan"
+          ]
+        },
+        {
+          "id": "0db8cf7e",
+          "title": "Cinco-modelos-de-Reforma-Agrária-1",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "eb792172",
+          "title": "201411191735100.JornalEconomistasRioTextoRedCFje_jun2004_03",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "f6812800",
+          "title": "2014-EM_002_maio-Transgênicos_",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "4f01fbcb",
+          "title": "Accusacion-TPP-esp.version-final",
+          "score": 6,
+          "matched_on": [
+            "agroécologie"
           ]
         },
         {
@@ -16740,6 +17505,18 @@
           ]
         },
         {
+          "id": "c1228895",
+          "title": "youth-report-EN-edit02",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
           "id": "f7998c51",
           "title": "WTO_FR_PDF",
           "score": 6,
@@ -17155,7 +17932,7 @@
       "slug": "land-back-autochtones",
       "titre": "Land Back & souverainetés autochtones",
       "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-      "doc_count": 262,
+      "doc_count": 275,
       "docs": [
         "39441dfc",
         "e41de87d",
@@ -17166,6 +17943,8 @@
         "c85c6074",
         "0a0fa2cf",
         "9db8fd72",
+        "bc65041c",
+        "3c4b9738",
         "0ae5dad8",
         "16fe173f",
         "510c2d69",
@@ -17268,6 +18047,8 @@
         "8413ce56",
         "3b4d10ec",
         "43584cf4",
+        "69f230cd",
+        "30f54000",
         "684ffd64",
         "037cb37e",
         "4ee36902",
@@ -17282,6 +18063,7 @@
         "6a254f46",
         "a3bc9099",
         "820f64ed",
+        "e7078d7a",
         "09fcb406",
         "115993e5",
         "5ddd1380",
@@ -17340,6 +18122,8 @@
         "3fd40433",
         "ac638fb6",
         "8741a8e6",
+        "48a47a8f",
+        "a58c10cd",
         "187000d0",
         "72a2c796",
         "3cc0465a",
@@ -17385,7 +18169,13 @@
         "a1f23085",
         "bdaf5ec0",
         "418efeb5",
+        "a2c763f2",
         "55b31ba8",
+        "c1118aff",
+        "52042110",
+        "252c896d",
+        "f6812800",
+        "4f01fbcb",
         "e0c37afa",
         "edd2691f",
         "9975470e",
@@ -17495,6 +18285,23 @@
         {
           "id": "9db8fd72",
           "title": "LIVRO_RETOMADAS",
+          "score": 9,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "bc65041c",
+          "title": "Por-que-a-Medida-Provisoria-1151-nao-pode-ser-votada",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "indigène"
+          ]
+        },
+        {
+          "id": "3c4b9738",
+          "title": "Alimentação é direito de todo ser humano",
           "score": 9,
           "matched_on": [
             "autochtone"
@@ -18380,6 +19187,22 @@
           ]
         },
         {
+          "id": "69f230cd",
+          "title": "ALEP_Voto_de_Louvor_Parana_Tadeu_Veneri",
+          "score": 8,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "30f54000",
+          "title": "relatorioagrocombustiveis2012",
+          "score": 8,
+          "matched_on": [
+            "indigenous"
+          ]
+        },
+        {
           "id": "684ffd64",
           "title": "¿Qué es un campesino? ¿Qué son los campesinados?  Un breve documento sobre cuestiones de definición",
           "score": 8,
@@ -18501,6 +19324,15 @@
             "autochtone",
             "indigenous",
             "droit coutumier"
+          ]
+        },
+        {
+          "id": "e7078d7a",
+          "title": "EN_synthesis-of-deliberations-FAFO2024-_final",
+          "score": 8,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
           ]
         },
         {
@@ -19009,6 +19841,23 @@
           ]
         },
         {
+          "id": "48a47a8f",
+          "title": "ADPF828TPIIncidentalDecisaoAssinada",
+          "score": 7,
+          "matched_on": [
+            "land back",
+            "autochtone"
+          ]
+        },
+        {
+          "id": "a58c10cd",
+          "title": "A-HISTÓRIA-DAS-LIGAS-CAMPONESAS",
+          "score": 7,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
           "id": "187000d0",
           "title": "Download in German",
           "score": 7,
@@ -19394,11 +20243,62 @@
           ]
         },
         {
+          "id": "a2c763f2",
+          "title": "Carta-Aberta-Apoio-a-Rodrigo-de-Medeiros-Para-Ouvidoria-da-DPE_RS-3",
+          "score": 6,
+          "matched_on": [
+            "autochtone",
+            "droit coutumier"
+          ]
+        },
+        {
           "id": "55b31ba8",
           "title": "Carta-contra-violencia-Campanha-contra-violencia",
           "score": 6,
           "matched_on": [
             "autochtone"
+          ]
+        },
+        {
+          "id": "c1118aff",
+          "title": "Carta – O povo precisa da Defensoria",
+          "score": 6,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "52042110",
+          "title": "CIDH – PEDIDO DE INFORMAÇÃO AO BRASIL – MEDIDA CAUTELAR QUILOMBO CAMPO GRANDE – MG",
+          "score": 6,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "252c896d",
+          "title": "Plataforma-Estadual-de-Emergência-FBP-MG",
+          "score": 6,
+          "matched_on": [
+            "autochtone",
+            "indigène"
+          ]
+        },
+        {
+          "id": "f6812800",
+          "title": "2014-EM_002_maio-Transgênicos_",
+          "score": 6,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "4f01fbcb",
+          "title": "Accusacion-TPP-esp.version-final",
+          "score": 6,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
           ]
         },
         {
@@ -19693,12 +20593,14 @@
       "slug": "feminismes-de-la-terre",
       "titre": "Féminismes de la terre",
       "chapo": "Le foncier a un genre. Place des femmes dans les luttes agraires, droits fonciers des femmes, écoféminisme rural, critique de la division genrée du travail de la terre.",
-      "doc_count": 129,
+      "doc_count": 133,
       "docs": [
         "e41de87d",
         "b225af88",
+        "bc65041c",
         "7361abcf",
         "1ef49d91",
+        "cc4597e5",
         "0bf022d5",
         "a78347a3",
         "a0be49c2",
@@ -19736,6 +20638,7 @@
         "01e6d4e7",
         "42b3fcc5",
         "c281d375",
+        "76c35171",
         "e404774c",
         "c8067272",
         "ccc2eaba",
@@ -19817,6 +20720,7 @@
         "5c511048",
         "a1f23085",
         "b64d8099",
+        "a2c763f2",
         "55b31ba8",
         "812f9005",
         "aba761bd",
@@ -19847,6 +20751,14 @@
           ]
         },
         {
+          "id": "bc65041c",
+          "title": "Por-que-a-Medida-Provisoria-1151-nao-pode-ser-votada",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan"
+          ]
+        },
+        {
           "id": "7361abcf",
           "title": "Cancioneiro Jornada das Mulheres Sem Terra PR 2023",
           "score": 9,
@@ -19862,6 +20774,15 @@
           "matched_on": [
             "féminisme paysan",
             "féminisme agraire"
+          ]
+        },
+        {
+          "id": "cc4597e5",
+          "title": "JST2021_Duplas_comCorte",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan",
+            "femmes et terre"
           ]
         },
         {
@@ -20206,6 +21127,14 @@
             "féminisme agraire",
             "femmes et terre",
             "agrarian feminism"
+          ]
+        },
+        {
+          "id": "76c35171",
+          "title": "LVC-AGROFUEL-EN.compressed",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan"
           ]
         },
         {
@@ -20918,6 +21847,14 @@
           ]
         },
         {
+          "id": "a2c763f2",
+          "title": "Carta-Aberta-Apoio-a-Rodrigo-de-Medeiros-Para-Ouvidoria-da-DPE_RS-3",
+          "score": 6,
+          "matched_on": [
+            "féminisme paysan"
+          ]
+        },
+        {
           "id": "55b31ba8",
           "title": "Carta-contra-violencia-Campanha-contra-violencia",
           "score": 6,
@@ -20980,7 +21917,7 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 356,
+      "doc_count": 369,
       "docs": [
         "d30c223f",
         "39441dfc",
@@ -21001,8 +21938,14 @@
         "c85c6074",
         "7a9b512f",
         "0a0fa2cf",
+        "a83a3021",
+        "bc65041c",
         "7361abcf",
         "1ef49d91",
+        "c0bf3206",
+        "3c4b9738",
+        "cc4597e5",
+        "d5aa23f3",
         "d7fd21ca",
         "0ae5dad8",
         "59028c2b",
@@ -21069,6 +22012,7 @@
         "42b3fcc5",
         "c281d375",
         "b71644b2",
+        "76c35171",
         "710bd16d",
         "e404774c",
         "7f2e2b9c",
@@ -21144,6 +22088,7 @@
         "2aa52e26",
         "8413ce56",
         "f7775b72",
+        "30f54000",
         "88dfd6e3",
         "037cb37e",
         "3ab1a62b",
@@ -21158,6 +22103,8 @@
         "af6ef51f",
         "2224ddf4",
         "65bc3fc0",
+        "51ac7bb4",
+        "e7078d7a",
         "650ebb33",
         "115993e5",
         "12d55115",
@@ -21301,6 +22248,9 @@
         "8d3d14cf",
         "bdaf5ec0",
         "55b31ba8",
+        "3d90732c",
+        "f6812800",
+        "4f01fbcb",
         "e0c37afa",
         "b8a9d650",
         "cede62b7",
@@ -21500,6 +22450,24 @@
           ]
         },
         {
+          "id": "a83a3021",
+          "title": "NOTA-TAUA-ok",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "bc65041c",
+          "title": "Por-que-a-Medida-Provisoria-1151-nao-pode-ser-votada",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "extractivis"
+          ]
+        },
+        {
           "id": "7361abcf",
           "title": "Cancioneiro Jornada das Mulheres Sem Terra PR 2023",
           "score": 9,
@@ -21510,6 +22478,38 @@
         {
           "id": "1ef49d91",
           "title": "Carta de compromisso da Juventude Sem Terra do Centro Oeste",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "c0bf3206",
+          "title": "Carta-ao-Povo-Brasileiro_29.11.2022",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "3c4b9738",
+          "title": "Alimentação é direito de todo ser humano",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "cc4597e5",
+          "title": "JST2021_Duplas_comCorte",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "d5aa23f3",
+          "title": "Recomendações-da-Sociedade-Civil-à-COP-12-e-MOP-7-",
           "score": 9,
           "matched_on": [
             "accaparement"
@@ -22077,6 +23077,15 @@
         {
           "id": "b71644b2",
           "title": "Multiple crisis for small scale farmers.compressed",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "76c35171",
+          "title": "LVC-AGROFUEL-EN.compressed",
           "score": 9,
           "matched_on": [
             "accaparement",
@@ -22725,6 +23734,15 @@
           ]
         },
         {
+          "id": "30f54000",
+          "title": "relatorioagrocombustiveis2012",
+          "score": 8,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
           "id": "88dfd6e3",
           "title": "A vueltas con la expropiación temporal del  usufructo habitacional. Los casos de la Comunidad Valenciana y Extremadura",
           "score": 8,
@@ -22841,6 +23859,23 @@
           "score": 8,
           "matched_on": [
             "accaparement"
+          ]
+        },
+        {
+          "id": "51ac7bb4",
+          "title": "Déclaration de La Via Campesina contre l’Offensive Néocolonialiste en Haïti",
+          "score": 8,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "e7078d7a",
+          "title": "EN_synthesis-of-deliberations-FAFO2024-_final",
+          "score": 8,
+          "matched_on": [
+            "accaparement",
+            "land grab"
           ]
         },
         {
@@ -24053,6 +25088,33 @@
           ]
         },
         {
+          "id": "3d90732c",
+          "title": "Despejo-Zero-6-jun2021",
+          "score": 6,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "f6812800",
+          "title": "2014-EM_002_maio-Transgênicos_",
+          "score": 6,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "4f01fbcb",
+          "title": "Accusacion-TPP-esp.version-final",
+          "score": 6,
+          "matched_on": [
+            "accaparement",
+            "land grab",
+            "acaparamiento",
+            "extractivis"
+          ]
+        },
+        {
           "id": "e0c37afa",
           "title": "Bienes comunes",
           "score": 6,
@@ -24377,11 +25439,12 @@
       "slug": "cooperatives-mutualisme",
       "titre": "Coopératives & mutualisme foncier",
       "chapo": "S'associer pour la terre : coopératives agricoles, GFA mutuels, foncières solidaires, mutuelles. Une économie de la terre fondée sur l'entraide plutôt que sur la rente.",
-      "doc_count": 35,
+      "doc_count": 37,
       "docs": [
         "c3bb4444",
         "95b490c8",
         "7361abcf",
+        "c0bf3206",
         "1c8437cd",
         "87d237f9",
         "1958fc06",
@@ -24390,6 +25453,7 @@
         "de8665e3",
         "6325ebd3",
         "43584cf4",
+        "69f230cd",
         "6db5a69d",
         "679c85f6",
         "7b77750e",
@@ -24438,6 +25502,14 @@
           "score": 9,
           "matched_on": [
             "mutualisme foncier"
+          ]
+        },
+        {
+          "id": "c0bf3206",
+          "title": "Carta-ao-Povo-Brasileiro_29.11.2022",
+          "score": 9,
+          "matched_on": [
+            "cooperativa"
           ]
         },
         {
@@ -24501,6 +25573,14 @@
         {
           "id": "43584cf4",
           "title": "Pauta de reivindicações _ JORNADA DE LUTA DAS MULHERES DA ARTICULAÇÃO DESPEJO ZERO PARANÁ 2023",
+          "score": 8,
+          "matched_on": [
+            "cooperativa"
+          ]
+        },
+        {
+          "id": "69f230cd",
+          "title": "ALEP_Voto_de_Louvor_Parana_Tadeu_Veneri",
           "score": 8,
           "matched_on": [
             "cooperativa"
