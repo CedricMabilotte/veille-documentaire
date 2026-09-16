@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-16T05:20:27Z",
+  "generated_at": "2026-09-16T06:53:18Z",
   "total_dossiers": 10,
   "dossiers": [
     {
       "slug": "sortir-une-terre-du-marche",
       "titre": "Sortir une terre du marché",
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-      "doc_count": 116,
+      "doc_count": 120,
       "docs": [
         "9c49c870",
         "e41de87d",
@@ -40,6 +40,10 @@
         "c3c028c4",
         "53994409",
         "0955f468",
+        "21b4af5f",
+        "950381ec",
+        "b877caba",
+        "14d55842",
         "9e831a55",
         "e5341cc9",
         "7b89d6d1",
@@ -394,6 +398,38 @@
         {
           "id": "0955f468",
           "title": "landgrabbingeurope_a5-2",
+          "score": 9,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
+          "id": "21b4af5f",
+          "title": "Agroecological-revolution-ENGLISH",
+          "score": 9,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
+          "id": "950381ec",
+          "title": "Bulletin Nyéléni n° 61 –Ancrés dans la résistance : les territoires pour la justice climatique",
+          "score": 9,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
+          "id": "b877caba",
+          "title": "Bulletin Nyéléni n° 28 –Agroécologie",
+          "score": 9,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
+          "id": "14d55842",
+          "title": "Generational-Renewal-Strategy-ECVCpolitical-statement-and-reaction",
           "score": 9,
           "matched_on": [
             "propriété d'usage"
@@ -1102,7 +1138,7 @@
       "slug": "zad-defense-de-territoires",
       "titre": "ZAD & défense de territoires",
       "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-      "doc_count": 100,
+      "doc_count": 108,
       "docs": [
         "38a113bc",
         "ba64641a",
@@ -1122,6 +1158,9 @@
         "c3c028c4",
         "0955f468",
         "92a7c4e9",
+        "f1162587",
+        "c7903c6a",
+        "9da13ea1",
         "fb76b5a1",
         "5536b369",
         "1ce39b6d",
@@ -1155,6 +1194,10 @@
         "20d3c68f",
         "8b15433d",
         "b02ba1f6",
+        "fb9792a7",
+        "330c44e0",
+        "ec46400e",
+        "568f8778",
         "2e5629b5",
         "a90d3977",
         "0861d0b3",
@@ -1178,6 +1221,7 @@
         "91ade57d",
         "0183b615",
         "02b2b6df",
+        "4bc13839",
         "b85c8bc1",
         "d992c836",
         "b651aa85",
@@ -1353,6 +1397,30 @@
         {
           "id": "92a7c4e9",
           "title": "2016_06_14_Nyeleni_Newsletter_Num_26_EN",
+          "score": 9,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "f1162587",
+          "title": "EN-07",
+          "score": 9,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "c7903c6a",
+          "title": "EN-13",
+          "score": 9,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "9da13ea1",
+          "title": "Télécharger le rapport complet Nyéléni 2007 (format PDF)",
           "score": 9,
           "matched_on": [
             "occupation"
@@ -1635,6 +1703,38 @@
           ]
         },
         {
+          "id": "fb9792a7",
+          "title": "EN-05",
+          "score": 8,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "330c44e0",
+          "title": "Final FAO-VG-Principles",
+          "score": 8,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "ec46400e",
+          "title": "Bulletin Nyéléni n° 17 –Jeunesse et Agriculture",
+          "score": 8,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "568f8778",
+          "title": "Bulletin Nyéléni n° 17 –Jeunesse et Agriculture",
+          "score": 8,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
           "id": "2e5629b5",
           "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
           "score": 7,
@@ -1835,6 +1935,15 @@
             "notre-dame-des-landes",
             "occupation",
             "aéroport"
+          ]
+        },
+        {
+          "id": "4bc13839",
+          "title": "06.05_2026_catalogue.pdf",
+          "score": 6,
+          "matched_on": [
+            "zad",
+            "occupation"
           ]
         },
         {
@@ -2078,7 +2187,7 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 387,
+      "doc_count": 421,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -2201,13 +2310,31 @@
         "fc9728a8",
         "25ee141a",
         "10c49746",
+        "21b4af5f",
+        "b4d5004f",
+        "3506e193",
+        "478bdaa1",
+        "f1162587",
+        "c7903c6a",
+        "2675e388",
+        "a645411f",
+        "e2dc7756",
+        "624f3446",
+        "6bbe59d1",
+        "16c17fe6",
+        "effef8cb",
+        "950381ec",
+        "b877caba",
+        "3edc59bf",
+        "9da13ea1",
         "fb76b5a1",
+        "940f15d7",
+        "14d55842",
         "d858b954",
         "d48ae684",
         "8572db93",
         "632651da",
         "75b5c5f8",
-        "4bc13839",
         "9e831a55",
         "c99e6da4",
         "55db5001",
@@ -2342,6 +2469,15 @@
         "f2e916da",
         "d64aa10b",
         "bb0c829f",
+        "fb9792a7",
+        "1ae66ba3",
+        "3c83efe1",
+        "bb0910b1",
+        "155e1e25",
+        "330c44e0",
+        "eea43d6c",
+        "ec46400e",
+        "568f8778",
         "e8ee5514",
         "fac367e2",
         "2db11a52",
@@ -2403,8 +2539,13 @@
         "38fb9e4e",
         "18fb51a5",
         "29edc4c5",
+        "e9a890fb",
+        "55ec8164",
+        "d273ba77",
         "02b2b6df",
+        "4bc13839",
         "a238e5bd",
+        "bfc53f3a",
         "b85c8bc1",
         "d992c836",
         "88bfc0cb",
@@ -2466,6 +2607,8 @@
         "2be8a8c5",
         "85283063",
         "8e365250",
+        "a8d6ce5c",
+        "68742934",
         "7c1b5f0c"
       ],
       "docs_detail": [
@@ -3613,11 +3756,195 @@
           ]
         },
         {
+          "id": "21b4af5f",
+          "title": "Agroecological-revolution-ENGLISH",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "mst"
+          ]
+        },
+        {
+          "id": "b4d5004f",
+          "title": "EN-03",
+          "score": 9,
+          "matched_on": [
+            "mst",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "3506e193",
+          "title": "EN-02",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "478bdaa1",
+          "title": "EN-06",
+          "score": 9,
+          "matched_on": [
+            "sans terre",
+            "réforme agraire",
+            "via campesina",
+            "landless",
+            "agrarian reform"
+          ]
+        },
+        {
+          "id": "f1162587",
+          "title": "EN-07",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "occupation de terre"
+          ]
+        },
+        {
+          "id": "c7903c6a",
+          "title": "EN-13",
+          "score": 9,
+          "matched_on": [
+            "sans terre",
+            "réforme agraire",
+            "via campesina",
+            "landless",
+            "agrarian reform"
+          ]
+        },
+        {
+          "id": "2675e388",
+          "title": "EN-12",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "via campesina",
+            "landless"
+          ]
+        },
+        {
+          "id": "a645411f",
+          "title": "EN-11",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire",
+            "via campesina",
+            "agrarian reform"
+          ]
+        },
+        {
+          "id": "e2dc7756",
+          "title": "EN-10",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "624f3446",
+          "title": "EN-08",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "6bbe59d1",
+          "title": "FINAL Edited why we oppose rai",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "via campesina",
+            "landless",
+            "agrarian reform"
+          ]
+        },
+        {
+          "id": "16c17fe6",
+          "title": "Déclaration de Nyéléni 2007",
+          "score": 9,
+          "matched_on": [
+            "sans terre",
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "effef8cb",
+          "title": "Bulletin Nyéléni n° 52 –Processus Nyéléni : Reconnaître le pouvoir des mouvements populaires",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "950381ec",
+          "title": "Bulletin Nyéléni n° 61 –Ancrés dans la résistance : les territoires pour la justice climatique",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "b877caba",
+          "title": "Bulletin Nyéléni n° 28 –Agroécologie",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "3edc59bf",
+          "title": "Bulletin Nyéléni n° 49 –Souveraineté alimentaire et agrobiodiversité",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "9da13ea1",
+          "title": "Télécharger le rapport complet Nyéléni 2007 (format PDF)",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
           "id": "fb76b5a1",
           "title": "El Manifiesto de la Carta Magna",
           "score": 9,
           "matched_on": [
             "sans-terre"
+          ]
+        },
+        {
+          "id": "940f15d7",
+          "title": "TPP_DECLARACION-SEMILLAS_FINAL_ENG with Annex",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "14d55842",
+          "title": "Generational-Renewal-Strategy-ECVCpolitical-statement-and-reaction",
+          "score": 9,
+          "matched_on": [
+            "via campesina"
           ]
         },
         {
@@ -3657,14 +3984,6 @@
           "id": "75b5c5f8",
           "title": "The Zapatista reader",
           "score": 9,
-          "matched_on": [
-            "réforme agraire"
-          ]
-        },
-        {
-          "id": "4bc13839",
-          "title": "06.05_2026_catalogue.pdf",
-          "score": 8,
           "matched_on": [
             "réforme agraire"
           ]
@@ -4867,6 +5186,93 @@
           ]
         },
         {
+          "id": "fb9792a7",
+          "title": "EN-05",
+          "score": 8,
+          "matched_on": [
+            "mst",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "1ae66ba3",
+          "title": "EN-04",
+          "score": 8,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
+          "id": "3c83efe1",
+          "title": "EN-01",
+          "score": 8,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
+          "id": "bb0910b1",
+          "title": "EN-09",
+          "score": 8,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "155e1e25",
+          "title": "mali-report-2012-en1",
+          "score": 8,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "330c44e0",
+          "title": "Final FAO-VG-Principles",
+          "score": 8,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "landless",
+            "agrarian reform"
+          ]
+        },
+        {
+          "id": "eea43d6c",
+          "title": "Bulletin Nyéléni n° 57 –Un nouveau cadre pour le commerce basé sur la souveraineté alimentaire",
+          "score": 8,
+          "matched_on": [
+            "réforme agraire",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "ec46400e",
+          "title": "Bulletin Nyéléni n° 17 –Jeunesse et Agriculture",
+          "score": 8,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire",
+            "via campesina",
+            "occupation de terre"
+          ]
+        },
+        {
+          "id": "568f8778",
+          "title": "Bulletin Nyéléni n° 17 –Jeunesse et Agriculture",
+          "score": 8,
+          "matched_on": [
+            "réforme agraire",
+            "mst",
+            "via campesina",
+            "occupation de terre"
+          ]
+        },
+        {
           "id": "e8ee5514",
           "title": "Migraciones, agro, tercer cercamiento capitalista y el procomún",
           "score": 8,
@@ -5414,6 +5820,36 @@
           ]
         },
         {
+          "id": "e9a890fb",
+          "title": "presskit-en-2013",
+          "score": 7,
+          "matched_on": [
+            "sans-terre",
+            "sans terre",
+            "réforme agraire",
+            "via campesina",
+            "landless",
+            "agrarian reform"
+          ]
+        },
+        {
+          "id": "55ec8164",
+          "title": "EN-14",
+          "score": 7,
+          "matched_on": [
+            "réforme agraire",
+            "via campesina"
+          ]
+        },
+        {
+          "id": "d273ba77",
+          "title": "Bulletin Nyéléni n° 36 –L’Agroécologie, véritable innovation réalisée par et pour les peuples",
+          "score": 7,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
           "id": "02b2b6df",
           "title": "C'est quoi la ZAD ?",
           "score": 6,
@@ -5423,8 +5859,24 @@
           ]
         },
         {
+          "id": "4bc13839",
+          "title": "06.05_2026_catalogue.pdf",
+          "score": 6,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
           "id": "a238e5bd",
           "title": "Rivalry and Brotherhood — Politics in the Life of Farmers in Northern India",
+          "score": 6,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "bfc53f3a",
+          "title": "Le vivrier marchand dans la lutte contre la pauvreté des ménages en milieu rural : le cas du département de la Mvila dans le sud du Cameroun",
           "score": 6,
           "matched_on": [
             "réforme agraire"
@@ -5945,6 +6397,22 @@
           ]
         },
         {
+          "id": "a8d6ce5c",
+          "title": "WHES_Aufruf_2015-aktuell_EN",
+          "score": 6,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "68742934",
+          "title": "Bulletin Nyéléni n° 23 –Justice et Souveraineté Alimentaire aux USA",
+          "score": 6,
+          "matched_on": [
+            "via campesina"
+          ]
+        },
+        {
           "id": "7c1b5f0c",
           "title": "História Agrária Da Revolução Cubana — Joana Vasconcelos",
           "score": 6,
@@ -5959,7 +6427,7 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 245,
+      "doc_count": 258,
       "docs": [
         "d30c223f",
         "9c49c870",
@@ -6043,7 +6511,16 @@
         "92a7c4e9",
         "fc9728a8",
         "10c49746",
+        "0c22b8ba",
+        "478bdaa1",
+        "a645411f",
+        "e2dc7756",
+        "effef8cb",
+        "950381ec",
+        "b877caba",
+        "9da13ea1",
         "fb76b5a1",
+        "940f15d7",
         "d48ae684",
         "8c7a82f1",
         "8572db93",
@@ -6051,7 +6528,6 @@
         "143cdfbd",
         "632651da",
         "75b5c5f8",
-        "4bc13839",
         "9e831a55",
         "e5341cc9",
         "7b89d6d1",
@@ -6122,6 +6598,9 @@
         "5ef07ccb",
         "0e25c913",
         "073110c7",
+        "fb9792a7",
+        "155e1e25",
+        "cd323239",
         "e8ee5514",
         "2292aab6",
         "75de4c14",
@@ -6169,7 +6648,9 @@
         "4042cb84",
         "070edf21",
         "fc44409e",
+        "4bc13839",
         "d647480f",
+        "7cf86983",
         "b85c8bc1",
         "d992c836",
         "b651aa85",
@@ -6925,12 +7406,87 @@
           ]
         },
         {
+          "id": "0c22b8ba",
+          "title": "De-Maputo-a-Yakarta-EN-web",
+          "score": 9,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
+          "id": "478bdaa1",
+          "title": "EN-06",
+          "score": 9,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
+          "id": "a645411f",
+          "title": "EN-11",
+          "score": 9,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
+          "id": "e2dc7756",
+          "title": "EN-10",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "effef8cb",
+          "title": "Bulletin Nyéléni n° 52 –Processus Nyéléni : Reconnaître le pouvoir des mouvements populaires",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "950381ec",
+          "title": "Bulletin Nyéléni n° 61 –Ancrés dans la résistance : les territoires pour la justice climatique",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers",
+            "terres collectives",
+            "enclosure"
+          ]
+        },
+        {
+          "id": "b877caba",
+          "title": "Bulletin Nyéléni n° 28 –Agroécologie",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "9da13ea1",
+          "title": "Télécharger le rapport complet Nyéléni 2007 (format PDF)",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers",
+            "terres collectives"
+          ]
+        },
+        {
           "id": "fb76b5a1",
           "title": "El Manifiesto de la Carta Magna",
           "score": 9,
           "matched_on": [
             "communs fonciers",
             "enclosure"
+          ]
+        },
+        {
+          "id": "940f15d7",
+          "title": "TPP_DECLARACION-SEMILLAS_FINAL_ENG with Annex",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers"
           ]
         },
         {
@@ -6994,14 +7550,6 @@
           "matched_on": [
             "enclosure",
             "commons"
-          ]
-        },
-        {
-          "id": "4bc13839",
-          "title": "06.05_2026_catalogue.pdf",
-          "score": 8,
-          "matched_on": [
-            "communs fonciers"
           ]
         },
         {
@@ -7606,6 +8154,31 @@
           ]
         },
         {
+          "id": "fb9792a7",
+          "title": "EN-05",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "155e1e25",
+          "title": "mali-report-2012-en1",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "cd323239",
+          "title": "Bulletin Nyéléni n° 59 –Vagues de résistance : les communautés de pêcheurs défendent la souveraineté alimentaire",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers",
+            "enclosure"
+          ]
+        },
+        {
           "id": "e8ee5514",
           "title": "Migraciones, agro, tercer cercamiento capitalista y el procomún",
           "score": 8,
@@ -8013,6 +8586,14 @@
           ]
         },
         {
+          "id": "4bc13839",
+          "title": "06.05_2026_catalogue.pdf",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
           "id": "d647480f",
           "title": "Communs « fonciers », communs « informationnels ». Traits communs et différences.",
           "score": 6,
@@ -8021,6 +8602,14 @@
             "biens communaux",
             "communs fonciers",
             "enclosure"
+          ]
+        },
+        {
+          "id": "7cf86983",
+          "title": "Marx-al-Sur",
+          "score": 6,
+          "matched_on": [
+            "communaux"
           ]
         },
         {
@@ -8808,7 +9397,7 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 534,
+      "doc_count": 566,
       "docs": [
         "9c49c870",
         "39441dfc",
@@ -8947,9 +9536,28 @@
         "25ee141a",
         "10c49746",
         "f92a3135",
+        "21b4af5f",
+        "0c22b8ba",
+        "b4d5004f",
+        "3506e193",
+        "478bdaa1",
+        "f1162587",
+        "c7903c6a",
+        "2675e388",
+        "a645411f",
+        "e2dc7756",
+        "624f3446",
+        "6bbe59d1",
+        "16c17fe6",
+        "effef8cb",
+        "950381ec",
+        "b877caba",
+        "3edc59bf",
+        "9da13ea1",
         "23558b3e",
         "fb76b5a1",
-        "4bc13839",
+        "940f15d7",
+        "14d55842",
         "9e831a55",
         "c99e6da4",
         "e4f64264",
@@ -9120,17 +9728,22 @@
         "c45d24db",
         "7e5ee24a",
         "99f919b8",
+        "fb9792a7",
+        "1ae66ba3",
+        "3c83efe1",
+        "bb0910b1",
+        "155e1e25",
+        "9495d98c",
+        "330c44e0",
         "4ae9c4ba",
         "6cf221ce",
         "de3a4772",
         "eea43d6c",
         "cd323239",
         "b8959c2f",
-        "b877caba",
         "38ce6806",
-        "d273ba77",
-        "68742934",
-        "3edc59bf",
+        "ec46400e",
+        "568f8778",
         "e8ee5514",
         "2292aab6",
         "75de4c14",
@@ -9229,12 +9842,18 @@
         "035d0b23",
         "1e9814f4",
         "29edc4c5",
+        "e9a890fb",
+        "55ec8164",
+        "53b33470",
+        "d273ba77",
         "8ee3f263",
         "4042cb84",
         "02b2b6df",
+        "4bc13839",
         "a238e5bd",
         "5ea6c0cc",
         "d647480f",
+        "bfc53f3a",
         "b85c8bc1",
         "d992c836",
         "b651aa85",
@@ -9338,6 +9957,8 @@
         "2be8a8c5",
         "85283063",
         "8e365250",
+        "a8d6ce5c",
+        "68742934",
         "7585c0aa",
         "c1c58233",
         "bd18d74a",
@@ -10921,6 +11542,244 @@
           ]
         },
         {
+          "id": "21b4af5f",
+          "title": "Agroecological-revolution-ENGLISH",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "0c22b8ba",
+          "title": "De-Maputo-a-Yakarta-EN-web",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "b4d5004f",
+          "title": "EN-03",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "3506e193",
+          "title": "EN-02",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "478bdaa1",
+          "title": "EN-06",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "f1162587",
+          "title": "EN-07",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant"
+          ]
+        },
+        {
+          "id": "c7903c6a",
+          "title": "EN-13",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "peasant",
+            "agroecology"
+          ]
+        },
+        {
+          "id": "2675e388",
+          "title": "EN-12",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant"
+          ]
+        },
+        {
+          "id": "a645411f",
+          "title": "EN-11",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "e2dc7756",
+          "title": "EN-10",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "624f3446",
+          "title": "EN-08",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant"
+          ]
+        },
+        {
+          "id": "6bbe59d1",
+          "title": "FINAL Edited why we oppose rai",
+          "score": 9,
+          "matched_on": [
+            "paysan",
+            "souveraineté alimentaire",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "16c17fe6",
+          "title": "Déclaration de Nyéléni 2007",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "effef8cb",
+          "title": "Bulletin Nyéléni n° 52 –Processus Nyéléni : Reconnaître le pouvoir des mouvements populaires",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "950381ec",
+          "title": "Bulletin Nyéléni n° 61 –Ancrés dans la résistance : les territoires pour la justice climatique",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "b877caba",
+          "title": "Bulletin Nyéléni n° 28 –Agroécologie",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "3edc59bf",
+          "title": "Bulletin Nyéléni n° 49 –Souveraineté alimentaire et agrobiodiversité",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "9da13ea1",
+          "title": "Télécharger le rapport complet Nyéléni 2007 (format PDF)",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
           "id": "23558b3e",
           "title": "Agenda política. Coalición de Mujeres del Caribe por la Tierra y el Territorio",
           "score": 9,
@@ -10937,12 +11796,25 @@
           ]
         },
         {
-          "id": "4bc13839",
-          "title": "06.05_2026_catalogue.pdf",
-          "score": 8,
+          "id": "940f15d7",
+          "title": "TPP_DECLARACION-SEMILLAS_FINAL_ENG with Annex",
+          "score": 9,
           "matched_on": [
             "paysannerie",
-            "paysan"
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "14d55842",
+          "title": "Generational-Renewal-Strategy-ECVCpolitical-statement-and-reaction",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire"
           ]
         },
         {
@@ -12755,6 +13627,87 @@
           ]
         },
         {
+          "id": "fb9792a7",
+          "title": "EN-05",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "1ae66ba3",
+          "title": "EN-04",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "3c83efe1",
+          "title": "EN-01",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "bb0910b1",
+          "title": "EN-09",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "155e1e25",
+          "title": "mali-report-2012-en1",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "9495d98c",
+          "title": "paper6-EN-PR-edits3FINAL",
+          "score": 8,
+          "matched_on": [
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "330c44e0",
+          "title": "Final FAO-VG-Principles",
+          "score": 8,
+          "matched_on": [
+            "paysan",
+            "souveraineté alimentaire",
+            "peasant"
+          ]
+        },
+        {
           "id": "4ae9c4ba",
           "title": "Ici la déclaration finale (PDF).",
           "score": 8,
@@ -12783,7 +13736,10 @@
           "title": "Bulletin Nyéléni n° 57 –Un nouveau cadre pour le commerce basé sur la souveraineté alimentaire",
           "score": 8,
           "matched_on": [
-            "souveraineté alimentaire"
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
           ]
         },
         {
@@ -12803,14 +13759,6 @@
           ]
         },
         {
-          "id": "b877caba",
-          "title": "Bulletin Nyéléni n° 28 –Agroécologie",
-          "score": 8,
-          "matched_on": [
-            "agroécologie"
-          ]
-        },
-        {
           "id": "38ce6806",
           "title": "Bulletin Nyéléni n° 30 –Faire progresser la Souveraineté Alimentaire",
           "score": 8,
@@ -12819,27 +13767,28 @@
           ]
         },
         {
-          "id": "d273ba77",
-          "title": "Bulletin Nyéléni n° 36 –L’Agroécologie, véritable innovation réalisée par et pour les peuples",
+          "id": "ec46400e",
+          "title": "Bulletin Nyéléni n° 17 –Jeunesse et Agriculture",
           "score": 8,
           "matched_on": [
-            "agroécologie"
-          ]
-        },
-        {
-          "id": "68742934",
-          "title": "Bulletin Nyéléni n° 23 –Justice et Souveraineté Alimentaire aux USA",
-          "score": 8,
-          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
             "souveraineté alimentaire"
           ]
         },
         {
-          "id": "3edc59bf",
-          "title": "Bulletin Nyéléni n° 49 –Souveraineté alimentaire et agrobiodiversité",
+          "id": "568f8778",
+          "title": "Bulletin Nyéléni n° 17 –Jeunesse et Agriculture",
           "score": 8,
           "matched_on": [
-            "souveraineté alimentaire"
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
           ]
         },
         {
@@ -13897,6 +14846,59 @@
           ]
         },
         {
+          "id": "e9a890fb",
+          "title": "presskit-en-2013",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne",
+            "peasant",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "55ec8164",
+          "title": "EN-14",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "53b33470",
+          "title": "Bulletin Nyéléni n° 58 –Processus Nyéléni : créer un agenda politique commun pour une transformation systémique",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "d273ba77",
+          "title": "Bulletin Nyéléni n° 36 –L’Agroécologie, véritable innovation réalisée par et pour les peuples",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "peasant",
+            "agroecology",
+            "food sovereignty"
+          ]
+        },
+        {
           "id": "8ee3f263",
           "title": "Ostrom, E. : El Gobierno de los Bienes Comunes. La Evolución de las Instituciones de Acción Colectiva, México, 2000.",
           "score": 7,
@@ -13925,6 +14927,17 @@
           ]
         },
         {
+          "id": "4bc13839",
+          "title": "06.05_2026_catalogue.pdf",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
+          ]
+        },
+        {
           "id": "a238e5bd",
           "title": "Rivalry and Brotherhood — Politics in the Life of Farmers in Northern India",
           "score": 6,
@@ -13950,6 +14963,17 @@
           "matched_on": [
             "paysannerie",
             "paysan"
+          ]
+        },
+        {
+          "id": "bfc53f3a",
+          "title": "Le vivrier marchand dans la lutte contre la pauvreté des ménages en milieu rural : le cas du département de la Mvila dans le sud du Cameroun",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
           ]
         },
         {
@@ -15037,6 +16061,28 @@
           ]
         },
         {
+          "id": "a8d6ce5c",
+          "title": "WHES_Aufruf_2015-aktuell_EN",
+          "score": 6,
+          "matched_on": [
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "food sovereignty"
+          ]
+        },
+        {
+          "id": "68742934",
+          "title": "Bulletin Nyéléni n° 23 –Justice et Souveraineté Alimentaire aux USA",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
           "id": "7585c0aa",
           "title": "Ostrom, E. — El gobierno de los bienes comunes",
           "score": 6,
@@ -15095,7 +16141,7 @@
       "slug": "land-back-autochtones",
       "titre": "Land Back & souverainetés autochtones",
       "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-      "doc_count": 212,
+      "doc_count": 233,
       "docs": [
         "39441dfc",
         "e41de87d",
@@ -15165,7 +16211,18 @@
         "e002b9c9",
         "92a7c4e9",
         "fc9728a8",
+        "0c22b8ba",
+        "b4d5004f",
+        "2675e388",
+        "e2dc7756",
+        "624f3446",
+        "6bbe59d1",
+        "16c17fe6",
+        "950381ec",
+        "b877caba",
+        "3edc59bf",
         "fb76b5a1",
+        "940f15d7",
         "9e831a55",
         "55db5001",
         "0b22d51b",
@@ -15232,6 +16289,12 @@
         "ac896a11",
         "a7ba0bf1",
         "073110c7",
+        "fb9792a7",
+        "bb0910b1",
+        "330c44e0",
+        "eea43d6c",
+        "cd323239",
+        "568f8778",
         "e8ee5514",
         "581a53c8",
         "12a4e254",
@@ -15270,7 +16333,11 @@
         "9abcfde1",
         "18fb51a5",
         "035d0b23",
+        "e9a890fb",
+        "53b33470",
+        "4bc13839",
         "5ea6c0cc",
+        "7cf86983",
         "6125738a",
         "88bfc0cb",
         "5c511048",
@@ -15904,10 +16971,106 @@
           ]
         },
         {
+          "id": "0c22b8ba",
+          "title": "De-Maputo-a-Yakarta-EN-web",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
+          "id": "b4d5004f",
+          "title": "EN-03",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "indigène",
+            "indigenous"
+          ]
+        },
+        {
+          "id": "2675e388",
+          "title": "EN-12",
+          "score": 9,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "e2dc7756",
+          "title": "EN-10",
+          "score": 9,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "624f3446",
+          "title": "EN-08",
+          "score": 9,
+          "matched_on": [
+            "droit coutumier"
+          ]
+        },
+        {
+          "id": "6bbe59d1",
+          "title": "FINAL Edited why we oppose rai",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
+          "id": "16c17fe6",
+          "title": "Déclaration de Nyéléni 2007",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "indigène"
+          ]
+        },
+        {
+          "id": "950381ec",
+          "title": "Bulletin Nyéléni n° 61 –Ancrés dans la résistance : les territoires pour la justice climatique",
+          "score": 9,
+          "matched_on": [
+            "land back",
+            "autochtone"
+          ]
+        },
+        {
+          "id": "b877caba",
+          "title": "Bulletin Nyéléni n° 28 –Agroécologie",
+          "score": 9,
+          "matched_on": [
+            "autochtone",
+            "droit coutumier"
+          ]
+        },
+        {
+          "id": "3edc59bf",
+          "title": "Bulletin Nyéléni n° 49 –Souveraineté alimentaire et agrobiodiversité",
+          "score": 9,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
           "id": "fb76b5a1",
           "title": "El Manifiesto de la Carta Magna",
           "score": 9,
           "matched_on": [
+            "droit coutumier"
+          ]
+        },
+        {
+          "id": "940f15d7",
+          "title": "TPP_DECLARACION-SEMILLAS_FINAL_ENG with Annex",
+          "score": 9,
+          "matched_on": [
+            "indigène",
             "droit coutumier"
           ]
         },
@@ -16485,6 +17648,56 @@
           ]
         },
         {
+          "id": "fb9792a7",
+          "title": "EN-05",
+          "score": 8,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "bb0910b1",
+          "title": "EN-09",
+          "score": 8,
+          "matched_on": [
+            "autochtone",
+            "droit coutumier"
+          ]
+        },
+        {
+          "id": "330c44e0",
+          "title": "Final FAO-VG-Principles",
+          "score": 8,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
+          "id": "eea43d6c",
+          "title": "Bulletin Nyéléni n° 57 –Un nouveau cadre pour le commerce basé sur la souveraineté alimentaire",
+          "score": 8,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "cd323239",
+          "title": "Bulletin Nyéléni n° 59 –Vagues de résistance : les communautés de pêcheurs défendent la souveraineté alimentaire",
+          "score": 8,
+          "matched_on": [
+            "droit coutumier"
+          ]
+        },
+        {
+          "id": "568f8778",
+          "title": "Bulletin Nyéléni n° 17 –Jeunesse et Agriculture",
+          "score": 8,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
           "id": "e8ee5514",
           "title": "Migraciones, agro, tercer cercamiento capitalista y el procomún",
           "score": 8,
@@ -16814,8 +18027,41 @@
           ]
         },
         {
+          "id": "e9a890fb",
+          "title": "presskit-en-2013",
+          "score": 7,
+          "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
+          "id": "53b33470",
+          "title": "Bulletin Nyéléni n° 58 –Processus Nyéléni : créer un agenda politique commun pour une transformation systémique",
+          "score": 7,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "4bc13839",
+          "title": "06.05_2026_catalogue.pdf",
+          "score": 6,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
           "id": "5ea6c0cc",
           "title": "Ulka Mahajan — Manthan (Nov-Dec 2006)",
+          "score": 6,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "7cf86983",
+          "title": "Marx-al-Sur",
           "score": 6,
           "matched_on": [
             "autochtone"
@@ -17157,7 +18403,7 @@
       "slug": "feminismes-de-la-terre",
       "titre": "Féminismes de la terre",
       "chapo": "Le foncier a un genre. Place des femmes dans les luttes agraires, droits fonciers des femmes, écoféminisme rural, critique de la division genrée du travail de la terre.",
-      "doc_count": 106,
+      "doc_count": 121,
       "docs": [
         "e41de87d",
         "b225af88",
@@ -17208,7 +18454,17 @@
         "fc9728a8",
         "25ee141a",
         "10c49746",
+        "21b4af5f",
+        "f1162587",
+        "a645411f",
+        "e2dc7756",
+        "16c17fe6",
+        "effef8cb",
+        "950381ec",
+        "b877caba",
+        "9da13ea1",
         "23558b3e",
+        "940f15d7",
         "9e831a55",
         "c99e6da4",
         "2bf90eb8",
@@ -17242,6 +18498,10 @@
         "62dd6701",
         "8ccdce41",
         "75295aaf",
+        "fb9792a7",
+        "3c83efe1",
+        "155e1e25",
+        "ec46400e",
         "581a53c8",
         "3fe8867b",
         "ac638fb6",
@@ -17258,6 +18518,7 @@
         "9abcfde1",
         "18fb51a5",
         "035d0b23",
+        "d273ba77",
         "5c511048",
         "55b31ba8",
         "812f9005",
@@ -17719,6 +18980,85 @@
           ]
         },
         {
+          "id": "21b4af5f",
+          "title": "Agroecological-revolution-ENGLISH",
+          "score": 9,
+          "matched_on": [
+            "femmes et terre"
+          ]
+        },
+        {
+          "id": "f1162587",
+          "title": "EN-07",
+          "score": 9,
+          "matched_on": [
+            "féminisme agraire",
+            "droits fonciers des femmes",
+            "femmes et terre"
+          ]
+        },
+        {
+          "id": "a645411f",
+          "title": "EN-11",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan",
+            "féminisme agraire",
+            "droits fonciers des femmes",
+            "agrarian feminism"
+          ]
+        },
+        {
+          "id": "e2dc7756",
+          "title": "EN-10",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan"
+          ]
+        },
+        {
+          "id": "16c17fe6",
+          "title": "Déclaration de Nyéléni 2007",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan",
+            "droits fonciers des femmes"
+          ]
+        },
+        {
+          "id": "effef8cb",
+          "title": "Bulletin Nyéléni n° 52 –Processus Nyéléni : Reconnaître le pouvoir des mouvements populaires",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan"
+          ]
+        },
+        {
+          "id": "950381ec",
+          "title": "Bulletin Nyéléni n° 61 –Ancrés dans la résistance : les territoires pour la justice climatique",
+          "score": 9,
+          "matched_on": [
+            "féminisme agraire"
+          ]
+        },
+        {
+          "id": "b877caba",
+          "title": "Bulletin Nyéléni n° 28 –Agroécologie",
+          "score": 9,
+          "matched_on": [
+            "féminisme agraire",
+            "femmes et terre"
+          ]
+        },
+        {
+          "id": "9da13ea1",
+          "title": "Télécharger le rapport complet Nyéléni 2007 (format PDF)",
+          "score": 9,
+          "matched_on": [
+            "féminisme paysan"
+          ]
+        },
+        {
           "id": "23558b3e",
           "title": "Agenda política. Coalición de Mujeres del Caribe por la Tierra y el Territorio",
           "score": 9,
@@ -17726,6 +19066,15 @@
             "féminisme paysan",
             "féminisme agraire",
             "mujeres campesinas"
+          ]
+        },
+        {
+          "id": "940f15d7",
+          "title": "TPP_DECLARACION-SEMILLAS_FINAL_ENG with Annex",
+          "score": 9,
+          "matched_on": [
+            "féminisme agraire",
+            "droits fonciers des femmes"
           ]
         },
         {
@@ -18018,6 +19367,41 @@
           ]
         },
         {
+          "id": "fb9792a7",
+          "title": "EN-05",
+          "score": 8,
+          "matched_on": [
+            "féminisme paysan"
+          ]
+        },
+        {
+          "id": "3c83efe1",
+          "title": "EN-01",
+          "score": 8,
+          "matched_on": [
+            "féminisme paysan",
+            "féminisme agraire",
+            "femmes et terre"
+          ]
+        },
+        {
+          "id": "155e1e25",
+          "title": "mali-report-2012-en1",
+          "score": 8,
+          "matched_on": [
+            "femmes et terre"
+          ]
+        },
+        {
+          "id": "ec46400e",
+          "title": "Bulletin Nyéléni n° 17 –Jeunesse et Agriculture",
+          "score": 8,
+          "matched_on": [
+            "féminisme paysan",
+            "féminisme agraire"
+          ]
+        },
+        {
           "id": "581a53c8",
           "title": "ILC — Cartes des constituencies (2025)",
           "score": 7,
@@ -18157,6 +19541,16 @@
           ]
         },
         {
+          "id": "d273ba77",
+          "title": "Bulletin Nyéléni n° 36 –L’Agroécologie, véritable innovation réalisée par et pour les peuples",
+          "score": 7,
+          "matched_on": [
+            "féminisme paysan",
+            "féminisme agraire",
+            "femmes et terre"
+          ]
+        },
+        {
           "id": "5c511048",
           "title": "Acerca de las comunidades mapuche",
           "score": 6,
@@ -18219,7 +19613,7 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 305,
+      "doc_count": 333,
       "docs": [
         "d30c223f",
         "39441dfc",
@@ -18324,8 +19718,23 @@
         "25ee141a",
         "10c49746",
         "f92a3135",
+        "0c22b8ba",
+        "478bdaa1",
+        "f1162587",
+        "c7903c6a",
+        "2675e388",
+        "a645411f",
+        "624f3446",
+        "6bbe59d1",
+        "16c17fe6",
+        "effef8cb",
+        "950381ec",
+        "b877caba",
+        "9da13ea1",
         "23558b3e",
         "fb76b5a1",
+        "940f15d7",
+        "14d55842",
         "d48ae684",
         "8c7a82f1",
         "8572db93",
@@ -18413,6 +19822,14 @@
         "800beb3c",
         "073110c7",
         "c45d24db",
+        "fb9792a7",
+        "bb0910b1",
+        "155e1e25",
+        "330c44e0",
+        "eea43d6c",
+        "cd323239",
+        "ec46400e",
+        "568f8778",
         "e8ee5514",
         "74ad5743",
         "5ad6ebc5",
@@ -18475,9 +19892,13 @@
         "18fb51a5",
         "1e9814f4",
         "29edc4c5",
+        "e9a890fb",
+        "55ec8164",
+        "53b33470",
         "4042cb84",
         "070edf21",
         "d647480f",
+        "7cf86983",
         "d992c836",
         "83b6390f",
         "88bfc0cb",
@@ -18523,6 +19944,7 @@
         "20da6e80",
         "28704038",
         "8e365250",
+        "a8d6ce5c",
         "94025f98",
         "34a95a5f",
         "f5977eb9"
@@ -19411,6 +20833,119 @@
           ]
         },
         {
+          "id": "0c22b8ba",
+          "title": "De-Maputo-a-Yakarta-EN-web",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "478bdaa1",
+          "title": "EN-06",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "f1162587",
+          "title": "EN-07",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "c7903c6a",
+          "title": "EN-13",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "2675e388",
+          "title": "EN-12",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "a645411f",
+          "title": "EN-11",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "624f3446",
+          "title": "EN-08",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "6bbe59d1",
+          "title": "FINAL Edited why we oppose rai",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "16c17fe6",
+          "title": "Déclaration de Nyéléni 2007",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "effef8cb",
+          "title": "Bulletin Nyéléni n° 52 –Processus Nyéléni : Reconnaître le pouvoir des mouvements populaires",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "950381ec",
+          "title": "Bulletin Nyéléni n° 61 –Ancrés dans la résistance : les territoires pour la justice climatique",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "enclosure",
+            "extractivis"
+          ]
+        },
+        {
+          "id": "b877caba",
+          "title": "Bulletin Nyéléni n° 28 –Agroécologie",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "9da13ea1",
+          "title": "Télécharger le rapport complet Nyéléni 2007 (format PDF)",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
           "id": "23558b3e",
           "title": "Agenda política. Coalición de Mujeres del Caribe por la Tierra y el Territorio",
           "score": 9,
@@ -19426,6 +20961,23 @@
             "land grab",
             "enclosure",
             "extractivis"
+          ]
+        },
+        {
+          "id": "940f15d7",
+          "title": "TPP_DECLARACION-SEMILLAS_FINAL_ENG with Annex",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "14d55842",
+          "title": "Generational-Renewal-Strategy-ECVCpolitical-statement-and-reaction",
+          "score": 9,
+          "matched_on": [
+            "accaparement",
+            "land grab"
           ]
         },
         {
@@ -20163,6 +21715,73 @@
           ]
         },
         {
+          "id": "fb9792a7",
+          "title": "EN-05",
+          "score": 8,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "bb0910b1",
+          "title": "EN-09",
+          "score": 8,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "155e1e25",
+          "title": "mali-report-2012-en1",
+          "score": 8,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "330c44e0",
+          "title": "Final FAO-VG-Principles",
+          "score": 8,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "eea43d6c",
+          "title": "Bulletin Nyéléni n° 57 –Un nouveau cadre pour le commerce basé sur la souveraineté alimentaire",
+          "score": 8,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "cd323239",
+          "title": "Bulletin Nyéléni n° 59 –Vagues de résistance : les communautés de pêcheurs défendent la souveraineté alimentaire",
+          "score": 8,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "ec46400e",
+          "title": "Bulletin Nyéléni n° 17 –Jeunesse et Agriculture",
+          "score": 8,
+          "matched_on": [
+            "accaparement",
+            "extractivis"
+          ]
+        },
+        {
+          "id": "568f8778",
+          "title": "Bulletin Nyéléni n° 17 –Jeunesse et Agriculture",
+          "score": 8,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
           "id": "e8ee5514",
           "title": "Migraciones, agro, tercer cercamiento capitalista y el procomún",
           "score": 8,
@@ -20692,6 +22311,31 @@
           ]
         },
         {
+          "id": "e9a890fb",
+          "title": "presskit-en-2013",
+          "score": 7,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
+          "id": "55ec8164",
+          "title": "EN-14",
+          "score": 7,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
+          "id": "53b33470",
+          "title": "Bulletin Nyéléni n° 58 –Processus Nyéléni : créer un agenda politique commun pour une transformation systémique",
+          "score": 7,
+          "matched_on": [
+            "accaparement"
+          ]
+        },
+        {
           "id": "4042cb84",
           "title": "The Punjab Peasant",
           "score": 7,
@@ -20713,6 +22357,14 @@
           "score": 6,
           "matched_on": [
             "enclosure"
+          ]
+        },
+        {
+          "id": "7cf86983",
+          "title": "Marx-al-Sur",
+          "score": 6,
+          "matched_on": [
+            "accaparement"
           ]
         },
         {
@@ -21101,6 +22753,15 @@
           ]
         },
         {
+          "id": "a8d6ce5c",
+          "title": "WHES_Aufruf_2015-aktuell_EN",
+          "score": 6,
+          "matched_on": [
+            "accaparement",
+            "land grab"
+          ]
+        },
+        {
           "id": "94025f98",
           "title": "DENUNCIA AMBIENTAL",
           "score": 6,
@@ -21131,7 +22792,7 @@
       "slug": "cooperatives-mutualisme",
       "titre": "Coopératives & mutualisme foncier",
       "chapo": "S'associer pour la terre : coopératives agricoles, GFA mutuels, foncières solidaires, mutuelles. Une économie de la terre fondée sur l'entraide plutôt que sur la rente.",
-      "doc_count": 31,
+      "doc_count": 34,
       "docs": [
         "c3bb4444",
         "95b490c8",
@@ -21139,6 +22800,7 @@
         "1c8437cd",
         "87d237f9",
         "1958fc06",
+        "624f3446",
         "67a24eca",
         "de8665e3",
         "6325ebd3",
@@ -21150,11 +22812,13 @@
         "0a70b2b3",
         "36acdcd4",
         "48bbb606",
+        "155e1e25",
         "772d3d06",
         "2a87f34f",
         "41e18c26",
         "0183b615",
         "be137b2e",
+        "55ec8164",
         "83b6390f",
         "6125738a",
         "5c511048",
@@ -21209,6 +22873,14 @@
         {
           "id": "1958fc06",
           "title": "Webinar_Palestine_ The Struggle for Food Sovereignty under Occupation",
+          "score": 9,
+          "matched_on": [
+            "coopérative agricole"
+          ]
+        },
+        {
+          "id": "624f3446",
+          "title": "EN-08",
           "score": 9,
           "matched_on": [
             "coopérative agricole"
@@ -21305,6 +22977,14 @@
           ]
         },
         {
+          "id": "155e1e25",
+          "title": "mali-report-2012-en1",
+          "score": 8,
+          "matched_on": [
+            "coopérative agricole"
+          ]
+        },
+        {
           "id": "772d3d06",
           "title": "Rolande_et_Anne-Claude_du_comité_de_Blain-40p-A5-fil",
           "score": 7,
@@ -21340,6 +23020,14 @@
         {
           "id": "be137b2e",
           "title": "EN RCEP AICCFM 14 March",
+          "score": 7,
+          "matched_on": [
+            "coopérative agricole"
+          ]
+        },
+        {
+          "id": "55ec8164",
+          "title": "EN-14",
           "score": 7,
           "matched_on": [
             "coopérative agricole"

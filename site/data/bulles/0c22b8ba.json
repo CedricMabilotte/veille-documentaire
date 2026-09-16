@@ -1,0 +1,86 @@
+{
+  "titre_accroche": "Agroécologie : propriété des paysans, pas à vendre",
+  "teaser": "La Via Campesina défend l'agroécologie comme bien inaliénable des paysans et peuples indigènes. Entre 2008 et 2013, le mouvement paysan mondial déclare la guerre à la commodification des terres et de la vie agricole. Souveraineté alimentaire et autonomie paysanne.",
+  "abstract_editorial": "Entre 2008 et 2013, La Via Campesina cristallise un positionnement politique radical : l'agroécologie n'est pas une « mode verte » pour riches, ni une alternative marginale, mais l'héritage millénaire de peuples paysans qui nourrissent encore aujourd'hui plus de la moitié de l'humanité. Face aux crises alimentaire, climatique et énergétique, ce recueil documente la mobilisation paysanne de Maputo (2008) à Jakarta (2013).\n\nLe mouvement rejette les stratégies des transnationales qui s'approprient les meilleures terres pour agrocarburants et monocultures. Il refuse la « co-option » de l'agroécologie par les ONG, les États productivistes et les entreprises vertes qui tentent de la réduire à un label marketed. L'enjeu est d'abord politique : il s'agit de reconnaître les droits des paysans à rester paysans, à cultiver leurs terres, à transmettre leurs savoirs.\n\nLa Via Campesina organise alors plus de 40 écoles d'agroécologie, documente les expériences réussies (Cuba, Inde, Philippines), et affirme sur tous les podiums : seule l'agriculture paysanne agroécologique peut rompre le lien entre prix alimentaires et prix du pétrole, restaurer les sols, assurer une alimentation locale saine et juste. Au-delà du technique, la production paysanne durable devient affaire de souveraineté des peuples, de respect des identités communautaires, de renforcement des marchés locaux et de l'autonomie collective. Jakarta 2013 scelle cette déclaration : « L'agroécologie nous appartient, à nous paysans et peuples indigènes, et elle n'est pas à vendre. »",
+  "citations_phares": [
+    {
+      "page": 9,
+      "quote": "AGROECOLOGY IS OURS AS PEASANT AND INDIGENOUS PEOPLES, AND IT IS NOT FOR SALE."
+    },
+    {
+      "page": 7,
+      "quote": "we are men and women of the earth, we are those who produce food for the world. We have the right to continue being peasants and family farmers"
+    },
+    {
+      "page": 7,
+      "quote": "only agroecological peasant and family farming can de-link food prices from petroleum prices, recover degraded soils, and produce healthy local food"
+    }
+  ],
+  "categorisation": [
+    "communs",
+    "paysannerie",
+    "souveraineté alimentaire",
+    "agroécologie",
+    "terres",
+    "autonomie",
+    "justice alimentaire"
+  ],
+  "slug": "agroecologie-propriete-paysans",
+  "en_clair": "Les paysans du monde disent : nous savons cultiver la terre et nourrir le monde mieux que les grandes entreprises. Ils refusent que leurs terres soient volées pour les agro-carburants et les monocultures, et défendent une agriculture qui reste aux mains des communautés, protège les sols et nourrit localement.",
+  "acteurs": [
+    "La Vía Campesina",
+    "International Commission on Sustainable Peasant Agriculture",
+    "Sustainable Peasant Agriculture Commission",
+    "C.S. Fund",
+    "International Fund to Amplify Agro-Ecological Solutions",
+    "CLOC/LVC"
+  ],
+  "controverse": "L'agroécologie est un terrain disputé : tandis que LVC la définit comme héritage paysan autonome à l'abri de la marchandisation, des acteurs externes (corporations, ONG, États) tentent de la co-opter et la réapproprier. LVC refuse cette appropriation.",
+  "angle_journalistique": "Enquête sur le « greenwashing » de l'agroécologie par des acteurs non-paysans et comment La Vía Campesina défend une vision radicalement autonome et anti-marchandise de l'agroécologie contre cette réappropriation externe.",
+  "citations_verifiees": [
+    {
+      "quote": "we are men and women of the earth, we are those who produce food for the world. We have the right to continue being peasants and family farmers",
+      "page": 7,
+      "page_physical": 7,
+      "verified": true
+    },
+    {
+      "quote": "only agroecological peasant and family farming can de-link food prices from petroleum prices, recover degraded soils, and produce healthy local food",
+      "page": 7,
+      "page_physical": 7,
+      "verified": true
+    },
+    {
+      "quote": "AGROECOLOGY IS OURS AS PEASANT AND INDIGENOUS PEOPLES, AND IT IS NOT FOR SALE.",
+      "page": 9,
+      "page_physical": 9,
+      "verified": true
+    },
+    {
+      "quote": "This model, the peasant way ('la Via Campesina'), is the best way forward to feed the world in the future, to protect the environment and to maintain our natural assets or common goods.",
+      "page": 11,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "Peasant based sustainable production is socially just, respects the identity and knowledge of communities, prioritizes local and domestic markets, and strengthens the autonomy of people and communities.",
+      "page": 11,
+      "page_physical": 11,
+      "verified": true
+    },
+    {
+      "quote": "TNCs grab the best land occupied by peasants, to use for agrofuels and other monocultures. Their interest is to destroy our own farming practices and technologies",
+      "page": 11,
+      "page_physical": 11,
+      "verified": true
+    },
+    {
+      "quote": "La Via Campesina puts forth Food Sovereignty as the only real way out of the current crises.",
+      "page": 12,
+      "page_physical": 12,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "9d8e7bf8b2"
+}
