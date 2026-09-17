@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-17T22:44:10Z",
+ "generated_at": "2026-09-17T23:33:23Z",
  "total_dossiers": 10,
  "dossiers": [
   {
    "slug": "sortir-une-terre-du-marche",
    "titre": "Sortir une terre du marché",
    "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-   "doc_count": 104,
+   "doc_count": 105,
    "docs": [
     "9c49c870",
     "e41de87d",
@@ -53,6 +53,7 @@
     "97c3bbb4",
     "1ce39b6d",
     "b0917bdf",
+    "51240b12",
     "54f18780",
     "de8665e3",
     "6325ebd3",
@@ -490,6 +491,14 @@
     {
      "id": "b0917bdf",
      "title": "Integrating Customary Tenure into Formal Systems",
+     "score": 8,
+     "matched_on": [
+      "propriété d'usage"
+     ]
+    },
+    {
+     "id": "51240b12",
+     "title": "\"Mes brebis comme des machines\"",
      "score": 8,
      "matched_on": [
       "propriété d'usage"
@@ -991,7 +1000,7 @@
    "slug": "zad-defense-de-territoires",
    "titre": "ZAD & défense de territoires",
    "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-   "doc_count": 104,
+   "doc_count": 106,
    "docs": [
     "38a113bc",
     "ba64641a",
@@ -1031,6 +1040,8 @@
     "43584cf4",
     "7a9e87db",
     "75aa847d",
+    "9296480e",
+    "65c76d04",
     "c922a9c1",
     "4ad0bf52",
     "d8acaea3",
@@ -1411,6 +1422,22 @@
     {
      "id": "75aa847d",
      "title": "Carta Aberta Despejo Zero SP",
+     "score": 8,
+     "matched_on": [
+      "occupation"
+     ]
+    },
+    {
+     "id": "9296480e",
+     "title": "CP_Occupation_Ministère",
+     "score": 8,
+     "matched_on": [
+      "occupation"
+     ]
+    },
+    {
+     "id": "65c76d04",
+     "title": "CP_Occupation_Ministère",
      "score": 8,
      "matched_on": [
       "occupation"
@@ -1980,7 +2007,7 @@
    "slug": "sans-terre-reforme-agraire",
    "titre": "Sans-terre & réforme agraire",
    "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-   "doc_count": 455,
+   "doc_count": 470,
    "docs": [
     "9c49c870",
     "39441dfc",
@@ -2154,9 +2181,11 @@
     "97c3bbb4",
     "a91bd215",
     "1ce39b6d",
+    "ae302e09",
     "08baa6d1",
     "b8b0bfd8",
     "fe77002b",
+    "51240b12",
     "47c6599a",
     "54f18780",
     "9f16b851",
@@ -2259,10 +2288,23 @@
     "ac896a11",
     "8ccdce41",
     "0380ea78",
+    "47cf9dc2",
     "19fc8f6b",
     "800beb3c",
     "073110c7",
+    "dbeac03f",
+    "aa5300a6",
+    "3e298428",
+    "fea82ce6",
     "c45d24db",
+    "96052c2b",
+    "d2204d0e",
+    "fe981506",
+    "638f459e",
+    "f203ada5",
+    "f2e916da",
+    "d64aa10b",
+    "bb0c829f",
     "4be03ed2",
     "fb9792a7",
     "1ae66ba3",
@@ -4066,6 +4108,14 @@
      ]
     },
     {
+     "id": "ae302e09",
+     "title": "ASCAB, pérégrinations de trois saisonnières dans le pétrin",
+     "score": 8,
+     "matched_on": [
+      "réforme agraire"
+     ]
+    },
+    {
      "id": "08baa6d1",
      "title": "Notre blé est politique — Introduction aux semences paysannes et à ses combats",
      "score": 8,
@@ -4085,6 +4135,14 @@
     {
      "id": "fe77002b",
      "title": "Det industrielle landbrug og klimakaos (version danoise — booklet)",
+     "score": 8,
+     "matched_on": [
+      "réforme agraire"
+     ]
+    },
+    {
+     "id": "51240b12",
+     "title": "\"Mes brebis comme des machines\"",
      "score": 8,
      "matched_on": [
       "réforme agraire"
@@ -5034,6 +5092,14 @@
      ]
     },
     {
+     "id": "47cf9dc2",
+     "title": "La Via Campesina Trifold Brochure l EN Final Print-ready-min",
+     "score": 8,
+     "matched_on": [
+      "via campesina"
+     ]
+    },
+    {
      "id": "19fc8f6b",
      "title": "TOOLKIT_agroecology_FINAL",
      "score": 8,
@@ -5060,11 +5126,107 @@
      ]
     },
     {
+     "id": "dbeac03f",
+     "title": "La Via Campesina Newsletter March 2016 english",
+     "score": 8,
+     "matched_on": [
+      "via campesina"
+     ]
+    },
+    {
+     "id": "aa5300a6",
+     "title": "2016-02-02-La Via Campesina Newsletter January 2016 english",
+     "score": 8,
+     "matched_on": [
+      "via campesina"
+     ]
+    },
+    {
+     "id": "3e298428",
+     "title": "La Via Campesina Newsletter December 2015 english",
+     "score": 8,
+     "matched_on": [
+      "via campesina"
+     ]
+    },
+    {
+     "id": "fea82ce6",
+     "title": "CUADERNO 7 LA VIA CAMPESINA INGLES.compressed",
+     "score": 8,
+     "matched_on": [
+      "via campesina"
+     ]
+    },
+    {
      "id": "c45d24db",
      "title": "2015-09-Nyeleni_Newsletter_Num_23_EN",
      "score": 8,
      "matched_on": [
       "sans-terre",
+      "via campesina"
+     ]
+    },
+    {
+     "id": "96052c2b",
+     "title": "La Via Campesina Newsletter August 2015 english",
+     "score": 8,
+     "matched_on": [
+      "via campesina"
+     ]
+    },
+    {
+     "id": "d2204d0e",
+     "title": "La Via Campesina Newsletter July 2015 english",
+     "score": 8,
+     "matched_on": [
+      "via campesina"
+     ]
+    },
+    {
+     "id": "fe981506",
+     "title": "La Via Campesina Newsletter June 2015 english",
+     "score": 8,
+     "matched_on": [
+      "via campesina"
+     ]
+    },
+    {
+     "id": "638f459e",
+     "title": "La Via Campesina Newsletter May 2015",
+     "score": 8,
+     "matched_on": [
+      "via campesina"
+     ]
+    },
+    {
+     "id": "f203ada5",
+     "title": "La Via Campesina Newsletter April 2015 2",
+     "score": 8,
+     "matched_on": [
+      "via campesina"
+     ]
+    },
+    {
+     "id": "f2e916da",
+     "title": "La Via Campesina – Newsletter March 2015",
+     "score": 8,
+     "matched_on": [
+      "via campesina"
+     ]
+    },
+    {
+     "id": "d64aa10b",
+     "title": "La Via Campesina Newsletter February 2015",
+     "score": 8,
+     "matched_on": [
+      "via campesina"
+     ]
+    },
+    {
+     "id": "bb0c829f",
+     "title": "La Via Campesina – Newsletter January 2015",
+     "score": 8,
+     "matched_on": [
       "via campesina"
      ]
     },
@@ -6618,7 +6780,7 @@
    "slug": "communs-fonciers-histoire",
    "titre": "Communs fonciers : une histoire",
    "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-   "doc_count": 225,
+   "doc_count": 227,
    "docs": [
     "9c49c870",
     "39441dfc",
@@ -6722,11 +6884,14 @@
     "97c3bbb4",
     "a91bd215",
     "1ce39b6d",
+    "ae302e09",
     "622ada75",
     "b0917bdf",
     "08baa6d1",
     "b8b0bfd8",
     "fe77002b",
+    "d2026e14",
+    "9b78288d",
     "c97fba28",
     "76ab1d39",
     "a5df1a9d",
@@ -6843,7 +7008,6 @@
     "85283063",
     "7585c0aa",
     "7c1b5f0c",
-    "13352415",
     "f5977eb9"
    ],
    "docs_detail": [
@@ -7739,6 +7903,14 @@
      ]
     },
     {
+     "id": "ae302e09",
+     "title": "ASCAB, pérégrinations de trois saisonnières dans le pétrin",
+     "score": 8,
+     "matched_on": [
+      "communs fonciers"
+     ]
+    },
+    {
      "id": "622ada75",
      "title": "Le Vent d’Autan",
      "score": 8,
@@ -7778,6 +7950,22 @@
      "matched_on": [
       "communs fonciers",
       "terres collectives"
+     ]
+    },
+    {
+     "id": "d2026e14",
+     "title": "Le progrès, c’est mal ! — version page par page",
+     "score": 8,
+     "matched_on": [
+      "communs fonciers"
+     ]
+    },
+    {
+     "id": "9b78288d",
+     "title": "Le progrès, c’est mal ! — version cahier",
+     "score": 8,
+     "matched_on": [
+      "communs fonciers"
      ]
     },
     {
@@ -8767,14 +8955,6 @@
      ]
     },
     {
-     "id": "13352415",
-     "title": "Silent theft : the private plunder of our common wealth",
-     "score": 6,
-     "matched_on": [
-      "communs fonciers"
-     ]
-    },
-    {
      "id": "f5977eb9",
      "title": "Elite Power Through Three Colonial Systems : Democracy as Elite Competition in the Philippines (1565-2025)",
      "score": 6,
@@ -9182,7 +9362,7 @@
    "slug": "paysanneries-agroecologie",
    "titre": "Paysanneries & agroécologie politique",
    "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-   "doc_count": 575,
+   "doc_count": 590,
    "docs": [
     "9c49c870",
     "39441dfc",
@@ -9375,13 +9555,18 @@
     "5f5dadd2",
     "a91bd215",
     "1ce39b6d",
+    "ae302e09",
     "622ada75",
     "2bf90eb8",
     "b4712d32",
     "08baa6d1",
     "b8b0bfd8",
     "fe77002b",
+    "51240b12",
     "47c6599a",
+    "71a3ece0",
+    "d2026e14",
+    "9b78288d",
     "c97fba28",
     "32ccb418",
     "16e8446d",
@@ -9419,12 +9604,15 @@
     "d9dd0148",
     "14662b8d",
     "d7046f16",
+    "05377a49",
     "40220080",
     "c922a9c1",
     "4ad0bf52",
     "0c493ef3",
     "17bf0294",
     "0a8d8745",
+    "832f1794",
+    "bcad0ce0",
     "6a254f46",
     "a3bc9099",
     "820f64ed",
@@ -9434,8 +9622,10 @@
     "a4394095",
     "51ac7bb4",
     "e7078d7a",
+    "3c9481c5",
     "650ebb33",
     "09fcb406",
+    "5127b9b3",
     "115993e5",
     "12d55115",
     "7df2fd48",
@@ -9453,9 +9643,11 @@
     "0ab0211d",
     "38f41251",
     "b154e990",
+    "aabe9dad",
     "8e62261e",
     "abf822e4",
     "375bdfc1",
+    "b4bbf636",
     "16c630c0",
     "f57050e5",
     "425ed458",
@@ -9493,6 +9685,7 @@
     "9ec90443",
     "20d3c68f",
     "fe08c7c2",
+    "5ea61d5d",
     "8b15433d",
     "a9d136c1",
     "7ace11cb",
@@ -9505,8 +9698,11 @@
     "a7ba0bf1",
     "073110c7",
     "b775ae7f",
+    "3c3fa90e",
     "75295aaf",
+    "c454b128",
     "c45d24db",
+    "7e5ee24a",
     "99f919b8",
     "4be03ed2",
     "fb9792a7",
@@ -9757,7 +9953,6 @@
     "c1c58233",
     "bd18d74a",
     "7c1b5f0c",
-    "13352415",
     "34a95a5f"
    ],
    "docs_detail": [
@@ -11986,6 +12181,15 @@
      ]
     },
     {
+     "id": "ae302e09",
+     "title": "ASCAB, pérégrinations de trois saisonnières dans le pétrin",
+     "score": 8,
+     "matched_on": [
+      "paysannerie",
+      "paysan"
+     ]
+    },
+    {
      "id": "622ada75",
      "title": "Le Vent d’Autan",
      "score": 8,
@@ -12054,8 +12258,46 @@
      ]
     },
     {
+     "id": "51240b12",
+     "title": "\"Mes brebis comme des machines\"",
+     "score": 8,
+     "matched_on": [
+      "paysannerie",
+      "paysan",
+      "agroécologie",
+      "agriculture paysanne"
+     ]
+    },
+    {
      "id": "47c6599a",
      "title": "Zomia ou l'art de ne pas être gouverné",
+     "score": 8,
+     "matched_on": [
+      "paysannerie",
+      "paysan"
+     ]
+    },
+    {
+     "id": "71a3ece0",
+     "title": "Des moutons et des hommes",
+     "score": 8,
+     "matched_on": [
+      "paysannerie",
+      "paysan"
+     ]
+    },
+    {
+     "id": "d2026e14",
+     "title": "Le progrès, c’est mal ! — version page par page",
+     "score": 8,
+     "matched_on": [
+      "paysannerie",
+      "paysan"
+     ]
+    },
+    {
+     "id": "9b78288d",
+     "title": "Le progrès, c’est mal ! — version cahier",
      "score": 8,
      "matched_on": [
       "paysannerie",
@@ -12445,6 +12687,14 @@
      ]
     },
     {
+     "id": "05377a49",
+     "title": "Climate Justice Insights from Peasant and Popular Feminism EN_compressed",
+     "score": 8,
+     "matched_on": [
+      "peasant"
+     ]
+    },
+    {
      "id": "40220080",
      "title": "Climate Justice Insights from Peasant and Popular Feminism-EN-digital_compressed",
      "score": 8,
@@ -12512,6 +12762,22 @@
       "souveraineté alimentaire",
       "peasant",
       "food sovereignty"
+     ]
+    },
+    {
+     "id": "832f1794",
+     "title": "LVC Ground report Kenyan Peasants Revolution against IMF",
+     "score": 8,
+     "matched_on": [
+      "peasant"
+     ]
+    },
+    {
+     "id": "bcad0ce0",
+     "title": "LVC Ground report Kenyan Peasants Revolution against IMF",
+     "score": 8,
+     "matched_on": [
+      "peasant"
      ]
     },
     {
@@ -12603,6 +12869,14 @@
      ]
     },
     {
+     "id": "3c9481c5",
+     "title": "EN-ES-FR-LVC-rejects-the-EU-Mercosur-Free-Trade-Agreement-because-it-violates-the-rights-of-peasants-and-threatens-nature",
+     "score": 8,
+     "matched_on": [
+      "peasant"
+     ]
+    },
+    {
      "id": "650ebb33",
      "title": "Tanzania-landgrabs-EN-05",
      "score": 8,
@@ -12622,6 +12896,14 @@
       "peasant",
       "agroecology",
       "food sovereignty"
+     ]
+    },
+    {
+     "id": "5127b9b3",
+     "title": "EN-ES-FR-LVC-rejects-the-EU-Mercosur-Free-Trade-Agreement-because-it-violates-the-rights-of-peasants-and-threatens-nature",
+     "score": 8,
+     "matched_on": [
+      "peasant"
      ]
     },
     {
@@ -12838,6 +13120,14 @@
      ]
     },
     {
+     "id": "aabe9dad",
+     "title": "Diagramación LVC 2021 INGLES curvas.cdr",
+     "score": 8,
+     "matched_on": [
+      "peasant"
+     ]
+    },
+    {
      "id": "8e62261e",
      "title": "ENG_IPC-declaration-green-development-seeds-industry_nov-2021-2",
      "score": 8,
@@ -12866,6 +13156,14 @@
      "score": 8,
      "matched_on": [
       "food sovereignty"
+     ]
+    },
+    {
+     "id": "b4bbf636",
+     "title": "Peasant-and-Popular-Feminism-Publication-LVC-2021-EN",
+     "score": 8,
+     "matched_on": [
+      "peasant"
      ]
     },
     {
@@ -13320,6 +13618,14 @@
      ]
     },
     {
+     "id": "5ea61d5d",
+     "title": "Download : La Vía Campesina’s African Continental Encounter of Agroecology Schools and Training Processes PDF",
+     "score": 8,
+     "matched_on": [
+      "agroecology"
+     ]
+    },
+    {
      "id": "8b15433d",
      "title": "Click to read the complete statement",
      "score": 8,
@@ -13455,12 +13761,28 @@
      ]
     },
     {
+     "id": "3c3fa90e",
+     "title": "백남ㅣ.pages",
+     "score": 8,
+     "matched_on": [
+      "peasant"
+     ]
+    },
+    {
      "id": "75295aaf",
      "title": "Cartilla_Basta_de_Violencia_contra_las_Mujeres",
      "score": 8,
      "matched_on": [
       "paysannerie",
       "paysan"
+     ]
+    },
+    {
+     "id": "c454b128",
+     "title": "Final Info Note ECVC Public Debate Agroecology 17 Sept 2015",
+     "score": 8,
+     "matched_on": [
+      "agroecology"
      ]
     },
     {
@@ -13475,6 +13797,14 @@
       "souveraineté alimentaire",
       "peasant",
       "food sovereignty"
+     ]
+    },
+    {
+     "id": "7e5ee24a",
+     "title": "Agenda agroecology in the EU event Sept 17-2015",
+     "score": 8,
+     "matched_on": [
+      "agroecology"
      ]
     },
     {
@@ -16165,15 +16495,6 @@
       "paysannerie",
       "paysan",
       "agroécologie"
-     ]
-    },
-    {
-     "id": "13352415",
-     "title": "Silent theft : the private plunder of our common wealth",
-     "score": 6,
-     "matched_on": [
-      "paysannerie",
-      "paysan"
      ]
     },
     {
