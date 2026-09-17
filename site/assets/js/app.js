@@ -329,7 +329,8 @@
           const run = (d.runs && d.runs.length) ? d.runs[d.runs.length - 1] : null;
           return {
             ...d,
-            _latestRunDate: run ? run.date : (d.latest_run || ''),
+            // « cleanup_2026-09-16_10-41 » (nettoyage du backlog) → date seule
+            _latestRunDate: String((run ? run.date : d.latest_run) || '').replace(/^cleanup_/, ''),
             _latestRaison: run ? run.raison : '',
           };
         });

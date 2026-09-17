@@ -19,6 +19,7 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+import claude_guard
 
 CATALOG_PATH = Path("synopsis/catalog.json")
 
@@ -30,7 +31,7 @@ CLAUDE_FLAGS = [
     "--disable-slash-commands",
     "--dangerously-skip-permissions",
 ]
-CLAUDE_TIMEOUT_SEC = 120
+CLAUDE_TIMEOUT_SEC = 240  # 120 s : timeouts sur les lots de 10 (17/09)
 
 # Throttle minimal entre appels API (secondes)
 _INTER_CALL_DELAY = 0.5
@@ -38,8 +39,9 @@ _INTER_CALL_DELAY = 0.5
 
 def _call_claude(prompt: str, timeout: int = CLAUDE_TIMEOUT_SEC) -> str:
     """Appelle claude -p et retourne le texte brut. Lève RuntimeError si exit ≠ 0."""
+    claude_guard.guard_before_call()
     result = subprocess.run(
-        ["claude", "-p", prompt, "--model", CLAUDE_MODEL] + CLAUDE_FLAGS,
+        ["claude", "-p", prompt.replace("\x00", ""), "--model", CLAUDE_MODEL] + CLAUDE_FLAGS,
         capture_output=True,
         text=True,
         timeout=timeout,
@@ -47,6 +49,7 @@ def _call_claude(prompt: str, timeout: int = CLAUDE_TIMEOUT_SEC) -> str:
         stdin=subprocess.DEVNULL,
     )
     if result.returncode != 0:
+        claude_guard.check_result(result.stdout, result.stderr)
         raise RuntimeError(
             f"claude exit {result.returncode} — "
             f"stdout={result.stdout[:200]} stderr={result.stderr[:200]}"
@@ -64,8 +67,8 @@ def _call_claude(prompt: str, timeout: int = CLAUDE_TIMEOUT_SEC) -> str:
 def translate_batch(quotes: list[str], source_lang: str) -> list[str]:
     """Traduit une liste de citations en français via un seul appel Claude.
 
-    Retourne une liste de même longueur. En cas d'erreur, retourne les
-    originaux inchangés.
+    Retourne une liste de même longueur. En cas d'erreur, retourne des None
+    (rien ne sera écrit : la citation sera retentée au prochain run).
     """
     if not quotes:
         return []
@@ -76,14 +79,18 @@ def translate_batch(quotes: list[str], source_lang: str) -> list[str]:
         "de": "allemand",
         "pt": "portugais",
         "it": "italien",
-        "nl": "néerlandais",
-    }.get(source_lang, source_lang or "langue source")
+        "nl": "néerlandais", "sw": "swahili", "ts": "tsonga", "sn": "shona",
+        "el": "grec", "tr": "turc", "eu": "basque", "da": "danois", "sv": "suédois",
+        "pl": "polonais", "ja": "japonais", "id": "indonésien", "ku": "kurde",
+        "tl": "tagalog", "ar": "arabe", "ko": "coréen", "ca": "catalan",
+    }.get(source_lang, source_lang or "inconnue")
 
     numbered = "\n".join(f"{i + 1}. {q}" for i, q in enumerate(quotes))
 
-    prompt = f"""Traduis les citations suivantes de l'{lang_label} vers le français.
-
+    prompt = f"""Traduis les citations suivantes vers le français (langue source indiquée : {lang_label}).
 Règles :
+- Si une citation est dans une autre langue que celle indiquée, traduis-la depuis sa langue réelle.
+- Si une citation est déjà en français, recopie-la telle quelle.
 - Traduction fidèle, sans paraphrase ni omission.
 - Conserve le registre (académique, militant, technique…).
 - NE modifie pas les noms propres, les titres d'œuvres, les sigles.
@@ -99,15 +106,17 @@ Citations à traduire :
         translations = json.loads(raw)
         if not isinstance(translations, list) or len(translations) != len(quotes):
             print(f"  ⚠  translate_batch : réponse inattendue ({len(translations) if isinstance(translations, list) else type(translations).__name__} ≠ {len(quotes)})")
-            return quotes
+            return [None] * len(quotes)
         # Valider que chaque traduction est une chaîne
-        return [str(t) if t is not None else q for t, q in zip(translations, quotes)]
+        return [str(t) if t is not None else None for t in translations]
     except json.JSONDecodeError as e:
         print(f"  ⚠  translate_batch : json_parse : {e} — raw={repr(raw[:200])}")
-        return quotes
+        return [None] * len(quotes)
+    except claude_guard.ClaudeSessionLimitError:
+        raise
     except Exception as e:
         print(f"  ⚠  translate_batch : {e}")
-        return quotes
+        return [None] * len(quotes)
 
 
 def translate_doc_citations(doc: dict) -> int:
@@ -154,15 +163,13 @@ def translate_doc_citations(doc: dict) -> int:
 
     count = 0
     for i, tr in zip(to_translate_idx, translations):
-        original = citations[i].get("quote", "")
-        # Ne stocker que si la traduction est différente de l'original
-        if tr and tr.strip() and tr.strip() != original.strip():
+        # Échec (None/vide) : on n'écrit RIEN, sinon l'original serait marqué
+        # « traduit » et jamais retenté (audit 17/09 : 908 citations figées).
+        # Une réponse identique à l'original (citation déjà en français, nom
+        # propre) est une vraie réponse : on la garde.
+        if tr and tr.strip():
             citations[i]["quote_fr"] = tr.strip()
             count += 1
-        else:
-            # Même si identique (cas rare), on marque quand même pour
-            # éviter de re-tenter à chaque run
-            citations[i]["quote_fr"] = tr.strip() if tr else original
 
     return count
 

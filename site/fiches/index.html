@@ -251,8 +251,7 @@
       <h4>Suivre &amp; réutiliser</h4>
       <ul>
         <li><a href="../feed.xml">Flux RSS — nouvelles fiches</a></li>
-        <li><a href="../rss.xml">Flux RSS — toutes nouveautés</a></li>
-        <li><a href="../scoops.xml">Flux RSS — scoops (score ≥ 9)</a></li>
+        <li><a href="../feeds/scoops.xml">Flux RSS — scoops (score ≥ 9)</a></li>
 <li>Fiches sous <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" rel="noopener">CC-BY-NC-SA 4.0</a></li>
         <li><a href="mailto:contact@actitude.org">Contact &amp; déréférencement</a></li>
       </ul>
@@ -302,6 +301,7 @@ const DEFAULT_FILTERS = () => ({
 
 /* Détecte la langue d'un doc : meta.lang, enrichment.lang ou heuristique simple. */
 function detectLang(doc) {
+  if (doc.lang) return String(doc.lang).toLowerCase().slice(0, 2);
   const explicit = (doc.meta && doc.meta.lang) || (doc.enrichment && doc.enrichment.lang);
   if (explicit) return String(explicit).toLowerCase().slice(0, 2);
   // Heuristique grossière sur titre + filename
@@ -421,8 +421,8 @@ function initFiltersUI() {
     const l = detectLang(d);
     langCounts[l] = (langCounts[l] || 0) + 1;
   });
-  const LANG_LABELS = { fr: 'Français', en: 'Anglais', es: 'Espagnol', pt: 'Portugais', multi: 'Multilingue', unknown: 'Indéterminée' };
-  const orderedLangs = ['fr', 'en', 'es', 'pt', 'multi', 'unknown'].filter(l => langCounts[l]);
+  const LANG_LABELS = { fr: 'Français', en: 'Anglais', es: 'Espagnol', pt: 'Portugais', de: 'Allemand', it: 'Italien', multi: 'Multilingue', unknown: 'Indéterminée' };
+  const orderedLangs = ['fr', 'en', 'es', 'pt', 'de', 'it', 'multi', 'unknown'].filter(l => langCounts[l]);
   langWrap.innerHTML = orderedLangs.map(l => `
     <label><input type="checkbox" name="lang" value="${escape(l)}">
       ${escape(LANG_LABELS[l] || l)} <span style="color:var(--text-faint);font-size:12px;">(${langCounts[l]})</span>

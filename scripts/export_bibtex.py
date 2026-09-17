@@ -118,10 +118,13 @@ def _bib_escape(s: str) -> str:
 
 
 def _iter_eligible(catalog_path: Path, min_score: int) -> Iterable[tuple[str, dict]]:
-    """Itère sur les docs du catalog scorés >= min_score."""
+    """Itère sur les docs PUBLIÉS (watch._is_publishable : seuil + exclusions),
+    pour que les exports correspondent au catalogue en ligne (audit 17/09 :
+    760 entrées dont 222 dépubliées). min_score n'est plus utilisé."""
+    from watch import _is_publishable
     catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
     for doc_id, doc in catalog.get("docs", {}).items():
-        if int(doc.get("latest_score") or 0) >= min_score:
+        if _is_publishable(doc):
             yield doc_id, doc
 
 
@@ -133,7 +136,7 @@ def export_bibtex(catalog_path: Path, out_path: Path, min_score: int = 7) -> int
         title = _bib_escape(_extract_title(doc))
         author = _bib_escape(_extract_author(doc))
         # B8 — date de publication fiable prioritaire
-        year = _doc_date(doc) or _extract_year(doc)
+        year = _doc_date(doc)  # jamais d'année devinée (URL, nom de fichier)
         url = doc.get("url", "")
         note = _bib_escape(_extract_note(doc))
         kws = ", ".join(_keywords(doc))
@@ -171,7 +174,7 @@ def export_ris(catalog_path: Path, out_path: Path, min_score: int = 7) -> int:
         lines = ["TY  - GEN", f"TI  - {_extract_title(doc)}"]
         if a := _extract_author(doc):
             lines.append(f"AU  - {a}")
-        if y := (_doc_date(doc) or _extract_year(doc)):
+        if y := _doc_date(doc):
             lines.append(f"PY  - {y}")
         if u := doc.get("url"):
             lines.append(f"UR  - {u}")
@@ -211,7 +214,7 @@ def export_csl_json(catalog_path: Path, out_path: Path, min_score: int = 7) -> i
                 item["author"] = [{"given": parts[0], "family": parts[1]}]
             else:
                 item["author"] = [{"literal": a}]
-        if y := (_doc_date(doc) or _extract_year(doc)):
+        if y := _doc_date(doc):
             item["issued"] = {"date-parts": [[int(y)]]}
         ids = _identifiers(doc)
         if ids["doi"]:

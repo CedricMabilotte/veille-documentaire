@@ -1016,8 +1016,8 @@ def _prerender_fiches(catalog: dict) -> int:
                     first = first.split(sep, 1)[0] + sep.strip()
                     break
             description = first.strip()
-        if not description and doc.get("runs"):
-            description = doc["runs"][-1].get("raison", "") or ""
+        # runs[].raison (« erreur scoring », « auto_download… ») est un message
+        # interne du pipeline : jamais utilisé comme description (audit 17/09).
         if not description:
             description = fallback_desc
         description = description.strip()[:300]
@@ -1096,7 +1096,7 @@ def _prerender_fiches(catalog: dict) -> int:
         doc_id_h   = esc(doc_id)
 
         # ── Sections de contenu pré-calculées (hors f-string) ───────────────
-        html_lang  = lang if lang and lang not in ('', '?') else 'fr'
+        html_lang  = 'fr'  # interface, synopsis et « En clair » sont en français (WCAG 3.1.1)
         doc_date_h = esc(doc.get('doc_date', '') or '')
         editeur_h  = esc(doc.get('editeur', '') or '')
 
@@ -1392,7 +1392,18 @@ def publish_site(run_date: str) -> None:
     for name in ("fulltext_index.json", "dossiers.json", "featured.json",
                  "corpus_stats.json"):
         src = SYNOPSIS_PATH / name
-        if src.exists():
+        if src.exists() and name == "dossiers.json" and catalog_src.exists():
+            # Ne publier que les pièces présentes au catalogue public (audit
+            # 17/09 : 128 docs dépubliés listés, liens vers fiches introuvables).
+            _dj = json.loads(src.read_text(encoding="utf-8"))
+            for _d in _dj.get("dossiers", []):
+                _d["docs"] = [i for i in _d.get("docs", []) if i in _cat["docs"]]
+                _d["docs_detail"] = [x for x in _d.get("docs_detail", [])
+                                     if x.get("id") in _cat["docs"]]
+                _d["doc_count"] = len(_d["docs"])
+            (SITE_PATH / "data" / name).write_text(
+                json.dumps(_dj, ensure_ascii=False, indent=1), encoding="utf-8")
+        elif src.exists():
             shutil.copy2(src, SITE_PATH / "data" / name)
 
     # 2. Bulles
@@ -1605,7 +1616,7 @@ def _write_rss(catalog: dict, run_date: str) -> None:
     feeds_dir.mkdir(parents=True, exist_ok=True)
 
     # ── Feed « scoops » : score_final >= 9 ───────────────────────────────────
-    scoops = [d for d in docs if (d.get("score_final") or 0) >= 9][:30]
+    scoops = [d for d in publishable if (d.get("score_final") or 0) >= 9][:30]
     (feeds_dir / "scoops.xml").write_text(
         _rss_document([_rss_item(d) for d in scoops], run_date,
                       "BIBLIO — Scoops (score 9+)",
@@ -1720,8 +1731,10 @@ def _write_sitemap(catalog: dict) -> None:
         (f"{SITE_BASE_URL}/apropos.html", today),
         (f"{SITE_BASE_URL}/auteurs.html", today),
         (f"{SITE_BASE_URL}/chronologie.html", today),
-        (f"{SITE_BASE_URL}/graph.html", today),
         (f"{SITE_BASE_URL}/dossiers.html", today),
+        (f"{SITE_BASE_URL}/concepts/", today),
+        (f"{SITE_BASE_URL}/une.html", today),
+        (f"{SITE_BASE_URL}/etat-corpus.html", today),
     ]
 
     store = _load_sitemap_lastmod()

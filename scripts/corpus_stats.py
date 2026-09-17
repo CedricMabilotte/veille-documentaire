@@ -91,7 +91,7 @@ def build_stats(catalog_path: Path = CATALOG_PATH,
     orientations = _load_source_orientations()
     import yaml as _yaml
     _excl_path = ROOT / "config" / "exclusions.yml"
-    exclusion_ids = set(_yaml.safe_load(_excl_path.read_text()).get("excluded", []) if _excl_path.exists() else [])
+    exclusion_ids = set(_yaml.safe_load(_excl_path.read_text()).get("exclusions") or {} if _excl_path.exists() else [])  # même lecture que watch._load_exclusions
 
     by_lang = Counter()
     by_source = Counter()

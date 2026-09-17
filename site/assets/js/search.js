@@ -19,6 +19,9 @@
     parts.push(doc.id || '');
     parts.push(doc.filename || '');
     parts.push(doc.source || '');
+    parts.push(doc.title || '');
+    parts.push(doc.author || '');
+    parts.push(doc.journal || '');
     if (doc.meta) {
       parts.push(doc.meta.pdf_title || '');
       parts.push(doc.meta.pdf_author || '');

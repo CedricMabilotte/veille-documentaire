@@ -271,8 +271,7 @@
       <h4>Suivre &amp; réutiliser</h4>
       <ul>
         <li><a href="feed.xml">Flux RSS — nouvelles fiches</a></li>
-        <li><a href="rss.xml">Flux RSS — toutes nouveautés</a></li>
-        <li><a href="scoops.xml">Flux RSS — scoops (score ≥ 9)</a></li>
+        <li><a href="feeds/scoops.xml">Flux RSS — scoops (score ≥ 9)</a></li>
 <li>Fiches sous <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" rel="noopener">CC-BY-NC-SA 4.0</a></li>
         <li><a href="mailto:contact@actitude.org">Contact &amp; déréférencement</a></li>
       </ul>
@@ -371,8 +370,8 @@ function renderStats(meta, docs) {
     <a class="stat" href="${bp}etat-corpus.html#sources" aria-label="Voir les ${sources.size} sources surveillées">
       <div class="stat-num">${sources.size}</div><div class="stat-label">Sources surveillées</div>
     </a>
-    <a class="stat" href="${bp}dossiers.html" aria-label="Voir les ${withBulle} dossiers éditoriaux">
-      <div class="stat-num">${withBulle}</div><div class="stat-label">Dossiers éditoriaux</div>
+    <a class="stat" href="${bp}dossiers.html" aria-label="${withBulle} fiches éditorialisées — voir les dossiers">
+      <div class="stat-num">${withBulle}</div><div class="stat-label">Fiches éditorialisées</div>
     </a>
     <a class="stat" href="${bp}apropos.html" aria-label="Lire la méthodologie">
       <div class="stat-num" style="font-size:22px;line-height:1.4;">${escape(formatDate(latest) || '—')}</div>

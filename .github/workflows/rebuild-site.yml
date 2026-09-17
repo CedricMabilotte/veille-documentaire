@@ -37,5 +37,7 @@ jobs:
             synopsis/dossiers.json synopsis/featured.json synopsis/sitemap_lastmod.json 2>/dev/null || true
           if git diff --staged --quiet; then echo "rien a publier"; exit 0; fi
           git commit -m "site: reconstruction $(date '+%Y-%m-%d %H:%M') (nettoyage backlog)"
-          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 10; done
+          ok=0
+          for i in 1 2 3; do git pull --rebase -q && git push && { ok=1; break; }; git rebase --abort 2>/dev/null; sleep 10; done
+          [ "$ok" = 1 ] || { echo "push impossible apres 3 essais"; exit 1; }
           gh workflow run publish-only.yml --ref main
