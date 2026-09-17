@@ -230,10 +230,20 @@ def find_isbn(*texts: str) -> str:
     for t in texts:
         if not t:
             continue
-        m = _ISBN_RE.search(str(t))
-        if m:
-            return re.sub(r"[-\s]", "", m.group(0))
+        for m in _ISBN_RE.finditer(str(t)):
+            isbn = re.sub(r"[-\s]", "", m.group(0)).upper()
+            if _isbn_checksum_ok(isbn):  # audit 17/09 : 24/44 ISBN étaient des nombres quelconques
+                return isbn
     return ""
+
+
+def _isbn_checksum_ok(isbn: str) -> bool:
+    if len(isbn) == 10 and isbn[:9].isdigit() and (isbn[9].isdigit() or isbn[9] == "X"):
+        s = sum((10 - k) * int(c) for k, c in enumerate(isbn[:9])) + (10 if isbn[9] == "X" else int(isbn[9]))
+        return s % 11 == 0
+    if len(isbn) == 13 and isbn.isdigit():
+        return sum(int(c) * (1 if k % 2 == 0 else 3) for k, c in enumerate(isbn)) % 10 == 0
+    return False
 
 
 def find_hal_id(*texts: str) -> str:

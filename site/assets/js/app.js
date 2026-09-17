@@ -360,19 +360,12 @@
   // ----- Helpers d'inférence (auteur, année) --------------------------------
   // Tente d'extraire un nom d'auteur à partir du filename ou link_text si pdf_author manque.
   // Heuristique conservatrice : on cherche un motif "Nom – Titre" ou "Nom_Titre.pdf".
+  // inferAuthor() ne devine plus rien (audit 17/09) : la regex « Nom - Titre »
+  // sur le nom de fichier affichait « EN », « The », « LVC »… comme auteurs, en
+  // contradiction avec la règle « un auteur absent de la source n'est jamais
+  // inféré ». Conservé comme alias de docAuthor() pour les pages qui l'appellent.
   function inferAuthor(doc) {
-    const explicit = (doc.meta && doc.meta.pdf_author) ? String(doc.meta.pdf_author).trim() : '';
-    if (explicit && explicit.length > 1 && !/^(unknown|n\/a|inconnu)$/i.test(explicit)) return explicit;
-    // tentative : link_text « Auteur — Titre »
-    const candidates = [doc.link_text, doc.filename];
-    for (const c of candidates) {
-      if (!c) continue;
-      // pattern : "Nom Prenom - Titre" ou "Nom_Prenom_-_Titre.pdf"
-      const cleaned = String(c).replace(/\.[a-z0-9]+$/i, '').replace(/_/g, ' ');
-      const m = cleaned.match(/^([A-Z][\p{L}\.\-]+(?:\s+[A-Z][\p{L}\.\-]+){0,3})\s*[—–\-]\s*(.+)$/u);
-      if (m && m[1].length < 60) return m[1].trim();
-    }
-    return null;
+    return docAuthor(doc);
   }
   window.inferAuthor = inferAuthor;
 

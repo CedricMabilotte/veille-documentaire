@@ -53,7 +53,7 @@ def encode_url(url: str) -> str:
     try:
         p = urlparse(url)
         # Encoder le path en préservant les séparateurs structuraux
-        encoded_path = quote(p.path, safe='/:@!$&\'()*+,;=-.')
+        encoded_path = quote(p.path, safe='/:@!$&\'()*+,;=-.%')
         return urlunparse(p._replace(path=encoded_path))
     except Exception:
         return url
