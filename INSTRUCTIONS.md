@@ -60,7 +60,11 @@ Seuil de publication : `PUBLISH_THRESHOLD = 4` dans `watch.py` (via `os.getenv`,
 défaut `4` — tranché session #20, cf. `etat-projet-biblio.md` §4.1) — un document
 n'est exposé (RSS, sitemap, fiche pré-rendue) que si son score effectif
 (`score_final`, sinon `score_initial`) l'atteint, et s'il s'agit d'un ouvrage
-en format ouvert (PDF, EPUB, TXT, ODT).
+en format ouvert (PDF, EPUB, TXT, ODT), et s'il n'est pas dans `config/exclusions.yml`.
+
+Exécution : `watch.yml` (cron un jour sur deux à 03:00 UTC, budget
+`WATCH_BUDGET_MIN`) ; `rebuild-site.yml` régénère le site sans veille ;
+`publish-only.yml` pousse `site/` vers le repo public. Détails : `DEPLOIEMENT.md`.
 
 ## Méthode de travail & conventions
 

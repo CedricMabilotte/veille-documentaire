@@ -9,7 +9,7 @@
 - **GitHub Pages** : activé, branche `main`, racine `/`
 - **CNAME** : `biblio.actitude.org` (déjà configuré côté GitHub)
 - **URL temporaire (active immédiatement)** : https://cedricmabilotte.github.io/biblio-actitude-org/
-- **URL cible (en attente DNS)** : https://biblio.actitude.org
+- **URL** : https://biblio.actitude.org
 
 ## Étape DNS — à faire côté registrar (Gandi/OVH/…)
 
@@ -35,25 +35,23 @@ Une fois le CNAME publié :
 
 ## Pipeline de publication automatique
 
-À chaque exécution du workflow **"Veille documentaire"** sur le repo privé `veille-documentaire`, le site est automatiquement republiée :
+Trois workflows dans le repo privé `veille-documentaire` (état au 17/09/2026) :
 
 ```
-veille-documentaire (privé)
-   ↓ python scripts/watch.py
-   ↓   ├── scrape sources
-   ↓   ├── score Claude
-   ↓   ├── download + validation PDF
-   ↓   ├── extract texte/couverture
-   ↓   ├── synopsis enrichi + bulles
-   ↓   ├── update catalog
-   ↓   ├── régénère interface + site
-   ↓   └── publie le contenu de site/ vers
-   ↓
-biblio-actitude-org (public, repo)
-   ↓ GitHub Pages auto-deploy
-   ↓
-https://biblio.actitude.org
+watch.yml  (cron '0 3 */2 * *' + manuel ; WATCH_BUDGET_MIN=75, étape plafonnée à 150 min)
+   ↓ python scripts/watch.py : sources → score → PDF → synopsis/bulles → catalog
+   ↓   → interface + site/ → commit sur main → gh workflow run publish-only.yml
+rebuild-site.yml  (manuel : `gh workflow run rebuild-site.yml --ref main`)
+   ↓ python scripts/rebuild_site.py : régénère site/, exports/, dossiers, stats
+   ↓   depuis synopsis/catalog.json SANS veille → commit → publish-only.yml
+publish-only.yml  (push touchant site/** sur main, ou manuel)
+   ↓ copie site/ vers biblio-actitude-org (cache-bust du service worker)
+biblio-actitude-org (public) → GitHub Pages → https://biblio.actitude.org
 ```
+
+Lecture locale du backlog : `scripts/cleanup_backlog.py` sur la machine de Ced
+(clone partiel, `commit_push()` par plomberie, puis rebuild-site.yml).
+Ne jamais faire de `git commit`/`reset`/`status` porcelaine dans ce clone.
 
 Secret nécessaire (déjà configuré) : `BIBLIO_PUBLISH_TOKEN` dans le repo `veille-documentaire`.
 
