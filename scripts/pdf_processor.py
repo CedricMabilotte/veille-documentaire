@@ -361,6 +361,14 @@ def extract_cover(path: Path, out_jpg: Path,
     """Sauve la page 1 du PDF comme JPEG (largeur max=max_width, qualité 85)."""
     if not PYMUPDF_AVAILABLE:
         return False
+    # Audit 17/09 (MD-15) : 25 couvertures publiées étaient la capture d'une
+    # page anti-bot (HAL/Anubis, Internet Archive) enregistrée sous .pdf.
+    try:
+        if path.open("rb").read(5)[:4] != b"%PDF":
+            print(f"  ⛔  Couverture refusée : {path.name} n'est pas un PDF")
+            return False
+    except Exception:
+        return False
     try:
         doc = fitz.open(path)
         if doc.page_count == 0:

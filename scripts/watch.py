@@ -288,9 +288,21 @@ def download_file(url: str, dest: Path) -> bool:
     try:
         r = requests.get(url, headers=HEADERS, timeout=60, stream=True)
         r.raise_for_status()
-        with open(dest, "wb") as f:
+        # Audit 17/09 (MD-14) : 15 fichiers de docs/ étaient des pages anti-bot
+        # (HAL/Anubis, archive.org) écrites par-dessus le vrai PDF. On écrit
+        # d'abord à côté, on vérifie la signature, et on ne remplace un fichier
+        # existant que par un PDF valide.
+        tmp = dest.with_suffix(dest.suffix + ".part")
+        with open(tmp, "wb") as f:
             for chunk in r.iter_content(chunk_size=8192):
                 f.write(chunk)
+        head = tmp.open("rb").read(5)
+        if dest.suffix.lower() == ".pdf" and not head.startswith(b"%PDF"):
+            print(f"  ⛔  Contenu non-PDF refusé pour {url} "
+                  f"(signature {head!r}) — fichier existant préservé")
+            tmp.unlink(missing_ok=True)
+            return False
+        os.replace(tmp, dest)
         return True
     except Exception as e:
         print(f"  ⚠  Téléchargement échoué pour {url} : {e}")
@@ -664,7 +676,10 @@ def update_synopsis_catalog(report: dict) -> None:
             "prompt_version": r.get("prompt_version", ""),
         }
 
-        # Score post-lecture (S1) : produit par synopsis_enricher si enrichi
+        # Score post-lecture (S1) : produit par synopsis_enricher si enrichi.
+        # Audit 17/09 (MD-09) : une lecture ratée (résumé vide, erreur Claude,
+        # PDF scanné) laissait le score sur la fiche — un score sans lecture.
+        # `enrich_failed` marque ces cas ; la publication les écarte.
         enrichment = r.get("enrichment") or {}
         score_final = None
         if isinstance(enrichment, dict) and "error" not in enrichment:
@@ -943,6 +958,18 @@ def _load_score_overrides() -> dict:
 _SCORE_OVERRIDES = _load_score_overrides()
 
 
+def _enrichment_failed(doc: dict) -> bool:
+    """Lecture tentée mais sans résultat exploitable (audit 17/09, MD-09)."""
+    enr = doc.get("enrichment")
+    if not isinstance(enr, dict):
+        return False
+    if "error" in enr:
+        return True
+    if "summary" in enr and not (enr.get("summary") or "").strip():
+        return True
+    return False
+
+
 def _is_publishable(doc: dict) -> bool:
     """True si le doc doit apparaître dans RSS / sitemap / fiches pré-rendues.
 
@@ -960,6 +987,11 @@ def _is_publishable(doc: dict) -> bool:
     éviter un cycle).
     """
     if doc.get("id") in _EXCLUSIONS:
+        return False
+    # Un score sans lecture exploitable n'est pas un score (MD-09) : on ne
+    # publie pas une fiche dont l'enrichissement a échoué, sauf si un score
+    # post-lecture valide existe malgré tout.
+    if _enrichment_failed(doc) and doc.get("score_final") is None:
         return False
     return _is_ouvrage_doc(doc) and _effective_score(doc) >= PUBLISH_THRESHOLD
 

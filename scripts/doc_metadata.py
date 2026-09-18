@@ -307,6 +307,33 @@ _FORMAT_PARENS = re.compile(
 )
 
 
+def _is_meaningless_title(candidate: str, filename: str = "") -> bool:
+    """Un pdf_title qui ne dit rien : nom de fichier, mot unique, code.
+
+    Audit 17/09 (TI-09) : « MergedFile », « nuevo_fichero.pdf », « Angebot »,
+    « creativecity » primaient sur un link_text propre parce qu'ils n'étaient
+    pas dans la liste noire. On juge ici la forme, pas la liste.
+    """
+    import html as _html
+    c = _html.unescape((candidate or "").strip())
+    if not c:
+        return True
+    if len(c) < 4:
+        return True
+    if re.search(r"\.(pdf|doc|docx|odt|cdr|indd|qxd|pub|txt)$", c, re.I):
+        return True
+    if "_" in c and " " not in c:
+        return True
+    if filename:
+        stem = re.sub(r"\.[a-z0-9]{2,4}$", "", filename, flags=re.I)
+        if c.lower() == stem.lower():
+            return True
+    words = [w for w in re.split(r"[\s\-—:·]+", c) if len(w) > 2]
+    if len(words) < 2:                      # « Angebot », « creativecity », « EN-00 »
+        return True
+    return False
+
+
 def normalize_title(
     link_text: str = "",
     pdf_title: str = "",
@@ -336,7 +363,8 @@ def normalize_title(
 
     # Choisir la source la moins bruitée
     raw = ""
-    if pdf_title and not _POISONED_PDF_TITLE.search(pdf_title):
+    if pdf_title and not _POISONED_PDF_TITLE.search(pdf_title) \
+            and not _is_meaningless_title(pdf_title, filename):
         raw = pdf_title
     elif link_text and not re.match(r"^mini[-\s]manuel\s*$", link_text.strip(), re.I):
         # link_text = "mini-manuel" seul est trop générique ; on passe au pdf_title
