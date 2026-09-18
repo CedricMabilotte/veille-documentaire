@@ -16,6 +16,7 @@ Usage :
 
 import os
 import sys
+import re
 import json
 import time
 from collections import Counter
@@ -1394,14 +1395,37 @@ def _prune_site_orphans(catalog: dict) -> dict:
 # Ced, 2026-09-18) : le droit d'auteur n'attribue pas de droits à une machine,
 # on n'expose donc plus le modèle ni la version de prompt sur le site. Ils
 # restent dans synopsis/catalog.json (traçabilité interne).
-_PROVENANCE_KEYS = ("model", "prompt_version", "prompt_hash")
+_PROVENANCE_KEYS = (
+    # provenance technique
+    "model", "prompt_version", "prompt_hash",
+    # sorties brutes / messages d'outillage : jamais rendus par le front, mais
+    # ils exposaient des traces d'outillage (« session limit », « claude-agent »,
+    # réponses brutes à la première personne) dans le catalogue public.
+    "raw_response", "error", "enriched_by", "enrichment_method",
+    "_avertissement", "methodologie_appliquee", "nota_bene",
+    # contexte de collecte : volumineux et purement interne
+    "context_seen",
+)
+
+
+# Raisons de run purement techniques : retirées du catalogue publié (le front
+# les masquait déjà via cleanRaison(), on ne les expédie même plus).
+_INTERNAL_RAISON = re.compile(
+    r"^\s*(erreur\s+scoring|score\s+initial|pdf_absent|json_parse|claude_call"
+    r"|text_too_short|auto_download)", re.I)
 
 
 def _strip_provenance(obj):
-    """Retire récursivement les clés de provenance technique d'un JSON publié."""
+    """Retire récursivement les clés internes d'un JSON publié."""
     if isinstance(obj, dict):
-        return {k: _strip_provenance(v) for k, v in obj.items()
-                if k not in _PROVENANCE_KEYS}
+        out = {}
+        for k, v in obj.items():
+            if k in _PROVENANCE_KEYS:
+                continue
+            if k == "raison" and isinstance(v, str) and _INTERNAL_RAISON.match(v):
+                continue
+            out[k] = _strip_provenance(v)
+        return out
     if isinstance(obj, list):
         return [_strip_provenance(x) for x in obj]
     return obj
@@ -1604,11 +1628,7 @@ def _rss_item(d: dict) -> str:
     description = ""
     if isinstance(enrich, dict):
         description = enrich.get("summary", "") or ""
-    # Fix 3 — ne pas utiliser la raison si elle contient "erreur" ou est vide
-    if not description and d.get("runs"):
-        raison = d["runs"][-1].get("raison", "") or ""
-        if raison and "erreur" not in raison.lower():
-            description = raison
+    # runs[].raison est un message interne du pipeline : jamais publié (18/09).
     pub = _rfc822(d.get("latest_run", "") or d.get("collected_date", ""))
     # Fix 3 — omettre <description> si vide plutôt que d'émettre une balise vide
     desc_tag = (f"\n      <description>{_xml_escape(description[:600])}</description>"

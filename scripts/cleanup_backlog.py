@@ -88,7 +88,8 @@ LOCAL_PATHS = ["synopsis/catalog.json", "synopsis/duplicates.json",
 REBUILD_EVERY = 50
 
 
-COVER_CHUNK = 10   # couvertures JPEG 1200px ≈ 200-300 Ko : ~3 Mo par push
+COVER_CHUNK = 10
+PUSH_MAX_BYTES = 6_000_000   # liaison montante lente : au-delà, le push meurt   # couvertures JPEG 1200px ≈ 200-300 Ko : ~3 Mo par push
 
 
 def _push_files(files: list[Path], message: str) -> bool:
@@ -118,6 +119,19 @@ def _push_files(files: list[Path], message: str) -> bool:
         time.sleep(20)
     log(f"  ✗ push impossible après 3 tentatives : {message}")
     return False
+
+
+def _size_batches(files: list[Path], max_bytes: int) -> list[list[Path]]:
+    """Regroupe des fichiers en lots de <= max_bytes (un gros fichier = un lot)."""
+    batches, cur, cur_size = [], [], 0
+    for f in sorted(files, key=lambda x: x.stat().st_size):
+        sz = f.stat().st_size
+        if cur and cur_size + sz > max_bytes:
+            batches.append(cur); cur, cur_size = [], 0
+        cur.append(f); cur_size += sz
+    if cur:
+        batches.append(cur)
+    return batches
 
 
 def commit_push(message: str, paths: list[str] | None = None) -> bool:
@@ -150,8 +164,13 @@ def commit_push(message: str, paths: list[str] | None = None) -> bool:
     covers = [f for f in changed if "covers" in f.parts]
     data = [f for f in changed if f not in covers]
     ok = True
-    if data:
-        ok = _push_files(data, message) and ok
+    # 18/09 : un push unique de 95 Mo (16 PDF ré-extraits) meurt en sideband
+    # après ~16 min. On découpe AUSSI les données par volume, pas seulement
+    # les couvertures.
+    batches = _size_batches(data, PUSH_MAX_BYTES)
+    for i, batch in enumerate(batches, 1):
+        suffix = "" if len(batches) == 1 else f" — lot {i}/{len(batches)}"
+        ok = _push_files(batch, message + suffix) and ok
     for i in range(0, len(covers), COVER_CHUNK):
         chunk = covers[i:i + COVER_CHUNK]
         ok = _push_files(chunk, f"{message} — couvertures {i + 1}-{i + len(chunk)}/{len(covers)}") and ok
