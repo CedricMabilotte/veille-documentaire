@@ -563,6 +563,13 @@ def analyse_pdf_and_enrich(dest: Path, doc: dict, score: int,
             pass
         return out
 
+    if text and pdf_processor.text_is_repository_banner_only(text):
+        print(f"     ⊘  Scan sans couche texte (seule la page de garde du dépôt "
+              f"est lisible, {len(text)} chars) — pas d'enrichissement")
+        out["enrich_abandon"] = {"reason": "scan sans couche texte",
+                                 "date": datetime.now().strftime("%Y-%m-%d")}
+        out["score_final"] = None
+        return out
     if text:
         print(f"     📖  Texte extrait ({len(text)} chars), enrichissement…")
         title_hint = doc.get("link_text") or doc["filename"]

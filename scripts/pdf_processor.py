@@ -434,3 +434,27 @@ if __name__ == "__main__":
         sys.exit(1)
     path = Path(sys.argv[1])
     print(json.dumps(quick_check(path), ensure_ascii=False, indent=2))
+
+
+# ── Scans sans couche texte ────────────────────────────────────────────────
+# Un PDF déposé sur HAL / DUMAS / TEL commence par une page de garde du dépôt.
+# Quand le reste du document est une image scannée, l'extraction ne rend QUE
+# cette page de garde : assez longue pour passer un seuil de caractères, mais
+# vide de contenu. On la reconnaît explicitement (constaté 18/09 sur
+# hal-02485830, 13 pages dont 12 en image).
+_REPO_BANNER_MARKERS = (
+    "hal is a multi-disciplinary open access archive",
+    "l'archive ouverte pluridisciplinaire",
+    "destinée au dépôt et à la diffusion de documents",
+)
+
+
+def text_is_repository_banner_only(text: str, max_chars: int = 2000) -> bool:
+    """Vrai si `text` ne contient que la page de garde d'une archive ouverte."""
+    if not text:
+        return True
+    low = text.lower()
+    if not any(m in low for m in _REPO_BANNER_MARKERS):
+        return False
+    # Page de garde présente : reste-t-il du contenu au-delà ?
+    return len(text.strip()) <= max_chars
