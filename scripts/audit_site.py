@@ -29,7 +29,9 @@ Usage : python3 scripts/audit_site.py
 """
 
 import json
+import os
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -40,6 +42,95 @@ import editorial  # noqa: E402  — _doc_title, logique canonique de titre
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 CATALOG = ROOT / "synopsis" / "catalog.json"
+
+
+class SiteRef:
+    """Lecture de `site/` depuis la bonne référence.
+
+    `site/` est reconstruit par la CI (rebuild-site.yml) puis poussé sur
+    origin/main ; il n'est jamais régénéré dans l'arbre de travail local, et le
+    checkout local est un clone partiel. Auditer la copie du disque depuis un
+    poste produisait donc des alertes entièrement fausses (18/09 : 4 contrôles
+    en défaut, dont 192 « divergences de titres », alors que le site publié
+    n'en avait aucune). La référence est donc :
+
+    - l'arbre de travail quand on tourne dans la CI (site/ vient d'y être
+      reconstruit et n'est pas encore poussé) ;
+    - `origin/main` partout ailleurs.
+
+    Forçable par la variable d'environnement BIBLIO_AUDIT_SITE=worktree|git.
+    """
+
+    def __init__(self) -> None:
+        mode = os.environ.get("BIBLIO_AUDIT_SITE", "").strip().lower()
+        if mode not in ("worktree", "git"):
+            mode = "worktree" if os.environ.get("GITHUB_ACTIONS") else "git"
+        if mode == "git" and not self._git_ok():
+            mode = "worktree"
+        self.mode = mode
+        self.label = "arbre de travail" if mode == "worktree" else "origin/main"
+
+    @staticmethod
+    def _git_ok() -> bool:
+        r = subprocess.run(["git", "-C", str(ROOT), "cat-file", "-e",
+                            "origin/main:site/sitemap.xml"], capture_output=True)
+        return r.returncode == 0
+
+    def _git(self, *args) -> subprocess.CompletedProcess:
+        return subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True)
+
+    def exists(self, rel: str) -> bool:
+        if self.mode == "worktree":
+            return (SITE / rel).exists()
+        return self._git("cat-file", "-e", f"origin/main:site/{rel}").returncode == 0
+
+    def read_text(self, rel: str) -> str:
+        if self.mode == "worktree":
+            return (SITE / rel).read_text(encoding="utf-8")
+        r = self._git("show", f"origin/main:site/{rel}")
+        return r.stdout.decode("utf-8", "replace")
+
+    def listdir(self, sub: str, suffix: str) -> list[str]:
+        """Noms de fichiers de `site/<sub>` se terminant par `suffix`."""
+        if self.mode == "worktree":
+            d = SITE / sub
+            if not d.is_dir():
+                return []
+            return [f.name for f in d.glob(f"*{suffix}")]
+        r = self._git("ls-tree", "--name-only", f"origin/main:site/{sub}")
+        if r.returncode != 0:
+            return []
+        return [n for n in r.stdout.decode().split("\n")
+                if n.endswith(suffix)]
+
+    def read_many(self, rels: list[str]) -> dict[str, str]:
+        """Lecture groupée — un seul `git cat-file --batch` au lieu de N appels."""
+        if self.mode == "worktree":
+            out = {}
+            for rel in rels:
+                f = SITE / rel
+                if f.exists():
+                    out[rel] = f.read_text(encoding="utf-8")
+            return out
+        req = "".join(f"origin/main:site/{rel}\n" for rel in rels)
+        r = subprocess.run(["git", "-C", str(ROOT), "cat-file", "--batch"],
+                           input=req.encode(), capture_output=True)
+        out, buf, i = {}, r.stdout, 0
+        for rel in rels:
+            nl = buf.find(b"\n", i)
+            if nl < 0:
+                break
+            header = buf[i:nl].decode("utf-8", "replace")
+            if header.endswith("missing"):
+                i = nl + 1
+                continue
+            size = int(header.rsplit(" ", 1)[1])
+            out[rel] = buf[nl + 1:nl + 1 + size].decode("utf-8", "replace")
+            i = nl + 1 + size + 1
+        return out
+
+
+SITE_REF = SiteRef()
 
 ID_RE = re.compile(r"^[0-9a-f]{8}$")
 
@@ -59,6 +150,19 @@ def _doc_id_of(stem: str, docs: dict):
     return head if ID_RE.match(head) else None
 
 
+class DEFERRED(list):
+    """Contrôle non exécuté ici, et qui le dit — ni succès, ni échec.
+
+    Un garde-fou qui signale à tort finit ignoré (18/09) : un contrôle qu'on
+    choisit de ne pas faire sur ce poste doit s'annoncer comme différé, pas
+    passer pour une anomalie.
+    """
+
+    def __init__(self, raison: str):
+        super().__init__([raison])
+        self.raison = raison
+
+
 def check_orphans(docs: dict, publishable: set) -> list[str]:
     """Aucun fichier par-document ne doit subsister pour un doc non publiable."""
     problems = []
@@ -69,14 +173,12 @@ def check_orphans(docs: dict, publishable: set) -> list[str]:
         ("assets/cards", "*.jpg"),
     ]
     for sub, pattern in targets:
-        directory = SITE / sub
-        if not directory.is_dir():
-            continue
+        suffix = pattern.lstrip("*")
         orphans = []
-        for f in directory.glob(pattern):
-            doc_id = _doc_id_of(f.stem, docs)
+        for name in SITE_REF.listdir(sub, suffix):
+            doc_id = _doc_id_of(name[: -len(suffix)], docs)
             if doc_id is not None and doc_id not in publishable:
-                orphans.append(f.name)
+                orphans.append(name)
         if orphans:
             problems.append(
                 f"{sub}/ : {len(orphans)} orphelin(s) — ex. {orphans[0]}"
@@ -87,13 +189,12 @@ def check_orphans(docs: dict, publishable: set) -> list[str]:
 def check_sitemap(publishable: set) -> list[str]:
     """Le sitemap doit lister exactement les fiches publiables, toutes
     présentes sur le disque."""
-    sitemap = SITE / "sitemap.xml"
-    if not sitemap.exists():
+    if not SITE_REF.exists("sitemap.xml"):
         return ["sitemap.xml absent"]
     listed = set(re.findall(r"fiches/([0-9a-f]{8})\.html",
-                            sitemap.read_text(encoding="utf-8")))
-    fiches_dir = SITE / "fiches"
-    on_disk = {f.stem for f in fiches_dir.glob("*.html") if ID_RE.match(f.stem)}
+                            SITE_REF.read_text("sitemap.xml")))
+    on_disk = {n[:-5] for n in SITE_REF.listdir("fiches", ".html")
+               if ID_RE.match(n[:-5])}
 
     problems = []
     missing_file = listed - on_disk
@@ -122,15 +223,25 @@ def check_lang(docs: dict, publishable: set) -> list[str]:
     réelle du document quand celle-ci est connue."""
     problems = []
     mismatches = []
-    for doc_id in publishable:
-        fiche = SITE / "fiches" / f"{doc_id}.html"
-        if not fiche.exists():
+    concernes = [i for i in sorted(publishable)
+                 if (docs[i].get("lang") or "").strip()]
+    # Ce contrôle est le seul à lire le contenu de centaines de fiches. Dans la
+    # CI, elles sont sur le disque et la lecture est immédiate. En local, elles
+    # sont lues depuis origin/main : sur ce dépôt (historique volumineux,
+    # compactage automatique en retard), une lecture groupée de ~800 objets
+    # prend plus d'une minute. On le diffère alors explicitement plutôt que de
+    # le faire silencieusement sur l'arbre de travail, qui est périmé.
+    if SITE_REF.mode == "git" and not os.environ.get("BIBLIO_AUDIT_LANG_FULL"):
+        return DEFERRED(f"{len(concernes)} fiches à lire depuis origin/main ; "
+                       f"le contrôle tourne à chaque rebuild-site.yml — pour le "
+                       f"forcer ici : BIBLIO_AUDIT_LANG_FULL=1")
+    fiches = SITE_REF.read_many([f"fiches/{i}.html" for i in concernes])
+    for doc_id in concernes:
+        contenu = fiches.get(f"fiches/{doc_id}.html")
+        if contenu is None:
             continue
         real = (docs[doc_id].get("lang") or "").strip().lower()
-        if not real:
-            continue  # langue inconnue : 'fr' par défaut, on ne tranche pas
-        m = re.search(r'"inLanguage":\s*"([^"]*)"',
-                      fiche.read_text(encoding="utf-8"))
+        m = re.search(r'"inLanguage":\s*"([^"]*)"', contenu)
         got = (m.group(1) if m else "").strip().lower()
         if got != real:
             mismatches.append(f"{doc_id} (doc={real or '∅'}, fiche={got or '∅'})")
@@ -157,13 +268,12 @@ def _detect_license(text: str):
 def check_license() -> list[str]:
     """La licence du fichier LICENSE doit être celle annoncée sur le site."""
     license_file = ROOT / "LICENSE"
-    apropos = SITE / "apropos.html"
     if not license_file.exists():
         return ["fichier LICENSE absent"]
-    if not apropos.exists():
+    if not SITE_REF.exists("apropos.html"):
         return ["site/apropos.html absent — licence du site non vérifiable"]
     lic = _detect_license(license_file.read_text(encoding="utf-8"))
-    site = _detect_license(apropos.read_text(encoding="utf-8"))
+    site = _detect_license(SITE_REF.read_text("apropos.html"))
     if lic is None:
         return ["LICENSE : licence non reconnue"]
     if site is None:
@@ -183,9 +293,8 @@ def check_editorial_titles(docs: dict) -> list[str]:
     problems = []
     mismatches = []
 
-    dossiers_path = SITE / "data" / "dossiers.json"
-    if dossiers_path.exists():
-        data = json.loads(dossiers_path.read_text(encoding="utf-8"))
+    if SITE_REF.exists("data/dossiers.json"):
+        data = json.loads(SITE_REF.read_text("data/dossiers.json"))
         for dossier in data.get("dossiers", []):
             for entry in dossier.get("docs_detail", []):
                 doc_id = entry.get("id")
@@ -199,9 +308,8 @@ def check_editorial_titles(docs: dict) -> list[str]:
                         f"{doc_id} (dossiers.json='{got}', attendu='{expected}')"
                     )
 
-    featured_path = SITE / "data" / "featured.json"
-    if featured_path.exists():
-        data = json.loads(featured_path.read_text(encoding="utf-8"))
+    if SITE_REF.exists("data/featured.json"):
+        data = json.loads(SITE_REF.read_text("data/featured.json"))
         feat = data.get("featured")
         if feat:
             doc_id = feat.get("id")
@@ -237,10 +345,13 @@ def main() -> int:
     ]
 
     print(f"audit_site — {len(docs)} docs au catalogue, "
-          f"{len(publishable)} publiables\n")
+          f"{len(publishable)} publiables "
+          f"— site/ lu depuis : {SITE_REF.label}\n")
     failed = 0
     for name, problems in checks:
-        if problems:
+        if isinstance(problems, DEFERRED):
+            print(f"  ⏭  {name} — différé : {problems.raison}")
+        elif problems:
             failed += 1
             print(f"  ✗  {name}")
             for p in problems:

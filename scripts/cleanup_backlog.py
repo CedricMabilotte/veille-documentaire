@@ -92,6 +92,17 @@ COVER_CHUNK = 10
 PUSH_MAX_BYTES = 6_000_000   # liaison montante lente : au-delà, le push meurt   # couvertures JPEG 1200px ≈ 200-300 Ko : ~3 Mo par push
 
 
+def _ignored(files: list[Path]) -> list[str]:
+    """Chemins de `files` qu'un `.gitignore` exclut du versionnement."""
+    if not files:
+        return []
+    rels = [f.relative_to(ROOT).as_posix() for f in files]
+    r = subprocess.run(["git", "-C", str(ROOT), "check-ignore", "--stdin"],
+                       input="\n".join(rels) + "\n",
+                       capture_output=True, text=True)
+    return [l for l in r.stdout.split("\n") if l.strip()]
+
+
 def _push_files(files: list[Path], message: str) -> bool:
     """Un commit (rebasé sur origin/main) qui remplace uniquement `files`, puis push."""
     for attempt in range(3):
@@ -152,6 +163,17 @@ def commit_push(message: str, paths: list[str] | None = None) -> bool:
     for pth in paths:
         pp = ROOT / pth
         files += [pp] if pp.is_file() else sorted(f for f in pp.rglob("*") if f.is_file())
+    # Garde-fou (L65, 18/09) : cette fonction compare fichier à fichier avec
+    # origin/main et ne lit donc PAS .gitignore — un fichier ignoré, absent du
+    # distant, ressort comme « modifié ». `docs` (1 071 PDF, 3,5 Go) est ainsi
+    # parti en lots avant d'être arrêté à la main. Le contrôle porte sur les
+    # fichiers énumérés : `.gitignore` dit `docs/*`, donc le répertoire `docs`
+    # lui-même n'est PAS ignoré et le tester ne détectait rien.
+    ignores = _ignored(files)
+    if ignores:
+        log(f"  ✗ commit_push refusé — {len(ignores)} fichier(s) ignoré(s) par "
+            f".gitignore sous {', '.join(paths)} — ex. {ignores[0]}")
+        return False
     changed = []
     for f in files:
         rel = f.relative_to(ROOT).as_posix()

@@ -43,6 +43,26 @@ SENTINELS = [
     ("data/catalog.json",      "data/catalog.json"),
 ]
 
+def reference_bytes(rel: str) -> tuple[bytes | None, str]:
+    """Contenu de référence d'un fichier sentinelle de `site/`.
+
+    `site/` est un artefact reconstruit par la CI (rebuild-site.yml) puis poussé
+    sur origin/main — il n'est jamais régénéré dans l'arbre de travail local, et
+    le checkout est un clone partiel. Comparer le live à la copie du disque
+    produisait donc de fausses alertes (18/09 : copie locale à 998 fiches contre
+    817 réellement publiées). La référence est `origin/main`, avec repli sur le
+    disque quand git n'est pas disponible.
+    """
+    r = subprocess.run(["git", "-C", str(SITE_PATH.parent), "show",
+                        f"origin/main:site/{rel}"], capture_output=True)
+    if r.returncode == 0 and r.stdout:
+        return r.stdout, "origin/main"
+    local_path = SITE_PATH / rel
+    if local_path.exists():
+        return local_path.read_bytes(), "arbre local"
+    return None, "-"
+
+
 def md5(data: bytes) -> str:
     return hashlib.md5(data).hexdigest()
 
@@ -106,11 +126,10 @@ def main() -> int:
     ecarts = []
 
     for local_rel, live_rel in SENTINELS:
-        local_path = SITE_PATH / local_rel
-        if not local_path.exists():
-            print(f"  ?  {local_rel} absent localement — ignoré")
+        local_data, origine = reference_bytes(local_rel)
+        if local_data is None:
+            print(f"  ?  {local_rel} introuvable (ni sur origin/main, ni localement) — ignoré")
             continue
-        local_data  = local_path.read_bytes()
         live_data   = fetch(f"{BASE_URL}/{live_rel}")
         if live_data is None:
             ecarts.append(local_rel)
@@ -118,10 +137,10 @@ def main() -> int:
         if md5(local_data) != md5(live_data):
             ecarts.append(local_rel)
             print(f"  ✗  ÉCART : {local_rel}")
-            print(f"       local  md5={md5(local_data)}")
-            print(f"       live   md5={md5(live_data)}")
+            print(f"       {origine:<12} md5={md5(local_data)}")
+            print(f"       live         md5={md5(live_data)}")
         else:
-            print(f"  ✓  {local_rel}")
+            print(f"  ✓  {local_rel}  (référence : {origine})")
 
     print()
     size_ok = check_site_size()
