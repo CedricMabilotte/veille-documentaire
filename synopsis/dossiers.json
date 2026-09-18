@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T14:14:44Z",
+  "generated_at": "2026-09-18T15:03:22Z",
   "total_dossiers": 10,
   "dossiers": [
     {
@@ -8,6 +8,8 @@
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
       "doc_count": 122,
       "docs": [
+        "0b22d51b",
+        "5f5dadd2",
         "e41de87d",
         "931fc89b",
         "2ab410d3",
@@ -36,16 +38,15 @@
         "b877caba",
         "14d55842",
         "9e831a55",
-        "e5341cc9",
+        "2db11a52",
         "7b89d6d1",
         "572794b2",
-        "5f5dadd2",
         "97c3bbb4",
+        "85a0da6c",
         "1ce39b6d",
         "2e2e4bc7",
         "ed6b79d9",
         "99a6d367",
-        "b0917bdf",
         "089ddfba",
         "2e5629b5",
         "51240b12",
@@ -86,8 +87,6 @@
         "75de4c14",
         "ab3b2eb1",
         "91c6dc3a",
-        "2db11a52",
-        "85a0da6c",
         "28b7cb2c",
         "2175f7a3",
         "12a4e254",
@@ -110,6 +109,7 @@
         "8ee3f263",
         "fc44409e",
         "02b2b6df",
+        "e5341cc9",
         "258bddb2",
         "089a2666",
         "597a51e1",
@@ -132,6 +132,24 @@
         "bd18d74a"
       ],
       "docs_detail": [
+        {
+          "id": "0b22d51b",
+          "title": "Communs fonciers en conflit au Mexique: les ejidos dans l'économie mondialisée",
+          "score": 9,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
+          "id": "5f5dadd2",
+          "title": "Communs fonciers pour l'habitat dans les Suds",
+          "score": 9,
+          "matched_on": [
+            "propriété d'usage",
+            "anti-spéculat",
+            "community land trust"
+          ]
+        },
         {
           "id": "e41de87d",
           "title": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
@@ -364,8 +382,8 @@
           ]
         },
         {
-          "id": "e5341cc9",
-          "title": "Des communs « fonciers » aux communs informationnels. Traits communs et différences.",
+          "id": "2db11a52",
+          "title": "Chaire Valcom — Valoriser les communs fonciers",
           "score": 8,
           "matched_on": [
             "propriété d'usage"
@@ -377,7 +395,6 @@
           "score": 8,
           "matched_on": [
             "propriété d'usage",
-            "anti-spéculat",
             "community land trust"
           ]
         },
@@ -386,17 +403,7 @@
           "title": "Les communaux en Europe occidentale: approche historique",
           "score": 8,
           "matched_on": [
-            "propriété d'usage",
-            "inaliénab"
-          ]
-        },
-        {
-          "id": "5f5dadd2",
-          "title": "Communs fonciers pour l'habitat dans les Suds",
-          "score": 8,
-          "matched_on": [
-            "propriété d'usage",
-            "anti-spéculat"
+            "propriété d'usage"
           ]
         },
         {
@@ -404,7 +411,16 @@
           "title": "Le community land ownership écossais : un État partenaire des communs ?",
           "score": 8,
           "matched_on": [
-            "propriété d'usage"
+            "anti-spéculat"
+          ]
+        },
+        {
+          "id": "85a0da6c",
+          "title": "Le propre du commun. Une lecture juridique des pratiques de commun à partir du tandem indisponibilité-affectation",
+          "score": 8,
+          "matched_on": [
+            "propriété d'usage",
+            "fonds de dotation"
           ]
         },
         {
@@ -438,14 +454,6 @@
           "score": 8,
           "matched_on": [
             "community land trust"
-          ]
-        },
-        {
-          "id": "b0917bdf",
-          "title": "Integrating Customary Tenure into Formal Systems",
-          "score": 8,
-          "matched_on": [
-            "propriété d'usage"
           ]
         },
         {
@@ -790,23 +798,6 @@
           ]
         },
         {
-          "id": "2db11a52",
-          "title": "Chaire Valcom — Valoriser les communs fonciers",
-          "score": 7,
-          "matched_on": [
-            "propriété d'usage"
-          ]
-        },
-        {
-          "id": "85a0da6c",
-          "title": "Le propre du commun. Une lecture juridique des pratiques de commun à partir du tandem indisponibilité-affectation",
-          "score": 7,
-          "matched_on": [
-            "propriété d'usage",
-            "fonds de dotation"
-          ]
-        },
-        {
           "id": "28b7cb2c",
           "title": "The Cooperative Way of Housing in Canada",
           "score": 7,
@@ -981,6 +972,14 @@
         {
           "id": "02b2b6df",
           "title": "C'est quoi la ZAD ?",
+          "score": 6,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
+          "id": "e5341cc9",
+          "title": "Des communs « fonciers » aux communs informationnels. Traits communs et différences.",
           "score": 6,
           "matched_on": [
             "propriété d'usage"
@@ -2271,14 +2270,12 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 494,
+      "doc_count": 491,
       "docs": [
         "5a9397e7",
         "8bfe460c",
+        "0b22d51b",
         "e41de87d",
-        "03b9d287",
-        "35641d6d",
-        "dc1574ae",
         "44510a9a",
         "931fc89b",
         "b225af88",
@@ -2437,11 +2434,10 @@
         "9e831a55",
         "c99e6da4",
         "55db5001",
-        "e5341cc9",
+        "2db11a52",
         "7b89d6d1",
-        "0b22d51b",
         "572794b2",
-        "97c3bbb4",
+        "46327ff6",
         "a91bd215",
         "1ce39b6d",
         "ae302e09",
@@ -2595,9 +2591,8 @@
         "ec46400e",
         "568f8778",
         "e8ee5514",
-        "2db11a52",
         "d64f2d03",
-        "46327ff6",
+        "35641d6d",
         "6772ded1",
         "b7d54170",
         "235a98fb",
@@ -2670,6 +2665,7 @@
         "02b2b6df",
         "4bc13839",
         "a238e5bd",
+        "e5341cc9",
         "bfc53f3a",
         "b85c8bc1",
         "95e763e1",
@@ -2787,39 +2783,20 @@
           ]
         },
         {
+          "id": "0b22d51b",
+          "title": "Communs fonciers en conflit au Mexique: les ejidos dans l'économie mondialisée",
+          "score": 9,
+          "matched_on": [
+            "sans-terre",
+            "réforme agraire"
+          ]
+        },
+        {
           "id": "e41de87d",
           "title": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
           "score": 9,
           "matched_on": [
             "réforme agraire"
-          ]
-        },
-        {
-          "id": "03b9d287",
-          "title": "Combate, Año 3, N°29, 18 de Abril de 1959",
-          "score": 9,
-          "matched_on": [
-            "réforme agraire",
-            "reforma agraria",
-            "latifundi"
-          ]
-        },
-        {
-          "id": "35641d6d",
-          "title": "Lunes de Revolución, N°1, 18 de Mayo de 1959",
-          "score": 9,
-          "matched_on": [
-            "réforme agraire",
-            "reforma agraria"
-          ]
-        },
-        {
-          "id": "dc1574ae",
-          "title": "Combate, Año 3, N°33, 23 de Abril de 1959",
-          "score": 9,
-          "matched_on": [
-            "réforme agraire",
-            "reforma agraria"
           ]
         },
         {
@@ -4332,11 +4309,11 @@
           ]
         },
         {
-          "id": "e5341cc9",
-          "title": "Des communs « fonciers » aux communs informationnels. Traits communs et différences.",
+          "id": "2db11a52",
+          "title": "Chaire Valcom — Valoriser les communs fonciers",
           "score": 8,
           "matched_on": [
-            "réforme agraire"
+            "sans-terre"
           ]
         },
         {
@@ -4344,16 +4321,6 @@
           "title": "Communs fonciers pour des villes inclusives",
           "score": 8,
           "matched_on": [
-            "réforme agraire"
-          ]
-        },
-        {
-          "id": "0b22d51b",
-          "title": "Communs fonciers en conflit au Mexique: les ejidos dans l'économie mondialisée",
-          "score": 8,
-          "matched_on": [
-            "sans-terre",
-            "sans terre",
             "réforme agraire"
           ]
         },
@@ -4366,11 +4333,11 @@
           ]
         },
         {
-          "id": "97c3bbb4",
-          "title": "Le community land ownership écossais : un État partenaire des communs ?",
+          "id": "46327ff6",
+          "title": "Systèmes d'acteurs, freins et voies d'accès à la terre : l'agriculture locale martiniquaise, entre cadre foncier formel et pratiques socio-spatiales",
           "score": 8,
           "matched_on": [
-            "réforme agraire"
+            "sans terre"
           ]
         },
         {
@@ -5771,14 +5738,6 @@
           ]
         },
         {
-          "id": "2db11a52",
-          "title": "Chaire Valcom — Valoriser les communs fonciers",
-          "score": 7,
-          "matched_on": [
-            "sans-terre"
-          ]
-        },
-        {
           "id": "d64f2d03",
           "title": "Concurrence déloyale, créativité écrasée : l'agriculture vivrière en crise",
           "score": 7,
@@ -5787,11 +5746,13 @@
           ]
         },
         {
-          "id": "46327ff6",
-          "title": "Systèmes d'acteurs, freins et voies d'accès à la terre : l'agriculture locale martiniquaise, entre cadre foncier formel et pratiques socio-spatiales",
+          "id": "35641d6d",
+          "title": "Lunes de Revolución, N°1, 18 de Mayo de 1959",
           "score": 7,
           "matched_on": [
-            "sans terre"
+            "réforme agraire",
+            "reforma agraria",
+            "latifundi"
           ]
         },
         {
@@ -6451,6 +6412,14 @@
         {
           "id": "a238e5bd",
           "title": "Rivalry and Brotherhood — Politics in the Life of Farmers in Northern India",
+          "score": 6,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "e5341cc9",
+          "title": "Des communs « fonciers » aux communs informationnels. Traits communs et différences.",
           "score": 6,
           "matched_on": [
             "réforme agraire"
@@ -7292,6 +7261,9 @@
       "docs": [
         "d30c223f",
         "c8210481",
+        "d647480f",
+        "0b22d51b",
+        "5f5dadd2",
         "e41de87d",
         "05392c72",
         "96563571",
@@ -7386,12 +7358,11 @@
         "632651da",
         "75b5c5f8",
         "9e831a55",
-        "e5341cc9",
+        "2db11a52",
         "7b89d6d1",
-        "0b22d51b",
         "572794b2",
-        "5f5dadd2",
         "97c3bbb4",
+        "85a0da6c",
         "a91bd215",
         "1ce39b6d",
         "ae302e09",
@@ -7399,7 +7370,6 @@
         "2e2e4bc7",
         "ed6b79d9",
         "99a6d367",
-        "b0917bdf",
         "089ddfba",
         "08baa6d1",
         "b8b0bfd8",
@@ -7473,8 +7443,6 @@
         "5ad6ebc5",
         "ab3b2eb1",
         "91c6dc3a",
-        "2db11a52",
-        "85a0da6c",
         "28b7cb2c",
         "2175f7a3",
         "12a4e254",
@@ -7516,11 +7484,12 @@
         "070edf21",
         "fc44409e",
         "4bc13839",
-        "d647480f",
+        "e5341cc9",
         "7cf86983",
         "b85c8bc1",
         "b651aa85",
         "83b6390f",
+        "b0917bdf",
         "6125738a",
         "3731bf2e",
         "95e763e1",
@@ -7582,6 +7551,35 @@
           "score": 10,
           "matched_on": [
             "commons"
+          ]
+        },
+        {
+          "id": "d647480f",
+          "title": "Communs « fonciers », communs « informationnels ». Traits communs et différences.",
+          "score": 9,
+          "matched_on": [
+            "communaux",
+            "biens communaux",
+            "communs fonciers",
+            "enclosure"
+          ]
+        },
+        {
+          "id": "0b22d51b",
+          "title": "Communs fonciers en conflit au Mexique: les ejidos dans l'économie mondialisée",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers",
+            "terres collectives"
+          ]
+        },
+        {
+          "id": "5f5dadd2",
+          "title": "Communs fonciers pour l'habitat dans les Suds",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers",
+            "terres collectives"
           ]
         },
         {
@@ -8402,14 +8400,13 @@
           ]
         },
         {
-          "id": "e5341cc9",
-          "title": "Des communs « fonciers » aux communs informationnels. Traits communs et différences.",
+          "id": "2db11a52",
+          "title": "Chaire Valcom — Valoriser les communs fonciers",
           "score": 8,
           "matched_on": [
             "communaux",
-            "biens communaux",
             "communs fonciers",
-            "enclosure"
+            "terres collectives"
           ]
         },
         {
@@ -8419,17 +8416,6 @@
           "matched_on": [
             "communs fonciers",
             "terres collectives"
-          ]
-        },
-        {
-          "id": "0b22d51b",
-          "title": "Communs fonciers en conflit au Mexique: les ejidos dans l'économie mondialisée",
-          "score": 8,
-          "matched_on": [
-            "communs fonciers",
-            "terres collectives",
-            "terres communales",
-            "enclosure"
           ]
         },
         {
@@ -8445,15 +8431,6 @@
           ]
         },
         {
-          "id": "5f5dadd2",
-          "title": "Communs fonciers pour l'habitat dans les Suds",
-          "score": 8,
-          "matched_on": [
-            "communs fonciers",
-            "commons"
-          ]
-        },
-        {
           "id": "97c3bbb4",
           "title": "Le community land ownership écossais : un État partenaire des communs ?",
           "score": 8,
@@ -8461,6 +8438,14 @@
             "communs fonciers",
             "terres collectives",
             "terres communales",
+            "commons"
+          ]
+        },
+        {
+          "id": "85a0da6c",
+          "title": "Le propre du commun. Une lecture juridique des pratiques de commun à partir du tandem indisponibilité-affectation",
+          "score": 8,
+          "matched_on": [
             "enclosure"
           ]
         },
@@ -8519,14 +8504,6 @@
           "score": 8,
           "matched_on": [
             "commons"
-          ]
-        },
-        {
-          "id": "b0917bdf",
-          "title": "Integrating Customary Tenure into Formal Systems",
-          "score": 8,
-          "matched_on": [
-            "communs fonciers"
           ]
         },
         {
@@ -9154,26 +9131,6 @@
           ]
         },
         {
-          "id": "2db11a52",
-          "title": "Chaire Valcom — Valoriser les communs fonciers",
-          "score": 7,
-          "matched_on": [
-            "communaux",
-            "communs fonciers",
-            "terres collectives",
-            "enclosure"
-          ]
-        },
-        {
-          "id": "85a0da6c",
-          "title": "Le propre du commun. Une lecture juridique des pratiques de commun à partir du tandem indisponibilité-affectation",
-          "score": 7,
-          "matched_on": [
-            "communs fonciers",
-            "enclosure"
-          ]
-        },
-        {
           "id": "28b7cb2c",
           "title": "The Cooperative Way of Housing in Canada",
           "score": 7,
@@ -9525,8 +9482,8 @@
           ]
         },
         {
-          "id": "d647480f",
-          "title": "Communs « fonciers », communs « informationnels ». Traits communs et différences.",
+          "id": "e5341cc9",
+          "title": "Des communs « fonciers » aux communs informationnels. Traits communs et différences.",
           "score": 6,
           "matched_on": [
             "communaux",
@@ -9566,6 +9523,16 @@
           "matched_on": [
             "enclosure",
             "commons",
+            "common lands"
+          ]
+        },
+        {
+          "id": "b0917bdf",
+          "title": "Integrating Customary Tenure into Formal Systems",
+          "score": 6,
+          "matched_on": [
+            "terres communales",
+            "enclosure",
             "common lands"
           ]
         },
@@ -9942,11 +9909,13 @@
       "slug": "habitat-collectif-cooperatif",
       "titre": "Habitat collectif & coopératif",
       "chapo": "Habiter la terre autrement : coopératives d'habitants, habitat groupé, communautés intentionnelles, squats ruraux. Des formes de logement sorties de la spéculation et ancrées dans un sol partagé.",
-      "doc_count": 46,
+      "doc_count": 48,
       "docs": [
+        "5f5dadd2",
         "931fc89b",
         "f7638ce0",
         "c3c028c4",
+        "7b89d6d1",
         "8e03cbe1",
         "2e2e4bc7",
         "ed6b79d9",
@@ -9993,6 +9962,15 @@
       ],
       "docs_detail": [
         {
+          "id": "5f5dadd2",
+          "title": "Communs fonciers pour l'habitat dans les Suds",
+          "score": 9,
+          "matched_on": [
+            "habitat coopératif",
+            "logement collectif"
+          ]
+        },
+        {
           "id": "931fc89b",
           "title": "Community Land Trust — Leaflet",
           "score": 9,
@@ -10015,6 +9993,15 @@
           "score": 9,
           "matched_on": [
             "habitat coopératif"
+          ]
+        },
+        {
+          "id": "7b89d6d1",
+          "title": "Communs fonciers pour des villes inclusives",
+          "score": 8,
+          "matched_on": [
+            "habitat coopératif",
+            "logement collectif"
           ]
         },
         {
@@ -10402,14 +10389,13 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 639,
+      "doc_count": 635,
       "docs": [
         "5a9397e7",
         "8bfe460c",
+        "0b22d51b",
+        "5f5dadd2",
         "e41de87d",
-        "03b9d287",
-        "35641d6d",
-        "dc1574ae",
         "b225af88",
         "88bfc0cb",
         "c2ab1111",
@@ -10583,9 +10569,10 @@
         "c99e6da4",
         "e4f64264",
         "55db5001",
+        "2db11a52",
         "7b89d6d1",
-        "0b22d51b",
-        "5f5dadd2",
+        "572794b2",
+        "46327ff6",
         "a91bd215",
         "1ce39b6d",
         "ae302e09",
@@ -10787,10 +10774,7 @@
         "75de4c14",
         "5ad6ebc5",
         "ab3b2eb1",
-        "2db11a52",
         "d64f2d03",
-        "46327ff6",
-        "85a0da6c",
         "581a53c8",
         "a90d3977",
         "0861d0b3",
@@ -10899,7 +10883,6 @@
         "4bc13839",
         "a238e5bd",
         "5ea6c0cc",
-        "d647480f",
         "bfc53f3a",
         "b85c8bc1",
         "b651aa85",
@@ -11067,6 +11050,25 @@
           ]
         },
         {
+          "id": "0b22d51b",
+          "title": "Communs fonciers en conflit au Mexique: les ejidos dans l'économie mondialisée",
+          "score": 9,
+          "matched_on": [
+            "paysan",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "5f5dadd2",
+          "title": "Communs fonciers pour l'habitat dans les Suds",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
           "id": "e41de87d",
           "title": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
           "score": 9,
@@ -11074,33 +11076,6 @@
             "paysannerie",
             "paysan",
             "agriculture vivrière"
-          ]
-        },
-        {
-          "id": "03b9d287",
-          "title": "Combate, Año 3, N°29, 18 de Abril de 1959",
-          "score": 9,
-          "matched_on": [
-            "paysannerie",
-            "paysan"
-          ]
-        },
-        {
-          "id": "35641d6d",
-          "title": "Lunes de Revolución, N°1, 18 de Mayo de 1959",
-          "score": 9,
-          "matched_on": [
-            "paysannerie",
-            "paysan"
-          ]
-        },
-        {
-          "id": "dc1574ae",
-          "title": "Combate, Año 3, N°33, 23 de Abril de 1959",
-          "score": 9,
-          "matched_on": [
-            "paysannerie",
-            "paysan"
           ]
         },
         {
@@ -13152,6 +13127,15 @@
           ]
         },
         {
+          "id": "2db11a52",
+          "title": "Chaire Valcom — Valoriser les communs fonciers",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
           "id": "7b89d6d1",
           "title": "Communs fonciers pour des villes inclusives",
           "score": 8,
@@ -13160,8 +13144,8 @@
           ]
         },
         {
-          "id": "0b22d51b",
-          "title": "Communs fonciers en conflit au Mexique: les ejidos dans l'économie mondialisée",
+          "id": "572794b2",
+          "title": "Les communaux en Europe occidentale: approche historique",
           "score": 8,
           "matched_on": [
             "paysannerie",
@@ -13169,12 +13153,14 @@
           ]
         },
         {
-          "id": "5f5dadd2",
-          "title": "Communs fonciers pour l'habitat dans les Suds",
+          "id": "46327ff6",
+          "title": "Systèmes d'acteurs, freins et voies d'accès à la terre : l'agriculture locale martiniquaise, entre cadre foncier formel et pratiques socio-spatiales",
           "score": 8,
           "matched_on": [
             "paysannerie",
-            "paysan"
+            "paysan",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
           ]
         },
         {
@@ -15341,15 +15327,6 @@
           ]
         },
         {
-          "id": "2db11a52",
-          "title": "Chaire Valcom — Valoriser les communs fonciers",
-          "score": 7,
-          "matched_on": [
-            "paysannerie",
-            "paysan"
-          ]
-        },
-        {
           "id": "d64f2d03",
           "title": "Concurrence déloyale, créativité écrasée : l'agriculture vivrière en crise",
           "score": 7,
@@ -15358,25 +15335,6 @@
             "paysan",
             "agriculture vivrière",
             "souveraineté alimentaire"
-          ]
-        },
-        {
-          "id": "46327ff6",
-          "title": "Systèmes d'acteurs, freins et voies d'accès à la terre : l'agriculture locale martiniquaise, entre cadre foncier formel et pratiques socio-spatiales",
-          "score": 7,
-          "matched_on": [
-            "paysannerie",
-            "paysan",
-            "agriculture vivrière",
-            "souveraineté alimentaire"
-          ]
-        },
-        {
-          "id": "85a0da6c",
-          "title": "Le propre du commun. Une lecture juridique des pratiques de commun à partir du tandem indisponibilité-affectation",
-          "score": 7,
-          "matched_on": [
-            "paysan"
           ]
         },
         {
@@ -16551,15 +16509,6 @@
             "paysannerie",
             "paysan",
             "peasant"
-          ]
-        },
-        {
-          "id": "d647480f",
-          "title": "Communs « fonciers », communs « informationnels ». Traits communs et différences.",
-          "score": 6,
-          "matched_on": [
-            "paysannerie",
-            "paysan"
           ]
         },
         {
@@ -18066,6 +18015,7 @@
       "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
       "doc_count": 283,
       "docs": [
+        "0b22d51b",
         "e41de87d",
         "88bfc0cb",
         "c2ab1111",
@@ -18159,10 +18109,8 @@
         "3d56fb12",
         "9e831a55",
         "55db5001",
-        "0b22d51b",
         "a91bd215",
         "2bf90eb8",
-        "b0917bdf",
         "5c12100c",
         "afcd5ef8",
         "1fbea3f9",
@@ -18290,6 +18238,7 @@
         "53b33470",
         "4bc13839",
         "5ea6c0cc",
+        "e5341cc9",
         "7cf86983",
         "6125738a",
         "fbb766e9",
@@ -18351,6 +18300,14 @@
         "f5977eb9"
       ],
       "docs_detail": [
+        {
+          "id": "0b22d51b",
+          "title": "Communs fonciers en conflit au Mexique: les ejidos dans l'économie mondialisée",
+          "score": 9,
+          "matched_on": [
+            "droit coutumier"
+          ]
+        },
         {
           "id": "e41de87d",
           "title": "La femme de ménage face aux inégalités socio-foncières à l'ouest de la Côte d'Ivoire : le défi de l'autosuffisance alimentaire contrarié par les pratiques foncières endogènes",
@@ -19156,14 +19113,6 @@
           ]
         },
         {
-          "id": "0b22d51b",
-          "title": "Communs fonciers en conflit au Mexique: les ejidos dans l'économie mondialisée",
-          "score": 8,
-          "matched_on": [
-            "droit coutumier"
-          ]
-        },
-        {
           "id": "a91bd215",
           "title": "Quelques idées sur le mouvement zapatiste (2014)",
           "score": 8,
@@ -19178,14 +19127,6 @@
           "matched_on": [
             "autochtone",
             "indigenous"
-          ]
-        },
-        {
-          "id": "b0917bdf",
-          "title": "Integrating Customary Tenure into Formal Systems",
-          "score": 8,
-          "matched_on": [
-            "autochtone"
           ]
         },
         {
@@ -20289,6 +20230,14 @@
           ]
         },
         {
+          "id": "e5341cc9",
+          "title": "Des communs « fonciers » aux communs informationnels. Traits communs et différences.",
+          "score": 6,
+          "matched_on": [
+            "droit coutumier"
+          ]
+        },
+        {
           "id": "7cf86983",
           "title": "Karl Marx al Sur",
           "score": 6,
@@ -20801,7 +20750,7 @@
       "slug": "feminismes-de-la-terre",
       "titre": "Féminismes de la terre",
       "chapo": "Le foncier a un genre. Place des femmes dans les luttes agraires, droits fonciers des femmes, écoféminisme rural, critique de la division genrée du travail de la terre.",
-      "doc_count": 134,
+      "doc_count": 135,
       "docs": [
         "e41de87d",
         "b225af88",
@@ -20927,6 +20876,7 @@
         "18fb51a5",
         "035d0b23",
         "d273ba77",
+        "b0917bdf",
         "5c511048",
         "a1f23085",
         "b64d8099",
@@ -22049,6 +21999,14 @@
           ]
         },
         {
+          "id": "b0917bdf",
+          "title": "Integrating Customary Tenure into Formal Systems",
+          "score": 6,
+          "matched_on": [
+            "droits fonciers des femmes"
+          ]
+        },
+        {
           "id": "5c511048",
           "title": "Acerca de las comunidades mapuche",
           "score": 6,
@@ -22135,10 +22093,12 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 385,
+      "doc_count": 384,
       "docs": [
         "d30c223f",
         "5a9397e7",
+        "d647480f",
+        "5f5dadd2",
         "05392c72",
         "96563571",
         "931fc89b",
@@ -22281,12 +22241,10 @@
         "75b5c5f8",
         "c99e6da4",
         "55db5001",
-        "e5341cc9",
+        "2db11a52",
         "7b89d6d1",
-        "0b22d51b",
         "572794b2",
-        "5f5dadd2",
-        "97c3bbb4",
+        "85a0da6c",
         "1ce39b6d",
         "2bf90eb8",
         "5c12100c",
@@ -22389,8 +22347,6 @@
         "74ad5743",
         "5ad6ebc5",
         "ab3b2eb1",
-        "2db11a52",
-        "85a0da6c",
         "581a53c8",
         "14f45ea3",
         "79cc5801",
@@ -22455,9 +22411,10 @@
         "53b33470",
         "4042cb84",
         "070edf21",
-        "d647480f",
+        "e5341cc9",
         "7cf86983",
         "83b6390f",
+        "b0917bdf",
         "3731bf2e",
         "95e763e1",
         "3d9a76fb",
@@ -22540,6 +22497,22 @@
             "accaparement",
             "land grab",
             "acaparamiento"
+          ]
+        },
+        {
+          "id": "d647480f",
+          "title": "Communs « fonciers », communs « informationnels ». Traits communs et différences.",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "5f5dadd2",
+          "title": "Communs fonciers pour l'habitat dans les Suds",
+          "score": 9,
+          "matched_on": [
+            "accaparement"
           ]
         },
         {
@@ -23756,11 +23729,11 @@
           ]
         },
         {
-          "id": "e5341cc9",
-          "title": "Des communs « fonciers » aux communs informationnels. Traits communs et différences.",
+          "id": "2db11a52",
+          "title": "Chaire Valcom — Valoriser les communs fonciers",
           "score": 8,
           "matched_on": [
-            "enclosure"
+            "accaparement"
           ]
         },
         {
@@ -23772,14 +23745,6 @@
           ]
         },
         {
-          "id": "0b22d51b",
-          "title": "Communs fonciers en conflit au Mexique: les ejidos dans l'économie mondialisée",
-          "score": 8,
-          "matched_on": [
-            "enclosure"
-          ]
-        },
-        {
           "id": "572794b2",
           "title": "Les communaux en Europe occidentale: approche historique",
           "score": 8,
@@ -23788,16 +23753,8 @@
           ]
         },
         {
-          "id": "5f5dadd2",
-          "title": "Communs fonciers pour l'habitat dans les Suds",
-          "score": 8,
-          "matched_on": [
-            "accaparement"
-          ]
-        },
-        {
-          "id": "97c3bbb4",
-          "title": "Le community land ownership écossais : un État partenaire des communs ?",
+          "id": "85a0da6c",
+          "title": "Le propre du commun. Une lecture juridique des pratiques de commun à partir du tandem indisponibilité-affectation",
           "score": 8,
           "matched_on": [
             "enclosure"
@@ -24668,23 +24625,6 @@
           ]
         },
         {
-          "id": "2db11a52",
-          "title": "Chaire Valcom — Valoriser les communs fonciers",
-          "score": 7,
-          "matched_on": [
-            "accaparement",
-            "enclosure"
-          ]
-        },
-        {
-          "id": "85a0da6c",
-          "title": "Le propre du commun. Une lecture juridique des pratiques de commun à partir du tandem indisponibilité-affectation",
-          "score": 7,
-          "matched_on": [
-            "enclosure"
-          ]
-        },
-        {
           "id": "581a53c8",
           "title": "ILC — Cartes des constituencies (2025)",
           "score": 7,
@@ -25229,8 +25169,8 @@
           ]
         },
         {
-          "id": "d647480f",
-          "title": "Communs « fonciers », communs « informationnels ». Traits communs et différences.",
+          "id": "e5341cc9",
+          "title": "Des communs « fonciers » aux communs informationnels. Traits communs et différences.",
           "score": 6,
           "matched_on": [
             "enclosure"
@@ -25249,6 +25189,16 @@
           "title": "Commonist Tendencies : Mutual Aid Beyond Communism",
           "score": 6,
           "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "b0917bdf",
+          "title": "Integrating Customary Tenure into Formal Systems",
+          "score": 6,
+          "matched_on": [
+            "accaparement",
+            "land grab",
             "enclosure"
           ]
         },
