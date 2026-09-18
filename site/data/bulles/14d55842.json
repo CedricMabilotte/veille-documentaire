@@ -1,103 +1,101 @@
 {
-  "titre_accroche": "Agriculture : sortir du marché, vivre de la terre",
-  "teaser": "Via Campesina répond à la Commission européenne : la crise du renouvellement générationnel ne se règle pas en renforçant le marché, mais en reconnectant l'agriculture aux droits humains et à l'autonomie paysanne.",
-  "abstract_editorial": "En juillet 2026, la European Coordination Via Campesina répond à la Stratégie européenne de renouvellement générationnel agricole. Le diagnostic de Bruxelles est lucide : l'agriculture européenne vieillit dramatiquement, les jeunes désertent les campagnes, les zones rurales se vident. Mais Via Campesina souligne un paradoxe fatal : la solution proposée demeure enfermée dans la même logique marchande qui a précisément provoqué la crise.\n\nTraiter l'agriculture et l'alimentation comme des marchandises, affirme l'organisation, c'est légitimer les règles du marché libre et perpétuer l'exploitation systématique. Le renouvellement générationnel ne peut survenir qu'en rupture radicale : retirer l'agriculture de la sphère du profit, reconnaître le droit à la terre et à l'accès foncier pour tous, valoriser l'agroécologie comme modèle structurant d'une agriculture autonome et juste.\n\nSur le plan foncier, l'Observatoire européen créé en réponse aux demandes historiques de Via Campesina demeure profondément insuffisant. Un outil informatif ne modifie en rien les règles d'accès à la terre ni le régime de propriété foncière. Pire : les « fausses solutions » promues—carbon farming, crédits naturels, diversification touristique—renforcent la financiarisation et la spéculation.\n\nVia Campesina plaide pour une Directive fondée sur l'UNDROP, capable de garantir l'accès à la terre comme droit humain, fixer des prix justes et instituer l'agroécologie en pilier du renouvellement générationnel. Elle refuse le paradigme du paysan-entrepreneur endetté au profit du paysan solidaire, autonome et producteur de biens communs.",
-  "citations_phares": [
-    {
-      "page": 2,
-      "quote": "By treating agricultural production and food as commodities rather than a human right, the strategy legitimises the application of free-market rules and their inevitable abuses"
-    },
-    {
-      "page": 2,
-      "quote": "We are farmers, not entrepreneurs. We work in solidarity, not competition."
-    },
-    {
-      "page": 3,
-      "quote": "Access to farming is a right for all young people who want to work in this sector."
-    }
-  ],
-  "categorisation": [
-    "paysannerie",
-    "accès à la terre",
-    "souveraineté alimentaire",
-    "agroécologie",
-    "droits des paysans",
-    "communs"
-  ],
-  "slug": "agriculture-autonome-droit-paysans",
-  "en_clair": "La Commission européenne promet d'aider les jeunes agriculteurs, mais ses solutions les transforment en entrepreneurs endettés et laissent la terre devenir une marchandise. Via Campesina demande une vraie réforme : garder l'agroécologie au centre, fixer des prix justes, faire de l'accès à la terre un droit, et construire une agriculture solidaire, pas une agriculture de profit.",
-  "acteurs": [
-    "European Commission / Commission européenne",
-    "Commissioner Hansen",
-    "ECVC / European Coordination Via Campesina",
-    "EU / Union européenne",
-    "Member States",
-    "young farmers / rural youth organisations"
-  ],
-  "controverse": "La contradiction entre l'objectif déclaré de renouvellement générationnel et la logique capitaliste-marchande que la stratégie perpétue : en laissant la terre et l'alimentation soumises au marché libre, on reproduit les mêmes mécanismes de concentration et d'inaccessibilité qui ont provoqué la crise générationnelle. La stratégie propose des outils (Land Observatory, aide financière) mais ne change ni les règles de propriété ni le modèle productif dominant (industriel plutôt qu'agroécologique).",
-  "angle_journalistique": "Comment une stratégie européenne de renouvellement générationnel agricole risque de créer une génération de jeunes paysans surendettés et prolétarisés plutôt que des paysans autonomes : enquête sur les brèches entre discours et mise en œuvre concrète de la CAP.",
-  "citations_verifiees": [
-    {
-      "quote": "By treating agricultural production and food as commodities rather than a human right, the strategy legitimises the application of free-market rules and their inevitable abuses",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "We are farmers, not entrepreneurs. We work in solidarity, not competition.",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "The strategy ignores the fact that agroecology is a production model that can boost generational renewal and an agrarian transition towards a sustainable, autonomous, and just production model",
-      "page": 3,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "Access to farming is a right for all young people who want to work in this sector.",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "Such a Directive should be based on the rights enshrined in the UNDROP (United Nations Declaration on the Rights of Peasants)",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "The Strategy recognises that market and legal failures – including speculative acquisitions, land grabbing and insecure tenure systems – are making farmland inaccessible to young farmers",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    },
-    {
-      "quote": "carbon farming and natural credits exacerbate the problem of land financialisation and speculation, inevitably impacting land prices",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    },
-    {
-      "quote": "the industrial model that the CAP has been supporting has in fact caused the disappearance of farms and young farmers",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "Rather than diversifying our income, we prefer diversifying our production. We are committed to adding value to our products... which enable us to control our production from start to finish",
-      "page": 4,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "As young farmers, we want to produce food and contribute to the food sovereignty of the regions where we live, which is under threat from corporate interests",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "8889a28966"
+ "titre_accroche": "Agriculture : sortir du marché, vivre de la terre",
+ "teaser": "Via Campesina répond à la Commission européenne : la crise du renouvellement générationnel ne se règle pas en renforçant le marché, mais en reconnectant l'agriculture aux droits humains et à l'autonomie paysanne.",
+ "abstract_editorial": "En juillet 2026, la European Coordination Via Campesina répond à la Stratégie européenne de renouvellement générationnel agricole. Le diagnostic de Bruxelles est lucide : l'agriculture européenne vieillit dramatiquement, les jeunes désertent les campagnes, les zones rurales se vident. Mais Via Campesina souligne un paradoxe fatal : la solution proposée demeure enfermée dans la même logique marchande qui a précisément provoqué la crise.\n\nTraiter l'agriculture et l'alimentation comme des marchandises, affirme l'organisation, c'est légitimer les règles du marché libre et perpétuer l'exploitation systématique. Le renouvellement générationnel ne peut survenir qu'en rupture radicale : retirer l'agriculture de la sphère du profit, reconnaître le droit à la terre et à l'accès foncier pour tous, valoriser l'agroécologie comme modèle structurant d'une agriculture autonome et juste.\n\nSur le plan foncier, l'Observatoire européen créé en réponse aux demandes historiques de Via Campesina demeure profondément insuffisant. Un outil informatif ne modifie en rien les règles d'accès à la terre ni le régime de propriété foncière. Pire : les « fausses solutions » promues—carbon farming, crédits naturels, diversification touristique—renforcent la financiarisation et la spéculation.\n\nVia Campesina plaide pour une Directive fondée sur l'UNDROP, capable de garantir l'accès à la terre comme droit humain, fixer des prix justes et instituer l'agroécologie en pilier du renouvellement générationnel. Elle refuse le paradigme du paysan-entrepreneur endetté au profit du paysan solidaire, autonome et producteur de biens communs.",
+ "citations_phares": [
+  {
+   "page": 2,
+   "quote": "By treating agricultural production and food as commodities rather than a human right, the strategy legitimises the application of free-market rules and their inevitable abuses"
+  },
+  {
+   "page": 2,
+   "quote": "We are farmers, not entrepreneurs. We work in solidarity, not competition."
+  },
+  {
+   "page": 3,
+   "quote": "Access to farming is a right for all young people who want to work in this sector."
+  }
+ ],
+ "categorisation": [
+  "paysannerie",
+  "accès à la terre",
+  "souveraineté alimentaire",
+  "agroécologie",
+  "droits des paysans",
+  "communs"
+ ],
+ "slug": "agriculture-autonome-droit-paysans",
+ "en_clair": "La Commission européenne promet d'aider les jeunes agriculteurs, mais ses solutions les transforment en entrepreneurs endettés et laissent la terre devenir une marchandise. Via Campesina demande une vraie réforme : garder l'agroécologie au centre, fixer des prix justes, faire de l'accès à la terre un droit, et construire une agriculture solidaire, pas une agriculture de profit.",
+ "acteurs": [
+  "European Commission / Commission européenne",
+  "Commissioner Hansen",
+  "ECVC / European Coordination Via Campesina",
+  "EU / Union européenne",
+  "Member States",
+  "young farmers / rural youth organisations"
+ ],
+ "controverse": "La contradiction entre l'objectif déclaré de renouvellement générationnel et la logique capitaliste-marchande que la stratégie perpétue : en laissant la terre et l'alimentation soumises au marché libre, on reproduit les mêmes mécanismes de concentration et d'inaccessibilité qui ont provoqué la crise générationnelle. La stratégie propose des outils (Land Observatory, aide financière) mais ne change ni les règles de propriété ni le modèle productif dominant (industriel plutôt qu'agroécologique).",
+ "angle_journalistique": "Comment une stratégie européenne de renouvellement générationnel agricole risque de créer une génération de jeunes paysans surendettés et prolétarisés plutôt que des paysans autonomes : enquête sur les brèches entre discours et mise en œuvre concrète de la CAP.",
+ "citations_verifiees": [
+  {
+   "quote": "By treating agricultural production and food as commodities rather than a human right, the strategy legitimises the application of free-market rules and their inevitable abuses",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "We are farmers, not entrepreneurs. We work in solidarity, not competition.",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "The strategy ignores the fact that agroecology is a production model that can boost generational renewal and an agrarian transition towards a sustainable, autonomous, and just production model",
+   "page": 3,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "Access to farming is a right for all young people who want to work in this sector.",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "Such a Directive should be based on the rights enshrined in the UNDROP (United Nations Declaration on the Rights of Peasants)",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "The Strategy recognises that market and legal failures – including speculative acquisitions, land grabbing and insecure tenure systems – are making farmland inaccessible to young farmers",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  },
+  {
+   "quote": "carbon farming and natural credits exacerbate the problem of land financialisation and speculation, inevitably impacting land prices",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  },
+  {
+   "quote": "the industrial model that the CAP has been supporting has in fact caused the disappearance of farms and young farmers",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "Rather than diversifying our income, we prefer diversifying our production. We are committed to adding value to our products... which enable us to control our production from start to finish",
+   "page": 4,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "As young farmers, we want to produce food and contribute to the food sovereignty of the regions where we live, which is under threat from corporate interests",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  }
+ ]
 }

@@ -1,92 +1,90 @@
 {
-  "titre_accroche": "Repenser la PAC : manifeste pour la souveraineté alimentaire paysanne",
-  "teaser": "La Via Campesina européenne propose une rupture radicale avec l'agriculture industrielle. Son plaidoyer pour la réforme de la PAC post-2027 redéfinit ce qu'une politique alimentaire juste pourrait être.",
-  "abstract_editorial": "Depuis trente ans, l'agriculture européenne disparaît. Quelques centaines de paysans perdus chaque jour, des fermes englouties par la concentration industrielle, des territoires ruraux vidés de leurs habitants : tel est le bilan de la Politique Agricole Commune. La Coordination Européenne de la Via Campesina rompt avec l'acceptation de cet ordre établi. Elle pose une question devenue radicale : et si la plus grande ligne budgétaire européenne servait à nourrir les paysans plutôt qu'à subventionner leur disparition ?\n\nCe positionnement pour la PAC post-2027 articule une vision cohérente du changement : reterritorialiser les systèmes alimentaires, réguler les marchés pour garantir des prix qui couvrent les coûts, valoriser l'accès à la terre comme bien commun, favoriser la petite exploitation diversifiée et agroécologique. C'est une critique frontale du modèle dominant—non au nom de l'écologie morale, mais au nom de la justice économique et de la survie paysanne.\n\nPour celles et ceux qui pensent les communs et la propriété d'usage, ce texte pose une question neuve : comment transformer les ressources communes (le budget public, la terre, la capacité productive) en instruments de justice et d'autonomie paysannes ? Il s'inscrit dans la tradition historique de la Via Campesina, qui définit la souveraineté alimentaire comme le droit des peuples à définir leurs propres systèmes agricoles—une souveraineté qui ne peut pas exister si les paysans ne peuvent pas rester dans les champs.",
-  "citations_phares": [
-    {
-      "page": 2,
-      "quote": "Food sovereignty, as defined by La Via Campesina in 1992, means the right of countries and their populations to define their own agricultural and food systems and policies"
-    },
-    {
-      "page": 2,
-      "quote": "The drastic disappearance of farms and loss of several hundred farmers every day, quickly replaced by large-scale and industrialised agricultural models"
-    },
-    {
-      "page": 3,
-      "quote": "Volume regulation must facilitate the deindustrialisation of agricultural systems and the reterritorialisation of agriculture and food"
-    }
-  ],
-  "categorisation": [
-    "souveraineté alimentaire",
-    "paysannerie",
-    "communs",
-    "politique agricole",
-    "accès à la terre",
-    "autonomie territoriale",
-    "justice économique",
-    "deindustrialisation"
-  ],
-  "slug": "pac-post-2027-manifeste-souverainete-alimentaire-paysanne",
-  "en_clair": "Ce texte demande que le plus gros budget européen serve à payer les paysans assez pour qu'ils vivent correctement, à augmenter le nombre de fermes, et à permettre à chacun·e de manger sainement sans dépendre des géants agroindustriels. C'est un plan pratique pour reprendre le pouvoir sur la nourriture, la terre et le travail rural.",
-  "acteurs": [
-    "European Coordination Via Campesina (ECVC)",
-    "La Via Campesina",
-    "European Union",
-    "European Commission",
-    "Member States"
-  ],
-  "controverse": "Tension centrale entre la 'renationalisation' des paiements agricoles (qui affaiblirait une PAC commune) et le maintien d'une politique agricole véritablement commune au niveau européen. ECVC critique la course aux enchères vers le bas en matière d'ambitions sociales et écologiques entre États membres si chacun gère seul ses paiements.",
-  "angle_journalistique": "Comment la réforme de la PAC post-2027 pourrait inverser la disparition accélérée des paysans européens en garantissant des prix agricoles justes et l'accès à la terre — et pourquoi cette question divise profondément l'UE.",
-  "citations_verifiees": [
-    {
-      "quote": "Food sovereignty, as defined by La Via Campesina in 1992, means the right of countries and their populations to define their own agricultural and food systems and policies",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "the drastic disappearance of farms and loss of several hundred farmers every day, quickly replaced by large-scale and industrialised agricultural models",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "ECVC calls for the next CAP reform to break away from the current agricultural model, which focuses on the interests of industry, distributors and agro-exporters that completely ignore the consequences for farmers and ecosystems",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "The next CMO must: Ensure remunerative and stable prices that cover production costs for producers (this includes wages and salaries reaching at least minimum wages)",
-      "page": 3,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "Volume regulation must facilitate the deindustrialisation of agricultural systems (in terms of livestock, volumes, areas, and capitalisation), and the reterritorialisation of agriculture and food",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "The CAP must allow access to land and move away from the logic of pushing farms to expand and specialise",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    },
-    {
-      "quote": "The CAP must support the development of diversified small-scale agriculture, bringing life to the rural areas and enabling everyone to eat properly",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    },
-    {
-      "quote": "It also involves decentralising the agri-food industry in an organised way, and thus, relocating services and businesses related to slaughter, milk collection, processing, etc to local territories",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "530af4d91d"
+ "titre_accroche": "Repenser la PAC : manifeste pour la souveraineté alimentaire paysanne",
+ "teaser": "La Via Campesina européenne propose une rupture radicale avec l'agriculture industrielle. Son plaidoyer pour la réforme de la PAC post-2027 redéfinit ce qu'une politique alimentaire juste pourrait être.",
+ "abstract_editorial": "Depuis trente ans, l'agriculture européenne disparaît. Quelques centaines de paysans perdus chaque jour, des fermes englouties par la concentration industrielle, des territoires ruraux vidés de leurs habitants : tel est le bilan de la Politique Agricole Commune. La Coordination Européenne de la Via Campesina rompt avec l'acceptation de cet ordre établi. Elle pose une question devenue radicale : et si la plus grande ligne budgétaire européenne servait à nourrir les paysans plutôt qu'à subventionner leur disparition ?\n\nCe positionnement pour la PAC post-2027 articule une vision cohérente du changement : reterritorialiser les systèmes alimentaires, réguler les marchés pour garantir des prix qui couvrent les coûts, valoriser l'accès à la terre comme bien commun, favoriser la petite exploitation diversifiée et agroécologique. C'est une critique frontale du modèle dominant—non au nom de l'écologie morale, mais au nom de la justice économique et de la survie paysanne.\n\nPour celles et ceux qui pensent les communs et la propriété d'usage, ce texte pose une question neuve : comment transformer les ressources communes (le budget public, la terre, la capacité productive) en instruments de justice et d'autonomie paysannes ? Il s'inscrit dans la tradition historique de la Via Campesina, qui définit la souveraineté alimentaire comme le droit des peuples à définir leurs propres systèmes agricoles—une souveraineté qui ne peut pas exister si les paysans ne peuvent pas rester dans les champs.",
+ "citations_phares": [
+  {
+   "page": 2,
+   "quote": "Food sovereignty, as defined by La Via Campesina in 1992, means the right of countries and their populations to define their own agricultural and food systems and policies"
+  },
+  {
+   "page": 2,
+   "quote": "The drastic disappearance of farms and loss of several hundred farmers every day, quickly replaced by large-scale and industrialised agricultural models"
+  },
+  {
+   "page": 3,
+   "quote": "Volume regulation must facilitate the deindustrialisation of agricultural systems and the reterritorialisation of agriculture and food"
+  }
+ ],
+ "categorisation": [
+  "souveraineté alimentaire",
+  "paysannerie",
+  "communs",
+  "politique agricole",
+  "accès à la terre",
+  "autonomie territoriale",
+  "justice économique",
+  "deindustrialisation"
+ ],
+ "slug": "pac-post-2027-manifeste-souverainete-alimentaire-paysanne",
+ "en_clair": "Ce texte demande que le plus gros budget européen serve à payer les paysans assez pour qu'ils vivent correctement, à augmenter le nombre de fermes, et à permettre à chacun·e de manger sainement sans dépendre des géants agroindustriels. C'est un plan pratique pour reprendre le pouvoir sur la nourriture, la terre et le travail rural.",
+ "acteurs": [
+  "European Coordination Via Campesina (ECVC)",
+  "La Via Campesina",
+  "European Union",
+  "European Commission",
+  "Member States"
+ ],
+ "controverse": "Tension centrale entre la 'renationalisation' des paiements agricoles (qui affaiblirait une PAC commune) et le maintien d'une politique agricole véritablement commune au niveau européen. ECVC critique la course aux enchères vers le bas en matière d'ambitions sociales et écologiques entre États membres si chacun gère seul ses paiements.",
+ "angle_journalistique": "Comment la réforme de la PAC post-2027 pourrait inverser la disparition accélérée des paysans européens en garantissant des prix agricoles justes et l'accès à la terre — et pourquoi cette question divise profondément l'UE.",
+ "citations_verifiees": [
+  {
+   "quote": "Food sovereignty, as defined by La Via Campesina in 1992, means the right of countries and their populations to define their own agricultural and food systems and policies",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "the drastic disappearance of farms and loss of several hundred farmers every day, quickly replaced by large-scale and industrialised agricultural models",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "ECVC calls for the next CAP reform to break away from the current agricultural model, which focuses on the interests of industry, distributors and agro-exporters that completely ignore the consequences for farmers and ecosystems",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "The next CMO must: Ensure remunerative and stable prices that cover production costs for producers (this includes wages and salaries reaching at least minimum wages)",
+   "page": 3,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "Volume regulation must facilitate the deindustrialisation of agricultural systems (in terms of livestock, volumes, areas, and capitalisation), and the reterritorialisation of agriculture and food",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "The CAP must allow access to land and move away from the logic of pushing farms to expand and specialise",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  },
+  {
+   "quote": "The CAP must support the development of diversified small-scale agriculture, bringing life to the rural areas and enabling everyone to eat properly",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  },
+  {
+   "quote": "It also involves decentralising the agri-food industry in an organised way, and thus, relocating services and businesses related to slaughter, milk collection, processing, etc to local territories",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  }
+ ]
 }

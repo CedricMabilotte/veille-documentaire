@@ -1,103 +1,101 @@
 {
-  "titre_accroche": "Via Campesina : quand les paysans du monde disent non aux agro-TNCs",
-  "teaser": "Le rapport 2015 de La Via Campesina documente huit ans de résistance mondiale des paysans contre l'accaparement des terres, l'industrialisation agricole et pour la reconnaissance de leurs droits fonciers.",
-  "abstract_editorial": "Qui décide de quoi pousse sur les terres ? En 2015, La Via Campesina répond à cette question politique fondamentale non pas par des théories, mais par l'action coordonnée de plusieurs millions de paysans organisés sur quatre continents. Ce rapport annuel constitue un observatoire rare des luttes contemporaines pour le contrôle des terres, la réappropriation des semences et la construction d'une alternative alimentaire radicale.\n\nL'organisation opère selon trois axes inséparables. D'abord, la résistance frontale : bloquer l'accaparement des terres par les transnationales et l'agribusiness, contrer les lois de brevets qui criminalisent les paysans. Ensuite, la revendication institutionnelle : obtenir la reconnaissance des droits fonciers des paysans par les instances internationales (la Déclaration ONU en cours, franchissant une étape majeure en février 2015). Enfin, la construction de l'alternative : faire de l'agroécologie non pas un gadget écologique mais une rupture systématique avec le modèle agro-industriel.\n\nCe qui distingue Via Campesina dans le débat sur les communs et les terres : elle articule théorie et pratique, locale et mondiale, droits fonciers et souveraineté alimentaire. L'International Forum on Agroecology tenu au Mali montre cette fusion des savoirs paysans historiques et de l'expertise écologique contemporaine. Le positionnement radical « system change, not climate change » lie explicitement la crise climatique à la nécessité de transformer l'architecture agro-alimentaire mondiale. Pour le lectorat intéressé par la libération des terres et la paysannerie, ce document offre bien plus qu'un bilan : une cartographie des rapports de force réels.",
-  "citations_phares": [
-    {
-      "page": 11,
-      "quote": "Resist TNCs taking our land"
-    },
-    {
-      "page": 24,
-      "quote": "Farmers' rights to their land and territories have always been one of the core demands of the peasant's movement"
-    },
-    {
-      "page": 36,
-      "quote": "system change, not climate change"
-    }
-  ],
-  "categorisation": [
-    "paysannerie",
-    "terres et droits fonciers",
-    "agroécologie",
-    "souveraineté alimentaire",
-    "communs",
-    "mouvements internationaux",
-    "résistance aux TNCs",
-    "justice climatique"
-  ],
-  "slug": "via-campesina-rapport-2015-terres-paysans",
-  "en_clair": "Via Campesina regroupe des millions de paysans du monde entier qui refusent qu'on les expulse de leurs terres et qui cultivent sans empoisonner. En 2015, ils ont remporté une grande victoire : l'ONU a reconnu leurs droits comme paysans, ce qui donne des armes légales à tous ceux qui se battent pour garder la terre. Ce rapport montre comment des femmes paysannes, des jeunes, et des paysans de tous les continents coordonnent leurs luttes contre les grosses entreprises agroalimentaires qui veulent s'accaparer les terres et les semences.",
-  "acteurs": [
-    "La Via Campesina",
-    "CNOP (National Coordination of Peasant Organizations of Mali)",
-    "CLOC-Via Campesina",
-    "World Social Forum (Tunis, mars 2015)"
-  ],
-  "controverse": "Tension implicite entre le positionnement radical « system change, not climate change » (critique systémique du capitalisme) et l'engagement dans les arènes institutionnelles internationales (Déclaration ONU, négociations commerciales). Le document ne l'explicite pas, mais cela marque un dilemme classique des mouvements sociaux : comment transformer en profondeur tout en négociant dans les cadres existants ?",
-  "angle_journalistique": "La reconnaissance ONU des droits des paysans (2015) : comment cette victoire diplomatique redéfinit les rapports de force entre mouvements paysans et agribusiness au niveau mondial, et quels outils juridiques cette déclaration offre-t-elle concrètement aux sans-terre et aux paysans des Suds ?",
-  "citations_verifiees": [
-    {
-      "quote": "Resist TNCs taking our land",
-      "page": 11,
-      "page_physical": 11,
-      "verified": true
-    },
-    {
-      "quote": "Farmers' rights to their land and territories have always been one of the core demands of the peasant's movement",
-      "page": 24,
-      "page_physical": 24,
-      "verified": true
-    },
-    {
-      "quote": "system change, not climate change",
-      "page": 36,
-      "page_physical": 37,
-      "verified": true
-    },
-    {
-      "quote": "Land, water and territories (+ Campaign for agrarian reform)",
-      "page": 8,
-      "page_physical": 8,
-      "verified": true
-    },
-    {
-      "quote": "Seeds, biodiversity, peasant sustainable agriculture and agroecology",
-      "page": 8,
-      "page_physical": 8,
-      "verified": true
-    },
-    {
-      "quote": "the process towards a UN declaration on the rights of peasants made a major step forward in February",
-      "page": 18,
-      "page_physical": 18,
-      "verified": true
-    },
-    {
-      "quote": "seeds laws that criminalise farmers",
-      "page": 34,
-      "page_physical": 36,
-      "verified": true
-    },
-    {
-      "quote": "The woman articulation also organised womens' participation in various Via Campesina activities",
-      "page": 10,
-      "page_physical": 10,
-      "verified": true
-    },
-    {
-      "quote": "a strong declaration was launched to strengthen the struggle against agribusiness",
-      "page": 26,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "Agroecology... based on peasant agriculture",
-      "page": 20,
-      "page_physical": null,
-      "verified": false
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "2f02258d1b"
+ "titre_accroche": "Via Campesina : quand les paysans du monde disent non aux agro-TNCs",
+ "teaser": "Le rapport 2015 de La Via Campesina documente huit ans de résistance mondiale des paysans contre l'accaparement des terres, l'industrialisation agricole et pour la reconnaissance de leurs droits fonciers.",
+ "abstract_editorial": "Qui décide de quoi pousse sur les terres ? En 2015, La Via Campesina répond à cette question politique fondamentale non pas par des théories, mais par l'action coordonnée de plusieurs millions de paysans organisés sur quatre continents. Ce rapport annuel constitue un observatoire rare des luttes contemporaines pour le contrôle des terres, la réappropriation des semences et la construction d'une alternative alimentaire radicale.\n\nL'organisation opère selon trois axes inséparables. D'abord, la résistance frontale : bloquer l'accaparement des terres par les transnationales et l'agribusiness, contrer les lois de brevets qui criminalisent les paysans. Ensuite, la revendication institutionnelle : obtenir la reconnaissance des droits fonciers des paysans par les instances internationales (la Déclaration ONU en cours, franchissant une étape majeure en février 2015). Enfin, la construction de l'alternative : faire de l'agroécologie non pas un gadget écologique mais une rupture systématique avec le modèle agro-industriel.\n\nCe qui distingue Via Campesina dans le débat sur les communs et les terres : elle articule théorie et pratique, locale et mondiale, droits fonciers et souveraineté alimentaire. L'International Forum on Agroecology tenu au Mali montre cette fusion des savoirs paysans historiques et de l'expertise écologique contemporaine. Le positionnement radical « system change, not climate change » lie explicitement la crise climatique à la nécessité de transformer l'architecture agro-alimentaire mondiale. Pour le lectorat intéressé par la libération des terres et la paysannerie, ce document offre bien plus qu'un bilan : une cartographie des rapports de force réels.",
+ "citations_phares": [
+  {
+   "page": 11,
+   "quote": "Resist TNCs taking our land"
+  },
+  {
+   "page": 24,
+   "quote": "Farmers' rights to their land and territories have always been one of the core demands of the peasant's movement"
+  },
+  {
+   "page": 36,
+   "quote": "system change, not climate change"
+  }
+ ],
+ "categorisation": [
+  "paysannerie",
+  "terres et droits fonciers",
+  "agroécologie",
+  "souveraineté alimentaire",
+  "communs",
+  "mouvements internationaux",
+  "résistance aux TNCs",
+  "justice climatique"
+ ],
+ "slug": "via-campesina-rapport-2015-terres-paysans",
+ "en_clair": "Via Campesina regroupe des millions de paysans du monde entier qui refusent qu'on les expulse de leurs terres et qui cultivent sans empoisonner. En 2015, ils ont remporté une grande victoire : l'ONU a reconnu leurs droits comme paysans, ce qui donne des armes légales à tous ceux qui se battent pour garder la terre. Ce rapport montre comment des femmes paysannes, des jeunes, et des paysans de tous les continents coordonnent leurs luttes contre les grosses entreprises agroalimentaires qui veulent s'accaparer les terres et les semences.",
+ "acteurs": [
+  "La Via Campesina",
+  "CNOP (National Coordination of Peasant Organizations of Mali)",
+  "CLOC-Via Campesina",
+  "World Social Forum (Tunis, mars 2015)"
+ ],
+ "controverse": "Tension implicite entre le positionnement radical « system change, not climate change » (critique systémique du capitalisme) et l'engagement dans les arènes institutionnelles internationales (Déclaration ONU, négociations commerciales). Le document ne l'explicite pas, mais cela marque un dilemme classique des mouvements sociaux : comment transformer en profondeur tout en négociant dans les cadres existants ?",
+ "angle_journalistique": "La reconnaissance ONU des droits des paysans (2015) : comment cette victoire diplomatique redéfinit les rapports de force entre mouvements paysans et agribusiness au niveau mondial, et quels outils juridiques cette déclaration offre-t-elle concrètement aux sans-terre et aux paysans des Suds ?",
+ "citations_verifiees": [
+  {
+   "quote": "Resist TNCs taking our land",
+   "page": 11,
+   "page_physical": 11,
+   "verified": true
+  },
+  {
+   "quote": "Farmers' rights to their land and territories have always been one of the core demands of the peasant's movement",
+   "page": 24,
+   "page_physical": 24,
+   "verified": true
+  },
+  {
+   "quote": "system change, not climate change",
+   "page": 36,
+   "page_physical": 37,
+   "verified": true
+  },
+  {
+   "quote": "Land, water and territories (+ Campaign for agrarian reform)",
+   "page": 8,
+   "page_physical": 8,
+   "verified": true
+  },
+  {
+   "quote": "Seeds, biodiversity, peasant sustainable agriculture and agroecology",
+   "page": 8,
+   "page_physical": 8,
+   "verified": true
+  },
+  {
+   "quote": "the process towards a UN declaration on the rights of peasants made a major step forward in February",
+   "page": 18,
+   "page_physical": 18,
+   "verified": true
+  },
+  {
+   "quote": "seeds laws that criminalise farmers",
+   "page": 34,
+   "page_physical": 36,
+   "verified": true
+  },
+  {
+   "quote": "The woman articulation also organised womens' participation in various Via Campesina activities",
+   "page": 10,
+   "page_physical": 10,
+   "verified": true
+  },
+  {
+   "quote": "a strong declaration was launched to strengthen the struggle against agribusiness",
+   "page": 26,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "Agroecology... based on peasant agriculture",
+   "page": 20,
+   "page_physical": null,
+   "verified": false
+  }
+ ]
 }

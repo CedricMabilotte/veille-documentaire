@@ -1,108 +1,106 @@
 {
-  "titre_accroche": "Agroécologie politique : la Via Campesina contre l'accaparement foncier",
-  "teaser": "Rapport 2016 du mouvement paysan international : souveraineté alimentaire, lutte pour les terres, et décolonisation du système agroalimentaire face à la criminalisation des défenseurs des communs.",
-  "abstract_editorial": "La Via Campesina, mouvement international de paysannerie, livre en 2016 un diagnostic sans concession : la libération des terres et l'instauration d'une véritable souveraineté alimentaire passent par l'agroécologie politique, comprise comme rupture radicale avec le capitalisme global. Contre les accaparements fonciers, les traités commerciaux (TPP, CAP) et l'agro-industrie corporatiste, le mouvement mobilise ses réseaux continentaux et construit des espaces d'autonomie : marchés territorialisés, distribution alimentaire non-capitaliste, reprise des terres par les paysans sans-terre. Ce rapport détaille les conférences régionales qui ont articulation l'action collective autour de questions foncières brûlantes—notamment en Colombie où la violence d'État s'abat sur les défenseurs de l'accès à la terre. La place accordée aux femmes paysannes et au Mouvement des sans-terre brésilien (MST) montre une stratégie de transformation intersectionnelle. L'enjeu politique central : opposer la propriété d'usage et la réappropriation des communs (terres, eaux, forêts, semences) à l'impunité corporative et aux privatisations. Pour les lecteurs des Troisièmes Voix, ce texte élargit la perspective des communs au combat paysan global et à sa radicalité émancipatrice.",
-  "citations_phares": [
-    {
-      "page": 18,
-      "quote": "Agroecology as a struggle to liberate ourselves from the global capitalist system and attain food sovereignty"
-    },
-    {
-      "page": 33,
-      "quote": "privatizations, grabbing and taking over the commons and public goods such as land, water resources, forests, seeds"
-    },
-    {
-      "page": 18,
-      "quote": "It's a struggle for public policy that promotes peasant production, our local markets, and protection of our land"
-    }
-  ],
-  "categorisation": [
-    "paysannerie",
-    "communs",
-    "terres et accaparement",
-    "souveraineté alimentaire",
-    "agroécologie politique",
-    "autonomie territoriale",
-    "mouvements sociaux"
-  ],
-  "slug": "via-campesina-agroecologie-politique-2016",
-  "en_clair": "Un mouvement de paysans du monde entier se bat pour garder leurs terres et cultiver leur propre nourriture sans être écrasés par les grandes entreprises. Les femmes paysannes y jouent un rôle fort, notamment au Brésil, et des paysans sont tués pour avoir défendu ces droits.",
-  "acteurs": [
-    "La Via Campesina",
-    "MST (Landless Movement of Brazil / Movimento Sem Terra)",
-    "BAFLF (Bangladesh Agricultural Farmworkers' Federation)",
-    "FAO (Food and Agriculture Organization)",
-    "ECOWAS (Economic Community of West African States)",
-    "Berta Cáceres",
-    "Margarita Murillo",
-    "Bread for All",
-    "World Social Forum",
-    "UN Convention on Biological Diversity (CBD)"
-  ],
-  "controverse": "Tension majeure entre corporatisation agro-industrielle et contrôle paysan : La Via Campesina dénonce simultanément l'accaparement des terres, la criminalisation des leaders paysans (assassinats en Colombie, Honduras), la suppression des droits fonciers et l'expansion des traités de libre-échange (TPP, CAP européenne) qui renforcent le monopole corporatif sur semences, marchés et terres.",
-  "angle_journalistique": "Enquête sur la stratégie globale de répression des mouvements paysans pour la terre : qui bénéficie des assassinats de leaders (Cáceres, Murillo) et comment les traités commerciaux accélèrent l'accaparement légal là où la répression extrajudiciaire fonctionne.",
-  "citations_verifiees": [
-    {
-      "quote": "Agroecology as a struggle to liberate ourselves from the global capitalist system and attain food sovereignty",
-      "page": 18,
-      "page_physical": 18,
-      "verified": true
-    },
-    {
-      "quote": "It´s a struggle for public policy that promotes peasant production, our local markets, and protection of our land",
-      "page": 18,
-      "page_physical": 18,
-      "verified": true
-    },
-    {
-      "quote": "The rights of peasants'initiative, which La Via Campesina started 15years ago, began a process within the United",
-      "page": 20,
-      "page_physical": 20,
-      "verified": true
-    },
-    {
-      "quote": "privatizations, grabbing and taking over the commons and public goods such as land, water resources, forests, seeds",
-      "page": 33,
-      "page_physical": 34,
-      "verified": true
-    },
-    {
-      "quote": "17 April –20 years after the massacre: The Maraba conference on Agrarian Reform",
-      "page": 34,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "Colombia had the highest number of reported killings of peasant leaders defending their rights",
-      "page": 22,
-      "page_physical": 22,
-      "verified": true
-    },
-    {
-      "quote": "women from the Landless Movement of Brazil (MST), organised in more than 21 states",
-      "page": 49,
-      "page_physical": 52,
-      "verified": true
-    },
-    {
-      "quote": "It´s solidarity between rural and urban, peasants and workers, our organizations and our allies in cities",
-      "page": 18,
-      "page_physical": 18,
-      "verified": true
-    },
-    {
-      "quote": "Territorial markets and food distribution systems",
-      "page": 16,
-      "page_physical": 17,
-      "verified": true
-    },
-    {
-      "quote": "In 2016, faced with unprecedented dairy crisis, the EU opted to use subsidies to resolve the situation",
-      "page": 38,
-      "page_physical": 38,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "dc6c72da09"
+ "titre_accroche": "Agroécologie politique : la Via Campesina contre l'accaparement foncier",
+ "teaser": "Rapport 2016 du mouvement paysan international : souveraineté alimentaire, lutte pour les terres, et décolonisation du système agroalimentaire face à la criminalisation des défenseurs des communs.",
+ "abstract_editorial": "La Via Campesina, mouvement international de paysannerie, livre en 2016 un diagnostic sans concession : la libération des terres et l'instauration d'une véritable souveraineté alimentaire passent par l'agroécologie politique, comprise comme rupture radicale avec le capitalisme global. Contre les accaparements fonciers, les traités commerciaux (TPP, CAP) et l'agro-industrie corporatiste, le mouvement mobilise ses réseaux continentaux et construit des espaces d'autonomie : marchés territorialisés, distribution alimentaire non-capitaliste, reprise des terres par les paysans sans-terre. Ce rapport détaille les conférences régionales qui ont articulation l'action collective autour de questions foncières brûlantes—notamment en Colombie où la violence d'État s'abat sur les défenseurs de l'accès à la terre. La place accordée aux femmes paysannes et au Mouvement des sans-terre brésilien (MST) montre une stratégie de transformation intersectionnelle. L'enjeu politique central : opposer la propriété d'usage et la réappropriation des communs (terres, eaux, forêts, semences) à l'impunité corporative et aux privatisations. Pour les lecteurs des Troisièmes Voix, ce texte élargit la perspective des communs au combat paysan global et à sa radicalité émancipatrice.",
+ "citations_phares": [
+  {
+   "page": 18,
+   "quote": "Agroecology as a struggle to liberate ourselves from the global capitalist system and attain food sovereignty"
+  },
+  {
+   "page": 33,
+   "quote": "privatizations, grabbing and taking over the commons and public goods such as land, water resources, forests, seeds"
+  },
+  {
+   "page": 18,
+   "quote": "It's a struggle for public policy that promotes peasant production, our local markets, and protection of our land"
+  }
+ ],
+ "categorisation": [
+  "paysannerie",
+  "communs",
+  "terres et accaparement",
+  "souveraineté alimentaire",
+  "agroécologie politique",
+  "autonomie territoriale",
+  "mouvements sociaux"
+ ],
+ "slug": "via-campesina-agroecologie-politique-2016",
+ "en_clair": "Un mouvement de paysans du monde entier se bat pour garder leurs terres et cultiver leur propre nourriture sans être écrasés par les grandes entreprises. Les femmes paysannes y jouent un rôle fort, notamment au Brésil, et des paysans sont tués pour avoir défendu ces droits.",
+ "acteurs": [
+  "La Via Campesina",
+  "MST (Landless Movement of Brazil / Movimento Sem Terra)",
+  "BAFLF (Bangladesh Agricultural Farmworkers' Federation)",
+  "FAO (Food and Agriculture Organization)",
+  "ECOWAS (Economic Community of West African States)",
+  "Berta Cáceres",
+  "Margarita Murillo",
+  "Bread for All",
+  "World Social Forum",
+  "UN Convention on Biological Diversity (CBD)"
+ ],
+ "controverse": "Tension majeure entre corporatisation agro-industrielle et contrôle paysan : La Via Campesina dénonce simultanément l'accaparement des terres, la criminalisation des leaders paysans (assassinats en Colombie, Honduras), la suppression des droits fonciers et l'expansion des traités de libre-échange (TPP, CAP européenne) qui renforcent le monopole corporatif sur semences, marchés et terres.",
+ "angle_journalistique": "Enquête sur la stratégie globale de répression des mouvements paysans pour la terre : qui bénéficie des assassinats de leaders (Cáceres, Murillo) et comment les traités commerciaux accélèrent l'accaparement légal là où la répression extrajudiciaire fonctionne.",
+ "citations_verifiees": [
+  {
+   "quote": "Agroecology as a struggle to liberate ourselves from the global capitalist system and attain food sovereignty",
+   "page": 18,
+   "page_physical": 18,
+   "verified": true
+  },
+  {
+   "quote": "It´s a struggle for public policy that promotes peasant production, our local markets, and protection of our land",
+   "page": 18,
+   "page_physical": 18,
+   "verified": true
+  },
+  {
+   "quote": "The rights of peasants'initiative, which La Via Campesina started 15years ago, began a process within the United",
+   "page": 20,
+   "page_physical": 20,
+   "verified": true
+  },
+  {
+   "quote": "privatizations, grabbing and taking over the commons and public goods such as land, water resources, forests, seeds",
+   "page": 33,
+   "page_physical": 34,
+   "verified": true
+  },
+  {
+   "quote": "17 April –20 years after the massacre: The Maraba conference on Agrarian Reform",
+   "page": 34,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "Colombia had the highest number of reported killings of peasant leaders defending their rights",
+   "page": 22,
+   "page_physical": 22,
+   "verified": true
+  },
+  {
+   "quote": "women from the Landless Movement of Brazil (MST), organised in more than 21 states",
+   "page": 49,
+   "page_physical": 52,
+   "verified": true
+  },
+  {
+   "quote": "It´s solidarity between rural and urban, peasants and workers, our organizations and our allies in cities",
+   "page": 18,
+   "page_physical": 18,
+   "verified": true
+  },
+  {
+   "quote": "Territorial markets and food distribution systems",
+   "page": 16,
+   "page_physical": 17,
+   "verified": true
+  },
+  {
+   "quote": "In 2016, faced with unprecedented dairy crisis, the EU opted to use subsidies to resolve the situation",
+   "page": 38,
+   "page_physical": 38,
+   "verified": true
+  }
+ ]
 }

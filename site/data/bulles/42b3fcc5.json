@@ -1,70 +1,68 @@
 {
-  "titre_accroche": "Meriam Ismael : quand l'occupation étoufle le mouvement paysan",
-  "teaser": "Un cas de censure contre une paysanne palestinienne révèle comment la confiscation des terres et l'occupation coloniale fragmentent la mobilisation internationale des femmes paysannes pour la souveraineté alimentaire.",
-  "abstract_editorial": "Ce document du rapport de la Via Campesina expose une violation systémique des droits humains rarement nommée : l'interdiction faite à Meriam Ismael, paysanne palestinienne, de quitter son territoire pour participer aux rencontres du mouvement paysan mondial. Au-delà du droit à la mobilité, ce cas révèle comment l'occupation israélienne utilise la confiscation des terres et la destruction des cultures comme armes d'étouffement politique.\n\nL'importance de ce témoignage pour les lecteurs de Troisième Voix réside dans son articulation explicite : occupation coloniale, accaparement des terres, et répression des paysannes ne sont pas des phénomènes séparés, mais des facettes d'une même stratégie. La confiscation systématique des oliviers palestiniens n'est pas une spoliation économique ordinaire—c'est une tentative de réduire au silence ceux et celles qui pourraient témoigner de cette spoilation sur la scène internationale.\n\nLe texte souligne que l'unité des femmes paysannes est le nerf de la guerre pour les luttes pour la souveraineté alimentaire et la transformation du système agricole. En fragments le mouvement paysan international par des restrictions de circulation, on affaiblit précisément les voix les plus porteuses : celles des femmes du Sud paysan qui, comme Meriam, expérimentent quotidiennement l'entrelacement de l'oppression coloniale, de la dépossession foncière et du patriarcat. Un texte de solidarité radicale et de clarté politique.",
-  "citations_phares": [
-    {
-      "page": 30,
-      "quote": "Les forces armées israéliennes et les colons sionistes confisquent les terres, arrachent les oliviers et détruisent les cultures"
-    },
-    {
-      "page": 30,
-      "quote": "L'unité des femmes est très importante pour les luttes en faveur de la souveraineté alimentaire et de la transformation du système"
-    },
-    {
-      "page": 30,
-      "quote": "Nous dénonçons les tentatives continues de réduire au silence la voix des femmes et des paysans palestiniens"
-    }
-  ],
-  "categorisation": [
-    "paysannerie",
-    "communs et terre",
-    "souveraineté alimentaire",
-    "colonialisme",
-    "résistance internationale",
-    "femmes paysannes",
-    "droits humains"
-  ],
-  "slug": "meriam-ismael-occupation-mouvement-paysan",
-  "en_clair": "Une femme paysanne palestinienne ne peut pas quitter son pays pour rencontrer d'autres paysannes du monde, parce que l'armée israélienne et les colons prennent ses terres et détruisent ses récoltes. Ce texte montre pourquoi les paysannes du monde entier doivent s'unir pour se battre ensemble contre ceux qui leur volent leurs terres.",
-  "acteurs": [
-    "Meriam Ismael",
-    "Structure Internationale des Femmes de la Via Campesina (Nekazarien Bideko Emakumeen Nazioarteko Egituraketak)"
-  ],
-  "controverse": "Conflit central entre occupation/colonialisme israélien et droit des paysans palestiniens à l'autodétermination territoriale, à l'usage des terres, à la libre circulation et à la participation aux mobilisations paysannes internationales. Tension entre sécurité d'État (prétext israélien) et droits humains fondamentaux des paysans.",
-  "angle_journalistique": "Comment la Via Campesina mobilise la solidarité internationale contre l'occupation et la confiscation des terres en Palestine, en mettant l'accent sur le rôle des femmes paysannes comme actrices de la résistance et de la souveraineté alimentaire.",
-  "citations_verifiees": [
-    {
-      "quote": "Israelgo armadak eta kolono sionistek lurrak konfiskatu, olibondoak erauzi eta laborantzak hondatzen dizkietelako",
-      "page": 30,
-      "page_physical": 30,
-      "verified": true
-    },
-    {
-      "quote": "emakumeek bat egitea oso garrantzitsua dela elikaduraren burujabetzaren eta sistemaren eraldaketaren aldeko borrokatan",
-      "page": 30,
-      "page_physical": 30,
-      "verified": true
-    },
-    {
-      "quote": "Palestinako herriak burujabetzaren eta independentziaren alde garatutako borrokak babesten ditugu",
-      "page": 30,
-      "page_physical": 30,
-      "verified": true
-    },
-    {
-      "quote": "zirkulazio askea eta lekualdatzeko eskubidea urratzen dituelako",
-      "page": 30,
-      "page_physical": 30,
-      "verified": true
-    },
-    {
-      "quote": "Palestinako emakumeen eta nekazarien hitza entzun ez dadin etengabe egindako saialdiak salatzen ditugu",
-      "page": 30,
-      "page_physical": 30,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "cb6a418778"
+ "titre_accroche": "Meriam Ismael : quand l'occupation étoufle le mouvement paysan",
+ "teaser": "Un cas de censure contre une paysanne palestinienne révèle comment la confiscation des terres et l'occupation coloniale fragmentent la mobilisation internationale des femmes paysannes pour la souveraineté alimentaire.",
+ "abstract_editorial": "Ce document du rapport de la Via Campesina expose une violation systémique des droits humains rarement nommée : l'interdiction faite à Meriam Ismael, paysanne palestinienne, de quitter son territoire pour participer aux rencontres du mouvement paysan mondial. Au-delà du droit à la mobilité, ce cas révèle comment l'occupation israélienne utilise la confiscation des terres et la destruction des cultures comme armes d'étouffement politique.\n\nL'importance de ce témoignage pour les lecteurs de Troisième Voix réside dans son articulation explicite : occupation coloniale, accaparement des terres, et répression des paysannes ne sont pas des phénomènes séparés, mais des facettes d'une même stratégie. La confiscation systématique des oliviers palestiniens n'est pas une spoliation économique ordinaire—c'est une tentative de réduire au silence ceux et celles qui pourraient témoigner de cette spoilation sur la scène internationale.\n\nLe texte souligne que l'unité des femmes paysannes est le nerf de la guerre pour les luttes pour la souveraineté alimentaire et la transformation du système agricole. En fragments le mouvement paysan international par des restrictions de circulation, on affaiblit précisément les voix les plus porteuses : celles des femmes du Sud paysan qui, comme Meriam, expérimentent quotidiennement l'entrelacement de l'oppression coloniale, de la dépossession foncière et du patriarcat. Un texte de solidarité radicale et de clarté politique.",
+ "citations_phares": [
+  {
+   "page": 30,
+   "quote": "Les forces armées israéliennes et les colons sionistes confisquent les terres, arrachent les oliviers et détruisent les cultures"
+  },
+  {
+   "page": 30,
+   "quote": "L'unité des femmes est très importante pour les luttes en faveur de la souveraineté alimentaire et de la transformation du système"
+  },
+  {
+   "page": 30,
+   "quote": "Nous dénonçons les tentatives continues de réduire au silence la voix des femmes et des paysans palestiniens"
+  }
+ ],
+ "categorisation": [
+  "paysannerie",
+  "communs et terre",
+  "souveraineté alimentaire",
+  "colonialisme",
+  "résistance internationale",
+  "femmes paysannes",
+  "droits humains"
+ ],
+ "slug": "meriam-ismael-occupation-mouvement-paysan",
+ "en_clair": "Une femme paysanne palestinienne ne peut pas quitter son pays pour rencontrer d'autres paysannes du monde, parce que l'armée israélienne et les colons prennent ses terres et détruisent ses récoltes. Ce texte montre pourquoi les paysannes du monde entier doivent s'unir pour se battre ensemble contre ceux qui leur volent leurs terres.",
+ "acteurs": [
+  "Meriam Ismael",
+  "Structure Internationale des Femmes de la Via Campesina (Nekazarien Bideko Emakumeen Nazioarteko Egituraketak)"
+ ],
+ "controverse": "Conflit central entre occupation/colonialisme israélien et droit des paysans palestiniens à l'autodétermination territoriale, à l'usage des terres, à la libre circulation et à la participation aux mobilisations paysannes internationales. Tension entre sécurité d'État (prétext israélien) et droits humains fondamentaux des paysans.",
+ "angle_journalistique": "Comment la Via Campesina mobilise la solidarité internationale contre l'occupation et la confiscation des terres en Palestine, en mettant l'accent sur le rôle des femmes paysannes comme actrices de la résistance et de la souveraineté alimentaire.",
+ "citations_verifiees": [
+  {
+   "quote": "Israelgo armadak eta kolono sionistek lurrak konfiskatu, olibondoak erauzi eta laborantzak hondatzen dizkietelako",
+   "page": 30,
+   "page_physical": 30,
+   "verified": true
+  },
+  {
+   "quote": "emakumeek bat egitea oso garrantzitsua dela elikaduraren burujabetzaren eta sistemaren eraldaketaren aldeko borrokatan",
+   "page": 30,
+   "page_physical": 30,
+   "verified": true
+  },
+  {
+   "quote": "Palestinako herriak burujabetzaren eta independentziaren alde garatutako borrokak babesten ditugu",
+   "page": 30,
+   "page_physical": 30,
+   "verified": true
+  },
+  {
+   "quote": "zirkulazio askea eta lekualdatzeko eskubidea urratzen dituelako",
+   "page": 30,
+   "page_physical": 30,
+   "verified": true
+  },
+  {
+   "quote": "Palestinako emakumeen eta nekazarien hitza entzun ez dadin etengabe egindako saialdiak salatzen ditugu",
+   "page": 30,
+   "page_physical": 30,
+   "verified": true
+  }
+ ]
 }

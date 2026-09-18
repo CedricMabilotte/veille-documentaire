@@ -1,74 +1,72 @@
 {
-  "titre_accroche": "Gleba Tauá : terre publique, violence privée, impunité d'État",
-  "teaser": "Au Brésil, 60 familles de posseiros se battent pour conserver leur terre face aux armes privées d'un grileiro. Un communiqué de la CPT dénonce la spirale de violences et l'impunité judiciaire.",
-  "abstract_editorial": "La Gleba Tauá, au Tocantins (Brésil), incarne l'un des conflits fonciers les plus révélateurs du continent : celui entre la possession réelle et l'appropriation forcée, entre le droit formellement établi et l'impunité pratique. Depuis au moins 2012, soixante familles de posseiros—nées et élevées sur ces terres—y vivent en cultivateurs occupants. C'est une possession incarnée, territoriale, inscrite dans plusieurs générations. Pourtant, depuis novembre 2022, ces familles subissent une « spirale absurde de violence » orchestrée par un grileiro nommé Pedro Amaro, appuyé par des pistoleiros (hommes armés) chargés de « nettoyer la zone ».\n\nCe qui rend ce cas exemplaire pour le débat sur les communs et la libération des terres, c'est la contradiction criante : la Gleba Tauá est légalement une terre publique, certifiée comme telle. Un juge a ordonné à plusieurs reprises l'arrêt immédiat des violences. Pourtant, malgré 27 plaintes enregistrées, la Polícia Civil do Tocantins n'agit pas. Les pistoleiros déclarent crânement : « Os juízes aqui somos nós »—« Les juges ici, c'est nous »—révélant une domination par la violence privée où l'État abdique de son rôle de garant du droit.\n\nCe communiqué de la Comissão Pastoral da Terra (CPT), datant du 18 avril 2023, documente plus que des faits bruts : il expose le mécanisme par lequel la propriété formelle (l'État propriétaire) devient impuissante face à l'appropriation violente (la possession armée). Pour un lectorat réfléchissant aux communs, à la propriété d'usage et à la paysannerie, ce texte pose la question politique essentielle : à qui appartient vraiment la terre ? Et comment les peuples paysans peuvent-ils défendre une légalité que l'État refuse d'honorer ?",
-  "citations_phares": [
-    {
-      "page": 1,
-      "quote": "60 famílias entre posseiros, nascidos e criados lá e ocupantes presentes na área desde 2012"
-    },
-    {
-      "page": 2,
-      "quote": "Os juízes aqui somos nós!"
-    },
-    {
-      "page": 1,
-      "quote": "Gleba Tauá é uma área comprovadamente pública, conforme demonstra a certidão de inteiro teor do imóvel"
-    }
-  ],
-  "categorisation": [
-    "communs",
-    "paysannerie",
-    "appropriation foncière",
-    "possession et propriété",
-    "violence d'État",
-    "Brésil",
-    "autonomie territoriale"
-  ],
-  "slug": "gleba-taua-terre-publique-violence-privee",
-  "en_clair": "Soixante familles qui vivent sur une terre depuis longtemps se battent contre un homme riche qui veut les chasser avec des hommes armés. Même le juge a dit « arrêtez », mais la police ne fait rien et les attaques continuent. Cela montre comment les paysans sans titre formel sont écrasés par la violence privée quand l'État ne protège pas.",
-  "acteurs": [
-    "Valdinez Pereira dos Santos (leader)",
-    "Pedro Amaro (grileiro/appropriateur)",
-    "Articulação Camponesa de Luta e Defesa pelos Territórios",
-    "Comissão Pastoral da Terra (CPT) — Araguaia Tocantins",
-    "Polícia Civil do Tocantins",
-    "Juiz da Comarca de Goiatins"
-  ],
-  "controverse": "Conflit entre le droit formel (terre publique, décision judiciaire d'arrêt de la violence) et le rapport de force réel (pistoleiros armés, impunité de la Polícia Civil). Question implicite : comment l'État peut-il coexister avec une domination privée armée qui ignore les ordres des juges ?",
-  "angle_journalistique": "Enquête sur l'impunité des grileiros au Tocantins et le rôle de la CPT dans les luttes foncières brésiliennes contemporaines ; reportage immersif auprès des 60 familles vivant sous la menace et la violence structurelle.",
-  "citations_verifiees": [
-    {
-      "quote": "60 famílias entre posseiros, nascidos e criados lá e ocupantes presentes na área desde 2012",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "grileiro Pedro Amaro para 'limpar a área' da Gleba Tauá",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "Gleba Tauá é uma área comprovadamente pública, conforme demonstra a certidão de inteiro teor do imóvel",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "Os juízes aqui somos nós!",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "Valdinez Pereira dos Santos, conhecida liderança da Articulação Camponesa de Luta e Defesa pelos Territórios",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "1ee6c7036b"
+ "titre_accroche": "Gleba Tauá : terre publique, violence privée, impunité d'État",
+ "teaser": "Au Brésil, 60 familles de posseiros se battent pour conserver leur terre face aux armes privées d'un grileiro. Un communiqué de la CPT dénonce la spirale de violences et l'impunité judiciaire.",
+ "abstract_editorial": "La Gleba Tauá, au Tocantins (Brésil), incarne l'un des conflits fonciers les plus révélateurs du continent : celui entre la possession réelle et l'appropriation forcée, entre le droit formellement établi et l'impunité pratique. Depuis au moins 2012, soixante familles de posseiros—nées et élevées sur ces terres—y vivent en cultivateurs occupants. C'est une possession incarnée, territoriale, inscrite dans plusieurs générations. Pourtant, depuis novembre 2022, ces familles subissent une « spirale absurde de violence » orchestrée par un grileiro nommé Pedro Amaro, appuyé par des pistoleiros (hommes armés) chargés de « nettoyer la zone ».\n\nCe qui rend ce cas exemplaire pour le débat sur les communs et la libération des terres, c'est la contradiction criante : la Gleba Tauá est légalement une terre publique, certifiée comme telle. Un juge a ordonné à plusieurs reprises l'arrêt immédiat des violences. Pourtant, malgré 27 plaintes enregistrées, la Polícia Civil do Tocantins n'agit pas. Les pistoleiros déclarent crânement : « Os juízes aqui somos nós »—« Les juges ici, c'est nous »—révélant une domination par la violence privée où l'État abdique de son rôle de garant du droit.\n\nCe communiqué de la Comissão Pastoral da Terra (CPT), datant du 18 avril 2023, documente plus que des faits bruts : il expose le mécanisme par lequel la propriété formelle (l'État propriétaire) devient impuissante face à l'appropriation violente (la possession armée). Pour un lectorat réfléchissant aux communs, à la propriété d'usage et à la paysannerie, ce texte pose la question politique essentielle : à qui appartient vraiment la terre ? Et comment les peuples paysans peuvent-ils défendre une légalité que l'État refuse d'honorer ?",
+ "citations_phares": [
+  {
+   "page": 1,
+   "quote": "60 famílias entre posseiros, nascidos e criados lá e ocupantes presentes na área desde 2012"
+  },
+  {
+   "page": 2,
+   "quote": "Os juízes aqui somos nós!"
+  },
+  {
+   "page": 1,
+   "quote": "Gleba Tauá é uma área comprovadamente pública, conforme demonstra a certidão de inteiro teor do imóvel"
+  }
+ ],
+ "categorisation": [
+  "communs",
+  "paysannerie",
+  "appropriation foncière",
+  "possession et propriété",
+  "violence d'État",
+  "Brésil",
+  "autonomie territoriale"
+ ],
+ "slug": "gleba-taua-terre-publique-violence-privee",
+ "en_clair": "Soixante familles qui vivent sur une terre depuis longtemps se battent contre un homme riche qui veut les chasser avec des hommes armés. Même le juge a dit « arrêtez », mais la police ne fait rien et les attaques continuent. Cela montre comment les paysans sans titre formel sont écrasés par la violence privée quand l'État ne protège pas.",
+ "acteurs": [
+  "Valdinez Pereira dos Santos (leader)",
+  "Pedro Amaro (grileiro/appropriateur)",
+  "Articulação Camponesa de Luta e Defesa pelos Territórios",
+  "Comissão Pastoral da Terra (CPT) — Araguaia Tocantins",
+  "Polícia Civil do Tocantins",
+  "Juiz da Comarca de Goiatins"
+ ],
+ "controverse": "Conflit entre le droit formel (terre publique, décision judiciaire d'arrêt de la violence) et le rapport de force réel (pistoleiros armés, impunité de la Polícia Civil). Question implicite : comment l'État peut-il coexister avec une domination privée armée qui ignore les ordres des juges ?",
+ "angle_journalistique": "Enquête sur l'impunité des grileiros au Tocantins et le rôle de la CPT dans les luttes foncières brésiliennes contemporaines ; reportage immersif auprès des 60 familles vivant sous la menace et la violence structurelle.",
+ "citations_verifiees": [
+  {
+   "quote": "60 famílias entre posseiros, nascidos e criados lá e ocupantes presentes na área desde 2012",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "grileiro Pedro Amaro para 'limpar a área' da Gleba Tauá",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "Gleba Tauá é uma área comprovadamente pública, conforme demonstra a certidão de inteiro teor do imóvel",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "Os juízes aqui somos nós!",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "Valdinez Pereira dos Santos, conhecida liderança da Articulação Camponesa de Luta e Defesa pelos Territórios",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  }
+ ]
 }

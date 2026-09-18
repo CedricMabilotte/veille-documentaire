@@ -1,105 +1,103 @@
 {
-  "titre_accroche": "Solidarité continentale : les paysans et autochtones face à l'extractivisme",
-  "teaser": "La Vía Campesina mobilise l'Amérique latine et les Caraïbes autour d'un projet politique: reprendre les terres, arrêter la militarisation et construire la souveraineté alimentaire face au modèle néolibéral.",
-  "abstract_editorial": "En décembre 2023, La Vía Campesina réunit ses délégués à Bogotá pour affirmer une conviction : les paysans et peuples autochtones sont les acteurs centraux de la transformation socio-territoriale face à l'extractivisme et au néolibéralisme. Ce document de solidarité continentale dépasse la rhétorique pour nommer des combats concrets — la militarisation du peuple Mapuche au Chili, l'exploitation minière au Panamá, les mobilisations de 70 jours au Guatemala, la lutte pour la décolonisation en Haïti et Porto Rico. La critique porte sur un modèle agraire précis : l'agroexportation, l'extractivisme hydrique et forestier ont transformé les campagnes en zones de sacrifice, abandonnant les familles paysannes aux crises climatiques. Face à cela, La Vía Campesina oppose la souveraineté alimentaire comme fondement d'un ordre mondial alternatif et exige une action étatique — politiques publiques, cessation des persécutions contre les défenseurs, reconnaissance des droits territoriaux. Le texte articule ainsi trois enjeux essentiels pour le lectorat des communs : l'autonomie territoriale comme condition politique, la propriété d'usage contre la prédation extractiviste, et l'organisation paysanne comme vecteur d'une décolonisation réelle.",
-  "citations_phares": [
-    {
-      "page": 1,
-      "quote": "llamamos al cese de la persecución contra los pueblos indígenas que defienden sus tierras y territorios"
-    },
-    {
-      "page": 1,
-      "quote": "Denunciamos el avance del neoliberalismo en el campo chileno, expresado en un modelo de producción centrado en la agroexportación y el extractivismo hídrico, minero y forestal"
-    },
-    {
-      "page": 1,
-      "quote": "el derecho inalienable del pueblo de Puerto Rico a su libre determinación, descolonización e independencia"
-    }
-  ],
-  "categorisation": [
-    "paysannerie",
-    "autochtonie",
-    "autonomie territoriale",
-    "communs",
-    "souveraineté alimentaire",
-    "décolonisation",
-    "extractivisme",
-    "libération des terres",
-    "Amérique latine"
-  ],
-  "slug": "via-campesina-solidarite-paysans-autochtones-amerique-latine",
-  "en_clair": "La Vía Campesina (le mouvement des paysans du monde) dit : en Amérique latine, les paysans et les peuples autochtones se battent ensemble pour garder leurs terres et nourrir leurs familles, contre les grosses mines et l'agriculture d'exportation qui les appauvrissent. Pour vaincre, il faut construire une souveraineté alimentaire, c'est-à-dire que chaque peuple produise son propre manger au lieu de le vendre aux multinationales.",
-  "acteurs": [
-    "La Vía Campesina",
-    "pueblos indígenas de Guatemala",
-    "autoridades indígenas",
-    "pueblos de Panamá",
-    "pueblo haitiano",
-    "pueblo de Puerto Rico",
-    "Borikén (Puerto Rico)",
-    "pueblo Mapuche",
-    "Estado ecuatoriano",
-    "Corte Constitucional de Ecuador",
-    "empresa Furukawa"
-  ],
-  "controverse": "Tension majeure entre modèle d'État néolibéral extractiviste (agroexportation, minería, privatisation des ressources) et autonomie territoriale des peuples autochtones et paysans. Le texte criminalise la violence d'État (militarisation, persécution raciste, inaction face aux crises climatiques) et appelle à la construction d'une souveraineté alimentaire continentale comme alternative.",
-  "angle_journalistique": "Comment les mouvements paysans et autochtones latino-américains tissent une solidarité continentale face aux crises climatiques et à l'extractivisme, et pourquoi la souveraineté alimentaire devient leur horizon d'alternative politique.",
-  "citations_verifiees": [
-    {
-      "quote": "llamamos al cese de la persecución contra los pueblos indígenas que defienden sus tierras y territorios",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "Denunciamos el avance del neoliberalismo en el campo chileno, expresado en un modelo de producción centrado en la agroexportación y el extractivismo hídrico, minero y forestal",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "la violencia, persecución y juicios racistas a dirigentes, autoridades tradicionales y militarización histórica contra el pueblo nación Mapuche",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "familias campesinas quedan en abandono por sus gobiernos, cuando el Estado debe responsabilizarse en tener programas y políticas públicas",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "el derecho inalienable del pueblo de Puerto Rico a su libre determinación, descolonización e independencia",
-      "page": 1,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "condiciones de esclavitud moderna a las que fueron sometidxs por más de tres décadas",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "¡Frente a las crisis globales, construimos la Soberanía Alimentaria para garantizar un futuro para la humanidad!",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "Nos solidarizamos con los pueblos de Guatemala, que llevan más de 70 días en la calle, en resistencia en una lucha liderada por las autoridades indígenas",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "reiteramos nuestra solidaridad y apoyo al derecho inalienable del pueblo de Puerto Rico a su libre determinación",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "7fec529822"
+ "titre_accroche": "Solidarité continentale : les paysans et autochtones face à l'extractivisme",
+ "teaser": "La Vía Campesina mobilise l'Amérique latine et les Caraïbes autour d'un projet politique: reprendre les terres, arrêter la militarisation et construire la souveraineté alimentaire face au modèle néolibéral.",
+ "abstract_editorial": "En décembre 2023, La Vía Campesina réunit ses délégués à Bogotá pour affirmer une conviction : les paysans et peuples autochtones sont les acteurs centraux de la transformation socio-territoriale face à l'extractivisme et au néolibéralisme. Ce document de solidarité continentale dépasse la rhétorique pour nommer des combats concrets — la militarisation du peuple Mapuche au Chili, l'exploitation minière au Panamá, les mobilisations de 70 jours au Guatemala, la lutte pour la décolonisation en Haïti et Porto Rico. La critique porte sur un modèle agraire précis : l'agroexportation, l'extractivisme hydrique et forestier ont transformé les campagnes en zones de sacrifice, abandonnant les familles paysannes aux crises climatiques. Face à cela, La Vía Campesina oppose la souveraineté alimentaire comme fondement d'un ordre mondial alternatif et exige une action étatique — politiques publiques, cessation des persécutions contre les défenseurs, reconnaissance des droits territoriaux. Le texte articule ainsi trois enjeux essentiels pour le lectorat des communs : l'autonomie territoriale comme condition politique, la propriété d'usage contre la prédation extractiviste, et l'organisation paysanne comme vecteur d'une décolonisation réelle.",
+ "citations_phares": [
+  {
+   "page": 1,
+   "quote": "llamamos al cese de la persecución contra los pueblos indígenas que defienden sus tierras y territorios"
+  },
+  {
+   "page": 1,
+   "quote": "Denunciamos el avance del neoliberalismo en el campo chileno, expresado en un modelo de producción centrado en la agroexportación y el extractivismo hídrico, minero y forestal"
+  },
+  {
+   "page": 1,
+   "quote": "el derecho inalienable del pueblo de Puerto Rico a su libre determinación, descolonización e independencia"
+  }
+ ],
+ "categorisation": [
+  "paysannerie",
+  "autochtonie",
+  "autonomie territoriale",
+  "communs",
+  "souveraineté alimentaire",
+  "décolonisation",
+  "extractivisme",
+  "libération des terres",
+  "Amérique latine"
+ ],
+ "slug": "via-campesina-solidarite-paysans-autochtones-amerique-latine",
+ "en_clair": "La Vía Campesina (le mouvement des paysans du monde) dit : en Amérique latine, les paysans et les peuples autochtones se battent ensemble pour garder leurs terres et nourrir leurs familles, contre les grosses mines et l'agriculture d'exportation qui les appauvrissent. Pour vaincre, il faut construire une souveraineté alimentaire, c'est-à-dire que chaque peuple produise son propre manger au lieu de le vendre aux multinationales.",
+ "acteurs": [
+  "La Vía Campesina",
+  "pueblos indígenas de Guatemala",
+  "autoridades indígenas",
+  "pueblos de Panamá",
+  "pueblo haitiano",
+  "pueblo de Puerto Rico",
+  "Borikén (Puerto Rico)",
+  "pueblo Mapuche",
+  "Estado ecuatoriano",
+  "Corte Constitucional de Ecuador",
+  "empresa Furukawa"
+ ],
+ "controverse": "Tension majeure entre modèle d'État néolibéral extractiviste (agroexportation, minería, privatisation des ressources) et autonomie territoriale des peuples autochtones et paysans. Le texte criminalise la violence d'État (militarisation, persécution raciste, inaction face aux crises climatiques) et appelle à la construction d'une souveraineté alimentaire continentale comme alternative.",
+ "angle_journalistique": "Comment les mouvements paysans et autochtones latino-américains tissent une solidarité continentale face aux crises climatiques et à l'extractivisme, et pourquoi la souveraineté alimentaire devient leur horizon d'alternative politique.",
+ "citations_verifiees": [
+  {
+   "quote": "llamamos al cese de la persecución contra los pueblos indígenas que defienden sus tierras y territorios",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "Denunciamos el avance del neoliberalismo en el campo chileno, expresado en un modelo de producción centrado en la agroexportación y el extractivismo hídrico, minero y forestal",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "la violencia, persecución y juicios racistas a dirigentes, autoridades tradicionales y militarización histórica contra el pueblo nación Mapuche",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "familias campesinas quedan en abandono por sus gobiernos, cuando el Estado debe responsabilizarse en tener programas y políticas públicas",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "el derecho inalienable del pueblo de Puerto Rico a su libre determinación, descolonización e independencia",
+   "page": 1,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "condiciones de esclavitud moderna a las que fueron sometidxs por más de tres décadas",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "¡Frente a las crisis globales, construimos la Soberanía Alimentaria para garantizar un futuro para la humanidad!",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "Nos solidarizamos con los pueblos de Guatemala, que llevan más de 70 días en la calle, en resistencia en una lucha liderada por las autoridades indígenas",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "reiteramos nuestra solidaridad y apoyo al derecho inalienable del pueblo de Puerto Rico a su libre determinación",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  }
+ ]
 }

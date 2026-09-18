@@ -1,93 +1,91 @@
 {
-  "titre_accroche": "30 ans de lutte paysanne : la Via Campesina redéfinit son agenda",
-  "teaser": "À Bogotá, 400 délégués de 185 organisations dessinent l'avenir des luttes paysannes. Souveraineté alimentaire, réforme agraire et féminisme paysan contre la marchandisation du vivant.",
-  "abstract_editorial": "En décembre 2023, Bogotá accueille la 8e Conférence Internationale de La Via Campesina : trois décennies de résistance mondiale à la marchandisation de l'alimentation et de la nature. Ce texte politique majeur réunit 400 délégués représentant 185 organisations dans 83 pays, incarnant une force organisée face aux crises systémiques du capitalisme.\n\nLe mouvement dresse un bilan sans concession de ses luttes : l'adoption de l'UNDROP (Déclaration ONU sur les droits des paysans) symbolise la reconnaissance des paysans comme sujets politiques à part entière, pas simples producteurs. Trois décennies de combats ont posé la question fondamentale qui résonne auprès de tous ceux préoccupés par les communs : qui contrôle la terre ? qui nourrit le monde ?\n\nFace aux migrations forcées, aux guerres, aux famines et aux inégalités structurelles, la Via Campesina propose une alternative radicale : la souveraineté alimentaire par l'agroécologie paysanne, une réforme agraire « populaire et globale », et un féminisme paysan-populaire qui place les femmes rurales au centre de la transformation. C'est un refus explicite du modèle OMC et de l'appropriation capitaliste des ressources.\n\nPour le lectorat des communs et de la libération des terres, ce document est crucial : il articule théorie et pratique du droit d'usage territorial, décolonise le rapport à la nature et aux semences, et pose la paysannerie comme force émancipatrice capable de construire des mondes radicalement différents.",
-  "citations_phares": [
-    {
-      "page": 1,
-      "quote": "we have fought relentlessly against the commodification of food and nature, and for social justice, dignity and recognition of our rights"
-    },
-    {
-      "page": 2,
-      "quote": "food sovereignty, peasant agroecology and peasant and popular feminism are the solutions to strengthen local food systems"
-    },
-    {
-      "page": 1,
-      "quote": "the creation of an agrarian jurisdiction, and the constitutional recognition of peasants as political subjects with rights"
-    }
-  ],
-  "categorisation": [
-    "paysannerie",
-    "communs",
-    "souveraineté alimentaire",
-    "agroécologie",
-    "féminisme paysan",
-    "réforme agraire",
-    "terres",
-    "anti-capitalisme"
-  ],
-  "slug": "via-campesina-30-ans-lutte-redefinit-agenda",
-  "en_clair": "Des paysans et paysannes du monde entier s'organisent pour dire : il faut arrêter de vendre la nourriture comme une marchandise, et la produire ensemble localement avec l'agroécologie. Il faut donner la terre à ceux qui n'en ont pas, défendre les droits des femmes dans les champs, et protéger les semences de nos grands-mères contre les brevets des grandes entreprises. C'est un manifeste pour une agriculture libre, pas une agriculture-business.",
-  "acteurs": [
-    "La Via Campesina",
-    "Nations Unies (ONU)",
-    "Committee on World Food Security (CFS)",
-    "OMC / WTO",
-    "Nyéléni Forum (2025)",
-    "Régions mentionnées : Palestine, Haïti, Niger, Soudan, Chiapas, Myanmar, Ukraine, Libye, Syrie, Érythrée, Cuba, Venezuela"
-  ],
-  "controverse": "Tension centrale entre un ordre commercial international (OMC, traités multilatéraux) controlé par les corporations transnationales et la demande d'une gouvernance mondiale alternative fondée sur la souveraineté alimentaire, la coopération et la solidarité. Critique explicite du 'green capitalism' et de ses fausses solutions versus l'agroécologie paysanne comme seul modèle viable.",
-  "angle_journalistique": "Comment La Via Campesina, après 30 ans, redéfinit-elle son agenda face aux crises simultanées (climatique, capitaliste, migratoire) ? Que signifie concrètement la reconnaissance constitutionnelle des paysans en Colombie pour un mouvement paysan mondialisé qui demande une réforme agraire internationale ?",
-  "citations_verifiees": [
-    {
-      "quote": "We, the peasants, rural workers, landless, indigenous peoples, pastoralists, artisanal fisherfolk, forest dwellers, rural women, youth and diversities",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "the creation of an agrarian jurisdiction, and the constitutional recognition of peasants as political subjects with rights",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "we have fought relentlessly against the commodification of food and nature, and for social justice, dignity and recognition of our rights",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "food sovereignty, peasant agroecology and peasant and popular feminism are the solutions to strengthen local food systems",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "An urgent task is to implement the popular and comprehensive Agrarian Reform. It's time for an International Conference on Agrarian Reform and Rural Development to stop the privatization and appropriation of territories and common goods by TNCs",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "WTO should be replaced by a new global framework for trade and agriculture, based on food sovereignty and on cooperation and solidarity",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "we will continue to defend peasant and indigenous seed systems and confront the implementation of multilateral treaties for access to seeds, advocating against biopiracy and seed patenting",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "peasant and popular feminism is our path of struggle against patriarchy and for equality, and that diversity is at the heart of food sovereignty in all territories",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "1abcba20c6"
+ "titre_accroche": "30 ans de lutte paysanne : la Via Campesina redéfinit son agenda",
+ "teaser": "À Bogotá, 400 délégués de 185 organisations dessinent l'avenir des luttes paysannes. Souveraineté alimentaire, réforme agraire et féminisme paysan contre la marchandisation du vivant.",
+ "abstract_editorial": "En décembre 2023, Bogotá accueille la 8e Conférence Internationale de La Via Campesina : trois décennies de résistance mondiale à la marchandisation de l'alimentation et de la nature. Ce texte politique majeur réunit 400 délégués représentant 185 organisations dans 83 pays, incarnant une force organisée face aux crises systémiques du capitalisme.\n\nLe mouvement dresse un bilan sans concession de ses luttes : l'adoption de l'UNDROP (Déclaration ONU sur les droits des paysans) symbolise la reconnaissance des paysans comme sujets politiques à part entière, pas simples producteurs. Trois décennies de combats ont posé la question fondamentale qui résonne auprès de tous ceux préoccupés par les communs : qui contrôle la terre ? qui nourrit le monde ?\n\nFace aux migrations forcées, aux guerres, aux famines et aux inégalités structurelles, la Via Campesina propose une alternative radicale : la souveraineté alimentaire par l'agroécologie paysanne, une réforme agraire « populaire et globale », et un féminisme paysan-populaire qui place les femmes rurales au centre de la transformation. C'est un refus explicite du modèle OMC et de l'appropriation capitaliste des ressources.\n\nPour le lectorat des communs et de la libération des terres, ce document est crucial : il articule théorie et pratique du droit d'usage territorial, décolonise le rapport à la nature et aux semences, et pose la paysannerie comme force émancipatrice capable de construire des mondes radicalement différents.",
+ "citations_phares": [
+  {
+   "page": 1,
+   "quote": "we have fought relentlessly against the commodification of food and nature, and for social justice, dignity and recognition of our rights"
+  },
+  {
+   "page": 2,
+   "quote": "food sovereignty, peasant agroecology and peasant and popular feminism are the solutions to strengthen local food systems"
+  },
+  {
+   "page": 1,
+   "quote": "the creation of an agrarian jurisdiction, and the constitutional recognition of peasants as political subjects with rights"
+  }
+ ],
+ "categorisation": [
+  "paysannerie",
+  "communs",
+  "souveraineté alimentaire",
+  "agroécologie",
+  "féminisme paysan",
+  "réforme agraire",
+  "terres",
+  "anti-capitalisme"
+ ],
+ "slug": "via-campesina-30-ans-lutte-redefinit-agenda",
+ "en_clair": "Des paysans et paysannes du monde entier s'organisent pour dire : il faut arrêter de vendre la nourriture comme une marchandise, et la produire ensemble localement avec l'agroécologie. Il faut donner la terre à ceux qui n'en ont pas, défendre les droits des femmes dans les champs, et protéger les semences de nos grands-mères contre les brevets des grandes entreprises. C'est un manifeste pour une agriculture libre, pas une agriculture-business.",
+ "acteurs": [
+  "La Via Campesina",
+  "Nations Unies (ONU)",
+  "Committee on World Food Security (CFS)",
+  "OMC / WTO",
+  "Nyéléni Forum (2025)",
+  "Régions mentionnées : Palestine, Haïti, Niger, Soudan, Chiapas, Myanmar, Ukraine, Libye, Syrie, Érythrée, Cuba, Venezuela"
+ ],
+ "controverse": "Tension centrale entre un ordre commercial international (OMC, traités multilatéraux) controlé par les corporations transnationales et la demande d'une gouvernance mondiale alternative fondée sur la souveraineté alimentaire, la coopération et la solidarité. Critique explicite du 'green capitalism' et de ses fausses solutions versus l'agroécologie paysanne comme seul modèle viable.",
+ "angle_journalistique": "Comment La Via Campesina, après 30 ans, redéfinit-elle son agenda face aux crises simultanées (climatique, capitaliste, migratoire) ? Que signifie concrètement la reconnaissance constitutionnelle des paysans en Colombie pour un mouvement paysan mondialisé qui demande une réforme agraire internationale ?",
+ "citations_verifiees": [
+  {
+   "quote": "We, the peasants, rural workers, landless, indigenous peoples, pastoralists, artisanal fisherfolk, forest dwellers, rural women, youth and diversities",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "the creation of an agrarian jurisdiction, and the constitutional recognition of peasants as political subjects with rights",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "we have fought relentlessly against the commodification of food and nature, and for social justice, dignity and recognition of our rights",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "food sovereignty, peasant agroecology and peasant and popular feminism are the solutions to strengthen local food systems",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "An urgent task is to implement the popular and comprehensive Agrarian Reform. It's time for an International Conference on Agrarian Reform and Rural Development to stop the privatization and appropriation of territories and common goods by TNCs",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "WTO should be replaced by a new global framework for trade and agriculture, based on food sovereignty and on cooperation and solidarity",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "we will continue to defend peasant and indigenous seed systems and confront the implementation of multilateral treaties for access to seeds, advocating against biopiracy and seed patenting",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "peasant and popular feminism is our path of struggle against patriarchy and for equality, and that diversity is at the heart of food sovereignty in all territories",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  }
+ ]
 }

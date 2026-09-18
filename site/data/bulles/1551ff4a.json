@@ -1,106 +1,104 @@
 {
-  "titre_accroche": "Les femmes paysannes au cœur de l'agroécologie ougandaise",
-  "teaser": "En Ouganda, le mouvement paysan ESAFF pose les femmes comme actrices centrales de la transition agroécologique et de la souveraineté alimentaire, réclamant reconnaissance, accès aux ressources et leadership décisionnel.",
-  "abstract_editorial": "Ce communiqué d'ESAFF Uganda, affiliée à La Via Campesina, réaffirme une conviction centrale pour les défenseurs des communs et de la terre : les femmes paysannes ne sont pas simplement des travailleuses agricoles, mais les gardiennes des savoirs locaux, de la biodiversité et des ressources collectives. Alors qu'elles représentent plus de la moitié de la main-d'œuvre agricole ougandaise, les femmes demeurent écartées des ressources productives, des espaces décisionnels et de la reconnaissance publique. Ce texte établit un lien politique serré entre féminisme agraire, agroécologie et justice climatique : reconnaître les droits des femmes paysannes, c'est reconnaître leur rôle de gestionnaires des communs. Le document énonce six revendications concrètes—ratification de l'UNDROP (Déclaration ONU sur les droits des paysans), institutionnalisation de l'agroécologie, reconnaissance du travail de soin, intégration de l'agroécologie aux politiques climatiques, accès à l'information climatique, investissement en recherche—qui toutes convergent vers une même exigence : l'égalité réelle dans l'accès et le contrôle des ressources. Ce faisant, ESAFF Uganda propose une lecture matérialiste du problème : sans accès équitable à la terre et ses moyens de production, pas de viabilité agricole durable, pas de résilience écologique, pas d'égalité. Un texte qui nourrit le débat sur les communs en montrant comment la paysannerie et le féminisme agraire se nouent autour de la terre comme ressource à gouverner collectivement.",
-  "citations_phares": [
-    {
-      "page": 2,
-      "quote": "Women small-scale farmers take care of the land, local traditions, biodiversity, their families and communities, with enormous responsibilities though, unfortunately, still struggle to be recognized."
-    },
-    {
-      "page": 2,
-      "quote": "Until we have more women having full and undisputed access and control of productive resources at all the levels, we may not achieve equality."
-    },
-    {
-      "page": 3,
-      "quote": "ESAFF Uganda creates an environment that helps women succeed in ensuring food and nutrition amidst climate change through advancing agroecology."
-    }
-  ],
-  "categorisation": [
-    "paysannerie",
-    "agroécologie",
-    "féminisme agraire",
-    "souveraineté alimentaire",
-    "terre et propriété d'usage",
-    "droits paysans",
-    "justice climatique",
-    "Afrique"
-  ],
-  "slug": "femmes-paysannes-ouganda-agroecologie-esaff",
-  "en_clair": "En Ouganda, les femmes font la majorité du travail agricole mais n'ont pas le droit sur les terres ni sur ce qu'elles produisent. ESAFF, leur organisation, demande au gouvernement de reconnaître légalement leurs droits fonciers et de soutenir l'agroécologie, l'agriculture qu'elles pratiquent déjà et qui produit mieux sans engrais chimiques. Concrètement : il faut changer les lois pour que les femmes paysannes possèdent vraiment ce qu'elles cultivent.",
-  "acteurs": [
-    "ESAFF Uganda (Eastern and Southern Africa Small-scale Farmers' Forum Uganda)",
-    "La Via Campesina (LVC)",
-    "Angua Jennifer (Adjumani district)",
-    "Akello Hellen (Amuria district)",
-    "Ikaali Zeridah (Jinja District)",
-    "Nancy Mugimba (National Coordinator, ESAFF Uganda)",
-    "UN Food and Agriculture Organization (FAO)"
-  ],
-  "controverse": "Tension entre la reconnaissance rhétorique croissante du rôle des femmes en agriculture et la persistance des inégalités structurelles d'accès aux ressources productives et foncières. Le texte soulève implicitement le débat sur la ratification du UNDROP : ESAFF demande son institutionnalisation en droit ougandais, ce qui suppose une résistance étatique ou législative réelle à cette reconnaissance des droits paysans collectifs.",
-  "angle_journalistique": "Enquête : comment les organisations paysannes féminines comme ESAFF contournent l'absence de droits fonciers formels en Ouganda et en quoi la reconnaissance du UNDROP changerait matériellement la vie des petites agricultrices ?",
-  "citations_verifiees": [
-    {
-      "quote": "Women small-scale farmers take care of the land, local traditions, biodiversity, their families and communities, with enormous responsibilities though, unfortunately, still struggle to be recognized.",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "if women worldwide had the same access to productive resources as men, they could increase yields on their farms by 20–30 percent",
-      "page": 2,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "Until we have more women having full and undisputed access and control of productive resources at all the levels, we may not achieve equality.",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "ESAFF Uganda creates an environment that helps women succeed in ensuring food and nutrition amidst climate change through advancing agroecology.",
-      "page": 3,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "Institutionalize and domesticate the United Nations Declaration on the Rights of Peasants and Other People Working in Rural Areas (UNDROP)",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "Promote agroecology in the Parish Development Model approach as a key and integral solution for the climate crisis",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "We must collectively change this.",
-      "page": 1,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "Women are effective and powerful leaders and change-makers for climate adaptation and mitigation and economic empowerment amidst these impacts.",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "ESAFF Uganda brings together small-scale farmers, pastoralists, and fisherfolk to advance Social and Economic Equality, Agroecology and Food Sovereignty.",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "ESAFF Uganda is a member of La Via Campesina (LVC).",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "374c5d560c"
+ "titre_accroche": "Les femmes paysannes au cœur de l'agroécologie ougandaise",
+ "teaser": "En Ouganda, le mouvement paysan ESAFF pose les femmes comme actrices centrales de la transition agroécologique et de la souveraineté alimentaire, réclamant reconnaissance, accès aux ressources et leadership décisionnel.",
+ "abstract_editorial": "Ce communiqué d'ESAFF Uganda, affiliée à La Via Campesina, réaffirme une conviction centrale pour les défenseurs des communs et de la terre : les femmes paysannes ne sont pas simplement des travailleuses agricoles, mais les gardiennes des savoirs locaux, de la biodiversité et des ressources collectives. Alors qu'elles représentent plus de la moitié de la main-d'œuvre agricole ougandaise, les femmes demeurent écartées des ressources productives, des espaces décisionnels et de la reconnaissance publique. Ce texte établit un lien politique serré entre féminisme agraire, agroécologie et justice climatique : reconnaître les droits des femmes paysannes, c'est reconnaître leur rôle de gestionnaires des communs. Le document énonce six revendications concrètes—ratification de l'UNDROP (Déclaration ONU sur les droits des paysans), institutionnalisation de l'agroécologie, reconnaissance du travail de soin, intégration de l'agroécologie aux politiques climatiques, accès à l'information climatique, investissement en recherche—qui toutes convergent vers une même exigence : l'égalité réelle dans l'accès et le contrôle des ressources. Ce faisant, ESAFF Uganda propose une lecture matérialiste du problème : sans accès équitable à la terre et ses moyens de production, pas de viabilité agricole durable, pas de résilience écologique, pas d'égalité. Un texte qui nourrit le débat sur les communs en montrant comment la paysannerie et le féminisme agraire se nouent autour de la terre comme ressource à gouverner collectivement.",
+ "citations_phares": [
+  {
+   "page": 2,
+   "quote": "Women small-scale farmers take care of the land, local traditions, biodiversity, their families and communities, with enormous responsibilities though, unfortunately, still struggle to be recognized."
+  },
+  {
+   "page": 2,
+   "quote": "Until we have more women having full and undisputed access and control of productive resources at all the levels, we may not achieve equality."
+  },
+  {
+   "page": 3,
+   "quote": "ESAFF Uganda creates an environment that helps women succeed in ensuring food and nutrition amidst climate change through advancing agroecology."
+  }
+ ],
+ "categorisation": [
+  "paysannerie",
+  "agroécologie",
+  "féminisme agraire",
+  "souveraineté alimentaire",
+  "terre et propriété d'usage",
+  "droits paysans",
+  "justice climatique",
+  "Afrique"
+ ],
+ "slug": "femmes-paysannes-ouganda-agroecologie-esaff",
+ "en_clair": "En Ouganda, les femmes font la majorité du travail agricole mais n'ont pas le droit sur les terres ni sur ce qu'elles produisent. ESAFF, leur organisation, demande au gouvernement de reconnaître légalement leurs droits fonciers et de soutenir l'agroécologie, l'agriculture qu'elles pratiquent déjà et qui produit mieux sans engrais chimiques. Concrètement : il faut changer les lois pour que les femmes paysannes possèdent vraiment ce qu'elles cultivent.",
+ "acteurs": [
+  "ESAFF Uganda (Eastern and Southern Africa Small-scale Farmers' Forum Uganda)",
+  "La Via Campesina (LVC)",
+  "Angua Jennifer (Adjumani district)",
+  "Akello Hellen (Amuria district)",
+  "Ikaali Zeridah (Jinja District)",
+  "Nancy Mugimba (National Coordinator, ESAFF Uganda)",
+  "UN Food and Agriculture Organization (FAO)"
+ ],
+ "controverse": "Tension entre la reconnaissance rhétorique croissante du rôle des femmes en agriculture et la persistance des inégalités structurelles d'accès aux ressources productives et foncières. Le texte soulève implicitement le débat sur la ratification du UNDROP : ESAFF demande son institutionnalisation en droit ougandais, ce qui suppose une résistance étatique ou législative réelle à cette reconnaissance des droits paysans collectifs.",
+ "angle_journalistique": "Enquête : comment les organisations paysannes féminines comme ESAFF contournent l'absence de droits fonciers formels en Ouganda et en quoi la reconnaissance du UNDROP changerait matériellement la vie des petites agricultrices ?",
+ "citations_verifiees": [
+  {
+   "quote": "Women small-scale farmers take care of the land, local traditions, biodiversity, their families and communities, with enormous responsibilities though, unfortunately, still struggle to be recognized.",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "if women worldwide had the same access to productive resources as men, they could increase yields on their farms by 20–30 percent",
+   "page": 2,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "Until we have more women having full and undisputed access and control of productive resources at all the levels, we may not achieve equality.",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "ESAFF Uganda creates an environment that helps women succeed in ensuring food and nutrition amidst climate change through advancing agroecology.",
+   "page": 3,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "Institutionalize and domesticate the United Nations Declaration on the Rights of Peasants and Other People Working in Rural Areas (UNDROP)",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "Promote agroecology in the Parish Development Model approach as a key and integral solution for the climate crisis",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "We must collectively change this.",
+   "page": 1,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "Women are effective and powerful leaders and change-makers for climate adaptation and mitigation and economic empowerment amidst these impacts.",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "ESAFF Uganda brings together small-scale farmers, pastoralists, and fisherfolk to advance Social and Economic Equality, Agroecology and Food Sovereignty.",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "ESAFF Uganda is a member of La Via Campesina (LVC).",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  }
+ ]
 }

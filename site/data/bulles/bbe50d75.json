@@ -1,87 +1,85 @@
 {
-  "titre_accroche": "Les femmes paysannes, gardiennes des semences libres",
-  "teaser": "À l'ONU, La Via Campesina affirme que les semences ne sont pas des marchandises. Et que ce sont les femmes paysannes qui savent les préserver.",
-  "abstract_editorial": "Lorsque La Via Campesina intervient au Conseil des droits de l'homme de l'ONU, c'est pour une revendication qui touche aux fondements de l'autonomie rurale : les semences doivent rester des communs, pas des propriétés brevetées. Cette intervention de mars 2022 pose une question brûlante pour tous ceux qui pensent les alternatifs territoriaux : qui contrôle les moyens de la vie ?\n\nZainal Arifin Fuat rapporte une observation qui dérange les évidences : lors d'une campagne mondiale de conservation confiant des semences à des hommes et femmes paysans, seules les femmes les ont retournées dans les délais convenus. Cet élément factuel devient un acte politique : reconnaître que les femmes paysannes sont les expertes naturelles de la transmission des semences, qu'elles incarnent une connaissance millénaire qu'aucune technologie ne peut remplacer.\n\nMais ce n'est pas une invocation sentimentale du passé. C'est une critique frontale de la marchandisation de la vie : privatisation des semences, brevets sur le vivant, manipulation génétique commerciale, propriété intellectuelle sur les ressources génétiques. Tout cela, la Via Campesina le refuse au nom d'une autre vision : les semences comme patrimoine des peuples à gérer collectivement.\n\nLe texte s'ancre dans l'UNDROP et l'UNDRIP, deux déclarations majeures de l'ONU, pour articuler trois luttes inséparables : droits collectifs des paysans et des indigènes, protection des femmes dans la gestion des ressources, et souveraineté alimentaire. C'est une parole de mouvement de base sur la scène internationale, sans compromis.",
-  "citations_phares": [
-    {
-      "page": 1,
-      "quote": "The diverse rural women have been linked, both in the past and still today, to selecting, cleaning, and saving seeds"
-    },
-    {
-      "page": 1,
-      "quote": "A crucial experience of this campaign was that once seeds were given to men and women peasants for conservation, only women returned the seeds in the agreed timeline"
-    },
-    {
-      "page": 1,
-      "quote": "we strongly oppose the privatization of seeds, genetic manipulation, intellectual property, and all forms of appropriation of life"
-    }
-  ],
-  "categorisation": [
-    "semences",
-    "paysannerie",
-    "femmes paysannes",
-    "communs",
-    "biodiversité",
-    "droits collectifs",
-    "souveraineté alimentaire",
-    "terres",
-    "critique de l'appropriation"
-  ],
-  "slug": "femmes-paysannes-gardiennes-semences-libres",
-  "en_clair": "La Via Campesina dit à l'ONU : « Les semences et la terre doivent rester une propriété commune gérée par les paysans et surtout par les femmes qui les cultivent, pas devenir des produits brevetés vendus par les grandes firmes ». Preuve : quand on donne des semences à conserver, ce sont les femmes qui les rendent à temps, pas les hommes — donc il faut les écouter.",
-  "acteurs": [
-    "La Via Campesina",
-    "Zainal Arifin Fuat",
-    "CETIM (Centre d'études sur les relations entre le Tiers Monde et l'Europe)",
-    "UN Special Rapporteur on the right to food",
-    "UN Human Rights Council"
-  ],
-  "controverse": "Opposition frontale entre une vision de la terre et des semences comme patrimoine collectif des peuples (paysans, indigènes, femmes) versus l'appropriation privée marchande via brevets, propriété intellectuelle, et manipulation génétique commerciale. Enjeu : qui contrôle les ressources génétiques et la reproduction de la vie agricole.",
-  "angle_journalistique": "Enquête : pourquoi les femmes paysannes sont-elles les gardiennes les plus fiables des semences communes, et comment ce constat invalide-t-il les stratégies de privatisation des semenciers mondiaux ?",
-  "citations_verifiees": [
-    {
-      "quote": "I am Zainal Arifin Fuat, member of the International Coordination Committee of La Via Campesina, the largest peasant movement in the world",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "These Declarations center on the right to land, seeds, and biodiversity, as well as collective rights anchored in the principle of Food Sovereignty",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "The diverse rural women have been linked, both in the past and still today, to selecting, cleaning, and saving seeds",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "A crucial experience of this campaign was that once seeds were given to men and women peasants for conservation, only women returned the seeds in the agreed timeline",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "we strongly oppose the privatization of seeds, genetic manipulation, intellectual property, and all forms of appropriation of life",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "La Via Campesina has been strengthening a Global Campaign entitled 'Seeds: Heritage of the Peoples at the Service of Humanity' since 2003",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "The collective efforts to flourish and protect seeds and biodiversity must be entrusted to the peasants, indigenous peoples, workers, and especially women and youth",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "b230d006fe"
+ "titre_accroche": "Les femmes paysannes, gardiennes des semences libres",
+ "teaser": "À l'ONU, La Via Campesina affirme que les semences ne sont pas des marchandises. Et que ce sont les femmes paysannes qui savent les préserver.",
+ "abstract_editorial": "Lorsque La Via Campesina intervient au Conseil des droits de l'homme de l'ONU, c'est pour une revendication qui touche aux fondements de l'autonomie rurale : les semences doivent rester des communs, pas des propriétés brevetées. Cette intervention de mars 2022 pose une question brûlante pour tous ceux qui pensent les alternatifs territoriaux : qui contrôle les moyens de la vie ?\n\nZainal Arifin Fuat rapporte une observation qui dérange les évidences : lors d'une campagne mondiale de conservation confiant des semences à des hommes et femmes paysans, seules les femmes les ont retournées dans les délais convenus. Cet élément factuel devient un acte politique : reconnaître que les femmes paysannes sont les expertes naturelles de la transmission des semences, qu'elles incarnent une connaissance millénaire qu'aucune technologie ne peut remplacer.\n\nMais ce n'est pas une invocation sentimentale du passé. C'est une critique frontale de la marchandisation de la vie : privatisation des semences, brevets sur le vivant, manipulation génétique commerciale, propriété intellectuelle sur les ressources génétiques. Tout cela, la Via Campesina le refuse au nom d'une autre vision : les semences comme patrimoine des peuples à gérer collectivement.\n\nLe texte s'ancre dans l'UNDROP et l'UNDRIP, deux déclarations majeures de l'ONU, pour articuler trois luttes inséparables : droits collectifs des paysans et des indigènes, protection des femmes dans la gestion des ressources, et souveraineté alimentaire. C'est une parole de mouvement de base sur la scène internationale, sans compromis.",
+ "citations_phares": [
+  {
+   "page": 1,
+   "quote": "The diverse rural women have been linked, both in the past and still today, to selecting, cleaning, and saving seeds"
+  },
+  {
+   "page": 1,
+   "quote": "A crucial experience of this campaign was that once seeds were given to men and women peasants for conservation, only women returned the seeds in the agreed timeline"
+  },
+  {
+   "page": 1,
+   "quote": "we strongly oppose the privatization of seeds, genetic manipulation, intellectual property, and all forms of appropriation of life"
+  }
+ ],
+ "categorisation": [
+  "semences",
+  "paysannerie",
+  "femmes paysannes",
+  "communs",
+  "biodiversité",
+  "droits collectifs",
+  "souveraineté alimentaire",
+  "terres",
+  "critique de l'appropriation"
+ ],
+ "slug": "femmes-paysannes-gardiennes-semences-libres",
+ "en_clair": "La Via Campesina dit à l'ONU : « Les semences et la terre doivent rester une propriété commune gérée par les paysans et surtout par les femmes qui les cultivent, pas devenir des produits brevetés vendus par les grandes firmes ». Preuve : quand on donne des semences à conserver, ce sont les femmes qui les rendent à temps, pas les hommes — donc il faut les écouter.",
+ "acteurs": [
+  "La Via Campesina",
+  "Zainal Arifin Fuat",
+  "CETIM (Centre d'études sur les relations entre le Tiers Monde et l'Europe)",
+  "UN Special Rapporteur on the right to food",
+  "UN Human Rights Council"
+ ],
+ "controverse": "Opposition frontale entre une vision de la terre et des semences comme patrimoine collectif des peuples (paysans, indigènes, femmes) versus l'appropriation privée marchande via brevets, propriété intellectuelle, et manipulation génétique commerciale. Enjeu : qui contrôle les ressources génétiques et la reproduction de la vie agricole.",
+ "angle_journalistique": "Enquête : pourquoi les femmes paysannes sont-elles les gardiennes les plus fiables des semences communes, et comment ce constat invalide-t-il les stratégies de privatisation des semenciers mondiaux ?",
+ "citations_verifiees": [
+  {
+   "quote": "I am Zainal Arifin Fuat, member of the International Coordination Committee of La Via Campesina, the largest peasant movement in the world",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "These Declarations center on the right to land, seeds, and biodiversity, as well as collective rights anchored in the principle of Food Sovereignty",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "The diverse rural women have been linked, both in the past and still today, to selecting, cleaning, and saving seeds",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "A crucial experience of this campaign was that once seeds were given to men and women peasants for conservation, only women returned the seeds in the agreed timeline",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "we strongly oppose the privatization of seeds, genetic manipulation, intellectual property, and all forms of appropriation of life",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "La Via Campesina has been strengthening a Global Campaign entitled 'Seeds: Heritage of the Peoples at the Service of Humanity' since 2003",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "The collective efforts to flourish and protect seeds and biodiversity must be entrusted to the peasants, indigenous peoples, workers, and especially women and youth",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  }
+ ]
 }

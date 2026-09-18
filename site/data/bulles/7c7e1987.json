@@ -1,82 +1,80 @@
 {
-  "titre_accroche": "Quilombo Campo Grande : quand la justice brésilienne cède au bulldozer",
-  "teaser": "Au Brésil, une ordonnance de réintégration dégénère en débordement répressif : trente familles expulsées au lieu de six. Derrière ce conflit au Quilombo Campo Grande, vingt ans d'agriculture agroécologique et un fossé révélateur entre légalité formelle et légitimité de facto de l'État.",
-  "abstract_editorial": "Ce document expose un conflit foncier exemplaire du droit agraire latino-américain. Une ordonnance du juge de la Vara Agrária de Minas Gerais concernait formellement six familles, mais la Police militaire a dépourvu son mandat : elle a expulsé trente familles supplémentaires et rasé des constructions que le jugement interdisait explicitement de détruire.\n\nLe Quilombo Campo Grande, implanté sur la Fazenda Ariadnópolis depuis plus de vingt ans, incarne une expérience agroécologique établie. Les travailleurs rurais sans-terre y ont bâti un système productif : 40 hectares de hortas, 60 000 arbres natifs en restauration écologique, 60 000 arbres fruitiers et 8 tonnes de miel annuelles. Cette densité d'investissement invalide tout soupçon d'opportunisme ; elle témoigne d'une appropriation réelle et générative du territoire.\n\nL'invocation du « Quilombo » dans l'intitulé du campement ancre la lutte dans les droits constitutionnels des communautés quilombolas brésilienne, héritières de terres de résistance. Une coalition politique large—leaders du PT, du Parti communiste, présidente de la Commission des Droits Humains du Congrès—a adressé une dénonciation au juge pour exiger le respect de sa propre décision.\n\nCe recours symptomatique révèle une tension structurelle du droit foncier latino-américain : le fossé entre l'ordre judiciaire et l'ordre répressif, entre légalité formelle et légitimité de facto. Les luttes paysannes demeurent dépendantes de soutiens politiques externes et de la publicité pour contenir l'excès répressif—une asymétrie elle-même révélatrice des rapports de force autour de la question foncière.",
-  "citations_phares": [
-    {
-      "page": 2,
-      "quote": "40 hectares de hortas, 60 mil árvores nativas e 60 mil árvores frutíferas, além da produção de oito toneladas de mel"
-    },
-    {
-      "page": 1,
-      "quote": "Polícia Militar do Estado de Minas Gerais segue com a ação de desocupação... deve atingir pelo menos mais 30 famílias"
-    },
-    {
-      "page": 2,
-      "quote": "a liminar de reintegração de posse não permite a demolição de benfeitorias edificadas no imóvel"
-    }
-  ],
-  "categorisation": [
-    "foncier",
-    "sans-terre",
-    "agroécologie",
-    "quilombo",
-    "communs",
-    "Brésil",
-    "justice et répression"
-  ],
-  "slug": "quilombo-campo-grande-agroecologie-debordement",
-  "en_clair": "Au Brésil, des paysans sans terre ont créé depuis 20 ans une communauté agricole (jardins, arbres, miel) dans une région. Un tribunal a ordonné le départ de 6 familles seulement, mais la police en expulse 30+ et détruit l'école que le jugement protégeait. Des députés demandent au juge de faire respecter sa propre décision — sinon, pourquoi avoir gagné en justice si l'État peut faire ce qu'il veut avec la force ?",
-  "acteurs": [
-    "Movimento dos Trabalhadores Rurais Sem Terra (MST)",
-    "Polícia Militar do Estado de Minas Gerais",
-    "Centro de Referência em Direitos Humanos (Sedese/MG)",
-    "Defensoria Pública",
-    "Helder Salomão (Deputado, Presidente da Comissão de Direitos Humanos e Minorias)",
-    "Paulo Teixeira (Deputado)",
-    "Enio Verri (Deputado, Líder do Partido dos Trabalhadores)",
-    "Perpétua Almeida (Deputada, Líder do Partido Comunista do Brasil)"
-  ],
-  "controverse": "Tension majeure entre légalité formelle et exécution de facto : le juge ordonne l'expulsion de 6 familles, mais la police militaire expulse 30+ familles et détruit des constructions que la décision interdisait de détruire. Cette excédence révèle l'impuissance relative de la justice face au monopole répressif d'État et l'instrumentalisation de l'ordre judiciaire pour valider la violence agraire.",
-  "angle_journalistique": "Au Brésil, le débordement de l'exécution : comment la police militaire utilise un mandat limité de réintégration de possession pour mener une expulsion massive de sans-terre et détruire des décennies d'agroécologie locale.",
-  "citations_verifiees": [
-    {
-      "quote": "Reportamos a Vossa Excelência informações sobre o cumprimento da reintegração de posse contra trabalhadores rurais sem-terra do acampamento Quilombo Campo Grande",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "Movimento dos Trabalhadores Rurais Sem Terra",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "40 hectares de hortas, 60 mil árvores nativas e 60 mil árvores frutíferas, além da produção de oito toneladas de mel",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "a liminar de reintegração de posse não permite a demolição de benfeitorias edificadas no imóvel",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "Polícia Militar do Estado de Minas Gerais segue com a ação de desocupação... deve atingir pelo menos mais 30 famílias",
-      "page": 1,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "benfeitorias adquiridas em mais de 20 anos",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "28387b01e4"
+ "titre_accroche": "Quilombo Campo Grande : quand la justice brésilienne cède au bulldozer",
+ "teaser": "Au Brésil, une ordonnance de réintégration dégénère en débordement répressif : trente familles expulsées au lieu de six. Derrière ce conflit au Quilombo Campo Grande, vingt ans d'agriculture agroécologique et un fossé révélateur entre légalité formelle et légitimité de facto de l'État.",
+ "abstract_editorial": "Ce document expose un conflit foncier exemplaire du droit agraire latino-américain. Une ordonnance du juge de la Vara Agrária de Minas Gerais concernait formellement six familles, mais la Police militaire a dépourvu son mandat : elle a expulsé trente familles supplémentaires et rasé des constructions que le jugement interdisait explicitement de détruire.\n\nLe Quilombo Campo Grande, implanté sur la Fazenda Ariadnópolis depuis plus de vingt ans, incarne une expérience agroécologique établie. Les travailleurs rurais sans-terre y ont bâti un système productif : 40 hectares de hortas, 60 000 arbres natifs en restauration écologique, 60 000 arbres fruitiers et 8 tonnes de miel annuelles. Cette densité d'investissement invalide tout soupçon d'opportunisme ; elle témoigne d'une appropriation réelle et générative du territoire.\n\nL'invocation du « Quilombo » dans l'intitulé du campement ancre la lutte dans les droits constitutionnels des communautés quilombolas brésilienne, héritières de terres de résistance. Une coalition politique large—leaders du PT, du Parti communiste, présidente de la Commission des Droits Humains du Congrès—a adressé une dénonciation au juge pour exiger le respect de sa propre décision.\n\nCe recours symptomatique révèle une tension structurelle du droit foncier latino-américain : le fossé entre l'ordre judiciaire et l'ordre répressif, entre légalité formelle et légitimité de facto. Les luttes paysannes demeurent dépendantes de soutiens politiques externes et de la publicité pour contenir l'excès répressif—une asymétrie elle-même révélatrice des rapports de force autour de la question foncière.",
+ "citations_phares": [
+  {
+   "page": 2,
+   "quote": "40 hectares de hortas, 60 mil árvores nativas e 60 mil árvores frutíferas, além da produção de oito toneladas de mel"
+  },
+  {
+   "page": 1,
+   "quote": "Polícia Militar do Estado de Minas Gerais segue com a ação de desocupação... deve atingir pelo menos mais 30 famílias"
+  },
+  {
+   "page": 2,
+   "quote": "a liminar de reintegração de posse não permite a demolição de benfeitorias edificadas no imóvel"
+  }
+ ],
+ "categorisation": [
+  "foncier",
+  "sans-terre",
+  "agroécologie",
+  "quilombo",
+  "communs",
+  "Brésil",
+  "justice et répression"
+ ],
+ "slug": "quilombo-campo-grande-agroecologie-debordement",
+ "en_clair": "Au Brésil, des paysans sans terre ont créé depuis 20 ans une communauté agricole (jardins, arbres, miel) dans une région. Un tribunal a ordonné le départ de 6 familles seulement, mais la police en expulse 30+ et détruit l'école que le jugement protégeait. Des députés demandent au juge de faire respecter sa propre décision — sinon, pourquoi avoir gagné en justice si l'État peut faire ce qu'il veut avec la force ?",
+ "acteurs": [
+  "Movimento dos Trabalhadores Rurais Sem Terra (MST)",
+  "Polícia Militar do Estado de Minas Gerais",
+  "Centro de Referência em Direitos Humanos (Sedese/MG)",
+  "Defensoria Pública",
+  "Helder Salomão (Deputado, Presidente da Comissão de Direitos Humanos e Minorias)",
+  "Paulo Teixeira (Deputado)",
+  "Enio Verri (Deputado, Líder do Partido dos Trabalhadores)",
+  "Perpétua Almeida (Deputada, Líder do Partido Comunista do Brasil)"
+ ],
+ "controverse": "Tension majeure entre légalité formelle et exécution de facto : le juge ordonne l'expulsion de 6 familles, mais la police militaire expulse 30+ familles et détruit des constructions que la décision interdisait de détruire. Cette excédence révèle l'impuissance relative de la justice face au monopole répressif d'État et l'instrumentalisation de l'ordre judiciaire pour valider la violence agraire.",
+ "angle_journalistique": "Au Brésil, le débordement de l'exécution : comment la police militaire utilise un mandat limité de réintégration de possession pour mener une expulsion massive de sans-terre et détruire des décennies d'agroécologie locale.",
+ "citations_verifiees": [
+  {
+   "quote": "Reportamos a Vossa Excelência informações sobre o cumprimento da reintegração de posse contra trabalhadores rurais sem-terra do acampamento Quilombo Campo Grande",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "Movimento dos Trabalhadores Rurais Sem Terra",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "40 hectares de hortas, 60 mil árvores nativas e 60 mil árvores frutíferas, além da produção de oito toneladas de mel",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "a liminar de reintegração de posse não permite a demolição de benfeitorias edificadas no imóvel",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "Polícia Militar do Estado de Minas Gerais segue com a ação de desocupação... deve atingir pelo menos mais 30 famílias",
+   "page": 1,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "benfeitorias adquiridas em mais de 20 anos",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  }
+ ]
 }

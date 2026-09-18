@@ -1,107 +1,105 @@
 {
-  "titre_accroche": "Quand La Via Campesina défend le droit à la terre des paysans",
-  "teaser": "Un manifeste politique qui expose les violations systématiques des droits paysans à l'échelle mondiale et réclame une Convention internationale spécifique.",
-  "abstract_editorial": "Ce manifeste de La Via Campesina, adopté en 2009, nous rappelle une réalité souvent oubliée : presque la moitié de l'humanité vit de l'agriculture paysanne. Loin d'être un vestige, cette réalité structure les rapports de pouvoir entre paysans et corporations transnationales, entre autonomie locale et logique capitaliste.\n\nVia Campesina y documente les violations systématiques : expulsions massives du foncier (land grabs) orchestrées par États et grandes entreprises pour mines, plantations agro-industrielles, zones économiques spéciales ; destruction des semences locales au profit de monocultures (agrofuels, OGM) ; paupérisation des revenus agricoles ; criminalisation des luttes paysannes elles-mêmes ; discrimination systématique des femmes en matière d'accès à la terre et ressources productives.\n\nMais ce texte politise ces violations plutôt que de les subir. Les accords de libre-échange, les programmes d'ajustement structurel du FMI, la dérégulation de l'OMC ont forcé l'ouverture des marchés et le démantèlement des protections agricoles. Les paysans se retrouvent exsangues face à des adversaires infiniment plus puissants.\n\nPour les lecteurs de Troisième Voix, cette déclaration rejoint directement les débats sur les communs, la propriété d'usage et la libération des terres. Elle pose une question fondamentale : comment reconnaître et protéger les droits des paysans comme producteurs et gardiens de ressources communes – semences, biodiversité, savoir-faire – plutôt que de les traiter comme acteurs économiques soumis au marché ?\n\nVia Campesina réclame une Convention internationale spécifique, opposant au droit commercial mondialisé un droit paysan qui reconnaisse l'autonomie, la souveraineté alimentaire et la justice foncière comme droits fondamentaux.",
-  "citations_phares": [
-    {
-      "page": 2,
-      "quote": "Almost half of the people in the world are peasants. Even in the high‐tech world, people eat food produced by peasants."
-    },
-    {
-      "page": 2,
-      "quote": "Millions of peasants have been forced to leave their farmland because of land grabs facilitated by national policies and/or the military."
-    },
-    {
-      "page": 3,
-      "quote": "Peasants are forced to produce for export instead of producing food for their communities."
-    }
-  ],
-  "categorisation": [
-    "paysannerie",
-    "communs",
-    "souveraineté alimentaire",
-    "accaparement des terres",
-    "droit international",
-    "femmes",
-    "néolibéralisme",
-    "autonomie territoriale"
-  ],
-  "slug": "via-campesina-declaration-droits-paysans",
-  "en_clair": "Ce texte explique pourquoi les paysans se battent partout dans le monde : on leur prend leurs terres pour en faire des mines, des plantations ou des zones de commerce, on les force à cultiver pour l'export au lieu de nourrir leurs familles, et quand ils résistent, on les emprisonne. Le texte demande que l'ONU crée une vraie loi mondiale pour protéger les droits des paysans, en particulier celui des femmes qui sont les plus exploitées.",
-  "acteurs": [
-    "La Via Campesina",
-    "World Trade Organisation (WTO)",
-    "Free Trade Agreements (FTAs)",
-    "International Monetary Fund (IMF)",
-    "United Nations (UN)",
-    "Human Rights Council",
-    "ILO (Convention 169)",
-    "transnational corporations"
-  ],
-  "controverse": "Tension centrale entre deux visions du foncier : celle néolibérale de l'OMC et du FMI (ouverture des marchés, privatisation, intégration aux chaînes agro-industrielles globales) et celle de Via Campesina (droits inaliénables des paysans sur la terre, autonomie alimentaire, souveraineté locale). Le texte soulève aussi l'impuissance des conventions internationales existantes, y compris les plus progressistes, face à la brutalité systématique des violations paysannes.",
-  "angle_journalistique": "Enquêter sur les raisons de l'absence ou du délai dans l'adoption d'une convention internationale spécifique aux droits des paysans malgré les violations documentées depuis 2009 — qui s'oppose et pourquoi (gouvernements du Nord, corporations transnationales, institutions de Bretton Woods) ?",
-  "citations_verifiees": [
-    {
-      "quote": "Almost half of the people in the world are peasants. Even in the high‐tech world, people eat food produced by peasants.",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "Millions of peasants have been forced to leave their farmland because of land grabs facilitated by national policies and/or the military.",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "Peasants are forced to produce for export instead of producing food for their communities.",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "Women are discriminated in their access to land and productive resources, and marginalized in decision making.",
-      "page": 2,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "The capitalist logic of accumulation has dismantled peasant agriculture.",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "Small‐scale agriculture is not just an economic activity; it means life for many people.",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "Monocultures for the production of agrofuels and other industrial uses are promoted in favor of agribusiness and transnational capital.",
-      "page": 3,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "The WTO and FTAs force the opening of markets and prevent countries from protecting and supporting their domestic agriculture.",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "The violation of the rights of peasants damages the world's capability to feed itself.",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    },
-    {
-      "quote": "It is important to create an international instrument to respect, protect, fulfill, and uphold peasants' rights – the International Convention on the Rights of Peasants (ICRP).",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "5e79dda16c"
+ "titre_accroche": "Quand La Via Campesina défend le droit à la terre des paysans",
+ "teaser": "Un manifeste politique qui expose les violations systématiques des droits paysans à l'échelle mondiale et réclame une Convention internationale spécifique.",
+ "abstract_editorial": "Ce manifeste de La Via Campesina, adopté en 2009, nous rappelle une réalité souvent oubliée : presque la moitié de l'humanité vit de l'agriculture paysanne. Loin d'être un vestige, cette réalité structure les rapports de pouvoir entre paysans et corporations transnationales, entre autonomie locale et logique capitaliste.\n\nVia Campesina y documente les violations systématiques : expulsions massives du foncier (land grabs) orchestrées par États et grandes entreprises pour mines, plantations agro-industrielles, zones économiques spéciales ; destruction des semences locales au profit de monocultures (agrofuels, OGM) ; paupérisation des revenus agricoles ; criminalisation des luttes paysannes elles-mêmes ; discrimination systématique des femmes en matière d'accès à la terre et ressources productives.\n\nMais ce texte politise ces violations plutôt que de les subir. Les accords de libre-échange, les programmes d'ajustement structurel du FMI, la dérégulation de l'OMC ont forcé l'ouverture des marchés et le démantèlement des protections agricoles. Les paysans se retrouvent exsangues face à des adversaires infiniment plus puissants.\n\nPour les lecteurs de Troisième Voix, cette déclaration rejoint directement les débats sur les communs, la propriété d'usage et la libération des terres. Elle pose une question fondamentale : comment reconnaître et protéger les droits des paysans comme producteurs et gardiens de ressources communes – semences, biodiversité, savoir-faire – plutôt que de les traiter comme acteurs économiques soumis au marché ?\n\nVia Campesina réclame une Convention internationale spécifique, opposant au droit commercial mondialisé un droit paysan qui reconnaisse l'autonomie, la souveraineté alimentaire et la justice foncière comme droits fondamentaux.",
+ "citations_phares": [
+  {
+   "page": 2,
+   "quote": "Almost half of the people in the world are peasants. Even in the high‐tech world, people eat food produced by peasants."
+  },
+  {
+   "page": 2,
+   "quote": "Millions of peasants have been forced to leave their farmland because of land grabs facilitated by national policies and/or the military."
+  },
+  {
+   "page": 3,
+   "quote": "Peasants are forced to produce for export instead of producing food for their communities."
+  }
+ ],
+ "categorisation": [
+  "paysannerie",
+  "communs",
+  "souveraineté alimentaire",
+  "accaparement des terres",
+  "droit international",
+  "femmes",
+  "néolibéralisme",
+  "autonomie territoriale"
+ ],
+ "slug": "via-campesina-declaration-droits-paysans",
+ "en_clair": "Ce texte explique pourquoi les paysans se battent partout dans le monde : on leur prend leurs terres pour en faire des mines, des plantations ou des zones de commerce, on les force à cultiver pour l'export au lieu de nourrir leurs familles, et quand ils résistent, on les emprisonne. Le texte demande que l'ONU crée une vraie loi mondiale pour protéger les droits des paysans, en particulier celui des femmes qui sont les plus exploitées.",
+ "acteurs": [
+  "La Via Campesina",
+  "World Trade Organisation (WTO)",
+  "Free Trade Agreements (FTAs)",
+  "International Monetary Fund (IMF)",
+  "United Nations (UN)",
+  "Human Rights Council",
+  "ILO (Convention 169)",
+  "transnational corporations"
+ ],
+ "controverse": "Tension centrale entre deux visions du foncier : celle néolibérale de l'OMC et du FMI (ouverture des marchés, privatisation, intégration aux chaînes agro-industrielles globales) et celle de Via Campesina (droits inaliénables des paysans sur la terre, autonomie alimentaire, souveraineté locale). Le texte soulève aussi l'impuissance des conventions internationales existantes, y compris les plus progressistes, face à la brutalité systématique des violations paysannes.",
+ "angle_journalistique": "Enquêter sur les raisons de l'absence ou du délai dans l'adoption d'une convention internationale spécifique aux droits des paysans malgré les violations documentées depuis 2009 — qui s'oppose et pourquoi (gouvernements du Nord, corporations transnationales, institutions de Bretton Woods) ?",
+ "citations_verifiees": [
+  {
+   "quote": "Almost half of the people in the world are peasants. Even in the high‐tech world, people eat food produced by peasants.",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "Millions of peasants have been forced to leave their farmland because of land grabs facilitated by national policies and/or the military.",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "Peasants are forced to produce for export instead of producing food for their communities.",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "Women are discriminated in their access to land and productive resources, and marginalized in decision making.",
+   "page": 2,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "The capitalist logic of accumulation has dismantled peasant agriculture.",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "Small‐scale agriculture is not just an economic activity; it means life for many people.",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "Monocultures for the production of agrofuels and other industrial uses are promoted in favor of agribusiness and transnational capital.",
+   "page": 3,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "The WTO and FTAs force the opening of markets and prevent countries from protecting and supporting their domestic agriculture.",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "The violation of the rights of peasants damages the world's capability to feed itself.",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  },
+  {
+   "quote": "It is important to create an international instrument to respect, protect, fulfill, and uphold peasants' rights – the International Convention on the Rights of Peasants (ICRP).",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  }
+ ]
 }

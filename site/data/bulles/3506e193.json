@@ -1,90 +1,88 @@
 {
-  "titre_accroche": "La Via Campesina : les droits humains au service de la souveraineté paysanne",
-  "teaser": "Comment un mouvement paysan transnational a détourné le langage des droits humains pour construire une vision collective de l'agriculture ? Une généalogie critique de la souveraineté alimentaire comme réponse anti-capitaliste à la dépaysannisation globale.",
-  "abstract_editorial": "La Via Campesina, mouvement transnational de paysans et petits agriculteurs fondé dans les années 1990, incarne une stratégie politique singulière : mobiliser le langage des droits humains pour combattre le capitalisme et le néolibéralisme en agriculture. Face à la dépaysannisation mondiale et à l'émergence d'un régime alimentaire corporatiste dominé par les importations massives, le mouvement a élaboré un modèle alternatif : la souveraineté alimentaire.\n\nCet ouvrage académique, signé Priscilla Claeys, offre une généalogie critique de cette stratégie. Il montre comment Via Campesina a fusionné des organisations politiquement et idéologiquement différentes autour d'un « cadre des droits » commun. Mais le mouvement a dû affronter les limites du libéralisme occidental : un cadre des droits humains fondamentalement individualiste, centré sur les obligations de l'État, incapable de questionner la liberté économique au profit de l'égalité réelle.\n\nVia Campesina a donc créé de nouveaux droits – souveraineté alimentaire, droits des paysans – ancrés dans la dimension collective plutôt qu'individuelle. Ces droits incluent la maîtrise des ressources productives, la défense des savoirs locaux, la création de marchés territoriaux, des prix rémunérateurs, et surtout le droit inaliénable à la terre et aux territoires.\n\nLe texte explore également l'une des plus importantes tentatives d'institutionnalisation du mouvement : la demande d'une Convention internationale à l'ONU (2000-2004), initiative qui s'est progressivement effacée après 2007. Une tension productive : comment les mouvements du commun négocient-ils avec l'ordre juridique dominant sans être neutralisés par lui ?",
-  "citations_phares": [
-    {
-      "page": 1,
-      "quote": "The transnational agrarian movement La Via Campesina is known for having successfully mobilized a human rights discourse in its struggle against capitalism and neoliberalism in agriculture."
-    },
-    {
-      "page": 2,
-      "quote": "La Via Campesina has developed a 'food sovereignty' model to counterpose the dominant 'market economy' paradigm."
-    },
-    {
-      "page": 3,
-      "quote": "securing control over natural productive resources, protecting local knowledge and cultural identity, creating local markets, guaranteeing remunerative prices, and defending the right to land and territories"
-    }
-  ],
-  "categorisation": [
-    "souveraineté alimentaire",
-    "paysannerie",
-    "La Via Campesina",
-    "droits collectifs",
-    "droit à la terre",
-    "communs",
-    "anti-capitalisme",
-    "décolonisation agraire"
-  ],
-  "slug": "via-campesina-droits-humains-souverainete-alimentaire",
-  "en_clair": "Via Campesina, c'est un réseau mondial de paysans et petits agriculteurs qui se battent pour le droit de produire leur propre nourriture et de garder leurs terres, contre les grandes entreprises agroalimentaires et le libre-échange. Ce texte explique comment le mouvement utilise le langage des droits humains pour défendre ces revendications, et pourquoi il doit inventer de nouveaux droits (collectifs, pas juste individuels) parce que le cadre des droits occidental ne suffit pas.",
-  "acteurs": [
-    "La Via Campesina",
-    "José Bové",
-    "Kofi Annan"
-  ],
-  "controverse": "Tension entre le cadre des droits humains (occidental, libéral, individualiste) et les besoins du mouvement paysan (collectif, anti-capitaliste, contre le marché). Aussi : pourquoi la Convention internationale sur la Souveraineté Alimentaire, fortement promue entre 2000-2004, a-t-elle disparu de l'agenda après 2007 ? Y a-t-il eu un revirements stratégique ou une défaite ?",
-  "angle_journalistique": "Enquête sur l'abandon de la stratégie de Convention internationale sur la Souveraineté Alimentaire — que s'est-il passé après 2007 ? Via Campesina a-t-elle dû renoncer à l'institutionnalisation globale pour se concentrer sur des victoires locales et régionales ?",
-  "citations_verifiees": [
-    {
-      "quote": "The transnational agrarian movement La Via Campesina is known for having successfully mobilized a human rights discourse in its struggle against capitalism and neoliberalism in agriculture.",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "It has opposed 'global depeasantization' and the emerging 'corporate food regime'.",
-      "page": 1,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "La Via Campesina has developed a 'food sovereignty' model to counterpose the dominant 'market economy' paradigm.",
-      "page": 2,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "These regimes are built around the obligations of states and fail to adequately address the human rights responsibilities of private and transnational actors.",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "securing control over natural productive resources, protecting local knowledge and cultural identity, creating local markets, guaranteeing remunerative prices, and defending the right to land and territory.",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "The right to food sovereignty has not been claimed as an individual right, but rather as the right of communities, states, peoples or regions.",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "This conception emphasizes the collective dimension of claims over the individual one; targets the various levels where food and agricultural governance issues ought to be deliberated.",
-      "page": 3,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "In 2004, French farmer activist José Bové brought Via Campesina's call for a Convention on Food Sovereignty to the then UN Secretary General Kofi Annan.",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "4d12608b21"
+ "titre_accroche": "La Via Campesina : les droits humains au service de la souveraineté paysanne",
+ "teaser": "Comment un mouvement paysan transnational a détourné le langage des droits humains pour construire une vision collective de l'agriculture ? Une généalogie critique de la souveraineté alimentaire comme réponse anti-capitaliste à la dépaysannisation globale.",
+ "abstract_editorial": "La Via Campesina, mouvement transnational de paysans et petits agriculteurs fondé dans les années 1990, incarne une stratégie politique singulière : mobiliser le langage des droits humains pour combattre le capitalisme et le néolibéralisme en agriculture. Face à la dépaysannisation mondiale et à l'émergence d'un régime alimentaire corporatiste dominé par les importations massives, le mouvement a élaboré un modèle alternatif : la souveraineté alimentaire.\n\nCet ouvrage académique, signé Priscilla Claeys, offre une généalogie critique de cette stratégie. Il montre comment Via Campesina a fusionné des organisations politiquement et idéologiquement différentes autour d'un « cadre des droits » commun. Mais le mouvement a dû affronter les limites du libéralisme occidental : un cadre des droits humains fondamentalement individualiste, centré sur les obligations de l'État, incapable de questionner la liberté économique au profit de l'égalité réelle.\n\nVia Campesina a donc créé de nouveaux droits – souveraineté alimentaire, droits des paysans – ancrés dans la dimension collective plutôt qu'individuelle. Ces droits incluent la maîtrise des ressources productives, la défense des savoirs locaux, la création de marchés territoriaux, des prix rémunérateurs, et surtout le droit inaliénable à la terre et aux territoires.\n\nLe texte explore également l'une des plus importantes tentatives d'institutionnalisation du mouvement : la demande d'une Convention internationale à l'ONU (2000-2004), initiative qui s'est progressivement effacée après 2007. Une tension productive : comment les mouvements du commun négocient-ils avec l'ordre juridique dominant sans être neutralisés par lui ?",
+ "citations_phares": [
+  {
+   "page": 1,
+   "quote": "The transnational agrarian movement La Via Campesina is known for having successfully mobilized a human rights discourse in its struggle against capitalism and neoliberalism in agriculture."
+  },
+  {
+   "page": 2,
+   "quote": "La Via Campesina has developed a 'food sovereignty' model to counterpose the dominant 'market economy' paradigm."
+  },
+  {
+   "page": 3,
+   "quote": "securing control over natural productive resources, protecting local knowledge and cultural identity, creating local markets, guaranteeing remunerative prices, and defending the right to land and territories"
+  }
+ ],
+ "categorisation": [
+  "souveraineté alimentaire",
+  "paysannerie",
+  "La Via Campesina",
+  "droits collectifs",
+  "droit à la terre",
+  "communs",
+  "anti-capitalisme",
+  "décolonisation agraire"
+ ],
+ "slug": "via-campesina-droits-humains-souverainete-alimentaire",
+ "en_clair": "Via Campesina, c'est un réseau mondial de paysans et petits agriculteurs qui se battent pour le droit de produire leur propre nourriture et de garder leurs terres, contre les grandes entreprises agroalimentaires et le libre-échange. Ce texte explique comment le mouvement utilise le langage des droits humains pour défendre ces revendications, et pourquoi il doit inventer de nouveaux droits (collectifs, pas juste individuels) parce que le cadre des droits occidental ne suffit pas.",
+ "acteurs": [
+  "La Via Campesina",
+  "José Bové",
+  "Kofi Annan"
+ ],
+ "controverse": "Tension entre le cadre des droits humains (occidental, libéral, individualiste) et les besoins du mouvement paysan (collectif, anti-capitaliste, contre le marché). Aussi : pourquoi la Convention internationale sur la Souveraineté Alimentaire, fortement promue entre 2000-2004, a-t-elle disparu de l'agenda après 2007 ? Y a-t-il eu un revirements stratégique ou une défaite ?",
+ "angle_journalistique": "Enquête sur l'abandon de la stratégie de Convention internationale sur la Souveraineté Alimentaire — que s'est-il passé après 2007 ? Via Campesina a-t-elle dû renoncer à l'institutionnalisation globale pour se concentrer sur des victoires locales et régionales ?",
+ "citations_verifiees": [
+  {
+   "quote": "The transnational agrarian movement La Via Campesina is known for having successfully mobilized a human rights discourse in its struggle against capitalism and neoliberalism in agriculture.",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "It has opposed 'global depeasantization' and the emerging 'corporate food regime'.",
+   "page": 1,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "La Via Campesina has developed a 'food sovereignty' model to counterpose the dominant 'market economy' paradigm.",
+   "page": 2,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "These regimes are built around the obligations of states and fail to adequately address the human rights responsibilities of private and transnational actors.",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "securing control over natural productive resources, protecting local knowledge and cultural identity, creating local markets, guaranteeing remunerative prices, and defending the right to land and territory.",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "The right to food sovereignty has not been claimed as an individual right, but rather as the right of communities, states, peoples or regions.",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "This conception emphasizes the collective dimension of claims over the individual one; targets the various levels where food and agricultural governance issues ought to be deliberated.",
+   "page": 3,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "In 2004, French farmer activist José Bové brought Via Campesina's call for a Convention on Food Sovereignty to the then UN Secretary General Kofi Annan.",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  }
+ ]
 }

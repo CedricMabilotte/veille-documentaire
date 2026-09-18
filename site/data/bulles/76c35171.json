@@ -1,93 +1,91 @@
 {
-  "titre_accroche": "Agrofuels : la fausse solution verte qui détruit les terres paysannes",
-  "teaser": "La Via Campesina dénonce un détournement : les agrofuels industriels, présentés comme solution climatique, ne sont qu'un alibi pour l'accaparement capitaliste des terres vivrières du Sud. Qui nourrit vraiment le monde ?",
-  "abstract_editorial": "En novembre 2009, La Via Campesina publie un diagnostic mordant : les agrofuels ne sauvent pas la planète, ils la pillent. Jatropha, palmier à huile, canne à sucre : des monocultures d'exportation qui remplacent les cultures vivrières au Mali, au Mozambique, au Brésil, en Haïti, au Canada et en Indonésie. \n\nLe stratagème écologique repose sur une inversion : les terres du Sud, autrefois destinées à nourrir les paysanneries locales, deviennent des usines énergétiques au service des marchés du Nord. Les petits paysans, qui nourrissent 70 % de la planète selon le mouvement, se voient expropriés au profit de transnationales. Les mécanismes de « crédit carbone » (Mécanismes pour un Développement Propre) légitiment ce détournement en le parant de vertus climatiques.\n\nCe carnet ne dénonce pas l'innovation énergétique en tant que telle, mais la manière dont le capitalisme agraire globalise la logique de la plantation : déforestation, épuisement de l'eau, exploitation de travailleurs ruraux vivant parfois en quasi-esclavage. Face à cette offensive, La Via Campesina oppose une vision radicale : seule l'agriculture paysanne de subsistance peut assurer une transition juste et durable. Ce document cristallise l'enjeu central des communs : qui décide de l'usage des terres et pour quel profit ?",
-  "citations_phares": [
-    {
-      "page": 4,
-      "quote": "Small farmers feed the world, industrial agrofuels fuel hunger and poverty"
-    },
-    {
-      "page": 4,
-      "quote": "Plantation workers and small farmers – women and men – are exploited and sometimes live in slavery"
-    },
-    {
-      "page": 4,
-      "quote": "our relentless struggle against the transnational companies that are maximizing profits at the expense of people's lives, land and territories"
-    }
-  ],
-  "categorisation": [
-    "paysannerie",
-    "accaparement des terres",
-    "souveraineté alimentaire",
-    "communs",
-    "colonialisme économique",
-    "critique du capitalisme agraire",
-    "transition énergétique",
-    "Via Campesina"
-  ],
-  "slug": "agrofuels-fausse-solution-verte-terres-paysannes",
-  "en_clair": "Des multinationales étrangères s'accaparent les meilleures terres des paysans du Sud pour cultiver du carburant au lieu de nourriture, en prétendant que c'est écologique, ce qui crée des famines et ruine les communautés rurales. Ce carnet montre le problème vu du terrain par les paysans eux-mêmes et explique pourquoi seule l'agriculture paysanne peut nourrir le monde.",
-  "acteurs": [
-    "La Via Campesina",
-    "Mali Biocarburant (MB)",
-    "CIRAD (Centre de Coopération Internationale en Recherche Agronomique pour le Développement)",
-    "ANADEB (Agence Nationale pour le Développement des Biocarburants, Mali)",
-    "Henry Saragih (Coordinateur Général de La Via Campesina)",
-    "François Houtart"
-  ],
-  "controverse": "Controverse entre la narration officielle des agrofuels comme solution écologique et durable au changement climatique et à la déplétion pétrolière, versus la réalité dénoncée : une fausse solution qui accélère la déforestation, l'épuisement des ressources en eau, détruit l'agriculture vivrière et la souveraineté alimentaire des peuples du Sud.",
-  "angle_journalistique": "Enquête approfondie sur la façon dont les mécanismes de financement climatique international (crédits carbone, Mécanismes pour un Développement Propre) financent en réalité l'accaparement foncier agraire et la destruction de l'agriculture paysanne vivrière au Ouest et au Sud.",
-  "citations_verifiees": [
-    {
-      "quote": "Small farmers feed the world, industrial agrofuels fuel hunger and poverty",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    },
-    {
-      "quote": "the 2007 food crisis was in great part triggered by the speculation on corn and soya due to the agrofuel frenzy",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    },
-    {
-      "quote": "Plantation workers and small farmers – women and men – are exploited and sometimes live in slavery",
-      "page": 4,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "our relentless struggle against the transnational companies that are maximizing profits at the expense of people's lives, land and territories",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    },
-    {
-      "quote": "the peasants and country women have been devoting less time and farmlands to cereals for food because of a crop culture whose production process is controlled by a company whose investors are mostly foreign",
-      "page": 6,
-      "page_physical": 6,
-      "verified": true
-    },
-    {
-      "quote": "Most of the land is occupied by small farmers, both women and men",
-      "page": 6,
-      "page_physical": 6,
-      "verified": true
-    },
-    {
-      "quote": "the carbon credit funds, which represent 130 billion dollars, are based on the idea that the best way to control climate changes is to transform CO2 emissions into a exchangeable good on the international market",
-      "page": 7,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "the devastation of the environment, public health, forests, water resources and human communities in the monoculture production areas",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "0e9f7f7309"
+ "titre_accroche": "Agrofuels : la fausse solution verte qui détruit les terres paysannes",
+ "teaser": "La Via Campesina dénonce un détournement : les agrofuels industriels, présentés comme solution climatique, ne sont qu'un alibi pour l'accaparement capitaliste des terres vivrières du Sud. Qui nourrit vraiment le monde ?",
+ "abstract_editorial": "En novembre 2009, La Via Campesina publie un diagnostic mordant : les agrofuels ne sauvent pas la planète, ils la pillent. Jatropha, palmier à huile, canne à sucre : des monocultures d'exportation qui remplacent les cultures vivrières au Mali, au Mozambique, au Brésil, en Haïti, au Canada et en Indonésie. \n\nLe stratagème écologique repose sur une inversion : les terres du Sud, autrefois destinées à nourrir les paysanneries locales, deviennent des usines énergétiques au service des marchés du Nord. Les petits paysans, qui nourrissent 70 % de la planète selon le mouvement, se voient expropriés au profit de transnationales. Les mécanismes de « crédit carbone » (Mécanismes pour un Développement Propre) légitiment ce détournement en le parant de vertus climatiques.\n\nCe carnet ne dénonce pas l'innovation énergétique en tant que telle, mais la manière dont le capitalisme agraire globalise la logique de la plantation : déforestation, épuisement de l'eau, exploitation de travailleurs ruraux vivant parfois en quasi-esclavage. Face à cette offensive, La Via Campesina oppose une vision radicale : seule l'agriculture paysanne de subsistance peut assurer une transition juste et durable. Ce document cristallise l'enjeu central des communs : qui décide de l'usage des terres et pour quel profit ?",
+ "citations_phares": [
+  {
+   "page": 4,
+   "quote": "Small farmers feed the world, industrial agrofuels fuel hunger and poverty"
+  },
+  {
+   "page": 4,
+   "quote": "Plantation workers and small farmers – women and men – are exploited and sometimes live in slavery"
+  },
+  {
+   "page": 4,
+   "quote": "our relentless struggle against the transnational companies that are maximizing profits at the expense of people's lives, land and territories"
+  }
+ ],
+ "categorisation": [
+  "paysannerie",
+  "accaparement des terres",
+  "souveraineté alimentaire",
+  "communs",
+  "colonialisme économique",
+  "critique du capitalisme agraire",
+  "transition énergétique",
+  "Via Campesina"
+ ],
+ "slug": "agrofuels-fausse-solution-verte-terres-paysannes",
+ "en_clair": "Des multinationales étrangères s'accaparent les meilleures terres des paysans du Sud pour cultiver du carburant au lieu de nourriture, en prétendant que c'est écologique, ce qui crée des famines et ruine les communautés rurales. Ce carnet montre le problème vu du terrain par les paysans eux-mêmes et explique pourquoi seule l'agriculture paysanne peut nourrir le monde.",
+ "acteurs": [
+  "La Via Campesina",
+  "Mali Biocarburant (MB)",
+  "CIRAD (Centre de Coopération Internationale en Recherche Agronomique pour le Développement)",
+  "ANADEB (Agence Nationale pour le Développement des Biocarburants, Mali)",
+  "Henry Saragih (Coordinateur Général de La Via Campesina)",
+  "François Houtart"
+ ],
+ "controverse": "Controverse entre la narration officielle des agrofuels comme solution écologique et durable au changement climatique et à la déplétion pétrolière, versus la réalité dénoncée : une fausse solution qui accélère la déforestation, l'épuisement des ressources en eau, détruit l'agriculture vivrière et la souveraineté alimentaire des peuples du Sud.",
+ "angle_journalistique": "Enquête approfondie sur la façon dont les mécanismes de financement climatique international (crédits carbone, Mécanismes pour un Développement Propre) financent en réalité l'accaparement foncier agraire et la destruction de l'agriculture paysanne vivrière au Ouest et au Sud.",
+ "citations_verifiees": [
+  {
+   "quote": "Small farmers feed the world, industrial agrofuels fuel hunger and poverty",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  },
+  {
+   "quote": "the 2007 food crisis was in great part triggered by the speculation on corn and soya due to the agrofuel frenzy",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  },
+  {
+   "quote": "Plantation workers and small farmers – women and men – are exploited and sometimes live in slavery",
+   "page": 4,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "our relentless struggle against the transnational companies that are maximizing profits at the expense of people's lives, land and territories",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  },
+  {
+   "quote": "the peasants and country women have been devoting less time and farmlands to cereals for food because of a crop culture whose production process is controlled by a company whose investors are mostly foreign",
+   "page": 6,
+   "page_physical": 6,
+   "verified": true
+  },
+  {
+   "quote": "Most of the land is occupied by small farmers, both women and men",
+   "page": 6,
+   "page_physical": 6,
+   "verified": true
+  },
+  {
+   "quote": "the carbon credit funds, which represent 130 billion dollars, are based on the idea that the best way to control climate changes is to transform CO2 emissions into a exchangeable good on the international market",
+   "page": 7,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "the devastation of the environment, public health, forests, water resources and human communities in the monoculture production areas",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  }
+ ]
 }
