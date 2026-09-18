@@ -8510,7 +8510,7 @@
       "download_status": "already_present",
       "versions": [],
       "score_initial": 7,
-      "score_final": 7,
+      "score_final": null,
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
       "archive_url": "http://web.archive.org/web/20240909193640/https://hal.science/hal-02485830/document",
@@ -8519,7 +8519,11 @@
       "author": "Hubert Cochet",
       "summary": "Article d'Hubert Cochet (HAL, 2019) sur la crise de l'agriculture vivrière, analysant la concurrence déloyale que subit ce modèle agricole traditionnel face à l'agriculture industrielle. Pertinent pour les thématiques paysannerie et souveraineté alimentaire.",
       "has_cover": false,
-      "cover": "covers/d64f2d03.jpg"
+      "cover": "covers/d64f2d03.jpg",
+      "enrich_abandon": {
+        "reason": "scan sans couche texte (ré-extraction 18/09)",
+        "date": "2026-09-18"
+      }
     },
     "46327ff6": {
       "id": "46327ff6",
