@@ -1358,6 +1358,23 @@ def _prune_site_orphans(catalog: dict) -> dict:
     return removed
 
 
+# Champs de provenance technique retirés de tout ce qui est publié (décision
+# Ced, 2026-09-18) : le droit d'auteur n'attribue pas de droits à une machine,
+# on n'expose donc plus le modèle ni la version de prompt sur le site. Ils
+# restent dans synopsis/catalog.json (traçabilité interne).
+_PROVENANCE_KEYS = ("model", "prompt_version", "prompt_hash")
+
+
+def _strip_provenance(obj):
+    """Retire récursivement les clés de provenance technique d'un JSON publié."""
+    if isinstance(obj, dict):
+        return {k: _strip_provenance(v) for k, v in obj.items()
+                if k not in _PROVENANCE_KEYS}
+    if isinstance(obj, list):
+        return [_strip_provenance(x) for x in obj]
+    return obj
+
+
 def publish_site(run_date: str) -> None:
     """Prépare le dossier site/ pour publication :
     - copie le catalog vers site/data/catalog.json
@@ -1380,7 +1397,8 @@ def publish_site(run_date: str) -> None:
         (SITE_PATH / "data").mkdir(parents=True, exist_ok=True)
         site_catalog = SITE_PATH / "data" / "catalog.json"
         _cat = json.loads(catalog_src.read_text(encoding="utf-8"))
-        _cat["docs"] = {i: d for i, d in _cat.get("docs", {}).items()
+        _cat["docs"] = {i: _strip_provenance(d)
+                        for i, d in _cat.get("docs", {}).items()
                         if _is_publishable(d)}
         site_catalog.write_text(
             json.dumps(_cat, ensure_ascii=False, indent=1),
@@ -1411,7 +1429,9 @@ def publish_site(run_date: str) -> None:
     site_bulles.mkdir(parents=True, exist_ok=True)
     bulle_count = 0
     for b in BULLES_PATH.glob("*.json"):
-        shutil.copy2(b, site_bulles / b.name)
+        _b = _strip_provenance(json.loads(b.read_text(encoding="utf-8")))
+        (site_bulles / b.name).write_text(
+            json.dumps(_b, ensure_ascii=False, indent=1), encoding="utf-8")
         bulle_count += 1
 
     # 3. Couvertures — JPEG (convention depuis session #17-18, 1200px) en

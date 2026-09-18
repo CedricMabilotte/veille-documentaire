@@ -1,101 +1,99 @@
 {
-  "titre_accroche": "Quand l'assemblée zapatiste gouverne la terre",
-  "teaser": "Une parabole zapatiste sur l'autonomie territoriale : quand une communauté paysanne se réunit en assemblée pour réorganiser collectivement son espace, c'est la démocratie directe qui change tout.",
-  "abstract_editorial": "Cette parabole zapatiste de décembre 2024 offre bien plus qu'un slogan : un portrait vivant de ce qu'est réellement l'autogestion des terres et des communs. Chompiras découvre un arbre décrépit menaçant de détruire les infrastructures collectives du village. Plutôt que d'improviser, la communauté le résout par la délibération et l'action solidaire.\n\nCe qui frappe, c'est la patience du processus. Pas d'autorité imposant une solution : une assemblée générale inclusive où chacun, indépendamment de ses convictions ou de son statut politique, participe et propose. Cette démocratie de base n'est pas un idéal lointain mais une pratique quotidienne de gouvernance territoriale.\n\nLa solution révèle une compréhension sophistiquée des communs : plutôt que de privatiser, la communauté réorganise l'espace collectif en relocalisant progressivement école, chapelle, champs de milpa, de café, de haricots, potagers et commerces. Elle redéfinit droits d'usage, travail collectif et entraide.\n\nPour qui s'intéresse à la libération des terres et à la paysannerie, ce texte dit l'essentiel : l'autonomie zapatiste n'est pas une abstraction politique mais une réalité ancrée dans l'agriculture vivrière et dans la présence des femmes comme actrices politiques. Lucecita du collectif féministe n'est pas une figurante mais une motrice de la délibération.\n\nEn somme, cette parabole fonctionne comme un document programmatique. Elle démontre que l'autodétermination passe d'abord par le contrôle autonome des territoires, par la démocratie directe et par l'organisation solidaire du travail agricole.",
-  "citations_phares": [
-    {
-      "page": 3,
-      "quote": "They held an assembly, invited everyone in town —everyone—, it didn't matter if they were partisans or Zapatistas or ex-Zapatistas, Catholics, Presbyterians, Evangelists, Protestants, Muslims, or with",
-      "verified": true,
-      "page_physical": 3
-    },
-    {
-      "page": 4,
-      "quote": "They made a subplan, organized themselves, divvied up the tasks: who does what and at what time in such a way that everyone had enough time and the means to help each other.",
-      "verified": true,
-      "page_physical": 4
-    },
-    {
-      "page": 2,
-      "quote": "Everyday Chompiras would go to his milpa by the same path... They began to farming a milpa, bean field, coffee field, pastures, vegetable garden, sheds, small shops.",
-      "verified": false,
-      "page_physical": null
-    }
-  ],
-  "categorisation": [
-    "autonomie territoriale",
-    "démocratie directe",
-    "communs",
-    "paysannerie",
-    "organisation collective",
-    "propriété d'usage",
-    "économie agraire",
-    "terres",
-    "féminisme"
-  ],
-  "slug": "quand-l-assemblee-zapatiste-gouverne-la-terre",
-  "en_clair": "Ce texte montre comment une communauté paysanne zapatiste se décide collectivement — en incluant tout le monde — sur comment réorganiser ses terres et ses lieux de vie quand le territoire est menacé. C'est un exemple concret d'autodétermination : comment les gens ordinaires gèrent ensemble leur terre sans chef unique qui décide pour eux.",
-  "acteurs": [
-    "Ejército Zapatista de Liberación Nacional",
-    "Subcomandante Insurgente Moisés",
-    "Sub Marcos",
-    "Chompiras",
-    "Lucecita",
-    "Mujeres que somos",
-    "Local Autonomous Government (GAL)"
-  ],
-  "controverse": "Le texte laisse entrevoir une tension entre partisans (non-Zapatistes) et Zapatistes lors de l'assemblée (« It's a Zapatista lie », « No, it's not »), suggérant des clivages politiques au sein de la communauté, bien que le processus inclusif et la délibération collective transcendent ultimement cette division.",
-  "angle_journalistique": "Comment les communautés zapatistes mettent concrètement en pratique l'autonomie territoriale et la démocratie directe paysanne dans leurs décisions quotidiennes sur l'usage des terres et les infrastructures communes, au-delà des déclarations politiques ?",
-  "citations_verifiees": [
-    {
-      "quote": "The Local Autonomous Government's authority said, 'Let's go and see.' And they went in a heap, in a pile really.",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "They held an assembly, invited everyone in town —everyone—, it didn't matter if they were partisans or Zapatistas or ex-Zapatistas, Catholics, Presbyterians, Evangelists, Protestants, Muslims, or without religion.",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "The group —that is, the Zapatistas of the town— had a separate meeting, as such, and reached an agreement on what they would do because it was clear to see what was going happen.",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "They made a subplan, organized themselves, divvied up the tasks: who does what and at what time in such a way that everyone had enough time and the means to help each other.",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    },
-    {
-      "quote": "Everyday Chompiras would go to his milpa by the same path... They began to farming a milpa, bean field, coffee field, pastures, vegetable garden, sheds, small shops.",
-      "page": 2,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "Lucecita was good at studying, analysis, science... at making plans, in thinking things through before doing them.",
-      "page": 2,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "She had just gotten back from a Mujeres que somos meeting where, of course and as it should be, they had just been badmouthing 'the fucking men.'",
-      "page": 2,
-      "page_physical": 2,
-      "verified": true
-    },
-    {
-      "quote": "when the tree fell it would take other trees with it, and with their roots torn off, it would loosen the soil and that would weaken the base of the big rock... The rock would overpower its base and roll downhill.",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "91b33c9e0b"
+ "titre_accroche": "Quand l'assemblée zapatiste gouverne la terre",
+ "teaser": "Une parabole zapatiste sur l'autonomie territoriale : quand une communauté paysanne se réunit en assemblée pour réorganiser collectivement son espace, c'est la démocratie directe qui change tout.",
+ "abstract_editorial": "Cette parabole zapatiste de décembre 2024 offre bien plus qu'un slogan : un portrait vivant de ce qu'est réellement l'autogestion des terres et des communs. Chompiras découvre un arbre décrépit menaçant de détruire les infrastructures collectives du village. Plutôt que d'improviser, la communauté le résout par la délibération et l'action solidaire.\n\nCe qui frappe, c'est la patience du processus. Pas d'autorité imposant une solution : une assemblée générale inclusive où chacun, indépendamment de ses convictions ou de son statut politique, participe et propose. Cette démocratie de base n'est pas un idéal lointain mais une pratique quotidienne de gouvernance territoriale.\n\nLa solution révèle une compréhension sophistiquée des communs : plutôt que de privatiser, la communauté réorganise l'espace collectif en relocalisant progressivement école, chapelle, champs de milpa, de café, de haricots, potagers et commerces. Elle redéfinit droits d'usage, travail collectif et entraide.\n\nPour qui s'intéresse à la libération des terres et à la paysannerie, ce texte dit l'essentiel : l'autonomie zapatiste n'est pas une abstraction politique mais une réalité ancrée dans l'agriculture vivrière et dans la présence des femmes comme actrices politiques. Lucecita du collectif féministe n'est pas une figurante mais une motrice de la délibération.\n\nEn somme, cette parabole fonctionne comme un document programmatique. Elle démontre que l'autodétermination passe d'abord par le contrôle autonome des territoires, par la démocratie directe et par l'organisation solidaire du travail agricole.",
+ "citations_phares": [
+  {
+   "page": 3,
+   "quote": "They held an assembly, invited everyone in town —everyone—, it didn't matter if they were partisans or Zapatistas or ex-Zapatistas, Catholics, Presbyterians, Evangelists, Protestants, Muslims, or with",
+   "verified": true,
+   "page_physical": 3
+  },
+  {
+   "page": 4,
+   "quote": "They made a subplan, organized themselves, divvied up the tasks: who does what and at what time in such a way that everyone had enough time and the means to help each other.",
+   "verified": true,
+   "page_physical": 4
+  },
+  {
+   "page": 2,
+   "quote": "Everyday Chompiras would go to his milpa by the same path... They began to farming a milpa, bean field, coffee field, pastures, vegetable garden, sheds, small shops.",
+   "verified": false,
+   "page_physical": null
+  }
+ ],
+ "categorisation": [
+  "autonomie territoriale",
+  "démocratie directe",
+  "communs",
+  "paysannerie",
+  "organisation collective",
+  "propriété d'usage",
+  "économie agraire",
+  "terres",
+  "féminisme"
+ ],
+ "slug": "quand-l-assemblee-zapatiste-gouverne-la-terre",
+ "en_clair": "Ce texte montre comment une communauté paysanne zapatiste se décide collectivement — en incluant tout le monde — sur comment réorganiser ses terres et ses lieux de vie quand le territoire est menacé. C'est un exemple concret d'autodétermination : comment les gens ordinaires gèrent ensemble leur terre sans chef unique qui décide pour eux.",
+ "acteurs": [
+  "Ejército Zapatista de Liberación Nacional",
+  "Subcomandante Insurgente Moisés",
+  "Sub Marcos",
+  "Chompiras",
+  "Lucecita",
+  "Mujeres que somos",
+  "Local Autonomous Government (GAL)"
+ ],
+ "controverse": "Le texte laisse entrevoir une tension entre partisans (non-Zapatistes) et Zapatistes lors de l'assemblée (« It's a Zapatista lie », « No, it's not »), suggérant des clivages politiques au sein de la communauté, bien que le processus inclusif et la délibération collective transcendent ultimement cette division.",
+ "angle_journalistique": "Comment les communautés zapatistes mettent concrètement en pratique l'autonomie territoriale et la démocratie directe paysanne dans leurs décisions quotidiennes sur l'usage des terres et les infrastructures communes, au-delà des déclarations politiques ?",
+ "citations_verifiees": [
+  {
+   "quote": "The Local Autonomous Government's authority said, 'Let's go and see.' And they went in a heap, in a pile really.",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "They held an assembly, invited everyone in town —everyone—, it didn't matter if they were partisans or Zapatistas or ex-Zapatistas, Catholics, Presbyterians, Evangelists, Protestants, Muslims, or without religion.",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "The group —that is, the Zapatistas of the town— had a separate meeting, as such, and reached an agreement on what they would do because it was clear to see what was going happen.",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "They made a subplan, organized themselves, divvied up the tasks: who does what and at what time in such a way that everyone had enough time and the means to help each other.",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  },
+  {
+   "quote": "Everyday Chompiras would go to his milpa by the same path... They began to farming a milpa, bean field, coffee field, pastures, vegetable garden, sheds, small shops.",
+   "page": 2,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "Lucecita was good at studying, analysis, science... at making plans, in thinking things through before doing them.",
+   "page": 2,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "She had just gotten back from a Mujeres que somos meeting where, of course and as it should be, they had just been badmouthing 'the fucking men.'",
+   "page": 2,
+   "page_physical": 2,
+   "verified": true
+  },
+  {
+   "quote": "when the tree fell it would take other trees with it, and with their roots torn off, it would loosen the soil and that would weaken the base of the big rock... The rock would overpower its base and roll downhill.",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  }
+ ]
 }

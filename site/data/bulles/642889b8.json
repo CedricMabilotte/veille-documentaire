@@ -1,106 +1,104 @@
 {
-  "titre_accroche": "Marcel, paysan indéracinable : refuser l'expropriation",
-  "teaser": "Marcel raconte sa lutte paysanne face à l'accaparement de ses terres. Pressions légales, astreintes financières, expropriation : un témoignage rare sur les mécanismes concrets de l'État-entrepreneur et comment émerge l'autonomie territoriale face à la dépossession.",
-  "abstract_editorial": "Ce témoignage de Marcel, paysan laitier installé à Notre-Dame-des-Landes depuis 1999, documente bien plus qu'une simple lutte contre un projet d'infrastructure. Il raconte la violence structurelle de l'accaparement des terres par l'État-entrepreneur et, en contrepoint, l'émergence d'une autonomie paysanne nouvelle.\n\nMarcel et Sylvie se sont installés librement à une époque où le projet d'aéroport sommeillait. Quand l'État le relance en 2000, commence un affrontement qui révèle les mécanismes concrets de la dépossession : astreintes quotidiennes de 200 à 1000 euros, procédures judiciaires infinies, menaces de séquestration du bétail et du matériel. Ces tactiques ne sont pas des excès ; elles sont le fonctionnement normal de l'État-entrepreneur face à ceux qui refusent de plier.\n\nLe texte expose aussi une tension stratégique déterminante : celle entre l'ACIPA, cherchant encore le dialogue avec les élus, et les « Habitants qui résistent », qui ont compris que la co-option légale mène à l'expropriation. C'est de cette fracture que naît la ZAD, espace d'autonomie territoriale paysanne fondée sur l'occupation directe et l'autogestion.\n\nPour le lectorat de Troisièmes Voix, ce document est précieux : il montre comment l'accaparement foncier génère non pas seulement une opposition défensive, mais des formes nouvelles de vie collective, d'économie paysanne autonome et de propriété d'usage en dehors du marché. C'est un cas d'école où la lutte pour la terre devient inventer ensemble un autre mode de vie paysan.",
-  "citations_phares": [
-    {
-      "page": 1,
-      "quote": "Marcel, paysan indéracinable",
-      "verified": true,
-      "page_physical": 3
-    },
-    {
-      "page": 3,
-      "quote": "la réalité crue de l'aménagement du territoire",
-      "verified": true,
-      "page_physical": 3
-    },
-    {
-      "page": 6,
-      "quote": "un système de production tel qu'on en avait envie",
-      "verified": true,
-      "page_physical": 6
-    }
-  ],
-  "categorisation": [
-    "communs",
-    "paysannerie",
-    "accaparement des terres",
-    "autonomie territoriale",
-    "lutte foncière",
-    "État-entrepreneur",
-    "ZAD",
-    "résistance"
-  ],
-  "slug": "marcel-paysan-indéracinable",
-  "en_clair": "Marcel et Sylvie ont choisi librement leur ferme pour y vivre et y travailler. L'État et une entreprise veulent y construire un aéroport : c'est l'accaparement. Ce texte montre comment les paysans s'organisent pour refuser le déracinement, et comment naît une communauté d'habitants qui occupent ensemble les terres et les défendent contre les expulsions.",
-  "acteurs": [
-    "Marcel",
-    "Sylvie",
-    "Sylvain",
-    "Bruno",
-    "Brigitte",
-    "ADECA (Association de Défense des Exploitants Concernés par l'Aéroport)",
-    "ACIPA (Association Citoyenne Intercommunale des Populations concernées par le projet d'Aéroport de Notre-Dame-des-Landes)",
-    "COPAIN (Collectif des Organisations Professionnelles Agricoles Indignées par le projet d'aéroport)",
-    "Habitants qui résistent",
-    "Vinci",
-    "AGO-Vinci",
-    "Jean-Claude Gayssot",
-    "Gouvernement Jospin"
-  ],
-  "controverse": "Tension stratégique centrale : opposition entre l'approche légale et institutionnelle de l'ACIPA (dialogue avec les élus, procédures publiques) et l'émergence d'une stratégie d'autonomie et d'action directe (« Habitants qui résistent »). Cette fragmentation anticipe la naissance de la ZAD comme forme radicale de résistance foncière hors des canaux officiels.",
-  "angle_journalistique": "Comment les mécanismes légaux, financiers et médiatiques de l'expropriation fragmentent ou cimentent les luttes paysannes ? Comment émergent en réaction des formes d'occupation territoriale autonome (ZAD, habitat collectif) échappant à la co-option institutionnelle ?",
-  "citations_verifiees": [
-    {
-      "quote": "Marcel, paysan indéracinable",
-      "page": 1,
-      "page_physical": 1,
-      "verified": true
-    },
-    {
-      "quote": "l'arrachement d'un être de l'endroit où il a construit sa vie",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "la réalité crue de l'aménagement du territoire",
-      "page": 3,
-      "page_physical": 3,
-      "verified": true
-    },
-    {
-      "quote": "les aménageurs jouent la carte de la pression financière pour faire plier les opposants",
-      "page": 4,
-      "page_physical": 4,
-      "verified": true
-    },
-    {
-      "quote": "un système de production tel qu'on en avait envie",
-      "page": 6,
-      "page_physical": 6,
-      "verified": true
-    },
-    {
-      "quote": "C'était à une époque où la lutte était en sommeil... Il n'y avait pas de lutte du tout même",
-      "page": 7,
-      "page_physical": 7,
-      "verified": true
-    },
-    {
-      "quote": "une espèce de grande foire lamentable... une espèce de grande machine dont tu te dis qu'elle va finir quand même par t'écraser",
-      "page": 8,
-      "page_physical": null,
-      "verified": false
-    },
-    {
-      "quote": "ceux qui plus tard allaient devenir les « Habitants qui résistent »... ne se retrouvaient pas dans le rapport aux élus adopté par l'ACIPA",
-      "page": 9,
-      "page_physical": null,
-      "verified": false
-    }
-  ],
-  "model": "claude-haiku-4-5",
-  "prompt_version": "a42e560e99"
+ "titre_accroche": "Marcel, paysan indéracinable : refuser l'expropriation",
+ "teaser": "Marcel raconte sa lutte paysanne face à l'accaparement de ses terres. Pressions légales, astreintes financières, expropriation : un témoignage rare sur les mécanismes concrets de l'État-entrepreneur et comment émerge l'autonomie territoriale face à la dépossession.",
+ "abstract_editorial": "Ce témoignage de Marcel, paysan laitier installé à Notre-Dame-des-Landes depuis 1999, documente bien plus qu'une simple lutte contre un projet d'infrastructure. Il raconte la violence structurelle de l'accaparement des terres par l'État-entrepreneur et, en contrepoint, l'émergence d'une autonomie paysanne nouvelle.\n\nMarcel et Sylvie se sont installés librement à une époque où le projet d'aéroport sommeillait. Quand l'État le relance en 2000, commence un affrontement qui révèle les mécanismes concrets de la dépossession : astreintes quotidiennes de 200 à 1000 euros, procédures judiciaires infinies, menaces de séquestration du bétail et du matériel. Ces tactiques ne sont pas des excès ; elles sont le fonctionnement normal de l'État-entrepreneur face à ceux qui refusent de plier.\n\nLe texte expose aussi une tension stratégique déterminante : celle entre l'ACIPA, cherchant encore le dialogue avec les élus, et les « Habitants qui résistent », qui ont compris que la co-option légale mène à l'expropriation. C'est de cette fracture que naît la ZAD, espace d'autonomie territoriale paysanne fondée sur l'occupation directe et l'autogestion.\n\nPour le lectorat de Troisièmes Voix, ce document est précieux : il montre comment l'accaparement foncier génère non pas seulement une opposition défensive, mais des formes nouvelles de vie collective, d'économie paysanne autonome et de propriété d'usage en dehors du marché. C'est un cas d'école où la lutte pour la terre devient inventer ensemble un autre mode de vie paysan.",
+ "citations_phares": [
+  {
+   "page": 1,
+   "quote": "Marcel, paysan indéracinable",
+   "verified": true,
+   "page_physical": 3
+  },
+  {
+   "page": 3,
+   "quote": "la réalité crue de l'aménagement du territoire",
+   "verified": true,
+   "page_physical": 3
+  },
+  {
+   "page": 6,
+   "quote": "un système de production tel qu'on en avait envie",
+   "verified": true,
+   "page_physical": 6
+  }
+ ],
+ "categorisation": [
+  "communs",
+  "paysannerie",
+  "accaparement des terres",
+  "autonomie territoriale",
+  "lutte foncière",
+  "État-entrepreneur",
+  "ZAD",
+  "résistance"
+ ],
+ "slug": "marcel-paysan-indéracinable",
+ "en_clair": "Marcel et Sylvie ont choisi librement leur ferme pour y vivre et y travailler. L'État et une entreprise veulent y construire un aéroport : c'est l'accaparement. Ce texte montre comment les paysans s'organisent pour refuser le déracinement, et comment naît une communauté d'habitants qui occupent ensemble les terres et les défendent contre les expulsions.",
+ "acteurs": [
+  "Marcel",
+  "Sylvie",
+  "Sylvain",
+  "Bruno",
+  "Brigitte",
+  "ADECA (Association de Défense des Exploitants Concernés par l'Aéroport)",
+  "ACIPA (Association Citoyenne Intercommunale des Populations concernées par le projet d'Aéroport de Notre-Dame-des-Landes)",
+  "COPAIN (Collectif des Organisations Professionnelles Agricoles Indignées par le projet d'aéroport)",
+  "Habitants qui résistent",
+  "Vinci",
+  "AGO-Vinci",
+  "Jean-Claude Gayssot",
+  "Gouvernement Jospin"
+ ],
+ "controverse": "Tension stratégique centrale : opposition entre l'approche légale et institutionnelle de l'ACIPA (dialogue avec les élus, procédures publiques) et l'émergence d'une stratégie d'autonomie et d'action directe (« Habitants qui résistent »). Cette fragmentation anticipe la naissance de la ZAD comme forme radicale de résistance foncière hors des canaux officiels.",
+ "angle_journalistique": "Comment les mécanismes légaux, financiers et médiatiques de l'expropriation fragmentent ou cimentent les luttes paysannes ? Comment émergent en réaction des formes d'occupation territoriale autonome (ZAD, habitat collectif) échappant à la co-option institutionnelle ?",
+ "citations_verifiees": [
+  {
+   "quote": "Marcel, paysan indéracinable",
+   "page": 1,
+   "page_physical": 1,
+   "verified": true
+  },
+  {
+   "quote": "l'arrachement d'un être de l'endroit où il a construit sa vie",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "la réalité crue de l'aménagement du territoire",
+   "page": 3,
+   "page_physical": 3,
+   "verified": true
+  },
+  {
+   "quote": "les aménageurs jouent la carte de la pression financière pour faire plier les opposants",
+   "page": 4,
+   "page_physical": 4,
+   "verified": true
+  },
+  {
+   "quote": "un système de production tel qu'on en avait envie",
+   "page": 6,
+   "page_physical": 6,
+   "verified": true
+  },
+  {
+   "quote": "C'était à une époque où la lutte était en sommeil... Il n'y avait pas de lutte du tout même",
+   "page": 7,
+   "page_physical": 7,
+   "verified": true
+  },
+  {
+   "quote": "une espèce de grande foire lamentable... une espèce de grande machine dont tu te dis qu'elle va finir quand même par t'écraser",
+   "page": 8,
+   "page_physical": null,
+   "verified": false
+  },
+  {
+   "quote": "ceux qui plus tard allaient devenir les « Habitants qui résistent »... ne se retrouvaient pas dans le rapport aux élus adopté par l'ACIPA",
+   "page": 9,
+   "page_physical": null,
+   "verified": false
+  }
+ ]
 }
