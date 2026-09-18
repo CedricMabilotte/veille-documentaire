@@ -3706,7 +3706,7 @@
       ],
       "versions": [],
       "score_initial": 8,
-      "score_final": 7,
+      "score_final": null,
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
       "collected_date": "2026-07-27_11-06",
@@ -3727,7 +3727,11 @@
         "pdf_creator": "Scribus 1.4.6"
       },
       "download_status": "ok",
-      "archive_url": "http://web.archive.org/web/20251110163959/https://www.cras31.info/IMG/pdf/magon-regeneracion-1910-pn.pdf"
+      "archive_url": "http://web.archive.org/web/20251110163959/https://www.cras31.info/IMG/pdf/magon-regeneracion-1910-pn.pdf",
+      "enrich_abandon": {
+        "reason": "pas de PDF exploitable (relecture 18/09)",
+        "date": "2026-09-18"
+      }
     },
     "9bdc8c24": {
       "id": "9bdc8c24",
@@ -12977,7 +12981,7 @@
       "download_status": "ok",
       "versions": [],
       "score_initial": 0,
-      "score_final": 8,
+      "score_final": null,
       "collected_date": "2026-07-27_11-06",
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -12990,7 +12994,11 @@
       "link_status": "ok",
       "link_checked": "2026-09-15T19:11:44Z",
       "archive_url": "http://web.archive.org/web/20260205082305/https://infokiosques.net/IMG/pdf/barricade_ton_squat-cahier-18pa4-2025.pdf",
-      "title": "Barricade ton squat — version cahier"
+      "title": "Barricade ton squat — version cahier",
+      "enrich_abandon": {
+        "reason": "texte non extractible (relecture 18/09)",
+        "date": "2026-09-18"
+      }
     },
     "8e03cbe1": {
       "id": "8e03cbe1",
@@ -32993,7 +33001,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 5,
+      "score_final": null,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -33046,7 +33054,11 @@
         "summary": ""
       },
       "title": "Squat et écriture",
-      "archive_url": "http://web.archive.org/web/20251125031046/https://infokiosques.net/IMG/pdf/squat-et-ecriture-page-par-page-mars2025.pdf"
+      "archive_url": "http://web.archive.org/web/20251125031046/https://infokiosques.net/IMG/pdf/squat-et-ecriture-page-par-page-mars2025.pdf",
+      "enrich_abandon": {
+        "reason": "texte non extractible (relecture 18/09)",
+        "date": "2026-09-18"
+      }
     },
     "940578dc": {
       "id": "940578dc",
@@ -35616,7 +35628,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 5,
+      "score_final": null,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -35670,7 +35682,11 @@
         "summary": ""
       },
       "title": "Crowbar chronicles — English booklet version",
-      "archive_url": "https://web.archive.org/web/20260701150405/https://infokiosques.net/IMG/pdf/crowbar-chronicles-en_booklet-2008-8pa4.pdf"
+      "archive_url": "https://web.archive.org/web/20260701150405/https://infokiosques.net/IMG/pdf/crowbar-chronicles-en_booklet-2008-8pa4.pdf",
+      "enrich_abandon": {
+        "reason": "texte non extractible (relecture 18/09)",
+        "date": "2026-09-18"
+      }
     },
     "d7759e91": {
       "id": "d7759e91",
@@ -36714,7 +36730,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 7,
+      "score_final": 8,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -36763,8 +36779,73 @@
       "link_checked": "2026-07-28T05:59:31Z",
       "download_status": "already_present",
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:10am (Europe/Paris)\n stderr=",
-        "summary": ""
+        "summary": "Ce texte constitue l'introduction historique de « 500 Years of Indigenous Resistance », chronique documentant 500 années de colonisation et de résistance autochtone dans les Amériques depuis 1492. Écrit par Gord Hill, artiste autochtone et ancien membre du journal révolutionnaire OH-TOH-KIN, il démonte les célébrations officielles du « 500e anniversaire de la Découverte » (1992) en les requalifiant comme célébration d'un holocauste. Le texte établit d'emblée un cadre politique : contre la narration coloniale présentant la colonisation comme mutuellement bénéfique, l'auteur affirme qu'il s'agit d'un processus systématique de génocide et de dépossession. À l'appui, il corrige les chiffres : contre les 10-15 millions d'Autochtones acceptés par l'historiographie dominante, les études démographiques récentes situent la population pré-colombienne entre 70 et 100 millions (10 millions en Amérique du Nord, 30 millions en Mésoamérique, 50-70 millions en Amérique du Sud). Malgré 500 années de colonisation génocidaire, environ 40 millions de personnes autochtones vivent toujours dans les Amériques, bien que privées de contrôle effectif sur leurs terres — en Guatemala, les Mayas composent 60,3 % de la population ; en Bolivie, plus de 70 %. Le texte brosse ensuite un tableau détaillé du monde pré-colombien : au nord, des peuples de chasseurs-pêcheurs et agriculteurs diversifiés (Inuits, Cree, Tlingit, Haudenosaunee, Lakota, Muskogee) organisés en sociétés sans classes et matrilinéales ; en Mésoamérique, des empires agricoles complexes (Aztèques, Mayas) avec villes, écriture, astronomie ; en Amérique du Sud, les empires inca, les nations amazoniennes. Cette archéologie du monde perdu sert un argument politique central : les Autochtones n'étaient pas des « sauvages » dépourvus d'organisation, mais des peuples complexes et organisés, dont on a volé les terres et dont on doit reconnaître les droits politiques et territoriaux inaliénables. Le texte évoque les luttes contemporaines (Lubicons, Mohawks) et mentionne l'insurrection zapatiste de 1994 comme précédent historique.",
+        "citations": [
+          {
+            "page": 6,
+            "quote": "That was no \"Discovery\"—it was an American Indian Holocaust!",
+            "why_relevant": "Requalification politique de la colonisation en tant que génocide systématique, critiquant les célébrations officielles du Cinquième Centenaire",
+            "verified": true,
+            "page_physical": 6
+          },
+          {
+            "page": 6,
+            "quote": "Despite this, these Indigenous peoples lack any control over their own lands and comprise the most exploited and oppressed layers of the population",
+            "why_relevant": "Énoncé direct de la dépossession foncière comme élément structurant de l'oppression autochtone contemporaine",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 4,
+            "quote": "500 Years of Indigenous Resistance remains an important and relevent history of the colonization of the Americas and the resistance to it",
+            "why_relevant": "Posture historiographique plaçant la résistance autochtone au cœur de 500 ans d'histoire continentale",
+            "verified": true,
+            "page_physical": 4
+          },
+          {
+            "page": 10,
+            "quote": "With a few exceptions, the First Nations were classless and communitarian societies, with strong matrilineal features",
+            "why_relevant": "Documentation des formes collectives et communautaires d'organisation sociale pré-coloniale, y compris le pouvoir politique des femmes",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 6,
+            "quote": "The main thrust of this interpretation is that the colonization process—a process of genocide—has, with a few 'bad spots', been overall a mutually beneficial process",
+            "why_relevant": "Critique de la narration coloniale officielle qui masque le génocide et l'accaparement des terres",
+            "verified": true,
+            "page_physical": 6
+          }
+        ],
+        "matched_keywords": [
+          "mouvements autochtones",
+          "libération des terres",
+          "land back",
+          "souveraineté autochtone",
+          "autonomie territoriale",
+          "peuples autochtones",
+          "luttes pour la terre",
+          "dépossession foncière",
+          "societies communitarian",
+          "organismes collectifs",
+          "décolonisation"
+        ],
+        "relevance_score": 8,
+        "relevance_notes": "Le texte touche frontalement au core concept « Mouvements autochtones & Land Back » et à « Libération des terres », par une critique historique de 500 ans de dépossession. Manquent cependant les détails sur les instruments de propriété d'usage alternative (fiducies, coopératives), l'agroécologie, et le féminisme agraire explicite, bien que matrilinéalité soit mentionnée.",
+        "en_clair": "Ce texte raconte comment les peuples autochtones des Amériques ont résisté 500 ans à la prise de leurs terres par les colonisateurs, et pourquoi aujourd'hui ils se battent encore pour en récupérer le contrôle. Utile pour comprendre les racines historiques des luttes actuelles pour la restitution territoriale (Land Back) et pour démonter les mensonges officiels sur la « découverte ».",
+        "acteurs": [
+          "Gord Hill",
+          "OH-TOH-KIN (journal révolutionnaire autochtone)",
+          "The Lubicons",
+          "The Mohawks",
+          "Zapatistas",
+          "CELAM (association des évêques catholiques d'Amérique du Sud)",
+          "Various Indigenous nations: Kwakwaka'wakw, Tlingit, Haida, Lakota, Haudenosaunee/Iroquois Confederacy, Aztecs, Mayans, Inca, Quechua, Aymara, Mapuche, Yanomami"
+        ],
+        "controverse": "Antagonisme fondamental entre la narration coloniale officielle du Cinquième Centenaire (1992) présentant la colonisation comme mutuellement bénéfique et porteur de « progrès civilisateur », vs. la réalité documentée de génocide systématique, dépossession foncière totale, et absence durable de contrôle autochtone sur leurs terres — controverse alimentée par les révisions démographiques montrant 70-100 millions d'Autochtones avant 1492, et non 10-15 millions.",
+        "angle_journalistique": "Enquête sur les continuités entre les luttes autochtones de 1992 (mentionnées ici) et les mouvements Land Back contemporains : comment les États continuent à légitimer 500 ans de dépossession, et quelles stratégies de restitution les peuples autochtones déploient aujourd'hui.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "a620c57892"
       },
       "title": "500 Years of Indigenous Resistance (version anglaise — page par page)"
     },
@@ -53501,7 +53582,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 5,
+      "score_final": 8,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -53550,8 +53631,115 @@
       "link_checked": "2026-09-15T19:11:44Z",
       "download_status": "already_present",
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:10am (Europe/Paris)\n stderr=",
-        "summary": ""
+        "summary": "Cet essai anarchiste des années 1960 place l'agriculture au cœur d'une théorie politique et écologique cohérente. L'auteur argue que sans agriculture stable, durable et non-exploitative, aucune société viable n'est possible — qu'elle soit anarchiste ou autre. Le texte dénonce l'agriculture industrielle et capitaliste comme extractiviste : elle détruit les sols, transforme la nourriture en marchandise, exploite les paysans, et accélère l'extinction des ressources naturelles. En contraste, l'auteur promeut une agriculture paysanne de petite échelle, où producteurs et consommateurs sont fortement liés, où le sol est reconnu comme bien commun et patrimoine indivisible, et où les techniques s'adaptent aux écosystèmes locaux. Cette vision s'appuie sur Kropotkin (*Mutual Aid*, *Fields, Factories and Workshops*) et Edward Hyams (*Soil and Civilisation*). L'auteur critique l'anarchisme urbain d'avoir trop absorbé l'idéologie du progrès industriel et marxiste, oubliant que la stabilité écologique et alimentaire doit être première. Le sol doit être considéré comme un actif communautaire, entretenu par des cycles de matière organique entre paysans et artisans. Enfin, le texte fustige le système de prix et de profit qui gouverne l'agriculture moderne, en appelant à une refonte radicale : cultures adaptées au climat, conservation du humus, reforestation des terres érodées, et fin de l'agriculture « qui consomme le sol » au profit d'une agriculture « qui le fabrique ».",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "The first essential for a stable civilisation is a stable, non-exploitive agriculture, an agriculture which not only nourishes a community of men, but will continue to do so indefinitely.",
+            "why_relevant": "Énoncé du problème central : seule une agriculture vivrière durable et non-exploitative peut fonder une civilisation stable — cadre anarchiste écologiste",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 3,
+            "quote": "The soil must be regarded as a community asset that no individual has the right to destroy.",
+            "why_relevant": "Affirmation frontale d'une conception communiste du foncier : le sol comme bien commun, hors propriété privée — core concept de la thématique",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "Agricultural slavery leads inevitably to abuse of soil: the actual labourers on the land have little or no interest in its condition, while its owners look upon it merely as a source of personal not communal wealth.",
+            "why_relevant": "Critique de l'exploitation paysanne et de la propriété extractiviste du sol — lien entre classe et écologie",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "the type of agriculture to do all that is needed of it, would be one based on relatively small groups, where consumers and producers are closely connected",
+            "why_relevant": "Vision paysanne concrète : petits groupes, circuits courts, reconnexion production/consommation — modèle de paysannerie vivrière",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "An anarchist society would, I hope, start by asking the right questions: does it feed? Will it continue to feed? Will it sustain a vigorous and healthy society?",
+            "why_relevant": "Priorisation anarchiste : souveraineté alimentaire et écologie d'abord, pas le profit — cadre politique explicite",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 2,
+            "quote": "The modern industrial commercial state imposes on the farming community conditions which will cause the decay of much of the land now in production.",
+            "why_relevant": "Critique de l'État-capital et de son impact sur le foncier paysan — lien entre domination politique et dégradation écologique",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 3,
+            "quote": "With modern techniques the Americans produced a dust bowl in half a decade. The Romans with slave manpower took longer. Both have an exploitive attitude to our natural environment and to mankind.",
+            "why_relevant": "Généalogie historique de l'exploitation agricole et de l'épuisement des sols — Dust Bowl comme exemple paradigmatique",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 4,
+            "quote": "As in all forms of capitalist production, price and profit are the main motivation for agricultural production.",
+            "why_relevant": "Analyse politique de l'agriculture commerciale — critique du rôle du marché dans la destruction des sols",
+            "verified": true,
+            "page_physical": 4
+          },
+          {
+            "page": 3,
+            "quote": "Kropotkin puts the Fields first in his pamphlet on Fields, Factories and Workshops.",
+            "why_relevant": "Référence à Kropotkin comme penseur anarchiste de l'agriculture et des communs — autorité théorique du courant",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "The anarchist movement has probably been too much influenced by the concepts of progress in modern industrial society, and by the Marxian idea of surplus value",
+            "why_relevant": "Auto-critique du mouvement anarchiste : rejet du productivisme industriel et marxiste au profit d'une écologie politique ancrée",
+            "verified": true,
+            "page_physical": 3
+          }
+        ],
+        "matched_keywords": [
+          "paysannerie",
+          "agriculture vivrière",
+          "petite agriculture",
+          "communs fonciers",
+          "propriété collective",
+          "bien commun",
+          "agroécologie",
+          "conservation du sol",
+          "anti-commercialisme foncier",
+          "agriculture durable",
+          "souveraineté alimentaire",
+          "écologie politique",
+          "anarchisme écologiste",
+          "critique de l'agriculture industrielle",
+          "exploitation agricole",
+          "humus",
+          "cycles organiques",
+          "circuits courts",
+          "agronomie paysanne"
+        ],
+        "relevance_score": 8,
+        "relevance_notes": "Document hautement pertinent pour une veille foncière paysanne : touche frontalement à plusieurs core concepts (paysannerie, communs fonciers, agroécologie, critique anti-commerciale), articule anarchisme et écologie via l'agriculture. Limite : aucune mention de Land Back, féminisme agraire, ou dispositifs juridiques modernes (fiducies, CLT). Mais la densité théorique et l'ancrage paysan sont solides.",
+        "en_clair": "Ce texte dit que l'agriculture capitaliste tue les sols et que seule de la petite agriculture menée par des paysans en communauté peut vraiment nourrir les gens sans détruire la terre. C'est un appel anarchiste à changer complètement notre rapport à la terre et à la propriété foncière.",
+        "acteurs": [
+          "Kropotkin",
+          "Edward Hyams",
+          "The Soil Association (Royaume-Uni)",
+          "United States Department of Agriculture Soil Conservation Service",
+          "ANARCHY (journal)",
+          "Virgil (Virgile, auteur des Georgics)"
+        ],
+        "controverse": "Tension entre progrès industriel et stabilité écologique : l'auteur critique l'anarchisme urbain et marxiste d'avoir accepté l'idéologie du progrès technique sans interroger ses fondations agricoles, alors que seule une agriculture stable et paysanne peut soutenir toute civilisation — débat interne au mouvement anarchiste sur le rapport à la technique et à l'industrie.",
+        "angle_journalistique": "Enquête : comment les héritiers contemporains de Kropotkin imaginent-ils passer d'une agriculture industrielle mue par le profit à un modèle paysan et communautaire qui nourrit vraiment les populations sans détruire les sols ?",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "ae7f2b9479"
       },
       "title": "Anarchism and Agriculture"
     },
@@ -54955,7 +55143,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 4,
+      "score_final": 6,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -55004,8 +55192,122 @@
       "link_checked": "2026-09-15T19:11:44Z",
       "download_status": "already_present",
       "enrichment": {
-        "error": "claude_call: claude exit 1 — stdout=You've hit your session limit · resets 3:10am (Europe/Paris)\n stderr=",
-        "summary": ""
+        "summary": "Cette interview de 2006 avec Peter Sterling, organisateur de Dairy Farmers of Vermont (DFV), expose la crise de l'agriculture paysanne laitière aux États-Unis. Le texte décrit la consolidation drastique du secteur : deux corporations (Agrimark et Dairy Farmers of America) contrôlent 85% du lait liquide en Nouvelle-Angleterre et dictent les prix aux petits producteurs. En trois décennies, le Vermont est passé de 5-6000 exploitations laitières (1980) à moins de 1200 (2006), une hémorragie rurale amplifiée par une dépendance économique totale. Sterling critique les coopératives agricoles — St. Albans, Agrimark — qui ont trahi leur mission mutualiste en devenant des intermédiaires au service des corporations, voire en signant des accords secrets avec les acheteurs dominants. Les paysans, dépendants d'une collecte quotidienne de lait, ne peuvent ni négocier ni contester sans risquer des représailles (sabotage des tests de qualité, interruption de service). Sterling montre que la consolidation profite uniquement aux processeurs, pas aux consommateurs, tandis que l'impact est catastrophique : ruine individuelle, écroulement des économies rurales locales (fournisseurs, transporteurs), dégradation environnementale des grandes exploitations (sur-pâturage, assèchement des puits). L'agriculture biologique émerge comme alternative partielle (contrats garantis), mais le texte reste centré sur le diagnostic de la crise, non sur les solutions collectives.",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "It has basically created a slave system for farmers.",
+            "why_relevant": "Caractérisation radicale de l'exploitation économique des petits paysans par les corporations laitières, au cœur de la problématique de libération des terres et d'autonomie paysanne.",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 1,
+            "quote": "Farmers are slaves to this system, when the milk prices plummet there is nothing they can do.",
+            "why_relevant": "Illustre la dépendance totale des paysans et l'impossibilité d'exercer un contrôle sur leur propre travail, thème central de la paysannerie en crise.",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 1,
+            "quote": "These big milk guys, if they had their way…they would have just one big farm with 10,000 cows.",
+            "why_relevant": "Exprime la logique de concentration capitaliste qui détruit la paysannerie familiale en faveur d'une agriculture industrielle.",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 3,
+            "quote": "in 1980 there were 5-6000 dairy farms, easy. But now there is less than 1200.",
+            "why_relevant": "Quantification de la disparition massive de la paysannerie en une génération, processus d'enclosure économique et territoriale.",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "When a farm goes out of business, it's not just the farm that goes out of business, it's the guy who hauls his milk, it's the guy who sold him feed, it's the guy who sold him tractor parts. The whole community suffers.",
+            "why_relevant": "Démontre l'impact social et économique global de la consolidation : effondrement des économies rurales et des collectifs d'habitants.",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 2,
+            "quote": "The co-ops are supposed to take all these actions to benefit farmers, and they really just take it to benefit their board of directors and their corporate bottom line.",
+            "why_relevant": "Critique des coopératives agricoles ayant trahi leur mission mutualiste, enjeu central du mutualisme foncier et agricole.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 3,
+            "quote": "If you adjusted that for inflation, that's what they were making in 1970. You can't [sustainably] farm for something like that.",
+            "why_relevant": "Montre l'impossibilité économique pour les paysans de survivre, forçant à l'exode rural et à l'abandon de l'agriculture familiale.",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "If done poorly, meaning very concentrated with 1000 cows on the land, that is very bad for the environment",
+            "why_relevant": "Lie la critique de l'agriculture industrielle à ses impacts écologiques, argumentant pour une agroécologie plus respectueuse.",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 2,
+            "quote": "They didn't technically let themselves be taken over, but the staff is all the same now. St. Albans Co-op is controlled by Dairy Farmers of America.",
+            "why_relevant": "Expose la capture des coopératives par les corporations, remettant en question l'efficacité des structures mutuelles détournées.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 4,
+            "quote": "The key with organic and why it's so attractive to these guys, is because they get a guaranteed contract.",
+            "why_relevant": "Identifie l'agriculture biologique comme alternative partielle offrant une stabilité économique et une souveraineté alimentaire relative.",
+            "verified": true,
+            "page_physical": 4
+          }
+        ],
+        "matched_keywords": [
+          "paysannerie",
+          "agriculture familiale",
+          "family farming",
+          "peasant agriculture",
+          "agriculture vivrière",
+          "coopérative agricole",
+          "agricultural cooperatives",
+          "accaparement",
+          "land grabbing",
+          "consolidation",
+          "agriculture industrielle",
+          "agroécologie",
+          "souveraineté alimentaire",
+          "food sovereignty",
+          "sans-terre",
+          "landless",
+          "paysans libres",
+          "peasantry",
+          "économie rurale",
+          "rural commons",
+          "economies rurales en crise"
+        ],
+        "relevance_score": 6,
+        "relevance_notes": "Le texte est pertinent pour comprendre la crise de la paysannerie familiale et la consolidation capitaliste du secteur agraire, mais ne traite pas directement des solutions foncières collectives (communs fonciers, propriété d'usage, fiducies foncières) ni de mouvements de libération des terres organisés. Il s'agit plutôt d'un diagnostic de l'exploitation des petits paysans par des corporations et de la trahison des coopératives.",
+        "en_clair": "Deux grosses entreprises qui achètent le lait contrôlent les prix et écrasent les petits paysans, qui ne savent jamais combien ils vont gagner. Les fermes familiales disparaissent, les villages se vident, et les coopératives censées défendre les paysans se sont rangées du côté des corporations. Quand on ne peut pas vivre de son métier, on abandonne la terre.",
+        "acteurs": [
+          "Peter Sterling",
+          "Anthony Pollina",
+          "David Van Deusen",
+          "Dairy Farmers of Vermont (DFV)",
+          "Agrimark",
+          "Dairy Farmers of America",
+          "St. Albans Coop",
+          "Dean Foods",
+          "Vermont State Agricultural Department",
+          "Howard Dean (former Vermont Governor)",
+          "Jim Douglas (Vermont Governor)"
+        ],
+        "controverse": "Tension centrale entre la logique de consolidation industrielle (censée réduire les coûts) et la défense de la paysannerie familiale : Sterling conteste l'argument économique en montrant que (1) les prix aux consommateurs ne baissent pas, (2) les impacts environnementaux et sociaux (ruine rurale) sont désastreux, et (3) les coopératives agricoles, censées mutualiser et défendre les petits producteurs, ont été capturées par les corporations.",
+        "angle_journalistique": "Enquête sur la consolidation du marché laitier nord-américain : comment deux corporations éliminent les petites exploitations, dictent les prix en amont, et comment les coopératives agricoles — institutions censées défendre les paysans — se sont transformées en relais de cette domination.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "75f65bd466"
       },
       "title": "Down on The Farm"
     },
@@ -79276,7 +79578,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 4,
+      "score_final": null,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -79316,6 +79618,10 @@
       "title": "Boletim de Ocorrência",
       "enrichment": {
         "summary": ""
+      },
+      "enrich_abandon": {
+        "reason": "texte non extractible (relecture 18/09)",
+        "date": "2026-09-18"
       }
     },
     "e5436d2a": {
@@ -81000,7 +81306,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 9,
+      "score_final": null,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -81040,6 +81346,10 @@
       "title": "PA-RETIRO – Lote 13 – Transito em julgado",
       "enrichment": {
         "summary": ""
+      },
+      "enrich_abandon": {
+        "reason": "texte non extractible (relecture 18/09)",
+        "date": "2026-09-18"
       }
     },
     "bfd4b202": {
@@ -85290,7 +85600,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 4,
+      "score_final": null,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -85330,6 +85640,10 @@
       "title": "Digitalizar-27-dde-ago-dde-2020-1",
       "enrichment": {
         "summary": ""
+      },
+      "enrich_abandon": {
+        "reason": "texte non extractible (relecture 18/09)",
+        "date": "2026-09-18"
       }
     },
     "34beee0b": {
@@ -85397,7 +85711,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 8,
+      "score_final": null,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -85439,6 +85753,10 @@
       "title": "3.mst nicolas antunez – nicolas antunez",
       "enrichment": {
         "summary": ""
+      },
+      "enrich_abandon": {
+        "reason": "texte non extractible (relecture 18/09)",
+        "date": "2026-09-18"
       }
     },
     "d676a13b": {
@@ -86736,7 +87054,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 8,
+      "score_final": null,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -86776,6 +87094,10 @@
       "title": "DOCUMENTO-TARJADO_Ataque-de-segurancas-da-Vale-a-familias-no-Para-passa-anos-sem-investigacao-e-segue-impune",
       "enrichment": {
         "summary": ""
+      },
+      "enrich_abandon": {
+        "reason": "texte non extractible (relecture 18/09)",
+        "date": "2026-09-18"
       }
     },
     "3c692675": {
@@ -87235,7 +87557,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 9,
+      "score_final": 8,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -87274,7 +87596,109 @@
       "link_checked": "2026-09-15T19:11:44Z",
       "title": "Post-acao-2-ato-em-defesa-das-terras-publicas-e-pela-democracia-1-1",
       "enrichment": {
-        "summary": ""
+        "summary": "Ce document est une pétition collective signée par des organisations brésiliennes majeures (MST, ABRA, ABJD, partis progressistes PT et PSOL, et institutions académiques) en date de 2023, s'adressant au Brésil pour défendre les terres publiques devolutas de l'État de São Paulo contre la Lei Estadual nº 17.557/2022. Cette loi s'apprête à régulariser et vendre les terres publiques aux grileiros — c'est-à-dire aux fraudeurs qui les ont historiquement usurpées par la grilagem (appropriation frauduleuse). L'État proposerait des ventes à 10 % de la valeur réelle, soit 90 % de rabais, maquillant ainsi la légalisation d'une escroquerie. Les signataires dénoncent cette loi comme une violation frontale de la Constitution brésilienne (art. 188), du principe de « uso social da terra » (usage social de la terre) et des objectifs constitutionnels de lutte contre la pauvreté et les inégalités. Le texte lie explicitement réforme agraire, démocratie et justice sociale : « Sem reforma agrária não há democracia. Sem democracia não há justiça social ». Il rappelle aussi le droit constitutionnel de tous et toutes à l'alimentation saine, et le rôle de la démocratisation de l'accès à la terre pour réduire la faim et l'insécurité alimentaire. Cette intervention juridique et politique se situe dans le contexte plus large d'une mobilisation en défense de l'État démocratique au Brésil, avec un accent sur l'impossibilité de séparer démocratie politique et justice foncière.",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "política de reforma agrária que seja realmente capaz de garantir a democratização do acesso à terra aos trabalhadores rurais",
+            "why_relevant": "Formulation explicite du lien entre réforme agraire et accès démocratisé à la terre pour les travailleurs ruraux — core concept.",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 2,
+            "quote": "terras públicas devolutas [...] bens públicos por excelência, que integram o patrimônio do Estado",
+            "why_relevant": "Définition des terres devolutas comme biens publics — enjeu direct des communs publics contre leur privatisation.",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 2,
+            "quote": "A Lei Estadual 17.557, ao contrário do que prevê a Constituição, oficializa a entrega de grandes porções de terras públicas devolutas aos fazendeiros chamados grileiros",
+            "why_relevant": "Dénonciation de la légalisation rétroactive de la grilagem (appropriation frauduleuse) — critère de libération des terres contre l'accaparement.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "Uma legislação que viola princípios orçamentários, permitindo renúncia de receitas do Estado em favor de particulares, sem caracterização de interesse público",
+            "why_relevant": "Critique de la privatisation des biens publics sans justification d'intérêt public — principe anti-spéculatif.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "A Lei estadual 17.557 é uma clara violação ao uso social da terra.",
+            "why_relevant": "Invocation explicite du concept constitutionnel de « uso social da terra » — fondement du droit collectif d'usage contre la propriété spéculative.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 1,
+            "quote": "direito de todos e todas à alimentação saudável, reduzindo a fome e a insegurança alimentar que afligem o nosso povo",
+            "why_relevant": "Articulation entre réforme agraire et souveraineté alimentaire — dimension vitale de la libération des terres.",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 2,
+            "quote": "Sem reforma agrária não há democracia. Sem democracia não há justiça social.",
+            "why_relevant": "Énoncé programmatique liant explicitement réforme agraire, démocratie et justice — philosophie politique de la pétition.",
+            "verified": true,
+            "page_physical": 2
+          },
+          {
+            "page": 2,
+            "quote": "grilagem de terras, em áreas localizadas principalmente na região conhecida como Pontal do Paranapanema",
+            "why_relevant": "Nommage géographique et critique de l'accaparement historique — situe le conflit dans l'espace précis.",
+            "verified": true,
+            "page_physical": 2
+          }
+        ],
+        "matched_keywords": [
+          "réforme agraire",
+          "reforma agrária",
+          "accès à la terre",
+          "acesso à terra",
+          "terres publiques",
+          "terras públicas",
+          "sans-terre",
+          "Sem Terra",
+          "accaparement",
+          "grilagem de terras",
+          "libération des terres",
+          "souveraineté alimentaire",
+          "soberania alimentar",
+          "alimentation",
+          "alimentação saudável",
+          "justice sociale",
+          "justiça social",
+          "mouvements sociaux",
+          "movimentos sociais",
+          "usage social de la terre",
+          "uso social da terra",
+          "communs publics",
+          "bens públicos",
+          "démocratie",
+          "democracia"
+        ],
+        "relevance_score": 8,
+        "relevance_notes": "Score élevé (8/10) : le document touche frontalement plusieurs core_concepts (libération des terres via dénonciation de la grilagem, réforme agraire, accès démocratisé à la terre, souveraineté alimentaire, communs publics). Intervention politique et juridique bien ancrée, signée par des acteurs clés du mouvement paysan brésilien. Pas développement approfondi des dimensions autochtones, féministes ou agroécologiques, mais cohérence stratégique claire : bloquer une loi de régularisation frauduleuse au nom de la Constitution et de la justice foncière.",
+        "en_clair": "L'État de São Paulo veut vendre les dernières terres publiques à ceux qui les ont volées illégalement en les payant avec une énorme réduction (90 % moins cher) — des organisations de paysans et juristes demandent au pays de l'interdire. Ils disent qu'on ne peut pas avoir une vraie démocratie si les terres ne servent pas à nourrir le peuple et à réduire la pauvreté, pas à enrichir les fraudeurs.",
+        "acteurs": [
+          "MST - Movimento dos Trabalhadores Sem Terra",
+          "ABRA - Associação Brasileira de Reforma Agrária",
+          "ABJD - Associação Brasileira de Juristas pela Democracia",
+          "PT - Partido dos Trabalhadores",
+          "PSOL - Partido Socialismo e Liberdade",
+          "Centro Acadêmico XI de Agosto",
+          "Supremo Tribunal Federal (STF)",
+          "Bancada de Deputados Estaduais da Federação PT/PCdoB/PV"
+        ],
+        "controverse": "Controverse centrale autour de la Lei Estadual 17.557/2022 : l'État de São Paulo s'apprête à régulariser et céder les terres publiques devolutas aux grileiros (appropriateurs frauduleux) pour 10 % de leur valeur réelle. Les signataires considèrent cette loi comme une violation constitutionnelle du principe d'« uso social da terra » et une trahison de la démocratie ; le gouvernement paulista y voit probablement un mécanisme de résolution de conflits fonciers et de récupération partielle de revenus.",
+        "angle_journalistique": "Enquête sur les mécanismes juridiques et politiques par lesquels les États régularisent rétroactivement l'accaparement de terres publiques en Amérique latine, transformant des fraudeurs en propriétaires légaux tout en réduisant les revenus publics.",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "b5c5d1cc48"
       }
     },
     "dc226e43": {
@@ -87340,7 +87764,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 7,
+      "score_final": null,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -87380,6 +87804,10 @@
       "title": "Fazendo-Historia-6-Semente-CRB",
       "enrichment": {
         "summary": ""
+      },
+      "enrich_abandon": {
+        "reason": "texte non extractible (relecture 18/09)",
+        "date": "2026-09-18"
       }
     },
     "c476dd12": {
@@ -88158,7 +88586,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 7,
+      "score_final": null,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -88198,6 +88626,10 @@
       "title": "O-que-voce-precisa-saber-sobre-Suzano",
       "enrichment": {
         "summary": ""
+      },
+      "enrich_abandon": {
+        "reason": "texte non extractible (relecture 18/09)",
+        "date": "2026-09-18"
       }
     },
     "a83a3021": {
@@ -88460,7 +88892,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 0,
-      "score_final": 6,
+      "score_final": null,
       "latest_score": 0,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -88500,6 +88932,10 @@
       "title": "JORNADA_JUVENTUDE_2021-A3",
       "enrichment": {
         "summary": ""
+      },
+      "enrich_abandon": {
+        "reason": "texte non extractible (relecture 18/09)",
+        "date": "2026-09-18"
       }
     },
     "bc65041c": {
@@ -156933,7 +157369,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 8,
-      "score_final": 7,
+      "score_final": null,
       "latest_score": 8,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -156981,7 +157417,11 @@
       "download_status": "ok",
       "title": "BRIGADAS_INTERNACIONALISTA_Inglês",
       "link_status": "dead",
-      "link_checked": "2026-09-15T19:11:44Z"
+      "link_checked": "2026-09-15T19:11:44Z",
+      "enrich_abandon": {
+        "reason": "pas de PDF exploitable (relecture 18/09)",
+        "date": "2026-09-18"
+      }
     },
     "7543801f": {
       "id": "7543801f",
@@ -157148,7 +157588,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 8,
-      "score_final": 8,
+      "score_final": null,
       "latest_score": 8,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -157197,7 +157637,11 @@
       "archive_url": "https://web.archive.org/web/20241206100855/https://viacampesina.org/en/wp-content/uploads/sites/2/2020/06/Bolet%C3%ADn-EN.pdf",
       "title": "Boletín EN",
       "link_status": "dead",
-      "link_checked": "2026-09-15T19:11:44Z"
+      "link_checked": "2026-09-15T19:11:44Z",
+      "enrich_abandon": {
+        "reason": "pas de PDF exploitable (relecture 18/09)",
+        "date": "2026-09-18"
+      }
     },
     "b1383308": {
       "id": "b1383308",
@@ -159416,7 +159860,7 @@
       "latest_run": "2026-07-27_11-06",
       "collected_date": "2026-07-27_11-06",
       "score_initial": 8,
-      "score_final": 8,
+      "score_final": null,
       "latest_score": 8,
       "doc_type": "autre",
       "recit_de_lutte": false,
@@ -159464,7 +159908,11 @@
       "download_status": "ok",
       "title": "COMMUNIQUÉ DE PRESSE UNAC 17 abril",
       "link_status": "dead",
-      "link_checked": "2026-09-15T19:11:44Z"
+      "link_checked": "2026-09-15T19:11:44Z",
+      "enrich_abandon": {
+        "reason": "pas de PDF exploitable (relecture 18/09)",
+        "date": "2026-09-18"
+      }
     },
     "9fdec837": {
       "id": "9fdec837",
