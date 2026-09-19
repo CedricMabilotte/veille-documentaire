@@ -1,16 +1,18 @@
 {
- "generated_at": "2026-09-18T15:07:28Z",
+ "generated_at": "2026-09-19T08:33:39Z",
  "total_dossiers": 10,
  "dossiers": [
   {
    "slug": "sortir-une-terre-du-marche",
    "titre": "Sortir une terre du marché",
    "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-   "doc_count": 100,
+   "doc_count": 107,
    "docs": [
+    "e7512d48",
     "0b22d51b",
     "5f5dadd2",
     "e41de87d",
+    "03b9d287",
     "931fc89b",
     "2ab410d3",
     "dd858578",
@@ -43,7 +45,6 @@
     "97c3bbb4",
     "85a0da6c",
     "1ce39b6d",
-    "2e5629b5",
     "bd44cc6a",
     "54f18780",
     "de8665e3",
@@ -73,6 +74,7 @@
     "ab3b2eb1",
     "28b7cb2c",
     "2175f7a3",
+    "2e5629b5",
     "3fe8867b",
     "46f92da6",
     "7d4cb4f0",
@@ -87,9 +89,14 @@
     "710fa08a",
     "2f0c58b3",
     "8ee3f263",
+    "8c5780d2",
+    "298f7165",
     "02b2b6df",
     "e5341cc9",
+    "d992c836",
+    "095f8db9",
     "089a2666",
+    "f6ebd39c",
     "597a51e1",
     "a7658db1",
     "961e54e4",
@@ -110,6 +117,14 @@
     "bd18d74a"
    ],
    "docs_detail": [
+    {
+     "id": "e7512d48",
+     "title": "The Community land trust handbook",
+     "score": 10,
+     "matched_on": [
+      "community land trust"
+     ]
+    },
     {
      "id": "0b22d51b",
      "title": "Communs fonciers en conflit au Mexique: les ejidos dans l'économie mondialisée",
@@ -134,6 +149,14 @@
      "score": 9,
      "matched_on": [
       "propriété d'usage"
+     ]
+    },
+    {
+     "id": "03b9d287",
+     "title": "Combate, Año 3, N°29, 18 de Abril de 1959",
+     "score": 9,
+     "matched_on": [
+      "fiducie foncière"
      ]
     },
     {
@@ -402,15 +425,6 @@
      ]
     },
     {
-     "id": "2e5629b5",
-     "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
-     "score": 8,
-     "matched_on": [
-      "propriété d'usage",
-      "fonds de dotation"
-     ]
-    },
-    {
      "id": "bd44cc6a",
      "title": "500 Years of Indigenous Resistance",
      "score": 8,
@@ -661,6 +675,15 @@
      ]
     },
     {
+     "id": "2e5629b5",
+     "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
+     "score": 7,
+     "matched_on": [
+      "propriété d'usage",
+      "fonds de dotation"
+     ]
+    },
+    {
      "id": "3fe8867b",
      "title": "500 Years of Indigenous Resistance",
      "score": 7,
@@ -777,6 +800,22 @@
      ]
     },
     {
+     "id": "8c5780d2",
+     "title": "The Milton-Park affair : Canada's largest citizen-developer confrontation",
+     "score": 7,
+     "matched_on": [
+      "community land trust"
+     ]
+    },
+    {
+     "id": "298f7165",
+     "title": "Tenants take over",
+     "score": 7,
+     "matched_on": [
+      "community land trust"
+     ]
+    },
+    {
      "id": "02b2b6df",
      "title": "C'est quoi la ZAD ?",
      "score": 6,
@@ -793,8 +832,32 @@
      ]
     },
     {
+     "id": "d992c836",
+     "title": "Contre la légende et l'oubli",
+     "score": 6,
+     "matched_on": [
+      "propriété d'usage"
+     ]
+    },
+    {
+     "id": "095f8db9",
+     "title": "ZADissidences 3",
+     "score": 6,
+     "matched_on": [
+      "fonds de dotation"
+     ]
+    },
+    {
      "id": "089a2666",
      "title": "Manuscrits de 1844",
+     "score": 6,
+     "matched_on": [
+      "propriété d'usage"
+     ]
+    },
+    {
+     "id": "f6ebd39c",
+     "title": "In Defense — Such As It Is — of Usufructory Land Ownership",
      "score": 6,
      "matched_on": [
       "propriété d'usage"
@@ -953,7 +1016,7 @@
    "slug": "zad-defense-de-territoires",
    "titre": "ZAD & défense de territoires",
    "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-   "doc_count": 103,
+   "doc_count": 110,
    "docs": [
     "88bfc0cb",
     "38a113bc",
@@ -986,7 +1049,6 @@
     "1ce39b6d",
     "5c12100c",
     "b4712d32",
-    "2e5629b5",
     "c97fba28",
     "a5df1a9d",
     "cfea62d4",
@@ -1018,6 +1080,7 @@
     "330c44e0",
     "ec46400e",
     "568f8778",
+    "2e5629b5",
     "0861d0b3",
     "6772ded1",
     "772d3d06",
@@ -1040,11 +1103,18 @@
     "0183b615",
     "02b2b6df",
     "4bc13839",
+    "d992c836",
+    "095f8db9",
+    "073089a1",
+    "5ea1719f",
     "59fe7d0a",
     "d96335e8",
     "fbb766e9",
+    "bc522fd4",
     "b375e8c5",
     "d7759e91",
+    "41e09539",
+    "f6ebd39c",
     "df13538a",
     "9405b8a5",
     "469b3543",
@@ -1320,17 +1390,6 @@
      ]
     },
     {
-     "id": "2e5629b5",
-     "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
-     "score": 8,
-     "matched_on": [
-      "zad",
-      "notre-dame-des-landes",
-      "occupation",
-      "aéroport"
-     ]
-    },
-    {
      "id": "c97fba28",
      "title": "Un an après les expulsions, qu'est-ce qu'on fait encore sur la ZAD ?",
      "score": 8,
@@ -1581,6 +1640,17 @@
      ]
     },
     {
+     "id": "2e5629b5",
+     "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
+     "score": 7,
+     "matched_on": [
+      "zad",
+      "notre-dame-des-landes",
+      "occupation",
+      "aéroport"
+     ]
+    },
+    {
      "id": "0861d0b3",
      "title": "Les Bure à cuire n°1",
      "score": 7,
@@ -1770,6 +1840,49 @@
      ]
     },
     {
+     "id": "d992c836",
+     "title": "Contre la légende et l'oubli",
+     "score": 6,
+     "matched_on": [
+      "zad",
+      "occupation",
+      "aéroport"
+     ]
+    },
+    {
+     "id": "095f8db9",
+     "title": "ZADissidences 3",
+     "score": 6,
+     "matched_on": [
+      "zad",
+      "notre-dame-des-landes",
+      "occupation",
+      "aéroport"
+     ]
+    },
+    {
+     "id": "073089a1",
+     "title": "ZADissidences 2",
+     "score": 6,
+     "matched_on": [
+      "zad",
+      "notre-dame-des-landes",
+      "occupation",
+      "aéroport"
+     ]
+    },
+    {
+     "id": "5ea1719f",
+     "title": "ZADissidences 1",
+     "score": 6,
+     "matched_on": [
+      "zad",
+      "notre-dame-des-landes",
+      "occupation",
+      "aéroport"
+     ]
+    },
+    {
      "id": "59fe7d0a",
      "title": "Il \"movimento\" è morto, viva la... riforma ! (version italienne)",
      "score": 6,
@@ -1797,6 +1910,14 @@
      ]
     },
     {
+     "id": "bc522fd4",
+     "title": "Ocupar é lutar — version portugaise, à imprimer (1984)",
+     "score": 6,
+     "matched_on": [
+      "occupation"
+     ]
+    },
+    {
      "id": "b375e8c5",
      "title": "Occupare e Lottare",
      "score": 6,
@@ -1807,6 +1928,22 @@
     {
      "id": "d7759e91",
      "title": "LA COLONISATION DE LA PALESTINE ET SES CONSÉQUENCES",
+     "score": 6,
+     "matched_on": [
+      "occupation"
+     ]
+    },
+    {
+     "id": "41e09539",
+     "title": "Qu'est-ce que la propriété ?",
+     "score": 6,
+     "matched_on": [
+      "occupation"
+     ]
+    },
+    {
+     "id": "f6ebd39c",
+     "title": "In Defense — Such As It Is — of Usufructory Land Ownership",
      "score": 6,
      "matched_on": [
       "occupation"
@@ -1922,12 +2059,15 @@
    "slug": "sans-terre-reforme-agraire",
    "titre": "Sans-terre & réforme agraire",
    "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-   "doc_count": 448,
+   "doc_count": 457,
    "docs": [
     "5a9397e7",
     "8bfe460c",
     "0b22d51b",
     "e41de87d",
+    "03b9d287",
+    "35641d6d",
+    "dc1574ae",
     "931fc89b",
     "b225af88",
     "88bfc0cb",
@@ -2075,6 +2215,9 @@
     "940f15d7",
     "14d55842",
     "3d56fb12",
+    "8368f2e7",
+    "1ae37e83",
+    "bf8f5362",
     "fac367e2",
     "9e831a55",
     "c99e6da4",
@@ -2090,7 +2233,6 @@
     "08baa6d1",
     "b8b0bfd8",
     "fe77002b",
-    "2e5629b5",
     "47c6599a",
     "54f18780",
     "9f16b851",
@@ -2210,7 +2352,8 @@
     "ec46400e",
     "568f8778",
     "e8ee5514",
-    "35641d6d",
+    "2b3dfe6d",
+    "2e5629b5",
     "6772ded1",
     "235a98fb",
     "a54f94c8",
@@ -2283,11 +2426,13 @@
     "4bc13839",
     "e5341cc9",
     "bfc53f3a",
+    "d992c836",
     "3d9a76fb",
     "9e8c8fc5",
     "59fe7d0a",
     "089a2666",
     "6c98994c",
+    "f6ebd39c",
     "597a51e1",
     "961e54e4",
     "e0571d65",
@@ -2371,7 +2516,8 @@
     "8e365250",
     "a8d6ce5c",
     "68742934",
-    "7c1b5f0c"
+    "7c1b5f0c",
+    "439d316f"
    ],
    "docs_detail": [
     {
@@ -2406,6 +2552,34 @@
      "score": 9,
      "matched_on": [
       "réforme agraire"
+     ]
+    },
+    {
+     "id": "03b9d287",
+     "title": "Combate, Año 3, N°29, 18 de Abril de 1959",
+     "score": 9,
+     "matched_on": [
+      "réforme agraire",
+      "reforma agraria"
+     ]
+    },
+    {
+     "id": "35641d6d",
+     "title": "Lunes de Revolución, N°1, 18 de Mayo de 1959",
+     "score": 9,
+     "matched_on": [
+      "réforme agraire",
+      "reforma agraria",
+      "latifundi"
+     ]
+    },
+    {
+     "id": "dc1574ae",
+     "title": "Combate, Año 3, N°33, 23 de Abril de 1959",
+     "score": 9,
+     "matched_on": [
+      "réforme agraire",
+      "reforma agraria"
      ]
     },
     {
@@ -3824,6 +3998,38 @@
      ]
     },
     {
+     "id": "8368f2e7",
+     "title": "brochure_EN",
+     "score": 9,
+     "matched_on": [
+      "sans-terre",
+      "réforme agraire",
+      "via campesina",
+      "landless",
+      "agrarian reform"
+     ]
+    },
+    {
+     "id": "1ae37e83",
+     "title": "Low_Report_EN",
+     "score": 9,
+     "matched_on": [
+      "sans-terre",
+      "sans terre",
+      "réforme agraire"
+     ]
+    },
+    {
+     "id": "bf8f5362",
+     "title": "DECLARACION I : ENCUENTRO MESOAMERICANO FEMINISMO CAMPESINO",
+     "score": 9,
+     "matched_on": [
+      "réforme agraire",
+      "mst",
+      "via campesina"
+     ]
+    },
+    {
      "id": "fac367e2",
      "title": "Ricardo Flores Magón, — Regeneración 1910",
      "score": 8,
@@ -3949,15 +4155,6 @@
      "score": 8,
      "matched_on": [
       "réforme agraire"
-     ]
-    },
-    {
-     "id": "2e5629b5",
-     "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
-     "score": 8,
-     "matched_on": [
-      "réforme agraire",
-      "via campesina"
      ]
     },
     {
@@ -5079,13 +5276,21 @@
      ]
     },
     {
-     "id": "35641d6d",
-     "title": "Lunes de Revolución, N°1, 18 de Mayo de 1959",
+     "id": "2b3dfe6d",
+     "title": "Raffaele UNDROP article",
+     "score": 8,
+     "matched_on": [
+      "réforme agraire",
+      "agrarian reform"
+     ]
+    },
+    {
+     "id": "2e5629b5",
+     "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
      "score": 7,
      "matched_on": [
       "réforme agraire",
-      "reforma agraria",
-      "latifundi"
+      "via campesina"
      ]
     },
     {
@@ -5750,6 +5955,14 @@
      ]
     },
     {
+     "id": "d992c836",
+     "title": "Contre la légende et l'oubli",
+     "score": 6,
+     "matched_on": [
+      "réforme agraire"
+     ]
+    },
+    {
      "id": "3d9a76fb",
      "title": "Die Industrielle Landwirtschaft und das Klimachaos (version allemande — booklet)",
      "score": 6,
@@ -5787,6 +6000,16 @@
      "score": 6,
      "matched_on": [
       "réforme agraire"
+     ]
+    },
+    {
+     "id": "f6ebd39c",
+     "title": "In Defense — Such As It Is — of Usufructory Land Ownership",
+     "score": 6,
+     "matched_on": [
+      "sans terre",
+      "latifundi",
+      "landless"
      ]
     },
     {
@@ -6508,6 +6731,15 @@
       "sans-terre",
       "réforme agraire"
      ]
+    },
+    {
+     "id": "439d316f",
+     "title": "Report_Cuba-peasants-rights_2025",
+     "score": 6,
+     "matched_on": [
+      "réforme agraire",
+      "agrarian reform"
+     ]
     }
    ]
   },
@@ -6515,13 +6747,15 @@
    "slug": "communs-fonciers-histoire",
    "titre": "Communs fonciers : une histoire",
    "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-   "doc_count": 223,
+   "doc_count": 232,
    "docs": [
+    "e7512d48",
     "d647480f",
     "0b22d51b",
     "5f5dadd2",
     "e41de87d",
     "05392c72",
+    "03b9d287",
     "931fc89b",
     "88bfc0cb",
     "e1d2158e",
@@ -6599,6 +6833,8 @@
     "9da13ea1",
     "fb76b5a1",
     "940f15d7",
+    "1ae37e83",
+    "bf8f5362",
     "9e831a55",
     "2db11a52",
     "7b89d6d1",
@@ -6608,10 +6844,10 @@
     "a91bd215",
     "1ce39b6d",
     "ae302e09",
+    "b0917bdf",
     "08baa6d1",
     "b8b0bfd8",
     "fe77002b",
-    "2e5629b5",
     "9b78288d",
     "c97fba28",
     "76ab1d39",
@@ -6666,6 +6902,7 @@
     "ab3b2eb1",
     "28b7cb2c",
     "2175f7a3",
+    "2e5629b5",
     "a54f94c8",
     "46f92da6",
     "7d4cb4f0",
@@ -6696,15 +6933,19 @@
     "035d0b23",
     "8f25f5d2",
     "8ee3f263",
+    "8c5780d2",
+    "298f7165",
+    "a705762f",
     "4bc13839",
     "e5341cc9",
     "7cf86983",
+    "d992c836",
     "83b6390f",
-    "b0917bdf",
     "6125738a",
     "83eafaac",
     "6c98994c",
     "d860aef1",
+    "c0744b42",
     "a7658db1",
     "ebb364a7",
     "961e54e4",
@@ -6742,6 +6983,15 @@
     "f5977eb9"
    ],
    "docs_detail": [
+    {
+     "id": "e7512d48",
+     "title": "The Community land trust handbook",
+     "score": 10,
+     "matched_on": [
+      "communs fonciers",
+      "commons"
+     ]
+    },
     {
      "id": "d647480f",
      "title": "Communs « fonciers », communs « informationnels ». Traits communs et différences.",
@@ -6789,6 +7039,14 @@
       "terres communales",
       "enclosure",
       "commons"
+     ]
+    },
+    {
+     "id": "03b9d287",
+     "title": "Combate, Año 3, N°29, 18 de Abril de 1959",
+     "score": 9,
+     "matched_on": [
+      "communs fonciers"
      ]
     },
     {
@@ -7455,6 +7713,22 @@
      ]
     },
     {
+     "id": "1ae37e83",
+     "title": "Low_Report_EN",
+     "score": 9,
+     "matched_on": [
+      "terres collectives"
+     ]
+    },
+    {
+     "id": "bf8f5362",
+     "title": "DECLARACION I : ENCUENTRO MESOAMERICANO FEMINISMO CAMPESINO",
+     "score": 9,
+     "matched_on": [
+      "communs fonciers"
+     ]
+    },
+    {
      "id": "9e831a55",
      "title": "The Tree, The Rock, and the Morrow",
      "score": 8,
@@ -7538,6 +7812,16 @@
      ]
     },
     {
+     "id": "b0917bdf",
+     "title": "Integrating Customary Tenure into Formal Systems",
+     "score": 8,
+     "matched_on": [
+      "terres communales",
+      "enclosure",
+      "common lands"
+     ]
+    },
+    {
      "id": "08baa6d1",
      "title": "Notre blé est politique — Introduction aux semences paysannes et à ses combats",
      "score": 8,
@@ -7561,14 +7845,6 @@
      "matched_on": [
       "communs fonciers",
       "terres collectives"
-     ]
-    },
-    {
-     "id": "2e5629b5",
-     "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
-     "score": 8,
-     "matched_on": [
-      "communs fonciers"
      ]
     },
     {
@@ -8030,6 +8306,14 @@
      ]
     },
     {
+     "id": "2e5629b5",
+     "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
+     "score": 7,
+     "matched_on": [
+      "communs fonciers"
+     ]
+    },
+    {
      "id": "a54f94c8",
      "title": "Forêt en lutte, lutte en forêt — contre la mégascierie",
      "score": 7,
@@ -8288,6 +8572,30 @@
      ]
     },
     {
+     "id": "8c5780d2",
+     "title": "The Milton-Park affair : Canada's largest citizen-developer confrontation",
+     "score": 7,
+     "matched_on": [
+      "commons"
+     ]
+    },
+    {
+     "id": "298f7165",
+     "title": "Tenants take over",
+     "score": 7,
+     "matched_on": [
+      "commons"
+     ]
+    },
+    {
+     "id": "a705762f",
+     "title": "Power, crisis, and education for liberation : rethinking critical pedagogy",
+     "score": 7,
+     "matched_on": [
+      "enclosure"
+     ]
+    },
+    {
      "id": "4bc13839",
      "title": "06.05_2026_catalogue.pdf",
      "score": 6,
@@ -8315,22 +8623,20 @@
      ]
     },
     {
+     "id": "d992c836",
+     "title": "Contre la légende et l'oubli",
+     "score": 6,
+     "matched_on": [
+      "communs fonciers"
+     ]
+    },
+    {
      "id": "83b6390f",
      "title": "Commonist Tendencies : Mutual Aid Beyond Communism",
      "score": 6,
      "matched_on": [
       "enclosure",
       "commons",
-      "common lands"
-     ]
-    },
-    {
-     "id": "b0917bdf",
-     "title": "Integrating Customary Tenure into Formal Systems",
-     "score": 6,
-     "matched_on": [
-      "terres communales",
-      "enclosure",
       "common lands"
      ]
     },
@@ -8364,6 +8670,14 @@
      "score": 6,
      "matched_on": [
       "communs fonciers"
+     ]
+    },
+    {
+     "id": "c0744b42",
+     "title": "Some Social Remedies",
+     "score": 6,
+     "matched_on": [
+      "communaux"
      ]
     },
     {
@@ -8667,13 +8981,12 @@
    "slug": "habitat-collectif-cooperatif",
    "titre": "Habitat collectif & coopératif",
    "chapo": "Habiter la terre autrement : coopératives d'habitants, habitat groupé, communautés intentionnelles, squats ruraux. Des formes de logement sorties de la spéculation et ancrées dans un sol partagé.",
-   "doc_count": 37,
+   "doc_count": 38,
    "docs": [
     "5f5dadd2",
     "931fc89b",
     "c3c028c4",
     "7b89d6d1",
-    "2e5629b5",
     "76ab1d39",
     "9f16b851",
     "6325ebd3",
@@ -8687,6 +9000,7 @@
     "ab3b2eb1",
     "28b7cb2c",
     "2175f7a3",
+    "2e5629b5",
     "0861d0b3",
     "772d3d06",
     "df840ff3",
@@ -8695,6 +9009,7 @@
     "1727bccf",
     "48a47a8f",
     "6090cf45",
+    "bc522fd4",
     "b375e8c5",
     "961e54e4",
     "fcb58745",
@@ -8741,14 +9056,6 @@
      "matched_on": [
       "habitat coopératif",
       "logement collectif"
-     ]
-    },
-    {
-     "id": "2e5629b5",
-     "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
-     "score": 8,
-     "matched_on": [
-      "habitat groupé"
      ]
     },
     {
@@ -8869,6 +9176,14 @@
      ]
     },
     {
+     "id": "2e5629b5",
+     "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
+     "score": 7,
+     "matched_on": [
+      "habitat groupé"
+     ]
+    },
+    {
      "id": "0861d0b3",
      "title": "Les Bure à cuire n°1",
      "score": 7,
@@ -8932,6 +9247,14 @@
      "score": 7,
      "matched_on": [
       "habitat coopératif",
+      "logement collectif"
+     ]
+    },
+    {
+     "id": "bc522fd4",
+     "title": "Ocupar é lutar — version portugaise, à imprimer (1984)",
+     "score": 6,
+     "matched_on": [
       "logement collectif"
      ]
     },
@@ -9040,13 +9363,14 @@
    "slug": "paysanneries-agroecologie",
    "titre": "Paysanneries & agroécologie politique",
    "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-   "doc_count": 565,
+   "doc_count": 579,
    "docs": [
     "5a9397e7",
     "8bfe460c",
     "0b22d51b",
     "5f5dadd2",
     "e41de87d",
+    "dc1574ae",
     "b225af88",
     "88bfc0cb",
     "c2ab1111",
@@ -9212,6 +9536,9 @@
     "940f15d7",
     "14d55842",
     "3d56fb12",
+    "8368f2e7",
+    "1ae37e83",
+    "bf8f5362",
     "fac367e2",
     "9e831a55",
     "c99e6da4",
@@ -9230,7 +9557,6 @@
     "08baa6d1",
     "b8b0bfd8",
     "fe77002b",
-    "2e5629b5",
     "47c6599a",
     "9b78288d",
     "c97fba28",
@@ -9381,7 +9707,10 @@
     "568f8778",
     "e8ee5514",
     "ab3b2eb1",
+    "972292c4",
+    "2b3dfe6d",
     "581a53c8",
+    "2e5629b5",
     "0861d0b3",
     "6772ded1",
     "772d3d06",
@@ -9483,10 +9812,14 @@
     "4bc13839",
     "5ea6c0cc",
     "bfc53f3a",
+    "d992c836",
     "83b6390f",
     "6125738a",
     "3d9a76fb",
     "9e8c8fc5",
+    "095f8db9",
+    "073089a1",
+    "5ea1719f",
     "59fe7d0a",
     "d96335e8",
     "fbb766e9",
@@ -9494,8 +9827,10 @@
     "d7759e91",
     "089a2666",
     "6c98994c",
+    "41e09539",
     "d860aef1",
     "af8b18a5",
+    "f6ebd39c",
     "597a51e1",
     "2ca00b10",
     "a7658db1",
@@ -9606,7 +9941,9 @@
     "7585c0aa",
     "bd18d74a",
     "7c1b5f0c",
-    "34a95a5f"
+    "34a95a5f",
+    "11cf1f70",
+    "439d316f"
    ],
    "docs_detail": [
     {
@@ -9657,6 +9994,14 @@
       "paysannerie",
       "paysan",
       "agriculture vivrière"
+     ]
+    },
+    {
+     "id": "dc1574ae",
+     "title": "Combate, Año 3, N°33, 23 de Abril de 1959",
+     "score": 9,
+     "matched_on": [
+      "paysan"
      ]
     },
     {
@@ -11625,6 +11970,44 @@
      ]
     },
     {
+     "id": "8368f2e7",
+     "title": "brochure_EN",
+     "score": 9,
+     "matched_on": [
+      "paysan",
+      "agroécologie",
+      "souveraineté alimentaire",
+      "agriculture paysanne",
+      "peasant",
+      "agroecology",
+      "food sovereignty"
+     ]
+    },
+    {
+     "id": "1ae37e83",
+     "title": "Low_Report_EN",
+     "score": 9,
+     "matched_on": [
+      "paysannerie",
+      "paysan",
+      "agroécologie",
+      "agriculture vivrière",
+      "souveraineté alimentaire",
+      "agriculture paysanne"
+     ]
+    },
+    {
+     "id": "bf8f5362",
+     "title": "DECLARACION I : ENCUENTRO MESOAMERICANO FEMINISMO CAMPESINO",
+     "score": 9,
+     "matched_on": [
+      "paysannerie",
+      "paysan",
+      "agroécologie",
+      "souveraineté alimentaire"
+     ]
+    },
+    {
      "id": "fac367e2",
      "title": "Ricardo Flores Magón, — Regeneración 1910",
      "score": 8,
@@ -11813,17 +12196,6 @@
       "agroécologie",
       "souveraineté alimentaire",
       "peasant"
-     ]
-    },
-    {
-     "id": "2e5629b5",
-     "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
-     "score": 8,
-     "matched_on": [
-      "paysannerie",
-      "paysan",
-      "agroécologie",
-      "agriculture vivrière"
      ]
     },
     {
@@ -13520,12 +13892,46 @@
      ]
     },
     {
+     "id": "972292c4",
+     "title": "Flyer conf semences paysannes_17sept26",
+     "score": 8,
+     "matched_on": [
+      "paysan"
+     ]
+    },
+    {
+     "id": "2b3dfe6d",
+     "title": "Raffaele UNDROP article",
+     "score": 8,
+     "matched_on": [
+      "paysannerie",
+      "paysan",
+      "agroécologie",
+      "agriculture vivrière",
+      "souveraineté alimentaire",
+      "peasant",
+      "agroecology",
+      "food sovereignty"
+     ]
+    },
+    {
      "id": "581a53c8",
      "title": "ILC — Cartes des constituencies (2025)",
      "score": 7,
      "matched_on": [
       "paysannerie",
       "paysan"
+     ]
+    },
+    {
+     "id": "2e5629b5",
+     "title": "Que reste-t-il du champ des possibles sur la ZAD ?",
+     "score": 7,
+     "matched_on": [
+      "paysannerie",
+      "paysan",
+      "agroécologie",
+      "agriculture vivrière"
      ]
     },
     {
@@ -14641,6 +15047,15 @@
      ]
     },
     {
+     "id": "d992c836",
+     "title": "Contre la légende et l'oubli",
+     "score": 6,
+     "matched_on": [
+      "paysannerie",
+      "paysan"
+     ]
+    },
+    {
      "id": "83b6390f",
      "title": "Commonist Tendencies : Mutual Aid Beyond Communism",
      "score": 6,
@@ -14681,6 +15096,33 @@
       "paysan",
       "agroécologie",
       "souveraineté alimentaire"
+     ]
+    },
+    {
+     "id": "095f8db9",
+     "title": "ZADissidences 3",
+     "score": 6,
+     "matched_on": [
+      "paysannerie",
+      "paysan"
+     ]
+    },
+    {
+     "id": "073089a1",
+     "title": "ZADissidences 2",
+     "score": 6,
+     "matched_on": [
+      "paysannerie",
+      "paysan"
+     ]
+    },
+    {
+     "id": "5ea1719f",
+     "title": "ZADissidences 1",
+     "score": 6,
+     "matched_on": [
+      "paysannerie",
+      "paysan"
      ]
     },
     {
@@ -14746,6 +15188,15 @@
      ]
     },
     {
+     "id": "41e09539",
+     "title": "Qu'est-ce que la propriété ?",
+     "score": 6,
+     "matched_on": [
+      "paysannerie",
+      "paysan"
+     ]
+    },
+    {
      "id": "d860aef1",
      "title": "L’État n’est plus rien, soyons tout",
      "score": 6,
@@ -14762,6 +15213,15 @@
       "paysannerie",
       "paysan",
       "agriculture paysanne"
+     ]
+    },
+    {
+     "id": "f6ebd39c",
+     "title": "In Defense — Such As It Is — of Usufructory Land Ownership",
+     "score": 6,
+     "matched_on": [
+      "paysan",
+      "peasant"
      ]
     },
     {
@@ -15955,6 +16415,27 @@
       "paysan",
       "peasant"
      ]
+    },
+    {
+     "id": "11cf1f70",
+     "title": "Classical political economy : primitive accumulation and the social division of labor",
+     "score": 6,
+     "matched_on": [
+      "paysannerie",
+      "paysan"
+     ]
+    },
+    {
+     "id": "439d316f",
+     "title": "Report_Cuba-peasants-rights_2025",
+     "score": 6,
+     "matched_on": [
+      "paysan",
+      "agroécologie",
+      "souveraineté alimentaire",
+      "peasant",
+      "food sovereignty"
+     ]
     }
    ]
   },
@@ -15962,7 +16443,7 @@
    "slug": "land-back-autochtones",
    "titre": "Land Back & souverainetés autochtones",
    "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-   "doc_count": 275,
+   "doc_count": 279,
    "docs": [
     "0b22d51b",
     "e41de87d",
@@ -16055,6 +16536,9 @@
     "fb76b5a1",
     "940f15d7",
     "3d56fb12",
+    "8368f2e7",
+    "1ae37e83",
+    "bf8f5362",
     "9e831a55",
     "55db5001",
     "a91bd215",
@@ -16136,6 +16620,7 @@
     "b8959c2f",
     "568f8778",
     "e8ee5514",
+    "2b3dfe6d",
     "581a53c8",
     "a54f94c8",
     "3fe8867b",
@@ -17027,6 +17512,31 @@
      ]
     },
     {
+     "id": "8368f2e7",
+     "title": "brochure_EN",
+     "score": 9,
+     "matched_on": [
+      "autochtone",
+      "indigenous"
+     ]
+    },
+    {
+     "id": "1ae37e83",
+     "title": "Low_Report_EN",
+     "score": 9,
+     "matched_on": [
+      "autochtone"
+     ]
+    },
+    {
+     "id": "bf8f5362",
+     "title": "DECLARACION I : ENCUENTRO MESOAMERICANO FEMINISMO CAMPESINO",
+     "score": 9,
+     "matched_on": [
+      "autochtone"
+     ]
+    },
+    {
      "id": "9e831a55",
      "title": "The Tree, The Rock, and the Morrow",
      "score": 8,
@@ -17731,6 +18241,15 @@
      "matched_on": [
       "autochtone",
       "droit coutumier"
+     ]
+    },
+    {
+     "id": "2b3dfe6d",
+     "title": "Raffaele UNDROP article",
+     "score": 8,
+     "matched_on": [
+      "autochtone",
+      "indigenous"
      ]
     },
     {
@@ -18619,7 +19138,7 @@
    "slug": "feminismes-de-la-terre",
    "titre": "Féminismes de la terre",
    "chapo": "Le foncier a un genre. Place des femmes dans les luttes agraires, droits fonciers des femmes, écoféminisme rural, critique de la division genrée du travail de la terre.",
-   "doc_count": 134,
+   "doc_count": 138,
    "docs": [
     "e41de87d",
     "b225af88",
@@ -18688,9 +19207,13 @@
     "9da13ea1",
     "23558b3e",
     "940f15d7",
+    "8368f2e7",
+    "1ae37e83",
+    "bf8f5362",
     "9e831a55",
     "c99e6da4",
     "2bf90eb8",
+    "b0917bdf",
     "43584cf4",
     "ac638fb6",
     "0bf022d5",
@@ -18745,7 +19268,6 @@
     "18fb51a5",
     "035d0b23",
     "d273ba77",
-    "b0917bdf",
     "a1f23085",
     "b64d8099",
     "a2c763f2",
@@ -18754,7 +19276,8 @@
     "db3c57d0",
     "08969309",
     "5fe86a39",
-    "2be8a8c5"
+    "2be8a8c5",
+    "439d316f"
    ],
    "docs_detail": [
     {
@@ -19367,6 +19890,35 @@
      ]
     },
     {
+     "id": "8368f2e7",
+     "title": "brochure_EN",
+     "score": 9,
+     "matched_on": [
+      "féminisme paysan",
+      "féminisme agraire",
+      "droits fonciers des femmes",
+      "agrarian feminism"
+     ]
+    },
+    {
+     "id": "1ae37e83",
+     "title": "Low_Report_EN",
+     "score": 9,
+     "matched_on": [
+      "féminisme paysan",
+      "féminisme agraire"
+     ]
+    },
+    {
+     "id": "bf8f5362",
+     "title": "DECLARACION I : ENCUENTRO MESOAMERICANO FEMINISMO CAMPESINO",
+     "score": 9,
+     "matched_on": [
+      "féminisme paysan",
+      "féminisme agraire"
+     ]
+    },
+    {
      "id": "9e831a55",
      "title": "The Tree, The Rock, and the Morrow",
      "score": 8,
@@ -19388,6 +19940,14 @@
     {
      "id": "2bf90eb8",
      "title": "Download",
+     "score": 8,
+     "matched_on": [
+      "droits fonciers des femmes"
+     ]
+    },
+    {
+     "id": "b0917bdf",
+     "title": "Integrating Customary Tenure into Formal Systems",
      "score": 8,
      "matched_on": [
       "droits fonciers des femmes"
@@ -19867,14 +20427,6 @@
      ]
     },
     {
-     "id": "b0917bdf",
-     "title": "Integrating Customary Tenure into Formal Systems",
-     "score": 6,
-     "matched_on": [
-      "droits fonciers des femmes"
-     ]
-    },
-    {
      "id": "a1f23085",
      "title": "The status of land tenure and governance",
      "score": 6,
@@ -19946,6 +20498,14 @@
      "matched_on": [
       "féminisme paysan"
      ]
+    },
+    {
+     "id": "439d316f",
+     "title": "Report_Cuba-peasants-rights_2025",
+     "score": 6,
+     "matched_on": [
+      "féminisme agraire"
+     ]
     }
    ]
   },
@@ -19953,7 +20513,7 @@
    "slug": "accaparements-resistances",
    "titre": "Accaparements & résistances",
    "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-   "doc_count": 352,
+   "doc_count": 358,
    "docs": [
     "5a9397e7",
     "d647480f",
@@ -20086,6 +20646,8 @@
     "fb76b5a1",
     "940f15d7",
     "14d55842",
+    "1ae37e83",
+    "bf8f5362",
     "c99e6da4",
     "55db5001",
     "2db11a52",
@@ -20094,6 +20656,7 @@
     "85a0da6c",
     "1ce39b6d",
     "2bf90eb8",
+    "b0917bdf",
     "5c12100c",
     "b8b0bfd8",
     "fe77002b",
@@ -20186,6 +20749,7 @@
     "568f8778",
     "e8ee5514",
     "ab3b2eb1",
+    "2b3dfe6d",
     "581a53c8",
     "79cc5801",
     "a54f94c8",
@@ -20245,11 +20809,13 @@
     "e9a890fb",
     "55ec8164",
     "53b33470",
+    "a705762f",
     "e5341cc9",
     "7cf86983",
+    "d992c836",
     "83b6390f",
-    "b0917bdf",
     "3d9a76fb",
+    "5ea1719f",
     "59fe7d0a",
     "d96335e8",
     "fbb766e9",
@@ -21435,6 +22001,23 @@
      ]
     },
     {
+     "id": "1ae37e83",
+     "title": "Low_Report_EN",
+     "score": 9,
+     "matched_on": [
+      "accaparement",
+      "extractivis"
+     ]
+    },
+    {
+     "id": "bf8f5362",
+     "title": "DECLARACION I : ENCUENTRO MESOAMERICANO FEMINISMO CAMPESINO",
+     "score": 9,
+     "matched_on": [
+      "extractivis"
+     ]
+    },
+    {
      "id": "c99e6da4",
      "title": "PAMBANSA-DEMOKRATIKONG PAARALAN",
      "score": 8,
@@ -21497,6 +22080,16 @@
      "score": 8,
      "matched_on": [
       "accaparement"
+     ]
+    },
+    {
+     "id": "b0917bdf",
+     "title": "Integrating Customary Tenure into Formal Systems",
+     "score": 8,
+     "matched_on": [
+      "accaparement",
+      "land grab",
+      "enclosure"
      ]
     },
     {
@@ -22283,6 +22876,15 @@
      ]
     },
     {
+     "id": "2b3dfe6d",
+     "title": "Raffaele UNDROP article",
+     "score": 8,
+     "matched_on": [
+      "accaparement",
+      "land grab"
+     ]
+    },
+    {
      "id": "581a53c8",
      "title": "ILC — Cartes des constituencies (2025)",
      "score": 7,
@@ -22785,6 +23387,14 @@
      ]
     },
     {
+     "id": "a705762f",
+     "title": "Power, crisis, and education for liberation : rethinking critical pedagogy",
+     "score": 7,
+     "matched_on": [
+      "enclosure"
+     ]
+    },
+    {
      "id": "e5341cc9",
      "title": "Des communs « fonciers » aux communs informationnels. Traits communs et différences.",
      "score": 6,
@@ -22801,20 +23411,18 @@
      ]
     },
     {
+     "id": "d992c836",
+     "title": "Contre la légende et l'oubli",
+     "score": 6,
+     "matched_on": [
+      "accaparement"
+     ]
+    },
+    {
      "id": "83b6390f",
      "title": "Commonist Tendencies : Mutual Aid Beyond Communism",
      "score": 6,
      "matched_on": [
-      "enclosure"
-     ]
-    },
-    {
-     "id": "b0917bdf",
-     "title": "Integrating Customary Tenure into Formal Systems",
-     "score": 6,
-     "matched_on": [
-      "accaparement",
-      "land grab",
       "enclosure"
      ]
     },
@@ -22825,6 +23433,14 @@
      "matched_on": [
       "accaparement",
       "land grab"
+     ]
+    },
+    {
+     "id": "5ea1719f",
+     "title": "ZADissidences 1",
+     "score": 6,
+     "matched_on": [
+      "accaparement"
      ]
     },
     {

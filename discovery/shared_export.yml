@@ -121,15 +121,15 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-09-15T19:33:46.767029+00:00'
+exported_at: '2026-09-19T08:55:01.539377+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
   type: html
-  fertility: 3.31
-  runs: 13
+  fertility: 3.07
+  runs: 14
   docs_dl: 43
-  docs_seen: 604
+  docs_seen: 612
 - url: https://infokiosques.net/paysannerie_ruralite
   label: Infokiosques.net — Paysannerie & ruralité
   type: html
@@ -252,24 +252,24 @@ sources:
 - url: https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — community land trusts & housing commons
   type: archive_org
-  fertility: 2.6
-  runs: 5
-  docs_dl: 13
-  docs_seen: 132
+  fertility: 2.33
+  runs: 6
+  docs_dl: 14
+  docs_seen: 138
 - url: https://archive.org/advancedsearch.php?q=%28creator%3A%22ostrom%22+OR+creator%3A%22federici%22+OR+creator%3A%22bollier%22+OR+%22governing+the+commons%22+OR+%22common+pool+resource%22+OR+%22commoning%22%29+AND+mediatype%3Atexts+AND+language%3A%28eng+OR+fra%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — théorie des communs (Ostrom, CPR, collective action)
   type: archive_org
-  fertility: 0.5
-  runs: 2
-  docs_dl: 1
-  docs_seen: 60
+  fertility: 1.0
+  runs: 3
+  docs_dl: 3
+  docs_seen: 82
 - url: https://archive.org/advancedsearch.php?q=%28%22caliban+and+the+witch%22+OR+%22primitive+accumulation%22+OR+%22feminist+commons%22+OR+%22agrarian+feminism%22+OR+creator%3A%22federici%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — féminisme et communs (Federici, accumulation primitive)
   type: archive_org
-  fertility: 0.5
-  runs: 2
-  docs_dl: 1
-  docs_seen: 60
+  fertility: 1.0
+  runs: 3
+  docs_dl: 3
+  docs_seen: 88
 - url: https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
   label: HAL — communs fonciers
   type: hal
@@ -316,9 +316,9 @@ sources:
   label: MST Brésil — biblioteca (WP REST API)
   type: wp_rest
   fertility: 0.0
-  runs: 2
+  runs: 3
   docs_dl: 0
-  docs_seen: 387
+  docs_seen: 389
 - url: https://www.landcoalition.org/en/latest/
   label: International Land Coalition — latest
   type: deep_html
@@ -497,10 +497,10 @@ sources:
 - url: https://viacampesina.org/en/wp-json/wp/v2/media?mime_type=application/pdf
   label: La Vía Campesina — publications (WP REST)
   type: wp_rest
-  fertility: 540.0
-  runs: 2
-  docs_dl: 1080
-  docs_seen: 1086
+  fertility: 364.67
+  runs: 3
+  docs_dl: 1094
+  docs_seen: 1100
 - url: https://www.fian.org/wp-json/wp/v2/media?mime_type=application/pdf
   label: FIAN International — publications (WP REST)
   type: wp_rest
@@ -540,16 +540,16 @@ sources:
   label: Traficantes de Sueños — 15M (matière)
   type: deep_html
   fertility: 0.0
-  runs: 2
+  runs: 3
   docs_dl: 0
-  docs_seen: 6
+  docs_seen: 7
 - url: https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
   label: Traficantes de Sueños — Autogestion / Economía social
   type: deep_html
   fertility: 0.0
-  runs: 1
+  runs: 2
   docs_dl: 0
-  docs_seen: 3
+  docs_seen: 4
 - url: https://api.archives-ouvertes.fr/search/?q=15M+indignados&fq=language_s:es&fl=halId_s,title_s,authFullName_s,fileMain_s&rows=50&wt=json
   label: HAL Science — 15M / indignados
   type: hal

@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-18T15:07:28Z",
-  "total": 1969,
-  "total_docs": 1969,
-  "total_downloaded": 1441,
-  "total_published": 910,
+  "generated_at": "2026-09-19T08:33:39Z",
+  "total": 2050,
+  "total_docs": 2050,
+  "total_downloaded": 1460,
+  "total_published": 939,
   "by_lang": {
-    "en": 877,
-    "fr": 377,
-    "es": 260,
-    "pt": 225,
-    "inconnu": 173,
+    "en": 938,
+    "fr": 387,
+    "es": 264,
+    "pt": 227,
+    "inconnu": 177,
     "de": 40,
     "it": 7,
     "sw": 5,
@@ -19,11 +19,11 @@
     "tr": 1
   },
   "by_language": {
-    "en": 877,
-    "fr": 377,
-    "es": 260,
-    "pt": 225,
-    "inconnu": 173,
+    "en": 938,
+    "fr": 387,
+    "es": 264,
+    "pt": 227,
+    "inconnu": 177,
     "de": 40,
     "it": 7,
     "sw": 5,
@@ -33,16 +33,16 @@
     "tr": 1
   },
   "by_source": {
-    "La Vía Campesina — publications (WP REST)": 544,
-    "MST Brésil — biblioteca (WP REST API)": 207,
+    "La Vía Campesina — publications (WP REST)": 558,
+    "MST Brésil — biblioteca (WP REST API)": 209,
     "Archive.org — commons / enclosure / agrarian (strict)": 191,
     "Infokiosques.net — Paysannerie & ruralité": 121,
     "CRAS (Centre de Recherches sur les Alternatives Sociales)": 110,
     "CLACSO Libros (acceso abierto)": 99,
-    "Archive.org — community land trusts & housing commons": 85,
+    "Archive.org — community land trusts & housing commons": 91,
+    "Archive.org — féminisme et communs (Federici, accumulation primitive)": 80,
+    "Archive.org — théorie des communs (Ostrom, CPR, collective action)": 77,
     "discovery_promoted": 72,
-    "Archive.org — théorie des communs (Ostrom, CPR, collective action)": 55,
-    "Archive.org — féminisme et communs (Federici, accumulation primitive)": 52,
     "The Anarchist Library — OPDS (new releases)": 48,
     "Archive.org — bienes comunes espagnol (15M/communs)": 37,
     "CrimethInc — zines": 32,
@@ -54,6 +54,7 @@
     "Böll Stiftung — Agriculture & Food (EN topic)": 16,
     "Infokiosques.net — Anticolonialismes": 14,
     "Portal OACA — Libros anarquistas (catégorie)": 13,
+    "Infokiosques.net — nouveautés": 11,
     "Archive.org — subject:anarchism (texts)": 10,
     "Archive.org — peasant movements": 10,
     "Infokiosques.net — Écologie radicale": 10,
@@ -73,10 +74,9 @@
     "Infokiosques.net — index L (Libération, Luttes)": 4,
     "Archive.org — anarchism + land/peasant (strict)": 4,
     "CLACSO — búsqueda tierra y communs": 4,
-    "Infokiosques.net — nouveautés": 3,
+    "Traficantes de Sueños — 15M (matière)": 4,
     "Tierra.org (Amigos de la Tierra ES)": 3,
     "CLACSO — Publicaciones générales": 3,
-    "Traficantes de Sueños — 15M (matière)": 3,
     "Böll Stiftung — publications EN": 2,
     "libcom.org — library": 1,
     "Böll Stiftung — Agriculture Atlas (EN)": 1,
@@ -86,47 +86,47 @@
     "1790s": 1,
     "1920s": 1,
     "1950s": 12,
-    "1960s": 6,
+    "1960s": 8,
     "1970s": 11,
     "1980s": 16,
     "1990s": 9,
-    "2000s": 156,
-    "2010s": 502,
-    "2020s": 736,
-    "inconnu": 519
+    "2000s": 157,
+    "2010s": 506,
+    "2020s": 755,
+    "inconnu": 574
   },
   "by_score": {
-    "0": 445,
-    "1": 201,
-    "2": 167,
-    "3": 91,
-    "4": 71,
-    "5": 102,
-    "6": 177,
-    "7": 134,
-    "8": 384,
-    "9": 194,
-    "10": 3
+    "0": 480,
+    "1": 214,
+    "2": 170,
+    "3": 92,
+    "4": 77,
+    "5": 97,
+    "6": 190,
+    "7": 137,
+    "8": 389,
+    "9": 200,
+    "10": 4
   },
   "by_doc_type": {
-    "autre": 1833,
+    "autre": 1914,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1216,
-    "academique": 538,
+    "militant": 1241,
+    "academique": 594,
     "non_renseigne": 138,
     "institutionnel": 77
   },
   "blind_spots": [
-    "Forte dominante militante (61.8%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (60.5%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (61.8%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (60.5%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "sources_list": [
@@ -135,14 +135,14 @@
       "url": "https://viacampesina.org/en/wp-json/wp/v2/media?mime_type=application/pdf",
       "type": "wp_rest",
       "orientation": "militant",
-      "count": 544
+      "count": 558
     },
     {
       "label": "MST Brésil — biblioteca (WP REST API)",
       "url": "https://mst.org.br/wp-json/wp/v2/media?mime_type=application/pdf",
       "type": "wp_rest",
       "orientation": "militant",
-      "count": 207
+      "count": 209
     },
     {
       "label": "Archive.org — commons / enclosure / agrarian (strict)",
@@ -177,21 +177,21 @@
       "url": "https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
       "type": "archive_org",
       "orientation": "academique",
-      "count": 85
-    },
-    {
-      "label": "Archive.org — théorie des communs (Ostrom, CPR, collective action)",
-      "url": "https://archive.org/advancedsearch.php?q=%28creator%3A%22ostrom%22+OR+creator%3A%22federici%22+OR+creator%3A%22bollier%22+OR+%22governing+the+commons%22+OR+%22common+pool+resource%22+OR+%22commoning%22%29+AND+mediatype%3Atexts+AND+language%3A%28eng+OR+fra%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
-      "type": "archive_org",
-      "orientation": "academique",
-      "count": 55
+      "count": 91
     },
     {
       "label": "Archive.org — féminisme et communs (Federici, accumulation primitive)",
       "url": "https://archive.org/advancedsearch.php?q=%28%22caliban+and+the+witch%22+OR+%22primitive+accumulation%22+OR+%22feminist+commons%22+OR+%22agrarian+feminism%22+OR+creator%3A%22federici%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
       "type": "archive_org",
       "orientation": "academique",
-      "count": 52
+      "count": 80
+    },
+    {
+      "label": "Archive.org — théorie des communs (Ostrom, CPR, collective action)",
+      "url": "https://archive.org/advancedsearch.php?q=%28creator%3A%22ostrom%22+OR+creator%3A%22federici%22+OR+creator%3A%22bollier%22+OR+%22governing+the+commons%22+OR+%22common+pool+resource%22+OR+%22commoning%22%29+AND+mediatype%3Atexts+AND+language%3A%28eng+OR+fra%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
+      "type": "archive_org",
+      "orientation": "academique",
+      "count": 77
     },
     {
       "label": "The Anarchist Library — OPDS (new releases)",
@@ -262,6 +262,13 @@
       "type": "deep_html",
       "orientation": "militant",
       "count": 13
+    },
+    {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
+      "count": 11
     },
     {
       "label": "Archive.org — peasant movements",
@@ -355,24 +362,17 @@
       "count": 4
     },
     {
-      "label": "CLACSO — Publicaciones générales",
-      "url": "https://www.clacso.org/publicaciones/",
-      "type": "deep_html",
-      "orientation": "academique",
-      "count": 3
-    },
-    {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
-      "count": 3
-    },
-    {
       "label": "Traficantes de Sueños — 15M (matière)",
       "url": "https://traficantes.net/materias/15-m",
       "type": "deep_html",
       "orientation": "militant",
+      "count": 4
+    },
+    {
+      "label": "CLACSO — Publicaciones générales",
+      "url": "https://www.clacso.org/publicaciones/",
+      "type": "deep_html",
+      "orientation": "academique",
       "count": 3
     },
     {
