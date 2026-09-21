@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-19T08:33:39Z",
-  "total": 2050,
-  "total_docs": 2050,
+  "generated_at": "2026-09-21T08:41:57Z",
+  "total": 2042,
+  "total_docs": 2042,
   "total_downloaded": 1460,
   "total_published": 939,
   "by_lang": {
     "en": 938,
-    "fr": 387,
+    "fr": 379,
     "es": 264,
     "pt": 227,
     "inconnu": 177,
@@ -20,7 +20,7 @@
   },
   "by_language": {
     "en": 938,
-    "fr": 387,
+    "fr": 379,
     "es": 264,
     "pt": 227,
     "inconnu": 177,
@@ -54,7 +54,6 @@
     "Böll Stiftung — Agriculture & Food (EN topic)": 16,
     "Infokiosques.net — Anticolonialismes": 14,
     "Portal OACA — Libros anarquistas (catégorie)": 13,
-    "Infokiosques.net — nouveautés": 11,
     "Archive.org — subject:anarchism (texts)": 10,
     "Archive.org — peasant movements": 10,
     "Infokiosques.net — Écologie radicale": 10,
@@ -75,6 +74,7 @@
     "Archive.org — anarchism + land/peasant (strict)": 4,
     "CLACSO — búsqueda tierra y communs": 4,
     "Traficantes de Sueños — 15M (matière)": 4,
+    "Infokiosques.net — nouveautés": 3,
     "Tierra.org (Amigos de la Tierra ES)": 3,
     "CLACSO — Publicaciones générales": 3,
     "Böll Stiftung — publications EN": 2,
@@ -93,11 +93,11 @@
     "2000s": 157,
     "2010s": 506,
     "2020s": 755,
-    "inconnu": 574
+    "inconnu": 566
   },
   "by_score": {
-    "0": 480,
-    "1": 214,
+    "0": 476,
+    "1": 210,
     "2": 170,
     "3": 92,
     "4": 77,
@@ -109,24 +109,24 @@
     "10": 4
   },
   "by_doc_type": {
-    "autre": 1914,
+    "autre": 1906,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1241,
+    "militant": 1233,
     "academique": 594,
     "non_renseigne": 138,
     "institutionnel": 77
   },
   "blind_spots": [
-    "Forte dominante militante (60.5%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (60.4%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (60.5%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (60.4%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "sources_list": [
@@ -264,13 +264,6 @@
       "count": 13
     },
     {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
-      "count": 11
-    },
-    {
       "label": "Archive.org — peasant movements",
       "url": "https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
       "type": "archive_org",
@@ -373,6 +366,13 @@
       "url": "https://www.clacso.org/publicaciones/",
       "type": "deep_html",
       "orientation": "academique",
+      "count": 3
+    },
+    {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
       "count": 3
     },
     {
