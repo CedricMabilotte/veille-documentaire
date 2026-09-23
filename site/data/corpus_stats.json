@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-21T08:41:57Z",
-  "total": 2042,
-  "total_docs": 2042,
+  "generated_at": "2026-09-23T08:25:16Z",
+  "total": 2046,
+  "total_docs": 2046,
   "total_downloaded": 1460,
   "total_published": 939,
   "by_lang": {
     "en": 938,
-    "fr": 379,
+    "fr": 383,
     "es": 264,
     "pt": 227,
     "inconnu": 177,
@@ -20,7 +20,7 @@
   },
   "by_language": {
     "en": 938,
-    "fr": 379,
+    "fr": 383,
     "es": 264,
     "pt": 227,
     "inconnu": 177,
@@ -67,6 +67,7 @@
     "HAL — communs fonciers": 8,
     "HAL — paysannerie / agriculture vivrière": 8,
     "Archive.org — Cuba (ES, réforme agraire & coopératives)": 8,
+    "Infokiosques.net — nouveautés": 7,
     "Infokiosques.net — index C": 6,
     "HAL — propriété d'usage / fonds de dotation": 6,
     "CLACSO — Libros en coedición": 5,
@@ -74,7 +75,6 @@
     "Archive.org — anarchism + land/peasant (strict)": 4,
     "CLACSO — búsqueda tierra y communs": 4,
     "Traficantes de Sueños — 15M (matière)": 4,
-    "Infokiosques.net — nouveautés": 3,
     "Tierra.org (Amigos de la Tierra ES)": 3,
     "CLACSO — Publicaciones générales": 3,
     "Böll Stiftung — publications EN": 2,
@@ -91,14 +91,14 @@
     "1980s": 16,
     "1990s": 9,
     "2000s": 157,
-    "2010s": 506,
-    "2020s": 755,
+    "2010s": 508,
+    "2020s": 757,
     "inconnu": 566
   },
   "by_score": {
     "0": 476,
-    "1": 210,
-    "2": 170,
+    "1": 212,
+    "2": 172,
     "3": 92,
     "4": 77,
     "5": 97,
@@ -109,24 +109,24 @@
     "10": 4
   },
   "by_doc_type": {
-    "autre": 1906,
+    "autre": 1910,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1233,
+    "militant": 1237,
     "academique": 594,
     "non_renseigne": 138,
     "institutionnel": 77
   },
   "blind_spots": [
-    "Forte dominante militante (60.4%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (60.5%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (60.4%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (60.5%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "sources_list": [
@@ -327,6 +327,13 @@
       "count": 8
     },
     {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
+      "count": 7
+    },
+    {
       "label": "HAL — propriété d'usage / fonds de dotation",
       "url": "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50",
       "type": "hal",
@@ -366,13 +373,6 @@
       "url": "https://www.clacso.org/publicaciones/",
       "type": "deep_html",
       "orientation": "academique",
-      "count": 3
-    },
-    {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
       "count": 3
     },
     {
