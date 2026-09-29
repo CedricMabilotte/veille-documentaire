@@ -1,5 +1,5 @@
-last_updated: '2026-09-27T09:04:13'
-total_candidates: 4114
+last_updated: '2026-09-29T09:33:31'
+total_candidates: 4142
 candidates:
 - url: http://www.software602.com/
   type: footnote
@@ -699,6 +699,54 @@ candidates:
   - doc_id: fcb6b3b5_dolleans-hist_mouv_ouvr_tome_1
     context: 'Site web: http://www.uqac.uquebec.ca/zone30/Classiques_des_sciences_sociales/index.html'
     page: 1
+- url: https://www.facebook.com/share/1BVSrq57dR/
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-09-29'
+  seen_count: 22
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Facebook
+    page: null
+- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-09-29'
+  seen_count: 22
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Linkedin-in
+    page: null
+- url: https://x.com/rbm_maroobe
+  type: external_link
+  domain: x.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-09-29'
+  seen_count: 22
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: X-twitter
+    page: null
+- url: https://youtube.com/@reseaubillitalmaroobe7381
+  type: external_link
+  domain: youtube.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-09-29'
+  seen_count: 22
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Youtube
+    page: null
 - url: http://bibliotheque.uqac.uquebec.ca/index.htm
   type: footnote
   domain: bibliotheque.uqac.uquebec.ca
@@ -759,54 +807,6 @@ candidates:
   - doc_id: fcb6b3b5_dolleans-hist_mouv_ouvr_tome_1
     context: 'Site web: http://bibliotheque.uqac.uquebec.ca/index.htm'
     page: 1
-- url: https://www.facebook.com/share/1BVSrq57dR/
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-09-27'
-  seen_count: 21
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Facebook
-    page: null
-- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
-  type: external_link
-  domain: www.linkedin.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-09-27'
-  seen_count: 21
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Linkedin-in
-    page: null
-- url: https://x.com/rbm_maroobe
-  type: external_link
-  domain: x.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-09-27'
-  seen_count: 21
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: X-twitter
-    page: null
-- url: https://youtube.com/@reseaubillitalmaroobe7381
-  type: external_link
-  domain: youtube.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-09-27'
-  seen_count: 21
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Youtube
-    page: null
 - url: http://joseph.dejacque.free.fr/
   type: footnote
   domain: joseph.dejacque.free.fr
@@ -3089,6 +3089,21 @@ candidates:
   - doc_id: Böll Stiftung — Agriculture & Food (EN topic)
     context: KommunalWiki
     page: null
+- url: http://www.domainepublic.net/Pare-feu-web-active.html
+  type: external_link
+  domain: www.domainepublic.net
+  first_seen: '2026-08-09'
+  last_seen: '2026-09-29'
+  seen_count: 14
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: FIAN International (droit à l'alimentation, ES)
+    context: Pare-feu web activé
+    page: null
+  - doc_id: FIAN International — publications
+    context: Pare-feu web activé
+    page: null
 - url: http://www.gwi-boell.de
   type: external_link
   domain: www.gwi-boell.de
@@ -3922,21 +3937,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: http://www.domainepublic.net/Pare-feu-web-active.html
-  type: external_link
-  domain: www.domainepublic.net
-  first_seen: '2026-08-09'
-  last_seen: '2026-09-27'
-  seen_count: 12
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: FIAN International (droit à l'alimentation, ES)
-    context: Pare-feu web activé
-    page: null
-  - doc_id: FIAN International — publications
-    context: Pare-feu web activé
-    page: null
 - url: https://bsky.app/search?q=%23Lum%C3%A9ville
   type: mastodon
   found_from:
@@ -27882,6 +27882,21 @@ candidates:
   metadata:
     title: Atteint le 30 juillet, le jour du dépassement des limites planétaires n'est jamais arrivé si tôt
   suggested_action: follow_one_time
+- url: https://reporterre.net/Bien-etre-animal-encore-des-logos-trompeurs
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Bien-être animal : encore un logo « trompeur » — Certains poulets ou morceaux de poulets vendus dans les supermarchés
+      ont désormais un nouveau logo louant le « bien-être animal » derrière ces produits. Des associations dénoncent un logo
+      trompeur et une « démarche marketing outrancière ». Un poulet b'
+    timestamp: '2026-09-25T08:33:47'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-09-25'
+  last_seen: '2026-09-29'
+  metadata:
+    title: 'Bien-être animal : encore un logo « trompeur »'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/C-est-un-carnage-ces-nouveaux-maires-d-extreme-droite-s-acharnent-contre-des-projets
   type: rss
   found_from:
@@ -28318,6 +28333,21 @@ candidates:
   metadata:
     title: 'Grande distribution : « Vendre des produits sains à prix coûtant, c''est possible »'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Greta-Thunberg-Malcom-Ferdinand-et-Cyril-Dion-appellent-a-rejoindre-les-marches-climat-du
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Greta Thunberg, Malcom Ferdinand et Cyril Dion appellent à rejoindre les marches climat du 26 septembre — 260
+      mobilisations sont annoncées en France pour les marches climat du 26 septembre. Plusieurs personnalités, dont la militante
+      suédoise Greta Thunberg, appelent à rejoindre le mouvement pour dem
+    timestamp: '2026-09-25T08:33:47'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-09-25'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Greta Thunberg, Malcom Ferdinand et Cyril Dion appellent à rejoindre les marches climat du 26 septembre
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Hausse-de-l-utilisation-des-pesticides-le-grand-flou-du-gouvernement
   type: rss
   found_from:
@@ -28437,6 +28467,21 @@ candidates:
   last_seen: '2026-08-03'
   metadata:
     title: 'Incendies : faut-il interdire la chasse pour laisser du répit aux animaux sauvages ?'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Joe-Sacco-Il-faut-se-confronter-a-la-realite-de-ce-qu-est-un-genocide
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Joe Sacco : « Il faut se confronter à la réalité de ce qu''est un génocide » — Auteur avec Chris Hedges de «
+      Requiem pour Gaza », le dessinateur Joe Sacco revient, dans cet entretien, sur la situation en Palestine et montre à
+      quel point le génocide affecte la démocratie et les libertés des pays occid'
+    timestamp: '2026-09-25T08:33:47'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-09-25'
+  last_seen: '2026-09-29'
+  metadata:
+    title: 'Joe Sacco : « Il faut se confronter à la réalité de ce qu''est un génocide »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/L-ONU-adopte-une-resolution-pour-renforcer-la-responsabilite-climatique-des-Etats
   type: rss
@@ -28603,6 +28648,21 @@ candidates:
   metadata:
     title: Le risque d'incendie a doublé en 40 ans en Europe
   suggested_action: follow_one_time
+- url: https://reporterre.net/Les-deputes-ecologistes-proposent-une-loi-pour-sortir-des-energies-fossiles
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Les députés écologistes proposent une loi pour sortir des énergies fossiles — Déterminé à « faire cesser la course
+      vers le pire », des députés entendent acter la sortie des énergies fossiles. D'après les informations de Reporterre,
+      le groupe écologiste et social à l'Assemblée nationale prévoit de dé
+    timestamp: '2026-09-25T08:33:47'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-09-25'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Les députés écologistes proposent une loi pour sortir des énergies fossiles
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Les-derniers-cetaces-du-parc-Marineland-sur-le-point-d-etre-transferes-en-Espagne
   type: rss
   found_from:
@@ -28617,6 +28677,36 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: Les derniers cétacés du parc Marineland sur le point d'être transférés en Espagne
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Les-labels-ecolos-a-gogo-c-est-fini-l-Europe-met-un-stop-au-greenwashing-des-marques
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Les labels écolos à gogo, c''est fini : l''Europe met un stop au greenwashing des marques — Une directive européenne
+      qui entre en vigueur le 27 septembre interdit de nombreuses allégations relevant du greenwashing : les multiples labels
+      créés par les entreprises elles-mêmes par exemple. Mais la France'
+    timestamp: '2026-09-25T08:33:47'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-09-25'
+  last_seen: '2026-09-29'
+  metadata:
+    title: 'Les labels écolos à gogo, c''est fini : l''Europe met un stop au greenwashing des marques'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Les-marches-pour-le-climat-et-la-justice-sociale-doivent-etre-aussi-antiracistes-et
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: « Les marches pour le climat et la justice sociale doivent être aussi antiracistes et anticoloniales » — Les
+      auteurs de cette tribune appellent à manifester « ensemble, sans effacer les voix » lors de la marche climat du 26 septembre.
+      Pour une « libération collective et totale », ils demandent à tou
+    timestamp: '2026-09-25T08:33:47'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-09-25'
+  last_seen: '2026-09-29'
+  metadata:
+    title: « Les marches pour le climat et la justice sociale doivent être aussi antiracistes et anticoloniales »
   suggested_action: follow_one_time
 - url: https://reporterre.net/Lutte-contre-les-incendies-10-ans-de-sous-investissement-rattrapes-par-les-flammes
   type: rss
@@ -28932,6 +29022,21 @@ candidates:
   last_seen: '2026-08-03'
   metadata:
     title: '« Savourons cette victoire » : la serre géante Tropicalia ne verra pas le jour dans le Pas-de-Calais'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Secheresse-aucune-amelioration-attendue-avant-la-semaine-prochaine
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Sécheresse : aucune amélioration attendue avant la semaine prochaine — Après un été 2026 marqué à la fois par
+      une chaleur exceptionnelle et un fort déficit pluviométrique, la sécheresse reste exceptionnelle en France, avec des
+      sols très secs, des cours d''eau et nappes sous tension et un risque d''inc'
+    timestamp: '2026-09-25T08:33:47'
+  seen_count: 3
+  domain: reporterre.net
+  first_seen: '2026-09-25'
+  last_seen: '2026-09-29'
+  metadata:
+    title: 'Sécheresse : aucune amélioration attendue avant la semaine prochaine'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Secheresse-l-arret-d-une-centrale-nucleaire-force-la-Hongrie-a-la-sobriete-electrique
   type: rss
@@ -40244,6 +40349,16 @@ candidates:
     year: 2008
     doi: 10.4000/developpementdurable.5153
   suggested_action: follow_one_time
+  promoted_pdf_url: https://journals.openedition.org/developpementdurable/pdf/5153
+  promoted_at: '2026-09-29T09:33:29'
+  promoted_metadata:
+    doi: 10.4000/developpementdurable.5153
+    title: Biens communs, biens publics mondiaux et propriété. Introduction au dossier.
+    journal: Développement durable et territoires
+    published_date: '2008-01-01'
+    genre: journal-article
+    html_url: https://journals.openedition.org/developpementdurable/pdf/5153
+    source: unpaywall
 - url: https://journals.openedition.org/norois/pdf/5087
   type: openalex
   found_from:
@@ -40267,6 +40382,16 @@ candidates:
     year: 2014
     doi: 10.4000/norois.5087
   suggested_action: follow_one_time
+  promoted_pdf_url: https://journals.openedition.org/norois/pdf/5087
+  promoted_at: '2026-09-29T09:33:30'
+  promoted_metadata:
+    doi: 10.4000/norois.5087
+    title: 'Jardins collectifs et écoquartiers bordelais : De l’espace cultivé à un habiter durable ?'
+    journal: Norois
+    published_date: '2014-01-01'
+    genre: journal-article
+    html_url: https://journals.openedition.org/norois/pdf/5087
+    source: unpaywall
 - url: https://juralib.noblogs.org/?s=mapuche
   type: footnote
   domain: juralib.noblogs.org
@@ -40457,6 +40582,17 @@ candidates:
     year: 2016
     doi: 10.1007/s12053-016-9477-0
   suggested_action: follow_one_time
+  promoted_pdf_url: https://link.springer.com/content/pdf/10.1007/s12053-016-9477-0.pdf
+  promoted_at: '2026-09-29T09:33:31'
+  promoted_metadata:
+    doi: 10.1007/s12053-016-9477-0
+    title: 'Energy performance contracting (EPC): a suitable mechanism for achieving energy savings in housing cooperatives?
+      Results from a Norwegian pilot project'
+    journal: Energy Efficiency
+    published_date: '2016-09-05'
+    genre: journal-article
+    html_url: https://link.springer.com/content/pdf/10.1007/s12053-016-9477-0.pdf
+    source: unpaywall
 - url: https://link.springer.com/content/pdf/10.1007/s13280-016-0827-0.pdf
   type: openalex
   found_from:
@@ -41916,6 +42052,21 @@ candidates:
   metadata:
     title: 11 chercheurs du Giec épinglés pour leurs liens avec l'Arabie saoudite et le pétrolier Aramco
   suggested_action: follow_one_time
+- url: https://reporterre.net/11-data-centers-deux-recours-seront-deposes-contre-le-megaprojet-en-Seine-et-Marne
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '11 data centers : deux recours seront déposés contre le mégaprojet en Seine-et-Marne — L''opposition contre
+      le projet de méga data center du sud francilien entame une étape juridique. Deux recours seront être déposés, le 24
+      septembre et en début de semaine prochaine, selon Les Échos, devant le tribun'
+    timestamp: '2026-09-27T08:58:04'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-09-27'
+  last_seen: '2026-09-29'
+  metadata:
+    title: '11 data centers : deux recours seront déposés contre le mégaprojet en Seine-et-Marne'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/12-jours-de-tempete-au-Chili-les-premiers-signes-d-un-super-Nino-devastateur
   type: rss
   found_from:
@@ -41960,6 +42111,36 @@ candidates:
   last_seen: '2026-08-09'
   metadata:
     title: '40 °C, bâti inadapté : la Bretagne n''est pas le refuge climatique qu''on croit'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/98-000-hectares-de-foret-brules-en-2026-un-record-depuis-1976
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '98 000 hectares de forêt brûlés en 2026 : un record depuis 1976 — Le bilan des incendies de l''été vient d''être
+      communiqué par l''Office national des forêts ( ONF ). Sans surprise, il est cinq fois supérieur à la moyenne de ces
+      vingt dernières années, avec une surface totale de forêts brûlées non égal'
+    timestamp: '2026-09-27T08:58:04'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-09-27'
+  last_seen: '2026-09-29'
+  metadata:
+    title: '98 000 hectares de forêt brûlés en 2026 : un record depuis 1976'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/A-table-Aujourd-hui-on-mange-vegetalien
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: À table ! Aujourd'hui, on mange végétalien — La cuisine à base de légumineuses est loin d'être indigeste et mauvaise
+      ! La cheffe et autrice Zohra Levacher vous a concocté un menu de saison pour vous prouver le contraire. Allez, chiche
+      !, on cuisine et on goûte. Il se pourrait bien que Zohra Levacher
+    timestamp: '2026-09-27T08:58:04'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-09-27'
+  last_seen: '2026-09-29'
+  metadata:
+    title: À table ! Aujourd'hui, on mange végétalien
   suggested_action: follow_one_time
 - url: https://reporterre.net/A69-la-decision-du-Conseil-d-Etat-pourrait-faciliter-les-grands-projets-d-amenagement
   type: rss
@@ -42063,21 +42244,6 @@ candidates:
   metadata:
     title: 'Arbres replantés : on est très loin du milliard promis par Emmanuel Macron'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Bien-etre-animal-encore-des-logos-trompeurs
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Bien-être animal : encore un logo « trompeur » — Certains poulets ou morceaux de poulets vendus dans les supermarchés
-      ont désormais un nouveau logo louant le « bien-être animal » derrière ces produits. Des associations dénoncent un logo
-      trompeur et une « démarche marketing outrancière ». Un poulet b'
-    timestamp: '2026-09-25T08:33:47'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-09-25'
-  last_seen: '2026-09-27'
-  metadata:
-    title: 'Bien-être animal : encore un logo « trompeur »'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Bio-dans-les-cantines-l-Etat-n-applique-pas-ses-propres-regles
   type: rss
   found_from:
@@ -42152,6 +42318,21 @@ candidates:
   last_seen: '2026-07-02'
   metadata:
     title: '« C''était David contre Goliath » : récit d''une victoire contre un méga entrepôt'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Cabanes-yourtes-La-traque-aux-habitats-legers-s-intensifie-depuis-les-incendies
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Cabanes, yourtes... La traque aux habitats légers s''intensifie depuis les incendies — Dans les Pyrénées-Orientales,
+      des personnes vivant en cabane ont perdu leur lieu de vie dans les incendies. Depuis, elles se sentent délaissées, voire
+      méprisées, par les autorités locales, qui veulent renforcer la '
+    timestamp: '2026-09-27T08:58:04'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-09-27'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Cabanes, yourtes... La traque aux habitats légers s'intensifie depuis les incendies
   suggested_action: follow_one_time
 - url: https://reporterre.net/Canicule-au-moins-1-000-morts-supplementaires-en-France
   type: rss
@@ -42369,6 +42550,21 @@ candidates:
   metadata:
     title: 'EN DIRECT Incendie en Gironde : le feu est « stabilisé, mais pas fixé »'
   suggested_action: follow_one_time
+- url: https://reporterre.net/EPR-de-Flamanville-un-an-d-arret-pour-controler-un-reacteur-au-parcours-emaille-d
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'EPR de Flamanville : un an d''arrêt pour contrôler un réacteur au parcours émaillé d''incidents — Douze ans
+      de retard, de multiples aléas techniques et maintenant un an d''arrêt forcé pour l'' EPR de Flamanville qui doit subir
+      une vaste inspection de contrôle. L''occasion, entre autres, de remplacer le c'
+    timestamp: '2026-09-27T08:58:04'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-09-27'
+  last_seen: '2026-09-29'
+  metadata:
+    title: 'EPR de Flamanville : un an d''arrêt pour contrôler un réacteur au parcours émaillé d''incidents'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/En-Bretagne-ces-communes-reinventent-le-stop
   type: rss
   found_from:
@@ -42489,21 +42685,6 @@ candidates:
   metadata:
     title: « Google méprise les médias indépendants, rejoignez-nous ! »
   suggested_action: follow_one_time
-- url: https://reporterre.net/Greta-Thunberg-Malcom-Ferdinand-et-Cyril-Dion-appellent-a-rejoindre-les-marches-climat-du
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Greta Thunberg, Malcom Ferdinand et Cyril Dion appellent à rejoindre les marches climat du 26 septembre — 260
-      mobilisations sont annoncées en France pour les marches climat du 26 septembre. Plusieurs personnalités, dont la militante
-      suédoise Greta Thunberg, appelent à rejoindre le mouvement pour dem
-    timestamp: '2026-09-25T08:33:47'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-09-25'
-  last_seen: '2026-09-27'
-  metadata:
-    title: Greta Thunberg, Malcom Ferdinand et Cyril Dion appellent à rejoindre les marches climat du 26 septembre
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Hantavirus-et-ecoanxiete-S-inquieter-est-plutot-une-reaction-saine
   type: rss
   found_from:
@@ -42578,6 +42759,21 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: '« Aujourd''hui, j''ose prendre la parole » : dans ce village, le pouvoir est entre les mains des habitants'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Il-veut-desarmer-l-IA-Leon-XIV-un-pape-favorable-a-la-conversion-ecologique
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Léon XIV, le pape qui veut « désarmer l'IA » et plaide pour la « conversion écologique » — Alors qu'il est en
+      visite en France du 25 au 28 septembre et qu'il a évoqué l' IA et la protection de l'environnement lors d'une allocution
+      à l'Unesco, retour sur les engagements du pape Léon XIV en termes d'é
+    timestamp: '2026-09-27T08:58:04'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-09-27'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Léon XIV, le pape qui veut « désarmer l'IA » et plaide pour la « conversion écologique »
   suggested_action: follow_one_time
 - url: https://reporterre.net/Ils-en-ont-preleve-dix-fois-plus-comment-les-Big-Tech-minorent-la-consommation-en-eau-de
   type: rss
@@ -42715,21 +42911,6 @@ candidates:
   metadata:
     title: '« J''y ai passé 12 000 heures » : il a construit sa propre voiture à énergie solaire'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Joe-Sacco-Il-faut-se-confronter-a-la-realite-de-ce-qu-est-un-genocide
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Joe Sacco : « Il faut se confronter à la réalité de ce qu''est un génocide » — Auteur avec Chris Hedges de «
-      Requiem pour Gaza », le dessinateur Joe Sacco revient, dans cet entretien, sur la situation en Palestine et montre à
-      quel point le génocide affecte la démocratie et les libertés des pays occid'
-    timestamp: '2026-09-25T08:33:47'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-09-25'
-  last_seen: '2026-09-27'
-  metadata:
-    title: 'Joe Sacco : « Il faut se confronter à la réalité de ce qu''est un génocide »'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/L-Etat-condamne-a-en-faire-plus-pour-la-protection-des-cetaces
   type: rss
   found_from:
@@ -42831,6 +43012,21 @@ candidates:
   last_seen: '2026-07-29'
   metadata:
     title: 'La Gironde face aux incendies : ceux qui restent, ceux qui fuient, ceux qui ont tout perdu'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/La-baisse-du-trafic-routier-a-ameliore-la-qualite-de-l-air-a-Paris
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: La baisse du trafic routier a amélioré la qualité de l'air à Paris — Les Parisiennes et Parisiens respirent un
+      peu mieux, montre AirParif dans une nouvelle étude publiée vendredi 25 septembre. L'organisme indépendant de surveillance
+      de la qualité de l'air en Île-de-France constate que l'instauration
+    timestamp: '2026-09-27T08:58:04'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-09-27'
+  last_seen: '2026-09-29'
+  metadata:
+    title: La baisse du trafic routier a amélioré la qualité de l'air à Paris
   suggested_action: follow_one_time
 - url: https://reporterre.net/La-chute-d-Orban-entraine-celle-d-un-puissant-lobby-anti-ecologie-a-Bruxelles
   type: rss
@@ -43132,21 +43328,6 @@ candidates:
   metadata:
     title: 'Trop chaud pour se mobiliser : quand le réchauffement climatique empêche les luttes écologistes'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Les-deputes-ecologistes-proposent-une-loi-pour-sortir-des-energies-fossiles
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Les députés écologistes proposent une loi pour sortir des énergies fossiles — Déterminé à « faire cesser la course
-      vers le pire », des députés entendent acter la sortie des énergies fossiles. D'après les informations de Reporterre,
-      le groupe écologiste et social à l'Assemblée nationale prévoit de dé
-    timestamp: '2026-09-25T08:33:47'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-09-25'
-  last_seen: '2026-09-27'
-  metadata:
-    title: Les députés écologistes proposent une loi pour sortir des énergies fossiles
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Les-ecologistes-s-organisent-contre-le-RN-a-la-campagne-mais-peinent-a-sortir-de-l-entre
   type: rss
   found_from:
@@ -43176,36 +43357,6 @@ candidates:
   last_seen: '2026-07-31'
   metadata:
     title: Les géants pétroliers ont doublé leurs profits depuis le début de la guerre en Iran
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Les-labels-ecolos-a-gogo-c-est-fini-l-Europe-met-un-stop-au-greenwashing-des-marques
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Les labels écolos à gogo, c''est fini : l''Europe met un stop au greenwashing des marques — Une directive européenne
-      qui entre en vigueur le 27 septembre interdit de nombreuses allégations relevant du greenwashing : les multiples labels
-      créés par les entreprises elles-mêmes par exemple. Mais la France'
-    timestamp: '2026-09-25T08:33:47'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-09-25'
-  last_seen: '2026-09-27'
-  metadata:
-    title: 'Les labels écolos à gogo, c''est fini : l''Europe met un stop au greenwashing des marques'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Les-marches-pour-le-climat-et-la-justice-sociale-doivent-etre-aussi-antiracistes-et
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: « Les marches pour le climat et la justice sociale doivent être aussi antiracistes et anticoloniales » — Les
-      auteurs de cette tribune appellent à manifester « ensemble, sans effacer les voix » lors de la marche climat du 26 septembre.
-      Pour une « libération collective et totale », ils demandent à tou
-    timestamp: '2026-09-25T08:33:47'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-09-25'
-  last_seen: '2026-09-27'
-  metadata:
-    title: « Les marches pour le climat et la justice sociale doivent être aussi antiracistes et anticoloniales »
   suggested_action: follow_one_time
 - url: https://reporterre.net/Les-pesticides-repandent-le-cancer-surtout-chez-les-enfants
   type: rss
@@ -43312,6 +43463,21 @@ candidates:
   metadata:
     title: 'Maisons inondées aux États-Unis : les propriétaires noirs indemnisés 6 % de moins que les blancs'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Marches-climat-du-26-septembre-la-carte-des-manifestations-pres-de-chez-vous
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Marches climat du 26 septembre : la carte des manifestations près de chez vous — Plus de 260 mobilisations sont
+      prévues samedi 26 septembre dans toute la France pour la grande marche « pour le climat, le vivant, la paix et la justice
+      sociale ». Voici la carte pour toutes les retrouver. L''appel a été'
+    timestamp: '2026-09-27T08:58:04'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-09-27'
+  last_seen: '2026-09-29'
+  metadata:
+    title: 'Marches climat du 26 septembre : la carte des manifestations près de chez vous'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Master-poulet-Tasty-Crousty-derriere-le-succes-des-poulets-en-elevage-ultra-intensif
   type: rss
   found_from:
@@ -43417,6 +43583,21 @@ candidates:
   metadata:
     title: '« Nous voulons construire un territoire robuste face aux feux » : après les incendies, le monde paysan se réorganise'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Open-bar-anti-ecolo-le-basculement-reactionnaire-du-Senat
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Open bar » anti-écolo : le basculement réactionnaire du Sénat — Le Sénat français penche de plus en plus à
+      droite. Historiquement dominé par les conservateurs, il verse de plus en plus dans l''anti-écologie, avec le consentement
+      de la macronie. Récit d''un basculement. C''était cet été, en pleine can'
+    timestamp: '2026-09-27T08:58:04'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-09-27'
+  last_seen: '2026-09-29'
+  metadata:
+    title: '« Open bar » anti-écolo : le basculement réactionnaire du Sénat'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/PFAS-des-rapporteurs-de-l-ONU-epinglent-deux-geants-de-la-vallee-de-la-chimie
   type: rss
   found_from:
@@ -43431,6 +43612,21 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: 'Polluants éternels : même l''ONU dénonce l''impunité des industriels français'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Paquebots-jets-prives-Comment-l-Etat-garantit-des-decennies-d-emissions-carbonees
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Jets privés, paquebots... L'État garantit des milliards d'euros pour des projets climaticides — La banque publique
+      d'investissement Bpifrance continue de garantir des milliards d'euros de mises pour des paquebots et des avions, à rebours
+      des engagements climatiques de la nation. C'est parfois dans l
+    timestamp: '2026-09-27T08:58:04'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-09-27'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Jets privés, paquebots... L'État garantit des milliards d'euros pour des projets climaticides
   suggested_action: follow_one_time
 - url: https://reporterre.net/Pesticides-une-alternative-aux-approbations-illimitees-validee-par-l-EFSA
   type: rss
@@ -43568,6 +43764,21 @@ candidates:
   metadata:
     title: '« Pourquoi tous ces enfants tombent-ils malades ? » : à La Rochelle, des citoyens mobilisés face aux cancers pédiatriques'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Proces-et-amendes-a-foison-la-repression-judiciaire-s-intensifie-contre-Greenpeace-France
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Procès et amendes à foison : la répression judiciaire s''intensifie contre Greenpeace France — Procès, amendes
+      à foison... La répression judiciaire s''intensifie contre Greenpeace France et ses militants, dont deux comparaîtront
+      le 25 septembre. Autopsie d''un système visant à affaiblir financièrement '
+    timestamp: '2026-09-27T08:58:04'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-09-27'
+  last_seen: '2026-09-29'
+  metadata:
+    title: 'Procès et amendes à foison : la répression judiciaire s''intensifie contre Greenpeace France'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Que-propose-la-gauche-face-a-la-canicule-Tour-d-horizon-en-cinq-propositions
   type: rss
   found_from:
@@ -43658,21 +43869,6 @@ candidates:
   metadata:
     title: '« Sans notre intervention, il n''y aurait quasiment plus de busards en France » : comment agriculteurs et écologistes
       protègent ces oiseaux des champs'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Secheresse-aucune-amelioration-attendue-avant-la-semaine-prochaine
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Sécheresse : aucune amélioration attendue avant la semaine prochaine — Après un été 2026 marqué à la fois par
-      une chaleur exceptionnelle et un fort déficit pluviométrique, la sécheresse reste exceptionnelle en France, avec des
-      sols très secs, des cours d''eau et nappes sous tension et un risque d''inc'
-    timestamp: '2026-09-25T08:33:47'
-  seen_count: 2
-  domain: reporterre.net
-  first_seen: '2026-09-25'
-  last_seen: '2026-09-27'
-  metadata:
-    title: 'Sécheresse : aucune amélioration attendue avant la semaine prochaine'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Secheresse-plusieurs-reacteurs-nucleaires-a-l-arret-en-France-et-en-Hongrie
   type: rss
@@ -60596,6 +60792,19 @@ candidates:
   metadata:
     title: Action directe indigènes
   suggested_action: follow_one_time
+- url: https://lundi.am/Appel-sur-l-IA-ou
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Appel sur l'IA - ou — le solennel serment - 28 septembre / Avec une grosse photo en haut , Positions , 2
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Appel sur l'IA - ou
+  suggested_action: follow_one_time
 - url: https://lundi.am/Archeologie-d-un-vrai-faux-silence-Michel-Foucault-Israel-et-les-Palestiniens-1
   type: rss
   found_from:
@@ -60610,6 +60819,19 @@ candidates:
   metadata:
     title: 'Archéologie d''un vrai-faux silence : Michel Foucault, Israël et les Palestiniens [1/3]'
   suggested_action: follow_one_time
+- url: https://lundi.am/Aussi-simple-que-ca
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Aussi simple que ça... — Alain Brossat - 28 septembre / Avec une grosse photo en haut , Histoire , 2
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Aussi simple que ça...
+  suggested_action: follow_one_time
 - url: https://lundi.am/C-est-une-requisition-populaire
   type: rss
   found_from:
@@ -60623,6 +60845,34 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: « C'est une réquisition populaire »
+  suggested_action: follow_one_time
+- url: https://lundi.am/Cancer-et-pesticides-politiser-la-colere
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Cancer et pesticides, politiser la colère — Un lundisoir avec Fleur Breteau et Sophie Chapelle - 28 septembre
+      / Avec une grosse photo en haut , Mouvement , lundisoir , 4
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Cancer et pesticides, politiser la colère
+  suggested_action: follow_one_time
+- url: https://lundi.am/Cher-frere-Leon-aimes-tu-la-police
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Cher frère Léon, aimes-tu la police ? — Francesco Antonini - 28 septembre / Avec une grosse photo en haut , Positions
+      , 2
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Cher frère Léon, aimes-tu la police ?
   suggested_action: follow_one_time
 - url: https://lundi.am/Dans-les-sombres-temps-de-la-normalisation
   type: rss
@@ -60665,6 +60915,20 @@ candidates:
   metadata:
     title: Deux procureurs
   suggested_action: follow_one_time
+- url: https://lundi.am/En-attendant-le-RER-E
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: En attendant le RER E — Ethnographie d'une révolte dans une rame avec Mohamed, Baruch, et Bernard Ilyas Hanine
+      - 28 septembre / Avec une grosse photo en haut , Positions , 2
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: En attendant le RER E
+  suggested_action: follow_one_time
 - url: https://lundi.am/Enfants-e%CC%81cole-travail-ville
   type: rss
   found_from:
@@ -60678,6 +60942,20 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: Enfants, école, travail, ville
+  suggested_action: follow_one_time
+- url: https://lundi.am/FUERA-Ceuta-ou-l-epreuve-du-commun
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: FUERA ! - Ceuta, ou l'épreuve du commun — Sylvain George - 28 septembre / Avec une grosse photo en haut , Terreur
+      , 3
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: FUERA ! - Ceuta, ou l'épreuve du commun
   suggested_action: follow_one_time
 - url: https://lundi.am/Intelligence-multiple-contre-polycrise-entrepreneuriale
   type: rss
@@ -60749,6 +61027,89 @@ candidates:
   metadata:
     title: Le regard de l'Occident, ou la « nuance » contre l'interruption
   suggested_action: follow_one_time
+- url: https://lundi.am/Le-theatre-total-des-operations-la-guerre-et-ses-scenarios
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Le théâtre total des opérations : la guerre et ses scénarios — « En Suède, l''armée s''entraîne à inhumer "grandeur
+      nature" 5% de sa population » - 28 septembre / Terreur , Avec une grosse photo en haut , 2'
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: 'Le théâtre total des opérations : la guerre et ses scénarios'
+  suggested_action: follow_one_time
+- url: https://lundi.am/Lundimatin-moins-ruine
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Lundimatin (moins) ruiné — (Il faut encore nous aider !) - 28 septembre / Avec une grosse photo en haut , 4
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Lundimatin (moins) ruiné
+  suggested_action: follow_one_time
+- url: https://lundi.am/Mais-quelqu-un-va-t-il-enfin-le-dire
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Mais quelqu'un va-t-il enfin le dire ? — A propos de la polémique autour de C'était ça ou mourir de Thélyson
+      Orélien Pablo Durán - 28 septembre / Avec une grosse photo en haut , Littérature , 2
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Mais quelqu'un va-t-il enfin le dire ?
+  suggested_action: follow_one_time
+- url: https://lundi.am/Mireille-JEAN-GILLES
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: « La Guyane a besoin de respirer » — Mireille Jean-Gilles - 28 septembre / Mouvement , Avec une grosse photo
+      en haut , 2
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: « La Guyane a besoin de respirer »
+  suggested_action: follow_one_time
+- url: https://lundi.am/Mort-de-Paul-Tancre-dit-Lapin
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Mort de Paul Tancre dit Lapin — « Pour les Voyageurs, la peine de mort est toujours en vigueur » Ritchy Thibault
+      - 28 septembre / Avec une grosse photo en haut , Mouvement , 2
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Mort de Paul Tancre dit Lapin
+  suggested_action: follow_one_time
+- url: https://lundi.am/Paul-Martel-en-travaux
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Paul Martel en travaux — Le retour du prolétariat perdu... en tournée chez vous - 28 septembre / Avec une grosse
+      photo en haut , Littérature , 4
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Paul Martel en travaux
+  suggested_action: follow_one_time
 - url: https://lundi.am/Quand-l-IA-corrige-l-IA-un-bac-de-philo-tres-augmente
   type: rss
   found_from:
@@ -60777,6 +61138,20 @@ candidates:
   metadata:
     title: Vague de sabotages
   suggested_action: follow_one_time
+- url: https://lundi.am/Singes-eboueurs-et-robots-aide-soignantes
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Singes-éboueurs et robots-aide-soignantes — Échos du fascisme français Alexandre Debbiche - 28 septembre / Avec
+      une grosse photo en haut , Positions , 2
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Singes-éboueurs et robots-aide-soignantes
+  suggested_action: follow_one_time
 - url: https://lundi.am/Suffit-il-d-un-cerveau-pour-rebondir
   type: rss
   found_from:
@@ -60804,6 +61179,48 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: Transcarpatie, un carnet de voyage
+  suggested_action: follow_one_time
+- url: https://lundi.am/Un-art-des-seuils
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Un art des seuils — Voix, gestes, voisinages Une prose fragmentaire et polyphonique Dapondy et Alain Naze - 28
+      septembre / Avec une grosse photo en haut , Rencontres , 2
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Un art des seuils
+  suggested_action: follow_one_time
+- url: https://lundi.am/Un-homme-est-mort-aujourd-hui-a-Ceuta
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Un homme est mort aujourd'hui à Ceuta — Sylvain George - 28 septembre / Avec une grosse photo en haut , Terreur
+      , 1
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Un homme est mort aujourd'hui à Ceuta
+  suggested_action: follow_one_time
+- url: https://lundi.am/Vitrival
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Vitrival — Entretien avec les réals Noëlle Bastin et Baptiste Bogaert [Visionnage conseillé avant lecture] -
+      28 septembre / Avec une grosse photo en haut , Littérature , 4
+    timestamp: '2026-09-29T09:29:51'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Vitrival
   suggested_action: follow_one_time
 - url: https://lundi.am/pignochi
   type: rss
@@ -63067,21 +63484,6 @@ candidates:
   metadata:
     title: '« 100 % recyclable » : Volvic épinglé pour pratiques trompeuses'
   suggested_action: follow_one_time
-- url: https://reporterre.net/11-data-centers-deux-recours-seront-deposes-contre-le-megaprojet-en-Seine-et-Marne
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '11 data centers : deux recours seront déposés contre le mégaprojet en Seine-et-Marne — L''opposition contre
-      le projet de méga data center du sud francilien entame une étape juridique. Deux recours seront être déposés, le 24
-      septembre et en début de semaine prochaine, selon Les Échos, devant le tribun'
-    timestamp: '2026-09-27T08:58:04'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-09-27'
-  last_seen: '2026-09-27'
-  metadata:
-    title: '11 data centers : deux recours seront déposés contre le mégaprojet en Seine-et-Marne'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/21-oC-a-la-surface-des-oceans-un-record-absolu-pour-la-saison
   type: rss
   found_from:
@@ -63172,6 +63574,21 @@ candidates:
   metadata:
     title: 53 °C sous la verrière de l'école... et des rénovations aux abonnés absents
   suggested_action: follow_one_time
+- url: https://reporterre.net/72-des-Suisses-rejettent-la-proposition-de-davantage-vegetaliser-l-alimentation
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 72 % des Suisses rejettent la proposition de davantage végétaliser l'alimentation — Les citoyens suisses ont
+      massivement rejeté une proposition de virage alimentaire. Dimanche 27 septembre, ils étaient invités à s'exprimer sur
+      une bataille de l'alimentation qui divise le pays, comme Reporterre l'exp
+    timestamp: '2026-09-29T09:29:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: 72 % des Suisses rejettent la proposition de davantage végétaliser l'alimentation
+  suggested_action: follow_one_time
 - url: https://reporterre.net/78-des-rivieres-mondiales-perdent-de-l-oxygene
   type: rss
   found_from:
@@ -63187,35 +63604,20 @@ candidates:
   metadata:
     title: 78 % des rivières perdent de l'oxygène, notamment à cause du réchauffement climatique
   suggested_action: follow_one_time
-- url: https://reporterre.net/98-000-hectares-de-foret-brules-en-2026-un-record-depuis-1976
+- url: https://reporterre.net/A-Lyon-la-Metropole-de-droite-supprime-le-RSA-pour-jeunes-des-Ecologistes
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: '98 000 hectares de forêt brûlés en 2026 : un record depuis 1976 — Le bilan des incendies de l''été vient d''être
-      communiqué par l''Office national des forêts ( ONF ). Sans surprise, il est cinq fois supérieur à la moyenne de ces
-      vingt dernières années, avec une surface totale de forêts brûlées non égal'
-    timestamp: '2026-09-27T08:58:04'
+    context: 'À Lyon, la Métropole de droite supprime le « RSA pour jeunes » des Écologistes — À Lyon, la nouvelle majorité
+      de droite à la tête de la Métropole détricote méticuleusement les politiques sociales menées depuis 2020 par le précédent
+      exécutif écologiste. Lors du conseil métropolitain du 28 septembre, '
+    timestamp: '2026-09-29T09:29:32'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-09-27'
-  last_seen: '2026-09-27'
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
   metadata:
-    title: '98 000 hectares de forêt brûlés en 2026 : un record depuis 1976'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/A-table-Aujourd-hui-on-mange-vegetalien
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: À table ! Aujourd'hui, on mange végétalien — La cuisine à base de légumineuses est loin d'être indigeste et mauvaise
-      ! La cheffe et autrice Zohra Levacher vous a concocté un menu de saison pour vous prouver le contraire. Allez, chiche
-      !, on cuisine et on goûte. Il se pourrait bien que Zohra Levacher
-    timestamp: '2026-09-27T08:58:04'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-09-27'
-  last_seen: '2026-09-27'
-  metadata:
-    title: À table ! Aujourd'hui, on mange végétalien
+    title: À Lyon, la Métropole de droite supprime le « RSA pour jeunes » des Écologistes
   suggested_action: follow_one_time
 - url: https://reporterre.net/Acheter-sur-TikTok-Facebook-et-Insta-les-ravages-de-la-fast-fashion-en-ligne
   type: rss
@@ -63336,21 +63738,6 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Bulles de savoir : nos meilleurs BD pour s''informer sur l''écologie'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Cabanes-yourtes-La-traque-aux-habitats-legers-s-intensifie-depuis-les-incendies
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Cabanes, yourtes... La traque aux habitats légers s''intensifie depuis les incendies — Dans les Pyrénées-Orientales,
-      des personnes vivant en cabane ont perdu leur lieu de vie dans les incendies. Depuis, elles se sentent délaissées, voire
-      méprisées, par les autorités locales, qui veulent renforcer la '
-    timestamp: '2026-09-27T08:58:04'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-09-27'
-  last_seen: '2026-09-27'
-  metadata:
-    title: Cabanes, yourtes... La traque aux habitats légers s'intensifie depuis les incendies
   suggested_action: follow_one_time
 - url: https://reporterre.net/Cadmium-les-donnees-cles-d-une-contamination
   type: rss
@@ -63562,6 +63949,21 @@ candidates:
   metadata:
     title: Cinq activistes opposés à une déviation ont passé le weekend en prison
   suggested_action: follow_one_time
+- url: https://reporterre.net/Clermont-Ferrand-un-automobiliste-fonce-dans-la-foule-de-la-manifestation-pour-le-climat
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Un automobiliste renverse quatre personnes à la marche climat de Clermont-Ferrand — Quatre personnes participant
+      à une marche pour le climat, dont une femme de 80 ans, ont été blessées samedi matin, aux alentours de 11 heures, renversées
+      par un automobiliste à Clermont-Ferrand (Puy-de-Dôme). Le cond
+    timestamp: '2026-09-29T09:29:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Un automobiliste renverse quatre personnes à la marche climat de Clermont-Ferrand
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Combien-faudra-t-il-de-canicules-pour-agir-apres-une-semaine-de-fournaise-la-colere-monte
   type: rss
   found_from:
@@ -63739,21 +64141,6 @@ candidates:
   metadata:
     title: 'Sainte-Soline : la cour d''appel confirme les condamnations de quatre organisateurs'
   suggested_action: follow_one_time
-- url: https://reporterre.net/EPR-de-Flamanville-un-an-d-arret-pour-controler-un-reacteur-au-parcours-emaille-d
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'EPR de Flamanville : un an d''arrêt pour contrôler un réacteur au parcours émaillé d''incidents — Douze ans
-      de retard, de multiples aléas techniques et maintenant un an d''arrêt forcé pour l'' EPR de Flamanville qui doit subir
-      une vaste inspection de contrôle. L''occasion, entre autres, de remplacer le c'
-    timestamp: '2026-09-27T08:58:04'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-09-27'
-  last_seen: '2026-09-27'
-  metadata:
-    title: 'EPR de Flamanville : un an d''arrêt pour contrôler un réacteur au parcours émaillé d''incidents'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Face-aux-canicules-faisons-corps-avec-les-arbres
   type: rss
   found_from:
@@ -63812,21 +64199,6 @@ candidates:
   last_seen: '2026-06-30'
   metadata:
     title: Guillaume Meurice, Camille Étienne... 200 personnalités disent non à la première méga-usine de saumons en France
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Il-veut-desarmer-l-IA-Leon-XIV-un-pape-favorable-a-la-conversion-ecologique
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Léon XIV, le pape qui veut « désarmer l'IA » et plaide pour la « conversion écologique » — Alors qu'il est en
-      visite en France du 25 au 28 septembre et qu'il a évoqué l' IA et la protection de l'environnement lors d'une allocution
-      à l'Unesco, retour sur les engagements du pape Léon XIV en termes d'é
-    timestamp: '2026-09-27T08:58:04'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-09-27'
-  last_seen: '2026-09-27'
-  metadata:
-    title: Léon XIV, le pape qui veut « désarmer l'IA » et plaide pour la « conversion écologique »
   suggested_action: follow_one_time
 - url: https://reporterre.net/Incendies-a-Fontainebleau-sous-terre-la-foret-brule-toujours
   type: rss
@@ -63978,21 +64350,6 @@ candidates:
   metadata:
     title: La Méditerranée se réchauffe 2 à 3 fois plus vite que la moyenne des océans
   suggested_action: follow_one_time
-- url: https://reporterre.net/La-baisse-du-trafic-routier-a-ameliore-la-qualite-de-l-air-a-Paris
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: La baisse du trafic routier a amélioré la qualité de l'air à Paris — Les Parisiennes et Parisiens respirent un
-      peu mieux, montre AirParif dans une nouvelle étude publiée vendredi 25 septembre. L'organisme indépendant de surveillance
-      de la qualité de l'air en Île-de-France constate que l'instauration
-    timestamp: '2026-09-27T08:58:04'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-09-27'
-  last_seen: '2026-09-27'
-  metadata:
-    title: La baisse du trafic routier a amélioré la qualité de l'air à Paris
-  suggested_action: follow_one_time
 - url: https://reporterre.net/La-canicule-est-une-violence-politique
   type: rss
   found_from:
@@ -64083,6 +64440,21 @@ candidates:
   metadata:
     title: La loi d'urgence agricole veut donner carte blanche aux élevages intensifs
   suggested_action: follow_one_time
+- url: https://reporterre.net/La-solitude-contemporaine-est-le-resultat-de-choix-de-politiques-publiques
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: « La solitude contemporaine est le résultat de choix de politiques publiques » — Pour la journaliste Alice Raybaud,
+      la solitude est un « sujet politique majeur », auquel elle a consacré un livre. Elle démontre que notre isolement résulte
+      d'une faillite de l'État, et qu'une société plus écologique po
+    timestamp: '2026-09-29T09:29:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: « La solitude contemporaine est le résultat de choix de politiques publiques »
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Le-cap-Ferret-evacue-des-milliers-d-hectares-en-fumee-l-incendie-de-Gironde-rappelle-le
   type: rss
   found_from:
@@ -64097,6 +64469,21 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: 'Le cap Ferret évacué, des milliers d''hectares en fumée : l''incendie de Gironde rappelle le cauchemar de 2022'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-climat-est-politique-les-marches-du-26-septembre-tentent-de-creer-un-rapport-de-force
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Je suis arrivée au bout des gestes individuels » : les marches pour le climat relancent le rapport de force
+      — Plus de 130 000 personnes ont marché partout en France le 26 septembre « pour le climat, le vivant, la paix et la
+      justice sociale ». Entre les alliances politiques et les sujets « qui fâch'
+    timestamp: '2026-09-29T09:29:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: '« Je suis arrivée au bout des gestes individuels » : les marches pour le climat relancent le rapport de force'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Le-retour-du-debat-autour-de-la-consigne-pour-les-bouteilles-plastiques
   type: rss
@@ -64219,20 +64606,35 @@ candidates:
   metadata:
     title: Le retour de l'acétamipride à nouveau contesté devant le Conseil Constitutionnel
   suggested_action: follow_one_time
-- url: https://reporterre.net/Marches-climat-du-26-septembre-la-carte-des-manifestations-pres-de-chez-vous
+- url: https://reporterre.net/Marche-pour-le-climat-a-Bordeaux-l-incendie-dans-toutes-les-tetes
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Marches climat du 26 septembre : la carte des manifestations près de chez vous — Plus de 260 mobilisations sont
-      prévues samedi 26 septembre dans toute la France pour la grande marche « pour le climat, le vivant, la paix et la justice
-      sociale ». Voici la carte pour toutes les retrouver. L''appel a été'
-    timestamp: '2026-09-27T08:58:04'
+    context: 'Marche pour le climat : à Bordeaux, l''incendie dans toutes les têtes — Environ 3 000 personnes ont défilé à
+      Bordeaux pour réclamer des mesures d''urgence pour le climat. Au sein du cortège, l''incendie monstre qui a touché la
+      Gironde était dans toutes les bouches. Bordeaux (Gironde), reportage « C''est'
+    timestamp: '2026-09-29T09:29:32'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-09-27'
-  last_seen: '2026-09-27'
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
   metadata:
-    title: 'Marches climat du 26 septembre : la carte des manifestations près de chez vous'
+    title: 'Marche pour le climat : à Bordeaux, l''incendie dans toutes les têtes'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Marre-de-porter-des-cercueils-en-colere-les-pompiers-s-installent-face-a-la-tour-Eiffel
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Marre de porter des cercueils » : en colère, les pompiers s''installent face à la tour Eiffel — À la veille
+      de la mobilisation intersyndicale du 29 septembre, les pompiers ont monté un campement face à la tour Eiffel. Ils espèrent
+      se faire entendre alors qu''ils réclament plus de moyens depuis des m'
+    timestamp: '2026-09-29T09:29:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: '« Marre de porter des cercueils » : en colère, les pompiers s''installent face à la tour Eiffel'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Megafeux-en-France-Tous-les-ingredients-sont-la-pour-qu-ils-se-multiplient
   type: rss
@@ -64248,6 +64650,21 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: 'Chaleur, nature asséchée : le cocktail qui fait exploser le risque incendie en France'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Meganavires-de-peche-et-si-on-demantelait-ceux-qui-detruisent-plus-qu-ils-ne-nourrissent
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Méganavires de pêche : et si on démantelait ceux qui « détruisent plus qu''ils ne nourrissent » ? — Dans un
+      nouveau rapport, l'' ONG Bloom veut démanteler les méganavires industriels de pêche qui « détruisent plus qu''ils ne
+      nourrissent ». Des députés européens portent l''idée dans les négociations fina'
+    timestamp: '2026-09-29T09:29:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: 'Méganavires de pêche : et si on démantelait ceux qui « détruisent plus qu''ils ne nourrissent » ?'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Menace-d-extinction-ce-poisson-fantome-a-ete-observe-en-Normandie
   type: rss
@@ -64278,6 +64695,21 @@ candidates:
   last_seen: '2026-07-02'
   metadata:
     title: 'Météo France : « Dès vendredi, les températures repartent à la hausse »'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Militantes-dans-les-arbres-gardes-a-vue-La-mobilisation-contre-le-canal-Seine-Nord-Europe
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Militantes dans les arbres, gardes à vue... La mobilisation contre le canal Seine-Nord Europe prend racine —
+      Des militantes sont montées dans un chêne centenaire à Ytres, dans le Pas-de-Calais, avant d''être délogées par la gendarmerie.
+      Destiné à être rasé par le chantier du canal Seine-Nord Europe, '
+    timestamp: '2026-09-29T09:29:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Militantes dans les arbres, gardes à vue... La mobilisation contre le canal Seine-Nord Europe prend racine
   suggested_action: follow_one_time
 - url: https://reporterre.net/Morts-de-la-canicule-Le-gros-du-probleme-c-est-le-logement
   type: rss
@@ -64354,21 +64786,6 @@ candidates:
   metadata:
     title: '« On a une responsabilité quand on écrit des chansons » : une après-midi avec Emily Loizeau'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Open-bar-anti-ecolo-le-basculement-reactionnaire-du-Senat
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Open bar » anti-écolo : le basculement réactionnaire du Sénat — Le Sénat français penche de plus en plus à
-      droite. Historiquement dominé par les conservateurs, il verse de plus en plus dans l''anti-écologie, avec le consentement
-      de la macronie. Récit d''un basculement. C''était cet été, en pleine can'
-    timestamp: '2026-09-27T08:58:04'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-09-27'
-  last_seen: '2026-09-27'
-  metadata:
-    title: '« Open bar » anti-écolo : le basculement réactionnaire du Sénat'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Oublies-par-leur-bailleur-ils-installent-des-stores-faits-maison-contre-la-canicule
   type: rss
   found_from:
@@ -64399,21 +64816,6 @@ candidates:
   metadata:
     title: 'PFAS : l''Europe baisse drastiquement le seuil tolérable d''exposition aux TFA'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Paquebots-jets-prives-Comment-l-Etat-garantit-des-decennies-d-emissions-carbonees
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Jets privés, paquebots... L'État garantit des milliards d'euros pour des projets climaticides — La banque publique
-      d'investissement Bpifrance continue de garantir des milliards d'euros de mises pour des paquebots et des avions, à rebours
-      des engagements climatiques de la nation. C'est parfois dans l
-    timestamp: '2026-09-27T08:58:04'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-09-27'
-  last_seen: '2026-09-27'
-  metadata:
-    title: Jets privés, paquebots... L'État garantit des milliards d'euros pour des projets climaticides
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Partir-seule-tracer-sa-route-ces-livres-feministes-pour-passer-a-l-acte
   type: rss
   found_from:
@@ -64428,6 +64830,21 @@ candidates:
   last_seen: '2026-08-09'
   metadata:
     title: 'Partir seule, tracer sa route : ces livres féministes pour passer à l''acte'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Percee-du-RN-arrivee-de-LFI-Les-elections-senatoriales-donnent-le-ton-pour-2027
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Percée du RN, arrivée de LFI... Les élections sénatoriales donnent le ton pour 2027 — C''est une première pour
+      l''extrême droite : le RN et l'' UDR ont obtenu un groupe au Sénat à l''issue des sénatoriales le 27 septembre. Si La
+      France insoumise arrive également au Sénat, la droite conserve sa majorité.'
+    timestamp: '2026-09-29T09:29:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: Percée du RN, arrivée de LFI... Les élections sénatoriales donnent le ton pour 2027
   suggested_action: follow_one_time
 - url: https://reporterre.net/Perquisitions-millions-d-euros-demandes-un-promoteur-immobilier-fait-pression-sur-des
   type: rss
@@ -64518,21 +64935,6 @@ candidates:
   last_seen: '2026-09-25'
   metadata:
     title: Pro-A69, pesticides et mégabassines… Ces sénateurs en pointe contre l'écologie
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Proces-et-amendes-a-foison-la-repression-judiciaire-s-intensifie-contre-Greenpeace-France
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Procès et amendes à foison : la répression judiciaire s''intensifie contre Greenpeace France — Procès, amendes
-      à foison... La répression judiciaire s''intensifie contre Greenpeace France et ses militants, dont deux comparaîtront
-      le 25 septembre. Autopsie d''un système visant à affaiblir financièrement '
-    timestamp: '2026-09-27T08:58:04'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-09-27'
-  last_seen: '2026-09-27'
-  metadata:
-    title: 'Procès et amendes à foison : la répression judiciaire s''intensifie contre Greenpeace France'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Quand-la-marche-nourrit-guerit-et-emancipe
   type: rss
@@ -64668,6 +65070,21 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: Sous testostérone, les poissons d'élevage égyptiens bientôt importés en Europe
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Tant-qu-il-n-y-a-pas-de-goudron-on-n-a-pas-perdu-contre-l-A412-les-militants-maintiennent
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« On a séché nos larmes et on est allés tracter » : la mobilisation contre l''A412 dans l''urgence face aux
+      destructions — Près d''un mois après le début des travaux de l''A412, et alors que le déboisement du tracé avance à
+      toute vitesse, les militants veulent croire à une autre issue et se battent pour'
+    timestamp: '2026-09-29T09:29:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: '« On a séché nos larmes et on est allés tracter » : la mobilisation contre l''A412 dans l''urgence face aux destructions'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Terminer-de-travailler-a-15-h-l-idee-des-Espagnols-qui-pourrait-inspirer-la-France
   type: rss
@@ -64818,6 +65235,22 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: 'Une première : la justice ordonne la destruction de 4 mégabassines illégales'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Zinedine-Zidane-face-au-changement-climatique-On-va-essayer-de-continuer-a-faire-ce-qu-on
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Zinédine Zidane sur le climat : prendre moins l''avion ou alléger les calendriers, « je ne pense pas qu''il
+      faille rentrer là-dedans » — Le nouvel entraîneur de l''équipe de France de football a dit à Reporterre souhaiter que
+      les catastrophes climatiques n''arrivent plus tout en déclarant vouloir « cont'
+    timestamp: '2026-09-29T09:29:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-09-29'
+  last_seen: '2026-09-29'
+  metadata:
+    title: 'Zinédine Zidane sur le climat : prendre moins l''avion ou alléger les calendriers, « je ne pense pas qu''il faille
+      rentrer là-dedans »'
   suggested_action: follow_one_time
 - url: https://repositorio.unal.edu.co/handle/unal/78468
   type: openalex
