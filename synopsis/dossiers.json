@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-29T09:35:38Z",
+  "generated_at": "2026-10-01T10:06:46Z",
   "total_dossiers": 10,
   "dossiers": [
     {
       "slug": "sortir-une-terre-du-marche",
       "titre": "Sortir une terre du marché",
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-      "doc_count": 129,
+      "doc_count": 131,
       "docs": [
         "e7512d48",
         "0b22d51b",
@@ -112,6 +112,7 @@
         "fc44409e",
         "8c5780d2",
         "298f7165",
+        "e40b3977",
         "02b2b6df",
         "e5341cc9",
         "d992c836",
@@ -136,7 +137,8 @@
         "27c5e053",
         "812f9005",
         "a66578a6",
-        "bd18d74a"
+        "bd18d74a",
+        "6c062eda"
       ],
       "docs_detail": [
         {
@@ -1009,6 +1011,14 @@
           ]
         },
         {
+          "id": "e40b3977",
+          "title": "pdf",
+          "score": 7,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
           "id": "02b2b6df",
           "title": "C'est quoi la ZAD ?",
           "score": 6,
@@ -1208,6 +1218,14 @@
           "matched_on": [
             "propriété d'usage",
             "anti-spéculat",
+            "inaliénab"
+          ]
+        },
+        {
+          "id": "6c062eda",
+          "title": "Private Property or Possession",
+          "score": 6,
+          "matched_on": [
             "inaliénab"
           ]
         }
@@ -2432,7 +2450,7 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 500,
+      "doc_count": 501,
       "docs": [
         "5a9397e7",
         "8bfe460c",
@@ -2830,6 +2848,7 @@
         "e9a890fb",
         "55ec8164",
         "d273ba77",
+        "e40b3977",
         "02b2b6df",
         "4bc13839",
         "a238e5bd",
@@ -6623,6 +6642,14 @@
           ]
         },
         {
+          "id": "e40b3977",
+          "title": "pdf",
+          "score": 7,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
           "id": "02b2b6df",
           "title": "C'est quoi la ZAD ?",
           "score": 6,
@@ -7514,7 +7541,7 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 284,
+      "doc_count": 290,
       "docs": [
         "d30c223f",
         "c8210481",
@@ -7618,6 +7645,8 @@
         "75b5c5f8",
         "1ae37e83",
         "bf8f5362",
+        "13212a33",
+        "0ab80c04",
         "9e831a55",
         "2db11a52",
         "7b89d6d1",
@@ -7704,6 +7733,8 @@
         "5ad6ebc5",
         "ab3b2eb1",
         "91c6dc3a",
+        "e4af4a60",
+        "1fbb30cf",
         "28b7cb2c",
         "2175f7a3",
         "2e5629b5",
@@ -7748,6 +7779,7 @@
         "8c5780d2",
         "298f7165",
         "a705762f",
+        "e40b3977",
         "4bc13839",
         "e5341cc9",
         "7cf86983",
@@ -7799,7 +7831,8 @@
         "7585c0aa",
         "7c1b5f0c",
         "13352415",
-        "f5977eb9"
+        "f5977eb9",
+        "6c062eda"
       ],
       "docs_detail": [
         {
@@ -8691,6 +8724,25 @@
           ]
         },
         {
+          "id": "13212a33",
+          "title": "Bond men made free: medieval peasant movements and the English rising of 1381",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "0ab80c04",
+          "title": "Tony Benn presents a common treasury",
+          "score": 9,
+          "matched_on": [
+            "communs fonciers",
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
           "id": "9e831a55",
           "title": "The Tree, The Rock, and the Morrow",
           "score": 8,
@@ -9432,6 +9484,25 @@
           ]
         },
         {
+          "id": "e4af4a60",
+          "title": "The Black Death and the Peasants' Revolt",
+          "score": 8,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "1fbb30cf",
+          "title": "Gelligaer and Merthyr Common : a South Wales landscape past and present",
+          "score": 8,
+          "matched_on": [
+            "communaux",
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
           "id": "28b7cb2c",
           "title": "The Cooperative Way of Housing in Canada",
           "score": 7,
@@ -9804,6 +9875,14 @@
           "score": 7,
           "matched_on": [
             "enclosure"
+          ]
+        },
+        {
+          "id": "e40b3977",
+          "title": "pdf",
+          "score": 7,
+          "matched_on": [
+            "communs fonciers"
           ]
         },
         {
@@ -10239,6 +10318,15 @@
           "score": 6,
           "matched_on": [
             "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "6c062eda",
+          "title": "Private Property or Possession",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers",
             "commons"
           ]
         }
@@ -10737,7 +10825,7 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 651,
+      "doc_count": 655,
       "docs": [
         "5a9397e7",
         "8bfe460c",
@@ -10916,6 +11004,7 @@
         "8368f2e7",
         "1ae37e83",
         "bf8f5362",
+        "13212a33",
         "fac367e2",
         "9e831a55",
         "c99e6da4",
@@ -11127,6 +11216,7 @@
         "ab3b2eb1",
         "972292c4",
         "2b3dfe6d",
+        "e4af4a60",
         "d64f2d03",
         "581a53c8",
         "2e5629b5",
@@ -11233,6 +11323,7 @@
         "d273ba77",
         "8ee3f263",
         "4042cb84",
+        "e40b3977",
         "02b2b6df",
         "4bc13839",
         "a238e5bd",
@@ -11389,7 +11480,8 @@
         "13352415",
         "34a95a5f",
         "11cf1f70",
-        "439d316f"
+        "439d316f",
+        "6c062eda"
       ],
       "docs_detail": [
         {
@@ -13478,6 +13570,15 @@
             "paysan",
             "agroécologie",
             "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "13212a33",
+          "title": "Bond men made free: medieval peasant movements and the English rising of 1381",
+          "score": 9,
+          "matched_on": [
+            "paysan",
+            "peasant"
           ]
         },
         {
@@ -15749,6 +15850,15 @@
           ]
         },
         {
+          "id": "e4af4a60",
+          "title": "The Black Death and the Peasants' Revolt",
+          "score": 8,
+          "matched_on": [
+            "paysan",
+            "peasant"
+          ]
+        },
+        {
           "id": "d64f2d03",
           "title": "Concurrence déloyale, créativité écrasée : l'agriculture vivrière en crise",
           "score": 7,
@@ -16902,6 +17012,18 @@
             "paysannerie",
             "paysan",
             "peasant"
+          ]
+        },
+        {
+          "id": "e40b3977",
+          "title": "pdf",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "souveraineté alimentaire"
           ]
         },
         {
@@ -18532,6 +18654,15 @@
             "peasant",
             "food sovereignty"
           ]
+        },
+        {
+          "id": "6c062eda",
+          "title": "Private Property or Possession",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
         }
       ]
     },
@@ -18539,7 +18670,7 @@
       "slug": "land-back-autochtones",
       "titre": "Land Back & souverainetés autochtones",
       "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-      "doc_count": 287,
+      "doc_count": 288,
       "docs": [
         "0b22d51b",
         "e41de87d",
@@ -18766,6 +18897,7 @@
         "035d0b23",
         "e9a890fb",
         "53b33470",
+        "e40b3977",
         "4bc13839",
         "5ea6c0cc",
         "e5341cc9",
@@ -20778,6 +20910,14 @@
           ]
         },
         {
+          "id": "e40b3977",
+          "title": "pdf",
+          "score": 7,
+          "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
           "id": "4bc13839",
           "title": "06.05_2026_catalogue.pdf",
           "score": 6,
@@ -22698,7 +22838,7 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 390,
+      "doc_count": 395,
       "docs": [
         "d30c223f",
         "5a9397e7",
@@ -22846,6 +22986,8 @@
         "75b5c5f8",
         "1ae37e83",
         "bf8f5362",
+        "13212a33",
+        "0ab80c04",
         "c99e6da4",
         "55db5001",
         "2db11a52",
@@ -22956,6 +23098,8 @@
         "5ad6ebc5",
         "ab3b2eb1",
         "2b3dfe6d",
+        "e4af4a60",
+        "1fbb30cf",
         "581a53c8",
         "14f45ea3",
         "79cc5801",
@@ -23021,6 +23165,7 @@
         "4042cb84",
         "070edf21",
         "a705762f",
+        "e40b3977",
         "e5341cc9",
         "7cf86983",
         "d992c836",
@@ -24340,6 +24485,22 @@
           ]
         },
         {
+          "id": "13212a33",
+          "title": "Bond men made free: medieval peasant movements and the English rising of 1381",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "0ab80c04",
+          "title": "Tony Benn presents a common treasury",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
           "id": "c99e6da4",
           "title": "PAMBANSA-DEMOKRATIKONG PAARALAN",
           "score": 8,
@@ -25272,6 +25433,22 @@
           ]
         },
         {
+          "id": "e4af4a60",
+          "title": "The Black Death and the Peasants' Revolt",
+          "score": 8,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "1fbb30cf",
+          "title": "Gelligaer and Merthyr Common : a South Wales landscape past and present",
+          "score": 8,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
           "id": "581a53c8",
           "title": "ILC — Cartes des constituencies (2025)",
           "score": 7,
@@ -25821,6 +25998,14 @@
           "score": 7,
           "matched_on": [
             "enclosure"
+          ]
+        },
+        {
+          "id": "e40b3977",
+          "title": "pdf",
+          "score": 7,
+          "matched_on": [
+            "accaparement"
           ]
         },
         {
