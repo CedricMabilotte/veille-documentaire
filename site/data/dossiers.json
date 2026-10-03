@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-01T10:06:46Z",
+ "generated_at": "2026-10-03T09:05:20Z",
  "total_dossiers": 10,
  "dossiers": [
   {
@@ -6774,7 +6774,7 @@
    "slug": "communs-fonciers-histoire",
    "titre": "Communs fonciers : une histoire",
    "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-   "doc_count": 238,
+   "doc_count": 239,
    "docs": [
     "e7512d48",
     "d647480f",
@@ -6931,6 +6931,7 @@
     "ab3b2eb1",
     "e4af4a60",
     "1fbb30cf",
+    "96fb51f1",
     "28b7cb2c",
     "2175f7a3",
     "2e5629b5",
@@ -8361,6 +8362,15 @@
      ]
     },
     {
+     "id": "96fb51f1",
+     "title": "EN_Raj Patel – Lecture Transcript",
+     "score": 8,
+     "matched_on": [
+      "communaux",
+      "enclosure"
+     ]
+    },
+    {
      "id": "28b7cb2c",
      "title": "The Cooperative Way of Housing in Canada",
      "score": 7,
@@ -9451,7 +9461,7 @@
    "slug": "paysanneries-agroecologie",
    "titre": "Paysanneries & agroécologie politique",
    "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-   "doc_count": 583,
+   "doc_count": 584,
    "docs": [
     "5a9397e7",
     "8bfe460c",
@@ -9799,6 +9809,7 @@
     "972292c4",
     "2b3dfe6d",
     "e4af4a60",
+    "96fb51f1",
     "581a53c8",
     "2e5629b5",
     "0861d0b3",
@@ -14022,6 +14033,16 @@
      "matched_on": [
       "paysan",
       "peasant"
+     ]
+    },
+    {
+     "id": "96fb51f1",
+     "title": "EN_Raj Patel – Lecture Transcript",
+     "score": 8,
+     "matched_on": [
+      "paysannerie",
+      "paysan",
+      "agriculture vivrière"
      ]
     },
     {
@@ -20653,7 +20674,7 @@
    "slug": "accaparements-resistances",
    "titre": "Accaparements & résistances",
    "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-   "doc_count": 363,
+   "doc_count": 364,
    "docs": [
     "5a9397e7",
     "d647480f",
@@ -20894,6 +20915,7 @@
     "2b3dfe6d",
     "e4af4a60",
     "1fbb30cf",
+    "96fb51f1",
     "581a53c8",
     "79cc5801",
     "a54f94c8",
@@ -23058,6 +23080,15 @@
      "title": "Gelligaer and Merthyr Common : a South Wales landscape past and present",
      "score": 8,
      "matched_on": [
+      "enclosure"
+     ]
+    },
+    {
+     "id": "96fb51f1",
+     "title": "EN_Raj Patel – Lecture Transcript",
+     "score": 8,
+     "matched_on": [
+      "accaparement",
       "enclosure"
      ]
     },
