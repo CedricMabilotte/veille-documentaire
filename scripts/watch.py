@@ -1295,8 +1295,8 @@ def _prerender_fiches(catalog: dict) -> int:
 
     <article class="mt-3">
       <header>
-        <h1 style="font-family:var(--font-serif);font-size:clamp(20px,4vw,30px);font-weight:600;line-height:1.25;margin:14px 0 10px;">{title_h}</h1>
-        <p style="font-size:14px;color:var(--text-dim);margin:0 0 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">{source_h}{_meta_extra} <span class="biblio-stampbox">SCORE {score}/10</span></p>
+        <h1 style="font-family:var(--font-serif);font-size:clamp(26px,4vw,34px);font-weight:600;line-height:1.25;margin:14px 0 10px;">{title_h}</h1>
+        <p style="font-size:0.9688rem;color:var(--text-dim);margin:0 0 14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;">{source_h}{_meta_extra} <span class="biblio-stampbox">SCORE {score}/10</span></p>
         {_orig_html}
       </header>
 
@@ -1306,7 +1306,7 @@ def _prerender_fiches(catalog: dict) -> int:
 
       <div style="border-top:1px solid var(--border);padding-top:20px;margin-top:32px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
         <a class="btn btn-sm" href="fiche.html?id={doc_id_h}">Version interactive ↗</a>
-        <span style="font-size:13px;color:var(--text-faint)">Fiches proches · BibTeX · partage par citation</span>
+        <span style="font-size:0.9062rem;color:var(--text-faint)">Fiches proches · BibTeX · partage par citation</span>
       </div>
     </article>
   </div>
@@ -1317,7 +1317,7 @@ def _prerender_fiches(catalog: dict) -> int:
     <div>
       <h4>BIBLIO</h4>
       <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
-      <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+      <p style="font-size:0.9062rem;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
     </div>
     <div>
       <h4>Naviguer</h4>

@@ -82,7 +82,7 @@
            Remplacé par le rendu dynamique dès que le catalogue est chargé. -->
       <noscript>
         <div style="grid-column:1/-1;padding:40px 0;">
-          <p style="font-family:var(--font-serif);font-size:18px;">
+          <p style="font-family:var(--font-serif);font-size:1.1875rem;">
             Cette fiche s’affiche avec l’aide de JavaScript, désactivé sur votre navigateur.
           </p>
           <p>Vous pouvez parcourir l’ensemble des fiches depuis
@@ -102,7 +102,7 @@
     <div>
       <h4>BIBLIO</h4>
       <p>Bibliothèque documentaire ouverte sur les communs, la propriété d'usage et les paysanneries.</p>
-      <p style="font-size:13px;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
+      <p style="font-size:0.9062rem;">Un projet de <a href="https://actitude.org" rel="noopener">actitude.org</a>.</p>
       <div class="newsletter-foot">
         <p><strong>La lettre de la veille</strong> — un digest régulier, sans tracker.</p>
         <form class="newsletter-form" aria-label="Inscription à la newsletter">
@@ -391,7 +391,7 @@ function renderFiche(doc, basePath) {
     return parts.join('\n        ');
   })();
   const deadNoticeHTML = linkDead
-    ? `<p class="fiche-link-warning" role="note" style="font-size:14px;color:var(--text-faint);margin-top:.5rem;">⚠ Le lien d’origine n’est plus disponible. ${doc.archive_url ? "Une copie d’archive est proposée ci-dessus." : "Aucune copie d’archive n’a pu être conservée."}</p>`
+    ? `<p class="fiche-link-warning" role="note" style="font-size:0.9688rem;color:var(--text-faint);margin-top:.5rem;">⚠ Le lien d’origine n’est plus disponible. ${doc.archive_url ? "Une copie d’archive est proposée ci-dessus." : "Aucune copie d’archive n’a pu être conservée."}</p>`
     : '';
 
   const ficheCoverInitial = escape(title.slice(0,1).toUpperCase());
@@ -488,7 +488,7 @@ function renderFiche(doc, basePath) {
               <li style="border-left:2px solid var(--border);padding:6px 0 6px 14px;margin-bottom:10px;">
                 <strong style="font-family:var(--font-serif);">${escape(formatDate(r.date))}</strong>
                 <span class="score-pill ${scoreClass(r.score)}" style="margin-left:8px;">${r.score}/10</span>
-                ${cr && !cr.startsWith('_SKIP') ? `<div style="color:var(--text-dim);font-size:14px;margin-top:4px;">${escape(cr)}</div>` : ''}
+                ${cr && !cr.startsWith('_SKIP') ? `<div style="color:var(--text-dim);font-size:0.9688rem;margin-top:4px;">${escape(cr)}</div>` : ''}
               </li>`;
             }).join('')}
           </ul>
@@ -496,7 +496,7 @@ function renderFiche(doc, basePath) {
       ` : ''}
 
       <section class="fiche-section" style="border-top:1px solid var(--border);padding-top:24px;">
-        <p style="font-size:13px;color:var(--text-faint);">
+        <p style="font-size:0.9062rem;color:var(--text-faint);">
           Cette fiche est un point de départ. Le scoring est automatique : il peut errer.
           Le texte original reste la référence. <a href="../apropos.html">Méthodologie complète →</a>
         </p>
@@ -745,7 +745,7 @@ function versionsSectionHTML(doc, basePath) {
           const s = docScore(d);
           return `<li>
             <a href="${escape(url)}">${escape(docTitle(d))}</a>
-            ${d.lang ? ` <span style="color:var(--text-faint);font-size:12px;">[${escape(String(d.lang).toUpperCase())}]</span>` : ''}
+            ${d.lang ? ` <span style="color:var(--text-faint);font-size:0.8125rem;">[${escape(String(d.lang).toUpperCase())}]</span>` : ''}
             <span class="score-pill ${scoreClass(s)}" style="margin-left:6px;">${s}/10</span>
           </li>`;
         }).join('')}

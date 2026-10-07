@@ -292,7 +292,7 @@
       </li>`;
     }).join('');
     root.innerHTML = `<ul class="sources-liste">${rows}</ul>
-      <p style="color:var(--text-faint);font-size:13px;margin-top:10px;">${list.length} sources au total.</p>`;
+      <p style="color:var(--text-faint);font-size:0.9062rem;margin-top:10px;">${list.length} sources au total.</p>`;
   }
   window.initEtatCorpus = initEtatCorpus;
 

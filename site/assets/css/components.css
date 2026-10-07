@@ -58,7 +58,7 @@
 }
 .biblio-error-title {
   font-family: var(--font-serif);
-  font-size: 21px;
+  font-size: 1.3125rem;
   margin: 0 0 8px;
   color: var(--text);
 }
@@ -115,7 +115,7 @@ mark.biblio-hl {
   align-items: center;
   gap: 6px;
   padding: 3px 6px 3px 10px;
-  font-size: 12.5px;
+  font-size: 0.875rem;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--accent-soft, #f1ede6);
@@ -126,7 +126,7 @@ mark.biblio-hl {
   border: none;
   background: transparent;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 1.0312rem;
   line-height: 1;
   color: var(--text-faint);
   padding: 0 2px;
@@ -137,7 +137,7 @@ mark.biblio-hl {
   border: none;
   background: transparent;
   cursor: pointer;
-  font-size: 12.5px;
+  font-size: 0.875rem;
   text-decoration: underline;
   color: var(--text-faint);
 }
@@ -151,7 +151,7 @@ mark.biblio-hl {
   align-items: center;
   margin: 0 0 14px;
   padding: 8px 14px;
-  font-size: 13px;
+  font-size: 0.9062rem;
   border: 1px solid var(--gold, #c79a3a);
   border-left-width: 4px;
   border-radius: 4px;
@@ -163,7 +163,7 @@ mark.biblio-hl {
   background: transparent;
   cursor: pointer;
   text-decoration: underline;
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text);
 }
 
@@ -178,7 +178,7 @@ mark.biblio-hl {
   cursor: pointer;
   padding: 10px 14px;
   font-family: var(--font-serif);
-  font-size: 15px;
+  font-size: 1.0312rem;
   list-style: none;
 }
 .biblio-help > summary::-webkit-details-marker { display: none; }
@@ -186,7 +186,7 @@ mark.biblio-hl {
 .biblio-help[open] > summary { border-bottom: 1px solid var(--border); }
 .biblio-help-body {
   padding: 12px 16px;
-  font-size: 14px;
+  font-size: 0.9688rem;
   color: var(--text-dim);
 }
 .biblio-help-body dl { margin: 0; }
@@ -204,7 +204,7 @@ mark.biblio-hl {
 /* ----- C5 / catalogue : score en toutes lettres -------------------- */
 .biblio-score-text {
   display: block;
-  font-size: 11px;
+  font-size: 0.7812rem;
   color: var(--text-faint);
   margin-top: 2px;
 }
@@ -212,7 +212,7 @@ mark.biblio-hl {
 /* ----- A1 : badge type de document sur les cartes ------------------ */
 .biblio-type-badge {
   display: inline-block;
-  font-size: 10.5px;
+  font-size: 0.7812rem;
   letter-spacing: .04em;
   text-transform: uppercase;
   padding: 1px 7px;
@@ -233,7 +233,7 @@ mark.biblio-hl {
 }
 .biblio-enclair .biblio-enclair-label {
   display: block;
-  font-size: 11px;
+  font-size: 0.7812rem;
   letter-spacing: .06em;
   text-transform: uppercase;
   color: var(--accent);
@@ -242,7 +242,7 @@ mark.biblio-hl {
 .biblio-enclair p {
   margin: 0;
   font-family: var(--font-serif);
-  font-size: 17px;
+  font-size: 1.125rem;
   line-height: 1.5;
   color: var(--text);
 }
@@ -250,7 +250,7 @@ mark.biblio-hl {
 /* ----- B1 : badge d'orientation de la source ----------------------- */
 .biblio-orientation-badge {
   display: inline-block;
-  font-size: 11px;
+  font-size: 0.7812rem;
   padding: 2px 9px;
   border-radius: 999px;
   border: 1px solid var(--border);
@@ -275,7 +275,7 @@ mark.biblio-hl {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 11px;
+  font-size: 0.7812rem;
   color: var(--text-faint);
   border: 1px dotted var(--border);
   border-radius: 3px;
@@ -288,10 +288,10 @@ mark.biblio-hl {
   margin-top: 28px;
   padding-top: 14px;
   border-top: 1px dotted var(--border);
-  font-size: 12px;
+  font-size: 0.8125rem;
   color: var(--text-faint);
 }
-.biblio-techfoot code { font-size: 11px; }
+.biblio-techfoot code { font-size: 0.7812rem; }
 
 /* ----- C1 : mise en avant Score/Auteur/Date dans la grille méta ---- */
 .fiche-meta-grid .biblio-meta-primary dt { color: var(--accent); }
@@ -315,11 +315,11 @@ mark.biblio-hl {
 .biblio-cite-head h3 {
   margin: 0;
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 1.0625rem;
 }
 .biblio-cite-body {
   padding: 12px 14px;
-  font-size: 13.5px;
+  font-size: 0.9375rem;
   line-height: 1.55;
   color: var(--text-dim);
   font-family: var(--font-serif);
@@ -336,7 +336,7 @@ mark.biblio-hl {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 12.5px;
+  font-size: 0.875rem;
   padding: 5px 12px;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -368,7 +368,7 @@ mark.biblio-hl {
 .biblio-deeper-item:last-child { margin-bottom: 0; }
 .biblio-deeper-item .biblio-deeper-label {
   display: block;
-  font-size: 11px;
+  font-size: 0.7812rem;
   letter-spacing: .05em;
   text-transform: uppercase;
   color: var(--accent);
@@ -384,7 +384,7 @@ mark.biblio-hl {
   gap: 6px;
 }
 .biblio-actor-list li {
-  font-size: 12.5px;
+  font-size: 0.875rem;
   padding: 2px 9px;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -404,11 +404,11 @@ mark.biblio-hl {
 .biblio-versions li:last-child { border-bottom: none; }
 
 /* ----- A8 : rendu corpus_stats ------------------------------------- */
-.corpus-total { font-size: 16px; color: var(--text-dim); }
+.corpus-total { font-size: 1.0625rem; color: var(--text-dim); }
 .corpus-stat-block { margin: 0 0 28px; }
 .corpus-stat-block h3 {
   font-family: var(--font-serif);
-  font-size: 19px;
+  font-size: 1.25rem;
   margin: 0 0 10px;
 }
 .corpus-bar-list { list-style: none; padding: 0; margin: 0; }
@@ -418,7 +418,7 @@ mark.biblio-hl {
   gap: 10px;
   align-items: center;
   padding: 3px 0;
-  font-size: 13px;
+  font-size: 0.9062rem;
 }
 .corpus-bar-label { color: var(--text-dim); }
 .corpus-bar-track {
@@ -432,7 +432,7 @@ mark.biblio-hl {
   height: 100%;
   background: var(--accent);
 }
-.corpus-bar-val { font-size: 12px; color: var(--text-faint); white-space: nowrap; }
+.corpus-bar-val { font-size: 0.8125rem; color: var(--text-faint); white-space: nowrap; }
 
 /* ----- B11 : grille de recherche avancée (si une page l'utilise) --- */
 .biblio-advsearch {
@@ -454,7 +454,7 @@ mark.biblio-hl {
   align-items: center;
   gap: 10px;
   padding: 16px 20px;
-  font-size: 15px;
+  font-size: 1.0312rem;
   color: var(--text-dim);
   margin: 0;
 }
@@ -476,7 +476,7 @@ mark.biblio-hl {
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   color: var(--text-faint);
-  font-size: 11px;
+  font-size: 0.7812rem;
   padding: 3px 8px;
   cursor: pointer;
   text-decoration: none;
@@ -509,7 +509,7 @@ mark.biblio-hl {
 .fiches-proches-link {
   flex: 1;
   font-family: var(--font-serif);
-  font-size: 15px;
+  font-size: 1.0312rem;
   color: var(--text);
   text-decoration: none;
 }
@@ -523,11 +523,11 @@ mark.biblio-hl {
   background: var(--bg-elev);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 1.0625rem;
   line-height: 1.6;
 }
 .fiche-citation p { margin: 0 0 6px; }
-.fiche-citation footer { font-size: 13px; color: var(--text-faint); }
+.fiche-citation footer { font-size: 0.9062rem; color: var(--text-faint); }
 
 /* ============================================================
    C6 — Refonte anarcho-champêtre : encart « dossiers ouverts »
@@ -588,14 +588,14 @@ mark.biblio-hl {
 
 .biblio-fichecard h3 {
   font-family: var(--font-serif);
-  font-size: 16.5px;
+  font-size: 1.125rem;
   font-weight: 600;
   margin: 8px 0 8px;
   line-height: 1.3;
   color: var(--text);
 }
 .biblio-fichecard-chapo {
-  font-size: 12.5px;
+  font-size: 0.875rem;
   color: var(--text-dim);
   margin: 0 0 10px;
   line-height: 1.45;
@@ -603,7 +603,7 @@ mark.biblio-hl {
 
 /* rature : la notion dominante barrée, le concept affirmé à la main */
 .biblio-fichecard-rature {
-  font-size: 13px;
+  font-size: 0.9062rem;
   margin: 0 0 8px;
   color: var(--text);
 }
@@ -614,13 +614,13 @@ mark.biblio-hl {
 .biblio-rature-apres {
   font-family: "Caveat", cursive;
   color: var(--bad);
-  font-size: 15px;
+  font-size: 1.0312rem;
   margin-left: 3px;
 }
 
 .biblio-fichecard-pick {
   font-family: "Special Elite", monospace;
-  font-size: 10.5px;
+  font-size: 0.7812rem;
   color: var(--text-faint);
   margin: 6px 0 0;
 }
@@ -638,7 +638,7 @@ mark.biblio-hl {
   border-radius: 999px;
   padding: 4px 14px;
   font-family: "Special Elite", monospace;
-  font-size: 11px;
+  font-size: 0.7812rem;
   font-weight: 600;
   letter-spacing: .06em;
   text-transform: uppercase;
@@ -657,17 +657,17 @@ mark.biblio-hl {
 @media (max-width: 760px) { .biblio-dossiers-grid-full { grid-template-columns: 1fr; } }
 
 .biblio-fichecard-full { padding: 22px 24px 20px; }
-.biblio-fichecard-full h3 { font-size: 20px; }
-.biblio-fichecard-full .biblio-fichecard-chapo { font-size: 14px; }
-.biblio-fichecard-full .biblio-fichecard-rature { font-size: 14px; }
-.biblio-fichecard-full .biblio-rature-apres { font-size: 16.5px; }
+.biblio-fichecard-full h3 { font-size: 1.25rem; }
+.biblio-fichecard-full .biblio-fichecard-chapo { font-size: 0.9688rem; }
+.biblio-fichecard-full .biblio-fichecard-rature { font-size: 0.9688rem; }
+.biblio-fichecard-full .biblio-rature-apres { font-size: 1.125rem; }
 
 .biblio-fichecard-doclist {
   list-style: none;
   margin: 12px 0 0;
   padding: 10px 0 0;
   border-top: 1px dotted var(--border);
-  font-size: 13.5px;
+  font-size: 0.9375rem;
 }
 .biblio-fichecard-doclist li {
   display: flex;
@@ -685,7 +685,7 @@ mark.biblio-hl {
 .biblio-fichecard-more > summary {
   cursor: pointer;
   font-family: "Special Elite", monospace;
-  font-size: 11px;
+  font-size: 0.7812rem;
   color: var(--text-faint);
   list-style: none;
   padding: 6px 0 0;
@@ -755,7 +755,7 @@ mark.biblio-hl {
   box-shadow: var(--shadow-lg, var(--shadow-md));
 }
 .concept-card.biblio-fichecard h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--accent);
 }
 
@@ -779,7 +779,7 @@ mark.biblio-hl {
 }
 .author-card.biblio-fichecard-dense h3 {
   font-family: var(--font-serif);
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 8px 0 4px;
   color: var(--text);
   font-weight: 600;

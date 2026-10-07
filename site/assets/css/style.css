@@ -61,13 +61,13 @@
 
 /* --- Reset + base --- */
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; font-size: 100%; }
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
-  font-size: 17px;
+  font-size: 1.125rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -165,11 +165,11 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
 .brand-name {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 22px;
+  font-size: 1.375rem;
   letter-spacing: 0.04em;
 }
 .brand-sub {
-  font-size: 12px;
+  font-size: 0.8125rem;
   color: var(--text-faint);
   margin-left: 6px;
   letter-spacing: 0.02em;
@@ -188,7 +188,7 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
 .site-nav a {
   position: relative;
   color: var(--text-dim);
-  font-size: 15px;
+  font-size: 1.0312rem;
   padding: 9px 14px 7px;
   min-height: 40px;
   display: inline-flex;
@@ -219,7 +219,7 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
   border: none;
   cursor: pointer;
   font-family: inherit;
-  font-size: 15px;
+  font-size: 1.0312rem;
   color: var(--text-dim);
   padding: 9px 14px 7px;
   min-height: 40px;
@@ -262,7 +262,7 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
 .nav-dropdown-menu li a {
   display: block;
   padding: 9px 16px;
-  font-size: 14px;
+  font-size: 0.9688rem;
   color: var(--text-dim);
   white-space: nowrap;
   transition: background var(--transition), color var(--transition);
@@ -291,7 +291,7 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
   border-radius: 0;
   padding: 9px 4px 7px 30px;
   font: inherit;
-  font-size: 14px;
+  font-size: 0.9688rem;
   color: var(--text);
   width: 190px;
   min-height: 40px;
@@ -317,7 +317,7 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
   position: absolute;
   right: 0;
   bottom: 8px;
-  font-size: 11px;
+  font-size: 0.7812rem;
   padding: 2px 6px;
   border: 1px solid var(--border);
   color: var(--text-faint);
@@ -377,7 +377,7 @@ main { flex: 1; }
 
 /* --- Breadcrumbs --- */
 .breadcrumbs {
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text-faint);
   margin: 18px 0 0;
   padding: 0;
@@ -417,7 +417,7 @@ main { flex: 1; }
   max-width: 640px;
 }
 .hero .by-line {
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text-faint);
   text-transform: uppercase;
   letter-spacing: 0.16em;
@@ -430,14 +430,14 @@ main { flex: 1; }
 .section + .section { border-top: 1px solid var(--border); }
 .section-title {
   font-family: var(--font-serif);
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 600;
   margin: 0 0 8px;
   letter-spacing: 0.01em;
 }
 .section-kicker {
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.8125rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent);
@@ -447,7 +447,7 @@ main { flex: 1; }
 .section-lede {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 19px;
+  font-size: 1.25rem;
   color: var(--text-dim);
   max-width: 720px;
   margin: 0 0 36px;
@@ -480,7 +480,7 @@ main { flex: 1; }
   left: -4px;
   background: var(--gold);
   color: #fff;
-  font-size: 10.5px;
+  font-size: 0.7812rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   padding: 5px 14px;
@@ -531,7 +531,7 @@ main { flex: 1; }
 .featured-body { padding: 22px 22px 24px; flex: 1; display: flex; flex-direction: column; }
 .featured-title {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
   line-height: 1.25;
   margin: 0 0 10px;
@@ -541,13 +541,13 @@ main { flex: 1; }
 .featured-card a.featured-title-link:hover { color: var(--accent); text-decoration: none; }
 .featured-teaser {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 1.0625rem;
   color: var(--text-dim);
   margin: 0 0 16px;
   line-height: 1.55;
 }
 .featured-meta {
-  font-size: 12.5px;
+  font-size: 0.875rem;
   color: var(--text-faint);
   margin-top: auto;
   letter-spacing: 0.02em;
@@ -584,12 +584,12 @@ main { flex: 1; }
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-serif);
   color: var(--text-faint);
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 .book-info { padding: 12px 2px 0; }
 .book-title {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 1.0625rem;
   line-height: 1.3;
   margin: 0 0 4px;
   color: var(--text);
@@ -600,7 +600,7 @@ main { flex: 1; }
   overflow: hidden;
 }
 .book-meta {
-  font-size: 12px;
+  font-size: 0.8125rem;
   color: var(--text-faint);
 }
 .book-card .score-pill { margin-top: 6px; }
@@ -610,7 +610,7 @@ main { flex: 1; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 11.5px;
+  font-size: 0.8125rem;
   font-weight: 600;
   padding: 2px 9px;
   border-radius: 99px;
@@ -655,14 +655,14 @@ a.stat:focus-visible .stat-label {
 }
 .stat-num {
   font-family: var(--font-serif);
-  font-size: 44px;
+  font-size: 2.75rem;
   font-weight: 600;
   color: var(--accent);
   line-height: 1;
 }
 .stat-label {
   margin-top: 8px;
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text-dim);
   letter-spacing: 0.04em;
   transition: color 0.15s;
@@ -676,7 +676,7 @@ a.stat:focus-visible .stat-label {
 }
 .three-col h3 {
   font-family: var(--font-serif);
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0 0 12px;
   color: var(--text);
 }
@@ -686,7 +686,7 @@ a.stat:focus-visible .stat-label {
 }
 .three-col .col-num {
   font-family: var(--font-serif);
-  font-size: 14px;
+  font-size: 0.9688rem;
   color: var(--accent);
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -710,7 +710,7 @@ a.stat:focus-visible .stat-label {
 }
 .filter-group { margin-bottom: 26px; }
 .filter-group h4 {
-  font-size: 11.5px;
+  font-size: 0.8125rem;
   text-transform: uppercase;
   letter-spacing: 0.16em;
   color: var(--text-faint);
@@ -719,7 +719,7 @@ a.stat:focus-visible .stat-label {
 }
 .filter-group label {
   display: flex; align-items: center; gap: 8px;
-  font-size: 14px;
+  font-size: 0.9688rem;
   color: var(--text-dim);
   margin: 5px 0;
   cursor: pointer;
@@ -735,7 +735,7 @@ a.stat:focus-visible .stat-label {
   border-radius: var(--radius);
   padding: 8px 10px;
   font: inherit;
-  font-size: 14px;
+  font-size: 0.9688rem;
   color: var(--text);
   min-height: 40px;
 }
@@ -747,7 +747,7 @@ a.stat:focus-visible .stat-label {
 .filter-group input[type="range"] { flex: 1; accent-color: var(--accent); }
 .filter-group .range-val {
   font-variant-numeric: tabular-nums;
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text);
   min-width: 22px;
   text-align: center;
@@ -769,7 +769,7 @@ a.stat:focus-visible .stat-label {
   border-radius: var(--radius);
   padding: 9px 14px;
   font: inherit;
-  font-size: 14px;
+  font-size: 0.9688rem;
   cursor: pointer;
   min-height: 40px;
   transition: background var(--transition), border-color var(--transition);
@@ -782,7 +782,7 @@ a.stat:focus-visible .stat-label {
   color: #fff;
 }
 .btn-primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); color: #fff; }
-.btn-sm { padding: 6px 10px; font-size: 13px; min-height: 36px; }
+.btn-sm { padding: 6px 10px; font-size: 0.9062rem; min-height: 36px; }
 
 /* --- Catalogue main --- */
 .catalog-main { min-width: 0; }
@@ -792,7 +792,7 @@ a.stat:focus-visible .stat-label {
 }
 .catalog-toolbar .count {
   color: var(--text-dim);
-  font-size: 14px;
+  font-size: 0.9688rem;
   margin-right: auto;
 }
 .catalog-toolbar select {
@@ -801,7 +801,7 @@ a.stat:focus-visible .stat-label {
   border-radius: var(--radius);
   padding: 8px 12px;
   font: inherit;
-  font-size: 14px;
+  font-size: 0.9688rem;
   color: var(--text);
   min-height: 40px;
 }
@@ -825,7 +825,7 @@ a.stat:focus-visible .stat-label {
   top: 8px; left: 8px;
   background: var(--gold);
   color: #fff;
-  font-size: 9.5px;
+  font-size: 0.7812rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -859,7 +859,7 @@ a.stat:focus-visible .stat-label {
 .fiche-cover.placeholder {
   display: flex; align-items: center; justify-content: center;
   font-family: var(--font-serif);
-  font-size: 80px;
+  font-size: 5rem;
   color: var(--text-faint);
 }
 .fiche-actions { margin-top: 16px; display: flex; flex-direction: column; gap: 8px; }
@@ -872,7 +872,7 @@ a.stat:focus-visible .stat-label {
   background: var(--gold-soft);
   color: var(--gold);
   border: 1px solid var(--gold);
-  font-size: 11px;
+  font-size: 0.7812rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -891,7 +891,7 @@ a.stat:focus-visible .stat-label {
 .fiche-subtitle {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 19px;
+  font-size: 1.25rem;
   color: var(--text-dim);
   margin: 0 0 24px;
   line-height: 1.45;
@@ -904,10 +904,10 @@ a.stat:focus-visible .stat-label {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   margin-bottom: 30px;
-  font-size: 14px;
+  font-size: 0.9688rem;
 }
 .fiche-meta-grid dt {
-  font-size: 11px;
+  font-size: 0.7812rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-faint);
@@ -921,19 +921,19 @@ a.stat:focus-visible .stat-label {
 .fiche-section { margin-bottom: 36px; }
 .fiche-section h2 {
   font-family: var(--font-serif);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 0 0 14px;
   color: var(--text);
 }
 .fiche-section h3 {
   font-family: var(--font-serif);
-  font-size: 18px;
+  font-size: 1.1875rem;
   margin: 0 0 8px;
 }
 .prose {
   font-family: var(--font-serif);
-  font-size: 17.5px;
+  font-size: 1.1562rem;
   line-height: 1.75;
   color: var(--text);
 }
@@ -943,7 +943,7 @@ a.stat:focus-visible .stat-label {
 .citation-block {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 17px;
+  font-size: 1.125rem;
   border-left: 3px solid var(--accent);
   padding: 6px 0 6px 20px;
   margin: 0 0 18px;
@@ -957,7 +957,7 @@ a.stat:focus-visible .stat-label {
   margin-top: 8px;
   font-style: normal;
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text-faint);
 }
 
@@ -966,7 +966,7 @@ a.stat:focus-visible .stat-label {
   margin-top: 12px;
 }
 .kw {
-  font-size: 12px;
+  font-size: 0.8125rem;
   padding: 3px 10px;
   background: var(--bg-elev);
   border: 1px solid var(--border);
@@ -990,26 +990,26 @@ a.stat:focus-visible .stat-label {
 .page .lede {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 21px;
+  font-size: 1.3125rem;
   color: var(--text-dim);
   margin: 0 0 36px;
   line-height: 1.5;
 }
 .page h2 {
   font-family: var(--font-serif);
-  font-size: 26px;
+  font-size: 1.625rem;
   margin: 48px 0 14px;
   font-weight: 600;
 }
 .page h3 {
   font-family: var(--font-serif);
-  font-size: 19px;
+  font-size: 1.25rem;
   margin: 28px 0 10px;
   font-weight: 600;
 }
 .page p, .page li {
   font-family: var(--font-serif);
-  font-size: 17.5px;
+  font-size: 1.1562rem;
   line-height: 1.75;
   color: var(--text);
 }
@@ -1030,7 +1030,7 @@ a.stat:focus-visible .stat-label {
   background: var(--bg-alt);
   padding: 36px 0 30px;
   margin-top: 60px;
-  font-size: 14px;
+  font-size: 0.9688rem;
   color: var(--text-dim);
 }
 .site-footer .container {
@@ -1040,7 +1040,7 @@ a.stat:focus-visible .stat-label {
 }
 .site-footer h4 {
   font-family: var(--font-serif);
-  font-size: 16px;
+  font-size: 1.0625rem;
   margin: 0 0 10px;
   color: var(--text);
 }
@@ -1053,7 +1053,7 @@ a.stat:focus-visible .stat-label {
   border-top: 1px solid var(--border);
   margin-top: 16px;
   padding-top: 16px;
-  font-size: 12.5px;
+  font-size: 0.875rem;
   color: var(--text-faint);
   display: flex;
   justify-content: space-between;
@@ -1071,7 +1071,7 @@ a.stat:focus-visible .stat-label {
   color: var(--bg);
   padding: 10px 18px;
   border-radius: var(--radius);
-  font-size: 14px;
+  font-size: 0.9688rem;
   opacity: 0;
   pointer-events: none;
   transition: opacity 200ms, transform 200ms;
@@ -1158,7 +1158,7 @@ a.stat:focus-visible .stat-label {
   .nav-dropdown-menu li a {
     padding: 10px 4px;
     border-bottom: 1px solid var(--border);
-    font-size: 15px;
+    font-size: 1.0312rem;
   }
   .nav-dropdown-menu li:last-child a { border-bottom: none; }
   /* margin-left:auto (pas flex:1) : pousse header-tools contre le bord
@@ -1238,7 +1238,7 @@ a.stat:focus-visible .stat-label {
   .nav-dropdown-menu li a {
     padding: 10px 4px;
     border-bottom: 1px solid var(--border);
-    font-size: 15px;
+    font-size: 1.0312rem;
   }
   .nav-dropdown-menu li:last-child a { border-bottom: none; }
   .search-box input { width: 100%; }
@@ -1247,8 +1247,8 @@ a.stat:focus-visible .stat-label {
   .header-tools { flex: 1; }
   .hero { padding: 50px 0 40px; }
   .section { padding: 40px 0; }
-  .section-title { font-size: 26px; }
-  body { font-size: 16px; }
+  .section-title { font-size: 1.625rem; }
+  body { font-size: 1.0625rem; }
 }
 
 /* --- Helpers --- */
@@ -1289,13 +1289,13 @@ a.stat:focus-visible .stat-label {
 }
 .author-card h3 {
   font-family: var(--font-serif);
-  font-size: 20px;
+  font-size: 1.25rem;
   margin: 0 0 4px;
   color: var(--text);
   font-weight: 600;
 }
 .author-card .author-count {
-  font-size: 12px;
+  font-size: 0.8125rem;
   color: var(--text-faint);
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -1307,7 +1307,7 @@ a.stat:focus-visible .stat-label {
   margin: 10px 0 12px;
 }
 .author-card li {
-  font-size: 14px;
+  font-size: 0.9688rem;
   padding: 4px 0;
   border-bottom: 1px dotted var(--border);
   display: flex;
@@ -1325,7 +1325,7 @@ a.stat:focus-visible .stat-label {
 }
 .author-card li a:hover { color: var(--accent); }
 .author-card .author-link {
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--accent);
   display: inline-block;
   margin-top: 6px;
@@ -1337,7 +1337,7 @@ a.stat:focus-visible .stat-label {
   padding: 16px 0;
   border-bottom: 1px solid var(--border);
   margin-bottom: 24px;
-  font-size: 14px;
+  font-size: 0.9688rem;
 }
 .authors-index a {
   display: inline-block;
@@ -1372,7 +1372,7 @@ a.stat:focus-visible .stat-label {
 }
 .timeline-decade {
   font-family: var(--font-serif);
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 600;
   color: var(--accent);
   margin: 48px 0 18px -32px;
@@ -1395,7 +1395,7 @@ a.stat:focus-visible .stat-label {
 }
 .timeline-year {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 1.375rem;
   color: var(--text-dim);
   font-weight: 600;
   margin: 20px 0 8px -16px;
@@ -1435,7 +1435,7 @@ a.stat:focus-visible .stat-label {
 }
 .timeline-entry a {
   font-family: var(--font-serif);
-  font-size: 17px;
+  font-size: 1.125rem;
   color: var(--text);
   flex: 1;
   line-height: 1.4;
@@ -1448,7 +1448,7 @@ a.stat:focus-visible .stat-label {
 }
 .timeline-undated h3 {
   font-family: var(--font-serif);
-  font-size: 20px;
+  font-size: 1.25rem;
   color: var(--text-faint);
   margin-bottom: 14px;
 }
@@ -1489,7 +1489,7 @@ a.stat:focus-visible .stat-label {
   color: var(--bg);
   padding: 8px 12px;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 0.9062rem;
   max-width: 260px;
   pointer-events: none;
   opacity: 0;
@@ -1516,7 +1516,7 @@ a.stat:focus-visible .stat-label {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.1875rem;
   color: var(--text-dim);
   font-family: var(--font-sans);
 }
@@ -1525,7 +1525,7 @@ a.stat:focus-visible .stat-label {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text-dim);
   padding: 12px 0;
 }
@@ -1567,13 +1567,13 @@ a.stat:focus-visible .stat-label {
 }
 .dossier-card h3 {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 1.375rem;
   color: var(--text);
   margin: 0 0 6px;
   font-weight: 600;
 }
 .dossier-card .dossier-count {
-  font-size: 11.5px;
+  font-size: 0.8125rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
@@ -1589,13 +1589,13 @@ a.stat:focus-visible .stat-label {
   padding: 8px 0;
   border-bottom: 1px dotted var(--border);
   font-family: var(--font-serif);
-  font-size: 15.5px;
+  font-size: 1.0625rem;
   line-height: 1.45;
 }
 .dossier-card li:last-child { border-bottom: 0; }
 .dossier-card li a { color: var(--text); }
 .dossier-card li a:hover { color: var(--accent); }
-.dossier-card li .score-pill { margin-left: 6px; font-size: 10.5px; padding: 1px 7px; }
+.dossier-card li .score-pill { margin-left: 6px; font-size: 0.7812rem; padding: 1px 7px; }
 
 /* ============================================================
    Mode étagère virtuelle (fiches/index.html)
@@ -1611,7 +1611,7 @@ a.stat:focus-visible .stat-label {
   border: 0;
   padding: 8px 12px;
   font: inherit;
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text-dim);
   cursor: pointer;
   min-height: 40px;
@@ -1691,7 +1691,7 @@ a.stat:focus-visible .stat-label {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   padding: 12px 4px;
-  font-size: 13px;
+  font-size: 0.9062rem;
   line-height: 1.2;
 }
 .shelf-book.placeholder span {
@@ -1705,7 +1705,7 @@ a.stat:focus-visible .stat-label {
   background: linear-gradient(0deg, rgba(0,0,0,0.75), transparent);
   color: #fff;
   padding: 10px 8px 6px;
-  font-size: 11px;
+  font-size: 0.7812rem;
   font-family: var(--font-serif);
   opacity: 0;
   transition: opacity 200ms;
@@ -1722,7 +1722,7 @@ a.stat:focus-visible .stat-label {
    Responsive ajouts
    ============================================================ */
 @media (max-width: 700px) {
-  .timeline-decade { font-size: 28px; }
+  .timeline-decade { font-size: 1.75rem; }
   .graph-wrap { height: 60vh; }
   
 }
@@ -1769,7 +1769,7 @@ a.stat:focus-visible .stat-label {
 }
 .histoire-decade-label {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
   color: var(--accent);
   border-bottom: 1px solid var(--border);
@@ -1781,7 +1781,7 @@ a.stat:focus-visible .stat-label {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 0.9688rem;
 }
 .histoire-decade-list li {
   padding: 4px 0;
@@ -1798,7 +1798,7 @@ a.stat:focus-visible .stat-label {
 .histoire-more {
   color: var(--text-faint);
   font-style: italic;
-  font-size: 13px;
+  font-size: 0.9062rem;
 }
 
 /* --- Pages-concepts --- */
@@ -1812,7 +1812,7 @@ a.stat:focus-visible .stat-label {
 }
 .concept-tab {
   font-family: var(--font-serif);
-  font-size: 15px;
+  font-size: 1.0312rem;
   padding: 6px 12px;
   border-radius: 999px;
   background: var(--bg-elev);
@@ -1848,18 +1848,18 @@ a.stat:focus-visible .stat-label {
 }
 .concept-card h3 {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 1.375rem;
   margin: 0 0 8px;
   color: var(--accent);
 }
 .concept-card .concept-def {
-  font-size: 14px;
+  font-size: 0.9688rem;
   line-height: 1.5;
   color: var(--text-dim);
   margin: 0 0 10px;
 }
 .concept-card-meta {
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text-faint);
   border-top: 1px solid var(--border);
   padding-top: 8px;
@@ -1873,14 +1873,14 @@ a.stat:focus-visible .stat-label {
 }
 .concept-title {
   font-family: var(--font-serif);
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 600;
   margin: 8px 0 12px;
   color: var(--accent);
 }
 .concept-definition {
   font-family: var(--font-serif);
-  font-size: 18px;
+  font-size: 1.1875rem;
   line-height: 1.6;
   color: var(--text-dim);
   margin: 0 0 18px;
@@ -1898,7 +1898,7 @@ a.stat:focus-visible .stat-label {
 .eq-lang {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--accent);
   min-width: 32px;
   padding-top: 3px;
@@ -1912,7 +1912,7 @@ a.stat:focus-visible .stat-label {
 .concept-section { margin-top: 32px; }
 .concept-section h3 {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
   margin: 0 0 14px;
 }
@@ -1935,7 +1935,7 @@ a.stat:focus-visible .stat-label {
   flex-wrap: wrap;
 }
 .concept-doclist .doc-source {
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text-faint);
   font-style: italic;
 }
@@ -1964,14 +1964,14 @@ a.stat:focus-visible .stat-label {
   justify-content: space-between;
   gap: 10px;
   padding: 7px 10px;
-  font-size: 14px;
+  font-size: 0.9688rem;
   border-radius: 4px;
   cursor: pointer;
   color: var(--text);
 }
 .suggest-item:hover, .suggest-item.active { background: var(--accent-soft); color: var(--accent); }
 .suggest-src {
-  font-size: 11px;
+  font-size: 0.7812rem;
   color: var(--text-faint);
   font-style: italic;
   white-space: nowrap;
@@ -1991,7 +1991,7 @@ a.stat:focus-visible .stat-label {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 13.5px;
+  font-size: 0.9375rem;
   padding: 3px 0;
   min-height: 44px;          /* C2 : cible tactile */
 }
@@ -2036,7 +2036,7 @@ a.stat:focus-visible .stat-label {
 .sources-fold > summary {
   cursor: pointer;
   padding: 11px 12px;
-  font-size: 13.5px;
+  font-size: 0.9375rem;
   color: var(--text-dim);
   font-weight: 600;
   list-style: none;
@@ -2061,7 +2061,7 @@ a.stat:focus-visible .stat-label {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 13.5px;
+  font-size: 0.9375rem;
   color: var(--text-dim);
   min-height: 44px;
   cursor: pointer;
@@ -2077,7 +2077,7 @@ a.stat:focus-visible .stat-label {
 }
 .hero-actions .btn {
   min-width: 200px;
-  font-size: 15px;
+  font-size: 1.0312rem;
   position: relative;
   box-shadow: 2px 3px 6px rgba(35, 31, 28, 0.16);
   clip-path: polygon(3% 8%, 40% 0, 80% 4%, 100% 0, 100% 55%, 96% 92%, 60% 100%, 20% 96%, 0 62%, 2% 30%);
@@ -2097,7 +2097,7 @@ a.stat:focus-visible .stat-label {
   border-radius: var(--radius);
   padding: 11px 16px;
   font: inherit;
-  font-size: 15px;
+  font-size: 1.0312rem;
   color: var(--text);
   min-height: 44px;
 }
@@ -2117,7 +2117,7 @@ a.stat:focus-visible .stat-label {
 }
 .activite-compte {
   font-family: var(--font-serif);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   color: var(--accent);
 }
@@ -2133,11 +2133,11 @@ a.stat:focus-visible .stat-label {
   align-items: baseline;
   padding: 9px 0;
   border-bottom: 1px dotted var(--border);
-  font-size: 15px;
+  font-size: 1.0312rem;
 }
 .activite-when {
   font-variant-numeric: tabular-nums;
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text-faint);
   white-space: nowrap;
   min-width: 96px;
@@ -2170,7 +2170,7 @@ a.stat:focus-visible .stat-label {
   border-radius: var(--radius);
   padding: 11px 16px;
   font: inherit;
-  font-size: 15px;
+  font-size: 1.0312rem;
   color: var(--text);
   min-height: 44px;
   width: 280px;
@@ -2182,13 +2182,13 @@ a.stat:focus-visible .stat-label {
   box-shadow: 0 0 0 3px var(--accent-soft);
 }
 .newsletter-note {
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text-faint);
   margin-top: 12px;
 }
 /* Variante compacte intégrée au footer */
 .site-footer .newsletter-foot { margin-bottom: 4px; }
-.site-footer .newsletter-foot p { margin: 0 0 8px; font-size: 13px; }
+.site-footer .newsletter-foot p { margin: 0 0 8px; font-size: 0.9062rem; }
 .site-footer .newsletter-form { justify-content: flex-start; margin-top: 8px; }
 .site-footer .newsletter-form input[type="email"] { width: 200px; }
 
@@ -2206,7 +2206,7 @@ a.stat:focus-visible .stat-label {
 .une-teaser-corps { flex: 1; min-width: 240px; }
 .une-teaser-kicker {
   display: block;
-  font-size: 11.5px;
+  font-size: 0.8125rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
@@ -2215,7 +2215,7 @@ a.stat:focus-visible .stat-label {
 }
 .une-teaser-titre {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
   margin: 0 0 6px;
   color: var(--text);
@@ -2224,7 +2224,7 @@ a.stat:focus-visible .stat-label {
   font-family: var(--font-serif);
   color: var(--text-dim);
   margin: 0;
-  font-size: 16px;
+  font-size: 1.0625rem;
 }
 
 /* --- Page "Une" (une.html) --- */
@@ -2235,7 +2235,7 @@ a.stat:focus-visible .stat-label {
 }
 .une-kicker {
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.8125rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--gold);
@@ -2252,7 +2252,7 @@ a.stat:focus-visible .stat-label {
 .une-teaser-lede {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 21px;
+  font-size: 1.3125rem;
   color: var(--text-dim);
   margin: 0 0 24px;
   line-height: 1.5;
@@ -2263,13 +2263,13 @@ a.stat:focus-visible .stat-label {
 .actu-compte, .outils-compte {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 18px;
+  font-size: 1.1875rem;
   color: var(--text-dim);
   margin: 0 0 24px;
 }
 .actu-jour {
   font-family: var(--font-serif);
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
   color: var(--accent);
   margin: 36px 0 16px;
@@ -2278,7 +2278,7 @@ a.stat:focus-visible .stat-label {
 }
 .actu-vide, .outils-vide, .une-vide p {
   font-family: var(--font-serif);
-  font-size: 18px;
+  font-size: 1.1875rem;
   color: var(--text-dim);
   line-height: 1.7;
   padding: 24px 0;
@@ -2294,7 +2294,7 @@ a.stat:focus-visible .stat-label {
 .outils-groupe { margin-bottom: 44px; }
 .outils-groupe-titre {
   font-family: var(--font-serif);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 0 0 18px;
   padding-bottom: 8px;
@@ -2305,13 +2305,13 @@ a.stat:focus-visible .stat-label {
 /* --- Page "État du corpus" (etat-corpus.html) --- */
 .corpus-intro {
   font-family: var(--font-serif);
-  font-size: 18px;
+  font-size: 1.1875rem;
   color: var(--text-dim);
   line-height: 1.7;
   max-width: 720px;
 }
 .corpus-generated {
-  font-size: 13px;
+  font-size: 0.9062rem;
   color: var(--text-faint);
   font-style: italic;
   margin-top: 6px;
@@ -2325,7 +2325,7 @@ a.stat:focus-visible .stat-label {
   padding: 20px 24px;
   margin-top: 40px;
 }
-.corpus-limites h2 { margin-top: 0; font-size: 22px; }
+.corpus-limites h2 { margin-top: 0; font-size: 1.375rem; }
 .corpus-limites ul { padding-left: 1.3em; }
 .corpus-limites li {
   font-family: var(--font-serif);
@@ -2363,7 +2363,7 @@ a.stat:focus-visible .stat-label {
   font-style: italic;
   padding: 48px 0;
   font-family: var(--font-serif);
-  font-size: 17px;
+  font-size: 1.125rem;
 }
 
 /* --- Responsive nouvelles sections --- */
@@ -2529,11 +2529,11 @@ a.stat:focus-visible .stat-label {
 }
 .source-row .source-name { flex: 1 1 auto; }
 .source-row .source-orient {
-  flex: 0 0 auto; font-size: 12px; color: var(--text-faint);
+  flex: 0 0 auto; font-size: 0.8125rem; color: var(--text-faint);
   text-transform: uppercase; letter-spacing: 0.04em;
 }
 .source-row .source-count {
-  flex: 0 0 auto; font-size: 13px; color: var(--text-dim);
+  flex: 0 0 auto; font-size: 0.9062rem; color: var(--text-dim);
   font-variant-numeric: tabular-nums; min-width: 70px; text-align: right;
 }
 
@@ -2564,10 +2564,28 @@ a.stat:focus-visible .stat-label {
 .lb-close {
   position: fixed; top: 20px; right: 24px;
   background: none; border: none;
-  color: #fff; font-size: 32px; line-height: 1;
+  color: #fff; font-size: 2rem; line-height: 1;
   cursor: pointer; opacity: .8;
 }
 .lb-close:hover { opacity: 1; }
 .fiche-cover img,
 .fiche-cover-wrap img,
 .book-cover img { cursor: zoom-in; }
+
+/* ===================================================================
+   ERGONOMIE TYPOGRAPHIQUE — 2026-10-07
+   Tailles en rem (respectent le réglage de taille du navigateur) et
+   plancher relevé : rien sous 12,5 px, texte courant à 18 px.
+   EB Garamond a un petit œil (hauteur d'x ≈ 0,40 contre ≈ 0,55 pour une
+   linéale) : à corps égal il paraît ~2 px plus petit que l'Inter. Les
+   textes courants en Garamond sont donc montés d'un cran de plus.
+   =================================================================== */
+:root .book-title { font-size: 1.1875rem; line-height: 1.3; }
+:root .fiche-citation p { font-size: 1.15rem; }
+:root .biblio-fichecard-chapo { font-size: 0.9688rem; line-height: 1.5; }
+:root .biblio-fichecard-pick { font-size: 0.8438rem; }
+:root .brand-sub { font-size: 0.875rem; }
+:root .book-meta { font-size: 0.9062rem; }
+:root .biblio-score-text,
+:root .score-pill { font-size: 0.8438rem; }
+:root .filter-hint { font-size: 0.8438rem; }
