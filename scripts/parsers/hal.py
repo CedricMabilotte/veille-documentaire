@@ -107,7 +107,11 @@ def find_documents(source: dict) -> list[dict]:
         if not file_main:
             continue
 
-        uri = _first(doc.get("uri_s"))
+        # uri_s absent quand la requête ne le demande pas (fl=halId_s…) : sans
+        # repli, tous les fichiers s'appelaient hal_unknown.pdf (2026-10-07).
+        uri = (_first(doc.get("uri_s"))
+               or (f"https://hal.science/{_first(doc.get('halId_s'))}" if doc.get("halId_s") else None)
+               or file_main.split("/document")[0])
         title = _first(doc.get("title_s"))
 
         # src_meta : métadonnées fiables fournies directement par l'API HAL

@@ -70,6 +70,17 @@ for p in (DOCS_PATH, REPORTS_PATH, SYNOPSIS_PATH, INTERFACE_PATH, COVERS_PATH, B
 # ── Constantes ─────────────────────────────────────────────────────────────────
 BATCH_SIZE = 8
 HEADERS    = {"User-Agent": "Mozilla/5.0 (compatible; LibraryBot/1.0)"}
+# HAL protège /document par Anubis, qui défie les user-agents de navigateur
+# (« Mozilla… ») mais laisse passer les robots qui se déclarent comme tels.
+# Pour ces domaines on s'identifie donc honnêtement, sans « Mozilla » (constat
+# 2026-10-07 : 35/35 téléchargements HAL renvoyaient la page de défi).
+HONEST_UA_DOMAINS = ("hal.science", "archives-ouvertes.fr")
+HONEST_HEADERS = {"User-Agent": "LibraryBot/1.0 (+https://biblio.actitude.org/apropos.html)"}
+def _headers_for(url: str) -> dict:
+    host = (urlparse(url).hostname or "").lower()
+    if any(host == d or host.endswith("." + d) for d in HONEST_UA_DOMAINS):
+        return HONEST_HEADERS
+    return HEADERS
 
 # ── Budget de run (incident 2026-08-30 → 2026-09-15) ────────────────────────
 # Pendant 17 jours, chaque run CI a été tué au timeout de 3 h AVANT l'étape de
@@ -294,7 +305,7 @@ Documents :
 def download_file(url: str, dest: Path) -> bool:
     """Download standard. Le caller doit ensuite valider via pdf_processor."""
     try:
-        r = requests.get(url, headers=HEADERS, timeout=60, stream=True)
+        r = requests.get(url, headers=_headers_for(url), timeout=60, stream=True)
         r.raise_for_status()
         # Audit 17/09 (MD-14) : 15 fichiers de docs/ étaient des pages anti-bot
         # (HAL/Anubis, archive.org) écrites par-dessus le vrai PDF. On écrit
@@ -388,7 +399,7 @@ def download_and_validate(url: str, dest: Path) -> tuple[bool, str]:
     # 1. HEAD rapide pour détecter les 404 avant de tout télécharger
     head_status = None
     try:
-        head = requests.head(url, headers=HEADERS, timeout=8, allow_redirects=True)
+        head = requests.head(url, headers=_headers_for(url), timeout=8, allow_redirects=True)
         head_status = head.status_code
         ctype = (head.headers.get("content-type") or "").lower()
         if head.ok and ("pdf" in ctype or "octet-stream" in ctype):
