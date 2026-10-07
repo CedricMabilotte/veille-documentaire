@@ -138,6 +138,16 @@ def should_fetch(source: dict, state_path: Path = DEFAULT_STATE) -> tuple[bool, 
     if not check_robots(source.get("url", ""), state_path):
         return False, "robots_disallow"
 
+    # 3 bis. Backoff sur échecs consécutifs (fetch vide : 403 anti-bot, timeout,
+    # JSON/XML invalide…). Sans lui, une source qui n'a jamais abouti n'a pas de
+    # last_fetch et redevient « due » à chaque run : constat 2026-10-07, 14
+    # sources retentées tous les deux jours depuis des semaines sans résultat.
+    fails = int(src.get("consecutive_failures") or 0)
+    last_fail = _parse(src.get("last_failure_at"))
+    if fails >= 2 and last_fail:
+        backoff = min(DEFAULT_INTERVAL_DAYS * 2 ** (fails - 2), MAX_INTERVAL_DAYS)
+        if (now - last_fail) < timedelta(days=backoff):
+            return False, f"failure_backoff ({fails} échecs, {backoff} j)"
     # 4. TTL adaptatif (low_yield est implicitement encodé via current_interval_days)
     last = _parse(src.get("last_fetch"))
     interval = max(
@@ -177,6 +187,8 @@ def record_fetch(
 
     if success:
         src["last_fetch"] = _iso(now)
+        src["consecutive_failures"] = 0
+        src["last_failure_at"] = None
         src["last_doc_count"] = doc_count
         src["last_http_error"] = None
 
@@ -206,6 +218,8 @@ def record_fetch(
                 src["current_interval_days"] = min(max(cur, 1) * 2, MAX_INTERVAL_DAYS)
     else:
         src["last_http_error"] = f"HTTP {status_code}"
+        src["consecutive_failures"] = int(src.get("consecutive_failures") or 0) + 1
+        src["last_failure_at"] = _iso(now)
 
     # Cooldowns sur erreurs HTTP
     if status_code in (429, 503):
