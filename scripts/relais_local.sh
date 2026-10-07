@@ -18,6 +18,14 @@ if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
 fi
 git pull -q --ff-only origin main
 
+# Pré-vol : le scoring post-lecture passe par la CLI Claude locale. Si elle
+# n'est pas authentifiée, les PDF seraient téléchargés sans être lus, et
+# chaque tentative ratée consommerait un des 4 essais d'enrichissement.
+if ! timeout 90 claude -p "Réponds seulement : ok" </dev/null >/dev/null 2>&1; then
+  echo "✗ CLI Claude non authentifiée : lance « claude » puis /login, et relance le relais." >&2
+  exit 1
+fi
+
 WATCH_LOCAL_ONLY=1 python3 scripts/watch.py
 
 if [ "${DRY_RUN:-false}" = "true" ]; then

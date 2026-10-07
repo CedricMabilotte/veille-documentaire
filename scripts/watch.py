@@ -74,7 +74,7 @@ HEADERS    = {"User-Agent": "Mozilla/5.0 (compatible; LibraryBot/1.0)"}
 # (« Mozilla… ») mais laisse passer les robots qui se déclarent comme tels.
 # Pour ces domaines on s'identifie donc honnêtement, sans « Mozilla » (constat
 # 2026-10-07 : 35/35 téléchargements HAL renvoyaient la page de défi).
-HONEST_UA_DOMAINS = ("hal.science", "archives-ouvertes.fr")
+HONEST_UA_DOMAINS = ("hal.science", "archives-ouvertes.fr", "ccsd.cnrs.fr")
 HONEST_HEADERS = {"User-Agent": "LibraryBot/1.0 (+https://biblio.actitude.org/apropos.html)"}
 def _headers_for(url: str) -> dict:
     host = (urlparse(url).hostname or "").lower()
