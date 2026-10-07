@@ -134,8 +134,10 @@ def should_fetch(source: dict, state_path: Path = DEFAULT_STATE) -> tuple[bool, 
     if rl and rl > now:
         return False, "domain_rate_limited"
 
-    # 3. robots.txt
-    if not check_robots(source.get("url", ""), state_path):
+    # 3. robots.txt — sauf exemption explicite et motivée dans sources.yml
+    # (`robots_exempt: "<raison>"`), réservée aux API documentées dont le
+    # robots.txt vise les robots d'indexation, pas les clients de l'API.
+    if not source.get("robots_exempt") and not check_robots(source.get("url", ""), state_path):
         return False, "robots_disallow"
 
     # 3 bis. Backoff sur échecs consécutifs (fetch vide : 403 anti-bot, timeout,

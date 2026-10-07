@@ -340,6 +340,8 @@ sources:
   - label: "HAL — communs fonciers"
     url: "https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
+    local_only: true      # relais local (scripts/relais_local.sh), décision Ced 2026-10-07
+    robots_exempt: "API publique documentée du CCSD ; robots.txt de api.archives-ouvertes.fr vise les robots d'indexation. Client identifié, 1 requête / source / 14 j."
     orientation: academique
     default_lang: fr
     auto_download: true
@@ -348,6 +350,8 @@ sources:
   - label: "HAL — paysannerie / agriculture vivrière"
     url: "https://api.archives-ouvertes.fr/search/?q=paysannerie+OR+%22agriculture+vivri%C3%A8re%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
+    local_only: true      # relais local (scripts/relais_local.sh), décision Ced 2026-10-07
+    robots_exempt: "API publique documentée du CCSD ; robots.txt de api.archives-ouvertes.fr vise les robots d'indexation. Client identifié, 1 requête / source / 14 j."
     orientation: academique
     default_lang: fr
     auto_download: true
@@ -356,6 +360,8 @@ sources:
   - label: "HAL — propriété d'usage / fonds de dotation"
     url: "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50"
     type: hal
+    local_only: true      # relais local (scripts/relais_local.sh), décision Ced 2026-10-07
+    robots_exempt: "API publique documentée du CCSD ; robots.txt de api.archives-ouvertes.fr vise les robots d'indexation. Client identifié, 1 requête / source / 14 j."
     orientation: academique
     default_lang: fr
     auto_download: true
@@ -831,6 +837,8 @@ sources:
   - label: "HAL Science — 15M / indignados"
     url: "https://api.archives-ouvertes.fr/search/?q=15M+indignados&fq=language_s:es&fl=halId_s,title_s,authFullName_s,fileMain_s&rows=50&wt=json"
     type: hal
+    local_only: true      # relais local (scripts/relais_local.sh), décision Ced 2026-10-07
+    robots_exempt: "API publique documentée du CCSD ; robots.txt de api.archives-ouvertes.fr vise les robots d'indexation. Client identifié, 1 requête / source / 14 j."
     orientation: academique
     default_lang: es
     auto_download: true
