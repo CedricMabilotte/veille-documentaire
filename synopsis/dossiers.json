@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-07T13:43:29Z",
+  "generated_at": "2026-10-07T14:59:47Z",
   "total_dossiers": 10,
   "dossiers": [
     {
       "slug": "sortir-une-terre-du-marche",
       "titre": "Sortir une terre du marché",
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-      "doc_count": 131,
+      "doc_count": 134,
       "docs": [
         "e7512d48",
         "0b22d51b",
@@ -39,6 +39,7 @@
         "950381ec",
         "b877caba",
         "14d55842",
+        "31db543c",
         "9e831a55",
         "2db11a52",
         "7b89d6d1",
@@ -88,6 +89,7 @@
         "75de4c14",
         "ab3b2eb1",
         "91c6dc3a",
+        "e153738e",
         "28b7cb2c",
         "2175f7a3",
         "2e5629b5",
@@ -138,7 +140,8 @@
         "812f9005",
         "a66578a6",
         "bd18d74a",
-        "6c062eda"
+        "6c062eda",
+        "a4ef416a"
       ],
       "docs_detail": [
         {
@@ -393,6 +396,14 @@
         {
           "id": "14d55842",
           "title": "ECVC Response and Proposal regarding the European Commission's strategy for Generational Renewal",
+          "score": 9,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
+          "id": "31db543c",
+          "title": "En finir avec 200 ans de vaines querelles : plaidoyer pour un soutien de la Nation à ses communs fonciers",
           "score": 9,
           "matched_on": [
             "propriété d'usage"
@@ -814,6 +825,14 @@
           ]
         },
         {
+          "id": "e153738e",
+          "title": "La section de commune : un `` commun '' pour l'alimentation durable, RDR, n°12-2022, étude 35",
+          "score": 8,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
           "id": "28b7cb2c",
           "title": "The Cooperative Way of Housing in Canada",
           "score": 7,
@@ -1228,6 +1247,14 @@
           "matched_on": [
             "inaliénab"
           ]
+        },
+        {
+          "id": "a4ef416a",
+          "title": "Étienne Le Roy. Pourquoi et comment la juridicité des communs s'est-elle imposée dans nos travaux fonciers?, Récit d'une initiation. Regards sur le foncier, n° 8, Comité technique ''Foncier & développement''/ AFD/ MEAE, 2019",
+          "score": 6,
+          "matched_on": [
+            "propriété d'usage"
+          ]
         }
       ]
     },
@@ -1235,7 +1262,7 @@
       "slug": "zad-defense-de-territoires",
       "titre": "ZAD & défense de territoires",
       "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-      "doc_count": 126,
+      "doc_count": 127,
       "docs": [
         "88bfc0cb",
         "38a113bc",
@@ -1265,6 +1292,7 @@
         "c7903c6a",
         "9da13ea1",
         "fb76b5a1",
+        "71126e0c",
         "5536b369",
         "1ce39b6d",
         "5c12100c",
@@ -1595,6 +1623,14 @@
         {
           "id": "fb76b5a1",
           "title": "El Manifiesto de la Carta Magna",
+          "score": 9,
+          "matched_on": [
+            "occupation"
+          ]
+        },
+        {
+          "id": "71126e0c",
+          "title": "Survivance coloniale et gestes de résistance en Martinique. Autour d'un film de Florence Lazar",
           "score": 9,
           "matched_on": [
             "occupation"
@@ -2450,7 +2486,7 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 501,
+      "doc_count": 503,
       "docs": [
         "5a9397e7",
         "8bfe460c",
@@ -2616,6 +2652,7 @@
         "8368f2e7",
         "1ae37e83",
         "bf8f5362",
+        "71126e0c",
         "fac367e2",
         "9e831a55",
         "c99e6da4",
@@ -2952,7 +2989,8 @@
         "a8d6ce5c",
         "68742934",
         "7c1b5f0c",
-        "439d316f"
+        "439d316f",
+        "5399ce07"
       ],
       "docs_detail": [
         {
@@ -4521,6 +4559,14 @@
             "réforme agraire",
             "mst",
             "via campesina"
+          ]
+        },
+        {
+          "id": "71126e0c",
+          "title": "Survivance coloniale et gestes de résistance en Martinique. Autour d'un film de Florence Lazar",
+          "score": 9,
+          "matched_on": [
+            "occupation de terre"
           ]
         },
         {
@@ -7534,6 +7580,14 @@
             "réforme agraire",
             "agrarian reform"
           ]
+        },
+        {
+          "id": "5399ce07",
+          "title": "Paysannerie et résilience en milieu rural : Dynamiques d'accès aux ressources naturelles et gestion communautaire des tensions dans la région de Ségou au Mali.",
+          "score": 6,
+          "matched_on": [
+            "réforme agraire"
+          ]
         }
       ]
     },
@@ -7541,7 +7595,7 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 291,
+      "doc_count": 304,
       "docs": [
         "d30c223f",
         "c8210481",
@@ -7647,6 +7701,7 @@
         "bf8f5362",
         "13212a33",
         "0ab80c04",
+        "31db543c",
         "9e831a55",
         "2db11a52",
         "7b89d6d1",
@@ -7736,6 +7791,16 @@
         "e4af4a60",
         "1fbb30cf",
         "96fb51f1",
+        "0f2af602",
+        "17491f6d",
+        "f95e7324",
+        "5d79cac8",
+        "f069fd66",
+        "cd72524b",
+        "e153738e",
+        "236b68bc",
+        "4a4143db",
+        "7ac00ce9",
         "28b7cb2c",
         "2175f7a3",
         "2e5629b5",
@@ -7833,7 +7898,9 @@
         "7c1b5f0c",
         "13352415",
         "f5977eb9",
-        "6c062eda"
+        "6c062eda",
+        "a4ef416a",
+        "7dee7970"
       ],
       "docs_detail": [
         {
@@ -8744,6 +8811,15 @@
           ]
         },
         {
+          "id": "31db543c",
+          "title": "En finir avec 200 ans de vaines querelles : plaidoyer pour un soutien de la Nation à ses communs fonciers",
+          "score": 9,
+          "matched_on": [
+            "communaux",
+            "communs fonciers"
+          ]
+        },
+        {
           "id": "9e831a55",
           "title": "The Tree, The Rock, and the Morrow",
           "score": 8,
@@ -9510,6 +9586,90 @@
           "matched_on": [
             "communaux",
             "enclosure"
+          ]
+        },
+        {
+          "id": "0f2af602",
+          "title": "Le tailleur et l'ambiguïté de ses modèles : une illustration historique de la réduction contre nature des communs alpins ancestraux au gabarit de la tradition juridique romaniste",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "17491f6d",
+          "title": "Habitat et devenir des communs fonciers",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "f95e7324",
+          "title": "Les communs de la terre et des ressources naturelles, socles d'un développement économique apaisé?",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "5d79cac8",
+          "title": "Les régimes de domanialité foncière dans le monde de l'Antiquité à nos jours : une proposition d'architecture juridique",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "f069fd66",
+          "title": "Pour une écologisation du droit du développement durable",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "cd72524b",
+          "title": "Un bien commun amazighe face à l’urbanisation et à la mondialisation : le cas de la Targa de Tiznit",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers",
+            "terres collectives"
+          ]
+        },
+        {
+          "id": "e153738e",
+          "title": "La section de commune : un `` commun '' pour l'alimentation durable, RDR, n°12-2022, étude 35",
+          "score": 8,
+          "matched_on": [
+            "communaux",
+            "biens communaux",
+            "communs fonciers",
+            "terres collectives"
+          ]
+        },
+        {
+          "id": "236b68bc",
+          "title": "Communs en conflit au Mexique. Reconfigurations des ressources de l'espace rural et de leur gouvernance dans un contexte néolibéral",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "4a4143db",
+          "title": "Extensions de l'habitat : flexibilité urbaine et fabrications d'espaces communs",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers"
+          ]
+        },
+        {
+          "id": "7ac00ce9",
+          "title": "Le phénomène d'urbanisation et le délitement des usages collectifs du sol en montagne, (pp. 29-42)",
+          "score": 8,
+          "matched_on": [
+            "communs fonciers"
           ]
         },
         {
@@ -10339,6 +10499,24 @@
             "communs fonciers",
             "commons"
           ]
+        },
+        {
+          "id": "a4ef416a",
+          "title": "Étienne Le Roy. Pourquoi et comment la juridicité des communs s'est-elle imposée dans nos travaux fonciers?, Récit d'une initiation. Regards sur le foncier, n° 8, Comité technique ''Foncier & développement''/ AFD/ MEAE, 2019",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers",
+            "terres collectives",
+            "terres communales"
+          ]
+        },
+        {
+          "id": "7dee7970",
+          "title": "La négociation dans la régulation foncière-environnementale au Bénin",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
+          ]
         }
       ]
     },
@@ -10346,7 +10524,7 @@
       "slug": "habitat-collectif-cooperatif",
       "titre": "Habitat collectif & coopératif",
       "chapo": "Habiter la terre autrement : coopératives d'habitants, habitat groupé, communautés intentionnelles, squats ruraux. Des formes de logement sorties de la spéculation et ancrées dans un sol partagé.",
-      "doc_count": 49,
+      "doc_count": 50,
       "docs": [
         "5f5dadd2",
         "931fc89b",
@@ -10385,6 +10563,7 @@
         "48a47a8f",
         "6090cf45",
         "fc44409e",
+        "92e188ba",
         "bc522fd4",
         "b375e8c5",
         "961e54e4",
@@ -10723,6 +10902,14 @@
           ]
         },
         {
+          "id": "92e188ba",
+          "title": "Les collectifs de néo-paysans, de la contestation à la fabrication des paysages, détection des méthodes d'actions : expériences personnelles et bricolages",
+          "score": 7,
+          "matched_on": [
+            "habitat groupé"
+          ]
+        },
+        {
           "id": "bc522fd4",
           "title": "Ocupar é lutar — version portugaise, à imprimer (1984)",
           "score": 6,
@@ -10835,7 +11022,7 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 656,
+      "doc_count": 667,
       "docs": [
         "5a9397e7",
         "8bfe460c",
@@ -11015,6 +11202,7 @@
         "1ae37e83",
         "bf8f5362",
         "13212a33",
+        "71126e0c",
         "fac367e2",
         "9e831a55",
         "c99e6da4",
@@ -11228,6 +11416,13 @@
         "2b3dfe6d",
         "e4af4a60",
         "96fb51f1",
+        "f95e7324",
+        "e153738e",
+        "e9dcfa72",
+        "077224d1",
+        "250ad5aa",
+        "9dc7bfcd",
+        "4f785d36",
         "d64f2d03",
         "581a53c8",
         "2e5629b5",
@@ -11335,6 +11530,7 @@
         "8ee3f263",
         "4042cb84",
         "e40b3977",
+        "92e188ba",
         "02b2b6df",
         "4bc13839",
         "a238e5bd",
@@ -11492,7 +11688,9 @@
         "34a95a5f",
         "11cf1f70",
         "439d316f",
-        "6c062eda"
+        "6c062eda",
+        "7dee7970",
+        "5399ce07"
       ],
       "docs_detail": [
         {
@@ -13590,6 +13788,18 @@
           "matched_on": [
             "paysan",
             "peasant"
+          ]
+        },
+        {
+          "id": "71126e0c",
+          "title": "Survivance coloniale et gestes de résistance en Martinique. Autour d'un film de Florence Lazar",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière",
+            "souveraineté alimentaire",
+            "agriculture paysanne"
           ]
         },
         {
@@ -15880,6 +16090,77 @@
           ]
         },
         {
+          "id": "f95e7324",
+          "title": "Les communs de la terre et des ressources naturelles, socles d'un développement économique apaisé?",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "e153738e",
+          "title": "La section de commune : un `` commun '' pour l'alimentation durable, RDR, n°12-2022, étude 35",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "e9dcfa72",
+          "title": "France : Guadeloupe : Grande-Terre : Petit-Canal : Petite paysannerie de la section Campêche",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière"
+          ]
+        },
+        {
+          "id": "077224d1",
+          "title": "Fallait que j' vinsse : paysannerie créée par Plébins aux Ambassadeurs [illustration Faria]",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière"
+          ]
+        },
+        {
+          "id": "250ad5aa",
+          "title": "(In)Sécurités foncières en Afrique. Débat global et enjeux locaux",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière"
+          ]
+        },
+        {
+          "id": "9dc7bfcd",
+          "title": "Lluis To Figueras. — Familia i hereu a la Catalunya Nord-Oriental (segles X-XII). [Préface de Pierre Bonnassie]. Barcelone, Publ. Abadia de Montserrat, 1997 (Biblioteca Abat Oliba, 185)",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière"
+          ]
+        },
+        {
+          "id": "4f785d36",
+          "title": "Retrouver les paysans",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière"
+          ]
+        },
+        {
           "id": "d64f2d03",
           "title": "Concurrence déloyale, créativité écrasée : l'agriculture vivrière en crise",
           "score": 7,
@@ -17045,6 +17326,18 @@
             "agroécologie",
             "agriculture vivrière",
             "souveraineté alimentaire"
+          ]
+        },
+        {
+          "id": "92e188ba",
+          "title": "Les collectifs de néo-paysans, de la contestation à la fabrication des paysages, détection des méthodes d'actions : expériences personnelles et bricolages",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agroécologie",
+            "agriculture vivrière",
+            "agriculture paysanne"
           ]
         },
         {
@@ -18684,6 +18977,25 @@
             "paysannerie",
             "paysan"
           ]
+        },
+        {
+          "id": "7dee7970",
+          "title": "La négociation dans la régulation foncière-environnementale au Bénin",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "5399ce07",
+          "title": "Paysannerie et résilience en milieu rural : Dynamiques d'accès aux ressources naturelles et gestion communautaire des tensions dans la région de Ségou au Mali.",
+          "score": 6,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière"
+          ]
         }
       ]
     },
@@ -18691,7 +19003,7 @@
       "slug": "land-back-autochtones",
       "titre": "Land Back & souverainetés autochtones",
       "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-      "doc_count": 288,
+      "doc_count": 290,
       "docs": [
         "0b22d51b",
         "e41de87d",
@@ -18980,7 +19292,9 @@
         "85283063",
         "3ba4b54f",
         "7585c0aa",
-        "f5977eb9"
+        "f5977eb9",
+        "a4ef416a",
+        "7dee7970"
       ],
       "docs_detail": [
         {
@@ -21468,6 +21782,23 @@
             "indigène",
             "indigenous"
           ]
+        },
+        {
+          "id": "a4ef416a",
+          "title": "Étienne Le Roy. Pourquoi et comment la juridicité des communs s'est-elle imposée dans nos travaux fonciers?, Récit d'une initiation. Regards sur le foncier, n° 8, Comité technique ''Foncier & développement''/ AFD/ MEAE, 2019",
+          "score": 6,
+          "matched_on": [
+            "autochtone",
+            "droit coutumier"
+          ]
+        },
+        {
+          "id": "7dee7970",
+          "title": "La négociation dans la régulation foncière-environnementale au Bénin",
+          "score": 6,
+          "matched_on": [
+            "droit coutumier"
+          ]
         }
       ]
     },
@@ -22859,7 +23190,7 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 396,
+      "doc_count": 397,
       "docs": [
         "d30c223f",
         "5a9397e7",
@@ -23256,7 +23587,8 @@
         "3ba4b54f",
         "94025f98",
         "34a95a5f",
-        "f5977eb9"
+        "f5977eb9",
+        "a4ef416a"
       ],
       "docs_detail": [
         {
@@ -26625,6 +26957,14 @@
           "matched_on": [
             "land grab",
             "enclosure"
+          ]
+        },
+        {
+          "id": "a4ef416a",
+          "title": "Étienne Le Roy. Pourquoi et comment la juridicité des communs s'est-elle imposée dans nos travaux fonciers?, Récit d'une initiation. Regards sur le foncier, n° 8, Comité technique ''Foncier & développement''/ AFD/ MEAE, 2019",
+          "score": 6,
+          "matched_on": [
+            "accaparement"
           ]
         }
       ]
