@@ -339,7 +339,7 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
    Fix : le décor est déporté sur un ::before (z-index négatif, dans le
    contexte d'empilement local du bouton) — le bouton lui-même n'a plus de
    clip-path et ne clippe donc plus ses enfants. */
-.theme-toggle, .menu-toggle, .palette-toggle {
+.theme-toggle, .menu-toggle {
   position: relative;
   z-index: 0;
   background: transparent;
@@ -354,7 +354,7 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
   justify-content: center;
   transition: color var(--transition);
 }
-.theme-toggle::before, .menu-toggle::before, .palette-toggle::before {
+.theme-toggle::before, .menu-toggle::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -365,61 +365,12 @@ a:hover { color: var(--accent-strong); text-decoration: underline; }
   transition: background var(--transition);
 }
 .theme-toggle { transform: rotate(-2deg); }
-.palette-toggle { transform: rotate(1.5deg); }
-.menu-toggle { transform: rotate(-1deg); }
-.theme-toggle:hover, .menu-toggle:hover, .palette-toggle:hover { color: var(--accent); }
-.theme-toggle:hover::before, .menu-toggle:hover::before, .palette-toggle:hover::before { background: var(--accent-soft); }
-.theme-toggle svg, .menu-toggle svg, .palette-toggle svg { width: 18px; height: 18px; }
-.menu-toggle { display: none; }
-/* Contre-rotation : .palette-menu est ajouté en enfant du bouton tourné
-   (transform hérité par toute la sous-arborescence) — sans ça le menu
-   déroulant apparaîtrait légèrement incliné. */
-.palette-menu { transform: rotate(-1.5deg); }
 
-/* --- Sélecteur de palette (3 presets) --- */
-.palette-toggle { position: relative; }
-.palette-menu {
-  position: absolute;
-  top: calc(100% + 6px);
-  right: 0;
-  background: var(--bg-card);
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-md);
-  padding: 6px;
-  min-width: 180px;
-  display: none;
-  z-index: 200;
-}
-.palette-menu.open { display: block; }
-.palette-menu button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  background: transparent;
-  border: 0;
-  padding: 8px 10px;
-  font: inherit;
-  font-size: 14px;
-  color: var(--text);
-  text-align: left;
-  cursor: pointer;
-  border-radius: 4px;
-}
-.palette-menu button:hover { background: var(--bg-elev); }
-.palette-menu button.active { background: var(--accent-soft); color: var(--accent); }
-.palette-swatch {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  border: 1px solid var(--border-strong);
-  flex-shrink: 0;
-}
-.palette-swatch.sw-biblio { background: linear-gradient(135deg, #a44a2c 50%, #f7f2e7 50%); }
-.palette-swatch.sw-academique { background: linear-gradient(135deg, #1f3a5f 50%, #ffffff 50%); }
-.palette-swatch.sw-militant { background: linear-gradient(135deg, #cc0000 50%, #000 50%); }
-.palette-swatch.sw-champetre { background: linear-gradient(135deg, #a3441f 50%, #ece3c8 50%); }
+.menu-toggle { transform: rotate(-1deg); }
+.theme-toggle:hover, .menu-toggle:hover { color: var(--accent); }
+.theme-toggle:hover::before, .menu-toggle:hover::before { background: var(--accent-soft); }
+.theme-toggle svg, .menu-toggle svg { width: 18px; height: 18px; }
+.menu-toggle { display: none; }
 
 /* --- Main --- */
 main { flex: 1; }
@@ -668,8 +619,8 @@ main { flex: 1; }
   border: 1px solid transparent;
 }
 .score-pill.s-high { background: var(--good-soft); color: var(--good); border-color: var(--good); }
-.score-pill.s-mid  { background: var(--gold-soft); color: var(--gold); border-color: var(--gold); }
-.score-pill.s-low  { background: var(--accent-soft); color: var(--text-faint); border-color: var(--border); }
+.score-pill.s-mid { background: var(--gold-soft); color: var(--gold); border-color: var(--gold); }
+.score-pill.s-low { background: var(--accent-soft); color: var(--text-faint); border-color: var(--border); }
 
 /* --- Stats --- */
 .stats {
@@ -1773,7 +1724,7 @@ a.stat:focus-visible .stat-label {
 @media (max-width: 700px) {
   .timeline-decade { font-size: 28px; }
   .graph-wrap { height: 60vh; }
-  .palette-menu { right: -40px; }
+  
 }
 
 /* ============================================================
@@ -2065,10 +2016,11 @@ a.stat:focus-visible .stat-label {
 .view-toggle button,
 .catalog-toolbar select,
 .filter-group select,
-.theme-toggle, .menu-toggle, .palette-toggle {
+.theme-toggle,
+.menu-toggle {
   min-height: 44px;          /* harmonisation : tout cliquable ≥ 44px */
 }
-.theme-toggle, .menu-toggle, .palette-toggle {
+.theme-toggle, .menu-toggle {
   width: 44px;
   height: 44px;
 }
@@ -2113,13 +2065,6 @@ a.stat:focus-visible .stat-label {
   color: var(--text-dim);
   min-height: 44px;
   cursor: pointer;
-}
-
-/* --- C4 : menu palette navigable au clavier (focus visible net) --- */
-.palette-menu button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: -2px;
-  background: var(--bg-elev);
 }
 
 /* --- Hero refondu : CTA primaire (B6) --- */
@@ -2429,10 +2374,10 @@ a.stat:focus-visible .stat-label {
   .activite-when { min-width: 0; }
 }
 
-
 /* ===================================================================
-   PALETTES — surcharges [data-palette] (intégrées : plus de chargement
-   dynamique). Placées en fin de fichier pour primer sur [data-theme].
+   THÈME ACADÉMIQUE — seul thème du site depuis le 7 octobre 2026
+   (palettes Bibliothèque, Militant et Champêtre retirées). Surcharge les
+   variables du haut de fichier ; placé en fin de fichier pour primer.
    =================================================================== */
 /* ===================================================================
    BIBLIO — Thème Académique
@@ -2440,7 +2385,7 @@ a.stat:focus-visible .stat-label {
    Surcharge les variables de style.css
    =================================================================== */
 
-[data-palette="academique"] {
+:root {
   --bg: #ffffff;
   --bg-alt: #f5f7fa;
   --bg-card: #ffffff;
@@ -2464,7 +2409,7 @@ a.stat:focus-visible .stat-label {
 }
 
 /* Mode sombre académique : on inverse vers gris anthracite */
-[data-palette="academique"][data-theme="dark"] {
+[data-theme="dark"] {
   --bg: #0f1620;
   --bg-alt: #16202d;
   --bg-card: #1a2532;
@@ -2484,172 +2429,31 @@ a.stat:focus-visible .stat-label {
 }
 
 /* Ajustements typographiques pour le thème académique */
-[data-palette="academique"] .brand-name { letter-spacing: 0.02em; }
-[data-palette="academique"] .hero h1 { letter-spacing: 0.02em; }
-[data-palette="academique"] body { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
-[data-palette="academique"] .section-kicker { color: var(--accent); letter-spacing: 0.12em; }
-[data-palette="academique"] .citation-block { border-left-color: var(--accent); }
-[data-palette="academique"] .fiche-bulle-ribbon { letter-spacing: 0.12em; }
-/* ===================================================================
-   BIBLIO — Thème Militant
-   Brutalisme typographique : noir / blanc / rouge
-   Surcharge les variables de style.css
-   =================================================================== */
+:root .brand-name { letter-spacing: 0.02em; }
+:root .hero h1 { letter-spacing: 0.02em; }
+:root body { font-family: "Inter", system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+:root .section-kicker { color: var(--accent); letter-spacing: 0.12em; }
+:root .citation-block { border-left-color: var(--accent); }
+:root .fiche-bulle-ribbon { letter-spacing: 0.12em; }
 
-[data-palette="militant"] {
-  --bg: #ffffff;
-  --bg-alt: #f0f0f0;
-  --bg-card: #ffffff;
-  --bg-elev: #ededed;
-  --text: #000000;
-  --text-dim: #1a1a1a;
-  --text-faint: #555555;
-  --accent: #cc0000;              /* rouge vif */
-  --accent-soft: rgba(204, 0, 0, 0.10);
-  --accent-strong: #990000;
-  --good: #000000;
-  --good-soft: rgba(0, 0, 0, 0.08);
-  --gold: #cc0000;
-  --gold-soft: rgba(204, 0, 0, 0.12);
-  --bad: #cc0000;
-  --border: #000000;
-  --border-strong: #000000;
-  --shadow-sm: 4px 4px 0 #000000;
-  --shadow-md: 6px 6px 0 #000000;
-  --shadow-lg: 10px 10px 0 #000000;
-  --radius: 0;
-  --radius-lg: 0;
-}
-
-/* Mode sombre militant : inversion noir/blanc */
-[data-palette="militant"][data-theme="dark"] {
-  --bg: #000000;
-  --bg-alt: #0d0d0d;
-  --bg-card: #0d0d0d;
-  --bg-elev: #1a1a1a;
-  --text: #ffffff;
-  --text-dim: #e0e0e0;
-  --text-faint: #999999;
-  --accent: #ff3030;
-  --accent-soft: rgba(255, 48, 48, 0.15);
-  --accent-strong: #ff5050;
-  --good: #ffffff;
-  --good-soft: rgba(255, 255, 255, 0.10);
-  --gold: #ff3030;
-  --gold-soft: rgba(255, 48, 48, 0.15);
-  --border: #ffffff;
-  --border-strong: #ffffff;
-  --shadow-sm: 4px 4px 0 #ffffff;
-  --shadow-md: 6px 6px 0 #ffffff;
-  --shadow-lg: 10px 10px 0 #ffffff;
-}
-
-/* Brutalisme typographique */
-[data-palette="militant"] body {
-  font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-}
-[data-palette="militant"] .brand-name,
-[data-palette="militant"] .hero h1,
-[data-palette="militant"] .section-title,
-[data-palette="militant"] .fiche-title,
-[data-palette="militant"] .page h1,
-[data-palette="militant"] .timeline-decade,
-[data-palette="militant"] .featured-title,
-[data-palette="militant"] .book-title,
-[data-palette="militant"] .author-card h3,
-[data-palette="militant"] .dossier-card h3 {
-  font-family: "Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-}
-[data-palette="militant"] .hero h1 {
-  letter-spacing: -0.04em;
-  line-height: 0.85;
-}
-[data-palette="militant"] .tagline,
-[data-palette="militant"] .section-lede,
-[data-palette="militant"] .page .lede,
-[data-palette="militant"] .fiche-subtitle {
-  font-family: "Inter", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-}
-[data-palette="militant"] .prose,
-[data-palette="militant"] .page p,
-[data-palette="militant"] .page li {
-  font-family: "Inter", Helvetica, Arial, sans-serif;
-}
-[data-palette="militant"] .citation-block {
-  font-family: "Inter", Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  border-left-width: 6px;
-  text-transform: uppercase;
-  letter-spacing: -0.01em;
-  background: var(--accent);
-  color: #fff;
-  padding: 14px 20px;
-}
-[data-palette="militant"] .citation-block::before,
-[data-palette="militant"] .citation-block::after { color: #fff; }
-[data-palette="militant"] .citation-block .quote-meta { color: rgba(255,255,255,0.8); }
-
-/* Cartes nettes, sans arrondi, ombre dure */
-[data-palette="militant"] .featured-card,
-[data-palette="militant"] .author-card,
-[data-palette="militant"] .dossier-card,
-[data-palette="militant"] .stat,
-[data-palette="militant"] .graph-wrap {
-  border-width: 2px;
-  box-shadow: var(--shadow-sm);
-}
-[data-palette="militant"] a.stat:hover,
-[data-palette="militant"] a.stat:focus-visible {
-  box-shadow: 4px 4px 0 var(--accent);
-  transform: translate(-2px, -2px);
-}
-[data-palette="militant"] .featured-card:hover { transform: translate(-2px, -2px); box-shadow: var(--shadow-md); }
-[data-palette="militant"] .btn { border-width: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
-[data-palette="militant"] .btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
-[data-palette="militant"] .score-pill { border-width: 2px; font-weight: 700; }
-[data-palette="militant"] .section-kicker { color: var(--accent); letter-spacing: 0.16em; }
-[data-palette="militant"] .ribbon { background: var(--accent) !important; border-radius: 0 !important; }
-[data-palette="militant"] .fiche-bulle-ribbon {
-  background: var(--accent);
-  color: #fff;
-  border: 2px solid #000;
-  border-radius: 0;
-  font-weight: 900;
-}
-[data-palette="militant"] .site-nav a.active { border-bottom-width: 3px; }
-[data-palette="militant"] .keywords .kw { border-width: 2px; font-weight: 600; }
-
-/* ===================================================================
-   C6 — Harmonie des palettes avec les composants anarcho-champêtre
-   (.biblio-fichecard, .biblio-stampbox, .biblio-rature-*). Le papier
-   scotché et le tampon à encre irrégulière sont l'identité du preset
-   Bibliothèque (par défaut) et du nouveau preset Champêtre ci-dessous ;
-   Académique et Militant les adaptent à leur propre grammaire plutôt que
-   de les afficher tels quels.
-   =================================================================== */
+/* C6 — Composants « fiche » (.biblio-fichecard, .biblio-stampbox, .biblio-rature-*) :
+   version sobre du thème Académique (sans scotch, tampon net). */
 
 /* Académique : sobre — pas de scotch ni de pochette pliée, rature nette
    sans écriture manuscrite, tampon sans texture d'encre irrégulière. */
-[data-palette="academique"] .biblio-fichecard-tape,
-[data-palette="academique"] .biblio-fichecard::after {
+:root .biblio-fichecard-tape,
+:root .biblio-fichecard::after {
   display: none;
 }
-[data-palette="academique"] .biblio-fichecard { box-shadow: var(--shadow-sm); border: 1px solid var(--border); }
-[data-palette="academique"] .biblio-rature-apres {
+:root .biblio-fichecard { box-shadow: var(--shadow-sm); border: 1px solid var(--border); }
+:root .biblio-rature-apres {
   font-family: inherit;
   font-style: normal;
   font-weight: 600;
   color: var(--accent);
 }
-[data-palette="academique"] .biblio-stampbox,
-[data-palette="academique"] .biblio-fichecard-pick {
+:root .biblio-stampbox,
+:root .biblio-fichecard-pick {
   filter: none;
   font-family: inherit;
   border-width: 1px;
@@ -2657,189 +2461,64 @@ a.stat:focus-visible .stat-label {
   border-radius: var(--radius);
 }
 
-/* Militant : le scotch et la rature manuscrite restent (ils vont bien
-   avec le tract) mais durcis — plus de rotation, plus de filtre d'encre,
-   tampon plein comme les autres éléments "pastille" du preset. */
-[data-palette="militant"] .biblio-fichecard { transform: none !important; border: 2px solid #000; box-shadow: var(--shadow-sm); }
-[data-palette="militant"] .biblio-fichecard-tape { background: #000; opacity: 1; transform: translateX(-50%); }
-[data-palette="militant"] .biblio-fichecard::after { border-color: transparent transparent #000 transparent; filter: none; }
-[data-palette="militant"] .biblio-stampbox {
-  filter: none;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 0;
-  transform: none;
-  background: var(--accent);
-  color: #fff;
-  border-color: #000;
-}
-[data-palette="militant"] .biblio-rature-apres { color: var(--accent); font-weight: 700; }
-
-/* ===================================================================
-   C7 — Harmonie des palettes pour le chrome papier déchiré/collage
-   (.site-header, .brand, .site-nav a, .search-box, .hero-actions .btn).
-   Même logique que C6 : Bibliothèque (par défaut) et Champêtre gardent
-   la pleine expression du découpage à la main ; Académique revient à un
-   bandeau net (aucune découpe, aucune rotation) ; Militant garde des
-   bords marqués mais durs, sans découpe organique ni rotation.
-   =================================================================== */
+/* C7 — Chrome du site (.site-header, .brand, .site-nav a, .search-box, boutons) :
+   bandeau net, sans découpe ni rotation. */
 
 /* Académique : sobre — bandeau net, pas de découpe ni de rotation. */
-[data-palette="academique"] .site-header { border-bottom: 1px solid var(--border); }
-[data-palette="academique"] .site-header::after,
-[data-palette="academique"] .brand::before { display: none; }
-[data-palette="academique"] .brand,
-[data-palette="academique"] .site-nav a,
-[data-palette="academique"] .nav-dropdown-btn,
-[data-palette="academique"] .theme-toggle,
-[data-palette="academique"] .palette-toggle,
-[data-palette="academique"] .menu-toggle,
-[data-palette="academique"] .hero-actions .btn {
+:root .site-header { border-bottom: 1px solid var(--border); }
+:root .site-header::after,
+:root .brand::before { display: none; }
+:root .brand,
+:root .site-nav a,
+:root .nav-dropdown-btn,
+:root .theme-toggle,
+:root .menu-toggle,
+:root .hero-actions .btn {
   clip-path: none;
   transform: none;
   box-shadow: none;
   border-radius: var(--radius);
 }
-[data-palette="academique"] .brand { background: transparent; padding: 0; }
-[data-palette="academique"] .site-nav a,
-[data-palette="academique"] .nav-dropdown-btn {
+:root .brand { background: transparent; padding: 0; box-shadow: none; }
+/* Marque « rayonnage commun » (design/logo-academique, 2026-10-07) : SVG
+   inline dans l'en-tête (un <use> vers logo.svg ne s'affichait pas), il
+   hérite de color (encre) et de --brand-accent (le livre qui circule) :
+   un seul dessin pour le clair et le sombre. */
+:root { --brand-accent: var(--gold); }
+.brand-mark { width: 36px; height: 36px; color: var(--text); }
+.brand:hover .brand-mark { color: var(--accent); }
+:root .site-nav a,
+:root .nav-dropdown-btn {
   background: transparent;
   border-bottom: 2px solid transparent;
 }
-[data-palette="academique"] .site-nav a:hover,
-[data-palette="academique"] .site-nav a.active,
-[data-palette="academique"] .nav-dropdown-btn:hover,
-[data-palette="academique"] .nav-dropdown[data-open] .nav-dropdown-btn {
+:root .site-nav a:hover,
+:root .site-nav a.active,
+:root .nav-dropdown-btn:hover,
+:root .nav-dropdown[data-open] .nav-dropdown-btn {
   background: transparent;
   border-bottom-color: var(--accent);
 }
-[data-palette="academique"] .theme-toggle,
-[data-palette="academique"] .palette-toggle,
-[data-palette="academique"] .menu-toggle { border: 1px solid var(--border); }
+:root .theme-toggle,
+:root .menu-toggle { border: 1px solid var(--border); }
 /* Le décor "papier déchiré" vit désormais sur ::before (cf. fix
    clip-path/menu invisible plus haut) — le neutraliser ici aussi, sinon
    la forme découpée réapparaît en fond malgré le style sobre voulu. */
-[data-palette="academique"] .theme-toggle::before,
-[data-palette="academique"] .palette-toggle::before,
-[data-palette="academique"] .menu-toggle::before {
+:root .theme-toggle::before,
+:root .menu-toggle::before {
   clip-path: none;
   box-shadow: none;
   background: transparent;
 }
-[data-palette="academique"] .search-box { transform: none; }
-[data-palette="academique"] .search-box input {
+:root .search-box { transform: none; }
+:root .search-box input {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding-left: 36px;
 }
 
-/* Militant : bords marqués mais nets — pas de découpe organique, pas de
-   rotation, la texture devient un trait dur plutôt qu'un objet froissé. */
-[data-palette="militant"] .site-header { border-bottom: 3px solid var(--border-strong); }
-[data-palette="militant"] .site-header::after,
-[data-palette="militant"] .brand::before { display: none; }
-[data-palette="militant"] .brand,
-[data-palette="militant"] .theme-toggle,
-[data-palette="militant"] .palette-toggle,
-[data-palette="militant"] .menu-toggle,
-[data-palette="militant"] .hero-actions .btn {
-  clip-path: none;
-  transform: none !important;
-  box-shadow: none;
-  border-radius: 0;
-  border: 2px solid var(--border-strong);
-}
-[data-palette="militant"] .brand { background: transparent; }
-[data-palette="militant"] .site-nav a,
-[data-palette="militant"] .nav-dropdown-btn {
-  clip-path: none;
-  transform: none !important;
-  background: transparent;
-  box-shadow: none;
-  border-bottom: 3px solid transparent;
-}
-[data-palette="militant"] .site-nav a:hover,
-[data-palette="militant"] .site-nav a.active,
-[data-palette="militant"] .nav-dropdown-btn:hover,
-[data-palette="militant"] .nav-dropdown[data-open] .nav-dropdown-btn {
-  background: transparent;
-  border-bottom-color: var(--accent);
-}
-[data-palette="militant"] .search-box { transform: none; }
-[data-palette="militant"] .search-box input { border-bottom: 2px solid var(--border-strong); }
-[data-palette="militant"] .theme-toggle::before,
-[data-palette="militant"] .palette-toggle::before,
-[data-palette="militant"] .menu-toggle::before {
-  clip-path: none;
-  box-shadow: none;
-  background: transparent;
-}
-
-/* ===================================================================
-   BIBLIO — Thème Champêtre
-   Le prolongement assumé du preset par défaut : kraft plus profond,
-   encre plus noire, accent plus terreux. C'est la pleine expression du
-   papier scotché / tamponné (voir components.css, section C6).
-   =================================================================== */
-
-[data-palette="champetre"] {
-  --bg: #ece3c8;
-  --bg-alt: #e2d5ac;
-  --bg-card: #f7f0dc;
-  --bg-elev: #ded0a3;
-  --text: #201c16;
-  --text-dim: #4a4030;
-  --text-faint: #6b6048;
-  --accent: #a3441f;
-  --accent-soft: rgba(163, 68, 31, 0.12);
-  --accent-strong: #7f3216;
-  --good: #566b34;
-  --good-soft: rgba(86, 107, 52, 0.13);
-  --gold: #93731f;
-  --gold-soft: rgba(147, 115, 31, 0.15);
-  --bad: #a02f1f;
-  --border: #c9b98a;
-  --border-strong: #a3916a;
-  --shadow-sm: 1px 2px 4px rgba(32, 28, 22, 0.10);
-  --shadow-md: 2px 5px 12px rgba(32, 28, 22, 0.22);
-  --shadow-lg: 4px 10px 22px rgba(32, 28, 22, 0.28);
-}
-[data-palette="champetre"][data-theme="dark"] {
-  --bg: #1a1610;
-  --bg-alt: #221c14;
-  --bg-card: #262016;
-  --bg-elev: #302819;
-  --text: #ede4cc;
-  --text-dim: #bdad8c;
-  --text-faint: #8f8163;
-  --accent: #d97a4c;
-  --accent-soft: rgba(217, 122, 76, 0.15);
-  --accent-strong: #e88f63;
-  --good: #8aa276;
-  --good-soft: rgba(138, 162, 118, 0.15);
-  --gold: #cdae5c;
-  --gold-soft: rgba(205, 174, 92, 0.15);
-  --bad: #d9765f;
-  --border: #3a3021;
-  --border-strong: #544632;
-}
 /* Kickers et labels en machine à écrire — l'identité "fichier tamponné" */
-[data-palette="champetre"] .section-kicker,
-[data-palette="champetre"] .hero .by-line,
-[data-palette="champetre"] .breadcrumbs { font-family: "Special Elite", monospace; letter-spacing: 0.08em; }
-[data-palette="champetre"] .featured-card,
-[data-palette="champetre"] .author-card,
-[data-palette="champetre"] .dossier-card,
-[data-palette="champetre"] .stat {
-  box-shadow: var(--shadow-md);
-  border-color: var(--border-strong);
-}
-[data-palette="champetre"] .biblio-fichecard { box-shadow: var(--shadow-md); }
-/* C7 — Champêtre amplifie simplement les ombres du chrome collage, pas de neutralisation */
-[data-palette="champetre"] .brand,
-[data-palette="champetre"] .site-nav a,
-[data-palette="champetre"] .nav-dropdown-btn,
-[data-palette="champetre"] .hero-actions .btn { box-shadow: var(--shadow-md); }
+
 
 /* ── Page Corpus : liste des sources surveillées ──────────────────── */
 .corpus-sources { margin-top: 40px; }

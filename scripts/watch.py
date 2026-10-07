@@ -89,6 +89,13 @@ MAX_ENRICH_ATTEMPTS = int(os.getenv("MAX_ENRICH_ATTEMPTS", "4"))
 # lecture de la source le justifie : au moins AUTO_DL_MIN_READ docs lus, dont
 # une part ≥ AUTO_DL_MIN_RATIO au seuil de publication. Sinon la source
 # repasse par le scoring sur titre (cas CRAS : 7 faux positifs sur 14 lus).
+# ── Relais local (2026-10-07) ─────────────────────────────────────────────────
+# Certaines sources ne sont pas joignables depuis les runners GitHub (IP de
+# datacenter filtrées, 403/anti-bot) ou doivent être interrogées depuis la
+# machine de Ced. Elles portent `local_only: true` dans sources.yml :
+#   - sur CI (run normal) : ignorées, avec la mention « relais local » ;
+#   - avec WATCH_LOCAL_ONLY=1 (scripts/relais_local.sh) : seules elles tournent.
+LOCAL_ONLY_MODE = os.getenv("WATCH_LOCAL_ONLY", "").lower() in ("1", "true", "yes")
 AUTO_DL_MIN_READ  = 10
 AUTO_DL_MIN_RATIO = 0.7
 def load_config() -> dict:
@@ -1236,7 +1243,7 @@ def _prerender_fiches(catalog: dict) -> int:
 <header class="site-header" role="banner">
   <div class="container">
     <a href="../index.html" class="brand" aria-label="BIBLIO — accueil">
-      <img src="../assets/img/logo.svg" alt="" class="brand-mark">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><g fill="currentColor"><rect x="5" y="8" width="4" height="18"/><path fill-rule="evenodd" d="M11 4h4v22h-4z M12 8h2v3h-2z"/><rect x="17" y="10" width="4" height="16"/><rect x="3" y="26" width="26" height="2"/></g><rect x="25" y="10" width="4" height="16" transform="rotate(-14 25 26)" style="fill:var(--brand-accent,#7a6321)"/></svg>
       <span class="brand-name">BIBLIO</span>
       <span class="brand-sub">Bibliothèque documentaire ouverte</span>
     </a>
@@ -2034,6 +2041,11 @@ def main() -> None:
         label     = source.get("label", url)
         src_type  = source.get("type", "html")
 
+        # ── Relais local : partage des sources entre CI et machine locale ────
+        if bool(source.get("local_only")) != LOCAL_ONLY_MODE:
+            if source.get("local_only"):
+                print(f"\n⏭   {label}  [skip: relais local — scripts/relais_local.sh]")
+            continue
         # ── Throttle : décider si on fetch cette source maintenant ───────────
         try:
             ok_fetch, skip_reason = throttle.should_fetch(source)

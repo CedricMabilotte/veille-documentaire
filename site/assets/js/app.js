@@ -454,61 +454,12 @@
       : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
   }
 
-  // ----- Sélecteur de palette (Bibliothèque / Académique / Militant) -------
-  const PALETTES = [
-    { id: 'biblio',     label: 'Bibliothèque', swatch: 'sw-biblio' },
-    { id: 'academique', label: 'Académique',   swatch: 'sw-academique' },
-    { id: 'militant',   label: 'Militant',     swatch: 'sw-militant' },
-    { id: 'champetre',  label: 'Champêtre',    swatch: 'sw-champetre' },
-  ];
-  function applyPalette(palette) {
-    if (palette === 'biblio') {
-      document.documentElement.removeAttribute('data-palette');
-    } else {
-      document.documentElement.setAttribute('data-palette', palette);
-    }
-  }
-  function initPalette(basePath) {
-    // Les palettes (académique, militant) sont définies directement dans
-    // style.css via les sélecteurs [data-palette="…"] : aucun chargement
-    // dynamique de feuille de style, donc aucune dépendance au chemin ni au
-    // cache du service worker.
-    const stored = localStorage.getItem('biblio-palette') || 'biblio';
-    applyPalette(stored);
-
-    const btn = $('.palette-toggle');
-    if (!btn) return;
-    // Construit le menu
-    const menu = document.createElement('div');
-    menu.className = 'palette-menu';
-    menu.setAttribute('role', 'menu');
-    menu.innerHTML = PALETTES.map(p => `
-      <button type="button" role="menuitem" data-palette="${p.id}" class="${p.id === stored ? 'active' : ''}">
-        <span class="palette-swatch ${p.swatch}" aria-hidden="true"></span>
-        <span>${p.label}</span>
-      </button>
-    `).join('');
-    btn.appendChild(menu);
-    btn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      if (e.target.closest('.palette-menu button')) {
-        const b = e.target.closest('button[data-palette]');
-        const p = b.getAttribute('data-palette');
-        localStorage.setItem('biblio-palette', p);
-        applyPalette(p);
-        menu.querySelectorAll('button').forEach(x => x.classList.toggle('active', x === b));
-        menu.classList.remove('open');
-        return;
-      }
-      menu.classList.toggle('open');
-    });
-    document.addEventListener('click', (e) => {
-      if (!btn.contains(e.target)) menu.classList.remove('open');
-    });
-    // Touche Échap ferme le menu
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') menu.classList.remove('open');
-    });
+  // ----- Thème unique (Académique) depuis le 2026-10-07 ----------------------
+  // Les palettes Bibliothèque / Militant / Champêtre ont été retirées : on
+  // nettoie le choix mémorisé par d'anciennes visites.
+  function initPalette() {
+    document.documentElement.removeAttribute('data-palette');
+    try { localStorage.removeItem('biblio-palette'); } catch (e) {}
   }
 
   // ----- Menu mobile --------------------------------------------------------
@@ -643,7 +594,7 @@
     window.BIBLIO_BASE = basePath;
 
     initTheme();
-    initPalette(basePath);
+    initPalette();
     initMenu();
     initNavDropdown();
     initHeaderSearch(basePath);

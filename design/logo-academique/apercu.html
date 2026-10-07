@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>BIBLIO — marque Académique, aperçu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../site/assets/css/fonts.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  :root{--font-serif:"EB Garamond",Georgia,serif;--font-sans:"Inter",system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif}
+  .clair{--bg:#ffffff;--bg-alt:#f5f7fa;--bg-elev:#eef1f6;--text:#1a2233;--text-dim:#3f4a60;--text-faint:#6a7488;--accent:#1f3a5f;--gold:#7a6321;--border:#d8dde6;--border-strong:#aab3c4;--brand-accent:#7a6321}
+  .sombre{--bg:#0f1620;--bg-alt:#16202d;--bg-elev:#243042;--text:#e6ecf5;--text-dim:#aab4c6;--text-faint:#7782a0;--accent:#6f9fd8;--gold:#c9b46f;--border:#2c3a4f;--border-strong:#43566f;--brand-accent:#c9b46f}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:var(--font-sans);background:#e9ecf1;color:#1a2233;line-height:1.5}
+  main{max-width:1180px;margin:0 auto;padding:32px 24px 64px}
+  h1{font-family:var(--font-serif);font-weight:600;letter-spacing:.02em;margin:0 0 4px}
+  h2{font-family:var(--font-serif);font-weight:600;font-size:1.35rem;margin:40px 0 10px}
+  p.note{color:#3f4a60;max-width:72ch;font-size:.95rem}
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid #aab3c4;border-radius:8px;overflow:hidden}
+  .panneau{background:var(--bg);color:var(--text);padding:24px}
+  .panneau h3{margin:0 0 14px;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--text-faint);font-weight:600}
+  .tailles{display:flex;align-items:flex-end;gap:28px;flex-wrap:wrap}
+  .tailles figure{margin:0;text-align:center}
+  .tailles figcaption{font-size:.72rem;color:var(--text-faint);margin-top:6px}
+  .mark{display:block;color:var(--text)}
+  /* Faux en-tête */
+  .site-header{background:var(--bg);border-bottom:1px solid var(--border);color:var(--text)}
+  .site-header .in{display:flex;align-items:center;gap:24px;padding:14px 20px}
+  .brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none}
+  .brand:hover{color:var(--accent)}
+  .brand-mark{width:48px;height:48px;flex-shrink:0}
+  .brand.compact .brand-mark{width:32px;height:32px}
+  .brand-name{font-family:var(--font-serif);font-weight:600;font-size:22px;letter-spacing:.02em}
+  .brand-sub{font-size:12px;color:var(--text-faint);letter-spacing:.02em;margin-left:4px}
+  .nav{display:flex;gap:18px;font-size:14px;color:var(--text-dim);margin-left:auto}
+  .search{border:1px solid var(--border-strong);border-radius:6px;padding:6px 10px;font-size:13px;color:var(--text-faint);min-width:150px}
+  /* Onglets */
+  .onglet{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:8px 8px 0 0;font-size:13px}
+  .barre-claire{background:#dee1e6;padding:8px 8px 0}.barre-claire .onglet{background:#fff;color:#1f1f1f}
+  .barre-sombre{background:#202124;padding:8px 8px 0}.barre-sombre .onglet{background:#35363a;color:#e8eaed}
+  .old{display:block}
+  .comp{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  .comp .panneau{display:flex;flex-direction:column;align-items:center;gap:10px}
+  table{border-collapse:collapse;font-size:.9rem;margin-top:8px}
+  td,th{border:1px solid #aab3c4;padding:6px 10px;text-align:left;background:#fff}
+  .og{max-width:100%;border:1px solid #aab3c4;display:block}
+  @media (max-width:800px){.duo,.comp{grid-template-columns:1fr}.nav{display:none}}
+</style>
+</head>
+<body>
+<!-- Marque inline : dans le site, préférer <svg><use href="assets/img/logo.svg#mark"/></svg>
+     (le <use> externe ne fonctionne pas en file://, d'où la copie inline ici). -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 32 32">
+    <g fill="currentColor">
+      <rect x="5" y="8" width="4" height="18"/>
+      <path fill-rule="evenodd" d="M11 4h4v22h-4z M12 8h2v3h-2z"/>
+      <rect x="17" y="10" width="4" height="16"/>
+      <rect x="3" y="26" width="26" height="2"/>
+    </g>
+    <rect x="25" y="10" width="4" height="16" transform="rotate(-14 25 26)" style="fill:var(--brand-accent,#7a6321)"/>
+  </symbol>
+  <symbol id="mark-petit" viewBox="0 0 32 32">
+    <g fill="currentColor">
+      <rect x="6" y="9" width="4" height="15"/>
+      <rect x="12" y="6" width="4" height="18"/>
+      <rect x="18" y="11" width="4" height="13"/>
+      <rect x="4" y="24" width="24" height="2"/>
+    </g>
+    <rect x="25.2" y="11" width="4" height="13" transform="rotate(-14 25.2 24)" style="fill:var(--brand-accent,#7a6321)"/>
+  </symbol>
+</svg>
+<main>
+  <h1>BIBLIO — marque « rayonnage commun »</h1>
+  <p class="note">Trois dos de livres sur une tablette partagée ; le quatrième, penché, est le livre qui circule — l’accès ouvert, le commun en usage. Encre en <code>currentColor</code>, livre qui circule en <code>--brand-accent</code> (or : <code>#7a6321</code> en clair, <code>#c9b46f</code> en sombre). À juger à l’écran, à 100 % de zoom : les tailles indiquées sont des px CSS.</p>
+
+  <h2>1. Échelle — marque principale (≥ 32 px) et version petite taille (≤ 24 px)</h2>
+  <div class="duo">
+    <div class="panneau clair"><h3>Clair · #ffffff</h3>
+      <div class="tailles">
+        <figure><svg class="mark" width="16" height="16"><use href="#mark-petit"/></svg><figcaption>16 · petit</figcaption></figure>
+        <figure><svg class="mark" width="16" height="16"><use href="#mark"/></svg><figcaption>16 · principal (à éviter)</figcaption></figure>
+        <figure><svg class="mark" width="32" height="32"><use href="#mark"/></svg><figcaption>32</figcaption></figure>
+        <figure><svg class="mark" width="48" height="48"><use href="#mark"/></svg><figcaption>48</figcaption></figure>
+        <figure><svg class="mark" width="128" height="128"><use href="#mark"/></svg><figcaption>128</figcaption></figure>
+      </div>
+    </div>
+    <div class="panneau sombre"><h3>Sombre · #0f1620</h3>
+      <div class="tailles">
+        <figure><svg class="mark" width="16" height="16"><use href="#mark-petit"/></svg><figcaption>16 · petit</figcaption></figure>
+        <figure><svg class="mark" width="16" height="16"><use href="#mark"/></svg><figcaption>16 · principal (à éviter)</figcaption></figure>
+        <figure><svg class="mark" width="32" height="32"><use href="#mark"/></svg><figcaption>32</figcaption></figure>
+        <figure><svg class="mark" width="48" height="48"><use href="#mark"/></svg><figcaption>48</figcaption></figure>
+        <figure><svg class="mark" width="128" height="128"><use href="#mark"/></svg><figcaption>128</figcaption></figure>
+      </div>
+    </div>
+  </div>
+
+  <h2>2. Dans l’en-tête du site</h2>
+  <div class="clair site-header"><div class="in">
+    <a class="brand" href="#"><svg class="brand-mark"><use href="#mark"/></svg><span class="brand-name">BIBLIO</span><span class="brand-sub">Bibliothèque documentaire ouverte</span></a>
+    <nav class="nav"><span>Catalogue</span><span>Dossiers</span><span>Concepts</span><span>Chronologie</span><span>À propos</span></nav>
+    <span class="search">Rechercher…</span></div></div>
+  <div class="sombre site-header"><div class="in">
+    <a class="brand" href="#"><svg class="brand-mark"><use href="#mark"/></svg><span class="brand-name">BIBLIO</span><span class="brand-sub">Bibliothèque documentaire ouverte</span></a>
+    <nav class="nav"><span>Catalogue</span><span>Dossiers</span><span>Concepts</span><span>Chronologie</span><span>À propos</span></nav>
+    <span class="search">Rechercher…</span></div></div>
+  <p class="note">Variante 32 px (taille actuelle de <code>.brand-mark</code>) :</p>
+  <div class="duo">
+    <div class="panneau clair site-header"><a class="brand compact" href="#"><svg class="brand-mark"><use href="#mark"/></svg><span class="brand-name">BIBLIO</span></a></div>
+    <div class="panneau sombre site-header"><a class="brand compact" href="#"><svg class="brand-mark"><use href="#mark"/></svg><span class="brand-name">BIBLIO</span></a></div>
+  </div>
+  <p class="note">Survol : la marque passe à <code>--accent</code> avec le nom (elle suit <code>color</code> du lien), le livre qui circule reste or.</p>
+
+  <h2>3. Favicon dans une barre d’onglets</h2>
+  <p class="note">Le fichier <code>favicon.svg</code> suit le thème du système (<code>prefers-color-scheme</code>) — c’est le bon critère ici, puisque la barre d’onglets suit le système et non le bouton du site. Les deux états sont forcés ci-dessous.</p>
+  <div class="duo">
+    <div class="barre-claire"><span class="onglet">
+      <svg width="16" height="16" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#1f3a5f"/><g fill="#fff"><rect x="6" y="9" width="4" height="15"/><rect x="12" y="6" width="4" height="18"/><rect x="18" y="11" width="4" height="13"/><rect x="4" y="24" width="24" height="2"/></g><rect x="25.2" y="11" width="4" height="13" transform="rotate(-14 25.2 24)" fill="#c9b46f"/></svg>
+      BIBLIO — Bibliothèque…</span></div>
+    <div class="barre-sombre"><span class="onglet">
+      <svg width="16" height="16" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#88b4e3"/><g fill="#0f1620"><rect x="6" y="9" width="4" height="15"/><rect x="12" y="6" width="4" height="18"/><rect x="18" y="11" width="4" height="13"/><rect x="4" y="24" width="24" height="2"/></g><rect x="25.2" y="11" width="4" height="13" transform="rotate(-14 25.2 24)" fill="#7a6321"/></svg>
+      BIBLIO — Bibliothèque…</span></div>
+  </div>
+  <p class="note">Fichier réel (selon votre système) : <img src="favicon.svg" width="16" height="16" alt=""> 16 px · <img src="favicon.svg" width="32" height="32" alt=""> 32 px</p>
+
+  <h2>4. Ancien / nouveau</h2>
+  <div class="comp">
+    <div class="panneau clair"><h3>Ancien · clair</h3><img class="old" src="../../site/assets/img/logo.svg" width="48" height="48" alt=""><img class="old" src="../../site/assets/img/favicon.svg" width="16" height="16" alt=""></div>
+    <div class="panneau clair"><h3>Nouveau · clair</h3><svg class="mark" width="48" height="48"><use href="#mark"/></svg><img src="favicon.svg" width="16" height="16" alt=""></div>
+    <div class="panneau sombre"><h3>Ancien · sombre</h3><img class="old" src="../../site/assets/img/logo.svg" width="48" height="48" alt=""><img class="old" src="../../site/assets/img/favicon.svg" width="16" height="16" alt=""></div>
+    <div class="panneau sombre"><h3>Nouveau · sombre</h3><svg class="mark" width="48" height="48"><use href="#mark"/></svg><img src="favicon.svg" width="16" height="16" alt=""></div>
+  </div>
+  <table>
+    <tr><th></th><th>Ancien</th><th>Nouveau</th></tr>
+    <tr><td>Couleurs</td><td>terre cuite #a44a2c, mousse #5a7048, or #a88930 en dur</td><td>currentColor + une variable d’accent</td></tr>
+    <tr><td>Clair / sombre</td><td>identique (couleurs figées)</td><td>suit le thème du site</td></tr>
+    <tr><td>Monochrome / une encre</td><td>non (deux aplats porteurs)</td><td>oui : <code>--brand-accent: currentColor</code></td></tr>
+    <tr><td>Grille</td><td>courbes, filet de 1,4 u (≈ 0,35 px à 16 px)</td><td>aplats calés au pas de 2 u (1 px à 16 px)</td></tr>
+  </table>
+
+  <h2>5. Carte sociale par défaut (1200 × 630, affichée réduite)</h2>
+  <img class="og" src="og-default.svg" width="1200" height="630" alt="Carte sociale BIBLIO">
+  <p class="note">Jugée aussi à ~500 px de large (taille d’aperçu Mastodon/Bluesky) : le bloc marine et la marque restent identifiables, le sous-titre italique 38 px descend à ~16 px — limite basse acceptable.</p>
+</main>
+</body>
+</html>
