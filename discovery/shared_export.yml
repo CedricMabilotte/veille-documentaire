@@ -121,15 +121,15 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-10-07T10:12:07.319119+00:00'
+exported_at: '2026-10-09T10:25:02.131542+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
   type: html
-  fertility: 2.69
-  runs: 16
+  fertility: 2.53
+  runs: 17
   docs_dl: 43
-  docs_seen: 621
+  docs_seen: 624
 - url: https://infokiosques.net/paysannerie_ruralite
   label: Infokiosques.net — Paysannerie & ruralité
   type: html
@@ -273,24 +273,24 @@ sources:
 - url: https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
   label: HAL — communs fonciers
   type: hal
-  fertility: 17.33
-  runs: 3
-  docs_dl: 52
-  docs_seen: 66
+  fertility: 16.0
+  runs: 4
+  docs_dl: 64
+  docs_seen: 79
 - url: https://api.archives-ouvertes.fr/search/?q=paysannerie+OR+%22agriculture+vivri%C3%A8re%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
   label: HAL — paysannerie / agriculture vivrière
   type: hal
-  fertility: 9.67
-  runs: 3
-  docs_dl: 29
-  docs_seen: 84
+  fertility: 11.5
+  runs: 4
+  docs_dl: 46
+  docs_seen: 103
 - url: https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
   label: HAL — propriété d'usage / fonds de dotation
   type: hal
   fertility: 1.0
-  runs: 3
-  docs_dl: 3
-  docs_seen: 18
+  runs: 4
+  docs_dl: 4
+  docs_seen: 19
 - url: https://reporterre.net/spip.php?page=backend
   label: Reporterre — RSS principal
   type: rss
@@ -553,10 +553,10 @@ sources:
 - url: https://api.archives-ouvertes.fr/search/?q=15M+indignados&fq=language_s:es&fl=halId_s,title_s,authFullName_s,fileMain_s&rows=50&wt=json
   label: HAL Science — 15M / indignados
   type: hal
-  fertility: 0.0
-  runs: 0
-  docs_dl: 0
-  docs_seen: 0
+  fertility: 2.0
+  runs: 1
+  docs_dl: 2
+  docs_seen: 2
 - url: https://archive.org/advancedsearch.php?q=%22bienes+comunes%22+language%3Aspa+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
   label: Archive.org — bienes comunes espagnol (15M/communs)
   type: archive_org

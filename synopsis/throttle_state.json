@@ -3,9 +3,9 @@
     "Infokiosques.net — nouveautés": {
       "url": "https://infokiosques.net/",
       "domain": "infokiosques.net",
-      "last_fetch": "2026-10-05T10:02:48Z",
-      "last_fetch_attempts": 13,
-      "last_doc_count": 56,
+      "last_fetch": "2026-10-09T10:05:35Z",
+      "last_fetch_attempts": 14,
+      "last_doc_count": 54,
       "consecutive_low_yield": 0,
       "current_interval_days": 3,
       "last_status_code": 200,
@@ -13,7 +13,9 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 0,
+      "last_failure_at": null
     },
     "Infokiosques.net — Paysannerie & ruralité": {
       "url": "https://infokiosques.net/paysannerie_ruralite",
@@ -288,8 +290,8 @@
     "Reporterre — RSS principal": {
       "url": "https://reporterre.net/spip.php?page=backend",
       "domain": "reporterre.net",
-      "last_fetch": "2026-10-07T09:51:06Z",
-      "last_fetch_attempts": 24,
+      "last_fetch": "2026-10-09T10:06:07Z",
+      "last_fetch_attempts": 25,
       "last_doc_count": 30,
       "consecutive_low_yield": 0,
       "current_interval_days": 1,
@@ -298,14 +300,16 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 0,
+      "last_failure_at": null
     },
     "Lundi.am — RSS principal": {
       "url": "https://lundi.am/spip.php?page=backend",
       "domain": "lundi.am",
-      "last_fetch": "2026-10-07T09:51:31Z",
-      "last_fetch_attempts": 24,
-      "last_doc_count": 17,
+      "last_fetch": "2026-10-09T10:06:38Z",
+      "last_fetch_attempts": 25,
+      "last_doc_count": 10,
       "consecutive_low_yield": 0,
       "current_interval_days": 1,
       "last_status_code": 200,
@@ -313,7 +317,9 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 0,
+      "last_failure_at": null
     },
     "MST Brésil — RSS principal": {
       "url": "https://mst.org.br/feed/",
@@ -394,7 +400,7 @@
       "url": "https://grain.org/home/entries.rss",
       "domain": "grain.org",
       "last_fetch": null,
-      "last_fetch_attempts": 35,
+      "last_fetch_attempts": 36,
       "last_doc_count": 0,
       "consecutive_low_yield": 0,
       "current_interval_days": 7,
@@ -403,7 +409,9 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:06:56Z"
     },
     "JSTOR Daily — topic land": {
       "url": "https://daily.jstor.org/topic/land/",
@@ -499,7 +507,7 @@
       "url": "https://cgt.org.es/feed/",
       "domain": "cgt.org.es",
       "last_fetch": "2026-07-27T13:01:20Z",
-      "last_fetch_attempts": 13,
+      "last_fetch_attempts": 14,
       "last_doc_count": 10,
       "consecutive_low_yield": 0,
       "current_interval_days": 14,
@@ -508,7 +516,9 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:06:57Z"
     },
     "Sin Permiso (revue radicale ES)": {
       "url": "https://www.sinpermiso.info/rss.xml",
@@ -574,7 +584,7 @@
       "url": "https://www.fian.org/es/feed/",
       "domain": "www.fian.org",
       "last_fetch": null,
-      "last_fetch_attempts": 35,
+      "last_fetch_attempts": 36,
       "last_doc_count": 0,
       "consecutive_low_yield": 0,
       "current_interval_days": 14,
@@ -583,7 +593,9 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:07:12Z"
     },
     "CLACSO Libros (acceso abierto)": {
       "url": "https://www.clacso.org/libros/",
@@ -754,7 +766,7 @@
       "url": "https://www.kpa.or.id/document-library/",
       "domain": "www.kpa.or.id",
       "last_fetch": null,
-      "last_fetch_attempts": 28,
+      "last_fetch_attempts": 29,
       "last_doc_count": 0,
       "consecutive_low_yield": 0,
       "current_interval_days": 30,
@@ -763,13 +775,15 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:06:38Z"
     },
     "Réseau Billital Maroobé — publications": {
       "url": "https://maroobe.com/",
       "domain": "maroobe.com",
       "last_fetch": null,
-      "last_fetch_attempts": 28,
+      "last_fetch_attempts": 29,
       "last_doc_count": 0,
       "consecutive_low_yield": 0,
       "current_interval_days": 30,
@@ -778,7 +792,9 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:06:56Z"
     },
     "European Shepherds Network — publications": {
       "url": "https://shepherdnet.eu/",
@@ -814,7 +830,7 @@
       "url": "https://openknowledge.fao.org/oai/request?verb=ListRecords&metadataPrefix=oai_dc&set=foodsecurity",
       "domain": "openknowledge.fao.org",
       "last_fetch": null,
-      "last_fetch_attempts": 28,
+      "last_fetch_attempts": 29,
       "last_doc_count": 0,
       "consecutive_low_yield": 0,
       "current_interval_days": 30,
@@ -823,13 +839,15 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:07:13Z"
     },
     "International Journal of the Commons — articles": {
       "url": "https://thecommonsjournal.org/articles",
       "domain": "thecommonsjournal.org",
       "last_fetch": null,
-      "last_fetch_attempts": 28,
+      "last_fetch_attempts": 29,
       "last_doc_count": 0,
       "consecutive_low_yield": 0,
       "current_interval_days": 30,
@@ -838,7 +856,9 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:07:43Z"
     },
     "La Vía Campesina — publications (WP REST)": {
       "url": "https://viacampesina.org/en/wp-json/wp/v2/media?mime_type=application/pdf",
@@ -859,7 +879,7 @@
       "url": "https://www.fian.org/wp-json/wp/v2/media?mime_type=application/pdf",
       "domain": "www.fian.org",
       "last_fetch": null,
-      "last_fetch_attempts": 28,
+      "last_fetch_attempts": 29,
       "last_doc_count": 0,
       "consecutive_low_yield": 0,
       "current_interval_days": 30,
@@ -868,13 +888,15 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:07:44Z"
     },
     "OpenEdition Books — catalogue (deep_html)": {
       "url": "https://books.openedition.org/",
       "domain": "books.openedition.org",
       "last_fetch": null,
-      "last_fetch_attempts": 28,
+      "last_fetch_attempts": 29,
       "last_doc_count": 0,
       "consecutive_low_yield": 0,
       "current_interval_days": 30,
@@ -883,13 +905,15 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:07:59Z"
     },
     "Focus on the Global South — publications": {
       "url": "https://focusweb.org/category/publications/",
       "domain": "focusweb.org",
       "last_fetch": null,
-      "last_fetch_attempts": 28,
+      "last_fetch_attempts": 29,
       "last_doc_count": 0,
       "consecutive_low_yield": 0,
       "current_interval_days": 30,
@@ -898,13 +922,15 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:07:59Z"
     },
     "CLACSO — búsqueda tierra y communs": {
       "url": "https://www.clacso.org/?s=tierra+communs&post_type=publication",
       "domain": "www.clacso.org",
       "last_fetch": "2026-07-31T06:46:44Z",
-      "last_fetch_attempts": 12,
+      "last_fetch_attempts": 13,
       "last_doc_count": 93,
       "consecutive_low_yield": 0,
       "current_interval_days": 30,
@@ -913,7 +939,9 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:08:01Z"
     },
     "Nyéléni — documents finaux": {
       "url": "https://nyeleni.org/fr/documents-finaux/",
@@ -1009,7 +1037,7 @@
       "url": "https://biblioteca-repositorio.clacso.edu.ar/discover?query=cuba+cooperativas+agricultura&rpp=20",
       "domain": "biblioteca-repositorio.clacso.edu.ar",
       "last_fetch": null,
-      "last_fetch_attempts": 28,
+      "last_fetch_attempts": 29,
       "last_doc_count": 0,
       "consecutive_low_yield": 0,
       "current_interval_days": 30,
@@ -1018,7 +1046,9 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:08:01Z"
     },
     "Agritrop CIRAD — Cuba coopératives (OAI-PMH)": {
       "url": "http://agritrop.cirad.fr/cgi/oai2?verb=ListRecords&metadataPrefix=oai_dc",
@@ -1039,7 +1069,7 @@
       "url": "https://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=revues:etudescaribeennes",
       "domain": "oai.openedition.org",
       "last_fetch": null,
-      "last_fetch_attempts": 28,
+      "last_fetch_attempts": 29,
       "last_doc_count": 0,
       "consecutive_low_yield": 0,
       "current_interval_days": 60,
@@ -1048,7 +1078,9 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:08:02Z"
     },
     "Archive.org — Cuba agriculture agroécologie": {
       "url": "https://archive.org/advancedsearch.php?q=subject%3ACuba+AND+%28agricultura+OR+cooperativa+OR+agroecologia%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
@@ -1099,7 +1131,7 @@
       "url": "https://www.fian.org/en/publications",
       "domain": "www.fian.org",
       "last_fetch": null,
-      "last_fetch_attempts": 25,
+      "last_fetch_attempts": 26,
       "last_doc_count": 0,
       "consecutive_low_yield": 0,
       "current_interval_days": 14,
@@ -1108,7 +1140,9 @@
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 1,
+      "last_failure_at": "2026-10-09T10:08:17Z"
     },
     "Traficantes de Sueños — Autogestion / Economía social": {
       "url": "https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114",
@@ -1198,7 +1232,7 @@
     "infokiosques.net": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-01T09:48:16Z",
+      "robots_txt_cached_at": "2026-10-09T10:05:03Z",
       "robots_disallow": [
         "/ecrire/",
         "/lib/",
@@ -1210,7 +1244,7 @@
     "www.boell.de": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-01T09:49:38Z",
+      "robots_txt_cached_at": "2026-10-09T10:05:35Z",
       "robots_disallow": [
         "/core/",
         "/profiles/",
@@ -1257,7 +1291,7 @@
     "libcom.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-01T09:52:30Z",
+      "robots_txt_cached_at": "2026-10-09T10:05:36Z",
       "robots_disallow": [
         "/core/",
         "/profiles/",
@@ -1297,14 +1331,14 @@
     "crimethinc.com": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-01T09:52:31Z",
+      "robots_txt_cached_at": "2026-10-09T10:05:36Z",
       "robots_disallow": [],
       "robots_crawl_delay": null
     },
     "cras31.info": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-01T09:52:54Z",
+      "robots_txt_cached_at": "2026-10-09T10:05:36Z",
       "robots_disallow": [
         "/ecrire/",
         "/lib/",
@@ -1315,7 +1349,7 @@
     "theanarchistlibrary.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-01T09:53:25Z",
+      "robots_txt_cached_at": "2026-10-09T10:05:37Z",
       "robots_disallow": [
         "/edit/",
         "/bookbuilder/",
@@ -1328,7 +1362,7 @@
     "archive.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-01T09:56:04Z",
+      "robots_txt_cached_at": "2026-10-09T10:05:37Z",
       "robots_disallow": [
         "/control/",
         "/report/"

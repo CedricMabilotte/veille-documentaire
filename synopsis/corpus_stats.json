@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-07T14:59:47Z",
-  "total": 2097,
-  "total_docs": 2097,
+  "generated_at": "2026-10-09T10:14:44Z",
+  "total": 2100,
+  "total_docs": 2100,
   "total_downloaded": 1495,
   "total_published": 974,
   "by_lang": {
     "en": 949,
-    "fr": 412,
+    "fr": 415,
     "es": 266,
     "pt": 227,
     "inconnu": 185,
@@ -20,7 +20,7 @@
   },
   "by_language": {
     "en": 949,
-    "fr": 412,
+    "fr": 415,
     "es": 266,
     "pt": 227,
     "inconnu": 185,
@@ -66,10 +66,10 @@
     "Infokiosques.net — index A": 8,
     "Böll Stiftung — publications DE": 8,
     "The Anarchist Library — OPDS feed": 8,
+    "Infokiosques.net — nouveautés": 8,
     "Archive.org — Cuba (ES, réforme agraire & coopératives)": 8,
     "HAL — propriété d'usage / fonds de dotation": 7,
     "Infokiosques.net — index C": 6,
-    "Infokiosques.net — nouveautés": 5,
     "CLACSO — Libros en coedición": 5,
     "Infokiosques.net — index L (Libération, Luttes)": 4,
     "Archive.org — anarchism + land/peasant (strict)": 4,
@@ -94,11 +94,11 @@
     "2000s": 157,
     "2010s": 510,
     "2020s": 788,
-    "inconnu": 582
+    "inconnu": 585
   },
   "by_score": {
-    "0": 481,
-    "1": 216,
+    "0": 483,
+    "1": 217,
     "2": 175,
     "3": 96,
     "4": 81,
@@ -110,14 +110,14 @@
     "10": 4
   },
   "by_doc_type": {
-    "autre": 1961,
+    "autre": 1964,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1239,
+    "militant": 1242,
     "academique": 642,
     "non_renseigne": 138,
     "institutionnel": 78
@@ -328,6 +328,13 @@
       "count": 8
     },
     {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
+      "count": 8
+    },
+    {
       "label": "HAL — propriété d'usage / fonds de dotation",
       "url": "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50",
       "type": "hal",
@@ -339,13 +346,6 @@
       "url": "https://www.clacso.org/libros-de-clacso-en-coedicion/",
       "type": "deep_html",
       "orientation": "academique",
-      "count": 5
-    },
-    {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
       "count": 5
     },
     {
