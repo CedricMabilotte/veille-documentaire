@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-09T10:14:44Z",
-  "total": 2100,
-  "total_docs": 2100,
-  "total_downloaded": 1495,
-  "total_published": 974,
+  "generated_at": "2026-10-11T09:53:42Z",
+  "total": 2103,
+  "total_docs": 2103,
+  "total_downloaded": 1496,
+  "total_published": 976,
   "by_lang": {
-    "en": 949,
-    "fr": 415,
+    "en": 951,
+    "fr": 412,
     "es": 266,
     "pt": 227,
-    "inconnu": 185,
+    "inconnu": 189,
     "de": 41,
     "it": 7,
     "sw": 5,
@@ -19,11 +19,11 @@
     "tr": 1
   },
   "by_language": {
-    "en": 949,
-    "fr": 415,
+    "en": 951,
+    "fr": 412,
     "es": 266,
     "pt": 227,
-    "inconnu": 185,
+    "inconnu": 189,
     "de": 41,
     "it": 7,
     "sw": 5,
@@ -39,7 +39,7 @@
     "Infokiosques.net — Paysannerie & ruralité": 121,
     "CRAS (Centre de Recherches sur les Alternatives Sociales)": 110,
     "CLACSO Libros (acceso abierto)": 99,
-    "Archive.org — community land trusts & housing commons": 91,
+    "Archive.org — community land trusts & housing commons": 97,
     "Archive.org — féminisme et communs (Federici, accumulation primitive)": 80,
     "Archive.org — théorie des communs (Ostrom, CPR, collective action)": 77,
     "discovery_promoted": 72,
@@ -66,10 +66,10 @@
     "Infokiosques.net — index A": 8,
     "Böll Stiftung — publications DE": 8,
     "The Anarchist Library — OPDS feed": 8,
-    "Infokiosques.net — nouveautés": 8,
     "Archive.org — Cuba (ES, réforme agraire & coopératives)": 8,
     "HAL — propriété d'usage / fonds de dotation": 7,
     "Infokiosques.net — index C": 6,
+    "Infokiosques.net — nouveautés": 5,
     "CLACSO — Libros en coedición": 5,
     "Infokiosques.net — index L (Libération, Luttes)": 4,
     "Archive.org — anarchism + land/peasant (strict)": 4,
@@ -92,42 +92,42 @@
     "1980s": 17,
     "1990s": 9,
     "2000s": 157,
-    "2010s": 510,
+    "2010s": 511,
     "2020s": 788,
-    "inconnu": 585
+    "inconnu": 587
   },
   "by_score": {
-    "0": 483,
-    "1": 217,
-    "2": 175,
-    "3": 96,
-    "4": 81,
-    "5": 100,
+    "0": 481,
+    "1": 218,
+    "2": 176,
+    "3": 97,
+    "4": 84,
+    "5": 99,
     "6": 194,
-    "7": 139,
-    "8": 407,
+    "7": 138,
+    "8": 408,
     "9": 204,
     "10": 4
   },
   "by_doc_type": {
-    "autre": 1964,
+    "autre": 1967,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1242,
-    "academique": 642,
+    "militant": 1239,
+    "academique": 648,
     "non_renseigne": 138,
     "institutionnel": 78
   },
   "blind_spots": [
-    "Forte dominante militante (59.1%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (58.9%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (59.1%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (58.9%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "sources_list": [
@@ -178,7 +178,7 @@
       "url": "https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
       "type": "archive_org",
       "orientation": "academique",
-      "count": 91
+      "count": 97
     },
     {
       "label": "Archive.org — féminisme et communs (Federici, accumulation primitive)",
@@ -328,13 +328,6 @@
       "count": 8
     },
     {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
-      "count": 8
-    },
-    {
       "label": "HAL — propriété d'usage / fonds de dotation",
       "url": "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50",
       "type": "hal",
@@ -346,6 +339,13 @@
       "url": "https://www.clacso.org/libros-de-clacso-en-coedicion/",
       "type": "deep_html",
       "orientation": "academique",
+      "count": 5
+    },
+    {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
       "count": 5
     },
     {

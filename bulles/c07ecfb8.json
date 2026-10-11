@@ -1,0 +1,78 @@
+{
+  "titre_accroche": "Chinatown contre l'effacement : quand les communs urbains résistent à la planification d'État",
+  "teaser": "À Boston, Chinatown refuse d'être absorbée par un plan généraliste. Ce rapport analyse comment la santé des quartiers populaires dépend de leur droit à l'autodétermination territoriale.",
+  "abstract_editorial": "Ce rapport de 2020 revêt une actualité saisissante pour qui s'intéresse aux luttes pour les communs urbains et territoriaux. Il documente la bataille de Chinatown, quartier historique de Boston, pour préserver son autonomie face à une administration urbaine prédatrice.\n\nL'histoire est celle d'une dépossession : le « renouvellement urbain » des années 1960, les autoroutes interétatiques qui ont tranché le quartier, plus d'un millier de résidents expulsés. Des décennies plus tard, Chinatown continue de subir les effets de ces violences : polarisation extrême des revenus, déficit criant d'espaces verts (le pire de Boston), dégradation de l'environnement bâti.\n\nMais le rapport révèle aussi une forme de résistance. Collaborant avec un Community Land Trust — instrument clé des communs urbains — les résidents refusent que leur territoire soit dilué dans un plan généraliste visant la downtown bostonienne. Ils exigent un Master Plan qui leur soit propre, où leur voix de marginalisés compte réellement.\n\nLe cœur de l'enjeu : l'autodétermination. Pas simplement comme idéal rhétorique, mais comme capacité concrète d'un peuple à décider du destin de sa terre, de son espace, de son environnement. Le rapport analyse les liens directs entre cette autodétermination et la santé physique, mentale et sociale des habitants.\n\nUn document qui parle au moment où les villes se transforment partout selon des logiques extractivistes, où les lieux populaires disparaissent sous le rouleau compresseur de la financiarisation. Chinatown incarne une autre politique possible : celle où les résidents marginalisés deviennent co-créateurs de leur propre territoire.",
+  "citations_phares": [
+    {
+      "page": 5,
+      "quote": "Given the histories of urban renewal and exclusion in Chinatown, we fear that subsuming the neighborhood under a larger plan dilutes the community's voice and is a step toward erasure of Chinatown"
+    },
+    {
+      "page": 8,
+      "quote": "Urban renewal, institutional expansion, and the construction of two interstate highways disrupted the community and has displaced over a thousand residents"
+    },
+    {
+      "page": 5,
+      "quote": "The recent iterations of Chinatown's neighborhood master plans have allowed community stakeholders and residents, many of whom come from disenfranchised backgrounds, to be empowered to be co-creators"
+    }
+  ],
+  "categorisation": [
+    "autodétermination territoriale",
+    "communs urbains",
+    "résistance à la dépossession",
+    "justice environnementale",
+    "planification communautaire",
+    "Community Land Trusts"
+  ],
+  "slug": "chinatown-contre-effacement-communs-urbains",
+  "en_clair": "Ce rapport documente comment un quartier ancien de Boston a été ravagé par les autoroutes et le renouvellement urbain, causant l'expulsion massive. Il montre qu'un vrai problème existe : les habitants n'ont pas de voix dans ce qui se construit chez eux. Cependant, il ne parle pas de comment les gens pourraient vraiment reprendre contrôle de leur terrain — c'est un cri de protestation, pas un projet de libération foncière.",
+  "acteurs": [
+    "Metropolitan Area Planning Council (MAPC)",
+    "Chinatown Community Land Trust",
+    "Boston Planning & Development Agency (BPDA)",
+    "Tufts Medical Center",
+    "Chinatown Neighborhood Council",
+    "Lydia Lowe",
+    "Barry Keppard",
+    "Sharon Ron",
+    "Leah Frankel-Bonacci",
+    "Linda Tomasso",
+    "Ann Forsyth"
+  ],
+  "controverse": "Le principal désaccord porte sur le statut du plan master de Chinatown : le BPDA propose d'absorber Chinatown dans un plan Downtown plus large, tandis que le Chinatown Neighborhood Council et les chercheurs arguent que Chinatown, en tant qu'quartier historiquement marginalisé et culturellement distinct, mérite son propre plan spécifique pour préserver la voix et l'autodétermination de ses résidents. Cette tension met en jeu la définition même des frontières administratives et le pouvoir de décision communautaire.",
+  "angle_journalistique": "Enquête sur le rôle (ou l'absence) du Chinatown Community Land Trust dans la résistance à la gentrification et comment un instrument de propriété alternative pourrait servir à ancrer les résidents face aux pressions actuelles de développement et de déplacement.",
+  "citations_verifiees": [
+    {
+      "quote": "In conjunction with the Metropolitan Area Planning Council (MAPC) and the Chinatown Community Land Trust, we sought to conduct a health lens analysis",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "Given the histories of urban renewal and exclusion in Chinatown, we fear that subsuming the neighborhood under a larger plan dilutes the community's voice and is a step toward erasure of Chinatown from the map.",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "As of 2016, the majority of households in Chinatown were classified as extremely low-income, yet there were also significant percentages of very high-income households. This polarization is also present in the housing market",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "The recent iterations of Chinatown's neighborhood master plans have allowed community stakeholders and residents, many of whom come from disenfranchised backgrounds, to be empowered to be co-creators in the development of their community.",
+      "page": 5,
+      "page_physical": 5,
+      "verified": true
+    },
+    {
+      "quote": "Urban renewal, institutional expansion, and the construction of two interstate highways disrupted the community and has displaced over a thousand residents",
+      "page": 8,
+      "page_physical": 8,
+      "verified": true
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "d486a51b12"
+}

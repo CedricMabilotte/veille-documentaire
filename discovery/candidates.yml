@@ -1,5 +1,5 @@
-last_updated: '2026-10-09T10:08:44+00:00'
-total_candidates: 6199
+last_updated: '2026-10-11T09:48:39+00:00'
+total_candidates: 6236
 candidates:
 - url: https://shs.cairn.info
   type: footnote
@@ -1463,6 +1463,54 @@ candidates:
   - doc_id: 2477d75d
     context: https://books.openedition.org/cvz/8571
     page: 30
+- url: https://www.facebook.com/share/1BVSrq57dR/
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-10-11'
+  seen_count: 28
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Facebook
+    page: null
+- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-10-11'
+  seen_count: 28
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Linkedin-in
+    page: null
+- url: https://x.com/rbm_maroobe
+  type: external_link
+  domain: x.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-10-11'
+  seen_count: 28
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: X-twitter
+    page: null
+- url: https://youtube.com/@reseaubillitalmaroobe7381
+  type: external_link
+  domain: youtube.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-10-11'
+  seen_count: 28
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Réseau Billital Maroobé — publications
+    context: Youtube
+    page: null
 - url: http://www.fao.org/3/a-a0701f.pdf
   type: footnote
   domain: www.fao.org
@@ -1571,54 +1619,6 @@ candidates:
   - doc_id: 48a47a8f_ADPF828TPIIncidentalDecisaoAssinada
     context: http://www.stf.jus.br/portal/autenticacao/autenticarDocumento.asp sob o código E876-08E5-56EE-1A56 e senha 0AB1-272C-3526-EE3A
     page: 27
-- url: https://www.facebook.com/share/1BVSrq57dR/
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-09'
-  seen_count: 27
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Facebook
-    page: null
-- url: https://www.linkedin.com/company/r%C3%A9seau-billital-maroobe/
-  type: external_link
-  domain: www.linkedin.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-09'
-  seen_count: 27
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Linkedin-in
-    page: null
-- url: https://x.com/rbm_maroobe
-  type: external_link
-  domain: x.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-09'
-  seen_count: 27
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: X-twitter
-    page: null
-- url: https://youtube.com/@reseaubillitalmaroobe7381
-  type: external_link
-  domain: youtube.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-09'
-  seen_count: 27
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Réseau Billital Maroobé — publications
-    context: Youtube
-    page: null
 - url: http://halshs.archives-ouvertes.fr/halshs-00505372/fr/
   type: footnote
   domain: halshs.archives-ouvertes.fr
@@ -1703,6 +1703,30 @@ candidates:
   - doc_id: 30d6f9c9
     context: halshs-00505372, version 1 - http://halshs.archives-ouvertes.fr/halshs-00505372/fr/
     page: 26
+- url: https://cookiedatabase.org/tcf/purposes/
+  type: external_link
+  domain: cookiedatabase.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-10-11'
+  seen_count: 25
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Tierra.org (Amigos de la Tierra ES)
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Tierra.org — Agricultura y alimentación
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Tierra.org — Biodiversidad
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Leer más sobre estos propósitos
+    page: null
+  - doc_id: Nyéléni — documents finaux
+    context: En savoir plus sur ces finalités
+    page: null
 - url: http://rcin.org.pl
   type: footnote
   domain: rcin.org.pl
@@ -1784,30 +1808,6 @@ candidates:
   - doc_id: e4f64264
     context: http://rcin.org.pl
     page: 24
-- url: https://cookiedatabase.org/tcf/purposes/
-  type: external_link
-  domain: cookiedatabase.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 24
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Tierra.org (Amigos de la Tierra ES)
-    context: Leer más sobre estos propósitos
-    page: null
-  - doc_id: Tierra.org — Agricultura y alimentación
-    context: Leer más sobre estos propósitos
-    page: null
-  - doc_id: Tierra.org — Biodiversidad
-    context: Leer más sobre estos propósitos
-    page: null
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Leer más sobre estos propósitos
-    page: null
-  - doc_id: Nyéléni — documents finaux
-    context: En savoir plus sur ces finalités
-    page: null
 - url: http://joseph.dejacque.free.fr/
   type: footnote
   domain: joseph.dejacque.free.fr
@@ -6150,6 +6150,36 @@ candidates:
   - doc_id: f07ea277
     context: 5 https://blogs.worldbank.org/en/opendata/200-million-
     page: 14
+- url: https://bsky.app/profile/celphase.bsky.social
+  type: external_link
+  domain: bsky.app
+  first_seen: '2026-10-01'
+  last_seen: '2026-10-11'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: FIAN International (droit à l'alimentation, ES)
+    context: CELPHASE
+    page: null
+  - doc_id: FIAN International — publications
+    context: CELPHASE
+    page: null
+- url: https://github.com/TecharoHQ/anubis
+  type: external_link
+  domain: github.com
+  first_seen: '2026-10-01'
+  last_seen: '2026-10-11'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: FIAN International (droit à l'alimentation, ES)
+    context: Anubis
+    page: null
+  - doc_id: FIAN International — publications
+    context: Anubis
+    page: null
 - url: https://infokiosques.net/spip.php?article1767
   type: footnote
   domain: infokiosques.net
@@ -6284,6 +6314,21 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://techaro.lol
+  type: external_link
+  domain: techaro.lol
+  first_seen: '2026-10-01'
+  last_seen: '2026-10-11'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: FIAN International (droit à l'alimentation, ES)
+    context: Techaro
+    page: null
+  - doc_id: FIAN International — publications
+    context: Techaro
+    page: null
 - url: https://www.facebook.com/ECVC-European-Coordination-Via-Campesina-322102744638450/
   type: footnote
   domain: www.facebook.com
@@ -6840,6 +6885,18 @@ candidates:
   - doc_id: bc522fd4
     context: http://archivesautonomies.org/spip.php?article302
     page: 2
+- url: http://info.nodo50.org/
+  type: external_link
+  domain: info.nodo50.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-10-11'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Nodo50
+    page: null
 - url: http://www.nemetoncoalition.org
   type: external_link
   domain: www.nemetoncoalition.org
@@ -6851,21 +6908,6 @@ candidates:
   found_from:
   - doc_id: Troisièmes Voix — éditions
     context: Le projet Nemeton
-    page: null
-- url: https://bsky.app/profile/celphase.bsky.social
-  type: external_link
-  domain: bsky.app
-  first_seen: '2026-10-01'
-  last_seen: '2026-10-09'
-  seen_count: 10
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: FIAN International (droit à l'alimentation, ES)
-    context: CELPHASE
-    page: null
-  - doc_id: FIAN International — publications
-    context: CELPHASE
     page: null
 - url: https://bsky.app/profile/crimethinc.com
   type: external_link
@@ -6940,6 +6982,18 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://creativecommons.org/licenses/by-nc/4.0/deed.es
+  type: external_link
+  domain: creativecommons.org
+  first_seen: '2026-05-22'
+  last_seen: '2026-10-11'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Creative Commons
+    page: null
 - url: https://creativecommons.org/licenses/by/4.0/
   type: external_link
   domain: creativecommons.org
@@ -7036,20 +7090,17 @@ candidates:
   - doc_id: CrimethInc — zines
     context: Crimethinc. on Facebook
     page: null
-- url: https://github.com/TecharoHQ/anubis
+- url: https://feeds.feedburner.com/portaloaca
   type: external_link
-  domain: github.com
-  first_seen: '2026-10-01'
-  last_seen: '2026-10-09'
+  domain: feeds.feedburner.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-10-11'
   seen_count: 10
   suggested_action: follow_one_time
   notes: ''
   found_from:
-  - doc_id: FIAN International (droit à l'alimentation, ES)
-    context: Anubis
-    page: null
-  - doc_id: FIAN International — publications
-    context: Anubis
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Feed RSS
     page: null
 - url: https://github.com/crimethinc
   type: external_link
@@ -7225,21 +7276,6 @@ candidates:
   - doc_id: CrimethInc — zines
     context: CrimethInc. on Telegram
     page: null
-- url: https://techaro.lol
-  type: external_link
-  domain: techaro.lol
-  first_seen: '2026-10-01'
-  last_seen: '2026-10-09'
-  seen_count: 10
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: FIAN International (droit à l'alimentation, ES)
-    context: Techaro
-    page: null
-  - doc_id: FIAN International — publications
-    context: Techaro
-    page: null
 - url: https://tiktok.com/@crimethinc
   type: external_link
   domain: tiktok.com
@@ -7284,6 +7320,18 @@ candidates:
     page: null
   - doc_id: CLACSO — Libros en coedición
     context: August 13, 2021
+    page: null
+- url: https://twitter.com/portaloaca
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-10-11'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: X
     page: null
 - url: https://www.alterecosoc.org/fr/ecosoc7fr
   type: mastodon
@@ -7336,6 +7384,18 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.facebook.com/portaloaca
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-05-22'
+  last_seen: '2026-10-11'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Portal OACA — Libros anarquistas (catégorie)
+    context: Facebook
+    page: null
 - url: https://www.getgrav.org
   type: external_link
   domain: www.getgrav.org
@@ -7396,18 +7456,6 @@ candidates:
   - doc_id: d6a33ec9
     context: 'See: http://ec.europa.eu/agriculture/statistics/index_en.htm.'
     page: 9
-- url: http://info.nodo50.org/
-  type: external_link
-  domain: info.nodo50.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-09-19'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Nodo50
-    page: null
 - url: http://libcom.org/history/1931-barcelona-mass-rent-strike
   type: external_link
   domain: libcom.org
@@ -7534,18 +7582,6 @@ candidates:
   - doc_id: de1c36db
     context: in Southern Africa. Country Report Zimbabwe, USAID, available at https://agrilinks.org/sites/
     page: 21
-- url: https://creativecommons.org/licenses/by-nc/4.0/deed.es
-  type: external_link
-  domain: creativecommons.org
-  first_seen: '2026-05-22'
-  last_seen: '2026-09-19'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Creative Commons
-    page: null
 - url: https://data.unicef.org/resources/child-marriage-in-
   type: footnote
   domain: data.unicef.org
@@ -7592,18 +7628,6 @@ candidates:
     genre: journal-article
     html_url: https://iopscience.iop.org/article/10.1088/1755-1307/6/41/412045/pdf
     source: unpaywall
-- url: https://feeds.feedburner.com/portaloaca
-  type: external_link
-  domain: feeds.feedburner.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-09-19'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Feed RSS
-    page: null
 - url: https://handsontheland.net
   type: footnote
   domain: handsontheland.net
@@ -7724,18 +7748,6 @@ candidates:
   - doc_id: Infokiosques.net — nouveautés
     context: · sur le site web
     page: null
-- url: https://twitter.com/portaloaca
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-09-19'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: X
-    page: null
 - url: https://www.boell.de/de/2017/01/10/monsanto-und-co-pestizide-und-saatgut-als-milliardengeschaeft?utm_campaign=ds_konzernatlas
   type: footnote
   domain: www.boell.de
@@ -7772,18 +7784,6 @@ candidates:
   - doc_id: de1c36db
     context: GoZ (2002), Environmental Management Act (EMA Act), https://www.ema.co.zw/index.php/2014-
     page: 20
-- url: https://www.facebook.com/portaloaca
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-05-22'
-  last_seen: '2026-09-19'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Portal OACA — Libros anarquistas (catégorie)
-    context: Facebook
-    page: null
 - url: https://www.lemap.be/lpf/programme-2
   type: mastodon
   found_from:
@@ -22642,6 +22642,83 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://ceipaz.org/dia-internacional-de-las-mujeres-por-la-paz-y-el-desarme-24-de-mayo/
+  type: rss
+  found_from:
+  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
+    context: Día Internacional de las Mujeres por la Paz y el Desarme, 24 de mayo — El Día Internacional de las Mujeres por
+      la Paz y el Desarme reivindica el papel de las mujeres en la construcción de un mundo sin guerras ni violencias. Tiene
+      su origen en el movimiento feminista pacifista y antinuclear de comien
+    timestamp: '2026-06-25T15:33:31'
+  seen_count: 4
+  domain: ceipaz.org
+  first_seen: '2026-06-25'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Día Internacional de las Mujeres por la Paz y el Desarme, 24 de mayo
+  suggested_action: follow_one_time
+- url: https://ceipaz.org/elena-boschiero-investigadora-de-ceipaz-participa-en-el-laboratorio-sobre-gestion-de-crisis-en-santa-lucia-de-tirajana/
+  type: rss
+  found_from:
+  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
+    context: Elena Boschiero, investigadora de CEIPAZ, participa en el Laboratorio sobre gestión de crisis en Santa Lucía
+      de Tirajana — Elena Boschiero, investigadora de CEIPAZ y profesora del Departamento de Antropología y Psicología Social
+      en la Universidad Complutense de Madrid, participó el pasado 17 de juni
+    timestamp: '2026-06-25T15:33:31'
+  seen_count: 4
+  domain: ceipaz.org
+  first_seen: '2026-06-25'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Elena Boschiero, investigadora de CEIPAZ, participa en el Laboratorio sobre gestión de crisis en Santa Lucía de
+      Tirajana
+  suggested_action: follow_one_time
+- url: https://ceipaz.org/i-congreso-internacional-de-cooperacion-para-el-desarrollo-organizado-por-la-red-de-ongd-de-madrid-madrid-23-y-24-de-marzo/
+  type: rss
+  found_from:
+  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
+    context: 'I Congreso Internacional de Cooperación para el Desarrollo organizado por la Red de ONGD de Madrid. Madrid 23
+      y 24 de marzo. — La Red de ONGD de Madrid organizó este Congreso, concebido como un espacio de análisis, diálogo y propuesta
+      que reunió a organizaciones sociales, administraciones públicas, '
+    timestamp: '2026-06-25T15:33:31'
+  seen_count: 4
+  domain: ceipaz.org
+  first_seen: '2026-06-25'
+  last_seen: '2026-10-11'
+  metadata:
+    title: I Congreso Internacional de Cooperación para el Desarrollo organizado por la Red de ONGD de Madrid. Madrid 23 y
+      24 de marzo.
+  suggested_action: follow_one_time
+- url: https://ceipaz.org/nuevos-informes-de-ceipaz-sobre-la-agenda-de-mujeres-paz-y-seguridad-y-el-triple-nexo-en-la-cooperacion-espanola/
+  type: rss
+  found_from:
+  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
+    context: Nuevos informes de CEIPAZ sobre la Agenda de Mujeres, Paz y Seguridad y el triple nexo en la cooperación española
+      — CEIPAZ ha publicado varios estudios de caso de proyectos llevados a cabo Etiopía, Guatemala, Mali, Níger y Siria con
+      enfoque de triple nexo y la Agenda de Mujeres, Paz y Seguridad. Ilu
+    timestamp: '2026-06-25T15:33:31'
+  seen_count: 4
+  domain: ceipaz.org
+  first_seen: '2026-06-25'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Nuevos informes de CEIPAZ sobre la Agenda de Mujeres, Paz y Seguridad y el triple nexo en la cooperación española
+  suggested_action: follow_one_time
+- url: https://ceipaz.org/presentacion-de-ceipaz-de-la-propuesta-metodologica-sobre-mujeres-paz-y-seguridad-y-triple-nexo/
+  type: rss
+  found_from:
+  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
+    context: Presentación de CEIPAZ de la propuesta metodológica sobre Mujeres, Paz y Seguridad y triple nexo. — El jueves
+      21 de mayo, Manuela Mesa y Elena Boschiero, investigadoras de CEIPAZ presentaron la metodología elaborada en el marco
+      del proyecto financiado por la AECID La Agenda de Mujeres, Paz y Segurid
+    timestamp: '2026-06-25T15:33:31'
+  seen_count: 4
+  domain: ceipaz.org
+  first_seen: '2026-06-25'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Presentación de CEIPAZ de la propuesta metodológica sobre Mujeres, Paz y Seguridad y triple nexo.
+  suggested_action: follow_one_time
 - url: https://ceipaz.org/publicacion-los-estudios-de-paz-y-conflictos-en-un-mundo-en-cambio/
   type: rss
   found_from:
@@ -22656,6 +22733,21 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: Publicación “Los Estudios de Paz y Conflictos en un mundo en cambio”
+  suggested_action: follow_one_time
+- url: https://ceipaz.org/v-jornadas-internacionales-mujeres-derechos-humanos-y-paz-en-colombia/
+  type: rss
+  found_from:
+  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
+    context: 'V Jornadas internacionales: Mujeres, derechos humanos y paz en Colombia. — CEIPAZ participa en las V Jornadas
+      internacionales de la Mesa de Apoyo a la defensa de los derechos humanos de las mujeres y la paz en Colombia. Valencia,
+      23-25 de abril La Mesa de Apoyo a la defensa de los derechos humanos d'
+    timestamp: '2026-06-25T15:33:31'
+  seen_count: 4
+  domain: ceipaz.org
+  first_seen: '2026-06-25'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'V Jornadas internacionales: Mujeres, derechos humanos y paz en Colombia.'
   suggested_action: follow_one_time
 - url: https://chut.media/produit/numero-20/
   type: mastodon
@@ -25761,6 +25853,20 @@ candidates:
   metadata:
     title: Le cinéma est cerné
   suggested_action: follow_one_time
+- url: https://lundi.am/Metaphysique-de-la-GenZ
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Métaphysique de la GenZ — « Farmez l'aura, honorez le snap français, augmentez le Wanted level » - 5 octobre
+      / Ut talpa , 4 , Avec une grosse photo en haut
+    timestamp: '2026-10-05T10:03:09'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-10-05'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Métaphysique de la GenZ
+  suggested_action: follow_one_time
 - url: https://lundi.am/Red-flag
   type: rss
   found_from:
@@ -25788,6 +25894,20 @@ candidates:
   last_seen: '2026-05-24'
   metadata:
     title: Réflexions sur l'anarchie et la révolution
+  suggested_action: follow_one_time
+- url: https://lundi.am/Ritchy-Thibault-premier-prisonnier-du-mouvement-lyceen
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Ritchy Thibault, premier prisonnier du mouvement lycéen — « À l'Élysée », reclus ! - 5 octobre / Avec une grosse
+      photo en haut , 4 , Mouvement
+    timestamp: '2026-10-05T10:03:09'
+  seen_count: 4
+  domain: lundi.am
+  first_seen: '2026-10-05'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Ritchy Thibault, premier prisonnier du mouvement lycéen
   suggested_action: follow_one_time
 - url: https://lundi.am/Socialisme-ou-Barbarie-au-tournant-des-annees-1960
   type: rss
@@ -36476,52 +36596,20 @@ candidates:
   metadata:
     title: Conmemoración del Día Internacional para la Eliminación de la Violencia contra la Mujer
   suggested_action: follow_one_time
-- url: https://ceipaz.org/dia-internacional-de-las-mujeres-por-la-paz-y-el-desarme-24-de-mayo/
+- url: https://ceipaz.org/liber-amicorum-una-publicacion-dedicada-a-federico-mayor-zaragoza/
   type: rss
   found_from:
   - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
-    context: Día Internacional de las Mujeres por la Paz y el Desarme, 24 de mayo — El Día Internacional de las Mujeres por
-      la Paz y el Desarme reivindica el papel de las mujeres en la construcción de un mundo sin guerras ni violencias. Tiene
-      su origen en el movimiento feminista pacifista y antinuclear de comien
-    timestamp: '2026-06-25T15:33:31'
+    context: «Liber Amicorum», una publicación dedicada a Federico. Mayor Zaragoza — La Universidad para la Paz de Naciones
+      Unidas (UPAZ)&#160; y el European Center for Peace and Development (ECPD) han publicado un libro dedicado a Federico
+      Mayor Zaragoza, que fue Director General de UNESCO y una figura clave en
+    timestamp: '2026-07-27T13:04:42'
   seen_count: 3
   domain: ceipaz.org
-  first_seen: '2026-06-25'
-  last_seen: '2026-09-19'
+  first_seen: '2026-07-27'
+  last_seen: '2026-10-11'
   metadata:
-    title: Día Internacional de las Mujeres por la Paz y el Desarme, 24 de mayo
-  suggested_action: follow_one_time
-- url: https://ceipaz.org/elena-boschiero-investigadora-de-ceipaz-participa-en-el-laboratorio-sobre-gestion-de-crisis-en-santa-lucia-de-tirajana/
-  type: rss
-  found_from:
-  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
-    context: Elena Boschiero, investigadora de CEIPAZ, participa en el Laboratorio sobre gestión de crisis en Santa Lucía
-      de Tirajana — Elena Boschiero, investigadora de CEIPAZ y profesora del Departamento de Antropología y Psicología Social
-      en la Universidad Complutense de Madrid, participó el pasado 17 de juni
-    timestamp: '2026-06-25T15:33:31'
-  seen_count: 3
-  domain: ceipaz.org
-  first_seen: '2026-06-25'
-  last_seen: '2026-09-19'
-  metadata:
-    title: Elena Boschiero, investigadora de CEIPAZ, participa en el Laboratorio sobre gestión de crisis en Santa Lucía de
-      Tirajana
-  suggested_action: follow_one_time
-- url: https://ceipaz.org/i-congreso-internacional-de-cooperacion-para-el-desarrollo-organizado-por-la-red-de-ongd-de-madrid-madrid-23-y-24-de-marzo/
-  type: rss
-  found_from:
-  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
-    context: 'I Congreso Internacional de Cooperación para el Desarrollo organizado por la Red de ONGD de Madrid. Madrid 23
-      y 24 de marzo. — La Red de ONGD de Madrid organizó este Congreso, concebido como un espacio de análisis, diálogo y propuesta
-      que reunió a organizaciones sociales, administraciones públicas, '
-    timestamp: '2026-06-25T15:33:31'
-  seen_count: 3
-  domain: ceipaz.org
-  first_seen: '2026-06-25'
-  last_seen: '2026-09-19'
-  metadata:
-    title: I Congreso Internacional de Cooperación para el Desarrollo organizado por la Red de ONGD de Madrid. Madrid 23 y
-      24 de marzo.
+    title: «Liber Amicorum», una publicación dedicada a Federico. Mayor Zaragoza
   suggested_action: follow_one_time
 - url: https://ceipaz.org/nuevo-informe-telegram-y-la-extrema-derecha-espanola-desinformacion-odio-y-movilizacion/
   type: rss
@@ -36537,36 +36625,6 @@ candidates:
   last_seen: '2026-05-23'
   metadata:
     title: 'Nuevo informe: Telegram y la extrema derecha española: desinformación, odio y movilización'
-  suggested_action: follow_one_time
-- url: https://ceipaz.org/nuevos-informes-de-ceipaz-sobre-la-agenda-de-mujeres-paz-y-seguridad-y-el-triple-nexo-en-la-cooperacion-espanola/
-  type: rss
-  found_from:
-  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
-    context: Nuevos informes de CEIPAZ sobre la Agenda de Mujeres, Paz y Seguridad y el triple nexo en la cooperación española
-      — CEIPAZ ha publicado varios estudios de caso de proyectos llevados a cabo Etiopía, Guatemala, Mali, Níger y Siria con
-      enfoque de triple nexo y la Agenda de Mujeres, Paz y Seguridad. Ilu
-    timestamp: '2026-06-25T15:33:31'
-  seen_count: 3
-  domain: ceipaz.org
-  first_seen: '2026-06-25'
-  last_seen: '2026-09-19'
-  metadata:
-    title: Nuevos informes de CEIPAZ sobre la Agenda de Mujeres, Paz y Seguridad y el triple nexo en la cooperación española
-  suggested_action: follow_one_time
-- url: https://ceipaz.org/presentacion-de-ceipaz-de-la-propuesta-metodologica-sobre-mujeres-paz-y-seguridad-y-triple-nexo/
-  type: rss
-  found_from:
-  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
-    context: Presentación de CEIPAZ de la propuesta metodológica sobre Mujeres, Paz y Seguridad y triple nexo. — El jueves
-      21 de mayo, Manuela Mesa y Elena Boschiero, investigadoras de CEIPAZ presentaron la metodología elaborada en el marco
-      del proyecto financiado por la AECID La Agenda de Mujeres, Paz y Segurid
-    timestamp: '2026-06-25T15:33:31'
-  seen_count: 3
-  domain: ceipaz.org
-  first_seen: '2026-06-25'
-  last_seen: '2026-09-19'
-  metadata:
-    title: Presentación de CEIPAZ de la propuesta metodológica sobre Mujeres, Paz y Seguridad y triple nexo.
   suggested_action: follow_one_time
 - url: https://ceipaz.org/publicacion-el-programa-iberoamericano-de-ciudadania-global-para-el-desarrollo-sostenible-un-espacio-de-intercambio-y-aprendizaje/
   type: rss
@@ -36630,21 +36688,6 @@ candidates:
   metadata:
     title: 'Simposio internacional: Procesos y actores locales en la construcción territorial  de paz: resiliencia comunitaria
       en los Montes de Maria (Colombia)'
-  suggested_action: follow_one_time
-- url: https://ceipaz.org/v-jornadas-internacionales-mujeres-derechos-humanos-y-paz-en-colombia/
-  type: rss
-  found_from:
-  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
-    context: 'V Jornadas internacionales: Mujeres, derechos humanos y paz en Colombia. — CEIPAZ participa en las V Jornadas
-      internacionales de la Mesa de Apoyo a la defensa de los derechos humanos de las mujeres y la paz en Colombia. Valencia,
-      23-25 de abril La Mesa de Apoyo a la defensa de los derechos humanos d'
-    timestamp: '2026-06-25T15:33:31'
-  seen_count: 3
-  domain: ceipaz.org
-  first_seen: '2026-06-25'
-  last_seen: '2026-09-19'
-  metadata:
-    title: 'V Jornadas internacionales: Mujeres, derechos humanos y paz en Colombia.'
   suggested_action: follow_one_time
 - url: https://cgspace.cgiar.org/
   type: footnote
@@ -38771,6 +38814,20 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://lundi.am/Affaire-Budapest-Pas-une-extradition-de-plus
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Affaire Budapest : « Pas une extradition de plus » — #FREE ZAID - 5 octobre / Avec une grosse photo en haut
+      , International , 2'
+    timestamp: '2026-10-07T09:51:14'
+  seen_count: 3
+  domain: lundi.am
+  first_seen: '2026-10-07'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'Affaire Budapest : « Pas une extradition de plus »'
+  suggested_action: follow_one_time
 - url: https://lundi.am/Appel-sur-l-IA-ou
   type: rss
   found_from:
@@ -38783,6 +38840,20 @@ candidates:
   last_seen: '2026-10-03'
   metadata:
     title: Appel sur l'IA - ou
+  suggested_action: follow_one_time
+- url: https://lundi.am/Bertolt-Brecht-Ecrire-contre-le-fascisme
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Bertolt Brecht : Écrire contre le fascisme — « L''injustice peut vaincre bien que ce soit l''injustice ? » -
+      5 octobre / Avec une grosse photo en haut , Histoire , 2'
+    timestamp: '2026-10-07T09:51:14'
+  seen_count: 3
+  domain: lundi.am
+  first_seen: '2026-10-07'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'Bertolt Brecht : Écrire contre le fascisme'
   suggested_action: follow_one_time
 - url: https://lundi.am/CRISPR-therapie-genique-et-OGM-humains
   type: rss
@@ -38826,6 +38897,34 @@ candidates:
   metadata:
     title: 'Contre le républicanisme LGBT+ : la normalité va craquer'
   suggested_action: follow_one_time
+- url: https://lundi.am/De-la-cagoule-de-coton-au-Cone-2-0
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: De la cagoule de coton au « Cône 2.0 » — ou la haine en libre-service Jean Claude Noël - 5 octobre / Avec une
+      grosse photo en haut , Positions , 4
+    timestamp: '2026-10-07T09:51:14'
+  seen_count: 3
+  domain: lundi.am
+  first_seen: '2026-10-07'
+  last_seen: '2026-10-11'
+  metadata:
+    title: De la cagoule de coton au « Cône 2.0 »
+  suggested_action: follow_one_time
+- url: https://lundi.am/Des-cauchemars-et-des-reves
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Des cauchemars et des rêves — Ce que l'on voit du mouvement lycéen lorsqu'on est professeur - 5 octobre / Mouvement
+      , Avec une grosse photo en haut , 2
+    timestamp: '2026-10-07T09:51:14'
+  seen_count: 3
+  domain: lundi.am
+  first_seen: '2026-10-07'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Des cauchemars et des rêves
+  suggested_action: follow_one_time
 - url: https://lundi.am/Economie-politique-d-un-jeune-artistauteur-d-aujourd-hui-2
   type: rss
   found_from:
@@ -38853,6 +38952,20 @@ candidates:
   last_seen: '2026-08-09'
   metadata:
     title: « Je désire la stérilité »
+  suggested_action: follow_one_time
+- url: https://lundi.am/La-mobilisation-lyceenne-a-travers-les-yeux-d-une-professeur-du-93
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: La mobilisation lycéenne à travers les yeux d'une professeur du 93 — « Le pouvoir donne naissance à des parasites,
+      éradiquons-les ! » - 5 octobre / Mouvement , Avec une grosse photo en haut , 2
+    timestamp: '2026-10-07T09:51:14'
+  seen_count: 3
+  domain: lundi.am
+  first_seen: '2026-10-07'
+  last_seen: '2026-10-11'
+  metadata:
+    title: La mobilisation lycéenne à travers les yeux d'une professeur du 93
   suggested_action: follow_one_time
 - url: https://lundi.am/Le-deni-persistant-du-langage-animal-1-6-le-syndrome-Pepee
   type: rss
@@ -38896,6 +39009,20 @@ candidates:
   metadata:
     title: 'Le théâtre total des opérations : la guerre et ses scénarios'
   suggested_action: follow_one_time
+- url: https://lundi.am/Les-lecons-des-lyceens-en-revolte
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Les leçons des lycéens en révolte — Alessandro Stella - 5 octobre / Mouvement , Avec une grosse photo en haut
+      , 2
+    timestamp: '2026-10-07T09:51:14'
+  seen_count: 3
+  domain: lundi.am
+  first_seen: '2026-10-07'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Les leçons des lycéens en révolte
+  suggested_action: follow_one_time
 - url: https://lundi.am/Les-neons-de-l-incendie
   type: rss
   found_from:
@@ -38936,20 +39063,6 @@ candidates:
   last_seen: '2026-10-03'
   metadata:
     title: Mais quelqu'un va-t-il enfin le dire ?
-  suggested_action: follow_one_time
-- url: https://lundi.am/Metaphysique-de-la-GenZ
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Métaphysique de la GenZ — « Farmez l'aura, honorez le snap français, augmentez le Wanted level » - 5 octobre
-      / Ut talpa , 4 , Avec une grosse photo en haut
-    timestamp: '2026-10-05T10:03:09'
-  seen_count: 3
-  domain: lundi.am
-  first_seen: '2026-10-05'
-  last_seen: '2026-10-09'
-  metadata:
-    title: Métaphysique de la GenZ
   suggested_action: follow_one_time
 - url: https://lundi.am/Mireille-JEAN-GILLES
   type: rss
@@ -39007,19 +39120,20 @@ candidates:
   metadata:
     title: Prendre place, ouvrir l'espace, donner de la voix
   suggested_action: follow_one_time
-- url: https://lundi.am/Ritchy-Thibault-premier-prisonnier-du-mouvement-lyceen
+- url: https://lundi.am/Recit-de-la-manifestation-stop-pesticides-du-3-octobre-15-000
   type: rss
   found_from:
   - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Ritchy Thibault, premier prisonnier du mouvement lycéen — « À l'Élysée », reclus ! - 5 octobre / Avec une grosse
-      photo en haut , 4 , Mouvement
-    timestamp: '2026-10-05T10:03:09'
+    context: « Stop pesticides » récit de la manifestation du 3 octobre — 15 000 personnes, des paysan/nes et victimes unies
+      pour bloquer l'usine Syngenta, une mobilisation bouleversante - 5 octobre / Avec une grosse photo en haut , Mouvement
+      , 4
+    timestamp: '2026-10-07T09:51:14'
   seen_count: 3
   domain: lundi.am
-  first_seen: '2026-10-05'
-  last_seen: '2026-10-09'
+  first_seen: '2026-10-07'
+  last_seen: '2026-10-11'
   metadata:
-    title: Ritchy Thibault, premier prisonnier du mouvement lycéen
+    title: « Stop pesticides » récit de la manifestation du 3 octobre
   suggested_action: follow_one_time
 - url: https://lundi.am/S-il-vous-plait-dessine-moi-un-humain
   type: rss
@@ -39062,6 +39176,20 @@ candidates:
   last_seen: '2026-09-27'
   metadata:
     title: « Tout casser pour déstresser »
+  suggested_action: follow_one_time
+- url: https://lundi.am/Tout-comprendre-sur-Parcoursup-7787
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Tout comprendre sur Parcoursup — Notre sélection d'articles et d'analyses - 5 octobre / Avec une grosse photo
+      en haut , 1
+    timestamp: '2026-10-07T09:51:14'
+  seen_count: 3
+  domain: lundi.am
+  first_seen: '2026-10-07'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Tout comprendre sur Parcoursup
   suggested_action: follow_one_time
 - url: https://lundi.am/Un-art-des-seuils
   type: rss
@@ -52274,21 +52402,6 @@ candidates:
   - doc_id: 46327ff6_hal_dumas-05508898v1
     context: https://catalogue.geomartinique.fr/geonetwork/srv/api/records/fe4236ab-
     page: 130
-- url: https://ceipaz.org/liber-amicorum-una-publicacion-dedicada-a-federico-mayor-zaragoza/
-  type: rss
-  found_from:
-  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
-    context: «Liber Amicorum», una publicación dedicada a Federico. Mayor Zaragoza — La Universidad para la Paz de Naciones
-      Unidas (UPAZ)&#160; y el European Center for Peace and Development (ECPD) han publicado un libro dedicado a Federico
-      Mayor Zaragoza, que fue Director General de UNESCO y una figura clave en
-    timestamp: '2026-07-27T13:04:42'
-  seen_count: 2
-  domain: ceipaz.org
-  first_seen: '2026-07-27'
-  last_seen: '2026-09-19'
-  metadata:
-    title: «Liber Amicorum», una publicación dedicada a Federico. Mayor Zaragoza
-  suggested_action: follow_one_time
 - url: https://cgt.es/la-cgt-rechaza-el-convenio-arte-del-comercio-textil-recortes-inaceptables-ante-los-beneficios-y-margenes-record-de-la-patronal/
   type: rss
   found_from:
@@ -58487,20 +58600,6 @@ candidates:
   metadata:
     title: 1793 aura-t-il lieu ?
   suggested_action: follow_one_time
-- url: https://lundi.am/Affaire-Budapest-Pas-une-extradition-de-plus
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: 'Affaire Budapest : « Pas une extradition de plus » — #FREE ZAID - 5 octobre / Avec une grosse photo en haut
-      , International , 2'
-    timestamp: '2026-10-07T09:51:14'
-  seen_count: 2
-  domain: lundi.am
-  first_seen: '2026-10-07'
-  last_seen: '2026-10-09'
-  metadata:
-    title: 'Affaire Budapest : « Pas une extradition de plus »'
-  suggested_action: follow_one_time
 - url: https://lundi.am/Amplifier
   type: rss
   found_from:
@@ -58542,20 +58641,6 @@ candidates:
   last_seen: '2026-08-09'
   metadata:
     title: 'Au-delà de l''instrumentalisation : la nouvelle grammaire morale de la politique colombienne'
-  suggested_action: follow_one_time
-- url: https://lundi.am/Bertolt-Brecht-Ecrire-contre-le-fascisme
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: 'Bertolt Brecht : Écrire contre le fascisme — « L''injustice peut vaincre bien que ce soit l''injustice ? » -
-      5 octobre / Avec une grosse photo en haut , Histoire , 2'
-    timestamp: '2026-10-07T09:51:14'
-  seen_count: 2
-  domain: lundi.am
-  first_seen: '2026-10-07'
-  last_seen: '2026-10-09'
-  metadata:
-    title: 'Bertolt Brecht : Écrire contre le fascisme'
   suggested_action: follow_one_time
 - url: https://lundi.am/Brutalites-policiere-a-la-marche-trans-de-San-Francisco
   type: rss
@@ -58656,20 +58741,6 @@ candidates:
   metadata:
     title: Dark Taoism
   suggested_action: follow_one_time
-- url: https://lundi.am/De-la-cagoule-de-coton-au-Cone-2-0
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: De la cagoule de coton au « Cône 2.0 » — ou la haine en libre-service Jean Claude Noël - 5 octobre / Avec une
-      grosse photo en haut , Positions , 4
-    timestamp: '2026-10-07T09:51:14'
-  seen_count: 2
-  domain: lundi.am
-  first_seen: '2026-10-07'
-  last_seen: '2026-10-09'
-  metadata:
-    title: De la cagoule de coton au « Cône 2.0 »
-  suggested_action: follow_one_time
 - url: https://lundi.am/Deambulation-sur-les-pas-de-Rezvani
   type: rss
   found_from:
@@ -58683,20 +58754,6 @@ candidates:
   last_seen: '2026-08-08'
   metadata:
     title: Déambulation sur les pas de Rezvani
-  suggested_action: follow_one_time
-- url: https://lundi.am/Des-cauchemars-et-des-reves
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Des cauchemars et des rêves — Ce que l'on voit du mouvement lycéen lorsqu'on est professeur - 5 octobre / Mouvement
-      , Avec une grosse photo en haut , 2
-    timestamp: '2026-10-07T09:51:14'
-  seen_count: 2
-  domain: lundi.am
-  first_seen: '2026-10-07'
-  last_seen: '2026-10-09'
-  metadata:
-    title: Des cauchemars et des rêves
   suggested_action: follow_one_time
 - url: https://lundi.am/Discrimination-en-travail
   type: rss
@@ -58936,20 +58993,6 @@ candidates:
   metadata:
     title: La lutte pour la baignade
   suggested_action: follow_one_time
-- url: https://lundi.am/La-mobilisation-lyceenne-a-travers-les-yeux-d-une-professeur-du-93
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: La mobilisation lycéenne à travers les yeux d'une professeur du 93 — « Le pouvoir donne naissance à des parasites,
-      éradiquons-les ! » - 5 octobre / Mouvement , Avec une grosse photo en haut , 2
-    timestamp: '2026-10-07T09:51:14'
-  seen_count: 2
-  domain: lundi.am
-  first_seen: '2026-10-07'
-  last_seen: '2026-10-09'
-  metadata:
-    title: La mobilisation lycéenne à travers les yeux d'une professeur du 93
-  suggested_action: follow_one_time
 - url: https://lundi.am/La-narco-esthetique-du-Tigre-5-0-a-l-ere-de-l-intelligence-artificielle
   type: rss
   found_from:
@@ -59062,20 +59105,6 @@ candidates:
   last_seen: '2026-10-07'
   metadata:
     title: Les cahiers au feu !
-  suggested_action: follow_one_time
-- url: https://lundi.am/Les-lecons-des-lyceens-en-revolte
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Les leçons des lycéens en révolte — Alessandro Stella - 5 octobre / Mouvement , Avec une grosse photo en haut
-      , 2
-    timestamp: '2026-10-07T09:51:14'
-  seen_count: 2
-  domain: lundi.am
-  first_seen: '2026-10-07'
-  last_seen: '2026-10-09'
-  metadata:
-    title: Les leçons des lycéens en révolte
   suggested_action: follow_one_time
 - url: https://lundi.am/Ma6tevacraquer-1
   type: rss
@@ -59217,21 +59246,6 @@ candidates:
   metadata:
     title: Quelques réflexions sur la désertion du monde technique
   suggested_action: follow_one_time
-- url: https://lundi.am/Recit-de-la-manifestation-stop-pesticides-du-3-octobre-15-000
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: « Stop pesticides » récit de la manifestation du 3 octobre — 15 000 personnes, des paysan/nes et victimes unies
-      pour bloquer l'usine Syngenta, une mobilisation bouleversante - 5 octobre / Avec une grosse photo en haut , Mouvement
-      , 4
-    timestamp: '2026-10-07T09:51:14'
-  seen_count: 2
-  domain: lundi.am
-  first_seen: '2026-10-07'
-  last_seen: '2026-10-09'
-  metadata:
-    title: « Stop pesticides » récit de la manifestation du 3 octobre
-  suggested_action: follow_one_time
 - url: https://lundi.am/Reconfigurations-de-la-droite-colombienne-d-Uribe-a-De-la-Espriella
   type: rss
   found_from:
@@ -59342,20 +59356,6 @@ candidates:
   last_seen: '2026-05-17'
   metadata:
     title: Sur quelques problèmes que présente le pacifisme
-  suggested_action: follow_one_time
-- url: https://lundi.am/Tout-comprendre-sur-Parcoursup-7787
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Tout comprendre sur Parcoursup — Notre sélection d'articles et d'analyses - 5 octobre / Avec une grosse photo
-      en haut , 1
-    timestamp: '2026-10-07T09:51:14'
-  seen_count: 2
-  domain: lundi.am
-  first_seen: '2026-10-07'
-  last_seen: '2026-10-09'
-  metadata:
-    title: Tout comprendre sur Parcoursup
   suggested_action: follow_one_time
 - url: https://lundi.am/Tout-continue-comme-avant
   type: rss
@@ -60922,6 +60922,21 @@ candidates:
   metadata:
     title: 'Canicules, incendies : comment l''extrême droite en fait un argument contre l''écologie'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Ces-artistes-et-scientifiques-naviguent-depuis-un-an-au-chevet-des-fleuves-en-ruines
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Ces artistes et scientifiques naviguent depuis un an au chevet des « fleuves en ruines » — Relier l'estuaire
+      de la Loire au delta du Danube, tel est l'objectif du BatoLabo. À bord de ce laboratoire flottant, l'équipage témoigne
+      de l'état de santé déplorable des fleuves européens, soumis au stress cl
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Ces artistes et scientifiques naviguent depuis un an au chevet des « fleuves en ruines »
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Ces-canaux-provencaux-vieux-de-cinq-siecles-rechargent-les-nappes-et-font-vivre-les
   type: rss
   found_from:
@@ -61054,6 +61069,21 @@ candidates:
   metadata:
     title: Déforestation, tourisme... Ces facteurs environnementaux qui boostent l'hantavirus
   suggested_action: follow_one_time
+- url: https://reporterre.net/Dejeuner-au-Senat-cocktail-a-Roland-Garros-Le-lobby-de-l-emballage-murmure-a-l-oreille
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Pourquoi n'arrive-t-on pas à réduire les emballages ? Réponse du côté des lobbies — Petit-déjeuner près de l'Assemblée,
+      déjeuner au Sénat, cocktail à Roland-Garros… Les industriels du secteur de l'emballage mettent les moyens pour se rapprocher
+      de députés et sénateurs, notamment à la fibre écolo, et
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Pourquoi n'arrive-t-on pas à réduire les emballages ? Réponse du côté des lobbies
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Des-militants-infiltrent-une-usine-du-chimiste-BASF-et-finissent-a-la-gendarmerie
   type: rss
   found_from:
@@ -61173,6 +61203,21 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: 'Gratuit et sans réservation : ces communes réinventent le covoiturage'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/En-etat-de-siege-permanent-les-ravages-du-mur-anti-migrants-de-Trump-au-Texas
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« En état de siège permanent » : les ravages du mur anti-migrants de Trump au Texas — Bouées géantes, nouveaux
+      tronçons du mur, caméras et présence policière continue : au Texas, dans la vallée du Rio Grande, frontalière avec le
+      Mexique, les habitants décrivent leurs craintes face à la militarisatio'
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: '« En état de siège permanent » : les ravages du mur anti-migrants de Trump au Texas'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Etourdissement-demangeaisons-des-algues-rouges-proliferent-en-Guadeloupe-et-affectent-les
   type: rss
@@ -61581,6 +61626,21 @@ candidates:
   metadata:
     title: '« Je risque la mort » : au Brésil, l''inquiétude des militants écologistes à l''approche des élections'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Journaliste-j-ai-ete-blessee-par-une-grenade-L-Etat-a-enfin-ete-reconnu-coupable
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Violences policières contre les journalistes : « J''ai gagné mon procès contre l''État » — Marie Astier, journaliste
+      de Reporterre blessée par une grenade des gendarmes à Notre-Dame-des-Landes, en 2018, a gagné son procès contre l''État.
+      Une petite victoire, alors que « le combat pour les droits d''info'
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'Violences policières contre les journalistes : « J''ai gagné mon procès contre l''État »'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/L-Etat-condamne-a-en-faire-plus-pour-la-protection-des-cetaces
   type: rss
   found_from:
@@ -61670,6 +61730,21 @@ candidates:
   last_seen: '2026-07-29'
   metadata:
     title: L'incendie de Gironde a produit son propre « orage de feu »
+  suggested_action: follow_one_time
+- url: https://reporterre.net/La-Cour-des-comptes-alerte-sur-le-financement-insuffisant-de-la-transition-ecologique
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: La Cour des comptes alerte sur le financement insuffisant de la transition écologique — La France va devoir donner
+      un coup d'accélérateur pour tenir ses objectifs écologiques, alerte la Cour des comptes dans son rapport annuel sur
+      la transition écologique, présenté le 7 octobre. Selon ses calculs, 1
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: La Cour des comptes alerte sur le financement insuffisant de la transition écologique
   suggested_action: follow_one_time
 - url: https://reporterre.net/La-Gironde-face-aux-incendies-ceux-qui-restent-ceux-qui-fuient-ceux-qui-ont-tout-perdu
   type: rss
@@ -61761,6 +61836,21 @@ candidates:
   metadata:
     title: '« La convergence des luttes existe ! » : des paysans aux côtés des lycéens'
   suggested_action: follow_one_time
+- url: https://reporterre.net/La-foret-francaise-grandit-mais-va-de-plus-en-plus-mal
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'La forêt française grandit mais va de plus en plus mal — Ça peut paraitre paradoxal : la forêt française va
+      de plus en plus mal même si elle continue de s''étendre. Tel est le bilan de l''Institut géographique national ( IGN
+      ) dans son inventaire forestier publié mercredi 7 octobre. Les forêts couvren'
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: La forêt française grandit mais va de plus en plus mal
+  suggested_action: follow_one_time
 - url: https://reporterre.net/La-grande-soif-les-chiffres-d-une-secheresse-historique
   type: rss
   found_from:
@@ -61850,6 +61940,21 @@ candidates:
   last_seen: '2026-09-27'
   metadata:
     title: 'Musculation : la poudre protéinée, un business néfaste à l''écologie'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-Conseil-d-Etat-ordonne-au-gouvernement-d-interdire-la-publicite-pour-les-energies-fossiles
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Le Conseil d'État ordonne au gouvernement d'interdire la publicité pour les énergies fossiles — Cinq ans plus
+      tard, le gouvernement a été sommé d'enfin agir. Dans une décision publiée le 2 octobre, le Conseil d'État a ordonné
+      au Premier ministre Sébastien Lecornu de publier sous six mois le décret p
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Le Conseil d'État ordonne au gouvernement d'interdire la publicité pour les énergies fossiles
   suggested_action: follow_one_time
 - url: https://reporterre.net/Le-Perou-bascule-a-l-extreme-droite-avec-l-election-de-Keiko-Fujimori
   type: rss
@@ -62136,6 +62241,21 @@ candidates:
   metadata:
     title: Les géants pétroliers ont doublé leurs profits depuis le début de la guerre en Iran
   suggested_action: follow_one_time
+- url: https://reporterre.net/Les-lyceens-violentes-un-bras-d-honneur-a-l-avenir-et-au-vivant
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Les lycéens violentés, un bras d'honneur à l'avenir et au vivant — Cette jeunesse violentée, méprisée et réduite
+      au silence est révélatrice de la logique macroniste qui ne privilégie que les intérêts de quelques-uns. Cette brutalité
+      émane « d'un régime autoritaire aux abois », écrit Vincent Lucchese
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Les lycéens violentés, un bras d'honneur à l'avenir et au vivant
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Les-pesticides-repandent-le-cancer-surtout-chez-les-enfants
   type: rss
   found_from:
@@ -62195,6 +62315,21 @@ candidates:
   last_seen: '2026-10-09'
   metadata:
     title: '« J''ai vu disparaître nos terres agricoles » : depuis le 7 octobre, Israël accélère les annexions'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Lobby-du-plastique-2-5-millions-d-euros-par-an-pour-continuer-de-polluer
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Comment le lobby du plastique fait sa loi au Parlement — Les industriels ont consacré 2,5 millions d'euros pour
+      inciter les pouvoirs publics à abandonner des textes visant à réduire la pollution, notamment plastique, selon un rapport
+      inédit de Zero Waste France. Reporterre y a eu accès en amont et a
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Comment le lobby du plastique fait sa loi au Parlement
   suggested_action: follow_one_time
 - url: https://reporterre.net/Loi-d-urgence-agricole-le-Senat-vote-le-retour-de-l-acetamipride
   type: rss
@@ -62346,6 +62481,21 @@ candidates:
   metadata:
     title: '« Mêmes problèmes, même ennemi » : le leader mondial des pesticides contesté de la Normandie à l''Indonésie'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Mercure-la-pollution-pourrait-s-aggraver-a-cause-du-changement-climatique
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Mercure : la pollution pourrait s''aggraver à cause du changement climatique — La pollution au mercure est dangereuse
+      pour la santé des humains et des écosystèmes car cet élément s''accumule dans l''organisme. Nous vivons, pour cette
+      raison, dans un monde où il est déconseillé de manger des poissons pr'
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'Mercure : la pollution pourrait s''aggraver à cause du changement climatique'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Militantes-dans-les-arbres-gardes-a-vue-La-mobilisation-contre-le-canal-Seine-Nord-Europe
   type: rss
   found_from:
@@ -62390,6 +62540,21 @@ candidates:
   last_seen: '2026-09-21'
   metadata:
     title: « Monsanto a construit de la fausse science pour vendre ses pesticides »
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Mouvement-lyceen-Une-generation-marquee-au-fer-rouge-par-la-violence-d-Etat
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Cette génération est marquée au fer rouge par la violence d''État » — Les jeunes mobilisés ont « toujours
+      été un laboratoire des violences policières », analyse Pierre Douillard-Lefèvre, qui a lui-même perdu un œil à cause
+      d''un tir de LBD à 16 ans. Selon le chercheur, une « politique néofasciste » '
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: « Cette génération est marquée au fer rouge par la violence d'État »
   suggested_action: follow_one_time
 - url: https://reporterre.net/Ni-ici-ni-ailleurs-une-nouvelle-bataille-s-ouvre-sur-l-ex-zad-de-Notre-Dame-des-Landes-L
   type: mastodon
@@ -62500,6 +62665,21 @@ candidates:
   metadata:
     title: '« On a besoin de monde sur les barricades » : la zad de l''A412 a été partiellement expulsée'
   suggested_action: follow_one_time
+- url: https://reporterre.net/On-veut-traumatiser-toute-une-generation-Mais-ca-ne-marchera-pas
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: « Les lycéens ne veulent pas d'un monde sexiste, de guerres, de génocides, d'extrême droite, d'une éducation
+      bradée » — Professeure en Seine-Saint-Denis et militante antiraciste, Manel Ben Boubaker soutient les lycéens mobilisés
+      depuis le début. Elle décrit des lycées passoires thermiques, une répre
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: « Les lycéens ne veulent pas d'un monde sexiste, de guerres, de génocides, d'extrême droite, d'une éducation bradée »
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Open-bar-anti-ecolo-le-basculement-reactionnaire-du-Senat
   type: rss
   found_from:
@@ -62559,6 +62739,51 @@ candidates:
   last_seen: '2026-10-05'
   metadata:
     title: '« Pas ça, Zinédine » : lettre à Zidane sur le déni climatique'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Pas-de-capitalisme-pas-de-travail-salarie-bienvenue-dans-la-Cooperation-integrale
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Pas de capitalisme, pas de travail salarié : bienvenue dans la Coopération intégrale — Un lieu où vivre en dehors
+      du capitalisme : telle est l''idée du projet autogéré et politique de la Coopération intégrale du Haut-Berry. Pain,
+      maraîchage, garde d''enfants... Ici, tout le monde s''y met, mais « chacu'
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'Pas de capitalisme, pas de travail salarié : bienvenue dans la Coopération intégrale'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Pesticides-a-vie-la-carte-des-mobilisations-en-France-les-10-et-11-octobre
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Pesticides à vie » : la carte des mobilisations en France les 10 et 11 octobre — Ce serait un recul historique.
+      Le Parlement européen s''apprête à voter un texte qui affaiblirait considérablement l''encadrement des pesticides en
+      France et en Europe. Avec ce règlement Omnibus, les produits toxiques p'
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: '« Pesticides à vie » : la carte des mobilisations en France les 10 et 11 octobre'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Pesticides-les-demandes-des-lobbies-reprises-telles-quelles-dans-le-reglement-Omnibus
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Pesticides : les demandes des lobbies reprises telles quelles dans le règlement Omnibus — Des copier-coller
+      des demandes de l''industrie chimique et des producteurs d''engrais pour assouplir la règlementation protectrice de
+      l''environnement... C''est ainsi qu''a été rédigé le véhicule législatif européen'
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'Pesticides : les demandes des lobbies reprises telles quelles dans le règlement Omnibus'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Pesticides-une-alternative-aux-approbations-illimitees-validee-par-l-EFSA
   type: rss
@@ -62666,6 +62891,21 @@ candidates:
   metadata:
     title: '« Pour eux, ici, c''est Disneyland » : des bergers s''opposent au VTT en montagne'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Pour-la-premiere-fois-depuis-1945-l-extreme-droite-allemande-obtient-la-presidence-d-un
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Pour la première fois depuis 1945, l'extrême droite allemande obtient la présidence d'un parlement régional —
+      Un mois après avoir triomphé lors des élections du Land de Saxe-Anhalt, le parti d'extrême droite Alternative pour l'Allemagne
+      (AfD) a décroché, mardi 6 octobre, la présidence du Parlement r
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Pour la première fois depuis 1945, l'extrême droite allemande obtient la présidence d'un parlement régional
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Pour-qu-une-ampoule-s-allume-il-faut-tout-un-reseau-de-lignes-a-haute-tension-de-cables-d
   type: rss
   found_from:
@@ -62710,6 +62950,21 @@ candidates:
   last_seen: '2026-09-29'
   metadata:
     title: 'Procès et amendes à foison : la répression judiciaire s''intensifie contre Greenpeace France'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Quand-ils-vivent-pres-des-villes-les-poissons-changent-de-profil-genetique
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Quand ils vivent près des villes, les poissons... changent de profil génétique — Au large des villes, les poissons
+      réagissent aux nombreux stress liés aux activités humaines. Une étude montre que l'activité des gènes d'une espèce de
+      poisson corallien change en fonction du niveau d'urbanisation des l
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Quand ils vivent près des villes, les poissons... changent de profil génétique
   suggested_action: follow_one_time
 - url: https://reporterre.net/Que-propose-la-gauche-face-a-la-canicule-Tour-d-horizon-en-cinq-propositions
   type: rss
@@ -62785,6 +63040,21 @@ candidates:
   last_seen: '2026-09-21'
   metadata:
     title: Sac, botte... Du plastique retrouvé à près de 4 000 m de profondeur
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Sainte-Soline-le-ministere-de-l-Ecologie-donne-un-accord-crucial-pour-remplir-la
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Sainte-Soline : le ministère de l''Écologie donne un accord crucial pour remplir la mégabassine — Le ministère
+      de la Transition écologique a validé la demande de dérogation sur les espèces protégées pour la mégabassine de Sainte-Soline.
+      Contre l''avis d''un collège scientifique, elle pourrait être remp'
+    timestamp: '2026-10-09T10:05:47'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-10-09'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'Sainte-Soline : le ministère de l''Écologie donne un accord crucial pour remplir la mégabassine'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Sans-notre-intervention-il-n-y-aurait-quasiment-plus-de-busards-en-France-comment
   type: rss
@@ -69805,6 +70075,30 @@ candidates:
   - doc_id: 4347140f_Desenvolvimento-e-desigualdade
     context: '78-6. Disponível em: http://books.scielo.org. Acesso em 13 dez, 2020.'
     page: 104
+- url: http://bostonopendata-boston.opendata.arcgis.com/
+  type: footnote
+  domain: bostonopendata-boston.opendata.arcgis.com
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: http://bostonopendata-boston.opendata.arcgis.com/
+    page: 87
+- url: http://bphc.org/healthdata/health-of-boston-report/Pages/Health-of-Boston-Report.aspx
+  type: footnote
+  domain: bphc.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: http://bphc.org/healthdata/health-of-boston-report/Pages/Health-of-Boston-Report.aspx
+    page: 87
 - url: http://business-humanrights.org/media/documents/office-of-the-
   type: footnote
   domain: business-humanrights.org
@@ -70746,6 +71040,18 @@ candidates:
   - doc_id: 6fa85ef2_InformedeGestion2012_376
     context: http://estadodemexico.internetciudad.com/nota.php?id=36463
     page: 170
+- url: http://europepmc.org/abstract/MED/28412623
+  type: footnote
+  domain: europepmc.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: http://europepmc.org/abstract/MED/28412623
+    page: 88
 - url: http://exactas.uba.ar/noticias/display.php?info=noticias&id=453
   type: footnote
   domain: exactas.uba.ar
@@ -72387,6 +72693,18 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: http://resources.baltimorecountymd.gov/Documents/Planning/masterplan/masterplan2020.pdf
+  type: footnote
+  domain: resources.baltimorecountymd.gov
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: http://resources.baltimorecountymd.gov/Documents/Planning/masterplan/masterplan2020.pdf
+    page: 91
 - url: http://revista.fct.unesp.br/index.php/
   type: footnote
   domain: revista.fct.unesp.br
@@ -72735,6 +73053,18 @@ candidates:
   - doc_id: 5d79cac8
     context: http://serveur.publi-topex.com/EDITION/18DictionnaireDroitAgraireAntiqueAltomedieval.pdf
     page: 80
+- url: http://simplyanalytics.com/
+  type: footnote
+  domain: simplyanalytics.com
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: 'SimplyAnalytics, Inc. Platform. Accessed November 2018: ​http://simplyanalytics.com/'
+    page: 89
 - url: http://singedesrues.internetdown.org/
   type: footnote
   domain: singedesrues.internetdown.org
@@ -72747,6 +73077,18 @@ candidates:
   - doc_id: e3c301ee
     context: http://singedesrues.internetdown.org/
     page: 36
+- url: http://sites.tufts.edu/cafeh/improving-the-health-of-near-highway-communities/
+  type: footnote
+  domain: sites.tufts.edu
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: http://sites.tufts.edu/cafeh/improving-the-health-of-near-highway-communities/
+    page: 88
 - url: http://soporte.clacso.edu.ar/pedidos
   type: footnote
   domain: soporte.clacso.edu.ar
@@ -73788,6 +74130,18 @@ candidates:
   - doc_id: 60c98b72_Jovenes-acciones-movimientos
     context: ción y Desarrollo). Disponible en http://www.cepal.org/es/publica-
     page: 272
+- url: http://www.chinanews.com/hr/2016/03-30/7817108.shtml​
+  type: footnote
+  domain: www.chinanews.com
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: http://www.chinanews.com/hr/2016/03-30/7817108.shtml​.
+    page: 87
 - url: http://www.clacso-posgrados.net
   type: footnote
   domain: www.clacso-posgrados.net
@@ -75156,6 +75510,18 @@ candidates:
   - doc_id: a480f492_InformedeGestion2011_317
     context: el sistema administrador y de evaluación en línea). http://www.flacso.org.br/concurso_tesis/
     page: 117
+- url: http://www.focl-boston.org/uploads/8/2/7/7/82770312/chinatown_master_ppan_2010.pdf
+  type: footnote
+  domain: www.focl-boston.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: http://www.focl-boston.org/uploads/8/2/7/7/82770312/chinatown_master_ppan_2010.pdf
+    page: 90
 - url: http://www.foei.org/en/publications/pdfs/gmcrops2007full.pdf
   type: footnote
   domain: www.foei.org
@@ -77797,6 +78163,18 @@ candidates:
   - doc_id: '62487116'
     context: https://archive.org/details/Roozen1983
     page: 3
+- url: https://archive.org/details/chinatowncommuni00chin
+  type: footnote
+  domain: archive.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: https://archive.org/details/chinatowncommuni00chin
+    page: 90
 - url: https://archive.org/details/namdhari
   type: footnote
   domain: archive.org
@@ -78910,6 +79288,51 @@ candidates:
   - doc_id: 221912f9
     context: Nufarm, “Annual report 2024”, p. 22, https://cdn.nufarm.com/wp-content/uploads/2020/11/13080313/
     page: 19
+- url: https://ceipaz.org/entrevista-a-manuela-mesa-la-paz-se-construye-antes-de-que-aparezca-la-violencia-publicado-por-red-2030/
+  type: rss
+  found_from:
+  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
+    context: 'Entrevista a Manuela Mesa: «La paz se construye antes de que aparezca la violencia» publicado por Red 2030 —
+      En un contexto internacional marcado por guerras, aumento del gasto militar y nuevas tensiones geopolíticas, hablar
+      de paz implica mirar más allá de la ausencia de violencia. Manuela Mesa, pe'
+    timestamp: '2026-10-11T09:47:14'
+  seen_count: 1
+  domain: ceipaz.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'Entrevista a Manuela Mesa: «La paz se construye antes de que aparezca la violencia» publicado por Red 2030'
+  suggested_action: follow_one_time
+- url: https://ceipaz.org/informes-de-estudio-de-caso-sobre-la-implementacion-del-triple-nexo-con-perspectiva-de-genero/
+  type: rss
+  found_from:
+  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
+    context: Informes de estudio de caso sobre la implementación del triple nexo con perspectiva de género — Conoce la colección
+      de informes de estudio de caso sobre Etiopía, Níger, Malí, Siria y Guatemala, elaborados en el marco del proyecto&#160;La
+      Agenda de Mujeres, Paz y Seguridad en la implementación del tr
+    timestamp: '2026-10-11T09:47:14'
+  seen_count: 1
+  domain: ceipaz.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: Informes de estudio de caso sobre la implementación del triple nexo con perspectiva de género
+  suggested_action: follow_one_time
+- url: https://ceipaz.org/jornadas-estrategia-de-educacion-para-el-desarrollo-sostenible-y-la-ciudadania-global/
+  type: rss
+  found_from:
+  - source: 'RSS feed: CEIPAZ (Cultura de Paz) — RSS'
+    context: 'Jornadas: Estrategia de Educación para el Desarrollo Sostenible y la Ciudadanía Global — El miércoles 7 de octubre
+      se inició el proceso para la elaboración del Borrador 0 de la Estrategia de Educación para el Desarrollo Sostenible
+      y la Ciudadanía Global de la Cooperación Española. Se celebró una Jor'
+    timestamp: '2026-10-11T09:47:14'
+  seen_count: 1
+  domain: ceipaz.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'Jornadas: Estrategia de Educación para el Desarrollo Sostenible y la Ciudadanía Global'
+  suggested_action: follow_one_time
 - url: https://cgt.es/90-anos-cgt-conmemora-la-revolucion-social-de-1936/
   type: rss
   found_from:
@@ -88751,6 +89174,18 @@ candidates:
     year: 2012
     doi: 10.1017/cbo9781139206709.007
   suggested_action: follow_one_time
+- url: https://living-future.org/wp-content/uploads/2017/08/2020-CID-Healthy-Community-Action-P
+  type: footnote
+  domain: living-future.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: https://living-future.org/wp-content/uploads/2017/08/2020-CID-Healthy-Community-Action-P
+    page: 92
 - url: https://lumieresdelaville.net/une-piste-velo-bus-a-barcelone/
   type: footnote
   domain: lumieresdelaville.net
@@ -91449,6 +91884,18 @@ candidates:
   - doc_id: 0c65d825_Co-dalej-z-WPR_WEB_2025.06.10
     context: https://pl.boell.org/pl/2025/05/21/co-dalej-z-wpr
     page: 6
+- url: https://planning.org/research/publichealth/
+  type: footnote
+  domain: planning.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: https://planning.org/research/publichealth/
+    page: 88
 - url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13395571/
   type: semantic_scholar
   found_from:
@@ -91674,6 +92121,18 @@ candidates:
   - doc_id: c6e0e14d
     context: https://prospera-inwf.org/resource/seeds-for-harvest/
     page: 61
+- url: https://prosperportland.us/wp-content/uploads/2016/07/Old-Town-Chinatown-Development-Pl
+  type: footnote
+  domain: prosperportland.us
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: https://prosperportland.us/wp-content/uploads/2016/07/Old-Town-Chinatown-Development-Pl
+    page: 92
 - url: https://protocol.ua/ua/naukoviy_visnovok_shchodo_zastosuvannya_norm_
   type: footnote
   domain: protocol.ua
@@ -92251,6 +92710,21 @@ candidates:
   metadata:
     title: '21 °C à la surface des océans : un record absolu pour la saison'
   suggested_action: follow_one_time
+- url: https://reporterre.net/249-loups-pourront-etre-tues-cette-annee-le-gouvernement-augmente-encore-le-seuil
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '249 loups pourront être tués cette année : le gouvernement augmente, encore, le seuil — Annie Genevard fragilise
+      encore un peu plus la préservation des loups en France. Passée du statut d''espèce « strictement protégée » à « protégée
+      », l''animal, qui peut être visé par des éleveurs équipés de lunette'
+    timestamp: '2026-10-11T09:45:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: '249 loups pourront être tués cette année : le gouvernement augmente, encore, le seuil'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/250-luttes-ecolos-victorieuses-oui-parfois-on-gagne
   type: rss
   found_from:
@@ -92325,6 +92799,21 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: 53 °C sous la verrière de l'école... et des rénovations aux abonnés absents
+  suggested_action: follow_one_time
+- url: https://reporterre.net/66-des-nappes-phreatiques-sont-dans-une-situation-tres-preoccupante
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 66 % des nappes phréatiques sont dans une situation « très préoccupante » — Le manque de pluie conjugué à des
+      chaleurs caniculaires a provoqué une situation « très dégradée » des nappes phréatiques en France, a indiqué le 8 octobre
+      le Bureau de recherches géologiques et minières ( BRGM ), le service
+    timestamp: '2026-10-11T09:45:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 66 % des nappes phréatiques sont dans une situation « très préoccupante »
   suggested_action: follow_one_time
 - url: https://reporterre.net/78-des-rivieres-mondiales-perdent-de-l-oxygene
   type: rss
@@ -92731,21 +93220,6 @@ candidates:
   metadata:
     title: '« Ce qu''on veut, c''est aider » : des habitants achètent des terres qu''ils louent à des paysans bio'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Ces-artistes-et-scientifiques-naviguent-depuis-un-an-au-chevet-des-fleuves-en-ruines
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Ces artistes et scientifiques naviguent depuis un an au chevet des « fleuves en ruines » — Relier l'estuaire
-      de la Loire au delta du Danube, tel est l'objectif du BatoLabo. À bord de ce laboratoire flottant, l'équipage témoigne
-      de l'état de santé déplorable des fleuves européens, soumis au stress cl
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: Ces artistes et scientifiques naviguent depuis un an au chevet des « fleuves en ruines »
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Chlordecone-500-parties-civiles-se-pourvoient-en-cassation
   type: rss
   found_from:
@@ -92881,21 +93355,6 @@ candidates:
   metadata:
     title: 'Data centers : la consommation d''électricité pourrait doubler en 5 ans'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Dejeuner-au-Senat-cocktail-a-Roland-Garros-Le-lobby-de-l-emballage-murmure-a-l-oreille
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Pourquoi n'arrive-t-on pas à réduire les emballages ? Réponse du côté des lobbies — Petit-déjeuner près de l'Assemblée,
-      déjeuner au Sénat, cocktail à Roland-Garros… Les industriels du secteur de l'emballage mettent les moyens pour se rapprocher
-      de députés et sénateurs, notamment à la fibre écolo, et
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: Pourquoi n'arrive-t-on pas à réduire les emballages ? Réponse du côté des lobbies
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Des-data-centers-dans-l-espace-la-promesse-intenable-d-Elon-Musk-et-Jeff-Bezos
   type: rss
   found_from:
@@ -93000,21 +93459,6 @@ candidates:
   last_seen: '2026-07-02'
   metadata:
     title: 'Sainte-Soline : la cour d''appel confirme les condamnations de quatre organisateurs'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/En-etat-de-siege-permanent-les-ravages-du-mur-anti-migrants-de-Trump-au-Texas
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« En état de siège permanent » : les ravages du mur anti-migrants de Trump au Texas — Bouées géantes, nouveaux
-      tronçons du mur, caméras et présence policière continue : au Texas, dans la vallée du Rio Grande, frontalière avec le
-      Mexique, les habitants décrivent leurs craintes face à la militarisatio'
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: '« En état de siège permanent » : les ravages du mur anti-migrants de Trump au Texas'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Enfants-maries-grossesses-non-desirees-Les-catastrophes-climatiques-ont-des-consequences
   type: rss
@@ -93136,21 +93580,6 @@ candidates:
   metadata:
     title: '« Je craque » : le désarroi des soignants face à l''afflux d''animaux sonnés par la chaleur'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Journaliste-j-ai-ete-blessee-par-une-grenade-L-Etat-a-enfin-ete-reconnu-coupable
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Violences policières contre les journalistes : « J''ai gagné mon procès contre l''État » — Marie Astier, journaliste
-      de Reporterre blessée par une grenade des gendarmes à Notre-Dame-des-Landes, en 2018, a gagné son procès contre l''État.
-      Une petite victoire, alors que « le combat pour les droits d''info'
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: 'Violences policières contre les journalistes : « J''ai gagné mon procès contre l''État »'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Jusqu-a-46-oC-ressentis-la-Coupe-du-monde-en-alerte-canicule
   type: rss
   found_from:
@@ -93196,6 +93625,21 @@ candidates:
   metadata:
     title: 'L''IA pour accélérer la course au pétrole : TotalEnergies et Mistral AI signent un accord à 100 millions'
   suggested_action: follow_one_time
+- url: https://reporterre.net/L-ecologie-contre-attaque-Reporterre-lance-sa-grande-tournee
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'L''écologie contre-attaque : Reporterre lance sa grande tournée — En amont de la présidentielle, Reporterre
+      organise une série de rencontres en France pour mettre, enfin, l''écologie au centre. Parce que l''urgence climatique
+      est plus forte que jamais. Et parce que l''extrême droite se trouve aux portes'
+    timestamp: '2026-10-11T09:45:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'L''écologie contre-attaque : Reporterre lance sa grande tournée'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/L-extreme-droite-francaise-participe-a-un-sommet-antiwoke-et-anticlimat-a-Londres
   type: rss
   found_from:
@@ -93240,21 +93684,6 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: La Coordination rurale appelle à désobéir aux interdictions d'arroser en pleine sécheresse
-  suggested_action: follow_one_time
-- url: https://reporterre.net/La-Cour-des-comptes-alerte-sur-le-financement-insuffisant-de-la-transition-ecologique
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: La Cour des comptes alerte sur le financement insuffisant de la transition écologique — La France va devoir donner
-      un coup d'accélérateur pour tenir ses objectifs écologiques, alerte la Cour des comptes dans son rapport annuel sur
-      la transition écologique, présenté le 7 octobre. Selon ses calculs, 1
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: La Cour des comptes alerte sur le financement insuffisant de la transition écologique
   suggested_action: follow_one_time
 - url: https://reporterre.net/La-Mediterranee-se-rechauffe-2-a-3-fois-plus-vite-que-la-moyenne-des-oceans
   type: rss
@@ -93346,21 +93775,6 @@ candidates:
   metadata:
     title: La droite tente de parler d'écologie (et c'est un fiasco)
   suggested_action: follow_one_time
-- url: https://reporterre.net/La-foret-francaise-grandit-mais-va-de-plus-en-plus-mal
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'La forêt française grandit mais va de plus en plus mal — Ça peut paraitre paradoxal : la forêt française va
-      de plus en plus mal même si elle continue de s''étendre. Tel est le bilan de l''Institut géographique national ( IGN
-      ) dans son inventaire forestier publié mercredi 7 octobre. Les forêts couvren'
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: La forêt française grandit mais va de plus en plus mal
-  suggested_action: follow_one_time
 - url: https://reporterre.net/La-loi-d-urgence-agricole-ignore-la-realite-climatique
   type: rss
   found_from:
@@ -93391,20 +93805,20 @@ candidates:
   metadata:
     title: La loi d'urgence agricole veut donner carte blanche aux élevages intensifs
   suggested_action: follow_one_time
-- url: https://reporterre.net/Le-Conseil-d-Etat-ordonne-au-gouvernement-d-interdire-la-publicite-pour-les-energies-fossiles
+- url: https://reporterre.net/La-voiture-partagee-entre-voisins-une-solution-au-desert-des-transports-en-zone-rurale
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: Le Conseil d'État ordonne au gouvernement d'interdire la publicité pour les énergies fossiles — Cinq ans plus
-      tard, le gouvernement a été sommé d'enfin agir. Dans une décision publiée le 2 octobre, le Conseil d'État a ordonné
-      au Premier ministre Sébastien Lecornu de publier sous six mois le décret p
-    timestamp: '2026-10-09T10:05:47'
+    context: 'La voiture partagée entre voisins, une solution au désert des transports en zone rurale — Et si, au lieu d''acheter
+      sa propre voiture, on en partageait une entre voisins ? Dans l''Yonne, certains l''ont fait : la dénommée Ginette est
+      électrique et appartient à une association. Une expérience qui roule '
+    timestamp: '2026-10-11T09:45:32'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
   metadata:
-    title: Le Conseil d'État ordonne au gouvernement d'interdire la publicité pour les énergies fossiles
+    title: La voiture partagée entre voisins, une solution au désert des transports en zone rurale
   suggested_action: follow_one_time
 - url: https://reporterre.net/Le-cap-Ferret-evacue-des-milliers-d-hectares-en-fumee-l-incendie-de-Gironde-rappelle-le
   type: rss
@@ -93435,6 +93849,21 @@ candidates:
   last_seen: '2026-09-29'
   metadata:
     title: '« Je suis arrivée au bout des gestes individuels » : les marches pour le climat relancent le rapport de force'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Le-metro-ou-les-arbres-a-Paris-le-prolongement-de-la-ligne-1-seme-la-discorde
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Le métro ou les arbres : à Paris, le prolongement de la ligne 1 sème la discorde — La prolongation prévue de
+      la ligne 1 du métro parisien, qui doit rejoindre des quartiers mal desservis, passe par le bois de Vincennes. Des collectifs
+      s''opposent aux travaux au nom de la défense des arbres qui risquen'
+    timestamp: '2026-10-11T09:45:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'Le métro ou les arbres : à Paris, le prolongement de la ligne 1 sème la discorde'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Le-retour-du-debat-autour-de-la-consigne-pour-les-bouteilles-plastiques
   type: rss
@@ -93542,21 +93971,6 @@ candidates:
   metadata:
     title: Les forêts françaises stockent moins de CO2 à cause de mauvais choix politiques
   suggested_action: follow_one_time
-- url: https://reporterre.net/Les-lyceens-violentes-un-bras-d-honneur-a-l-avenir-et-au-vivant
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Les lycéens violentés, un bras d'honneur à l'avenir et au vivant — Cette jeunesse violentée, méprisée et réduite
-      au silence est révélatrice de la logique macroniste qui ne privilégie que les intérêts de quelques-uns. Cette brutalité
-      émane « d'un régime autoritaire aux abois », écrit Vincent Lucchese
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: Les lycéens violentés, un bras d'honneur à l'avenir et au vivant
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Les-precurseuses-de-l-ecologie-Rosa-Luxemburg-icone-revolutionnaire-et-naturaliste
   type: rss
   found_from:
@@ -93572,21 +93986,6 @@ candidates:
   metadata:
     title: 'Les précurseuses de l''écologie : Rosa Luxemburg, icône révolutionnaire et naturaliste passionnée'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Lobby-du-plastique-2-5-millions-d-euros-par-an-pour-continuer-de-polluer
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Comment le lobby du plastique fait sa loi au Parlement — Les industriels ont consacré 2,5 millions d'euros pour
-      inciter les pouvoirs publics à abandonner des textes visant à réduire la pollution, notamment plastique, selon un rapport
-      inédit de Zero Waste France. Reporterre y a eu accès en amont et a
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: Comment le lobby du plastique fait sa loi au Parlement
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Loi-d-urgence-agricole-Ecolos-et-Insoumis-saisissent-le-Conseil-Constitutionnel
   type: rss
   found_from:
@@ -93601,6 +94000,21 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: Le retour de l'acétamipride à nouveau contesté devant le Conseil Constitutionnel
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Lyceens-Les-lance-grenades-ne-feront-pas-taire-les-lanceurs-d-alerte
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Lycéens : « Les lance-grenades ne feront pas taire les lanceurs d''alerte » — Alors que le climat s''emballe,
+      « le mouvement lycéen surgit, comme si la terre avait raconté ses brûlures à la jeunesse, et que les rivières, les montagnes
+      et les orages manifestaient avec elle dans les rues », écrit Mathie'
+    timestamp: '2026-10-11T09:45:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'Lycéens : « Les lance-grenades ne feront pas taire les lanceurs d''alerte »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Marche-pour-le-climat-a-Bordeaux-l-incendie-dans-toutes-les-tetes
   type: rss
@@ -93647,21 +94061,6 @@ candidates:
   metadata:
     title: Menacé d'extinction, ce poisson fantôme a été observé en Normandie
   suggested_action: follow_one_time
-- url: https://reporterre.net/Mercure-la-pollution-pourrait-s-aggraver-a-cause-du-changement-climatique
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Mercure : la pollution pourrait s''aggraver à cause du changement climatique — La pollution au mercure est dangereuse
-      pour la santé des humains et des écosystèmes car cet élément s''accumule dans l''organisme. Nous vivons, pour cette
-      raison, dans un monde où il est déconseillé de manger des poissons pr'
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: 'Mercure : la pollution pourrait s''aggraver à cause du changement climatique'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Meteo-France-annonce-un-nouvel-episode-de-chaleur-a-partir-de-ce-weekend-Meteo-France-Sur
   type: rss
   found_from:
@@ -93691,21 +94090,6 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: 'Morts de la canicule : « Le gros du problème, c''est le logement »'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Mouvement-lyceen-Une-generation-marquee-au-fer-rouge-par-la-violence-d-Etat
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Cette génération est marquée au fer rouge par la violence d''État » — Les jeunes mobilisés ont « toujours
-      été un laboratoire des violences policières », analyse Pierre Douillard-Lefèvre, qui a lui-même perdu un œil à cause
-      d''un tir de LBD à 16 ans. Selon le chercheur, une « politique néofasciste » '
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: « Cette génération est marquée au fer rouge par la violence d'État »
   suggested_action: follow_one_time
 - url: https://reporterre.net/Nassima-maraichere-bio-et-queer-Le-principal-c-est-qu-on-se-sente-a-notre-place-en-campagne
   type: rss
@@ -93737,6 +94121,21 @@ candidates:
   metadata:
     title: '« Notre peur, c''est qu''il y ait des morts » : des saisonniers survivent dans des bidonvilles en surchauffe'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Nourrir-les-poissons-d-elevage-a-base-d-insectes-ou-de-soja-l-idee-miraculeuse-qui
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Nourrir les poissons d''élevage à base d''insectes ou de soja : l''idée miraculeuse qui s''est effondrée — Pour
+      en finir avec la farine de poissons sauvages, l''aquaculture mise sur celles à base de soja et d''insectes pour nourrir
+      ses poissons d''élevage. Elles sont loin d''être l''alternative miraculeuse q'
+    timestamp: '2026-10-11T09:45:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'Nourrir les poissons d''élevage à base d''insectes ou de soja : l''idée miraculeuse qui s''est effondrée'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/On-a-une-responsabilite-quand-on-ecrit-des-chansons-une-apres-midi-avec-Emily-Loizeau
   type: rss
   found_from:
@@ -93767,6 +94166,52 @@ candidates:
   metadata:
     title: Pour 64 000 Français, l'automne a débuté sans eau potable au robinet
   suggested_action: follow_one_time
+- url: https://reporterre.net/On-lance-une-guerilla-opposes-aux-panneaux-solaires-en-foret-ils-finissent-vires-du
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« On lance une guérilla » : opposés aux panneaux solaires en forêt, ils finissent virés du conseil municipal
+      — À Oraison, dans les Alpes-de-Haute-Provence, deux conseils municipaux ont été chahutés coup sur coup par des opposants
+      à un projet photovoltaïque en forêt. Face à la multiplication des proj'
+    timestamp: '2026-10-11T09:45:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: '« On lance une guérilla » : opposés aux panneaux solaires en forêt, ils finissent virés du conseil municipal'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/On-ne-veut-pas-devenir-les-pions-de-Total-des-etudiants-bloquent-leur-campus-pour
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« On ne veut pas devenir les pions de Total » : des étudiants bloquent leur campus pour dénoncer le partenariat
+      avec la multinationale — À Montpellier, des étudiants occupent leur campus depuis le 6 octobre pour réclamer notamment
+      l''abrogation du partenariat noué avec TotalEnergies dans le cadre d''u'
+    timestamp: '2026-10-11T09:45:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: '« On ne veut pas devenir les pions de Total » : des étudiants bloquent leur campus pour dénoncer le partenariat
+      avec la multinationale'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/On-soutient-les-agriculteurs-en-cas-de-difficultes-les-Amap-un-modele-de-resilience-face
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« On soutient les agriculteurs en cas de difficultés » : les Amap, un modèle de résilience face au chaos climatique
+      — Depuis plus de vingt ans, les Associations pour le maintien d''une agriculture paysanne mettent en lien direct des
+      consommateurs et des producteurs. Une façon efficace de sécuriser le'
+    timestamp: '2026-10-11T09:45:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: '« On soutient les agriculteurs en cas de difficultés » : les Amap, un modèle de résilience face au chaos climatique'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/On-va-rester-aussi-longtemps-que-possible-des-ecureuils-tentent-de-bloquer-l-A412
   type: rss
   found_from:
@@ -93782,21 +94227,6 @@ candidates:
   metadata:
     title: Pour freiner l'avancée des abatteuses, ils occupent des chênes centenaires sur le tracé de l'A412
   suggested_action: follow_one_time
-- url: https://reporterre.net/On-veut-traumatiser-toute-une-generation-Mais-ca-ne-marchera-pas
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: « Les lycéens ne veulent pas d'un monde sexiste, de guerres, de génocides, d'extrême droite, d'une éducation
-      bradée » — Professeure en Seine-Saint-Denis et militante antiraciste, Manel Ben Boubaker soutient les lycéens mobilisés
-      depuis le début. Elle décrit des lycées passoires thermiques, une répre
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: « Les lycéens ne veulent pas d'un monde sexiste, de guerres, de génocides, d'extrême droite, d'une éducation bradée »
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Oublies-par-leur-bailleur-ils-installent-des-stores-faits-maison-contre-la-canicule
   type: rss
   found_from:
@@ -93811,6 +94241,21 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: Oubliés par leur bailleur, ils installent des stores faits maison contre la canicule
+  suggested_action: follow_one_time
+- url: https://reporterre.net/PFAS-Tefal-mis-en-demeure-par-trois-associations
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'PFAS : Tefal mis en demeure par trois associations — Trois associations (Générations futures, Notre affaire
+      à tous et ClientEarth) ont envoyé le 8 octobre un courrier au groupe SEB , le mettant en demeure d''identifier les risques
+      liés à l''utilisation de substances PFAS dans ses productions et de pla'
+    timestamp: '2026-10-11T09:45:32'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  metadata:
+    title: 'PFAS : Tefal mis en demeure par trois associations'
   suggested_action: follow_one_time
 - url: https://reporterre.net/PFAS-l-Europe-baisse-drastiquement-le-seuil-tolerable-d-exposition-aux-TFA
   type: rss
@@ -93842,21 +94287,6 @@ candidates:
   metadata:
     title: 'Partir seule, tracer sa route : ces livres féministes pour passer à l''acte'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Pas-de-capitalisme-pas-de-travail-salarie-bienvenue-dans-la-Cooperation-integrale
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Pas de capitalisme, pas de travail salarié : bienvenue dans la Coopération intégrale — Un lieu où vivre en dehors
-      du capitalisme : telle est l''idée du projet autogéré et politique de la Coopération intégrale du Haut-Berry. Pain,
-      maraîchage, garde d''enfants... Ici, tout le monde s''y met, mais « chacu'
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: 'Pas de capitalisme, pas de travail salarié : bienvenue dans la Coopération intégrale'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Percee-du-RN-arrivee-de-LFI-Les-elections-senatoriales-donnent-le-ton-pour-2027
   type: rss
   found_from:
@@ -93887,21 +94317,6 @@ candidates:
   metadata:
     title: 'Perquisitions, millions d''euros demandés : un promoteur immobilier fait pression sur des associations écologistes'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Pesticides-a-vie-la-carte-des-mobilisations-en-France-les-10-et-11-octobre
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Pesticides à vie » : la carte des mobilisations en France les 10 et 11 octobre — Ce serait un recul historique.
-      Le Parlement européen s''apprête à voter un texte qui affaiblirait considérablement l''encadrement des pesticides en
-      France et en Europe. Avec ce règlement Omnibus, les produits toxiques p'
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: '« Pesticides à vie » : la carte des mobilisations en France les 10 et 11 octobre'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Pesticides-l-Etat-fait-fi-de-sa-condamnation-des-associations-contre-attaquent
   type: rss
   found_from:
@@ -93917,20 +94332,20 @@ candidates:
   metadata:
     title: 'Pesticides : l''État fait fi de sa condamnation, des associations contre-attaquent'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Pesticides-les-demandes-des-lobbies-reprises-telles-quelles-dans-le-reglement-Omnibus
+- url: https://reporterre.net/Petite-electrique-et-pas-chere-salaries-de-l-automobile-et-ecolos-imaginent-la-voiture-de
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Pesticides : les demandes des lobbies reprises telles quelles dans le règlement Omnibus — Des copier-coller
-      des demandes de l''industrie chimique et des producteurs d''engrais pour assouplir la règlementation protectrice de
-      l''environnement... C''est ainsi qu''a été rédigé le véhicule législatif européen'
-    timestamp: '2026-10-09T10:05:47'
+    context: 'Petite, électrique et pas chère : salariés de l''automobile et écolos imaginent la voiture de demain — Un collectif
+      d'' ONG et de syndicats appelle à refonder la politique automobile de la France. Ils défendent la construction en Europe
+      de véhicules électriques de petite taille, donc plus abordables e'
+    timestamp: '2026-10-11T09:45:32'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
   metadata:
-    title: 'Pesticides : les demandes des lobbies reprises telles quelles dans le règlement Omnibus'
+    title: 'Petite, électrique et pas chère : salariés de l''automobile et écolos imaginent la voiture de demain'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Pollution-de-l-eau-quand-detruire-coute-moins-cher-que-respecter-les-regles
   type: rss
@@ -93961,21 +94376,6 @@ candidates:
   last_seen: '2026-05-24'
   metadata:
     title: Pour extraire son sable, Lafarge dévore les méandres de la Seine
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Pour-la-premiere-fois-depuis-1945-l-extreme-droite-allemande-obtient-la-presidence-d-un
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Pour la première fois depuis 1945, l'extrême droite allemande obtient la présidence d'un parlement régional —
-      Un mois après avoir triomphé lors des élections du Land de Saxe-Anhalt, le parti d'extrême droite Alternative pour l'Allemagne
-      (AfD) a décroché, mardi 6 octobre, la présidence du Parlement r
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: Pour la première fois depuis 1945, l'extrême droite allemande obtient la présidence d'un parlement régional
   suggested_action: follow_one_time
 - url: https://reporterre.net/Prenons-soin-de-notre-montagne-disons-non-a-son-artificialisation
   type: rss
@@ -94021,21 +94421,6 @@ candidates:
   last_seen: '2026-09-25'
   metadata:
     title: Pro-A69, pesticides et mégabassines… Ces sénateurs en pointe contre l'écologie
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Quand-ils-vivent-pres-des-villes-les-poissons-changent-de-profil-genetique
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Quand ils vivent près des villes, les poissons... changent de profil génétique — Au large des villes, les poissons
-      réagissent aux nombreux stress liés aux activités humaines. Une étude montre que l'activité des gènes d'une espèce de
-      poisson corallien change en fonction du niveau d'urbanisation des l
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: Quand ils vivent près des villes, les poissons... changent de profil génétique
   suggested_action: follow_one_time
 - url: https://reporterre.net/Quand-la-marche-nourrit-guerit-et-emancipe
   type: rss
@@ -94096,21 +94481,6 @@ candidates:
   last_seen: '2026-09-25'
   metadata:
     title: '« S''il faut passer par le procès, tant pis » : la répression judiciaire s''intensifie contre Greenpeace France'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Sainte-Soline-le-ministere-de-l-Ecologie-donne-un-accord-crucial-pour-remplir-la
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Sainte-Soline : le ministère de l''Écologie donne un accord crucial pour remplir la mégabassine — Le ministère
-      de la Transition écologique a validé la demande de dérogation sur les espèces protégées pour la mégabassine de Sainte-Soline.
-      Contre l''avis d''un collège scientifique, elle pourrait être remp'
-    timestamp: '2026-10-09T10:05:47'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-10-09'
-  last_seen: '2026-10-09'
-  metadata:
-    title: 'Sainte-Soline : le ministère de l''Écologie donne un accord crucial pour remplir la mégabassine'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Sans-le-changement-climatique-la-canicule-aurait-ete-plus-fraiche-de-2-4-oC-a-Paris
   type: rss
@@ -96533,6 +96903,18 @@ candidates:
   - doc_id: 103c01d7
     context: https://salle5grenoble.wordpress.com/wp-con-
     page: 49
+- url: https://sampan.org/​
+  type: footnote
+  domain: sampan.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: 'Sampan. (2018). Retrieved from: ​ ​https://sampan.org/​.'
+    page: 89
 - url: https://sansnom.noblogs.org/archives/4812
   type: footnote
   domain: sansnom.noblogs.org
@@ -97542,6 +97924,18 @@ candidates:
   - doc_id: 4a4143db
     context: sur https://vacarme.org/
     page: 38
+- url: https://vancouver.ca/files/cov/chinatown-neighbourhood-plan.pdf​
+  type: footnote
+  domain: vancouver.ca
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: Strategy​. Retrieved from ​https://vancouver.ca/files/cov/chinatown-neighbourhood-plan.pdf​.
+    page: 91
 - url: https://veja.abril.com.br/blog/radar/tcu-manda-banco-do-brasil-suspender-publicidade-
   type: footnote
   domain: veja.abril.com.br
@@ -98886,6 +99280,18 @@ candidates:
   - doc_id: Tierra.org (Amigos de la Tierra ES)
     context: Alianza Residuo Cero
     page: null
+- url: https://www.apha.org/-/media/files/pdf/topics/climate/climate_health_equity.ashx?la=en
+  type: footnote
+  domain: www.apha.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: from:​https://www.apha.org/-/media/files/pdf/topics/climate/climate_health_equity.ashx?la=en
+    page: 87
 - url: https://www.archives-nationales.culture.gouv.fr/actualites/interview-de-remy-gerbet-directeur-de-wikimedia-france
   type: mastodon
   found_from:
@@ -99210,6 +99616,18 @@ candidates:
   - doc_id: 103c01d7
     context: https://www.bondyblog.fr/opinions/tribune/non-a-la-loi-islamo-
     page: 48
+- url: https://www.boston.gov/sites/default/files/hud_income_rents_10-5-18_181015.pdf​
+  type: footnote
+  domain: www.boston.gov
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: https://www.boston.gov/sites/default/files/hud_income_rents_10-5-18_181015.pdf​.
+    page: 87
 - url: https://www.bracell.com/noticias/bracell-amplia-producao-de-celulose-soluvel-em-sao-
   type: footnote
   domain: www.bracell.com
@@ -103713,6 +104131,18 @@ candidates:
   - doc_id: a49359eb
     context: ople. (2022, March 22). NBC News. https://www.nbcnews.com/nbc-out/out-politi-
     page: 64
+- url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4419447/​
+  type: footnote
+  domain: www.ncbi.nlm.nih.gov
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4419447/​.
+    page: 88
 - url: https://www.nisgua.org/investor_alert_tahoe_8may13.pdf
   type: footnote
   domain: www.nisgua.org
@@ -104892,6 +105322,18 @@ candidates:
   - doc_id: 103c01d7
     context: https://www.radiofrance.fr/franceinter/maison-squattee-en-es-
     page: 50
+- url: https://www.raleighnc.gov/cp
+  type: footnote
+  domain: www.raleighnc.gov
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: Retrieved from​ ​https://www.raleighnc.gov/cp
+    page: 91
 - url: https://www.regione.vda.it/amministrazione/leggi/bollettino_ufficiale_new/archive/2022/43-
   type: footnote
   domain: www.regione.vda.it
@@ -105950,6 +106392,30 @@ candidates:
   - doc_id: 39a2aeaa_Informe_actividades_clacso_2021
     context: https://www.trilceradio.com.ar/
     page: 53
+- url: https://www.tuftsmedicalcenter.org/-/media/Brochures/TuftsMC/About%20Us/2016%20Tufts
+  type: footnote
+  domain: www.tuftsmedicalcenter.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: https://www.tuftsmedicalcenter.org/-/media/Brochures/TuftsMC/About%20Us/2016%20Tufts
+    page: 89
+- url: https://www.tuftsmedicalcenter.org/About-Us/Community-Partners-Programs/Asian-Health-In
+  type: footnote
+  domain: www.tuftsmedicalcenter.org
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: https://www.tuftsmedicalcenter.org/About-Us/Community-Partners-Programs/Asian-Health-In
+    page: 89
 - url: https://www.uccs.mx/article.php?story=maiz-sustentable-para-
   type: footnote
   domain: www.uccs.mx
@@ -106660,6 +107126,18 @@ candidates:
   - doc_id: 8d926694_Petic_CC_A7a_CC_83o-de-impeachment-popular-contra-Bolsonaro-com-nomes-
     context: 38https://www1.folha.uol.com.br/poder/2020/03/governo-bolsonaro-admite-a-estados-nao-ter-estudo-que-embase-
     page: 21
+- url: https://www1.nyc.gov/assets/planning/download/pdf/plans-studies/flushing-west/flushing-histo
+  type: footnote
+  domain: www1.nyc.gov
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: https://www1.nyc.gov/assets/planning/download/pdf/plans-studies/flushing-west/flushing-histo
+    page: 91
 - url: https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/cdhm/noticias/201cmeu-
   type: footnote
   domain: www2.camara.leg.br
@@ -106745,6 +107223,18 @@ candidates:
     year: 2022
     doi: 10.5281/zenodo.6551423
   suggested_action: follow_one_time
+- url: https://​www.hud.gov/program_offices/housing/mfh/presrv/presmfh/section236_preserv
+  type: footnote
+  domain: ​www.hud.gov
+  first_seen: '2026-10-11'
+  last_seen: '2026-10-11'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c07ecfb8
+    context: https://​www.hud.gov/program_offices/housing/mfh/presrv/presmfh/section236_preserv
+    page: 89
 - url: http://www.opengrey.eu/
   type: llm_suggestion
   source_type: api
