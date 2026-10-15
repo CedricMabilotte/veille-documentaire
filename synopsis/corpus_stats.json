@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-13T10:20:35Z",
-  "total": 2109,
-  "total_docs": 2109,
+  "generated_at": "2026-10-15T08:06:36Z",
+  "total": 2103,
+  "total_docs": 2103,
   "total_downloaded": 1496,
   "total_published": 976,
   "by_lang": {
     "en": 951,
-    "fr": 418,
+    "fr": 412,
     "es": 266,
     "pt": 227,
     "inconnu": 189,
@@ -20,7 +20,7 @@
   },
   "by_language": {
     "en": 951,
-    "fr": 418,
+    "fr": 412,
     "es": 266,
     "pt": 227,
     "inconnu": 189,
@@ -56,7 +56,6 @@
     "Archive.org — commons / enclosure": 16,
     "Infokiosques.net — Anticolonialismes": 14,
     "Portal OACA — Libros anarquistas (catégorie)": 13,
-    "Infokiosques.net — nouveautés": 11,
     "Archive.org — subject:anarchism (texts)": 10,
     "Archive.org — peasant movements": 10,
     "Infokiosques.net — Écologie radicale": 10,
@@ -70,6 +69,7 @@
     "Archive.org — Cuba (ES, réforme agraire & coopératives)": 8,
     "HAL — propriété d'usage / fonds de dotation": 7,
     "Infokiosques.net — index C": 6,
+    "Infokiosques.net — nouveautés": 5,
     "CLACSO — Libros en coedición": 5,
     "Infokiosques.net — index L (Libération, Luttes)": 4,
     "Archive.org — anarchism + land/peasant (strict)": 4,
@@ -93,13 +93,13 @@
     "1990s": 9,
     "2000s": 157,
     "2010s": 511,
-    "2020s": 792,
-    "inconnu": 589
+    "2020s": 788,
+    "inconnu": 587
   },
   "by_score": {
-    "0": 483,
+    "0": 481,
     "1": 218,
-    "2": 180,
+    "2": 176,
     "3": 97,
     "4": 84,
     "5": 99,
@@ -110,24 +110,24 @@
     "10": 4
   },
   "by_doc_type": {
-    "autre": 1973,
+    "autre": 1967,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1245,
+    "militant": 1239,
     "academique": 648,
     "non_renseigne": 138,
     "institutionnel": 78
   },
   "blind_spots": [
-    "Forte dominante militante (59.0%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (58.9%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (59.0%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (58.9%) — les sources académiques et institutionnelles sont minoritaires.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "sources_list": [
@@ -279,13 +279,6 @@
       "count": 13
     },
     {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
-      "count": 11
-    },
-    {
       "label": "Archive.org — peasant movements",
       "url": "https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
       "type": "archive_org",
@@ -346,6 +339,13 @@
       "url": "https://www.clacso.org/libros-de-clacso-en-coedicion/",
       "type": "deep_html",
       "orientation": "academique",
+      "count": 5
+    },
+    {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
       "count": 5
     },
     {
