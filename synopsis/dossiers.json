@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-15T08:06:37Z",
+  "generated_at": "2026-10-17T07:54:57Z",
   "total_dossiers": 10,
   "dossiers": [
     {
       "slug": "sortir-une-terre-du-marche",
       "titre": "Sortir une terre du marché",
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-      "doc_count": 134,
+      "doc_count": 136,
       "docs": [
         "e7512d48",
         "0b22d51b",
@@ -91,6 +91,7 @@
         "91c6dc3a",
         "8c5780d2",
         "e153738e",
+        "89cbd89b",
         "28b7cb2c",
         "2175f7a3",
         "2e5629b5",
@@ -141,7 +142,8 @@
         "a66578a6",
         "bd18d74a",
         "6c062eda",
-        "a4ef416a"
+        "a4ef416a",
+        "0211887d"
       ],
       "docs_detail": [
         {
@@ -841,6 +843,14 @@
           ]
         },
         {
+          "id": "89cbd89b",
+          "title": "[2010] Land reform and Open source",
+          "score": 8,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
           "id": "28b7cb2c",
           "title": "The Cooperative Way of Housing in Canada",
           "score": 7,
@@ -1251,6 +1261,14 @@
         {
           "id": "a4ef416a",
           "title": "Étienne Le Roy. Pourquoi et comment la juridicité des communs s'est-elle imposée dans nos travaux fonciers?, Récit d'une initiation. Regards sur le foncier, n° 8, Comité technique ''Foncier & développement''/ AFD/ MEAE, 2019",
+          "score": 6,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
+          "id": "0211887d",
+          "title": "An Anarchist View of the Land Problem",
           "score": 6,
           "matched_on": [
             "propriété d'usage"
@@ -2486,7 +2504,7 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 503,
+      "doc_count": 507,
       "docs": [
         "5a9397e7",
         "8bfe460c",
@@ -2653,6 +2671,8 @@
         "1ae37e83",
         "bf8f5362",
         "71126e0c",
+        "4e21a9fa",
+        "4b864db9",
         "fac367e2",
         "9e831a55",
         "c99e6da4",
@@ -2814,6 +2834,7 @@
         "568f8778",
         "e8ee5514",
         "2b3dfe6d",
+        "8a522aaf",
         "d64f2d03",
         "2e5629b5",
         "6772ded1",
@@ -2990,7 +3011,8 @@
         "68742934",
         "7c1b5f0c",
         "439d316f",
-        "5399ce07"
+        "5399ce07",
+        "0211887d"
       ],
       "docs_detail": [
         {
@@ -4570,6 +4592,22 @@
           ]
         },
         {
+          "id": "4e21a9fa",
+          "title": "Land reform in the former Soviet Union and Eastern Europe",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "4b864db9",
+          "title": "Land reform in small island developing states : a case study on St. Vincent, West Indies, 1890-2000",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
           "id": "fac367e2",
           "title": "Ricardo Flores Magón, — Regeneración 1910",
           "score": 8,
@@ -6030,6 +6068,14 @@
           "score": 8,
           "matched_on": [
             "réforme agraire",
+            "agrarian reform"
+          ]
+        },
+        {
+          "id": "8a522aaf",
+          "title": "My share in the Stolypin agrarian reforms",
+          "score": 8,
+          "matched_on": [
             "agrarian reform"
           ]
         },
@@ -7588,6 +7634,14 @@
           "matched_on": [
             "réforme agraire"
           ]
+        },
+        {
+          "id": "0211887d",
+          "title": "An Anarchist View of the Land Problem",
+          "score": 6,
+          "matched_on": [
+            "sans-terre"
+          ]
         }
       ]
     },
@@ -7595,7 +7649,7 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 304,
+      "doc_count": 312,
       "docs": [
         "d30c223f",
         "c8210481",
@@ -7702,6 +7756,10 @@
         "13212a33",
         "0ab80c04",
         "31db543c",
+        "2b83b023",
+        "2374b965",
+        "4e21a9fa",
+        "4b864db9",
         "9e831a55",
         "2db11a52",
         "7b89d6d1",
@@ -7789,7 +7847,6 @@
         "ab3b2eb1",
         "91c6dc3a",
         "8c5780d2",
-        "e4af4a60",
         "1fbb30cf",
         "96fb51f1",
         "0f2af602",
@@ -7802,6 +7859,10 @@
         "236b68bc",
         "4a4143db",
         "7ac00ce9",
+        "3d180033",
+        "236445a9",
+        "8a522aaf",
+        "89cbd89b",
         "28b7cb2c",
         "2175f7a3",
         "2e5629b5",
@@ -7900,7 +7961,8 @@
         "f5977eb9",
         "6c062eda",
         "a4ef416a",
-        "7dee7970"
+        "7dee7970",
+        "0211887d"
       ],
       "docs_detail": [
         {
@@ -8820,6 +8882,42 @@
           ]
         },
         {
+          "id": "2b83b023",
+          "title": "The global idea of 'the commons'",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "2374b965",
+          "title": "Land or death ; the peasant struggle in Peru",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "4e21a9fa",
+          "title": "Land reform in the former Soviet Union and Eastern Europe",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "4b864db9",
+          "title": "Land reform in small island developing states : a case study on St. Vincent, West Indies, 1890-2000",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
           "id": "9e831a55",
           "title": "The Tree, The Rock, and the Morrow",
           "score": 8,
@@ -9569,15 +9667,6 @@
           ]
         },
         {
-          "id": "e4af4a60",
-          "title": "The Black Death and the Peasants' Revolt",
-          "score": 8,
-          "matched_on": [
-            "enclosure",
-            "commons"
-          ]
-        },
-        {
           "id": "1fbb30cf",
           "title": "Gelligaer and Merthyr Common : a South Wales landscape past and present",
           "score": 8,
@@ -9678,6 +9767,42 @@
           "score": 8,
           "matched_on": [
             "communs fonciers"
+          ]
+        },
+        {
+          "id": "3d180033",
+          "title": "Fanshen; a documentary of revolution in a Chinese village",
+          "score": 8,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "236445a9",
+          "title": "Economistas y reformadores españoles : la cuestión agraria, 1760-1935",
+          "score": 8,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "8a522aaf",
+          "title": "My share in the Stolypin agrarian reforms",
+          "score": 8,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "89cbd89b",
+          "title": "[2010] Land reform and Open source",
+          "score": 8,
+          "matched_on": [
+            "enclosure",
+            "commons"
           ]
         },
         {
@@ -10517,6 +10642,14 @@
           "matched_on": [
             "communs fonciers"
           ]
+        },
+        {
+          "id": "0211887d",
+          "title": "An Anarchist View of the Land Problem",
+          "score": 6,
+          "matched_on": [
+            "communs fonciers"
+          ]
         }
       ]
     },
@@ -11022,7 +11155,7 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 667,
+      "doc_count": 669,
       "docs": [
         "5a9397e7",
         "8bfe460c",
@@ -11203,6 +11336,7 @@
         "bf8f5362",
         "13212a33",
         "71126e0c",
+        "2374b965",
         "fac367e2",
         "9e831a55",
         "c99e6da4",
@@ -11414,7 +11548,6 @@
         "ab3b2eb1",
         "972292c4",
         "2b3dfe6d",
-        "e4af4a60",
         "96fb51f1",
         "f95e7324",
         "e153738e",
@@ -11423,6 +11556,8 @@
         "250ad5aa",
         "9dc7bfcd",
         "4f785d36",
+        "3d180033",
+        "89cbd89b",
         "d64f2d03",
         "581a53c8",
         "2e5629b5",
@@ -13803,6 +13938,14 @@
           ]
         },
         {
+          "id": "2374b965",
+          "title": "Land or death ; the peasant struggle in Peru",
+          "score": 9,
+          "matched_on": [
+            "peasant"
+          ]
+        },
+        {
           "id": "fac367e2",
           "title": "Ricardo Flores Magón, — Regeneración 1910",
           "score": 8,
@@ -16071,15 +16214,6 @@
           ]
         },
         {
-          "id": "e4af4a60",
-          "title": "The Black Death and the Peasants' Revolt",
-          "score": 8,
-          "matched_on": [
-            "paysan",
-            "peasant"
-          ]
-        },
-        {
           "id": "96fb51f1",
           "title": "EN_Raj Patel – Lecture Transcript",
           "score": 8,
@@ -16158,6 +16292,22 @@
             "paysannerie",
             "paysan",
             "agriculture vivrière"
+          ]
+        },
+        {
+          "id": "3d180033",
+          "title": "Fanshen; a documentary of revolution in a Chinese village",
+          "score": 8,
+          "matched_on": [
+            "paysan"
+          ]
+        },
+        {
+          "id": "89cbd89b",
+          "title": "[2010] Land reform and Open source",
+          "score": 8,
+          "matched_on": [
+            "agroecology"
           ]
         },
         {
@@ -23190,7 +23340,7 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 397,
+      "doc_count": 404,
       "docs": [
         "d30c223f",
         "5a9397e7",
@@ -23340,6 +23490,10 @@
         "bf8f5362",
         "13212a33",
         "0ab80c04",
+        "2b83b023",
+        "2374b965",
+        "4e21a9fa",
+        "4b864db9",
         "c99e6da4",
         "55db5001",
         "2db11a52",
@@ -23450,9 +23604,12 @@
         "5ad6ebc5",
         "ab3b2eb1",
         "2b3dfe6d",
-        "e4af4a60",
         "1fbb30cf",
         "96fb51f1",
+        "3d180033",
+        "236445a9",
+        "8a522aaf",
+        "89cbd89b",
         "581a53c8",
         "14f45ea3",
         "79cc5801",
@@ -24855,6 +25012,38 @@
           ]
         },
         {
+          "id": "2b83b023",
+          "title": "The global idea of 'the commons'",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "2374b965",
+          "title": "Land or death ; the peasant struggle in Peru",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "4e21a9fa",
+          "title": "Land reform in the former Soviet Union and Eastern Europe",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "4b864db9",
+          "title": "Land reform in small island developing states : a case study on St. Vincent, West Indies, 1890-2000",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
           "id": "c99e6da4",
           "title": "PAMBANSA-DEMOKRATIKONG PAARALAN",
           "score": 8,
@@ -25787,14 +25976,6 @@
           ]
         },
         {
-          "id": "e4af4a60",
-          "title": "The Black Death and the Peasants' Revolt",
-          "score": 8,
-          "matched_on": [
-            "enclosure"
-          ]
-        },
-        {
           "id": "1fbb30cf",
           "title": "Gelligaer and Merthyr Common : a South Wales landscape past and present",
           "score": 8,
@@ -25808,6 +25989,38 @@
           "score": 8,
           "matched_on": [
             "accaparement",
+            "enclosure"
+          ]
+        },
+        {
+          "id": "3d180033",
+          "title": "Fanshen; a documentary of revolution in a Chinese village",
+          "score": 8,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "236445a9",
+          "title": "Economistas y reformadores españoles : la cuestión agraria, 1760-1935",
+          "score": 8,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "8a522aaf",
+          "title": "My share in the Stolypin agrarian reforms",
+          "score": 8,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "89cbd89b",
+          "title": "[2010] Land reform and Open source",
+          "score": 8,
+          "matched_on": [
             "enclosure"
           ]
         },
