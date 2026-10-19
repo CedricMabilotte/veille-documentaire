@@ -1,0 +1,91 @@
+{
+  "titre_accroche": "Climat, justice et communs: repenser la terre au-delà de la croissance",
+  "teaser": "Pour agir face à la crise climatique, il faut d'abord rétablir les droits collectifs sur les terres. Cet article radical lie justice climatique, réaffirmation des communs et fin de la croissance extractiviste — autant de conditions pour une vraie transition.",
+  "abstract_editorial": "Comment la crise climatique, l'inégalité économique croissante et la destruction des communs sont-elles liées ? Cet article d'Ecological Economics propose une généalogie politique rarement entendue : la pauvreté écologique et climatique ne découle pas de la nature humaine, mais de l'histoire — celle du capitalisme, du colonialisme et du patriarcat. L'auteure montre que les communs (ressources partagées, gouvernance collective, droits d'usage non-marchands) ont soutenu les économies humaines pendant des millénaires. C'est leur destruction systématique — par les enclosures du 16e siècle et la colonisation — qui a simultanément asservi les femmes, dépossédé les peuples autochtones et ouvert le chemin à l'accumulation capitaliste. Aujourd'hui, l'inégalité extrême (1 % contre 82 % de la richesse) paralyse l'action climatique en dépolitisant les sociétés. L'auteure puise dans deux traditions critiques majeures : l'écofeminisme (notamment Federici) qui documente l'enlacement entre patriarchie et capitalisme, et la pensée autochtone, qui propose des systèmes sophistiqués de droits fonciers fondés sur la réciprocité écologique plutôt que la propriété privée. La solution ? La décolonisation et l'affirmation des communs, portées par les femmes et les peuples autochtones, comme conditions de gouvernance participative capable de réduire vraiment les émissions. La décroissance y figure non comme austérité imposée, mais comme réorientation vers la 'provisioning' collective — l'approvisionnement mutualisé — contre la fétichisation du PIB.",
+  "citations_phares": [
+    {
+      "page": 2,
+      "quote": "The 'first enclosure' of the commons in 16th-century Europe and its colonies was fundamental to both the establishment of capitalism and the deepening of patriarchy."
+    },
+    {
+      "page": 1,
+      "quote": "Indigenous (and also ecofeminist) praxis is grounded in activists' leadership for commoning and resistance to extraction, the fossil fuel economy, and commodified property rights."
+    },
+    {
+      "page": 2,
+      "quote": "women holding pitchforks and scythes resisted the fencing of the land or the draining of the fens when their livelihood was threatened"
+    }
+  ],
+  "categorisation": [
+    "communs",
+    "justice climatique",
+    "décroissance",
+    "décolonisation",
+    "écofeminisme",
+    "propriété foncière",
+    "économie politique",
+    "souveraineté territoriale"
+  ],
+  "slug": "climat-justice-communs-repenser-terre-croissance",
+  "en_clair": "Ce texte montre que les terres et ressources gérées collectivement (sans propriétaire privé) ont fonctionné pendant des millénaires et peuvent marcher aujourd'hui pour le climat et la justice. Il rappelle que les femmes et les peuples autochtones ont toujours résisté quand on leur a volé leurs terres — on peut s'en inspirer pour réinventer l'économie.",
+  "acteurs": [
+    "Indigenous scholars and activists",
+    "Ecofeminist theorists",
+    "climate justice activists",
+    "Degrowth movements"
+  ],
+  "controverse": "Tension entre le mouvement décroissance et l'équité : une réduction du PIB peut aggraver les inégalités pour les populations déjà marginalisées si elle n'est pas accompagnée d'une revendication explicite de justice distributive et de renouvellement des communs.",
+  "angle_journalistique": "Comment les luttes de femmes et peuples autochtones pour la terre (hier et aujourd'hui) dessinent un modèle d'économie collective capable de répondre à la crise climatique — enquête sur les expériences contemporaines d'enclosure et de résistance.",
+  "citations_verifiees": [
+    {
+      "quote": "Common-pool resources, and other types of commons, have sustained human economies throughout human history. Collective governance systems that prevent privatization and thus maintain livelihoods for entire communities are increasingly recognized.",
+      "page": 2,
+      "page_physical": null,
+      "verified": false
+    },
+    {
+      "quote": "Indigenous scholars and activists critique private property in the context of settler colonialism, describing social-political-economic systems with sophisticated forms of property rights that have maintained human societies for thousands of years.",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "The 'first enclosure' of the commons in 16th-century Europe and its colonies was fundamental to both the establishment of capitalism and the deepening of patriarchy.",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Indigenous (and also ecofeminist) praxis is grounded in activists' leadership for commoning and resistance to extraction, the fossil fuel economy, and commodified property rights.",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "women holding pitchforks and scythes resisted the fencing of the land or the draining of the fens when their livelihood was threatened",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Socio-environmental and climate justice, commoning, and decolonization are pre-conditions for participatory, responsible governance that both signals and assists the development of equitable socio-political systems.",
+      "page": 1,
+      "page_physical": 1,
+      "verified": true
+    },
+    {
+      "quote": "Ecofeminist theorists describe how the rise of capitalism and colonialism led to destruction of previously-existing commons, undermined women's rights, and produced widespread social inequity and marginalization.",
+      "page": 2,
+      "page_physical": 2,
+      "verified": true
+    },
+    {
+      "quote": "Degrowth... sometimes under-emphasizes equity and the unfair impacts of shrinking GDP on particular people and geographic areas.",
+      "page": 2,
+      "page_physical": null,
+      "verified": false
+    }
+  ],
+  "model": "claude-haiku-4-5",
+  "prompt_version": "1cd915c1c4"
+}

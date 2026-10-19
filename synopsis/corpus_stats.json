@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-17T07:54:56Z",
-  "total": 2180,
-  "total_docs": 2180,
-  "total_downloaded": 1500,
-  "total_published": 987,
+  "generated_at": "2026-10-19T08:54:32Z",
+  "total": 2192,
+  "total_docs": 2192,
+  "total_downloaded": 1505,
+  "total_published": 989,
   "by_lang": {
-    "en": 970,
-    "fr": 417,
-    "es": 266,
-    "inconnu": 240,
+    "en": 1004,
+    "fr": 414,
+    "es": 267,
     "pt": 227,
-    "de": 43,
+    "inconnu": 222,
+    "de": 41,
     "it": 7,
     "sw": 5,
     "el": 2,
@@ -19,12 +19,12 @@
     "tr": 1
   },
   "by_language": {
-    "en": 970,
-    "fr": 417,
-    "es": 266,
-    "inconnu": 240,
+    "en": 1004,
+    "fr": 414,
+    "es": 267,
     "pt": 227,
-    "de": 43,
+    "inconnu": 222,
+    "de": 41,
     "it": 7,
     "sw": 5,
     "el": 2,
@@ -39,12 +39,12 @@
     "Infokiosques.net — Paysannerie & ruralité": 121,
     "CRAS (Centre de Recherches sur les Alternatives Sociales)": 110,
     "CLACSO Libros (acceso abierto)": 99,
+    "Archive.org — féminisme et communs (Federici, accumulation primitive)": 98,
     "Archive.org — community land trusts & housing commons": 97,
-    "Archive.org — féminisme et communs (Federici, accumulation primitive)": 80,
-    "Archive.org — théorie des communs (Ostrom, CPR, collective action)": 77,
-    "The Anarchist Library — OPDS (new releases)": 75,
+    "Archive.org — théorie des communs (Ostrom, CPR, collective action)": 97,
     "discovery_promoted": 72,
-    "Archive.org — bienes comunes espagnol (15M/communs)": 37,
+    "The Anarchist Library — OPDS (new releases)": 53,
+    "Archive.org — bienes comunes espagnol (15M/communs)": 38,
     "CrimethInc — zines": 33,
     "Infokiosques.net — Squat (rapport à l'habiter)": 31,
     "HAL — paysannerie / agriculture vivrière": 27,
@@ -56,19 +56,19 @@
     "Archive.org — commons / enclosure": 16,
     "Infokiosques.net — Anticolonialismes": 14,
     "Portal OACA — Libros anarquistas (catégorie)": 13,
-    "Böll Stiftung — publications DE (deep crawl)": 11,
     "Archive.org — subject:anarchism (texts)": 10,
     "Archive.org — peasant movements": 10,
-    "Infokiosques.net — nouveautés": 10,
     "Infokiosques.net — Écologie radicale": 10,
     "International Land Coalition — latest": 10,
     "Troisièmes Voix — éditions": 10,
     "European Shepherds Network — publications": 10,
+    "Böll Stiftung — publications DE (deep crawl)": 9,
     "Infokiosques.net — index A": 8,
     "Böll Stiftung — publications DE": 8,
     "The Anarchist Library — OPDS feed": 8,
     "Archive.org — Cuba (ES, réforme agraire & coopératives)": 8,
     "HAL — propriété d'usage / fonds de dotation": 7,
+    "Infokiosques.net — nouveautés": 7,
     "Infokiosques.net — index C": 6,
     "CLACSO — Libros en coedición": 5,
     "Infokiosques.net — index L (Libération, Luttes)": 4,
@@ -88,46 +88,48 @@
     "1920s": 1,
     "1950s": 14,
     "1960s": 11,
-    "1970s": 13,
-    "1980s": 17,
+    "1970s": 12,
+    "1980s": 18,
     "1990s": 10,
-    "2000s": 158,
-    "2010s": 511,
-    "2020s": 797,
-    "inconnu": 647
+    "2000s": 159,
+    "2010s": 513,
+    "2020s": 795,
+    "inconnu": 658
   },
   "by_score": {
-    "0": 513,
-    "1": 235,
-    "2": 186,
-    "3": 104,
+    "0": 532,
+    "1": 227,
+    "2": 182,
+    "3": 107,
     "4": 86,
-    "5": 100,
+    "5": 101,
     "6": 195,
     "7": 138,
     "8": 411,
-    "9": 208,
+    "9": 209,
     "10": 4
   },
   "by_doc_type": {
-    "autre": 2044,
+    "autre": 2056,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1269,
-    "academique": 692,
+    "militant": 1245,
+    "academique": 730,
     "non_renseigne": 138,
-    "institutionnel": 81
+    "institutionnel": 79
   },
   "blind_spots": [
-    "Forte dominante militante (58.2%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (56.8%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (58.2%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (56.8%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "sources_list": [
@@ -174,6 +176,13 @@
       "count": 99
     },
     {
+      "label": "Archive.org — féminisme et communs (Federici, accumulation primitive)",
+      "url": "https://archive.org/advancedsearch.php?q=%28%22caliban+and+the+witch%22+OR+%22primitive+accumulation%22+OR+%22feminist+commons%22+OR+%22agrarian+feminism%22+OR+creator%3A%22federici%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
+      "type": "archive_org",
+      "orientation": "academique",
+      "count": 98
+    },
+    {
       "label": "Archive.org — community land trusts & housing commons",
       "url": "https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
       "type": "archive_org",
@@ -181,32 +190,25 @@
       "count": 97
     },
     {
-      "label": "Archive.org — féminisme et communs (Federici, accumulation primitive)",
-      "url": "https://archive.org/advancedsearch.php?q=%28%22caliban+and+the+witch%22+OR+%22primitive+accumulation%22+OR+%22feminist+commons%22+OR+%22agrarian+feminism%22+OR+creator%3A%22federici%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
-      "type": "archive_org",
-      "orientation": "academique",
-      "count": 80
-    },
-    {
       "label": "Archive.org — théorie des communs (Ostrom, CPR, collective action)",
       "url": "https://archive.org/advancedsearch.php?q=%28creator%3A%22ostrom%22+OR+creator%3A%22federici%22+OR+creator%3A%22bollier%22+OR+%22governing+the+commons%22+OR+%22common+pool+resource%22+OR+%22commoning%22%29+AND+mediatype%3Atexts+AND+language%3A%28eng+OR+fra%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
       "type": "archive_org",
       "orientation": "academique",
-      "count": 77
+      "count": 97
     },
     {
       "label": "The Anarchist Library — OPDS (new releases)",
       "url": "https://theanarchistlibrary.org/opds/new",
       "type": "opds",
       "orientation": "militant",
-      "count": 75
+      "count": 53
     },
     {
       "label": "Archive.org — bienes comunes espagnol (15M/communs)",
       "url": "https://archive.org/advancedsearch.php?q=%22bienes+comunes%22+language%3Aspa+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
       "type": "archive_org",
       "orientation": "militant",
-      "count": 37
+      "count": 38
     },
     {
       "label": "CrimethInc — zines",
@@ -279,13 +281,6 @@
       "count": 13
     },
     {
-      "label": "Böll Stiftung — publications DE (deep crawl)",
-      "url": "https://www.boell.de/de/publikationen",
-      "type": "deep_html",
-      "orientation": "institutionnel",
-      "count": 11
-    },
-    {
       "label": "Archive.org — peasant movements",
       "url": "https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
       "type": "archive_org",
@@ -296,13 +291,6 @@
       "label": "European Shepherds Network — publications",
       "url": "https://shepherdnet.eu/",
       "type": "deep_html",
-      "orientation": "militant",
-      "count": 10
-    },
-    {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
       "orientation": "militant",
       "count": 10
     },
@@ -328,6 +316,13 @@
       "count": 10
     },
     {
+      "label": "Böll Stiftung — publications DE (deep crawl)",
+      "url": "https://www.boell.de/de/publikationen",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 9
+    },
+    {
       "label": "Archive.org — Cuba (ES, réforme agraire & coopératives)",
       "url": "https://archive.org/advancedsearch.php?q=cuba+AND+language%3A%22spa%22+AND+%28cooperativ*+OR+campesin*+OR+agrari*+OR+%22reforma+agraria%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
       "type": "archive_org",
@@ -339,6 +334,13 @@
       "url": "https://api.archives-ouvertes.fr/search/?q=%22propri%C3%A9t%C3%A9+d%27usage%22+OR+%22fonds+de+dotation%22&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50",
       "type": "hal",
       "orientation": "academique",
+      "count": 7
+    },
+    {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
       "count": 7
     },
     {

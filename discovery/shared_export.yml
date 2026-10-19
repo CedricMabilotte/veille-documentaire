@@ -121,7 +121,7 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-10-17T08:06:04.752724+00:00'
+exported_at: '2026-10-19T09:06:43.405553+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
@@ -259,17 +259,17 @@ sources:
 - url: https://archive.org/advancedsearch.php?q=%28creator%3A%22ostrom%22+OR+creator%3A%22federici%22+OR+creator%3A%22bollier%22+OR+%22governing+the+commons%22+OR+%22common+pool+resource%22+OR+%22commoning%22%29+AND+mediatype%3Atexts+AND+language%3A%28eng+OR+fra%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — théorie des communs (Ostrom, CPR, collective action)
   type: archive_org
-  fertility: 1.0
-  runs: 3
-  docs_dl: 3
-  docs_seen: 82
+  fertility: 1.5
+  runs: 4
+  docs_dl: 6
+  docs_seen: 103
 - url: https://archive.org/advancedsearch.php?q=%28%22caliban+and+the+witch%22+OR+%22primitive+accumulation%22+OR+%22feminist+commons%22+OR+%22agrarian+feminism%22+OR+creator%3A%22federici%22%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30
   label: Archive.org — féminisme et communs (Federici, accumulation primitive)
   type: archive_org
   fertility: 1.0
-  runs: 3
-  docs_dl: 3
-  docs_seen: 88
+  runs: 4
+  docs_dl: 4
+  docs_seen: 107
 - url: https://api.archives-ouvertes.fr/search/?q=communs+fonciers&fl=title_s,uri_s,fileMain_s,language_s,authFullName_s,abstract_s&wt=json&rows=50
   label: HAL — communs fonciers
   type: hal
@@ -497,10 +497,10 @@ sources:
 - url: https://viacampesina.org/en/wp-json/wp/v2/media?mime_type=application/pdf
   label: La Vía Campesina — publications (WP REST)
   type: wp_rest
-  fertility: 274.75
-  runs: 4
-  docs_dl: 1099
-  docs_seen: 1105
+  fertility: 220.6
+  runs: 5
+  docs_dl: 1103
+  docs_seen: 1109
 - url: https://www.fian.org/wp-json/wp/v2/media?mime_type=application/pdf
   label: FIAN International — publications (WP REST)
   type: wp_rest
@@ -560,10 +560,10 @@ sources:
 - url: https://archive.org/advancedsearch.php?q=%22bienes+comunes%22+language%3Aspa+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
   label: Archive.org — bienes comunes espagnol (15M/communs)
   type: archive_org
-  fertility: 7.0
-  runs: 2
-  docs_dl: 14
-  docs_seen: 74
+  fertility: 5.0
+  runs: 3
+  docs_dl: 15
+  docs_seen: 75
 - url: https://www.minag.gob.cu/category/categoria-publicaciones/agricultura-urbana/
   label: MINAG Cuba — Agricultura Urbana (publications)
   type: deep_html
