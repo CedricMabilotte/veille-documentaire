@@ -3,9 +3,9 @@
     "Infokiosques.net — nouveautés": {
       "url": "https://infokiosques.net/",
       "domain": "infokiosques.net",
-      "last_fetch": "2026-10-21T08:18:32Z",
-      "last_fetch_attempts": 17,
-      "last_doc_count": 49,
+      "last_fetch": "2026-10-25T08:09:16Z",
+      "last_fetch_attempts": 18,
+      "last_doc_count": 47,
       "consecutive_low_yield": 0,
       "current_interval_days": 3,
       "last_status_code": 200,
@@ -322,8 +322,8 @@
     "Reporterre — RSS principal": {
       "url": "https://reporterre.net/spip.php?page=backend",
       "domain": "reporterre.net",
-      "last_fetch": "2026-10-23T08:26:14Z",
-      "last_fetch_attempts": 32,
+      "last_fetch": "2026-10-25T08:09:53Z",
+      "last_fetch_attempts": 33,
       "last_doc_count": 30,
       "consecutive_low_yield": 0,
       "current_interval_days": 1,
@@ -339,9 +339,9 @@
     "Lundi.am — RSS principal": {
       "url": "https://lundi.am/spip.php?page=backend",
       "domain": "lundi.am",
-      "last_fetch": "2026-10-23T08:26:36Z",
-      "last_fetch_attempts": 32,
-      "last_doc_count": 19,
+      "last_fetch": "2026-10-25T08:10:28Z",
+      "last_fetch_attempts": 33,
+      "last_doc_count": 10,
       "consecutive_low_yield": 0,
       "current_interval_days": 1,
       "last_status_code": 200,
@@ -1320,7 +1320,7 @@
     "infokiosques.net": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-17T07:33:06Z",
+      "robots_txt_cached_at": "2026-10-25T08:08:44Z",
       "robots_disallow": [
         "/ecrire/",
         "/lib/",
@@ -1332,7 +1332,7 @@
     "www.boell.de": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-17T07:35:16Z",
+      "robots_txt_cached_at": "2026-10-25T08:09:16Z",
       "robots_disallow": [
         "/core/",
         "/profiles/",
@@ -1379,7 +1379,7 @@
     "libcom.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-17T07:37:53Z",
+      "robots_txt_cached_at": "2026-10-25T08:09:18Z",
       "robots_disallow": [
         "/core/",
         "/profiles/",
@@ -1419,14 +1419,14 @@
     "crimethinc.com": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-17T07:37:53Z",
+      "robots_txt_cached_at": "2026-10-25T08:09:18Z",
       "robots_disallow": [],
       "robots_crawl_delay": null
     },
     "cras31.info": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-17T07:38:14Z",
+      "robots_txt_cached_at": "2026-10-25T08:09:18Z",
       "robots_disallow": [
         "/ecrire/",
         "/lib/",
@@ -1437,7 +1437,7 @@
     "theanarchistlibrary.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-17T07:38:49Z",
+      "robots_txt_cached_at": "2026-10-25T08:09:19Z",
       "robots_disallow": [
         "/edit/",
         "/bookbuilder/",
@@ -1450,7 +1450,7 @@
     "archive.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-10-17T07:41:57Z",
+      "robots_txt_cached_at": "2026-10-25T08:09:19Z",
       "robots_disallow": [
         "/control/",
         "/report/"
