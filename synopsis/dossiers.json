@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-29T09:30:51Z",
+  "generated_at": "2026-10-31T09:43:31Z",
   "total_dossiers": 10,
   "dossiers": [
     {
       "slug": "sortir-une-terre-du-marche",
       "titre": "Sortir une terre du marché",
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-      "doc_count": 137,
+      "doc_count": 139,
       "docs": [
         "e7512d48",
         "0b22d51b",
@@ -116,6 +116,7 @@
         "fc44409e",
         "298f7165",
         "e40b3977",
+        "380ed988",
         "02b2b6df",
         "e5341cc9",
         "d992c836",
@@ -144,7 +145,8 @@
         "6c062eda",
         "a4ef416a",
         "0211887d",
-        "a9094a2b"
+        "a9094a2b",
+        "62078cc7"
       ],
       "docs_detail": [
         {
@@ -1049,6 +1051,14 @@
           ]
         },
         {
+          "id": "380ed988",
+          "title": "The Debt and the Kingdom : Jesus of Nazareth and the Landscape of Oppression",
+          "score": 7,
+          "matched_on": [
+            "propriété d'usage"
+          ]
+        },
+        {
           "id": "02b2b6df",
           "title": "C'est quoi la ZAD ?",
           "score": 6,
@@ -1282,6 +1292,14 @@
           "matched_on": [
             "propriété d'usage"
           ]
+        },
+        {
+          "id": "62078cc7",
+          "title": "The Influence of the Game Laws, 1846",
+          "score": 6,
+          "matched_on": [
+            "propriété d'usage"
+          ]
         }
       ]
     },
@@ -1289,7 +1307,7 @@
       "slug": "zad-defense-de-territoires",
       "titre": "ZAD & défense de territoires",
       "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-      "doc_count": 127,
+      "doc_count": 128,
       "docs": [
         "88bfc0cb",
         "38a113bc",
@@ -1417,7 +1435,8 @@
         "a66578a6",
         "95c96790",
         "34a95a5f",
-        "f5977eb9"
+        "f5977eb9",
+        "3e56bb98"
       ],
       "docs_detail": [
         {
@@ -2506,6 +2525,14 @@
           "matched_on": [
             "occupation"
           ]
+        },
+        {
+          "id": "3e56bb98",
+          "title": "Solidarity from Anti-Authoritarians",
+          "score": 6,
+          "matched_on": [
+            "occupation"
+          ]
         }
       ]
     },
@@ -2513,7 +2540,7 @@
       "slug": "sans-terre-reforme-agraire",
       "titre": "Sans-terre & réforme agraire",
       "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-      "doc_count": 509,
+      "doc_count": 515,
       "docs": [
         "5a9397e7",
         "8bfe460c",
@@ -2683,6 +2710,10 @@
         "4e21a9fa",
         "4b864db9",
         "a7025fb3",
+        "7782b24b",
+        "3e9a1e64",
+        "324cb730",
+        "d8781904",
         "fac367e2",
         "9e831a55",
         "c99e6da4",
@@ -2845,6 +2876,7 @@
         "e8ee5514",
         "2b3dfe6d",
         "8a522aaf",
+        "504ef2ad",
         "d64f2d03",
         "2e5629b5",
         "6772ded1",
@@ -2917,6 +2949,7 @@
         "55ec8164",
         "d273ba77",
         "e40b3977",
+        "380ed988",
         "02b2b6df",
         "4bc13839",
         "a238e5bd",
@@ -4627,6 +4660,38 @@
           ]
         },
         {
+          "id": "7782b24b",
+          "title": "Economic consequences of a land reform in Brazil",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "3e9a1e64",
+          "title": "La rebelión de las Cañadas",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
+          "id": "324cb730",
+          "title": "Agrarian reform and land tenure : a list of source materials, with special sections on agricultural finance, taxation and agriculture, agricultural statistics [and] bibliographical sources",
+          "score": 9,
+          "matched_on": [
+            "agrarian reform"
+          ]
+        },
+        {
+          "id": "d8781904",
+          "title": "The transformation of rural Mexico : reforming the ejido sector",
+          "score": 9,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
           "id": "fac367e2",
           "title": "Ricardo Flores Magón, — Regeneración 1910",
           "score": 8,
@@ -6099,6 +6164,14 @@
           ]
         },
         {
+          "id": "504ef2ad",
+          "title": "Zapata's revenge : free trade and the farm crisis in Mexico",
+          "score": 8,
+          "matched_on": [
+            "réforme agraire"
+          ]
+        },
+        {
           "id": "d64f2d03",
           "title": "Concurrence déloyale, créativité écrasée : l'agriculture vivrière en crise",
           "score": 7,
@@ -6758,6 +6831,15 @@
           "score": 7,
           "matched_on": [
             "réforme agraire"
+          ]
+        },
+        {
+          "id": "380ed988",
+          "title": "The Debt and the Kingdom : Jesus of Nazareth and the Landscape of Oppression",
+          "score": 7,
+          "matched_on": [
+            "sans-terre",
+            "landless"
           ]
         },
         {
@@ -7676,7 +7758,7 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 314,
+      "doc_count": 328,
       "docs": [
         "d30c223f",
         "c8210481",
@@ -7783,11 +7865,22 @@
         "13212a33",
         "0ab80c04",
         "31db543c",
+        "236445a9",
         "2b83b023",
         "2374b965",
         "4e21a9fa",
         "4b864db9",
         "a7025fb3",
+        "7782b24b",
+        "3e9a1e64",
+        "89b8836d",
+        "c1b5a969",
+        "31aec67a",
+        "ebb59d3f",
+        "324cb730",
+        "d793c1b9",
+        "49e1fc7c",
+        "d8781904",
         "9e831a55",
         "2db11a52",
         "7b89d6d1",
@@ -7888,9 +7981,9 @@
         "4a4143db",
         "7ac00ce9",
         "3d180033",
-        "236445a9",
         "8a522aaf",
         "89cbd89b",
+        "504ef2ad",
         "28b7cb2c",
         "2175f7a3",
         "2e5629b5",
@@ -7935,6 +8028,7 @@
         "298f7165",
         "a705762f",
         "e40b3977",
+        "380ed988",
         "4bc13839",
         "e5341cc9",
         "7cf86983",
@@ -7991,7 +8085,9 @@
         "a4ef416a",
         "7dee7970",
         "0211887d",
-        "a9094a2b"
+        "a9094a2b",
+        "62078cc7",
+        "a195fbb3"
       ],
       "docs_detail": [
         {
@@ -8911,6 +9007,15 @@
           ]
         },
         {
+          "id": "236445a9",
+          "title": "Economistas y reformadores españoles : la cuestión agraria, 1760-1935",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
           "id": "2b83b023",
           "title": "The global idea of 'the commons'",
           "score": 9,
@@ -8952,6 +9057,97 @@
           "score": 9,
           "matched_on": [
             "communs fonciers",
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "7782b24b",
+          "title": "Economic consequences of a land reform in Brazil",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "3e9a1e64",
+          "title": "La rebelión de las Cañadas",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "89b8836d",
+          "title": "Autonomy is in our hearts : Zapatista autonomous government through the lens of the Tsotsil language",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "c1b5a969",
+          "title": "The peasant rebellions of the late Ming dynasty",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "31aec67a",
+          "title": "Peasant struggles in India",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "ebb59d3f",
+          "title": "Peasant struggles in Bihar, 1831-1992 : spontaneity to organisation",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "324cb730",
+          "title": "Agrarian reform and land tenure : a list of source materials, with special sections on agricultural finance, taxation and agriculture, agricultural statistics [and] bibliographical sources",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "d793c1b9",
+          "title": "Titles, conflict, and land use : the development of property rights and land reform on the Brazilian Amazon frontier",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "49e1fc7c",
+          "title": "The land question in Zimbabwe",
+          "score": 9,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "d8781904",
+          "title": "The transformation of rural Mexico : reforming the ejido sector",
+          "score": 9,
+          "matched_on": [
+            "terres communales",
             "enclosure",
             "commons"
           ]
@@ -9818,15 +10014,6 @@
           ]
         },
         {
-          "id": "236445a9",
-          "title": "Economistas y reformadores españoles : la cuestión agraria, 1760-1935",
-          "score": 8,
-          "matched_on": [
-            "enclosure",
-            "commons"
-          ]
-        },
-        {
           "id": "8a522aaf",
           "title": "My share in the Stolypin agrarian reforms",
           "score": 8,
@@ -9838,6 +10025,15 @@
         {
           "id": "89cbd89b",
           "title": "[2010] Land reform and Open source",
+          "score": 8,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "504ef2ad",
+          "title": "Zapata's revenge : free trade and the farm crisis in Mexico",
           "score": 8,
           "matched_on": [
             "enclosure",
@@ -10217,6 +10413,15 @@
           "score": 7,
           "matched_on": [
             "communs fonciers"
+          ]
+        },
+        {
+          "id": "380ed988",
+          "title": "The Debt and the Kingdom : Jesus of Nazareth and the Landscape of Oppression",
+          "score": 7,
+          "matched_on": [
+            "enclosure",
+            "commons"
           ]
         },
         {
@@ -10696,6 +10901,24 @@
           "score": 6,
           "matched_on": [
             "communs fonciers",
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "62078cc7",
+          "title": "The Influence of the Game Laws, 1846",
+          "score": 6,
+          "matched_on": [
+            "enclosure",
+            "commons"
+          ]
+        },
+        {
+          "id": "a195fbb3",
+          "title": "Competing jurisdictions : settling land claims in Africa",
+          "score": 6,
+          "matched_on": [
             "enclosure",
             "commons"
           ]
@@ -11204,7 +11427,7 @@
       "slug": "paysanneries-agroecologie",
       "titre": "Paysanneries & agroécologie politique",
       "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-      "doc_count": 671,
+      "doc_count": 678,
       "docs": [
         "5a9397e7",
         "8bfe460c",
@@ -11387,6 +11610,10 @@
         "71126e0c",
         "2374b965",
         "a7025fb3",
+        "3e9a1e64",
+        "c1b5a969",
+        "31aec67a",
+        "ebb59d3f",
         "fac367e2",
         "9e831a55",
         "c99e6da4",
@@ -11608,6 +11835,7 @@
         "4f785d36",
         "3d180033",
         "89cbd89b",
+        "f5be6d14",
         "d64f2d03",
         "581a53c8",
         "2e5629b5",
@@ -11716,6 +11944,7 @@
         "4042cb84",
         "e40b3977",
         "92e188ba",
+        "380ed988",
         "02b2b6df",
         "4bc13839",
         "a238e5bd",
@@ -11876,7 +12105,8 @@
         "6c062eda",
         "7dee7970",
         "5399ce07",
-        "a9094a2b"
+        "a9094a2b",
+        "62078cc7"
       ],
       "docs_detail": [
         {
@@ -14003,6 +14233,45 @@
           "matched_on": [
             "paysannerie",
             "paysan"
+          ]
+        },
+        {
+          "id": "3e9a1e64",
+          "title": "La rebelión de las Cañadas",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
+          "id": "c1b5a969",
+          "title": "The peasant rebellions of the late Ming dynasty",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "peasant"
+          ]
+        },
+        {
+          "id": "31aec67a",
+          "title": "Peasant struggles in India",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "peasant"
+          ]
+        },
+        {
+          "id": "ebb59d3f",
+          "title": "Peasant struggles in Bihar, 1831-1992 : spontaneity to organisation",
+          "score": 9,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "peasant"
           ]
         },
         {
@@ -16371,6 +16640,15 @@
           ]
         },
         {
+          "id": "f5be6d14",
+          "title": "Line 5 Horizontal Directional Drill Destroyed",
+          "score": 8,
+          "matched_on": [
+            "paysannerie",
+            "paysan"
+          ]
+        },
+        {
           "id": "d64f2d03",
           "title": "Concurrence déloyale, créativité écrasée : l'agriculture vivrière en crise",
           "score": 7,
@@ -17548,6 +17826,17 @@
             "agroécologie",
             "agriculture vivrière",
             "agriculture paysanne"
+          ]
+        },
+        {
+          "id": "380ed988",
+          "title": "The Debt and the Kingdom : Jesus of Nazareth and the Landscape of Oppression",
+          "score": 7,
+          "matched_on": [
+            "paysannerie",
+            "paysan",
+            "agriculture vivrière",
+            "peasant"
           ]
         },
         {
@@ -19215,6 +19504,14 @@
             "paysannerie",
             "paysan"
           ]
+        },
+        {
+          "id": "62078cc7",
+          "title": "The Influence of the Game Laws, 1846",
+          "score": 6,
+          "matched_on": [
+            "paysan"
+          ]
         }
       ]
     },
@@ -19222,7 +19519,7 @@
       "slug": "land-back-autochtones",
       "titre": "Land Back & souverainetés autochtones",
       "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-      "doc_count": 292,
+      "doc_count": 295,
       "docs": [
         "0b22d51b",
         "e41de87d",
@@ -19320,6 +19617,7 @@
         "1ae37e83",
         "bf8f5362",
         "a7025fb3",
+        "89b8836d",
         "9e831a55",
         "55db5001",
         "a91bd215",
@@ -19405,6 +19703,7 @@
         "568f8778",
         "e8ee5514",
         "2b3dfe6d",
+        "f5be6d14",
         "581a53c8",
         "12a4e254",
         "a54f94c8",
@@ -19515,7 +19814,8 @@
         "f5977eb9",
         "a4ef416a",
         "7dee7970",
-        "a9094a2b"
+        "a9094a2b",
+        "3e56bb98"
       ],
       "docs_detail": [
         {
@@ -20348,6 +20648,14 @@
           ]
         },
         {
+          "id": "89b8836d",
+          "title": "Autonomy is in our hearts : Zapatista autonomous government through the lens of the Tsotsil language",
+          "score": 9,
+          "matched_on": [
+            "indigène"
+          ]
+        },
+        {
           "id": "9e831a55",
           "title": "The Tree, The Rock, and the Morrow",
           "score": 8,
@@ -21083,6 +21391,16 @@
           "title": "Raffaele UNDROP article",
           "score": 8,
           "matched_on": [
+            "autochtone",
+            "indigenous"
+          ]
+        },
+        {
+          "id": "f5be6d14",
+          "title": "Line 5 Horizontal Directional Drill Destroyed",
+          "score": 8,
+          "matched_on": [
+            "land back",
             "autochtone",
             "indigenous"
           ]
@@ -22035,6 +22353,15 @@
           "title": "Microsoft PowerPoint — Primitive Accumulation.pptx",
           "score": 6,
           "matched_on": [
+            "autochtone"
+          ]
+        },
+        {
+          "id": "3e56bb98",
+          "title": "Solidarity from Anti-Authoritarians",
+          "score": 6,
+          "matched_on": [
+            "land back",
             "autochtone"
           ]
         }
@@ -23438,7 +23765,7 @@
       "slug": "accaparements-resistances",
       "titre": "Accaparements & résistances",
       "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-      "doc_count": 406,
+      "doc_count": 421,
       "docs": [
         "d30c223f",
         "5a9397e7",
@@ -23588,11 +23915,22 @@
         "bf8f5362",
         "13212a33",
         "0ab80c04",
+        "236445a9",
         "2b83b023",
         "2374b965",
         "4e21a9fa",
         "4b864db9",
         "a7025fb3",
+        "7782b24b",
+        "3e9a1e64",
+        "89b8836d",
+        "c1b5a969",
+        "31aec67a",
+        "ebb59d3f",
+        "324cb730",
+        "d793c1b9",
+        "49e1fc7c",
+        "d8781904",
         "c99e6da4",
         "55db5001",
         "2db11a52",
@@ -23706,9 +24044,10 @@
         "1fbb30cf",
         "96fb51f1",
         "3d180033",
-        "236445a9",
         "8a522aaf",
         "89cbd89b",
+        "f5be6d14",
+        "504ef2ad",
         "581a53c8",
         "14f45ea3",
         "79cc5801",
@@ -23775,6 +24114,7 @@
         "070edf21",
         "a705762f",
         "e40b3977",
+        "380ed988",
         "e5341cc9",
         "7cf86983",
         "d992c836",
@@ -23845,7 +24185,9 @@
         "34a95a5f",
         "f5977eb9",
         "a4ef416a",
-        "a9094a2b"
+        "a9094a2b",
+        "62078cc7",
+        "a195fbb3"
       ],
       "docs_detail": [
         {
@@ -25112,6 +25454,14 @@
           ]
         },
         {
+          "id": "236445a9",
+          "title": "Economistas y reformadores españoles : la cuestión agraria, 1760-1935",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
           "id": "2b83b023",
           "title": "The global idea of 'the commons'",
           "score": 9,
@@ -25146,6 +25496,86 @@
         {
           "id": "a7025fb3",
           "title": "Climate justice, commons, and degrowth",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "7782b24b",
+          "title": "Economic consequences of a land reform in Brazil",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "3e9a1e64",
+          "title": "La rebelión de las Cañadas",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "89b8836d",
+          "title": "Autonomy is in our hearts : Zapatista autonomous government through the lens of the Tsotsil language",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "c1b5a969",
+          "title": "The peasant rebellions of the late Ming dynasty",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "31aec67a",
+          "title": "Peasant struggles in India",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "ebb59d3f",
+          "title": "Peasant struggles in Bihar, 1831-1992 : spontaneity to organisation",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "324cb730",
+          "title": "Agrarian reform and land tenure : a list of source materials, with special sections on agricultural finance, taxation and agriculture, agricultural statistics [and] bibliographical sources",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "d793c1b9",
+          "title": "Titles, conflict, and land use : the development of property rights and land reform on the Brazilian Amazon frontier",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "49e1fc7c",
+          "title": "The land question in Zimbabwe",
+          "score": 9,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "d8781904",
+          "title": "The transformation of rural Mexico : reforming the ejido sector",
           "score": 9,
           "matched_on": [
             "enclosure"
@@ -26109,14 +26539,6 @@
           ]
         },
         {
-          "id": "236445a9",
-          "title": "Economistas y reformadores españoles : la cuestión agraria, 1760-1935",
-          "score": 8,
-          "matched_on": [
-            "enclosure"
-          ]
-        },
-        {
           "id": "8a522aaf",
           "title": "My share in the Stolypin agrarian reforms",
           "score": 8,
@@ -26127,6 +26549,22 @@
         {
           "id": "89cbd89b",
           "title": "[2010] Land reform and Open source",
+          "score": 8,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "f5be6d14",
+          "title": "Line 5 Horizontal Directional Drill Destroyed",
+          "score": 8,
+          "matched_on": [
+            "extractivis"
+          ]
+        },
+        {
+          "id": "504ef2ad",
+          "title": "Zapata's revenge : free trade and the farm crisis in Mexico",
           "score": 8,
           "matched_on": [
             "enclosure"
@@ -26690,6 +27128,16 @@
           "score": 7,
           "matched_on": [
             "accaparement"
+          ]
+        },
+        {
+          "id": "380ed988",
+          "title": "The Debt and the Kingdom : Jesus of Nazareth and the Landscape of Oppression",
+          "score": 7,
+          "matched_on": [
+            "accaparement",
+            "land grab",
+            "enclosure"
           ]
         },
         {
@@ -27294,6 +27742,22 @@
           "score": 6,
           "matched_on": [
             "accaparement",
+            "enclosure"
+          ]
+        },
+        {
+          "id": "62078cc7",
+          "title": "The Influence of the Game Laws, 1846",
+          "score": 6,
+          "matched_on": [
+            "enclosure"
+          ]
+        },
+        {
+          "id": "a195fbb3",
+          "title": "Competing jurisdictions : settling land claims in Africa",
+          "score": 6,
+          "matched_on": [
             "enclosure"
           ]
         }

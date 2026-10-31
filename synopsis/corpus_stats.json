@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-29T09:30:51Z",
-  "total": 2194,
-  "total_docs": 2194,
-  "total_downloaded": 1505,
-  "total_published": 989,
+  "generated_at": "2026-10-31T09:43:31Z",
+  "total": 2263,
+  "total_docs": 2263,
+  "total_downloaded": 1512,
+  "total_published": 1007,
   "by_lang": {
-    "en": 1004,
-    "fr": 416,
+    "en": 1023,
+    "fr": 417,
+    "inconnu": 270,
     "es": 267,
     "pt": 227,
-    "inconnu": 222,
-    "de": 41,
+    "de": 42,
     "it": 7,
     "sw": 5,
     "el": 2,
@@ -19,12 +19,12 @@
     "tr": 1
   },
   "by_language": {
-    "en": 1004,
-    "fr": 416,
+    "en": 1023,
+    "fr": 417,
+    "inconnu": 270,
     "es": 267,
     "pt": 227,
-    "inconnu": 222,
-    "de": 41,
+    "de": 42,
     "it": 7,
     "sw": 5,
     "el": 2,
@@ -34,7 +34,7 @@
   },
   "by_source": {
     "La Vía Campesina — publications (WP REST)": 559,
-    "Archive.org — commons / enclosure / agrarian (strict)": 248,
+    "Archive.org — commons / enclosure / agrarian (strict)": 291,
     "MST Brésil — biblioteca (WP REST API)": 209,
     "Infokiosques.net — Paysannerie & ruralité": 121,
     "CRAS (Centre de Recherches sur les Alternatives Sociales)": 110,
@@ -42,8 +42,8 @@
     "Archive.org — féminisme et communs (Federici, accumulation primitive)": 98,
     "Archive.org — community land trusts & housing commons": 97,
     "Archive.org — théorie des communs (Ostrom, CPR, collective action)": 97,
+    "The Anarchist Library — OPDS (new releases)": 78,
     "discovery_promoted": 72,
-    "The Anarchist Library — OPDS (new releases)": 53,
     "Archive.org — bienes comunes espagnol (15M/communs)": 38,
     "CrimethInc — zines": 33,
     "Infokiosques.net — Squat (rapport à l'habiter)": 31,
@@ -60,10 +60,10 @@
     "Archive.org — peasant movements": 10,
     "Infokiosques.net — Écologie radicale": 10,
     "International Land Coalition — latest": 10,
+    "Böll Stiftung — publications DE (deep crawl)": 10,
     "Troisièmes Voix — éditions": 10,
     "European Shepherds Network — publications": 10,
     "Infokiosques.net — nouveautés": 9,
-    "Böll Stiftung — publications DE (deep crawl)": 9,
     "Infokiosques.net — index A": 8,
     "Böll Stiftung — publications DE": 8,
     "The Anarchist Library — OPDS feed": 8,
@@ -86,49 +86,49 @@
   "by_decade": {
     "1790s": 1,
     "1920s": 1,
-    "1950s": 14,
-    "1960s": 11,
+    "1950s": 17,
+    "1960s": 12,
     "1970s": 12,
-    "1980s": 18,
+    "1980s": 20,
     "1990s": 10,
-    "2000s": 159,
-    "2010s": 513,
-    "2020s": 795,
-    "inconnu": 660
+    "2000s": 161,
+    "2010s": 514,
+    "2020s": 809,
+    "inconnu": 706
   },
   "by_score": {
-    "0": 532,
-    "1": 227,
-    "2": 182,
-    "3": 109,
-    "4": 86,
+    "0": 553,
+    "1": 245,
+    "2": 192,
+    "3": 111,
+    "4": 88,
     "5": 101,
-    "6": 195,
-    "7": 138,
-    "8": 411,
-    "9": 209,
+    "6": 198,
+    "7": 139,
+    "8": 412,
+    "9": 220,
     "10": 4
   },
   "by_doc_type": {
-    "autre": 2058,
+    "autre": 2127,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1247,
-    "academique": 730,
+    "militant": 1272,
+    "academique": 773,
     "non_renseigne": 138,
-    "institutionnel": 79
+    "institutionnel": 80
   },
   "blind_spots": [
-    "Forte dominante militante (56.8%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (56.2%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (56.8%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (56.2%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
@@ -145,7 +145,7 @@
       "url": "https://archive.org/advancedsearch.php?q=%28subject%3A%22agrarian%22+OR+subject%3A%22peasant%22+OR+subject%3A%22land+reform%22+OR+subject%3A%22enclosure%22+OR+subject%3A%22commons%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
       "type": "archive_org",
       "orientation": "academique",
-      "count": 248
+      "count": 291
     },
     {
       "label": "MST Brésil — biblioteca (WP REST API)",
@@ -201,7 +201,7 @@
       "url": "https://theanarchistlibrary.org/opds/new",
       "type": "opds",
       "orientation": "militant",
-      "count": 53
+      "count": 78
     },
     {
       "label": "Archive.org — bienes comunes espagnol (15M/communs)",
@@ -288,6 +288,13 @@
       "count": 10
     },
     {
+      "label": "Böll Stiftung — publications DE (deep crawl)",
+      "url": "https://www.boell.de/de/publikationen",
+      "type": "deep_html",
+      "orientation": "institutionnel",
+      "count": 10
+    },
+    {
       "label": "European Shepherds Network — publications",
       "url": "https://shepherdnet.eu/",
       "type": "deep_html",
@@ -314,13 +321,6 @@
       "type": "deep_html",
       "orientation": "militant",
       "count": 10
-    },
-    {
-      "label": "Böll Stiftung — publications DE (deep crawl)",
-      "url": "https://www.boell.de/de/publikationen",
-      "type": "deep_html",
-      "orientation": "institutionnel",
-      "count": 9
     },
     {
       "label": "Infokiosques.net — nouveautés",
