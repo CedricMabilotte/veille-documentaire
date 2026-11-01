@@ -1,0 +1,454 @@
+{
+  "date": "2026-11-01_10-06",
+  "sources_scanned": 1,
+  "documents_found": 10,
+  "documents_scored": 10,
+  "documents_downloaded": 3,
+  "results": [
+    {
+      "url": "https://archive.org/download/cooperativehouse00mayo_3/cooperativehouse00mayo_3.pdf",
+      "filename": "cooperativehouse00mayo_3.pdf",
+      "format": "pdf",
+      "source": "Archive.org — community land trusts & housing commons",
+      "score": 7,
+      "raison": "Titre 'Co-operative house-building' cite explicitement la construction coopérative, recoupe 'housing cooperative' (habitat coopératif)",
+      "downloaded": true,
+      "saved_as": "docs/c3d443aa_cooperativehouse00mayo_3.pdf",
+      "link_text": "Co-operative house-building, read ... 1898 [microform]",
+      "context_seen": "Mayo, C. M — At head of title: Women's Co-operative Guild, Microfilm, Master negative: 98-84379-28, No. 28 on a reel of 30 titles, Filmed;",
+      "bib": {
+        "doc_date": "2016-05-24",
+        "lang": "en",
+        "editeur": "Recoded by LuraDocument PDF v2.65",
+        "doi": "",
+        "isbn": "",
+        "hal_id": ""
+      },
+      "download_status": "ok",
+      "content_hash": "982b80c3926880886b7ac5aadb27670d4fe0ece7025e2a83da183abbe4df8658",
+      "meta": {
+        "page_count": 12,
+        "pdf_title": "Co-operative house-building, read ... 1898 [microform]",
+        "pdf_author": "Mayo, C. M",
+        "pdf_creator": "Digitized by the Internet Archive"
+      },
+      "cover": "covers/c3d443aa.jpg",
+      "enrichment": {
+        "summary": "Ce texte fondateur de la Women's Co-operative Guild (1898) articule une réflexion politique sur le rôle du logement coopératif comme alternative à la propriété privée individuelle. L'autrice pose d'abord l'importance du logement pour la vie collective et souligne que cette question est particulièrement cruciale pour les femmes, qui y consacrent le plus de temps. Elle puis rapporte les réalisations des sociétés coopératives britanniques (Huddersfield, Eccles, Derby, Halifax, Oldham, etc.) dans la construction de maisons destinées soit à la vente, soit à la location. Le cœur du texte est un débat politique explicite : faut-il que les sociétés coopératives vendent les maisons à des propriétaires individuels, ou faut-il qu'elles les conservent en propriété collective et les louent aux membres ? L'autrice développe les arguments traditionnels en faveur de la propriété individuelle (incitation à l'épargne, autonomie, amélioration personnelle), avant de les réfuter systématiquement. Elle montre que la vente crée une classe de petits propriétaires-rentiers, exclut les membres trop pauvres pour accumuler du capital, immobilise les travailleurs territorialement et les expose à des abus d'employeurs. À l'inverse, si les sociétés conservent les maisons, les locataires-membres deviennent « leurs propres propriétaires » collectivement, assurant l'accès au logement décent pour tous et préservant les intérêts de classe des producteurs. Le texte conclut sur l'exemple du système des « Tenant Co-operators » à Londres (depuis 1888), esquissant une forme de bail coopératif qui sécurise l'intérêt du locataire sans les risques de la propriété individuelle. C'est un document charnière où la question du logement s'articule clairement à la critique de la propriété privée et aux enjeux de classe.",
+        "citations": [
+          {
+            "page": 4,
+            "quote": "The co-operative movement aims at improving the world, and making it a brighter and better place both for ourselves and for those who shall come after us",
+            "why_relevant": "Énonce l'idéal collectif et transgénérationnel du mouvement coopératif, fondement éthique de l'habitat coopératif.",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 4,
+            "quote": "If it is an important question to men, it is even more important to women, for it is the woman who has the most time to spend in the house.",
+            "why_relevant": "Articule la dimension de genre du logement et l'importance des femmes dans les décisions d'habitat collectif.",
+            "verified": true,
+            "page_physical": 4
+          },
+          {
+            "page": 5,
+            "quote": "A large number of societies now have building departments in connection with them. Huddersfield, Eccles, and Slaithwaite have built houses for selling and letting. These three societies have built 375 houses",
+            "why_relevant": "Documentation concrète des réalisations des sociétés coopératives en construction résidentielle à grande échelle.",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 6,
+            "quote": "The question whether societies should build to sell or to keep the houses in their own hands is an important one. Co-operative building, whether to sell or to let, is good, but one method is better than the other.",
+            "why_relevant": "Pose explicitement la tension politique centrale : propriété individuelle vs. propriété-usage collective.",
+            "verified": true,
+            "page_physical": 6
+          },
+          {
+            "page": 6,
+            "quote": "Another disadvantage is that so comparatively few can gain the advantage of good houses if they are only built for sale. There is a very large number of poor members who, by reason of small wages, can never afford to let the divi accumulate",
+            "why_relevant": "Critique de l'exclusion économique : la vente limite l'accès au logement décent aux plus pauvres, argument fondamental pour la location collective.",
+            "verified": true,
+            "page_physical": 6
+          },
+          {
+            "page": 7,
+            "quote": "selling houses to individuals tends to create a class of small landlords, and, if the property is freehold, of small landowners, whose interests range them beside those possessed of large estates",
+            "why_relevant": "Analyse de classe explicite : le risque que la propriété individuelle crée une classe de petits rentiers opposée aux intérêts collectifs des travailleurs.",
+            "verified": true,
+            "page_physical": 7
+          },
+          {
+            "page": 7,
+            "quote": "the tenant members will, through their society, be their own landlords, and so be able to look after their own interests.",
+            "why_relevant": "Formule l'idéal politique : propriété-usage collective où les locataires restent maîtres collectivement de leurs conditions d'habitation.",
+            "verified": true,
+            "page_physical": 7
+          }
+        ],
+        "matched_keywords": [
+          "habitat coopératif",
+          "coopérative d'habitants",
+          "logement collectif",
+          "communs urbains",
+          "propriété d'usage",
+          "collectif d'habitants",
+          "économie sociale et solidaire"
+        ],
+        "relevance_score": 8,
+        "relevance_notes": "Document fondateur sur l'habitat coopératif en tant que forme de bien commun urbain et alternative à la propriété spéculative ; articulation explicite entre enjeux de logement, critique de classe et propriété collective. Manque une analyse des terres sous-jacentes et du foncier proprement dit, ce qui le maintient à 8 plutôt que 9.",
+        "en_clair": "Il y a plus de 125 ans, les coopératives construisaient des maisons et les louaient à leurs membres plutôt que de les vendre. Ce texte explique pourquoi : louer collectivement permet à tout le monde d'avoir un bon logement, tandis que vendre crée de petits propriétaires qui finissent par exploiter les autres travailleurs. C'est une stratégie ancienne pour démocratiser le logement sans enrichir les rentiers.",
+        "acteurs": [
+          "Women's Co-operative Guild",
+          "Miss Llewelyn Davies",
+          "Pioneers of Rochdale",
+          "Huddersfield Co-operative Society",
+          "Eccles Co-operative Society",
+          "Slaithwaite Co-operative Society",
+          "Derby Co-operative Society",
+          "Halifax Co-operative Society",
+          "Oldham Co-operative Society",
+          "Tenant Co-operators (London)",
+          "Close Hill co-operative (near Huddersfield)"
+        ],
+        "controverse": "Débat fondamental : faut-il que les sociétés coopératives vendent les maisons aux membres (créant des propriétaires individuels avec intérêts de rentiers) ou les conservent et les louent (propriété-usage collective) ? L'autrice défend fermement la location collective comme préservant l'unité de classe des producteurs et garantissant l'accès universel.",
+        "angle_journalistique": "Enquête historique : comment les mouvements coopératifs du XIXe siècle ont-ils résolu l'accès au logement décent, et quels sont les enseignements pour les luttes contemporaines contre la spéculation immobilière ?",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "a3a1964263"
+      }
+    },
+    {
+      "url": "https://archive.org/download/cooperativehousi0000midw/cooperativehousi0000midw.pdf",
+      "filename": "cooperativehousi0000midw.pdf",
+      "format": "pdf",
+      "source": "Archive.org — community land trusts & housing commons",
+      "score": 8,
+      "raison": "Titre 'Cooperative housing : a handbook' cite explicitement l'habitat coopératif, thème central de la thématique",
+      "downloaded": false,
+      "saved_as": null,
+      "link_text": "Cooperative housing : a handbook for effective operations",
+      "context_seen": "Midwest Association of Housing Cooperatives — vii, 262 p. : 28 cm, Includes index",
+      "bib": {
+        "doc_date": "",
+        "lang": "en",
+        "editeur": "",
+        "doi": "",
+        "isbn": "",
+        "hal_id": ""
+      },
+      "download_status": "failed_network"
+    },
+    {
+      "url": "https://archive.org/download/condominiumscoop0002clur/condominiumscoop0002clur.pdf",
+      "filename": "condominiumscoop0002clur.pdf",
+      "format": "pdf",
+      "source": "Archive.org — community land trusts & housing commons",
+      "score": 5,
+      "raison": "Titre 'Condominiums and cooperatives' mélange coopératives avec condominiums classiques, sans clarifier la dimension foncière/communs",
+      "downloaded": false,
+      "saved_as": null,
+      "link_text": "Condominiums and cooperatives",
+      "context_seen": "Clurman, David, 1927- — xii, 350 pages : 24 cm, Includes index",
+      "bib": {
+        "doc_date": "",
+        "lang": "",
+        "editeur": "",
+        "doi": "",
+        "isbn": "",
+        "hal_id": ""
+      },
+      "download_status": "failed_network"
+    },
+    {
+      "url": "https://archive.org/download/unassistedliving0000chap/unassistedliving0000chap.pdf",
+      "filename": "unassistedliving0000chap.pdf",
+      "format": "pdf",
+      "source": "Archive.org — community land trusts & housing commons",
+      "score": 1,
+      "raison": "Titre 'Unassisted living : ageless homes for later life' porte sur le logement pour personnes âgées, aucun lien explicite avec foncier/communs/coopératives",
+      "downloaded": false,
+      "saved_as": null,
+      "link_text": "Unassisted living : ageless homes for later life",
+      "context_seen": "Chapman, Wid — 239 p. : 27 cm, Bistro living: downsized for vitality -- Three generations together: multifamily homes and communities -- Getaways -- Off the grid: later life in wide-open spaces -- Working and healing from home -- In the company of friends -- Ageless homes for later life -- Affordable but never boring, Includes bibliographical references",
+      "bib": {
+        "doc_date": "",
+        "lang": "",
+        "editeur": "",
+        "doi": "",
+        "isbn": "",
+        "hal_id": ""
+      }
+    },
+    {
+      "url": "https://archive.org/download/1972-laidlaw-future-of-the-co-operative-movement/1972-laidlaw-future-of-the-co-operative-movement.pdf",
+      "filename": "1972-laidlaw-future-of-the-co-operative-movement.pdf",
+      "format": "pdf",
+      "source": "Archive.org — community land trusts & housing commons",
+      "score": 5,
+      "raison": "Titre 'The Future of the Co-operative Movement' parle de coopératives en général, sans cibler explicitement foncier, communs ou agriculture",
+      "downloaded": true,
+      "saved_as": "docs/fcf6cc96_1972-laidlaw-future-of-the-co-operative-movement.pdf",
+      "link_text": "The Future of the Co-operative Movement, Alexander F. Laidlaw, An address at the Rochdale Institute, New York City, January 1972.",
+      "context_seen": "Alexander F. Laidlaw — The Future of the Co-operative Movement , Alexander F. Laidlaw, An address at the Rochdale Institute, New York City, January 1972. An address given on January 17, 1972 by Dr. A.F. Laidlaw: at the final session of a leadership course of the Rochdale Institute, New York City, a centre for Cooperative Studies chartered by the Regents of the University of the State of New York.…",
+      "bib": {
+        "doc_date": "2021-09-07",
+        "lang": "en",
+        "editeur": "",
+        "doi": "",
+        "isbn": "",
+        "hal_id": ""
+      },
+      "download_status": "ok_via_variant",
+      "content_hash": "c71725156987e287226198ef248af80a2844ddb63b3637d52a5ea0624fddd423",
+      "meta": {
+        "page_count": 34,
+        "pdf_title": "",
+        "pdf_author": "",
+        "pdf_creator": ""
+      },
+      "cover": "covers/fcf6cc96.jpg",
+      "enrichment": {
+        "summary": "Ce discours de 1972 d'Alexander F. Laidlaw à la Rochdale Institute de New York réaffirme le rôle transformateur du mouvement coopératif face à un ordre économique et social en crise. Laidlaw esquisse d'abord un tableau sombre de l'époque : inégalités croissantes, domination des corporations géantes, crises écologiques, recul de la démocratie. Face à ce diagnostic, il ressuscite la vision des pionniers des années 1930 (Mary Arnold, Father Jimmy Tompkins), pour qui les coopératives de crédit, les magasins coopératifs et les logements coopératifs étaient des « outils » permettant aux gens ordinaires de s'auto-construire une vie autonome et digne. Laidlaw insiste sur la distinction entre les « coopératives » (organisations) et le « mouvement coopératif » (une force politique collective guidée par des convictions partagées), et plaide pour que ce mouvement continue de « corriger et améliorer l'ordre économique et social existant ». L'accent porte sur la capacité des structures coopératives à restaurer l'autonomie des gens face à la concentration du pouvoir corporatif. Bien que le texte mentionne des maisons coopératives et l'autoproduction alimentaire en passant, il n'aborde pas directement les enjeux de propriété foncière, de communs agraires, ou de luttes pour l'accès à la terre — qui constituent le cœur de la thématique de la veille.",
+        "citations": [
+          {
+            "page": 3,
+            "quote": "Would you have strong, free, self-reliant people. Then put tools in their hands and let them build. Credit unions, cooperative stores, cooperative houses, these are the tools with which they may fashion their lives.",
+            "why_relevant": "Énoncé fondateur de la vision coopérative d'autonomie et d'auto-construction ; implicitement lié à l'idée de propriété d'usage et de contrôle collectif des moyens de vie.",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 3,
+            "quote": "It is not supermen we need but ordinary men and women to travel the cooperative road. Let them provide credit for themselves, grow food, organize stores, and build houses.",
+            "why_relevant": "Explicite l'autonomie alimentaire et la production collective de logement, deux dimensions des communs d'usage ; évoque implicitement une forme d'autogestion.",
+            "verified": true,
+            "page_physical": 3
+          },
+          {
+            "page": 4,
+            "quote": "it is not just cooperatives we need, but a movement... these people are pushing forward, they have convictions and goals.",
+            "why_relevant": "Définit le mouvement coopératif comme force politique collective, non pas institution bureaucratique — concept clé pour les luttes foncières.",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 6,
+            "quote": "The proper role for the cooperative movement has always been, and still must be, not only to provide better organization and services for people, but also to correct and improve on the existing economic and social environment.",
+            "why_relevant": "Affirme le rôle transformateur du mouvement face aux structures de domination économique — pertinent pour les luttes contre l'accaparement et pour la redistribution.",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 9,
+            "quote": "What is the dominant and pervasive power in our civilization? For certain, it is the central and all-powerful position occupied by the colossal corporations which dominate our existence.",
+            "why_relevant": "Critique de la concentration du pouvoir économique ; analogue structurelle à la critique de l'accaparement des terres par les corporations agroindustrielles.",
+            "verified": true,
+            "page_physical": 9
+          }
+        ],
+        "matched_keywords": [
+          "cooperative movement",
+          "mouvement coopératif",
+          "cooperative housing",
+          "logement coopératif",
+          "credit unions",
+          "coopératives de crédit",
+          "cooperative stores",
+          "magasins coopératifs",
+          "autonomie",
+          "collective action"
+        ],
+        "relevance_score": 4,
+        "relevance_notes": "Le texte demeure distant des concepts centraux de la thématique. Bien qu'il mentionne des coopératives de logement et une autoproduction alimentaire, et qu'il critique la domination corporatiste, il ne traite pas directement de propriété foncière, communs fonciers, réforme agraire, accaparement des terres ou paysannerie. C'est un discours généraliste nord-américain sur le mouvement coopératif des années 1970, non un texte de veille foncière.",
+        "en_clair": "Ce texte montre comment, dans les années 1930-1970, des coopératives de crédit et de logement ont aidé les gens ordinaires à échapper à la dépendance envers les grandes corporations. Mais il ne parle pas de la terre elle-même, ni de qui la contrôle ou comment s'en emparer collectivement.",
+        "acteurs": [
+          "Alexander F. Laidlaw",
+          "Mary Arnold",
+          "Father Jimmy Tompkins",
+          "Harold Ostroff",
+          "Don Martin",
+          "United Housing Foundation",
+          "Rochdale Institute"
+        ],
+        "controverse": "Pas de controverse explicite au sein du texte. Laidlaw plaide pour l'unité du mouvement coopératif face aux défis structurels du capitalisme corporatif, mais ne soulève pas de tensions internes ou de désaccords fondamentaux.",
+        "angle_journalistique": "Pourquoi le mouvement coopératif nord-américain des années 1970 a-t-il marginalisé les luttes autour de la terre et de l'agriculture, alors que d'autres régions du monde (Via Campesina, MST au Brésil) mettaient la propriété foncière au cœur du projet coopératif ?",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "25f29d4fca"
+      }
+    },
+    {
+      "url": "https://archive.org/download/southenddevelopm88bost/southenddevelopm88bost.pdf",
+      "filename": "southenddevelopm88bost.pdf",
+      "format": "pdf",
+      "source": "Archive.org — community land trusts & housing commons",
+      "score": 1,
+      "raison": "Titre 'The south end development policy planning process' concerne la planification urbaine généraliste, aucun lien avec foncier/communs",
+      "downloaded": false,
+      "saved_as": null,
+      "link_text": "The south end development policy planning process: resource workbook",
+      "context_seen": "Boston Redevelopment Authority — ...a compilation of materials brought together to assist persons in the development of a growth policy for Boston's South End neighborhood; includes reproductions of the following documents and items: 1) The South End Development Policy Planning Process, 2) A Brief Introduction to the History of the South End, 3) South End Neighborhood Profile, 1988, 4) Amendments…",
+      "bib": {
+        "doc_date": "1988",
+        "lang": "",
+        "editeur": "",
+        "doi": "",
+        "isbn": "",
+        "hal_id": ""
+      }
+    },
+    {
+      "url": "https://archive.org/download/cooperativescond0000keho/cooperativescond0000keho.pdf",
+      "filename": "cooperativescond0000keho.pdf",
+      "format": "pdf",
+      "source": "Archive.org — community land trusts & housing commons",
+      "score": 5,
+      "raison": "Titre 'Cooperatives and condominiums' mélange coopératives avec condominiums, sans spécifier la dimension foncière ou des communs",
+      "downloaded": false,
+      "saved_as": null,
+      "link_text": "Cooperatives and condominiums",
+      "context_seen": "Kehoe, Patrick E., 1941- — 124 p. 19 cm",
+      "bib": {
+        "doc_date": "",
+        "lang": "",
+        "editeur": "",
+        "doi": "",
+        "isbn": "",
+        "hal_id": ""
+      },
+      "download_status": "failed_network"
+    },
+    {
+      "url": "https://archive.org/download/sharedlivingsoci0000coop/sharedlivingsoci0000coop.pdf",
+      "filename": "sharedlivingsoci0000coop.pdf",
+      "format": "pdf",
+      "source": "Archive.org — community land trusts & housing commons",
+      "score": 4,
+      "raison": "Titre 'Shared living : social relations in supported housing' évoque l'habitat partagé mais contexte indéterminable sur dimension foncière/coopérative",
+      "downloaded": false,
+      "saved_as": null,
+      "link_text": "Shared living : social relations in supported housing",
+      "context_seen": "Cooper, Rob — 44, [6] pages ; 21 cm, Includes bibliographical references",
+      "bib": {
+        "doc_date": "",
+        "lang": "",
+        "editeur": "",
+        "doi": "",
+        "isbn": "",
+        "hal_id": ""
+      },
+      "download_status": "failed_network"
+    },
+    {
+      "url": "https://archive.org/download/tenantstakeover0000ward/tenantstakeover0000ward.pdf",
+      "filename": "tenantstakeover0000ward.pdf",
+      "format": "pdf",
+      "source": "Archive.org — community land trusts & housing commons",
+      "score": 5,
+      "raison": "Titre 'Tenants take over' suggère action collective ; source catégorise 'housing commons' ; sujet non explicité dans contexte (métadonnées seules)",
+      "downloaded": false,
+      "saved_as": null,
+      "link_text": "Tenants take over",
+      "context_seen": "Ward, Colin — 176 p. : 22 cm, Includes bibliographical references",
+      "bib": {
+        "doc_date": "",
+        "lang": "",
+        "editeur": "",
+        "doi": "",
+        "isbn": "",
+        "hal_id": ""
+      },
+      "download_status": "failed_network"
+    },
+    {
+      "url": "https://archive.org/download/DGBoardWorksSouthEastHousingCooperativeLtdSeptember2015/DGBoardWorksSouthEastHousingCooperativeLtdSeptember2015.pdf",
+      "filename": "DGBoardWorksSouthEastHousingCooperativeLtdSeptember2015.pdf",
+      "format": "pdf",
+      "source": "Archive.org — community land trusts & housing commons",
+      "score": 8,
+      "raison": "Titre cite explicitement 'Housing Cooperative' ; contexte détaille 'Co-operative Principles' — habitat coopératif et communs urbains",
+      "downloaded": true,
+      "saved_as": "docs/3c2fa629_DGBoardWorksSouthEastHousingCooperativeLtdSeptember2015.pdf",
+      "link_text": "DG Board Works South East Housing Cooperative Ltd September 2015",
+      "context_seen": "David Griffiths — Board Works is a circular written by David Griffiths to members of the SouthEast Housing Co-operative Ltd, Dandenong, Victoria, Australia - Co-op Principles, Director Obligations and Board Basics.",
+      "bib": {
+        "doc_date": "2019-01-17",
+        "lang": "en",
+        "editeur": "",
+        "doi": "",
+        "isbn": "",
+        "hal_id": ""
+      },
+      "download_status": "ok_via_variant",
+      "content_hash": "780cd770369f3a134dd00732ab440f21da147cb8b75ee630151d5518dc17bcce",
+      "meta": {
+        "page_count": 1,
+        "pdf_title": "",
+        "pdf_author": "",
+        "pdf_creator": "HP Scanjet G3110 TWAIN"
+      },
+      "cover": "covers/3c2fa629.jpg",
+      "enrichment": {
+        "summary": "Ce document est une circulaire de gouvernance adressée aux membres de la South East Housing Co-operative Ltd en septembre 2015, à l'occasion d'une élection du conseil d'administration. Il expose les sept principes coopératifs fondamentaux (adhésion volontaire, contrôle démocratique des membres, participation économique, autonomie, éducation, coopération inter-coopératives, préoccupation communautaire) et insiste fortement sur la notion de « démocratie coopérative » comme système où la propriété et le contrôle appartiennent aux membres, avec un conseil élu. Le texte souligne que l'intégrité de cette démocratie dépend de la responsabilité et de la transparence réelles, pas de simples paroles. Cela se concrétise par plusieurs mesures : rapports annuels financiers et de gouvernance très détaillés, mise à disposition publique des examens de régulation, rapports intermédiaires, etc. Le conseil se réunit 11 fois par an avec des ordres du jour et documents de 20-40 pages. Le texte énumère les obligations des administrateurs (assister aux réunions, écouter, respecter les confidences, identifier les conflits d'intérêts) et identifie des indicateurs concrets de démocratie active : nombre de nominations pour le conseil, élections contestées, taux de participation électorale, présence aux assemblées générales, soumission des déclarations de revenus, taux de paiement des cotisations, taux de réponse aux sondages. C'est un exemple pratique de comment une structure d'habitation collective peut fonctionner selon des principes démocratiques et de transparence. Du point de vue de la thématique foncière, cet intérêt reste limité : le document illustre la gouvernance d'une coopérative d'habitation mais ne traite pas des enjeux fonciers centraux (propriété du sol, régimes de tenure alternatifs, anti-spéculation, droit d'usage versus propriété privée), qui sont au cœur de la veille sur les communs fonciers et la libération des terres.",
+        "citations": [
+          {
+            "page": 1,
+            "quote": "Co-operative Democracy is based on member ownership and control and on a board elected by the members.",
+            "why_relevant": "Énonce le principe fondamental de la propriété et du contrôle démocratique collectif, central au concept d'habitat coopératif.",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 1,
+            "quote": "Co-op Principles: Voluntary and open membership. Democratic member control. Member economic participation. Autonomy and independence. Education, training and information. Co-operation among co-operatives. Concern for community.",
+            "why_relevant": "Énumère les sept principes coopératifs qui fondent la gouvernance démocratique et la préoccupation communautaire.",
+            "verified": true,
+            "page_physical": 1
+          },
+          {
+            "page": 1,
+            "quote": "The integrity of co-operative democracy depends on the accountability and transparency of the board, that these are not pious words, that the boards practices what it preaches.",
+            "why_relevant": "Insiste sur l'importance de la responsabilité et de la transparence réelle, pas rhétorique, comme fondement de la légitimité démocratique.",
+            "verified": false,
+            "page_physical": null
+          },
+          {
+            "page": 1,
+            "quote": "A board election is a time for a co-operative to review co-operative democracy-the extent that members are committed to the practices of co-operative democracy.",
+            "why_relevant": "Souligne que les élections sont un moment de bilan de l'engagement démocratique réel des membres, reflétant la culture participative.",
+            "verified": true,
+            "page_physical": 1
+          }
+        ],
+        "matched_keywords": [
+          "housing cooperative",
+          "coopérative d'habitation",
+          "democratic member control",
+          "contrôle démocratique des membres",
+          "member ownership",
+          "propriété des membres",
+          "cooperative",
+          "community",
+          "communauté",
+          "transparency",
+          "accountability",
+          "member participation",
+          "participation des membres"
+        ],
+        "relevance_score": 5,
+        "relevance_notes": "Score 5/10. Le document décrit une coopérative d'habitation fonctionnant selon des principes démocratiques et de transparence, ce qui touche au concept-relatif 'habitat coopératif et communs urbains'. Cependant, il n'aborde pas les enjeux fonciers (propriété du sol, régimes de tenure alternatifs, anti-spéculation, propriété d'usage) qui sont centraux à la thématique de veille. C'est un exemple de gouvernance coopérative pratiquée dans un registre administratif, sans dimension politique sur la terre.",
+        "en_clair": "Ce texte montre comment une coopérative de logements fonctionne vraiment: réunions, votes, comptes publics. C'est utile pour comprendre que l'habitat collectif peut être géré de manière démocratique. Mais ça ne parle pas des grandes batailles politiques: qui possède la terre sous les logements? Comment la protéger contre la spéculation et les riches qui la rachètent?",
+        "acteurs": [
+          "South East Housing Co-operative Ltd",
+          "David Griffiths (Acting Manager - Governance)",
+          "Housing Registrar"
+        ],
+        "controverse": "",
+        "angle_journalistique": "Coopératives d'habitation australiennes : comment construire une démocratie économique réelle dans la gestion collective du logement ?",
+        "model": "claude-haiku-4-5",
+        "prompt_version": "1e491c5a8a"
+      }
+    }
+  ],
+  "interrupted": null,
+  "claude_session_limit_hit": false
+}

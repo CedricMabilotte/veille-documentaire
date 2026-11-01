@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-31T09:43:31Z",
+  "generated_at": "2026-11-01T10:19:51Z",
   "total_dossiers": 10,
   "dossiers": [
     {
       "slug": "sortir-une-terre-du-marche",
       "titre": "Sortir une terre du marché",
       "chapo": "Comment des collectifs arrachent durablement des terres à la spéculation : fonds de dotation, fiducies foncières, baux emphytéotiques militants, propriété d'usage. Les outils juridiques et financiers de l'inaliénabilité, racontés par celles et ceux qui les forgent.",
-      "doc_count": 139,
+      "doc_count": 140,
       "docs": [
         "e7512d48",
         "0b22d51b",
@@ -92,6 +92,8 @@
         "8c5780d2",
         "e153738e",
         "89cbd89b",
+        "c3d443aa",
+        "9702f1fe",
         "28b7cb2c",
         "2175f7a3",
         "2e5629b5",
@@ -114,7 +116,6 @@
         "2f0c58b3",
         "8ee3f263",
         "fc44409e",
-        "298f7165",
         "e40b3977",
         "380ed988",
         "02b2b6df",
@@ -854,6 +855,23 @@
           ]
         },
         {
+          "id": "c3d443aa",
+          "title": "Co-operative house-building, read ... 1898 [microform]",
+          "score": 8,
+          "matched_on": [
+            "propriété d'usage",
+            "community land trust"
+          ]
+        },
+        {
+          "id": "9702f1fe",
+          "title": "Cooperative housing : a handbook for effective operations",
+          "score": 8,
+          "matched_on": [
+            "community land trust"
+          ]
+        },
+        {
           "id": "28b7cb2c",
           "title": "The Cooperative Way of Housing in Canada",
           "score": 7,
@@ -1029,14 +1047,6 @@
         {
           "id": "fc44409e",
           "title": "Creating cohousing : building sustainable communities",
-          "score": 7,
-          "matched_on": [
-            "community land trust"
-          ]
-        },
-        {
-          "id": "298f7165",
-          "title": "Tenants take over",
           "score": 7,
           "matched_on": [
             "community land trust"
@@ -7758,7 +7768,7 @@
       "slug": "communs-fonciers-histoire",
       "titre": "Communs fonciers : une histoire",
       "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-      "doc_count": 328,
+      "doc_count": 329,
       "docs": [
         "d30c223f",
         "c8210481",
@@ -7984,6 +7994,8 @@
         "8a522aaf",
         "89cbd89b",
         "504ef2ad",
+        "c3d443aa",
+        "9702f1fe",
         "28b7cb2c",
         "2175f7a3",
         "2e5629b5",
@@ -8025,7 +8037,6 @@
         "4042cb84",
         "070edf21",
         "fc44409e",
-        "298f7165",
         "a705762f",
         "e40b3977",
         "380ed988",
@@ -10041,6 +10052,22 @@
           ]
         },
         {
+          "id": "c3d443aa",
+          "title": "Co-operative house-building, read ... 1898 [microform]",
+          "score": 8,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
+          "id": "9702f1fe",
+          "title": "Cooperative housing : a handbook for effective operations",
+          "score": 8,
+          "matched_on": [
+            "commons"
+          ]
+        },
+        {
           "id": "28b7cb2c",
           "title": "The Cooperative Way of Housing in Canada",
           "score": 7,
@@ -10386,14 +10413,6 @@
         {
           "id": "fc44409e",
           "title": "Creating cohousing : building sustainable communities",
-          "score": 7,
-          "matched_on": [
-            "commons"
-          ]
-        },
-        {
-          "id": "298f7165",
-          "title": "Tenants take over",
           "score": 7,
           "matched_on": [
             "commons"
@@ -10929,7 +10948,7 @@
       "slug": "habitat-collectif-cooperatif",
       "titre": "Habitat collectif & coopératif",
       "chapo": "Habiter la terre autrement : coopératives d'habitants, habitat groupé, communautés intentionnelles, squats ruraux. Des formes de logement sorties de la spéculation et ancrées dans un sol partagé.",
-      "doc_count": 50,
+      "doc_count": 52,
       "docs": [
         "5f5dadd2",
         "931fc89b",
@@ -10954,6 +10973,8 @@
         "6db5a69d",
         "1c8437cd",
         "ab3b2eb1",
+        "c3d443aa",
+        "9702f1fe",
         "28b7cb2c",
         "2175f7a3",
         "2e5629b5",
@@ -11184,6 +11205,25 @@
             "habitat coopératif",
             "logement collectif",
             "housing cooperative"
+          ]
+        },
+        {
+          "id": "c3d443aa",
+          "title": "Co-operative house-building, read ... 1898 [microform]",
+          "score": 8,
+          "matched_on": [
+            "habitat coopératif",
+            "coopérative d'habitants",
+            "logement collectif",
+            "housing cooperative"
+          ]
+        },
+        {
+          "id": "9702f1fe",
+          "title": "Cooperative housing : a handbook for effective operations",
+          "score": 8,
+          "matched_on": [
+            "habitat coopératif"
           ]
         },
         {
