@@ -1,5 +1,5 @@
-last_updated: '2026-11-03T10:47:20+00:00'
-total_candidates: 6807
+last_updated: '2026-11-05T10:28:14'
+total_candidates: 6845
 candidates:
 - url: https://shs.cairn.info
   type: footnote
@@ -3459,6 +3459,24 @@ candidates:
   - doc_id: fbbd37a0
     context: 'la plupart sont disponible ici:                http://joseph.dejacque.free.fr/'
     page: 11
+- url: https://emdt.noblogs.org/post/2018/05/01/totope-la-taupe-integrale/
+  type: external_link
+  domain: emdt.noblogs.org
+  first_seen: '2026-09-15'
+  last_seen: '2026-11-05'
+  seen_count: 22
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — Écologie radicale
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — Anticapitalisme
+    context: · sur le site web
+    page: null
 - url: http://www.landcoalition.org/en/
   type: footnote
   domain: www.landcoalition.org
@@ -3474,24 +3492,6 @@ candidates:
   - doc_id: 6125738a_commitment_toolkit__5_book_-2019-web_spread
     context: http://www.landcoalition.org/en/
     page: 9
-- url: https://emdt.noblogs.org/post/2018/05/01/totope-la-taupe-integrale/
-  type: external_link
-  domain: emdt.noblogs.org
-  first_seen: '2026-09-15'
-  last_seen: '2026-11-01'
-  seen_count: 21
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés
-    context: · sur le site web
-    page: null
-  - doc_id: Infokiosques.net — Écologie radicale
-    context: · sur le site web
-    page: null
-  - doc_id: Infokiosques.net — Anticapitalisme
-    context: · sur le site web
-    page: null
 - url: https://de.linkedin.com/company/boellstiftung
   type: external_link
   domain: de.linkedin.com
@@ -3886,6 +3886,136 @@ candidates:
   - doc_id: Böll Stiftung — Agriculture & Food (EN topic)
     context: Paris Office - France, Italy
     page: null
+- url: https://2022.conferenciaclacso.org/talleres/
+  type: external_link
+  domain: 2022.conferenciaclacso.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO Libros (acceso abierto)
+    context: 'Talleres de la Conferencia #CLACSO2022'
+    page: null
+  - doc_id: CLACSO — Libros en coedición
+    context: 'Talleres de la Conferencia #CLACSO2022'
+    page: null
+  - doc_id: CLACSO — Publicaciones générales
+    context: 'Talleres de la Conferencia #CLACSO2022'
+    page: null
+  - doc_id: CLACSO — búsqueda tierra y communs
+    context: 'Talleres de la Conferencia #CLACSO2022'
+    page: null
+- url: https://aulaclacso.org
+  type: external_link
+  domain: aulaclacso.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO Libros (acceso abierto)
+    context: '.st0 { fill: #e1c20a; } .st1 { fill: #fff; } .st2 { fill: #b33c8c; } .st3 { fill: #7db8c0; } .st4 { fill: #c1580f;
+      }'
+    page: null
+  - doc_id: CLACSO — Libros en coedición
+    context: '.st0 { fill: #e1c20a; } .st1 { fill: #fff; } .st2 { fill: #b33c8c; } .st3 { fill: #7db8c0; } .st4 { fill: #c1580f;
+      }'
+    page: null
+  - doc_id: CLACSO — Publicaciones générales
+    context: '.st0 { fill: #e1c20a; } .st1 { fill: #fff; } .st2 { fill: #b33c8c; } .st3 { fill: #7db8c0; } .st4 { fill: #c1580f;
+      }'
+    page: null
+  - doc_id: CLACSO — búsqueda tierra y communs
+    context: '.st0 { fill: #e1c20a; } .st1 { fill: #fff; } .st2 { fill: #b33c8c; } .st3 { fill: #7db8c0; } .st4 { fill: #c1580f;
+      }'
+    page: null
+- url: https://biblioteca-repositorio.clacso.edu.ar/
+  type: external_link
+  domain: biblioteca-repositorio.clacso.edu.ar
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO Libros (acceso abierto)
+    context: Biblioteca Virtual de CLACSO
+    page: null
+  - doc_id: CLACSO — Libros en coedición
+    context: Biblioteca Virtual de CLACSO
+    page: null
+  - doc_id: CLACSO — Publicaciones générales
+    context: Biblioteca Virtual de CLACSO
+    page: null
+  - doc_id: CLACSO — búsqueda tierra y communs
+    context: Biblioteca Virtual de CLACSO
+    page: null
+- url: https://clacso.redalyc.org/
+  type: external_link
+  domain: clacso.redalyc.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO Libros (acceso abierto)
+    context: CLACSO-Redalyc
+    page: null
+  - doc_id: CLACSO — Libros en coedición
+    context: CLACSO-Redalyc
+    page: null
+  - doc_id: CLACSO — Publicaciones générales
+    context: CLACSO-Redalyc
+    page: null
+  - doc_id: CLACSO — búsqueda tierra y communs
+    context: CLACSO-Redalyc
+    page: null
+- url: https://clacso.tv/
+  type: external_link
+  domain: clacso.tv
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO Libros (acceso abierto)
+    context: CLACSO TV
+    page: null
+  - doc_id: CLACSO — Libros en coedición
+    context: CLACSO TV
+    page: null
+  - doc_id: CLACSO — Publicaciones générales
+    context: CLACSO TV
+    page: null
+  - doc_id: CLACSO — búsqueda tierra y communs
+    context: CLACSO TV
+    page: null
+- url: https://conferenciaclacso.org/talleres/
+  type: external_link
+  domain: conferenciaclacso.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO Libros (acceso abierto)
+    context: 'Talleres de la Conferencia #CLACSO2025'
+    page: null
+  - doc_id: CLACSO — Libros en coedición
+    context: 'Talleres de la Conferencia #CLACSO2025'
+    page: null
+  - doc_id: CLACSO — Publicaciones générales
+    context: 'Talleres de la Conferencia #CLACSO2025'
+    page: null
+  - doc_id: CLACSO — búsqueda tierra y communs
+    context: 'Talleres de la Conferencia #CLACSO2025'
+    page: null
 - url: https://infokiosques.net/zanzara
   type: footnote
   domain: infokiosques.net
@@ -3925,6 +4055,39 @@ candidates:
   - doc_id: f2168aa7
     context: '[https://infokiosques.net/zanzara]'
     page: 2
+- url: https://libreria.clacso.org/
+  type: external_link
+  domain: libreria.clacso.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO Libros (acceso abierto)
+    context: Librería Latinoamericana
+    page: null
+  - doc_id: CLACSO — Libros en coedición
+    context: Librería Latinoamericana
+    page: null
+  - doc_id: CLACSO — Publicaciones générales
+    context: Librería Latinoamericana
+    page: null
+  - doc_id: CLACSO — búsqueda tierra y communs
+    context: Librería Latinoamericana
+    page: null
+- url: https://linksta.cc/@petite_hortensia
+  type: external_link
+  domain: linksta.cc
+  first_seen: '2026-07-27'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
 - url: https://pixelfed.social/DefendingUNDROP
   type: mastodon
   found_from:
@@ -4008,72 +4171,188 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://2022.conferenciaclacso.org/talleres/
+- url: https://repositorio.clacso.org/index.html
   type: external_link
-  domain: 2022.conferenciaclacso.org
+  domain: repositorio.clacso.org
   first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
+  last_seen: '2026-11-05'
+  seen_count: 18
   suggested_action: follow_one_time
   notes: ''
   found_from:
   - doc_id: CLACSO Libros (acceso abierto)
-    context: 'Talleres de la Conferencia #CLACSO2022'
+    context: Repositorio de clases
     page: null
   - doc_id: CLACSO — Libros en coedición
-    context: 'Talleres de la Conferencia #CLACSO2022'
+    context: Repositorio de clases
     page: null
   - doc_id: CLACSO — Publicaciones générales
-    context: 'Talleres de la Conferencia #CLACSO2022'
+    context: Repositorio de clases
     page: null
   - doc_id: CLACSO — búsqueda tierra y communs
-    context: 'Talleres de la Conferencia #CLACSO2022'
+    context: Repositorio de clases
     page: null
-- url: https://aulaclacso.org
+- url: https://stopmicro38.noblogs.org/files/2026/08/souverainete_numerique_V8.pdf
   type: external_link
-  domain: aulaclacso.org
+  domain: stopmicro38.noblogs.org
+  first_seen: '2026-09-15'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — Écologie radicale
+    context: · sur le site web
+    page: null
+- url: https://www.facebook.com/CLACSO.Oficial
+  type: external_link
+  domain: www.facebook.com
   first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
+  last_seen: '2026-11-05'
+  seen_count: 18
   suggested_action: follow_one_time
   notes: ''
   found_from:
   - doc_id: CLACSO Libros (acceso abierto)
-    context: '.st0 { fill: #e1c20a; } .st1 { fill: #fff; } .st2 { fill: #b33c8c; } .st3 { fill: #7db8c0; } .st4 { fill: #c1580f;
-      }'
+    context: lien depuis https://www.clacso.org/libros/
     page: null
   - doc_id: CLACSO — Libros en coedición
-    context: '.st0 { fill: #e1c20a; } .st1 { fill: #fff; } .st2 { fill: #b33c8c; } .st3 { fill: #7db8c0; } .st4 { fill: #c1580f;
-      }'
+    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
     page: null
   - doc_id: CLACSO — Publicaciones générales
-    context: '.st0 { fill: #e1c20a; } .st1 { fill: #fff; } .st2 { fill: #b33c8c; } .st3 { fill: #7db8c0; } .st4 { fill: #c1580f;
-      }'
+    context: lien depuis https://www.clacso.org/publicaciones/
     page: null
   - doc_id: CLACSO — búsqueda tierra y communs
-    context: '.st0 { fill: #e1c20a; } .st1 { fill: #fff; } .st2 { fill: #b33c8c; } .st3 { fill: #7db8c0; } .st4 { fill: #c1580f;
-      }'
+    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
     page: null
-- url: https://biblioteca-repositorio.clacso.edu.ar/
+- url: https://www.instagram.com/clacso_oficial/?hl=es-la
   type: external_link
-  domain: biblioteca-repositorio.clacso.edu.ar
+  domain: www.instagram.com
   first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
+  last_seen: '2026-11-05'
+  seen_count: 18
   suggested_action: follow_one_time
   notes: ''
   found_from:
   - doc_id: CLACSO Libros (acceso abierto)
-    context: Biblioteca Virtual de CLACSO
+    context: lien depuis https://www.clacso.org/libros/
     page: null
   - doc_id: CLACSO — Libros en coedición
-    context: Biblioteca Virtual de CLACSO
+    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
     page: null
   - doc_id: CLACSO — Publicaciones générales
-    context: Biblioteca Virtual de CLACSO
+    context: lien depuis https://www.clacso.org/publicaciones/
     page: null
   - doc_id: CLACSO — búsqueda tierra y communs
-    context: Biblioteca Virtual de CLACSO
+    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
+    page: null
+- url: https://www.linkedin.com/company/consejo-latinoamericano-de-ciencias-sociales/posts/?feedView=all
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO Libros (acceso abierto)
+    context: lien depuis https://www.clacso.org/libros/
+    page: null
+  - doc_id: CLACSO — Libros en coedición
+    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
+    page: null
+  - doc_id: CLACSO — Publicaciones générales
+    context: lien depuis https://www.clacso.org/publicaciones/
+    page: null
+  - doc_id: CLACSO — búsqueda tierra y communs
+    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
+    page: null
+- url: https://www.tiktok.com/@clacso
+  type: external_link
+  domain: www.tiktok.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO Libros (acceso abierto)
+    context: lien depuis https://www.clacso.org/libros/
+    page: null
+  - doc_id: CLACSO — Libros en coedición
+    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
+    page: null
+  - doc_id: CLACSO — Publicaciones générales
+    context: lien depuis https://www.clacso.org/publicaciones/
+    page: null
+  - doc_id: CLACSO — búsqueda tierra y communs
+    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
+    page: null
+- url: https://www.whatsapp.com/channel/0029VaFhmolAO7RBTve2aq43
+  type: external_link
+  domain: www.whatsapp.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO Libros (acceso abierto)
+    context: lien depuis https://www.clacso.org/libros/
+    page: null
+  - doc_id: CLACSO — Libros en coedición
+    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
+    page: null
+  - doc_id: CLACSO — Publicaciones générales
+    context: lien depuis https://www.clacso.org/publicaciones/
+    page: null
+  - doc_id: CLACSO — búsqueda tierra y communs
+    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
+    page: null
+- url: https://www.youtube.com/channel/UCcAFzGJh_KTNwel7-gCpDVQ
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO Libros (acceso abierto)
+    context: lien depuis https://www.clacso.org/libros/
+    page: null
+  - doc_id: CLACSO — Libros en coedición
+    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
+    page: null
+  - doc_id: CLACSO — Publicaciones générales
+    context: lien depuis https://www.clacso.org/publicaciones/
+    page: null
+  - doc_id: CLACSO — búsqueda tierra y communs
+    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
+    page: null
+- url: https://x.com/_clacso
+  type: external_link
+  domain: x.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 18
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO Libros (acceso abierto)
+    context: lien depuis https://www.clacso.org/libros/
+    page: null
+  - doc_id: CLACSO — Libros en coedición
+    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
+    page: null
+  - doc_id: CLACSO — Publicaciones générales
+    context: lien depuis https://www.clacso.org/publicaciones/
+    page: null
+  - doc_id: CLACSO — búsqueda tierra y communs
+    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
     page: null
 - url: https://bsky.app/search?q=%23Souverainet%C3%A9Alimentaire
   type: mastodon
@@ -4165,69 +4444,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://clacso.redalyc.org/
-  type: external_link
-  domain: clacso.redalyc.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO Libros (acceso abierto)
-    context: CLACSO-Redalyc
-    page: null
-  - doc_id: CLACSO — Libros en coedición
-    context: CLACSO-Redalyc
-    page: null
-  - doc_id: CLACSO — Publicaciones générales
-    context: CLACSO-Redalyc
-    page: null
-  - doc_id: CLACSO — búsqueda tierra y communs
-    context: CLACSO-Redalyc
-    page: null
-- url: https://clacso.tv/
-  type: external_link
-  domain: clacso.tv
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO Libros (acceso abierto)
-    context: CLACSO TV
-    page: null
-  - doc_id: CLACSO — Libros en coedición
-    context: CLACSO TV
-    page: null
-  - doc_id: CLACSO — Publicaciones générales
-    context: CLACSO TV
-    page: null
-  - doc_id: CLACSO — búsqueda tierra y communs
-    context: CLACSO TV
-    page: null
-- url: https://conferenciaclacso.org/talleres/
-  type: external_link
-  domain: conferenciaclacso.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO Libros (acceso abierto)
-    context: 'Talleres de la Conferencia #CLACSO2025'
-    page: null
-  - doc_id: CLACSO — Libros en coedición
-    context: 'Talleres de la Conferencia #CLACSO2025'
-    page: null
-  - doc_id: CLACSO — Publicaciones générales
-    context: 'Talleres de la Conferencia #CLACSO2025'
-    page: null
-  - doc_id: CLACSO — búsqueda tierra y communs
-    context: 'Talleres de la Conferencia #CLACSO2025'
-    page: null
 - url: https://infokiosques.net/spip.php?article204
   type: footnote
   domain: infokiosques.net
@@ -4258,222 +4474,6 @@ candidates:
   - doc_id: f59d6306
     context: https://infokiosques.net/spip.php?article204
     page: 45
-- url: https://libreria.clacso.org/
-  type: external_link
-  domain: libreria.clacso.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO Libros (acceso abierto)
-    context: Librería Latinoamericana
-    page: null
-  - doc_id: CLACSO — Libros en coedición
-    context: Librería Latinoamericana
-    page: null
-  - doc_id: CLACSO — Publicaciones générales
-    context: Librería Latinoamericana
-    page: null
-  - doc_id: CLACSO — búsqueda tierra y communs
-    context: Librería Latinoamericana
-    page: null
-- url: https://linksta.cc/@petite_hortensia
-  type: external_link
-  domain: linksta.cc
-  first_seen: '2026-07-27'
-  last_seen: '2026-11-01'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés
-    context: · sur le site web
-    page: null
-- url: https://repositorio.clacso.org/index.html
-  type: external_link
-  domain: repositorio.clacso.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO Libros (acceso abierto)
-    context: Repositorio de clases
-    page: null
-  - doc_id: CLACSO — Libros en coedición
-    context: Repositorio de clases
-    page: null
-  - doc_id: CLACSO — Publicaciones générales
-    context: Repositorio de clases
-    page: null
-  - doc_id: CLACSO — búsqueda tierra y communs
-    context: Repositorio de clases
-    page: null
-- url: https://stopmicro38.noblogs.org/files/2026/08/souverainete_numerique_V8.pdf
-  type: external_link
-  domain: stopmicro38.noblogs.org
-  first_seen: '2026-09-15'
-  last_seen: '2026-11-01'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés
-    context: · sur le site web
-    page: null
-  - doc_id: Infokiosques.net — Écologie radicale
-    context: · sur le site web
-    page: null
-- url: https://www.facebook.com/CLACSO.Oficial
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO Libros (acceso abierto)
-    context: lien depuis https://www.clacso.org/libros/
-    page: null
-  - doc_id: CLACSO — Libros en coedición
-    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
-    page: null
-  - doc_id: CLACSO — Publicaciones générales
-    context: lien depuis https://www.clacso.org/publicaciones/
-    page: null
-  - doc_id: CLACSO — búsqueda tierra y communs
-    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
-    page: null
-- url: https://www.instagram.com/clacso_oficial/?hl=es-la
-  type: external_link
-  domain: www.instagram.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO Libros (acceso abierto)
-    context: lien depuis https://www.clacso.org/libros/
-    page: null
-  - doc_id: CLACSO — Libros en coedición
-    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
-    page: null
-  - doc_id: CLACSO — Publicaciones générales
-    context: lien depuis https://www.clacso.org/publicaciones/
-    page: null
-  - doc_id: CLACSO — búsqueda tierra y communs
-    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
-    page: null
-- url: https://www.linkedin.com/company/consejo-latinoamericano-de-ciencias-sociales/posts/?feedView=all
-  type: external_link
-  domain: www.linkedin.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO Libros (acceso abierto)
-    context: lien depuis https://www.clacso.org/libros/
-    page: null
-  - doc_id: CLACSO — Libros en coedición
-    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
-    page: null
-  - doc_id: CLACSO — Publicaciones générales
-    context: lien depuis https://www.clacso.org/publicaciones/
-    page: null
-  - doc_id: CLACSO — búsqueda tierra y communs
-    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
-    page: null
-- url: https://www.tiktok.com/@clacso
-  type: external_link
-  domain: www.tiktok.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO Libros (acceso abierto)
-    context: lien depuis https://www.clacso.org/libros/
-    page: null
-  - doc_id: CLACSO — Libros en coedición
-    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
-    page: null
-  - doc_id: CLACSO — Publicaciones générales
-    context: lien depuis https://www.clacso.org/publicaciones/
-    page: null
-  - doc_id: CLACSO — búsqueda tierra y communs
-    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
-    page: null
-- url: https://www.whatsapp.com/channel/0029VaFhmolAO7RBTve2aq43
-  type: external_link
-  domain: www.whatsapp.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO Libros (acceso abierto)
-    context: lien depuis https://www.clacso.org/libros/
-    page: null
-  - doc_id: CLACSO — Libros en coedición
-    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
-    page: null
-  - doc_id: CLACSO — Publicaciones générales
-    context: lien depuis https://www.clacso.org/publicaciones/
-    page: null
-  - doc_id: CLACSO — búsqueda tierra y communs
-    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
-    page: null
-- url: https://www.youtube.com/channel/UCcAFzGJh_KTNwel7-gCpDVQ
-  type: external_link
-  domain: www.youtube.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO Libros (acceso abierto)
-    context: lien depuis https://www.clacso.org/libros/
-    page: null
-  - doc_id: CLACSO — Libros en coedición
-    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
-    page: null
-  - doc_id: CLACSO — Publicaciones générales
-    context: lien depuis https://www.clacso.org/publicaciones/
-    page: null
-  - doc_id: CLACSO — búsqueda tierra y communs
-    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
-    page: null
-- url: https://x.com/_clacso
-  type: external_link
-  domain: x.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 17
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO Libros (acceso abierto)
-    context: lien depuis https://www.clacso.org/libros/
-    page: null
-  - doc_id: CLACSO — Libros en coedición
-    context: lien depuis https://www.clacso.org/libros-de-clacso-en-coedicion/
-    page: null
-  - doc_id: CLACSO — Publicaciones générales
-    context: lien depuis https://www.clacso.org/publicaciones/
-    page: null
-  - doc_id: CLACSO — búsqueda tierra y communs
-    context: lien depuis https://www.clacso.org/?s=tierra+communs&post_type=publication
-    page: null
 - url: http://contreinfo7.internetdown.org/spip.php?article143
   type: external_link
   domain: contreinfo7.internetdown.org
@@ -5828,6 +5828,18 @@ candidates:
   - doc_id: ddfa4463
     context: https://nyeleni.org/spip.php?article310
     page: 29
+- url: https://paris-luttes.info/resister-collectivement-a-l-amende-20865?lang=fr
+  type: external_link
+  domain: paris-luttes.info
+  first_seen: '2026-08-07'
+  last_seen: '2026-11-05'
+  seen_count: 15
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
 - url: http://agroecologia.espora.org
   type: footnote
   domain: agroecologia.espora.org
@@ -5867,11 +5879,11 @@ candidates:
   - doc_id: FIAN International — publications
     context: Pare-feu web activé
     page: null
-- url: https://paris-luttes.info/resister-collectivement-a-l-amende-20865?lang=fr
+- url: https://societepsychedelique.fr/assets/SPF-Psychedeliques-Manuel-de-Reduction-des-Risques.pdf
   type: external_link
-  domain: paris-luttes.info
-  first_seen: '2026-08-07'
-  last_seen: '2026-11-01'
+  domain: societepsychedelique.fr
+  first_seen: '2026-09-15'
+  last_seen: '2026-11-05'
   seen_count: 14
   suggested_action: follow_one_time
   notes: ''
@@ -6249,18 +6261,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://societepsychedelique.fr/assets/SPF-Psychedeliques-Manuel-de-Reduction-des-Risques.pdf
-  type: external_link
-  domain: societepsychedelique.fr
-  first_seen: '2026-09-15'
-  last_seen: '2026-11-01'
-  seen_count: 13
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés
-    context: · sur le site web
-    page: null
 - url: https://www.facebook.com/AmigasdelaTierraEsp
   type: external_link
   domain: www.facebook.com
@@ -6512,6 +6512,30 @@ candidates:
     context: jet, http://www.timesonline.co.uk, juillet 2006. (11) William Harwin, département de cybernétique de l’université
       de
     page: 2
+- url: https://africa.landcoalition.org/en
+  type: external_link
+  domain: africa.landcoalition.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: lien depuis https://www.landcoalition.org/en/latest/
+    page: null
+- url: https://asia.landcoalition.org/en
+  type: external_link
+  domain: asia.landcoalition.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: lien depuis https://www.landcoalition.org/en/latest/
+    page: null
 - url: https://bit.ly/2pVQzW7
   type: footnote
   domain: bit.ly
@@ -6666,6 +6690,30 @@ candidates:
   - doc_id: CrimethInc — zines
     context: CrimethInc. on Tumblr
     page: null
+- url: https://desracinees.wordpress.com/2019/03/06/notre-nouveau-fanzine-hbiba-hloua-est-en-ligne/
+  type: external_link
+  domain: desracinees.wordpress.com
+  first_seen: '2026-09-23'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
+- url: https://emena.landcoalition.org/en
+  type: external_link
+  domain: emena.landcoalition.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: lien depuis https://www.landcoalition.org/en/latest/
+    page: null
 - url: https://facebook.com/To-Change-Everything-103734818122357
   type: external_link
   domain: facebook.com
@@ -6680,6 +6728,18 @@ candidates:
     page: null
   - doc_id: CrimethInc — zines
     context: Crimethinc. on Facebook
+    page: null
+- url: https://findme.landcoalition.org/mailing/subscribe
+  type: external_link
+  domain: findme.landcoalition.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: Sign me up
     page: null
 - url: https://github.com/crimethinc
   type: external_link
@@ -6743,6 +6803,30 @@ candidates:
     page: null
   - doc_id: CrimethInc — zines
     context: CrimethInc. on Peertube
+    page: null
+- url: https://lac.landcoalition.org/en
+  type: external_link
+  domain: lac.landcoalition.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: lien depuis https://www.landcoalition.org/en/latest/
+    page: null
+- url: https://membernet.landcoalition.org/user/login
+  type: external_link
+  domain: membernet.landcoalition.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: MemberNet
     page: null
 - url: https://reddit.com/r/CrimethInc
   type: external_link
@@ -6816,6 +6900,18 @@ candidates:
   - doc_id: CrimethInc — zines
     context: CrimethInc. on Mastodon
     page: null
+- url: https://www.dev.ngo/
+  type: external_link
+  domain: www.dev.ngo
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: Site by Dev
+    page: null
 - url: https://www.facebook.com/ECVC-European-Coordination-Via-Campesina-322102744638450/
   type: footnote
   domain: www.facebook.com
@@ -6837,6 +6933,18 @@ candidates:
   - doc_id: ac896a11
     context: 8 https://www.facebook.com/ECVC-European-Coordination-Via-Campesina-322102744638450/
     page: 25
+- url: https://www.facebook.com/landcoalition
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: Facebook
+    page: null
 - url: https://www.getgrav.org
   type: external_link
   domain: www.getgrav.org
@@ -6848,6 +6956,54 @@ candidates:
   found_from:
   - doc_id: Troisièmes Voix — éditions
     context: Grav
+    page: null
+- url: https://www.globallandforum.org/
+  type: external_link
+  domain: www.globallandforum.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: Global Land Forum
+    page: null
+- url: https://www.instagram.com/stories/landcoalition/
+  type: external_link
+  domain: www.instagram.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: Instagram
+    page: null
+- url: https://www.landexglobal.org/en/
+  type: external_link
+  domain: www.landexglobal.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: LANDex
+    page: null
+- url: https://www.linkedin.com/company/614402/
+  type: external_link
+  domain: www.linkedin.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: LinkedIn
     page: null
 - url: https://www.unfpa.org/child-marriage-frequently-asked-
   type: footnote
@@ -6870,6 +7026,18 @@ candidates:
   - doc_id: f07ea277
     context: "3\t https://www.unfpa.org/child-marriage-frequently-asked-"
     page: 14
+- url: https://www.youtube.com/channel/UCcPuJ8iM4Yi0QQJ4963H3UQ
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 12
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: YouTube
+    page: null
 - url: https://youtube.com/@crimethincexworkerscollective
   type: external_link
   domain: youtube.com
@@ -6927,18 +7095,6 @@ candidates:
   - doc_id: 98360cb9
     context: et sur http://libcom.org/history/1931-barcelona-mass-rent-strike.
     page: 2
-- url: https://africa.landcoalition.org/en
-  type: external_link
-  domain: africa.landcoalition.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: lien depuis https://www.landcoalition.org/en/latest/
-    page: null
 - url: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
   type: footnote
   domain: agriculture.gouv.fr
@@ -6954,18 +7110,6 @@ candidates:
   - doc_id: 682f226c_action_directe_antispeciste-cahier-2026-18pa4-2
     context: https://agriculture.gouv.fr/liste-des-etablissements-agrees-ce-
     page: 18
-- url: https://asia.landcoalition.org/en
-  type: external_link
-  domain: asia.landcoalition.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: lien depuis https://www.landcoalition.org/en/latest/
-    page: null
 - url: https://attaque.noblogs.org/post/2018/06/21/lille-stop-au-specisme-
   type: footnote
   domain: attaque.noblogs.org
@@ -7023,18 +7167,6 @@ candidates:
   - doc_id: Portal OACA — Libros anarquistas (catégorie)
     context: Creative Commons
     page: null
-- url: https://desracinees.wordpress.com/2019/03/06/notre-nouveau-fanzine-hbiba-hloua-est-en-ligne/
-  type: external_link
-  domain: desracinees.wordpress.com
-  first_seen: '2026-09-23'
-  last_seen: '2026-11-01'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés
-    context: · sur le site web
-    page: null
 - url: https://doi.org/10.1080/09640568.2019.1595546
   type: footnote
   domain: doi.org
@@ -7069,18 +7201,6 @@ candidates:
     genre: journal-article
     html_url: https://www.tandfonline.com/doi/pdf/10.1080/09640568.2019.1595546?needAccess=true
     source: unpaywall
-- url: https://emena.landcoalition.org/en
-  type: external_link
-  domain: emena.landcoalition.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: lien depuis https://www.landcoalition.org/en/latest/
-    page: null
 - url: https://feeds.feedburner.com/portaloaca
   type: external_link
   domain: feeds.feedburner.com
@@ -7108,18 +7228,6 @@ candidates:
   - doc_id: 682f226c_action_directe_antispeciste-cahier-2026-18pa4-2
     context: https://fichiers-publics.agriculture.gouv.fr/dgal/ListesOfficielles/
     page: 6
-- url: https://findme.landcoalition.org/mailing/subscribe
-  type: external_link
-  domain: findme.landcoalition.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: Sign me up
-    page: null
 - url: https://infokiosques.net/spip.php?article1814
   type: footnote
   domain: infokiosques.net
@@ -7207,18 +7315,6 @@ candidates:
   - doc_id: 8fed46af
     context: https://itssodifferenthereblog.tumblr.com/
     page: 3
-- url: https://lac.landcoalition.org/en
-  type: external_link
-  domain: lac.landcoalition.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: lien depuis https://www.landcoalition.org/en/latest/
-    page: null
 - url: https://libcom.org/article/raven-17-use-land
   type: footnote
   domain: libcom.org
@@ -7261,18 +7357,6 @@ candidates:
   - doc_id: 682f226c_action_directe_antispeciste-cahier-2026-18pa4-2
     context: https://lille.indymedia.org/spip.php?article31839&lang=fr
     page: 16
-- url: https://membernet.landcoalition.org/user/login
-  type: external_link
-  domain: membernet.landcoalition.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: MemberNet
-    page: null
 - url: https://opensanctuary.org/guide-des-soins-aux-cochons/
   type: footnote
   domain: opensanctuary.org
@@ -7555,30 +7639,6 @@ candidates:
   - doc_id: 682f226c_action_directe_antispeciste-cahier-2026-18pa4-2
     context: https://www.20minutes.fr/bordeaux/3021855-20210415-bordeaux-plus-
     page: 6
-- url: https://www.dev.ngo/
-  type: external_link
-  domain: www.dev.ngo
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: Site by Dev
-    page: null
-- url: https://www.facebook.com/landcoalition
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: Facebook
-    page: null
 - url: https://www.facebook.com/portaloaca
   type: external_link
   domain: www.facebook.com
@@ -7590,66 +7650,6 @@ candidates:
   found_from:
   - doc_id: Portal OACA — Libros anarquistas (catégorie)
     context: Facebook
-    page: null
-- url: https://www.globallandforum.org/
-  type: external_link
-  domain: www.globallandforum.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: Global Land Forum
-    page: null
-- url: https://www.instagram.com/stories/landcoalition/
-  type: external_link
-  domain: www.instagram.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: Instagram
-    page: null
-- url: https://www.landexglobal.org/en/
-  type: external_link
-  domain: www.landexglobal.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: LANDex
-    page: null
-- url: https://www.linkedin.com/company/614402/
-  type: external_link
-  domain: www.linkedin.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: LinkedIn
-    page: null
-- url: https://www.youtube.com/channel/UCcPuJ8iM4Yi0QQJ4963H3UQ
-  type: external_link
-  domain: www.youtube.com
-  first_seen: '2026-05-18'
-  last_seen: '2026-10-29'
-  seen_count: 11
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: YouTube
     page: null
 - url: http://www.zite.fr/
   type: external_link
@@ -7714,6 +7714,21 @@ candidates:
   - doc_id: e612942d
     context: contexto arqueológico da Amazônia. 2020.  https://doi.
     page: 81
+- url: https://emmaclit.com/2025/06/28/al-shifa-un-hopital-a-gaza/
+  type: external_link
+  domain: emmaclit.com
+  first_seen: '2026-10-09'
+  last_seen: '2026-11-05'
+  seen_count: 10
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — Anticolonialismes
+    context: · sur le site web
+    page: null
 - url: https://infokiosques.net
   type: footnote
   domain: infokiosques.net
@@ -8110,21 +8125,6 @@ candidates:
     genre: journal-article
     html_url: https://iopscience.iop.org/article/10.1088/1755-1307/6/41/412045/pdf
     source: unpaywall
-- url: https://emmaclit.com/2025/06/28/al-shifa-un-hopital-a-gaza/
-  type: external_link
-  domain: emmaclit.com
-  first_seen: '2026-10-09'
-  last_seen: '2026-11-01'
-  seen_count: 9
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés
-    context: · sur le site web
-    page: null
-  - doc_id: Infokiosques.net — Anticolonialismes
-    context: · sur le site web
-    page: null
 - url: https://handsontheland.net
   type: footnote
   domain: handsontheland.net
@@ -9503,6 +9503,21 @@ candidates:
   found_from:
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Heimatkunde
+    page: null
+- url: https://ifirelles.wordpress.com
+  type: external_link
+  domain: ifirelles.wordpress.com
+  first_seen: '2026-10-17'
+  last_seen: '2026-11-05'
+  seen_count: 8
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés
+    context: notre site internet
+    page: null
+  - doc_id: Infokiosques.net — Anticolonialismes
+    context: · sur le site web
     page: null
 - url: https://infokiosques.net/spip.php?
   type: footnote
@@ -12729,21 +12744,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://ifirelles.wordpress.com
-  type: external_link
-  domain: ifirelles.wordpress.com
-  first_seen: '2026-10-17'
-  last_seen: '2026-11-01'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés
-    context: notre site internet
-    page: null
-  - doc_id: Infokiosques.net — Anticolonialismes
-    context: · sur le site web
-    page: null
 - url: https://infokiosques.net/spip.php?article1598
   type: footnote
   domain: infokiosques.net
@@ -15830,6 +15830,18 @@ candidates:
     title: Especialidad en Educación para la Paz, Igualdad de Género y Derechos Humanos. Asociación Nacional de Universidades
       e Instituciones de Educación Superior (ANUIES) y Universidad Autónoma de Sinaloa (México)
   suggested_action: follow_one_time
+- url: https://clacso.redalyc.org/#/home
+  type: external_link
+  domain: clacso.redalyc.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-05'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: CLACSO — Publicaciones générales
+    context: lien depuis https://www.clacso.org/publicaciones/
+    page: null
 - url: https://clip.ouvaton.org/quest-ce-que-le-clip/
   type: footnote
   domain: clip.ouvaton.org
@@ -16473,6 +16485,16 @@ candidates:
     year: 2022
     doi: 10.24201/es.2024v42n124.2362
   suggested_action: follow_one_time
+  promoted_pdf_url: https://estudiossociologicos.colmex.mx/index.php/es/article/download/2362/2135
+  promoted_at: '2026-11-05T10:26:47'
+  promoted_metadata:
+    doi: 10.24201/es.2024v42n124.2362
+    title: Leer el ‘desorden’. Cambio agrario, campesinados y el Sembrando Vida
+    journal: Estudios Sociológicos de El Colegio de México
+    published_date: '2022-09-29'
+    genre: journal-article
+    html_url: https://estudiossociologicos.colmex.mx/index.php/es/article/download/2362/2135
+    source: unpaywall
 - url: https://doi.org/10.2478/foli-2018-0001
   type: footnote
   domain: doi.org
@@ -20225,6 +20247,18 @@ candidates:
     genre: journal-article
     html_url: https://ageconsearch.umn.edu/record/10129/files/46010040.pdf
     source: unpaywall
+- url: https://asia.landcoalition.org/en/newsroom/women-farmers-regional-gathering-nlc-cambodia/
+  type: external_link
+  domain: asia.landcoalition.org
+  first_seen: '2026-10-05'
+  last_seen: '2026-11-05'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: Women farmers regional gathering | NLC Cambodia
+    page: null
 - url: https://bsky.app/profile/did:plc:ufw5v3n73rlt7e6aaknytv6u/post/3meeq6z4xk72u
   type: mastodon
   found_from:
@@ -20425,18 +20459,6 @@ candidates:
   metadata:
     title: 'V Jornadas internacionales: Mujeres, derechos humanos y paz en Colombia.'
   suggested_action: follow_one_time
-- url: https://clacso.redalyc.org/#/home
-  type: external_link
-  domain: clacso.redalyc.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-09-19'
-  seen_count: 5
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: CLACSO — Publicaciones générales
-    context: lien depuis https://www.clacso.org/publicaciones/
-    page: null
 - url: https://cras31.info/IMG/pdf/propositions_sur_les_mobilisations_a_venir.__par_le_cmdo.pdf
   type: footnote
   domain: cras31.info
@@ -24345,18 +24367,6 @@ candidates:
   - doc_id: 5517ea32
     context: https://api.nfp-energie.ch/api/fr/export_service/project_export?id=97&class=UmbrellaProject
     page: 24
-- url: https://asia.landcoalition.org/en/newsroom/women-farmers-regional-gathering-nlc-cambodia/
-  type: external_link
-  domain: asia.landcoalition.org
-  first_seen: '2026-10-05'
-  last_seen: '2026-10-29'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: Women farmers regional gathering | NLC Cambodia
-    page: null
 - url: https://baidc.revistas.deusto.es/article/download/1775/2329
   type: openalex
   found_from:
@@ -27057,6 +27067,30 @@ candidates:
     genre: dissertation
     html_url: https://edepot.wur.nl/16348
     source: unpaywall
+- url: https://emena.landcoalition.org/en/newsroom/beyond-the-hive/
+  type: external_link
+  domain: emena.landcoalition.org
+  first_seen: '2026-10-13'
+  last_seen: '2026-11-05'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: Beyond the hive in Kosovo
+    page: null
+- url: https://emena.landcoalition.org/en/newsroom/over-10700-olive-trees-damaged-in-september-palestinian-farmers-union-reports/
+  type: external_link
+  domain: emena.landcoalition.org
+  first_seen: '2026-10-13'
+  last_seen: '2026-11-05'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: Over 10,700 olive trees damaged in September, Palestinian Farmers Union reports
+    page: null
 - url: https://estudiosgeograficos.revistas.csic.es/index.php/estudiosgeograficos/article/download/1265/1669
   type: semantic_scholar
   found_from:
@@ -39446,6 +39480,18 @@ candidates:
   - doc_id: 41df6222
     context: "15\t https://asean.org/asean-economic-community/"
     page: 26
+- url: https://asia.landcoalition.org/en/newsroom/cambodia-hosts-asia-wide-talks-on-securing-land-rights-for-women-farmers/
+  type: external_link
+  domain: asia.landcoalition.org
+  first_seen: '2026-10-21'
+  last_seen: '2026-11-05'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: Cambodia hosts Asia-wide talks on securing land rights for women farmers
+    page: null
 - url: https://asianfarmers.org/wp-content/uploads/2024/03/Fostering-the-engagement-of-
   type: footnote
   domain: asianfarmers.org
@@ -41692,18 +41738,6 @@ candidates:
   - doc_id: dfe84b34
     context: 'Assessment, Dutch Sustainability Unit, 9 July 2015 (available at: https://ees.kuleuven.be/klimos/'
     page: 14
-- url: https://emena.landcoalition.org/en/newsroom/beyond-the-hive/
-  type: external_link
-  domain: emena.landcoalition.org
-  first_seen: '2026-10-13'
-  last_seen: '2026-10-29'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: Beyond the hive in Kosovo
-    page: null
 - url: https://emena.landcoalition.org/en/newsroom/gathering-to-celebrate-and-dream-even-bigger/
   type: external_link
   domain: emena.landcoalition.org
@@ -41715,18 +41749,6 @@ candidates:
   found_from:
   - doc_id: International Land Coalition — latest
     context: Gathering to celebrate and dream even bigger
-    page: null
-- url: https://emena.landcoalition.org/en/newsroom/over-10700-olive-trees-damaged-in-september-palestinian-farmers-union-reports/
-  type: external_link
-  domain: emena.landcoalition.org
-  first_seen: '2026-10-13'
-  last_seen: '2026-10-29'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: Over 10,700 olive trees damaged in September, Palestinian Farmers Union reports
     page: null
 - url: https://en.wikipedia.org/wiki/
   type: footnote
@@ -50245,6 +50267,21 @@ candidates:
   - doc_id: 7cbe27ff
     context: CPRE, June  2012.  Available  at:  https://www.cpre.org.uk/resources/from-
     page: 39
+- url: https://www.culturalsurvival.org/news/honoring-our-knowledges-healing-our-mother-earth
+  type: rss
+  found_from:
+  - source: 'RSS feed: Cultural Survival — RSS'
+    context: 'Honoring Our Knowledges, Healing Our Mother Earth — Honoring Our Knowledges, Healing Our Mother Earth Country
+      United States agnes Tue, 10/20/2026 - 09:30 Issues Languages and Cultures Lands, Resources, and Environments Program
+      5 Main Image By CS Staff From October 5–8, 2026, Cultural Survival staff '
+    timestamp: '2026-10-21T08:21:21'
+  seen_count: 3
+  domain: www.culturalsurvival.org
+  first_seen: '2026-10-21'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Honoring Our Knowledges, Healing Our Mother Earth
+  suggested_action: follow_one_time
 - url: https://www.cyriellechatelain.fr/wp-content/uploads/Synthese-rapport-commission-denquete-NUMERIQUE.pdf
   type: mastodon
   found_from:
@@ -58711,6 +58748,18 @@ candidates:
   - doc_id: b39fb80e
     context: '[5] https://abaslescra.noblogs.org catégorie paroles de l''intérieur'
     page: 15
+- url: https://africa.landcoalition.org/en/newsroom/ilc-stands-in-solidarity-with-indigenous-peoples-and-land-rights-defenders-in-tanzania/
+  type: external_link
+  domain: africa.landcoalition.org
+  first_seen: '2026-10-29'
+  last_seen: '2026-11-05'
+  seen_count: 2
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: International Land Coalition — latest
+    context: ILC stands in solidarity with Indigenous Peoples and land rights defenders in Tanzania
+    page: null
 - url: https://afsafrica.org/every-seed-has-a-story/
   type: footnote
   domain: afsafrica.org
@@ -59103,18 +59152,6 @@ candidates:
     genre: journal-article
     html_url: https://asclepio.revistas.csic.es/index.php/asclepio/article/download/1305/2375
     source: unpaywall
-- url: https://asia.landcoalition.org/en/newsroom/cambodia-hosts-asia-wide-talks-on-securing-land-rights-for-women-farmers/
-  type: external_link
-  domain: asia.landcoalition.org
-  first_seen: '2026-10-21'
-  last_seen: '2026-10-29'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: Cambodia hosts Asia-wide talks on securing land rights for women farmers
-    page: null
 - url: https://attaque.noblogs.org/post/tag/mapuches/
   type: footnote
   domain: attaque.noblogs.org
@@ -66741,6 +66778,20 @@ candidates:
   metadata:
     title: 1793 aura-t-il lieu ?
   suggested_action: follow_one_time
+- url: https://lundi.am/1969-la-crise-de-mai-et-juin-1968-ne-s-est-toujours-pas-refermee-La
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: De la misère en milieu lycéen — Comité d'action Lycéen [Archives] - 2 novembre / Avec une grosse photo en haut
+      , Histoire , 4
+    timestamp: '2026-11-03T10:31:52'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: De la misère en milieu lycéen
+  suggested_action: follow_one_time
 - url: https://lundi.am/A-propos-du-17-octobre
   type: rss
   found_from:
@@ -66936,6 +66987,20 @@ candidates:
   last_seen: '2026-08-06'
   metadata:
     title: 'Ceuta : la hogra et le monde qui brûle'
+  suggested_action: follow_one_time
+- url: https://lundi.am/Cineastes-de-notre-temps-7866
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Cinéastes de notre temps — L'Époque | Boum Boum Entretien croisé avec Laurie Lassalle et Matthieu Bareyre - 2
+      novembre / Avec une grosse photo en haut , Mouvement , Littérature , 4
+    timestamp: '2026-11-03T10:31:52'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Cinéastes de notre temps
   suggested_action: follow_one_time
 - url: https://lundi.am/Colombie-l-extreme-droite-d-Abelardo-de-la-Espriella-au-pouvoir
   type: rss
@@ -67230,6 +67295,19 @@ candidates:
   metadata:
     title: 'Free party vs data centers : pour une politique du bug'
   suggested_action: follow_one_time
+- url: https://lundi.am/GenZ-de-merde
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: « GenZ de merde » — Sept poèmes - 2 novembre / Littérature , 4 , Avec une grosse photo en haut
+    timestamp: '2026-11-03T10:31:52'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: « GenZ de merde »
+  suggested_action: follow_one_time
 - url: https://lundi.am/Generation-niketout
   type: rss
   found_from:
@@ -67396,6 +67474,20 @@ candidates:
   last_seen: '2026-07-02'
   metadata:
     title: La lutte pour la baignade
+  suggested_action: follow_one_time
+- url: https://lundi.am/La-menace-de-l-auto-justice
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: La menace de l'auto-justice — Gérald Darmanin, la police & les fascistes Avec Vanessa Codaccioni, Laurent Gayer
+      et Gilles Favarel-Garrigues - 2 novembre / lundisoir , Terreur , Avec une grosse photo en haut , 4
+    timestamp: '2026-11-03T10:31:52'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: La menace de l'auto-justice
   suggested_action: follow_one_time
 - url: https://lundi.am/La-narco-esthetique-du-Tigre-5-0-a-l-ere-de-l-intelligence-artificielle
   type: rss
@@ -67762,6 +67854,19 @@ candidates:
   metadata:
     title: Pourquoi des lycées brûlent-ils ?
   suggested_action: follow_one_time
+- url: https://lundi.am/Profanations
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Profanations — De la Commune de Paris au 17 octobre - 2 novembre / Avec une grosse photo en haut , 4 , Positions
+    timestamp: '2026-11-03T10:31:52'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Profanations
+  suggested_action: follow_one_time
 - url: https://lundi.am/Quelques-mots-sur-Trappes-la-necropolitique-et-le-traitement-des-pillages
   type: rss
   found_from:
@@ -67914,6 +68019,20 @@ candidates:
   last_seen: '2026-05-17'
   metadata:
     title: Sur quelques problèmes que présente le pacifisme
+  suggested_action: follow_one_time
+- url: https://lundi.am/Theses-sur-le-concept-de-competence-Suite-7-9
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Thèses sur le concept de compétence (Suite 7/9) — Jacques-Alain Marie - 2 novembre / Avec une grosse photo en
+      haut , Positions , 4
+    timestamp: '2026-11-03T10:31:52'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Thèses sur le concept de compétence (Suite 7/9)
   suggested_action: follow_one_time
 - url: https://lundi.am/Tout-continue-comme-avant
   type: rss
@@ -68393,6 +68512,36 @@ candidates:
   last_seen: '2026-10-29'
   metadata:
     title: 20 projetos de territórios do MST são selecionados pelo Edital Rio Doce Participativo e Comunitário
+  suggested_action: follow_one_time
+- url: https://mst.org.br/2026/10/26/carta-ao-povo-brasileiro-3/
+  type: rss
+  found_from:
+  - source: 'RSS feed: MST Brésil — RSS principal'
+    context: Carta ao Povo Brasileiro — Em carta após a vitória de Lula, o MST afirma que a derrota da extrema-direita exige
+      mobilização permanente e cobra assentamento de 100 mil famílias acampadas como legado do novo mandato O post Carta ao
+      Povo Brasileiro apareceu primeiro em MST .
+    timestamp: '2026-10-29T09:23:47'
+  seen_count: 2
+  domain: mst.org.br
+  first_seen: '2026-10-29'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Carta ao Povo Brasileiro
+  suggested_action: follow_one_time
+- url: https://mst.org.br/2026/10/28/3a-feira-da-reforma-agraria-neusa-paviato-acontece-de-6-a-8-de-novembro-em-campinas/
+  type: rss
+  found_from:
+  - source: 'RSS feed: MST Brésil — RSS principal'
+    context: 3ª Feira da Reforma Agrária Neusa Paviato acontece de 6 a 8 de novembro, em Campinas — Evento realizado pelo
+      MST e Rede Livres une alimentos saudáveis, culinária da terra, espaços da cultura popular, artesanatos, debates, formação
+      e muito mais. O post 3ª Feira da Reforma Agrária Neusa Paviato aconte
+    timestamp: '2026-10-29T09:23:47'
+  seen_count: 2
+  domain: mst.org.br
+  first_seen: '2026-10-29'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 3ª Feira da Reforma Agrária Neusa Paviato acontece de 6 a 8 de novembro, em Campinas
   suggested_action: follow_one_time
 - url: https://mst.org.br/quem-somos/
   type: footnote
@@ -69903,6 +70052,21 @@ candidates:
   metadata:
     title: '« Avec ce système pourri, on n''a aucune perspective » : la révolte de la jeunesse d''Albanie'
   suggested_action: follow_one_time
+- url: https://reporterre.net/BVE-Super-El-Nino-la-Bolivie-decrete-l-etat-d-urgence
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Super El Niño » : la Bolivie décrète l''état d''urgence — Le président bolivien, Rodrigo Paz, a annoncé samedi
+      31 octobre avoir décrété l''état d''urgence en Bolivie pour faire face aux sécheresses et aux inondations liées au «
+      super El Niño », phénomène climatique intense qui fait des ravages cette a'
+    timestamp: '2026-11-03T10:30:40'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: '« Super El Niño » : la Bolivie décrète l''état d''urgence'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Bientot-des-millions-saumons-eleves-en-cuve-Notre-enquete-video-sur-Pure-Salmon
   type: rss
   found_from:
@@ -70174,6 +70338,37 @@ candidates:
   last_seen: '2026-09-29'
   metadata:
     title: Cabanes, yourtes... La traque aux habitats légers s'intensifie depuis les incendies
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Cadres-parisiens-dirigeants-tres-diplomes-Le-RN-n-a-pas-la-volonte-de-faire-emerger-des
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Cadres parisiens, dirigeants très diplômés : « Le RN n''a pas la volonté de faire émerger des figures populaires
+      rurales » — Des parachutages, une hiérarchie sociale forte et l''exaltation d''un clivage contre les « urbains » : le
+      chercheur Guillaume Letourneur décrypte la progression du Rassemblement '
+    timestamp: '2026-11-03T10:30:40'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Cadres parisiens, dirigeants très diplômés : « Le RN n''a pas la volonté de faire émerger des figures populaires
+      rurales »'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Camille-Etienne-On-nait-contamines-c-est-d-une-grande-injustice
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Camille Étienne : « On naît contaminés, c''est d''une grande injustice » — L''activiste écologiste Camille Étienne
+      a fait de la santé son nouveau combat. Autrice du livre-enquête « Facteur X », sur la pollution chimique qui atteint
+      nos corps à tous, elle explique en quoi l''industrie et les politiques e'
+    timestamp: '2026-11-03T10:30:40'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Camille Étienne : « On naît contaminés, c''est d''une grande injustice »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Canal-Seine-Nord-Europe-la-justice-demande-de-rejeter-le-recours-d-associations
   type: rss
@@ -71225,6 +71420,21 @@ candidates:
   metadata:
     title: 'Toux, crises d''asthme, irritations de la peau : quel sont les risques des fumées des incendies ?'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Incendies-en-Indonesie-les-etudiants-menent-la-revolte-contre-la-gestion-du-gouvernement
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Incendies en Indonésie : les étudiants mènent la révolte contre la gestion du gouvernement — En Indonésie, des
+      milliers de personnes ont manifesté fin octobre pour dénoncer la gestion des feux de forêt par le gouvernement. Étudiants
+      et activistes envisagent de durcir le mouvement. Sydney (Australie)'
+    timestamp: '2026-11-03T10:30:40'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Incendies en Indonésie : les étudiants mènent la révolte contre la gestion du gouvernement'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Incendies-en-brulant-les-forets-francaises-alimentent-le-dereglement-climatique-qui-les
   type: rss
   found_from:
@@ -71330,6 +71540,21 @@ candidates:
   last_seen: '2026-09-23'
   metadata:
     title: '« J''y ai passé 12 000 heures » : il a construit sa propre voiture à énergie solaire'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Je-n-ai-plus-envie-de-nourrir-le-monstre-pourquoi-l-ecrivaine-Corinne-Morel-Darleux-quitte-Meta
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Je n''ai plus envie de nourrir le monstre » : pourquoi quitter Meta — « Tout le monde déteste l'' IA , mais
+      tout le monde l''utilise » : dans cette nouvelle chronique, l''autrice Corinne Morel Darleux dénonce l''omniprésence
+      de l''intelligence artificielle et affirme avoir choisi son camp... Corinne Mor'
+    timestamp: '2026-11-03T10:30:40'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: '« Je n''ai plus envie de nourrir le monstre » : pourquoi quitter Meta'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Je-n-ai-rien-pris-rien-casse-rien-vole-apres-le-17-octobre-des-tribunaux-impitoyables
   type: rss
@@ -71736,6 +71961,21 @@ candidates:
   last_seen: '2026-10-29'
   metadata:
     title: 'La mer des batailles : comment défendre le vivant qu''on ne voit pas'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/La-petition-pour-fermer-CNews-depasse-les-500-000-signatures
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: La pétition pour fermer CNews dépasse les 500 000 signatures — Plus de 530 000 personnes ont signé la pétition
+      pour supprimer la chaîne de télévision CNews. Déposée en juin sur le site de l'Assemblée nationale, cette pétition connaît
+      un fort regain de popularité depuis l'attentat raciste de Trappes,
+    timestamp: '2026-11-03T10:30:40'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: La pétition pour fermer CNews dépasse les 500 000 signatures
   suggested_action: follow_one_time
 - url: https://reporterre.net/La-presence-de-PFAS-detectee-dans-60-des-oeufs-testes
   type: rss
@@ -72337,6 +72577,21 @@ candidates:
   metadata:
     title: Comment le lobby du plastique fait sa loi au Parlement
   suggested_action: follow_one_time
+- url: https://reporterre.net/Lobbyistes-fossiles-emmenes-aux-COP-climat-la-France-sur-le-podium-des-pires-delegations
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Lobbyistes fossiles emmenés aux COP climat : la France sur le podium des pires délégations — L''an dernier,
+      lors des grandes négociations climatiques internationales de la COP30 , au Brésil, plus de 1 600 lobbyistes des énergies
+      fossiles étaient présents pour faire valoir leurs intérêts climaticides.'
+    timestamp: '2026-11-03T10:30:40'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Lobbyistes fossiles emmenés aux COP climat : la France sur le podium des pires délégations'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Loi-casseur-payeur-l-executif-veut-punir-les-lyceens-mais-laisse-les-pollueurs-dormir
   type: rss
   found_from:
@@ -72696,6 +72951,21 @@ candidates:
   last_seen: '2026-10-09'
   metadata:
     title: Au bord du gouffre, les agences de la transition écologique entrent en lutte
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Octobre-rose-devient-Octobre-Colere
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Octobre rose devient « Octobre Colère » — Pour politiser le cancer du sein en le liant directement aux politiques
+      agricoles et à l'usage des pesticides, le collectif Cancer Colère a rebaptisé l'opération « Octobre rose » en « Octobre
+      Colère ». Les femmes appauvries par le cancer, le « pinkwashing in
+    timestamp: '2026-11-03T10:30:40'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Octobre rose devient « Octobre Colère »
   suggested_action: follow_one_time
 - url: https://reporterre.net/On-est-souvent-les-derniers-a-etre-ecoutes-les-lyceens-des-quartiers-creent-leur-syndicat
   type: rss
@@ -73210,6 +73480,21 @@ candidates:
   metadata:
     title: 'RN88 : un coup de pouce de l''État à 50 millions pour « la route à Wauquiez »'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Rationalisation-recours-a-l-IA-Le-gouvernement-veut-reduire-les-couts-de-l-Anses
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: « Rationalisation », recours à l'IA… Le gouvernement veut réduire les coûts de l'Anses — Le gouvernement veut
+      réduire les coûts de l'Agence nationale de sécurité sanitaire (Anses). Fin octobre, les quatre ministres de tutelle
+      de l'agence (Agriculture, Écologie, Santé et Travail) ont adressé une lett
+    timestamp: '2026-11-03T10:30:40'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: « Rationalisation », recours à l'IA… Le gouvernement veut réduire les coûts de l'Anses
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Redecouvrir-Rosa-Luxemburg-icone-revolutionnaire-et-precurseuse-ecologiste
   type: rss
   found_from:
@@ -73314,6 +73599,21 @@ candidates:
   last_seen: '2026-10-11'
   metadata:
     title: 'Sainte-Soline : le ministère de l''Écologie donne un accord crucial pour remplir la mégabassine'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Sans-conservateur-et-sans-colorant-20-produits-epingles-pour-leur-marketing-trompeur
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Sans conservateur » et « sans colorant » ? 20 produits épinglés pour leur marketing trompeur — Sur son « panier
+      0 % de matière grasse », Yoplait affirme en gros caractères : « sans conservateur, sans colorant, sans arôme artificiel
+      ». Mais en analysant la liste complète des ingrédients, on découvr'
+    timestamp: '2026-11-03T10:30:40'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: « Sans conservateur » et « sans colorant » ? 20 produits épinglés pour leur marketing trompeur
   suggested_action: follow_one_time
 - url: https://reporterre.net/Sans-notre-intervention-il-n-y-aurait-quasiment-plus-de-busards-en-France-comment
   type: rss
@@ -73617,6 +73917,21 @@ candidates:
   last_seen: '2026-09-23'
   metadata:
     title: '« Un passage en force » : la colère monte pour sauver le château d''eau du Finistère'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Une-etiquette-energie-pour-les-data-centers-Les-ONG-denoncent-du-greenwashing-et-l
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Une étiquette énergie pour les data centers ? Les ONG dénoncent du greenwashing et l''influence des géants du
+      numérique — L''Union européenne veut évaluer les performances environnementales des data centers, mais le futur système
+      de notation fait l''impasse sur plusieurs impacts écologiques et des ONG '
+    timestamp: '2026-11-03T10:30:40'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-03'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Une étiquette énergie pour les data centers ? Les ONG dénoncent du greenwashing et l'influence des géants du numérique
   suggested_action: follow_one_time
 - url: https://reporterre.net/Une-forme-de-resistance-a-Gaza-elles-luttent-pour-la-survie-des-semences-paysannes
   type: rss
@@ -76824,6 +77139,20 @@ candidates:
   - doc_id: dfceedc3_7690
     context: Para consultar los mandatos, consultar https://www.cric-colombia.org/portal/estructura-
     page: 7
+- url: https://www.culturalsurvival.org/chan75
+  type: rss
+  found_from:
+  - source: 'RSS feed: Cultural Survival — RSS'
+    context: 'Panama Advocacy Campaign — Panama Advocacy Campaign /* Shared styling for the English and Spanish CHAN-75 Drupal
+      nodes. */ #chan75-campaign { --accent:#cb4400;--accent-dark:#993300;--ink:#242731;--dark:#1a1a1a;--surface:#ffffff;--muted:#6f727d;--highlight:#f7941d;--line:#e8e8e8;--heading-font:Roboto'
+    timestamp: '2026-10-29T09:24:58'
+  seen_count: 2
+  domain: www.culturalsurvival.org
+  first_seen: '2026-10-29'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Panama Advocacy Campaign
+  suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/2026-elections-and-cop31-whats-ahead-indigenous-peoples-brazil
   type: rss
   found_from:
@@ -77004,20 +77333,20 @@ candidates:
   metadata:
     title: Cultural Survival Supports Indigenous Peoples Affected by the Earthquake Emergency in Colombia
   suggested_action: follow_one_time
-- url: https://www.culturalsurvival.org/news/honoring-our-knowledges-healing-our-mother-earth
+- url: https://www.culturalsurvival.org/news/highland-path-why-state-police-fail-and-how-customary-peace-works-enga-and-hela-papua-new
   type: rss
   found_from:
   - source: 'RSS feed: Cultural Survival — RSS'
-    context: 'Honoring Our Knowledges, Healing Our Mother Earth — Honoring Our Knowledges, Healing Our Mother Earth Country
-      United States agnes Tue, 10/20/2026 - 09:30 Issues Languages and Cultures Lands, Resources, and Environments Program
-      5 Main Image By CS Staff From October 5–8, 2026, Cultural Survival staff '
-    timestamp: '2026-10-21T08:21:21'
+    context: 'The Highland Path: Why State Police Fail and How Customary Peace Works in Enga and Hela, Papua New Guinea —
+      The Highland Path: Why State Police Fail and How Customary Peace Works in Enga and Hela, Papua New Guinea Country Papua
+      New Guinea agnes Mon, 10/26/2026 - 14:23 Issues Languages and Cultures P'
+    timestamp: '2026-10-29T09:24:58'
   seen_count: 2
   domain: www.culturalsurvival.org
-  first_seen: '2026-10-21'
-  last_seen: '2026-10-29'
+  first_seen: '2026-10-29'
+  last_seen: '2026-11-05'
   metadata:
-    title: Honoring Our Knowledges, Healing Our Mother Earth
+    title: 'The Highland Path: Why State Police Fail and How Customary Peace Works in Enga and Hela, Papua New Guinea'
   suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/how-women-dogon-country-are-facing-challenges-climate-change
   type: rss
@@ -77033,6 +77362,22 @@ candidates:
   last_seen: '2026-10-13'
   metadata:
     title: How Women in Dogon Country Are Facing the Challenges of Climate Change
+  suggested_action: follow_one_time
+- url: https://www.culturalsurvival.org/news/indigenizing-design-canon-curator-brian-johnsons-designed-be-red-bold-reclamation-native
+  type: rss
+  found_from:
+  - source: 'RSS feed: Cultural Survival — RSS'
+    context: 'Indigenizing the Design Canon: Curator Brian Johnson’s “Designed to Be Red” Is a Bold Reclamation of Native
+      American Visual Culture — Indigenizing the Design Canon: Curator Brian Johnson’s “Designed to Be Red” Is a Bold Reclamation
+      of Native American Visual Culture Country United States agnes Tue, 1'
+    timestamp: '2026-10-29T09:24:58'
+  seen_count: 2
+  domain: www.culturalsurvival.org
+  first_seen: '2026-10-29'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Indigenizing the Design Canon: Curator Brian Johnson’s “Designed to Be Red” Is a Bold Reclamation of Native American
+      Visual Culture'
   suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/indigenous-journalism-right-peril
   type: rss
@@ -77124,6 +77469,22 @@ candidates:
   metadata:
     title: 'NASDAQ Celebrates Sigma Lithium’s Climate Leadership: Communities and Regulators Tell a Different Story'
   suggested_action: follow_one_time
+- url: https://www.culturalsurvival.org/news/nearly-20-years-without-justice-cultural-survival-calls-panama-provide-reparations-ngabe
+  type: rss
+  found_from:
+  - source: 'RSS feed: Cultural Survival — RSS'
+    context: 'Nearly 20 Years Without Justice: Cultural Survival Calls on Panama to Provide Reparations to Ngäbe Communities
+      Affected by the CHAN-75 Dam — Nearly 20 Years Without Justice: Cultural Survival Calls on Panama to Provide Reparations
+      to Ngäbe Communities Affected by the CHAN-75 Dam Country Panama agnes'
+    timestamp: '2026-10-29T09:24:58'
+  seen_count: 2
+  domain: www.culturalsurvival.org
+  first_seen: '2026-10-29'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Nearly 20 Years Without Justice: Cultural Survival Calls on Panama to Provide Reparations to Ngäbe Communities
+      Affected by the CHAN-75 Dam'
+  suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/new-documentary-when-waterfalls-die-chronicles-shuar-arutam-fight-save-ecuadorian-amazon-open
   type: rss
   found_from:
@@ -77184,6 +77545,21 @@ candidates:
   last_seen: '2026-09-27'
   metadata:
     title: Support Emergency Relief in Nepal
+  suggested_action: follow_one_time
+- url: https://www.culturalsurvival.org/news/terra-madre-be-diversity-biodiversity-bringing-cultural-survival-bazaars-torino-italy
+  type: rss
+  found_from:
+  - source: 'RSS feed: Cultural Survival — RSS'
+    context: 'Terra Madre, Be Diversity, Biodiversity: Bringing the Cultural Survival Bazaars to Torino, Italy — Terra Madre,
+      Be Diversity, Biodiversity: Bringing the Cultural Survival Bazaars to Torino, Italy&nbsp; Country Global agnes Thu,
+      10/22/2026 - 10:28 Issues Languages and Cultures Program 5 Main Image By'
+    timestamp: '2026-10-29T09:24:58'
+  seen_count: 2
+  domain: www.culturalsurvival.org
+  first_seen: '2026-10-29'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Terra Madre, Be Diversity, Biodiversity: Bringing the Cultural Survival Bazaars to Torino, Italy'
   suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/un-hearing-highlights-systemic-criminalization-indigenous-rights-defenders
   type: rss
@@ -88540,18 +88916,6 @@ candidates:
     year: 2021
     doi: 10.58079/uo64
   suggested_action: follow_one_time
-- url: https://africa.landcoalition.org/en/newsroom/ilc-stands-in-solidarity-with-indigenous-peoples-and-land-rights-defenders-in-tanzania/
-  type: external_link
-  domain: africa.landcoalition.org
-  first_seen: '2026-10-29'
-  last_seen: '2026-10-29'
-  seen_count: 1
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: International Land Coalition — latest
-    context: ILC stands in solidarity with Indigenous Peoples and land rights defenders in Tanzania
-    page: null
 - url: https://africa.landcoalition.org/en/newsroom/pastoralist-women-in-the-sahel-pillars-of-food-security-in-the-sahel/
   type: external_link
   domain: africa.landcoalition.org
@@ -98801,20 +99165,6 @@ candidates:
   metadata:
     title: Un tour de France du 17 octobre
   suggested_action: follow_one_time
-- url: https://lundi.am/1969-la-crise-de-mai-et-juin-1968-ne-s-est-toujours-pas-refermee-La
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: De la misère en milieu lycéen — Comité d'action Lycéen [Archives] - 2 novembre / Avec une grosse photo en haut
-      , Histoire , 4
-    timestamp: '2026-11-03T10:31:52'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
-  metadata:
-    title: De la misère en milieu lycéen
-  suggested_action: follow_one_time
 - url: https://lundi.am/A-nos-enfants-et-lyceens
   type: rss
   found_from:
@@ -98884,6 +99234,20 @@ candidates:
   metadata:
     title: Aussi simple que ça...
   suggested_action: follow_one_time
+- url: https://lundi.am/Bresil-entre-le-messie-et-l-antechrist
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Brésil entre le messie et l'antéchrist — Frederico Lyra - 2 novembre / Avec une grosse photo en haut , International
+      , 2
+    timestamp: '2026-11-05T10:23:39'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Brésil entre le messie et l'antéchrist
+  suggested_action: follow_one_time
 - url: https://lundi.am/C-est-une-requisition-populaire
   type: rss
   found_from:
@@ -98941,20 +99305,6 @@ candidates:
   metadata:
     title: Certaines graines
   suggested_action: follow_one_time
-- url: https://lundi.am/Cineastes-de-notre-temps-7866
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Cinéastes de notre temps — L'Époque | Boum Boum Entretien croisé avec Laurie Lassalle et Matthieu Bareyre - 2
-      novembre / Avec une grosse photo en haut , Mouvement , Littérature , 4
-    timestamp: '2026-11-03T10:31:52'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
-  metadata:
-    title: Cinéastes de notre temps
-  suggested_action: follow_one_time
 - url: https://lundi.am/Dans-les-sombres-temps-de-la-normalisation
   type: rss
   found_from:
@@ -98968,6 +99318,34 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: Dans les sombres temps (de la normalisation)
+  suggested_action: follow_one_time
+- url: https://lundi.am/Deborder-la-carte-pour-une-mediance-insurgee
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: 'Déborder la carte : pour une médiance insurgée — (ou comment penser les manifestations en géographe) Hortense
+      Gauthier - 2 novembre / Avec une grosse photo en haut , Positions , 2'
+    timestamp: '2026-11-05T10:23:39'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Déborder la carte : pour une médiance insurgée'
+  suggested_action: follow_one_time
+- url: https://lundi.am/Demesures-ou-un-sort
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Démesures ou un sort — Nous n'avons pas encore gagné mais ils ont déjà perdu [Ciné-tract] - 2 novembre / Avec
+      une grosse photo en haut , Mouvement , 4
+    timestamp: '2026-11-05T10:23:39'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Démesures ou un sort
   suggested_action: follow_one_time
 - url: https://lundi.am/Derriere-le-champs
   type: rss
@@ -99024,6 +99402,20 @@ candidates:
   metadata:
     title: Enfants, école, travail, ville
   suggested_action: follow_one_time
+- url: https://lundi.am/Evanouis
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Évanouis — Surinterprétation d'un film dédié à la « jeunesse » [Visionnage conseillé avant lecture] - 2 novembre
+      / Avec une grosse photo en haut , Littérature , Les kinologues , 4
+    timestamp: '2026-11-05T10:23:39'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Évanouis
+  suggested_action: follow_one_time
 - url: https://lundi.am/FUERA-Ceuta-ou-l-epreuve-du-commun
   type: rss
   found_from:
@@ -99051,19 +99443,6 @@ candidates:
   last_seen: '2026-10-23'
   metadata:
     title: Fallait pas confisquer les dimanches de poche
-  suggested_action: follow_one_time
-- url: https://lundi.am/GenZ-de-merde
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: « GenZ de merde » — Sept poèmes - 2 novembre / Littérature , 4 , Avec une grosse photo en haut
-    timestamp: '2026-11-03T10:31:52'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
-  metadata:
-    title: « GenZ de merde »
   suggested_action: follow_one_time
 - url: https://lundi.am/Instructions-pour-une-prise-d-anes
   type: rss
@@ -99093,6 +99472,20 @@ candidates:
   metadata:
     title: Intelligence multiple contre polycrise entrepreneuriale
   suggested_action: follow_one_time
+- url: https://lundi.am/Interventions-policieres-a-la-Sorbonne-Nouvelle
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Interventions policières à la Sorbonne Nouvelle — « Ces gens ont peur de leurs propres étudiants » - 2 novembre
+      / Avec une grosse photo en haut , Terreur , 2
+    timestamp: '2026-11-05T10:23:39'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Interventions policières à la Sorbonne Nouvelle
+  suggested_action: follow_one_time
 - url: https://lundi.am/La-bande-a-Balance-ton-Claude
   type: rss
   found_from:
@@ -99120,20 +99513,6 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: La colère nous appartient
-  suggested_action: follow_one_time
-- url: https://lundi.am/La-menace-de-l-auto-justice
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: La menace de l'auto-justice — Gérald Darmanin, la police & les fascistes Avec Vanessa Codaccioni, Laurent Gayer
-      et Gilles Favarel-Garrigues - 2 novembre / lundisoir , Terreur , Avec une grosse photo en haut , 4
-    timestamp: '2026-11-03T10:31:52'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
-  metadata:
-    title: La menace de l'auto-justice
   suggested_action: follow_one_time
 - url: https://lundi.am/La-voix-et-le-combat-d-une-soeur
   type: rss
@@ -99275,6 +99654,20 @@ candidates:
   metadata:
     title: OK SAORGE
   suggested_action: follow_one_time
+- url: https://lundi.am/Oufti-c-est-les-jeunes-qui-dissipent-les-tenebres
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Oufti c'est les jeunes qui dissipent les ténèbres ! — Des nouvelles de Liège - 2 novembre / International , Avec
+      une grosse photo en haut , 2
+    timestamp: '2026-11-05T10:23:39'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Oufti c'est les jeunes qui dissipent les ténèbres !
+  suggested_action: follow_one_time
 - url: https://lundi.am/Pour-Ritchy-Thibault-premier-prisonnier-politique-du-mouvement-lyceen
   type: rss
   found_from:
@@ -99289,19 +99682,6 @@ candidates:
   metadata:
     title: Pour Ritchy Thibault, premier prisonnier politique du mouvement lycéen
   suggested_action: follow_one_time
-- url: https://lundi.am/Profanations
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Profanations — De la Commune de Paris au 17 octobre - 2 novembre / Avec une grosse photo en haut , 4 , Positions
-    timestamp: '2026-11-03T10:31:52'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
-  metadata:
-    title: Profanations
-  suggested_action: follow_one_time
 - url: https://lundi.am/Quand-l-IA-corrige-l-IA-un-bac-de-philo-tres-augmente
   type: rss
   found_from:
@@ -99315,6 +99695,20 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: 'Quand l''IA corrige l''IA : un bac de philo très augmenté'
+  suggested_action: follow_one_time
+- url: https://lundi.am/Quels-artistes-ne-soutiennent-pas-le-soulevement
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Quels artistes (ne) soutiennent (pas) le soulèvement ? — « Le J n'est pas le S » - 2 novembre / Avec une grosse
+      photo en haut , 4 , Mouvement
+    timestamp: '2026-11-05T10:23:39'
+  seen_count: 1
+  domain: lundi.am
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Quels artistes (ne) soutiennent (pas) le soulèvement ?
   suggested_action: follow_one_time
 - url: https://lundi.am/Reponse-aux-eveques-de-France
   type: rss
@@ -99370,20 +99764,6 @@ candidates:
   last_seen: '2026-10-27'
   metadata:
     title: Tableau d'une manifestation
-  suggested_action: follow_one_time
-- url: https://lundi.am/Theses-sur-le-concept-de-competence-Suite-7-9
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Thèses sur le concept de compétence (Suite 7/9) — Jacques-Alain Marie - 2 novembre / Avec une grosse photo en
-      haut , Positions , 4
-    timestamp: '2026-11-03T10:31:52'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
-  metadata:
-    title: Thèses sur le concept de compétence (Suite 7/9)
   suggested_action: follow_one_time
 - url: https://lundi.am/Transcarpatie-un-carnet-de-voyage
   type: rss
@@ -100883,35 +101263,126 @@ candidates:
   metadata:
     title: O ecocídio por trás de Flávio Bolsonaro
   suggested_action: follow_one_time
-- url: https://mst.org.br/2026/10/26/carta-ao-povo-brasileiro-3/
+- url: https://mst.org.br/2026/10/30/policia-federal-investiga-onda-de-violencia-contra-indigenas-no-mato-grosso-do-sul-apos-as-eleicoes/
   type: rss
   found_from:
   - source: 'RSS feed: MST Brésil — RSS principal'
-    context: Carta ao Povo Brasileiro — Em carta após a vitória de Lula, o MST afirma que a derrota da extrema-direita exige
-      mobilização permanente e cobra assentamento de 100 mil famílias acampadas como legado do novo mandato O post Carta ao
-      Povo Brasileiro apareceu primeiro em MST .
-    timestamp: '2026-10-29T09:23:47'
+    context: Polícia Federal investiga onda de violência contra indígenas no Mato Grosso do Sul após as eleições — Casos envolvem
+      incêndio criminoso de casa reza, ameaça de contaminação de água e até assassinato de uma família inteira O post Polícia
+      Federal investiga onda de violência contra indígenas no Mato Gr
+    timestamp: '2026-11-05T10:24:01'
   seen_count: 1
   domain: mst.org.br
-  first_seen: '2026-10-29'
-  last_seen: '2026-10-29'
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
   metadata:
-    title: Carta ao Povo Brasileiro
+    title: Polícia Federal investiga onda de violência contra indígenas no Mato Grosso do Sul após as eleições
   suggested_action: follow_one_time
-- url: https://mst.org.br/2026/10/28/3a-feira-da-reforma-agraria-neusa-paviato-acontece-de-6-a-8-de-novembro-em-campinas/
+- url: https://mst.org.br/2026/10/31/o-direito-achado-na-rua-e-na-terra-a-historicidade-e-a-emancipacao-da-primeira-turma-de-mestrado-em-direito-do-pronera-na-unb/
   type: rss
   found_from:
   - source: 'RSS feed: MST Brésil — RSS principal'
-    context: 3ª Feira da Reforma Agrária Neusa Paviato acontece de 6 a 8 de novembro, em Campinas — Evento realizado pelo
-      MST e Rede Livres une alimentos saudáveis, culinária da terra, espaços da cultura popular, artesanatos, debates, formação
-      e muito mais. O post 3ª Feira da Reforma Agrária Neusa Paviato aconte
-    timestamp: '2026-10-29T09:23:47'
+    context: 'O direito achado na rua e na terra: A historicidade e a emancipação da primeira turma de mestrado em Direito
+      do PRONERA na UnB — Da exclusão histórica à soberania acadêmica: a chegada de 39 educandas e educandos de 15 estados
+      brasileiros à UnB consolida um marco civilizatório na educação jurídica po'
+    timestamp: '2026-11-05T10:24:01'
   seen_count: 1
   domain: mst.org.br
-  first_seen: '2026-10-29'
-  last_seen: '2026-10-29'
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
   metadata:
-    title: 3ª Feira da Reforma Agrária Neusa Paviato acontece de 6 a 8 de novembro, em Campinas
+    title: 'O direito achado na rua e na terra: A historicidade e a emancipação da primeira turma de mestrado em Direito do
+      PRONERA na UnB'
+  suggested_action: follow_one_time
+- url: https://mst.org.br/2026/11/02/curso-biopoder-campones-fortalece-agroecologia-e-autonomia-das-familias-em-assentamento-de-minas-gerais/
+  type: rss
+  found_from:
+  - source: 'RSS feed: MST Brésil — RSS principal'
+    context: Curso Biopoder Camponês fortalece agroecologia e autonomia das famílias em assentamento de Minas Gerais — Formação
+      realizada de 28 a 30 de outubro, no Assentamento Popular Maria da Conceição, em Itatiaiuçu (MG), articulou saúde do
+      solo, saberes tradicionais, práticas agroecológicas e organização col
+    timestamp: '2026-11-05T10:24:01'
+  seen_count: 1
+  domain: mst.org.br
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Curso Biopoder Camponês fortalece agroecologia e autonomia das famílias em assentamento de Minas Gerais
+  suggested_action: follow_one_time
+- url: https://mst.org.br/2026/11/03/matar-essas-pragas-pf-investiga-denuncias-de-violencia-contra-indigenas-durante-e-depois-da-eleicao/
+  type: rss
+  found_from:
+  - source: 'RSS feed: MST Brésil — RSS principal'
+    context: '‘Matar essas pragas’: PF investiga denúncias de violência contra Indígenas durante e depois da eleição — ‘Matar
+      essas pragas’: PF investiga denúncias de violência contra Indígenas durante e depois da eleição O post ‘Matar essas
+      pragas’: PF investiga denúncias de violência contra Indígenas durante e '
+    timestamp: '2026-11-05T10:24:01'
+  seen_count: 1
+  domain: mst.org.br
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: '‘Matar essas pragas’: PF investiga denúncias de violência contra Indígenas durante e depois da eleição'
+  suggested_action: follow_one_time
+- url: https://mst.org.br/2026/11/03/projetos-de-mineradora-financiada-pelo-master-afetam-127-areas-protegidas/
+  type: rss
+  found_from:
+  - source: 'RSS feed: MST Brésil — RSS principal'
+    context: Projetos de mineradora financiada pelo Master afetam 127 áreas protegidas — Levantamento da Repórter Brasil identificou
+      88 projetos de minerais críticos da 3D Minerals em áreas sobrepostas ou na zona de impacto de terras indígenas, territórios
+      quilombolas, unidades de conservação e assentamentos; em
+    timestamp: '2026-11-05T10:24:01'
+  seen_count: 1
+  domain: mst.org.br
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Projetos de mineradora financiada pelo Master afetam 127 áreas protegidas
+  suggested_action: follow_one_time
+- url: https://mst.org.br/2026/11/04/casa-onde-marighella-cresceu-em-salvador-depende-de-doacoes-para-virar-memorial/
+  type: rss
+  found_from:
+  - source: 'RSS feed: MST Brésil — RSS principal'
+    context: Casa onde Marighella cresceu, em Salvador, depende de doações para virar memorial — Sonho de Clara Charf, o memorial
+      aguarda alvará para começar a obra e conta com a contribuição de apoiadores. Festival em São Paulo marca os 115 anos
+      de Marighella, em 5 de dezembro O post Casa onde Marighella cresce
+    timestamp: '2026-11-05T10:24:01'
+  seen_count: 1
+  domain: mst.org.br
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Casa onde Marighella cresceu, em Salvador, depende de doações para virar memorial
+  suggested_action: follow_one_time
+- url: https://mst.org.br/2026/11/04/mst-se-manifesta-contra-privatizacao-do-ceasa-em-alagoas/
+  type: rss
+  found_from:
+  - source: 'RSS feed: MST Brésil — RSS principal'
+    context: MST se manifesta contra privatização do Ceasa em Alagoas — Em nota, Movimento destaca as ameaças que Central
+      de Abastecimento pode sofrer sob coordenação da iniciativa privada O post MST se manifesta contra privatização do Ceasa
+      em Alagoas apareceu primeiro em MST .
+    timestamp: '2026-11-05T10:24:01'
+  seen_count: 1
+  domain: mst.org.br
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: MST se manifesta contra privatização do Ceasa em Alagoas
+  suggested_action: follow_one_time
+- url: https://mst.org.br/2026/11/04/seminario-terra-e-moradia-fortalece-a-unidade-entre-campo-e-cidade-para-a-37a-romaria-em-al/
+  type: rss
+  found_from:
+  - source: 'RSS feed: MST Brésil — RSS principal'
+    context: Seminário Terra e Moradia fortalece a unidade entre campo e cidade para a 37ª Romaria em AL — Encontro na Ocupação
+      Tereza de Benguela reuniu movimentos populares, pastorais e organismos sociais; aos 80 anos, Irmã Áurea animou os participantes
+      com uma mensagem de fé, resistência e esperança O post Se
+    timestamp: '2026-11-05T10:24:01'
+  seen_count: 1
+  domain: mst.org.br
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Seminário Terra e Moradia fortalece a unidade entre campo e cidade para a 37ª Romaria em AL
   suggested_action: follow_one_time
 - url: https://mtlcounterinfo.org/devils-night-against-landlords/
   type: footnote
@@ -102675,6 +103146,21 @@ candidates:
   metadata:
     title: '« Tout est délirant, du début à la fin » : quand une fraude géante se retourne contre des éleveurs'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Antibassines-Faucheurs-volontaires-Ces-militants-prives-de-manifestation-par-une-mesure
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Des militants écologistes privés de manifestation par une mesure antiterroriste — Associés à une menace terroriste,
+      des militants écologistes ayant participé au mouvement social et lycéen ont reçu une assignation à résidence, les privant
+      de leur liberté. Ils dénoncent une « bascule autoritaire » vis
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Des militants écologistes privés de manifestation par une mesure antiterroriste
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Attentat-de-Trappes-Il-faut-penser-ce-qui-relie-les-actes-de-racisme-quotidien-et-ce-type-d-evenements-extremes
   type: rss
   found_from:
@@ -102750,6 +103236,22 @@ candidates:
   metadata:
     title: Avec la canicule moins de nucléaire, mais plus de gaz
   suggested_action: follow_one_time
+- url: https://reporterre.net/Avec-la-greve-on-touche-le-grand-patronat-au-portefeuille-Anasse-Kazib-candidat-a-la
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Avec la grève, on touche le grand patronat au portefeuille » : Anasse Kazib, candidat à la présidentielle,
+      veut reprendre le pouvoir « par le bas » — Soutien à la jeunesse, pouvoir d''achat, hausse des salaires... Alors que
+      l''intersyndicale appelle à la grève le 5 novembre, Anasse Kazib, candidat à'
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: '« Avec la grève, on touche le grand patronat au portefeuille » : Anasse Kazib, candidat à la présidentielle, veut
+      reprendre le pouvoir « par le bas »'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Avec-sa-sale-gueule-il-est-le-bouc-emissaire-ideal-a-la-rencontre-du-silure-le-geant-de
   type: rss
   found_from:
@@ -102795,20 +103297,20 @@ candidates:
   metadata:
     title: 'Avion repeint en vert : les mêmes amendes demandées en appel contre les activistes'
   suggested_action: follow_one_time
-- url: https://reporterre.net/BVE-Super-El-Nino-la-Bolivie-decrete-l-etat-d-urgence
+- url: https://reporterre.net/Bombes-et-drones-les-oiseaux-migrateurs-bouleverses-par-la-guerre-au-Liban
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Super El Niño » : la Bolivie décrète l''état d''urgence — Le président bolivien, Rodrigo Paz, a annoncé samedi
-      31 octobre avoir décrété l''état d''urgence en Bolivie pour faire face aux sécheresses et aux inondations liées au «
-      super El Niño », phénomène climatique intense qui fait des ravages cette a'
-    timestamp: '2026-11-03T10:30:40'
+    context: 'Bombes et drones : les oiseaux migrateurs bouleversés par la guerre au Liban — Plusieurs millions d''oiseaux
+      migrateurs traversent le Liban chaque année, via la route migratoire qui relie l''Afrique à l''Europe. Déjà menacés
+      par la chasse illégale, ces animaux subissent eux aussi la guerre menée par Is'
+    timestamp: '2026-11-05T10:23:17'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
   metadata:
-    title: '« Super El Niño » : la Bolivie décrète l''état d''urgence'
+    title: 'Bombes et drones : les oiseaux migrateurs bouleversés par la guerre au Liban'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Boycotter-l-IA-et-son-monde-retrouvez-en-images-et-video-la-soiree-organisee-par
   type: rss
@@ -102855,6 +103357,21 @@ candidates:
   metadata:
     title: '« On veut vivre de notre métier sans en crever » : paysans et malades alliés contre les pesticides'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Bruno-Meyerfeld-prix-Albert-Londres-L-Amazonie-est-une-zone-en-guerre-la-guerre-du-climat
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: « L'Amazonie est une zone en guerre, la guerre du climat » — Le journaliste Bruno Meyerfeld a remporté le 27
+      octobre le 88 e prix Albert Londres pour ses reportages sur l'Amazonie publiés dans « Le Monde ». C'est la première
+      fois en presse écrite que ce prix récompense des articles sur la catastroph
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: « L'Amazonie est une zone en guerre, la guerre du climat »
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Bulles-de-savoir-nos-meilleurs-BD-pour-s-informer-sur-l-ecologie
   type: rss
   found_from:
@@ -102899,37 +103416,6 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Cadmium : les données clés d''une contamination'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Cadres-parisiens-dirigeants-tres-diplomes-Le-RN-n-a-pas-la-volonte-de-faire-emerger-des
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Cadres parisiens, dirigeants très diplômés : « Le RN n''a pas la volonté de faire émerger des figures populaires
-      rurales » — Des parachutages, une hiérarchie sociale forte et l''exaltation d''un clivage contre les « urbains » : le
-      chercheur Guillaume Letourneur décrypte la progression du Rassemblement '
-    timestamp: '2026-11-03T10:30:40'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
-  metadata:
-    title: 'Cadres parisiens, dirigeants très diplômés : « Le RN n''a pas la volonté de faire émerger des figures populaires
-      rurales »'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Camille-Etienne-On-nait-contamines-c-est-d-une-grande-injustice
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Camille Étienne : « On naît contaminés, c''est d''une grande injustice » — L''activiste écologiste Camille Étienne
-      a fait de la santé son nouveau combat. Autrice du livre-enquête « Facteur X », sur la pollution chimique qui atteint
-      nos corps à tous, elle explique en quoi l''industrie et les politiques e'
-    timestamp: '2026-11-03T10:30:40'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
-  metadata:
-    title: 'Camille Étienne : « On naît contaminés, c''est d''une grande injustice »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Canards-maltraites-Carrefour-epingle-par-L214
   type: rss
@@ -103186,6 +103672,21 @@ candidates:
   metadata:
     title: 'Sécheresse et températures trop élevées : le nucléaire souffre aussi des canicules'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Comment-les-etudiants-serbes-ont-mis-fin-a-un-pouvoir-corrompu-et-autoritaire
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Comment les étudiants serbes ont mis fin à un pouvoir corrompu et autoritaire — En Serbie, le régime nationaliste
+      et corrompu d''Aleksandar Vučić a été battu par une liste portée par les étudiants. Une victoire qui ouvre un immense
+      chantier démocratique et pourrait faire école en France et ailleurs. '
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Comment les étudiants serbes ont mis fin à un pouvoir corrompu et autoritaire
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Consigne-sur-le-plastique-elus-et-ONG-claquent-la-porte-de-la-concertation
   type: rss
   found_from:
@@ -103397,6 +103898,21 @@ candidates:
     title: Enfants mariés, grossesses non désirées... Les catastrophes climatiques ont des conséquences « dramatiques » pour
       les filles
   suggested_action: follow_one_time
+- url: https://reporterre.net/Essais-nucleaires-l-Algerie-reclame-a-la-France-l-emplacement-des-dechets-radioactifs
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Essais nucléaires : l''Algérie réclame à la France l''emplacement des déchets radioactifs enfouis dans son sol
+      — L''Algérie poursuit le nettoyage des déchets radioactifs laissés par les essais nucléaires français. Le ministère
+      algérien de la Défense a lancé, dimanche 1 er novembre, une deuxième opérati'
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Essais nucléaires : l''Algérie réclame à la France l''emplacement des déchets radioactifs enfouis dans son sol'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Etre-du-bon-cote-de-l-histoire-c-est-etre-dans-la-rue-les-activistes-ecolos-et-paysans-se
   type: rss
   found_from:
@@ -103516,6 +104032,21 @@ candidates:
   metadata:
     title: 'Il a étouffé un ruisseau, la justice l''a condamné : récit d''un jugement inhabituel'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Ils-nous-ont-tues-Poutine-a-eu-la-peau-d-un-des-derniers-journaux-independants-de-Russie
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Ils nous ont tués » : Poutine a eu la peau d''un des derniers journaux indépendants de Russie — Menacé et
+      privé de ses ressources par le régime de Poutine, le journal russe indépendant "Novaïa Gazeta" devra cesser ses activités
+      le 9 novembre. Depuis 33 ans, il documentait les crimes du pouvoir, les'
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: '« Ils nous ont tués » : Poutine a eu la peau d''un des derniers journaux indépendants de Russie'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Incendies-a-Fontainebleau-sous-terre-la-foret-brule-toujours
   type: rss
   found_from:
@@ -103546,21 +104077,6 @@ candidates:
   metadata:
     title: 'Incendies en Espagne : le Premier ministre Pedro Sánchez appelle à un « pacte d''État » sur l''urgence climatique'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Incendies-en-Indonesie-les-etudiants-menent-la-revolte-contre-la-gestion-du-gouvernement
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Incendies en Indonésie : les étudiants mènent la révolte contre la gestion du gouvernement — En Indonésie, des
-      milliers de personnes ont manifesté fin octobre pour dénoncer la gestion des feux de forêt par le gouvernement. Étudiants
-      et activistes envisagent de durcir le mouvement. Sydney (Australie)'
-    timestamp: '2026-11-03T10:30:40'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
-  metadata:
-    title: 'Incendies en Indonésie : les étudiants mènent la révolte contre la gestion du gouvernement'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Je-craque-le-desarroi-des-soignants-face-a-l-afflux-d-animaux-sonnes-par-la-chaleur
   type: rss
   found_from:
@@ -103575,21 +104091,6 @@ candidates:
   last_seen: '2026-06-30'
   metadata:
     title: '« Je craque » : le désarroi des soignants face à l''afflux d''animaux sonnés par la chaleur'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Je-n-ai-plus-envie-de-nourrir-le-monstre-pourquoi-l-ecrivaine-Corinne-Morel-Darleux-quitte-Meta
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Je n''ai plus envie de nourrir le monstre » : pourquoi quitter Meta — « Tout le monde déteste l'' IA , mais
-      tout le monde l''utilise » : dans cette nouvelle chronique, l''autrice Corinne Morel Darleux dénonce l''omniprésence
-      de l''intelligence artificielle et affirme avoir choisi son camp... Corinne Mor'
-    timestamp: '2026-11-03T10:30:40'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
-  metadata:
-    title: '« Je n''ai plus envie de nourrir le monstre » : pourquoi quitter Meta'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Je-suis-sortie-de-chimio-endettee-le-cancer-du-sein-appauvrit-les-femmes
   type: rss
@@ -103831,20 +104332,20 @@ candidates:
   metadata:
     title: La loi d'urgence agricole veut donner carte blanche aux élevages intensifs
   suggested_action: follow_one_time
-- url: https://reporterre.net/La-petition-pour-fermer-CNews-depasse-les-500-000-signatures
+- url: https://reporterre.net/La-prefecture-interdit-les-rassemblements-aux-abords-des-lycees-a-Strasbourg
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: La pétition pour fermer CNews dépasse les 500 000 signatures — Plus de 530 000 personnes ont signé la pétition
-      pour supprimer la chaîne de télévision CNews. Déposée en juin sur le site de l'Assemblée nationale, cette pétition connaît
-      un fort regain de popularité depuis l'attentat raciste de Trappes,
-    timestamp: '2026-11-03T10:30:40'
+    context: La préfecture interdit les rassemblements aux abords des lycées à Strasbourg — Blocage impossible. Au retour
+      des vacances scolaires, lundi 2 novembre, des élèves du lycée Marie-Curie à Strasbourg ont tenté de bloquer de leur
+      établissement. Mais juste avant 8 heures, des policiers sont arrivés et ont
+    timestamp: '2026-11-05T10:23:17'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
   metadata:
-    title: La pétition pour fermer CNews dépasse les 500 000 signatures
+    title: La préfecture interdit les rassemblements aux abords des lycées à Strasbourg
   suggested_action: follow_one_time
 - url: https://reporterre.net/Le-cap-Ferret-evacue-des-milliers-d-hectares-en-fumee-l-incendie-de-Gironde-rappelle-le
   type: rss
@@ -104057,20 +104558,20 @@ candidates:
   metadata:
     title: Les semences anciennes et bio, la solution des riziculteurs italiens au manque d'eau
   suggested_action: follow_one_time
-- url: https://reporterre.net/Lobbyistes-fossiles-emmenes-aux-COP-climat-la-France-sur-le-podium-des-pires-delegations
+- url: https://reporterre.net/Livret-A-le-plafond-releve-pour-financer-le-nucleaire-et-l-adaptation-climatique
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Lobbyistes fossiles emmenés aux COP climat : la France sur le podium des pires délégations — L''an dernier,
-      lors des grandes négociations climatiques internationales de la COP30 , au Brésil, plus de 1 600 lobbyistes des énergies
-      fossiles étaient présents pour faire valoir leurs intérêts climaticides.'
-    timestamp: '2026-11-03T10:30:40'
+    context: 'Livret A : le plafond relevé pour financer le nucléaire et l''adaptation climatique — Le gouvernement veut mobiliser
+      davantage l''épargne des Françaises et Français. Le 3 novembre, devant l''Assemblée nationale, le Premier ministre Sébastien
+      Lecornu a annoncé un relèvement du plafond du livret A. Actue'
+    timestamp: '2026-11-05T10:23:17'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
   metadata:
-    title: 'Lobbyistes fossiles emmenés aux COP climat : la France sur le podium des pires délégations'
+    title: 'Livret A : le plafond relevé pour financer le nucléaire et l''adaptation climatique'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Loi-d-urgence-agricole-Ecolos-et-Insoumis-saisissent-le-Conseil-Constitutionnel
   type: rss
@@ -104177,6 +104678,21 @@ candidates:
   metadata:
     title: 'Morts de la canicule : « Le gros du problème, c''est le logement »'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Mouvement-social-Le-desir-revolutionnaire-n-est-pas-si-minoritaire-dans-le-pays
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Mouvement social : « Le désir révolutionnaire n''est pas si minoritaire dans le pays » — Pour Arya Meroni, journaliste
+      et militante, le mouvement social actuel invite à repenser les modes de mobilisation. L''enjeu est aujourd''hui d''imbriquer
+      les stratégies de grève à des stratégies de débordement, est'
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Mouvement social : « Le désir révolutionnaire n''est pas si minoritaire dans le pays »'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Nassima-maraichere-bio-et-queer-Le-principal-c-est-qu-on-se-sente-a-notre-place-en-campagne
   type: rss
   found_from:
@@ -104191,6 +104707,21 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: 'Nassima, maraîchère bio et queer : « Le principal, c''est qu''on se sente à notre place, en campagne »'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Nestle-Ferrero-L-Oreal-15-groupes-accuses-d-utiliser-de-l-huile-de-palme-issue-de-la-deforestation
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Nestlé, Ferrero, L'Oréal… 15 groupes accusés d'utiliser de l'huile de palme issue de la déforestation — Le règlement
+      européen contre la déforestation doit entrer en vigueur le 30 décembre. Les multinationales auront alors l'interdiction
+      de commercialiser en Europe des produits comme le cacao, le caf
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Nestlé, Ferrero, L'Oréal… 15 groupes accusés d'utiliser de l'huile de palme issue de la déforestation
   suggested_action: follow_one_time
 - url: https://reporterre.net/Notre-maison-brule-et-on-regarde-les-poubelles-a-Paris-250-000-manifestants-ont-denonce-l
   type: rss
@@ -104223,20 +104754,20 @@ candidates:
   metadata:
     title: '« Notre peur, c''est qu''il y ait des morts » : des saisonniers survivent dans des bidonvilles en surchauffe'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Octobre-rose-devient-Octobre-Colere
+- url: https://reporterre.net/Nous-faire-manger-toujours-plus-de-pesticides-ces-responsables-europeens-qui-poussent-l
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: Octobre rose devient « Octobre Colère » — Pour politiser le cancer du sein en le liant directement aux politiques
-      agricoles et à l'usage des pesticides, le collectif Cancer Colère a rebaptisé l'opération « Octobre rose » en « Octobre
-      Colère ». Les femmes appauvries par le cancer, le « pinkwashing in
-    timestamp: '2026-11-03T10:30:40'
+    context: 'Nous faire manger toujours plus de pesticides : ces responsables européens qui poussent l''Omnibus X — Derrière
+      le texte européen Omnibus X qui veut allonger et favoriser l''usage de pesticides, des élus et responsables européens
+      agissent au bénéfice des industriels. Portraits de ceux qui poussent pou'
+    timestamp: '2026-11-05T10:23:17'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
   metadata:
-    title: Octobre rose devient « Octobre Colère »
+    title: 'Nous faire manger toujours plus de pesticides : ces responsables européens qui poussent l''Omnibus X'
   suggested_action: follow_one_time
 - url: https://reporterre.net/On-a-une-responsabilite-quand-on-ecrit-des-chansons-une-apres-midi-avec-Emily-Loizeau
   type: rss
@@ -104297,6 +104828,21 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: Oubliés par leur bailleur, ils installent des stores faits maison contre la canicule
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Ouvriers-militants-et-agriculteurs-bloquent-un-entrepot-de-logistique-dans-les-Hauts-de
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Ouvriers, militants et agriculteurs bloquent un entrepôt de logistique dans les Hauts-de-Seine — Une centaine
+      de personnes ont bloqué pendant deux heures l'entrepôt Geodis à Gennevilliers (Hauts-de-Seine) selon des informations
+      reçues par Reporterre. Ce blocage a été organisé en soutien aux ouvriers
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Ouvriers, militants et agriculteurs bloquent un entrepôt de logistique dans les Hauts-de-Seine
   suggested_action: follow_one_time
 - url: https://reporterre.net/PFAS-l-Europe-baisse-drastiquement-le-seuil-tolerable-d-exposition-aux-TFA
   type: rss
@@ -104418,6 +104964,21 @@ candidates:
   metadata:
     title: 'Pollution de l''eau : quand détruire coûte moins cher que respecter les règles'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Poulets-la-France-veut-produire-plus-dans-un-marche-sature-de-poulets-importes
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Poulets : la France veut produire plus... dans un marché saturé de poulets importés — En 2025, chaque Français
+      a consommé 25,6 kg de poulet, le double d''il y a vingt ans. Plus de la moitié de ces poulets provenait de l''importation.
+      Face à la demande croissante et pour regagner des parts de marché, l'
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Poulets : la France veut produire plus... dans un marché saturé de poulets importés'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Pour-extraire-son-sable-Lafarge-devore-les-meandres-de-la-Seine
   type: rss
   found_from:
@@ -104508,6 +105069,21 @@ candidates:
   metadata:
     title: Pro-A69, pesticides et mégabassines… Ces sénateurs en pointe contre l'écologie
   suggested_action: follow_one_time
+- url: https://reporterre.net/Projet-de-loi-de-finances-10-postes-en-moins-prevus-pour-les-parcs-nationaux
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Projet de loi de finances : 10 postes en moins prévus pour les parcs nationaux — Le parc national des Cévennes
+      risque de perdre des postes. Le Projet de loi de finances 2027 prévoit de supprimer dix emplois dans les parcs nationaux
+      de France, dont 2,3 équivalents temps plein annuels pour celui des C'
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Projet de loi de finances : 10 postes en moins prévus pour les parcs nationaux'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Quand-la-marche-nourrit-guerit-et-emancipe
   type: rss
   found_from:
@@ -104537,21 +105113,6 @@ candidates:
   last_seen: '2026-10-15'
   metadata:
     title: L'artiste derrière l'hymne des blocus lycéens est un opposant à Monsanto
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Rationalisation-recours-a-l-IA-Le-gouvernement-veut-reduire-les-couts-de-l-Anses
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: « Rationalisation », recours à l'IA… Le gouvernement veut réduire les coûts de l'Anses — Le gouvernement veut
-      réduire les coûts de l'Agence nationale de sécurité sanitaire (Anses). Fin octobre, les quatre ministres de tutelle
-      de l'agence (Agriculture, Écologie, Santé et Travail) ont adressé une lett
-    timestamp: '2026-11-03T10:30:40'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
-  metadata:
-    title: « Rationalisation », recours à l'IA… Le gouvernement veut réduire les coûts de l'Anses
   suggested_action: follow_one_time
 - url: https://reporterre.net/Redressement-judiciaire-de-FNE-Rhone-le-tribunal-valide-le-plan-de-l-association
   type: rss
@@ -104613,21 +105174,6 @@ candidates:
   last_seen: '2026-09-25'
   metadata:
     title: '« S''il faut passer par le procès, tant pis » : la répression judiciaire s''intensifie contre Greenpeace France'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Sans-conservateur-et-sans-colorant-20-produits-epingles-pour-leur-marketing-trompeur
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Sans conservateur » et « sans colorant » ? 20 produits épinglés pour leur marketing trompeur — Sur son « panier
-      0 % de matière grasse », Yoplait affirme en gros caractères : « sans conservateur, sans colorant, sans arôme artificiel
-      ». Mais en analysant la liste complète des ingrédients, on découvr'
-    timestamp: '2026-11-03T10:30:40'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
-  metadata:
-    title: « Sans conservateur » et « sans colorant » ? 20 produits épinglés pour leur marketing trompeur
   suggested_action: follow_one_time
 - url: https://reporterre.net/Sans-le-changement-climatique-la-canicule-aurait-ete-plus-fraiche-de-2-4-oC-a-Paris
   type: rss
@@ -104854,6 +105400,21 @@ candidates:
   metadata:
     title: '« Nous voulons construire un territoire résilient face aux feux » : après les incendies, le monde paysan se réorganise'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Un-diplome-pour-trouver-des-solutions-au-chaos-climatique-les-humanites-environnementales
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Chercher une solution au chaos climatique : le nouveau diplôme des universités anglaises — Champ d''étude émergent
+      et interdisciplinaire, les humanités environnementales tentent de jouer un rôle dans la réponse au chaos climatique.
+      À l''initiative des professeurs, les universités britanniques lancent '
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Chercher une solution au chaos climatique : le nouveau diplôme des universités anglaises'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Un-lobbyiste-demande-a-l-UE-d-abandonner-ses-objectifs-climatiques-au-profit-de-l-IA
   type: rss
   found_from:
@@ -104914,20 +105475,20 @@ candidates:
   metadata:
     title: Un projet photovoltaïque d'Enercoop électrise un village du Lubéron
   suggested_action: follow_one_time
-- url: https://reporterre.net/Une-etiquette-energie-pour-les-data-centers-Les-ONG-denoncent-du-greenwashing-et-l
+- url: https://reporterre.net/Une-faute-historique-l-UE-veut-simplifier-les-directives-Oiseaux-et-Habitats-en-2027
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Une étiquette énergie pour les data centers ? Les ONG dénoncent du greenwashing et l''influence des géants du
-      numérique — L''Union européenne veut évaluer les performances environnementales des data centers, mais le futur système
-      de notation fait l''impasse sur plusieurs impacts écologiques et des ONG '
-    timestamp: '2026-11-03T10:30:40'
+    context: 'Une « faute historique » : l''UE veut simplifier les directives Oiseaux et Habitats en 2027 — En 2027, quels
+      acquis écologiques seront-ils détricotés par la droite et l''extrême droite européennes ? La Commission européenne a
+      présenté le 4 novembre son programme de travail pour 2027, qui compte 23 nou'
+    timestamp: '2026-11-05T10:23:17'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-11-03'
-  last_seen: '2026-11-03'
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
   metadata:
-    title: Une étiquette énergie pour les data centers ? Les ONG dénoncent du greenwashing et l'influence des géants du numérique
+    title: 'Une « faute historique » : l''UE veut simplifier les directives Oiseaux et Habitats en 2027'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Une-honte-8-dauphins-du-Marineland-d-Antibes-transferes-vers-l-Espagne
   type: rss
@@ -104973,6 +105534,36 @@ candidates:
   last_seen: '2026-10-01'
   metadata:
     title: 'Vagues de chaleur : la moitié des Européens exposés à un niveau dangereux d''ozone en 2026'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Valerie-Murat-la-lanceuse-d-alerte-de-retour-au-tribunal
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Pesticides dans le vin : Valérie Murat, lanceuse d''alerte, de retour au tribunal — Valérie Murat, la lanceuse
+      d''alerte sur les pesticides dans le vin, est de retour devant les tribunaux pour dénoncer la procédure bâillon dont
+      elle a été victime, comme l''explique le média Basta. En février 2021, cett'
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Pesticides dans le vin : Valérie Murat, lanceuse d''alerte, de retour au tribunal'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Victoire-des-democrates-aux-Etats-Unis-un-espoir-pour-l-ecologie
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Midterms aux États-Unis : la victoire démocrate, un espoir pour l''écologie — En reprenant la Chambre des représentants
+      et le Sénat lors des élections de mi-mandat, les démocrates ont infligé un sévère revers à Donald Trump. Il leur sera
+      impossible d''enrayer totalement sa mécanique climatique mortifè'
+    timestamp: '2026-11-05T10:23:17'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Midterms aux États-Unis : la victoire démocrate, un espoir pour l''écologie'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Yosemite-un-tresor-naturel-que-les-promoteurs-veulent-transformer-en-atout-commercial
   type: rss
@@ -112605,20 +113196,6 @@ candidates:
     year: 2026
     doi: 10.24215/23468904e219
   suggested_action: follow_one_time
-- url: https://www.culturalsurvival.org/chan75
-  type: rss
-  found_from:
-  - source: 'RSS feed: Cultural Survival — RSS'
-    context: 'Panama Advocacy Campaign — Panama Advocacy Campaign /* Shared styling for the English and Spanish CHAN-75 Drupal
-      nodes. */ #chan75-campaign { --accent:#cb4400;--accent-dark:#993300;--ink:#242731;--dark:#1a1a1a;--surface:#ffffff;--muted:#6f727d;--highlight:#f7941d;--line:#e8e8e8;--heading-font:Roboto'
-    timestamp: '2026-10-29T09:24:58'
-  seen_count: 1
-  domain: www.culturalsurvival.org
-  first_seen: '2026-10-29'
-  last_seen: '2026-10-29'
-  metadata:
-    title: Panama Advocacy Campaign
-  suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/2nd-anniversary-prisoner-exchange-russia-calls-release-indigenous-activists-daria-egereva-and
   type: rss
   found_from:
@@ -112680,6 +113257,21 @@ candidates:
   metadata:
     title: 'Ancestral Pride: An Interview with Cati Paprep Mykwyj'
   suggested_action: follow_one_time
+- url: https://www.culturalsurvival.org/news/andean-soprano-sylvia-falcon-staying-ones-lane-when-lane-universe
+  type: rss
+  found_from:
+  - source: 'RSS feed: Cultural Survival — RSS'
+    context: Andean Soprano Sylvia Falcón: On Staying in One's Lane (When That Lane is the Universe) — Andean Soprano Sylvia
+      Falcón:&nbsp;On Staying in One's Lane (When That Lane is the Universe) Country Global agnes Tue, 11/03/2026 - 09:42
+      Issues Languages and Cultures Program 5 Main Image By Cristina Verán The
+    timestamp: '2026-11-05T10:24:53'
+  seen_count: 1
+  domain: www.culturalsurvival.org
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: Andean Soprano Sylvia Falcón: On Staying in One's Lane (When That Lane is the Universe)
+  suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/asur-adivasi-mobile-radio-becomes-lifeline-defending-land-language-and-asurindigenous-peoples
   type: rss
   found_from:
@@ -112725,6 +113317,21 @@ candidates:
   last_seen: '2026-08-04'
   metadata:
     title: Award-Winning Indigenous Artists and Cultural Leaders to Gather in Providence at the Cultural Survival Bazaar
+  suggested_action: follow_one_time
+- url: https://www.culturalsurvival.org/news/beyond-brazil-elections-indigenous-peoples-and-freedom-dream-better-futures
+  type: rss
+  found_from:
+  - source: 'RSS feed: Cultural Survival — RSS'
+    context: 'Beyond the Brazil Elections: Indigenous Peoples and the Freedom to Dream for Better Futures — Beyond the Brazil
+      Elections: Indigenous Peoples and the Freedom to Dream for Better Futures Country Brazil agnes Fri, 10/30/2026 - 09:41
+      Issues Human Rights Program 5 Main Image By Edson Krenak (Krenak, CS '
+    timestamp: '2026-11-05T10:24:53'
+  seen_count: 1
+  domain: www.culturalsurvival.org
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'Beyond the Brazil Elections: Indigenous Peoples and the Freedom to Dream for Better Futures'
   suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/beyond-fragmentation-conversation-indigenous-and-trans-identity-lana-potiguara
   type: rss
@@ -112877,21 +113484,6 @@ candidates:
   metadata:
     title: 'From the Heartland to the Screen: Yala on Growing Up Queer and Indigenous in the Countryside'
   suggested_action: follow_one_time
-- url: https://www.culturalsurvival.org/news/highland-path-why-state-police-fail-and-how-customary-peace-works-enga-and-hela-papua-new
-  type: rss
-  found_from:
-  - source: 'RSS feed: Cultural Survival — RSS'
-    context: 'The Highland Path: Why State Police Fail and How Customary Peace Works in Enga and Hela, Papua New Guinea —
-      The Highland Path: Why State Police Fail and How Customary Peace Works in Enga and Hela, Papua New Guinea Country Papua
-      New Guinea agnes Mon, 10/26/2026 - 14:23 Issues Languages and Cultures P'
-    timestamp: '2026-10-29T09:24:58'
-  seen_count: 1
-  domain: www.culturalsurvival.org
-  first_seen: '2026-10-29'
-  last_seen: '2026-10-29'
-  metadata:
-    title: 'The Highland Path: Why State Police Fail and How Customary Peace Works in Enga and Hela, Papua New Guinea'
-  suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/how-dignity-and-resistance-maya-tzutujil-peoples-triumphed-over-corruption
   type: rss
   found_from:
@@ -112906,22 +113498,6 @@ candidates:
   last_seen: '2026-08-04'
   metadata:
     title: How Dignity and Resistance of the Maya Tz’utujil Peoples Triumphed over Corruption
-  suggested_action: follow_one_time
-- url: https://www.culturalsurvival.org/news/indigenizing-design-canon-curator-brian-johnsons-designed-be-red-bold-reclamation-native
-  type: rss
-  found_from:
-  - source: 'RSS feed: Cultural Survival — RSS'
-    context: 'Indigenizing the Design Canon: Curator Brian Johnson’s “Designed to Be Red” Is a Bold Reclamation of Native
-      American Visual Culture — Indigenizing the Design Canon: Curator Brian Johnson’s “Designed to Be Red” Is a Bold Reclamation
-      of Native American Visual Culture Country United States agnes Tue, 1'
-    timestamp: '2026-10-29T09:24:58'
-  seen_count: 1
-  domain: www.culturalsurvival.org
-  first_seen: '2026-10-29'
-  last_seen: '2026-10-29'
-  metadata:
-    title: 'Indigenizing the Design Canon: Curator Brian Johnson’s “Designed to Be Red” Is a Bold Reclamation of Native American
-      Visual Culture'
   suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/jequitinhonha-river-through-indigenous-eyes-rights-nature-and-interspecies-commitments
   type: rss
@@ -112968,22 +113544,6 @@ candidates:
   metadata:
     title: 'Mining Boom, Broken Promises: The Hidden Struggles of Workers in Central Halmahera’s Nickel Industry'
   suggested_action: follow_one_time
-- url: https://www.culturalsurvival.org/news/nearly-20-years-without-justice-cultural-survival-calls-panama-provide-reparations-ngabe
-  type: rss
-  found_from:
-  - source: 'RSS feed: Cultural Survival — RSS'
-    context: 'Nearly 20 Years Without Justice: Cultural Survival Calls on Panama to Provide Reparations to Ngäbe Communities
-      Affected by the CHAN-75 Dam — Nearly 20 Years Without Justice: Cultural Survival Calls on Panama to Provide Reparations
-      to Ngäbe Communities Affected by the CHAN-75 Dam Country Panama agnes'
-    timestamp: '2026-10-29T09:24:58'
-  seen_count: 1
-  domain: www.culturalsurvival.org
-  first_seen: '2026-10-29'
-  last_seen: '2026-10-29'
-  metadata:
-    title: 'Nearly 20 Years Without Justice: Cultural Survival Calls on Panama to Provide Reparations to Ngäbe Communities
-      Affected by the CHAN-75 Dam'
-  suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/nepals-new-governments-fast-track-project-priority-sparks-conflict-over-indigenous-newar-lands
   type: rss
   found_from:
@@ -113013,6 +113573,21 @@ candidates:
   last_seen: '2026-10-05'
   metadata:
     title: Nickel Mining Threatens Bokimoruru Cave, Central Halmahera’s Natural Treasure and Indigenous Heritage
+  suggested_action: follow_one_time
+- url: https://www.culturalsurvival.org/news/no-climate-justice-without-indigenous-rights-cultural-survival-headed-cop31
+  type: rss
+  found_from:
+  - source: 'RSS feed: Cultural Survival — RSS'
+    context: 'No Climate Justice without Indigenous Rights: Cultural Survival Is Headed to COP31 — No Climate Justice without
+      Indigenous Rights: Cultural Survival Is Headed to COP31 Country Global agnes Wed, 11/04/2026 - 08:57 Issues Human Rights
+      Program 5 Main Image From November 9 to 20, 2026, world leaders, ne'
+    timestamp: '2026-11-05T10:24:53'
+  seen_count: 1
+  domain: www.culturalsurvival.org
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: 'No Climate Justice without Indigenous Rights: Cultural Survival Is Headed to COP31'
   suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/price-gold-xingu-river-and-communities-facing-destruction
   type: rss
@@ -113059,6 +113634,21 @@ candidates:
   metadata:
     title: Remarks on the Rights of Disabled Indigenous People for the 25th Session of the UNPFII
   suggested_action: follow_one_time
+- url: https://www.culturalsurvival.org/news/resounding-resistance-interview-climate-defender-and-kambak-founder-nadino-calapucha
+  type: rss
+  found_from:
+  - source: 'RSS feed: Cultural Survival — RSS'
+    context: '(Re)Sounding Resistance: An Interview with Climate Defender and Kambak Founder Nadino Calapucha — (Re)Sounding
+      Resistance: An Interview with Climate Defender and Kambak Founder Nadino Calapucha Country Ecuador agnes Mon, 11/02/2026
+      - 12:23 Issues Languages and Cultures Program 5 Main Image By&nbsp;C'
+    timestamp: '2026-11-05T10:24:53'
+  seen_count: 1
+  domain: www.culturalsurvival.org
+  first_seen: '2026-11-05'
+  last_seen: '2026-11-05'
+  metadata:
+    title: '(Re)Sounding Resistance: An Interview with Climate Defender and Kambak Founder Nadino Calapucha'
+  suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/sigma-lithium-brazil-test-case-responsible-finance-and-lessons-learned-power-community
   type: rss
   found_from:
@@ -113074,21 +113664,6 @@ candidates:
   metadata:
     title: 'Sigma Lithium in Brazil: A Test Case for Responsible Finance and the Lessons Learned from the Power of Community
       Advocacy'
-  suggested_action: follow_one_time
-- url: https://www.culturalsurvival.org/news/terra-madre-be-diversity-biodiversity-bringing-cultural-survival-bazaars-torino-italy
-  type: rss
-  found_from:
-  - source: 'RSS feed: Cultural Survival — RSS'
-    context: 'Terra Madre, Be Diversity, Biodiversity: Bringing the Cultural Survival Bazaars to Torino, Italy — Terra Madre,
-      Be Diversity, Biodiversity: Bringing the Cultural Survival Bazaars to Torino, Italy&nbsp; Country Global agnes Thu,
-      10/22/2026 - 10:28 Issues Languages and Cultures Program 5 Main Image By'
-    timestamp: '2026-10-29T09:24:58'
-  seen_count: 1
-  domain: www.culturalsurvival.org
-  first_seen: '2026-10-29'
-  last_seen: '2026-10-29'
-  metadata:
-    title: 'Terra Madre, Be Diversity, Biodiversity: Bringing the Cultural Survival Bazaars to Torino, Italy'
   suggested_action: follow_one_time
 - url: https://www.culturalsurvival.org/news/umeno-morita-reclaiming-non-binary-indigenous-ancestry-sao-paulo
   type: rss
