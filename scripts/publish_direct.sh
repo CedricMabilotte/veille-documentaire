@@ -8,7 +8,7 @@ REPO="https://x-access-token:${TOKEN}@github.com/CedricMabilotte/biblio-actitude
 TMP=$(mktemp -d)
 trap "rm -rf $TMP" EXIT
 git clone "$REPO" "$TMP" --depth=1 -q
-rsync -a --delete --exclude='.git' site/ "$TMP/"
+rsync -a --delete --exclude='.git' --exclude='LICENSE' --exclude='LICENSES' site/ "$TMP/"
 cd "$TMP"
 git config user.name "Library Bot"
 git config user.email "bot@library.local"
