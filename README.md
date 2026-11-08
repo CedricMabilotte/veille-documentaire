@@ -83,3 +83,12 @@ Les documents référencés par la bibliothèque restent sous leurs licences
 propres, détenues par leurs auteurs et éditeurs respectifs.
 
 Titulaire : actitude.org.
+
+## Réutiliser
+
+- **Fiches** : `bulles/<id>.json` (une fiche par document : résumé, concepts, auteurs, dates, source). Adresse stable sur le site : https://biblio.actitude.org/fiches/<id>.html.
+- **Téléchargement** : pas d'export unique pour l'instant : les fiches sont des JSON individuels dans `bulles/` (un export agrégé est prévu).
+- **Licences** (`LICENSE`) : textes CC BY-NC-SA 4.0 ; données ODbL 1.0 ; code AGPL-3.0-or-later ; sources tierces à leur licence.
+- **Citer** : `CITATION.cff` (GitHub : « Cite this repository »). Archive pérenne : Software Heritage,
+  https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/CedricMabilotte/veille-documentaire
+- **Corriger** : `CONTRIBUTING.md` — une issue ou une PR par fiche, source citée, réponse sous un mois.

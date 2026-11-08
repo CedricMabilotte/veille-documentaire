@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "Pour citer ce corpus, utilisez les métadonnées ci-dessous (ou le bouton « Cite this repository » de GitHub)."
+type: dataset
+title: "BIBLIO — bibliothèque documentaire ouverte sur les communs, l'autogestion et la libération des terres"
+abstract: "Veille documentaire SHS : fiches de lecture structurées (JSON, une fiche par document : résumé, concepts, auteurs, chronologie, source), 1 000+ documents publics référencés, publiée sur biblio.actitude.org."
+authors:
+  - family-names: Mabilotte
+    given-names: Cedric
+    website: "https://cedric.mabilotte.com"
+version: "2026-11-08"
+date-released: "2026-11-08"
+url: "https://biblio.actitude.org"
+repository-code: "https://github.com/CedricMabilotte/veille-documentaire"
+license:
+  - CC-BY-NC-SA-4.0
+  - ODbL-1.0
+  - AGPL-3.0-or-later
+license-url: "https://github.com/CedricMabilotte/veille-documentaire/blob/main/LICENSE"
+keywords:
+  - communs
+  - veille
+  - bibliographie
+  - open-data
+  - shs
+  - json
