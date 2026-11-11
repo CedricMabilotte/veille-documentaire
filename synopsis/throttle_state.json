@@ -173,17 +173,19 @@
     "libcom.org — library": {
       "url": "https://libcom.org/library",
       "domain": "libcom.org",
-      "last_fetch": "2026-09-15T18:19:03Z",
-      "last_fetch_attempts": 4,
+      "last_fetch": "2026-11-11T10:22:40Z",
+      "last_fetch_attempts": 5,
       "last_doc_count": 1,
-      "consecutive_low_yield": 4,
-      "current_interval_days": 56,
+      "consecutive_low_yield": 5,
+      "current_interval_days": 60,
       "last_status_code": 200,
       "last_http_error": null,
       "last_html_fingerprint": null,
       "last_etag": null,
       "last_modified": null,
-      "cooldown_until": null
+      "cooldown_until": null,
+      "consecutive_failures": 0,
+      "last_failure_at": null
     },
     "CrimethInc — library": {
       "url": "https://crimethinc.com/library",
@@ -322,8 +324,8 @@
     "Reporterre — RSS principal": {
       "url": "https://reporterre.net/spip.php?page=backend",
       "domain": "reporterre.net",
-      "last_fetch": "2026-11-09T10:57:04Z",
-      "last_fetch_attempts": 41,
+      "last_fetch": "2026-11-11T10:23:00Z",
+      "last_fetch_attempts": 42,
       "last_doc_count": 30,
       "consecutive_low_yield": 0,
       "current_interval_days": 1,
@@ -339,9 +341,9 @@
     "Lundi.am — RSS principal": {
       "url": "https://lundi.am/spip.php?page=backend",
       "domain": "lundi.am",
-      "last_fetch": "2026-11-09T10:57:37Z",
-      "last_fetch_attempts": 41,
-      "last_doc_count": 10,
+      "last_fetch": "2026-11-11T10:23:21Z",
+      "last_fetch_attempts": 42,
+      "last_doc_count": 14,
       "consecutive_low_yield": 0,
       "current_interval_days": 1,
       "last_status_code": 200,
