@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-13_10-33",
+  "sources_scanned": 1,
+  "documents_found": 2,
+  "documents_scored": 2,
+  "documents_downloaded": 0,
+  "results": [
+    {
+      "url": "https://infokiosques.net/IMG/pdf/ballade_d_u_transmasc-12pa4-cahier-nov2025.pdf",
+      "filename": "ballade_d_u_transmasc-12pa4-cahier-nov2025.pdf",
+      "format": "pdf",
+      "source": "Infokiosques.net — nouveautés",
+      "score": 2,
+      "raison": "Titre contient 'terre' mais uniquement métaphorique ('terre hostile' = environnement social). Aucun mot-clé explicite de la thématique (foncier, communs, paysannerie, propriété d'usage, etc.)",
+      "downloaded": false,
+      "saved_as": null,
+      "link_text": "· Ballade d’un transmasc en terre hostile - version cahier (PDF)",
+      "context_seen": "formats: · HTML · Ballade d’un transmasc en terre hostile - version cahier (PDF) · Ballade d’un transmasc en terre hostile - version page par page (PDF)",
+      "bib": {
+        "doc_date": "",
+        "lang": "fr",
+        "editeur": "",
+        "doi": "",
+        "isbn": "",
+        "hal_id": ""
+      }
+    },
+    {
+      "url": "https://infokiosques.net/IMG/pdf/ballade_d_u_transmasc-23pa5-pageparpage-nov2025.pdf",
+      "filename": "ballade_d_u_transmasc-23pa5-pageparpage-nov2025.pdf",
+      "format": "pdf",
+      "source": "Infokiosques.net — nouveautés",
+      "score": 2,
+      "raison": "Titre identique au doc 1 ; variation de format (cahier vs page par page). 'Terre hostile' = contexte social métaphorique, hors thématique foncière/communs",
+      "downloaded": false,
+      "saved_as": null,
+      "link_text": "· Ballade d’un transmasc en terre hostile - version page par page (PDF)",
+      "context_seen": "formats: · HTML · Ballade d’un transmasc en terre hostile - version cahier (PDF) · Ballade d’un transmasc en terre hostile - version page par page (PDF)",
+      "bib": {
+        "doc_date": "",
+        "lang": "fr",
+        "editeur": "",
+        "doi": "",
+        "isbn": "",
+        "hal_id": ""
+      }
+    }
+  ],
+  "interrupted": null,
+  "claude_session_limit_hit": false
+}

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-11T10:29:41Z",
-  "total": 2251,
-  "total_docs": 2251,
+  "generated_at": "2026-11-13T10:42:55Z",
+  "total": 2253,
+  "total_docs": 2253,
   "total_downloaded": 1515,
   "total_published": 1012,
   "by_lang": {
     "en": 1024,
-    "fr": 417,
+    "fr": 419,
     "es": 267,
     "inconnu": 258,
     "pt": 227,
@@ -20,7 +20,7 @@
   },
   "by_language": {
     "en": 1024,
-    "fr": 417,
+    "fr": 419,
     "es": 267,
     "inconnu": 258,
     "pt": 227,
@@ -56,13 +56,13 @@
     "Archive.org — commons / enclosure": 16,
     "Infokiosques.net — Anticolonialismes": 14,
     "Portal OACA — Libros anarquistas (catégorie)": 13,
+    "Infokiosques.net — nouveautés": 11,
     "Archive.org — subject:anarchism (texts)": 10,
     "Archive.org — peasant movements": 10,
     "Infokiosques.net — Écologie radicale": 10,
     "International Land Coalition — latest": 10,
     "Troisièmes Voix — éditions": 10,
     "European Shepherds Network — publications": 10,
-    "Infokiosques.net — nouveautés": 9,
     "Böll Stiftung — publications DE (deep crawl)": 9,
     "Infokiosques.net — index A": 8,
     "Böll Stiftung — publications DE": 8,
@@ -94,12 +94,12 @@
     "2000s": 160,
     "2010s": 516,
     "2020s": 803,
-    "inconnu": 698
+    "inconnu": 700
   },
   "by_score": {
     "0": 551,
     "1": 237,
-    "2": 185,
+    "2": 187,
     "3": 111,
     "4": 88,
     "5": 105,
@@ -110,14 +110,14 @@
     "10": 4
   },
   "by_doc_type": {
-    "autre": 2115,
+    "autre": 2117,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1254,
+    "militant": 1256,
     "academique": 780,
     "non_renseigne": 138,
     "institutionnel": 79
@@ -281,6 +281,13 @@
       "count": 13
     },
     {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
+      "count": 11
+    },
+    {
       "label": "Archive.org — peasant movements",
       "url": "https://archive.org/advancedsearch.php?q=subject%3A%22peasant+movement%22+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50",
       "type": "archive_org",
@@ -320,13 +327,6 @@
       "url": "https://www.boell.de/de/publikationen",
       "type": "deep_html",
       "orientation": "institutionnel",
-      "count": 9
-    },
-    {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
       "count": 9
     },
     {
