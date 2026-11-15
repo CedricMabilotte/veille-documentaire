@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T10:42:56Z",
+ "generated_at": "2026-11-15T10:52:37Z",
  "total_dossiers": 10,
  "dossiers": [
   {
@@ -2177,7 +2177,7 @@
    "slug": "sans-terre-reforme-agraire",
    "titre": "Sans-terre & réforme agraire",
    "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-   "doc_count": 472,
+   "doc_count": 475,
    "docs": [
     "5a9397e7",
     "8bfe460c",
@@ -2343,7 +2343,10 @@
     "7782b24b",
     "3e9a1e64",
     "324cb730",
+    "504ef2ad",
     "d8781904",
+    "1797c391",
+    "168140f0",
     "fac367e2",
     "9e831a55",
     "c99e6da4",
@@ -2480,7 +2483,6 @@
     "e8ee5514",
     "2b3dfe6d",
     "8a522aaf",
-    "504ef2ad",
     "2e5629b5",
     "6772ded1",
     "235a98fb",
@@ -2650,7 +2652,8 @@
     "439d316f",
     "5399ce07",
     "0211887d",
-    "a9094a2b"
+    "a9094a2b",
+    "108b91ac"
    ],
    "docs_detail": [
     {
@@ -4219,11 +4222,36 @@
      ]
     },
     {
+     "id": "504ef2ad",
+     "title": "Zapata's revenge : free trade and the farm crisis in Mexico",
+     "score": 9,
+     "matched_on": [
+      "réforme agraire"
+     ]
+    },
+    {
      "id": "d8781904",
      "title": "The transformation of rural Mexico : reforming the ejido sector",
      "score": 9,
      "matched_on": [
       "réforme agraire"
+     ]
+    },
+    {
+     "id": "1797c391",
+     "title": "The poor of the land : a Christian case for land reform",
+     "score": 9,
+     "matched_on": [
+      "réforme agraire"
+     ]
+    },
+    {
+     "id": "168140f0",
+     "title": "Peasants, landlords, and governments; agrarian reform in the Third World",
+     "score": 9,
+     "matched_on": [
+      "réforme agraire",
+      "agrarian reform"
      ]
     },
     {
@@ -5487,14 +5515,6 @@
      "score": 8,
      "matched_on": [
       "agrarian reform"
-     ]
-    },
-    {
-     "id": "504ef2ad",
-     "title": "Zapata's revenge : free trade and the farm crisis in Mexico",
-     "score": 8,
-     "matched_on": [
-      "réforme agraire"
      ]
     },
     {
@@ -6994,6 +7014,15 @@
      "matched_on": [
       "sans-terre"
      ]
+    },
+    {
+     "id": "108b91ac",
+     "title": "Don’t Forsake Us!",
+     "score": 6,
+     "matched_on": [
+      "sans terre",
+      "réforme agraire"
+     ]
     }
    ]
   },
@@ -7001,7 +7030,7 @@
    "slug": "communs-fonciers-histoire",
    "titre": "Communs fonciers : une histoire",
    "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-   "doc_count": 271,
+   "doc_count": 277,
    "docs": [
     "e7512d48",
     "d647480f",
@@ -7105,9 +7134,13 @@
     "31aec67a",
     "ebb59d3f",
     "324cb730",
+    "504ef2ad",
     "d793c1b9",
-    "49e1fc7c",
     "d8781904",
+    "28d31bec",
+    "1797c391",
+    "168140f0",
+    "3f954335",
     "9e831a55",
     "2db11a52",
     "7b89d6d1",
@@ -7183,9 +7216,12 @@
     "3d180033",
     "8a522aaf",
     "89cbd89b",
-    "504ef2ad",
+    "a195fbb3",
+    "49e1fc7c",
     "c3d443aa",
     "9702f1fe",
+    "5cd7bff3",
+    "caf46bb3",
     "28b7cb2c",
     "2175f7a3",
     "2e5629b5",
@@ -7272,8 +7308,7 @@
     "7dee7970",
     "0211887d",
     "a9094a2b",
-    "62078cc7",
-    "a195fbb3"
+    "62078cc7"
    ],
    "docs_detail": [
     {
@@ -8168,8 +8203,8 @@
      ]
     },
     {
-     "id": "d793c1b9",
-     "title": "Titles, conflict, and land use : the development of property rights and land reform on the Brazilian Amazon frontier",
+     "id": "504ef2ad",
+     "title": "Zapata's revenge : free trade and the farm crisis in Mexico",
      "score": 9,
      "matched_on": [
       "enclosure",
@@ -8177,8 +8212,8 @@
      ]
     },
     {
-     "id": "49e1fc7c",
-     "title": "The land question in Zimbabwe",
+     "id": "d793c1b9",
+     "title": "Titles, conflict, and land use : the development of property rights and land reform on the Brazilian Amazon frontier",
      "score": 9,
      "matched_on": [
       "enclosure",
@@ -8191,6 +8226,42 @@
      "score": 9,
      "matched_on": [
       "terres communales",
+      "enclosure",
+      "commons"
+     ]
+    },
+    {
+     "id": "28d31bec",
+     "title": "Promised land : peasant rebellion in Chalatenango, El Salvador",
+     "score": 9,
+     "matched_on": [
+      "enclosure",
+      "commons"
+     ]
+    },
+    {
+     "id": "1797c391",
+     "title": "The poor of the land : a Christian case for land reform",
+     "score": 9,
+     "matched_on": [
+      "enclosure",
+      "commons"
+     ]
+    },
+    {
+     "id": "168140f0",
+     "title": "Peasants, landlords, and governments; agrarian reform in the Third World",
+     "score": 9,
+     "matched_on": [
+      "enclosure",
+      "commons"
+     ]
+    },
+    {
+     "id": "3f954335",
+     "title": "Land in African agrarian systems",
+     "score": 9,
+     "matched_on": [
       "enclosure",
       "commons"
      ]
@@ -8847,8 +8918,17 @@
      ]
     },
     {
-     "id": "504ef2ad",
-     "title": "Zapata's revenge : free trade and the farm crisis in Mexico",
+     "id": "a195fbb3",
+     "title": "Competing jurisdictions : settling land claims in Africa",
+     "score": 8,
+     "matched_on": [
+      "enclosure",
+      "commons"
+     ]
+    },
+    {
+     "id": "49e1fc7c",
+     "title": "The land question in Zimbabwe",
      "score": 8,
      "matched_on": [
       "enclosure",
@@ -8868,6 +8948,25 @@
      "title": "Cooperative housing : a handbook for effective operations",
      "score": 8,
      "matched_on": [
+      "commons"
+     ]
+    },
+    {
+     "id": "5cd7bff3",
+     "title": "Open-field farming in medieval England;",
+     "score": 8,
+     "matched_on": [
+      "communs fonciers",
+      "enclosure",
+      "commons"
+     ]
+    },
+    {
+     "id": "caf46bb3",
+     "title": "Struggle in the countryside; politics and rural labor in Chile, 1919-1973",
+     "score": 8,
+     "matched_on": [
+      "enclosure",
       "commons"
      ]
     },
@@ -9611,15 +9710,6 @@
       "enclosure",
       "commons"
      ]
-    },
-    {
-     "id": "a195fbb3",
-     "title": "Competing jurisdictions : settling land claims in Africa",
-     "score": 6,
-     "matched_on": [
-      "enclosure",
-      "commons"
-     ]
     }
    ]
   },
@@ -10039,7 +10129,7 @@
    "slug": "paysanneries-agroecologie",
    "titre": "Paysanneries & agroécologie politique",
    "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-   "doc_count": 603,
+   "doc_count": 607,
    "docs": [
     "5a9397e7",
     "8bfe460c",
@@ -10223,6 +10313,9 @@
     "c1b5a969",
     "31aec67a",
     "ebb59d3f",
+    "504ef2ad",
+    "28d31bec",
+    "168140f0",
     "fac367e2",
     "9e831a55",
     "c99e6da4",
@@ -10643,7 +10736,8 @@
     "7dee7970",
     "5399ce07",
     "a9094a2b",
-    "62078cc7"
+    "62078cc7",
+    "108b91ac"
    ],
    "docs_detail": [
     {
@@ -12777,6 +12871,33 @@
     {
      "id": "ebb59d3f",
      "title": "Peasant struggles in Bihar, 1831-1992 : spontaneity to organisation",
+     "score": 9,
+     "matched_on": [
+      "paysannerie",
+      "paysan",
+      "peasant"
+     ]
+    },
+    {
+     "id": "504ef2ad",
+     "title": "Zapata's revenge : free trade and the farm crisis in Mexico",
+     "score": 9,
+     "matched_on": [
+      "paysan"
+     ]
+    },
+    {
+     "id": "28d31bec",
+     "title": "Promised land : peasant rebellion in Chalatenango, El Salvador",
+     "score": 9,
+     "matched_on": [
+      "paysan",
+      "peasant"
+     ]
+    },
+    {
+     "id": "168140f0",
+     "title": "Peasants, landlords, and governments; agrarian reform in the Third World",
      "score": 9,
      "matched_on": [
       "paysannerie",
@@ -17369,6 +17490,15 @@
      "matched_on": [
       "paysan"
      ]
+    },
+    {
+     "id": "108b91ac",
+     "title": "Don’t Forsake Us!",
+     "score": 6,
+     "matched_on": [
+      "paysannerie",
+      "paysan"
+     ]
     }
    ]
   },
@@ -17376,7 +17506,7 @@
    "slug": "land-back-autochtones",
    "titre": "Land Back & souverainetés autochtones",
    "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-   "doc_count": 287,
+   "doc_count": 288,
    "docs": [
     "0b22d51b",
     "e41de87d",
@@ -17664,7 +17794,8 @@
     "a4ef416a",
     "7dee7970",
     "a9094a2b",
-    "3e56bb98"
+    "3e56bb98",
+    "108b91ac"
    ],
    "docs_detail": [
     {
@@ -20141,6 +20272,15 @@
       "land back",
       "autochtone"
      ]
+    },
+    {
+     "id": "108b91ac",
+     "title": "Don’t Forsake Us!",
+     "score": 6,
+     "matched_on": [
+      "autochtone",
+      "indigène"
+     ]
     }
    ]
   },
@@ -20148,7 +20288,7 @@
    "slug": "feminismes-de-la-terre",
    "titre": "Féminismes de la terre",
    "chapo": "Le foncier a un genre. Place des femmes dans les luttes agraires, droits fonciers des femmes, écoféminisme rural, critique de la division genrée du travail de la terre.",
-   "doc_count": 139,
+   "doc_count": 140,
    "docs": [
     "e41de87d",
     "b225af88",
@@ -20288,7 +20428,8 @@
     "08969309",
     "5fe86a39",
     "2be8a8c5",
-    "439d316f"
+    "439d316f",
+    "108b91ac"
    ],
    "docs_detail": [
     {
@@ -21526,6 +21667,15 @@
      "matched_on": [
       "féminisme agraire"
      ]
+    },
+    {
+     "id": "108b91ac",
+     "title": "Don’t Forsake Us!",
+     "score": 6,
+     "matched_on": [
+      "féminisme paysan",
+      "féminisme agraire"
+     ]
     }
    ]
   },
@@ -21533,7 +21683,7 @@
    "slug": "accaparements-resistances",
    "titre": "Accaparements & résistances",
    "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-   "doc_count": 389,
+   "doc_count": 395,
    "docs": [
     "5a9397e7",
     "d647480f",
@@ -21683,9 +21833,13 @@
     "31aec67a",
     "ebb59d3f",
     "324cb730",
+    "504ef2ad",
     "d793c1b9",
-    "49e1fc7c",
     "d8781904",
+    "28d31bec",
+    "1797c391",
+    "168140f0",
+    "3f954335",
     "c99e6da4",
     "55db5001",
     "2db11a52",
@@ -21794,7 +21948,10 @@
     "8a522aaf",
     "89cbd89b",
     "f5be6d14",
-    "504ef2ad",
+    "a195fbb3",
+    "49e1fc7c",
+    "5cd7bff3",
+    "caf46bb3",
     "581a53c8",
     "79cc5801",
     "a54f94c8",
@@ -21922,8 +22079,7 @@
     "f5977eb9",
     "a4ef416a",
     "a9094a2b",
-    "62078cc7",
-    "a195fbb3"
+    "62078cc7"
    ],
    "docs_detail": [
     {
@@ -23189,6 +23345,14 @@
      ]
     },
     {
+     "id": "504ef2ad",
+     "title": "Zapata's revenge : free trade and the farm crisis in Mexico",
+     "score": 9,
+     "matched_on": [
+      "enclosure"
+     ]
+    },
+    {
      "id": "d793c1b9",
      "title": "Titles, conflict, and land use : the development of property rights and land reform on the Brazilian Amazon frontier",
      "score": 9,
@@ -23197,16 +23361,40 @@
      ]
     },
     {
-     "id": "49e1fc7c",
-     "title": "The land question in Zimbabwe",
+     "id": "d8781904",
+     "title": "The transformation of rural Mexico : reforming the ejido sector",
      "score": 9,
      "matched_on": [
       "enclosure"
      ]
     },
     {
-     "id": "d8781904",
-     "title": "The transformation of rural Mexico : reforming the ejido sector",
+     "id": "28d31bec",
+     "title": "Promised land : peasant rebellion in Chalatenango, El Salvador",
+     "score": 9,
+     "matched_on": [
+      "enclosure"
+     ]
+    },
+    {
+     "id": "1797c391",
+     "title": "The poor of the land : a Christian case for land reform",
+     "score": 9,
+     "matched_on": [
+      "enclosure"
+     ]
+    },
+    {
+     "id": "168140f0",
+     "title": "Peasants, landlords, and governments; agrarian reform in the Third World",
+     "score": 9,
+     "matched_on": [
+      "enclosure"
+     ]
+    },
+    {
+     "id": "3f954335",
+     "title": "Land in African agrarian systems",
      "score": 9,
      "matched_on": [
       "enclosure"
@@ -24129,8 +24317,32 @@
      ]
     },
     {
-     "id": "504ef2ad",
-     "title": "Zapata's revenge : free trade and the farm crisis in Mexico",
+     "id": "a195fbb3",
+     "title": "Competing jurisdictions : settling land claims in Africa",
+     "score": 8,
+     "matched_on": [
+      "enclosure"
+     ]
+    },
+    {
+     "id": "49e1fc7c",
+     "title": "The land question in Zimbabwe",
+     "score": 8,
+     "matched_on": [
+      "enclosure"
+     ]
+    },
+    {
+     "id": "5cd7bff3",
+     "title": "Open-field farming in medieval England;",
+     "score": 8,
+     "matched_on": [
+      "enclosure"
+     ]
+    },
+    {
+     "id": "caf46bb3",
+     "title": "Struggle in the countryside; politics and rural labor in Chile, 1919-1973",
      "score": 8,
      "matched_on": [
       "enclosure"
@@ -25221,14 +25433,6 @@
     {
      "id": "62078cc7",
      "title": "The Influence of the Game Laws, 1846",
-     "score": 6,
-     "matched_on": [
-      "enclosure"
-     ]
-    },
-    {
-     "id": "a195fbb3",
-     "title": "Competing jurisdictions : settling land claims in Africa",
      "score": 6,
      "matched_on": [
       "enclosure"
