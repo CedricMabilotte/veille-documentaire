@@ -121,15 +121,15 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-11-15T11:05:13.869781+00:00'
+exported_at: '2026-11-17T11:58:07.481539+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
   type: html
-  fertility: 1.87
-  runs: 23
+  fertility: 1.79
+  runs: 24
   docs_dl: 43
-  docs_seen: 648
+  docs_seen: 650
 - url: https://infokiosques.net/paysannerie_ruralite
   label: Infokiosques.net — Paysannerie & ruralité
   type: html
@@ -497,10 +497,10 @@ sources:
 - url: https://viacampesina.org/en/wp-json/wp/v2/media?mime_type=application/pdf
   label: La Vía Campesina — publications (WP REST)
   type: wp_rest
-  fertility: 184.5
-  runs: 6
-  docs_dl: 1107
-  docs_seen: 1113
+  fertility: 158.57
+  runs: 7
+  docs_dl: 1110
+  docs_seen: 1116
 - url: https://www.fian.org/wp-json/wp/v2/media?mime_type=application/pdf
   label: FIAN International — publications (WP REST)
   type: wp_rest

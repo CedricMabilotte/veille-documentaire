@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T10:52:37Z",
+ "generated_at": "2026-11-17T11:46:17Z",
  "total_dossiers": 10,
  "dossiers": [
   {
@@ -1116,7 +1116,7 @@
    "slug": "zad-defense-de-territoires",
    "titre": "ZAD & défense de territoires",
    "chapo": "Occuper pour défendre : ZAD, luttes contre les grands projets inutiles, résistances à l'artificialisation. Des récits de territoires habités contre l'aménagement, et ce qu'ils inventent en commun.",
-   "doc_count": 112,
+   "doc_count": 113,
    "docs": [
     "88bfc0cb",
     "38a113bc",
@@ -1147,6 +1147,7 @@
     "9da13ea1",
     "fb76b5a1",
     "71126e0c",
+    "f310c7b8",
     "1ce39b6d",
     "5c12100c",
     "b4712d32",
@@ -1470,6 +1471,14 @@
     {
      "id": "71126e0c",
      "title": "Survivance coloniale et gestes de résistance en Martinique. Autour d'un film de Florence Lazar",
+     "score": 9,
+     "matched_on": [
+      "occupation"
+     ]
+    },
+    {
+     "id": "f310c7b8",
+     "title": "بيان التضامن مع فلسطين",
      "score": 9,
      "matched_on": [
       "occupation"
@@ -2177,7 +2186,7 @@
    "slug": "sans-terre-reforme-agraire",
    "titre": "Sans-terre & réforme agraire",
    "chapo": "La terre à celles et ceux qui la travaillent. Mouvements de sans-terre, réformes agraires, occupations de latifundios, MST brésilien et Via Campesina : la redistribution foncière comme combat vivant.",
-   "doc_count": 475,
+   "doc_count": 477,
    "docs": [
     "5a9397e7",
     "8bfe460c",
@@ -2347,6 +2356,8 @@
     "d8781904",
     "1797c391",
     "168140f0",
+    "de2fe928",
+    "f310c7b8",
     "fac367e2",
     "9e831a55",
     "c99e6da4",
@@ -4252,6 +4263,25 @@
      "matched_on": [
       "réforme agraire",
       "agrarian reform"
+     ]
+    },
+    {
+     "id": "de2fe928",
+     "title": "بيان تضامن مع السودان – المؤتمر النصفي لحركة طريق الفلاحين 2026",
+     "score": 9,
+     "matched_on": [
+      "réforme agraire",
+      "via campesina"
+     ]
+    },
+    {
+     "id": "f310c7b8",
+     "title": "بيان التضامن مع فلسطين",
+     "score": 9,
+     "matched_on": [
+      "sans-terre",
+      "réforme agraire",
+      "via campesina"
      ]
     },
     {
@@ -7030,7 +7060,7 @@
    "slug": "communs-fonciers-histoire",
    "titre": "Communs fonciers : une histoire",
    "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-   "doc_count": 277,
+   "doc_count": 278,
    "docs": [
     "e7512d48",
     "d647480f",
@@ -7141,6 +7171,7 @@
     "1797c391",
     "168140f0",
     "3f954335",
+    "f310c7b8",
     "9e831a55",
     "2db11a52",
     "7b89d6d1",
@@ -8264,6 +8295,14 @@
      "matched_on": [
       "enclosure",
       "commons"
+     ]
+    },
+    {
+     "id": "f310c7b8",
+     "title": "بيان التضامن مع فلسطين",
+     "score": 9,
+     "matched_on": [
+      "terres collectives"
      ]
     },
     {
@@ -10129,7 +10168,7 @@
    "slug": "paysanneries-agroecologie",
    "titre": "Paysanneries & agroécologie politique",
    "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-   "doc_count": 607,
+   "doc_count": 609,
    "docs": [
     "5a9397e7",
     "8bfe460c",
@@ -10316,6 +10355,8 @@
     "504ef2ad",
     "28d31bec",
     "168140f0",
+    "de2fe928",
+    "f310c7b8",
     "fac367e2",
     "9e831a55",
     "c99e6da4",
@@ -12903,6 +12944,29 @@
       "paysannerie",
       "paysan",
       "peasant"
+     ]
+    },
+    {
+     "id": "de2fe928",
+     "title": "بيان تضامن مع السودان – المؤتمر النصفي لحركة طريق الفلاحين 2026",
+     "score": 9,
+     "matched_on": [
+      "paysannerie",
+      "paysan",
+      "agriculture vivrière",
+      "souveraineté alimentaire"
+     ]
+    },
+    {
+     "id": "f310c7b8",
+     "title": "بيان التضامن مع فلسطين",
+     "score": 9,
+     "matched_on": [
+      "paysannerie",
+      "paysan",
+      "agroécologie",
+      "agriculture vivrière",
+      "souveraineté alimentaire"
      ]
     },
     {
@@ -17506,7 +17570,7 @@
    "slug": "land-back-autochtones",
    "titre": "Land Back & souverainetés autochtones",
    "chapo": "Restituer la terre aux peuples premiers : Land Back en Amérique du Nord, terras indígenas, autonomies territoriales. La critique de la propriété coloniale et les luttes pour la souveraineté.",
-   "doc_count": 288,
+   "doc_count": 289,
    "docs": [
     "0b22d51b",
     "e41de87d",
@@ -17604,6 +17668,7 @@
     "bf8f5362",
     "a7025fb3",
     "89b8836d",
+    "f310c7b8",
     "9e831a55",
     "55db5001",
     "a91bd215",
@@ -18623,6 +18688,15 @@
      "score": 9,
      "matched_on": [
       "indigène"
+     ]
+    },
+    {
+     "id": "f310c7b8",
+     "title": "بيان التضامن مع فلسطين",
+     "score": 9,
+     "matched_on": [
+      "autochtone",
+      "droit coutumier"
      ]
     },
     {
@@ -21683,7 +21757,7 @@
    "slug": "accaparements-resistances",
    "titre": "Accaparements & résistances",
    "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-   "doc_count": 395,
+   "doc_count": 397,
    "docs": [
     "5a9397e7",
     "d647480f",
@@ -21840,6 +21914,8 @@
     "1797c391",
     "168140f0",
     "3f954335",
+    "de2fe928",
+    "f310c7b8",
     "c99e6da4",
     "55db5001",
     "2db11a52",
@@ -23398,6 +23474,22 @@
      "score": 9,
      "matched_on": [
       "enclosure"
+     ]
+    },
+    {
+     "id": "de2fe928",
+     "title": "بيان تضامن مع السودان – المؤتمر النصفي لحركة طريق الفلاحين 2026",
+     "score": 9,
+     "matched_on": [
+      "accaparement"
+     ]
+    },
+    {
+     "id": "f310c7b8",
+     "title": "بيان التضامن مع فلسطين",
+     "score": 9,
+     "matched_on": [
+      "accaparement"
      ]
     },
     {
