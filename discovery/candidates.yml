@@ -1,5 +1,5 @@
-last_updated: '2026-11-17T11:39:16+00:00'
-total_candidates: 7276
+last_updated: '2026-11-19T11:26:54'
+total_candidates: 7318
 candidates:
 - url: https://shs.cairn.info
   type: footnote
@@ -3300,30 +3300,12 @@ candidates:
   - doc_id: 48a47a8f_ADPF828TPIIncidentalDecisaoAssinada
     context: http://www.stf.jus.br/portal/autenticacao/autenticarDocumento.asp sob o código E876-08E5-56EE-1A56 e senha 0AB1-272C-3526-EE3A
     page: 27
-- url: https://emdt.noblogs.org/post/2018/05/01/totope-la-taupe-integrale/
-  type: external_link
-  domain: emdt.noblogs.org
-  first_seen: '2026-09-15'
-  last_seen: '2026-11-17'
-  seen_count: 27
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Infokiosques.net — nouveautés
-    context: · sur le site web
-    page: null
-  - doc_id: Infokiosques.net — Écologie radicale
-    context: · sur le site web
-    page: null
-  - doc_id: Infokiosques.net — Anticapitalisme
-    context: · sur le site web
-    page: null
 - url: https://cookiedatabase.org/tcf/purposes/
   type: external_link
   domain: cookiedatabase.org
   first_seen: '2026-05-18'
-  last_seen: '2026-11-01'
-  seen_count: 26
+  last_seen: '2026-11-19'
+  seen_count: 27
   suggested_action: follow_one_time
   notes: ''
   found_from:
@@ -3341,6 +3323,24 @@ candidates:
     page: null
   - doc_id: Nyéléni — documents finaux
     context: En savoir plus sur ces finalités
+    page: null
+- url: https://emdt.noblogs.org/post/2018/05/01/totope-la-taupe-integrale/
+  type: external_link
+  domain: emdt.noblogs.org
+  first_seen: '2026-09-15'
+  last_seen: '2026-11-17'
+  seen_count: 27
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Infokiosques.net — nouveautés
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — Écologie radicale
+    context: · sur le site web
+    page: null
+  - doc_id: Infokiosques.net — Anticapitalisme
+    context: · sur le site web
     page: null
 - url: http://halshs.archives-ouvertes.fr/halshs-00505372/fr/
   type: footnote
@@ -5052,6 +5052,24 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://creativecommons.org/licenses/by/4.0/
+  type: external_link
+  domain: creativecommons.org
+  first_seen: '2026-05-18'
+  last_seen: '2026-11-19'
+  seen_count: 16
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Böll Stiftung — Agriculture Atlas (EN)
+    context: these conditions
+    page: null
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: CC BY 4.0
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: CC BY 4.0
+    page: null
 - url: https://github.com/TecharoHQ/anubis
   type: external_link
   domain: github.com
@@ -5994,24 +6012,6 @@ candidates:
     page: null
   - doc_id: FIAN International — publications
     context: Pare-feu web activé
-    page: null
-- url: https://creativecommons.org/licenses/by/4.0/
-  type: external_link
-  domain: creativecommons.org
-  first_seen: '2026-05-18'
-  last_seen: '2026-11-17'
-  seen_count: 14
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Böll Stiftung — Agriculture Atlas (EN)
-    context: these conditions
-    page: null
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: CC BY 4.0
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: CC BY 4.0
     page: null
 - url: https://emmaclit.com/2025/06/28/al-shifa-un-hopital-a-gaza/
   type: external_link
@@ -8390,6 +8390,36 @@ candidates:
   - doc_id: Infokiosques.net — Écologie radicale
     context: · sur le site web
     page: null
+- url: http://taller.traficantes.net
+  type: external_link
+  domain: taller.traficantes.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Diseño
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Diseño
+    page: null
+- url: http://taller.traficantes.net/
+  type: external_link
+  domain: taller.traficantes.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Taller de diseño
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Taller de diseño
+    page: null
 - url: http://turbulence.org.uk/turbulence-4/1968-and-doors-to-new-worlds/
   type: external_link
   domain: turbulence.org.uk
@@ -8438,6 +8468,21 @@ candidates:
   - doc_id: de1c36db
     context: Zimbabwe’s National Climate Change Response Strategy (NCCRS), http://www.climatechange.
     page: 20
+- url: http://www.culturaydeporte.gob.es/cultura/libro-bibliotecas.html
+  type: external_link
+  domain: www.culturaydeporte.gob.es
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
 - url: http://www.herald.co.zw/zim-set-to-establish-climate-
   type: footnote
   domain: www.herald.co.zw
@@ -9041,6 +9086,21 @@ candidates:
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Büro Paris - Frankreich, Italien
     page: null
+- url: https://fundaciondeloscomunes.net
+  type: external_link
+  domain: fundaciondeloscomunes.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
 - url: https://gender-mediathek.de
   type: external_link
   domain: gender-mediathek.de
@@ -9052,6 +9112,21 @@ candidates:
   found_from:
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Gender Mediathek
+    page: null
+- url: https://gestionmadrid.mercadosocial.net/media/reports/Mercado_Social_Madrid_Infografia_Balance_Social_Traficantes_de_Suenos.pdf
+  type: external_link
+  domain: gestionmadrid.mercadosocial.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
     page: null
 - url: https://gruporuptura.wordpress.com
   type: external_link
@@ -9266,6 +9341,21 @@ candidates:
   - doc_id: Infokiosques.net — nouveautés
     context: · sur le site web
     page: null
+- url: https://madrid.mercadosocial.net
+  type: external_link
+  domain: madrid.mercadosocial.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
 - url: https://marsactu.fr/bref/artificialisation-de-terres-fertiles-a-pertuis-larrete-du-prefet-annule-en-appel
   type: mastodon
   found_from:
@@ -9426,6 +9516,21 @@ candidates:
   - doc_id: Infokiosques.net — Écologie radicale
     context: · sur le site web
     page: null
+- url: https://reas.red
+  type: external_link
+  domain: reas.red
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
 - url: https://reporterre.net/Foret-rouge-un-film-sur-la-foret-la-zad-et-le-reve-d-un-autre-monde
   type: mastodon
   found_from:
@@ -9545,6 +9650,36 @@ candidates:
   - doc_id: Infokiosques.net — Anticolonialismes
     context: · sur le site web
     page: null
+- url: https://t.me/NocionesComunes
+  type: external_link
+  domain: t.me
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: TELEGRAM
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: TELEGRAM
+    page: null
+- url: https://t.me/Traficantes
+  type: external_link
+  domain: t.me
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Canal de Telegram
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Canal de Telegram
+    page: null
 - url: https://takakia.blackblogs.org/
   type: external_link
   domain: takakia.blackblogs.org
@@ -9556,6 +9691,96 @@ candidates:
   found_from:
   - doc_id: Infokiosques.net — Écologie radicale
     context: · sur le site web
+    page: null
+- url: https://taller.traficantes.net
+  type: external_link
+  domain: taller.traficantes.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Diseño
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Diseño
+    page: null
+- url: https://traficantes.org/suscripciones
+  type: external_link
+  domain: traficantes.org
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Suscribirme
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Suscribirme
+    page: null
+- url: https://twitter.com/DistriTrafis
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Twitter
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Twitter
+    page: null
+- url: https://twitter.com/NocionesComunes
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: TWITTER
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: TWITTER
+    page: null
+- url: https://twitter.com/Traficantes_Ed
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Twitter
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Twitter
+    page: null
+- url: https://twitter.com/traficantes2010
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Twitter
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Twitter
     page: null
 - url: https://we.riseup.net/assets/134753/versions/1/Guerre%20de%20Classe.mp3
   type: external_link
@@ -9587,6 +9812,21 @@ candidates:
   - doc_id: b1420894
     context: 15 https://www.boell.de/de/2017/01/10/monsanto-und-co-pestizide-und-saatgut-als-milliardengeschaeft?utm_campaign=ds_konzernatlas
     page: 4
+- url: https://www.culturaydeporte.gob.es/portada.html
+  type: external_link
+  domain: www.culturaydeporte.gob.es
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
 - url: https://www.ema.co.zw/index.php/2014-
   type: footnote
   domain: www.ema.co.zw
@@ -9605,6 +9845,36 @@ candidates:
   - doc_id: de1c36db
     context: GoZ (2002), Environmental Management Act (EMA Act), https://www.ema.co.zw/index.php/2014-
     page: 20
+- url: https://www.facebook.com/editorial.Traficantes
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Facebook
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Facebook
+    page: null
+- url: https://www.facebook.com/traficantes.desuenos/
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Facebook
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Facebook
+    page: null
 - url: https://www.gwi-boell.de
   type: external_link
   domain: www.gwi-boell.de
@@ -9616,6 +9886,21 @@ candidates:
   found_from:
   - doc_id: Böll Stiftung — publications DE (deep crawl)
     context: Gunda-Werner-Institut
+    page: null
+- url: https://www.instagram.com/traficantes_libreria/
+  type: external_link
+  domain: www.instagram.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Instagram
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Instagram
     page: null
 - url: https://www.lemap.be/lpf/programme-2
   type: mastodon
@@ -9685,6 +9970,21 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.madrid.es/portal/site/munimadrid
+  type: external_link
+  domain: www.madrid.es
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
+    page: null
 - url: https://www.mdpi.com/2075-5309/11/4/137/pdf?version=1617937072
   type: openalex
   found_from:
@@ -10054,6 +10354,21 @@ candidates:
     genre: journal-article
     html_url: https://www.tandfonline.com/doi/pdf/10.1080/03585522.1977.10407877?download=true
     source: unpaywall
+- url: https://www.youtube.com/channel/UCRMUh8n03HR1o7VB4vDYRCA
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 9
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Youtube
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Youtube
+    page: null
 - url: https://zuendlumpen.noblogs.org/post/2020/05/08/wann-wenn-nicht-jetzt/
   type: external_link
   domain: zuendlumpen.noblogs.org
@@ -12669,51 +12984,6 @@ candidates:
     year: 2000
     doi: ''
   suggested_action: follow_one_time
-- url: http://taller.traficantes.net
-  type: external_link
-  domain: taller.traficantes.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Diseño
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Diseño
-    page: null
-- url: http://taller.traficantes.net/
-  type: external_link
-  domain: taller.traficantes.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Taller de diseño
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Taller de diseño
-    page: null
-- url: http://www.culturaydeporte.gob.es/cultura/libro-bibliotecas.html
-  type: external_link
-  domain: www.culturaydeporte.gob.es
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
-    page: null
 - url: http://www.eco­action.org/rr/index.html
   type: footnote
   domain: www.eco­action.org
@@ -13282,6 +13552,16 @@ candidates:
     year: 2016
     doi: 10.4000/traces.6636
   suggested_action: follow_one_time
+  promoted_pdf_url: https://doi.org/10.4000/traces.6636
+  promoted_at: '2026-11-19T11:25:15'
+  promoted_metadata:
+    doi: 10.4000/traces.6636
+    title: Les communs urbains. L’invention du commun
+    journal: Tracés
+    published_date: '2016-01-01'
+    genre: journal-article
+    html_url: https://doi.org/10.4000/traces.6636
+    source: unpaywall
 - url: https://endatiersmonde.org/2025/11/19/partenariat-strategique-enda-tiers-monde-et-drc-unis-pour-renforcer-la-protection-et-la-resilience-des-communautes-face-aux-dynamiques-migratoires-au-senegal/
   type: rss
   found_from:
@@ -14015,36 +14295,6 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://fundaciondeloscomunes.net
-  type: external_link
-  domain: fundaciondeloscomunes.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
-    page: null
-- url: https://gestionmadrid.mercadosocial.net/media/reports/Mercado_Social_Madrid_Infografia_Balance_Social_Traficantes_de_Suenos.pdf
-  type: external_link
-  domain: gestionmadrid.mercadosocial.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
-    page: null
 - url: https://hal.science/hal-04961302
   type: openalex
   found_from:
@@ -14256,21 +14506,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://madrid.mercadosocial.net
-  type: external_link
-  domain: madrid.mercadosocial.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
-    page: null
 - url: https://ojs.uv.es/index.php/ciriecespana/article/download/9266/11695
   type: openalex
   found_from:
@@ -14368,21 +14603,6 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://reas.red
-  type: external_link
-  domain: reas.red
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
-    page: null
 - url: https://reporterre.net/Mortiers-d-artifice-menaces-Les-zadistes-terrorises-par-les-agents-de-securite-de-l-A69
   type: mastodon
   found_from:
@@ -14664,36 +14884,6 @@ candidates:
   - doc_id: CrimethInc — zines
     context: Buy Now
     page: null
-- url: https://t.me/NocionesComunes
-  type: external_link
-  domain: t.me
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: TELEGRAM
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: TELEGRAM
-    page: null
-- url: https://t.me/Traficantes
-  type: external_link
-  domain: t.me
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Canal de Telegram
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Canal de Telegram
-    page: null
 - url: https://t.me/lvcstruggles
   type: footnote
   domain: t.me
@@ -14712,96 +14902,6 @@ candidates:
   - doc_id: 8368f2e7
     context: https://t.me/lvcstruggles
     page: 2
-- url: https://taller.traficantes.net
-  type: external_link
-  domain: taller.traficantes.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Diseño
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Diseño
-    page: null
-- url: https://traficantes.org/suscripciones
-  type: external_link
-  domain: traficantes.org
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Suscribirme
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Suscribirme
-    page: null
-- url: https://twitter.com/DistriTrafis
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Twitter
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Twitter
-    page: null
-- url: https://twitter.com/NocionesComunes
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: TWITTER
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: TWITTER
-    page: null
-- url: https://twitter.com/Traficantes_Ed
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Twitter
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Twitter
-    page: null
-- url: https://twitter.com/traficantes2010
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Twitter
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Twitter
-    page: null
 - url: https://video.antopie.org/w/qPMxudwXWyTfXRgvCVtSwB
   type: mastodon
   found_from:
@@ -14917,51 +15017,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.culturaydeporte.gob.es/portada.html
-  type: external_link
-  domain: www.culturaydeporte.gob.es
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
-    page: null
-- url: https://www.facebook.com/editorial.Traficantes
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Facebook
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Facebook
-    page: null
-- url: https://www.facebook.com/traficantes.desuenos/
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Facebook
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Facebook
-    page: null
 - url: https://www.grain.org/
   type: footnote
   domain: www.grain.org
@@ -14977,36 +15032,6 @@ candidates:
   - doc_id: 9e8c8fc5
     context: https://www.grain.org/
     page: 18
-- url: https://www.instagram.com/traficantes_libreria/
-  type: external_link
-  domain: www.instagram.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Instagram
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Instagram
-    page: null
-- url: https://www.madrid.es/portal/site/munimadrid
-  type: external_link
-  domain: www.madrid.es
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: lien depuis https://traficantes.net/secciones/pensamiento?field_plibro_materia_nr_nid=172114
-    page: null
 - url: https://www.mediapart.fr/journal/politique/261024/de-sivens-sainte-soline-l-eau-est-devenue-une-cause-majeure-de-mobilisation
   type: mastodon
   found_from:
@@ -15046,21 +15071,6 @@ candidates:
     hashtag: ZAD
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.youtube.com/channel/UCRMUh8n03HR1o7VB4vDYRCA
-  type: external_link
-  domain: www.youtube.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 7
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Youtube
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Youtube
-    page: null
 - url: https://www.youtube.com/watch?v=iuFSXVMxBnY
   type: external_link
   domain: www.youtube.com
@@ -17411,6 +17421,21 @@ candidates:
   - doc_id: e445b21d
     context: '[Online]. Available: https://digitallibrary.un.org/record/3923923'
     page: 4
+- url: https://distribuidora.traficantes.net/es
+  type: external_link
+  domain: distribuidora.traficantes.net
+  first_seen: '2026-09-19'
+  last_seen: '2026-11-19'
+  seen_count: 6
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: Distribuidora
+    page: null
+  - doc_id: Traficantes de Sueños — Autogestion / Economía social
+    context: Distribuidora
+    page: null
 - url: https://doaj.org/article/2a56bedeea9c4411b31d0b92eeaeeacf
   type: openalex
   found_from:
@@ -18232,6 +18257,16 @@ candidates:
     year: 2024
     doi: 10.5772/intechopen.1004908
   suggested_action: follow_one_time
+  promoted_pdf_url: https://www.intechopen.com/citation-pdf-url/1173557
+  promoted_at: '2026-11-19T11:25:38'
+  promoted_metadata:
+    doi: 10.5772/intechopen.1004908
+    title: 'Put the Land Back on the Land: A National Imperative'
+    journal: IntechOpen eBooks
+    published_date: '2024-05-23'
+    genre: book-chapter
+    html_url: https://www.intechopen.com/citation-pdf-url/1173557
+    source: unpaywall
 - url: https://donatenow.networkforgood.org/viacampesina
   type: footnote
   domain: donatenow.networkforgood.org
@@ -25048,6 +25083,30 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.addtoany.com/share
+  type: external_link
+  domain: www.addtoany.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
+- url: https://www.addtoany.com/share#url=https%3A%2F%2Ftraficantes.net%2Fmaterias%2F15-m&title=15-M
+  type: external_link
+  domain: www.addtoany.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 5
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Traficantes de Sueños — 15M (matière)
+    context: lien depuis https://traficantes.net/materias/15-m
+    page: null
 - url: https://www.boamp.fr/explore/data-
   type: footnote
   domain: www.boamp.fr
@@ -26619,6 +26678,18 @@ candidates:
   - doc_id: d4e3157f_brochure_annees_de_braise_cahier
     context: http://listes.samizdat.net/wws/subrequest/nlpf-infos
     page: 2
+- url: http://mochila.cubava.cu/portada
+  type: external_link
+  domain: mochila.cubava.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Mochila para la familiaMochila para la familia
+    page: null
 - url: http://nlpf.samizdat.net
   type: footnote
   domain: nlpf.samizdat.net
@@ -26864,6 +26935,18 @@ candidates:
   - doc_id: 14cd7f81
     context: '(Source: P2P Foundation / Michel Bauwens http://wiki.p2pfounda-'
     page: 143
+- url: http://www.actaf.co.cu/
+  type: external_link
+  domain: www.actaf.co.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Asociación Cubana de Técnicos Agrícolas y Forestales. Asociación Cubana de Técnicos Agrícolas y Forestales.
+    page: null
 - url: http://www.action-directe.net
   type: footnote
   domain: www.action-directe.net
@@ -26979,6 +27062,18 @@ candidates:
   - doc_id: 99c16493
     context: 'Site de l''OFAG : http://www.blw.admin.ch/themen/00011/01581/index.html?lang=fr'
     page: 19
+- url: http://www.campesinocubano.anap.cu/
+  type: external_link
+  domain: www.campesinocubano.anap.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: ANAP. Ministerio de la AgriculturaANAP. Ministerio de la Agricultura
+    page: null
 - url: http://www.crao.net/gpl/
   type: footnote
   domain: www.crao.net
@@ -27000,6 +27095,18 @@ candidates:
   - doc_id: e5341cc9_hal_hal-03380720v1
     context: mémoire de DEA en Droit, < http://www.crao.net/gpl/ >
     page: 26
+- url: http://www.cubadebate.cu/
+  type: external_link
+  domain: www.cubadebate.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: CubadebateCubadebate
+    page: null
 - url: http://www.e-revistes.uji.es/index.php/recerca/article/download/1062/1268
   type: openalex
   found_from:
@@ -27043,6 +27150,43 @@ candidates:
     genre: journal-article
     html_url: http://www.e-revistes.uji.es/index.php/recerca/article/download/1062/1268
     source: unpaywall
+- url: http://www.fao.org/home/es/
+  type: external_link
+  domain: www.fao.org
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Organización de las Naciones Unidas para la Alimentación y la Agricultura.Organización de las Naciones Unidas
+      para la Alimentación y la Agricultura.
+    page: null
+- url: http://www.fidelcastro.cu/es
+  type: external_link
+  domain: www.fidelcastro.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Fidel. Soldado de las Ideas.Fidel. Soldado de las Ideas.
+    page: null
+- url: http://www.gaf.minag.cu/
+  type: external_link
+  domain: www.gaf.minag.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: GAF. Ministerio de la Agricultura.GAF. Ministerio de la Agricultura.
+    page: null
 - url: http://www.gibello.com/
   type: mastodon
   found_from:
@@ -27074,6 +27218,18 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: http://www.granma.cu/
+  type: external_link
+  domain: www.granma.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: GranmaGranma
+    page: null
 - url: http://www.inlibroveritas.net
   type: footnote
   domain: www.inlibroveritas.net
@@ -27089,6 +27245,18 @@ candidates:
   - doc_id: e381560e_bakounine_-_catechisme_revolutionnaire
     context: http://www.inlibroveritas.net
     page: 1
+- url: http://www.juventudrebelde.cu/
+  type: external_link
+  domain: www.juventudrebelde.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Juventud RebeldeJuventud Rebelde
+    page: null
 - url: http://www.nfu.ca/about/youth
   type: footnote
   domain: www.nfu.ca
@@ -27104,6 +27272,30 @@ candidates:
   - doc_id: ec46400e
     context: http://www.nfu.ca/about/youth
     page: 9
+- url: http://www.prensa-latina.cu/
+  type: external_link
+  domain: www.prensa-latina.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Prensa LatinaPrensa Latina
+    page: null
+- url: http://www.radiorebelde.cu/
+  type: external_link
+  domain: www.radiorebelde.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Radio RebeldeRadio Rebelde
+    page: null
 - url: http://www.reclaimthefields.org/de
   type: footnote
   domain: www.reclaimthefields.org
@@ -28438,21 +28630,6 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://distribuidora.traficantes.net/es
-  type: external_link
-  domain: distribuidora.traficantes.net
-  first_seen: '2026-09-19'
-  last_seen: '2026-10-19'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: Distribuidora
-    page: null
-  - doc_id: Traficantes de Sueños — Autogestion / Economía social
-    context: Distribuidora
-    page: null
 - url: https://doaj.org/article/1e8f89a246174e46b05b72f07d7f5d7a
   type: openalex
   found_from:
@@ -34971,6 +35148,18 @@ candidates:
     year: 1990
     doi: ''
   suggested_action: follow_one_time
+- url: https://twitter.com/MINAGCuba
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Twitter
+    page: null
 - url: https://u-paris.zoom.us/j/81194416190?pwd=bhFczuugmaxBUZYppa8nwNWWcocYrg.1
   type: mastodon
   found_from:
@@ -35124,30 +35313,6 @@ candidates:
   - doc_id: 85a0da6c_hal_dumas-03864984v1
     context: 16:9, 2016, https://vimeo.com/193034732.
     page: 129
-- url: https://www.addtoany.com/share
-  type: external_link
-  domain: www.addtoany.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
-- url: https://www.addtoany.com/share#url=https%3A%2F%2Ftraficantes.net%2Fmaterias%2F15-m&title=15-M
-  type: external_link
-  domain: www.addtoany.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 4
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Traficantes de Sueños — 15M (matière)
-    context: lien depuis https://traficantes.net/materias/15-m
-    page: null
 - url: https://www.afsp.info/stand-up-for-science-2026-france/
   type: mastodon
   found_from:
@@ -35957,6 +36122,18 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.ecured.cu/EcuRed:Enciclopedia_cubana
+  type: external_link
+  domain: www.ecured.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: EcuRedEcuRed
+    page: null
 - url: https://www.erudit.org/fr/revues/eue/2012-v6-eue0411/1013709ar.pdf
   type: openalex
   found_from:
@@ -36043,6 +36220,18 @@ candidates:
     genre: journal-article
     html_url: https://www.erudit.org/fr/revues/pa/2017-n31-pa04751/1062006ar.pdf
     source: unpaywall
+- url: https://www.facebook.com/Ministerio-de-la-Agricultura-de-Cuba-103779078984532/?ref=pages_you_manage
+  type: external_link
+  domain: www.facebook.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Facebook
+    page: null
 - url: https://www.fian.be/Rejoignez-le-Bloc-Agriculture-Alimentation-a-la-marche-Climat?lang=fr
   type: mastodon
   found_from:
@@ -36064,6 +36253,31 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.gacetaoficial.gob.cu/index.php
+  type: external_link
+  domain: www.gacetaoficial.gob.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Gaceta Oficial de la República de Cuba. Ministerio de Justicia.Gaceta Oficial de la República de Cuba. Ministerio
+      de Justicia.
+    page: null
+- url: https://www.grupoagricoladecuba.gag.cu/
+  type: external_link
+  domain: www.grupoagricoladecuba.gag.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: GAG. Grupo AgrícolaGAG. Grupo Agrícola
+    page: null
 - url: https://www.helloasso.com/associations/l-epicerie-locale-favorisant-l-entraide/collectes/un-nouveau-car-a-vrac
   type: mastodon
   found_from:
@@ -37176,6 +37390,18 @@ candidates:
   - doc_id: 9e831a55
     context: Retrieved 4/27/2026 from https://www.patreon.com/posts/148154425
     page: 7
+- url: https://www.pcc.cu
+  type: external_link
+  domain: www.pcc.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Partido Comunista de Cuba.Partido Comunista de Cuba.
+    page: null
 - url: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm
   type: footnote
   domain: www.planalto.gov.br
@@ -37191,6 +37417,18 @@ candidates:
   - doc_id: e7cfb983_Sentencia_Tavares_Pereira_y_otros_Vs._Brasil
     context: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm.
     page: 42
+- url: https://www.presidencia.gob.cu
+  type: external_link
+  domain: www.presidencia.gob.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Presidencia. Ministerio de la Agricultura.Presidencia. Ministerio de la Agricultura.
+    page: null
 - url: https://www.projets-libres.org/podcast/74-associations-osm-france/
   type: mastodon
   found_from:
@@ -37280,6 +37518,18 @@ candidates:
     hashtag: souveraineteAlimentaire
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.redcuba.cu
+  type: external_link
+  domain: www.redcuba.cu
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Cuba. RedcubaCuba. Redcuba
+    page: null
 - url: https://www.rtbf.be/article/belgique-a-3-c-comment-notre-agriculture-s-adapte-face-au-rechauffement-climatique-11719960
   type: mastodon
   found_from:
@@ -37586,6 +37836,18 @@ candidates:
     year: 1996
     doi: 10.1080/09612029600200123
   suggested_action: follow_one_time
+- url: https://www.telesurtv.net/
+  type: external_link
+  domain: www.telesurtv.net
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: TelesurTelesur
+    page: null
 - url: https://www.tynat.fr/magasin/
   type: footnote
   domain: www.tynat.fr
@@ -37616,6 +37878,18 @@ candidates:
   - doc_id: 9063702b
     context: Par exemple https://www.umu.se/digitalAssets/151/151958_open­letter­to­
     page: 2
+- url: https://www.youtube.com/channel/UCe5-Jlly085CTkPXSbyZ4Yw?view_as=subscriber
+  type: external_link
+  domain: www.youtube.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 4
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+    context: Youtube
+    page: null
 - url: https://www.youtube.com/live/Ch98BvBho0g
   type: footnote
   domain: www.youtube.com
@@ -39471,18 +39745,6 @@ candidates:
   - doc_id: 9e63b27b
     context: "2.\t  http://mno.hu/hirtv_gazdasagi_hirei/igy-vedik-az-osztrakok-a-foldjuket-1116566"
     page: 28
-- url: http://mochila.cubava.cu/portada
-  type: external_link
-  domain: mochila.cubava.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Mochila para la familiaMochila para la familia
-    page: null
 - url: http://monthlyreview.org/2008/11/01/ecological-crises-and-the-agrarian-question-in-world-
   type: footnote
   domain: monthlyreview.org
@@ -40654,18 +40916,6 @@ candidates:
   - doc_id: 0955f468
     context: http://www.accesstoland.eu/Preserving-
     page: 27
-- url: http://www.actaf.co.cu/
-  type: external_link
-  domain: www.actaf.co.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Asociación Cubana de Técnicos Agrícolas y Forestales. Asociación Cubana de Técnicos Agrícolas y Forestales.
-    page: null
 - url: http://www.actionaid.org/sites/files/actionaid/caught_in_the_net_
   type: footnote
   domain: www.actionaid.org
@@ -40968,18 +41218,6 @@ candidates:
   - doc_id: 2f5fce84
     context: Presses universitaires de France 2004. http://www.cairn.info/revue-ethnologie-
     page: 103
-- url: http://www.campesinocubano.anap.cu/
-  type: external_link
-  domain: www.campesinocubano.anap.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: ANAP. Ministerio de la AgriculturaANAP. Ministerio de la Agricultura
-    page: null
 - url: http://www.campesinocubano.anap.cu/2008/octubre/mujeres
   type: footnote
   domain: www.campesinocubano.anap.cu
@@ -41184,18 +41422,6 @@ candidates:
   - doc_id: 9e63b27b
     context: 'See: http://www.20minutos.es/noticia/940644/0/. http://www.cuartopoder.es/laespumadeldia/2012/12/12/'
     page: 61
-- url: http://www.cubadebate.cu/
-  type: external_link
-  domain: www.cubadebate.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: CubadebateCubadebate
-    page: null
 - url: http://www.daysofpalestine.com/news/israeli-jewish-settler-kills-81-year-old-palestinian
   type: footnote
   domain: www.daysofpalestine.com
@@ -41713,19 +41939,6 @@ candidates:
   - doc_id: b1383308
     context: 6  http://www.fao.org/geneva/news/detail/en/c/1239275/
     page: 14
-- url: http://www.fao.org/home/es/
-  type: external_link
-  domain: www.fao.org
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Organización de las Naciones Unidas para la Alimentación y la Agricultura.Organización de las Naciones Unidas
-      para la Alimentación y la Agricultura.
-    page: null
 - url: http://www.fao.org/news/story/es/item/142612/icode/
   type: footnote
   domain: www.fao.org
@@ -41955,18 +42168,6 @@ candidates:
   - doc_id: 9e63b27b
     context: http://www.fian.org/resources/documents/others/guidelines-to-secure-peoples-access-to-land/pdf.
     page: 58
-- url: http://www.fidelcastro.cu/es
-  type: external_link
-  domain: www.fidelcastro.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Fidel. Soldado de las Ideas.Fidel. Soldado de las Ideas.
-    page: null
 - url: http://www.filmreference.com/DirectorsCDuCFr/FayeCSafi.html!
   type: footnote
   domain: www.filmreference.com
@@ -42087,18 +42288,6 @@ candidates:
   - doc_id: e002b9c9
     context: 'et forêts: http://www.foodsovereignty.org/fr/manuelpopulaire/'
     page: 15
-- url: http://www.gaf.minag.cu/
-  type: external_link
-  domain: www.gaf.minag.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: GAF. Ministerio de la Agricultura.GAF. Ministerio de la Agricultura.
-    page: null
 - url: http://www.gaiafoundation.org/galleries/albums/
   type: footnote
   domain: www.gaiafoundation.org
@@ -42159,18 +42348,6 @@ candidates:
   - doc_id: 818585ea
     context: http://www.grain.org/e/5173
     page: 1
-- url: http://www.granma.cu/
-  type: external_link
-  domain: www.granma.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: GranmaGranma
-    page: null
 - url: http://www.grownyc.org/greenmarket
   type: footnote
   domain: www.grownyc.org
@@ -42415,18 +42592,6 @@ candidates:
   - doc_id: 0a70b2b3
     context: http://www.issdseed.org/sites/default/files/case/issd_africa_twg3_synthesis_paper_creating_space_for_
     page: 25
-- url: http://www.juventudrebelde.cu/
-  type: external_link
-  domain: www.juventudrebelde.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Juventud RebeldeJuventud Rebelde
-    page: null
 - url: http://www.kilimohai.org/file-
   type: footnote
   domain: www.kilimohai.org
@@ -43076,18 +43241,6 @@ candidates:
   - doc_id: 75295aaf
     context: http://www.pge.sp.gov.br/centrodeestudos/bibliotecavirtual/
     page: 42
-- url: http://www.prensa-latina.cu/
-  type: external_link
-  domain: www.prensa-latina.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Prensa LatinaPrensa Latina
-    page: null
 - url: http://www.prnewswire.com/news-releases/syngenta-acquires-ag-connections-
   type: footnote
   domain: www.prnewswire.com
@@ -43100,18 +43253,6 @@ candidates:
   - doc_id: b1420894
     context: information-at-the-fingertips-of-farmers-everywhere.html; http://www.prnewswire.com/news-releases/syngenta-acquires-ag-connections-
     page: 5
-- url: http://www.radiorebelde.cu/
-  type: external_link
-  domain: www.radiorebelde.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Radio RebeldeRadio Rebelde
-    page: null
 - url: http://www.reafmercosul.org
   type: footnote
   domain: www.reafmercosul.org
@@ -44493,6 +44634,18 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://bsky.app/profile/infonyeleni.bsky.social
+  type: external_link
+  domain: bsky.app
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Nyéléni — documents finaux
+    context: BlueSky
+    page: null
 - url: https://bsky.app/search?q=%23%C3%89cologie
   type: mastodon
   found_from:
@@ -45710,6 +45863,18 @@ candidates:
     genre: journal-article
     html_url: https://www.nejm.org/doi/pdf/10.1056/NEJMsa1803972?articleTools=true
     source: unpaywall
+- url: https://doi.org/10.1073/pnas.1618923114
+  type: footnote
+  domain: doi.org
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: '114(28), 7313–7318. DOI: 10.1073/pnas.1618923114. https://doi.org/10.1073/pnas.1618923114'
+    page: 47
 - url: https://doi.org/10.1080/03066150.2011.607706
   type: footnote
   domain: doi.org
@@ -48811,6 +48976,18 @@ candidates:
   - doc_id: 41df6222
     context: 'November 2018. Accessible at: https://lioh.'
     page: 44
+- url: https://listes.potager.org/postorius/lists/newsletter-fr.nyeleni.org/
+  type: external_link
+  domain: listes.potager.org
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Nyéléni — documents finaux
+    context: S'inscrire
+    page: null
 - url: https://livestocksystems.ilri
   type: footnote
   domain: livestocksystems.ilri
@@ -55045,18 +55222,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://twitter.com/MINAGCuba
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Twitter
-    page: null
 - url: https://twitter.com/antiimperial_20
   type: footnote
   domain: twitter.com
@@ -55069,6 +55234,18 @@ candidates:
   - doc_id: 38c834f3
     context: 'Twitter: https://twitter.com/antiimperial_20'
     page: 6
+- url: https://twitter.com/infonyeleni
+  type: external_link
+  domain: twitter.com
+  first_seen: '2026-06-30'
+  last_seen: '2026-11-19'
+  seen_count: 3
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: Nyéléni — documents finaux
+    context: Twitter
+    page: null
 - url: https://uhri.ohchr.org/en/
   type: footnote
   domain: uhri.ohchr.org
@@ -56698,18 +56875,6 @@ candidates:
   - doc_id: 0bb913f1
     context: https://iopscience.iop.org/article/10.1088/1748-9326/abfba1, https://www.dutchnews.nl/news/2022/02/dutch-
     page: 4
-- url: https://www.ecured.cu/EcuRed:Enciclopedia_cubana
-  type: external_link
-  domain: www.ecured.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: EcuRedEcuRed
-    page: null
 - url: https://www.ende-gelaende.org/en/
   type: footnote
   domain: www.ende-gelaende.org
@@ -56956,16 +57121,16 @@ candidates:
   - doc_id: b225af88_2020_12_undrop_guide_en_web_spread
     context: Farmland and Access to Land for Peasant Farming and Agroecology. https://www.eurovia.org/wp-content/uploads/2020/05/EN-Your_Land_
     page: 7
-- url: https://www.facebook.com/Ministerio-de-la-Agricultura-de-Cuba-103779078984532/?ref=pages_you_manage
+- url: https://www.facebook.com/NyeleniNewsletter
   type: external_link
   domain: www.facebook.com
   first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
+  last_seen: '2026-11-19'
   seen_count: 3
   suggested_action: follow_one_time
   notes: ''
   found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
+  - doc_id: Nyéléni — documents finaux
     context: Facebook
     page: null
 - url: https://www.facebook.com/antiimperialiststruggle/
@@ -57445,19 +57610,6 @@ candidates:
   - doc_id: 5b4920df
     context: https://www.fugea.be/accueil/biomethanisation-la-fugea-demande-un-cadre-clair-pour-eviter-les-derives/
     page: 15
-- url: https://www.gacetaoficial.gob.cu/index.php
-  type: external_link
-  domain: www.gacetaoficial.gob.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Gaceta Oficial de la República de Cuba. Ministerio de Justicia.Gaceta Oficial de la República de Cuba. Ministerio
-      de Justicia.
-    page: null
 - url: https://www.geneva-academy.ch/joomlatools-files/docman-files/InBrief5_rightsofpeasants.pdf
   type: footnote
   domain: www.geneva-academy.ch
@@ -57712,18 +57864,6 @@ candidates:
   - doc_id: 1e9814f4
     context: Investments in Agriculture,” August 2015, available at https://www.growafrica.com/sites/default/files/Analytical-framework-for-investors-
     page: 1
-- url: https://www.grupoagricoladecuba.gag.cu/
-  type: external_link
-  domain: www.grupoagricoladecuba.gag.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: GAG. Grupo AgrícolaGAG. Grupo Agrícola
-    page: null
 - url: https://www.habitatetrenovation.be/saint-vide-leegbeek-20eme-commune-de-bruxelles/
   type: footnote
   domain: www.habitatetrenovation.be
@@ -58405,18 +58545,6 @@ candidates:
   - doc_id: 8532edfe
     context: 'Kitalu:  https://www.parliament.gov.zm/sites/default/files/images/publication_docs/Ministerial%20Statement%20-%20'
     page: 9
-- url: https://www.pcc.cu
-  type: external_link
-  domain: www.pcc.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Partido Comunista de Cuba.Partido Comunista de Cuba.
-    page: null
 - url: https://www.pchrgaza.org/en/
   type: footnote
   domain: www.pchrgaza.org
@@ -58485,18 +58613,6 @@ candidates:
   metadata:
     title: '[Vídeo] Presentación del libro «Rumbo a Zaragoza. Crónica de la Columna Durruti», con Roberto Martínez'
   suggested_action: follow_one_time
-- url: https://www.presidencia.gob.cu
-  type: external_link
-  domain: www.presidencia.gob.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Presidencia. Ministerio de la Agricultura.Presidencia. Ministerio de la Agricultura.
-    page: null
 - url: https://www.presseocean.fr/actualite/notre-dame-des-landes-
   type: footnote
   domain: www.presseocean.fr
@@ -58586,18 +58702,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.redcuba.cu
-  type: external_link
-  domain: www.redcuba.cu
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Cuba. RedcubaCuba. Redcuba
-    page: null
 - url: https://www.refworld.org/docid/3ae6b3712c.html
   type: footnote
   domain: www.refworld.org
@@ -59223,18 +59327,6 @@ candidates:
     hashtag: paysannerie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://www.telesurtv.net/
-  type: external_link
-  domain: www.telesurtv.net
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: TelesurTelesur
-    page: null
 - url: https://www.temoignages.re/economie/souverainete-alimentaire-l-essentiel-reste-a-conquerir
   type: mastodon
   found_from:
@@ -59618,18 +59710,6 @@ candidates:
   - doc_id: 38c834f3
     context: Youtube:https://www.youtube.com/channel/UCUZssJdBEW4X5Sm4G0f3GYg?view_as=subscri
     page: 6
-- url: https://www.youtube.com/channel/UCe5-Jlly085CTkPXSbyZ4Yw?view_as=subscriber
-  type: external_link
-  domain: www.youtube.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-10-19'
-  seen_count: 3
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: MINAG Cuba — Agricultura Urbana (publications)
-    context: Youtube
-    page: null
 - url: https://www.youtube.com/watch?v=Df9085C-wmE
   type: mastodon
   found_from:
@@ -65468,18 +65548,6 @@ candidates:
     hashtag: agroecologie
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://bsky.app/profile/infonyeleni.bsky.social
-  type: external_link
-  domain: bsky.app
-  first_seen: '2026-06-30'
-  last_seen: '2026-09-19'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Nyéléni — documents finaux
-    context: BlueSky
-    page: null
 - url: https://bsky.app/search?q=%23NANTES
   type: mastodon
   found_from:
@@ -69650,6 +69718,18 @@ candidates:
     year: 2021
     doi: 10.59709/ftas.17.1.2
   suggested_action: follow_one_time
+- url: https://doi.org/10.6028/NIST.AI.600-1
+  type: footnote
+  domain: doi.org
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 2
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: https://doi.org/10.6028/NIST.AI.600-1
+    page: 47
 - url: https://doi.org/10.60794/6b4a-q980
   type: openalex
   found_from:
@@ -72136,18 +72216,6 @@ candidates:
     year: 2012
     doi: 10.1017/cbo9781139206709.007
   suggested_action: follow_one_time
-- url: https://listes.potager.org/postorius/lists/newsletter-fr.nyeleni.org/
-  type: external_link
-  domain: listes.potager.org
-  first_seen: '2026-06-30'
-  last_seen: '2026-09-19'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Nyéléni — documents finaux
-    context: S'inscrire
-    page: null
 - url: https://lundi.am/17-octobre-la-magistrature-au-pas
   type: rss
   found_from:
@@ -72302,6 +72370,20 @@ candidates:
   metadata:
     title: Auto-organisation ou organisation dirigeante ?
   suggested_action: follow_one_time
+- url: https://lundi.am/Avril-Le-soir
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Avril - Le soir & l'incendie — [Chansons d'ambiance] - 16 novembre / Littérature , 4 , Avec une grosse photo
+      en haut
+    timestamp: '2026-11-17T11:31:59'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Avril - Le soir & l'incendie
+  suggested_action: follow_one_time
 - url: https://lundi.am/Bercy-beaucoup
   type: rss
   found_from:
@@ -72385,6 +72467,20 @@ candidates:
   last_seen: '2026-08-06'
   metadata:
     title: Cassandre
+  suggested_action: follow_one_time
+- url: https://lundi.am/Cerner-le-capitalisme-entre-son-avant-et-ses-apres
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Cerner le capitalisme, entre son avant et ses après — Entretien avec Jérôme Baschet autour des Mondes postcapitalistes
+      - 16 novembre / Avec une grosse photo en haut , 4 , Positions
+    timestamp: '2026-11-17T11:31:59'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Cerner le capitalisme, entre son avant et ses après
   suggested_action: follow_one_time
 - url: https://lundi.am/Ceuta-la-hogra-et-le-monde-qui-brule-7665
   type: rss
@@ -72721,6 +72817,20 @@ candidates:
   metadata:
     title: 'Free party vs data centers : pour une politique du bug'
   suggested_action: follow_one_time
+- url: https://lundi.am/Gabrielle-et-la-malle-sanglante-de-Serge-Quadruppani
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Gabrielle et la malle sanglante de Serge Quadruppani — Une épopée meurtrière et féministe avant l'heure - 16
+      novembre / Avec une grosse photo en haut , 2
+    timestamp: '2026-11-17T11:31:58'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Gabrielle et la malle sanglante de Serge Quadruppani
+  suggested_action: follow_one_time
 - url: https://lundi.am/Generation-niketout
   type: rss
   found_from:
@@ -72775,6 +72885,20 @@ candidates:
   last_seen: '2026-07-02'
   metadata:
     title: Il neige du phosphore blanc
+  suggested_action: follow_one_time
+- url: https://lundi.am/Jeunes-droles-et-assassins
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Jeunes, drôles et assassins — À propos de Les grandes puissances de mon cœur de Mickaël Tempête par Nathalie
+      Quintane - 16 novembre / Avec une grosse photo en haut , Littérature , 2
+    timestamp: '2026-11-17T11:31:59'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Jeunes, drôles et assassins
   suggested_action: follow_one_time
 - url: https://lundi.am/Journal-du-mois-de-septembre-2027
   type: rss
@@ -73085,6 +73209,48 @@ candidates:
   metadata:
     title: Les cahiers au feu !
   suggested_action: follow_one_time
+- url: https://lundi.am/Lettre-aux-lyceennes-et-lyceens-sur-la-competence
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Lettre aux lycéennes et lycéens sur la compétence — Comité d'action contre les compétences - 16 novembre / Mouvement
+      , Avec une grosse photo en haut , 2
+    timestamp: '2026-11-17T11:31:59'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Lettre aux lycéennes et lycéens sur la compétence
+  suggested_action: follow_one_time
+- url: https://lundi.am/Lettre-ouverte-au-president-de-la-Republique
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Lettre ouverte au président de la République — « La syntaxe officielle, le vernis discursif craquent de toutes
+      parts » François Bizet - 16 novembre / Avec une grosse photo en haut , 2 , Littérature
+    timestamp: '2026-11-17T11:31:59'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Lettre ouverte au président de la République
+  suggested_action: follow_one_time
+- url: https://lundi.am/Lorenzaccio-de-David-Bobee-ou-l-insuffisance-politique
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Lorenzaccio de David Bobée ou l'insuffisance politique — Adèle Aldokas - 16 novembre / Avec une grosse photo
+      en haut , Littérature , 2
+    timestamp: '2026-11-17T11:31:59'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Lorenzaccio de David Bobée ou l'insuffisance politique
+  suggested_action: follow_one_time
 - url: https://lundi.am/Ma6tevacraquer-1
   type: rss
   found_from:
@@ -73226,6 +73392,20 @@ candidates:
   metadata:
     title: Nuisances élémentaires
   suggested_action: follow_one_time
+- url: https://lundi.am/PARADIS-ICI-MAINTENANT
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: « PARADIS ICI & MAINTENANT » — « Le franchissement net de la frontière qui sépare l'époque contemporaine de l'avenir
+      » Nathan Beltràn - 16 novembre / Mouvement , Avec une grosse photo en haut , 4
+    timestamp: '2026-11-17T11:31:59'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: « PARADIS ICI & MAINTENANT »
+  suggested_action: follow_one_time
 - url: https://lundi.am/POV-Revolution
   type: rss
   found_from:
@@ -73239,6 +73419,19 @@ candidates:
   last_seen: '2026-10-15'
   metadata:
     title: 'POV : Révolution'
+  suggested_action: follow_one_time
+- url: https://lundi.am/Pitie-pour-le-sac-a-pisse
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Pitié pour le sac à pisse ! — Alain Brossat - 16 novembre / Avec une grosse photo en haut , Positions , 4
+    timestamp: '2026-11-17T11:31:58'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Pitié pour le sac à pisse !
   suggested_action: follow_one_time
 - url: https://lundi.am/Poemes-bricoles
   type: rss
@@ -73307,6 +73500,20 @@ candidates:
   last_seen: '2026-05-17'
   metadata:
     title: Quelques réflexions sur la désertion du monde technique
+  suggested_action: follow_one_time
+- url: https://lundi.am/Recommencer
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Recommencer — Sur Les Recommencements , d'Isabelle Ingold et Vivianne Perelmuter par Juliette Riedler - 16 novembre
+      / Littérature , Avec une grosse photo en haut , 2
+    timestamp: '2026-11-17T11:31:59'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Recommencer
   suggested_action: follow_one_time
 - url: https://lundi.am/Reconfigurations-de-la-droite-colombienne-d-Uribe-a-De-la-Espriella
   type: rss
@@ -73461,6 +73668,20 @@ candidates:
   last_seen: '2026-09-21'
   metadata:
     title: 'Un été marseillais : de la ville-fête à la ville qui brûle'
+  suggested_action: follow_one_time
+- url: https://lundi.am/Une-trame-en-cinq-actes
+  type: rss
+  found_from:
+  - source: 'RSS feed: Lundi.am — RSS principal'
+    context: Une trame en cinq actes — Petite dramaturgie d'un mouvement lycéen raconté d'avance - 16 novembre / Mouvement
+      , Avec une grosse photo en haut , 2
+    timestamp: '2026-11-17T11:31:59'
+  seen_count: 2
+  domain: lundi.am
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Une trame en cinq actes
   suggested_action: follow_one_time
 - url: https://malque.pub/ojs/index.php/mr/article/download/17147/7253
   type: semantic_scholar
@@ -75463,6 +75684,21 @@ candidates:
   metadata:
     title: 'Bulles de savoir : nos meilleurs BD pour s''informer sur l''écologie'
   suggested_action: follow_one_time
+- url: https://reporterre.net/C-est-ca-le-progres-McDonald-s-et-Burger-King-a-l-assaut-des-campagnes
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Il faut alerter » : les territoires ruraux, nouvelles cibles de McDonald''s et Burger King — McDonald''s et
+      Burger King vont ouvrir des restaurants dans des communes rurales ardéchoises. Face à cette expansion des géants du
+      fast-food, les oppositions locales tentent de trouver des outils pour les fa'
+    timestamp: '2026-11-17T11:31:37'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: '« Il faut alerter » : les territoires ruraux, nouvelles cibles de McDonald''s et Burger King'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/C-est-d-une-indecence-rare-en-pleine-crise-sociale-Total-salue-ses-benefices-record
   type: rss
   found_from:
@@ -75690,6 +75926,21 @@ candidates:
   last_seen: '2026-10-25'
   metadata:
     title: 'Canal Seine-Nord Europe : la justice demande de rejeter le recours d''associations'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Canal-Seine-Nord-Europe-le-recours-des-opposants-rejete-par-le-tribunal
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Canal Seine-Nord Europe : le recours des opposants rejeté par le tribunal — Le tribunal administratif d''Amiens
+      a rejeté, le 13 novembre, le recours en annulation déposé par les opposants au canal Seine-Nord Europe contre l''autorisation
+      environnementale du projet délivrée en 2024. Le tribunal estime '
+    timestamp: '2026-11-17T11:31:37'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: 'Canal Seine-Nord Europe : le recours des opposants rejeté par le tribunal'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Cancers-de-la-peau-travailler-dehors-nous-expose-davantage
   type: rss
@@ -76469,6 +76720,21 @@ candidates:
   metadata:
     title: 'Les renouvelables « désignées comme un ennemi économique » : face aux suppressions de postes, les salariés se
       mobilisent'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Faire-des-compromis-ou-bousculer-l-ordre-de-la-societe-Les-candidats-esquissent-leur-vision-de-l-ecologie-pour-2027
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Enfin un vrai débat sur l'écologie pour 2027... et personne n'est d'accord — Lors d'un débat politique sur le
+      climat et la biodiversité organisé le 14 novembre, les représentants des principaux candidats à la présidentielle y
+      ont déroulé leur vision, entre recherche du compromis et de l'apaisement (
+    timestamp: '2026-11-17T11:31:37'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Enfin un vrai débat sur l'écologie pour 2027... et personne n'est d'accord
   suggested_action: follow_one_time
 - url: https://reporterre.net/Fast-fashion-la-loi-enfin-adoptee-mais-edulcoree
   type: rss
@@ -78064,6 +78330,21 @@ candidates:
   metadata:
     title: Les Hauts-de-France soutiennent l'interdiction des navires-usines près des côtes
   suggested_action: follow_one_time
+- url: https://reporterre.net/Les-IA-conversationnelles-peuvent-devenir-climatosceptiques-pour-plaire-a-leurs-utilisateurs
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Les IA conversationnelles peuvent devenir climatosceptiques pour plaire à leurs utilisateurs — Les chatbots peuvent-ils
+      contribuer à la désinformation climatique ? C'est le risque mis en évidence par un rapport de l'Organisation des Nations
+      unies pour l'éducation, la science et la culture (Unesco) e
+    timestamp: '2026-11-17T11:31:37'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Les IA conversationnelles peuvent devenir climatosceptiques pour plaire à leurs utilisateurs
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Les-actions-contre-le-rechauffement-climatique-annulees-a-cause-du-rechauffement
   type: rss
   found_from:
@@ -78318,6 +78599,21 @@ candidates:
   last_seen: '2026-11-05'
   metadata:
     title: 'Lobbyistes fossiles emmenés aux COP climat : la France sur le podium des pires délégations'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Logement-Le-gouvernement-choisit-de-favoriser-les-ultrariches
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Les passoires thermiques bientôt remises en location ? — Avec la loi logement, le gouvernement compte remettre
+      en location des passoires thermiques. Son texte, dont l''examen a démarré lundi 16 novembre, risque de pénaliser les
+      plus pauvres, alertent plusieurs associations. Alors que 1 ménage sur 10 '
+    timestamp: '2026-11-17T11:31:37'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Les passoires thermiques bientôt remises en location ?
   suggested_action: follow_one_time
 - url: https://reporterre.net/Loi-casseur-payeur-l-executif-veut-punir-les-lyceens-mais-laisse-les-pollueurs-dormir
   type: rss
@@ -78769,6 +79065,21 @@ candidates:
   metadata:
     title: '« On lance une guérilla » : opposés aux panneaux solaires en forêt, ils finissent virés du conseil municipal'
   suggested_action: follow_one_time
+- url: https://reporterre.net/On-ne-doit-pas-choisir-entre-etre-queer-et-aimer-son-territoire
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: « Le mépris, c'est de dire que quand on est queer, notre vie sera forcément meilleure en ville » — Prides rurales,
+      drag shows, cafés LGBT ... Dans « Fiertés des champs », la journaliste Élodie Potente raconte la richesse de la vie
+      queer dans les campagnes, à rebours de l'idée selon laquelle la ville
+    timestamp: '2026-11-17T11:31:37'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: « Le mépris, c'est de dire que quand on est queer, notre vie sera forcément meilleure en ville »
+  suggested_action: follow_one_time
 - url: https://reporterre.net/On-ne-veut-pas-devenir-les-pions-de-Total-des-etudiants-bloquent-leur-campus-pour
   type: rss
   found_from:
@@ -79085,6 +79396,21 @@ candidates:
   last_seen: '2026-05-18'
   metadata:
     title: 'Pompes à chaleur : comment limiter les nuisances sonores ?'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Poubelle-de-l-Europe-la-Turquie-se-noie-sous-les-dechets
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« On se baigne parmi des sacs plastiques » : le pays hôte de la COP31 croule sous les déchets européens — Alors
+      que la COP31 , qui se déroule en Turquie, fait du « zéro déchet » sa priorité, une ville turque se retrouve submergée
+      par des déchets plastiques venus de l''Union européenne. Activistes et '
+    timestamp: '2026-11-17T11:31:37'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: '« On se baigne parmi des sacs plastiques » : le pays hôte de la COP31 croule sous les déchets européens'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Poulets-la-France-veut-produire-plus-dans-un-marche-sature-de-poulets-importes
   type: rss
@@ -79961,6 +80287,36 @@ candidates:
   last_seen: '2026-11-07'
   metadata:
     title: 'Pesticides dans le vin : Valérie Murat, lanceuse d''alerte, de retour au tribunal'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Vingt-de-mes-proches-sont-morts-a-la-COP31-le-genocide-en-Palestine-est-dans-tous-les
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Vingt de mes proches sont morts » : le génocide en Palestine est dans tous les esprits à la COP31 — Embargo
+      sur l''énergie importée, exclusion d''Israël... Alors que la COP31 se poursuit à Antalya, 10 000 militants écologistes
+      ont défilé pour rappeler qu''il n''y aura pas de justice climatique sans li'
+    timestamp: '2026-11-17T11:31:37'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: '« Vingt de mes proches sont morts » : le génocide en Palestine est dans tous les esprits à la COP31'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Violences-climat-education-les-enfants-entrent-dans-la-lutte-avec-le-Collectif-enfantiste
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Changement climatique, mépris, répression policière : « Des violences infligées aux enfants par les adultes »
+      — Le Collectif enfantiste a participé à la manifestation du 14 novembre. Une convergence avec les mouvements écologiste
+      et lycéen, pour sensibiliser aux violences et au mépris que subissent '
+    timestamp: '2026-11-17T11:31:37'
+  seen_count: 2
+  domain: reporterre.net
+  first_seen: '2026-11-17'
+  last_seen: '2026-11-19'
+  metadata:
+    title: 'Changement climatique, mépris, répression policière : « Des violences infligées aux enfants par les adultes »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Vivre-a-cote-d-usines-de-stations-d-epuration-de-decharges-comment-les-gens-du-voyage
   type: rss
@@ -82050,18 +82406,6 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
-- url: https://twitter.com/infonyeleni
-  type: external_link
-  domain: twitter.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-09-19'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Nyéléni — documents finaux
-    context: Twitter
-    page: null
 - url: https://unctad.org/en/Pages/DIAE/G-20/PRAI.aspx
   type: footnote
   domain: unctad.org
@@ -84216,18 +84560,6 @@ candidates:
   - doc_id: 14cd7f81
     context: 2018, https://www.eurozine.com/change-course-human-history/.
     page: 88
-- url: https://www.facebook.com/NyeleniNewsletter
-  type: external_link
-  domain: www.facebook.com
-  first_seen: '2026-06-30'
-  last_seen: '2026-09-19'
-  seen_count: 2
-  suggested_action: follow_one_time
-  notes: ''
-  found_from:
-  - doc_id: Nyéléni — documents finaux
-    context: Facebook
-    page: null
 - url: https://www.fao.org/3/y5609e/y5609e02.htm
   type: footnote
   domain: www.fao.org
@@ -91989,6 +92321,18 @@ candidates:
   - doc_id: 4f01fbcb_Accusacion-TPP-esp.version-final
     context: http://www.coloradomining.org/Content/Programs_pdf/G%20Ferron%20Final.pdf (consulté en avril 2014).
     page: 35
+- url: http://www.commoner.org.uk/
+  type: footnote
+  domain: www.commoner.org.uk
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: c28e65f0
+    context: «cercamientos» y «comunes» en The Commoner [http://www.commoner.org.uk/], especialmente
+    page: 99
 - url: http://www.conapo.gob.mx
   type: footnote
   domain: www.conapo.gob.mx
@@ -95402,6 +95746,18 @@ candidates:
   - doc_id: a9917d40_Livro-Aline-Maria-Semente-Geminada-no-solo-fertil-da-luta
     context: 'Disponível em: <https://agroecologia.org.br/2019/03/08/se-nao-reconhece-o-papel-e-o-trabalho-das-'
     page: 120
+- url: https://allende.com/defensa-de-la-competencia/nueva-autoridad-nacional-de-la-competencia-11-17-
+  type: footnote
+  domain: allende.com
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: https://allende.com/defensa-de-la-competencia/nueva-autoridad-nacional-de-la-competencia-11-17-
+    page: 48
 - url: https://allianceforfeministmovements.org/resources/
   type: footnote
   domain: allianceforfeministmovements.org
@@ -95766,6 +96122,18 @@ candidates:
     genre: journal-article
     html_url: https://bage.age-geografia.es/ojs/index.php/bage/article/download/2718/2474
     source: unpaywall
+- url: https://beccarvarela.com/en/novedades/observatorio-
+  type: footnote
+  domain: beccarvarela.com
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: Argentino y otros c/ GCBA s/ amparo”. https://beccarvarela.com/en/novedades/observatorio-
+    page: 48
 - url: https://bird.makeup/users/mbauwens
   type: mastodon
   found_from:
@@ -96458,6 +96826,18 @@ candidates:
   - doc_id: a49359eb
     context: (June 18, 2019), https://blogs.scientificamerican.com /observations/4-myths-abo-
     page: 62
+- url: https://boletinoficial.buenosaires.gob.ar/normativaba/norma/464360
+  type: footnote
+  domain: boletinoficial.buenosaires.gob.ar
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: https://boletinoficial.buenosaires.gob.ar/normativaba/norma/464360
+    page: 48
 - url: https://books.openedition.org/enc/12554
   type: openalex
   found_from:
@@ -96584,6 +96964,18 @@ candidates:
   - doc_id: 221912f9
     context: Nufarm, “Annual report 2024”, p. 22, https://cdn.nufarm.com/wp-content/uploads/2020/11/13080313/
     page: 19
+- url: https://cels.org.ar/web/wp-
+  type: footnote
+  domain: cels.org.ar
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: información pública de siete organizaciones (21 de agosto de 2024). https://cels.org.ar/web/wp-
+    page: 49
 - url: https://centraldesociologia.cl/index.php/rcs/article/download/81/112/403
   type: openalex
   found_from:
@@ -105725,6 +106117,18 @@ candidates:
   - doc_id: 83fad0f1_1417
     context: https://habitatge.barcelona/es/acceso-a-vivienda/covivienda
     page: 16
+- url: https://hai.stanford.edu/ai-index/2025-ai-
+  type: footnote
+  domain: hai.stanford.edu
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: notables, cómputo, costos y evolución de capacidades. https://hai.stanford.edu/ai-index/2025-ai-
+    page: 47
 - url: https://hal.archives-ouvertes.fr/
   type: footnote
   domain: hal.archives-ouvertes.fr
@@ -106059,6 +106463,18 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://hunton.com/privacy-and-information-security-law/european-commission-reviews-and-
+  type: footnote
+  domain: hunton.com
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: https://hunton.com/privacy-and-information-security-law/european-commission-reviews-and-
+    page: 49
 - url: https://hyperbate.fr/castagne/2026/07/12/pourquoi-le-domaine-public-payant-est-une-mauvaise-idee/
   type: mastodon
   found_from:
@@ -106075,6 +106491,18 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://iapp.org/news/a/argentina-emite-recomendaciones-para-la-implementacion-de-inteligencia-
+  type: footnote
+  domain: iapp.org
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: https://iapp.org/news/a/argentina-emite-recomendaciones-para-la-implementacion-de-inteligencia-
+    page: 49
 - url: https://iberoforum.ibero.mx/index.php/iberoforum/article/download/461/1136
   type: semantic_scholar
   found_from:
@@ -107270,20 +107698,6 @@ candidates:
   metadata:
     title: Aussi simple que ça...
   suggested_action: follow_one_time
-- url: https://lundi.am/Avril-Le-soir
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Avril - Le soir & l'incendie — [Chansons d'ambiance] - 16 novembre / Littérature , 4 , Avec une grosse photo
-      en haut
-    timestamp: '2026-11-17T11:31:59'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: Avril - Le soir & l'incendie
-  suggested_action: follow_one_time
 - url: https://lundi.am/C-est-une-requisition-populaire
   type: rss
   found_from:
@@ -107325,20 +107739,6 @@ candidates:
   last_seen: '2026-10-27'
   metadata:
     title: Casser tout | L'espoir des damné·e·x·s
-  suggested_action: follow_one_time
-- url: https://lundi.am/Cerner-le-capitalisme-entre-son-avant-et-ses-apres
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Cerner le capitalisme, entre son avant et ses après — Entretien avec Jérôme Baschet autour des Mondes postcapitalistes
-      - 16 novembre / Avec une grosse photo en haut , 4 , Positions
-    timestamp: '2026-11-17T11:31:59'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: Cerner le capitalisme, entre son avant et ses après
   suggested_action: follow_one_time
 - url: https://lundi.am/Certaines-graines
   type: rss
@@ -107466,20 +107866,6 @@ candidates:
   metadata:
     title: Fallait pas confisquer les dimanches de poche
   suggested_action: follow_one_time
-- url: https://lundi.am/Gabrielle-et-la-malle-sanglante-de-Serge-Quadruppani
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Gabrielle et la malle sanglante de Serge Quadruppani — Une épopée meurtrière et féministe avant l'heure - 16
-      novembre / Avec une grosse photo en haut , 2
-    timestamp: '2026-11-17T11:31:58'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: Gabrielle et la malle sanglante de Serge Quadruppani
-  suggested_action: follow_one_time
 - url: https://lundi.am/Instructions-pour-une-prise-d-anes
   type: rss
   found_from:
@@ -107507,20 +107893,6 @@ candidates:
   last_seen: '2026-08-09'
   metadata:
     title: Intelligence multiple contre polycrise entrepreneuriale
-  suggested_action: follow_one_time
-- url: https://lundi.am/Jeunes-droles-et-assassins
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Jeunes, drôles et assassins — À propos de Les grandes puissances de mon cœur de Mickaël Tempête par Nathalie
-      Quintane - 16 novembre / Avec une grosse photo en haut , Littérature , 2
-    timestamp: '2026-11-17T11:31:59'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: Jeunes, drôles et assassins
   suggested_action: follow_one_time
 - url: https://lundi.am/La-bande-a-Balance-ton-Claude
   type: rss
@@ -107620,34 +107992,6 @@ candidates:
   metadata:
     title: Le regard de l'Occident, ou la « nuance » contre l'interruption
   suggested_action: follow_one_time
-- url: https://lundi.am/Lettre-aux-lyceennes-et-lyceens-sur-la-competence
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Lettre aux lycéennes et lycéens sur la compétence — Comité d'action contre les compétences - 16 novembre / Mouvement
-      , Avec une grosse photo en haut , 2
-    timestamp: '2026-11-17T11:31:59'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: Lettre aux lycéennes et lycéens sur la compétence
-  suggested_action: follow_one_time
-- url: https://lundi.am/Lettre-ouverte-au-president-de-la-Republique
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Lettre ouverte au président de la République — « La syntaxe officielle, le vernis discursif craquent de toutes
-      parts » François Bizet - 16 novembre / Avec une grosse photo en haut , 2 , Littérature
-    timestamp: '2026-11-17T11:31:59'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: Lettre ouverte au président de la République
-  suggested_action: follow_one_time
 - url: https://lundi.am/Lettre-ouverte-de-prisonniers-du-17-octobre-2026
   type: rss
   found_from:
@@ -107661,20 +108005,6 @@ candidates:
   last_seen: '2026-10-27'
   metadata:
     title: Lettre ouverte de prisonniers du 17 octobre 2026
-  suggested_action: follow_one_time
-- url: https://lundi.am/Lorenzaccio-de-David-Bobee-ou-l-insuffisance-politique
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Lorenzaccio de David Bobée ou l'insuffisance politique — Adèle Aldokas - 16 novembre / Avec une grosse photo
-      en haut , Littérature , 2
-    timestamp: '2026-11-17T11:31:59'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: Lorenzaccio de David Bobée ou l'insuffisance politique
   suggested_action: follow_one_time
 - url: https://lundi.am/Macron-est-un-homme-mort
   type: rss
@@ -107746,33 +108076,6 @@ candidates:
   metadata:
     title: Octobre 26 n'a pas encore eu lieu
   suggested_action: follow_one_time
-- url: https://lundi.am/PARADIS-ICI-MAINTENANT
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: « PARADIS ICI & MAINTENANT » — « Le franchissement net de la frontière qui sépare l'époque contemporaine de l'avenir
-      » Nathan Beltràn - 16 novembre / Mouvement , Avec une grosse photo en haut , 4
-    timestamp: '2026-11-17T11:31:59'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: « PARADIS ICI & MAINTENANT »
-  suggested_action: follow_one_time
-- url: https://lundi.am/Pitie-pour-le-sac-a-pisse
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Pitié pour le sac à pisse ! — Alain Brossat - 16 novembre / Avec une grosse photo en haut , Positions , 4
-    timestamp: '2026-11-17T11:31:58'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: Pitié pour le sac à pisse !
-  suggested_action: follow_one_time
 - url: https://lundi.am/Pour-Ritchy-Thibault-premier-prisonnier-politique-du-mouvement-lyceen
   type: rss
   found_from:
@@ -107800,20 +108103,6 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: 'Quand l''IA corrige l''IA : un bac de philo très augmenté'
-  suggested_action: follow_one_time
-- url: https://lundi.am/Recommencer
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Recommencer — Sur Les Recommencements , d'Isabelle Ingold et Vivianne Perelmuter par Juliette Riedler - 16 novembre
-      / Littérature , Avec une grosse photo en haut , 2
-    timestamp: '2026-11-17T11:31:59'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: Recommencer
   suggested_action: follow_one_time
 - url: https://lundi.am/Reponse-aux-eveques-de-France
   type: rss
@@ -107897,20 +108186,6 @@ candidates:
   last_seen: '2026-09-29'
   metadata:
     title: Un homme est mort aujourd'hui à Ceuta
-  suggested_action: follow_one_time
-- url: https://lundi.am/Une-trame-en-cinq-actes
-  type: rss
-  found_from:
-  - source: 'RSS feed: Lundi.am — RSS principal'
-    context: Une trame en cinq actes — Petite dramaturgie d'un mouvement lycéen raconté d'avance - 16 novembre / Mouvement
-      , Avec une grosse photo en haut , 2
-    timestamp: '2026-11-17T11:31:59'
-  seen_count: 1
-  domain: lundi.am
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: Une trame en cinq actes
   suggested_action: follow_one_time
 - url: https://lundi.am/ZONE-2026
   type: rss
@@ -111965,20 +112240,20 @@ candidates:
   metadata:
     title: 'Bulles de savoir : nos meilleurs BD pour s''informer sur l''écologie'
   suggested_action: follow_one_time
-- url: https://reporterre.net/C-est-ca-le-progres-McDonald-s-et-Burger-King-a-l-assaut-des-campagnes
+- url: https://reporterre.net/C-est-pas-la-faute-de-Total-la-France-face-a-ses-contradictions-a-la-COP31
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Il faut alerter » : les territoires ruraux, nouvelles cibles de McDonald''s et Burger King — McDonald''s et
-      Burger King vont ouvrir des restaurants dans des communes rurales ardéchoises. Face à cette expansion des géants du
-      fast-food, les oppositions locales tentent de trouver des outils pour les fa'
-    timestamp: '2026-11-17T11:31:37'
+    context: '« C''est pas la faute de Total » : quand la France fait l''autruche face aux grands pollueurs — Alors que Macron
+      se vante d''avoir fait de la France une « championne du climat », l''État refuse de faire payer les grands pollueurs
+      et de mettre davantage d''argent sur la table pour financer la transition é'
+    timestamp: '2026-11-19T11:17:34'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
   metadata:
-    title: '« Il faut alerter » : les territoires ruraux, nouvelles cibles de McDonald''s et Burger King'
+    title: '« C''est pas la faute de Total » : quand la France fait l''autruche face aux grands pollueurs'
   suggested_action: follow_one_time
 - url: https://reporterre.net/C-est-une-tres-bonne-nouvelle-en-Guyane-la-justice-stoppe-un-projet-a-biomasse-au-nom-de
   type: rss
@@ -111995,6 +112270,21 @@ candidates:
   metadata:
     title: En Guyane, la justice remet en question l'exploitation de biomasse au nom de la protection des espèces
   suggested_action: follow_one_time
+- url: https://reporterre.net/COP31-encore-un-defile-de-jets-prives-et-de-milliardaires
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'COP31 : encore un défilé de jets privés et de milliardaires — 152 jets privés ont atterri à l''aéroport d''Antalya
+      depuis le 7 novembre, avant-veille de l''ouverture de la COP31 en Turquie, d''après une analyse d''Oxfam révélée le
+      19 novembre. Si tous les passagers de ces vols ne participent pas nécessai'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: 'COP31 : encore un défilé de jets privés et de milliardaires'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Ca-fonctionne-bien-cette-association-aide-les-femmes-precaires-a-prendre-leur-sante-a-bras-le-corps
   type: rss
   found_from:
@@ -112010,6 +112300,21 @@ candidates:
   metadata:
     title: '« Avant , j''étais obsédée par la perte de poids » : une maison apaisante pour les femmes obèses et diabétiques'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Ca-m-arrive-de-secher-les-cours-pour-acheter-une-bouteille-les-coupures-d-eau-attisent-la
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Aux avant-postes de la mobilisation, les lycéens de Mayotte réclament toujours de l'eau potable — Premiers à
+      se mobiliser fin août, les lycéens, professeurs et syndicats se mobilisent toujours contre leurs établissements vétustes
+      et les coupures d'eau. « Mayotte est l'académie la moins bien dotée de
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Aux avant-postes de la mobilisation, les lycéens de Mayotte réclament toujours de l'eau potable
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Cadmium-les-donnees-cles-d-une-contamination
   type: rss
   found_from:
@@ -112024,21 +112329,6 @@ candidates:
   last_seen: '2026-05-19'
   metadata:
     title: 'Cadmium : les données clés d''une contamination'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Canal-Seine-Nord-Europe-le-recours-des-opposants-rejete-par-le-tribunal
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Canal Seine-Nord Europe : le recours des opposants rejeté par le tribunal — Le tribunal administratif d''Amiens
-      a rejeté, le 13 novembre, le recours en annulation déposé par les opposants au canal Seine-Nord Europe contre l''autorisation
-      environnementale du projet délivrée en 2024. Le tribunal estime '
-    timestamp: '2026-11-17T11:31:37'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: 'Canal Seine-Nord Europe : le recours des opposants rejeté par le tribunal'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Canards-maltraites-Carrefour-epingle-par-L214
   type: rss
@@ -112551,20 +112841,35 @@ candidates:
   metadata:
     title: Dans cette fournaise, nous ne pouvons pas vivre sans les arbres
   suggested_action: follow_one_time
-- url: https://reporterre.net/Faire-des-compromis-ou-bousculer-l-ordre-de-la-societe-Les-candidats-esquissent-leur-vision-de-l-ecologie-pour-2027
+- url: https://reporterre.net/Fatima-Ouassak-et-Alice-Coffin-On-ne-veut-pas-laisser-l-ecologie-a-Hugo-Clement
   type: rss
   found_from:
   - source: 'RSS feed: Reporterre — RSS principal'
-    context: Enfin un vrai débat sur l'écologie pour 2027... et personne n'est d'accord — Lors d'un débat politique sur le
-      climat et la biodiversité organisé le 14 novembre, les représentants des principaux candidats à la présidentielle y
-      ont déroulé leur vision, entre recherche du compromis et de l'apaisement (
-    timestamp: '2026-11-17T11:31:37'
+    context: 'Fatima Ouassak et Alice Coffin : « On ne veut pas laisser l''écologie à Hugo Clément » — Dans « Le Camp du bien
+      », les militantes et autrices Fatima Ouassak et Alice Coffin expliquent comment une « gauche de rupture » peut l''emporter
+      à la présidentielle. À condition de défendre une écologie concrète '
+    timestamp: '2026-11-19T11:17:34'
   seen_count: 1
   domain: reporterre.net
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
   metadata:
-    title: Enfin un vrai débat sur l'écologie pour 2027... et personne n'est d'accord
+    title: 'Fatima Ouassak et Alice Coffin : « On ne veut pas laisser l''écologie à Hugo Clément »'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Fleur-Breteau-et-des-malades-du-cancer-jettent-les-cendres-de-nos-morts-sur-le-commissaire-europeen-a-la-sante
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Fleur Breteau et des malades du cancer jettent « les cendres de nos morts » sur le commissaire européen à la
+      santé — Jeudi 19 novembre, des victimes du cancer, dont Fleur Breteau, ont déversé des cendres sur Olivér Várhelyi,
+      commissaire européen à la santé, en plein sommet dédié au cancer à Bruxelle
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Fleur Breteau et des malades du cancer jettent « les cendres de nos morts » sur le commissaire européen à la santé
   suggested_action: follow_one_time
 - url: https://reporterre.net/Fleurs-bio-et-francaises-une-filiere-qui-se-developpe-a-la-debrouille
   type: rss
@@ -112595,6 +112900,21 @@ candidates:
   last_seen: '2026-06-30'
   metadata:
     title: « Furieux d'être associés à cet événement », des vignerons se lèvent contre le Canon français
+  suggested_action: follow_one_time
+- url: https://reporterre.net/GTA-6-un-jeu-video-sans-conscience-ecolo
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'GTA 6 : un jeu vidéo sans conscience écologique — Après treize ans d''attente, le jeu vidéo GTA 6 est sorti
+      le 19 novembre et est déjà un phénomène mondial. Dans une satire des États-Unis trumpistes, il rate la possibilité d''alerter
+      sur le chaos climatique et social de notre société. Le très attendu '
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: 'GTA 6 : un jeu vidéo sans conscience écologique'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Glaciers-regions-polaires-Les-consequences-de-1-5-oC-meme-temporaire-seront-irreversibles
   type: rss
@@ -112655,6 +112975,22 @@ candidates:
   metadata:
     title: 'Il a étouffé un ruisseau, la justice l''a condamné : récit d''un jugement inhabituel'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Il-faut-demanteler-les-navires-usines-notre-debat-sur-l-ocean-avec-Claire-Nouvian
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Il faut démanteler les navires-usines » : notre débat sur l''océan avec Claire Nouvian, Baptiste Morizot et
+      Guillaume Pitron — Alors que l''océan devient un nouvel enjeu stratégique, quelles sont les conséquences de cette course
+      vers le large ? Pour y répondre, Reporterre et la revue Terrestres orga'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: '« Il faut démanteler les navires-usines » : notre débat sur l''océan avec Claire Nouvian, Baptiste Morizot et
+      Guillaume Pitron'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Ils-nous-ont-tues-Poutine-a-eu-la-peau-d-un-des-derniers-journaux-independants-de-Russie
   type: rss
   found_from:
@@ -112669,6 +113005,21 @@ candidates:
   last_seen: '2026-11-05'
   metadata:
     title: '« Ils nous ont tués » : Poutine a eu la peau d''un des derniers journaux indépendants de Russie'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Impasse-financiere-la-Cour-des-comptes-preconise-un-moratoire-sur-les-grands-projets-d
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Impasse financière » : la Cour des comptes préconise un moratoire sur les grands projets d''infrastructure
+      — La folie des grands projets engage la France dans une « impasse financière », constate la Cour des comptes dans une
+      note parue le 16 novembre. L''institution préconise de prioriser la régénér'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: '« Impasse financière » : la Cour des comptes préconise un moratoire sur les grands projets d''infrastructure'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Incendies-a-Fontainebleau-sous-terre-la-foret-brule-toujours
   type: rss
@@ -112699,6 +113050,36 @@ candidates:
   last_seen: '2026-07-29'
   metadata:
     title: 'Incendies en Espagne : le Premier ministre Pedro Sánchez appelle à un « pacte d''État » sur l''urgence climatique'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Indonesie-les-fumees-des-incendies-ont-tue-plus-de-5-000-personnes
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Indonésie : les fumées des incendies ont tué plus de 5 000 personnes — Les incendies continuent de ravager l''Indonésie.
+      Les émissions de carbone liées aux feux dans l''archipel ont atteint près de 200 millions de tonnes (Mt C) depuis le
+      début de l''année, selon les estimations du service européen Cope'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: 'Indonésie : les fumées des incendies ont tué plus de 5 000 personnes'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/J-ai-beaucoup-de-regrets-j-aurais-du-changer-d-emploi-les-PFAS-omnipresents-dans-le-sang
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« On est des cocktails de produits chimiques » : des salariés de l''industrie hautement contaminés aux PFAS
+      — Dans cette enquête exclusive, Reporterre et France 3 révèlent que les salariés d''Arkema, Daikin et Salindres sont
+      surexposés aux polluants éternels. Le résultat d''une étude inédite menée aupr'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: '« On est des cocktails de produits chimiques » : des salariés de l''industrie hautement contaminés aux PFAS'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Je-craque-le-desarroi-des-soignants-face-a-l-afflux-d-animaux-sonnes-par-la-chaleur
   type: rss
@@ -112819,6 +113200,21 @@ candidates:
   last_seen: '2026-06-25'
   metadata:
     title: L'usage des pesticides a augmenté de 6 % en un an, en particulier les PFAS
+  suggested_action: follow_one_time
+- url: https://reporterre.net/La-Bretagne-a-sec-en-novembre-l-eau-d-un-lac-pompee-pour-renflouer-les-robinets
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: La Bretagne à sec en novembre, l'eau d'un lac pompée pour renflouer les robinets — La sécheresse historique qui
+      frappe depuis l'été menace l'approvisionnement en eau potable de toute la Bretagne. Dans les Côtes-d'Armor, le pompage
+      d'un lac vient de débuter pour alimenter une grande station de potabi
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: La Bretagne à sec en novembre, l'eau d'un lac pompée pour renflouer les robinets
   suggested_action: follow_one_time
 - url: https://reporterre.net/La-Coordination-rurale-appelle-a-desobeir-aux-interdictions-d-arroser-en-pleine-secheresse
   type: rss
@@ -113075,21 +113471,6 @@ candidates:
   metadata:
     title: 'Légitime défense des policiers : la pétition à 730 000 signatures enterrée par l''Assemblée'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Les-IA-conversationnelles-peuvent-devenir-climatosceptiques-pour-plaire-a-leurs-utilisateurs
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: Les IA conversationnelles peuvent devenir climatosceptiques pour plaire à leurs utilisateurs — Les chatbots peuvent-ils
-      contribuer à la désinformation climatique ? C'est le risque mis en évidence par un rapport de l'Organisation des Nations
-      unies pour l'éducation, la science et la culture (Unesco) e
-    timestamp: '2026-11-17T11:31:37'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: Les IA conversationnelles peuvent devenir climatosceptiques pour plaire à leurs utilisateurs
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Les-Securites-sociales-ecologiques-peuvent-nous-sortir-du-desastre
   type: rss
   found_from:
@@ -113196,21 +113577,6 @@ candidates:
   metadata:
     title: Les semences anciennes et bio, la solution des riziculteurs italiens au manque d'eau
   suggested_action: follow_one_time
-- url: https://reporterre.net/Logement-Le-gouvernement-choisit-de-favoriser-les-ultrariches
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Les passoires thermiques bientôt remises en location ? — Avec la loi logement, le gouvernement compte remettre
-      en location des passoires thermiques. Son texte, dont l''examen a démarré lundi 16 novembre, risque de pénaliser les
-      plus pauvres, alertent plusieurs associations. Alors que 1 ménage sur 10 '
-    timestamp: '2026-11-17T11:31:37'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: Les passoires thermiques bientôt remises en location ?
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Loi-d-urgence-agricole-Ecolos-et-Insoumis-saisissent-le-Conseil-Constitutionnel
   type: rss
   found_from:
@@ -113240,6 +113606,21 @@ candidates:
   last_seen: '2026-10-27'
   metadata:
     title: Lula remporte la présidentielle au Brésil, « immense soulagement » pour les défenseurs de l'environnement
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Ma-maison-risque-d-etre-engloutie-en-Turquie-le-sol-s-effondre-a-cause-de-l-agriculture
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Des trous géants au milieu des champs : l''agriculture intensive fait des ravages en Turquie — Plus d''une vingtaine
+      de gouffres immenses se creusent chaque année dans la région de Konya, en Turquie. La faute à l''agriculture intensive
+      et à la sécheresse, dénoncent des chercheurs, qui réclament des mes'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: 'Des trous géants au milieu des champs : l''agriculture intensive fait des ravages en Turquie'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Marche-pour-le-climat-a-Bordeaux-l-incendie-dans-toutes-les-tetes
   type: rss
@@ -113392,6 +113773,21 @@ candidates:
   metadata:
     title: 'Nous faire manger toujours plus de pesticides : ces responsables européens qui poussent l''Omnibus X'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Nucleaire-la-Cour-des-comptes-alerte-sur-le-cout-des-EPR2
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Nucléaire : la Cour des comptes alerte sur le coût des EPR2 — Le financement des six futurs réacteurs nucléaires
+      EPR2 pourrait peser lourdement sur les finances publiques, et c''est la Cour des comptes qui le dit. Dans une note publiée
+      le 16 novembre, les magistrats de la rue Cambon alertent sur la f'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: 'Nucléaire : la Cour des comptes alerte sur le coût des EPR2'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/On-a-une-responsabilite-quand-on-ecrit-des-chansons-une-apres-midi-avec-Emily-Loizeau
   type: rss
   found_from:
@@ -113422,21 +113818,6 @@ candidates:
   metadata:
     title: Pour 64 000 Français, l'automne a débuté sans eau potable au robinet
   suggested_action: follow_one_time
-- url: https://reporterre.net/On-ne-doit-pas-choisir-entre-etre-queer-et-aimer-son-territoire
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: « Le mépris, c'est de dire que quand on est queer, notre vie sera forcément meilleure en ville » — Prides rurales,
-      drag shows, cafés LGBT ... Dans « Fiertés des champs », la journaliste Élodie Potente raconte la richesse de la vie
-      queer dans les campagnes, à rebours de l'idée selon laquelle la ville
-    timestamp: '2026-11-17T11:31:37'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: « Le mépris, c'est de dire que quand on est queer, notre vie sera forcément meilleure en ville »
-  suggested_action: follow_one_time
 - url: https://reporterre.net/On-va-rester-aussi-longtemps-que-possible-des-ecureuils-tentent-de-bloquer-l-A412
   type: rss
   found_from:
@@ -113451,6 +113832,21 @@ candidates:
   last_seen: '2026-10-07'
   metadata:
     title: Pour freiner l'avancée des abatteuses, ils occupent des chênes centenaires sur le tracé de l'A412
+  suggested_action: follow_one_time
+- url: https://reporterre.net/On-veut-le-mettre-hors-circuit-la-repression-s-acharne-sur-Loic-le-poete-maraicher
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« On veut le mettre hors circuit » : la répression s''acharne sur Loïc, le « poète maraîcher » — Arrêté lors
+      de la manifestation du 7 novembre, le militant écologiste Loïc Schneider a l''interdiction de paraître à Nancy jusqu''à
+      son audience prévue le 11 janvier 2027. Il dénonce des mesures liberticide'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: '« On veut le mettre hors circuit » : la répression s''acharne sur Loïc, le « poète maraîcher »'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Oublies-par-leur-bailleur-ils-installent-des-stores-faits-maison-contre-la-canicule
   type: rss
@@ -113481,6 +113877,21 @@ candidates:
   last_seen: '2026-07-27'
   metadata:
     title: 'PFAS : l''Europe baisse drastiquement le seuil tolérable d''exposition aux TFA'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/PFAS-un-depute-ecologiste-remporte-un-prestigieux-prix-international
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'PFAS : le combat du député vert Nicolas Thierry récompensé par un prix international — C''est l''une des plus
+      prestigieuses récompenses environnementales. Mardi 17 novembre à Mumbai (Inde), le député de la Gironde Nicolas Thierry
+      ainsi qu''une coalition d''associations (dont Générations Futures), d''élus'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: 'PFAS : le combat du député vert Nicolas Thierry récompensé par un prix international'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Partir-seule-tracer-sa-route-ces-livres-feministes-pour-passer-a-l-acte
   type: rss
@@ -113586,21 +113997,6 @@ candidates:
   last_seen: '2026-06-30'
   metadata:
     title: 'Pollution de l''eau : quand détruire coûte moins cher que respecter les règles'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Poubelle-de-l-Europe-la-Turquie-se-noie-sous-les-dechets
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« On se baigne parmi des sacs plastiques » : le pays hôte de la COP31 croule sous les déchets européens — Alors
-      que la COP31 , qui se déroule en Turquie, fait du « zéro déchet » sa priorité, une ville turque se retrouve submergée
-      par des déchets plastiques venus de l''Union européenne. Activistes et '
-    timestamp: '2026-11-17T11:31:37'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: '« On se baigne parmi des sacs plastiques » : le pays hôte de la COP31 croule sous les déchets européens'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Pour-extraire-son-sable-Lafarge-devore-les-meandres-de-la-Seine
   type: rss
@@ -113737,6 +114133,22 @@ candidates:
   metadata:
     title: L'artiste derrière l'hymne des blocus lycéens est un opposant à Monsanto
   suggested_action: follow_one_time
+- url: https://reporterre.net/Ramassis-de-gauchistes-Marine-Le-Pen-veut-couper-les-subventions-de-la-Ligue-des-droits-de-l-Homme-et-d-autres-associations
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Ramassis de gauchistes » : Marine Le Pen veut couper les subventions de la Ligue des droits de l''Homme et
+      d''autres associations — Un « ramassis de gauchistes » : voilà comment Marine Le Pen a qualifié la Ligue des droits
+      de l''Homme lors d''un débat sur la pauvreté et la solidarité, dans un entrepôt'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: '« Ramassis de gauchistes » : Marine Le Pen veut couper les subventions de la Ligue des droits de l''Homme et d''autres
+      associations'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Redressement-judiciaire-de-FNE-Rhone-le-tribunal-valide-le-plan-de-l-association
   type: rss
   found_from:
@@ -113797,6 +114209,22 @@ candidates:
   last_seen: '2026-09-25'
   metadata:
     title: '« S''il faut passer par le procès, tant pis » : la répression judiciaire s''intensifie contre Greenpeace France'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Sadi-charpentier-ecolo-prive-de-travail-a-cause-de-la-repression-des-sans-papiers
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« Pourquoi ils ne me laissent pas travailler ? » Dans les Alpes, la préfecture fait la guerre aux travailleurs
+      étrangers — Dans les Hautes-Alpes, une répression inédite s''abat sur les travailleurs en demande de régularisation
+      et sur leurs employeurs. Les personnes sans-papiers sont plongées dans un '
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: « Pourquoi ils ne me laissent pas travailler ? » Dans les Alpes, la préfecture fait la guerre aux travailleurs
+      étrangers
   suggested_action: follow_one_time
 - url: https://reporterre.net/Sans-le-changement-climatique-la-canicule-aurait-ete-plus-fraiche-de-2-4-oC-a-Paris
   type: rss
@@ -113888,6 +114316,21 @@ candidates:
   metadata:
     title: Sous testostérone, les poissons d'élevage égyptiens bientôt importés en Europe
   suggested_action: follow_one_time
+- url: https://reporterre.net/Suicide-d-agriculteur-en-Bretagne-C-est-le-capitalisme-qui-a-tue-mon-mari
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: '« C''est le capitalisme qui l''a tué » : cette femme d''agriculteur témoigne après le suicide de son mari —
+      Jean-François Bréhaut, éleveur laitier bio, a mis fin à ses jours en octobre. Canicule, sécheresse… Sa famille est en
+      colère contre tout un « système qui s''effondre » : « Combien faudra-t-il enco'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: '« C''est le capitalisme qui l''a tué » : cette femme d''agriculteur témoigne après le suicide de son mari'
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Terminer-de-travailler-a-15-h-l-idee-des-Espagnols-qui-pourrait-inspirer-la-France
   type: rss
   found_from:
@@ -113932,6 +114375,21 @@ candidates:
   last_seen: '2026-10-23'
   metadata:
     title: 'Tombola et porte-clefs tracteur : quand la FNSEA, adepte des pesticides, surfe sur Octobre rose'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Top-40-des-villes-europeennes-polluees-Lyon-Paris-et-Marseille-mal-classees
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Pollution de l''air : Lyon, Paris et Marseille mauvaises élèves du Top 40 — Plus de 700 morts par an à Marseille,
+      800 à Lyon et plus de 4 000 dans l''agglomération parisienne : en France, la pollution de l''air est le premier risque
+      environnemental pour la santé humaine, révèle Clean Cities. Cette coal'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: 'Pollution de l''air : Lyon, Paris et Marseille mauvaises élèves du Top 40'
   suggested_action: follow_one_time
 - url: https://reporterre.net/Total-City-la-ville-du-gaz-de-schiste-qui-va-accueillir-la-Coupe-du-monde
   type: rss
@@ -114008,6 +114466,21 @@ candidates:
   metadata:
     title: 'École à distance, pirogues bloquées : un « super El Niño » bouleverse la vie des Guyannais'
   suggested_action: follow_one_time
+- url: https://reporterre.net/Un-amendement-du-RN-reautorise-la-location-de-passoires-thermiques
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: Un amendement du RN réautorise la location de passoires thermiques — Il sera bientôt de nouveau possible de louer
+      des passoires thermiques. Dans le cadre d'un projet de loi du gouvernement, visant à répondre à la crise du logement,
+      le Rassemblement national ( RN ) a fait adopter un amendement visant
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Un amendement du RN réautorise la location de passoires thermiques
+  suggested_action: follow_one_time
 - url: https://reporterre.net/Un-an-apres-l-incendie-le-monde-paysan-tente-peniblement-de-se-relever-dans-les-Corbieres
   type: rss
   found_from:
@@ -114022,6 +114495,21 @@ candidates:
   last_seen: '2026-08-06'
   metadata:
     title: '« Nous voulons construire un territoire résilient face aux feux » : après les incendies, le monde paysan se réorganise'
+  suggested_action: follow_one_time
+- url: https://reporterre.net/Un-bout-de-foret-rase-pour-agrandir-un-cimetiere-au-Pays-basque
+  type: rss
+  found_from:
+  - source: 'RSS feed: Reporterre — RSS principal'
+    context: 'Un bout de forêt rasé pour agrandir un cimetière au Pays basque — Défricher une forêt pour enterrer des morts.
+      Depuis le 12 novembre, l''abattage des arbres d''une partie de la forêt de Pignada d''Anglet, dans le Pays basque, a
+      commencé, rapporte France 3. Le but : détruire 6 000 m 2 de forêt pour agra'
+    timestamp: '2026-11-19T11:17:34'
+  seen_count: 1
+  domain: reporterre.net
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  metadata:
+    title: Un bout de forêt rasé pour agrandir un cimetière au Pays basque
   suggested_action: follow_one_time
 - url: https://reporterre.net/Un-diplome-pour-trouver-des-solutions-au-chaos-climatique-les-humanites-environnementales
   type: rss
@@ -114158,36 +114646,6 @@ candidates:
   metadata:
     title: 'Midterms aux États-Unis : la victoire démocrate, un espoir pour l''écologie'
   suggested_action: follow_one_time
-- url: https://reporterre.net/Vingt-de-mes-proches-sont-morts-a-la-COP31-le-genocide-en-Palestine-est-dans-tous-les
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: '« Vingt de mes proches sont morts » : le génocide en Palestine est dans tous les esprits à la COP31 — Embargo
-      sur l''énergie importée, exclusion d''Israël... Alors que la COP31 se poursuit à Antalya, 10 000 militants écologistes
-      ont défilé pour rappeler qu''il n''y aura pas de justice climatique sans li'
-    timestamp: '2026-11-17T11:31:37'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: '« Vingt de mes proches sont morts » : le génocide en Palestine est dans tous les esprits à la COP31'
-  suggested_action: follow_one_time
-- url: https://reporterre.net/Violences-climat-education-les-enfants-entrent-dans-la-lutte-avec-le-Collectif-enfantiste
-  type: rss
-  found_from:
-  - source: 'RSS feed: Reporterre — RSS principal'
-    context: 'Changement climatique, mépris, répression policière : « Des violences infligées aux enfants par les adultes »
-      — Le Collectif enfantiste a participé à la manifestation du 14 novembre. Une convergence avec les mouvements écologiste
-      et lycéen, pour sensibiliser aux violences et au mépris que subissent '
-    timestamp: '2026-11-17T11:31:37'
-  seen_count: 1
-  domain: reporterre.net
-  first_seen: '2026-11-17'
-  last_seen: '2026-11-17'
-  metadata:
-    title: 'Changement climatique, mépris, répression policière : « Des violences infligées aux enfants par les adultes »'
-  suggested_action: follow_one_time
 - url: https://reporterre.net/Yosemite-un-tresor-naturel-que-les-promoteurs-veulent-transformer-en-atout-commercial
   type: rss
   found_from:
@@ -114219,6 +114677,18 @@ candidates:
     title: 'Zinédine Zidane sur le climat : prendre moins l''avion ou alléger les calendriers, « je ne pense pas qu''il faille
       rentrer là-dedans »'
   suggested_action: follow_one_time
+- url: https://repositorio.mpd.gov.ar/jspui/bitstream/123456789/4815/1/Romina%20Costa.%20Sistema%
+  type: footnote
+  domain: repositorio.mpd.gov.ar
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: https://repositorio.mpd.gov.ar/jspui/bitstream/123456789/4815/1/Romina%20Costa.%20Sistema%
+    page: 48
 - url: https://repositorio.uca.edu.ar/handle/123456789/1834
   type: openalex
   found_from:
@@ -117100,6 +117570,18 @@ candidates:
     year: 2026
     doi: 10.5753/seadco.2026.43786
   suggested_action: follow_one_time
+- url: https://spec.c2pa.org/specifications/specifications/2.5/specs/C2PA_Specification.html
+  type: footnote
+  domain: spec.c2pa.org
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: https://spec.c2pa.org/specifications/specifications/2.5/specs/C2PA_Specification.html
+    page: 47
 - url: https://ssrn.com/abstract=2947219
   type: footnote
   domain: ssrn.com
@@ -117568,6 +118050,18 @@ candidates:
   - doc_id: d4815a41_Repub_133397_O-A
     context: BSA (Black Socialists of America). 2019. Twitter Page. Accessed September 19, 2019. https://twitter.
     page: 27
+- url: https://unctad.org/publication/digital-economy-report-2024
+  type: footnote
+  domain: unctad.org
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: https://unctad.org/publication/digital-economy-report-2024
+    page: 47
 - url: https://unhabitat.org/sites/default/files/2020/06/un_habitat_policy_statement_on_the_prevention_of_evictions_and
   type: footnote
   domain: unhabitat.org
@@ -119424,6 +119918,18 @@ candidates:
   - doc_id: Tierra.org (Amigos de la Tierra ES)
     context: Alianza Residuo Cero
     page: null
+- url: https://www.amnesty.org/ru/wp-content/uploads/sites/4/2026/08/AMR1311042026SPANISH.pdf
+  type: footnote
+  domain: www.amnesty.org
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: https://www.amnesty.org/ru/wp-content/uploads/sites/4/2026/08/AMR1311042026SPANISH.pdf
+    page: 49
 - url: https://www.apha.org/-/media/files/pdf/topics/climate/climate_health_equity.ashx?la=en
   type: footnote
   domain: www.apha.org
@@ -119451,6 +119957,18 @@ candidates:
     hashtag: communs
     instance: mamot.fr
   suggested_action: follow_one_time
+- url: https://www.argentina.gob.ar/normativa/nacional/norma-402139/texto
+  type: footnote
+  domain: www.argentina.gob.ar
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: https://www.argentina.gob.ar/normativa/nacional/norma-402139/texto. Pedido de acceso a la
+    page: 49
 - url: https://www.assemblee-nationale.mg/wp-content/uploads/2021/07/Loi-
   type: footnote
   domain: www.assemblee-nationale.mg
@@ -120603,6 +121121,18 @@ candidates:
   metadata:
     title: Poniendo en contexto la segunda vuelta de Brasil
   suggested_action: follow_one_time
+- url: https://www.cels.org.ar/web/en/2023/04/the-
+  type: footnote
+  domain: www.cels.org.ar
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: del Sistema de Reconocimiento Facial de Prófugos. https://www.cels.org.ar/web/en/2023/04/the-
+    page: 48
 - url: https://www.ciad.mx/estudiosociales/index.php/es/article/download/1253/824
   type: openalex
   found_from:
@@ -123885,6 +124415,18 @@ candidates:
   - doc_id: fc0b788d_Accepted_version
     context: https://www.gov.uk/government/speeches/prime-­‐ministers-­‐
     page: 16
+- url: https://www.govinfo.gov/content/pkg/CHRG-117shrg54110/html/CHRG-117shrg54110.htm
+  type: footnote
+  domain: www.govinfo.gov
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: https://www.govinfo.gov/content/pkg/CHRG-117shrg54110/html/CHRG-117shrg54110.htm
+    page: 47
 - url: https://www.grain.org/article/entries/5492-the-global-farmland-grab-in-2016-how-big-
   type: footnote
   domain: www.grain.org
@@ -124483,6 +125025,30 @@ candidates:
   - doc_id: a7025fb3
     context: Election Could Spark it. Macleans (December 3). https://www.macleans.ca/politics/
     page: 7
+- url: https://www.marval.com/Publicacion/la-anc-reglamenta-el-control-previo-de-concentraciones-
+  type: footnote
+  domain: www.marval.com
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: https://www.marval.com/Publicacion/la-anc-reglamenta-el-control-previo-de-concentraciones-
+    page: 48
+- url: https://www.marval.com/publicacion/a-dos-anos-de-la-
+  type: footnote
+  domain: www.marval.com
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: WhatsApp/Meta, Res. SIC 275/2025). https://www.marval.com/publicacion/a-dos-anos-de-la-
+    page: 48
 - url: https://www.marxists.org/history/international/social-
   type: footnote
   domain: www.marxists.org
@@ -124813,6 +125379,18 @@ candidates:
   - doc_id: f95e7324
     context: operation and Development. https://www.oecd-ilibrary.org/development perspectives
     page: 34
+- url: https://www.oecd.org/en/topics/ai-principles.html
+  type: footnote
+  domain: www.oecd.org
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: cuentas. https://www.oecd.org/en/topics/ai-principles.html
+    page: 47
 - url: https://www.ohchr.org/en/documents/general-
   type: footnote
   domain: www.ohchr.org
@@ -127408,6 +127986,18 @@ candidates:
   - doc_id: a49359eb
     context: https://www.sf.gov/trans-women-in-sports-facts-over-fear
     page: 5
+- url: https://www.sitioandino.com.ar/economia/mercado-libre-vs-
+  type: footnote
+  domain: www.sitioandino.com.ar
+  first_seen: '2026-11-19'
+  last_seen: '2026-11-19'
+  seen_count: 1
+  suggested_action: follow_one_time
+  notes: ''
+  found_from:
+  - doc_id: fc0fab8f
+    context: Mercado Libre contra 36 bancos. https://www.sitioandino.com.ar/economia/mercado-libre-vs-
+    page: 48
 - url: https://www.sitios.scjn.gob.mx/cec/blog-cec/el-de-
   type: footnote
   domain: www.sitios.scjn.gob.mx

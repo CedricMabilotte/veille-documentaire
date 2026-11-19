@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T11:46:17Z",
+ "generated_at": "2026-11-19T11:33:14Z",
  "total_dossiers": 10,
  "dossiers": [
   {
@@ -7060,7 +7060,7 @@
    "slug": "communs-fonciers-histoire",
    "titre": "Communs fonciers : une histoire",
    "chapo": "Communaux, biens communaux, terres collectives : une longue histoire des régimes fonciers partagés, de leur enclosure et de leurs résurgences. Pour penser les communs autrement qu'en nostalgie.",
-   "doc_count": 278,
+   "doc_count": 281,
    "docs": [
     "e7512d48",
     "d647480f",
@@ -7172,6 +7172,7 @@
     "168140f0",
     "3f954335",
     "f310c7b8",
+    "d3f34151",
     "9e831a55",
     "2db11a52",
     "7b89d6d1",
@@ -7253,6 +7254,7 @@
     "9702f1fe",
     "5cd7bff3",
     "caf46bb3",
+    "c28e65f0",
     "28b7cb2c",
     "2175f7a3",
     "2e5629b5",
@@ -7289,6 +7291,7 @@
     "a705762f",
     "e40b3977",
     "380ed988",
+    "83e37da3",
     "4bc13839",
     "e5341cc9",
     "7cf86983",
@@ -8306,6 +8309,15 @@
      ]
     },
     {
+     "id": "d3f34151",
+     "title": "Stop, thief! : the commons, enclosures, and resistance",
+     "score": 9,
+     "matched_on": [
+      "enclosure",
+      "commons"
+     ]
+    },
+    {
      "id": "9e831a55",
      "title": "The Tree, The Rock, and the Morrow",
      "score": 8,
@@ -9010,6 +9022,16 @@
      ]
     },
     {
+     "id": "c28e65f0",
+     "title": "Caliban y la bruja",
+     "score": 8,
+     "matched_on": [
+      "communs fonciers",
+      "enclosure",
+      "commons"
+     ]
+    },
+    {
      "id": "28b7cb2c",
      "title": "The Cooperative Way of Housing in Canada",
      "score": 7,
@@ -9314,6 +9336,14 @@
      "matched_on": [
       "enclosure",
       "commons"
+     ]
+    },
+    {
+     "id": "83e37da3",
+     "title": "Reporte De La Elite Version Para Jovenes",
+     "score": 7,
+     "matched_on": [
+      "enclosure"
      ]
     },
     {
@@ -10168,7 +10198,7 @@
    "slug": "paysanneries-agroecologie",
    "titre": "Paysanneries & agroécologie politique",
    "chapo": "Les mondes paysans comme acteurs politiques : agricultures vivrières, savoirs paysans, agroécologie comme projet de société, souveraineté alimentaire. Loin de l'agro-industrie et du folklore rural.",
-   "doc_count": 609,
+   "doc_count": 611,
    "docs": [
     "5a9397e7",
     "8bfe460c",
@@ -10357,6 +10387,7 @@
     "168140f0",
     "de2fe928",
     "f310c7b8",
+    "6debdeb6",
     "fac367e2",
     "9e831a55",
     "c99e6da4",
@@ -10637,6 +10668,7 @@
     "e40b3977",
     "92e188ba",
     "380ed988",
+    "83e37da3",
     "02b2b6df",
     "4bc13839",
     "5ea6c0cc",
@@ -12967,6 +12999,15 @@
       "agroécologie",
       "agriculture vivrière",
       "souveraineté alimentaire"
+     ]
+    },
+    {
+     "id": "6debdeb6",
+     "title": "Caliban And The Witch",
+     "score": 9,
+     "matched_on": [
+      "paysan",
+      "peasant"
      ]
     },
     {
@@ -16075,6 +16116,15 @@
       "paysan",
       "agriculture vivrière",
       "peasant"
+     ]
+    },
+    {
+     "id": "83e37da3",
+     "title": "Reporte De La Elite Version Para Jovenes",
+     "score": 7,
+     "matched_on": [
+      "paysan",
+      "souveraineté alimentaire"
      ]
     },
     {
@@ -21757,7 +21807,7 @@
    "slug": "accaparements-resistances",
    "titre": "Accaparements & résistances",
    "chapo": "L'autre face du foncier : land grabbing, concessions, accaparements au Sud comme au Nord, et les résistances qui s'y opposent. Enquêtes et contre-cartographies.",
-   "doc_count": 397,
+   "doc_count": 400,
    "docs": [
     "5a9397e7",
     "d647480f",
@@ -21916,6 +21966,7 @@
     "3f954335",
     "de2fe928",
     "f310c7b8",
+    "d3f34151",
     "c99e6da4",
     "55db5001",
     "2db11a52",
@@ -22028,6 +22079,7 @@
     "49e1fc7c",
     "5cd7bff3",
     "caf46bb3",
+    "c28e65f0",
     "581a53c8",
     "79cc5801",
     "a54f94c8",
@@ -22090,6 +22142,7 @@
     "a705762f",
     "e40b3977",
     "380ed988",
+    "83e37da3",
     "e5341cc9",
     "7cf86983",
     "d992c836",
@@ -23493,6 +23546,14 @@
      ]
     },
     {
+     "id": "d3f34151",
+     "title": "Stop, thief! : the commons, enclosures, and resistance",
+     "score": 9,
+     "matched_on": [
+      "enclosure"
+     ]
+    },
+    {
      "id": "c99e6da4",
      "title": "PAMBANSA-DEMOKRATIKONG PAARALAN",
      "score": 8,
@@ -24441,6 +24502,14 @@
      ]
     },
     {
+     "id": "c28e65f0",
+     "title": "Caliban y la bruja",
+     "score": 8,
+     "matched_on": [
+      "enclosure"
+     ]
+    },
+    {
      "id": "581a53c8",
      "title": "ILC — Cartes des constituencies (2025)",
      "score": 7,
@@ -24965,6 +25034,15 @@
      "matched_on": [
       "accaparement",
       "land grab",
+      "enclosure"
+     ]
+    },
+    {
+     "id": "83e37da3",
+     "title": "Reporte De La Elite Version Para Jovenes",
+     "score": 7,
+     "matched_on": [
+      "accaparement",
       "enclosure"
      ]
     },
