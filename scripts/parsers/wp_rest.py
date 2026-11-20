@@ -23,6 +23,11 @@ from urllib.parse import urlparse, urlencode, urlunparse, parse_qs, urljoin
 import requests
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; LibraryBot/1.0)"}
+# UA par domaine (Anubis sur www.fian.org, 2026-11-20) : voir parsers/_ua.py.
+try:
+    from ._ua import headers_for as _headers_for
+except ImportError:  # lancé en direct (python3 scripts/parsers/<x>.py)
+    from _ua import headers_for as _headers_for
 TIMEOUT = 20
 DEFAULT_PER_PAGE = 100
 DEFAULT_MAX_PAGES = 20      # Limite de sécurité : 20 pages × 100 = 2 000 docs max
@@ -80,7 +85,7 @@ def _fetch_page(url: str) -> tuple[list[dict], int]:
     retourne ([], 0) pour arrêter la pagination proprement.
     """
     try:
-        r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+        r = requests.get(url, headers=_headers_for(url, HEADERS), timeout=TIMEOUT)
     except requests.exceptions.Timeout:
         print(f"  ⚠  wp_rest : timeout sur {url}")
         return [], 0

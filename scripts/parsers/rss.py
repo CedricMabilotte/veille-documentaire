@@ -24,6 +24,11 @@ import requests
 import yaml
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; LibraryBot/1.0)"}
+# UA par domaine (Anubis sur www.fian.org, 2026-11-20) : voir parsers/_ua.py.
+try:
+    from ._ua import headers_for as _headers_for
+except ImportError:  # lancé en direct (python3 scripts/parsers/<x>.py)
+    from _ua import headers_for as _headers_for
 TIMEOUT = 20
 DEFAULT_MAX_ITEMS = 30
 CONTEXT_MAX = 400
@@ -171,7 +176,7 @@ def find_documents(source: dict) -> list[dict]:
         return []
 
     try:
-        r = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+        r = requests.get(url, headers=_headers_for(url, HEADERS), timeout=TIMEOUT)
         r.raise_for_status()
         content = r.content
     except requests.RequestException as e:

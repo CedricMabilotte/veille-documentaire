@@ -4,7 +4,7 @@ Cinq mécanismes complémentaires :
   1. TTL par source (min_interval_days, défaut 7j)
   2. Cooldown adaptatif si rendement faible (low_yield)
   3. Politesse par domaine (60s entre 2 hits)
-  4. Respect robots.txt (cache 7j)
+  4. Respect robots.txt (cache 7j ; robots.txt injoignable = « inconnu », pas permission)
   5. Cooldown sur erreurs HTTP (429/503 → 24h, 403 → 7j)
 
 État persisté dans `synopsis/throttle_state.json`.
@@ -28,6 +28,16 @@ LOW_YIELD_RUNS_BEFORE_COOLDOWN = 3
 MAX_INTERVAL_DAYS = 60
 DOMAIN_POLITENESS_SEC = 60
 ROBOTS_CACHE_DAYS = 7
+# robots.txt injoignable (timeout, DNS, 5xx, 429) : on ne met rien en cache et on
+# réessaie de le lire au run suivant ; la source est interrogée quand même, le motif
+# étant tracé dans l'état (robots_unavailable_at/_reason). Doctrine Ced 2026-11-20 :
+# un robots.txt qu'on n'a pas pu lire n'est pas un refus ; contourner si raisonnable
+# (para : resources/shared/concepts/contournement.md). Ce qui reste interdit : un
+# Disallow lu, sauf `robots_exempt` motivé. Le défaut corrigé (L67) était le cache
+# 7 j posé sur un vide, qui empêchait tout réessai.
+ROBOTS_UNAVAILABLE = "unavailable"
+ROBOTS_ALLOWED = "allowed"
+ROBOTS_DISALLOWED = "disallowed"
 RATE_LIMIT_COOLDOWN_HOURS = 24
 BAN_COOLDOWN_DAYS = 7
 USER_AGENT = "LibraryBot"
@@ -108,6 +118,8 @@ def _dom_entry(state: dict, domain: str) -> dict:
             "robots_txt_cached_at": None,
             "robots_disallow": [],
             "robots_crawl_delay": None,
+            "robots_unavailable_at": None,
+            "robots_unavailable_reason": None,
         }
     return state["domains"][domain]
 
@@ -137,8 +149,14 @@ def should_fetch(source: dict, state_path: Path = DEFAULT_STATE) -> tuple[bool, 
     # 3. robots.txt — sauf exemption explicite et motivée dans sources.yml
     # (`robots_exempt: "<raison>"`), réservée aux API documentées dont le
     # robots.txt vise les robots d'indexation, pas les clients de l'API.
-    if not source.get("robots_exempt") and not check_robots(source.get("url", ""), state_path):
-        return False, "robots_disallow"
+    # Un robots.txt injoignable n'est pas un refus (doctrine Ced 2026-11-20) : la
+    # source est interrogée, la raison de l'échec de lecture reste dans l'état et
+    # la lecture est retentée au run suivant (rien n'est mis en cache). Constat IJC
+    # 2026-11-20 : le défaut était le cache 7 j posé sur un vide, pas la permission.
+    if not source.get("robots_exempt"):
+        robots = robots_status(source.get("url", ""), state_path)
+        if robots == ROBOTS_DISALLOWED:
+            return False, "robots_disallow"
 
     # 3 bis. Backoff sur échecs consécutifs (fetch vide : 403 anti-bot, timeout,
     # JSON/XML invalide…). Sans lui, une source qui n'a jamais abouti n'a pas de
@@ -310,55 +328,89 @@ def _parse_robots_minimal(robots_txt: str, user_agent: str) -> list[str]:
     return disallows
 
 
-def check_robots(url: str, state_path: Path = DEFAULT_STATE) -> bool:
-    """Vérifie robots.txt avec cache 7j. True si autorisé (ou indisponible)."""
+def _fetch_robots(robots_url: str) -> tuple[str, Optional[str]]:
+    """Lit robots.txt. Retourne (statut, corps) :
+    - ("ok", corps)        : 2xx, corps à parser ;
+    - ("absent", None)     : 4xx hors 429 — pas de robots.txt, tout est permis
+                             (convention usuelle, RFC 9309 §2.3.1.3) ;
+    - ("unavailable", None): 5xx, 429, timeout, DNS, connexion refusée — on ne
+                             sait pas (RFC 9309 §2.3.1.4 : traiter comme interdit
+                             tant qu'on n'a pas pu lire).
+    """
+    import urllib.error
+    import urllib.request
+    req = urllib.request.Request(
+        robots_url,
+        headers={"User-Agent": "Mozilla/5.0 (compatible; LibraryBot/1.0)"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            ctype = resp.headers.get("Content-Type", "").lower()
+            body = resp.read(64_000).decode("utf-8", errors="replace")
+    except urllib.error.HTTPError as e:
+        if 400 <= e.code < 500 and e.code != 429:
+            return "absent", None
+        return "unavailable", f"HTTP {e.code}"
+    except Exception as e:  # URLError (DNS, refus, timeout), socket.timeout…
+        return "unavailable", f"{type(e).__name__}: {e}"[:200]
+    # Si le serveur renvoie du HTML (CAPTCHA, page d'erreur déguisée) :
+    # on considère qu'il n'y a pas de robots.txt valide → autorisé (inchangé).
+    if "html" in ctype or body.lstrip().lower().startswith("<!doctype"):
+        return "absent", None
+    return "ok", body
+def robots_status(url: str, state_path: Path = DEFAULT_STATE) -> str:
+    """Statut robots.txt pour `url`, avec cache 7 j des lectures réussies :
+    ROBOTS_ALLOWED, ROBOTS_DISALLOWED ou ROBOTS_UNAVAILABLE.
+    Avant le 2026-11-20, un robots.txt injoignable valait permission et le vide
+    était mis en cache 7 jours : IJC (robots.txt « Disallow: / ») a ainsi été
+    crawlé depuis la CI, dont la connexion vers l'hôte expirait. Désormais :
+    - lecture réussie (2xx texte) → règles parsées, cache 7 j ;
+    - 4xx hors 429 → pas de robots.txt → permis, cache 7 j (convention usuelle) ;
+    - injoignable (5xx, 429, timeout, DNS) → rien n'est mis en cache ; si une
+      lecture antérieure est en cache (même périmée), elle fait foi ; sinon le
+      statut est « inconnu » et la source n'est pas interrogée ce run-ci.
+    """
     if not url:
-        return True
+        return ROBOTS_ALLOWED
     domain = _domain(url)
     if not domain:
-        return True
+        return ROBOTS_ALLOWED
     state = _load(state_path)
     dom = _dom_entry(state, domain)
     now = _now()
-
     cached_at = _parse(dom.get("robots_txt_cached_at"))
     cache_stale = (not cached_at) or (now - cached_at) > timedelta(days=ROBOTS_CACHE_DAYS)
-
     if cache_stale:
         scheme = urlparse(url).scheme or "https"
         robots_url = f"{scheme}://{domain}/robots.txt"
-        disallows: list[str] = []
-        try:
-            import urllib.request
-            req = urllib.request.Request(
-                robots_url,
-                headers={"User-Agent": "Mozilla/5.0 (compatible; LibraryBot/1.0)"},
-            )
-            with urllib.request.urlopen(req, timeout=8) as resp:
-                ctype = resp.headers.get("Content-Type", "").lower()
-                body = resp.read(64_000).decode("utf-8", errors="replace")
-            # Si le serveur renvoie du HTML (CAPTCHA, page d'erreur déguisée) :
-            # on considère qu'il n'y a pas de robots.txt valide → autorisé.
-            if "html" in ctype or body.lstrip().lower().startswith("<!doctype"):
-                disallows = []  # vide = pas de règle → autorisé
-            else:
-                disallows = _parse_robots_minimal(body, USER_AGENT)
-        except Exception:
-            # Pas de robots.txt accessible → autorisé par défaut.
-            disallows = []
-        dom["robots_disallow"] = disallows
-        dom["robots_crawl_delay"] = None  # crawl-delay rarement utile, on simplifie
-        dom["robots_txt_cached_at"] = _iso(now)
-        _save(state, state_path)
-
+        status, body = _fetch_robots(robots_url)
+        if status == "unavailable":
+            dom["robots_unavailable_at"] = _iso(now)
+            dom["robots_unavailable_reason"] = body
+            _save(state, state_path)
+            if not cached_at:
+                return ROBOTS_UNAVAILABLE
+            # Cache périmé mais existant : on s'en sert (RFC 9309 §2.4) et on
+            # réessaiera de le rafraîchir au run suivant.
+        else:
+            disallows = _parse_robots_minimal(body, USER_AGENT) if status == "ok" else []
+            dom["robots_disallow"] = disallows
+            dom["robots_crawl_delay"] = None  # crawl-delay rarement utile, on simplifie
+            dom["robots_txt_cached_at"] = _iso(now)
+            dom["robots_unavailable_at"] = None
+            dom["robots_unavailable_reason"] = None
+            _save(state, state_path)
     # Décision : on bloque uniquement si le path matche exactement un Disallow.
     path = urlparse(url).path or "/"
     for d in dom.get("robots_disallow", []):
         if d and path.startswith(d):
-            return False
-    return True
-
-
+            return ROBOTS_DISALLOWED
+    return ROBOTS_ALLOWED
+def check_robots(url: str, state_path: Path = DEFAULT_STATE) -> bool:
+    """Vérifie robots.txt avec cache 7j. True si autorisé ou si robots.txt est
+    injoignable (inconnu ≠ refus, doctrine Ced 2026-11-20) ; False si un Disallow lu
+    couvre le chemin."""
+    return robots_status(url, state_path) != ROBOTS_DISALLOWED
 def politeness_wait(domain: str, state_path: Path = DEFAULT_STATE) -> None:
     """Bloque jusqu'à ce que 60s se soient écoulées depuis le dernier hit."""
     state = _load(state_path)

@@ -424,14 +424,17 @@ sources:
 
   # KPA — Konsorsium Pembaruan Agraria (Indonésie)
   # 187 orgs affiliées, réforme agraire, conflits fonciers. Bibliothèque en ligne.
-  - label: "KPA Indonesia — document library (réforme agraire)"
-    url: "https://www.kpa.or.id/document-library/"
-    type: deep_html
-    orientation: militant
-    default_lang: id
-    auto_download: true
-    max_pages: 10
-    min_interval_days: 30
+  # RETIRÉ 2026-11-20 : défi Cloudflare (403, cf-mitigated: challenge) depuis la machine, le conteneur et la CI,
+  # quel que soit l'UA ; robots.txt lui-même en 403 ; 32 tentatives, 0 doc. Hors de portée de
+  # requests, relais local compris (propositions/2026-11-20/sources-ci-reessai.md, ligne 5).
+  # - label: "KPA Indonesia — document library (réforme agraire)"
+  #   url: "https://www.kpa.or.id/document-library/"
+  #   type: deep_html
+  #   orientation: militant
+  #   default_lang: id
+  #   auto_download: true
+  #   max_pages: 10
+  #   min_interval_days: 30
 
   # Réseau Billital Maroobé — pasteurs et éleveurs Afrique de l'Ouest / Sahel
   # 75 organisations dans 9 pays, bulletin bimestriel sur le pastoralisme.
@@ -486,6 +489,7 @@ sources:
     default_lang: en
     max_items: 50
     min_interval_days: 7
+    local_only: true      # relais local (scripts/relais_local.sh), proposé 2026-11-20 : CI 403 (plages d'IP GitHub), machine et conteneur 200 avec tous les UA (propositions/2026-11-20/sources-ci-reessai.md, ligne 1)
 
   # RETIRÉ 2026-06-22 : JSTOR Daily est un magazine d'articles HTML en ligne,
   # pas une bibliothèque de PDFs. La page de topic ne contient aucun lien .pdf
@@ -645,13 +649,16 @@ sources:
   # les rubriques thématiques. Aucune rubrique publications thématiques accessible.
   # Remplacé les deux entrées deep_html par le feed RSS du site, qui couvre toutes
   # les actualités (Soberanía Alimentaria, Biodiversidad, etc.).
-  - label: "Tierra.org — RSS general"
-    url: "https://www.tierra.org/feed/"
-    type: rss
-    orientation: militant
-    default_lang: es
-    max_items: 30
-    min_interval_days: 14
+  # RETIRÉ 2026-11-20 : robots.txt de www.tierra.org interdit explicitement /feed, /feed/* et /*/feed/ (l. 50-53) ;
+  # le pipeline la saute déjà (skip: robots_disallow, runs des 03/11 et 19/11). On ne contourne pas
+  # un robots.txt (propositions/2026-11-20/sources-ci-reessai.md, ligne 14).
+  # - label: "Tierra.org — RSS general"
+  #   url: "https://www.tierra.org/feed/"
+  #   type: rss
+  #   orientation: militant
+  #   default_lang: es
+  #   max_items: 30
+  #   min_interval_days: 14
 
   - label: "CEIPAZ (Cultura de Paz) — RSS"
     url: "https://www.ceipaz.org/feed/"
@@ -682,12 +689,15 @@ sources:
   # ═══ Audit éditorial 2026-06-26 — 10 nouvelles sources ════════════════════
 
   # 1. FAO Open Repository — OAI-PMH, set foodsecurity (200 OK confirmé)
-  - label: "FAO Open Repository — food security (OAI-PMH)"
-    url: "https://openknowledge.fao.org/oai/request?verb=ListRecords&metadataPrefix=oai_dc&set=foodsecurity"
-    type: hal
-    orientation: institutionnel
-    default_lang: en
-    min_interval_days: 30
+  # RETIRÉ 2026-11-20 : set OAI `foodsecurity` vide (<error code="noRecordsMatch">) depuis les trois origines, 32 tentatives,
+  # 0 doc ; de plus le chemin réellement servi (/server/oai/request) est sous `Disallow: /server/oai/*`
+  # (propositions/2026-11-20/sources-ci-reessai.md, ligne 7). Rien à relayer ; chercher le bon nom de set si le thème compte.
+  # - label: "FAO Open Repository — food security (OAI-PMH)"
+  #   url: "https://openknowledge.fao.org/oai/request?verb=ListRecords&metadataPrefix=oai_dc&set=foodsecurity"
+  #   type: hal
+  #   orientation: institutionnel
+  #   default_lang: en
+  #   min_interval_days: 30
 
   # 2. GRAIN — ressources (deep_html)
   # NOTE : grain.org bloque les requêtes sans User-Agent navigateur (403 sur tous les
@@ -706,13 +716,16 @@ sources:
   # NOTE : L'endpoint OAI-PMH (thecommonsjournal.org/oai) ne répond pas en XML
   # valide — le site est une SPA Next.js (Ubiquity Press) sans serveur OAI actif.
   # On crawle la page des articles en deep_html à la place.
-  - label: "International Journal of the Commons — articles"
-    url: "https://thecommonsjournal.org/articles"
-    type: deep_html
-    orientation: academique
-    default_lang: en
-    max_pages: 20
-    min_interval_days: 30
+  # RETIRÉ 2026-11-20 : robots.txt de thecommonsjournal.org : dernier bloc `User-agent: * / Disallow: /` → interdit à tout
+  # robot non listé, relais local compris. Le garde-fou check_robots() l'avait laissée passer (robots.txt
+  # injoignable depuis la CI = permission, mis en cache 7 j) — correctif dans correctifs.diff (propositions/2026-11-20/sources-ci-reessai.md, ligne 8).
+  # - label: "International Journal of the Commons — articles"
+  #   url: "https://thecommonsjournal.org/articles"
+  #   type: deep_html
+  #   orientation: academique
+  #   default_lang: en
+  #   max_pages: 20
+  #   min_interval_days: 30
 
   # 4. La Vía Campesina EN — WP REST API (200 OK)
   # NOTE : /en/publications/ est 404 ; WP REST retourne bien des PDFs.
@@ -761,6 +774,7 @@ sources:
     default_lang: en
     max_pages: 15
     min_interval_days: 30
+    local_only: true      # relais local (scripts/relais_local.sh), proposé 2026-11-20 : CI 403, conteneur interstitiel JS, seule la machine passe (propositions/2026-11-20/sources-ci-reessai.md, ligne 10)
 
   # 8. CLACSO — búsqueda tierra y communs (200 OK)
   - label: "CLACSO — búsqueda tierra y communs"
@@ -865,30 +879,40 @@ sources:
     min_interval_days: 30
 
   # CLACSO — coopératives et agriculture Cuba
-  - label: "CLACSO Repositorio — Cuba cooperativas agricultura"
-    url: "https://biblioteca-repositorio.clacso.edu.ar/discover?query=cuba+cooperativas+agricultura&rpp=20"
-    type: deep_html
-    orientation: academique
-    default_lang: es
-    min_interval_days: 30
+  # RETIRÉ 2026-11-20 : défi Cloudflare (403) depuis la machine, le conteneur et la CI, quel que soit l'UA ; 32 tentatives,
+  # 0 doc. Même raison que KPA (propositions/2026-11-20/sources-ci-reessai.md, ligne 11). Piste non testée si le thème compte : le point
+  # OAI-PMH du DSpace (/oai/request).
+  # - label: "CLACSO Repositorio — Cuba cooperativas agricultura"
+  #   url: "https://biblioteca-repositorio.clacso.edu.ar/discover?query=cuba+cooperativas+agricultura&rpp=20"
+  #   type: deep_html
+  #   orientation: academique
+  #   default_lang: es
+  #   min_interval_days: 30
 
   # CIRAD Agritrop — OAI-PMH, publications sur le coopérativisme cubain
-  - label: "Agritrop CIRAD — Cuba coopératives (OAI-PMH)"
-    url: "http://agritrop.cirad.fr/cgi/oai2?verb=ListRecords&metadataPrefix=oai_dc"
-    type: hal
-    orientation: academique
-    default_lang: fr
-    auto_download: true
-    min_interval_days: 60
+  # RETIRÉ 2026-11-20 — non pour le robots.txt (doctrine Ced 2026-11-20 : un Disallow sur /cgi/ d'un dépôt institutionnel
+  # en accès ouvert se contourne par `robots_exempt:` motivée), mais parce que l'URL n'a aucun `set=` : elle moissonnerait
+  # tout Agritrop (OAI ListRecords complet), pas Cuba. 12 tentatives, 0 doc. À réactiver dès qu'un set Cuba/coopératives est
+  # identifié (ListSets), avec la ligne ci-dessous (propositions/2026-11-20/sources-ci-reessai.md, ligne 12).
+  #   robots_exempt: "Dépôt institutionnel CIRAD en accès ouvert ; Disallow: /cgi/ vise l'indexation, pas un client OAI identifié ; 1 requête / 60 j. Décision Ced 2026-11-20."
+  # - label: "Agritrop CIRAD — Cuba coopératives (OAI-PMH)"
+  #   url: "http://agritrop.cirad.fr/cgi/oai2?verb=ListRecords&metadataPrefix=oai_dc"
+  #   type: hal
+  #   orientation: academique
+  #   default_lang: fr
+  #   auto_download: true
+  #   min_interval_days: 60
 
   # OpenEdition — études caribéennes (agroécologie cubaine confirmée)
-  - label: "OpenEdition — Études caribéennes (Cuba agraire)"
-    url: "https://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=revues:etudescaribeennes"
-    type: hal
-    orientation: academique
-    default_lang: fr
-    auto_download: true
-    min_interval_days: 60
+  # RETIRÉ 2026-11-20 : set OAI `revues:etudescaribeennes` vide (noRecordsMatch) depuis les trois origines, 32 tentatives, 0 doc
+  # (propositions/2026-11-20/sources-ci-reessai.md, ligne 13). Rien à relayer ; chercher le bon nom de set si le thème compte.
+  # - label: "OpenEdition — Études caribéennes (Cuba agraire)"
+  #   url: "https://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=revues:etudescaribeennes"
+  #   type: hal
+  #   orientation: academique
+  #   default_lang: fr
+  #   auto_download: true
+  #   min_interval_days: 60
 
   # Archive.org — Cuba agriculture agroécologie
   - label: "Archive.org — Cuba agriculture agroécologie"
@@ -917,8 +941,11 @@ sources:
   #   auto_download: true
 
   # ─── FIAN International — droit à l'alimentation, accès à la terre ─────────
+  # 2026-11-20 : /en/publications redirige en 301 vers /fr/publications/ ; URL mise à jour pour
+  # éviter le saut (propositions/2026-11-20/sources-ci-reessai.md, ligne 4). Le défi Anubis vu sur CI
+  # relève de l'User-Agent du parser deep_html, corrigé dans correctifs.diff.
   - label: "FIAN International — publications"
-    url: "https://www.fian.org/en/publications"
+    url: "https://www.fian.org/fr/publications/"
     type: deep_html
     orientation: institutionnel
     default_lang: fr

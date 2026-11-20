@@ -20,6 +20,12 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; LibraryBot/1.0)"}
+# UA par domaine (Anubis sur www.fian.org et books.openedition.org, 2026-11-20) :
+# voir parsers/_ua.py.
+try:
+    from ._ua import headers_for as _headers_for
+except ImportError:  # lancé en direct (python3 scripts/parsers/<x>.py)
+    from _ua import headers_for as _headers_for
 # Formats d'ouvrage gratuits et ouverts uniquement (exclut .doc/.docx).
 DOC_EXTENSIONS = {".pdf", ".epub", ".txt", ".odt"}
 DEFAULT_MAX_PAGES = 30
@@ -67,7 +73,7 @@ def _dedup_by_filename(docs: list[dict]) -> list[dict]:
 
 def _fetch(url: str, timeout: int = 15) -> str | None:
     try:
-        r = requests.get(url, headers=HEADERS, timeout=timeout)
+        r = requests.get(url, headers=_headers_for(url, HEADERS), timeout=timeout)
         r.raise_for_status()
         return r.text
     except requests.RequestException as e:
