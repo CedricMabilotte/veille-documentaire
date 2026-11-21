@@ -121,15 +121,15 @@ project_keywords:
 - Ernährungssouveränität
 - Agrarökologie
 - bäuerliche Landwirtschaft
-exported_at: '2026-11-19T11:49:20.101156+00:00'
+exported_at: '2026-11-21T11:12:01.979609+00:00'
 sources:
 - url: https://infokiosques.net/
   label: Infokiosques.net — nouveautés
   type: html
-  fertility: 1.79
-  runs: 24
+  fertility: 1.72
+  runs: 25
   docs_dl: 43
-  docs_seen: 650
+  docs_seen: 655
 - url: https://infokiosques.net/paysannerie_ruralite
   label: Infokiosques.net — Paysannerie & ruralité
   type: html
@@ -326,13 +326,6 @@ sources:
   runs: 5
   docs_dl: 20
   docs_seen: 50
-- url: https://www.kpa.or.id/document-library/
-  label: KPA Indonesia — document library (réforme agraire)
-  type: deep_html
-  fertility: 0.0
-  runs: 0
-  docs_dl: 0
-  docs_seen: 0
 - url: https://maroobe.com/
   label: Réseau Billital Maroobé — publications
   type: deep_html
@@ -459,13 +452,6 @@ sources:
   runs: 4
   docs_dl: 0
   docs_seen: 417
-- url: https://www.tierra.org/feed/
-  label: Tierra.org — RSS general
-  type: rss
-  fertility: 0.0
-  runs: 0
-  docs_dl: 0
-  docs_seen: 0
 - url: https://www.ceipaz.org/feed/
   label: CEIPAZ (Cultura de Paz) — RSS
   type: rss
@@ -480,20 +466,6 @@ sources:
   runs: 1
   docs_dl: 0
   docs_seen: 10
-- url: https://openknowledge.fao.org/oai/request?verb=ListRecords&metadataPrefix=oai_dc&set=foodsecurity
-  label: FAO Open Repository — food security (OAI-PMH)
-  type: hal
-  fertility: 0.0
-  runs: 0
-  docs_dl: 0
-  docs_seen: 0
-- url: https://thecommonsjournal.org/articles
-  label: International Journal of the Commons — articles
-  type: deep_html
-  fertility: 0.0
-  runs: 0
-  docs_dl: 0
-  docs_seen: 0
 - url: https://viacampesina.org/en/wp-json/wp/v2/media?mime_type=application/pdf
   label: La Vía Campesina — publications (WP REST)
   type: wp_rest
@@ -571,27 +543,6 @@ sources:
   runs: 2
   docs_dl: 4
   docs_seen: 48
-- url: https://biblioteca-repositorio.clacso.edu.ar/discover?query=cuba+cooperativas+agricultura&rpp=20
-  label: CLACSO Repositorio — Cuba cooperativas agricultura
-  type: deep_html
-  fertility: 0.0
-  runs: 0
-  docs_dl: 0
-  docs_seen: 0
-- url: http://agritrop.cirad.fr/cgi/oai2?verb=ListRecords&metadataPrefix=oai_dc
-  label: Agritrop CIRAD — Cuba coopératives (OAI-PMH)
-  type: hal
-  fertility: 0.0
-  runs: 0
-  docs_dl: 0
-  docs_seen: 0
-- url: https://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=revues:etudescaribeennes
-  label: OpenEdition — Études caribéennes (Cuba agraire)
-  type: hal
-  fertility: 0.0
-  runs: 0
-  docs_dl: 0
-  docs_seen: 0
 - url: https://archive.org/advancedsearch.php?q=subject%3ACuba+AND+%28agricultura+OR+cooperativa+OR+agroecologia%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=50
   label: Archive.org — Cuba agriculture agroécologie
   type: archive_org
@@ -599,7 +550,7 @@ sources:
   runs: 2
   docs_dl: 1
   docs_seen: 34
-- url: https://www.fian.org/en/publications
+- url: https://www.fian.org/fr/publications/
   label: FIAN International — publications
   type: deep_html
   fertility: 0.0

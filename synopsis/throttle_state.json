@@ -3,9 +3,9 @@
     "Infokiosques.net — nouveautés": {
       "url": "https://infokiosques.net/",
       "domain": "infokiosques.net",
-      "last_fetch": "2026-11-17T11:30:48Z",
-      "last_fetch_attempts": 24,
-      "last_doc_count": 47,
+      "last_fetch": "2026-11-21T10:40:54Z",
+      "last_fetch_attempts": 25,
+      "last_doc_count": 48,
       "consecutive_low_yield": 0,
       "current_interval_days": 3,
       "last_status_code": 200,
@@ -324,8 +324,8 @@
     "Reporterre — RSS principal": {
       "url": "https://reporterre.net/spip.php?page=backend",
       "domain": "reporterre.net",
-      "last_fetch": "2026-11-19T11:17:52Z",
-      "last_fetch_attempts": 46,
+      "last_fetch": "2026-11-21T10:41:22Z",
+      "last_fetch_attempts": 47,
       "last_doc_count": 30,
       "consecutive_low_yield": 0,
       "current_interval_days": 1,
@@ -341,9 +341,9 @@
     "Lundi.am — RSS principal": {
       "url": "https://lundi.am/spip.php?page=backend",
       "domain": "lundi.am",
-      "last_fetch": "2026-11-19T11:18:20Z",
-      "last_fetch_attempts": 46,
-      "last_doc_count": 11,
+      "last_fetch": "2026-11-21T10:41:51Z",
+      "last_fetch_attempts": 47,
+      "last_doc_count": 10,
       "consecutive_low_yield": 0,
       "current_interval_days": 1,
       "last_status_code": 200,
@@ -358,8 +358,8 @@
     "MST Brésil — RSS principal": {
       "url": "https://mst.org.br/feed/",
       "domain": "mst.org.br",
-      "last_fetch": "2026-11-13T10:34:47Z",
-      "last_fetch_attempts": 12,
+      "last_fetch": "2026-11-21T10:42:21Z",
+      "last_fetch_attempts": 13,
       "last_doc_count": 10,
       "consecutive_low_yield": 0,
       "current_interval_days": 7,
@@ -390,8 +390,8 @@
     "International Land Coalition — latest": {
       "url": "https://www.landcoalition.org/en/latest/",
       "domain": "www.landcoalition.org",
-      "last_fetch": "2026-11-13T10:35:20Z",
-      "last_fetch_attempts": 12,
+      "last_fetch": "2026-11-21T10:42:55Z",
+      "last_fetch_attempts": 13,
       "last_doc_count": 10,
       "consecutive_low_yield": 0,
       "current_interval_days": 7,
@@ -422,8 +422,8 @@
     "Cultural Survival — RSS": {
       "url": "https://www.culturalsurvival.org/rss.xml",
       "domain": "www.culturalsurvival.org",
-      "last_fetch": "2026-11-13T10:35:46Z",
-      "last_fetch_attempts": 12,
+      "last_fetch": "2026-11-21T10:43:55Z",
+      "last_fetch_attempts": 13,
       "last_doc_count": 10,
       "consecutive_low_yield": 0,
       "current_interval_days": 7,
@@ -875,8 +875,8 @@
     "European Shepherds Network — publications": {
       "url": "https://shepherdnet.eu/",
       "domain": "shepherdnet.eu",
-      "last_fetch": "2026-10-21T08:21:11Z",
-      "last_fetch_attempts": 5,
+      "last_fetch": "2026-11-21T10:43:28Z",
+      "last_fetch_attempts": 6,
       "last_doc_count": 10,
       "consecutive_low_yield": 0,
       "current_interval_days": 30,
@@ -1466,34 +1466,42 @@
     "reporterre.net": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:33:30Z",
+      "robots_txt_cached_at": "2026-11-21T10:40:54Z",
       "robots_disallow": [],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "lundi.am": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:33:54Z",
+      "robots_txt_cached_at": "2026-11-21T10:41:22Z",
       "robots_disallow": [
         "/ecrire/",
         "/lib/",
         "/oembed.api/"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "mst.org.br": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:34:21Z",
+      "robots_txt_cached_at": "2026-11-21T10:41:51Z",
       "robots_disallow": [],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "www.landcoalition.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:34:47Z",
+      "robots_txt_cached_at": "2026-11-21T10:42:21Z",
       "robots_disallow": [],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "www.tni.org": {
       "last_request_at": null,
@@ -1537,7 +1545,7 @@
     "www.culturalsurvival.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:21Z",
+      "robots_txt_cached_at": "2026-11-21T10:43:28Z",
       "robots_disallow": [
         "/core/",
         "/profiles/",
@@ -1572,7 +1580,9 @@
         "/index.php/user/logout",
         "/index.php/media/oembed"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "grain.org": {
       "last_request_at": null,
@@ -1591,19 +1601,21 @@
     "endatiersmonde.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:46Z",
+      "robots_txt_cached_at": "2026-11-21T10:43:55Z",
       "robots_disallow": [
         "/wp-content/uploads/wc-logs/",
         "/wp-content/uploads/woocommerce_transient_files/",
         "/wp-content/uploads/woocommerce_uploads/",
         "/wp-admin/"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "www.troisiemesvoix.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:50Z",
+      "robots_txt_cached_at": "2026-11-21T10:43:58Z",
       "robots_disallow": [
         "/.github/",
         "/.phan/",
@@ -1619,44 +1631,54 @@
         "/vendor/",
         "/webserver-configs/"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "www.cnt.es": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:50Z",
+      "robots_txt_cached_at": "2026-11-21T10:43:59Z",
       "robots_disallow": [],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "portaloaca.com": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:51Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:00Z",
       "robots_disallow": [
         "/wp-admin/"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "www.portaloaca.com": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:52Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:02Z",
       "robots_disallow": [
         "/wp-admin/"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "cgt.org.es": {
       "last_request_at": null,
       "rate_limit_until": null,
       "robots_txt_cached_at": "2026-11-13T10:35:53Z",
       "robots_disallow": [],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": "2026-11-21T10:44:03Z",
+      "robots_unavailable_reason": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
     },
     "www.sinpermiso.info": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:53Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:03Z",
       "robots_disallow": [
         "/busqueda",
         "/includes/",
@@ -1696,46 +1718,58 @@
         "/?q=user/login/",
         "/?q=user/logout/"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "enlacezapatista.ezln.org.mx": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:54Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:04Z",
       "robots_disallow": [],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "viacampesina.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:54Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:05Z",
       "robots_disallow": [
         "/wp-content/uploads/wpo/wpo-plugins-tables-list.json"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "www.cloc-viacampesina.net": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:55Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:06Z",
       "robots_disallow": [],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "www.fian.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:56Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:07Z",
       "robots_disallow": [
         "/wp-admin/"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "www.clacso.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:57Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:08Z",
       "robots_disallow": [],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "www.tierra.org": {
       "last_request_at": null,
@@ -1783,16 +1817,20 @@
     "www.ceipaz.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:58Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:08Z",
       "robots_disallow": [],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "www.celag.org": {
       "last_request_at": null,
       "rate_limit_until": null,
       "robots_txt_cached_at": "2026-11-13T10:35:59Z",
       "robots_disallow": [],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": "2026-11-21T10:44:09Z",
+      "robots_unavailable_reason": "HTTP 502"
     },
     "www.kpa.or.id": {
       "last_request_at": null,
@@ -1804,16 +1842,20 @@
     "maroobe.com": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:20Z",
+      "robots_txt_cached_at": "2026-11-21T10:42:55Z",
       "robots_disallow": [],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "shepherdnet.eu": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:35:21Z",
+      "robots_txt_cached_at": "2026-11-21T10:42:55Z",
       "robots_disallow": [],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "www.confras.org": {
       "last_request_at": null,
@@ -1858,13 +1900,15 @@
     "books.openedition.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:36:33Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:10Z",
       "robots_disallow": [
         "/admin",
         "/catalogue",
         "/api"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "focusweb.org": {
       "last_request_at": null,
@@ -1876,16 +1920,18 @@
     "nyeleni.org": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:36:35Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:10Z",
       "robots_disallow": [
         "/wp-content/uploads/wpo/wpo-plugins-tables-list.json"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "traficantes.net": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:36:36Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:13Z",
       "robots_disallow": [
         "/includes/",
         "/misc/",
@@ -1925,17 +1971,21 @@
         "/?q=user/logout/",
         "/uc_ajax_cart_alt/ajax/refresh"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "www.minag.gob.cu": {
       "last_request_at": null,
       "rate_limit_until": null,
-      "robots_txt_cached_at": "2026-11-13T10:36:36Z",
+      "robots_txt_cached_at": "2026-11-21T10:44:13Z",
       "robots_disallow": [
         "/wp-admin/",
         "/wp-content/uploads/wpo-plugins-tables-list.json"
       ],
-      "robots_crawl_delay": null
+      "robots_crawl_delay": null,
+      "robots_unavailable_at": null,
+      "robots_unavailable_reason": null
     },
     "biblioteca-repositorio.clacso.edu.ar": {
       "last_request_at": null,

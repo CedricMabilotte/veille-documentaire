@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-19T11:33:14Z",
-  "total": 2326,
-  "total_docs": 2326,
+  "generated_at": "2026-11-21T10:51:23Z",
+  "total": 2331,
+  "total_docs": 2331,
   "total_downloaded": 1528,
   "total_published": 1031,
   "by_lang": {
     "en": 1080,
-    "fr": 418,
+    "fr": 423,
     "es": 272,
     "inconnu": 269,
     "pt": 227,
@@ -20,7 +20,7 @@
   },
   "by_language": {
     "en": 1080,
-    "fr": 418,
+    "fr": 423,
     "es": 272,
     "inconnu": 269,
     "pt": 227,
@@ -54,6 +54,7 @@
     "Böll Stiftung — Agriculture & Food (EN topic)": 19,
     "Archive.org — Cuba agriculture agroécologie": 17,
     "Archive.org — commons / enclosure": 16,
+    "Infokiosques.net — nouveautés": 14,
     "Infokiosques.net — Anticolonialismes": 14,
     "Portal OACA — Libros anarquistas (catégorie)": 13,
     "Archive.org — subject:anarchism (texts)": 10,
@@ -62,7 +63,6 @@
     "International Land Coalition — latest": 10,
     "Troisièmes Voix — éditions": 10,
     "European Shepherds Network — publications": 10,
-    "Infokiosques.net — nouveautés": 9,
     "Böll Stiftung — publications DE (deep crawl)": 9,
     "Infokiosques.net — index A": 8,
     "Böll Stiftung — publications DE": 8,
@@ -94,11 +94,11 @@
     "2000s": 161,
     "2010s": 519,
     "2020s": 816,
-    "inconnu": 749
+    "inconnu": 754
   },
   "by_score": {
     "0": 585,
-    "1": 248,
+    "1": 253,
     "2": 193,
     "3": 114,
     "4": 89,
@@ -110,25 +110,25 @@
     "10": 4
   },
   "by_doc_type": {
-    "autre": 2190,
+    "autre": 2195,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1264,
+    "militant": 1269,
     "academique": 844,
     "non_renseigne": 138,
     "institutionnel": 80
   },
   "blind_spots": [
-    "Forte dominante militante (54.3%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (54.4%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (54.3%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (54.4%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
@@ -274,6 +274,13 @@
       "count": 14
     },
     {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
+      "count": 14
+    },
+    {
       "label": "Portal OACA — Libros anarquistas (catégorie)",
       "url": "https://www.portaloaca.com/categoria/pensamientolibertario/libros-anarquistas/",
       "type": "deep_html",
@@ -320,13 +327,6 @@
       "url": "https://www.boell.de/de/publikationen",
       "type": "deep_html",
       "orientation": "institutionnel",
-      "count": 9
-    },
-    {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
       "count": 9
     },
     {
@@ -400,13 +400,6 @@
       "count": 1
     },
     {
-      "label": "Agritrop CIRAD — Cuba coopératives (OAI-PMH)",
-      "url": "http://agritrop.cirad.fr/cgi/oai2?verb=ListRecords&metadataPrefix=oai_dc",
-      "type": "hal",
-      "orientation": "academique",
-      "count": 0
-    },
-    {
       "label": "Böll Stiftung — Meat Atlas (EN)",
       "url": "https://www.boell.de/en/meat-atlas",
       "type": "deep_html",
@@ -432,13 +425,6 @@
       "url": "https://cgt.org.es/feed/",
       "type": "rss",
       "orientation": "militant",
-      "count": 0
-    },
-    {
-      "label": "CLACSO Repositorio — Cuba cooperativas agricultura",
-      "url": "https://biblioteca-repositorio.clacso.edu.ar/discover?query=cuba+cooperativas+agricultura&rpp=20",
-      "type": "deep_html",
-      "orientation": "academique",
       "count": 0
     },
     {
@@ -477,13 +463,6 @@
       "count": 0
     },
     {
-      "label": "FAO Open Repository — food security (OAI-PMH)",
-      "url": "https://openknowledge.fao.org/oai/request?verb=ListRecords&metadataPrefix=oai_dc&set=foodsecurity",
-      "type": "hal",
-      "orientation": "institutionnel",
-      "count": 0
-    },
-    {
       "label": "FIAN International (droit à l'alimentation, ES)",
       "url": "https://www.fian.org/es/feed/",
       "type": "rss",
@@ -492,7 +471,7 @@
     },
     {
       "label": "FIAN International — publications",
-      "url": "https://www.fian.org/en/publications",
+      "url": "https://www.fian.org/fr/publications/",
       "type": "deep_html",
       "orientation": "institutionnel",
       "count": 0
@@ -526,20 +505,6 @@
       "count": 0
     },
     {
-      "label": "International Journal of the Commons — articles",
-      "url": "https://thecommonsjournal.org/articles",
-      "type": "deep_html",
-      "orientation": "academique",
-      "count": 0
-    },
-    {
-      "label": "KPA Indonesia — document library (réforme agraire)",
-      "url": "https://www.kpa.or.id/document-library/",
-      "type": "deep_html",
-      "orientation": "militant",
-      "count": 0
-    },
-    {
       "label": "La Vía Campesina (ES)",
       "url": "https://viacampesina.org/es/feed/",
       "type": "rss",
@@ -564,13 +529,6 @@
       "label": "OpenEdition Books — catalogue (deep_html)",
       "url": "https://books.openedition.org/",
       "type": "deep_html",
-      "orientation": "academique",
-      "count": 0
-    },
-    {
-      "label": "OpenEdition — Études caribéennes (Cuba agraire)",
-      "url": "https://oai.openedition.org/?verb=ListRecords&metadataPrefix=oai_dc&set=revues:etudescaribeennes",
-      "type": "hal",
       "orientation": "academique",
       "count": 0
     },
@@ -600,13 +558,6 @@
       "url": "https://www.sinpermiso.info/rss.xml",
       "type": "rss",
       "orientation": "journalistique",
-      "count": 0
-    },
-    {
-      "label": "Tierra.org — RSS general",
-      "url": "https://www.tierra.org/feed/",
-      "type": "rss",
-      "orientation": "militant",
       "count": 0
     },
     {
