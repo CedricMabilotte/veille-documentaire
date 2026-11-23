@@ -307,8 +307,8 @@
     "Archive.org — community land trusts & housing commons": {
       "url": "https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
       "domain": "archive.org",
-      "last_fetch": "2026-11-01T10:12:14Z",
-      "last_fetch_attempts": 6,
+      "last_fetch": "2026-11-23T11:50:18Z",
+      "last_fetch_attempts": 7,
       "last_doc_count": 30,
       "consecutive_low_yield": 0,
       "current_interval_days": 21,
@@ -324,8 +324,8 @@
     "Reporterre — RSS principal": {
       "url": "https://reporterre.net/spip.php?page=backend",
       "domain": "reporterre.net",
-      "last_fetch": "2026-11-21T10:41:22Z",
-      "last_fetch_attempts": 47,
+      "last_fetch": "2026-11-23T11:50:41Z",
+      "last_fetch_attempts": 48,
       "last_doc_count": 30,
       "consecutive_low_yield": 0,
       "current_interval_days": 1,
@@ -341,8 +341,8 @@
     "Lundi.am — RSS principal": {
       "url": "https://lundi.am/spip.php?page=backend",
       "domain": "lundi.am",
-      "last_fetch": "2026-11-21T10:41:51Z",
-      "last_fetch_attempts": 47,
+      "last_fetch": "2026-11-23T11:51:04Z",
+      "last_fetch_attempts": 48,
       "last_doc_count": 10,
       "consecutive_low_yield": 0,
       "current_interval_days": 1,
@@ -539,8 +539,8 @@
     "Portal OACA — Libros anarquistas (catégorie)": {
       "url": "https://www.portaloaca.com/categoria/pensamientolibertario/libros-anarquistas/",
       "domain": "www.portaloaca.com",
-      "last_fetch": "2026-11-01T10:13:27Z",
-      "last_fetch_attempts": 10,
+      "last_fetch": "2026-11-23T11:51:44Z",
+      "last_fetch_attempts": 11,
       "last_doc_count": 8,
       "consecutive_low_yield": 0,
       "current_interval_days": 21,
@@ -739,8 +739,8 @@
     "CEIPAZ (Cultura de Paz) — RSS": {
       "url": "https://www.ceipaz.org/feed/",
       "domain": "www.ceipaz.org",
-      "last_fetch": "2026-11-01T10:13:52Z",
-      "last_fetch_attempts": 6,
+      "last_fetch": "2026-11-23T11:52:11Z",
+      "last_fetch_attempts": 7,
       "last_doc_count": 10,
       "consecutive_low_yield": 0,
       "current_interval_days": 21,
@@ -1672,7 +1672,7 @@
       "robots_txt_cached_at": "2026-11-13T10:35:53Z",
       "robots_disallow": [],
       "robots_crawl_delay": null,
-      "robots_unavailable_at": "2026-11-21T10:44:03Z",
+      "robots_unavailable_at": "2026-11-23T11:51:44Z",
       "robots_unavailable_reason": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)>"
     },
     "www.sinpermiso.info": {
@@ -1829,7 +1829,7 @@
       "robots_txt_cached_at": "2026-11-13T10:35:59Z",
       "robots_disallow": [],
       "robots_crawl_delay": null,
-      "robots_unavailable_at": "2026-11-21T10:44:09Z",
+      "robots_unavailable_at": "2026-11-23T11:52:11Z",
       "robots_unavailable_reason": "HTTP 502"
     },
     "www.kpa.or.id": {

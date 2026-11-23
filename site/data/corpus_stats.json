@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-21T10:51:23Z",
-  "total": 2331,
-  "total_docs": 2331,
+  "generated_at": "2026-11-23T12:00:00Z",
+  "total": 2336,
+  "total_docs": 2336,
   "total_downloaded": 1528,
-  "total_published": 1031,
+  "total_published": 1028,
   "by_lang": {
-    "en": 1080,
-    "fr": 423,
-    "es": 272,
-    "inconnu": 269,
+    "en": 1083,
+    "fr": 418,
+    "inconnu": 275,
+    "es": 273,
     "pt": 227,
     "de": 43,
     "it": 7,
@@ -19,10 +19,10 @@
     "tr": 1
   },
   "by_language": {
-    "en": 1080,
-    "fr": 423,
-    "es": 272,
-    "inconnu": 269,
+    "en": 1083,
+    "fr": 418,
+    "inconnu": 275,
+    "es": 273,
     "pt": 227,
     "de": 43,
     "it": 7,
@@ -39,8 +39,8 @@
     "Archive.org — théorie des communs (Ostrom, CPR, collective action)": 122,
     "Infokiosques.net — Paysannerie & ruralité": 121,
     "Archive.org — féminisme et communs (Federici, accumulation primitive)": 117,
+    "Archive.org — community land trusts & housing commons": 113,
     "CRAS (Centre de Recherches sur les Alternatives Sociales)": 110,
-    "Archive.org — community land trusts & housing commons": 104,
     "CLACSO Libros (acceso abierto)": 99,
     "discovery_promoted": 72,
     "The Anarchist Library — OPDS (new releases)": 64,
@@ -54,15 +54,15 @@
     "Böll Stiftung — Agriculture & Food (EN topic)": 19,
     "Archive.org — Cuba agriculture agroécologie": 17,
     "Archive.org — commons / enclosure": 16,
-    "Infokiosques.net — nouveautés": 14,
     "Infokiosques.net — Anticolonialismes": 14,
-    "Portal OACA — Libros anarquistas (catégorie)": 13,
+    "Portal OACA — Libros anarquistas (catégorie)": 14,
     "Archive.org — subject:anarchism (texts)": 10,
     "Archive.org — peasant movements": 10,
     "Infokiosques.net — Écologie radicale": 10,
     "International Land Coalition — latest": 10,
     "Troisièmes Voix — éditions": 10,
     "European Shepherds Network — publications": 10,
+    "Infokiosques.net — nouveautés": 9,
     "Böll Stiftung — publications DE (deep crawl)": 9,
     "Infokiosques.net — index A": 8,
     "Böll Stiftung — publications DE": 8,
@@ -87,21 +87,21 @@
     "1790s": 1,
     "1920s": 1,
     "1950s": 17,
-    "1960s": 12,
-    "1970s": 15,
-    "1980s": 22,
+    "1960s": 13,
+    "1970s": 16,
+    "1980s": 23,
     "1990s": 13,
     "2000s": 161,
     "2010s": 519,
-    "2020s": 816,
-    "inconnu": 754
+    "2020s": 817,
+    "inconnu": 755
   },
   "by_score": {
-    "0": 585,
-    "1": 253,
+    "0": 598,
+    "1": 248,
     "2": 193,
     "3": 114,
-    "4": 89,
+    "4": 86,
     "5": 108,
     "6": 198,
     "7": 140,
@@ -110,25 +110,25 @@
     "10": 4
   },
   "by_doc_type": {
-    "autre": 2195,
+    "autre": 2200,
     "non_classe": 128,
     "rapport": 4,
     "essai": 3,
     "enquete": 1
   },
   "by_orientation": {
-    "militant": 1269,
-    "academique": 844,
+    "militant": 1265,
+    "academique": 853,
     "non_renseigne": 138,
     "institutionnel": 80
   },
   "blind_spots": [
-    "Forte dominante militante (54.4%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (54.2%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
   "biais_connus": [
-    "Forte dominante militante (54.4%) — les sources académiques et institutionnelles sont minoritaires.",
+    "Forte dominante militante (54.2%) — les sources académiques et institutionnelles sont minoritaires.",
     "Plus de 30% des documents n'ont pas de date de publication fiable.",
     "La veille s'appuie sur des sources web accessibles : les corpus papier, oraux et hors-ligne sont structurellement absents."
   ],
@@ -176,18 +176,18 @@
       "count": 117
     },
     {
+      "label": "Archive.org — community land trusts & housing commons",
+      "url": "https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
+      "type": "archive_org",
+      "orientation": "academique",
+      "count": 113
+    },
+    {
       "label": "CRAS (Centre de Recherches sur les Alternatives Sociales)",
       "url": "https://cras31.info/",
       "type": "deep_html",
       "orientation": "militant",
       "count": 110
-    },
-    {
-      "label": "Archive.org — community land trusts & housing commons",
-      "url": "https://archive.org/advancedsearch.php?q=%28%22community+land+trust%22+OR+%22housing+commons%22+OR+%22housing+cooperative%22+OR+%22fideicomiso+de+tierras%22%29+AND+language%3A%28eng+OR+fra+OR+spa%29+AND+mediatype%3Atexts&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=description&output=json&rows=30",
-      "type": "archive_org",
-      "orientation": "academique",
-      "count": 104
     },
     {
       "label": "CLACSO Libros (acceso abierto)",
@@ -274,18 +274,11 @@
       "count": 14
     },
     {
-      "label": "Infokiosques.net — nouveautés",
-      "url": "https://infokiosques.net/",
-      "type": "html",
-      "orientation": "militant",
-      "count": 14
-    },
-    {
       "label": "Portal OACA — Libros anarquistas (catégorie)",
       "url": "https://www.portaloaca.com/categoria/pensamientolibertario/libros-anarquistas/",
       "type": "deep_html",
       "orientation": "militant",
-      "count": 13
+      "count": 14
     },
     {
       "label": "Archive.org — peasant movements",
@@ -327,6 +320,13 @@
       "url": "https://www.boell.de/de/publikationen",
       "type": "deep_html",
       "orientation": "institutionnel",
+      "count": 9
+    },
+    {
+      "label": "Infokiosques.net — nouveautés",
+      "url": "https://infokiosques.net/",
+      "type": "html",
+      "orientation": "militant",
       "count": 9
     },
     {
